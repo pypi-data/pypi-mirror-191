@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: indb_schema_biology
+Version: 0.1.0
+Summary: Default schema module biology.
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: nbproject
+Requires-Dist: sqlmodel
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/lndb-schema-biology
+Provides-Extra: dev
+Provides-Extra: test
+
+# lndb-schema-biology: Default schema module biology
+
+This package is in private beta at this moment!
+
+Follow https://twitter.com/laminlabs to learn about a first public release.
+
+For beta users: Read the [docs](https://lamin.ai/docs/lndb-schema-biology).
+

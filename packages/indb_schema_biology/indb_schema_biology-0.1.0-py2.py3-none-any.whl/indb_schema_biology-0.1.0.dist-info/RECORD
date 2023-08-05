@@ -1,0 +1,9 @@
+indb_schema_biology/__init__.py,sha256=7rraCVjVhFs2hlDOD6HmF7ZY6dAuMNAimJo9eNi1bPI,135
+indb_schema_biology/_biolab.py,sha256=FlLpPW-w7KaTLh_qCZtqUcTFS4p0UnqhFIBnkU6v124,1460
+indb_schema_biology/_bionty.py,sha256=sD64aBFMnDQNbf3mmp6pmfi9wWgNN592jvfw0QAh-As,2575
+indb_schema_biology/biolab.py,sha256=FdcZD0rIMOxoNlWGKGbIyYrtOnIXpmTRrrZXmkkujBc,79
+indb_schema_biology/bionty.py,sha256=V8ufii-xx1Lsj2xQ0yQYyTdtzC80dkOza2SOYSk-oYE,140
+indb_schema_biology-0.1.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+indb_schema_biology-0.1.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+indb_schema_biology-0.1.0.dist-info/METADATA,sha256=9wGWeAErzQKykfjkKqJukXhobuO6riMfZBRkqLo0Mw4,774
+indb_schema_biology-0.1.0.dist-info/RECORD,,
