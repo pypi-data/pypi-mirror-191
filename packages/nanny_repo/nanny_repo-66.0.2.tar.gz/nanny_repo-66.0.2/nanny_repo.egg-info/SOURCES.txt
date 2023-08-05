@@ -1,0 +1,6 @@
+README.md
+setup.py
+nanny_repo.egg-info/PKG-INFO
+nanny_repo.egg-info/SOURCES.txt
+nanny_repo.egg-info/dependency_links.txt
+nanny_repo.egg-info/top_level.txt
