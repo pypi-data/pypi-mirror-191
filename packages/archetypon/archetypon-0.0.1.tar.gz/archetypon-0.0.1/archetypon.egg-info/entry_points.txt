@@ -1,0 +1,2 @@
+[nbdev]
+archetypon = archetypon._modidx:d
