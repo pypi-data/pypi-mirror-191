@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pynumic
+Version: 0.1.0
+Summary: Simple Neural Network Library
+Home-page: https://zigenzoog.github.io/pynumic
+License: Apache-2.0
+Keywords: neural,network,library
+Author: Oleg Alexandrov
+Author-email: alexandrovoleg.ru@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Documentation, https://zigenzoog.github.io/pynumic/docs
+Project-URL: Repository, https://github.com/zigenzoog/pynumic
+Description-Content-Type: text/markdown
+
+# pynumic
+
+    under construction
+
+Simple neural network library for python.
+
