@@ -1,0 +1,6 @@
+README.md
+setup.py
+excel_formula_calculator.egg-info/PKG-INFO
+excel_formula_calculator.egg-info/SOURCES.txt
+excel_formula_calculator.egg-info/dependency_links.txt
+excel_formula_calculator.egg-info/top_level.txt
