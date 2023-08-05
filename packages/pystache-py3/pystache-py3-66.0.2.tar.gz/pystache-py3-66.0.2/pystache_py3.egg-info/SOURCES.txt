@@ -1,0 +1,6 @@
+README.md
+setup.py
+pystache_py3.egg-info/PKG-INFO
+pystache_py3.egg-info/SOURCES.txt
+pystache_py3.egg-info/dependency_links.txt
+pystache_py3.egg-info/top_level.txt
