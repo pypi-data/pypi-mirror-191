@@ -1,0 +1,6 @@
+README.md
+setup.py
+emission.core.egg-info/PKG-INFO
+emission.core.egg-info/SOURCES.txt
+emission.core.egg-info/dependency_links.txt
+emission.core.egg-info/top_level.txt
