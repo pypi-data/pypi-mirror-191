@@ -1,0 +1,6 @@
+README.md
+setup.py
+crm_hd_client.egg-info/PKG-INFO
+crm_hd_client.egg-info/SOURCES.txt
+crm_hd_client.egg-info/dependency_links.txt
+crm_hd_client.egg-info/top_level.txt
