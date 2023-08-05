@@ -1,0 +1,6 @@
+README.md
+setup.py
+rasp_botocore.egg-info/PKG-INFO
+rasp_botocore.egg-info/SOURCES.txt
+rasp_botocore.egg-info/dependency_links.txt
+rasp_botocore.egg-info/top_level.txt
