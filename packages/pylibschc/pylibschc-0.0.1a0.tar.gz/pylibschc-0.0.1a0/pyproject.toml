@@ -1,0 +1,6 @@
+[build-system]
+requires = ["setuptools>=42", "Cython", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+license_file = "LICENSE"
