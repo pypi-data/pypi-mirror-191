@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.elk.sysmon.egg-info/PKG-INFO
+obedient.elk.sysmon.egg-info/SOURCES.txt
+obedient.elk.sysmon.egg-info/dependency_links.txt
+obedient.elk.sysmon.egg-info/top_level.txt
