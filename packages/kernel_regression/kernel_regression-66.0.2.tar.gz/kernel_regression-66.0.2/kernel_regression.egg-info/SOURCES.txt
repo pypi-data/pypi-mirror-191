@@ -1,0 +1,6 @@
+README.md
+setup.py
+kernel_regression.egg-info/PKG-INFO
+kernel_regression.egg-info/SOURCES.txt
+kernel_regression.egg-info/dependency_links.txt
+kernel_regression.egg-info/top_level.txt
