@@ -1,0 +1,6 @@
+README.md
+setup.py
+hrdwh_utils.egg-info/PKG-INFO
+hrdwh_utils.egg-info/SOURCES.txt
+hrdwh_utils.egg-info/dependency_links.txt
+hrdwh_utils.egg-info/top_level.txt
