@@ -1,0 +1,6 @@
+README.md
+setup.py
+lxml_cffi.egg-info/PKG-INFO
+lxml_cffi.egg-info/SOURCES.txt
+lxml_cffi.egg-info/dependency_links.txt
+lxml_cffi.egg-info/top_level.txt
