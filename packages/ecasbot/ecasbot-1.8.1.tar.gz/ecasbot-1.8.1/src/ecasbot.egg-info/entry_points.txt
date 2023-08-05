@@ -1,0 +1,2 @@
+[console_scripts]
+ecasbot = ecasbot.scripts.runbot:main

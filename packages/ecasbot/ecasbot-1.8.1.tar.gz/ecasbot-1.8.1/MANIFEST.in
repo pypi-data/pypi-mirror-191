@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2017-2023 EasyCoding Team
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+include .bandit.yml LICENSE README.md tox.ini
+recursive-include licenses *.txt
