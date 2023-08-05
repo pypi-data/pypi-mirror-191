@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_education_newell.egg-info/PKG-INFO
+yandex_education_newell.egg-info/SOURCES.txt
+yandex_education_newell.egg-info/dependency_links.txt
+yandex_education_newell.egg-info/top_level.txt
