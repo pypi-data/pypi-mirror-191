@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="epi_report_invoice_document" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@class='page']" position="replace">
+                <div class="page">
+                    <div class="row pt-1" style="border-top: 1px solid #bbb; font-size: 14px;">
+                        <div id="invoice_no" class="col-6">
+                            <p>
+                                <strong t-if="o.type == 'out_invoice' and o.state in ('open', 'in_payment', 'paid')">Factura</strong>
+                                <span t-field="o.number"/>
+                            </p>
+                        </div>
+                        <div id="date" class="col-6">
+                            <div t-if="o.date_invoice" name="invoice_date">
+                                <strong class="float-right">Data <span t-field="o.date_invoice"/></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-1" style="border-bottom: 2px solid #bbb; font-size: 14px;">
+                        <div class="col-12" t-if="o.date_due and o.type == 'out_invoice' and o.state in ('open', 'in_payment', 'paid')" name="due_date">
+                            <p class="text-right">Data de venciment <span t-field="o.date_due"/></p>
+                        </div>
+                    </div>
+                    <div class="row py-3" style="font-size: 14px;">
+                        <div id="client_details" class="col-6">
+                            <strong t-field="o.partner_id.name"></strong>
+                            <p class="m-0" t-field="o.partner_id.street"/>
+                            <p class="m-0" t-field="o.partner_id.city"/>
+                            <p class="m-0" t-field="o.partner_id.country_id"/>
+                            <p class="m-0" t-field="o.partner_id.vat"/>
+                        </div>
+                        <div id="bank_account" class="col-6">
+                            <strong class="float-right">Pagament per transferència al compte</strong>
+                            <p class="float-right" t-field="o.partner_bank_id"></p>
+                        </div>
+                    </div>
+                    <table style="font-size: 14px;">
+                        <thead style="border-bottom: 2px solid #bbb;">
+                            <tr>
+                                <th name="th_description" class="col-3"><span>Nom de producte o servei</span></th>
+                                <th name="th_quantity" class="col-3"><span>Quantitat</span></th>
+                                <th name="th_priceunit" class="col-3"><span>Preu</span></th>
+                                <th name="th_subtotal" class="col-3"><span>Import</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="o.invoice_line_ids" t-as="line">
+                                <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
+                                        <td class="col-3" name="account_invoice_line_name"><span t-field="line.name"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.quantity"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.price_unit"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.price_unit"/></td>
+                                    </t>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                     <div style="border-top: 1px solid #bbb; font-size: 14px; width: 100%; position: absolute; top: 750px;">
+                        <div class="row">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right">Subtotal</p>
+                            <span class="col-2 text-right" t-field="o.amount_untaxed"/>
+                        </div>
+                        <div class="row">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right">IVA 21%</p>
+                            <span class="col-2 text-right" t-field="o.amount_tax"/>
+                        </div>
+                        <div class="row bg-light pt-2">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right font-weight-bold">Import total</p>
+                            <span class="col-2 text-right font-weight-bold" t-field="o.amount_total"/>
+                        </div>
+                    </div>
+                    <!-- <div id="total"> Added to avoid view inheritance error -->
+                    <div id="total">
+                        <div>
+                            <table>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer o_standard_footer">
+                    <div class="text-center" style="padding-top: 2px; font-size: 12px;">
+                        ENERGÍA POR LA IGUALDAD, SCCL, Ins. al Reg. General de Cooperatives de Catalunya, Inscripció 14.751 com a Serveis.
+                    </div>
+                </div>
+            </xpath>            
+        </template>
+        <template id="web.external_layout_standard">
+            <div class="header">
+              <div class="row">
+                  <div class="col-5 mb4">
+                      <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="width:346px;height:149px" alt="Logo"/>
+                  </div>
+                  <div class="col-7" name="company_address">
+                    <div style="margin: 10px; padding:10px; border: solid black 1px; font-size: 14px; line-height: 30px;">
+                      <div><strong>NIF:</strong> F-66799057</div>
+                      <div><strong>OFICINA CENTRAL:</strong> Av. Estatut, 130, 08191, Rubí</div>
+                      <div><strong>SEU SOCIAL:</strong> Primer de Maig, 1, 3r B, 43870, Amposta</div>
+                      <div><strong>CONTACTE:</strong> 93 193 73 90 · suma@epi.coop</div>
+                    </div>
+                  </div>
+                  <div class="col-9 text-right" style="margin-top:22px;" t-field="company.report_header" name="moto"/>
+              </div>
+          </div>
+
+          <div class="article o_report_layout_standard" t-att-data-oe-model="o and o._name" t-att-data-oe-id="o and o.id" t-att-data-oe-lang="o and o.env.context.get('lang')">
+              <t t-raw="0"/>
+          </div>
+
+          <div class="footer o_standard_footer">
+              <div class="text-center" style="border: 1px solid black; padding-top: 2px; font-size: 12px;">
+                ENERGÍA POR LA IGUALDAD, SCCL, Ins. al Reg. General de Cooperatives de Catalunya, Inscripció 14.751 com a Serveis.
+              </div>
+          </div>
+        </template>
+    </data>
+</odoo>

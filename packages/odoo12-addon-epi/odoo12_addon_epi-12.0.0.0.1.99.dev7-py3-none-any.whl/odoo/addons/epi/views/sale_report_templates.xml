@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="epi_report_saleorder_document" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@class='page']" position="replace">
+                <div class="page">
+                    <div class="row pt-1" style="border-top: 1px solid #bbb; border-bottom: 2px solid #bbb; font-size: 14px;">
+                        <div id="quotation_no" class="col-6">
+                            <p><span class="font-weight-bold">Pressupost </span><span t-field="doc.name"/></p>
+                        </div>
+                        <div id="date" class="col-6">
+                            <div t-if="doc.date_order" name="quotation_date">
+                                <p class="text-right"><span class="font-weight-bold">Data </span><span t-field="doc.validity_date"/></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-3" style="font-size: 14px;">
+                        <div id="client_details" class="col-5">
+                            <strong t-field="doc.partner_id.name"></strong>
+                            <p class="m-0" t-field="doc.partner_id.street"/>
+                            <p class="m-0" t-field="doc.partner_id.city"/>
+                            <p class="m-0" t-field="doc.partner_id.country_id"/>
+                            <p class="m-0" t-field="doc.partner_id.vat"/>
+                        </div>
+                        <div id="bank_account" class="col-7">
+                            <p class="m-0 text-right font-weight-bold">Condicions de pagament</p>
+                            <p class="m-0 text-right">Pagament per transferència al compte</p>
+                            <p class="m-0 text-right">ES96 3025 0014 0614 0006 8284</p>
+                            <p class="m-0 text-right">Data de venciment (30 dies)</p>
+                        </div>
+                    </div>
+                    <table style="font-size: 14px;">
+                        <thead style="border-bottom: 2px solid #bbb;">
+                            <tr>
+                                <th name="th_description" class="col-3"><span>Nom de producte o servei</span></th>
+                                <th name="th_quantity" class="col-3"><span>Quantitat</span></th>
+                                <th name="th_priceunit" class="col-3"><span>Preu</span></th>
+                                <th name="th_subtotal" class="col-3"><span>Import</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="doc.order_line" t-as="line">
+                                <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+                                    <t t-if="not line.display_type" name="account_invoice_line_accountable">
+                                        <td class="col-3" name="account_invoice_line_name"><span t-field="line.name"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.product_uom_qty"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.price_unit"/></td>
+                                        <td class="col-3 text-right"><span t-field="line.price_unit"/></td>
+                                    </t>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                    <div style="border-top: 1px solid #bbb; font-size: 14px; width: 100%; position: absolute; top: 550px;">
+                        <div class="row">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right">Subtotal</p>
+                            <span class="col-2 text-right" t-field="doc.amount_untaxed"/>
+                        </div>
+                        <div class="row">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right">IVA 21%</p>
+                            <span class="col-2 text-right" t-field="doc.amount_tax"/>
+                        </div>
+                        <div class="row bg-light pt-2 mb-2">
+                            <p class="col-8"/>
+                            <p class="col-2 text-right font-weight-bold">Import total</p>
+                            <span class="col-2 text-right font-weight-bold" t-field="doc.amount_total"/>
+                        </div>
+                        <div class="row" style="border-bottom: 1px solid #bbb;">
+                            <div class="col-12 mb-3">
+                                <p class="m-0 font-weight-bold">Condicions:</p>
+                                <p style="font-size: 12px;" class="m-0 font-weight-bold">10% Inici d'obra</p>
+                                <p style="font-size: 12px;" class="mt-0 font-weight-bold">90% Finalització obra</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mt-3">
+                                <p>Acceptació del pressupost</p>
+                                <p class="m-0 font-weight-bold">RAÓ SOCIAL:</p>
+                                <p class="m-0 font-weight-bold">RESPONSABLE:</p>
+                                <p class="m-0 font-weight-bold">CÀRREC:</p>
+                                <p class="m-0 font-weight-bold">DATA:</p>
+                            </div>
+                            <div class="col-6 mt-3">
+                                <p class="font-weight-bold">Firma i Segell Empresa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>  
+        </template>
+    </data>
+</odoo>
