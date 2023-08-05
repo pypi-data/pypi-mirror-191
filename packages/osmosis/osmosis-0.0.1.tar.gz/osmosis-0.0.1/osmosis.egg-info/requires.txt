@@ -1,0 +1,13 @@
+diffusers
+typer
+eventlet
+flask-socketio
+flask
+torch
+transformers
+accelerate
+realesrgan
+tqdm
+
+[dev]
+black
