@@ -1,0 +1,6 @@
+README.md
+setup.py
+ids.sources.startrek.egg-info/PKG-INFO
+ids.sources.startrek.egg-info/SOURCES.txt
+ids.sources.startrek.egg-info/dependency_links.txt
+ids.sources.startrek.egg-info/top_level.txt
