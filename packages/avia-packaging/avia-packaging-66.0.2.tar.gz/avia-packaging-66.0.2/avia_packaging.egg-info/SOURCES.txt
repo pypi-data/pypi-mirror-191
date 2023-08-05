@@ -1,0 +1,6 @@
+README.md
+setup.py
+avia_packaging.egg-info/PKG-INFO
+avia_packaging.egg-info/SOURCES.txt
+avia_packaging.egg-info/dependency_links.txt
+avia_packaging.egg-info/top_level.txt
