@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_python_stat_django_utils.egg-info/PKG-INFO
+yandex_python_stat_django_utils.egg-info/SOURCES.txt
+yandex_python_stat_django_utils.egg-info/dependency_links.txt
+yandex_python_stat_django_utils.egg-info/top_level.txt
