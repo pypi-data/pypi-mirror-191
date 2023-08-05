@@ -1,0 +1,6 @@
+README.md
+setup.py
+edadeal_models.egg-info/PKG-INFO
+edadeal_models.egg-info/SOURCES.txt
+edadeal_models.egg-info/dependency_links.txt
+edadeal_models.egg-info/top_level.txt
