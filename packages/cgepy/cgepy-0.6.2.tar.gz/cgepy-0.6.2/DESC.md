@@ -1,0 +1,28 @@
+### cgepy // 6.2
+***
+cgePy, or cge, is a text-based graphics engine that can operate in the console or terminal.\
+Currently with zero dependencies, a simple system that can suit many needs, and easily tweaked settings, cgePy will allow you to turn complex ideas into reality.
+
+***
+
+### How it works:
+
+cgePy currently operates on 24-bit ansi escape codes. Esentially what's happening when you create a grid is you have `gridsize` items of `background + "  "` being appended to a list. (`self.ctx`)\
+Each of these items on the list should always be two characters long, resulting in the grid becoming a perfect square, not rectangle.\
+And no, just because squares are rectangles doesn't mean it could be three or one characters.
+
+`background` is set to `BLUE` (aka `cgepy.BLUE`) by default, with `BLUE` being `\x1b[0;44m` for a background. The advantage of this is that we can put text inside a grid since we aren't relying on colored fullblock charactes, and that we can have much more flexibility. Esentially, you can also cross these with other ansi codes to create more diverse coloring. 
+
+After that, a function reads from the list and prints it in rows according to the square root of `gridsize`. Without that, you'd be stuck with a basic 10x10 grid forever. The difference between cgePy and projects with similar concepts is that cgePy  **only needs one list**, while other projects might use several. A 5x5 list / cgePy "grid" might look like this:
+```py
+[
+    BLACK+"  ", BLACK+"  ", BLACK+"  ", BLACK+"  ", BLACK+"  ",
+    BLACK+"  ", WHITE+"  ", WHITE+"  ", WHITE+"  ", BLACK+"  ",
+    BLACK+"  ", WHITE+"  ", WHITE+"  ", WHITE+"  ", BLACK+"  ",
+    BLACK+"  ", WHITE+"  ", WHITE+"  ", WHITE+"  ", BLACK+"  ",
+    BLACK+"  ", BLACK+"  ", BLACK+"  ", BLACK+"  ", BLACK+"  "
+]
+```
+
+Anyways, for now, **that's all, folks!**\
+See you in the next release.
