@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_tanker_python.egg-info/PKG-INFO
+yandex_tanker_python.egg-info/SOURCES.txt
+yandex_tanker_python.egg-info/dependency_links.txt
+yandex_tanker_python.egg-info/top_level.txt
