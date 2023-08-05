@@ -1,0 +1,6 @@
+README.md
+setup.py
+shard_tracker.egg-info/PKG-INFO
+shard_tracker.egg-info/SOURCES.txt
+shard_tracker.egg-info/dependency_links.txt
+shard_tracker.egg-info/top_level.txt
