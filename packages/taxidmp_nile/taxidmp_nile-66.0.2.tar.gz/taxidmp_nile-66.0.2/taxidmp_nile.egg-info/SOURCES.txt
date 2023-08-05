@@ -1,0 +1,6 @@
+README.md
+setup.py
+taxidmp_nile.egg-info/PKG-INFO
+taxidmp_nile.egg-info/SOURCES.txt
+taxidmp_nile.egg-info/dependency_links.txt
+taxidmp_nile.egg-info/top_level.txt
