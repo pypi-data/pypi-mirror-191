@@ -1,0 +1,53 @@
+[project]
+name = "pants_backend_kustomize"
+description = "A Kustomize plugin for the Pants build system"
+version = "0.1.2"
+authors = [
+    { name = "Tom Solberg", email = "me@sbg.dev" },
+]
+dependencies = [
+    "pants_backend_k8s~=0.1.1",
+]
+readme = "README.md"
+keywords = [
+    "pantsbuild",
+    "pants",
+    "backend",
+    "kustomize",
+    "kubernetes",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Build Tools",
+]
+
+[project.license]
+file = "LICENSE-MIT.txt"
+
+[project.urls]
+Repository = "https://github.com/tgolsson/pants-backends"
+Code = "https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/kustomize"
+Changelog = "https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/kustomize/CHANGELOG.md"
+
+[tool.pdm.build]
+includes = [
+    "pants_backend_kustomize",
+]
+
+[tool.isort]
+profile = "black"
+known_first_party = [
+    "pants_backend_kustomize",
+]
+line_length = 100
+include_trailing_comma = true
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"

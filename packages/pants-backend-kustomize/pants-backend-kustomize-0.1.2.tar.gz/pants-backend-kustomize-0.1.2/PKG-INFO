@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pants_backend_kustomize
+Version: 0.1.2
+Summary: A Kustomize plugin for the Pants build system
+Keywords: pantsbuild,pants,backend,kustomize,kubernetes
+Author-email: Tom Solberg <me@sbg.dev>
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Build Tools
+Project-URL: Changelog, https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/kustomize/CHANGELOG.md
+Project-URL: Code, https://github.com/tgolsson/pants-backends/tree/main/pants-plugins/kustomize
+Project-URL: Repository, https://github.com/tgolsson/pants-backends
+Description-Content-Type: text/markdown
+
+# Kustomize backend for Pants
+
+![PyPI](https://img.shields.io/pypi/v/pants-backend-kustomize?label=Latest%20release)
+
+> **Warning**
+> This plugin is in development. No stability is guaranteed! Contributions welcome.
+
+This backends implements targets for kustomize templates.
+
+* [kustomize](https://github.com/kubernetes-sigs/kustomize) for overlaying state ontop of raw kubernetes files
+
+## Planned and missing features
+
+* Key/secret/... generation from built artifacts
+
+## Targets
+
+There's currently one target.
+
+
+### `kustomize`
+
+A code-generation target for converting a bundle of kubernetes files into a single multi-docuent YAML file with state
+injected from other Pants targets.
+
+
+``` python
+kustomize(
+    name="kustomize",
+    sources=[
+        "deployment.yaml",
+        "server.py",
+        "service.yaml",
+        "namespace.yaml",
+		"kustomization.yaml",
+    ],
+    dependencies=[":bin"],
+)
+```
+
+| Argument | Meaning | Default value |
+| --- | --- | --- |
+| `name` | The target name | Same as any other target, which is the directory name |
+| `sources` | Resources used by this target | **Required** |
+| `dependencies` | Targets to package and pass to the build context, as well as bases | `[]` |
+| `decsription` | A description of the target | ` ` |
+| `tags` | List of tags | `[]` |
+
+For dependencies, the builder will replace labels in the kustomization.yaml with the path of the built package.
+
