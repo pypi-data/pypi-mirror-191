@@ -1,0 +1,6 @@
+README.md
+setup.py
+caas_agent.egg-info/PKG-INFO
+caas_agent.egg-info/SOURCES.txt
+caas_agent.egg-info/dependency_links.txt
+caas_agent.egg-info/top_level.txt
