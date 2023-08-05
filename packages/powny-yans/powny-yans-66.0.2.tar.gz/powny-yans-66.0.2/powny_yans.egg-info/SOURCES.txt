@@ -1,0 +1,6 @@
+README.md
+setup.py
+powny_yans.egg-info/PKG-INFO
+powny_yans.egg-info/SOURCES.txt
+powny_yans.egg-info/dependency_links.txt
+powny_yans.egg-info/top_level.txt
