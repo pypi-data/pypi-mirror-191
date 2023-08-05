@@ -1,0 +1,39 @@
+name: Rollout MNIST Keras model
+
+on:
+  workflow_dispatch:
+    inputs:
+      apiKey:
+        description: "API Key that you'd paste to cinnaroll-login or CINNAROLL_API_KEY env."
+        required: true
+        default: 'PASTE KEY HERE'
+      projectID:
+        description: "Cinnaroll project ID."
+        required: true
+        default: 'PASTE ID HERE'
+
+env:
+  PYTHON_VERSION: "3.8"
+
+defaults:
+  run:
+    shell: bash -e -o pipefail -u -x {0}
+
+jobs:
+  rollout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.testenv.txt
+      - name: Rollout MNIST Keras config
+        env:
+          CINNAROLL_API_KEY: ${{ inputs.apiKey }}
+          PROJECT_ID: ${{ inputs.projectID }}
+        run: |
+          python -m tests.e2e.test_mnist_keras
