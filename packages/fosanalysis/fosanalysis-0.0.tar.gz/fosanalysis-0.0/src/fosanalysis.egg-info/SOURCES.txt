@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/fosanalysis/__init__.py
+src/fosanalysis.egg-info/PKG-INFO
+src/fosanalysis.egg-info/SOURCES.txt
+src/fosanalysis.egg-info/dependency_links.txt
+src/fosanalysis.egg-info/requires.txt
+src/fosanalysis.egg-info/top_level.txt
+tests/test.py
