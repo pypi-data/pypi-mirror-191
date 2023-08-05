@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_pykikimr.egg-info/PKG-INFO
+xprod_pykikimr.egg-info/SOURCES.txt
+xprod_pykikimr.egg-info/dependency_links.txt
+xprod_pykikimr.egg-info/top_level.txt
