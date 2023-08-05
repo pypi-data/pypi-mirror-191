@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: TPython
+Version: 1.7
+Summary: A better python REPL
+Home-page: https://github.com/Techlord210/TPython
+Author: Techlord210
+Author-email: techlord210@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: jsonc-parser
+
+# TPython
+TPython a better python REPL.
+
+## Features
+- Built-in TimeIt, clear/cls
+- Colors
+- Update Notifier 
+- Custom Config
+
+## Installation
+```
+$ pip install TPython
+```
+
+## Dependencies
+```
+colorama
+jsonc_parser
+```
+
+## Usage
+
+### **Run**
+```
+$ tpy
+Or
+$ python3 -m tpy
+Or
+$ python3
+Python ... (...) [...] on ...
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tpy
+>>> tpy.main()
+```
+
+### **Built-in Commands**
+| Command | Function |
+| :-------: | :--------: |
+| version | tells version |
+| exit/quit/close | exits the REPL |
+| cls/clear | clears the terminal |
+| timeit | tells execution time of code |
+
+### **Config**
+
+#### **Create File**
+**Windows:**
+```
+> mkdir %USERPROFILE%\.TPython
+> curl https://raw.githubusercontent.com/Techlord210/TPython/main/config.jsonc -o %USERPROFILE%\.TPython\config.jsonc
+```
+**Mac OS/Linux/BSD:**
+```
+$ mkdir ~/.TPython
+$ curl https://raw.githubusercontent.com/Techlord210/TPython/main/config.jsonc -o ~/.TPython/config.jsonc
+```
+
+#### **Instructions**
+- File location: `~/.TPython/config.jsonc`
+- Read all the comments in config file.
+- Do not use uppercase in config file.
+- Do not use Spaces in values of config file.
