@@ -1,0 +1,6 @@
+README.md
+setup.py
+comocutor_contrib.egg-info/PKG-INFO
+comocutor_contrib.egg-info/SOURCES.txt
+comocutor_contrib.egg-info/dependency_links.txt
+comocutor_contrib.egg-info/top_level.txt
