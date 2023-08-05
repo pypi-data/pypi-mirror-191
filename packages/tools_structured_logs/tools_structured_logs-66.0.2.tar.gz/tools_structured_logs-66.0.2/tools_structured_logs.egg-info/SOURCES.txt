@@ -1,0 +1,6 @@
+README.md
+setup.py
+tools_structured_logs.egg-info/PKG-INFO
+tools_structured_logs.egg-info/SOURCES.txt
+tools_structured_logs.egg-info/dependency_links.txt
+tools_structured_logs.egg-info/top_level.txt
