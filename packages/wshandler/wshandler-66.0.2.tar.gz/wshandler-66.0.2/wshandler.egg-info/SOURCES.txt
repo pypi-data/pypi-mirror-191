@@ -1,0 +1,6 @@
+README.md
+setup.py
+wshandler.egg-info/PKG-INFO
+wshandler.egg-info/SOURCES.txt
+wshandler.egg-info/dependency_links.txt
+wshandler.egg-info/top_level.txt
