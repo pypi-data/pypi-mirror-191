@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pySendEmail890
+Version: 1.5
+Summary: 邮件发送封装，定时抄送附近多人
+Home-page: https://gitee.com/demon000/hongruan.git
+Author: xjt
+Author-email: 1165423664@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
