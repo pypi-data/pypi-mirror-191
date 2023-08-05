@@ -1,0 +1,6 @@
+README.md
+setup.py
+libskygrid.egg-info/PKG-INFO
+libskygrid.egg-info/SOURCES.txt
+libskygrid.egg-info/dependency_links.txt
+libskygrid.egg-info/top_level.txt
