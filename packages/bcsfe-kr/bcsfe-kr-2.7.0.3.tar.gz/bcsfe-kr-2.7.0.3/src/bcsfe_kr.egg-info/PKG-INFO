@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: bcsfe-kr
+Version: 2.7.0.3
+Summary: BCSFE_Python korean translated version
+Home-page: UNKNOWN
+Author: CintagramABP
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Provides-Extra: testing
+
+BCSFE_Python korean translated version
+
