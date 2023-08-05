@@ -1,0 +1,9 @@
+LICENSE
+README.md
+flask_cloudflared.py
+setup.py
+flask_cloudflared.egg-info/PKG-INFO
+flask_cloudflared.egg-info/SOURCES.txt
+flask_cloudflared.egg-info/dependency_links.txt
+flask_cloudflared.egg-info/requires.txt
+flask_cloudflared.egg-info/top_level.txt
