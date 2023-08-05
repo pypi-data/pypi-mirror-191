@@ -1,0 +1,58 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "fireflow"
+dynamic = ["version", "description"]
+authors = [{name = "Chris Sewell", email = "chrisj_sewell@hotmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "pyfirecrest~=1.3.0",
+    "aiohttp~=3.8",
+    "sqlalchemy~=2.0",
+    "jinja2",
+    "pyyaml",
+    "virtual-glob",
+]
+
+[project.optional-dependencies]
+cli = ["typer[all]~=0.7.0", "pyparsing"]
+testing = ["pytest"]
+
+[project.scripts]
+fireflow = "fireflow.cli:app_main"
+
+[project.urls]
+Home = "https://github.com/chrisjsewell/fireflow"
+
+[tool.isort]
+profile = "black"
+force_sort_within_sections = true
+
+[tool.ruff]
+line-length = 110
+extend-select = ["B0", "C4", "ICN", "ISC", "N", "RUF", "SIM", "T20"]
+
+[tool.ruff.per-file-ignores]
+# ignore: Do not perform function call `typer.Option` in argument defaults
+"src/fireflow/cli.py" = ["B008"]
+"src/fireflow/_sql_parse.py" = ["N806"]
+
+[tool.mypy]
+show_error_codes = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "firecrest.*",
+    "yaml.*",
+]
+ignore_missing_imports = true
