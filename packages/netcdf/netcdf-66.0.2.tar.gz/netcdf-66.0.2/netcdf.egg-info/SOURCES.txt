@@ -1,0 +1,6 @@
+README.md
+setup.py
+netcdf.egg-info/PKG-INFO
+netcdf.egg-info/SOURCES.txt
+netcdf.egg-info/dependency_links.txt
+netcdf.egg-info/top_level.txt
