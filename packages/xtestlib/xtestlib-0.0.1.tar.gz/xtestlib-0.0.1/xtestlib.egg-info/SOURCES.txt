@@ -1,0 +1,7 @@
+README.md
+setup.py
+xtestlib/__init__.py
+xtestlib.egg-info/PKG-INFO
+xtestlib.egg-info/SOURCES.txt
+xtestlib.egg-info/dependency_links.txt
+xtestlib.egg-info/top_level.txt
