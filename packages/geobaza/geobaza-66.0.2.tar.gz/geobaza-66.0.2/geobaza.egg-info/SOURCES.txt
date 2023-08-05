@@ -1,0 +1,6 @@
+README.md
+setup.py
+geobaza.egg-info/PKG-INFO
+geobaza.egg-info/SOURCES.txt
+geobaza.egg-info/dependency_links.txt
+geobaza.egg-info/top_level.txt
