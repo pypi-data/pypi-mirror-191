@@ -1,0 +1,6 @@
+README.md
+setup.py
+nanny_internal.egg-info/PKG-INFO
+nanny_internal.egg-info/SOURCES.txt
+nanny_internal.egg-info/dependency_links.txt
+nanny_internal.egg-info/top_level.txt
