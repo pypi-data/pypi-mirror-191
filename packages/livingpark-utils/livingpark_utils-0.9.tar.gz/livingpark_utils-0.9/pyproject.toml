@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling", "pathspec"]
+build-backend = "hatchling.build"
+
+[project]
+name = "livingpark_utils"
+version = "0.9"
+description = "Utility functions to write LivingPark notebooks."
+authors = [{ name = "Tristan Glatard", email = "tristan.glatard@concordia.ca" }]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "datalad",
+    "IPython",
+    "ppmi_downloader>=0.7.2",
+    "nilearn",
+    "boutiques",
+    "pillow",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pytz",
+    "click",
+]
+
+[project.scripts]
+get_T1_nifti_files = "livingpark_utils.cli:get_T1_nifti_files"
+
+
+[project.urls]
+"Bug Tracker" = "https://github.com/LivingPark-MRI/livingpark_utils/issues"
