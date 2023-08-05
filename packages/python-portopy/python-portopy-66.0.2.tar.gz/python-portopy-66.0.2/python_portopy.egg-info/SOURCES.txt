@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_portopy.egg-info/PKG-INFO
+python_portopy.egg-info/SOURCES.txt
+python_portopy.egg-info/dependency_links.txt
+python_portopy.egg-info/top_level.txt
