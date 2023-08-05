@@ -1,0 +1,111 @@
+{
+	"plant": {
+    	"name": "FHW Arcon South _Test_",
+    	"owner": "SOLID",
+    	"operator": "SOLID",
+		"description": "Arcon South sub-array of Fernheizwerk plant. Volume flow and temperatures measured separately for this array.",
+    	"plant_measurement_accuracy": "high",
+		"location_name": "Graz, Austria",
+		"latitude": {"magnitude": 47.047201, "units":"deg"},
+	  	"longitude": {"magnitude":15.436428, "units":"deg"},
+	  	"altitude": {"magnitude":344, "units":"m"},
+	  	"fluid_solar": {"fluid": "Pekasolar_FHW"},
+	  	"sensor_map": {
+		  	"te_amb": "te_amb",
+		  	"rh_amb": "rh_amb",
+		  	"ve_wind": "ve_wind",
+		  	"vf": "vf",
+		  	"te_in": "te_in",
+		  	"te_out": "te_out"
+	  	},
+	
+    	"raw_sensors": [
+			{
+        		"raw_name": "te_amb",
+        		"native_unit": "K"
+      		},
+      		{
+        		"raw_name": "rh_amb",
+       	 		"native_unit": "dimensionless"
+      		},
+	  		{
+				"raw_name": "ve_wind",
+				"native_unit": "m s**-1"
+	  		},
+			{
+				"raw_name": "is_shadowed",
+				"native_unit": "dimensionless"
+			},
+			{
+				"raw_name": "rd_bti",
+				"native_unit": "W m**-2",
+				"description": "Measured by locally installed solar tracker.",
+				"info": {
+					"tilt": {"magnitude":30, "units":"deg"},
+					"azim": {"magnitude":180, "units":"deg"}
+				}
+			},
+			{
+				"raw_name": "rd_dti",
+				"native_unit": "W m**-2",
+				"info": {
+					"tilt": {"magnitude":30, "units":"deg"},
+					"azim": {"magnitude":180, "units":"deg"}
+				}
+			},
+			{
+				"raw_name": "rd_gti",
+				"native_unit": "W m**-2",
+				"info": {
+					"tilt": {"magnitude":30, "units":"deg"},
+					"azim": {"magnitude":180, "units":"deg"}
+				}
+			},
+			{
+				"raw_name": "rd_dni",
+				"native_unit": "W m**-2"
+			},
+			{
+				"raw_name": "vf",
+				"native_unit": "m**3 s**-1",
+				"info": {
+					"position": {"magnitude":0, "units":""}
+				}
+			},
+			{
+				"raw_name": "te_out",
+				"native_unit": "K"
+			},
+			{
+				"raw_name": "te_in",
+				"native_unit": "K"
+			}
+		],
+
+		"arrays": [
+			{
+				"name": "Arcon South",
+				"area_gr": {"magnitude":515.66, "units":"m**2"},
+				"area_ap": {"magnitude":478.8, "units":"m**2"},
+				"collector_type": "Arcon 3510",
+				"azim": {"magnitude":180, "units":"deg"},
+				"tilt": {"magnitude":30, "units":"deg"},
+				"ground_tilt": {"magnitude":0, "units":"deg"},
+				"mounting_level": {"magnitude":0.435, "units":"m"},
+				"n_rows": {"magnitude":4, "units":""},
+				"row_spacing": {"magnitude":3.08, "units":"m"},
+				"fluidvol_total": {"magnitude":0.472, "units":"m**3"},
+				"sensor_map": {
+					"te_in": "te_in",
+					"te_out": "te_out",
+					"vf": "vf",
+					"is_shadowed": "is_shadowed",
+					"in_global": "rd_gti",
+					"in_beam": "rd_bti",
+					"in_diffuse": "rd_dti",
+					"in_dni": "rd_dni"
+				}
+			}
+		]
+	}
+}
