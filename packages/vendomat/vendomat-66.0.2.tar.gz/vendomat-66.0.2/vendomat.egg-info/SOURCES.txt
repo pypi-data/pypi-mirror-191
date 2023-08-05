@@ -1,0 +1,6 @@
+README.md
+setup.py
+vendomat.egg-info/PKG-INFO
+vendomat.egg-info/SOURCES.txt
+vendomat.egg-info/dependency_links.txt
+vendomat.egg-info/top_level.txt
