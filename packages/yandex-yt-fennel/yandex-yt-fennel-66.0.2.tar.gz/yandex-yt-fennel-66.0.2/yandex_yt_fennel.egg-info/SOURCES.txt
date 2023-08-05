@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_yt_fennel.egg-info/PKG-INFO
+yandex_yt_fennel.egg-info/SOURCES.txt
+yandex_yt_fennel.egg-info/dependency_links.txt
+yandex_yt_fennel.egg-info/top_level.txt
