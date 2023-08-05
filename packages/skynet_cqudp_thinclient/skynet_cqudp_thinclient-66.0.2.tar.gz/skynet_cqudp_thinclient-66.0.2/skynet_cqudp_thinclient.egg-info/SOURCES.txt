@@ -1,0 +1,6 @@
+README.md
+setup.py
+skynet_cqudp_thinclient.egg-info/PKG-INFO
+skynet_cqudp_thinclient.egg-info/SOURCES.txt
+skynet_cqudp_thinclient.egg-info/dependency_links.txt
+skynet_cqudp_thinclient.egg-info/top_level.txt
