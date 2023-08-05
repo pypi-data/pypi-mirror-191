@@ -1,0 +1,6 @@
+README.md
+setup.py
+dote.egg-info/PKG-INFO
+dote.egg-info/SOURCES.txt
+dote.egg-info/dependency_links.txt
+dote.egg-info/top_level.txt
