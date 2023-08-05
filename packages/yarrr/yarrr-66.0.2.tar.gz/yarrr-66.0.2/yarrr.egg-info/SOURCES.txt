@@ -1,0 +1,6 @@
+README.md
+setup.py
+yarrr.egg-info/PKG-INFO
+yarrr.egg-info/SOURCES.txt
+yarrr.egg-info/dependency_links.txt
+yarrr.egg-info/top_level.txt
