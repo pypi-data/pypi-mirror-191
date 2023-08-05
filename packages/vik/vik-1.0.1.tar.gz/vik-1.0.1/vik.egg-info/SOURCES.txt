@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+vik/.vimrc
+vik/__init__.py
+vik/vik.py
+vik.egg-info/PKG-INFO
+vik.egg-info/SOURCES.txt
+vik.egg-info/dependency_links.txt
+vik.egg-info/entry_points.txt
+vik.egg-info/requires.txt
+vik.egg-info/top_level.txt
