@@ -1,0 +1,6 @@
+README.md
+setup.py
+emission.client.egg-info/PKG-INFO
+emission.client.egg-info/SOURCES.txt
+emission.client.egg-info/dependency_links.txt
+emission.client.egg-info/top_level.txt
