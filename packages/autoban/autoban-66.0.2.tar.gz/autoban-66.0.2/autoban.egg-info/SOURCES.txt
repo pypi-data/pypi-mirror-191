@@ -1,0 +1,6 @@
+README.md
+setup.py
+autoban.egg-info/PKG-INFO
+autoban.egg-info/SOURCES.txt
+autoban.egg-info/dependency_links.txt
+autoban.egg-info/top_level.txt
