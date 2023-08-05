@@ -1,0 +1,6 @@
+README.md
+setup.py
+teamcity_sentry.egg-info/PKG-INFO
+teamcity_sentry.egg-info/SOURCES.txt
+teamcity_sentry.egg-info/dependency_links.txt
+teamcity_sentry.egg-info/top_level.txt
