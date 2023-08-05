@@ -1,0 +1,6 @@
+README.md
+setup.py
+ids.sources.formatter.egg-info/PKG-INFO
+ids.sources.formatter.egg-info/SOURCES.txt
+ids.sources.formatter.egg-info/dependency_links.txt
+ids.sources.formatter.egg-info/top_level.txt
