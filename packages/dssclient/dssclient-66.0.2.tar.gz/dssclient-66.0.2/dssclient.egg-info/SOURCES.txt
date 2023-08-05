@@ -1,0 +1,6 @@
+README.md
+setup.py
+dssclient.egg-info/PKG-INFO
+dssclient.egg-info/SOURCES.txt
+dssclient.egg-info/dependency_links.txt
+dssclient.egg-info/top_level.txt
