@@ -1,0 +1,6 @@
+README.md
+setup.py
+prometheus_couchbase_exporter_vertis.egg-info/PKG-INFO
+prometheus_couchbase_exporter_vertis.egg-info/SOURCES.txt
+prometheus_couchbase_exporter_vertis.egg-info/dependency_links.txt
+prometheus_couchbase_exporter_vertis.egg-info/top_level.txt
