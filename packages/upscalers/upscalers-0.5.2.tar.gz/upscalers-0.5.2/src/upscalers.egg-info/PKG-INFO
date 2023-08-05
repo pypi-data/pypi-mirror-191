@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: upscalers
+Version: 0.5.2
+Summary: AI upscaling of images
+Home-page: https://github.com/kmewhort/upscalers
+Author: Kent Mewhort
+Author-email: kent@openissues.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
