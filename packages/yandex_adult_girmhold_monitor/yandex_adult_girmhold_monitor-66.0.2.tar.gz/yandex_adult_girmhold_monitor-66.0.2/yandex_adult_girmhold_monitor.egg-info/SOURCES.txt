@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_adult_girmhold_monitor.egg-info/PKG-INFO
+yandex_adult_girmhold_monitor.egg-info/SOURCES.txt
+yandex_adult_girmhold_monitor.egg-info/dependency_links.txt
+yandex_adult_girmhold_monitor.egg-info/top_level.txt
