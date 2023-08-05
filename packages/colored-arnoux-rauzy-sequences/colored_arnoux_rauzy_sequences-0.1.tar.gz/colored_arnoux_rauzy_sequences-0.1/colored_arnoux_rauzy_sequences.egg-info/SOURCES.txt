@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+colored_arnoux_rauzy_sequences/ARsequence.py
+colored_arnoux_rauzy_sequences/__init__.py
+colored_arnoux_rauzy_sequences.egg-info/PKG-INFO
+colored_arnoux_rauzy_sequences.egg-info/SOURCES.txt
+colored_arnoux_rauzy_sequences.egg-info/dependency_links.txt
+colored_arnoux_rauzy_sequences.egg-info/requires.txt
+colored_arnoux_rauzy_sequences.egg-info/top_level.txt

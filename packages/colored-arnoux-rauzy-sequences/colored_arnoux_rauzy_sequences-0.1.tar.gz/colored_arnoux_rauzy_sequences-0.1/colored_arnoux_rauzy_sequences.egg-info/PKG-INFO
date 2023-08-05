@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: colored-arnoux-rauzy-sequences
+Version: 0.1
+Summary: Colored Arnoux-Rauzy sequences and their asymptotic critical exponent
+Home-page: https://gitub.u-bordeaux.fr/jlepsova/colored_arnoux_rauzy_sequences
+Author: Jana Lepsova
+Author-email: lepsova.jana@gmail.com
+License: GPLv2+
+Keywords: SageMath Arnoux-Rauzy Words Critical exponent
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+About this package
+==================
+
+``colored_arnoux_rauzy_sequences`` package 
+
+
+
