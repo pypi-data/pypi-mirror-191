@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_zlib_fork_safe.egg-info/PKG-INFO
+python_zlib_fork_safe.egg-info/SOURCES.txt
+python_zlib_fork_safe.egg-info/dependency_links.txt
+python_zlib_fork_safe.egg-info/top_level.txt
