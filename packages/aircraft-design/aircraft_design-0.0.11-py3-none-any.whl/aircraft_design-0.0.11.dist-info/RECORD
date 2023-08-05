@@ -1,0 +1,15 @@
+aircraft_design/__init__.py,sha256=Q0uaIQepIs6ZjbKGMD4FXa2aeecbA44BWWtSgbeA6gA,736
+aircraft_design/basic_airfoils/E423.dat,sha256=7hQgAW3NoLKlFYgldpz9gOg7SdRf1M7pJXx5dtLppd0,1517
+aircraft_design/basic_airfoils/S1223.dat,sha256=dQRJ5u6jDdW3mqu_-eQp_JO_JtQZTAIJXTtXOaZ_8d8,1707
+aircraft_design/basic_airfoils/SD7032-NEG.dat,sha256=UF-vn_4o32RK11Q-s5YOlMSObFSGl1kOpVZ4Omt8ZHo,2652
+aircraft_design/bin/.foo,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aircraft_design/classes/__init__.py,sha256=H7pJEzyb1bDOj5MT8H7xNUguHZLhtaek3pdhZ1KUzk0,251
+aircraft_design/classes/aircraft.py,sha256=GqiSpkk2H4YQJqlrDSrqauvMYUaNqFz1b-ZfCGOmzHg,2802
+aircraft_design/classes/airfoil.py,sha256=A0R3xT-SGJvMrL_qooIiPLoJMXB_UOTCW__YTlNe4-4,344
+aircraft_design/classes/errors.py,sha256=ySnqPRjS-zecHYJQS5tAC6uPPRDXhggKSwC4A0P0o2I,168
+aircraft_design/classes/runner.py,sha256=BSztQ8uKjdW5CcS778bmIiDF-ajUoUQs2BT0agQGQIA,2875
+aircraft_design/classes/wing.py,sha256=jRJc-969jfTZPoSG3aEswgsp2TygHZEM9wYdXInS550,8048
+aircraft_design-0.0.11.dist-info/LICENSE,sha256=C7AOZRdDVLTVn3hUrhTlgBBnqh0FSuIkG5CBoetYAjw,1075
+aircraft_design-0.0.11.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aircraft_design-0.0.11.dist-info/METADATA,sha256=9MB9I9wA8z1n74K8XNYMj8zpdqEHCK5Xo_HsRiOOoc8,8670
+aircraft_design-0.0.11.dist-info/RECORD,,
