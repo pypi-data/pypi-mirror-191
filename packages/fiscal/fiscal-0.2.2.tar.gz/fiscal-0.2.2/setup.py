@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['fiscal']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['pytest>=7.2.0,<8.0.0']
+
+setup_kwargs = {
+    'name': 'fiscal',
+    'version': '0.2.2',
+    'description': '',
+    'long_description': '# Fiscal\n## A simple, systematic tax liability calculator\n\nFiscal is a simple, systematic tax calculator with soft-coded rate bands.  Specifically, Fiscal aims to side-step the commonly-seen behaviour of using \'if\' statements in tax calculators, and relying on hard-coded tax bands. \n\n### Fiscal, broken down\n\nThere are two key elements to Fiscal.\n\n1) Bands - a stream of pairwise tuples (a threshold, a percentage) with an \'allocator\'. The allocator dictates the manner in which taxable amounts are allocated between the threshold element of each band - the two predominant forms of allocator are provided:\n    - \'step\', which reflects the most common allocation; and \n    - \'slab\', which represents taxes for which the sole applicable rate is determined by the taxable amount (as in old stamp duty and early SDLT).\n\n2) Liabilities - a calculation of liability stored in a \'breakdown\' - a three-element tuple made up of: \n    - the amount allocated to the band;\n    - the percentage referable to that band; and\n    - the product of the amount and the percentage.\n\n## Allocators - examples\nTo draw an example from Stamp Duty Land Tax (SDLT), a land transfer tax in England (and previously throughout the UK).\n\n### SDLT - stepped calculation\n\nThe applicable bands for a commercial transaction were, after 17 March 2017, as follows:\n\n| Threshold | Percentage |\n|-----------|------------|\n| £150,000  | 0%         |\n| £100,000  | 2%         |\n| Surplus   | 5%         |\n\nThis can be represented by a band as follows:\n\n``` python-console\nstepped_bands = SteppedBands(((150_000, 0),(100_000, 2),("Infinity", 5)))\n```\n\n\nThe bands are allocated on the step basis, so £1m would be allocated as follows:\n\n| Threshold | Percentage | Liability |\n|-----------|------------|-----------|\n| £150,000  | 0%         | £0        |\n| £100,000  | 2%         | £2,000    |\n| £750,000  | 5%         | £37,500   |\n\n``` python-console\nallocation = stepped_bands.allocate(1_000_000)\nassert allocation == (\n    (Decimal("150000"), Decimal("0")),\n    (Decimal("100000"), Decimal("2")),\n    (Decimal("750000"), Decimal("5")),\n) # True\n\n```\n\n\nThe allocation is intended to be called within an instance of the Liability object.\n\n\n### SDLT - slabbed calculation\n\nPrior to 17 March 2017, the applicable SDLT rates for a commercial transaction were as follows:\n\n| Threshold | Percentage |\n|-----------|------------|\n| £150,000  | 0%         |\n| £100,000  | 1%         |\n| £250,000  | 3%         |\n| Surplus   | 4%         |\n\nThe bands were allocated on the \'slab\' basis. This means that the taxable amount is compared with the __cumulative__ thresholds, which are as follows:\n\n| Cumulative Threshold | Percentage |\n|----------------------|------------|\n| £150,000             | 0%         |\n| £250,000             | 1%         |\n| £500,000             | 3%         |\n| Surplus              | 4%         |\n\nThe first cumulative threshold to equal or exceed the taxable amount determines the applicable percentage.  So where the taxable amount was £200,000, the applicable percentage was **1%**.\n\n| Cumulative Threshold | Amount   | Percentage |\n|----------------------|----------|------------|\n| £150,000             |          | 0%         |\n| £250,000             | £200,000 | 1%         |\n| £500,000             |          | 3%         |\n| Surplus              |          | 4%         |\n\nWhere the taxable amount was £300,000, the applicable percentage was **3%**.\n\n| Cumulative Threshold | Amount   | Percentage |\n|----------------------|----------|------------|\n| £150,000             |          | 0%         |\n| £250,000             |          | 1%         |\n| £500,000             | £300,000 | 3%         |\n| Surplus              |          | 4%         |\n\nThresholds were inclusive, so where the taxable amount was £500,000, the applicable percentage was still **3%**.\n\n| Cumulative Threshold | Amount   | Percentage |\n|----------------------|----------|------------|\n| £150,000             |          | 0%         |\n| £250,000             |          | 1%         |\n| £500,000             | £500,000 | 3%         |\n| Surplus              |          | 4%         |\n\nBut where the taxable amount was £500,001, the applicable percentage was **4%**.\n\n| Cumulative Threshold | Amount   | Percentage |\n|----------------------|----------|------------|\n| £150,000             |          | 0%         |\n| £250,000             |          | 1%         |\n| £500,000             |          | 3%         |\n| Surplus              | £500,001 | 4%         |\n\n## Liabilities - examples\n\nLiabilities represent the calculation the follows the allocation of a taxable amount into the correct bands. \n\nThose liabilities are then aggregated into a total liability.\nSo by way of example, if calculating the current (9 February 2022) SDLT liability (non-residential property) for a £1m sum, the steps would be as follows.\n\n``` python-console\nbands = SteppedBands((150_000, 0),(100_000, 2),("Infinity", 5))\nliab = Liability(bands=bands, amount=1_000_000)\n```\nThe breakdown of liability would look as below:\n\n``` python-console\nassert liab.breakdown == (\n        (Decimal("150000"), Decimal("0"), Decimal("0")),\n        (Decimal("100000"), Decimal("2"), Decimal("2000")),\n        (Decimal("750000"), Decimal("5"), Decimal("37500")),\n    ) # True\nassert liab.total == Decimal("39500") # True\n```\n',
+    'author': 'Chris Nyland',
+    'author_email': 'chris.nyland@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'None',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.11,<4.0',
+}
+
+
+setup(**setup_kwargs)
