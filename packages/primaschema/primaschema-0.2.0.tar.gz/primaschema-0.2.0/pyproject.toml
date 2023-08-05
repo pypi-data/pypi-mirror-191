@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools >= 64",
+    "wheel >= 0.37.1",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primaschema"
+description = "A toolkit for primer scheme defintions"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["genomics"]
+license = {text = "MIT License"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3.10",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+]
+dependencies = [
+    "biopython == 1.80",
+    "defopt == 6.4.0",
+    "pandas >= 1.5.3",
+    "pre-commit",
+    "pytest",
+    "jsonschema",
+    "pyyaml",
+]
+dynamic = ["version"]
+[project.scripts]
+primaschema = "primaschema.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "primaschema.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/primaschema/__init__.py
+src/primaschema/cli.py
+src/primaschema/lib.py
+src/primaschema.egg-info/PKG-INFO
+src/primaschema.egg-info/SOURCES.txt
+src/primaschema.egg-info/dependency_links.txt
+src/primaschema.egg-info/entry_points.txt
+src/primaschema.egg-info/requires.txt
+src/primaschema.egg-info/top_level.txt
+test/test_all.py
