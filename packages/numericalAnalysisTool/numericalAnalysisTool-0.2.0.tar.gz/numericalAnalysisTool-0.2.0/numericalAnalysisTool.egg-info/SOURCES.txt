@@ -1,0 +1,9 @@
+README.md
+setup.py
+numericalAnalysis/__init__.py
+numericalAnalysis/analysor.py
+numericalAnalysisTool.egg-info/PKG-INFO
+numericalAnalysisTool.egg-info/SOURCES.txt
+numericalAnalysisTool.egg-info/dependency_links.txt
+numericalAnalysisTool.egg-info/requires.txt
+numericalAnalysisTool.egg-info/top_level.txt
