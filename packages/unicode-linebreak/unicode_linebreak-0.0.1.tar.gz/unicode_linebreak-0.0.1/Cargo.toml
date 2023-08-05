@@ -1,0 +1,13 @@
+[package]
+name = "unicode-linebreak"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "unicode_linebreak"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18.0", features = ["extension-module"] }
+unicode-linebreak = "0.1.4"
