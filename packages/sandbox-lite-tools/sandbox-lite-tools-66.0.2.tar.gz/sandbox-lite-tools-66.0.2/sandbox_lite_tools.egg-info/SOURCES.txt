@@ -1,0 +1,6 @@
+README.md
+setup.py
+sandbox_lite_tools.egg-info/PKG-INFO
+sandbox_lite_tools.egg-info/SOURCES.txt
+sandbox_lite_tools.egg-info/dependency_links.txt
+sandbox_lite_tools.egg-info/top_level.txt
