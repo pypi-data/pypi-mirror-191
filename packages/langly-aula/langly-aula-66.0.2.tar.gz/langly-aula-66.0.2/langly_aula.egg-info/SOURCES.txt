@@ -1,0 +1,6 @@
+README.md
+setup.py
+langly_aula.egg-info/PKG-INFO
+langly_aula.egg-info/SOURCES.txt
+langly_aula.egg-info/dependency_links.txt
+langly_aula.egg-info/top_level.txt
