@@ -1,0 +1,5 @@
+numpy
+jenkspy
+matplotlib
+gdal
+gdal2numpy
