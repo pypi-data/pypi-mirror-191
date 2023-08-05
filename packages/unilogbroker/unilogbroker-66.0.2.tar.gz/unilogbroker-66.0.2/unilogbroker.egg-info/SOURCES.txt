@@ -1,0 +1,6 @@
+README.md
+setup.py
+unilogbroker.egg-info/PKG-INFO
+unilogbroker.egg-info/SOURCES.txt
+unilogbroker.egg-info/dependency_links.txt
+unilogbroker.egg-info/top_level.txt
