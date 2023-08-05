@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: combidata
+Version: 0.1.0
+Summary: Package for random data generation, combination and data prepare for tests
+Home-page: https://github.com/Warrfie/combidata
+Author: Kuklikov Maxim (Warrfie)
+Author-email: "MaximKuklikov(Warrfie)" <warrfie@gmail.com>
+Project-URL: Homepage, https://github.com/Warrfie/combidata
+Keywords: QA,SET,random data generation,testing API,testing,autotesting
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/combidata.svg)](https://pypi.python.org/pypi/combidata)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/combidata.svg)](https://pypi.python.org/pypi/combidata)
+[![PyPi status](https://img.shields.io/pypi/status/combidata.svg?style=flat-square)](https://pypi.python.org/pypi/combidata)
+
+# <p align="center">Combidata
+
+<p align="center">A simple and light package for QA development which can generate random data from given cases.</p>
+<p align="center">Technical documentation is not prepared now, sorry.</p>
+
+
