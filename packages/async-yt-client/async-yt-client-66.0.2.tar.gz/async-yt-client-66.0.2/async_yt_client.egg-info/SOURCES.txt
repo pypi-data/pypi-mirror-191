@@ -1,0 +1,6 @@
+README.md
+setup.py
+async_yt_client.egg-info/PKG-INFO
+async_yt_client.egg-info/SOURCES.txt
+async_yt_client.egg-info/dependency_links.txt
+async_yt_client.egg-info/top_level.txt
