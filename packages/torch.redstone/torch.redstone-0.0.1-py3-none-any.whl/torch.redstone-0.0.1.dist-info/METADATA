@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: torch.redstone
+Version: 0.0.1
+Summary: Redstone torch, common boilerplates for PyTorch.
+Home-page: https://github.com/eliphatfs/torch.redstone
+Author: flandre.info
+Author-email: flandre@scarletx.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: typing-extensions
+
+# `torch.redstone`
+It exists to reduce boilerplates for training and testing models in PyTorch.
+
+![Redstone torch](_readme/redstone-torch.jpg)
+
+Disclaimer: The project is neither affiliated with nor endorsed by PyTorch.
+
+## Installation
+Clone this repository and run:
+```sh
+pip install .
+```
+(pip package is on the way)
+
+
