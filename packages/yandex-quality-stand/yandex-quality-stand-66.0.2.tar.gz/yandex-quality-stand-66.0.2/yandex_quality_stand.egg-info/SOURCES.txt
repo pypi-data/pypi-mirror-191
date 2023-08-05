@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_quality_stand.egg-info/PKG-INFO
+yandex_quality_stand.egg-info/SOURCES.txt
+yandex_quality_stand.egg-info/dependency_links.txt
+yandex_quality_stand.egg-info/top_level.txt
