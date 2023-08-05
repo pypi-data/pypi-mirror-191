@@ -1,0 +1,8 @@
+setup.py
+Wrapper_Weather_Module_V3/__init__.py
+Wrapper_Weather_Module_V3/functions.py
+Wrapper_Weather_Module_V3/main.py
+Wrapper_Weather_Module_V3.egg-info/PKG-INFO
+Wrapper_Weather_Module_V3.egg-info/SOURCES.txt
+Wrapper_Weather_Module_V3.egg-info/dependency_links.txt
+Wrapper_Weather_Module_V3.egg-info/top_level.txt
