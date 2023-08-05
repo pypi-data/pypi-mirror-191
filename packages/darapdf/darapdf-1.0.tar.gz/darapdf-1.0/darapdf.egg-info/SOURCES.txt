@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+darapdf/pdf2image.py
+darapdf/pdf2text.py
+darapdf.egg-info/PKG-INFO
+darapdf.egg-info/SOURCES.txt
+darapdf.egg-info/dependency_links.txt
+darapdf.egg-info/top_level.txt
