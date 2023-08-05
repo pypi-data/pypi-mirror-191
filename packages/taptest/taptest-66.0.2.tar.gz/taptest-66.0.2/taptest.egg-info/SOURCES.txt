@@ -1,0 +1,6 @@
+README.md
+setup.py
+taptest.egg-info/PKG-INFO
+taptest.egg-info/SOURCES.txt
+taptest.egg-info/dependency_links.txt
+taptest.egg-info/top_level.txt
