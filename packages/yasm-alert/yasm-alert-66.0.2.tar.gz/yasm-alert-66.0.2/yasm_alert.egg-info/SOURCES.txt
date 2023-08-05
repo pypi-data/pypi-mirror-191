@@ -1,0 +1,6 @@
+README.md
+setup.py
+yasm_alert.egg-info/PKG-INFO
+yasm_alert.egg-info/SOURCES.txt
+yasm_alert.egg-info/dependency_links.txt
+yasm_alert.egg-info/top_level.txt
