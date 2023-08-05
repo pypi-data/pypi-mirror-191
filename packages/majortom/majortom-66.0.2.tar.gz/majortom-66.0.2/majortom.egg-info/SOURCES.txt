@@ -1,0 +1,6 @@
+README.md
+setup.py
+majortom.egg-info/PKG-INFO
+majortom.egg-info/SOURCES.txt
+majortom.egg-info/dependency_links.txt
+majortom.egg-info/top_level.txt
