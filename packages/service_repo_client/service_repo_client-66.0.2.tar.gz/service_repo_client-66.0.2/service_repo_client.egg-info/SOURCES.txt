@@ -1,0 +1,6 @@
+README.md
+setup.py
+service_repo_client.egg-info/PKG-INFO
+service_repo_client.egg-info/SOURCES.txt
+service_repo_client.egg-info/dependency_links.txt
+service_repo_client.egg-info/top_level.txt
