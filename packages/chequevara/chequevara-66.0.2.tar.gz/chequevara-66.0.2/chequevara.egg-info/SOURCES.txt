@@ -1,0 +1,6 @@
+README.md
+setup.py
+chequevara.egg-info/PKG-INFO
+chequevara.egg-info/SOURCES.txt
+chequevara.egg-info/dependency_links.txt
+chequevara.egg-info/top_level.txt
