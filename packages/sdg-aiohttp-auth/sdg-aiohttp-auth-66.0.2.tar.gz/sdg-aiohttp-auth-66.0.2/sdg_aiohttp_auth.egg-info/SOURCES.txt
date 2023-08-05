@@ -1,0 +1,6 @@
+README.md
+setup.py
+sdg_aiohttp_auth.egg-info/PKG-INFO
+sdg_aiohttp_auth.egg-info/SOURCES.txt
+sdg_aiohttp_auth.egg-info/dependency_links.txt
+sdg_aiohttp_auth.egg-info/top_level.txt
