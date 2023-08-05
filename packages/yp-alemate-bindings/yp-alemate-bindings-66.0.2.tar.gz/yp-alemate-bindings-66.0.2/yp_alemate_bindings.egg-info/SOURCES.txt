@@ -1,0 +1,6 @@
+README.md
+setup.py
+yp_alemate_bindings.egg-info/PKG-INFO
+yp_alemate_bindings.egg-info/SOURCES.txt
+yp_alemate_bindings.egg-info/dependency_links.txt
+yp_alemate_bindings.egg-info/top_level.txt
