@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_xscript.egg-info/PKG-INFO
+django_xscript.egg-info/SOURCES.txt
+django_xscript.egg-info/dependency_links.txt
+django_xscript.egg-info/top_level.txt
