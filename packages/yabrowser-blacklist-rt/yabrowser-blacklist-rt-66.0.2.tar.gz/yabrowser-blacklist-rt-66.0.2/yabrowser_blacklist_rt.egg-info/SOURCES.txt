@@ -1,0 +1,6 @@
+README.md
+setup.py
+yabrowser_blacklist_rt.egg-info/PKG-INFO
+yabrowser_blacklist_rt.egg-info/SOURCES.txt
+yabrowser_blacklist_rt.egg-info/dependency_links.txt
+yabrowser_blacklist_rt.egg-info/top_level.txt
