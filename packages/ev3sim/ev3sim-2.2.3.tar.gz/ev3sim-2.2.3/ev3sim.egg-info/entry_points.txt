@@ -1,0 +1,3 @@
+[gui_scripts]
+ev3sim = ev3sim.entry:main
+
