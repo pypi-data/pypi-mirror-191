@@ -1,0 +1,6 @@
+README.md
+setup.py
+mdswrapper.egg-info/PKG-INFO
+mdswrapper.egg-info/SOURCES.txt
+mdswrapper.egg-info/dependency_links.txt
+mdswrapper.egg-info/top_level.txt
