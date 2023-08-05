@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jumonc_nekrs/jumonc_nekrs_plugin.py
+jumonc_nekrs/nekrs_status_schema.json
+jumonc_nekrs.egg-info/PKG-INFO
+jumonc_nekrs.egg-info/SOURCES.txt
+jumonc_nekrs.egg-info/dependency_links.txt
+jumonc_nekrs.egg-info/entry_points.txt
+jumonc_nekrs.egg-info/requires.txt
+jumonc_nekrs.egg-info/top_level.txt

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "step": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "The number of steps already completed"
+    },
+    "time": {
+      "type": "number",
+      "description": "The already simulated time span"
+    },
+    "dt": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "The last time increase with the last step"
+    },
+    "CFL": {
+      "type": "number",
+      "minimum": 0.0,
+      "description": "Convergence condition"
+    }
+  },
+  "required": [
+    "step",
+    "time",
+    "dt",
+    "CFL"
+  ]
+}
+
+ 

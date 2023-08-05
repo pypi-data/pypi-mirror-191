@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+
+recursive-include jumonc_nekrs/* *.py
+recursive-include jumonc_nekrs/* *.json
+
+
+recursive-exclude * __pycache__
+
+

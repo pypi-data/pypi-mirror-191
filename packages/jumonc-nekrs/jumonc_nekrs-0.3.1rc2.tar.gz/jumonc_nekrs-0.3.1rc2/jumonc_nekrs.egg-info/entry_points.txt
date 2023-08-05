@@ -1,0 +1,3 @@
+[jumonc]
+nekrs = jumonc_nekrs.jumonc_nekrs_plugin
+
