@@ -1,0 +1,15 @@
+combidata/__init__.py,sha256=Lu6xb5_G6GX3mGWIaNaU0RB9_uLjzQWxAwCGNSaYLEQ,395
+combidata/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+combidata/classes/case.py,sha256=4uOjNF5ohXwSYKGC-h17q9wyZM9hqNiFT10aVJ-9hSc,1034
+combidata/classes/combination.py,sha256=yC-BzcE2sk8JQ2HZDa9BbvN4ljvS9CTCJdWsnBP0flw,1578
+combidata/classes/data_generator.py,sha256=2ZqlXCLsHwsPBL60oScjCdelYDy32pdgIsdTvtWLEuU,3848
+combidata/classes/process.py,sha256=KzkehN4ZdSxDl3e35ti_reyEV14ncDe1GbyurSMMkxU,228
+combidata/processes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+combidata/processes/combine.py,sha256=CkLEobaylp2qyHubbdtNAjXkKA0LxSXgOVtMzi5TfUY,2907
+combidata/processes/form.py,sha256=iSpRaPrNZkZp1gBxVDL8Xl0TGQ5m1kZn-CcIp8BW2oY,655
+combidata/processes/genetate.py,sha256=jiuZIiUyrqrNpUXL9AaJ7V_is5_sJEKBcyH6l_VBzBo,1601
+combidata-0.1.0.dist-info/LICENSE,sha256=w3Nm41c8vbN8Fg78ebitPSQL2Exb-fr25dl2jG3qPI8,1083
+combidata-0.1.0.dist-info/METADATA,sha256=KQY4zrZ_Hcsr788iipUXVMYd_DJ-tFA_ixrZWdVolD4,1376
+combidata-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+combidata-0.1.0.dist-info/top_level.txt,sha256=P2E5C-kaaO0jaX8Cx3DgYdITgLOgTiKnw7__yetef8w,10
+combidata-0.1.0.dist-info/RECORD,,
