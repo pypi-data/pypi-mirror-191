@@ -1,0 +1,6 @@
+README.md
+setup.py
+backports.typing.egg-info/PKG-INFO
+backports.typing.egg-info/SOURCES.txt
+backports.typing.egg-info/dependency_links.txt
+backports.typing.egg-info/top_level.txt
