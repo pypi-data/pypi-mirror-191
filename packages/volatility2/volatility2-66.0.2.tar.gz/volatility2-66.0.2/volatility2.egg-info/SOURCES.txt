@@ -1,0 +1,6 @@
+README.md
+setup.py
+volatility2.egg-info/PKG-INFO
+volatility2.egg-info/SOURCES.txt
+volatility2.egg-info/dependency_links.txt
+volatility2.egg-info/top_level.txt
