@@ -1,0 +1,6 @@
+README.md
+setup.py
+pygeoplot.egg-info/PKG-INFO
+pygeoplot.egg-info/SOURCES.txt
+pygeoplot.egg-info/dependency_links.txt
+pygeoplot.egg-info/top_level.txt
