@@ -1,0 +1,13 @@
+katcpcli/CommandDispatcher.py,sha256=6iHdOfpSrWKUcmNh4ikLan237YY9F41PMl8TFf-IW5s,4293
+katcpcli/StreamClient.py,sha256=sK9CPrSCjP3KWStXG9uSuMhrTk6K5ndNMO3MRHQwM5w,5888
+katcpcli/UI.py,sha256=GHZFVDkLIibiPDwH3s9Mmc-bH7NTk1_zahX7qitXHPc,7495
+katcpcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+katcpcli/app.py,sha256=664hfSuegwnZAH6pCdBj3a30resQXK7Wi9wr-sREvCo,5270
+katcpcli/config.py,sha256=g1Tgp6JHBuYL8M08dw4jdSGU4Hi634q3eQenUx04Xt8,557
+katcpcli/main.py,sha256=kCbiCJLy_5mB2oE102onF27FPjamR6fRkPvg1elFN0o,2877
+katcpcli-0.8.1.dist-info/LICENSE,sha256=CJJ4PY5kNaaFHJTAUqRcY6C_Ibsb3k8rPvCKqH9nJS4,1493
+katcpcli-0.8.1.dist-info/METADATA,sha256=V6SBV5uzslt00Qtt0mhP0XYq2eI9S-7ZOLgreSTeJNM,2508
+katcpcli-0.8.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+katcpcli-0.8.1.dist-info/entry_points.txt,sha256=8gW1bawk1IGWvw9MzdbSN-DVBsDLwYk3r8u_dAxgfgQ,48
+katcpcli-0.8.1.dist-info/top_level.txt,sha256=vP19sXaVl78pH59AmEiQybyJz0bl9uoD64xNKxhSHmM,9
+katcpcli-0.8.1.dist-info/RECORD,,
