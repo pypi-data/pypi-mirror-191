@@ -1,0 +1,54 @@
+terraform {
+  required_version = ">= 1.1.2"
+  backend "s3" {
+    bucket  = "%(state_backend_s3_bucket)s"
+    key     = "%(state_backend_s3_key_prefix)s/%(cluster_name)s/terraform.tfstate"
+    region  = "%(state_backend_s3_region)s"
+    encrypt = true
+    acl     = "bucket-owner-full-control"
+  }
+}
+
+provider "aws" {
+  region  = "%(terraform_region)s"
+}
+
+variable "template_version" {
+  default = "%(template_version)s"
+}
+
+variable "cluster_name" {
+  default = "%(cluster_name)s"
+}
+
+variable "instance_type" {
+  default = "%(instance_type)s"
+}
+
+variable "ami" {
+  default = "%(ami)s"
+}
+
+variable "cors_hosts" {
+  default = %(s3_cors_hosts)s
+}
+
+variable "cert_name" {
+  default = "%(cert_name)s"
+}
+
+variable "public_key_file" {
+  default = "%(public_key_file)s"
+}
+
+variable "autoscale" {
+  default = %(cluster_autoscaling)s
+}
+
+variable "az_count" {
+  default = %(availability_zones)s
+}
+
+variable "vpc" {
+  default = %(vpc)s
+}

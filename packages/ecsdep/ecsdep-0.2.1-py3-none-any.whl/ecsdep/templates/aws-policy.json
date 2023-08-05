@@ -1,0 +1,85 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "acm:*",
+                "application-autoscaling:*",
+                "autoscaling:*",
+                "cloudformation:*",
+                "cognito-identity:*",
+                "ec2:*",
+                "ecs:*",
+                "elasticloadbalancing:*",
+                "iam:*",
+                "kms:DescribeKey",
+                "kms:ListAliases",
+                "kms:ListKeys",
+                "logs:*",
+                "route53:*",
+                "s3:*",
+                "secretsmanager:*",
+                "servicediscovery:*",
+                "tag:GetResources"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Action": "iam:PassRole",
+            "Effect": "Allow",
+            "Resource": [
+                "*"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "iam:PassedToService": "ecs-tasks.amazonaws.com"
+                }
+            }
+        },
+        {
+            "Action": "iam:PassRole",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:iam::*:role/ecsInstanceRole*"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "iam:PassedToService": [
+                        "ec2.amazonaws.com",
+                        "ec2.amazonaws.com.cn"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "iam:PassRole",
+            "Effect": "Allow",
+            "Resource": [
+                "arn:aws:iam::*:role/ecsAutoscaleRole*"
+            ],
+            "Condition": {
+                "StringLike": {
+                    "iam:PassedToService": [
+                        "application-autoscaling.amazonaws.com",
+                        "application-autoscaling.amazonaws.com.cn"
+                    ]
+                }
+            }
+        }
+    ]
+}
