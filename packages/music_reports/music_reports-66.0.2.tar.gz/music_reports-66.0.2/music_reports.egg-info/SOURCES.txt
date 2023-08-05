@@ -1,0 +1,6 @@
+README.md
+setup.py
+music_reports.egg-info/PKG-INFO
+music_reports.egg-info/SOURCES.txt
+music_reports.egg-info/dependency_links.txt
+music_reports.egg-info/top_level.txt
