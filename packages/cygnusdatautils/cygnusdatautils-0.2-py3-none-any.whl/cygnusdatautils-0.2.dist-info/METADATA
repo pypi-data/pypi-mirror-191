@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cygnusdatautils
+Version: 0.2
+Summary: Data utils for cygnus
+Home-page: https://github.com/CygnusAIInternal/cygnusdatautils
+Download-URL: https://github.com/CygnusAIInternal/cygnusdatautils/archive/refs/tags/v_02.tar.gz
+Author: Mustafa Qazi
+Author-email: mus.qazi999@gmail.com
+License: MIT
+Keywords: cygnus data utils
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: psycopg2-binary
+
