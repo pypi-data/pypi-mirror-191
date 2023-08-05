@@ -1,0 +1,10 @@
+business_validator-0.1.0.dist-info/METADATA,sha256=oCMYLaK2uDdiaZvAM4HlB4Mt5mpE2M7JqQ_C8BJMgUE,319
+business_validator-0.1.0.dist-info/WHEEL,sha256=uBNpmEGnjtPzf32zT8AFRUhaXgHBQo9CU461wd4QtDU,90
+business_validator-0.1.0.dist-info/licenses/LICENSE,sha256=FxtjQV26vvObELD-YVeIXcWG2VxErEz2iVlTnDpybFg,1074
+business_validator/__init__.py,sha256=uENw7CD6yw0MGiE2oU2vYj6epJjI__F9HFqcNBu5YOA,181
+business_validator/types.py,sha256=fRQlEECvKujR_N1AGcl-MAIoZ4ajam1-LVplxw1swFA,1026
+business_validator/validator.py,sha256=re4Av0J_t6f9_3rmbuezgwQ_PnFHNRz77ze6Gh7Vje8,1525
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/multiple_error.py,sha256=0qUF_zg_Sij73Ef0x_vwZ_TTDNMCWhOduUfbfeOBIsE,2148
+examples/single_error.py,sha256=y3mEeoJd90hYDuJ7dYYZGq5Kc9MAXPi14T1JbaYg1H0,1684
+business_validator-0.1.0.dist-info/RECORD,,
