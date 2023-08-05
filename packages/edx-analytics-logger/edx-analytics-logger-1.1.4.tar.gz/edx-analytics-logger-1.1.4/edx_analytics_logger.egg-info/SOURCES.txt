@@ -1,0 +1,8 @@
+README.rst
+setup.py
+edx_analytics_logger/__init__.py
+edx_analytics_logger/api.py
+edx_analytics_logger.egg-info/PKG-INFO
+edx_analytics_logger.egg-info/SOURCES.txt
+edx_analytics_logger.egg-info/dependency_links.txt
+edx_analytics_logger.egg-info/top_level.txt
