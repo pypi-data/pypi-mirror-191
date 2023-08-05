@@ -1,0 +1,6 @@
+README.md
+setup.py
+thedoor.egg-info/PKG-INFO
+thedoor.egg-info/SOURCES.txt
+thedoor.egg-info/dependency_links.txt
+thedoor.egg-info/top_level.txt
