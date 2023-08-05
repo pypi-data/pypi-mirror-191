@@ -1,0 +1,11 @@
+scipy
+sparrow-datums
+
+[dev]
+black
+isort
+jupyter
+pydocstyle
+pylint
+pytest
+pytest-cov
