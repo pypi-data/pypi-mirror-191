@@ -1,0 +1,6 @@
+README.md
+setup.py
+sphinx_doccenter.egg-info/PKG-INFO
+sphinx_doccenter.egg-info/SOURCES.txt
+sphinx_doccenter.egg-info/dependency_links.txt
+sphinx_doccenter.egg-info/top_level.txt
