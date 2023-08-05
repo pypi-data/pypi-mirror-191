@@ -1,0 +1,6 @@
+README.md
+setup.py
+mpegdash_generator.egg-info/PKG-INFO
+mpegdash_generator.egg-info/SOURCES.txt
+mpegdash_generator.egg-info/dependency_links.txt
+mpegdash_generator.egg-info/top_level.txt
