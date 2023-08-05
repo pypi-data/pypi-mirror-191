@@ -1,0 +1,6 @@
+README.md
+setup.py
+yacern_libtoken.egg-info/PKG-INFO
+yacern_libtoken.egg-info/SOURCES.txt
+yacern_libtoken.egg-info/dependency_links.txt
+yacern_libtoken.egg-info/top_level.txt
