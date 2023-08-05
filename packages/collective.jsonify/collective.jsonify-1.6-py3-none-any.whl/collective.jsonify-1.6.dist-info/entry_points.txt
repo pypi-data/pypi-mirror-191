@@ -1,0 +1,2 @@
+[collective.runhook]
+jsonify = collective.jsonify.hook:jsonify
