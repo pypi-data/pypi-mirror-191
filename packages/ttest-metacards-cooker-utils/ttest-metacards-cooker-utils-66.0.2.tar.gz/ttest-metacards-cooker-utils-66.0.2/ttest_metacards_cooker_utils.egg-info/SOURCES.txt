@@ -1,0 +1,6 @@
+README.md
+setup.py
+ttest_metacards_cooker_utils.egg-info/PKG-INFO
+ttest_metacards_cooker_utils.egg-info/SOURCES.txt
+ttest_metacards_cooker_utils.egg-info/dependency_links.txt
+ttest_metacards_cooker_utils.egg-info/top_level.txt
