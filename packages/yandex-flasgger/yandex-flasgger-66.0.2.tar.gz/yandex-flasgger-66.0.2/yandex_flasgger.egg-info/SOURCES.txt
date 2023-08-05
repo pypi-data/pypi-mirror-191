@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_flasgger.egg-info/PKG-INFO
+yandex_flasgger.egg-info/SOURCES.txt
+yandex_flasgger.egg-info/dependency_links.txt
+yandex_flasgger.egg-info/top_level.txt
