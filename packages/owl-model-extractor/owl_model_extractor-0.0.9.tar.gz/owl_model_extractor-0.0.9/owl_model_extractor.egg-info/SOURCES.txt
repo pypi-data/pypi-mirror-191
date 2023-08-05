@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+owl_model_extractor/__init__.py
+owl_model_extractor/owl_model.py
+owl_model_extractor.egg-info/PKG-INFO
+owl_model_extractor.egg-info/SOURCES.txt
+owl_model_extractor.egg-info/dependency_links.txt
+owl_model_extractor.egg-info/requires.txt
+owl_model_extractor.egg-info/top_level.txt
