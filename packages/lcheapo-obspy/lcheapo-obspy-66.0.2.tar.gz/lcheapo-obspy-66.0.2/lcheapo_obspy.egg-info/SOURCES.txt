@@ -1,0 +1,6 @@
+README.md
+setup.py
+lcheapo_obspy.egg-info/PKG-INFO
+lcheapo_obspy.egg-info/SOURCES.txt
+lcheapo_obspy.egg-info/dependency_links.txt
+lcheapo_obspy.egg-info/top_level.txt
