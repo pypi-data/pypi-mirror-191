@@ -1,0 +1,6 @@
+README.md
+setup.py
+sphinx_autodoc_types.egg-info/PKG-INFO
+sphinx_autodoc_types.egg-info/SOURCES.txt
+sphinx_autodoc_types.egg-info/dependency_links.txt
+sphinx_autodoc_types.egg-info/top_level.txt
