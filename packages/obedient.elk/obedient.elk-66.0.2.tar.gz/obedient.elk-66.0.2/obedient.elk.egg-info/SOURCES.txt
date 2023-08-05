@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.elk.egg-info/PKG-INFO
+obedient.elk.egg-info/SOURCES.txt
+obedient.elk.egg-info/dependency_links.txt
+obedient.elk.egg-info/top_level.txt
