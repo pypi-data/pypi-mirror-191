@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.elasticsearch.egg-info/PKG-INFO
+obedient.elasticsearch.egg-info/SOURCES.txt
+obedient.elasticsearch.egg-info/dependency_links.txt
+obedient.elasticsearch.egg-info/top_level.txt
