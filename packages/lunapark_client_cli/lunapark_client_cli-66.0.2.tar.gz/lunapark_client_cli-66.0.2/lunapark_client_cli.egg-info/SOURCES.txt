@@ -1,0 +1,6 @@
+README.md
+setup.py
+lunapark_client_cli.egg-info/PKG-INFO
+lunapark_client_cli.egg-info/SOURCES.txt
+lunapark_client_cli.egg-info/dependency_links.txt
+lunapark_client_cli.egg-info/top_level.txt
