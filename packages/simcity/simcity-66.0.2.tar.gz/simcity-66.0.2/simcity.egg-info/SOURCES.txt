@@ -1,0 +1,6 @@
+README.md
+setup.py
+simcity.egg-info/PKG-INFO
+simcity.egg-info/SOURCES.txt
+simcity.egg-info/dependency_links.txt
+simcity.egg-info/top_level.txt
