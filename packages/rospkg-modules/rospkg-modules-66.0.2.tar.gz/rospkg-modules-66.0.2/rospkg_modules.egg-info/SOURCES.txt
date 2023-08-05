@@ -1,0 +1,6 @@
+README.md
+setup.py
+rospkg_modules.egg-info/PKG-INFO
+rospkg_modules.egg-info/SOURCES.txt
+rospkg_modules.egg-info/dependency_links.txt
+rospkg_modules.egg-info/top_level.txt
