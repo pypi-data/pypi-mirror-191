@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_novaclient_yandex.egg-info/PKG-INFO
+python_novaclient_yandex.egg-info/SOURCES.txt
+python_novaclient_yandex.egg-info/dependency_links.txt
+python_novaclient_yandex.egg-info/top_level.txt
