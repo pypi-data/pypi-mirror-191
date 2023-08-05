@@ -1,0 +1,6 @@
+README.md
+setup.py
+metacards_bert.egg-info/PKG-INFO
+metacards_bert.egg-info/SOURCES.txt
+metacards_bert.egg-info/dependency_links.txt
+metacards_bert.egg-info/top_level.txt
