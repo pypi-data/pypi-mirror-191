@@ -1,0 +1,13 @@
+astropy
+astroquery
+sqlalchemy<2.0,>=1.4.6
+pandas>=1.0.4
+packaging
+specutils>=1.0
+tqdm
+
+[docs]
+sphinx-astropy
+
+[test]
+pytest-astropy
