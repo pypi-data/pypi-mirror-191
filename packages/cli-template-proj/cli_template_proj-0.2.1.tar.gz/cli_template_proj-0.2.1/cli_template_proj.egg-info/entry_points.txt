@@ -1,0 +1,2 @@
+[console_scripts]
+cli_proj = cli_template_proj.cli:main
