@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: delpinos-rabbitmq
+Version: 0.0.1.dev0
+Summary: Python library for abstracting the communication layer with RabbitMQ using the pika library as a base
+Author-email: Alef Bruno Delpino de Oliveira <alef@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023, Alef Bruno Delpino de Oliveira, Delpinos
+        
+        Permission is hereby granted, free of charge, to any person obtaining
+        a copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+        
+        The above copyright notice and this permission notice shall be
+        included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+        NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+        LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+        OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+        WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Project-URL: Bug Tracker, https://github.com/delpinos/python-rabbitmq/issues
+Project-URL: Homepage, https://github.com/delpinos/python-rabbitmq
+Keywords: base,template,lib,rabbitmq,consumer,producer,channel,exchange,queue,bind,event,topic
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: delpinos-base
+Requires-Dist: pika
+Requires-Dist: Flask
+Requires-Dist: py-healthcheck
+
+# Delpinos RbbitMQ - Python
+
+![GitHub repo size](https://img.shields.io/github/repo-size/delpinos/python-rabbitmq?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/delpinos/python-rabbitmq?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/delpinos/python-rabbitmq?style=for-the-badge)
+![GitHub open issues](https://img.shields.io/github/issues-raw/delpinos/python-rabbitmq?style=for-the-badge)
+![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/delpinos/python-rabbitmq?style=for-the-badge)
+
+
+> Python library for abstracting the communication layer with RabbitMQ using the pika library as a base.

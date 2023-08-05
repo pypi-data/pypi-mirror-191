@@ -1,0 +1,14 @@
+delpinos/__init__.py,sha256=Olw4jpMxRQR7eZU_FpTcT-lwr1SsZGIdQpTxiqdUv_8,48
+delpinos/rabbitmq/__init__.py,sha256=Olw4jpMxRQR7eZU_FpTcT-lwr1SsZGIdQpTxiqdUv_8,48
+delpinos/rabbitmq/channel.py,sha256=JPpi80ORfqMrZlZVOnnUJetSN8ERtEC9Qqv8iYDhrVo,7295
+delpinos/rabbitmq/connection.py,sha256=BHf53hu0e4rC4nmuwG75bRP6XRUHfO93teQ5OCv6Ta4,13717
+delpinos/rabbitmq/consumer.py,sha256=yOacQ-T6zURPTdQjBghGiDnk8bj9UPsDra5I3uJlpyo,12506
+delpinos/rabbitmq/exchange.py,sha256=Cv0mYGIBBmmmGPWCPiT0xPIimwL2rUnH10CIeJfRPu8,6526
+delpinos/rabbitmq/producer.py,sha256=Z5OxKNoBQidahfDZjch8ahNuRkDkPoP11jXW4vHyJd0,10050
+delpinos/rabbitmq/queue.py,sha256=UHp5lHlNzJIZhMWnoQm_Elv1bHZfWkvZyZjfVhYVoq0,5501
+delpinos/rabbitmq/setup.py,sha256=TuWcA99BVQ8XN5kGyY05JbJyDAsuYWlinUc45ek-39E,4148
+delpinos_rabbitmq-0.0.1.dev0.dist-info/LICENSE,sha256=ErTwC0nA-JKZq1iq1Fs4OD1zqMmuzwhHu6COeKSuSqc,1098
+delpinos_rabbitmq-0.0.1.dev0.dist-info/METADATA,sha256=vZwIV-pJko6dfni0o3j0I8J54QBm7Ov6VT6zYaOIrDY,3044
+delpinos_rabbitmq-0.0.1.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+delpinos_rabbitmq-0.0.1.dev0.dist-info/top_level.txt,sha256=LAneeXI8p69ze3LfTg_cQXHOJnefxd_-EVIro6WLLWk,9
+delpinos_rabbitmq-0.0.1.dev0.dist-info/RECORD,,
