@@ -1,0 +1,161 @@
+"""
+Author: Damien GUEHO
+Copyright: Copyright (C) 2023 Damien GUEHO
+License: Public Domain
+Version: 24
+Date: April 2022
+Python: 3.7.7
+"""
+
+
+
+import numpy as np
+import scipy.linalg as LA
+from systemID.SystemIDAlgorithms.GetMACandMSV import getMACandMSV
+
+
+def timeVaryingEigenSystemRealizationAlgorithmFromInitialConditionResponse(free_decay_experiments, state_dimension, p, **kwargs):
+    """
+    Purpose:
+
+
+    Parameters:
+        -
+
+    Returns:
+        -
+
+    Imports:
+        -
+
+    Description:
+
+
+    See Also:
+        -
+    """
+
+    # Dimensions and number of steps
+    input_dimension = 1
+    output_dimension = free_decay_experiments.output_signals[0].dimension
+    number_free_decay_experiments = free_decay_experiments.number_experiments
+    number_steps = free_decay_experiments.output_signals[0].number_steps
+
+
+    # Frequency
+    frequency = free_decay_experiments.output_signals[0].frequency
+
+
+    # Initializing Identified matrices
+    A_id = np.zeros([state_dimension, state_dimension, number_steps])
+    B_id = np.zeros([state_dimension, input_dimension, number_steps])
+    C_id = np.zeros([output_dimension, state_dimension, number_steps])
+    D_id = np.zeros([output_dimension, input_dimension, number_steps])
+
+
+    # Store observability matrices at each step (for eigenvalue check)
+    Ok = np.zeros([p * output_dimension, state_dimension, number_steps])
+    Ok1 = np.zeros([p * output_dimension, state_dimension, number_steps])
+
+
+    # Store Singular Values
+    Sigma = []
+
+
+    # MAC and MSV
+    mac_and_msv = kwargs.get('mac_and_msv', False)
+    MAC = []
+    MSV = []
+
+
+    # Construct Y
+    Y = np.zeros([number_steps * output_dimension, number_free_decay_experiments])
+    for j in range(number_free_decay_experiments):
+        Y[:, j] = free_decay_experiments.output_signals[j].data.reshape(number_steps * output_dimension)
+
+
+    # # Construct Y
+    # Y = np.zeros([(p + 1) * output_dimension, number_free_decay_experiments, number_steps - p])
+    # for k in range(number_steps - p):
+    #     print(k)
+    #     for i in range(p + 1):
+    #         for j in range(number_free_decay_experiments):
+    #             Y[i * output_dimension:(i + 1) * output_dimension, j, k] = free_decay_experiments.output_signals[j].data[:, i + k]
+
+
+    ## Calculating for first time step
+    (R1, sigma1, St1) = LA.svd(Y[0:p * output_dimension, :], full_matrices=True)
+
+
+    # Calculating A and C matrices - Free Response
+    for k in range(number_steps - p):
+        print(k)
+        # SVD Y1
+        # (R1, sigma1, St1) = LA.svd(Y[0:p * output_dimension, :, k], full_matrices=True)
+        Sigma1 = np.diag(sigma1)
+        Sigma.append(sigma1)
+
+        # SVD Y2
+        (R2, sigma2, St2) = LA.svd(Y[output_dimension + k:(p + 1) * output_dimension + k, :], full_matrices=True)
+        Sigma2 = np.diag(sigma2)
+
+        if mac_and_msv:
+            pm, qr = Y[0:p * output_dimension, :, k].shape
+            n = min(pm, qr)
+            Rn = R1[:, 0:n]
+            Snt = St1[0:n, :]
+            Sigman = Sigma1[0:n, 0:n]
+            Op = np.matmul(Rn, LA.sqrtm(Sigman))
+            Rq = np.matmul(LA.sqrtm(Sigman), Snt)
+            A_idt = np.matmul(LA.pinv(Op), np.matmul(Y[output_dimension:(p + 1) * output_dimension, :, k], LA.pinv(Rq)))
+            B_idt = Rq[:, 0:input_dimension]
+            C_idt = Op[0:output_dimension, :]
+            mac, msv = getMACandMSV(A_idt, B_idt, C_idt, Rq, p)
+            MAC.append(mac)
+            MSV.append(msv)
+
+        # Applying state_dim
+        Rn1 = R1[:, 0:state_dimension]
+        Snt1 = St1[0:state_dimension, :]
+        Sigman1 = Sigma1[0:state_dimension, 0:state_dimension]
+        Rn2 = R2[:, 0:state_dimension]
+        Snt2 = St2[0:state_dimension, :]
+        Sigman2 = Sigma2[0:state_dimension, 0:state_dimension]
+
+        # Observability matrix at k and k+1 and state ensemble variable matrix at k and k+1
+        O1 = np.matmul(Rn1, LA.sqrtm(Sigman1))
+        X1 = np.matmul(LA.sqrtm(Sigman1), Snt1)
+        O2 = np.matmul(Rn2, LA.sqrtm(Sigman2))
+        X2 = np.matmul(LA.sqrtm(Sigman2), Snt2)
+
+        # ICs
+        if k == 0:
+            X0 = X1
+
+        # Store observability matrices
+        Ok[:, :, k] = O1
+        Ok1[:, :, k] = O2
+
+        # A and C matrices
+        A_id[:, :, k] = np.matmul(X2, LA.pinv(X1))
+        C_id[:, :, k] = O1[0:output_dimension, :]
+
+        # Time shift
+        (R1, sigma1, St1) = (R2, sigma2, St2)
+
+
+    # Create corresponding functions
+    def A(tk):
+        return A_id[:, :, int(round(tk * frequency))]
+
+    def B(tk):
+        return B_id[:, :, int(round(tk * frequency))]
+
+    def C(tk):
+        return C_id[:, :, int(round(tk * frequency))]
+
+    def D(tk):
+        return D_id[:, :, int(round(tk * frequency))]
+
+
+    return A, B, C, D, Ok, Ok1, Sigma, X0, A_id, B_id, C_id, D_id, MAC, MSV, Y
