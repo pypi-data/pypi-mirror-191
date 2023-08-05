@@ -1,0 +1,127 @@
+2.0.4 - 31/01/2023
+Fixed:
+- IndexError: list index out of range #1
+
+2.0.3 - 29/12/2022
+Fixed:
+- SlackBuild script (Thanks to A.Rozell) !1
+
+2.0.2 - 27/12/2022
+Added:
+- Help button to forms
+
+2.0.0 - 12/12/2022
+Renamed:
+- The project was renamed from sbo-templates to sbo-create
+Added:
+- Check if the slackbuilds exists before created
+- Options for editor
+
+1.3.5 - 25/05/2022
+Updated:
+- Fixed some typos in README file
+- Switch installation to /bin/bash
+
+1.3.4 - 29/04/2022
+Updated:
+- Switch templates to /bin/bash
+
+1.3.3 - 19/03/2022
+Updated:
+- Templates for Slackware 15
+
+1.3.2 - 28/02/2020
+Added:
+- Python 3 support in python SlackBuild template
+
+1.3.1 - 04/12/2019
+Fixed:
+- Bugfix quotes fot the .info file
+Updated:
+- changed the default appname to sboname
+
+1.3.0 - 01/12/2019
+Updated:
+- Switch to python3
+
+1.1.0 - 16/10/2019
+Fixed:
+- autotools template script
+Added:
+- meson SlackBuild script
+
+
+1.0.9 - 24/02/2019
+Added:
+- Features added to download the sources
+Updated:
+- The menu and fixed the length
+
+1.0.8 - 24/02/2019
+Fixed:
+- Read and write slack-desc file
+
+1.0.7 - 23/02/2019
+Feature:
+- Added MD5SUM to checksum and update the .info file
+Fixed:
+- Read slack-desc file
+- Read .info file with multi lines
+- Maintainer data in exist .info file
+- Slack-desc read-write 11 lines
+- Check if directory exist
+Updated:
+- Rename the script to sbotmp
+
+1.0.6 - 17/02/2019
+Feature:
+- Added autocorrect the quotation mark in the .info file
+
+1.0.5 - 17/02/2019
+Feature:
+- Changed the script to sbt
+
+1.0.4 - 17/02/2019
+Fixed:
+- Bugfix md5sum check write to .info file
+
+1.0.3 - 23/01/2019
+Updated:
+- Switch to gitlab repository
+
+1.0.2 - 13/01/2018
+Updated:
+- Switch back to python2 due to compatibility with utf-8 codec.
+
+1.0.1 - 19/12/2017
+Updated:
+- Fix setup requirements and classifiers.
+
+1.0.0 - 16/12/2017
+Updated:
+- Fix read slack-desc file if exist.
+Feature:
+- Switch to python3.
+
+0.14.0 - 16/12/2017
+Feature:
+- Added haskell-tamplate.
+- Switch to i586 arch. 
+
+0.12.0 - 25/04/2015
+Feature:
+- Added change working directory.
+- Added README create file.
+- Added doinst.sh create file.
+- Read online slackbuilds.org templates. 
+- Reading existing files for editing.
+Updated:
+- Fix slack-desc lengths.
+
+0.11.0 - 23/04/2015
+Updated:
+- Fix reset data after browse.
+
+0.10.0 - 23/04/2015
+Feature:
+- Released

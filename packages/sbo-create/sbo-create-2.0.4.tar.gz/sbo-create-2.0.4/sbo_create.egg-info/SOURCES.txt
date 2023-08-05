@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+bin/sbo-create
+sbo_create/__init__.py
+sbo_create/__metadata__.py
+sbo_create/main.py
+sbo_create/templates.py
+sbo_create.egg-info/PKG-INFO
+sbo_create.egg-info/SOURCES.txt
+sbo_create.egg-info/dependency_links.txt
+sbo_create.egg-info/requires.txt
+sbo_create.egg-info/top_level.txt

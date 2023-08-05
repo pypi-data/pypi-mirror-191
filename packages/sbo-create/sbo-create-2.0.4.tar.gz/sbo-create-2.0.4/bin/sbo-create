@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+from sbo_create.main import SBoCreate
+
+
+if __name__ == "__main__":
+    try:
+        app = SBoCreate()
+        app.menu()
+    except KeyboardInterrupt as err:
+        raise SystemExit(err)
