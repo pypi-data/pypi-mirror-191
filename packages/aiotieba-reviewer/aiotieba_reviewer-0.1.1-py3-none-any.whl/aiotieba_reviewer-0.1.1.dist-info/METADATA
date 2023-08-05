@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: aiotieba-reviewer
+Version: 0.1.1
+Summary: Reviewer Framework based on Aiotieba
+Author-email: Starry-OvO <starry.qvq@gmail.com>
+Project-URL: Repository, https://github.com/Starry-OvO/aiotieba-reviewer/
+Project-URL: Documentation, https://review.aiotieba.cc/
+Keywords: baidu,tieba
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiotieba[img,speedup] (<4.0,>=3.1.0)
+Requires-Dist: aiomysql (<0.2,>=0.1.0)
+
+## 简介
+
+基于[**aiotieba**](https://github.com/Starry-OvO/aiotieba)实现的百度贴吧高弹性吧务审查框架
+
+## 安装
+
+```shell
+pip install aiotieba-reviewer
+```
+
+## 教程
+
+[**云审查教程**](https://starry-ovo.github.io/aiotieba-reviewer/tutorial/reviewer/)
+
+## 友情链接
+
++ [另一个仍在活跃更新的贴吧管理器（有用户界面）](https://github.com/dog194/TiebaManager)
++ [贴吧protobuf定义文件合集](https://github.com/n0099/tbclient.protobuf)
+
+## 客户名单
+
+*2023.02.10更新*
+
+|      吧名      | 关注用户数 | 最近29天日均访问量 | 日均主题帖数 | 日均回复数 |
+| :------------: | :--------: | :----------------: | :----------: | :--------: |
+|    抗压背锅    | 4,667,379  |      914,561       |    1,690     |   71,163   |
+|     孙笑川     | 3,338,818  |      651,537       |    6,897     |  218,253   |
+|    lol半价     | 2,015,672  |      143,895       |    4,329     |  128,286   |
+|      宫漫      | 1,505,811  |       37,459       |     146      |   2,375    |
+|    逆水寒ol    |  784,373   |      154,378       |     924      |   15,667   |
+|    新孙笑川    |  566,806   |       35,869       |     294      |   12,681   |
+|     vtuber     |  222,539   |       19,048       |      89      |   1,444    |
+|      嘉然      |   59,794   |      143,564       |      92      |   1,385    |
+|      向晚      |   30,817   |      140,395       |      38      |    676     |
+|      贝拉      |   21,847   |      141,380       |      34      |    652     |
+|      乃琳      |   17,358   |      143,903       |      25      |    342     |
+| vtuber自由讨论 |   17,289   |       2,124        |      2       |     33     |
