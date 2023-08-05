@@ -1,0 +1,6 @@
+README.md
+setup.py
+airflow_provider_hugman.egg-info/PKG-INFO
+airflow_provider_hugman.egg-info/SOURCES.txt
+airflow_provider_hugman.egg-info/dependency_links.txt
+airflow_provider_hugman.egg-info/top_level.txt
