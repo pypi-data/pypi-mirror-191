@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: colorutil
+Version: 0.9.1
+Summary: 
+Home-page: https://github.com/simonwarchol/colorutil
+Author: Simon Warchol
+Author-email: simonwarchol@g.harvard.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: numpy (>=1.21.6,<2.0.0)
+Project-URL: Repository, https://github.com/simonwarchol/colorutil
+Description-Content-Type: text/markdown
+
+
