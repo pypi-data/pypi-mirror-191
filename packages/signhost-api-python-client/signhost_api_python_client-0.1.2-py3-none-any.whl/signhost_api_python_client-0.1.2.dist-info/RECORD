@@ -1,0 +1,14 @@
+signhost/__init__.py,sha256=Gi5Pka3mxXQ-XhbFhBUulPwUSHDe7kwIQgYPqaEVZyI,34
+signhost/__main__.py,sha256=Il-qTwrm1Iw148zB38xqicQUlvaP_VRF94L1t-Gajwg,242
+signhost/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signhost/client/client.py,sha256=HY9xTrXruwgCrkE9AEu6tWuqWiOYjea2Mx9H-iaetFU,5886
+signhost/client/errors.py,sha256=9L2XRNAmJ4s1qAZ-l0Vqv4YNEC59jDsp2IfKK0CVpuI,395
+signhost/models/__init__.py,sha256=wbwo0gtr32n_CdzaxbnSnwGuXiLY-Gzf0eVvQmVFRCM,33
+signhost/models/generated.py,sha256=Lop1mAxRcFvboPMdFMKcF0I0mbXw1Wt2mN2V5L5KJug,21891
+signhost/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+signhost/server.py,sha256=RNsdEl_mCvt4LVmYunRxXFJa3ayaHq5dQbNEwPRNDRg,964
+signhost_api_python_client-0.1.2.dist-info/entry_points.txt,sha256=fVq74ECIHvOLpUwd5GaDecqaFcaeuOV4kOFLXstOClI,69
+signhost_api_python_client-0.1.2.dist-info/LICENSE,sha256=mPi4CIU4pinODnrksUwzExEuDt9HBDrUC4WsUQY6Ggk,1071
+signhost_api_python_client-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+signhost_api_python_client-0.1.2.dist-info/METADATA,sha256=W1J-C5PuCiArQMWP0BEzQswiG9SxSIGEIiFlqv_Gcok,3922
+signhost_api_python_client-0.1.2.dist-info/RECORD,,
