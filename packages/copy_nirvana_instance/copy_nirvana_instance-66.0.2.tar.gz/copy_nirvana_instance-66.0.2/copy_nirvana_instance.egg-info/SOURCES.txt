@@ -1,0 +1,6 @@
+README.md
+setup.py
+copy_nirvana_instance.egg-info/PKG-INFO
+copy_nirvana_instance.egg-info/SOURCES.txt
+copy_nirvana_instance.egg-info/dependency_links.txt
+copy_nirvana_instance.egg-info/top_level.txt
