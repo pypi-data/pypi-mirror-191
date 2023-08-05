@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idefix_cli"
+version = "1.0.1"
+description = "A CLI to automate mundane tasks with Idefix"
+authors = [
+    { name = "C.M.T. Robert" },
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Typing :: Typed",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "gitpython>=3.1.18",
+    "inifix>=3.0.0",
+    "packaging>=21.0",
+    "rich>=10.7.0",
+    "typing-extensions>=4.1.0;python_version < '3.11'",
+]
+
+[project.license]
+text = "GPL-3.0"
+
+[project.optional-dependencies]
+isolated = [
+    "gitpython==3.1.18",
+    "inifix==3.0.0",
+    "packaging==21.0",
+    "rich==10.7.0",
+    "typing-extensions==4.1.0;python_version < '3.11'",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.scripts]
+idfx = "idefix_cli._main:main"
+baballe = "idefix_cli._main:alt_main"
+
+[project.urls]
+Homepage = "https://github.com/neutrinoceros/idefix_cli"
+
+[tool.setuptools]
+license-files = [
+    "LICENSE",
+]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [
+    "tests*",
+    "testing*",
+]
+namespaces = false
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+target-version = "py38"
+exclude = ["*__init__.py"]
+ignore = ["E501"]
+select = [
+    "E",
+    "F",
+    "W",
+    "B",
+    "I",
+    "UP",
+]
+
+[tool.ruff.isort]
+combine-as-imports = true
+
+[tool.mypy]
+python_version = 3.8
+show_error_codes = true
+ignore_missing_imports = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_unreachable = true
+show_error_context = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--doctest-modules"
+filterwarnings = [
+    "error",
+]
