@@ -1,0 +1,6 @@
+README.md
+setup.py
+catboost_test.egg-info/PKG-INFO
+catboost_test.egg-info/SOURCES.txt
+catboost_test.egg-info/dependency_links.txt
+catboost_test.egg-info/top_level.txt
