@@ -1,0 +1,6 @@
+README.md
+setup.py
+instagram_scraper.egg-info/PKG-INFO
+instagram_scraper.egg-info/SOURCES.txt
+instagram_scraper.egg-info/dependency_links.txt
+instagram_scraper.egg-info/top_level.txt
