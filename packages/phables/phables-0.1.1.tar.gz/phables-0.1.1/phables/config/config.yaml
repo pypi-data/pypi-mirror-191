@@ -1,0 +1,19 @@
+# Snakemake config
+input:
+output: 'phables.out/'
+log: 'phables/phables.log'
+
+# Databases 
+databases:
+
+# Threads per job (will be scaled down if more than --threads)
+threads: 8
+
+# Phable parameters
+minlength: 2000
+mincov: 10
+compcount: 200
+maxpaths: 10
+mgfrac: 0.2
+alignscore: 90
+seqidentity: 0.3
