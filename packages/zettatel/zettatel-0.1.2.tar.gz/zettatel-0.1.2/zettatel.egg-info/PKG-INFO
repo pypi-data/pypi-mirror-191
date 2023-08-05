@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zettatel
+Version: 0.1.2
+Summary: a python package to help send messages using the Zettatel API
+Home-page: https://github.com/levin-mutai/zettatel
+Author: Levin Mutai
+Author-email: levinmutai2@gmail.com
+License: MIT licence
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
