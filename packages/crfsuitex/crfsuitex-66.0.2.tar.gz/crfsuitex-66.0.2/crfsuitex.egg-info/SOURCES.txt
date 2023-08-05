@@ -1,0 +1,6 @@
+README.md
+setup.py
+crfsuitex.egg-info/PKG-INFO
+crfsuitex.egg-info/SOURCES.txt
+crfsuitex.egg-info/dependency_links.txt
+crfsuitex.egg-info/top_level.txt
