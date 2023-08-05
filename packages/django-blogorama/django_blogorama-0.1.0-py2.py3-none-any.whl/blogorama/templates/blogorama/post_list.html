@@ -1,0 +1,16 @@
+{% extends "blogorama/base.html" %}
+{% block title %}
+    Blogorama - Blog Posts
+{% endblock title %}
+{% block content %}
+    <h1>Blogorama Blog Posts</h1>
+    <ul>
+        {% for object in object_list %}
+            <li>
+                <a href={{ object.get_absolute_url }}>{{ object.title }}</a>
+            </li>
+        {% empty %}
+            <li>No Posts yet.</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
