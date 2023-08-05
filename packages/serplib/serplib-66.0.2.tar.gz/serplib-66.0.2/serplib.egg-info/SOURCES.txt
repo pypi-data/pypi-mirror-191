@@ -1,0 +1,6 @@
+README.md
+setup.py
+serplib.egg-info/PKG-INFO
+serplib.egg-info/SOURCES.txt
+serplib.egg-info/dependency_links.txt
+serplib.egg-info/top_level.txt
