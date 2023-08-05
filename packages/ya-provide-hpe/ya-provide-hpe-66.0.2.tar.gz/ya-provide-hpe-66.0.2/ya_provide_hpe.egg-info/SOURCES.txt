@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_provide_hpe.egg-info/PKG-INFO
+ya_provide_hpe.egg-info/SOURCES.txt
+ya_provide_hpe.egg-info/dependency_links.txt
+ya_provide_hpe.egg-info/top_level.txt
