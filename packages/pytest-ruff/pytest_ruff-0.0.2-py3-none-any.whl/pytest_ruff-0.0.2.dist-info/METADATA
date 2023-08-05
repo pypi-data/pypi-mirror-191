@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pytest-ruff
+Version: 0.0.2
+Summary: pytest plugin to check ruff requirements.
+Author: Iuri de Silvio
+Author-email: iurisilvio@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: ruff (>=0.0.244,<0.0.245)
+Project-URL: Homepage, https://github.com/buserbrasil/pytest-ruff
+Description-Content-Type: text/markdown
+
+# pytest-ruff
