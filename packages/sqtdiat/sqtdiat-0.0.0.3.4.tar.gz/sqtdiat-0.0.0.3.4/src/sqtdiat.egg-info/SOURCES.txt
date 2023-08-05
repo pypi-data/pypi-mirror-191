@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/sqtdiat/__init__.py
+src/sqtdiat/qops.py
+src/sqtdiat.egg-info/PKG-INFO
+src/sqtdiat.egg-info/SOURCES.txt
+src/sqtdiat.egg-info/dependency_links.txt
+src/sqtdiat.egg-info/top_level.txt
