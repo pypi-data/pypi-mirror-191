@@ -1,0 +1,13 @@
+dissect/shellitem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dissect/shellitem/lnk/__init__.py,sha256=dSA_bou5f2ViuHzMn7iwtIKM3EW8vTmMSoJ5UIo-zkc,77
+dissect/shellitem/lnk/c_lnk.py,sha256=pQzi4KpM4lh5bFUU69vNUhj1Y-0jYvmc--CsMU72ctU,39685
+dissect/shellitem/lnk/lnk.py,sha256=Ljq7cFvn7oFbm1jYlnD_NefveWTRl7kJdJWW58cOZeA,16844
+dissect/shellitem/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dissect/shellitem/tools/lnk.py,sha256=dx8u7RqxoEwa017gqEgDAcg1f7kgIlyChD-XJP1Hifk,4195
+dissect.shellitem-3.3.dist-info/COPYRIGHT,sha256=R-1pl4B7wr8giB-xCqFCtGXpW8CBweydvx7y2ShM8d4,304
+dissect.shellitem-3.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+dissect.shellitem-3.3.dist-info/METADATA,sha256=nJjGbhhD7rNtysA9IEMdH36dPTwYhV8zSoDW7FU57f4,2302
+dissect.shellitem-3.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dissect.shellitem-3.3.dist-info/entry_points.txt,sha256=w-nHhtKHC1XU_bguIfAtjTPq78QV_Xaj1-S6OfQuc0o,63
+dissect.shellitem-3.3.dist-info/top_level.txt,sha256=Mn-CQzEYsAbkxrUI0TnplHuXnGVKzxpDw_po_sXpvv4,8
+dissect.shellitem-3.3.dist-info/RECORD,,
