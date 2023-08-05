@@ -1,0 +1,13 @@
+petanalysis/Dog Data all.csv,sha256=ljrOfRkxOPL0_J9vAGfcupvEN17Tawi0gHXtmMPvuNU,40544591
+petanalysis/OrganizationData.csv,sha256=FFANmjQYY7gMqzDXgL2dRftU0qYNVzt4UIfnNo2t2bA,20222093
+petanalysis/US_postcode.csv,sha256=m3xZcuJ3XPzP_ZiDsF7Zg_WihxPSMRLyq91BVJibCr8,236524
+petanalysis/__init__.py,sha256=ldvmWYxbI7SdeCukxBdYG6ItIXU29Lr25_u-EVWaLdg,34
+petanalysis/assoc_rules.py,sha256=pg6olCnRU-NIg_pVWrekfaGryzl9LrS9RsQRRZgPfx4,6731
+petanalysis/location.py,sha256=AJGHHm_YbXCultbhj7Rc-0t9h6ljHk2zuHcVTWvqAn4,2868
+petanalysis/petplot.py,sha256=69HF3D63Sd326bsYJ3oQ1D0PhyEXq7ZucVMxtod4cwY,3548
+petanalysis/usrerror.py,sha256=WC87UfsvR0gbLjuPkAQ7K5ONq2Itq9eAFXG8VOmJQd0,158
+petanalysis-0.1.2.dist-info/LICENSE.txt,sha256=r_4w0jQ3ecttzywm2A2-E9CIAaP6-CibEpiB759m0y0,104
+petanalysis-0.1.2.dist-info/METADATA,sha256=wIhy1HTGx-B-reuNS-qZPiXLWhDcs3eLTiXQC2K47eY,810
+petanalysis-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+petanalysis-0.1.2.dist-info/top_level.txt,sha256=31bFZovGQNS4UO9LqARd2og90FJZwwBbgSxRQyDOays,12
+petanalysis-0.1.2.dist-info/RECORD,,
