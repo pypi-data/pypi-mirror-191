@@ -1,0 +1,3 @@
+[console_scripts]
+mastotron = mastotron.cli:cli
+
