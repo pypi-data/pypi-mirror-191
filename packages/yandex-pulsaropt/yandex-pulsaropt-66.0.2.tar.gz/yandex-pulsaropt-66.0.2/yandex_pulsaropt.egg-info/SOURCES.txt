@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_pulsaropt.egg-info/PKG-INFO
+yandex_pulsaropt.egg-info/SOURCES.txt
+yandex_pulsaropt.egg-info/dependency_links.txt
+yandex_pulsaropt.egg-info/top_level.txt
