@@ -1,0 +1,6 @@
+README.md
+setup.py
+maas_gplay_client.egg-info/PKG-INFO
+maas_gplay_client.egg-info/SOURCES.txt
+maas_gplay_client.egg-info/dependency_links.txt
+maas_gplay_client.egg-info/top_level.txt
