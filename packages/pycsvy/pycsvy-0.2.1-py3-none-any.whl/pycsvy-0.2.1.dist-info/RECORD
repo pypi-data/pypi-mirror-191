@@ -1,0 +1,7 @@
+csvy/__init__.py,sha256=lF6q3EInvx1dPLokzqTrYV_g7g440T_Jwv4rTsdJIi4,275
+csvy/readers.py,sha256=fvavOsULTXtoRrw3fR8qQzvt8L1MkcwGlJ3nXDZm3FI,6816
+csvy/writers.py,sha256=xltTvvTLZmpHd3wU7fFzvekx2eeW7o_3fRavhBCq0pY,8308
+pycsvy-0.2.1.dist-info/LICENSE,sha256=Jt-CHvyLHpCiQOW9vdBJhqqTpxdDaL6ucY75gKJyjVo,1531
+pycsvy-0.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pycsvy-0.2.1.dist-info/METADATA,sha256=hrBJK3mYD7_rI77lIwxGfeIhBJxQneYe7bXwXs-Jutw,8234
+pycsvy-0.2.1.dist-info/RECORD,,
