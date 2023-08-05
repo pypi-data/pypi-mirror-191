@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_datacloud.egg-info/PKG-INFO
+xprod_datacloud.egg-info/SOURCES.txt
+xprod_datacloud.egg-info/dependency_links.txt
+xprod_datacloud.egg-info/top_level.txt
