@@ -1,0 +1,6 @@
+README.md
+setup.py
+skygrid_metascheduler.egg-info/PKG-INFO
+skygrid_metascheduler.egg-info/SOURCES.txt
+skygrid_metascheduler.egg-info/dependency_links.txt
+skygrid_metascheduler.egg-info/top_level.txt
