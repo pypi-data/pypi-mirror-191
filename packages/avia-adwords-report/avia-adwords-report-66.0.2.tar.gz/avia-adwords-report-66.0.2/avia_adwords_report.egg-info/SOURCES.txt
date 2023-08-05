@@ -1,0 +1,6 @@
+README.md
+setup.py
+avia_adwords_report.egg-info/PKG-INFO
+avia_adwords_report.egg-info/SOURCES.txt
+avia_adwords_report.egg-info/dependency_links.txt
+avia_adwords_report.egg-info/top_level.txt
