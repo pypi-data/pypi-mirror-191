@@ -1,0 +1,6 @@
+README.md
+setup.py
+layout_schema.egg-info/PKG-INFO
+layout_schema.egg-info/SOURCES.txt
+layout_schema.egg-info/dependency_links.txt
+layout_schema.egg-info/top_level.txt
