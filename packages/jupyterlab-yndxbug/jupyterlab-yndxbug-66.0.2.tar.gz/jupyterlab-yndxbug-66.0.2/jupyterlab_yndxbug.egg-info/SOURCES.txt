@@ -1,0 +1,6 @@
+README.md
+setup.py
+jupyterlab_yndxbug.egg-info/PKG-INFO
+jupyterlab_yndxbug.egg-info/SOURCES.txt
+jupyterlab_yndxbug.egg-info/dependency_links.txt
+jupyterlab_yndxbug.egg-info/top_level.txt
