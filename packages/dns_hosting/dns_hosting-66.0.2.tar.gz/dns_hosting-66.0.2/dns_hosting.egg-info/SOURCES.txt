@@ -1,0 +1,6 @@
+README.md
+setup.py
+dns_hosting.egg-info/PKG-INFO
+dns_hosting.egg-info/SOURCES.txt
+dns_hosting.egg-info/dependency_links.txt
+dns_hosting.egg-info/top_level.txt
