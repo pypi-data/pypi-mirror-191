@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: csirtg-re
+Version: 0.3.0
+Summary: CSIRTG RegEx Utility
+Home-page: https://github.com/csirtgadgets/csirtg-re
+Author: Wes Young
+Author-email: wes@csirtgadgets.com
+License: MPL2
+Keywords: security
+Classifier: Programming Language :: Python
+License-File: LICENSE
