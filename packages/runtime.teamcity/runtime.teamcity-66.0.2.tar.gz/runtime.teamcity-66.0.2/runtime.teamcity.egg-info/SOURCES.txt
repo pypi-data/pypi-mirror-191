@@ -1,0 +1,6 @@
+README.md
+setup.py
+runtime.teamcity.egg-info/PKG-INFO
+runtime.teamcity.egg-info/SOURCES.txt
+runtime.teamcity.egg-info/dependency_links.txt
+runtime.teamcity.egg-info/top_level.txt
