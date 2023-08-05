@@ -1,0 +1,6 @@
+README.md
+setup.py
+certifi_dmp.egg-info/PKG-INFO
+certifi_dmp.egg-info/SOURCES.txt
+certifi_dmp.egg-info/dependency_links.txt
+certifi_dmp.egg-info/top_level.txt
