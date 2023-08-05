@@ -1,0 +1,6 @@
+README.md
+setup.py
+darwin_psutil.egg-info/PKG-INFO
+darwin_psutil.egg-info/SOURCES.txt
+darwin_psutil.egg-info/dependency_links.txt
+darwin_psutil.egg-info/top_level.txt
