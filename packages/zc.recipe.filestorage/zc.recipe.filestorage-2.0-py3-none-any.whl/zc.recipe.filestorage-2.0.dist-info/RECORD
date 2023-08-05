@@ -1,0 +1,12 @@
+zc.recipe.filestorage-2.0-py3.9-nspkg.pth,sha256=koBiVvN4SBpGTJgNu5Y-CpHJSTtoQ2EjWx6L11J8h3g,1640
+zc/recipe/filestorage/README.rst,sha256=YZHJw3TIJsGRS1Shrfr-mAdH_KpTRChEvrCdl6unaaQ,2313
+zc/recipe/filestorage/__init__.py,sha256=v5E7YLRyIcjFEUp4gHRJKeAzEMRFfpZNsSJeBYze7Mo,2225
+zc/recipe/filestorage/tests.py,sha256=RyHOMiQU6dWEVWbGmrDRAoEbPj7znO9HcLKpYBY0-g0,1063
+zc.recipe.filestorage-2.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zc.recipe.filestorage-2.0.dist-info/METADATA,sha256=b97gfwvxkQA7e3esNOfT9YYFvuoK9tlMpNyzsWmSHVQ,4356
+zc.recipe.filestorage-2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zc.recipe.filestorage-2.0.dist-info/entry_points.txt,sha256=Jed8MxIT3XpZbbFGahNAfjgwI7OTrYLE8-HQQdAbwhA,53
+zc.recipe.filestorage-2.0.dist-info/namespace_packages.txt,sha256=uMzgkrnE7pysjpFc1Bregxb8hDX5ahs4PeMwx341JOE,13
+zc.recipe.filestorage-2.0.dist-info/top_level.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.recipe.filestorage-2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+zc.recipe.filestorage-2.0.dist-info/RECORD,,
