@@ -1,0 +1,6 @@
+README.md
+setup.py
+dbtpl.egg-info/PKG-INFO
+dbtpl.egg-info/SOURCES.txt
+dbtpl.egg-info/dependency_links.txt
+dbtpl.egg-info/top_level.txt
