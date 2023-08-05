@@ -1,0 +1,6 @@
+README.md
+setup.py
+ats_mds_patcher.egg-info/PKG-INFO
+ats_mds_patcher.egg-info/SOURCES.txt
+ats_mds_patcher.egg-info/dependency_links.txt
+ats_mds_patcher.egg-info/top_level.txt
