@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandexdnsapiv2client.egg-info/PKG-INFO
+yandexdnsapiv2client.egg-info/SOURCES.txt
+yandexdnsapiv2client.egg-info/dependency_links.txt
+yandexdnsapiv2client.egg-info/top_level.txt
