@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['freidok_cli', 'freidok_cli.cli', 'freidok_cli.models']
+
+package_data = \
+{'': ['*'],
+ 'freidok_cli': ['resources/*',
+                 'templates/institutions/*',
+                 'templates/publications/*']}
+
+install_requires = \
+['jinja2>=3.1.2,<4.0.0',
+ 'lxml>=4.9.2,<5.0.0',
+ 'pydantic>=1.10.4,<2.0.0',
+ 'python-dotenv>=0.21.0,<0.22.0',
+ 'requests>=2.28.1,<3.0.0']
+
+entry_points = \
+{'console_scripts': ['freidok = freidok_cli.cli.run:main']}
+
+setup_kwargs = {
+    'name': 'freidok-cli',
+    'version': '1.0.0',
+    'description': 'A command-line client for FreiDok, the publication platform of the University of Freiburg',
+    'long_description': '# freidok-cli\n\nA command-line client for\n**[FreiDok](https://freidok.uni-freiburg.de/)**, \nthe publication platform, institutional bibliography and research documentation \nsystem of the [University of Freiburg](https://www.uni-freiburg.de), Germany. \n\n## What it does\n\nRetrieve information about institutions and publications of the University of \nFreiburg, using the FreiDok API. \n\nSpecifically, the client can\n  - search for an institution by name\n  - retrieve publication lists for any institution, person, project, date, etc.\n  - export publication lists to any text format (e.g. HTML, Markdown) via Jinja2 \n    templates \n\n_Note: The client does not cover the complete FreiDok API, it is focused on \nretrieving publication data in an easy but flexible way._\n\n## Installation\n\n```bash\npip install freidok-cli\n```\n\nThe ```freidok``` executable will be available after installation. \n\n## Usage\n\nTwo subcommands are available:\n\n  - ```freidok publ``` retrieves publication data\n  - ```freidok inst``` retrieves university institutions\n\n### Retrieve institutions\n\n#### Examples\n\n```bash\n# Print the ids and names of all institutions with *physiol* in its name\nfreidok inst --name physiol\n\n# Export data to html, prefer German names\nfreidok inst --name physiol --out inst.html --langs=deu,ger,eng\n```\n\n### Retrieve publications\n\n#### Examples\n\n```bash\n# create an html file listing publications from a specific institution\nfreidok publ --inst-id 2555 --years 2020-2022 --out pubs.html\n\n# create a markdown file listing publications for a group of persons, prefer German titles\nfreidok publ --pers-id 100,1034,264 --langs=deu,ger,eng --out pubs.md\n\n# pass extra API parameters and use a custom template\nfreidok publ --inst-id 2555 --years 2022 --params "transitive=true" --template my_publist.jinja2.html\n\n# save results as JSON file (passthrough)\nfreidok publ --inst-id 2555 --years 2010-2022 --out db.json\n\n# query local file\nfreidok publ --source db.json --years 2019\n```\n\nRun ```freidok publ --help``` to see a full list of arguments.\nHere are the most common:\n\n```\nfilter options:\n  --id ID[,ID...]       Retrieve publications by ID\n  --pers-id ID[,ID...]  Filter by person IDs\n  --inst-id ID[,ID...]  Filter by institution IDs\n  --proj-id ID[,ID...]  Filter by project IDs\n  --title TERM          Filter by title ("contains")\n  --years YYYY[-YYYY]   Filter by year of publication\n  --maxpers N           Limit the number of listed authors\n  --exclude-author STR  Exclude publications where an author name ("<first> <last>") contains STR.\n  --fields F[,F...]     Field(s) to include in response. \n  --fieldset NAME       Predefined set of fields. Available sets: [\'default\', \'short\']\n  --params STR          Additional parameters passed to freidok API, e.g. "transitive=true pubtype=book"\n  --authors-abbrev [STR]\n                        Abbreviate authors first names [with optional character] (ignored if --format=json)\n  --authors-reverse     List authors names as "last name, first name" (ignored if --format=json)\n  --authors-sep STR     Separate individual authors with STR (ignored if --format=json)\n```\n\n### Output Format\n\nOutput files are created by rendering a Jinja2 template \n(except for JSON output). For HTML and Markdown, simple built-in templates \nare used by default. Custom templates can be used with ```--template <file>```. \n\nTo specify the output format, either \n\n  - use a recognized file extension for the output file _(.html, .md or .json)_,\n \n  - set it explicitly with ```--format html|markdown|json```\n\n  - provide a custom Jinja2 template with ```--template <file>```.\n   \n    _This will ignore any ```--format``` argument._\n\nOmitting the output file name or setting it to "-" prints to _stdout_.\nThe default output format is _Markdown_.\n\n\n### Templates\n\n[Jinja2](https://palletsprojects.com/p/jinja/) templates are supported.\nIn the template, the list of retrieved items (publications, institutions, ...) \nis accessible via the ```items``` variable. Each item is a full\nPython object deserialized from API responses.\n\nThis is a simple example for generating a Markdown list of publication titles \nand years: \n\n```\n# Publications\n{% for pub in items %}\n- {{ pub.titles[0].value }} ({{ pub.publication_year.value }})\n{% endfor %}\n```\n\n### Predefined Authors List\n\nCreating well-formatted author lists in the template is not straighforward, \nsince FreiDok returns authors as a list of individual _person_ objects. \nThis list needs to be iterated, the separator character has to be placed \ncorrectly and whitespace issues have to be dealt with.\n\nTo facilitate the ouput of author lists in templates, each _publication_ \nobject has the additional string attribute ```_extras_authors``` that \ncontains a pre-formatted authors string.\n\nThree arguments control the style of that author list:\n```\n--authors-abbrev [STR]  Abbreviate authors first names [with optional character]\n--authors-reverse       List authors names as "last name, first name"\n--authors-sep STR       Separate individual authors with STR\n```\n\nExamples:\n```bash\n# Example 1: default style\nfreidok publ [...]\n# Maciej K. Kocylowski, Hande Aypek, Wolfgang Bildl\n\n# Example 2: abbreviate authors with a dot, reverse order\nfreidok publ [...] --authors-abbrev="." --authors-reverse\n# Kocylowski M.K., Aypek H., Bildl W.\n\n# Example 3: separate abbreviated authors with a slash\nfreidok publ [...] --authors-abbrev --authors-sep=" / " \n# MK Kocylowski / H Aypek / W Bildl\n```\n\n\n\n### Environment variables\n\n*.env* files are supported. The following environment variables are recognized: \n\n```bash\n# Env variables and example values\n\n# API URL\nFREIDOK_URL=https://freidok.uni-freiburg.de/jsonApi/v1/\n\n# list of preferred languages\nFREIDOK_LANGUAGES=eng,deu,ger\n\n# FREIDOK_FIELDSET_PUBLICATION_* can be used to define custom fieldsets\n# (use with --fieldset short)\nFREIDOK_FIELDSET_PUBLICATION_SHORT=id,link,publication_year,titles,publisher,persons,persons_stat\n```\n\n## Development\n\n### Generate Python classes from JSON schema\n\nInstall the package with *dev* dependencies. Then use \n[datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator)\nto create Pydantic models from JSON schema:\n\n```bash\ndatamodel-codegen \\\n--use-schema-description \\\n--use-field-description \\\n--target-python-version 3.10 \\\n--use-double-quotes \\\n--use-standard-collections \\\n--force-optional \\\n--encoding utf-8 \\\n--allow-extra-fields \\\n--use-annotated \\\n--input schema.json \\\n--output models.py\n```\n\n\n## Missing functionality\n\n  - In contrast to _Institutions_, the search for _Person_ and _Project_ is not \n    implemented yet. To generate a publication list for these entities, you \n    need to find out the FreiDok ID manually using the FreiDok web page.\n  - Automatic pagination is not implemented yet. The FreiDok API returns at most \n    100 items per request, so you need to handle pagination manually using the\n    parameters ```--startitem``` and  ```--maxitems```. \n',
+    'author': 'Alexander Haupt',
+    'author_email': 'alexander.haupt@physiologie.uni-freiburg.de',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/phys2/freidok-cli',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.10,<4.0',
+}
+
+
+setup(**setup_kwargs)
