@@ -1,0 +1,44 @@
+[build-system]
+requires      = [ "setuptools>=61.0", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name    = "mvg"
+version = "1.0.2"
+
+description = "An unofficial interface to timetable information of the Münchner Verkehrsgesellschaft (MVG)."
+readme      = "README.md"
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+
+requires-python = ">=3.7"
+dependencies    = [ "aiohttp~=3.8", "furl~=2.1" ]
+
+[[project.authors]]
+name  = "Martin Dziura"
+email = "m.dziura@tum.de"
+
+[project.urls]
+"Documentation" = "https://mondbaron.github.io/mvg"
+"Source"        = "https://github.com/mondbaron/mvg"
+"Bug Tracker"   = "https://github.com/mondbaron/mvg/issues"
+
+[project.optional-dependencies]
+dev = [
+  "autopep8",
+  "build",
+  "flake8",
+  "mypy",
+  "pylint",
+  "pytest",
+  "pytest-asyncio",
+  "sphinx",
+  "sphinx-mdinclude",
+  "sphinx-pyproject",
+  "sphinx-rtd-theme",
+  "twine",
+]
