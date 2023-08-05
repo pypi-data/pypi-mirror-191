@@ -1,0 +1,6 @@
+README.md
+setup.py
+covanalyze.egg-info/PKG-INFO
+covanalyze.egg-info/SOURCES.txt
+covanalyze.egg-info/dependency_links.txt
+covanalyze.egg-info/top_level.txt
