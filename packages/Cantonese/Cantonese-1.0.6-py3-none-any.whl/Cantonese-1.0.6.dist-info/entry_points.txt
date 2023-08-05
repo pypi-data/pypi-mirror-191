@@ -1,0 +1,2 @@
+[console_scripts]
+cantonese = src.cantonese:main

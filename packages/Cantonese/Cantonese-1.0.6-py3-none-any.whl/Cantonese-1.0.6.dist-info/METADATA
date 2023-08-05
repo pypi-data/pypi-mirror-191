@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Cantonese
+Version: 1.0.6
+Summary: The Cantonese programming language
+Home-page: https://github.com/StepfenShawn/Cantonese
+Author: Stepfen Shawn
+Author-email: stepfencurryxiao@gmail.com
+Project-URL: Cantonese source, https://github.com/StepfenShawn/Cantonese
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: setuptools (>=0.7.0)
+Requires-Dist: pygame (>=1.9.4)
+Requires-Dist: Kivy (>=2.0.0)
+
