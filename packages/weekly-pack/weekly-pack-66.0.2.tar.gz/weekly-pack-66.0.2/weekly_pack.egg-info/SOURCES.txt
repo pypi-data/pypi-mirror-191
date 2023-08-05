@@ -1,0 +1,6 @@
+README.md
+setup.py
+weekly_pack.egg-info/PKG-INFO
+weekly_pack.egg-info/SOURCES.txt
+weekly_pack.egg-info/dependency_links.txt
+weekly_pack.egg-info/top_level.txt
