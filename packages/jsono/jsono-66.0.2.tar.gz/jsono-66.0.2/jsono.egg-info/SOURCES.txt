@@ -1,0 +1,6 @@
+README.md
+setup.py
+jsono.egg-info/PKG-INFO
+jsono.egg-info/SOURCES.txt
+jsono.egg-info/dependency_links.txt
+jsono.egg-info/top_level.txt
