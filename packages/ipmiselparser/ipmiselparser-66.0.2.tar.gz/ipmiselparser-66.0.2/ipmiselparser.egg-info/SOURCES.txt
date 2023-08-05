@@ -1,0 +1,6 @@
+README.md
+setup.py
+ipmiselparser.egg-info/PKG-INFO
+ipmiselparser.egg-info/SOURCES.txt
+ipmiselparser.egg-info/dependency_links.txt
+ipmiselparser.egg-info/top_level.txt
