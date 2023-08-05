@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_passport_vault.egg-info/PKG-INFO
+yandex_passport_vault.egg-info/SOURCES.txt
+yandex_passport_vault.egg-info/dependency_links.txt
+yandex_passport_vault.egg-info/top_level.txt
