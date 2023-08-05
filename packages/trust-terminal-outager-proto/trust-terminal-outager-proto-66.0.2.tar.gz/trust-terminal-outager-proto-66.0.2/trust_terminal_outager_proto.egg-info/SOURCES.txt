@@ -1,0 +1,6 @@
+README.md
+setup.py
+trust_terminal_outager_proto.egg-info/PKG-INFO
+trust_terminal_outager_proto.egg-info/SOURCES.txt
+trust_terminal_outager_proto.egg-info/dependency_links.txt
+trust_terminal_outager_proto.egg-info/top_level.txt
