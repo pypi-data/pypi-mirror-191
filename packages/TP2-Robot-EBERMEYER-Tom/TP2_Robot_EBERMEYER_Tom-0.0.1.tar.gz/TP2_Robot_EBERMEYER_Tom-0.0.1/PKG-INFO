@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: TP2_Robot_EBERMEYER_Tom
+Version: 0.0.1
+Summary: Deplacement d'un robot (modélisé par un '1') dans un grille de '0' de taille définie par l'user.
+Home-page: UNKNOWN
+Author: Tom Ebermeyer
+Author-email: tom.ebermeyer@cpe.fr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
