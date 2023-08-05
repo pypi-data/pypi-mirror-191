@@ -1,0 +1,6 @@
+README.md
+setup.py
+haas_client.egg-info/PKG-INFO
+haas_client.egg-info/SOURCES.txt
+haas_client.egg-info/dependency_links.txt
+haas_client.egg-info/top_level.txt
