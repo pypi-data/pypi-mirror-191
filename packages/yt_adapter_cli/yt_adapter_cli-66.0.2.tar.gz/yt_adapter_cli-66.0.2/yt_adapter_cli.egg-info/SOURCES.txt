@@ -1,0 +1,6 @@
+README.md
+setup.py
+yt_adapter_cli.egg-info/PKG-INFO
+yt_adapter_cli.egg-info/SOURCES.txt
+yt_adapter_cli.egg-info/dependency_links.txt
+yt_adapter_cli.egg-info/top_level.txt
