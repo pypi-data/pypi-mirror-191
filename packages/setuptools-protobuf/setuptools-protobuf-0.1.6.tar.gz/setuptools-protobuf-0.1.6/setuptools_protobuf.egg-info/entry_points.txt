@@ -1,0 +1,6 @@
+[distutils.commands]
+build_protobuf = setuptools_protobuf:build_protobuf
+clean_protobuf = setuptools_protobuf:clean_protobuf
+
+[distutils.setup_keywords]
+protobufs = setuptools_protobuf:protobufs
