@@ -1,0 +1,6 @@
+README.md
+setup.py
+sdc_tls_auth.egg-info/PKG-INFO
+sdc_tls_auth.egg-info/SOURCES.txt
+sdc_tls_auth.egg-info/dependency_links.txt
+sdc_tls_auth.egg-info/top_level.txt
