@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandexcloud_tmp.egg-info/PKG-INFO
+yandexcloud_tmp.egg-info/SOURCES.txt
+yandexcloud_tmp.egg-info/dependency_links.txt
+yandexcloud_tmp.egg-info/top_level.txt
