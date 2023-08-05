@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_yt_pipeline.egg-info/PKG-INFO
+xprod_yt_pipeline.egg-info/SOURCES.txt
+xprod_yt_pipeline.egg-info/dependency_links.txt
+xprod_yt_pipeline.egg-info/top_level.txt
