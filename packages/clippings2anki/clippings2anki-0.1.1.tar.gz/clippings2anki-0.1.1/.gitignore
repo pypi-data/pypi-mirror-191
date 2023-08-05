@@ -1,0 +1,7 @@
+__pycache__
+venv
+*flashcards.txt
+test.txt
+*Clippings.txt
+*.json
+dist
