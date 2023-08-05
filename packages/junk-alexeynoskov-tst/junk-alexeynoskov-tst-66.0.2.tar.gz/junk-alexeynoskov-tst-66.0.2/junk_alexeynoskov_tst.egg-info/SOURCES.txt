@@ -1,0 +1,6 @@
+README.md
+setup.py
+junk_alexeynoskov_tst.egg-info/PKG-INFO
+junk_alexeynoskov_tst.egg-info/SOURCES.txt
+junk_alexeynoskov_tst.egg-info/dependency_links.txt
+junk_alexeynoskov_tst.egg-info/top_level.txt
