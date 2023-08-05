@@ -1,0 +1,3 @@
+[console_scripts]
+spot_price_control=heatcontrol:main
+
