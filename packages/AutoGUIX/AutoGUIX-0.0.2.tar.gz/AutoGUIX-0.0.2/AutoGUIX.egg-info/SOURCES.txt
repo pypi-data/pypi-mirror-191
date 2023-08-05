@@ -1,0 +1,14 @@
+LICENSE
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+AutoGUIX/__init__.py
+AutoGUIX/autoguix.py
+AutoGUIX.egg-info/PKG-INFO
+AutoGUIX.egg-info/SOURCES.txt
+AutoGUIX.egg-info/dependency_links.txt
+AutoGUIX.egg-info/top_level.txt
+AutoGUIX.egg-info/zip-safe
+autoguix/__init__.py
+autoguix/autoguix.py
