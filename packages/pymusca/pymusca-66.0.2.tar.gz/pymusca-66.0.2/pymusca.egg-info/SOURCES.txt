@@ -1,0 +1,6 @@
+README.md
+setup.py
+pymusca.egg-info/PKG-INFO
+pymusca.egg-info/SOURCES.txt
+pymusca.egg-info/dependency_links.txt
+pymusca.egg-info/top_level.txt
