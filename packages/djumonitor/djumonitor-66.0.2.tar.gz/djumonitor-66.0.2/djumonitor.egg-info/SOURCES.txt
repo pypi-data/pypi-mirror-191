@@ -1,0 +1,6 @@
+README.md
+setup.py
+djumonitor.egg-info/PKG-INFO
+djumonitor.egg-info/SOURCES.txt
+djumonitor.egg-info/dependency_links.txt
+djumonitor.egg-info/top_level.txt
