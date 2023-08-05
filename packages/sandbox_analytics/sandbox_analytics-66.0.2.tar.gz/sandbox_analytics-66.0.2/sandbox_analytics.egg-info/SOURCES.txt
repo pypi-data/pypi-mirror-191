@@ -1,0 +1,6 @@
+README.md
+setup.py
+sandbox_analytics.egg-info/PKG-INFO
+sandbox_analytics.egg-info/SOURCES.txt
+sandbox_analytics.egg-info/dependency_links.txt
+sandbox_analytics.egg-info/top_level.txt
