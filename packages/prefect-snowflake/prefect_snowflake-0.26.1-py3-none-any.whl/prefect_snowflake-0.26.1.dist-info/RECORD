@@ -1,0 +1,10 @@
+prefect_snowflake/__init__.py,sha256=htfei5vdKrLU7dwRlLESbWOgxFvxLj7lNNUB0uZKrik,210
+prefect_snowflake/_version.py,sha256=ENzkesJw30OTOfWUmuWwP5FjN6A9qq7C0yPqe-QpEgA,498
+prefect_snowflake/credentials.py,sha256=fMftSWcblwYF5pJ3OtWj5J83pZq5U63ZedCgrOHskfM,12812
+prefect_snowflake/database.py,sha256=jzC-lYga5PKU4XKyegUn4L0Gf9NNEtgBWBiDT7lPjK8,29180
+prefect_snowflake-0.26.1.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_snowflake-0.26.1.dist-info/METADATA,sha256=Pjg3UjFf0vhTzUuJ7JCFkWxAx-PtZKiLuWDNLrgKsus,12670
+prefect_snowflake-0.26.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+prefect_snowflake-0.26.1.dist-info/entry_points.txt,sha256=lOVJaYXFapvFBV_wDcEb1DpdPhlBib12P_qeLqHBqvk,60
+prefect_snowflake-0.26.1.dist-info/top_level.txt,sha256=qQtTeSj5RIntw2FZU__IhtBdLvWGwr3OTJROYgN3i-Y,18
+prefect_snowflake-0.26.1.dist-info/RECORD,,
