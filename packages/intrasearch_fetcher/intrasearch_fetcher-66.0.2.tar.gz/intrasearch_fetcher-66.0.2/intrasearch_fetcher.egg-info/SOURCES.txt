@@ -1,0 +1,6 @@
+README.md
+setup.py
+intrasearch_fetcher.egg-info/PKG-INFO
+intrasearch_fetcher.egg-info/SOURCES.txt
+intrasearch_fetcher.egg-info/dependency_links.txt
+intrasearch_fetcher.egg-info/top_level.txt
