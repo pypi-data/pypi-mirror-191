@@ -1,0 +1,6 @@
+README.md
+setup.py
+testwsgi.egg-info/PKG-INFO
+testwsgi.egg-info/SOURCES.txt
+testwsgi.egg-info/dependency_links.txt
+testwsgi.egg-info/top_level.txt
