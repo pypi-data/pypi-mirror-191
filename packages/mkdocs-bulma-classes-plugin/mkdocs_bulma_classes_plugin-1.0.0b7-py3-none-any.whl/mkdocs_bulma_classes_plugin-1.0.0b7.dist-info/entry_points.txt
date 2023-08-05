@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+bulma-classes=mkdocs_bulma_classes_plugin.plugin:BulmaClassesPlugin
+
