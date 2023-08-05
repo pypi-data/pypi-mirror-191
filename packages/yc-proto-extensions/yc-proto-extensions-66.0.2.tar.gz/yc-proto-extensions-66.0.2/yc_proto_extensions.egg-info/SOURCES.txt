@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_proto_extensions.egg-info/PKG-INFO
+yc_proto_extensions.egg-info/SOURCES.txt
+yc_proto_extensions.egg-info/dependency_links.txt
+yc_proto_extensions.egg-info/top_level.txt
