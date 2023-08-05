@@ -1,0 +1,6 @@
+README.md
+setup.py
+soc_splunk_sdk.egg-info/PKG-INFO
+soc_splunk_sdk.egg-info/SOURCES.txt
+soc_splunk_sdk.egg-info/dependency_links.txt
+soc_splunk_sdk.egg-info/top_level.txt
