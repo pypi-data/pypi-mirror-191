@@ -1,0 +1,4 @@
+boto3
+botocore
+Pillow>=9.4.*
+pypdf>=2.5.*
