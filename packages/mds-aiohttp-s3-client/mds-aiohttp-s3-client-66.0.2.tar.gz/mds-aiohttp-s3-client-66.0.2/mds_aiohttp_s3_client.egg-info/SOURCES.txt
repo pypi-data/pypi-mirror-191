@@ -1,0 +1,6 @@
+README.md
+setup.py
+mds_aiohttp_s3_client.egg-info/PKG-INFO
+mds_aiohttp_s3_client.egg-info/SOURCES.txt
+mds_aiohttp_s3_client.egg-info/dependency_links.txt
+mds_aiohttp_s3_client.egg-info/top_level.txt
