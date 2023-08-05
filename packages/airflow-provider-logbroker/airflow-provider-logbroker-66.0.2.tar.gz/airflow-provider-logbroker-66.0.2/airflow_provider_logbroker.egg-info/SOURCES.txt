@@ -1,0 +1,6 @@
+README.md
+setup.py
+airflow_provider_logbroker.egg-info/PKG-INFO
+airflow_provider_logbroker.egg-info/SOURCES.txt
+airflow_provider_logbroker.egg-info/dependency_links.txt
+airflow_provider_logbroker.egg-info/top_level.txt
