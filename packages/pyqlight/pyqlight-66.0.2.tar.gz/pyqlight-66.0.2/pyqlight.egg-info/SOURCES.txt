@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyqlight.egg-info/PKG-INFO
+pyqlight.egg-info/SOURCES.txt
+pyqlight.egg-info/dependency_links.txt
+pyqlight.egg-info/top_level.txt
