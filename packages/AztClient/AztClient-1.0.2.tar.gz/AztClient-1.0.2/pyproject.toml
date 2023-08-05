@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AztClient"
+description = "AztQuant Server Python Client"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE.txt" }
+keywords = ["azt", 'aztve', "aztquant", "quant"]
+authors = [
+    { name = "Qujamlee", email = "qujamlee@126.com" }
+]
+maintainers = [
+    { name = "Qujamlee", email = "qujamlee@126.com" }
+]
+classifiers = [
+    'Development Status :: 4 - Beta', # "3 - Alpha", "4 - Beta", "5 - Production/Stable"
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+]
+dependencies = [
+    'pandas',
+    'colorlog >= 6.6.0',
+    'pyzmq >= 23.2.0',
+    'grpcio >= 1.47.0',
+    'protobuf >= 3.19.4',
+]
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://www.aztquant.com"
+documentation = "https://www.aztquant.com"
+repository = "https://gitee.com/Qujamlee/azt-client.git"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = { }
+
+[tool.setuptools.dynamic]
+version = { attr = "AztClient.__version__" }

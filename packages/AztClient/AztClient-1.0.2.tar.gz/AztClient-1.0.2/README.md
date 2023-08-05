@@ -1,0 +1,3166 @@
+# 1 安装SDK
+
+1. **版本说明**
+
+   > - 在安装SDK之前，请确认已经正确安装**3.7.0**及以上版本Python环境，下载地址[www.python.org](https://www.python.org/ftp/python/)，推荐参考[Python3安装教程](https://www.runoob.com/python3/python3-install.html)
+   > - 当前SDK版本：**`1.0.2`**
+
+2. **安装指令**
+
+   > 以Windows为例，打开可调用Python3的命令行终端，键入以下命令安装或更新SDK：
+   >
+   > ```bash
+   > pip install AztClient  # 安装指令
+   > pip install --upgrade AztClient # 更新指令
+   > 
+   > # MacOS和Linux环境下可能需要使用"pip3"代替"pip"进行安装
+   > ```
+
+3. **指定安装源**
+
+   > SDK所有的更新都会提交到[PyPI](https://pypi.org/)（Python官方源），项目地址：[AztClient · PyPI](https://pypi.org/project/AztClient/)
+   >
+   > 若使用[http://mirrors.aliyun.com/pypi/simple/](http://mirrors.aliyun.com/pypi/simple/) 等国内镜像源时，可能会延迟收到最新版本，因此建议使用官方源下载和更新SDK：
+   >
+   > ```bash
+   > # 只有在默认使用国内镜像源时才需要指定pypi镜像源
+   > pip install AztClient -i https://pypi.org/simple
+   > pip install --upgrade AztClient -i https://pypi.org/simple
+   > ```
+   >
+   > - 如何判断是否默认使用国内镜像源
+   >
+   >   ```bash
+   >   pip config list
+   >   # 如果命令执行后没有出现任何内容则说明默认使用pypi官方源
+   >   # 反之则会显示当前正在使用的镜像源
+   >   ```
+
+4. **手动安装**
+
+   > 若无法通过`pip`命令安装最新版本SDK，也可以直接从开源地址中下载安装
+   >
+   > SDK开源地址：[https://gitee.com/Qujamlee/azt-client](https://gitee.com/Qujamlee/azt-client)
+   >
+   > - 方法1 - 直接拷贝源文件（需要安装`git`工具，推荐参考[Git安装教程](https://www.runoob.com/git/git-install-setup.html)）
+   >
+   >   ```bash
+   >   git clone https://gitee.com/Qujamlee/azt-client.git
+   >   cd azt-client
+   >   # 拷贝AztClient到需要使用的目录即可
+   >   ```
+   >
+   > - 方法2 - 安装发行版（[发行版下载](https://gitee.com/Qujamlee/azt-client/releases/download/v1.0.0/AztClient-1.0.0-py3-none-any.whl)）
+   >
+   >   ```bash
+   >   # 首先要下载发行版（比如其名称为AztClient-1.0.0-py3-none-any.whl）
+   >   # 下载完成后在发行版文件目录中打开终端，输入：
+   >   pip install ./AztClient-1.0.0-py3-none-any.whl  # 安装
+   >   ```
+
+
+
+---
+
+
+
+# 2 数据结构
+
+## 2.1 TradeSpi响应数据类
+
+### 2.1.1 AccDepositAck - 账户入金响应
+
+| 属性       | 类型            | 说明                                                        |
+| ---------- | --------------- | ----------------------------------------------------------- |
+| acc_margin | AccMargin       | 账户资产信息                                                |
+| error_code | EDepositRetCode | 入金错误返回码，具体含义与取值参见枚举常量`EDepositRetCode` |
+
+### 2.1.2 AccMargin - 账户资产信息
+
+| 属性                   | 类型  | 说明         |
+| ---------------------- | ----- | ------------ |
+| account                | str   | 账户ID       |
+| total_amount           | float | 账户总资金   |
+| available_amount       | float | 账户可用资金 |
+| deposit                | float | 账户入金总额 |
+| open_balance           | float | 期初结存     |
+| trade_frozen_margin    | float | 交易冻结金额 |
+| position_market_amount | float | 持仓市值     |
+| total_buy_amount       | float | 买入总金额   |
+| total_buy_fee          | float | 买入总手续费 |
+| total_sell_amount      | float | 卖出总金额   |
+| total_sell_fee         | float | 卖出总手续费 |
+
+### 2.1.3 CancelOrder - 撤单信息
+
+| 属性         | 类型              | 说明                           |
+| ------------ | ----------------- | ------------------------------ |
+| client_ref   | str               | 本地订单编号，由客户端自动生成 |
+| sender_user  | str               | 账户标识，由系统自动生成       |
+| account      | str               | 账户ID                         |
+| org_order_id | str               | 需要撤销的委托订单编号         |
+| send_time    | datetime.datetime | 发送时间，由系统自动生成       |
+
+### 2.1.4 CancelOrderReject - 撤单拒绝回报信息
+
+| 属性          | 类型              | 说明                                                       |
+| ------------- | ----------------- | ---------------------------------------------------------- |
+| client_ref    | str               | 本地订单编号，由客户端自动生成                             |
+| org_order_id  | str               | 撤单交易平台委托订单编号                                   |
+| reject_reason | ECxRejReasonType  | 撤单拒绝原因，具体含义与取值参见枚举常量`ECxRejReasonType` |
+| report_time   | datetime.datetime | 回报时间，由系统自动生成                                   |
+
+### 2.1.5 HisDeposit - 历史入金信息
+
+| 属性            | 类型              | 说明                               |
+| --------------- | ----------------- | ---------------------------------- |
+| settlement_date | datetime.datetime | 结算日期                           |
+| account         | str               | 账户ID                             |
+| client_ref      | str               | 本地入金请求编号，由客户端自动生成 |
+| deposit         | float             | 入金金额                           |
+
+### 2.1.6 OrdReport - 委托回报信息
+
+| 属性        | 类型         | 说明             |
+| ----------- | ------------ | ---------------- |
+| place_order | PlaceOrder   | 委托订单信息     |
+| status_msg  | OrdStatusMsg | 委托订单状态信息 |
+
+### 2.1.7 OrdStatusMsg - 委托订单状态信息
+
+| 属性          | 类型               | 说明                                                     |
+| ------------- | ------------------ | -------------------------------------------------------- |
+| order_status  | EOrderStatus       | 委托订单执行状态，具体含义与取值见枚举常量`EOrderStatus` |
+| traded_qty    | int                | 订单交易数量，以股等基础单位为单位                       |
+| traded_amount | float              | 订单交易金额                                             |
+| total_fee     | float              | 订单交易手续费                                           |
+| frozen_margin | float              | 订单对账户冻结金额                                       |
+| frozen_price  | float              | 订单对账户冻结价格                                       |
+| reject_reason | EOrderRejectReason | 拒单原因，具体含义与取值参见枚举常量`EOrderRejectReason` |
+| report_time   | datetime.datetime  | 回报时间，由系统自动生成                                 |
+
+### 2.1.8 PlaceOrder - 委托订单信息
+
+| 属性             | 类型              | 说明                                                         |
+| ---------------- | ----------------- | ------------------------------------------------------------ |
+| client_ref       | str               | 本地订单编号，由客户端自动生成                               |
+| sender_user      | str               | 账户标识，由系统自动生成                                     |
+| account          | str               | 账户ID                                                       |
+| market           | str               | 交易所代码                                                   |
+| code             | str               | 标的代码                                                     |
+| order_type       | EOrderType        | 委托类型，具体含义与取值参见枚举常量`EOrderType`             |
+| business_type    | EBusinessType     | 业务类型，具体含义与取值参见枚举常量`EBusinessType`          |
+| order_side       | EOrderSide        | 买入卖出委托方向，具体含义与取值参见枚举常量`EOrderSide`     |
+| effect           | EPositionEffect   | 开仓平仓委托方向，具体含义与取值参见枚举常量`EPositionEffect` |
+| order_price      | float             | 委托价格，适用于限价单                                       |
+| order_qty        | int               | 委托数量                                                     |
+| order_id         | str               | 订单编号，由服务端自动生成                                   |
+| discretion_price | float             | 市价委托转限价委托时采用的限价                               |
+| send_time        | datetime.datetime | 发送时间，由系统自动生成                                     |
+
+### 2.1.9 QryHisAccAck - 历史资产信息查询
+
+| 属性        | 类型            | 说明                 |
+| ----------- | --------------- | -------------------- |
+| acc_margins | list[AccMargin] | 账户历史资产信息列表 |
+
+### 2.1.10 QryHisDepositAck - 历史入金信息查询
+
+| 属性         | 类型             | 说明                 |
+| ------------ | ---------------- | -------------------- |
+| his_deposits | list[HisDeposit] | 账户历史入金信息列表 |
+
+### 2.1.11 QueryOrdersAck - 委托查询响应
+
+| 属性          | 类型            | 说明             |
+| ------------- | --------------- | ---------------- |
+| order_reports | list[OrdReport] | 委托回报信息列表 |
+
+### 2.1.12 QueryPositionsAck - 持仓查询响应
+
+| 属性      | 类型                | 说明         |
+| --------- | ------------------- | ------------ |
+| positions | list[StockPosition] | 持仓信息列表 |
+
+### 2.1.13 QueryTradesAck - 交易明细查询响应
+
+| 属性          | 类型              | 说明             |
+| ------------- | ----------------- | ---------------- |
+| trade_reports | list[TradeReport] | 成交回报信息列表 |
+
+### 2.1.14 StockPosition - 持仓信息
+
+| 属性              | 类型  | 说明             |
+| ----------------- | ----- | ---------------- |
+| account           | str   | 账户ID           |
+| market            | str   | 交易所代码       |
+| code              | str   | 标的             |
+| total_qty         | int   | 持有总数量       |
+| today_qty         | int   | 今日新增持有数量 |
+| open_avg_price    | float | 成本价格         |
+| surplus_close_qty | int   | 可平仓数量       |
+| frozen_qty        | int   | 冻结数量         |
+
+### 2.1.15 TradeLoginAck - 模拟柜台登录响应
+
+| 属性       | 类型           | 说明                                                         |
+| ---------- | -------------- | ------------------------------------------------------------ |
+| login_info | TradeLoginInfo | 登录信息                                                     |
+| ret_code   | ELoginRetCode  | 登录成功情况返回码，具体含义与取值参见枚举常量`ELoginRetCode` |
+
+### 2.1.16 TradeLoginInfo - 模拟柜台登录信息
+
+| 属性          | 类型              | 说明         |
+| ------------- | ----------------- | ------------ |
+| account       | str               | 账户ID       |
+| trading_day   | str               | 当前交易日   |
+| exchange_name | str               | 交易所名称   |
+| exchange_time | datetime.datetime | 当前交易时间 |
+
+### 2.1.17 TradeReport - 成交回报信息
+
+| 属性          | 类型              | 说明                                                |
+| ------------- | ----------------- | --------------------------------------------------- |
+| order_id      | str               | 对应的委托订单编号                                  |
+| client_ref    | str               | 对应的本地订单编号                                  |
+| account       | str               | 账户ID                                              |
+| market        | str               | 交易所代码                                          |
+| code          | str               | 标的                                                |
+| traded_id     | str               | 成交编号                                            |
+| traded_index  | int               | 对应委托的成交序号，从0递增                         |
+| exec_type     | EExecType         | 成交回报类型，具体含义与取值参见枚举常量`EExecType` |
+| traded_qty    | int               | 成交数量                                            |
+| traded_price  | float             | 成交价格                                            |
+| fee           | float             | 成交费用                                            |
+| transact_time | datetime.datetime | 执行报送时间                                        |
+
+### 2.1.18 TradeRegisterInfo - 模拟柜台账户信息
+
+| 属性        | 类型         | 说明                                                 |
+| ----------- | ------------ | ---------------------------------------------------- |
+| strategy_id | str          | 策略ID                                               |
+| account     | str          | 账户ID                                               |
+| passwd      | str          | 账户密码                                             |
+| acc_status  | ERegisterRet | 账户状态码，具体含义与取值参见枚举常量`ERegisterRet` |
+
+
+
+## 2.2 QuoteSpi响应数据类
+
+### 2.2.1 QuoteBaseMsg - 基本行情数据
+
+| 属性          | 类型              | 说明                                                |
+| ------------- | ----------------- | --------------------------------------------------- |
+| market        | str               | 标的所属交易所                                      |
+| code          | str               | 合约/标的代码                                       |
+| security_type | ESecurityType     | 合约类型，具体含义与取值参见枚举常量`ESecurityType` |
+| open          | float             | 开盘价                                              |
+| high          | float             | 最高价                                              |
+| low           | float             | 最低价                                              |
+| last          | float             | 最新价                                              |
+| pre_close     | float             | 昨收盘价                                            |
+| close         | float             | 今收盘价                                            |
+| upper_limit   | float             | 涨停价                                              |
+| lower_limit   | float             | 跌停价                                              |
+| total_amount  | float             | 总成交金额（单位元，与交易所一致）                  |
+| total_volume  | float             | 总成交量  （单位股，与交易所一致）                  |
+| avg_price     | float             | 当日均价                                            |
+| bid_price     | dict[int,float]   | 申买价队列（五档），key为0-4，对应第1至5档          |
+| ask_price     | dict[int,float]   | 申卖价队列（五档），key为0-4，对应第1至5档          |
+| bid_volume    | dict[int,int]     | 申买量队列（五档），key为0-4，对应第1至5档          |
+| ask_volume    | dict[int,int]     | 申卖量队列（五档），key为0-4，对应第1至5档          |
+| data_time     | datetime.datetime | 时间                                                |
+
+### 2.2.2 QuoteMsg - 实时行情数据
+
+| 属性             | 类型            | 说明                                                  |
+| ---------------- | --------------- | ----------------------------------------------------- |
+| data_type        | EMarketDataType | 行情类型，具体含义与取值参见枚举常量`EMarketDataType` |
+| quote_base_msg   | QuoteBaseMsg    | 基本信息                                              |
+| stock_extra_data | Any             | 额外信息，具体类型由`data_type`决定                   |
+
+### 2.2.3 QuoteRegisterAck - 订阅/取消成败回报
+
+| 属性         | 类型          | 说明                                                         |
+| ------------ | ------------- | ------------------------------------------------------------ |
+| market_codes | str           | 订阅/取消订阅标的                                            |
+| ret_code     | EQuoteRetCode | 订阅/取消订阅成功/失败，具体含义与取值参见枚举常量`EQuoteRetCode` |
+
+### 2.2.4 QuoteStockExtra - 股票行情额外信息
+
+| 属性                   | 类型  | 说明                     |
+| ---------------------- | ----- | ------------------------ |
+| total_bid_qty          | int   | 委托买入总量             |
+| total_ask_qty          | int   | 委托卖出总量             |
+| ma_bid_price           | float | 加权平均委买价格         |
+| ma_ask_price           | float | 加权平均委卖价格         |
+| ma_bond_bid_price      | float | 债券加权平均委买价格     |
+| ma_bond_ask_price      | float | 债券加权平均委卖价格     |
+| yield_to_maturity      | float | 债券到期收益率           |
+| iopv                   | float | 基金实时参考净值         |
+| etf_buy_count          | int   | ETF申购笔数              |
+| etf_sell_count         | int   | ETF赎回笔数              |
+| etf_buy_qty            | int   | ETF申购数量              |
+| etf_buy_money          | float | ETF申购金额              |
+| etf_sell_qty           | int   | ETF赎回数量              |
+| etf_sell_money         | float | ETF赎回金额              |
+| total_warrant_exec_qty | int   | 权证执行的总数量         |
+| warrant_lower_price    | float | 权证跌停价格             |
+| warrant_upper_price    | float | 权证涨停价格             |
+| cancel_buy_count       | int   | 买入撤单笔数             |
+| cancel_sell_count      | int   | 卖出撤单笔数             |
+| cancel_buy_qty         | int   | 买入撤单数量             |
+| cancel_sell_qty        | int   | 卖出撤单数量             |
+| cancel_buy_money       | float | 买入撤单金额             |
+| cancel_sell_money      | float | 卖出撤单金额             |
+| total_buy_count        | int   | 买入总笔数               |
+| total_sell_count       | int   | 卖出总笔数               |
+| duration_after_buy     | int   | 买入委托成交最大等待时间 |
+| duration_after_sell    | int   | 卖出委托成交最大等待时间 |
+| num_bid_orders         | int   | 买方委托价位数           |
+| num_ask_orders         | int   | 卖方委托价位数           |
+| pre_iopv               | float | 基金上日参考净值         |
+
+### 2.2.5 SecurityInfoRsp - 标的信息
+
+| 属性                 | 类型                     | 说明         |
+| -------------------- | ------------------------ | ------------ |
+| security_static_info | list[SecurityStaticInfo] | 标的信息列表 |
+
+### 2.2.6 SecurityStaticInfo - 标的信息
+
+| 属性          | 类型          | 说明                                                |
+| ------------- | ------------- | --------------------------------------------------- |
+| market        | str           | 交易所代码                                          |
+| code          | str           | 标的                                                |
+| security_name | str           | 标的名称                                            |
+| security_type | ESecurityType | 标的类型，具体含义与取值参见枚举常量`ESecurityType` |
+| price_tick    | float         | 标的价格变化单位                                    |
+| buy_qty_unit  | int           | 标的买入基本单位                                    |
+| sell_qty_unit | int           | 标的卖出基本单位                                    |
+
+
+
+## 2.3 HisQuoteSpi响应数据类
+
+### 2.3.1 Calendar - 交易日历
+
+| 属性     | 类型                    | 说明         |
+| -------- | ----------------------- | ------------ |
+| market   | str                     | 交易所       |
+| calendar | list[datetime.datetime] | 日历时间列表 |
+
+### 2.3.2 FundamentalsDatas - 基本面数据
+
+| 属性              | 类型              | 说明                                                         |
+| ----------------- | ----------------- | ------------------------------------------------------------ |
+| fundamentals_type | EFundamentalsType | 基本面数据类型，具体含义与取值参见枚举常量`EFundamentalsType` |
+| market            | str               | 交易所代码                                                   |
+| code              | str               | 标的代码                                                     |
+| datas             | pd.DataFrame      | 数据表格                                                     |
+
+### 2.3.3 HisQuoteBar - 历史Bar行情信息
+
+| 属性          | 类型              | 说明                                        |
+| ------------- | ----------------- | ------------------------------------------- |
+| bob           | datetime.datetime | 起始时间                                    |
+| eob           | datetime.datetime | 结束时间                                    |
+| market        | str               | 交易所代码                                  |
+| code          | str               | 标的代码                                    |
+| period        | EPeriod           | 行情粒度，具体含义与取值见枚举常量`EPeriod` |
+| open          | float             | 开盘价/起始价                               |
+| close         | float             | 收盘价/结尾价                               |
+| high          | float             | 最高价                                      |
+| low           | float             | 最低价                                      |
+| settle        | float             | 结算价                                      |
+| total_amount  | float             | 总交易金额                                  |
+| total_volume  | int               | 总交易量                                    |
+| total_positon | int               | 总持仓量                                    |
+
+### 2.3.4 HisQuoteBarsMsg - 历史Bar行情信息
+
+| 属性           | 类型              | 说明            |
+| -------------- | ----------------- | --------------- |
+| his_quote_bars | list[HisQuoteBar] | 历史Bar行情列表 |
+
+### 2.3.5 HisQuoteLoginRsp - 历史服务登录响应
+
+| 属性       | 类型             | 说明                                                     |
+| ---------- | ---------------- | -------------------------------------------------------- |
+| error_code | EHisQuoteErrCode | 登录错误码，具体含义与取值参见枚举常量`EHisQuoteErrCode` |
+| error_msg  | str              | 登录错误消息                                             |
+
+### 2.3.6 HisQuoteTicksMsg - 历史Tick行情信息
+
+| 属性            | 类型                | 说明             |
+| --------------- | ------------------- | ---------------- |
+| his_quote_ticks | list[QuoteStockMsg] | 历史Tick行情列表 |
+
+
+
+### 2.3.7 TradingCalendar - 交易日历信息
+
+| 属性      | 类型           | 说明         |
+| --------- | -------------- | ------------ |
+| calendars | list[Calendar] | 交易日历信息 |
+
+### 2.3.8 TradingDate - 交易日
+
+| 属性         | 类型              | 说明   |
+| ------------ | ----------------- | ------ |
+| market       | str               | 交易所 |
+| trading_date | datetime.datetime | 交易日 |
+
+
+
+## 2.4 枚举常量类
+
+### 2.4.1 EAccStatus - 账户状态码
+```python
+KAccStatus_Unknown    = 0  # 未知状态
+KAccStatus_Normal     = 1  # 正常
+KAccStatus_WrittenOff = 2  # 已注销
+KAccStatus_Disable    = 3  # 已禁用
+```
+### 2.4.2 EAdjust - 复权方式
+
+```python
+KAdjust_NONE  =  0  # 不复权
+KAdjust_PREV  =  1  # 前复权
+KAdjust_POST  =  2  # 后复权
+```
+
+### 2.4.3 EBusinessType - 业务类型
+
+```python
+KBusinessType_Unknown  =  0  # 未知类型
+KBusinessType_NORMAL   =  1  # 普通交易
+```
+### 2.4.4 ECxRejReasonType - 撤单拒绝原因类型
+```python
+  KCxRejReasonType_TooLateCancel   =  0  # 撤单太晚（Too late to cancel）
+  KCxRejReasonType_UnknowOrder     =  1  # 未知订单（Unknown order）
+  KCxRejReasonType_Broker          =  2  # 自选原因（Broker / Exchange Option）
+  KCxRejReasonType_PendingCancel   =  3  # 正在撤消（Order already in Pending Cancel or Pending Replace status）
+  KCxRejReasonType_Duplicate       =  6  # 收到重复单（Duplicate ClOrdID received）
+  KCxRejReasonType_Other           = 99  # 其他（other）
+```
+### 2.4.5 EDepositRetCode - 入金错误返回码
+```python
+KDepositReCode_Unknown        = 0  # 未知错误
+KDepositReCode_NoError        = 1  # 无错误
+KDepositReCode_NoEnoughCash   = 2  # 资金不足
+KDepositReCode_CapitalOverrun = 3  # 资金超限9*10^17(added 20170410)
+KDepositReCode_IllegalAccount = 4  # 非法交易账号(added 20170518)
+KDepositReCode_IllegalPara    = 5  # 请求参数错误(amount==0, type is unknow)
+```
+### 2.4.6 EExecType - 成交回报类型
+```python
+KExecType_Unknown        =  0  # 未知类型
+KExecType_New            =  1  # 已报
+KExecType_DoneForDay     =  3  # 当日已完成
+KExecType_Canceled       =  4  # 已撤销
+KExecType_Replaced       =  5  # 已修改
+KExecType_PendingCancel  =  6  # 待撤销
+KExecType_Stopped        =  7  # 已停止(已终止)
+KExecType_Rejected       =  8  # 已拒绝
+KExecType_Suspended      =  9  # 挂起(已延缓)
+KExecType_PendingNew     = 65  #  'A' 待报
+KExecType_Calculated     = 66  #  'B' 已计算
+KExecType_Expired        = 67  #  'C' 过期
+KExecType_Restated       = 68  #  'D' 重置(主动发送)
+KExecType_PendingReplace = 69  #  'E' 待修改
+KExecType_Trade          = 70  #  'F' 成交或部分成交
+KExecType_TradeCorrect   = 71  #  'G' 成交更正
+KExecType_TradeCancel    = 72  #  'H' 成交撤销
+KExecType_OrderStatus    = 73  #  'I' 委托状态
+```
+### 2.4.7 EFundamentalsType - 财务数据类型
+
+```python
+KFundamentalsType_Unknown            =  0  #
+KFundamentalsType_TradingDerivative  =  1  # 股票交易衍生
+KFundamentalsType_BalanceSheet       =  2  # 资产负债
+KFundamentalsType_Cashflow           =  3  # 现金流量
+KFundamentalsType_Income             =  4  # 利润表
+KFundamentalsType_Prim               =  5  # 主要财务指标
+KFundamentalsType_Deriv              =  6  # 衍生财务指标
+```
+
+### 2.4.8 EHisQuoteErrCode - 历史行情服务错误码
+
+```python
+KHisQuoteErrCode_Unknown                =  0       # 未知
+KHisQuoteErrCode_LoginSucc              =  1       # 登录成功
+KHisQuoteErrCode_SystemError            =  201100  # 系统错误
+KHisQuoteErrCode_ReqTypeUnknown         =  201101  # 未知请求类型
+KHisQuoteErrCode_DoNotLogin             =  201102  # 没有登录
+KHisQuoteErrCode_NotTradeDay            =  201103  # 非交易日
+KHisQuoteErrCode_NotTradeTime           =  201104  # 非交易时间
+KHisQuoteErrCode_StaffNotExist          =  201111  # 机构员工不存在
+KHisQuoteErrCode_ErrStaffLoginPasswd    =  201112  # 机构员工登录密码错误
+KHisQuoteErrCode_ErrStaffLoginSkey      =  201113  # 机构员工skey校验失败
+KHisQuoteErrCode_StaffLogOutFailed      =  201114  # 机构员工登出失败
+KHisQuoteErrCode_NoPrivilegeAdmin       =  201115  # 机构员工没有对应的管理权限
+KHisQuoteErrCode_StaffAccountForbidden  =  201116  # 机构员工帐户被禁用
+```
+
+### 2.4.9 ELoginRetCode - 登录成功情况返回码
+
+```python
+KLoginReCode_Unknown       = 0  # 未知错误
+KLoginReCode_LoginSucc     = 1  # 登录成功
+KLoginReCode_UnknownAcc    = 2  # 未知账号 或 密码错误
+KLoginReCode_AccUnNormal   = 3  # 非正常状态的账号(已注销/已禁用)
+```
+### 2.4.10 EMarketDataType - 行情类型
+
+```python
+KMarketDataType_Unknown  =  0  # 未知
+KMarketDataType_Actual   =  1  # 现货
+KMarketDataType_SOption  =  2  # 现货期权
+KMarketDataType_Future   =  3  # 期货|期货期权
+```
+
+### 2.4.11 ESecurityType - 标的类型
+
+```python
+KSecurityType_Unknown       =  0  # 未知
+KSecurityType_Stock         =  1  # 普通股票
+KSecurityType_Option        =  2  # 期权(股票)
+KSecurityType_Fund          =  3  # 基金
+KSecurityType_Index         =  4  # 指数(股票)
+KSecurityType_Bond          =  5  # 债券
+KSecurityType_Future        =  6  # 期货
+KSecurityType_FutureOption  =  7  # 期权(期货)
+KSecurityType_IndexFuture   =  8  # 指数(期货)
+```
+
+### 2.4.12 EOrderRejectReason - 委托拒绝原因
+
+```python
+KOrderRejectReason_NoError             =   0   # 无错误
+KOrdRejReason_UnknownSymbol            =   1   # 证券代码非法（Unknown symbol）
+KOrdRejReason_ExchangeClosed           =   2   # 交易关闭（Exchange closed）
+KOrdRejReason_OrdExceedsLimit          =   3   # 订单超过限价（Order exceeds limit）
+KOrdRejReason_TooLateEnter             =   4   # 订单太迟（Too late to enter）
+KOrdRejReason_UnknowOrd                =   5   # 未知订单（Unknown Order）
+KOrdRejReason_DuplicateOrd             =   6   # 重复订单（ Duplicate Order (e.g. dupe ClOrdID)）
+KOrdRejReason_StaleOrd                 =   8   # 失效订单（Stale Order）
+KOrdRejReason_InvalidAcc               =  10   # 无效账户（Invalid Investor ID）
+KOrdRejReason_UnsupportedOrdChara      =  11   # 不支持的订单特征（Unsupported order characteristic）
+KOrdRejReason_IncorrectQty             =  13   # 数量错误（Incorrect quantity）
+KOrdRejReason_UnknownAcc               =  15   # 未知账号（Unknown account(s)）
+KOrdRejReason_NotEnoughPosition        =  16   # 持仓不足
+KOrdRejReason_SecuritiesTrading        =  102  # 证券停牌(获取行情失败)
+KOrdRejReason_QtyNonMultipleBuyUnit    =  103  # 买订单数量不是SJSXX.XXBLDW 的整数倍；或
+KOrdRejReason_PriceNonMultipleTick     =  106  # 委托价格不是SJSXX.XXJGDW 的整数倍
+KOrdRejReason_IllegalEntrustedBusiness =  108  # 非法的委托业务
+KOrdRejReason_LackDeposit              =  117  # 参与者业务单元资金可用量不足
+KOrdRejReason_PriceError               =  125  # 价格错误
+KOrdRejReason_InvalidBusinessCategory  =  148  # 无效业务类别(order_type)
+KOrdRejReason_NonTradingTime           =  204  # 非交易时间（This stock is not in tradinghours）
+KOrdRejReason_PriceZero                =  219  # 申报价不能为零（Price may not be 0 fora limit order）
+```
+### 2.4.13 EOrderSide - 买卖方向
+```python
+KOrderDirection_Unknown         =  0  # 未知方向
+KOrderDirection_Buy             = 49  # 买入
+KOrderDirection_Sell            = 50  # 卖出
+KOrderDirection_Call            = 68  # 认购
+KOrderDirection_Callable        = 69  # 赎回
+KOrderDirection_FinancingToBuy  = 70  # 融资买入
+KOrderDirection_FinancingToSell = 71  # 融资卖出
+```
+### 2.4.14 EOrderStatus - 委托状态
+```python
+KOrderStatus_Unknown            =  0  # 未知状态
+KOrderStatus_New                =  1  # 已报
+KOrderStatus_PartiallyFilled    =  2  # 部成
+KOrderStatus_Filled             =  3  # 已成
+KOrderStatus_DoneForDay         =  4  # 当日已完成
+KOrderStatus_Canceled           =  5  # 已撤
+KOrderStatus_PendingCancel      =  6  # 待撤
+KOrderStatus_Stopped            =  7  # 停止
+KOrderStatus_Rejected           =  8  # 拒绝
+KOrderStatus_Suspended          =  9  # 挂起
+KOrderStatus_PendingNew         = 65  # 'A'待报
+KOrderStatus_Calculated         = 66  # 'B'计算
+KOrderStatus_Expired            = 67  # 'C'已过期
+KOrderStatus_AcceptedForBidding = 68  # 'D'接受竞价
+KOrderStatus_PendingReplace     = 69  # 'E'待修改
+```
+### 2.4.15 EOrderType - 委托类型
+```python
+KOrderType_Unknown               =  0  # 未知类型
+KOrderType_Market                =  1  # 市价委托
+KOrderType_Limit                 =  2  # 限价委托
+KOrderType_Stop                  =  4  # 止损委托
+KOrderType_Best_5_Then_Cancel    =  7  # 市价最优五档剩余撤销
+KOrderType_Best_5_Then_Limit     =  8  # 市价最优五档剩余转限价
+KOrderType_Immediately_Or_Cancel =  9  # 市价即时成交剩余撤销
+KOrderType_All_Or_Cancel         = 10  # 市价即时全部成交或撤销
+KOrderType_Market_Then_Limit     = 75  # 市价剩余转限价
+KOrderType_Best_Of_Party         = 85  # 本方最优价格
+KOrderType_Best_Of_Conterparty   = 86  # 对方最优价格
+```
+### 2.4.16 EQuoteRetCode - 行情订阅成败返回码
+
+```python
+KQuoteRetCode_Unknown   =  0  # 未知
+KQuoteRetCode_Sucess    =  1  # 订阅/取消订阅成功
+KQuoteRetCode_HasError  =  2  # 订阅/取消订阅出错
+```
+
+### 2.4.17 EPeriod - 历史数据周期
+
+```python
+KPeriod_Unknown       =  0  # 未知
+KPeriod_ONE_MIN       =  1  # 一分钟
+KPeriod_FIVE_MIN      =  2  # 五分钟
+KPeriod_FIFTEEN_NMIN  =  3  # 十五分钟
+KPeriod_HALF_HOUR     =  4  # 半小时
+KPeriod_ONE_HOUR      =  5  # 一小时
+KPeriod_DAILY         =  6  # 一天
+```
+
+### 2.4.18 EPositionEffect - 开平方向
+
+```python
+KPositionEffect_Unknown         =  0  # 未知方向
+KPositionEffect_Open            = 48  # '0';开仓
+KPositionEffect_Close           = 49  # '1';平仓
+KPositionEffect_ForceClose      = 50  # '2';强平
+KPositionEffect_CloseToday      = 51  # '3';平今
+KPositionEffect_CloseYesterday  = 52  # '4';平昨
+```
+### 2.4.19 ERegisterRet - 注册完成情况返回码
+```python
+KRegisterRet_Unknown         = 0  # 未知错误
+KRegisterRet_Success         = 1  # 注册成功
+KRegisterRet_ReRegister      = 2  # 重复注册
+KRegisterRet_InvalidStrategy = 3  # 无效或非法 strategy_id
+```
+
+### 2.4.20 ESecurityType - 标的类型
+
+```python
+KSecurityType_Unknown       =  0  # 未知
+KSecurityType_Stock         =  1  # 普通股票
+KSecurityType_Option        =  2  # 期权(股票)
+KSecurityType_Fund          =  3  # 基金
+KSecurityType_Index         =  4  # 指数(股票)
+KSecurityType_Bond          =  5  # 债券
+KSecurityType_Future        =  6  # 期货
+KSecurityType_FutureOption  =  7  # 期权(期货)
+KSecurityType_IndexFuture   =  8  # 指数(期货)
+```
+
+
+
+---
+
+
+
+# 3 使用须知
+
+## 3.1 日志记录功能
+
+SDK基于logging模块实现了全局日志记录功能。
+
+### 3.1.1 set_root_logger - 设置全局Root日志
+
+- 函数签名
+
+  > ```python
+  > def set_root_logger(name=None, filename=None, level=AztClient.INFO, level_name=AztClient.LEVEL_NAME_CN, fmt=None, datefmt=None, msec=ac.MILLSECOND, log_colors=None, hint_left='[', hint_right=']', hint_separator=' ', farewell=True, farewell_text=None, disable=False)  # 设置全局Root日志
+  > 
+  > def debug(*msgs)  # 记录测试信息
+  > def log(*msgs)  # 记录正常信息
+  > def warning(*msgs)  # 记录警告信息
+  > def error(*msgs)  # 记录错误信息
+  > def critical(*msgs) # 记录严重错误信息
+  > ```
+
+- 参数
+
+  > | 参数           | 类型 | 默认值           | 说明                                                         |
+  > | -------------- | ---- | ---------------- | ------------------------------------------------------------ |
+  > | name           | str  | None             | Root日志名称，默认为`"Root"`                                 |
+  > | filename       | str  | None             | 日志输出存储文件路径，若未设置则直接打印输出日志             |
+  > | level          | int  | ac.INFO          | 日志记录等级，默认记录`INFO`级别及以上日志，低于`INFO`级别的日志会被忽略。可选日志级别有（日志级别从小到大）：`NOTSET`, `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL` |
+  > | level_name     | dict | ac.LEVEL_NAME_CN | 日志级别名称，默认显示日志的中文名。可选值有：`LEVEL_NAME_CN`（中文）、`LEVEL_NAME_EN`（英文）、`None`（不显示日志级别名称）或`自定义dict`（如`{NOTSET: "缺省", DEBUG: "测试", INFO: "日志", WARNING: "警告", ERROR: "错误", CRITICAL: "致命", }`） |
+  > | fmt            | str  | None             | 日志输出格式，具体格式参见`logging`库                        |
+  > | datefmt        | str  | None             | 时间输出格式，仅当日志输出格式中需要输出时间时生效，具体格式参见`logging`库 |
+  > | msec           | int  | MILLSECOND       | 微秒保留部分，仅当`datefmt`生效时有效，默认保留至毫秒。可选值有：`NOMICROSECOND`（不保留微秒部分），`MICROSECOND`（保留至微秒），`MILLSECOND`（保留至毫秒） |
+  > | log_colors     | dict | None             | 日志输出颜色。默认使用颜色方案为：`{'DEBUG': 'green', 'INFO': 'white',  'WARNING': 'yellow', 'ERROR': 'red', 'CRITICAL': 'bold_red'}`，具体参见`colorlog`库 |
+  > | hint_left      | str  | '['              | 模块提示符左部分                                             |
+  > | hint_right     | str  | ']'              | 模块提示符右部分                                             |
+  > | hint_separator | str  | ' '              | 模块间分割符                                                 |
+  > | farewell       | bool | True             | 是否在退出程序时输出告别语                                   |
+  > | farewell_text  | str  | None             | 退出程序时输出的告别语，仅当`farewell=True`时生效，`farewell_text=None`时表示使用默认告别语 |
+  > | disable        | bool | False            | 是否禁用Root日志                                             |
+
+- 示例
+
+  > ```python
+  > import AztClient as ac
+  > 
+  > ac.set_root_logger(level=ac.DEBUG, level_name=ac.LEVEL_NAME_CN)
+  > ac.debug("hello debug")
+  > ac.info("hello info")
+  > ac.warning("hello warning")
+  > ac.error("hello error")
+  > ac.critical("hello critical")
+  > 
+  > ac.set_root_logger(name="NewRoot", level=ac.WARNING, level_name=ac.LEVEL_NAME_EN)
+  > ac.debug("hello debug")
+  > ac.info("hello info")
+  > ac.warning("hello warning")
+  > ac.error("hello error")
+  > ac.critical("hello critical")
+  > 
+  > new_level_name = {
+  >     ac.DEBUG: "new测试",
+  >     ac.INFO: "new日志",
+  >     ac.WARNING: "new警告",
+  >     ac.ERROR: "new错误",
+  >     ac.CRITICAL: "new致命",
+  > }
+  > ac.set_root_logger(name=None, level_name=new_level_name, farewell_text="bye bye~")
+  > ac.info("hello info")
+  > ac.warning("hello warning")
+  > ac.error("hello error")
+  > ac.critical("hello critical")
+  > ```
+
+### 3.1.2 get_logger - 获取logger对象
+
+- 函数签名
+
+  > ```python
+  > def get_logger(name=None, filename=None, level=INFO, level_name=LEVEL_NAME_CN, fmt=None, datefmt=None, msec=MILLSECOND, log_colors=None, hint_left='[', hint_right=']', hint_separator=' ', new=False)
+  > ```
+
+- 参数
+
+  > | 参数           | 类型 | 默认值           | 说明                                                         |
+  > | -------------- | ---- | ---------------- | ------------------------------------------------------------ |
+  > | name           | str  | None             | 日志名称，默认获取全局Root日志对象；如果日志不存在则自动新建一个日志对象，若存在则直接获取已创建日志对象 |
+  > | filename       | str  | None             | 日志输出存储文件路径，若未设置则直接打印输出日志             |
+  > | level          | int  | ac.INFO          | 日志记录等级，默认记录`INFO`级别及以上日志，低于`INFO`级别的日志会被忽略。可选日志级别有（日志级别从小到大）：`NOTSET`, `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL` |
+  > | level_name     | dict | ac.LEVEL_NAME_CN | 日志级别名称，默认显示日志的中文名。可选值有：`LEVEL_NAME_CN`（中文）、`LEVEL_NAME_EN`（英文）、`None`（不显示日志级别名称）或`自定义dict`（如`{NOTSET: "缺省", DEBUG: "测试", INFO: "日志", WARNING: "警告", ERROR: "错误", CRITICAL: "致命", }`） |
+  > | fmt            | str  | None             | 日志输出格式，具体格式参见`logging`库                        |
+  > | datefmt        | str  | None             | 时间输出格式，仅当日志输出格式中需要输出时间时生效，具体格式参见`logging`库 |
+  > | msec           | int  | MILLSECOND       | 微秒保留部分，仅当`datefmt`生效时有效，默认保留至毫秒。可选值有：`NOMICROSECOND`（不保留微秒部分），`MICROSECOND`（保留至微秒），`MILLSECOND`（保留至毫秒） |
+  > | log_colors     | dict | None             | 日志输出颜色。默认使用颜色方案为：`{'DEBUG': 'green', 'INFO': 'white',  'WARNING': 'yellow', 'ERROR': 'red', 'CRITICAL': 'bold_red'}`，具体参见`colorlog`库 |
+  > | hint_left      | str  | '['              | 模块提示符左部分                                             |
+  > | hint_right     | str  | ']'              | 模块提示符右部分                                             |
+  > | hint_separator | str  | ' '              | 模块间分割符                                                 |
+  > | new            | bool | False            | 是否创建一个新的logger。当new=False时，若日志名称已存在，则直接获取已存在日志，其他参数即使发生修改也不会生效；当new=True时，若日志已存在，则删除已存在日志对象，生成新的日志对象 |
+
+- 示例
+
+  > ```python
+  > import AztClient as ac
+  > 
+  > logger = ac.get_logger(name="test", level=ac.DEBUG, level_name=ac.LEVEL_NAME_CN)
+  > logger.debug("hello debug")
+  > logger.info("hello info")
+  > logger.warning("hello warning")
+  > logger.error("hello error")
+  > logger.critical("hello critical")
+  > 
+  > logger = ac.get_logger(name="test", level=ac.WARNING, level_name=ac.LEVEL_NAME_EN)  # 修改一下参数，但不会生效
+  > logger.debug("hello debug")
+  > logger.info("hello info")
+  > logger.warning("hello warning")
+  > logger.error("hello error")
+  > logger.critical("hello critical")
+  > 
+  > logger = ac.get_logger(name="test", level=ac.WARNING, level_name=ac.LEVEL_NAME_EN, new=True)  # 覆盖原来的logger，修改参数可以生效
+  > logger.debug("hello debug")
+  > logger.info("hello info")
+  > logger.warning("hello warning")
+  > logger.error("hello error")
+  > logger.critical("hello critical")
+  > ```
+
+
+
+## 3.2 概念 - 同步异步模式
+
+### 3.2.1 定义
+
+**同步模式**：客户端向服务端发送请求后，阻塞等待请求的响应
+
+**异步模式**：客户端向服务器发送请求后，不阻塞等待，客户端可以马上处理其他任务；服务端对客户端的请求将通过调用指定的spi函数响应（故亦可称**回调模式**）
+
+### 3.2.2 应用
+
+- 凡是接受**`sync`**参数的接口，都同时支持同步模式和异步模式。
+
+  > - 当`sync=True`时，接口会阻塞，直至超时或收到响应消息时，返回响应消息；若用户同时实现了接口的spi，消息也会再通过调用spi函数返回
+  > - 当`sync=False`时，接口函数会直接退出，如果有响应消息，则消息会通过调用已实现的spi函数返回
+
+- 若不接受sync参数，则需要查看是否存在对应的spi函数
+
+  > - 若存在可实现的spi函数，则表明默认使用异步模式
+  >
+  > - 若不存在，则需要观察是否接受timeout参数
+  >
+  >   > - 若接受timeout参数，表明默认使用同步模式
+  >   > - 若不接受timeout参数，表明该接口不会获得服务端的响应
+
+
+
+## 3.3 Api基本方法
+
+所有Api都有一个共同的基类，因此都会有相同的基本方法，其调用逻辑与功能都相同。
+
+### 3.3.1 Start - 启动Api
+
+用于初始化Api实例对象、连接服务端、注册回调Spi（用于异步接收服务器的响应消息）等，在使用Api的各种接口前必须先调用该函数。
+
+不同Api的`Start`函数接受的参数可能不同，因此应参照指定Api的文档说明进行使用。
+
+### 3.3.2 Stop - 停止Api
+
+用于主动断开与服务端的连接，停止Api；同时如果没有错误，该函数的调用不会终止程序，用户还可以使用Start函数重新重新连接服务端。
+
+- **函数签名**
+
+  >  ```python
+  >  def Stop(self)
+  >  ```
+
+### 3.3.3 Join - 加入Api
+
+用于阻塞程序运行，直至超时或Api停止。该函数仅在Api成功`Start`之后、`Stop`之前有效，效果与`time.sleep`函数相当。
+
+- **函数签名**
+
+  >  ```python
+  >  def Join(self, wait: float=None)
+  >  ```
+
+- **参数**
+
+  > | 参数 | 类型  | 默认值 | 说明                                       |
+  > | ---- | ----- | ------ | ------------------------------------------ |
+  > | wait | float | None   | 阻塞等待时间，`None`表示一直阻塞，单位：秒 |
+
+- 提示
+
+  > - 由于客户端将会启动子线程用于接收服务器异步响应信息，当用户通过注册Spi接收消息时，如果主线程过早退出，客户端将无法正确接收响应信息，因此需要用户维持程序的运行。当用户没有其他途径维持程序的运行时，则可以考虑调用该函数。
+
+### 3.3.4 SetLogger - 设置Api日志对象
+
+每个Api都内置了日志记录功能，并且默认使用Root日志，当然用户也可以设置指定的日志对象
+
+- 函数签名
+
+  > ```python
+  > def SetLogger(self, logger=None, title=None)
+  > ```
+
+- 参数
+
+  > | 参数   | 类型        | 默认值 | 说明                                                         |
+  > | ------ | ----------- | ------ | ------------------------------------------------------------ |
+  > | logger | QujamLogger | None   | 必须是通过`ac.get_logger`方法获取的日志对象，默认使用全局`Root`日志对象 |
+  > | title  | str         | None   | 在消息前面新增一个模块，如命名为`"Trade"`，表明当前消息由`AztTradeApi`发出；当`title=None`时表示不设置 |
+
+- 提示
+
+  > 1. 该方法建议在Api的`Start`方法前调用
+  > 2. 如果`logger=None`，则默认使用Root日志对象
+  > 3. 如果Root对象被禁用，则无法使用Api的日志记录功能，除非指定`logger`
+
+### 3.3.5 日志记录函数
+
+Api中内置了日志记录方法，用户可以直接调用这些方法记录日志，默认使用全局Root日志对象进行记录
+
+- 记录测试日志
+
+  > ```python
+  > def debug(self, *msgs)
+  > ```
+
+- 记录普通日志
+
+  > ```python
+  > def info(self, *msgs)
+  > ```
+
+- 记录警告日志
+
+  > ```python
+  > def warning(self, *msgs)
+  > ```
+
+- 记录错误日志
+
+  > ```python
+  > def error(self, *msgs)
+  > ```
+
+- 记录严重错误日志
+
+  > ```python
+  > def critical(self, *msgs)
+  > ```
+
+### 3.3.6 Api状态函数
+
+Api中还有一些函数可供用户使用，以判断当前Api的状态
+
+- 是否已停止
+
+  > ```python
+  > def isStopped(self):
+  > ```
+
+- 是否已登录
+
+  > ```python
+  > def isLogined(self):
+  > ```
+
+- 是否为初次登录
+
+  > ```python
+  > def isFirstLogined(self):
+  > ```
+  >
+  > - 在首次调用`Start`函数前，`isFirstLogined`返回`True`，之后都是`False`
+  
+  
+
+------
+
+
+
+# 4 AztTradeApi - 模拟柜台Api
+
+## 4.1 Start - 启动函数
+
+- **函数签名**
+
+  >  ```python
+  > def Start(self, ip: str, port: int, spi=None, timeout: float = None, reconnect: int = None, reconnect_ivl: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数          | 类型        | 默认值   | 说明                                                         |
+  > | ------------- | ----------- | -------- | ------------------------------------------------------------ |
+  > | ip            | str         | 无，必填 | 模拟柜台服务地址，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | port          | int         | 无，必填 | 模拟柜台服务端口，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | spi           | AztTradeSpi | None     | 回调Spi类或实例，用于异步接收服务器的响应消息                |
+  > | timeout       | int         | None     | 连接超时时间(单位：秒)，若超时后仍未成功连接服务，则返回可`raise`的`error`；若未设置超时时间，则`Start`函数将会阻塞直至连接成功 |
+  > | reconnect     | int         | None     | 重连次数，None或0表示断线不自动重连，-1表示无限重连；重连一定次数后仍未连接成功，返回可raise的错误 |
+  > | reconnect_ivl | float       | None     | 重连间隔时间，单位：秒                                       |
+  
+- **返回**
+
+  > 如果初始化成功，返回`None`；如果初始化失败，返回可`raise`的`error`
+
+- **提示**
+
+  > - 用户只有在实现了`AztTradeSpi`回调类时才需要设置spi参数，反之则不需要关注
+  > - 参数spi既可以填入`AztTradeSpi`类，也可以填入`AztTradeSpi()`类实例
+
+
+
+## 4.2 Login - 登录
+
+- **函数签名**
+
+  > ```python
+  > def Login(self, account: str, passwd: str, timeout: float = None):
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型  | 默认值   | 说明                                         |
+  > | ------- | ----- | -------- | -------------------------------------------- |
+  > | account | str   | 无，必填 | 账户ID                                       |
+  > | passwd  | str   | 无，必填 | 账户密码                                     |
+  > | timeout | float | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+  
+- **返回**
+
+  > 返回`TradeLoginAck`信息；若超时无响应则返回`None`
+  
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztTradeApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5.0)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > ac.info("登录结果：", ret_login)
+  > ```
+
+
+
+## 4.3 Logout - 退出登录
+
+- **函数签名**
+
+  > ```python
+  > def Logout(self)
+  > ```
+
+- **提示**
+
+  > - 只有在登录之后才需要退出登录，在尚未登录时调用效果与Stop函数相同
+  > - 程序正常终止时，若账户已登录但尚未退出登录，程序会自动退出登录
+
+
+
+## 4.4 QueryAccountInfo - 查询账户信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryAccountInfo(self, strategy_id: str = None, strategy_check_code: str = None, account: str = None, passwd: str = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数                | 类型 | 默认值 | 说明                                         |
+  > | ------------------- | ---- | ------ | -------------------------------------------- |
+  > | strategy_id         | str  | None   | 策略ID                                       |
+  > | strategy_check_code | str  | None   | 策略校验码                                   |
+  > | account             | str  | None   | 账户ID                                       |
+  > | passwd              | str  | None   | 账户密码                                     |
+  > | sync                | bool | False  | 是否直接返回结果（启用同步模式）             |
+  > | timeout             | int  | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`TradeRegisterInfo`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 获取策略ID和策略校验码并填入 ------------------------------------------------
+  > strategy_id = "xxxx"  # 策略ID
+  > strategy_check_code = "xxxx"  # 策略校验码
+  > 
+  > # 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztTradeApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 查询账户,并直接返回结果 -----------------------------------------------------
+  > ret_userinfo = myapi.QueryAccountInfo(strategy_id, strategy_check_code, sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("账户查询结果：", ret_userinfo)
+  > ```
+
+- **提示**
+
+  > - 用户既可以填写`strategy_id`和`strategy_check_code`查询，也可以填写`account`和`passwd`来查询
+  > - 查询账户信息不需要先登录
+
+
+
+##  4.5 QueryAsset - 查询账户资产信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryAsset(self, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型 | 默认值 | 说明                                         |
+  > | ------- | ---- | ------ | -------------------------------------------- |
+  > | sync    | bool | False  | 是否直接返回结果（启用同步模式）             |
+  > | timeout | int  | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`AccMargin`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询账户资产信息,并直接返回结果 ---------------------------------------------
+  >    ret_asset = myapi.QueryAsset(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("账户资产信息查询结果：", ret_asset)
+  > ```
+  
+- **提示**
+
+  > - 查询账户资产信息必须先登录
+
+
+
+## 4.6 QueryHistoryAsset - 查询账户历史资产信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryHistoryAsset(self, date: datetime.datetime = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型              | 默认值 | 说明                                                     |
+  > | ------- | ----------------- | ------ | -------------------------------------------------------- |
+  > | date    | datetime.datetime | None   | 指定查询的历史日期，若无指定则查询账户所有的历史资产信息 |
+  > | sync    | bool              | False  | 是否直接返回结果（启用同步模式）                         |
+  > | timeout | int               | None   | 同步模式时超时时间，超时返回`None`，单位：秒             |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QryHisAccAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询账户历史资产信息,并直接返回结果 -----------------------------------------
+  >    ret_asset = myapi.QueryHistoryAsset(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("账户历史资产信息查询结果：", ret_asset)
+  > ```
+
+- **提示**
+
+  > 查询账户历史资产信息必须先登录
+
+
+
+## 4.7 QueryHistoryDeposit - 查询历史入金信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryHistoryDeposit(self, date: datetime.datetime = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型              | 默认值 | 说明                                                     |
+  > | ------- | ----------------- | ------ | -------------------------------------------------------- |
+  > | date    | datetime.datetime | None   | 指定查询的历史日期，若无指定则查询账户所有的历史入金信息 |
+  > | sync    | bool              | False  | 是否直接返回结果（启用同步模式）                         |
+  > | timeout | int               | None   | 同步模式时超时时间，超时返回`None`，单位：秒             |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QryHisDepositAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询账户历史入金信息,并直接返回结果 -----------------------------------------
+  >    ret_deposit = myapi.QueryHistoryDeposit(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("账户历史入金信息查询结果：", ret_deposit)
+  > ```
+  
+- **提示**
+
+  > 查询账户历史入金信息必须先登录
+
+
+
+## 4.8 QueryOrders - 查询委托订单信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryOrders(self, market: str = None, code: str = None, client_ref: str = None, order_id: str = None, unfinished: bool = False, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数       | 类型 | 默认值 | 说明                                         |
+  > | ---------- | ---- | ------ | -------------------------------------------- |
+  > | market     | str  | None   | 交易所代码                                   |
+  > | code       | str  | None   | 标的代码                                     |
+  > | client_ref | str  | None   | 订单编号（客户端生成）                       |
+  > | order_id   | str  | None   | 订单编号（服务端生成）                       |
+  > | unfinished | bool | False  | 是否只查询未结委托                           |
+  > | sync       | bool | False  | 是否开启同步模式                             |
+  > | timeout    | int  | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QueryOrdersAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询委托订单信息,并直接返回结果 --------------------------------------------
+  > ret_orders = myapi.QueryOrders(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("委托订单信息查询结果：", ret_orders)
+  > ```
+
+
+
+## 4.9 QueryTrades - 查询成交信息
+
+- **函数签名**
+
+  > ```python
+  > QueryTrades(self, market: str = None, code: str = None, order_id: str = None, trade_id: str = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数     | 类型 | 默认值 | 说明                                         |
+  > | -------- | ---- | ------ | -------------------------------------------- |
+  > | market   | str  | None   | 交易所代码                                   |
+  > | code     | str  | None   | 标的代码                                     |
+  > | order_id | str  | None   | 订单编号                                     |
+  > | trade_id | str  | None   | 成交编号                                     |
+  > | sync     | bool | False  | 是否开启同步模式                             |
+  > | timeout  | int  | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QueryTradesAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询成交信息,并直接返回结果 -------------------------------------------------
+  >    ret_trades = myapi.QueryTrades(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("成交信息查询结果：", ret_trades)
+  > ```
+
+- **提示**
+
+  > - 查询成交信息必须先登录
+  > - 只填写`market`参数，则查询指定交易所相关的成交信息
+  > - 只填写`market`和`code`参数，则查询指定标的代码相关的成交信息
+  > - 只填写`order_id`参数，则查询指定委托订单的成交信息，此时不需要填写其他参数
+  > - 只填写`trade_id`参数，则查询指定成交编号的成交信息，此时不需要填写其他参数
+  > - 不填写以上参数时，则默认查询当前登录账户当日所有的成交信息
+
+
+
+## 4.10 QueryPositions - 查询持仓信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryPositions(self, market: str = None, code: str = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型 | 默认值 | 说明                                         |
+  > | ------- | ---- | ------ | -------------------------------------------- |
+  > | market  | str  | None   | 交易所代码                                   |
+  > | code    | str  | None   | 标的代码                                     |
+  > | sync    | bool | False  | 是否开启同步模式                             |
+  > | timeout | int  | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应，返回`QueryPositionsAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询持仓信息,并直接返回结果 -------------------------------------------------
+  >    ret_positions = myapi.QueryPositions(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("持仓信息查询结果：", ret_positions)
+  > ```
+  
+- **提示**
+
+  > - 查询持仓信息必须先登录
+  > - 填写`market`和`code`参数时，查询指定标的相关的持仓信息
+  > - 不填写以上参数时，查询当前登录账户所有的持仓信息
+
+
+
+## 4.11 QueryHistoryOrders - 查询历史委托信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryHistoryOrders(self, market: str = None, code: str = None, start_time: datetime.datetime = None, end_time: datetime.datetime = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数       | 类型              | 默认值 | 说明                                         |
+  > | ---------- | ----------------- | ------ | -------------------------------------------- |
+  > | market     | str               | None   | 交易所代码                                   |
+  > | code       | str               | None   | 标的代码                                     |
+  > | start_time | datetime.datetime | None   | 查询起始时间                                 |
+  > | end_time   | datetime.datetime | None   | 查询结束时间                                 |
+  > | sync       | bool              | False  | 是否开启同步模式                             |
+  > | timeout    | int               | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QueryOrdersAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询历史委托订单信息,并直接返回结果 -----------------------------------------
+  >    ret_historyorders = myapi.QueryHistoryOrders(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("历史委托订单信息查询结果：", ret_historyorders)
+  > ```
+  
+- **提示**
+
+  > - 查询历史委托订单信息必须先登录
+  > - 填写`market`和`code`参数时，查询指定标的相关的历史委托订单信息
+  > - 填写`start_time`和`end_time`时，查询指定时间段内的历史委托订单信息，与`market`和`code`参数兼容
+  > - 不填写以上参数时，默认查询当前登录账户所有的历史委托订单信息
+
+
+
+## 4.12 QueryHistoryTrades - 查询历史成交信息
+
+- **函数签名**
+
+  > ```python
+  > def QueryHistoryTrades(self, market: str = None, code: str = None, start_time: datetime.datetime = None, end_time: datetime.datetime = None, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数       | 类型              | 默认值 | 说明                                         |
+  > | ---------- | ----------------- | ------ | -------------------------------------------- |
+  > | market     | str               | None   | 交易所代码                                   |
+  > | code       | str               | None   | 标的代码                                     |
+  > | start_time | datetime.datetime | None   | 查询起始时间                                 |
+  > | end_time   | datetime.datetime | None   | 查询结束时间                                 |
+  > | sync       | bool              | False  | 是否开启同步模式                             |
+  > | timeout    | int               | None   | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QueryTradesAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 查询历史成交信息,并直接返回结果 ---------------------------------------------
+  >    ret_historytrades = myapi.QueryHistoryTrades(sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("历史成交信息查询结果：", ret_historytrades)
+  > ```
+  
+- **提示**
+
+  > - 查询历史成交信息必须先登录
+  > - 填写`market`和`code`参数时，查询指定标的相关的历史成交信息
+  > - 填写`start_time`和`end_time`时，查询指定时间段内的历史成交信息，与`market`和`code`参数兼容
+  > - 不填写以上参数时，默认查询当前登录账户所有的历史成交信息
+
+
+
+## 4.13 QuerySecurityInfo - 查询标的信息
+
+- **函数签名**
+
+  > ```python
+  > def QuerySecurityInfo(self, market, code: str = None, timeout: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型  | 默认值   | 说明                                         |
+  > | ------- | ----- | -------- | -------------------------------------------- |
+  > | market  | str   | 无，必填 | 交易所代码                                   |
+  > | code    | str   | None     | 标的代码                                     |
+  > | timeout | float | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 在超时前得到响应时，返回`SecurityInfoRsp`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztTradeApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >     raise start_error
+  > 
+  > # 查询指定标的信息,设置5秒超时 ------------------------------------------------
+  > ret_query_security_info = myapi.QuerySecurityInfo(timeout=5, market="SZSE", code="000001")
+  > ac.info("标的信息查询结果:", ret_query_security_info)
+  > ```
+
+- **提示**
+
+  > - 如果只填写`market`参数，则为查询整个交易所的标的信息
+  > - 填写`market`和`code`参数时，查询指定标的信息
+
+## 4.14 DepositAsset - 账户入金
+
+每个模拟柜台账户在刚创建时都会有两亿总资金，在使用过程中如果资金不足，用户也可以自行通过入金的方式追加总资金；但要注意入金前必须先登录。
+
+- **函数签名**
+
+  > ```
+  > def DepositAsset(self, amount: float, sync: bool = False, timeout: int = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型  | 默认值   | 说明                               |
+  > | ------- | ----- | -------- | ---------------------------------- |
+  > | amount  | float | 无，必填 | 入金总额                           |
+  > | sync    | bool  | False    | 是否阻塞等待响应                   |
+  > | timeout | int   | None     | 超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`AccDepositAck`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 3 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5.0)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > 
+  > # 4 账户入金20w,并直接返回结果 --------------------------------------------------
+  > ret_accdeposit = myapi.DepositAsset(amount=200_000, sync=True, timeout=5.0)  # 设置5秒超时
+  > ac.info("入金结果：", ret_accdeposit)
+  > ```
+
+
+
+## 4.15 Buy - 买入委托
+
+- **函数签名**
+
+  > ```python
+  > def Buy(self, market: str, code: str, order_qty: int = 100, order_type: int = KOrderType_Market, effect: int = KPositionEffect_Open, order_price: float = None, discretion_price: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数             | 类型  | 默认值               | 说明                                                    |
+  > | ---------------- | ----- | -------------------- | ------------------------------------------------------- |
+  > | market           | str   | 无，必填             | 交易所代码                                              |
+  > | code             | str   | 无，必填             | 标的代码                                                |
+  > | order_qty        | int   | 100                  | 委托数量，单位：股（以股票为例）                        |
+  > | order_type       | int   | KOrderType_Market    | 委托类型，默认市价委托，具体取值与含义参见`EOrderType`  |
+  > | effect           | int   | KPositionEffect_Open | 多空方向，默认多头，具体取值与含义参见`EPositionEffect` |
+  > | order_price      | float | None                 | 委托限价，适用于限价委托，保留两位小数                  |
+  > | discretion_price | float | None                 | 市价转限价后委托限价，适用于市转限委托，保留两位小数    |
+
+- **返回**
+
+  > 调用函数后返回生成的委托订单，为`PlaceOrder`实例
+  
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 1 获取账户ID和密码并填入 -----------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 2 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztTradeSpi):
+  >        # 委托执行回报信息回调
+  >        def onOrderReport(self, msg):
+  >            ac.info("收到委托执行回报信息：", msg)
+  >        # 成交回报信息回调
+  >        def onTradeReport(self, msg):
+  >            ac.info("收到成交回报信息：", msg)
+  >    
+  >    # 3 初始化Api ------------------------------------------------------------------
+  >    myapi = ac.AztTradeApi()  # 实例化Api
+  >    # 初始化Api，注册Spi
+  >    start_error = myapi.Start(ip="127.0.0.1", port=1234, spi=MySpi)
+  >    if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 4 登录账户 -------------------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if not ret_login:
+  >        raise Exception("登录失败！")
+  >    myapi.Join(1)  # 阻塞1秒
+  >     # 买入1手SHSE.600259
+  > order = myapi.Buy(market="SHSE", code="600259", order_qty=100)
+  > # order为PlaceOrder实例
+  > 
+  >    # 5 阻塞主线程等待结果返回 -----------------------------------------------------
+  > myapi.Join()
+  > ```
+  
+- **提示**
+
+  > - 买入委托前必须先登录
+  > - 服务器对委托订单的处理时间无法保证，因此无法启用同步模式，只能采用异步模式；因此用户必须实现相关的回调函数才能收取到委托订单相关的执行消息和成交消息
+
+
+
+## 4.16 Sell - 卖出委托
+
+- **函数签名**
+
+  > ```python
+  > def Sell(self, market: str, code: str, order_qty: int = 100, order_type: int = KOrderType_Market, effect: int = KPositionEffect_Close, order_price: float = None, discretion_price: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数             | 类型  | 默认值                | 说明                                                    |
+  > | ---------------- | ----- | --------------------- | ------------------------------------------------------- |
+  > | market           | str   | 无，必填              | 交易所代码                                              |
+  > | code             | str   | 无，必填              | 标的代码                                                |
+  > | order_qty        | int   | 100                   | 委托数量，单位：股（以股票为例）                        |
+  > | order_type       | int   | KOrderType_Market     | 委托类型，默认市价委托，具体取值与含义参见`EOrderType`  |
+  > | effect           | int   | KPositionEffect_Close | 多空方向，默认空头，具体取值与含义参见`EPositionEffect` |
+  > | order_price      | float | None                  | 委托限价，适用于限价委托，保留两位小数                  |
+  > | discretion_price | float | None                  | 市价转限价后委托限价，适用于市转限委托，保留两位小数    |
+
+- **返回**
+
+  > 调用函数后返回生成的委托订单，为`PlaceOrder`实例
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 1 获取账户ID和密码并填入 -----------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 2 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztTradeSpi):
+  >        # 委托执行回报信息回调
+  >        def onOrderReport(self, msg):
+  >            ac.info("收到委托执行回报信息：", msg)
+  >    
+  >        # 成交回报信息回调
+  >        def onTradeReport(self, msg):
+  >         ac.info("收到成交回报信息：", msg)
+  >    
+  >    # 3 初始化Api ------------------------------------------------------------------
+  >    myapi = ac.AztTradeApi()  # 实例化Api
+  > # 初始化Api，注册Spi
+  >    start_error = myapi.Start(ip="127.0.0.1", port=1234, spi=MySpi)
+  >    if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 4 登录账户 -------------------------------------------------------------------
+  > if not myapi.Login(account, passwd, timeout=5):
+  >        raise Exception("登录失败！")
+  > myapi.Join(1)  # 阻塞1秒
+  > # 卖出1手SHSE.600259
+  >    order = myapi.Sell(market="SHSE", code="600259", order_qty=100)
+  > # order为PlaceOrder实例
+  > 
+  > # 5 阻塞主线程等待结果返回 -----------------------------------------------------
+  > myapi.Join()
+  >    ```
+  
+- **提示**
+
+  > - 卖出委托前必须先登录
+  > - 服务器对委托订单的处理时间无法保证，因此无法启用同步模式，只能采用异步模式；因此用户必须实现相关的回调函数才能收取到委托订单相关的执行消息和成交消息
+
+
+
+## 4.17 Cancel - 撤单委托
+
+- **函数签名**
+
+  > ```python
+  > def Cancel(self, order_id: str)
+  > ```
+
+- **参数**
+
+  > | 参数     | 类型 | 默认值   | 说明                                                     |
+  > | -------- | ---- | -------- | -------------------------------------------------------- |
+  > | order_id | str  | 无，必填 | 需要撤销的委托订单编号，见`PlaceOrder`中的`order_id`属性 |
+
+- **返回**
+
+  > 调用函数后返回生成的撤单委托请求，为`CancelOrder`实例
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 1 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 2 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztTradeSpi):
+  >        # 2.2 实现委托执行回报信息回调
+  >        def onOrderReport(self, msg):
+  >            ac.info("收到委托执行回报信息：", msg)
+  >     
+  >        def onCancelOrderReject(self, msg):
+  >            ac.info("撤单失败：", msg)
+  > 
+  > # 3 初始化Api ------------------------------------------------------------------
+  > myapi = ac.AztTradeApi()  # 实例化Api
+  > # 初始化Api，注册Spi
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234, spi=MySpi)
+  > if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 4 登录账户 -------------------------------------------------------------------
+  > if not myapi.Login(account, passwd, timeout=5):
+  >        raise Exception("登录失败！")
+  >    
+  > # 5 取消订单 -------------------------------------------------------------------
+  > order_id = "xxxx"  # PlaceOrder中的order_id属性
+  > cancel_req = myapi.Cancel(order_id) # cancel_req为CancelOrder实例
+  > 
+  >     # 6 阻塞主线程等待结果返回 -----------------------------------------------------
+  > myapi.Join()
+  > ```
+  
+  
+
+------
+
+
+
+# 5 AztQuoteApi - 实时行情服务Api
+
+## 5.1 Start - 启动函数
+
+- **函数签名**
+
+  > ```python
+  > def Start(self, ip: str, port: int, spi=None, timeout=None reconnect: int = None, reconnect_ivl: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数          | 类型        | 默认值   | 说明                                                         |
+  > | ------------- | ----------- | -------- | ------------------------------------------------------------ |
+  > | ip            | str         | 无，必填 | 行情服务地址，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | port          | int         | 无，必填 | 行情服务端口，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | spi           | AztQuoteSpi | None     | 回调Spi类或实例，用于异步接收服务器的响应消息                |
+  > | timeout       | float       | None     | 连接超时时间(单位：秒)，若超时后仍未成功连接服务，则返回可`raise`的`error`；若未设置超时时间，则`Start`函数将会阻塞直至连接成功 |
+  > | reconnect     | int         | None     | 重连次数，None或0表示断线不自动重连，-1表示无限重连；重连一定次数后仍未连接成功，返回可raise的错误 |
+  > | reconnect_ivl | float       | None     | 重连间隔时间，单位：秒                                       |
+
+- **返回**
+
+  > 如果初始化成功，返回`None`；如果初始化失败，返回可`raise`的`error`
+
+- **提示**
+
+  > - 用户需要自行实现`AztQuoteSpi`回调类时才需要设置spi参数，反之则不需要关注
+  > - 参数spi既可以填入`AztQuoteSpi`类，也可以填入`AztQuoteSpi()`类实例
+
+
+
+## 5.2 Login - 登录
+
+- **函数签名**
+
+  > ```python
+  > def Login(self, account: str, passwd: str, timeout: float = None):
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型  | 默认值   | 说明                                         |
+  > | ------- | ----- | -------- | -------------------------------------------- |
+  > | account | str   | 无，必填 | 账户ID                                       |
+  > | passwd  | str   | 无，必填 | 账户密码                                     |
+  > | timeout | float | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > 返回`LoginAck`信息；若超时无响应则返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztQuoteApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >     raise start_error
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5.0)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >     raise Exception("服务器未响应！")
+  > ac.info("登录结果：", ret_login)
+  > ```
+
+
+
+## 5.3 Logout - 退出登录
+
+- **函数签名**
+
+  > ```python
+  > def Logout(self)
+  > ```
+
+- **提示**
+
+  > - 只有在登录之后才需要退出登录，在尚未登录时调用效果与Stop函数相同
+  > - 程序正常终止时，若账户已登录但尚未退出登录，程序会自动退出登录
+
+
+
+## 5.4 Subscribe - 订阅实时行情
+
+- **函数签名**
+
+  > ```python
+  > def Subscribe(self, codes, sync=False, timeout=None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型           | 默认值   | 说明                                                         |
+  > | ------- | -------------- | -------- | ------------------------------------------------------------ |
+  > | codes   | str或list[str] | 无，必填 | 订阅标的，标的格式为`Market.Code`(如`SHSE.600000`)；如果需要订阅多个标的，既可以使用列表形式(如`["SHSE.600000","SZSE.000001"]`)，也可以使用英文逗号`,`拼接(如`"SHSE.600000,SZSE.000001"`) |
+  > | sync    | bool           | False    | 是否直接返回订阅成败情况（启用同步模式）                     |
+  > | timeout | float          | None     | 同步模式时超时时间，超时返回`None`，单位：秒                 |
+  
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QuoteRegisterAck`信息，其余情况返回`None`
+  
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztQuoteSpi):
+  >     def onSubscribe(self, msg):
+  >         self.api.info("收到订阅回报(spi):", msg)
+  >     def onQuoteData(self, msg):
+  >         self.api.info("收到行情推送:", msg)
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >     raise Exception("服务器未响应！")
+  > 
+  > # 订阅标的,订阅成败通过spi返回（异步模式） -----------------------------------
+  > myapi.Subscribe(["SHSE.600000", "SHSE.600123"])
+  > # 或者同步模式(设置5秒超时)
+  > ret_sub = myapi.Subscribe("SHSE.600130,SHSE.600004", sync=True, timeout=5.0)
+  >     if not ret_sub:
+  >         raise Exception("服务器未响应！")
+  >     myapi.info("收到订阅回报：", ret_sub)
+  > 
+  > # 5 阻塞主线程等待结果返回 ------------------------------------------------------
+  > myapi.Join()
+  > ```
+  
+
+
+## 5.5 Unsubscribe - 取消订阅实时行情
+
+- **函数签名**
+
+  > ```python
+  > def Unsubscribe(self, codes, sync=False, timeout=None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型           | 默认值   | 说明                                                         |
+  > | ------- | -------------- | -------- | ------------------------------------------------------------ |
+  > | codes   | str或list[str] | 无，必填 | 取消订阅标的，标的格式为`Market.Code`(如`SHSE.600000`)；如果需要取消订阅多个标的，既可以使用列表形式(如`["SHSE.600000","SZSE.000001"]`)，也可以使用英文逗号`,`拼接(如`"SHSE.600000,SZSE.000001"`) |
+  > | sync    | bool           | False    | 是否直接返回取消订阅成败情况（启用同步模式）                 |
+  > | timeout | float          | None     | 同步模式时超时时间，超时返回`None`，单位：秒                 |
+  
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QuoteRegisterAck`信息，其余情况返回`None`
+  
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztQuoteSpi):
+  >        def onUnsubscribe(self, msg):
+  >            self.api.info("收到取消订阅回报(spi):", msg)
+  >        def onQuoteData(self, msg):
+  >            self.api.info("收到行情推送:", msg)
+  >    
+  >    ......
+  >    
+  >    # 登录Api,设置5秒超时 ---------------------------------------------------------
+  >         ret_login = myapi.Login(account, passwd, timeout=5)
+  >    if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  >    
+  >    # 订阅标的,直接返回订阅成败情况（同步模式） ----------------------------------
+  >    ret_sub = myapi.Subscribe("SHSE.600130,SHSE.600004", sync=True, timeout=5.0)
+  >        if not ret_sub:
+  >                     raise Exception("服务器未响应！")
+  >        myapi.info("收到订阅回报：", ret_sub)
+  >        
+  >    # 在30秒后取消订阅 -----------------------------------------------------------
+  > 	myapi.Join(30)
+  >    myapi.Unsubscribe("SHSE.600130")
+  >    
+  >    # 阻塞主线程30秒后停止程序 ---------------------------------------------------
+  >     myapi.Join(30)
+  > myapi.Stop()
+  > ```
+  
+  
+
+## 5.6 QueryQuote - 查询实时行情
+
+- **函数签名**
+
+  > ```python
+  > def QueryQuote(self, codes, sync=False, timeout=None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型           | 默认值   | 说明                                                         |
+  > | ------- | -------------- | -------- | ------------------------------------------------------------ |
+  > | codes   | str或list[str] | 无，必填 | 查询标的，标的格式为`Market.Code`(如`SHSE.600000`)；如果需要取消订阅多个标的，既可以使用列表形式(如`["SHSE.600000","SZSE.000001"]`)，也可以使用英文逗号`,`拼接(如`"SHSE.600000,SZSE.000001"`) |
+  > | sync    | bool           | False    | 是否直接返回查询到的实时行情（启用同步模式）                 |
+  > | timeout | float          | None     | 同步模式时超时时间，超时返回`None`，单位：秒                 |
+
+- **返回**
+
+  > - 当`sync=True`且在超时前得到响应时，返回`QuoteMsg`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 实现回调Spi ----------------------------------------------------------------
+  > class MySpi(ac.AztQuoteSpi):
+  >     # 实现异步模式，同步模式下也会触发spi回调
+  >     def onQueryQuote(self, msg):
+  >         self.api.info("收到行情查询回报(spi):", msg)
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >     raise Exception("服务器未响应！")
+  > 
+  > # 查询标的,直接返回查询的实时行情（同步模式） ----------------------------------
+  > ret_query = myapi.QueryQuote("SHSE.600000,SHSE.600004,SHSE.600129,SHSE.600159", sync=True, timeout=5)
+  > if not ret_query:
+  >     raise Exception("服务器未响应！")
+  > myapi.info("收到行情查询回报:", ret_query)
+  > ```
+
+  
+
+## 5.7 QuerySecurityInfo - 查询标的信息
+
+- **函数签名**
+
+  > ```python
+  > def QuerySecurityInfo(self, codes, timeout: float = None)
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型           | 默认值   | 说明                                                         |
+  > | ------- | -------------- | -------- | ------------------------------------------------------------ |
+  > | codes   | str或list[str] | 无，必填 | 查询标的，标的格式为`Market.Code`(如`SHSE.600000`)；如果需要取消订阅多个标的，既可以使用列表形式(如`["SHSE.600000","SZSE.000001"]`)，也可以使用英文逗号`,`拼接(如`"SHSE.600000,SZSE.000001"`) |
+  > | timeout | float          | None     | 查询超时时间，超时返回`None`，单位：秒                       |
+  
+- **返回**
+
+  > - 在超时前得到响应时，返回`SecurityInfoRsp`信息，其余情况返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztQuoteApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >     raise start_error
+  > 
+  > # 查询指定标的信息,设置5秒超时 ------------------------------------------------
+  > ret_query_security_info = myapi.QuerySecurityInfo(code="000001", timeout=5.0)
+  > ac.info("标的信息查询结果:", ret_query_security_info)
+  > ```
+
+
+
+------
+
+
+
+# 6 AztHisQuoteApi - 历史行情服务Api
+
+## 6.1 Start - 启动函数
+
+- **函数签名**
+
+  >  ```python
+  >  def Start(self, ip: str, port: int, spi=None, timeout=None reconnect: int = None, reconnect_ivl: float = None)
+  >  ```
+
+- **参数**
+
+  > | 参数          | 类型           | 默认值   | 说明                                                         |
+  > | ------------- | -------------- | -------- | ------------------------------------------------------------ |
+  > | ip            | str            | 无，必填 | 历史行情服务地址，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | port          | int            | 无，必填 | 历史行情服务端口，由[aztquant.com](https://www.aztquant.com)提供 |
+  > | spi           | AztHisQuoteSpi | None     | 回调Spi类或实例，用于异步接收服务器的响应消息                |
+  > | timeout       | int            | None     | 连接超时时间(单位：秒)，若超时后仍未成功连接服务，则返回可`raise`的`error`；若未设置超时时间，则`Start`函数将会阻塞直至连接成功 |
+  > | reconnect     | int            | None     | 重连次数，None或0表示断线不自动重连，-1表示无限重连；重连一定次数后仍未连接成功，返回可raise的错误 |
+  > | reconnect_ivl | float          | None     | 重连间隔时间，单位：秒                                       |
+
+- **返回**
+
+  > 如果初始化成功，返回`None`；如果初始化失败，返回可`raise`的`error`
+
+- **提示**
+
+  > - 参数spi既可以填入`AztHisQuoteSpi`类，也可以填入`AztHisQuoteSpi()`类实例
+
+
+
+## 6.2  Login - 登录
+
+- **函数签名**
+
+  > ```python
+  > def Login(self, account: str, passwd: str, timeout: float = None):
+  > ```
+
+- **参数**
+
+  > | 参数    | 类型  | 默认值   | 说明                                         |
+  > | ------- | ----- | -------- | -------------------------------------------- |
+  > | account | str   | 无，必填 | 账户ID                                       |
+  > | passwd  | str   | 无，必填 | 账户密码                                     |
+  > | timeout | float | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > 返回`HisQuoteLoginRsp`信息；若超时无响应则返回`None`
+
+- **示例**
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > # 1 获取账户ID和密码并填入 ------------------------------------------------------
+  > account = "xxxx"  # 账户ID
+  > passwd = "xxxx"  # 账户密码
+  > 
+  > # 2 初始化Api -------------------------------------------------------------------
+  > myapi = ac.AztHisQuoteApi()  # 实例化Api
+  > start_error = myapi.Start(ip="127.0.0.1", port=1234)  # 初始化Api
+  > if start_error:  # 如果初始化失败，报错
+  >        raise start_error
+  > 
+  > # 3 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >        raise Exception("服务器未响应！")
+  > myapi.info("登录结果：", ret_login)
+  > ```
+
+
+
+## 6.3 Logout - 退出登录
+
+- **函数签名**
+
+  > ```python
+  > def Logout(self)
+  > ```
+
+- **提示**
+
+  > - 只有在登录之后才需要也才能退出登录
+
+
+
+## 6.4 GetTradingCalendar - 查询交易日历
+
+- 函数签名
+
+  > ```python
+  > def GetTradingCalendar(self, market: str, year: int = None, sync: bool = False, timeout: float = None)
+  > ```
+
+- 参数
+
+  > | 参数    | 类型  | 默认值   | 说明                                         |
+  > | ------- | ----- | -------- | -------------------------------------------- |
+  > | market  | str   | 无，必填 | 市场代码                                     |
+  > | year    | int   | None     | 年份                                         |
+  > | sync    | bool  | False    | 是否开启同步模式                             |
+  > | timeout | float | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > 当`sync=True`且在超时前得到响应时，返回`TradingCalendar`信息，其余情况返回`None`
+  
+- 示例
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > # 查询交易日历,设置5秒超时 ----------------------------------------------------
+  > ret_trading_calendar = myapi.GetTradingCalendar("SHSE", sync=True, timeout=5)
+  > if ret_trading_calendar is None: # 如果失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > myapi.info("查询回复：", ret_trading_calendar)
+  > ```
+  >
+  
+  
+
+## 6.5 GetNextTradingDate - 查询下一个交易日
+
+- 函数签名
+
+  > ```python
+  > def GetNextTradingDate(self, market: str, trading_date: datetime.datetime, direction: bool = True, sync: bool = False, timeout: float = None)
+  > ```
+
+- 参数
+
+  > | 参数         | 类型              | 默认值   | 说明                                                      |
+  > | ------------ | ----------------- | -------- | --------------------------------------------------------- |
+  > | market       | str               | 无，必填 | 市场代码                                                  |
+  > | trading_date | datetime.datetime | 无，必填 | 当前交易日历                                              |
+  > | direction    | bool              | True     | 方向，`True`为查询下一个交易日，`False`为查询上一个交易日 |
+  > | sync         | bool              | False    | 是否开启同步模式                                          |
+  > | timeout      | float             | None     | 同步模式时超时时间，超时返回`None`，单位：秒              |
+
+- **返回**
+
+  > 当`sync=True`且在超时前得到响应时，返回`TradingDate`信息，其余情况返回`None`
+
+- 示例
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > # 查询下个交易日,设置5秒超时 ----------------------------------------------------
+  > ret_trading_date = myapi.GetNextTradingDate("SHSE", datetime.datetime(2022, 9, 18), sync=True, timeout=5)
+  > 
+  > if ret_trading_date is None: # 如果失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > myapi.info("查询回复：", ret_trading_date)
+  > ```
+
+
+
+## 6.6 QueryHisTicks - 查询历史Tick行情
+
+- 函数签名
+
+  > ```python
+  > QueryHisTicks(self, market: str, code: str, start_time: datetime.datetime, end_time: datetime.datetime, num: int = None, adjust: int = None, adjust_time: datetime.datetime = None, sync: bool = False, timeout: float = None)
+  > ```
+
+- 参数
+
+  > | 参数        | 类型              | 默认值   | 说明                                         |
+  > | ----------- | ----------------- | -------- | -------------------------------------------- |
+  > | market      | str               | 无，必填 | 交易所代码                                   |
+  > | code        | str               | 无，必填 | 标的代码                                     |
+  > | start_time  | datetime.datetime | 无，必填 | 开始时间                                     |
+  > | end_time    | datetime.datetime | 无，必填 | 结束时间                                     |
+  > | num         | int               | None     | 查询限制数量，取值范围`(0,24000)`            |
+  > | adjust      | int               | None     | 复权方式，具体含义与取值参见`EAdjust`        |
+  > | adjust_time | datetime.datetime | None     | 复权基点时间，默认当前时间                   |
+  > | sync        | bool              | False    | 是否开启同步模式                             |
+  > | timeout     | float             | None     | 同步模式时超时时间，超时返回`None`，单位：秒 |
+
+- **返回**
+
+  > 当`sync=True`且在超时前得到响应时，返回`HisQuoteTicksMsg`信息，其余情况返回`None`
+
+- 示例
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > # 查询Tick行情,设置5秒超时 ----------------------------------------------------
+  >    ret_ticks = myapi.QueryHisTicks("SHSE", "600000", start_time=datetime.datetime(2022, 9, 20, 9, 30, 0), end_time=datetime.datetime(2022, 9, 20, 9, 30, 0), sync=True, timeout=5)
+  > 
+  > if ret_ticks is None: # 如果失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > myapi.info("查询回复：", ret_ticks)
+  > ```
+
+
+
+## 6.7 QueryHisBars - 查询历史Bar行情
+
+- 函数签名
+
+  > ```python
+  > QueryHisBars(self, market: str, code: str, period: int, start_time: datetime.datetime, end_time: datetime.datetime, num: int = None, adjust: int = None, adjust_time: datetime.datetime = None, sync: bool = False, timeout: float = None)
+  > ```
+
+- 参数
+
+  > | 参数        | 类型              | 默认值   | 说明                                          |
+  > | ----------- | ----------------- | -------- | --------------------------------------------- |
+  > | market      | str               | 无，必填 | 交易所代码                                    |
+  > | code        | str               | 无，必填 | 标的代码                                      |
+  > | period      | int               | 无，必填 | 行情粒度，具体含义与取值参见枚举常量`EPeriod` |
+  > | start_time  | datetime.datetime | 无，必填 | 开始时间                                      |
+  > | end_time    | datetime.datetime | 无，必填 | 结束时间                                      |
+  > | num         | int               | None     | 查询限制数量，取值范围`(0,24000)`             |
+  > | adjust      | int               | None     | 复权方式，具体含义与取值参见`EAdjust`         |
+  > | adjust_time | datetime.datetime | None     | 复权基点时间，默认当前时间                    |
+  > | sync        | bool              | False    | 是否开启同步模式                              |
+  > | timeout     | float             | None     | 同步模式时超时时间，超时返回`None`，单位：秒  |
+
+- **返回**
+
+  > 当`sync=True`且在超时前得到响应时，返回`HisQuoteBarsMsg`信息，其余情况返回`None`
+
+- 示例
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > # 查询Bar行情,设置5秒超时 ----------------------------------------------------
+  >    ret_bars = myapi.QueryHisBars("SHSE", "600000", ac.KPeriod_DAILY, start_time=datetime.datetime(2022, 1, 1), end_time=datetime.datetime(2022, 9, 20), sync=True, timeout=5)
+  > 
+  > if ret_bars is None: # 如果失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > myapi.info("查询回复：", ret_bars)
+  > ```
+
+
+
+## 6.8 QueryFundamentalData - 查询基本面历史数据
+
+- 函数签名
+
+  > ```python
+  > def GetFundamentals(self, fundamentals_type: int, market: str, code: str, start_date: datetime.datetime = None, end_date: datetime.datetime = None, fileds: str = None, sync: bool = False, timeout: float = None)
+  > ```
+
+- 参数
+
+  > | 参数              | 类型              | 默认值   | 说明                                                         |
+  > | ----------------- | ----------------- | -------- | ------------------------------------------------------------ |
+  > | fundamentals_type | int               | 无，必填 | 基本面数据类型，具体含义与取值参见枚举常量`EFundamentalsType` |
+  > | market            | str               | 无，必填 | 交易所代码                                                   |
+  > | code              | str               | 无，必填 | 标的代码                                                     |
+  > | start_date        | datetime.datetime | None     | 开始时间                                                     |
+  > | end_date          | datetime.datetime | None     | 结束时间                                                     |
+  > | fileds            | list[str]或str    | None     | 查询字段列表，类型为列表，或为以`","`分隔的字符串。默认查询所有字段，可查询字段参见`附录2` |
+  > | sync              | bool              | False    | 是否开启同步模式                                             |
+  > | timeout           | float             | None     | 同步模式时超时时间，超时返回`None`，单位：秒                 |
+
+- 返回
+
+  > 当`sync=True`且在超时前得到响应时，返回`FundamentalsDatas`信息，其余情况返回`None`
+
+- 示例
+
+  > ```python
+  > import AztClient as ac  # 导入客户端库
+  > 
+  > ......
+  > 
+  > # 登录Api,设置5秒超时 ---------------------------------------------------------
+  > ret_login = myapi.Login(account, passwd, timeout=5)
+  > if ret_login is None: # 如果登陆失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > # 查询基本面数据,设置5秒超时 --------------------------------------------------
+  >     ret_fundamentals = myapi.GetFundamentals(ac.KFundamentalsType_TradingDerivative, "SHSE", "600000", sync=True, timeout=5, start_date=datetime.datetime(2016, 1, 1), end_date=datetime.datetime(2022, 11, 8))
+  > 
+  > if ret_fundamentals is None: # 如果失败,直接报错终止程序
+  >      raise Exception("服务器未响应！")
+  > 
+  > myapi.info("查询回复：", ret_fundamentals)
+  > ```
+
+
+
+------
+
+
+
+# 7 附录
+
+## 7.1 附录1 - Spi介绍
+
+### 7.1.1 Spi使用说明
+
+用户可以根据需要有选择地实现Spi中的函数，但用户须知：
+
+1. Spi专为异步模式设计
+
+   > 当Api设置`sync=False`时，用户必须继承实现Spi中相应的响应函数，否则无法接收服务端返回的消息和数据
+
+2. 同步模式同样可用
+
+   > 当Api设置同步模式（即当`sync=True`）时，响应结果在直接通过Api函数返回的同时也会通过已实现的Spi函数返回。因此如果用户在使用同步模式时同时实现了相应的Spi函数，响应消息会返回两次
+
+3. 自动引用Api
+
+   > Spi实例对象都会自动引用所属的Api对象，用户可以通过Spi的`api`属性来访问Api对象
+
+4. 处理Api错误
+
+   > 用户可以通过实现Spi中的`onError`函数接收Api在运行过程中的所有错误，如连接中断错误等，用户也可以在连接中断后再次调用`Start`函数尝试重新连接服务端
+
+5. 自动重连成功回报
+
+   > 如果用户在调用`Start`函数时设置了自动重连，当客户端与服务端连接中断但自动重连成功后（若用户已登录，则同时自动重新登录），Spi的onReconnected函数会被调用，用户可以在此函数中重新执行一些如行情订阅等需要服务端异步返回消息的操作
+
+### 7.1.2 AztTradeSpi
+
+```python
+class AztTradeSpi:
+    # 账户入金回报，msg为AccDepositAck实例
+    def onDepositAsset(self, msg):
+        pass
+
+    # 查询账户信息回报，msg为TradeRegisterInfo实例
+    def onQueryAccountInfo(self, msg):
+        pass
+
+    # 查询账户资产信息回报，msg为AccMargin实例
+    def onQueryAsset(self, msg):
+        pass
+
+    # 查询委托订单信息回报，msg为QueryOrdersAck实例
+    def onQueryOrders(self, msg):
+        pass
+
+    # 查询成交信息回报，msg为QueryTradesAck实例
+    def onQueryTrades(self, msg):
+        pass
+
+    # 查询持仓信息回报，msg为QueryPositionsAck实例
+    def onQueryPositions(self, msg):
+        pass
+
+    # 查询历史委托信息回报，msg为QueryOrdersAck实例
+    def onQueryHistoryOrders(self, msg):
+        pass
+
+    # 查询历史成交信息回报，msg为QueryTradesAck实例
+    def onQueryHistoryTrades(self, msg):
+        pass
+
+    # 委托执行回报，msg为OrdReport实例
+    def onOrderReport(self, msg):
+        pass
+
+    # 委托成交回报，msg为TradeReport实例
+    def onTradeReport(self, msg):
+        pass
+
+    # 撤单失败回报，msg为CancelOrderReject实例
+    def onCancelOrderReject(self, msg):
+        pass
+
+    # 查询账户历史资产信息回报，msg为QryHisAccAck实例
+    def onQueryHistoryAsset(self, msg):
+        pass
+
+    # 查询历史入金信息回报，msg为QryHisDepositAck实例
+    def onQueryHistoryDeposit(self, msg):
+        pass
+    
+    # 连接中断回报，一旦被调用，则说明客户端与服务端的连接中断了
+    def onError(self, err):
+        pass
+    
+    # 断线自动重连成功
+    def onReconnected(self):
+        pass
+```
+
+### 7.1.3 AztQuoteSpi
+
+```python
+class AztQuoteSpi:
+    # 订阅行情回报，msg为QuoteRegisterRsp实例
+    def onSubscribe(self, msg):
+        pass
+
+    # 取消订阅行情回报，msg为QuoteRegisterRsp实例
+    def onUnsubscribe(self, msg):
+        pass
+
+    # 查询行情回报，msg为QuoteMsg实例
+    def onQueryQuote(self, msg):
+        pass
+
+    # 行情推送，msg为QuoteMsg实例
+    def onQuoteData(self, msg):
+        pass
+
+    # 错误回报，err为可rasie的Exception错误
+    def onError(self, err):
+        pass
+    
+    # 断线自动重连成功
+    def onReconnected(self):
+        pass
+```
+
+### 7.1.4 AztHisQuoteSpi
+
+```python
+class AztHisQuoteSpi:
+    # 查询Tick行情回报,msg为HisQuoteTicksMsg实例
+    def onQueryHisTicks(self, msg):
+        pass
+
+    # 查询Bar行情回报,msg为HisQuoteBarsMsg实例
+    def onQueryHisBars(self, msg):
+        pass
+
+    # 查询交易日历回报,msg为TradingCalendar实例
+    def onGetTradingCalendar(self, msg):
+        pass
+
+    # 查询下个交易日回报,msg为TradingDate实例
+    def onGetNextTradingDate(self, msg):
+        pass
+
+    # 查询基本面数据回报,msg为FundamentalsDatas实例
+    def onGetFundamentals(self, msg):
+        pass
+    
+    # 连接中断回报,err为可raise的Exception错误
+    def onError(self, err):
+        pass
+    
+    # 断线自动重连成功
+    def onReconnected(self):
+        pass
+```
+
+
+
+## 7.2 附录2 - 基本面数据参考字段
+
+### 7.2.1 股票交易衍生表
+
+- 枚举类型：`KFundamentalsType_TradingDerivative`
+
+- 字段
+
+  > | 字段         | 意义                            | 单位 |
+  > | ------------ | ------------------------------- | ---- |
+  > | dy           | 股息率(滚动12月-按证监会口径)   | %    |
+  > | ev           | 企业价值EV(=股权价值＋债权价值) | 元   |
+  > | evebitda     | 企业价值／税息折旧摊销前利润    | 倍   |
+  > | evps         | 每股企业价值                    | 元   |
+  > | flow_share   | 流通股本                        | 股   |
+  > | lydy         | 股息率(滚动12月-财汇口径)       | %    |
+  > | negotiablemv | 流通市值                        | 元   |
+  > | pb           | 市净率(PB)                      | 倍   |
+  > | pclfy        | 市现率LFY                       | 倍   |
+  > | pcttm        | 市现率TTM                       | 倍   |
+  > | pelfy        | 市盈率LFY                       | 倍   |
+  > | pelfynpaaei  | 市盈率LFY扣除非经常性损益       | 倍   |
+  > | pemrq        | 市盈率MRQ                       | 倍   |
+  > | pemrqnpaaei  | 市盈率MRQ扣除非经常性损益       | 倍   |
+  > | pettm        | 市盈率TTM                       | 倍   |
+  > | pettmnpaaei  | 市盈率TTM扣除非经常性损益       | 倍   |
+  > | pslfy        | 市销率LFY                       | 倍   |
+  > | psmrq        | 市销率MRQ                       | 倍   |
+  > | psttm        | 市销率TTM                       | 倍   |
+  > | tclose       | 收盘价                          | 元   |
+  > | total_share  | 总股本                          | 股   |
+  > | totmktcap    | 总市值                          | 元   |
+  > | turnrate     | 当日换手率                      | %    |
+
+### 7.2.2 资产负债表
+
+- 枚举类型：`KFundamentalsType_BalanceSheet`
+
+- 字段
+
+  > | 字段                   | 意义                             | 单位 |
+  > | ---------------------- | -------------------------------- | ---- |
+  > | accheldfors            | 划分为持有待售的资产             | 元   |
+  > | accopaya               | 应付账款                         | 元   |
+  > | accorece               | 应收账款                         | 元   |
+  > | accrexpe               | 预提费用                         | 元   |
+  > | accudepr               | 累计折旧                         | 元   |
+  > | actitradsecu           | 代理买卖证券款                   | 元   |
+  > | actiundesecu           | 代理承销证券款                   | 元   |
+  > | advapaym               | 预收款项                         | 元   |
+  > | avaisellasse           | 可供出售金融资产                 | 元   |
+  > | bdspaya                | 应付债券                         | 元   |
+  > | bdspayaperbond         | 应付债券:永续债                  | 元   |
+  > | bdspayaprest           | 应付债券:优先股                  | 元   |
+  > | capisurp               | 资本公积                         | 元   |
+  > | cenbankborr            | 向中央银行借款                   | 元   |
+  > | comasse                | 公益性生物资产                   | 元   |
+  > | consprog               | 在建工程                         | 元   |
+  > | copepoun               | 应付手续费及佣金                 | 元   |
+  > | copewithreinrece       | 应付分保账款                     | 元   |
+  > | copeworkersal          | 应付职工薪酬                     | 元   |
+  > | curfds                 | 货币资金                         | 元   |
+  > | curtrandiff            | 外币报表折算差额                 | 元   |
+  > | defeincotaxliab        | 递延所得税负债                   | 元   |
+  > | defereve               | 一年内的递延收益                 | 元   |
+  > | defetaxasset           | 递延所得税资产                   | 元   |
+  > | deposit                | 吸收存款及同业存放               | 元   |
+  > | derifinaasset          | 衍生金融资产                     | 元   |
+  > | deriliab               | 衍生金融负债                     | 元   |
+  > | deveexpe               | 开发支出                         | 元   |
+  > | dividrece              | 应收股利                         | 元   |
+  > | divipaya               | 应付股利                         | 元   |
+  > | dometicksett           | 国内票证结算                     | 元   |
+  > | duenoncliab            | 一年内到期的非流动负债           | 元   |
+  > | engimate               | 工程物资                         | 元   |
+  > | equiinve               | 长期股权投资                     | 元   |
+  > | expecurrliab           | 预计流动负债                     | 元   |
+  > | expenoncliab           | 预计非流动负债                   | 元   |
+  > | expinoncurrasset       | 一年内到期的非流动资产           | 元   |
+  > | expotaxrebarece        | 应收出口退税                     | 元   |
+  > | fdsborr                | 拆入资金                         | 元   |
+  > | fixedasseclea          | 固定资产清理                     | 元   |
+  > | fixedasseimmo          | 固定资产原值                     | 元   |
+  > | fixedasseimpa          | 固定资产减值准备                 | 元   |
+  > | fixedassenet           | 固定资产净额                     | 元   |
+  > | fixedassenetw          | 固定资产净值                     | 元   |
+  > | generiskrese           | 一般风险准备                     | 元   |
+  > | goodwill               | 商誉                             | 元   |
+  > | holdinvedue            | 持有至到期投资                   | 元   |
+  > | hydrasset              | 油气资产                         | 元   |
+  > | insucontrese           | 保险合同准备金                   | 元   |
+  > | intaasset              | 无形资产                         | 元   |
+  > | intelpay               | 内部应付款                       | 元   |
+  > | intelrece              | 内部应收款                       | 元   |
+  > | intepaya               | 应付利息                         | 元   |
+  > | interece               | 应收利息                         | 元   |
+  > | inteticksett           | 国际票证结算                     | 元   |
+  > | inve                   | 存货                             | 元   |
+  > | inveprop               | 投资性房地产                     | 元   |
+  > | lcopeworkersal         | 长期应付职工薪酬                 | 元   |
+  > | lendandloan            | 发放贷款及垫款                   | 元   |
+  > | liabheldfors           | 划分为持有待售的负债             | 元   |
+  > | logprepexpe            | 长期待摊费用                     | 元   |
+  > | longborr               | 长期借款                         | 元   |
+  > | longdefeinco           | 长期递延收益                     | 元   |
+  > | longpaya               | 长期应付款                       | 元   |
+  > | longrece               | 长期应收款                       | 元   |
+  > | margrece               | 应收保证金                       | 元   |
+  > | margrequ               | 应付保证金                       | 元   |
+  > | minysharrigh           | 少数股东权益                     | 元   |
+  > | notespaya              | 应付票据                         | 元   |
+  > | notesrece              | 应收票据                         | 元   |
+  > | ocl                    | 其他综合收益                     | 元   |
+  > | othequin               | 其他权益工具                     | 元   |
+  > | othercurrasse          | 其他流动资产                     | 元   |
+  > | othercurreliabi        | 其他流动负债                     | 元   |
+  > | otherfeepaya           | 其他应交款                       | 元   |
+  > | otherlonginve          | 其他长期投资                     | 元   |
+  > | othernoncasse          | 其他非流动资产                   | 元   |
+  > | othernoncliabi         | 其他非流动负债                   | 元   |
+  > | otherpay               | 其他应付款                       | 元   |
+  > | otherrece              | 其他应收款                       | 元   |
+  > | paidincapi             | 实收资本(或股本)                 | 元   |
+  > | paresharrigh           | 归属于母公司股东权益合计         | 元   |
+  > | perbond                | 永续债                           | 元   |
+  > | plac                   | 拆出资金                         | 元   |
+  > | premrece               | 应收保费                         | 元   |
+  > | prep                   | 预付款项                         | 元   |
+  > | prepexpe               | 待摊费用                         | 元   |
+  > | prest                  | 优先股                           | 元   |
+  > | prodasse               | 生产性生物资产                   | 元   |
+  > | purcresaasset          | 买入返售金融资产                 | 元   |
+  > | reincontrese           | 应收分保合同准备金               | 元   |
+  > | reinrece               | 应收分保账款                     | 元   |
+  > | rese                   | 盈余公积                         | 元   |
+  > | righaggr               | 所有者权益(或股东权益)合计       | 元   |
+  > | sellrepasse            | 卖出回购金融资产款               | 元   |
+  > | settresedepo           | 结算备付金                       | 元   |
+  > | sformatcurrasse        | 特殊格式_流动资产                | 元   |
+  > | sformatcurreliabi      | 特殊格式_流动负债                | 元   |
+  > | sformatnoncasse        | 特殊格式_非流动资产              | 元   |
+  > | sformatnoncliab        | 特殊格式_长期负债                | 元   |
+  > | sformatparesharrigh    | 特殊格式_归属母公司股东权益      | 元   |
+  > | sformatrighaggr        | 特殊格式_含少数股权股东权益      | 元   |
+  > | sformattotasset        | 特殊格式_总资产                  | 元   |
+  > | sformattotliab         | 特殊格式_负债合计                | 元   |
+  > | sformattotliabsharequi | 特殊格式_负债及权益              | 元   |
+  > | shorttermbdspaya       | 应付短期债券                     | 元   |
+  > | shorttermborr          | 短期借款                         | 元   |
+  > | smergercurrasse        | 特殊归并_流动资产                | 元   |
+  > | smergercurreliabi      | 特殊归并_流动负债                | 元   |
+  > | smergernoncasse        | 特殊归并_非流动资产              | 元   |
+  > | smergernoncliab        | 特殊归并_长期负债                | 元   |
+  > | smergerparesharrigh    | 特殊归并_归属母公司股东权益      | 元   |
+  > | smergerrighaggr        | 特殊归并_含少数股权股东权益      | 元   |
+  > | smergertotasset        | 特殊归并_总资产                  | 元   |
+  > | smergertotliab         | 特殊归并_负债合计                | 元   |
+  > | smergertotliabsharequi | 特殊归并_负债及权益              | 元   |
+  > | specpaya               | 专项应付款                       | 元   |
+  > | specrese               | 专项储备                         | 元   |
+  > | subsrece               | 应收补贴款                       | 元   |
+  > | sunevenassetliabeuqi   | 特殊不平_资产与负债权益          | 元   |
+  > | sunevencurrasse        | 特殊不平_流动资产                | 元   |
+  > | sunevencurreliabi      | 特殊不平_流动负债                | 元   |
+  > | sunevennoncasse        | 特殊不平_非流动资产              | 元   |
+  > | sunevennoncliab        | 特殊不平_长期负债                | 元   |
+  > | sunevenparesharrigh    | 特殊不平_归属母公司股东权益      | 元   |
+  > | sunevenrighaggr        | 特殊不平_含少数股权股东权益      | 元   |
+  > | suneventotasset        | 特殊不平_总资产                  | 元   |
+  > | suneventotliab         | 特殊不平_负债合计                | 元   |
+  > | suneventotliabsharequi | 特殊不平_负债及权益              | 元   |
+  > | taxespaya              | 应交税费                         | 元   |
+  > | topaycashdivi          | 拟分配现金股利                   | 元   |
+  > | totalcurrliab          | 流动负债合计                     | 元   |
+  > | totalnoncassets        | 非流动资产合计                   | 元   |
+  > | totalnoncliab          | 非流动负债合计                   | 元   |
+  > | totasset               | 资产总计                         | 元   |
+  > | totcurrasset           | 流动资产合计                     | 元   |
+  > | totliab                | 负债合计                         | 元   |
+  > | totliabsharequi        | 负债和所有者权益(或股东权益)总计 | 元   |
+  > | tradfinasset           | 交易性金融资产                   | 元   |
+  > | tradfinliab            | 交易性金融负债                   | 元   |
+  > | tradshartrad           | 股权分置流通权                   | 元   |
+  > | treastk                | 减:库存股                        | 元   |
+  > | undiprof               | 未分配利润                       | 元   |
+  > | unreinveloss           | 未确定的投资损失                 | 元   |
+  > | unseg                  | 待处理流动资产损益               | 元   |
+  > | warliabrese            | 担保责任赔偿准备金               | 元   |
+
+### 7.2.3 现金流量表
+
+- 枚举类型：`KFundamentalsType_Cashflow`
+
+- 字段
+
+  > | 字段                  | 意义                                                | 单位 |
+  > | --------------------- | --------------------------------------------------- | ---- |
+  > | accrexpeincr          | 预提费用的增加                                      | 元   |
+  > | acquassetcash         | 购建固定资产,无形资产和其他长期资产所支付的现金     | 元   |
+  > | assedepr              | 固定资产折旧,油气资产折耗,生产性物资折旧            | 元   |
+  > | asseimpa              | 资产减值准备                                        | 元   |
+  > | bankloannetincr       | 向中央银行借款净增加额                              | 元   |
+  > | bizcashinfl           | 经营活动现金流入小计                                | 元   |
+  > | bizcashoutf           | 经营活动现金流出小计                                | 元   |
+  > | biznetcflow           | 经营活动产生现金流量净额                            | 元   |
+  > | cashfinalbala         | 现金的期末余额                                      | 元   |
+  > | cashneti              | 现金及现金等价物的净增加额                          | 元   |
+  > | cashnetr              | 五,现金及现金等价物净增加额                         | 元   |
+  > | cashopenbala          | 现金的期初余额                                      | 元   |
+  > | charintecash          | 收取利息,手续费及佣金的现金                         | 元   |
+  > | chgexchgchgs          | 四,汇率变动对现金及现金等价物的影响                 | 元   |
+  > | debtintocapi          | 债务转为资本                                        | 元   |
+  > | debtpaycash           | 偿还债务支付的现金                                  | 元   |
+  > | defeincoincr          | 递延收益增加(减:减少)                               | 元   |
+  > | defetaxassetdecr      | 递延所得税资产减少                                  | 元   |
+  > | defetaxliabincr       | 递延所得税负债增加                                  | 元   |
+  > | deponetr              | 客户存款和同业存放款项净增加额                      | 元   |
+  > | dispfixedassetloss    | 处置固定资产,无形资产和其他长期资产的损失           | 元   |
+  > | disptradnetincr       | 处置交易性金融资产净增加额                          | 元   |
+  > | diviprofpaycash       | 分配股利,利润或偿付利息所支付的现金                 | 元   |
+  > | equfinalbala          | 现金等价物的期末余额                                | 元   |
+  > | equopenbala           | 现金等价物的期初余额                                | 元   |
+  > | estidebts             | 预计负债                                            | 元   |
+  > | expiconvbd            | 一年内到期的可转换公司债券                          | 元   |
+  > | fdsborrnetr           | 拆入资金净增加额                                    | 元   |
+  > | finalcashbala         | 六,期末现金及现金等价物余额                         | 元   |
+  > | fincashinfl           | 筹资活动现金流入小计                                | 元   |
+  > | fincashoutf           | 筹资活动现金流出小计                                | 元   |
+  > | finexpe               | 财务费用                                            | 元   |
+  > | finfixedasset         | 融资租入固定资产                                    | 元   |
+  > | fininstnetr           | 向其他金融机构拆入资金净增加额                      | 元   |
+  > | finnetcflow           | 三,筹资活动产生的现金流量净额                       | 元   |
+  > | finrelacash           | 支付其他与筹资活动有关的现金                        | 元   |
+  > | fixedassescraloss     | 固定资产报废损失                                    | 元   |
+  > | fixedassetnetc        | 处置固定资产,无形资产和其他长期资产所收回的现金净额 | 元   |
+  > | incrcashpled          | 增加质押和定期存款所支付的现金                      | 元   |
+  > | inicashbala           | 期初现金及现金等价物余额                            | 元   |
+  > | insnetc               | 收到再保险业务现金净额                              | 元   |
+  > | inspremcash           | 收到原保险合同保费取得的现金                        | 元   |
+  > | intaasseamor          | 无形资产摊销                                        | 元   |
+  > | invcashinfl           | 投资活动现金流入小计                                | 元   |
+  > | invcashoutf           | 投资活动现金流出小计                                | 元   |
+  > | inveloss              | 投资损失                                            | 元   |
+  > | inveredu              | 存货的减少                                          | 元   |
+  > | inveretugetcash       | 取得投资收益收到的现金                              | 元   |
+  > | invnetcashflow        | 二,投资活动产生的现金流量净额                       | 元   |
+  > | invpayc               | 投资所支付的现金                                    | 元   |
+  > | invrececash           | 吸收投资收到的现金                                  | 元   |
+  > | issbdrececash         | 发行债券收到的现金                                  | 元   |
+  > | labopayc              | 购买商品,接受劳务支付的现金                         | 元   |
+  > | laborgetcash          | 销售商品,提供劳务收到的现金                         | 元   |
+  > | loannetr              | 质押贷款净增加额                                    | 元   |
+  > | loansnetr             | 客户贷款及垫款净增加额                              | 元   |
+  > | longdefeexpenamor     | 长期待摊费用摊销                                    | 元   |
+  > | mananetr              | 一,经营活动产生的现金流量净额                       | 元   |
+  > | minysharrigh          | 少数股东权益                                        | 元   |
+  > | netprofit             | 净利润                                              | 元   |
+  > | other                 | 其他                                                | 元   |
+  > | payacticash           | 支付的其他与经营活动有关的现金                      | 元   |
+  > | payaincr              | 经营性应付项目的增加                                | 元   |
+  > | paycompgold           | 支付原保险合同赔付款项的现金                        | 元   |
+  > | paydivicash           | 支付保单红利的现金                                  | 元   |
+  > | payintecash           | 支付利息,手续费及佣金的现金                         | 元   |
+  > | payinvecash           | 支付的其他与投资活动有关的现金                      | 元   |
+  > | paytax                | 支付的各项税费                                      | 元   |
+  > | payworkcash           | 支付给职工以及为职工支付的现金                      | 元   |
+  > | prepexpedecr          | 待摊费用的减少                                      | 元   |
+  > | realestadep           | 投资性房地产折旧,摊销                               | 元   |
+  > | recefincash           | 收到其他与筹资活动有关的现金                        | 元   |
+  > | recefromloan          | 取得借款收到的现金                                  | 元   |
+  > | receinvcash           | 收到的其他与投资活动有关的现金                      | 元   |
+  > | receotherbizcash      | 收到的其他与经营活动有关的现金                      | 元   |
+  > | receredu              | 经营性应收项目的减少                                | 元   |
+  > | reducashpled          | 减少质押和定期存款所收到的现金                      | 元   |
+  > | repnetincr            | 回购业务资金净增加额                                | 元   |
+  > | savinetr              | 保户储金及投资款净增加额                            | 元   |
+  > | sformatbizcashinfl    | 特殊格式_经营流入                                   | 元   |
+  > | sformatbizcashoutf    | 特殊格式_经营流出                                   | 元   |
+  > | sformatbiznetcflow    | 特殊格式_经营净额附表                               | 元   |
+  > | sformatcashneti       | 特殊格式_现金净额附表                               | 元   |
+  > | sformatcashnetr       | 特殊格式_现金净额                                   | 元   |
+  > | sformatfinalcashbala  | 特殊格式_现金期末                                   | 元   |
+  > | sformatfincashinfl    | 特殊格式_筹资流入                                   | 元   |
+  > | sformatfincashoutf    | 特殊格式_筹资流出                                   | 元   |
+  > | sformatinvcashinfl    | 特殊格式_投资流入                                   | 元   |
+  > | sformatinvcashoutf    | 特殊格式_投资流出                                   | 元   |
+  > | sformatmananetr       | 特殊格式_经营净额                                   | 元   |
+  > | smergerbizcashinfl    | 特殊归并_经营流入                                   | 元   |
+  > | smergerbizcashoutf    | 特殊归并_经营流出                                   | 元   |
+  > | smergerbiznetcflow    | 特殊归并_经营净额附表                               | 元   |
+  > | smergercashneti       | 特殊归并_现金净额附表                               | 元   |
+  > | smergercashnetr       | 特殊归并_现金净额                                   | 元   |
+  > | smergerfinalcashbala  | 特殊归并_现金期末                                   | 元   |
+  > | smergerfincashinfl    | 特殊归并_筹资流入                                   | 元   |
+  > | smergerfincashoutf    | 特殊归并_筹资流出                                   | 元   |
+  > | smergerfinnetcflow    | 特殊归并_筹资净额                                   | 元   |
+  > | smergerinvcashinfl    | 特殊归并_投资流入                                   | 元   |
+  > | smergerinvcashoutf    | 特殊归并_投资流出                                   | 元   |
+  > | smergerinvnetcashflow | 特殊归并_投资净额                                   | 元   |
+  > | smergermananetr       | 特殊归并_经营净额                                   | 元   |
+  > | subsnetc              | 处置子公司及其他营业单位收到的现金净额              | 元   |
+  > | subspaydivid          | 其中:子公司支付给少数股东的股利,利润                | 元   |
+  > | subspaynetcash        | 取得子公司及其他营业单位支付的现金净额              | 元   |
+  > | subsrececash          | 其中:子公司吸收少数股东投资收到的现金               | 元   |
+  > | sunevenbizcashinfl    | 特殊不平_经营流入                                   | 元   |
+  > | sunevenbizcashoutf    | 特殊不平_经营流出                                   | 元   |
+  > | sunevenbiznetcflow    | 特殊不平_经营净额附表                               | 元   |
+  > | sunevencashneti       | 特殊不平_现金净额附表                               | 元   |
+  > | sunevencashnetims     | 特殊不平_现金净额主附表                             | 元   |
+  > | sunevencashnetr       | 特殊不平_现金净额                                   | 元   |
+  > | sunevenfinalcashbala  | 特殊不平_现金期末                                   | 元   |
+  > | sunevenfincashinfl    | 特殊不平_筹资流入                                   | 元   |
+  > | sunevenfincashoutf    | 特殊不平_筹资流出                                   | 元   |
+  > | sunevenfinnetcflow    | 特殊不平_筹资净额                                   | 元   |
+  > | suneveninvcashinfl    | 特殊不平_投资流入                                   | 元   |
+  > | suneveninvcashoutf    | 特殊不平_投资流出                                   | 元   |
+  > | suneveninvnetcashflow | 特殊不平_投资净额                                   | 元   |
+  > | sunevenmananetr       | 特殊不平_经营净额                                   | 元   |
+  > | sunevenmananetrms     | 特殊不平_经营净额主附表                             | 元   |
+  > | taxrefd               | 收到的税费返还                                      | 元   |
+  > | tradepaymnetr         | 存放中央银行和同业款项净增加额                      | 元   |
+  > | unfiparachg           | 已结算尚未完工款的增加(减:减少)                     | 元   |
+  > | unreinveloss          | 未确认的投资损失                                    | 元   |
+  > | unseparachg           | 已完工尚未结算款的减少(减:增加)                     | 元   |
+  > | valuechgloss          | 公允价值变动损失                                    | 元   |
+  > | withinvgetcash        | 收回投资所收到的现金                                | 元   |
+
+### 7.2.4 利润表
+
+- 枚举类型：`KFundamentalsType_Income`
+
+- 字段
+
+  > | 字段                     | 意义                                         | 单位 |
+  > | ------------------------ | -------------------------------------------- | ---- |
+  > | asseimpaloss             | 资产减值损失                                 | 元   |
+  > | assoinveprof             | 其中:对联营企业和合营企业的投资收益          | 元   |
+  > | avaidistprof             | 可供分配的利润                               | 元   |
+  > | avaidistshareprof        | 可供股东分配的利润                           | 元   |
+  > | basiceps                 | 基本每股收益                                 | 元   |
+  > | bizcost                  | 营业成本                                     | 元   |
+  > | bizinco                  | 营业收入                                     | 元   |
+  > | biztax                   | 营业税金及附加                               | 元   |
+  > | biztotcost               | 营业总成本                                   | 元   |
+  > | biztotinco               | 营业总收入                                   | 元   |
+  > | cinaforsfv               | 可供出售金融资产公允价值变动损益             | 元   |
+  > | cinalibofrbp             | 重新计量设定受益计划净负债或净资产的变动     | 元   |
+  > | comdivpaybable           | 应付普通股股利                               | 元   |
+  > | compincoamt              | 综合收益总额                                 | 元   |
+  > | compnetexpe              | 赔付支出净额                                 | 元   |
+  > | contress                 | 提取保险合同准备金净额                       | 元   |
+  > | cpltohinco               | 以后将重分类进损益的其他综合收益             | 元   |
+  > | custinco                 | 托管收益                                     | 元   |
+  > | deveexpe                 | 研发费用                                     | 元   |
+  > | dilutedeps               | 稀释每股收益                                 | 元   |
+  > | earlyundiprof            | 年初未分配利润                               | 元   |
+  > | earnprem                 | 已赚保费                                     | 元   |
+  > | epocfhgl                 | 现金流量套期损益的有效部分                   | 元   |
+  > | equmcpothinco            | 权益法下在被投资单位不能重分类进损益的其他综 | 元   |
+  > | euqmicolothinco          | 权益法下在被投资单位以后将重分类进损益的其他 | 元   |
+  > | exchggain                | 汇兑收益                                     | 元   |
+  > | extrarbirese             | 提取任意盈余公积                             | 元   |
+  > | extstafffund             | 提取职工奖福基金                             | 元   |
+  > | finexpe                  | 财务费用                                     | 元   |
+  > | futuloss                 | 期货损益                                     | 元   |
+  > | htmccinaforsfv           | 持有至到期投资重分类为可供出售金融资产损益   | 元   |
+  > | incotaxexpe              | 所得税费用                                   | 元   |
+  > | inteexpe                 | 利息支出                                     | 元   |
+  > | inteinco                 | 利息收入                                     | 元   |
+  > | inveinco                 | 投资收益                                     | 元   |
+  > | legalsurp                | 提取法定盈余公积                             | 元   |
+  > | mainbizcost              | 主营业务成本                                 | 元   |
+  > | mainbizinco              | 主营业务收入                                 | 元   |
+  > | manaexpe                 | 管理费用                                     | 元   |
+  > | mergeformnetprof         | 被合并方在合并前实现净利润                   | 元   |
+  > | minysharinco             | 归属于少数股东的其他综合收益                 | 元   |
+  > | minysharincoamt          | 归属于少数股东的综合收益总额                 | 元   |
+  > | minysharrigh             | 少数股东损益                                 | 元   |
+  > | ncpothinco               | 以后不能重分类进损益的其他综合收益           | 元   |
+  > | netprofit                | 净利润                                       | 元   |
+  > | noncassetsdisi           | 非流动资产处置利得                           | 元   |
+  > | noncassetsdisl           | 非流动资产处置损失                           | 元   |
+  > | nonoexpe                 | 营业外支出                                   | 元   |
+  > | nonoreve                 | 营业外收入                                   | 元   |
+  > | otherbizcost             | 其他业务成本                                 | 元   |
+  > | otherbizinco             | 其他业务收入                                 | 元   |
+  > | otherbizprof             | 其他业务利润                                 | 元   |
+  > | othercompinco            | 其他综合收益                                 | 元   |
+  > | otherreasadju            | 其他因素调整                                 | 元   |
+  > | parecompinco             | 归属于母公司所有者的其他综合收益             | 元   |
+  > | parecompincoamt          | 归属于母公司所有者的综合收益总额             | 元   |
+  > | parenetp                 | 归属于母公司所有者的净利润                   | 元   |
+  > | perprofit                | 营业利润                                     | 元   |
+  > | pextccapifd              | 提取资本公积金                               | 元   |
+  > | pextcdevefd              | 提取企业发展基金                             | 元   |
+  > | polidiviexpe             | 保单红利支出                                 | 元   |
+  > | pounexpe                 | 手续费及佣金支出                             | 元   |
+  > | pouninco                 | 手续费及佣金收入                             | 元   |
+  > | pprofretuinve            | 利润归还投资                                 | 元   |
+  > | prefstockdivi            | 应付优先股股利                               | 元   |
+  > | psuppflowcapi            | 补充流动资本                                 | 元   |
+  > | realsale                 | 房地产销售收入                               | 元   |
+  > | realsalecost             | 房地产销售成本                               | 元   |
+  > | reinexpe                 | 分保费用                                     | 元   |
+  > | rundisprobyrregcap       | 减少注册资本减少的未分配利润                 | 元   |
+  > | salesexpe                | 销售费用                                     | 元   |
+  > | sformatavaidistprof      | 特殊格式_可分配利润                          | 元   |
+  > | sformatavaidistshareprof | 特殊格式_可供股东分配利润                    | 元   |
+  > | sformatbiztotcost        | 特殊格式_营业总成本                          | 元   |
+  > | sformatbiztotinco        | 特殊格式_营业总收入                          | 元   |
+  > | sformatnetprofit         | 特殊格式_税后净利润                          | 元   |
+  > | sformatnetprofitsub      | 特殊格式_净利润子项                          | 元   |
+  > | sformatperprofit         | 特殊格式_营业利润                            | 元   |
+  > | sformattotprofit         | 特殊格式_利润总额                            | 元   |
+  > | sformatundiprof          | 特殊格式_未分配利润                          | 元   |
+  > | smergeravaidistprof      | 特殊归并_可分配利润                          | 元   |
+  > | smergeravaidistshareprof | 特殊归并_可供股东分配利润                    | 元   |
+  > | smergerbiztotcost        | 特殊归并_营业总成本                          | 元   |
+  > | smergerbiztotinco        | 特殊归并_营业总收入                          | 元   |
+  > | smergercompincoamtsub    | 特殊归并_综合收益总额子项                    | 元   |
+  > | smergernetprofit         | 特殊归并_税后净利润                          | 元   |
+  > | smergernetprofitsub      | 特殊归并_净利润子项                          | 元   |
+  > | smergerperprofit         | 特殊归并_营业利润                            | 元   |
+  > | smergertotprofit         | 特殊归并_利润总额                            | 元   |
+  > | smergerundiprof          | 特殊归并_未分配利润                          | 元   |
+  > | statextrundi             | 提取法定公益金                               | 元   |
+  > | subsidyincome            | 补贴收入                                     | 元   |
+  > | sunevenavaidistprof      | 特殊不平_可分配利润                          | 元   |
+  > | sunevenavaidistshareprof | 特殊不平_可供股东分配利润                    | 元   |
+  > | sunevenbiztotcost        | 特殊不平_营业总成本                          | 元   |
+  > | sunevenbiztotinco        | 特殊不平_营业总收入                          | 元   |
+  > | sunevencompincoamt       | 特殊不平_综合收益总额                        | 元   |
+  > | sunevencompincoamtsub    | 特殊不平_综合收益总额子项                    | 元   |
+  > | sunevennetprofit         | 特殊不平_税后净利润                          | 元   |
+  > | sunevennetprofitsub      | 特殊不平_净利润子项                          | 元   |
+  > | sunevenothcompincoamt    | 特殊不平_其他综合收益                        | 元   |
+  > | sunevenperprofit         | 特殊不平_营业利润                            | 元   |
+  > | suneventotprofit         | 特殊不平_利润总额                            | 元   |
+  > | sunevenundiprof          | 特殊不平_未分配利润                          | 元   |
+  > | surrgold                 | 退保金                                       | 元   |
+  > | tdiffforcur              | 外币财务报表折算差额                         | 元   |
+  > | totprofit                | 利润总额                                     | 元   |
+  > | trustloss                | 提取储备基金                                 | 元   |
+  > | turncapsdivi             | 转作资本股本的普通股股利                     | 元   |
+  > | undiprof                 | 未分配利润                                   | 元   |
+  > | unreinveloss             | 未确认投资损失                               | 元   |
+  > | valuechgloss             | 公允价值变动收益                             | 元   |
+  > | othercpltohinco          | 其他                                         | 元   |
+
+### 7.2.5 主要财务指标
+
+- 枚举类型：`KFundamentalsType_Prim`
+
+- 字段
+
+  > | 字段              | 意义                             | 单位 |
+  > | ----------------- | -------------------------------- | ---- |
+  > | ebit              | ebit                             | 元   |
+  > | ebitda            | ebitda                           | 元   |
+  > | ebitdascover      | ebitda利息保障倍数               | 倍   |
+  > | ebitscover        | ebit利息保障倍数                 | 倍   |
+  > | epsbasic          | (一)基本每股收益                 | 元   |
+  > | epsbasicepscut    | 扣除非经常性损益后的基本每股收益 | 元   |
+  > | epsdiluted        | 每股收益_摊薄                    | 元   |
+  > | epsdilutedcut     | 每股收益_扣除摊薄                | 元   |
+  > | epsfulldiluted    | (二)稀释每股收益                 | 元   |
+  > | epsfulldilutedcut | 扣除非经常性损益后的稀释每股收益 | 元   |
+  > | epsweighted       | 每股收益_加权                    | 元   |
+  > | epsweightedcut    | 每股收益_扣除加权                | 元   |
+  > | npcut             | 扣除非经常性损益的净利润         | 元   |
+  > | opncfps           | 每股经营活动产生的现金流量净额   | 元   |
+  > | roediluted        | 净资产收益率_摊薄                | %    |
+  > | roedilutedcut     | 净资产收益率_扣除摊薄            | %    |
+  > | roeweighted       | 净资产收益率_加权                | %    |
+  > | roeweightedcut    | 净资产收益率_扣除加权            | %    |
+
+### 7.2.6 衍生财务指标
+
+- 枚举类型：`KFundamentalsType_Deriv`
+
+- 字段
+
+  > | 字段                  | 意义                                          | 单位 |
+  > | --------------------- | --------------------------------------------- | ---- |
+  > | accdeprt              | 累计折旧率                                    | %    |
+  > | accpayrt              | 应付账款周转率                                | 次   |
+  > | accpaytdays           | 应付账款周转天数                              | 天   |
+  > | accrecgturndays       | 应收账款周转天数                              | 天   |
+  > | accrecgturnrt         | 应收账款周转率                                | 次   |
+  > | assliabrt             | 资产负债率                                    | %    |
+  > | capextodepandamor     | 资本性支出/折旧与摊销                         | 倍   |
+  > | capimortconms         | 资本固定化比率(含少数股权的净资产)            | %    |
+  > | capprort              | 资本金利润率                                  | %    |
+  > | cashconvcycle         | 现金周期                                      | 天   |
+  > | cashopindex           | 现金运营指数                                  | 倍   |
+  > | cashrt                | 现金比率                                      | %    |
+  > | compdeprt             | 综合折旧率                                    | %    |
+  > | consvatquickrt        | 保守速动比率                                  | %    |
+  > | crps                  | 每股资本公积金                                | 元   |
+  > | curassturndays        | 流动资产周转天数                              | 天   |
+  > | curassturnrt          | 流动资产周转率                                | 次   |
+  > | curliabtoltmliabrt    | 负债结构比率                                  | %    |
+  > | currentrt             | 流动比率                                      | 倍   |
+  > | dps                   | 每股普通股股利                                | 元   |
+  > | ebit                  | 息税前利润                                    | 元   |
+  > | ebitda                | 息税折旧摊销前利润                            | 元   |
+  > | ebitdamargin          | 息税折旧摊销前利润率                          | %    |
+  > | ebitdaps              | 每股息税折旧摊销前利润_期末股数               | 元   |
+  > | ebitdascover          | ebitda利息保障倍数                            | 倍   |
+  > | ebitdatotdebt         | 息税折旧摊销前利润/负债合计                   | 倍   |
+  > | ebitmargin            | 息税前利润率                                  | %    |
+  > | ebitps                | 每股息税前利润                                | 元   |
+  > | ebitscover            | 已获利息倍数                                  | 倍   |
+  > | ebittotopi            | 息税前利润/营业总收入                         | 倍   |
+  > | em                    | 权益乘数                                      | 倍   |
+  > | emconms               | 权益乘数(含少数股权的净资产)                  | 倍   |
+  > | epsdiluted            | 摊薄每股收益_期末股数                         | 元   |
+  > | epsdilutedcut         | 摊薄每股收益期末股数扣除非经常损益            | 元   |
+  > | epsdilutednewp        | 摊薄每股收益_最新股数                         | 元   |
+  > | epsdilutedop          | 摊薄每股收益(营业利润)                        | 元   |
+  > | equconms              | 含少数股权的净资产                            | 元   |
+  > | equrt                 | 产权比率                                      | %    |
+  > | equtofa               | 归属母公司的净资产/固定资产                   | 倍   |
+  > | equtoic               | 归属母公司净的资产/归属母公司的投入资本       | 倍   |
+  > | equtoicconms          | 归属母公司的净资产/含少数股权的投入资本       | 倍   |
+  > | equtotdebt            | 归属母公司的净资产/总债务                     | 倍   |
+  > | equtotliab            | 归属母公司的净资产/负债合计                   | 倍   |
+  > | equturnrt             | 股东权益周转率                                | 次   |
+  > | equturnrtconms        | 股东权益周转率(含少数股权权益)                | 次   |
+  > | faproportion          | 固定资产比重                                  | %    |
+  > | faprort               | 固定资产利润率                                | %    |
+  > | faturndays            | 固定资产周转天数                              | 天   |
+  > | faturnrt              | 固定资产周转率                                | 次   |
+  > | fcfe                  | 股东自由现金流量                              | 元   |
+  > | fcfeps                | 每股股东自由现金流量                          | 元   |
+  > | fcff                  | 企业自由现金流量                              | 元   |
+  > | fcffps                | 每股企业自由现金流量                          | 元   |
+  > | finlexprt             | 财务费用率                                    | %    |
+  > | incotaxtotp           | 所得税/利润总额                               | 倍   |
+  > | intcashrevrt          | 投资收益收现率                                | %    |
+  > | intexpconcapint       | 利息支出_包含资本化利息                       | 元   |
+  > | intexpcutcapint       | 利息支出_扣除资本化利息                       | 元   |
+  > | invtocurassrt         | 存货资产构成率                                | %    |
+  > | invturndays           | 存货周转天数                                  | 天   |
+  > | invturnrt             | 存货周转率                                    | 次   |
+  > | liqdvaluert           | 清算价值比率1                                 | %    |
+  > | loanlossrestotloanrt  | 贷款损失准备金/贷款总额                       | %    |
+  > | ltmassrt              | 长期资产适合率                                | %    |
+  > | ltmdebt               | 长期债务                                      | 元   |
+  > | ltmdebttoworkcap      | 长期债务/营运资金                             | 倍   |
+  > | ltmliabtoequ          | 长期负债/归属母公司的净资产                   | 倍   |
+  > | ltmliabtoopcap        | 长期负债与营运资本比率                        | %    |
+  > | ltmliabtota           | 长期负债/总资产                               | 倍   |
+  > | ltmliabtotaconms      | 资本化比率_含少数股权的净资产                 | %    |
+  > | mgtexprt              | 管理费用率                                    | %    |
+  > | naps                  | 摊薄每股净资产_期末股数                       | 元   |
+  > | napsadj               | 调整后每股净资产_期末股数                     | 元   |
+  > | napsnewp              | 每股净资产_最新股数                           | 元   |
+  > | ncfps                 | 每股现金流量净额                              | 元   |
+  > | ndebt                 | 净债务                                        | 元   |
+  > | ndebttoequ            | 净债务/归属母公司的净资产                     | 倍   |
+  > | nfart                 | 固定资产净值率                                | %    |
+  > | nitocurass            | 流动资产利润率                                | %    |
+  > | nnonopitotp           | 营业外收支净额/利润总额                       | 倍   |
+  > | nonintcurliabs        | 无息流动负债                                  | 元   |
+  > | nonintnoncurliab      | 无息非流动负债                                | 元   |
+  > | nopcapturnrt          | 净营运资本周转率                              | 次   |
+  > | nopi                  | 经营活动净收益                                | 元   |
+  > | npconmstoavgta        | 总资产净利率_平均(含少数股东损益的净利润)     | %    |
+  > | npconmstotp           | 含少数股东损益的净利润/利润总额               | 倍   |
+  > | npcut                 | 扣除非经常性损益后的净利润                    | 元   |
+  > | npcuttonp             | 扣除非经常性损益后的净利润/归属母公司的净利润 | 倍   |
+  > | npgrt                 | 归属母公司净利润增长率                        | %    |
+  > | nptoavgta             | 总资产净利率_平均                             | %    |
+  > | nptonoconms           | 归属母公司股东的净利润/含少数股东损益的净利润 | 倍   |
+  > | nptotp                | 归属母公司的净利润/利润总额                   | 倍   |
+  > | ntanga                | 有形资产净值                                  | 元   |
+  > | ntangasstondebt       | 有形资产净值/净债务                           | 倍   |
+  > | ntangasstotdebt       | 有形资产净值/总债务                           | 倍   |
+  > | ntangasstotliab       | 有形资产净值/负债合计                         | 倍   |
+  > | nvalchgit             | 价值变动净收益                                | 元   |
+  > | nvalchgitotp          | 价值变动净收益/利润总额                       | 倍   |
+  > | opancftoopni          | 经营活动产生的现金流量净额/经营活动净收益     | 倍   |
+  > | opanitotp             | 经营活动净收益/利润总额                       | %    |
+  > | opcaptotart           | 营运资本对总资产比率                          | %    |
+  > | opcycle               | 营业周期                                      | 天   |
+  > | opexprt               | 营业费用率                                    | %    |
+  > | opgpmargin            | 营业毛利润                                    | 元   |
+  > | opicftoticf           | 经营活动现金流入占现金流入总量比率            | %    |
+  > | opncfps               | 每股经营活动产生的现金流量净额                | 元   |
+  > | opncfshtinvetoshtdebt | (经营活动净现金＋短期投资)/短期债务           | 倍   |
+  > | opncftocapex          | 经营性现金流量对资本性支出比率                | %    |
+  > | opncftodepandamor     | 经营活动净现金/折旧与摊销                     | 倍   |
+  > | opncftointexp         | 经营活动净现金/利息支出                       | 倍   |
+  > | opncftoltmliab        | 经营活动净现金/长期负债                       | 倍   |
+  > | opncftondabt          | 经营活动净现金/净债务                         | 倍   |
+  > | opncftonp             | 经营活动净现金/归属母公司的净利润             | 倍   |
+  > | opncftonpconms        | 经营活动净现金/含少数股东损益的净利润         | 倍   |
+  > | opncftooppro          | 经营活动净现金/营业利润                       | 倍   |
+  > | opncftoopti           | 经营性现金净流量/营业总收入                   | 倍   |
+  > | opncftoshtdebt        | 经营活动净现金/短期债务                       | 倍   |
+  > | opncftosi             | 经营活动净现金/销售收入                       | 倍   |
+  > | opncftota             | 经营活动净现金/总资产                         | 倍   |
+  > | opncftotdebt          | 经营活动净现金/总债务                         | 倍   |
+  > | opncftotliab          | 经营活动净现金/总负债                         | 倍   |
+  > | opncftotncf           | 经营活动净现金/总净现金流量                   | 倍   |
+  > | opprort               | 营业利润率                                    | %    |
+  > | opprototcrt           | 成本费用营业利润率                            | %    |
+  > | opptotp               | 营业利润/利润总额                             | 倍   |
+  > | oprevps               | 每股营业收入                                  | 元   |
+  > | oprevtocurass         | 流动资产营业利润率                            | %    |
+  > | prototcrt             | 成本费用利润率                                | %    |
+  > | quickrt               | 速动比率                                      | 倍   |
+  > | reps                  | 每股留存收益                                  | 元   |
+  > | roa                   | 总资产报酬率                                  | %    |
+  > | roaaannual            | 年化总资产净利率                              | %    |
+  > | roaannual             | 年化总资产报酬率                              | %    |
+  > | roeannual             | 年化净资产收益率                              | %    |
+  > | roeavg                | 净资产收益率_平均                             | %    |
+  > | roeavgcut             | 净资产收益率_平均(扣除非经常损益)             | %    |
+  > | roebyminnpornpcut     | 净资产收益率扣除前后净利润孰低归属母公司      | %    |
+  > | roediluted            | 摊薄净资产收益率                              | %    |
+  > | roedilutedcut         | 摊薄净资产收益率_扣除非经常损益               | %    |
+  > | roic                  | 投入资本回报率                                | %    |
+  > | rota                  | 总资本回报率                                  | %    |
+  > | scashrevtoopirt       | 销售商品提供劳务收到的现金/营业收入           | 倍   |
+  > | scostrt               | 销售成本率                                    | %    |
+  > | sgpmargin             | 销售毛利率                                    | %    |
+  > | shtdebt               | 短期债务                                      | 元   |
+  > | shtliabtotliabrt      | 短期负债/负债总额                             | 倍   |
+  > | snpmarginconms        | 销售净利率(含少数股权权益)                    | %    |
+  > | srps                  | 每股盈余公积金                                | 元   |
+  > | taavg                 | 平均资产总额                                  | 元   |
+  > | tagrt                 | 营业总收入增长率                              | %    |
+  > | tangasstota           | 有形资产/总资产                               | 倍   |
+  > | taturndays            | 总资产周转天数                                | 天   |
+  > | taturnrt              | 总资产周转率                                  | %    |
+  > | tc                    | 成本费用总额                                  | 元   |
+  > | tcap                  | 总资本                                        | 元   |
+  > | tcexprt               | 成本费用率                                    | %    |
+  > | tdebt                 | 总债务                                        | 元   |
+  > | tdebttofart           | 有形净值债务率                                | %    |
+  > | tdebttoic             | 总债务/归属母公司的投入资本                   | 倍   |
+  > | tdebttoicconms        | 总债务/含少数股权的投入资本                   | 倍   |
+  > | tdtoebitda            | 总债务/ebitda                                 | 倍   |
+  > | toprevps              | 每股营业总收入                                | 元   |
+  > | totic                 | 投入资本                                      | 元   |
+  > | tptoebit              | 利润总额/息税前利润                           | 倍   |
+  > | triexp                | 三项费用                                      | 元   |
+  > | triexprt              | 三项费用比重                                  | %    |
+  > | triexptotopi          | 三项费用占营业总收入比率                      | %    |
+  > | upps                  | 每股未分配利润                                | 元   |
+  > | workcap               | 营运资金                                      | 元   |
+

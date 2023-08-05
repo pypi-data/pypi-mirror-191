@@ -1,0 +1,5 @@
+pandas
+colorlog>=6.6.0
+pyzmq>=23.2.0
+grpcio>=1.47.0
+protobuf>=3.19.4

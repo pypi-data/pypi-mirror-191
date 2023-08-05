@@ -1,0 +1,87 @@
+from . import His_Quote_Message_pb2
+from . import Quote_Message_pb2
+from . import Trade_Message_pb2
+from . import UnitedMessage_pb2
+from google.protobuf import message as _message
+
+DecodeError = _message.DecodeError
+EncodeError = _message.EncodeError
+
+His_Quote_BalanceSheet = His_Quote_Message_pb2.BalanceSheet
+His_Quote_BalanceSheetDatas = His_Quote_Message_pb2.BalanceSheetDatas
+His_Quote_Calendar = His_Quote_Message_pb2.Calendar
+His_Quote_CashFlow = His_Quote_Message_pb2.CashFlow
+His_Quote_CashFlowDatas = His_Quote_Message_pb2.CashFlowDatas
+His_Quote_DecodeError = His_Quote_Message_pb2.DecodeError
+His_Quote_DerivFinance = His_Quote_Message_pb2.DerivFinance
+His_Quote_DerivFinanceDatas = His_Quote_Message_pb2.DerivFinanceDatas
+His_Quote_EncodeError = His_Quote_Message_pb2.EncodeError
+His_Quote_FundamentalsDatas = His_Quote_Message_pb2.FundamentalsDatas
+His_Quote_GetCalendar = His_Quote_Message_pb2.GetCalendar
+His_Quote_GetFundamentalsReq = His_Quote_Message_pb2.GetFundamentalsReq
+His_Quote_HisBarsMsg = His_Quote_Message_pb2.HisBarsMsg
+His_Quote_HisQuoteBar = His_Quote_Message_pb2.HisQuoteBar
+His_Quote_HisTicksMsg = His_Quote_Message_pb2.HisTicksMsg
+His_Quote_IncomeStatement = His_Quote_Message_pb2.IncomeStatement
+His_Quote_IncomeStatementDatas = His_Quote_Message_pb2.IncomeStatementDatas
+His_Quote_PrimFinance = His_Quote_Message_pb2.PrimFinance
+His_Quote_PrimFinanceDatas = His_Quote_Message_pb2.PrimFinanceDatas
+His_Quote_QueryHisBars = His_Quote_Message_pb2.QueryHisBars
+His_Quote_QueryHisTicks = His_Quote_Message_pb2.QueryHisTicks
+His_Quote_ReqLogin = His_Quote_Message_pb2.ReqLogin
+His_Quote_ReqLogout = His_Quote_Message_pb2.ReqLogout
+His_Quote_RspLogin = His_Quote_Message_pb2.RspLogin
+His_Quote_StockTradingDerivative = His_Quote_Message_pb2.StockTradingDerivative
+His_Quote_TradingCalendar = His_Quote_Message_pb2.TradingCalendar
+His_Quote_TradingDate = His_Quote_Message_pb2.TradingDate
+His_Quote_TradingDerivativeDatas = His_Quote_Message_pb2.TradingDerivativeDatas
+Quote_QuoteBaseMsg = Quote_Message_pb2.QuoteBaseMsg
+Quote_QuoteFutureOptionExtra = Quote_Message_pb2.QuoteFutureOptionExtra
+Quote_QuoteMsg = Quote_Message_pb2.QuoteMsg
+Quote_QuoteStockExtra = Quote_Message_pb2.QuoteStockExtra
+Quote_QuoteSubscribeUnAck = Quote_Message_pb2.QuoteSubscribeUnAck
+Quote_QuoteSymbolsMsg = Quote_Message_pb2.QuoteSymbolsMsg
+Quote_SecurityExtraData = Quote_Message_pb2.SecurityExtraData
+Quote_SecurityInfoRsp = Quote_Message_pb2.SecurityInfoRsp
+Quote_SecurityStaticInfo = Quote_Message_pb2.SecurityStaticInfo
+Quote_TimeStamp = Quote_Message_pb2.TimeStamp
+Trade_AccDepositAck = Trade_Message_pb2.AccDepositAck
+Trade_AccDepositReq = Trade_Message_pb2.AccDepositReq
+Trade_AccMargin = Trade_Message_pb2.AccMargin
+Trade_CancelOrder = Trade_Message_pb2.CancelOrder
+Trade_CancelOrderReject = Trade_Message_pb2.CancelOrderReject
+Trade_HeartBeatAck = Trade_Message_pb2.HeartBeatAck
+Trade_HeartBeatReq = Trade_Message_pb2.HeartBeatReq
+Trade_HisDeposit = Trade_Message_pb2.HisDeposit
+Trade_LoginAck = Trade_Message_pb2.LoginAck
+Trade_LoginInfo = Trade_Message_pb2.LoginInfo
+Trade_LoginReq = Trade_Message_pb2.LoginReq
+Trade_LogoutReq = Trade_Message_pb2.LogoutReq
+Trade_OrdReport = Trade_Message_pb2.OrdReport
+Trade_OrdStatusMsg = Trade_Message_pb2.OrdStatusMsg
+Trade_PlaceOrder = Trade_Message_pb2.PlaceOrder
+Trade_QryHisAccAck = Trade_Message_pb2.QryHisAccAck
+Trade_QryHisAccReq = Trade_Message_pb2.QryHisAccReq
+Trade_QryHisDepositAck = Trade_Message_pb2.QryHisDepositAck
+Trade_QryHisDepositReq = Trade_Message_pb2.QryHisDepositReq
+Trade_QrySecurityStaticReq = Trade_Message_pb2.QrySecurityStaticReq
+Trade_QueryHistoryOrdersReq = Trade_Message_pb2.QueryHistoryOrdersReq
+Trade_QueryHistoryTradesReq = Trade_Message_pb2.QueryHistoryTradesReq
+Trade_QueryOrdersAck = Trade_Message_pb2.QueryOrdersAck
+Trade_QueryOrdersReq = Trade_Message_pb2.QueryOrdersReq
+Trade_QueryPositionsAck = Trade_Message_pb2.QueryPositionsAck
+Trade_QueryPositionsReq = Trade_Message_pb2.QueryPositionsReq
+Trade_QueryTradesAck = Trade_Message_pb2.QueryTradesAck
+Trade_QueryTradesReq = Trade_Message_pb2.QueryTradesReq
+Trade_RegisterAck = Trade_Message_pb2.RegisterAck
+Trade_RegisterReq = Trade_Message_pb2.RegisterReq
+Trade_SessionControl = Trade_Message_pb2.SessionControl
+Trade_StokPosition = Trade_Message_pb2.StokPosition
+Trade_TradeReport = Trade_Message_pb2.TradeReport
+Trade_TradingAccQryReq = Trade_Message_pb2.TradingAccQryReq
+Trade_UnregisterAck = Trade_Message_pb2.UnregisterAck
+Trade_UnregisterReq = Trade_Message_pb2.UnregisterReq
+Trade_UserInfoQryReq = Trade_Message_pb2.UserInfoQryReq
+Trade_UserRegisterInfo = Trade_Message_pb2.UserRegisterInfo
+UnitedMessage_DataUnited = UnitedMessage_pb2.DataUnited
+UnitedMessage_UnitedMessage = UnitedMessage_pb2.UnitedMessage
