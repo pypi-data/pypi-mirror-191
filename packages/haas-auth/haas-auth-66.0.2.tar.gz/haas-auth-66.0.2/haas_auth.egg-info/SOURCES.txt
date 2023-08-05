@@ -1,0 +1,6 @@
+README.md
+setup.py
+haas_auth.egg-info/PKG-INFO
+haas_auth.egg-info/SOURCES.txt
+haas_auth.egg-info/dependency_links.txt
+haas_auth.egg-info/top_level.txt
