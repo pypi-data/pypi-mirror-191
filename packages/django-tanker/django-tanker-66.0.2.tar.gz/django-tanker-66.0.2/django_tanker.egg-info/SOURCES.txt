@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_tanker.egg-info/PKG-INFO
+django_tanker.egg-info/SOURCES.txt
+django_tanker.egg-info/dependency_links.txt
+django_tanker.egg-info/top_level.txt
