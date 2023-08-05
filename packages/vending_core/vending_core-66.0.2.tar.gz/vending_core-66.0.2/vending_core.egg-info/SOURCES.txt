@@ -1,0 +1,6 @@
+README.md
+setup.py
+vending_core.egg-info/PKG-INFO
+vending_core.egg-info/SOURCES.txt
+vending_core.egg-info/dependency_links.txt
+vending_core.egg-info/top_level.txt
