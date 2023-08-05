@@ -1,0 +1,6 @@
+README.md
+setup.py
+mapreducelib.egg-info/PKG-INFO
+mapreducelib.egg-info/SOURCES.txt
+mapreducelib.egg-info/dependency_links.txt
+mapreducelib.egg-info/top_level.txt
