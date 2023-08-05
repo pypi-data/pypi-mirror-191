@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_zendesk_wrapper.egg-info/PKG-INFO
+yandex_zendesk_wrapper.egg-info/SOURCES.txt
+yandex_zendesk_wrapper.egg-info/dependency_links.txt
+yandex_zendesk_wrapper.egg-info/top_level.txt
