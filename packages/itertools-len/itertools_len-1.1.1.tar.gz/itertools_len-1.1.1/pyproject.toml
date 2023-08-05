@@ -1,0 +1,70 @@
+[project]
+name = 'itertools-len'
+authors = [{ name = 'Philipp A.', email = 'flying-sheep@web.de' }]
+urls.Source = 'https://github.com/flying-sheep/itertools-len'
+urls.Documentation = 'https://itertools-len.readthedocs.io/'
+readme = 'README.rst'
+license = 'GPL-3.0-or-later'
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Programming Language :: Python :: 3',
+]
+requires-python = '>= 3.8'
+dependencies = ['get_version']
+dynamic = ['version']
+
+[project.optional-dependencies]
+speedups = ['scipy']
+test = ['pytest', 'pytest-cov']
+docs = ['sphinx', 'sphinx-rtd-theme']
+
+[tool.hatch.version]
+source = 'vcs'
+
+[tool.tox]
+legacy_tox_ini = '''
+[tox]
+envlist = py3.8, py3.9, py3.10, static
+skip_missing_interpreters = true
+isolated_build = true
+
+[testenv]
+extras = test
+commands = python -m pytest {posargs}
+
+[testenv:static]
+deps =
+    black
+    docutils
+commands =
+    black . --check --diff
+    rst2html.py --halt=2 README.rst >/dev/null
+skip_install = true
+'''
+
+[tool.black]
+target-version = ['py38']
+
+[tool.ruff.isort]
+lines-after-imports = 2
+
+[tool.ruff]
+select = [
+    # Pyflakes
+    'F',
+    # Pycodestyle
+    'E',
+    'W',
+    # isort
+    'I001'
+]
+ignore = [
+  # Ambiguous variable/class/… name
+  'E74',
+]
+src = ['src', 'tests']
+
+[build-system]
+requires = ['hatchling', 'hatch-vcs']
+build-backend = 'hatchling.build'
