@@ -1,0 +1,6 @@
+README.md
+setup.py
+education_donald.egg-info/PKG-INFO
+education_donald.egg-info/SOURCES.txt
+education_donald.egg-info/dependency_links.txt
+education_donald.egg-info/top_level.txt
