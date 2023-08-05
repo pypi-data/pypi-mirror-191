@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "wsadmin-type-hints"
+version = "0.1.1"
+description = "Provide type hints for `wsadmin` object methods"
+authors = ["Luca Salvarani <lucasalvarani99@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+	{ include = "wsadmin_type_hints", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.18.1"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.11"
+mkdocstrings = {extras = ["python"], version = "^0.20.0"}
+mkdocs-git-revision-date-localized-plugin = "^1.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poe.tasks.docs]
+help = "Start the local server to test the documentation."
+cmd  = "mkdocs serve"
+
+
+[tool.mypy]
+# strict = true
+warn_no_return = false
+warn_return_any = false
+disallow_untyped_defs = false
+warn_incomplete_stub = false
+
+# disable_error_code = 'no-untyped-def,empty-body'
