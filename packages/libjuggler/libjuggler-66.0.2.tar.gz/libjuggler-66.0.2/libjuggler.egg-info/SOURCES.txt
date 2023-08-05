@@ -1,0 +1,6 @@
+README.md
+setup.py
+libjuggler.egg-info/PKG-INFO
+libjuggler.egg-info/SOURCES.txt
+libjuggler.egg-info/dependency_links.txt
+libjuggler.egg-info/top_level.txt
