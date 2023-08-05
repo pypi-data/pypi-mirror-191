@@ -1,0 +1,6 @@
+README.md
+setup.py
+minieigen.egg-info/PKG-INFO
+minieigen.egg-info/SOURCES.txt
+minieigen.egg-info/dependency_links.txt
+minieigen.egg-info/top_level.txt
