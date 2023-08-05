@@ -1,0 +1,6 @@
+README.md
+setup.py
+pahtest.egg-info/PKG-INFO
+pahtest.egg-info/SOURCES.txt
+pahtest.egg-info/dependency_links.txt
+pahtest.egg-info/top_level.txt
