@@ -1,0 +1,7 @@
+main.py
+setup.py
+cli_template_proj.egg-info/PKG-INFO
+cli_template_proj.egg-info/SOURCES.txt
+cli_template_proj.egg-info/dependency_links.txt
+cli_template_proj.egg-info/entry_points.txt
+cli_template_proj.egg-info/top_level.txt
