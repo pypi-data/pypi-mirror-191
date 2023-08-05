@@ -1,0 +1,6 @@
+README.md
+setup.py
+joined_models.egg-info/PKG-INFO
+joined_models.egg-info/SOURCES.txt
+joined_models.egg-info/dependency_links.txt
+joined_models.egg-info/top_level.txt
