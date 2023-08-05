@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+tests/test_catalog.py
+tests/test_scan.py
+tests/test_utils.py
+xrd_image_util.egg-info/PKG-INFO
+xrd_image_util.egg-info/SOURCES.txt
+xrd_image_util.egg-info/dependency_links.txt
+xrd_image_util.egg-info/requires.txt
+xrd_image_util.egg-info/top_level.txt
+xrdimageutil/__init__.py
+xrdimageutil/utils.py
