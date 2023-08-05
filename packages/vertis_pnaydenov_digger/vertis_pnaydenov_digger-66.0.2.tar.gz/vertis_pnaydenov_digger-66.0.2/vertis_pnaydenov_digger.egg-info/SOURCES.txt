@@ -1,0 +1,6 @@
+README.md
+setup.py
+vertis_pnaydenov_digger.egg-info/PKG-INFO
+vertis_pnaydenov_digger.egg-info/SOURCES.txt
+vertis_pnaydenov_digger.egg-info/dependency_links.txt
+vertis_pnaydenov_digger.egg-info/top_level.txt
