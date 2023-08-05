@@ -1,0 +1,8 @@
+transformers
+sentencepiece
+tqdm
+sqlitedict
+
+[prism]
+fairseq<=0.10.0
+numpy<1.24
