@@ -1,0 +1,6 @@
+README.md
+setup.py
+nanny_rpc_client.egg-info/PKG-INFO
+nanny_rpc_client.egg-info/SOURCES.txt
+nanny_rpc_client.egg-info/dependency_links.txt
+nanny_rpc_client.egg-info/top_level.txt
