@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_courseraprogramming.egg-info/PKG-INFO
+yandex_courseraprogramming.egg-info/SOURCES.txt
+yandex_courseraprogramming.egg-info/dependency_links.txt
+yandex_courseraprogramming.egg-info/top_level.txt
