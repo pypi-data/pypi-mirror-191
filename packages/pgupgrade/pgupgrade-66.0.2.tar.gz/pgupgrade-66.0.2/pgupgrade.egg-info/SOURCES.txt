@@ -1,0 +1,6 @@
+README.md
+setup.py
+pgupgrade.egg-info/PKG-INFO
+pgupgrade.egg-info/SOURCES.txt
+pgupgrade.egg-info/dependency_links.txt
+pgupgrade.egg-info/top_level.txt
