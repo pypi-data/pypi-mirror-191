@@ -1,0 +1,24 @@
+body > #header {
+    position: relative;
+    z-index: 100;
+}
+body > #header .navbar-brand {
+    height: 69px;
+}
+body > #header #header-container {
+    padding-bottom: 0px;
+    padding-top: 4px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+#ipython_notebook img {
+    display: block;
+    background: url('logo.png') no-repeat;
+    background-size: contain;
+    width: 462px;
+    height: 66px;
+    padding-left: 462px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
