@@ -1,0 +1,17 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/sushipy/__init__.py
+src/sushipy/execute.py
+src/sushipy/index.py
+src/sushipy/main.py
+src/sushipy.egg-info/PKG-INFO
+src/sushipy.egg-info/SOURCES.txt
+src/sushipy.egg-info/dependency_links.txt
+src/sushipy.egg-info/top_level.txt
+src/sushipy/cache/__init__.py
+src/sushipy/cache/main.py
+src/sushipy/config/__init__.py
+src/sushipy/config/extends.py
+src/sushipy/utils/__init__.py
+src/sushipy/utils/find_dict.py

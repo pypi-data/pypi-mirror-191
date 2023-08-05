@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sushipy
+Version: 0.0.60
+Home-page: https://github.com/dev-sushi/sushi
+Author: ksawery29
+Author-email: sushicontact1@gmail.com
+Project-URL: Bug Tracker, https://github.com/dev-sushi/sushi/issues
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
