@@ -1,0 +1,12 @@
+mytimer/__init__.py,sha256=5PNyvla5l7FyA4Yk8wv1sbIhoHhh_SgPqLdOXtImHnM,122
+mytimer/__main__.py,sha256=5D6QUwS4VgWwfjV9S80WstA8DqNgDmvn-P1qMgbA1a8,1480
+mytimer/functions.py,sha256=8Lmm0IUjhEhLxOJg_Kys7KhgugG_DyRcPI3kKPO0gws,4479
+mytimer/params.py,sha256=qA_vBfIL8nw36G_lqzRq4u3Qfv4DP4lbDGcgUqNqTHE,581
+mytimer/sounds/alarm.wav,sha256=19y4_v_ZnnLTNMIG7nNicPYKm3w0yZxLHGA6MSS3JKw,602412
+mytimer-0.4.dist-info/AUTHORS.md,sha256=xXrvyjhVf3JXBaODkntTT05LmPK8otRkPo1inTeuIkk,85
+mytimer-0.4.dist-info/LICENSE,sha256=_2P7Y9elb0KnVqUW8n8_pW7oBIL5vPHA-h_aldm3xI4,1072
+mytimer-0.4.dist-info/METADATA,sha256=tnSNuOyTQ04Dd-3LTSUySWV9yQi1iAyCgO6eUOkdq4Y,8637
+mytimer-0.4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+mytimer-0.4.dist-info/entry_points.txt,sha256=zYe2ZDUbz4XnPy07k7_n36aq1HbsjzPKUjZphQYrU4Q,50
+mytimer-0.4.dist-info/top_level.txt,sha256=y7iRKOsZwnIuLY3COi0VvikIVK9FkAZUMSRCBDoxbd4,8
+mytimer-0.4.dist-info/RECORD,,
