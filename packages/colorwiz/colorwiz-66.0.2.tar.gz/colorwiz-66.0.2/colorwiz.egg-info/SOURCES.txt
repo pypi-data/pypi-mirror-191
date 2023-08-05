@@ -1,0 +1,6 @@
+README.md
+setup.py
+colorwiz.egg-info/PKG-INFO
+colorwiz.egg-info/SOURCES.txt
+colorwiz.egg-info/dependency_links.txt
+colorwiz.egg-info/top_level.txt
