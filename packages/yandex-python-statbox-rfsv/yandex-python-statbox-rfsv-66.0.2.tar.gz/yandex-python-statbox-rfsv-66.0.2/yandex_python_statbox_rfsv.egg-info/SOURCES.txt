@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_python_statbox_rfsv.egg-info/PKG-INFO
+yandex_python_statbox_rfsv.egg-info/SOURCES.txt
+yandex_python_statbox_rfsv.egg-info/dependency_links.txt
+yandex_python_statbox_rfsv.egg-info/top_level.txt
