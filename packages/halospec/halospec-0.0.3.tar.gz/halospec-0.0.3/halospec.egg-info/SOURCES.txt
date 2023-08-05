@@ -1,0 +1,16 @@
+CODE_OF_CONDUCT.md
+LICENSE
+README.md
+mkdocs.yml
+requirements.txt
+setup.py
+.github/workflows/tests.yml
+docs/index.md
+halospec/__init__.py
+halospec/objectives.py
+halospec.egg-info/PKG-INFO
+halospec.egg-info/SOURCES.txt
+halospec.egg-info/dependency_links.txt
+halospec.egg-info/requires.txt
+halospec.egg-info/top_level.txt
+tests/general.py
