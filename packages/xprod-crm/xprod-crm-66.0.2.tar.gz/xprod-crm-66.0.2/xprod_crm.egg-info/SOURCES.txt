@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_crm.egg-info/PKG-INFO
+xprod_crm.egg-info/SOURCES.txt
+xprod_crm.egg-info/dependency_links.txt
+xprod_crm.egg-info/top_level.txt
