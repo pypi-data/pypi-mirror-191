@@ -1,0 +1,6 @@
+README.md
+setup.py
+sentry_telegram_ya_trust.egg-info/PKG-INFO
+sentry_telegram_ya_trust.egg-info/SOURCES.txt
+sentry_telegram_ya_trust.egg-info/dependency_links.txt
+sentry_telegram_ya_trust.egg-info/top_level.txt
