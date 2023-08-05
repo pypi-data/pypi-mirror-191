@@ -1,0 +1,6 @@
+README.md
+setup.py
+tf_rnn_tagger.egg-info/PKG-INFO
+tf_rnn_tagger.egg-info/SOURCES.txt
+tf_rnn_tagger.egg-info/dependency_links.txt
+tf_rnn_tagger.egg-info/top_level.txt
