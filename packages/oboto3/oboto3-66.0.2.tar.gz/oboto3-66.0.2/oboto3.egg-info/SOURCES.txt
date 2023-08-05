@@ -1,0 +1,6 @@
+README.md
+setup.py
+oboto3.egg-info/PKG-INFO
+oboto3.egg-info/SOURCES.txt
+oboto3.egg-info/dependency_links.txt
+oboto3.egg-info/top_level.txt
