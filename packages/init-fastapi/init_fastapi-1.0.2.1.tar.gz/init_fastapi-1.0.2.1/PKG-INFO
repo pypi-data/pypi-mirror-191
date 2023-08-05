@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: init-fastapi
+Version: 1.0.2.1
+Summary: Managing FastAPI projects made easy.
+Project-URL: Homepage, https://github.com/toantranct94/init-fastapi
+Project-URL: Documentation, https://github.com/toantranct94/init-fastapi
+Project-URL: Source, https://github.com/toantranct94/init-fastapi
+Author-email: Tony <toantranct94@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cookiecutter>=1.7.2
+Requires-Dist: pydantic[email]>=1.7.2
+Requires-Dist: questionary>=1.10.0
+Requires-Dist: typer<0.7,>=0.4
+Description-Content-Type: text/markdown
+
+<div align="center">
+<h1>init-fastapi</h1>
+
+[init-fastapi](https://github.com/toantranct94/init-fastapi) Project generator for FastAPI
+
+
+<!-- ![init_fastapi](assets/readme.gif) -->
+
+<p align="center">
+    <a href="https://github.com/toantranct94/init-fastapi" target="_blank">
+        <img src="https://img.shields.io/github/last-commit/toantranct94/init-fastapi?style=for-the-badge" alt="Latest Commit">
+    <!-- </a>
+        <img src="https://img.shields.io/github/workflow/status/ycd/manage-fastapi/Test?style=for-the-badge">
+        <img src="https://img.shields.io/codecov/c/github/ycd/manage-fastapi?style=for-the-badge"> -->
+    <br />
+    <a href="https://pypi.org/project/init-fastapi" target="_blank">
+        <img src="https://img.shields.io/pypi/v/init-fastapi?style=for-the-badge" alt="Package version">
+    </a>
+    <img src="https://img.shields.io/pypi/pyversions/init-fastapi?style=for-the-badge">
+    <img src="https://img.shields.io/github/license/toantranct94/init-fastapi?style=for-the-badge">
+</p>
+</div>
+
+
+## Installation 📌
+
+* Prerequisites
+    * Python 3.7 +
+
+This package can be installed by running
+
+```python
+pip install init-fastapi
+```
+
+
+## Getting started 🎈
+
+Easiest way to start is using the defaults:
+
+```bash
+fastapi init [name]
+```
+
+## License
+
+This project is licensed under the terms of the MIT license.
