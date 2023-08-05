@@ -1,0 +1,6 @@
+README.md
+setup.py
+openstack_intranet_client.egg-info/PKG-INFO
+openstack_intranet_client.egg-info/SOURCES.txt
+openstack_intranet_client.egg-info/dependency_links.txt
+openstack_intranet_client.egg-info/top_level.txt
