@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ark_api.egg-info/PKG-INFO
+src/ark_api.egg-info/SOURCES.txt
+src/ark_api.egg-info/dependency_links.txt
+src/ark_api.egg-info/not-zip-safe
+src/ark_api.egg-info/top_level.txt
