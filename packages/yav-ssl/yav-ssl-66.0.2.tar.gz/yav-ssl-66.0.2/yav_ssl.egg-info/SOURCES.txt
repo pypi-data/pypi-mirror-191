@@ -1,0 +1,6 @@
+README.md
+setup.py
+yav_ssl.egg-info/PKG-INFO
+yav_ssl.egg-info/SOURCES.txt
+yav_ssl.egg-info/dependency_links.txt
+yav_ssl.egg-info/top_level.txt
