@@ -1,0 +1,14 @@
+gethogs/__init__.py,sha256=-NLgVY8eFp9G2z-NP-nnFZxuta2wy-yUDA-Job0GunQ,116
+gethogs/entity.py,sha256=VnRhMze6xari0ov_PmAGLgRAd_5n__jvaGFRu42wqT4,5689
+gethogs/file_manager.py,sha256=bB9CCtJCcCCaQAwtcIh7H66Wc4Nqt3sFoU4YkYv6bHs,11087
+gethogs/genome_merger.py,sha256=LUUOJnvWVgHHb0x5SIQtrnWh-Gc_ARcHpdeWX2kd70o,17908
+gethogs/lib.py,sha256=scRzxWBzjJlMV9oxeLJpvJlCMPxoycKTkMimcQvzxlc,4125
+gethogs/settings.py,sha256=AQGt1B8s4BdljHniU0ZRKMcsi8LPJGBOEVa7T19ZuBQ,5612
+gethogs/statistic_tracker.py,sha256=SZIHKKagP4aJmntqd7yWNQlfn-8Cxx8nu158kba07Ho,1262
+gethogs/unionfind.py,sha256=vbWuUoYwF3AoZVm5qq8zAg9c5wGHke5nyLPLfv6N9MM,2813
+gethogs-1.1.0.data/scripts/warthogs.py,sha256=bhcvoULsJNkC0Cz-vlJo1Bh0d-mejDymb1kiQCDCIXQ,6393
+gethogs-1.1.0.dist-info/LICENSE.txt,sha256=nXpX_nr4Bp-EkjisJ-d-dekIF31hhvGUGe8v_F-erM0,1105
+gethogs-1.1.0.dist-info/METADATA,sha256=D0KWkW4yt3t6k7e-z0E7IOW4NpDfyCszaylrm6otViQ,2450
+gethogs-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gethogs-1.1.0.dist-info/top_level.txt,sha256=dZRXtyeD6xUsT6F5ivv4EXvModPxcPeyHjExwfjsMuw,8
+gethogs-1.1.0.dist-info/RECORD,,

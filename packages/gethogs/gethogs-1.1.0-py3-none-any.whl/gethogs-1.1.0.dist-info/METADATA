@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: gethogs
+Version: 1.1.0
+Summary: A tool to infer Hierarchical Orthologous Groups (HOGs) from pairwise orthologs
+Home-page: https://github.com/DessimozLab/gethogs
+Author: Dessimoz Lab - Laboratory of Computational Evolutionary Biology and Genomics
+Author-email: adrian.altenhoff@inf.ethz.ch
+License: MIT
+Keywords: orthology,HOGs,orthoxml,algorithm
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: biopython
+
+GETHOGs: A Tool to Infer Hierarchical Orthologous Groups (HOGs)
+===============================================================
+
+
+Motivation
+----------
+GETHOGs is a library to infer hierarchical orthologous groups from pairwise evolutionary relationship and its related reference species tree.
+Infered HOGs are provided as orthoXML ( see http://orthoxml.org.). GETHOGs can be used as a python library or using the CLI script in the bin folder.
+
+For extended documentation, please check the related paper "Clément-Marie Train, Natasha M. Glover, Gaston H. Gonnet, Adrian M. Altenhoff, Christophe Dessimoz; Orthologous Matrix (OMA) algorithm 2.0: more robust to asymmetric evolutionary rates and more scalable hierarchical orthologous group inference, Bioinformatics, Volume 33, Issue 14, 15 July 2017, Pages i75–i82, https://doi.org/10.1093/bioinformatics/btx229"
+or look at the docs folder that contain information
+on common use cases and API documentation of the library.
+
+
+Installation
+------------
+GETHOGs is written in python3.
+
+Consider using pip to install the package directly from a checked out git repo
+
+.. code-block:: sh
+
+   python -m pip install --upgrade pip
+   pip install gethogs
+
