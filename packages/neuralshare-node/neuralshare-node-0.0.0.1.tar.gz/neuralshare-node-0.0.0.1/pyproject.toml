@@ -1,0 +1,28 @@
+[build-system]
+requires      = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralshare-node"
+version = "0.0.0.1"
+description = "Neuralshare's node"
+readme = "README.md"
+authors = [{ name = "0ut0flin3", email = "0ut0flin3@protonmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["node","neuralshare"]
+requires-python = ">=3"
+
+
+
+dependencies = ['stellar-sdk==8.1.1','stellar-base-sseclient==0.0.21','openai==0.26.1']
+
+
+[project.urls]
+Homepage = "https://github.com/neuralshare/node"
+
+
