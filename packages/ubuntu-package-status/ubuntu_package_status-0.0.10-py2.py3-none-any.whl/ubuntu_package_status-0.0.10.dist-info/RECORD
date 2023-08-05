@@ -1,0 +1,9 @@
+ubuntu_package_status/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ubuntu_package_status/dist-config.yaml,sha256=l0ndAHYJtTDmPUngN1Kji9PNnGqphPIt1AhfyEH7Qe0,108
+ubuntu_package_status/ubuntu_package_status.py,sha256=ehR3odUgXMc-le7GsvrqF5LdWmw2r9fmeAEh2Xhlhv0,12659
+ubuntu_package_status-0.0.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ubuntu_package_status-0.0.10.dist-info/METADATA,sha256=I6sQFXny4G0dPUZ9mpihjgH8gT4N0JdgAw_OLXyYZoE,492
+ubuntu_package_status-0.0.10.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+ubuntu_package_status-0.0.10.dist-info/entry_points.txt,sha256=B_E7y-l2eG7EKWZnKCHVD14FSecQz9LHiic7oqc_7zg,109
+ubuntu_package_status-0.0.10.dist-info/top_level.txt,sha256=hW7sHxwXEg_l943f1bBCtXnQNGmpqEmBJJTu4Rihels,22
+ubuntu_package_status-0.0.10.dist-info/RECORD,,
