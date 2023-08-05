@@ -1,0 +1,15 @@
+ipython
+numpy
+scipy
+pandas
+numba
+statsmodels
+matplotlib
+cmcrameri
+opencv-python
+scikit-learn
+networkx
+psutil
+joblib
+tqdm
+h5py
