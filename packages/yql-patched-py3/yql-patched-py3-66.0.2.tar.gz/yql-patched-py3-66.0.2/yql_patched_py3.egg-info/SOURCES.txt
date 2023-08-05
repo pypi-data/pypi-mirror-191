@@ -1,0 +1,6 @@
+README.md
+setup.py
+yql_patched_py3.egg-info/PKG-INFO
+yql_patched_py3.egg-info/SOURCES.txt
+yql_patched_py3.egg-info/dependency_links.txt
+yql_patched_py3.egg-info/top_level.txt
