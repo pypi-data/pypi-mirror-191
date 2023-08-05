@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+vizzy/__init__.py
+vizzy/vizzy.py
+vizzy.egg-info/PKG-INFO
+vizzy.egg-info/SOURCES.txt
+vizzy.egg-info/dependency_links.txt
+vizzy.egg-info/requires.txt
+vizzy.egg-info/top_level.txt
