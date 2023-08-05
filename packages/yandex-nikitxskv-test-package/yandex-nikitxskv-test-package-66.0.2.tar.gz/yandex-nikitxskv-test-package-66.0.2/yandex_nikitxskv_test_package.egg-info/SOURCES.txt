@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_nikitxskv_test_package.egg-info/PKG-INFO
+yandex_nikitxskv_test_package.egg-info/SOURCES.txt
+yandex_nikitxskv_test_package.egg-info/dependency_links.txt
+yandex_nikitxskv_test_package.egg-info/top_level.txt
