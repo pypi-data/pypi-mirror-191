@@ -1,0 +1,6 @@
+README.md
+setup.py
+yb_cx_Oracle.egg-info/PKG-INFO
+yb_cx_Oracle.egg-info/SOURCES.txt
+yb_cx_Oracle.egg-info/dependency_links.txt
+yb_cx_Oracle.egg-info/top_level.txt
