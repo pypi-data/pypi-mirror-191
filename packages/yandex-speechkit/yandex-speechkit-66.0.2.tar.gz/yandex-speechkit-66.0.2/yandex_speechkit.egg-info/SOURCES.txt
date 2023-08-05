@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_speechkit.egg-info/PKG-INFO
+yandex_speechkit.egg-info/SOURCES.txt
+yandex_speechkit.egg-info/dependency_links.txt
+yandex_speechkit.egg-info/top_level.txt
