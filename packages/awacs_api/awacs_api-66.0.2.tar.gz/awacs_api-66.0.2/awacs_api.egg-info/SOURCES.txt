@@ -1,0 +1,6 @@
+README.md
+setup.py
+awacs_api.egg-info/PKG-INFO
+awacs_api.egg-info/SOURCES.txt
+awacs_api.egg-info/dependency_links.txt
+awacs_api.egg-info/top_level.txt
