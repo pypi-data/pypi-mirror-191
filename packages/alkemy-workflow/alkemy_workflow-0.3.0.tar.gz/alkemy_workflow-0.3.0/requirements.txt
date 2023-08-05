@@ -1,0 +1,7 @@
+backports.cached-property
+requests
+click
+importlib-resources
+pzp
+O365>=2.0.26
+portalocker

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: alkemy-workflow
+Version: 0.3.0
+Summary: Alkemy Git Worflow
+Home-page: https://github.com/DLBD-Department/alkemy-worflow
+License: MIT
+Project-URL: Bug Tracker, https://github.com/DLBD-Department/alkemy-worflow/issues
+Project-URL: Source Code, https://github.com/DLBD-Department/alkemy-worflow
+Keywords: git,workflow
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
