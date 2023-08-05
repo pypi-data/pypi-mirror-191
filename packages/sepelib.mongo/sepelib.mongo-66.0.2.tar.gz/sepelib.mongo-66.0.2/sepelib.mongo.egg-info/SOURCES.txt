@@ -1,0 +1,6 @@
+README.md
+setup.py
+sepelib.mongo.egg-info/PKG-INFO
+sepelib.mongo.egg-info/SOURCES.txt
+sepelib.mongo.egg-info/dependency_links.txt
+sepelib.mongo.egg-info/top_level.txt
