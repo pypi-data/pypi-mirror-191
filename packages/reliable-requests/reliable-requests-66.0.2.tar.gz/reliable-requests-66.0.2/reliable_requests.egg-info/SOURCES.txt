@@ -1,0 +1,6 @@
+README.md
+setup.py
+reliable_requests.egg-info/PKG-INFO
+reliable_requests.egg-info/SOURCES.txt
+reliable_requests.egg-info/dependency_links.txt
+reliable_requests.egg-info/top_level.txt
