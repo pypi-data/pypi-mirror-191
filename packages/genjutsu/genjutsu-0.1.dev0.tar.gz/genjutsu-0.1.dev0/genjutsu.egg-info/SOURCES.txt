@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+genjutsu/__init__.py
+genjutsu.egg-info/PKG-INFO
+genjutsu.egg-info/SOURCES.txt
+genjutsu.egg-info/dependency_links.txt
+genjutsu.egg-info/top_level.txt
