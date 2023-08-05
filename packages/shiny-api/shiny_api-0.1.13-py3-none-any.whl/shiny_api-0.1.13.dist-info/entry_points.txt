@@ -1,0 +1,4 @@
+[console_scripts]
+shiny_serial_camera=shiny_api.shiny_serial_camera:start_gui
+shiny_start_gui=shiny_api.main:start_gui
+
