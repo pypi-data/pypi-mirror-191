@@ -1,0 +1,6 @@
+README.md
+setup.py
+tools_stands_cli.egg-info/PKG-INFO
+tools_stands_cli.egg-info/SOURCES.txt
+tools_stands_cli.egg-info/dependency_links.txt
+tools_stands_cli.egg-info/top_level.txt
