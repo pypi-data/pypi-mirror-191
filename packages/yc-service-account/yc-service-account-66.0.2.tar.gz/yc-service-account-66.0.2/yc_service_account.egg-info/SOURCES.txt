@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_service_account.egg-info/PKG-INFO
+yc_service_account.egg-info/SOURCES.txt
+yc_service_account.egg-info/dependency_links.txt
+yc_service_account.egg-info/top_level.txt
