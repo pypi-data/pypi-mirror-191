@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaqlib.egg-info/PKG-INFO
+yaqlib.egg-info/SOURCES.txt
+yaqlib.egg-info/dependency_links.txt
+yaqlib.egg-info/top_level.txt
