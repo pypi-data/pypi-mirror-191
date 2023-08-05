@@ -1,0 +1,2 @@
+[nbdev]
+topocor = topocor._modidx:d

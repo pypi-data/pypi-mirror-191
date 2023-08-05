@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "topocor"
+  site-url: "https://swalterfub.github.io/topocor"
+  description: "Topographic correction for remote sensing images"
+  repo-branch: main
+  repo-url: "https://github.com/swalterfub/topocor"
