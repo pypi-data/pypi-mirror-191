@@ -1,0 +1,6 @@
+README.md
+setup.py
+mdb_replica_info.egg-info/PKG-INFO
+mdb_replica_info.egg-info/SOURCES.txt
+mdb_replica_info.egg-info/dependency_links.txt
+mdb_replica_info.egg-info/top_level.txt
