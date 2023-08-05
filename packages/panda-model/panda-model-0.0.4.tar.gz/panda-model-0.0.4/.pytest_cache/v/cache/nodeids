@@ -1,0 +1,18 @@
+[
+  "tests/test_Model.py::TestModel::test_body_jacobian",
+  "tests/test_Model.py::TestModel::test_coriolis",
+  "tests/test_Model.py::TestModel::test_gravity",
+  "tests/test_Model.py::TestModel::test_mass",
+  "tests/test_Model.py::TestModel::test_pose",
+  "tests/test_Model.py::TestModel::test_zero_jacobian",
+  "tests/test_download_library.py::TestDownloadLibrary::test_arm",
+  "tests/test_download_library.py::TestDownloadLibrary::test_arm64",
+  "tests/test_download_library.py::TestDownloadLibrary::test_case_1",
+  "tests/test_download_library.py::TestDownloadLibrary::test_linux_x64",
+  "tests/test_download_library.py::TestDownloadLibrary::test_linux_x86",
+  "tests/test_download_library.py::TestDownloadLibrary::test_windows_x64",
+  "tests/test_download_library.py::TestDownloadLibrary::test_windows_x86",
+  "tests/test_environ.py::TestEnviron::test_PANDA_MODEL_HOST",
+  "tests/test_environ.py::TestEnviron::test_PANDA_MODEL_VER",
+  "tests/test_environ.py::TestEnviron::test_PATH"
+]
