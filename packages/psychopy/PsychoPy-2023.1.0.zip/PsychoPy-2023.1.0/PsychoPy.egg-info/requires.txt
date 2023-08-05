@@ -1,0 +1,71 @@
+requests[security]
+future
+cryptography
+pypi_search
+numpy<1.24.0
+scipy
+matplotlib
+pandas
+pillow
+soundfile>=0.11.0
+python-bidi
+arabic_reshaper
+json_tricks
+xlrd
+openpyxl
+pyserial
+pyyaml
+gevent
+msgpack
+msgpack-numpy
+psutil
+tables
+pyzmq
+ujson
+moviepy
+opencv-python
+python-gitlab
+gitpython
+astunparse
+esprima
+freetype-py
+jedi>=0.16
+psychtoolbox
+javascripthon
+imageio>=2.5
+imageio-ffmpeg
+pyqt5
+websocket_client
+markdown-it-py
+ffpyplayer
+egi-pynetstation
+
+[:platform_system != "Darwin"]
+wxPython>=4.1.1
+
+[:platform_system != "Windows"]
+python-vlc>=3.0.12118
+pyglet==1.5.27
+
+[:platform_system == "Darwin"]
+wxPython==4.1.1
+pyobjc-core<8.0
+pyobjc-framework-Quartz<8.0
+pyobjc<8.0
+
+[:platform_system == "Linux"]
+pyparallel
+python-xlib
+distro
+
+[:platform_system == "Windows"]
+python-vlc==3.0.11115
+pyglet==1.4.11
+pyWinhook
+pypiwin32
+
+[:python_version <= "3.8"]
+tobii-research
+
+[:python_version >= "3.6"]
+questplus>=2019.3
