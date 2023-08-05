@@ -1,0 +1,6 @@
+README.md
+setup.py
+rrrep.egg-info/PKG-INFO
+rrrep.egg-info/SOURCES.txt
+rrrep.egg-info/dependency_links.txt
+rrrep.egg-info/top_level.txt
