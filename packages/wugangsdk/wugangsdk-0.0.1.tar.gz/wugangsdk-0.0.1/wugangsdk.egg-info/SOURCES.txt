@@ -1,0 +1,8 @@
+README.md
+setup.py
+wugang/__init__.py
+wugang/example.py
+wugangsdk.egg-info/PKG-INFO
+wugangsdk.egg-info/SOURCES.txt
+wugangsdk.egg-info/dependency_links.txt
+wugangsdk.egg-info/top_level.txt
