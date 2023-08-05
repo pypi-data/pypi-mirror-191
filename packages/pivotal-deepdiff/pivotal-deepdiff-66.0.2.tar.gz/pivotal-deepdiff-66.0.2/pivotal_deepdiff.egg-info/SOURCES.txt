@@ -1,0 +1,6 @@
+README.md
+setup.py
+pivotal_deepdiff.egg-info/PKG-INFO
+pivotal_deepdiff.egg-info/SOURCES.txt
+pivotal_deepdiff.egg-info/dependency_links.txt
+pivotal_deepdiff.egg-info/top_level.txt
