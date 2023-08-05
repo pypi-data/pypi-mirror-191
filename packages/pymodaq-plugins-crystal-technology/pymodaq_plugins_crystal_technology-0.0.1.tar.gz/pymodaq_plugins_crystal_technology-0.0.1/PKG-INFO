@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: pymodaq_plugins_crystal_technology
+Version: 0.0.1
+Summary: some word about your plugin
+Home-page: https://github.com/PyMoDAQ/pymodaq_plugins_crystal_technology
+Author: Sebastien J. Weber
+Author-email: sebastien.weber@cemes.fr
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+License-File: LICENSE
+
+pymodaq_plugins_crystal_technology
+##################################
+
+.. the following must be adapted to your developped package, links to pypi, github  description...
+
+.. image:: https://img.shields.io/pypi/v/pymodaq_plugins_crystal_technology.svg
+   :target: https://pypi.org/project/pymodaq_plugins_crystal_technology/
+   :alt: Latest Version
+
+.. image:: https://readthedocs.org/projects/pymodaq/badge/?version=latest
+   :target: https://pymodaq.readthedocs.io/en/stable/?badge=latest
+   :alt: Documentation Status
+
+.. image:: https://github.com/PyMoDAQ/pymodaq_plugins_crystal_technology/workflows/Upload%20Python%20Package/badge.svg
+   :target: https://github.com/PyMoDAQ/pymodaq_plugins_crystal_technology
+   :alt: Publication Status
+
+Set of PyMoDAQ plugins for instruments from Crystal Technology. Also compatible with AOTF sold by YSL company
+
+
+Authors
+=======
+
+* Sébastien J. Weber  (sebastien.weber@cnrs.fr)
+
+.. if needed use this field
+    Contributors
+    ============
+    * First Contributor
+    * Other Contributors
+
+Instruments
+===========
+
+Below is the list of instruments included in this plugin
+
+Actuators
++++++++++
+
+* **AOTFPro**: control of the AOTF from YSl and Crystal Technology
+
+Viewer0D
+++++++++
+
+
+Viewer1D
+++++++++
+
+
+
+
+Viewer2D
+++++++++
+
+
+
+..
+    Infos
+    =====
+
+    if needed for installation or other infos
