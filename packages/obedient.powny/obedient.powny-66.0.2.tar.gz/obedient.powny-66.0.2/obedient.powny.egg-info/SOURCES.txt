@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.powny.egg-info/PKG-INFO
+obedient.powny.egg-info/SOURCES.txt
+obedient.powny.egg-info/dependency_links.txt
+obedient.powny.egg-info/top_level.txt
