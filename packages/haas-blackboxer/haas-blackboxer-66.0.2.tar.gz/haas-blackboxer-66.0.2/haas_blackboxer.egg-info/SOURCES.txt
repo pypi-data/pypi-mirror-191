@@ -1,0 +1,6 @@
+README.md
+setup.py
+haas_blackboxer.egg-info/PKG-INFO
+haas_blackboxer.egg-info/SOURCES.txt
+haas_blackboxer.egg-info/dependency_links.txt
+haas_blackboxer.egg-info/top_level.txt
