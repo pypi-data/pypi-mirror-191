@@ -1,0 +1,7 @@
+setuptools
+importlib_resources
+pygit2
+neo4j
+unidiff
+singleton-decorator
+pydeps

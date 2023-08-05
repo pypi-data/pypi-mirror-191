@@ -1,0 +1,2 @@
+[console_scripts]
+SmartCI = SmartCI.__main__:main
