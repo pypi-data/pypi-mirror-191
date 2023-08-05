@@ -1,0 +1,8 @@
+numpy
+wget
+scipy
+matplotlib
+requests
+progress
+astropy
+simplekml
