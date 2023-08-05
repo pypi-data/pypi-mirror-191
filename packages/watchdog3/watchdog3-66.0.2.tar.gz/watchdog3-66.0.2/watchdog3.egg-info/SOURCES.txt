@@ -1,0 +1,6 @@
+README.md
+setup.py
+watchdog3.egg-info/PKG-INFO
+watchdog3.egg-info/SOURCES.txt
+watchdog3.egg-info/dependency_links.txt
+watchdog3.egg-info/top_level.txt
