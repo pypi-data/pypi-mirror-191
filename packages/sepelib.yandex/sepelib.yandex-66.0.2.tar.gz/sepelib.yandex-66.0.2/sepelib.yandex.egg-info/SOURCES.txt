@@ -1,0 +1,6 @@
+README.md
+setup.py
+sepelib.yandex.egg-info/PKG-INFO
+sepelib.yandex.egg-info/SOURCES.txt
+sepelib.yandex.egg-info/dependency_links.txt
+sepelib.yandex.egg-info/top_level.txt
