@@ -1,0 +1,10 @@
+olca_ipc/__init__.py,sha256=q0jvGYLwP-f8d97q9TKeCWZr61dHybzX_TAKCH9gOzo,20
+olca_ipc/ipc.py,sha256=3rYDOFkybeK6bmc8NDkncRdsD_9Y9Y-J4jkqHhQqP8c,23879
+olca_ipc/protocol.py,sha256=fvsUWJNR0SAchnFPdkL5og27poVO3GpxahCLOWYLips,7571
+olca_ipc/rest.py,sha256=X7_R1RiruA68dVNhl-ZKojt27vx64w_PJg7muxo8SFY,18881
+olca_ipc/upstream_tree.py,sha256=axOWvnaEU9pL7SrV-mbvii1FV7SzyUISKg6djIUz7Fk,4886
+olca_ipc-2.0.0a4.dist-info/LICENSE,sha256=zeIV5bQjY-soyiRixFWP9IB7OPODxTdiTDHkRlesWPQ,17099
+olca_ipc-2.0.0a4.dist-info/METADATA,sha256=Qz44IBnt39FcC035gcJqf1bYWK695DEE7fSoYz7N0xo,2083
+olca_ipc-2.0.0a4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+olca_ipc-2.0.0a4.dist-info/top_level.txt,sha256=YFpYJRWUVeqExl8cueMKO5XnpEqbxrZP3y_yQNXuWVA,9
+olca_ipc-2.0.0a4.dist-info/RECORD,,
