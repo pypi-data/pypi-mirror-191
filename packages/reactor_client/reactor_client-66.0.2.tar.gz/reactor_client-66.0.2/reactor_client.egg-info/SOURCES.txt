@@ -1,0 +1,6 @@
+README.md
+setup.py
+reactor_client.egg-info/PKG-INFO
+reactor_client.egg-info/SOURCES.txt
+reactor_client.egg-info/dependency_links.txt
+reactor_client.egg-info/top_level.txt
