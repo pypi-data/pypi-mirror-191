@@ -1,0 +1,6 @@
+README.md
+setup.py
+juggler_flapfinder.egg-info/PKG-INFO
+juggler_flapfinder.egg-info/SOURCES.txt
+juggler_flapfinder.egg-info/dependency_links.txt
+juggler_flapfinder.egg-info/top_level.txt
