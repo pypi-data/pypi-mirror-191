@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: peakrdl-systemrdl
+Version: 0.1.0
+Summary: Write a register model to a SystemRDL file
+Home-page: https://github.com/SystemRDL/PeakRDL-systemrdl
+Author: Alex Mykyta
+Author-email: amykyta3@github.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/SystemRDL/PeakRDL-systemrdl
+Project-URL: Tracker, https://github.com/SystemRDL/PeakRDL-systemrdl/issues
+Description: [![build](https://github.com/SystemRDL/PeakRDL-systemrdl/workflows/build/badge.svg)](https://github.com/SystemRDL/PeakRDL-systemrdl/actions?query=workflow%3Abuild+branch%3Amain)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/peakrdl-systemrdl.svg)](https://pypi.org/project/peakrdl-systemrdl)
+        
+        # PeakRDL-systemrdl
+        Export a compiled register model into SystemRDL code.
+        
+        Useful when converting from other imported file formats.
+        
+        For the command line tool, see the [PeakRDL project](https://peakrdl.readthedocs.io).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
