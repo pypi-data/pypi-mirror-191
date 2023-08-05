@@ -1,0 +1,6 @@
+README.md
+setup.py
+golovan_stats_aggregator.egg-info/PKG-INFO
+golovan_stats_aggregator.egg-info/SOURCES.txt
+golovan_stats_aggregator.egg-info/dependency_links.txt
+golovan_stats_aggregator.egg-info/top_level.txt
