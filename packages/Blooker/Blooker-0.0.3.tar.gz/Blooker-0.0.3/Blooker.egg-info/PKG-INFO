@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: Blooker
+Version: 0.0.3
+Summary: Flood Blooket Games
+Home-page: https://github.com/bigboy-baby/
+Author: Biggie
+Author-email: thugshaker@yahoo.com
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# Blooker
+
+Trash blooket flooding module
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Blooker
+
+```bash
+pip install Blooker
+```
+
+## Usage
+
+Flooder
+```python
+from Blooker import bot
+
+code = input("Game Code: ")
+name = input("Name: ")
+am = int(input("Amount: "))
+
+for n in range(am):
+    status = bot.join(code, name, "Angry Bot")
+    if status == True:
+        print("Joined Game")
+    else:
+        print("Failed to Join")
+```
+
+## Author
+Biggie / bigboy-baby / bigboybigboi / biggie.wtf
+
+## License
+Shut

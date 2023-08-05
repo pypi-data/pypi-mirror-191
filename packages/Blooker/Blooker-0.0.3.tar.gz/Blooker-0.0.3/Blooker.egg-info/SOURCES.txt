@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+Blooker/__init__.py
+Blooker.egg-info/PKG-INFO
+Blooker.egg-info/SOURCES.txt
+Blooker.egg-info/dependency_links.txt
+Blooker.egg-info/requires.txt
+Blooker.egg-info/top_level.txt
