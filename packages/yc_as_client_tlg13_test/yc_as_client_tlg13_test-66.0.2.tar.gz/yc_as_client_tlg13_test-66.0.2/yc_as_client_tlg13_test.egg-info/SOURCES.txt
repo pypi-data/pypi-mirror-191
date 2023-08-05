@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_as_client_tlg13_test.egg-info/PKG-INFO
+yc_as_client_tlg13_test.egg-info/SOURCES.txt
+yc_as_client_tlg13_test.egg-info/dependency_links.txt
+yc_as_client_tlg13_test.egg-info/top_level.txt
