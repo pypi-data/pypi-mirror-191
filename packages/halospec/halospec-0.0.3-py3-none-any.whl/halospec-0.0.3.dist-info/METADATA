@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: halospec
+Version: 0.0.3
+Summary: Halo Spectroscopy for JWST/MIRI
+Home-page: https://github.com/benjaminpope/halospec
+Author: Benjamin Pope
+Author-email: b.pope@uq.edu.au
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/benjaminpope/halospec/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: jaxlib
+Requires-Dist: jax
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+Requires-Dist: optax
+Requires-Dist: numpyro
+Requires-Dist: jaxopt
+
+Halo Spectroscopy for JWST/MIRI
+
