@@ -1,0 +1,11 @@
+jsonpatch>=1.13
+jsonschema
+six
+xlrd
+pytango
+
+[tests]
+pytest
+pytest-cov
+Faker
+mock

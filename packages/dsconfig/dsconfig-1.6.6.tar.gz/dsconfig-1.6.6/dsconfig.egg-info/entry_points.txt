@@ -1,0 +1,4 @@
+[console_scripts]
+json2tango = dsconfig.json2tango:main
+xls2json = dsconfig.excel:main
+

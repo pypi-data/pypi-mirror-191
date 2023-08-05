@@ -1,0 +1,4 @@
+include README.md LICENSE.txt
+global-include *.json
+prune tests
+prune .devcontainer
