@@ -1,0 +1,6 @@
+README.md
+setup.py
+taxi_client_ab_analyzer.egg-info/PKG-INFO
+taxi_client_ab_analyzer.egg-info/SOURCES.txt
+taxi_client_ab_analyzer.egg-info/dependency_links.txt
+taxi_client_ab_analyzer.egg-info/top_level.txt
