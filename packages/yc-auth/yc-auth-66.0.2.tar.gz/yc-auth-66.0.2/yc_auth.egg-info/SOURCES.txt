@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_auth.egg-info/PKG-INFO
+yc_auth.egg-info/SOURCES.txt
+yc_auth.egg-info/dependency_links.txt
+yc_auth.egg-info/top_level.txt
