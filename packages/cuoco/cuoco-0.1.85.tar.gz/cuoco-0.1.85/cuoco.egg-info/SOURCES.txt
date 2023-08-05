@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+cuoco/__init__.py
+cuoco/dataCleaning.py
+cuoco/dataModeling.py
+cuoco/dataPipeline.py
+cuoco/dataPresentation.py
+cuoco/jsonReading.py
+cuoco/mainTest.py
+cuoco.egg-info/PKG-INFO
+cuoco.egg-info/SOURCES.txt
+cuoco.egg-info/dependency_links.txt
+cuoco.egg-info/requires.txt
+cuoco.egg-info/top_level.txt
