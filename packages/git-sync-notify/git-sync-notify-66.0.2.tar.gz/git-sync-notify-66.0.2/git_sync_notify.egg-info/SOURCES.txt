@@ -1,0 +1,6 @@
+README.md
+setup.py
+git_sync_notify.egg-info/PKG-INFO
+git_sync_notify.egg-info/SOURCES.txt
+git_sync_notify.egg-info/dependency_links.txt
+git_sync_notify.egg-info/top_level.txt
