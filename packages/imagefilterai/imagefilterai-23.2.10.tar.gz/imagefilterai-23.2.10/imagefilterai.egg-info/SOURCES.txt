@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+imagefilterai/__init__.py
+imagefilterai.egg-info/PKG-INFO
+imagefilterai.egg-info/SOURCES.txt
+imagefilterai.egg-info/dependency_links.txt
+imagefilterai.egg-info/top_level.txt
