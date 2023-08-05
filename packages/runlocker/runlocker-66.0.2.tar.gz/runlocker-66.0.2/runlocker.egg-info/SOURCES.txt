@@ -1,0 +1,6 @@
+README.md
+setup.py
+runlocker.egg-info/PKG-INFO
+runlocker.egg-info/SOURCES.txt
+runlocker.egg-info/dependency_links.txt
+runlocker.egg-info/top_level.txt
