@@ -1,0 +1,6 @@
+README.md
+setup.py
+pypi_indexer_bin.egg-info/PKG-INFO
+pypi_indexer_bin.egg-info/SOURCES.txt
+pypi_indexer_bin.egg-info/dependency_links.txt
+pypi_indexer_bin.egg-info/top_level.txt
