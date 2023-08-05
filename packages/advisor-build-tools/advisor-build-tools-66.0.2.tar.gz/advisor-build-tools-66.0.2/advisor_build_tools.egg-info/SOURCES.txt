@@ -1,0 +1,6 @@
+README.md
+setup.py
+advisor_build_tools.egg-info/PKG-INFO
+advisor_build_tools.egg-info/SOURCES.txt
+advisor_build_tools.egg-info/dependency_links.txt
+advisor_build_tools.egg-info/top_level.txt
