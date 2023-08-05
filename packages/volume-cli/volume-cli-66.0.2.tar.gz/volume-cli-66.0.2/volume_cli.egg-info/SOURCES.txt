@@ -1,0 +1,6 @@
+README.md
+setup.py
+volume_cli.egg-info/PKG-INFO
+volume_cli.egg-info/SOURCES.txt
+volume_cli.egg-info/dependency_links.txt
+volume_cli.egg-info/top_level.txt
