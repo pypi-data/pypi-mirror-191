@@ -1,0 +1,6 @@
+README.md
+setup.py
+xiva_hub_client.egg-info/PKG-INFO
+xiva_hub_client.egg-info/SOURCES.txt
+xiva_hub_client.egg-info/dependency_links.txt
+xiva_hub_client.egg-info/top_level.txt
