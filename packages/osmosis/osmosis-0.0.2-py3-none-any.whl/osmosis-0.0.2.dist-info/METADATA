@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: osmosis
+Version: 0.0.2
+Author-email: Ryan Cao <hello@ryanccn.dev>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: diffusers
+Requires-Dist: typer
+Requires-Dist: eventlet
+Requires-Dist: flask-socketio
+Requires-Dist: flask
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: accelerate
+Requires-Dist: realesrgan
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+
