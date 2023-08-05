@@ -1,0 +1,6 @@
+README.md
+setup.py
+tanker_api.egg-info/PKG-INFO
+tanker_api.egg-info/SOURCES.txt
+tanker_api.egg-info/dependency_links.txt
+tanker_api.egg-info/top_level.txt
