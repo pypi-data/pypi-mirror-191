@@ -1,0 +1,17 @@
+zope.preference-5.0-py3.9-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/preference/README.rst,sha256=BiYl-VDaV_nzvXRl3CQ6JEEAXwO4BROtRAq0H3okGCw,16539
+zope/preference/__init__.py,sha256=MJbB15bMLgOJIJyhjiYlZU08ln-JiJ0Gb_xPeX7II0c,73
+zope/preference/configure.zcml,sha256=LapeZsg-8qIyB5AX-i4b9Dh9aPJzsVMdGHuCvoXSZ38,1683
+zope/preference/default.py,sha256=zin60rhYZe4lHQSCIbeXfT8HoqfnnCauRf6M_VS-FvU,4098
+zope/preference/interfaces.py,sha256=jCN6DD1AcT8yMHkiEIXLDJnHKggporVj8lZqNfmvf8s,2928
+zope/preference/meta.zcml,sha256=bWhrXIO2Y0KpoSY2juLN5b4ecP3SIhZIb7GMeilD1do,424
+zope/preference/metaconfigure.py,sha256=eiGan6ZJFGRM_DJEEJQmklCMXO1QDf0OpewunvCsLmE,1169
+zope/preference/metadirectives.py,sha256=MXkBqR05XCovjNmZzawcR2yp3CH82E8APcfi-ZYXjps,2050
+zope/preference/preference.py,sha256=5qKVXMaLEMB6vWHlPdT-O_VAalwr3nWWpv1ESiawUug,8960
+zope/preference/tests.py,sha256=5WhKwyU9kFWLoSLG3h-tMdK8OqtF0moY_ZumHmH0ojI,3605
+zope.preference-5.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zope.preference-5.0.dist-info/METADATA,sha256=nfJnU5J5kJ1ciP1jD-s52vmD6DCi4Sgy1TMGKi1UEuc,19551
+zope.preference-5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zope.preference-5.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.preference-5.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.preference-5.0.dist-info/RECORD,,
