@@ -1,0 +1,6 @@
+README.md
+setup.py
+winsqlite3.egg-info/PKG-INFO
+winsqlite3.egg-info/SOURCES.txt
+winsqlite3.egg-info/dependency_links.txt
+winsqlite3.egg-info/top_level.txt
