@@ -1,0 +1,5 @@
+pandas
+scikit-learn
+
+easy_mpl>=0.21.3
+SeqMetrics>=1.3.3
