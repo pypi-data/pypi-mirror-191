@@ -1,0 +1,6 @@
+README.md
+setup.py
+tankutils.egg-info/PKG-INFO
+tankutils.egg-info/SOURCES.txt
+tankutils.egg-info/dependency_links.txt
+tankutils.egg-info/top_level.txt
