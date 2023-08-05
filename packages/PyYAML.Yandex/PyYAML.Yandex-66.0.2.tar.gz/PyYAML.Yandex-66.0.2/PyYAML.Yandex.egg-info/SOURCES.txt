@@ -1,0 +1,6 @@
+README.md
+setup.py
+PyYAML.Yandex.egg-info/PKG-INFO
+PyYAML.Yandex.egg-info/SOURCES.txt
+PyYAML.Yandex.egg-info/dependency_links.txt
+PyYAML.Yandex.egg-info/top_level.txt
