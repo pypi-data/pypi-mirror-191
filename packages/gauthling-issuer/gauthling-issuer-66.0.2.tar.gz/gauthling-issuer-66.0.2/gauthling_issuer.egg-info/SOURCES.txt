@@ -1,0 +1,6 @@
+README.md
+setup.py
+gauthling_issuer.egg-info/PKG-INFO
+gauthling_issuer.egg-info/SOURCES.txt
+gauthling_issuer.egg-info/dependency_links.txt
+gauthling_issuer.egg-info/top_level.txt
