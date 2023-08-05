@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: Netstock
+Version: 1.0
+Summary: A simple package for building servers
+Author: Hunter Mikesell
+License: MIT
+Description-Content-Type: text/markdown
+
+# NETSTOCK
+
+## Code Example
+```py 
+import Netsock
+
+# Server Side
+def Stock():
+    try:
+        Server = Netstock.TCPserver('localhost', 4000)
+        Server.create()
+        Server.start_listener()
+        while (True):
+            Server.accept_all()
+            rb = Server.recv_bytes()
+            print(rb)
+            Server.disconnect_client()
+    except Exception as error:
+        print(error)
+
+# Client Side
+def clientStock():
+    Client = Netstock.TCPClient()
+    Client.connectToServer('localhost', 4000)
+    Client.sendMsg('Hello')
+
+
+```
