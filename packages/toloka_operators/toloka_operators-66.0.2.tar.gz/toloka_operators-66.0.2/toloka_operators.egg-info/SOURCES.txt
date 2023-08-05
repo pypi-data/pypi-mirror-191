@@ -1,0 +1,6 @@
+README.md
+setup.py
+toloka_operators.egg-info/PKG-INFO
+toloka_operators.egg-info/SOURCES.txt
+toloka_operators.egg-info/dependency_links.txt
+toloka_operators.egg-info/top_level.txt
