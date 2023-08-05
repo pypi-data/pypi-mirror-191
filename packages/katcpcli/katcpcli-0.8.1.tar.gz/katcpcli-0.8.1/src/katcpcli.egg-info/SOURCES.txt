@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/katcpcli/CommandDispatcher.py
+src/katcpcli/StreamClient.py
+src/katcpcli/UI.py
+src/katcpcli/__init__.py
+src/katcpcli/app.py
+src/katcpcli/config.py
+src/katcpcli/main.py
+src/katcpcli.egg-info/PKG-INFO
+src/katcpcli.egg-info/SOURCES.txt
+src/katcpcli.egg-info/dependency_links.txt
+src/katcpcli.egg-info/entry_points.txt
+src/katcpcli.egg-info/requires.txt
+src/katcpcli.egg-info/top_level.txt
+tests/test.py

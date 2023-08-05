@@ -1,0 +1,32 @@
+[project]
+name = "katcpcli"
+version = "0.8.1"
+authors = [
+	{name="Tobias Winchen", email="twinchen@mpifr.de"}
+]
+description = "A command-line client for katcp devices."
+license = {file="LICENSE"}
+readme = "README.md"
+requires-python= ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+		"License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'aiokatcp',
+  'prompt_toolkit',
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.mpcdf.mpg.de/twinchen/katcpcli"
+
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+katcpcli = "katcpcli.main:main"
