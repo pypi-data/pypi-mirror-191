@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_adult_grimhold_upload_bans.egg-info/PKG-INFO
+yandex_adult_grimhold_upload_bans.egg-info/SOURCES.txt
+yandex_adult_grimhold_upload_bans.egg-info/dependency_links.txt
+yandex_adult_grimhold_upload_bans.egg-info/top_level.txt
