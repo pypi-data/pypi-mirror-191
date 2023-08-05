@@ -1,0 +1,149 @@
+
+import unittest
+
+class ObservationParserTestCases(unittest.TestCase):
+    def test_parse_null_001(self):
+        t = "null"
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation(None)
+                         )
+
+    def test_parse_bool_001(self):
+        t = "true"
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation(True)
+                         )
+
+    def test_parse_bool_002(self):
+        t = "FAlse"
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation(False)
+                         )
+
+    def test_parse_number_001(self):
+        t = "3.1415926"
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation(3.1415926)
+                         )
+
+    def test_parse_string_001(self):
+        t = "\"mushi\""
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation('mushi')
+                         )
+
+    def test_parse_string_002(self):
+        t = "mushi"
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation("mushi")
+                         )
+
+    def test_parse_string_003(self):
+        t = r'"I say \"HELLO!\""'
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation("I say \"HELLO!\"")
+                         )
+
+    def test_parse_text_001(self):
+        t = r'''
+"""mushi"""
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation("mushi", text=True)
+                         )
+
+    def test_parse_encap_001(self):
+        t = r'''
+#3
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation(3, encap=True)
+                         )
+
+    def test_parse_encap_002(self):
+        t = r'''
+#[40, -75]
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation([40, -75], encap=True)
+                         )
+
+    def test_parse_list_001(self):
+        t = r'''
+[1, a]
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation([1, "a"])
+                         )
+
+    def test_parse_list_002(self):
+        t = r'''
+[1, a,]
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation([1, "a"])
+                         )
+
+    def test_parse_set_001(self):
+        t = r'''
+{a, b}
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation({"a", "b"})
+                         )
+
+    def test_parse_dict_001(self):
+        t = r'''
+{
+  a: 1,
+  "b money": 2
+}
+            '''
+        r = parse(t)
+        self.assertEqual(r,
+                         Observation({"a": 1, "b money": 2})
+                         )
+
+    def test_serialize_001(self):
+        t = r'''
+        {
+        a: { 1, 4, 7 },
+        "b \"money": 2,
+        c: "mushi",
+        x: b,
+        d: """gr\"ammar""",
+        e: #42,
+        f: [a, b, c, z],
+        }
+            '''
+
+        o = parse(t)
+
+        s = serialize(o)
+        n = parse(s)
+
+        self.assertEqual(o, n)
+
+    def test_serialize_002(self):
+
+        o = Observation('So I says to Mabel, I says, "HELLO"')
+        s = serialize(o)
+        n = parse(s)
+
+        self.assertEqual(o, n)
+
+if __name__ == "__main__":
+    unittest.main()
