@@ -1,0 +1,6 @@
+README.md
+setup.py
+solver_balancer.egg-info/PKG-INFO
+solver_balancer.egg-info/SOURCES.txt
+solver_balancer.egg-info/dependency_links.txt
+solver_balancer.egg-info/top_level.txt
