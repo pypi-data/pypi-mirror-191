@@ -1,0 +1,17 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+feature_importance.py
+setup.py
+FeatureImportance/CHANGELOG.txt
+FeatureImportance/LICENCE.txt
+FeatureImportance/README.txt
+FeatureImportance/__init__.py
+FeatureImportance/feature_importance.py
+FeatureImportance/setup.py
+FeatureImportance.egg-info/PKG-INFO
+FeatureImportance.egg-info/SOURCES.txt
+FeatureImportance.egg-info/dependency_links.txt
+FeatureImportance.egg-info/top_level.txt
