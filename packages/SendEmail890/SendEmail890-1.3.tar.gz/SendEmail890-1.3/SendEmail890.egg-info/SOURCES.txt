@@ -1,0 +1,8 @@
+setup.py
+SendEmail890.egg-info/PKG-INFO
+SendEmail890.egg-info/SOURCES.txt
+SendEmail890.egg-info/dependency_links.txt
+SendEmail890.egg-info/requires.txt
+SendEmail890.egg-info/top_level.txt
+pysendemail/__init__.py
+pysendemail/send_email.py
