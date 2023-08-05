@@ -1,0 +1,7 @@
+torch
+numpy
+gym
+scikit-image
+opencv-python
+pillow
+matplotlib
