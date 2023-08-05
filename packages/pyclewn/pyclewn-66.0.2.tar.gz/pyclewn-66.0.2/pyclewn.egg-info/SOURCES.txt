@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyclewn.egg-info/PKG-INFO
+pyclewn.egg-info/SOURCES.txt
+pyclewn.egg-info/dependency_links.txt
+pyclewn.egg-info/top_level.txt
