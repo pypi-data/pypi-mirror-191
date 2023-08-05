@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/polar_diagrams/__init__.py
+src/polar_diagrams/polar_diagrams.py
+src/polar_diagrams.egg-info/PKG-INFO
+src/polar_diagrams.egg-info/SOURCES.txt
+src/polar_diagrams.egg-info/dependency_links.txt
+src/polar_diagrams.egg-info/requires.txt
+src/polar_diagrams.egg-info/top_level.txt
+tests/test.py
