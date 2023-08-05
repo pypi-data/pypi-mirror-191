@@ -1,0 +1,100 @@
+#!/usr/bin/env python3
+
+import os
+import signal
+import sys
+import pkgutil
+import importlib
+import checkvsphere.vcmd
+from checkvsphere import VsphereConnectException, CheckVsphereTimeout
+from pyVmomi import vim
+
+def timeout_handler(signum, frame):
+    raise CheckVsphereTimeout("Timeout reached")
+
+def set_timeout(seconds=None, handler=None):
+    if seconds is None:
+        seconds = int(os.environ.get("TIMEOUT", "30"))
+    signal.signal(signal.SIGALRM, (handler or timeout_handler))
+    signal.alarm(seconds)
+
+def run():
+    cmd = None
+    try:
+        cmd = sys.argv.pop(1)
+    except:
+        pass
+
+    set_timeout()
+
+    if cmd:
+        mod = "".join(c for c in cmd if c.isalnum())
+        try:
+            runner = importlib.import_module(f"checkvsphere.vcmd.{mod}")
+        except ModuleNotFoundError as e:
+            if not e.name.startswith("vcmd."):
+                raise e
+            print(f"command not found: {cmd}")
+            sys.exit(3)
+        try:
+            sys.argv[0] = f"{sys.argv[0]} {runner.__cmd__}"
+        except:
+            sys.argv[0] = f"{sys.argv[0]} {cmd}"
+        runner.run()
+    else:
+        p ={}
+        cmds = set()
+        for loader, name, is_pkg in pkgutil.walk_packages(checkvsphere.vcmd.__path__):
+            if not is_pkg:
+                full_name = checkvsphere.vcmd.__name__ + '.' + name
+                p[name] = importlib.import_module(full_name)
+                if hasattr(p[name], '__cmd__') and p[name].__cmd__:
+                    cmds.add(p[name].__cmd__)
+        print("Specify cmd, one of:\n")
+        for cmd in sorted(cmds):
+            print(f"  {cmd}")
+        print()
+
+
+def main():
+    import traceback
+
+    try:
+        run()
+    except VsphereConnectException as e:
+        print("Cannot connect")
+        sys.exit(0)
+    except SystemExit as e:
+        if not isinstance(e.code, int) or e.code > 3:
+            sys.exit(3)
+        else:
+            sys.exit(e.code)
+    except CheckVsphereTimeout as e:
+        print("UNKOWN - Timout reached")
+        traceback.print_exc(file=sys.stdout)
+        sys.exit(3)
+    except ConnectionRefusedError as e:
+        print(f"UNKNOWN - Connection refused")
+        raise SystemExit(2)
+    except vim.fault.VimFault as e:
+        if hasattr(e, 'msg'):
+            print(f"VSPHERE-ABOUT - ERROR - {e.msg}")
+        else:
+            # in case there is no msg attribute
+            # According to the docs there is
+            # faultCause and faultMessage, but they are empty
+            # but there is a msg attribute (which is not in the docs)
+            # i don't know if it is set always
+            # so fall back to the normal string representation
+            print(f"VSPHERE-ABOUT - ERROR - {e}")
+        if int(os.environ.get("VSPHERE_DEBUG", "0")) > 0:
+            traceback.print_exc(file=sys.stdout)
+        raise SystemExit(3)
+    except Exception as e:
+        print(f"UNKNOWN - Unhandled exception: {e}")
+        if int(os.environ.get("VSPHERE_DEBUG", "0")) > 0:
+            traceback.print_exc(file=sys.stdout)
+        raise SystemExit(3)
+
+if __name__ == "__main__":
+    main()
