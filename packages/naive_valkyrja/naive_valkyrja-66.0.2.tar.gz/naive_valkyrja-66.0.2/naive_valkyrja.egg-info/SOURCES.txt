@@ -1,0 +1,6 @@
+README.md
+setup.py
+naive_valkyrja.egg-info/PKG-INFO
+naive_valkyrja.egg-info/SOURCES.txt
+naive_valkyrja.egg-info/dependency_links.txt
+naive_valkyrja.egg-info/top_level.txt
