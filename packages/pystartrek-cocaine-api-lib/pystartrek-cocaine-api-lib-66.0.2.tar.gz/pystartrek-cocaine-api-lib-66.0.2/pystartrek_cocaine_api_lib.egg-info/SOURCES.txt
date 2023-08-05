@@ -1,0 +1,6 @@
+README.md
+setup.py
+pystartrek_cocaine_api_lib.egg-info/PKG-INFO
+pystartrek_cocaine_api_lib.egg-info/SOURCES.txt
+pystartrek_cocaine_api_lib.egg-info/dependency_links.txt
+pystartrek_cocaine_api_lib.egg-info/top_level.txt
