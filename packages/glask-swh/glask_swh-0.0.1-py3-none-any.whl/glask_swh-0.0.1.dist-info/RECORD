@@ -1,0 +1,10 @@
+glask/__init__.py,sha256=qqPvBh-CdSJ4onJkl3CdwKGVPiNBQfUxibHJN0L8y1g,59
+glask/glask.py,sha256=C25X7X8GYdyGEUV9ASEpXxeoVaepfvTVk5qavNhU3Co,1280
+glask/middleware.py,sha256=63mOsqw2jSmQ7o4AeUi40ghFjWu4DkOjpt1dNgxyinI,685
+glask/util/__init__.py,sha256=dWQ_9aHRrt5talYCB-grAR4v0f7LW_6UjNdRr5GfqLQ,59
+glask/util/request.py,sha256=w3yH1zy7tF4x_begxV9pEjlj7YUQUX_VQBxurx72NGI,167
+glask/util/response.py,sha256=marh4V-NktzZYN6Q7Wp3gQBBfah0d5kw1Wfc6lA2R2g,266
+glask_swh-0.0.1.dist-info/METADATA,sha256=-cxcHhK_LqUy3sukh2yO5-w5Kmvnoc6WEpst4-zfuu0,426
+glask_swh-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+glask_swh-0.0.1.dist-info/top_level.txt,sha256=U8piEN1pV1UkN-eSshYm762BpOX9NW9UTR-cRJUT0S0,6
+glask_swh-0.0.1.dist-info/RECORD,,
