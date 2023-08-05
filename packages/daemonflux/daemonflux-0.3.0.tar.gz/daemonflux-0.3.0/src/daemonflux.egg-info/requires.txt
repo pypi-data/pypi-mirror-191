@@ -1,0 +1,11 @@
+numpy
+scipy
+rich
+
+[examples]
+matplotlib
+
+[test]
+pytest
+pytest-xdist
+matplotlib
