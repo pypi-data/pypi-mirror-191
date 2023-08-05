@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: colored_arnoux_rauzy_sequences
+Version: 0.1.1
+Summary: Colored Arnoux-Rauzy sequences and their asymptotic critical exponent
+Home-page: https://gitub.u-bordeaux.fr/jlepsova/colored_arnoux_rauzy_sequences
+Author: Jana Lepsova
+Author-email: lepsova.jana@gmail.com
+License: GPLv2+
+Keywords: SageMath Arnoux-Rauzy Words Critical exponent
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+This package was created to demonstrate results in the paper
+of Lubomira Dvorakova and Jana Lepsova with the name
+Critical exponent of Arnoux-Rauzy sequences.
+
+The algorithm computes the asymptotical critical exponent
+of regular d-ary Arnoux-Rauzy sequence for any dimension d.
+
+In the examples we compute the asymptotical critical exponent (ACE)
+of the Tribonacci word (d = 3).
+==================
+
+EXAMPLES:
+
+    sage: from colored_arnoux_rauzy_sequences.ARsequence import ArnouxRauzySubstitutiveSequence
+    sage: word = ArnouxRauzySubstitutiveSequence(3,[],[1])
+    sage: ACE = word.asymptotic_critical_exponent()
+    sage: ACE
+    1/2*Lambda^2 + 3/2
+    sage: ACE.n()                                                                                
+    3.19148788395312
+
+==================
+
+``colored_arnoux_rauzy_sequences`` package 
+
+
+
