@@ -1,0 +1,6 @@
+README.md
+setup.py
+plato3_lib.egg-info/PKG-INFO
+plato3_lib.egg-info/SOURCES.txt
+plato3_lib.egg-info/dependency_links.txt
+plato3_lib.egg-info/top_level.txt
