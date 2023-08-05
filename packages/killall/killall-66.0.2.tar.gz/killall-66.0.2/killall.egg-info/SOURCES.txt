@@ -1,0 +1,6 @@
+README.md
+setup.py
+killall.egg-info/PKG-INFO
+killall.egg-info/SOURCES.txt
+killall.egg-info/dependency_links.txt
+killall.egg-info/top_level.txt
