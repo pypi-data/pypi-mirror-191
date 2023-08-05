@@ -1,0 +1,8 @@
+setup.py
+pyareas/__init__.py
+pyareas/pyareas.py
+pyareas.egg-info/PKG-INFO
+pyareas.egg-info/SOURCES.txt
+pyareas.egg-info/dependency_links.txt
+pyareas.egg-info/requires.txt
+pyareas.egg-info/top_level.txt
