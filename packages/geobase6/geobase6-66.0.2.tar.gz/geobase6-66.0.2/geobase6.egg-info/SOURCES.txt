@@ -1,0 +1,6 @@
+README.md
+setup.py
+geobase6.egg-info/PKG-INFO
+geobase6.egg-info/SOURCES.txt
+geobase6.egg-info/dependency_links.txt
+geobase6.egg-info/top_level.txt
