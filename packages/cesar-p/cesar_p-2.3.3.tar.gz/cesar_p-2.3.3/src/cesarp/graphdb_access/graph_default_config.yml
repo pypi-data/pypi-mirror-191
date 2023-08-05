@@ -1,0 +1,140 @@
+##
+## Copyright (c) 2023, Empa, Leonie Fierz, Aaron Bojarski, Ricardo Parreira da Silva, Sven Eggimann.
+##
+## This file is part of CESAR-P - Combined Energy Simulation And Retrofit written in Python
+##
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU Affero General Public License as
+## published by the Free Software Foundation, either version 3 of the
+## License, or (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU Affero General Public License for more details.
+##
+## You should have received a copy of the GNU Affero General Public License
+## along with this program. If not, see <http://www.gnu.org/licenses/>.
+##
+## Contact: https://www.empa.ch/web/s313
+##
+GRAPHDB_ACCESS:
+  FIXED_INFILTRATION_PROFILE_VALUE: 1  # the value to use for timesteps of the infiltration rate profile (constant profile)
+  # choose between local or remote data source, only one of the two can be set to active at the same time
+  LOCAL:  # use a TTL file as data source
+    ACTIVE: True 
+    PATH: "ressources/construction_and_material_data.ttl"
+    FORMAT: "ttl"
+  REMOTE:  # connect to a GraphDB server instance (remote server or on your local machine)
+    ACTIVE: False
+    SPARQL_ENDPOINT: "YOUR_GRAPHDB_ENDPOINT"  # GraphDB Endpoint URL, make sure to set the User and PW as environment variables (GRAPHDB_USER, GRAPHDB_PASSWORD) 
+    SAVE_DB_EXPORT: True
+  # Lookup of retrofit construction for each building element. Regulation which was followed to define the retrofit construction
+  # The retrofit construction linked to a construction with "ues:retrofitOf" must have "ues:targetRequirement" respectively "ues:minRequirement" respectively (if parameter "target_requirement" is False) 
+  #set to the string value of the parameter "regulation"
+  RETROFIT:
+    regulation: "SIA-380-1_2016"  
+    target_requirement: False  # in SIA-380 there is a definition for U-Values for minimal and a target goals 
+  # This factory class must return the constructional archetype for each builidng on the site. 
+  # The default one (GraphDBArchetypicalConstructionFactory) uses a lookup by constrution year and the list of archetypes below.
+  # The class specified here must be compatible with cesarp.manager.BldgModelFactory.ArchetypicalConstructionFactoryProtocol 
+  # and arguments for init must match with the ones passed in GraphDBFacade. You can link to your own implementation outside cesar-p-core.
+  # Make sure to specify class, not just module name containing the class.
+  ARCHETYPE_CONSTRUCTION_FACTORY_CLASS: "cesarp.graphdb_access.GraphDBArchetypicalConstructionFactory.GraphDBArchetypicalConstructionFactory"
+  # Constructional archetypes to use in in the GraphDBArchetypicalConstructionFactory
+  # For each Archetype the age class / range is looked up in the GraphDB.
+  # The standard archetypes have several options for each building element so you can have some variability if you switch it on with MANAGER:RANDOM_CONSTRUCTIONS
+  # If you have no variablility, there are two strategies to choose the default one to be used:
+  # DEFAULT_CONSTRUCTION_MEAN_UVALUE: get U-Value of all elements and choose the one where the U-Value is closest to the mean
+  # DEFAULT_CONSTRUCTION_SPECIFIC: set a certain construction as default (in the standard values most of them are actually selected to match a mean U-Value, but there are some special cases)
+  ARCHETYPES:
+    1918_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/1918_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof1918_peatfiber_medium"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall1918_brick_dl_medium"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground1918_concrete_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window1918_Standard"
+    1948_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/1948_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof1948_cellular_concrete_medium"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall1948_cavity_brick_medium"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground1948_hollow_slab_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window1948_Standard"
+    1978_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/1978_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof1978_glassfiber_medium"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall1978_sandstone_heavy"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground1978_hollow_brick_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window1978_StdAirIns_Double"
+    1994_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/1994_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof1994_concrete_med_insulation"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall1994_concrete_areated_medium"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground1994_concrete_slab_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window1994_LowE_Air_Double"
+    2001_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/2001_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof2001_wood_poor_ins"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall2001_concrete_med_ins"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground2001_concrete_slab_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window2001_LowE_Argon_Double"
+    2006_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/2006_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof2006_wood_med_ins"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall2006_concrete_high_ins"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground2006_concrete_slab_medium_high_ins"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window2006_LowE_Krypton_Double"
+    2009_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/2009_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof2009_wood_med_ins"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall2009_brick_low_ins"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground2009_concrete_slab_medium_high_ins"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window2009_LowE_Xenon_Double"
+    2014_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/2014_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof2014_wood_med_ins"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall2014_stone_cavity_woodplank"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground2014_concrete_slab_medium"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window2014_LowE_Xenon_Double"
+    2015_SFH_ARCHETYPE:
+      URI: "http://uesl_data/sources/archetypes/2015_SFH_Archetype"
+      DEFAULT_CONSTRUCTION_MEAN_UVALUE:
+        ACTIVE: False
+      DEFAULT_CONSTRUCTION_SPECIFIC:
+        ACTIVE: True
+        ROOF: "http://uesl_data/sources/archetypes/roofs/Roof2015_concrete_med_ins"
+        WALL: "http://uesl_data/sources/archetypes/walls/Wall2015_flumroc_B335"
+        GROUNDFLOOR: "http://uesl_data/sources/archetypes/grounds/Ground2015_concrete_slab_medium_med_ins"
+        WINDOW: "http://uesl_data/sources/archetypes/windows/Window2015_LowE_Xenon_Double"
