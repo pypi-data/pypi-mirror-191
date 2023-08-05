@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+paper_qa.egg-info/PKG-INFO
+paper_qa.egg-info/SOURCES.txt
+paper_qa.egg-info/dependency_links.txt
+paper_qa.egg-info/requires.txt
+paper_qa.egg-info/top_level.txt
+paperqa/__init__.py
+paperqa/docs.py
+paperqa/qaprompts.py
+paperqa/readers.py
+paperqa/utils.py
+paperqa/version.py
+tests/test_paperqa.py
