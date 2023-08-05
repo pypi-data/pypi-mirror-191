@@ -1,0 +1,6 @@
+README.md
+setup.py
+langly_gateway.egg-info/PKG-INFO
+langly_gateway.egg-info/SOURCES.txt
+langly_gateway.egg-info/dependency_links.txt
+langly_gateway.egg-info/top_level.txt
