@@ -1,0 +1,6 @@
+README.md
+setup.py
+support_tickets_classification.egg-info/PKG-INFO
+support_tickets_classification.egg-info/SOURCES.txt
+support_tickets_classification.egg-info/dependency_links.txt
+support_tickets_classification.egg-info/top_level.txt
