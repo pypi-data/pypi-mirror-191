@@ -1,0 +1,2 @@
+class EmptyText(Exception):
+    pass
