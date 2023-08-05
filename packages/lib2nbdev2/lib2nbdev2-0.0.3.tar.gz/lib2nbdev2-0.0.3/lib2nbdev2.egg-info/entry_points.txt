@@ -1,0 +1,5 @@
+[console_scripts]
+convert_lib = lib2nbdev2.convert:convert_lib
+
+[nbdev]
+lib2nbdev2 = lib2nbdev2._modidx:d
