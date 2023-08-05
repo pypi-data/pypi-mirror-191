@@ -1,0 +1,6 @@
+README.md
+setup.py
+ipykee.egg-info/PKG-INFO
+ipykee.egg-info/SOURCES.txt
+ipykee.egg-info/dependency_links.txt
+ipykee.egg-info/top_level.txt
