@@ -1,0 +1,16 @@
+astrodbkit2/__init__.py,sha256=uwTciJ4ZwU9vJQRdYrXdAW41IfrokfVW223kFMyNo0Y,1473
+astrodbkit2/astrodb.py,sha256=nJHa89kW3zb44cpxGcqXDmkH5TgrTn3jXBQ78QuLdlQ,33873
+astrodbkit2/schema_example.py,sha256=g999JD-9YVToA1qAYQDKAGg6m_PapKaV2nj0HFwAcwc,3606
+astrodbkit2/spectra.py,sha256=dpQIdbTTdpS8P_DsEdQuXbMOkcmH3VUdTZMFbUS3Y8Q,7682
+astrodbkit2/utils.py,sha256=Q2VmHKsVdEZI_5dfjpQAC9YQ8kjpCuOGjsiFNP0OngU,3465
+astrodbkit2/version.py,sha256=G1g_AM2aHyfhSPdCFB-IpWSkmLv6u1Oxa3biH5w1e3Y,337
+astrodbkit2/tests/__init__.py,sha256=1D-l3TVbwIZHY78A-sB7kc4ldldX8ZaEq-Ntph51WVw,108
+astrodbkit2/tests/test_astrodb.py,sha256=l67Dapw8qF86HWF9FVzC8Rsv4WJaZhAeT5bgXbnMe-w,15952
+astrodbkit2/tests/test_spectra.py,sha256=vPwfUheJVtuIwvrrpMe-IzWKGVYkcJcNBTLK07U7W5o,5401
+astrodbkit2/tests/test_utils.py,sha256=KjJT0U1L19ekdfvxjle0VGDZRdC5yMhIb_RY57EJ3EQ,1957
+astrodbkit2-0.4.2.dist-info/LICENSE.rst,sha256=zbV9rIJKdUaJPG71dzuM7KG-9fZ8ahXVCXEHnhiNMk4,1475
+astrodbkit2-0.4.2.dist-info/METADATA,sha256=XAWzr0VFUYtGbtNl6LvM8hGVizKejrqOWzZsVvSA_6k,3563
+astrodbkit2-0.4.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+astrodbkit2-0.4.2.dist-info/entry_points.txt,sha256=v2uy1QJUCdluX7p1MBHcRXfMbrUjw7xig2UtQ9850U4,82
+astrodbkit2-0.4.2.dist-info/top_level.txt,sha256=WqlVRRlc1-yAci5hFGfsua31mTqfV4ckZbOc6fiMzBQ,12
+astrodbkit2-0.4.2.dist-info/RECORD,,
