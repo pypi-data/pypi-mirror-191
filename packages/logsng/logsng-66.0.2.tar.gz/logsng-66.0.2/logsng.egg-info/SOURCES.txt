@@ -1,0 +1,6 @@
+README.md
+setup.py
+logsng.egg-info/PKG-INFO
+logsng.egg-info/SOURCES.txt
+logsng.egg-info/dependency_links.txt
+logsng.egg-info/top_level.txt
