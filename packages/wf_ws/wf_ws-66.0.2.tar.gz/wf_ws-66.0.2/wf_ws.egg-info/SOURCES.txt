@@ -1,0 +1,6 @@
+README.md
+setup.py
+wf_ws.egg-info/PKG-INFO
+wf_ws.egg-info/SOURCES.txt
+wf_ws.egg-info/dependency_links.txt
+wf_ws.egg-info/top_level.txt
