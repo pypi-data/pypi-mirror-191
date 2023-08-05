@@ -1,0 +1,6 @@
+README.md
+setup.py
+marty_adder.egg-info/PKG-INFO
+marty_adder.egg-info/SOURCES.txt
+marty_adder.egg-info/dependency_links.txt
+marty_adder.egg-info/top_level.txt
