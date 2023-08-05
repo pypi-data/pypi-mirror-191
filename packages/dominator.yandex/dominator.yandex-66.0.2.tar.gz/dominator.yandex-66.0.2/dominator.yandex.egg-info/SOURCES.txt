@@ -1,0 +1,6 @@
+README.md
+setup.py
+dominator.yandex.egg-info/PKG-INFO
+dominator.yandex.egg-info/SOURCES.txt
+dominator.yandex.egg-info/dependency_links.txt
+dominator.yandex.egg-info/top_level.txt
