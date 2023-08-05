@@ -1,0 +1,6 @@
+README.md
+setup.py
+minidump2core.egg-info/PKG-INFO
+minidump2core.egg-info/SOURCES.txt
+minidump2core.egg-info/dependency_links.txt
+minidump2core.egg-info/top_level.txt
