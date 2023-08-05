@@ -1,0 +1,7 @@
+setup.py
+pyReadExcel/__init__.py
+pyReadExcel/pyReadExcel.py
+pyReadExcel.egg-info/PKG-INFO
+pyReadExcel.egg-info/SOURCES.txt
+pyReadExcel.egg-info/dependency_links.txt
+pyReadExcel.egg-info/top_level.txt

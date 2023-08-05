@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyReadExcel
+Version: 1.3
+Summary: 对openpyxl和lxrd进行二次开发,实现excel序列化
+Home-page: https://gitee.com/demon000/hongruan.git
+Author: xjt
+Author-email: 1165423664@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
