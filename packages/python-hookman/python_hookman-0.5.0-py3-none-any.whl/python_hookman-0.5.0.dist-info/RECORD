@@ -1,0 +1,14 @@
+hookman/__init__.py,sha256=rjgUnbZ7TV0DxeM5z1gXBF2Gop2q1_YZY0Y8oHwxyjg,135
+hookman/__main__.py,sha256=TWHYD3pEnfoMktC4q7u6p8Znq196HhTP6ZNR8dIXb-c,4172
+hookman/exceptions.py,sha256=ozX3BNf-Oc9lOWdzfOWTPow937t_MvOR5xisqg-S10c,1029
+hookman/hookman_generator.py,sha256=EQJevOsYRQyBA0KdQBm2_pViz97tA5VlL6th7Cr_Gko,36627
+hookman/hookman_utils.py,sha256=xkvHLTmcMfBR_cGvOZekwWcjeYmuXDiPga3SwPGBb_c,1935
+hookman/hooks.py,sha256=oThOAhhcij_YjQXoAEXFjzfirIfjcwXbexPW1OhMjMU,7949
+hookman/plugin_config.py,sha256=4s_K0B6RTAz3E-bWODGMGroNabE7op9oPp01rwiVqog,6114
+python_hookman-0.5.0.dist-info/AUTHORS.rst,sha256=2ZtmrcEWDLg7nNe88zSiemWX2tgC6ac7Z9YVVgsM9Ts,142
+python_hookman-0.5.0.dist-info/LICENSE,sha256=sv_GbrY1u_6UUEo_fHf1ZTyUJ-RaqvQUMQVFmSA9K9w,1062
+python_hookman-0.5.0.dist-info/METADATA,sha256=m_0SnrtjBXyp7Jp33S0ee2iE9RrSbQF_69dY2Z1qsBQ,8489
+python_hookman-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+python_hookman-0.5.0.dist-info/entry_points.txt,sha256=sIoaYqEoGpxEtYRdnV8aVRPCRpZ-pJBGxVYHmUhMJqo,49
+python_hookman-0.5.0.dist-info/top_level.txt,sha256=owIxC3oz8qvEf1CsxqI5lmVeu-h3_ya68_iOAi3HnvI,8
+python_hookman-0.5.0.dist-info/RECORD,,
