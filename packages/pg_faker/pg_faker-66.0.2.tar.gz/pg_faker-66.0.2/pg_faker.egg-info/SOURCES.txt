@@ -1,0 +1,6 @@
+README.md
+setup.py
+pg_faker.egg-info/PKG-INFO
+pg_faker.egg-info/SOURCES.txt
+pg_faker.egg-info/dependency_links.txt
+pg_faker.egg-info/top_level.txt
