@@ -1,0 +1,6 @@
+README.md
+setup.py
+emission.mongodb.egg-info/PKG-INFO
+emission.mongodb.egg-info/SOURCES.txt
+emission.mongodb.egg-info/dependency_links.txt
+emission.mongodb.egg-info/top_level.txt
