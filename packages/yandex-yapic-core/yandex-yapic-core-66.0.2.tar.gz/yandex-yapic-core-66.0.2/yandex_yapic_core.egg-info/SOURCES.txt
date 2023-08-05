@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_yapic_core.egg-info/PKG-INFO
+yandex_yapic_core.egg-info/SOURCES.txt
+yandex_yapic_core.egg-info/dependency_links.txt
+yandex_yapic_core.egg-info/top_level.txt
