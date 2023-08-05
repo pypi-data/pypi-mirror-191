@@ -1,0 +1,6 @@
+README.md
+setup.py
+conductor_client.nbryskin.egg-info/PKG-INFO
+conductor_client.nbryskin.egg-info/SOURCES.txt
+conductor_client.nbryskin.egg-info/dependency_links.txt
+conductor_client.nbryskin.egg-info/top_level.txt
