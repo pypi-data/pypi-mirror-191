@@ -1,0 +1,6 @@
+README.md
+setup.py
+uwsgiconfya.egg-info/PKG-INFO
+uwsgiconfya.egg-info/SOURCES.txt
+uwsgiconfya.egg-info/dependency_links.txt
+uwsgiconfya.egg-info/top_level.txt
