@@ -1,0 +1,6 @@
+README.md
+setup.py
+rtlog.egg-info/PKG-INFO
+rtlog.egg-info/SOURCES.txt
+rtlog.egg-info/dependency_links.txt
+rtlog.egg-info/top_level.txt
