@@ -1,0 +1,6 @@
+README.md
+setup.py
+pymssql_py38.egg-info/PKG-INFO
+pymssql_py38.egg-info/SOURCES.txt
+pymssql_py38.egg-info/dependency_links.txt
+pymssql_py38.egg-info/top_level.txt
