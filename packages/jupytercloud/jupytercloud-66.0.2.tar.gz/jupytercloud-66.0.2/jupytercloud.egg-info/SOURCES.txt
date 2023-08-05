@@ -1,0 +1,6 @@
+README.md
+setup.py
+jupytercloud.egg-info/PKG-INFO
+jupytercloud.egg-info/SOURCES.txt
+jupytercloud.egg-info/dependency_links.txt
+jupytercloud.egg-info/top_level.txt
