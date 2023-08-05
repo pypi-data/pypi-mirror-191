@@ -1,0 +1,6 @@
+README.md
+setup.py
+etangised.egg-info/PKG-INFO
+etangised.egg-info/SOURCES.txt
+etangised.egg-info/dependency_links.txt
+etangised.egg-info/top_level.txt
