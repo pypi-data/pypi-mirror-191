@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "mkdocs-bulma-classes-plugin"
+version = "1.0.0-beta.7"
+description = "Add support to Bulma css framework in Mkdocs"
+authors = ["Daniele Tentoni <daniele.tentoni.1996@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mkdocs_bulma_classes_plugin"}]
+homepage = "https://daniele-tentoni.github.io/mkdocs-bulma-classes-plugin"
+repository = "https://github.com/daniele-tentoni/mkdocs-bulma-classes-plugin"
+keywords = [
+    "mkdocs",
+    "plugin"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+pre-commit = "^3.0.2"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-bulma-theme = "^1.0.0b2"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+requests = "^2.28.2"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."mkdocs.plugins"]
+bulma-classes = 'mkdocs_bulma_classes_plugin.plugin:BulmaClassesPlugin'
