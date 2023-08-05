@@ -1,0 +1,562 @@
+"""Database objects for data handling.
+
+Client
+    |_ Code
+       |_ CalcJob <-> Processing
+            |_ DataNode
+
+See also: https://docs.sqlalchemy.org/en/20/orm/quickstart.html
+"""
+import dataclasses
+from pathlib import PurePosixPath, PureWindowsPath
+import posixpath
+import random
+import typing as t
+from uuid import UUID, uuid4
+
+import firecrest
+from jinja2.environment import Template
+import sqlalchemy as sa
+
+# see https://docs.sqlalchemy.org/en/20/orm/extensions/associationproxy.html#module-sqlalchemy.ext.associationproxy
+from sqlalchemy.ext.associationproxy import AssociationProxy, association_proxy
+from sqlalchemy.orm import (
+    DeclarativeBase,
+    Mapped,
+    MappedAsDataclass,
+    mapped_column,
+    relationship,
+    validates,
+)
+from sqlalchemy.util import immutabledict
+
+if t.TYPE_CHECKING:
+    from sqlalchemy.sql.operators import OperatorType
+    from sqlalchemy.sql.type_api import TypeEngine
+
+    from .object_store import ObjectStore
+
+
+# TODO versioning of database schema
+# TODO the init of these classes does not seem to be checked by mypy (but shows in pylance)
+# probably ok once https://github.com/python/mypy/pull/14523 released
+# TODO more validation of the data (integrate with pydantic?)
+# TODO validation of the object keys (i.e. they are in the object store)
+
+
+_BaseType = t.TypeVar("_BaseType", bound="Base")
+_K = t.TypeVar("_K")
+_V = t.TypeVar("_V")
+
+
+class ImmutableDict(immutabledict[_K, _V]):
+    def __repr__(self) -> str:
+        # ise frozen instead of immutabledict
+        return f"frozen({dict.__repr__(self)})"
+
+
+class ImmutableDictType(sa.TypeDecorator[t.Dict[t.Any, t.Any]]):
+    """A type decorator for immutable dicts.
+
+    Used to ensure that the dict is not modified after it is stored in the database.
+    """
+
+    impl = sa.JSON
+
+    cache_ok = True
+
+    def coerce_compared_value(
+        self, op: t.Optional["OperatorType"], value: t.Any
+    ) -> "TypeEngine[t.Any]":
+        # see: https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator
+        return self.impl.coerce_compared_value(op, value)  # type: ignore
+
+    def process_bind_param(
+        self, value: t.Any, dialect: sa.Dialect
+    ) -> t.Dict[t.Any, t.Any]:
+        if not isinstance(value, dict):
+            raise TypeError(f"Expected dict, got: {type(value)}")
+        return value
+
+    def process_result_value(
+        self, value: t.Any, dialect: sa.Dialect
+    ) -> ImmutableDict[t.Any, t.Any]:
+        return ImmutableDict(value)
+
+
+class ImmutableTupleType(sa.TypeDecorator[t.Tuple[t.Any, ...]]):
+    """A type decorator for immutable tuples.
+
+    Used to ensure that the tuple is not modified after it is stored in the database.
+    """
+
+    impl = sa.JSON
+
+    cache_ok = True
+
+    def coerce_compared_value(
+        self, op: t.Optional["OperatorType"], value: t.Any
+    ) -> "TypeEngine[t.Any]":
+        # see: https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator
+        return self.impl.coerce_compared_value(op, value)  # type: ignore
+
+    def process_bind_param(
+        self, value: t.Any, dialect: sa.Dialect
+    ) -> t.Tuple[t.Any, ...]:
+        if isinstance(value, list):
+            value = tuple(value)
+        if not isinstance(value, tuple):
+            raise TypeError(f"Expected list/tuple, got: {type(value)}")
+        return value
+
+    def process_result_value(
+        self, value: t.Any, dialect: sa.Dialect
+    ) -> t.Tuple[t.Any, ...]:
+        return tuple(value)
+
+
+def _validate_virtual_fs(
+    key: str, value: t.Any, ostore: t.Optional["ObjectStore"] = None
+) -> None:
+    """Validate the value is a mapping of Posix path to None or str.
+
+    If `ostore` is not None, also check that the str is a valid object store key.
+    """
+    if not isinstance(value, t.Mapping):
+        raise ValueError(f"{key!r} must be a mapping, got: {value}")
+    for subkey, item in value.items():
+        if not isinstance(subkey, str):
+            raise ValueError(f"{key!r} must have str keys, got: {subkey}")
+        if posixpath.isabs(subkey):
+            raise ValueError(
+                f"{key!r} must have POSIX relative path keys, got: {subkey}"
+            )
+        if item is not None:
+            if not isinstance(item, str):
+                raise ValueError(
+                    f"{key}[{subkey!r}] must be a str or None, got: {item}"
+                )
+            if ostore is not None and item not in ostore:
+                raise KeyError(
+                    f"{key}[{subkey!r}] points to non-existent object key: {item}"
+                )
+
+
+class Base(MappedAsDataclass, DeclarativeBase):
+    """Base class for all tables."""
+
+    pk: Mapped[int] = mapped_column(primary_key=True, init=False)
+    """The primary key set by the database."""
+
+    def __str__(self) -> str:
+        """Return compact string representation of the object.
+
+        This is opposed to repr, which will be more verbose
+        (auto-generated by the dataclass)
+        """
+        return f"{self.__class__.__name__}({self.pk})"
+
+    def copy(self: _BaseType, **changes: t.Any) -> _BaseType:
+        """Return a copy of the object (with pk set to None and unfrozen).
+
+        :param changes: the changes to apply to the copy
+        """
+        return dataclasses.replace(self, **changes)
+
+    # The following is a bespoke implementation an "optional" 'frozen' dataclass,
+    # After storing the object in the database, or if retrieving from the database,
+    # the object should be frozen by default, so users cannot accidentally modify it.
+    # We also want ORM relationships to inherit the frozen state of the parent object.
+    # `_freeze` is called by the `Storage` class to freeze the object after storing/fetching.
+    # TODO not sure if there is a better way than this,
+    # tracked in: https://github.com/sqlalchemy/sqlalchemy/issues/9197
+    # TODO stopping the modification of mutable values like dicts and lists
+    # before I was using sqlalchemy.ext.mutable, to wrap JSON columns,
+    # but this would make the changes be stored in the database, on commit,
+    # which we don't want, so I removed it.
+
+    @t.final
+    @classmethod
+    def field_names(cls) -> t.Set[str]:
+        """Return the names of the fields in the dataclass.
+
+        Cached in the class, for fast access.
+        """
+        try:
+            return cls.__ff_field_names__  # type: ignore
+        except AttributeError:
+            cls.__ff_field_names__ = {f.name for f in dataclasses.fields(cls)}
+            return cls.__ff_field_names__  # type: ignore
+
+    @t.final
+    @property
+    def is_frozen(self) -> bool:
+        """Return True if the object is frozen."""
+        return getattr(self, "__ff_frozen__", False)
+
+    def _freeze(self, state: bool = True) -> None:
+        """Set the frozen state of the instance, and all relationships,
+        to disable modification of its attributes.
+        """
+        self.__ff_frozen__ = state
+
+    def __getattribute__(self, name: str) -> t.Any:
+        """Get the attribute."""
+        obj = super().__getattribute__(name)
+        if name in ("field_names", "__ff_field_names__"):
+            return obj
+        if name in self.field_names() and isinstance(obj, Base):
+            obj.__ff_frozen__ = self.is_frozen
+        return obj
+
+    def __setattr__(self, name: str, value: t.Any) -> None:
+        """Set the attribute."""
+        if self.is_frozen and name in self.field_names():
+            raise dataclasses.FrozenInstanceError(
+                f"cannot set field {name!r} of frozen {self}"
+            )
+        super().__setattr__(name, value)
+
+    def __delattr__(self, name: str) -> None:
+        """Delete the attribute."""
+        if self.is_frozen and name in self.field_names():
+            raise dataclasses.FrozenInstanceError(
+                f"cannot delete field {name!r} of frozen {self}"
+            )
+        super().__delattr__(name)
+
+
+class Client(Base):
+    """Data for a single-user to interact with FirecREST."""
+
+    __tablename__ = "client"
+
+    client_url: Mapped[str]
+    # per-user authinfo
+    client_id: Mapped[str]
+    token_uri: Mapped[str]
+    client_secret: Mapped[str]  # TODO should this be stored in the database?
+    machine_name: Mapped[str]
+    work_dir: Mapped[str]
+
+    @validates("work_dir")
+    def _validate_work_dir(self, key: str, value: str) -> str:
+        """Validate the client URL."""
+        if not (isinstance(value, str) and value.startswith("/")):
+            raise ValueError(f"{key!r} must be an absolute path str, got {value}")
+        return value
+
+    """The working directory for the user on the remote machine."""
+    fsystem: Mapped[t.Literal["posix", "windows"]] = mapped_column(default="posix")
+
+    """The file system type on the remote machine."""
+    small_file_size_mb: Mapped[int] = mapped_column(
+        sa.CheckConstraint("small_file_size_mb>=0"), default=5
+    )
+
+    @validates("small_file_size_mb")
+    def _validate_small_file_size_mb(self, key: str, value: int) -> int:
+        """Validate the small file size."""
+        if not isinstance(value, int) or value < 0:
+            raise ValueError(f"{key!r} must be a positive int, got {value}")
+        return value
+
+    """The maximum size of a file that can be uploaded directly, in MB."""
+    label: Mapped[str] = mapped_column(
+        unique=True, default_factory=lambda: random.choice(NAMES)
+    )
+    """A label for the client."""
+
+    @property
+    def work_path(self) -> t.Union[PurePosixPath, PureWindowsPath]:
+        """Return the work directory path."""
+        return (
+            PurePosixPath(self.work_dir)
+            if self.fsystem == "posix"
+            else PureWindowsPath(self.work_dir)
+        )
+
+    @property
+    def client(self) -> firecrest.Firecrest:
+        """Return a FirecREST client.
+
+        Cache the client instance, so that we don't have to re-authenticate
+        (it automatically refreshes the token when it expires)
+        """
+        if not hasattr(self, "_client"):
+            self._client = firecrest.Firecrest(
+                firecrest_url=self.client_url,
+                authorization=firecrest.ClientCredentialsAuth(
+                    self.client_id, self.client_secret, self.token_uri
+                ),
+            )
+        return self._client
+
+
+class Code(Base):
+    """Data for a single code."""
+
+    __tablename__ = "code"
+    __table_args__ = (sa.UniqueConstraint("client_pk", "label"),)
+
+    client_pk: Mapped[int] = mapped_column(
+        # don't allow client to be deleted if there are codes associated with it
+        sa.ForeignKey("client.pk", ondelete="RESTRICT")
+    )
+    """The primary key of the client that this code is associated with."""
+    client: Mapped[Client] = relationship(init=False, repr=False)
+    """The client that this code is associated with."""
+
+    script: Mapped[str]
+    """The batch script template to submit to the scheduler on the remote machine.
+
+    This can use jinja2 placeholders:
+
+    - `{{ client }}` the client object.
+    - `{{ code }}` the code object.
+    - `{{ calc }}` the calcjob object.
+
+    """
+
+    script_filename: t.ClassVar[str] = "job-script.sh"
+    """What to name the generated script on the remote machine."""
+
+    label: Mapped[str] = mapped_column(default_factory=lambda: random.choice(NAMES))
+
+    upload_paths: Mapped[t.Dict[str, t.Optional[str]]] = mapped_column(
+        ImmutableDictType(), default_factory=ImmutableDict
+    )
+    """Paths to upload to the remote machine: {path: key},
+    relative to the work directory.
+
+    - `path` POSIX formatted.
+    - `key` pointing to the file in the object store, or None if a directory.
+    """
+
+    @validates("upload_paths")
+    def _validate_upload_paths(self, key: str, value: t.Any) -> t.Any:
+        """Validate the upload paths."""
+        _validate_virtual_fs(key, value)
+        return value
+
+    # TODO allow also for upload paths to be marked as jinja2 templates
+    # like the job script
+    # also Code.upload_paths and Calcjob.upload_paths should be at least the same name
+
+
+ProcessStates = t.Literal["playing", "paused", "finished", "excepted"]
+
+
+class CalcJob(Base):
+    """Input data for a single calculation job."""
+
+    __tablename__ = "calcjob"
+
+    code_pk: Mapped[int] = mapped_column(
+        # don't allow code to be deleted if there are calcjobs associated with it
+        sa.ForeignKey("code.pk", ondelete="RESTRICT")
+    )
+    """The primary key of the code that this calcjob is associated with."""
+    code: Mapped[Code] = relationship(init=False, repr=False)
+    """The code that this calcjob is associated with."""
+
+    label: Mapped[str] = mapped_column(default="")
+
+    uuid: Mapped[UUID] = mapped_column(default_factory=uuid4)
+    """The unique identifier, for remote folder creation."""
+
+    parameters: Mapped[t.Dict[str, t.Any]] = mapped_column(
+        ImmutableDictType(), default_factory=ImmutableDict
+    )
+    """JSONable data to store on the node."""
+
+    upload_paths: Mapped[t.Dict[str, t.Optional[str]]] = mapped_column(
+        ImmutableDictType(), default_factory=ImmutableDict
+    )
+    """Paths to upload to the remote machine: {path: key},
+    relative to the calcjob work directory.
+
+    - `path` POSIX formatted path.
+    - `key` pointing to the file in the object store, or None if a directory.
+    """
+
+    @validates("upload_paths")
+    def _validate_upload_paths(self, key: str, value: t.Any) -> t.Any:
+        """Validate the upload paths."""
+        _validate_virtual_fs(key, value)
+        return value
+
+    download_globs: Mapped[t.Tuple[str, ...]] = mapped_column(
+        ImmutableTupleType(), default_factory=tuple
+    )
+    """Globs to download from the remote machine to the object store,
+    relative to the work directory.
+    """
+
+    @validates("download_globs")
+    def _validate_download_globs(self, key: str, value: t.Any) -> t.Any:
+        """Validate the download globs."""
+        if isinstance(value, list):
+            value = tuple(value)
+        if not (
+            isinstance(value, tuple)
+            and all(
+                isinstance(item, str) and not posixpath.isabs(item) for item in value
+            )
+        ):
+            raise TypeError(
+                f"{key!r} must be a list/tuple of relative POSIX paths, got: {value}"
+            )
+        return value
+
+    process: Mapped["Processing"] = relationship(
+        single_parent=True,
+        cascade="all, delete-orphan",
+        default_factory=lambda: Processing(),
+        repr=False,
+    )
+
+    state: AssociationProxy[ProcessStates] = association_proxy(
+        "process", "state", init=False
+    )
+    """The processing state of the calcjob."""
+
+    @property
+    def remote_path(self) -> t.Union[PurePosixPath, PureWindowsPath]:
+        """Return the remote path for the calcjob execution."""
+        return self.code.client.work_path / "workflows" / self.uuid.hex
+
+    def create_job_script(self) -> str:
+        """Create the job script from the template."""
+        # TODO check this can be generated without errors, before saving
+        return Template(self.code.script).render(
+            calc=self, code=self.code, client=self.code.client
+        )
+
+
+class Processing(Base):
+    """The processing data of a single running calcjob.
+
+    We use a separate table for this, to make a clear separation between
+    mutable and immutable data.
+    """
+
+    __tablename__ = "calcjob_status"
+    __orm_immutable__ = False
+
+    calcjob_pk: Mapped[int] = mapped_column(sa.ForeignKey("calcjob.pk"), init=False)
+    """The primary key of the calculation that this status is associated with."""
+    calcjob: Mapped[CalcJob] = relationship(
+        back_populates="process", init=False, repr=False
+    )
+    """The calcjob that this status is associated with."""
+
+    state: Mapped[ProcessStates] = mapped_column(default="playing")
+    """The state of the calcjob."""
+
+    step: Mapped[
+        t.Literal[
+            "created", "uploading", "submitting", "running", "retrieving", "finalised"
+        ]
+    ] = mapped_column(default="created")
+    """The step of the calcjob."""
+
+    job_id: Mapped[t.Optional[str]] = mapped_column(default=None)
+    """The job id of the calcjob, set by the scheduler."""
+
+    exception: Mapped[t.Optional[str]] = mapped_column(default=None)
+    """The exception that was raised, if any."""
+
+    retrieved_paths: Mapped[t.Dict[str, t.Optional[str]]] = mapped_column(
+        ImmutableDictType(), default_factory=ImmutableDict
+    )
+    """Paths retrieved from the remote machine: {path: key},
+    relative to the calcjob work directory, after the job has finished.
+    These are collected based on the `CalcJob.download_globs` attribute.
+
+    - `path` POSIX formatted path.
+    - `key` pointing to the file in the object store, or None if a directory.
+    """
+
+    @validates("retrieved_paths")
+    def _validate_retrieved_paths(self, key: str, value: t.Any) -> t.Any:
+        """Validate the upload paths."""
+        _validate_virtual_fs(key, value)
+        return value
+
+
+# TODO we don't actually use this yet
+# class DataNode(Base):
+#     """Data node to input or output from a calcjob."""
+
+#     __tablename__ = "data"
+
+#     attributes: Mapped[t.Dict[str, t.Any]] = mapped_column(
+#         ImmutableDictType(), default_factory=ImmutableDict
+#     )
+#     """JSONable data to store on the node."""
+
+#     creator_pk: Mapped[t.Optional[int]] = mapped_column(
+#         # don't allow calcjob to be deleted if there are data associated with it
+#         sa.ForeignKey("calcjob.pk", ondelete="RESTRICT"),
+#         default=None,
+#     )
+#     """The primary key of the calcjob that created this node."""
+#     creator: Mapped[t.Optional[CalcJob]] = relationship(
+#         init=False, repr=False, default=None
+#     )
+#     """The calcjob that created this node."""
+
+
+NAMES: t.Tuple[str, ...] = (
+    "digital_dynamo",
+    "futuristic_fusion",
+    "optical_odyssey",
+    "radiant_rocket",
+    "super_sonic",
+    "crystal_cruiser",
+    "creative_cyber",
+    "efficient_explorer",
+    "virtual_venture",
+    "nifty_navigator",
+    "glorious_galaxy",
+    "optimized_operations",
+    "astonishing_adventure",
+    "elegant_evolution",
+    "smooth_symphony",
+    "powerful_prodigy",
+    "virtual_visionary",
+    "sleek_sentinel",
+    "energetic_explorer",
+    "optimistic_odyssey",
+    "fantastic_frontier",
+    "digital_dominion",
+    "efficient_evolution",
+    "virtual_voyager",
+    "nimble_navigator",
+    "glorious_gateway",
+    "optimized_operations",
+    "astonishing_array",
+    "elegant_enterprise",
+    "sophisticated_symphony",
+    "perfect_prodigy",
+    "virtual_victory",
+    "speedy_sentinel",
+    "energetic_enterprise",
+    "optimistic_optimizer",
+    "futuristic_fortune",
+    "dynamic_dynamo",
+    "flawless_fusion",
+    "optimal_odyssey",
+    "radiant_realm",
+    "superior_symphony",
+    "crystal_crusader",
+    "creative_computing",
+    "efficient_exec",
+    "virtual_vision",
+    "nifty_network",
+    "glorious_grid",
+    "optimized_optimizer",
+    "astonishing_accelerator",
+    "elegant_explorer",
+)
