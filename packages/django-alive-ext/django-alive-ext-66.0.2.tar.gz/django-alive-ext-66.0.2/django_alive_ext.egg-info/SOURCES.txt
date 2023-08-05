@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_alive_ext.egg-info/PKG-INFO
+django_alive_ext.egg-info/SOURCES.txt
+django_alive_ext.egg-info/dependency_links.txt
+django_alive_ext.egg-info/top_level.txt
