@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_clickhouse.egg-info/PKG-INFO
+yandex_clickhouse.egg-info/SOURCES.txt
+yandex_clickhouse.egg-info/dependency_links.txt
+yandex_clickhouse.egg-info/top_level.txt
