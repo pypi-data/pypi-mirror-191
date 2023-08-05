@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+clearai/__init__.py
+clearai/clearai.py
+clearai.egg-info/PKG-INFO
+clearai.egg-info/SOURCES.txt
+clearai.egg-info/dependency_links.txt
+clearai.egg-info/not-zip-safe
+clearai.egg-info/top_level.txt
