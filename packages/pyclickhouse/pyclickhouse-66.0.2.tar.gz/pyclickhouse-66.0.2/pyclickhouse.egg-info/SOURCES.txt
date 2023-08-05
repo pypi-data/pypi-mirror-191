@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyclickhouse.egg-info/PKG-INFO
+pyclickhouse.egg-info/SOURCES.txt
+pyclickhouse.egg-info/dependency_links.txt
+pyclickhouse.egg-info/top_level.txt
