@@ -1,0 +1,3 @@
+[console_scripts]
+manage-microdegree=microdegree_management.main:cli
+
