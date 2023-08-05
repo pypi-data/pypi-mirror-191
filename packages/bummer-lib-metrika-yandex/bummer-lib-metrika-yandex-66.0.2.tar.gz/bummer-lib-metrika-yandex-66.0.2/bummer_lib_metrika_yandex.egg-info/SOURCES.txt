@@ -1,0 +1,6 @@
+README.md
+setup.py
+bummer_lib_metrika_yandex.egg-info/PKG-INFO
+bummer_lib_metrika_yandex.egg-info/SOURCES.txt
+bummer_lib_metrika_yandex.egg-info/dependency_links.txt
+bummer_lib_metrika_yandex.egg-info/top_level.txt
