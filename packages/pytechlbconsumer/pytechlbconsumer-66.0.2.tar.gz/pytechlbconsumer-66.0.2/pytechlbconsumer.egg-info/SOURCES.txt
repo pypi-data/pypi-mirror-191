@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytechlbconsumer.egg-info/PKG-INFO
+pytechlbconsumer.egg-info/SOURCES.txt
+pytechlbconsumer.egg-info/dependency_links.txt
+pytechlbconsumer.egg-info/top_level.txt
