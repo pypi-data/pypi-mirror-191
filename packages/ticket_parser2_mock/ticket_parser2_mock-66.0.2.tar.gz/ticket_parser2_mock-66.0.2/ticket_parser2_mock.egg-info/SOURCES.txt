@@ -1,0 +1,6 @@
+README.md
+setup.py
+ticket_parser2_mock.egg-info/PKG-INFO
+ticket_parser2_mock.egg-info/SOURCES.txt
+ticket_parser2_mock.egg-info/dependency_links.txt
+ticket_parser2_mock.egg-info/top_level.txt
