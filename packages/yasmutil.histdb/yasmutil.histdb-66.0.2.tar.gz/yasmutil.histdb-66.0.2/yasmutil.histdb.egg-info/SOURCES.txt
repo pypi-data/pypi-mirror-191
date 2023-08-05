@@ -1,0 +1,6 @@
+README.md
+setup.py
+yasmutil.histdb.egg-info/PKG-INFO
+yasmutil.histdb.egg-info/SOURCES.txt
+yasmutil.histdb.egg-info/dependency_links.txt
+yasmutil.histdb.egg-info/top_level.txt
