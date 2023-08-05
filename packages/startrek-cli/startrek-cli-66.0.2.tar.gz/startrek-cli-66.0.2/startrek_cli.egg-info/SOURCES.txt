@@ -1,0 +1,6 @@
+README.md
+setup.py
+startrek_cli.egg-info/PKG-INFO
+startrek_cli.egg-info/SOURCES.txt
+startrek_cli.egg-info/dependency_links.txt
+startrek_cli.egg-info/top_level.txt
