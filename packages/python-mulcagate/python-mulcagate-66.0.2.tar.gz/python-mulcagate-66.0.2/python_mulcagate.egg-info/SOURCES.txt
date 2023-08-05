@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_mulcagate.egg-info/PKG-INFO
+python_mulcagate.egg-info/SOURCES.txt
+python_mulcagate.egg-info/dependency_links.txt
+python_mulcagate.egg-info/top_level.txt
