@@ -1,0 +1,6 @@
+README.md
+setup.py
+libys.egg-info/PKG-INFO
+libys.egg-info/SOURCES.txt
+libys.egg-info/dependency_links.txt
+libys.egg-info/top_level.txt
