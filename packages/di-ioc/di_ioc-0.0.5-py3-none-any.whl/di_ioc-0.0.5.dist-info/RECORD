@@ -1,0 +1,11 @@
+di_ioc/__about__.py,sha256=S7u1lbuWmM3A3ajykBialmPoJUK6Jg-WmNqM-9OZFdk,22
+di_ioc/__init__.py,sha256=LFs8NaZ194y6f6ICvHUzze8AtXzo52IIp7v_ZVC2v-Q,336
+di_ioc/abstraction.py,sha256=Asb368mLh7DBfZYrS8NJ33C0OzikMivTcj7QkPifRMk,3516
+di_ioc/container.py,sha256=_yQlkt4cREFamXWyqFGkaB8uOC-xGF70yOmTBb-JNRI,4269
+di_ioc/factory.py,sha256=rpnQMqwywdjJfEo5fsshygxXZgWLvJWL_Evbcr9TYkY,4306
+di_ioc/lifetimes.py,sha256=EJjCQNZcm8IOonjr8PEfI-xt1kimU76ObO_iCyZmjcw,2876
+di_ioc/scope.py,sha256=gxbNrSENWvmkOSEZ034ek5nY7JALPoq5P8nWMFdn06g,540
+di_ioc-0.0.5.dist-info/METADATA,sha256=rH36P7Xo2T5CCMPiRBO3Wslruq3AvJhSsfid8ZKLHiQ,1379
+di_ioc-0.0.5.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+di_ioc-0.0.5.dist-info/licenses/LICENSE.txt,sha256=Y-rgkHY90CW5hzxXRgge8hnCH0pBQU-vs6LbNB_KIZI,1067
+di_ioc-0.0.5.dist-info/RECORD,,

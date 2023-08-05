@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: di-ioc
+Version: 0.0.5
+Summary: Dependency injection / inversion of control
+Project-URL: Documentation, https://github.com/unknown/di-ioc#readme
+Project-URL: Issues, https://github.com/unknown/di-ioc/issues
+Project-URL: Source, https://github.com/unknown/di-ioc
+Author: Evan Aranda
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# di-ioc
+
+Inversion of control / dependency injection for python
+
+## TODO:
+
+- [ ] Add AbstractLifetime class for singleton and scoped lifetimes
+- [ ] Use ServiceRequest as the key to retrieve a service instead of just a type
+  - This would change AbstractServiceProvider, AbstractServiceContainer, ServiceFactory
+    to accept a ServiceRequest object that defines what service needs to be returned. It
+    still allows for retrieving based on a type, but also allows for more complex resolving
+    needs.
+  - Maybe add a Resolver layer inside the ServiceProvider that takes the request and ChainMap
+    of service factories to resolve the requested service. It could be customized by user if
+    needed.
