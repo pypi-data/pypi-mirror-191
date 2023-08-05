@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dexif
+Version: 0.0.2
+Summary: Parser for fixed point numbers
+Home-page: https://holbrook.no/src/python-dexif
+Author: Louis Holbrook
+Author-email: dev@holbrook.no
+License: WTFPL
+Keywords: point,fixed,decimal
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
