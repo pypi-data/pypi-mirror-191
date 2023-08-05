@@ -1,0 +1,4 @@
+# ninja log v5
+1	47	1676023459948054255	CMakeFiles/lh2.dir/lh2.c.o	ea1ab9b69a44635c
+47	56	1676023459956054321	lh2.so	1fd82895774c3bf6
+56	62	0	CMakeFiles/install.util	78e98b6cee4aba40
