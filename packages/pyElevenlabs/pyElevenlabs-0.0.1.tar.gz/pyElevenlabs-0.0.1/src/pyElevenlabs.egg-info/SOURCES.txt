@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyElevenlabs/__init__.py
+src/pyElevenlabs/pyElevenlabs.py
+src/pyElevenlabs/test.py
+src/pyElevenlabs.egg-info/PKG-INFO
+src/pyElevenlabs.egg-info/SOURCES.txt
+src/pyElevenlabs.egg-info/dependency_links.txt
+src/pyElevenlabs.egg-info/top_level.txt
