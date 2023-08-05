@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaioclickhouse.egg-info/PKG-INFO
+yaioclickhouse.egg-info/SOURCES.txt
+yaioclickhouse.egg-info/dependency_links.txt
+yaioclickhouse.egg-info/top_level.txt
