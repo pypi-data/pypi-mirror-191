@@ -1,0 +1,6 @@
+README.md
+setup.py
+alemate_tools.egg-info/PKG-INFO
+alemate_tools.egg-info/SOURCES.txt
+alemate_tools.egg-info/dependency_links.txt
+alemate_tools.egg-info/top_level.txt
