@@ -1,0 +1,6 @@
+README.md
+setup.py
+feedonyanya_integrator.egg-info/PKG-INFO
+feedonyanya_integrator.egg-info/SOURCES.txt
+feedonyanya_integrator.egg-info/dependency_links.txt
+feedonyanya_integrator.egg-info/top_level.txt
