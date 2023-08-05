@@ -1,0 +1,6 @@
+README.md
+setup.py
+mobile_browser_validators.egg-info/PKG-INFO
+mobile_browser_validators.egg-info/SOURCES.txt
+mobile_browser_validators.egg-info/dependency_links.txt
+mobile_browser_validators.egg-info/top_level.txt
