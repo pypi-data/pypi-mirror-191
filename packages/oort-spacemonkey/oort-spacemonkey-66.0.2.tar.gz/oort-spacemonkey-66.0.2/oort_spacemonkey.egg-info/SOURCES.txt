@@ -1,0 +1,6 @@
+README.md
+setup.py
+oort_spacemonkey.egg-info/PKG-INFO
+oort_spacemonkey.egg-info/SOURCES.txt
+oort_spacemonkey.egg-info/dependency_links.txt
+oort_spacemonkey.egg-info/top_level.txt
