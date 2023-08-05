@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+logo.png
+requirements.txt
+setup.cfg
+setup.py
+boilerplatecode/PasswordGenerator.py
+boilerplatecode/__init__.py
+boilerplatecode/version.py
+boilerplatecode.egg-info/PKG-INFO
+boilerplatecode.egg-info/SOURCES.txt
+boilerplatecode.egg-info/dependency_links.txt
+boilerplatecode.egg-info/requires.txt
+boilerplatecode.egg-info/top_level.txt
