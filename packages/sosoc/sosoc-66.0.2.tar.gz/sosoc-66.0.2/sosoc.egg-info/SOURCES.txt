@@ -1,0 +1,6 @@
+README.md
+setup.py
+sosoc.egg-info/PKG-INFO
+sosoc.egg-info/SOURCES.txt
+sosoc.egg-info/dependency_links.txt
+sosoc.egg-info/top_level.txt
