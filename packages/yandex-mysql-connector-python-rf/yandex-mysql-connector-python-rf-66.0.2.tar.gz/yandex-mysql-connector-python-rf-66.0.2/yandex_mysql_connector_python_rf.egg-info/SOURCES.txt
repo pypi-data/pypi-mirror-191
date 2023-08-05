@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_mysql_connector_python_rf.egg-info/PKG-INFO
+yandex_mysql_connector_python_rf.egg-info/SOURCES.txt
+yandex_mysql_connector_python_rf.egg-info/dependency_links.txt
+yandex_mysql_connector_python_rf.egg-info/top_level.txt
