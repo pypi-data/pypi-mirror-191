@@ -1,0 +1,14 @@
+panama/__init__.py,sha256=onkCbNK0a3-yxR4VS7Mvp7ipijlN1sTCpmD9PWBWB8A,281
+panama/cli.py,sha256=gPuG2DIWTA-VKgId-ysrBtzII_2aSD1NlrQQSVYTRbY,3701
+panama/fluxes/__init__.py,sha256=2227A22eROV74bPeTyrxm4lOzpF7dBbdlcfeJ3mgMoQ,167
+panama/fluxes/fluxes.py,sha256=SqKDIKWyRivOV4gz5PGFAPkAxE18sIaNAwjDu0zQWfQ,6846
+panama/nbstreamreader.py,sha256=6K1selTD16mF6Mrh25RuFuEbjHGURLRR_VRuo4si-kc,1458
+panama/numba.py,sha256=FxtS3QGOgW72TxwEDauoXoDZUIq3ETMm4H3fDv84kA0,2090
+panama/parallel_run.py,sha256=dUtVEkvnBAPn8iRBOTH4wQoCK1tfvydpoOv27j7Fh5o,5406
+panama/read.py,sha256=f9V-w1TRuCU2dSb9344Wihx9_yf0txO25fSuKz8DQRg,12722
+panama/weights.py,sha256=GIKIZ-uoqPU5Se9VbT1JSo3D95eW6lNwTlanSfaOWxo,2492
+corsika_panama-0.2.2.dist-info/METADATA,sha256=NY56LcfaX8CQfezg5dNSQr8eTt2tMICTgDIdb4irQbI,5749
+corsika_panama-0.2.2.dist-info/entry_points.txt,sha256=WXN31_IhWahMOXGkO9cR3N1RxY60KVrpw55zjlOMJSo,41
+corsika_panama-0.2.2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+corsika_panama-0.2.2.dist-info/LICENSE,sha256=Sj_3X_eMye0MhMVlU65hi4RRAYSPcEwXY68J_8KWVK4,1069
+corsika_panama-0.2.2.dist-info/RECORD,,
