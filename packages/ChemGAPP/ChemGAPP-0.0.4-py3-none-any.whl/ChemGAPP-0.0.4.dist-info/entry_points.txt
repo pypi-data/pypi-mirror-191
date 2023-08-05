@@ -1,0 +1,22 @@
+[console_scripts]
+add_gene_names = ChemGAPP_Package.ChemGAPP_Big.Add_Gene_Names:main
+bar_plot_conditions = ChemGAPP_Package.ChemGAPP_Big.Bar_Plot_Conditions:main
+bar_plot_plates = ChemGAPP_Package.ChemGAPP_Big.Bar_Plot_Plates:main
+check_normalisation = ChemGAPP_Package.ChemGAPP_Big.Check_Normalisation:main
+chemgapp_small = ChemGAPP_Package.ChemGAPP_Small.ChemGAPP_Small:main
+condition_variance = ChemGAPP_Package.ChemGAPP_Big.Condition_Variance:main
+cosine_similarity = ChemGAPP_Package.ChemGAPP_Big.Cosine_Similarity:main
+gi_barplot = ChemGAPP_Package.ChemGAPP_GI.GI_Barplot:main
+gi_dataset = ChemGAPP_Package.ChemGAPP_GI.GI_Dataset:main
+iris_to_dataset = ChemGAPP_Package.ChemGAPP_Big.Iris_to_Dataset:main
+mw_condition_level = ChemGAPP_Package.ChemGAPP_Big.Mann_Whitney_Condition_Level:main
+mw_conditions_to_remove = ChemGAPP_Package.ChemGAPP_Big.MW_Conditions_to_Remove:main
+mw_plate_level = ChemGAPP_Package.ChemGAPP_Big.Mann_Whitney_Plate_Level:main
+mw_plates_to_remove = ChemGAPP_Package.ChemGAPP_Big.MW_Plates_to_Remove:main
+pass_fail_conditions = ChemGAPP_Package.ChemGAPP_Big.Pass_Fail_Conditions:main
+pass_fail_plates = ChemGAPP_Package.ChemGAPP_Big.Pass_Fail_Plates:main
+s_scores = ChemGAPP_Package.ChemGAPP_Big.S_Scores:main
+variance_conditions_to_remove = ChemGAPP_Package.ChemGAPP_Big.Variance_Conditions_to_Remove:main
+z_plates_to_remove = ChemGAPP_Package.ChemGAPP_Big.Z_Plates_to_Remove:main
+z_score = ChemGAPP_Package.ChemGAPP_Big.Z_Score:main
+z_score_count = ChemGAPP_Package.ChemGAPP_Big.Z_Score_Count:main
