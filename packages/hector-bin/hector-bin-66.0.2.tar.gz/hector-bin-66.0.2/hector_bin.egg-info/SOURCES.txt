@@ -1,0 +1,6 @@
+README.md
+setup.py
+hector_bin.egg-info/PKG-INFO
+hector_bin.egg-info/SOURCES.txt
+hector_bin.egg-info/dependency_links.txt
+hector_bin.egg-info/top_level.txt
