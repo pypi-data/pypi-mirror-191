@@ -1,0 +1,6 @@
+README.md
+setup.py
+iptables_except_my_group.egg-info/PKG-INFO
+iptables_except_my_group.egg-info/SOURCES.txt
+iptables_except_my_group.egg-info/dependency_links.txt
+iptables_except_my_group.egg-info/top_level.txt
