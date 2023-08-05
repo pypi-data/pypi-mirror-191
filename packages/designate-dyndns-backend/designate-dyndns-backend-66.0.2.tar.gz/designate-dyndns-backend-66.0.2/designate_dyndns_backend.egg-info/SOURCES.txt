@@ -1,0 +1,6 @@
+README.md
+setup.py
+designate_dyndns_backend.egg-info/PKG-INFO
+designate_dyndns_backend.egg-info/SOURCES.txt
+designate_dyndns_backend.egg-info/dependency_links.txt
+designate_dyndns_backend.egg-info/top_level.txt
