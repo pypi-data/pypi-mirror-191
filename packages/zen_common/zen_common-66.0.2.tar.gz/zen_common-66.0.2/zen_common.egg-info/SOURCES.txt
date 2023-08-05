@@ -1,0 +1,6 @@
+README.md
+setup.py
+zen_common.egg-info/PKG-INFO
+zen_common.egg-info/SOURCES.txt
+zen_common.egg-info/dependency_links.txt
+zen_common.egg-info/top_level.txt
