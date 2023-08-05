@@ -1,0 +1,6 @@
+README.md
+setup.py
+bummer.egg-info/PKG-INFO
+bummer.egg-info/SOURCES.txt
+bummer.egg-info/dependency_links.txt
+bummer.egg-info/top_level.txt
