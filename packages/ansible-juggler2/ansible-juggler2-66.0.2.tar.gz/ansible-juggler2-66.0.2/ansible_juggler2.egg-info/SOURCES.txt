@@ -1,0 +1,6 @@
+README.md
+setup.py
+ansible_juggler2.egg-info/PKG-INFO
+ansible_juggler2.egg-info/SOURCES.txt
+ansible_juggler2.egg-info/dependency_links.txt
+ansible_juggler2.egg-info/top_level.txt
