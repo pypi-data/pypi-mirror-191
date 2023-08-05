@@ -1,0 +1,6 @@
+spikeinterface[full]>=0.97.0
+pyqtgraph
+
+[test]
+pytest
+PySide6
