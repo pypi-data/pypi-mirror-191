@@ -1,0 +1,6 @@
+README.md
+setup.py
+dizzy_bin.egg-info/PKG-INFO
+dizzy_bin.egg-info/SOURCES.txt
+dizzy_bin.egg-info/dependency_links.txt
+dizzy_bin.egg-info/top_level.txt
