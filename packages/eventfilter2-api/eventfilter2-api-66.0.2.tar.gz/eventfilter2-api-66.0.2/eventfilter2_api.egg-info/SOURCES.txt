@@ -1,0 +1,6 @@
+README.md
+setup.py
+eventfilter2_api.egg-info/PKG-INFO
+eventfilter2_api.egg-info/SOURCES.txt
+eventfilter2_api.egg-info/dependency_links.txt
+eventfilter2_api.egg-info/top_level.txt
