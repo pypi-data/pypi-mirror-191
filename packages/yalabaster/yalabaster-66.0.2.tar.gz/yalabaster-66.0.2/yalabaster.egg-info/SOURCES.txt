@@ -1,0 +1,6 @@
+README.md
+setup.py
+yalabaster.egg-info/PKG-INFO
+yalabaster.egg-info/SOURCES.txt
+yalabaster.egg-info/dependency_links.txt
+yalabaster.egg-info/top_level.txt
