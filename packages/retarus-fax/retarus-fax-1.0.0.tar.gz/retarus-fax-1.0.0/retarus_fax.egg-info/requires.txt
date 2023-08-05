@@ -1,0 +1,8 @@
+retarus-common==0.1.2
+pytest-dependency==0.5.1
+pytest==7.2.0
+aiohttp
+aiohttp-retry
+pydantic
+pytest-asyncio
+requests

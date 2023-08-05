@@ -1,0 +1,2 @@
+watchdog==2.1.9
+retarus==0.1.0
