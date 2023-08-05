@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: django-blogorama
+Version: 0.1.0
+Summary: Blogging App to add to any project
+Author-email: Grant Viklund <renderbox@gmail.com>
+Project-URL: Homepage, https://github.com/renderbox/django-blogorama/
+Project-URL: Bug Tracker, https://github.com/renderbox/django-blogorama//issues
+Keywords: django,app
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: docs
+
+![Blogorama CI](https://github.com/renderbox/django-blogorama/workflows/Blogorama%20CI/badge.svg)
+
+![Blogorama CI](https://github.com/renderbox/django-blogorama/workflows/Blogorama%20Develop/badge.svg)
+
+# Blogorama
+
+Blogging App to add to any project
