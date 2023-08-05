@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_marketplace_migrations.egg-info/PKG-INFO
+yc_marketplace_migrations.egg-info/SOURCES.txt
+yc_marketplace_migrations.egg-info/dependency_links.txt
+yc_marketplace_migrations.egg-info/top_level.txt
