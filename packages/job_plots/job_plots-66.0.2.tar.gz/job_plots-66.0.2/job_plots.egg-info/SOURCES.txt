@@ -1,0 +1,6 @@
+README.md
+setup.py
+job_plots.egg-info/PKG-INFO
+job_plots.egg-info/SOURCES.txt
+job_plots.egg-info/dependency_links.txt
+job_plots.egg-info/top_level.txt
