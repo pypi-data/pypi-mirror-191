@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: vizzy
+Version: 0.2.3
+Summary: Useful tools to visualize NLP data
+Home-page: https://github.com/eanthony76
+Download-URL: https://pypi.org/project/vizzy/
+Author: Evan Anthony
+Author-email: anthonyevanm@gmail.com
+License: MIT
+Keywords: EDA,visualization,NLP
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: seaborn
+Requires-Dist: sklearn
+Requires-Dist: gensim
+Requires-Dist: pyldavis
+Requires-Dist: wordcloud
+Requires-Dist: textblob
+Requires-Dist: spacy
+Requires-Dist: textstat
+
+This package serves to provide visualizations from your NLP data.
+
+This package was inspired by the work of NeptuneAI and this blog post:
+https://neptune.ai/blog/exploratory-data-analysis-natural-language-processing-tools
+
+This repository contains the Vizzy package and some sample notebooks to help you get started using Vizzy.
+
+
+
+To install this package, you can use pip install
+
+``pip install vizzy``
+
+
+This is the history file of my package.
+
+1/20/23: Updated setup.py to fix missing modules issue
+
+1/20/23: Updated vizzy package to fix functions
+
+2/1/23: Added new functions and object classes
+
+2/6/23: Added new functions to Vizzy Doc module
+
+2/7/23: Added new functions to Vizzy Token module
+
+2/10/23: Added documentation and simplified functions
