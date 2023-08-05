@@ -1,0 +1,6 @@
+README.md
+setup.py
+tf_dssm.egg-info/PKG-INFO
+tf_dssm.egg-info/SOURCES.txt
+tf_dssm.egg-info/dependency_links.txt
+tf_dssm.egg-info/top_level.txt
