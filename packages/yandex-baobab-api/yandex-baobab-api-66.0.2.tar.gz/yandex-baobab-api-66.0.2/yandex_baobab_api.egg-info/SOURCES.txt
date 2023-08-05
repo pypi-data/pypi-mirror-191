@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_baobab_api.egg-info/PKG-INFO
+yandex_baobab_api.egg-info/SOURCES.txt
+yandex_baobab_api.egg-info/dependency_links.txt
+yandex_baobab_api.egg-info/top_level.txt
