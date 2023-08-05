@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytracemalloc.egg-info/PKG-INFO
+pytracemalloc.egg-info/SOURCES.txt
+pytracemalloc.egg-info/dependency_links.txt
+pytracemalloc.egg-info/top_level.txt
