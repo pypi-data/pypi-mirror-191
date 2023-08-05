@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sparrow-tracky
+Version: 0.5.0.dev1676045161
+Author: Sparrow Computing
+Author-email: ben@sparrow.dev
+Provides-Extra: dev
+License-File: LICENSE
