@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_ppln.egg-info/PKG-INFO
+ya_ppln.egg-info/SOURCES.txt
+ya_ppln.egg-info/dependency_links.txt
+ya_ppln.egg-info/top_level.txt
