@@ -1,0 +1,6 @@
+README.md
+setup.py
+jwt_rsa.egg-info/PKG-INFO
+jwt_rsa.egg-info/SOURCES.txt
+jwt_rsa.egg-info/dependency_links.txt
+jwt_rsa.egg-info/top_level.txt
