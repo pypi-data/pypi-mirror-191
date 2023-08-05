@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_pyspark.egg-info/PKG-INFO
+yandex_pyspark.egg-info/SOURCES.txt
+yandex_pyspark.egg-info/dependency_links.txt
+yandex_pyspark.egg-info/top_level.txt
