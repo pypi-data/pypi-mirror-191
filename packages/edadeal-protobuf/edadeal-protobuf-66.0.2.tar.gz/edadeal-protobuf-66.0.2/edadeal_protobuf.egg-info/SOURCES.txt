@@ -1,0 +1,6 @@
+README.md
+setup.py
+edadeal_protobuf.egg-info/PKG-INFO
+edadeal_protobuf.egg-info/SOURCES.txt
+edadeal_protobuf.egg-info/dependency_links.txt
+edadeal_protobuf.egg-info/top_level.txt
