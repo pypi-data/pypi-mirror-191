@@ -1,0 +1,6 @@
+README.md
+setup.py
+enriched_pydantic.egg-info/PKG-INFO
+enriched_pydantic.egg-info/SOURCES.txt
+enriched_pydantic.egg-info/dependency_links.txt
+enriched_pydantic.egg-info/top_level.txt
