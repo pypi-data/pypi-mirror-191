@@ -1,0 +1,3 @@
+[console_scripts]
+cinnaroll-login = cli.login:main
+
