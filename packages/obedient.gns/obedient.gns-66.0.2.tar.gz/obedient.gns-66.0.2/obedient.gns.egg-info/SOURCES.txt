@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.gns.egg-info/PKG-INFO
+obedient.gns.egg-info/SOURCES.txt
+obedient.gns.egg-info/dependency_links.txt
+obedient.gns.egg-info/top_level.txt
