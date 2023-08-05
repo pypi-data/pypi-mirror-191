@@ -1,0 +1,6 @@
+README.md
+setup.py
+sendr_aiopg.egg-info/PKG-INFO
+sendr_aiopg.egg-info/SOURCES.txt
+sendr_aiopg.egg-info/dependency_links.txt
+sendr_aiopg.egg-info/top_level.txt
