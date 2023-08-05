@@ -1,0 +1,6 @@
+README.md
+setup.py
+assessors_toolbox.egg-info/PKG-INFO
+assessors_toolbox.egg-info/SOURCES.txt
+assessors_toolbox.egg-info/dependency_links.txt
+assessors_toolbox.egg-info/top_level.txt
