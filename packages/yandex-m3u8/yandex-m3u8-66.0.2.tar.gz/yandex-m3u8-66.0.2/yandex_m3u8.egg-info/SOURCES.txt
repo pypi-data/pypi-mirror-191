@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_m3u8.egg-info/PKG-INFO
+yandex_m3u8.egg-info/SOURCES.txt
+yandex_m3u8.egg-info/dependency_links.txt
+yandex_m3u8.egg-info/top_level.txt
