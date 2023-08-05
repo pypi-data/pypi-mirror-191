@@ -1,0 +1,6 @@
+README.md
+setup.py
+yasmapi3.egg-info/PKG-INFO
+yasmapi3.egg-info/SOURCES.txt
+yasmapi3.egg-info/dependency_links.txt
+yasmapi3.egg-info/top_level.txt
