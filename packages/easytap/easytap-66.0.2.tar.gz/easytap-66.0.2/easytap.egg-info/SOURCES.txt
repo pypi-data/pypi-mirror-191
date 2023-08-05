@@ -1,0 +1,6 @@
+README.md
+setup.py
+easytap.egg-info/PKG-INFO
+easytap.egg-info/SOURCES.txt
+easytap.egg-info/dependency_links.txt
+easytap.egg-info/top_level.txt
