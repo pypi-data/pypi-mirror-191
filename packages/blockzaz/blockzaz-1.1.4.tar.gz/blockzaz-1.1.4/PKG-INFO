@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: blockzaz
+Version: 1.1.4
+Summary: Blocks Zaz
+Home-page: UNKNOWN
+Author: Ivan Augusto de Azevedo
+Author-email: i.a.azevedo@gmail.com
+License: MIT
+Keywords: zaz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+
+Classes de block Prefect
+

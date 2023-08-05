@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+blockzaz/__init__.py
+blockzaz/blockzaz.py
+blockzaz.egg-info/PKG-INFO
+blockzaz.egg-info/SOURCES.txt
+blockzaz.egg-info/dependency_links.txt
+blockzaz.egg-info/top_level.txt
