@@ -1,0 +1,6 @@
+README.md
+setup.py
+market_sox_actions.egg-info/PKG-INFO
+market_sox_actions.egg-info/SOURCES.txt
+market_sox_actions.egg-info/dependency_links.txt
+market_sox_actions.egg-info/top_level.txt
