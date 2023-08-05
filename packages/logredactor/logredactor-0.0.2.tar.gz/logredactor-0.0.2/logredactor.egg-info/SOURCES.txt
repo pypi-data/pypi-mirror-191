@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+logredactor/__init__.py
+logredactor/redacting_filter.py
+logredactor.egg-info/PKG-INFO
+logredactor.egg-info/SOURCES.txt
+logredactor.egg-info/dependency_links.txt
+logredactor.egg-info/top_level.txt
