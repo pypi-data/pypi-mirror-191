@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "types-wxpython"
+version = "0.2.2"
+description = "Typing stubs for wxPython"
+authors = ["Alexion Software <info@alexion.nl>"]
+homepage = "https://github.com/AlexionSoftware/types-wxpython"
+repository = "https://github.com/AlexionSoftware/types-wxpython"
+keywords = ["wxPython", "typing", "stubs", "wx"]
+license = "MIT"
+readme = "README.md"
+
+packages = [
+    { include = "wx-stubs" },
+]
+
+[tool.poetry.build]
+generate-setup-file = true
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
