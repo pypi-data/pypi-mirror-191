@@ -1,0 +1,3 @@
+[console_scripts]
+disperse = disperse.__main__:main
+releaser = disperse.__main__:main

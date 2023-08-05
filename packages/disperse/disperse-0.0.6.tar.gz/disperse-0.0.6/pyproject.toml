@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "packaging",
+    "setuptools",
+    "setuptools-protobuf[mypy]>=0.1.3"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+warn_redundant_casts = true
+warn_unused_configs = true
+check_untyped_defs = true
+
+[[tool.mypy.overrides]]
+module = [
+    "setuptools.config.setupcfg",
+    "breezy.*",
+    "silver_platter.*",
+    "prometheus_client.*",
+    "launchpadlib.*",
+]
+ignore_missing_imports = true

@@ -1,0 +1,43 @@
+syntax = "proto2";
+
+message UpdateVersion {
+    optional string path = 1;
+    optional string match = 2;
+    optional string new_line = 3;
+};
+
+message Project {
+    optional string name = 1 [deprecated=true];
+
+    optional string tag_name = 2;
+
+    optional string news_file = 3;
+
+    repeated string tarball_location = 4;
+
+    optional int32 timeout_days = 5;
+
+    optional string verify_command = 6;
+
+    repeated UpdateVersion update_version = 7;
+
+    repeated string update_manpages = 8;
+
+    optional string pre_dist_command = 9;
+
+    optional string github_url = 10;
+
+    optional string github_branch = 11;
+
+    optional bool skip_twine_upload = 12 [ default = false ];
+
+    optional int32 ci_timeout = 13 [default=7200];
+
+    optional string launchpad_project = 14;
+
+    optional string launchpad_series = 15;
+};
+
+message Config {
+    repeated string url = 1;
+};
