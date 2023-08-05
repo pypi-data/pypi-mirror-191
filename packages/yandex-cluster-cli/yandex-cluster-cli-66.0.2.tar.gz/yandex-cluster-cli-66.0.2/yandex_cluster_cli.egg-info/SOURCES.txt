@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_cluster_cli.egg-info/PKG-INFO
+yandex_cluster_cli.egg-info/SOURCES.txt
+yandex_cluster_cli.egg-info/dependency_links.txt
+yandex_cluster_cli.egg-info/top_level.txt
