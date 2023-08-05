@@ -1,0 +1,6 @@
+README.md
+setup.py
+secret_search_bin.egg-info/PKG-INFO
+secret_search_bin.egg-info/SOURCES.txt
+secret_search_bin.egg-info/dependency_links.txt
+secret_search_bin.egg-info/top_level.txt
