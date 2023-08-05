@@ -1,0 +1,6 @@
+README.md
+setup.py
+algorc_800.egg-info/PKG-INFO
+algorc_800.egg-info/SOURCES.txt
+algorc_800.egg-info/dependency_links.txt
+algorc_800.egg-info/top_level.txt
