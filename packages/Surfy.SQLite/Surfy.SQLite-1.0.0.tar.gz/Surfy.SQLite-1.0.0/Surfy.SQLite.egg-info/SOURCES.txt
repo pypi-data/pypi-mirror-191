@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+Surfy.SQLite.egg-info/PKG-INFO
+Surfy.SQLite.egg-info/SOURCES.txt
+Surfy.SQLite.egg-info/dependency_links.txt
+Surfy.SQLite.egg-info/top_level.txt
+sqlite/__init__.py
+sqlite/__main__.py
+sqlite/db.py
+test/test.py
