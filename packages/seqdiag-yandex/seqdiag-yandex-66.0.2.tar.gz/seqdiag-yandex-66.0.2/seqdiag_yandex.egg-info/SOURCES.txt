@@ -1,0 +1,6 @@
+README.md
+setup.py
+seqdiag_yandex.egg-info/PKG-INFO
+seqdiag_yandex.egg-info/SOURCES.txt
+seqdiag_yandex.egg-info/dependency_links.txt
+seqdiag_yandex.egg-info/top_level.txt
