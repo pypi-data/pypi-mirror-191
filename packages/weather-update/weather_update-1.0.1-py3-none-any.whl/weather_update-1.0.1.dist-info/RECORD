@@ -1,0 +1,5 @@
+weather_update/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weather_update/weather.py,sha256=267X6DD0UpEX-lD_ny5Y7pZ1Xq9YcN_woIIAjqCu8N4,1805
+weather_update-1.0.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+weather_update-1.0.1.dist-info/METADATA,sha256=h3CJxnhV5LGGWD-l125UEJb4ZcuFSn-L6zBa6y5egfk,1549
+weather_update-1.0.1.dist-info/RECORD,,
