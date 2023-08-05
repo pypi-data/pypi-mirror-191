@@ -1,0 +1,6 @@
+README.md
+setup.py
+kombu_funtests.egg-info/PKG-INFO
+kombu_funtests.egg-info/SOURCES.txt
+kombu_funtests.egg-info/dependency_links.txt
+kombu_funtests.egg-info/top_level.txt
