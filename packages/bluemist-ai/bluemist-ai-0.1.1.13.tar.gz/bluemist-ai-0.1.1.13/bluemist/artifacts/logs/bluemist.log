@@ -1,0 +1,93 @@
+2023-02-10 00:40:13,531 : INFO : environment : initialize : Line 49 : 
+
+    ██████╗ ██╗     ██╗   ██╗███████╗███╗   ███╗██╗███████╗████████╗               █████╗ ██╗
+    ██╔══██╗██║     ██║   ██║██╔════╝████╗ ████║██║██╔════╝╚══██╔══╝              ██╔══██╗██║
+    ██████╔╝██║     ██║   ██║█████╗  ██╔████╔██║██║███████╗   ██║       █████╗    ███████║██║
+    ██╔══██╗██║     ██║   ██║██╔══╝  ██║╚██╔╝██║██║╚════██║   ██║       ╚════╝    ██╔══██║██║
+    ██████╔╝███████╗╚██████╔╝███████╗██║ ╚═╝ ██║██║███████║   ██║                 ██║  ██║██║
+    ╚═════╝ ╚══════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝╚══════╝   ╚═╝                 ╚═╝  ╚═╝╚═╝                                                                                           
+    (version 0.1.1)
+    
+2023-02-10 00:40:13,760 : INFO : environment : initialize : Line 53 : System platform :: posix, 5.19.0-29-generic, linux-x86_64, ('64bit', 'ELF')
+2023-02-10 00:40:13,760 : DEBUG : environment : initialize : Line 56 : Printing environment variables...
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : PATH=/home/shashank-agrawal/anaconda3/envs/bluemist-ai/bin:/home/shashank-agrawal/anaconda3/condabin:/home/shashank-agrawal/bin:/home/shashank-agrawal/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.67UC01
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : INVOCATION_ID=67e0c25b771d401a80eb5c9d44794513
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : XMODIFIERS=@im=ibus
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : GDMSESSION=ubuntu
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : SNAP_COMMON=/var/snap/pycharm-community/common
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : CONDA_DEFAULT_ENV=bluemist-ai
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : SNAP_INSTANCE_KEY=
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : SNAP_USER_COMMON=/home/shashank-agrawal/snap/pycharm-community/common
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : SNAP_REVISION=315
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : XDG_CURRENT_DESKTOP=ubuntu:GNOME
+2023-02-10 00:40:13,761 : DEBUG : environment : initialize : Line 58 : CONDA_PREFIX=/home/shashank-agrawal/anaconda3/envs/bluemist-ai
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : JOURNAL_STREAM=8:38453
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : SESSION_MANAGER=local/Lenovo-G510:@/tmp/.ICE-unix/2109,unix/Lenovo-G510:/tmp/.ICE-unix/2109
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : USERNAME=shashank-agrawal
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : LOGNAME=shashank-agrawal
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : PWD=/home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : MANAGERPID=1862
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : IM_CONFIG_PHASE=1
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : PYCHARM_HOSTED=1
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : GJS_DEBUG_TOPICS=JS ERROR;JS LOG
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : PYTHONPATH=/home/shashank-agrawal/PycharmProjects/bluemist-ai
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : SHELL=/bin/bash
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : GIO_LAUNCHED_DESKTOP_FILE=/var/lib/snapd/desktop/applications/pycharm-community_pycharm-community.desktop
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/pycharm-community_pycharm-community.desktop
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : GTK_MODULES=gail:atk-bridge
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : SNAP_ARCH=amd64
+2023-02-10 00:40:13,762 : DEBUG : environment : initialize : Line 58 : DEBUGINFOD_URLS=https://debuginfod.ubuntu.com 
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : CONDA_PROMPT_MODIFIER=(bluemist-ai) 
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SYSTEMD_EXEC_PID=2138
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : XDG_SESSION_DESKTOP=ubuntu
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : GNOME_SETUP_DISPLAY=:1
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_LIBRARY_PATH=/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SSH_AGENT_LAUNCHER=openssh
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SHLVL=0
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_NAME=pycharm-community
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : QT_IM_MODULE=ibus
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : LANG=en_US.UTF-8
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_INSTANCE_NAME=pycharm-community
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : XDG_SESSION_TYPE=wayland
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_USER_DATA=/home/shashank-agrawal/snap/pycharm-community/315
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : DISPLAY=:0
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_REEXEC=
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : WAYLAND_DISPLAY=wayland-0
+2023-02-10 00:40:13,763 : DEBUG : environment : initialize : Line 58 : SNAP_VERSION=2022.3.2
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : CONDA_SHLVL=1
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : XDG_SESSION_CLASS=user
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : _=/usr/bin/gnome-session
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : SNAP_DATA=/var/snap/pycharm-community/315
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : PYTHONIOENCODING=UTF-8
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : DESKTOP_SESSION=ubuntu
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : SNAP=/snap/pycharm-community/315
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : USER=shashank-agrawal
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : SNAP_REAL_HOME=/home/shashank-agrawal
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : XDG_MENU_PREFIX=gnome-
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : GIO_LAUNCHED_DESKTOP_FILE_PID=6882
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : QT_ACCESSIBILITY=1
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : GJS_DEBUG_OUTPUT=stderr
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : PYTHONUNBUFFERED=1
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : QT_QPA_PLATFORMTHEME=appmenu-qt5
+2023-02-10 00:40:13,764 : DEBUG : environment : initialize : Line 58 : GNOME_SHELL_SESSION_MODE=ubuntu
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : SNAP_CONTEXT=TH5tqtxLmo9ShdKlEBAZc6u4bWIr3M0WWbdvPINAEAQmrjxaSIQE
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : XDG_RUNTIME_DIR=/run/user/1000
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : SNAP_COOKIE=TH5tqtxLmo9ShdKlEBAZc6u4bWIr3M0WWbdvPINAEAQmrjxaSIQE
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : HOME=/home/shashank-agrawal
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : BLUEMIST_PATH=/home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : KMP_INIT_AT_FORK=FALSE
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 58 : KMP_DUPLICATE_LIB_OK=True
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 66 : Removing directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/data
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 69 : Creating directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/data
+2023-02-10 00:40:13,765 : DEBUG : environment : initialize : Line 66 : Removing directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/experiments
+2023-02-10 00:40:13,766 : DEBUG : environment : initialize : Line 69 : Creating directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/experiments
+2023-02-10 00:40:13,766 : DEBUG : environment : initialize : Line 66 : Removing directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/models
+2023-02-10 00:40:13,831 : DEBUG : environment : initialize : Line 69 : Creating directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/models
+2023-02-10 00:40:13,831 : DEBUG : environment : initialize : Line 66 : Removing directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/preprocessor
+2023-02-10 00:40:13,831 : DEBUG : environment : initialize : Line 69 : Creating directory :: /home/shashank-agrawal/PycharmProjects/bluemist-ai/bluemist/artifacts/preprocessor
