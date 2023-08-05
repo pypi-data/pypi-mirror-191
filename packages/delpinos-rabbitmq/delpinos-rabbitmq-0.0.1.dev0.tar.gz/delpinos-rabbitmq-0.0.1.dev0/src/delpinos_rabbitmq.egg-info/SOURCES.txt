@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/delpinos/__init__.py
+src/delpinos/rabbitmq/__init__.py
+src/delpinos/rabbitmq/channel.py
+src/delpinos/rabbitmq/connection.py
+src/delpinos/rabbitmq/consumer.py
+src/delpinos/rabbitmq/exchange.py
+src/delpinos/rabbitmq/producer.py
+src/delpinos/rabbitmq/queue.py
+src/delpinos/rabbitmq/setup.py
+src/delpinos_rabbitmq.egg-info/PKG-INFO
+src/delpinos_rabbitmq.egg-info/SOURCES.txt
+src/delpinos_rabbitmq.egg-info/dependency_links.txt
+src/delpinos_rabbitmq.egg-info/requires.txt
+src/delpinos_rabbitmq.egg-info/top_level.txt

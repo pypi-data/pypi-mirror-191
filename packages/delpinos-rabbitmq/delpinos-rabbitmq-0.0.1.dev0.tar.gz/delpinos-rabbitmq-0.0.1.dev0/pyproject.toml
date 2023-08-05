@@ -1,0 +1,42 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[project]
+authors = [
+  {name = "Alef Bruno Delpino de Oliveira", email = "alef@gmail.com"},
+]
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = ["delpinos-base", "pika", "Flask", "py-healthcheck"]
+description = "Python library for abstracting the communication layer with RabbitMQ using the pika library as a base"
+keywords = [
+  "base",
+  "template",
+  "lib",
+  "rabbitmq",
+  "consumer",
+  "producer",
+  "channel",
+  "exchange",
+  "queue",
+  "bind",
+  "event",
+  "topic",
+]
+license = {file = "LICENSE"}
+name = "delpinos-rabbitmq"
+readme = "README.md"
+requires-python = ">=3.6"
+version = "0.0.1.dev0"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/delpinos/python-rabbitmq/issues"
+"Homepage" = "https://github.com/delpinos/python-rabbitmq"
