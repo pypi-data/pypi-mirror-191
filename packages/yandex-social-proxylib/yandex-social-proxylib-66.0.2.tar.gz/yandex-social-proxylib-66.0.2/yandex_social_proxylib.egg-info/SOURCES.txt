@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_social_proxylib.egg-info/PKG-INFO
+yandex_social_proxylib.egg-info/SOURCES.txt
+yandex_social_proxylib.egg-info/dependency_links.txt
+yandex_social_proxylib.egg-info/top_level.txt
