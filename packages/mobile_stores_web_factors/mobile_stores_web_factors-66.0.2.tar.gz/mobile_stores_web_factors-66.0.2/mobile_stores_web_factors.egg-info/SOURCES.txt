@@ -1,0 +1,6 @@
+README.md
+setup.py
+mobile_stores_web_factors.egg-info/PKG-INFO
+mobile_stores_web_factors.egg-info/SOURCES.txt
+mobile_stores_web_factors.egg-info/dependency_links.txt
+mobile_stores_web_factors.egg-info/top_level.txt
