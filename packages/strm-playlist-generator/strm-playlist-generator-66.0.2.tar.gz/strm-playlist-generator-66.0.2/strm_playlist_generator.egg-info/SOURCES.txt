@@ -1,0 +1,6 @@
+README.md
+setup.py
+strm_playlist_generator.egg-info/PKG-INFO
+strm_playlist_generator.egg-info/SOURCES.txt
+strm_playlist_generator.egg-info/dependency_links.txt
+strm_playlist_generator.egg-info/top_level.txt
