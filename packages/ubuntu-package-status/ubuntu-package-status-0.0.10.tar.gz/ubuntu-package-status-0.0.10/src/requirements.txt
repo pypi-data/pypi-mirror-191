@@ -1,0 +1,8 @@
+babel
+click
+humanize
+launchpadlib
+pyyaml
+pytz
+readchar
+joblib
