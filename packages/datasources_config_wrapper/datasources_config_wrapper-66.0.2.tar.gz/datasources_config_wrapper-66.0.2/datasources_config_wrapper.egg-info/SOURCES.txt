@@ -1,0 +1,6 @@
+README.md
+setup.py
+datasources_config_wrapper.egg-info/PKG-INFO
+datasources_config_wrapper.egg-info/SOURCES.txt
+datasources_config_wrapper.egg-info/dependency_links.txt
+datasources_config_wrapper.egg-info/top_level.txt
