@@ -1,0 +1,6 @@
+README.md
+setup.py
+novabackup.egg-info/PKG-INFO
+novabackup.egg-info/SOURCES.txt
+novabackup.egg-info/dependency_links.txt
+novabackup.egg-info/top_level.txt
