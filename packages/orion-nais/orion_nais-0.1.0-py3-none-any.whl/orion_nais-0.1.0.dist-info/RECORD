@@ -1,0 +1,13 @@
+orion/__init__.py,sha256=LzhfLZ_I5WrOszXZ8wBRkbqNmnxSdnawczD7slfU5AQ,39
+orion/client.py,sha256=B4VSX9BOIQ5QdGzMQBFvK4fBur__9pr8du3ZnbCjjGg,15699
+orion/mmsi.py,sha256=0w7YAw2s2SgZoq8pNBg8KScWj6Ely8O8GI9q1kQ42OM,17303
+orion/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orion/types/ais.py,sha256=qmsaVRPXZVD-SXry14QaAZD4AxRMK54jTTidIrPAkZk,296
+orion/urls.py,sha256=NCZLcn4vFmBnd1qxT-pEEmNd8mfo8F4niX-iQtC8TEk,136
+orion/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+orion/utils/get_data.py,sha256=kAzqahXgnezmn5XO0VOPvMoyN0xhN-cMIe6mTcjaHgI,1100
+orion/vessel_codes.py,sha256=-9HXFOiby_WeIw7oo_Y3UfqUI-6lvaROXRDPC0IKwfs,16329
+orion_nais-0.1.0.dist-info/LICENSE,sha256=e0aAOyf20zsAFqqmIfNucou4xkxFCeeZjsPUByhQtlk,1072
+orion_nais-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+orion_nais-0.1.0.dist-info/METADATA,sha256=urT4chFh3u7L4eS0epCYOssokuXqBamfOEnJG6WKhso,6332
+orion_nais-0.1.0.dist-info/RECORD,,
