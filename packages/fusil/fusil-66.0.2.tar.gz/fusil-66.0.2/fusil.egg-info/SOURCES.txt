@@ -1,0 +1,6 @@
+README.md
+setup.py
+fusil.egg-info/PKG-INFO
+fusil.egg-info/SOURCES.txt
+fusil.egg-info/dependency_links.txt
+fusil.egg-info/top_level.txt
