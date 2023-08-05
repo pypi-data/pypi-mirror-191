@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: python-deco
+Version: 0.1.1
+Summary: 
+Author: adrian
+Author-email: tamkayeung.adrian@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+
