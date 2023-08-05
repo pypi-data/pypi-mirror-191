@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_messenger_client.egg-info/PKG-INFO
+ya_messenger_client.egg-info/SOURCES.txt
+ya_messenger_client.egg-info/dependency_links.txt
+ya_messenger_client.egg-info/top_level.txt
