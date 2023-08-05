@@ -1,0 +1,6 @@
+README.md
+setup.py
+uslugi_workflow_tools.egg-info/PKG-INFO
+uslugi_workflow_tools.egg-info/SOURCES.txt
+uslugi_workflow_tools.egg-info/dependency_links.txt
+uslugi_workflow_tools.egg-info/top_level.txt
