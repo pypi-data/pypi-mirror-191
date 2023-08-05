@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tjawn
+Version: 0.1.0
+Summary: Human friendly lightweight object notation.
+Author: tjkopena
+Author-email: tjkopena@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+
+## Development
+
+To generate the parser:
+  python -m lark.tools.standalone tjawn/tjawn.g > tjawn/lark_parser.py
+
