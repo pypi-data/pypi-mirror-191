@@ -1,0 +1,6 @@
+README.md
+setup.py
+voice_mrcp_filter.egg-info/PKG-INFO
+voice_mrcp_filter.egg-info/SOURCES.txt
+voice_mrcp_filter.egg-info/dependency_links.txt
+voice_mrcp_filter.egg-info/top_level.txt
