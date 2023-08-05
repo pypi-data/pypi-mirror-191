@@ -1,0 +1,3 @@
+[console_scripts]
+build_selenium = ppmi_downloader.selenium_grid_utils:build
+run_selenium = ppmi_downloader.selenium_grid_utils:run
