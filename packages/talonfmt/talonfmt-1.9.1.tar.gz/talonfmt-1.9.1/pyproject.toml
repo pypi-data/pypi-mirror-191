@@ -1,0 +1,94 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "talonfmt"
+version = "1.9.1"
+description = "A code formatter for Talon files"
+license = "MIT"
+authors = ["Wen Kokke <wenkokke@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/wenkokke/talonfmt"
+keywords = ["talon", "formatter"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Compilers",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.8"
+click = "^8.1.3"
+bumpver = { version = "*", optional = true }
+doc-printer = "^0.13.1"
+editorconfig = "^0.12.3"
+pytest = { version = "^7.1.2", optional = true }
+pytest-benchmark = { version = ">=3.4.1,<5.0.0", optional = true }
+pytest-golden = { version = "^0.2.2", optional = true }
+tree-sitter-talon = "^1006.3.2.0"
+# Prevent poetry 1.3 from removing setuptools
+setuptools = "*"
+
+[tool.poetry.extras]
+test = ["bumpver", "pytest", "pytest-benchmark", "pytest-golden"]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.971"
+tox = "^3.25.1"
+black = "^22.8.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+bumpver = "*"
+
+[tool.poetry.group.ci.dependencies]
+tox = "^3.25.1"
+bumpver = "*"
+
+[tool.poetry.scripts]
+talonfmt = "talonfmt.cli:cli"
+
+[tool.pytest.ini_options]
+enable_assertion_pass_hook = true
+filterwarnings = ["ignore::DeprecationWarning:.*:"]
+addopts = "--ignore=tests/data"
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = 3.9
+namespace_packages = true
+explicit_package_bases = true
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_configs = true
+
+[tool.bumpver]
+current_version = "1.9.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"talonfmt/__init__.py" = ['__version__: str = "{version}"']
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = true
+envlist = py39,py310,py311
+
+[gh-actions]
+python =
+  3.9: py39
+  3.10: py310
+  3.11: py311
+
+[testenv]
+commands =
+    bumpver update --patch --dry --no-fetch
+    pytest --benchmark-disable -x
+extras =
+    test
+"""
