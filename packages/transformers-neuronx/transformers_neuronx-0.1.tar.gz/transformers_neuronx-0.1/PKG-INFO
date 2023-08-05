@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: transformers_neuronx
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Maintainer: Amazon Web Services, Inc.
+Maintainer-email: aws-neuron-support@amazon.com
+License: Proprietary
+Description: WRONG PACKAGE. Please install the package from Neuron Repository - https://github.com/aws-neuron/transformers-neuronx#installation
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
