@@ -1,0 +1,6 @@
+README.md
+setup.py
+PythonicGRIB.egg-info/PKG-INFO
+PythonicGRIB.egg-info/SOURCES.txt
+PythonicGRIB.egg-info/dependency_links.txt
+PythonicGRIB.egg-info/top_level.txt
