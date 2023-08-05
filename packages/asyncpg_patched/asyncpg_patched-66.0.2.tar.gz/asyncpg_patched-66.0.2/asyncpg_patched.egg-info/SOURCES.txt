@@ -1,0 +1,6 @@
+README.md
+setup.py
+asyncpg_patched.egg-info/PKG-INFO
+asyncpg_patched.egg-info/SOURCES.txt
+asyncpg_patched.egg-info/dependency_links.txt
+asyncpg_patched.egg-info/top_level.txt
