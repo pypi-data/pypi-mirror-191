@@ -1,0 +1,3 @@
+[console_scripts]
+clean-dir = utilities.clean_dir:main
+rotate-logs = utilities.rotate_logs:main
