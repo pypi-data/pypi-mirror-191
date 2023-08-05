@@ -1,0 +1,15 @@
+osmosis/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+osmosis/cli.py,sha256=qmRh5qDxLfDs0ubhtlltH8Rmzayul4TIjXryuTDo6ao,603
+osmosis/version.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+osmosis/backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+osmosis/backend/config.py,sha256=XGyd-Tbxy_jHJa8r-zM6xDb7BOOObI8S4a5xYXsrpdQ,313
+osmosis/backend/fs.py,sha256=xgLsJ_WTK0beylxnhimwt87zEJ8cEBm5vbg9mQiQYbI,1147
+osmosis/backend/model.py,sha256=tA6VTe90kX_W5R4O1joMXEnB4V9RgeUKW2wQ6rHGDeQ,4135
+osmosis/backend/restoration.py,sha256=j58k3mLyl24E3wrVhTOa18tdDbqz5C4eb1F_SlCWLWA,2470
+osmosis/backend/server.py,sha256=ayO-ijhQ5g3NMVIVcTswg75rj-BT4Z9s7Na2XkOdpj0,3038
+osmosis/backend/utils.py,sha256=miecRSLvu25B19i8UexKXE2PtKQg9APJ68W_RdWvIbU,1263
+osmosis-0.0.1.dist-info/METADATA,sha256=ccbomu6cVCbL4KZl0P9Rhy4HKRm8Er82eRfNfGWKpBo,458
+osmosis-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+osmosis-0.0.1.dist-info/entry_points.txt,sha256=dONgearZBxTPxk0nC6sthE6NWGcOoD0NEhR35Rdc6Qw,44
+osmosis-0.0.1.dist-info/top_level.txt,sha256=oLTeO1zO0aeZ9HWVHqkcuO-JyTtOyXz--RZlFMoVdbE,8
+osmosis-0.0.1.dist-info/RECORD,,
