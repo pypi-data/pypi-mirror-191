@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: aloso
+Version: 0.0.6
+Summary: Lib
+Author: Aleos
+Author-email: aae5654ae@mozmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi
+Requires-Dist: fabric
+Requires-Dist: uvicorn
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: starlette
+Requires-Dist: schedule
+Requires-Dist: SQLAlchemy
+Requires-Dist: ldap3
+
+---
