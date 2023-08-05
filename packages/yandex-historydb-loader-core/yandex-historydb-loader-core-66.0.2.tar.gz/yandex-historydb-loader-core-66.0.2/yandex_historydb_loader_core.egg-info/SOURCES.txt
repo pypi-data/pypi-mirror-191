@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_historydb_loader_core.egg-info/PKG-INFO
+yandex_historydb_loader_core.egg-info/SOURCES.txt
+yandex_historydb_loader_core.egg-info/dependency_links.txt
+yandex_historydb_loader_core.egg-info/top_level.txt
