@@ -1,0 +1,6 @@
+README.md
+setup.py
+TexSoup_pandora.egg-info/PKG-INFO
+TexSoup_pandora.egg-info/SOURCES.txt
+TexSoup_pandora.egg-info/dependency_links.txt
+TexSoup_pandora.egg-info/top_level.txt
