@@ -1,0 +1,2 @@
+[console_scripts]
+scriptie = scriptie.server:main

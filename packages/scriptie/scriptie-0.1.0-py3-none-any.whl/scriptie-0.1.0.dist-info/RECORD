@@ -1,0 +1,15 @@
+scriptie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scriptie/scripts.py,sha256=BFXooMazu6EkG6NK-_nBQqSKcHkrbtZBn2hLDdECOK4,13242
+scriptie/server.py,sha256=tKBisSSqYK_pYfOx58H9OG8ZhXZESQL5K08uR3Y-0h0,18782
+scriptie/static_files/client.js,sha256=IaearwL5ARe_DNXQ9kkVgbraCCCvU7QjTJlXjGKJRHs,15645
+scriptie/static_files/forms.js,sha256=SpI1QIIehc0uia_dWjJtAJ1bJUFu13-kX_Nq8DgH28g,6013
+scriptie/static_files/index.html,sha256=AQClkcfjbkMScqZBTvl5Hs643Lw6Gdx2W_IY3bEL2Lo,346
+scriptie/static_files/main.css,sha256=uBey7usdi3xHiT4UuxkIblFOGLRPwlPp6TZ44DKXc7c,13534
+scriptie/static_files/main.js,sha256=aRYFIaf33SlMfYp2fWTItxvrjUBbdEOnc58XMCBME-w,25370
+scriptie/static_files/preact_htm.js,sha256=cihOjpB5yHgXFF3xEQ906KKqBAsvw4SSLhjfy0b8H9c,13194
+scriptie/static_files/reset.css,sha256=nNGIopsKU6c_xUQXQt1yvrJ8PGbIpg7UrmRxnuvuxi0,1093
+scriptie-0.1.0.dist-info/METADATA,sha256=pwM5l3qGdiiTW_MvW4Y3HBrggT2iZFiVSWWvKzWP2TM,76
+scriptie-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+scriptie-0.1.0.dist-info/entry_points.txt,sha256=OIsJ8kjdQzWn20ri0NV2hiHn-s5qxpxh_41xlgpt1yA,50
+scriptie-0.1.0.dist-info/top_level.txt,sha256=WEMH2rvYjj4Fsc4dzxgBKtbQN_uEH24qELYaoSLC4-M,9
+scriptie-0.1.0.dist-info/RECORD,,
