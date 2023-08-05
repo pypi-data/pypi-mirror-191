@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyperm.egg-info/PKG-INFO
+pyperm.egg-info/SOURCES.txt
+pyperm.egg-info/dependency_links.txt
+pyperm.egg-info/top_level.txt
