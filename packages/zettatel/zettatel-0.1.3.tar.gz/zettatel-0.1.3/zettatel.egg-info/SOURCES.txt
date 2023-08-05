@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+messages/__init__.py
+messages/resources.py
+messages/utils.py
+zettatel/__init__.py
+zettatel/message.py
+zettatel/utils.py
+zettatel.egg-info/PKG-INFO
+zettatel.egg-info/SOURCES.txt
+zettatel.egg-info/dependency_links.txt
+zettatel.egg-info/requires.txt
+zettatel.egg-info/top_level.txt
