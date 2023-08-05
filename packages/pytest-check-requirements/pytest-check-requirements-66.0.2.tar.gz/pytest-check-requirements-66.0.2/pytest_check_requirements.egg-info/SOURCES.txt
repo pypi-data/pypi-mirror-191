@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytest_check_requirements.egg-info/PKG-INFO
+pytest_check_requirements.egg-info/SOURCES.txt
+pytest_check_requirements.egg-info/dependency_links.txt
+pytest_check_requirements.egg-info/top_level.txt
