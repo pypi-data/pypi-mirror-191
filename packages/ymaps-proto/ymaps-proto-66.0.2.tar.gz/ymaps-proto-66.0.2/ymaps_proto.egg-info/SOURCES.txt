@@ -1,0 +1,6 @@
+README.md
+setup.py
+ymaps_proto.egg-info/PKG-INFO
+ymaps_proto.egg-info/SOURCES.txt
+ymaps_proto.egg-info/dependency_links.txt
+ymaps_proto.egg-info/top_level.txt
