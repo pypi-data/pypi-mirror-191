@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/window_recorder/__init__.py
+src/window_recorder/cfg.py
+src/window_recorder/recorder.py
+src/window_recorder.egg-info/PKG-INFO
+src/window_recorder.egg-info/SOURCES.txt
+src/window_recorder.egg-info/dependency_links.txt
+src/window_recorder.egg-info/requires.txt
+src/window_recorder.egg-info/top_level.txt
