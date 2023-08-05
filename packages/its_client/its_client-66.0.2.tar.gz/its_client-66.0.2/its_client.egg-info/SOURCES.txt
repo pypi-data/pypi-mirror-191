@@ -1,0 +1,6 @@
+README.md
+setup.py
+its_client.egg-info/PKG-INFO
+its_client.egg-info/SOURCES.txt
+its_client.egg-info/dependency_links.txt
+its_client.egg-info/top_level.txt
