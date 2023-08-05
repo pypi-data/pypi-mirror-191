@@ -1,0 +1,6 @@
+README.md
+setup.py
+eddl_geodesy.egg-info/PKG-INFO
+eddl_geodesy.egg-info/SOURCES.txt
+eddl_geodesy.egg-info/dependency_links.txt
+eddl_geodesy.egg-info/top_level.txt
