@@ -1,0 +1,6 @@
+README.md
+setup.py
+upravlyator_django_api.egg-info/PKG-INFO
+upravlyator_django_api.egg-info/SOURCES.txt
+upravlyator_django_api.egg-info/dependency_links.txt
+upravlyator_django_api.egg-info/top_level.txt
