@@ -1,0 +1,6 @@
+README.md
+setup.py
+infradev_django_extensions.egg-info/PKG-INFO
+infradev_django_extensions.egg-info/SOURCES.txt
+infradev_django_extensions.egg-info/dependency_links.txt
+infradev_django_extensions.egg-info/top_level.txt
