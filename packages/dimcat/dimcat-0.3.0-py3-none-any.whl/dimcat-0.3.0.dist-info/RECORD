@@ -1,0 +1,17 @@
+dimcat/__init__.py,sha256=T1iBPFjff9_5SotLAu4fnvGR6RcLctaV2_PgW9mFeyM,880
+dimcat/_typing.py,sha256=7ATX0tk_j17PcZIj1NzOCavuuSV9oTfLPC7zfaNO0T4,215
+dimcat/analyzer.py,sha256=Kfxep18ocNZzt_9ErW4NWxVJHjjHVQb_6Ya5vjeJ1uo,18771
+dimcat/cli.py,sha256=1Rag4XM__KR98E_EQ-KDDSCynt_qbsYST2BbGjxO06M,8775
+dimcat/data.py,sha256=V1vZ8khWy-R-DF1OjLtSjrTSJrrTyhYpLQ-5YMs287o,30190
+dimcat/filter.py,sha256=-2X7j5uDdAB9GV4nWAAE0dYJtKXQuRcjyxQJka9WrfQ,2117
+dimcat/grouper.py,sha256=Xx1fL_FrykcXS_ldZij9HlKmUAG14uuLgEqMJDTO0vU,5302
+dimcat/pipeline.py,sha256=kTn0fNK2fGP4BzS49jfU13h3Gh_ZIo8CBcNyPvu6_7M,3058
+dimcat/slicer.py,sha256=WDydPEqYEqX8dOimArdzujVLkSouaFie4Brt8sAzfZU,25588
+dimcat/utils.py,sha256=OEnQuj25mMHvMRpSnogWntYK9NJQgLB1uxUMO0zcTS8,4507
+dimcat/writer.py,sha256=lRSNnfvjssCWCmgpN4h9inA2-67JOlSML4gtY9VsdQo,3350
+dimcat-0.3.0.dist-info/LICENSE.txt,sha256=GzeCzK17hhQQDNow0_r0L8OfLpeTKQjFQwBQU7ZUymg,32473
+dimcat-0.3.0.dist-info/METADATA,sha256=cYMGwj98WulTPcPdlr5WNbZD1kdCZ6pVxwQpXQO0h5Y,3035
+dimcat-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dimcat-0.3.0.dist-info/entry_points.txt,sha256=qxGXsmXSZS1oLk084xEmqHpWYAu8YxafSjY-3PyyRA8,42
+dimcat-0.3.0.dist-info/top_level.txt,sha256=D0gj-3--Pl2zIUCM13vmOBMVBUvX1Lg3meT8NOrKepc,7
+dimcat-0.3.0.dist-info/RECORD,,
