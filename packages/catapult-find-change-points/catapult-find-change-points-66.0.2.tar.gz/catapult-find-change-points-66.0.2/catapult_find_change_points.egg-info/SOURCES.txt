@@ -1,0 +1,6 @@
+README.md
+setup.py
+catapult_find_change_points.egg-info/PKG-INFO
+catapult_find_change_points.egg-info/SOURCES.txt
+catapult_find_change_points.egg-info/dependency_links.txt
+catapult_find_change_points.egg-info/top_level.txt
