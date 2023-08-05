@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_passport_meltingpot_celery.egg-info/PKG-INFO
+yandex_passport_meltingpot_celery.egg-info/SOURCES.txt
+yandex_passport_meltingpot_celery.egg-info/dependency_links.txt
+yandex_passport_meltingpot_celery.egg-info/top_level.txt
