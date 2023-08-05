@@ -1,0 +1,6 @@
+README.md
+setup.py
+catkin_pkg_modules.egg-info/PKG-INFO
+catkin_pkg_modules.egg-info/SOURCES.txt
+catkin_pkg_modules.egg-info/dependency_links.txt
+catkin_pkg_modules.egg-info/top_level.txt
