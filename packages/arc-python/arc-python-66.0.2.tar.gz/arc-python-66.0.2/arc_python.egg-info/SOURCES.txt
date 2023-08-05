@@ -1,0 +1,6 @@
+README.md
+setup.py
+arc_python.egg-info/PKG-INFO
+arc_python.egg-info/SOURCES.txt
+arc_python.egg-info/dependency_links.txt
+arc_python.egg-info/top_level.txt
