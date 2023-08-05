@@ -1,0 +1,6 @@
+README.md
+setup.py
+dprod_tracing.egg-info/PKG-INFO
+dprod_tracing.egg-info/SOURCES.txt
+dprod_tracing.egg-info/dependency_links.txt
+dprod_tracing.egg-info/top_level.txt
