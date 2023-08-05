@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: vertopal
+Version: 1.0.1
+Summary: Convert your files in terminal using Vertopal API
+Home-page: https://github.com/vertopal/vertopal-cli
+Author-email: Vertopal <contact@vertopal.com>
+License: MIT
+Project-URL: Homepage, https://www.vertopal.com
+Project-URL: Funding, https://www.vertopal.com/en/donate
+Project-URL: Source, https://github.com/vertopal/vertopal-cli
+Project-URL: Bug Tracker, https://github.com/vertopal/vertopal-cli/issues
+Keywords: convert,file,vertopal,api,converter
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Vertopal-CLI
+
+**Vertopal-CLI** is a small, yet powerful utility for converting 
+digital files to a variety of file formats 
+using [Vertopal](https://www.vertopal.com) public API.
+
+You can use Vertopal-CLI by either *terminal commands* or 
+*importing as Python package*.
+
+## Installing Vertopal-CLI
+
+Vertopal-CLI is available on [PyPI](https://pypi.org/project/vertopal/):
+
+```bash
+$ python -m pip install vertopal
+```
+
+
+
+## Using Vertopal-CLI
+
+To use Vertopal-CLI you need to [obtain an App-ID and a Security Token](http://www.vertopal.com/en/account/api/app/new).
+
+Converting files using terminal commands are very simple:
+
+```bash
+$ vertopal convert document.ipynb --to pdf
+```
+
+To view full command-line help, execute `vertopal --help` 
+and `vertopal convert --help` in terminal.
+
+### Setting App ID and Security Token
+
+Before executing `vertopal convert` commands in terminal, you need to set 
+your obtained App-ID and Security Token in global configuration file:
+
+```bash
+$ vertopal config --app "your-app-id" --token "your-security-token"
+```
+
+### Importing as Python package
+
+Importing vertopal as a Python package gives you 
+more control and flexibility over each individual task:
+
+```python
+>>> import vertopal
+>>> response = vertopal.API.upload(
+...     filename="document.pdf",
+...     filepath="/home/vertopal/document.ipynb",
+...     app="your-app-id",
+...     token="your-security-token",
+... )
+>>> response
+<Response [200]>
+>>> json_response = response.json()
+>>> json_response["result"]["output"]["connector"]
+'the-connector-of-the-upload-task'
+```
