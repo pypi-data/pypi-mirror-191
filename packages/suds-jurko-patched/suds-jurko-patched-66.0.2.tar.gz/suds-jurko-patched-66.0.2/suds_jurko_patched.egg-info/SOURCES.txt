@@ -1,0 +1,6 @@
+README.md
+setup.py
+suds_jurko_patched.egg-info/PKG-INFO
+suds_jurko_patched.egg-info/SOURCES.txt
+suds_jurko_patched.egg-info/dependency_links.txt
+suds_jurko_patched.egg-info/top_level.txt
