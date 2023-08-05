@@ -1,0 +1,14 @@
+sc_kernel/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+sc_kernel/__main__.py,sha256=_ZNuw-RZoWvEFNAWCOMRRIZ11fKNY3WeHAGBrcWaTpU,126
+sc_kernel/kernel.json,sha256=ck5y4eT6sjMINUGTYZBOaDhsoO2Bj8vK0EkYIoSEV4c,106
+sc_kernel/kernel.py,sha256=_j0Wbx12LMqgPJweQZVAJZMhHxOJnDUnQp7K28Vw5K0,11074
+sc_kernel/images/logo-32x32.png,sha256=JsjTZpe6UkvbEqPr8x7Op8shzIuAGnVS3sFFjM3JotE,3949
+sc_kernel/images/logo-64x64.png,sha256=yjFvhw6uio4bx8KOW5RDGGASOyo6JkyE5CaSdh3wbt8,12511
+sc_kernel-0.4.0.data/data/share/jupyter/kernels/sc_kernel/kernel.json,sha256=ck5y4eT6sjMINUGTYZBOaDhsoO2Bj8vK0EkYIoSEV4c,106
+sc_kernel-0.4.0.data/data/share/jupyter/kernels/sc_kernel/logo-32x32.png,sha256=JsjTZpe6UkvbEqPr8x7Op8shzIuAGnVS3sFFjM3JotE,3949
+sc_kernel-0.4.0.data/data/share/jupyter/kernels/sc_kernel/logo-64x64.png,sha256=yjFvhw6uio4bx8KOW5RDGGASOyo6JkyE5CaSdh3wbt8,12511
+sc_kernel-0.4.0.dist-info/LICENSE,sha256=SFO9qjqxmDQwmS2w2NkXljrvheZBqzgzg6LANm-UA5I,1459
+sc_kernel-0.4.0.dist-info/METADATA,sha256=5Ye0yil-ioMHwA1EMqo3tvMA7URiWrR5Z8P7WYchI7o,6805
+sc_kernel-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sc_kernel-0.4.0.dist-info/top_level.txt,sha256=REBbQoy_WwYSyTAnZjqKTiwea6PdRv3CVK9My8LKj0g,10
+sc_kernel-0.4.0.dist-info/RECORD,,
