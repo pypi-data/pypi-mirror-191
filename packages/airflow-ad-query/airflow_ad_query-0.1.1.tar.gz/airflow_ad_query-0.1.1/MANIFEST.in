@@ -1,0 +1,6 @@
+recursive-include airflow_ad_query/static *
+recursive-include airflow_ad_query/templates *
+recursive-exclude * __pycache__
+recursive-exclude * *.pyc
+recursive-exclude * *.pyo
+recursive-exclude * *.orig
