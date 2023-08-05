@@ -1,0 +1,6 @@
+README.md
+setup.py
+easywebdav_dcache.egg-info/PKG-INFO
+easywebdav_dcache.egg-info/SOURCES.txt
+easywebdav_dcache.egg-info/dependency_links.txt
+easywebdav_dcache.egg-info/top_level.txt
