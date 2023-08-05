@@ -1,0 +1,6 @@
+README.md
+setup.py
+metrika_juggler_sdk.egg-info/PKG-INFO
+metrika_juggler_sdk.egg-info/SOURCES.txt
+metrika_juggler_sdk.egg-info/dependency_links.txt
+metrika_juggler_sdk.egg-info/top_level.txt
