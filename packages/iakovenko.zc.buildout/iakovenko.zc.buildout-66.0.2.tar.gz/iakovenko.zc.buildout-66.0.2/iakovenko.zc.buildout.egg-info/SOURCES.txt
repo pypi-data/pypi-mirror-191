@@ -1,0 +1,6 @@
+README.md
+setup.py
+iakovenko.zc.buildout.egg-info/PKG-INFO
+iakovenko.zc.buildout.egg-info/SOURCES.txt
+iakovenko.zc.buildout.egg-info/dependency_links.txt
+iakovenko.zc.buildout.egg-info/top_level.txt
