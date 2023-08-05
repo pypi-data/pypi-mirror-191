@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_dev_utils.egg-info/PKG-INFO
+xprod_dev_utils.egg-info/SOURCES.txt
+xprod_dev_utils.egg-info/dependency_links.txt
+xprod_dev_utils.egg-info/top_level.txt
