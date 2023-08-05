@@ -1,0 +1,4 @@
+VapourSynth>=60
+vstools>=2.0.0
+vskernels>=2.3.0
+vsparsedvd>=0.1.0
