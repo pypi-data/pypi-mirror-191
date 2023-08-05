@@ -1,0 +1,6 @@
+README.md
+setup.py
+vertis_etc_proto.egg-info/PKG-INFO
+vertis_etc_proto.egg-info/SOURCES.txt
+vertis_etc_proto.egg-info/dependency_links.txt
+vertis_etc_proto.egg-info/top_level.txt
