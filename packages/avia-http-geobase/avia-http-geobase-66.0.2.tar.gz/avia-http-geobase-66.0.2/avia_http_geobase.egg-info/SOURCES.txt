@@ -1,0 +1,6 @@
+README.md
+setup.py
+avia_http_geobase.egg-info/PKG-INFO
+avia_http_geobase.egg-info/SOURCES.txt
+avia_http_geobase.egg-info/dependency_links.txt
+avia_http_geobase.egg-info/top_level.txt
