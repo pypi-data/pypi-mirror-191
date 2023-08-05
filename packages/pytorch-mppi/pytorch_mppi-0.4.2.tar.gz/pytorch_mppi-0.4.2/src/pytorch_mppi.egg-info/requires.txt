@@ -1,0 +1,8 @@
+torch
+numpy
+
+[test]
+pytest
+gym<=0.20
+pygame
+pyglet==1.5.27
