@@ -1,0 +1,9 @@
+pywin32>=303
+pandas>=1.4.4
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+unitest
