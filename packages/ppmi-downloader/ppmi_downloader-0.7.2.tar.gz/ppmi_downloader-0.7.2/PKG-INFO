@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: ppmi_downloader
+Version: 0.7.2
+Summary: A downloader of PPMI files.
+Project-URL: Bug Tracker, https://github.com/LivingPark-MRI/ppmi-scraper/issues
+Author-email: Tristan Glatard <tristan.glatard@concordia.ca>
+License: MIT License
+        
+        Copyright (c) 2022 Tristan Glatard, Mohanad Arafe
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: beautifulsoup4
+Requires-Dist: icecream
+Requires-Dist: lxml
+Requires-Dist: pathspec
+Requires-Dist: selenium
+Requires-Dist: spython
+Requires-Dist: tqdm
+Requires-Dist: webdriver-manager
+Description-Content-Type: text/markdown
+
+A downloader of PPMI metadata and imaging data files.
+
+[![Python application](https://github.com/LivingPark-MRI/ppmi-scraper/actions/workflows/python-app.yml/badge.svg)](https://github.com/LivingPark-MRI/ppmi-scraper/actions/workflows/python-app.yml)
+
+# Example usage
+
+```python
+import ppmi_downloader
+ppmi = ppmi_downloader.PPMIDownloader()
+
+# Download metadata files
+ppmi.download_metadata(['Demographics.csv', 'Age_at_visit.csv'])
+
+# Download 3D imaging metadata
+ppmi.download_3D_T1_info()
+
+# Download imaging data (in DICOM format)
+ppmi.download_imaging_data([3001, 3003, 3011])
+
+# Download imaging data (in Nifti format)
+ppmi.download_imaging_data([3001, 3003, 3011], type='nifti')
+
+```
+
+# Scripts to use Selenium Grid 
+
+`ppmi_scrapper` provides scripts for building and running
+selenium webdriver 
+
+## `build_selenium`
+
+Build selenium grid singularity container
+
+This function is intended to be used as script
+so arguments are passed by environment variables.
+`PPMI_SINGULARITY_BUILD_CACHE`: cache folder to store the built image
+`PPMI_SINGULARITY_SELENIUM_VERSION`: version of selenium used
+`PPMI_SINGULARITY_BUILD_VERBOSE`: enable verbose mode for the build
+`PPMI_SINGULARITY_BUILD_LOG`: log file name to dump build's outputs
+
+Upon success, it exits with 0.
+Upon failure, Client raises exceptions caught by the script wrapper
+generated during the build
+
+## **`run_selenium`**
+
+Run selenium grid singularity container
+
+This function is intended to be used as script
+so arguments are passed by environment variables.
+`PPMI_SINGULARITY_SELENIUM_VERSION`: version of selenium used
+`PPMI_SINGULARITY_RUN_CACHE`: cache folder to find the built image
+`PPMI_SINGULARITY_RUN_VERBOSE`: enable verbose mode for the run
+`PPMI_SINGULARITY_RUN_LOG`: log file name to dump run's outputs
+Run the selenium grid singularity container by
+creating and binding files required by the container
+Communication is mapped on 4444 port.
+
+
+Upon success, it exits with 0.
+Upon failure, Client raises exceptions caught by the script wrapper
+generated during the run
+
