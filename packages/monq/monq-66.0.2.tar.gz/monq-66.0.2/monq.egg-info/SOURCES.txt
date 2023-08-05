@@ -1,0 +1,6 @@
+README.md
+setup.py
+monq.egg-info/PKG-INFO
+monq.egg-info/SOURCES.txt
+monq.egg-info/dependency_links.txt
+monq.egg-info/top_level.txt
