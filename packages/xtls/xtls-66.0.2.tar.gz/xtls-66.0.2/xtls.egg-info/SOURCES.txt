@@ -1,0 +1,6 @@
+README.md
+setup.py
+xtls.egg-info/PKG-INFO
+xtls.egg-info/SOURCES.txt
+xtls.egg-info/dependency_links.txt
+xtls.egg-info/top_level.txt
