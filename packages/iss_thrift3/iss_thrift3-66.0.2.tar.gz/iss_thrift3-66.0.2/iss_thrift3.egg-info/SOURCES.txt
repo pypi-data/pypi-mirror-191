@@ -1,0 +1,6 @@
+README.md
+setup.py
+iss_thrift3.egg-info/PKG-INFO
+iss_thrift3.egg-info/SOURCES.txt
+iss_thrift3.egg-info/dependency_links.txt
+iss_thrift3.egg-info/top_level.txt
