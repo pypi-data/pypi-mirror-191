@@ -1,0 +1,2 @@
+[console_scripts]
+primaschema = primaschema.cli:main
