@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+vkid/__init__.py
+vkid.egg-info/PKG-INFO
+vkid.egg-info/SOURCES.txt
+vkid.egg-info/dependency_links.txt
+vkid.egg-info/top_level.txt
