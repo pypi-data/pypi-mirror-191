@@ -1,0 +1,6 @@
+README.md
+setup.py
+camels_cli.egg-info/PKG-INFO
+camels_cli.egg-info/SOURCES.txt
+camels_cli.egg-info/dependency_links.txt
+camels_cli.egg-info/top_level.txt
