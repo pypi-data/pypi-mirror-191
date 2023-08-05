@@ -1,0 +1,6 @@
+README.md
+setup.py
+metric_exporter.egg-info/PKG-INFO
+metric_exporter.egg-info/SOURCES.txt
+metric_exporter.egg-info/dependency_links.txt
+metric_exporter.egg-info/top_level.txt
