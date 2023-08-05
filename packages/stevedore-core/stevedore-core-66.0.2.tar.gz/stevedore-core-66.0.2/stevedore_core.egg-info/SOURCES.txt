@@ -1,0 +1,6 @@
+README.md
+setup.py
+stevedore_core.egg-info/PKG-INFO
+stevedore_core.egg-info/SOURCES.txt
+stevedore_core.egg-info/dependency_links.txt
+stevedore_core.egg-info/top_level.txt
