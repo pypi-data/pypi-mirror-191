@@ -1,0 +1,6 @@
+README.md
+setup.py
+mobserver_me_models.egg-info/PKG-INFO
+mobserver_me_models.egg-info/SOURCES.txt
+mobserver_me_models.egg-info/dependency_links.txt
+mobserver_me_models.egg-info/top_level.txt
