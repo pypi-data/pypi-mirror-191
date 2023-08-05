@@ -1,0 +1,6 @@
+README.md
+setup.py
+suggest_filters.egg-info/PKG-INFO
+suggest_filters.egg-info/SOURCES.txt
+suggest_filters.egg-info/dependency_links.txt
+suggest_filters.egg-info/top_level.txt
