@@ -1,0 +1,2 @@
+[console_scripts]
+pgmcodegen = codegen.__main__:main
