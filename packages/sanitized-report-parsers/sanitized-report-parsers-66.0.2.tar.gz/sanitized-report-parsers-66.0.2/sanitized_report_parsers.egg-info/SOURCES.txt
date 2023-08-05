@@ -1,0 +1,6 @@
+README.md
+setup.py
+sanitized_report_parsers.egg-info/PKG-INFO
+sanitized_report_parsers.egg-info/SOURCES.txt
+sanitized_report_parsers.egg-info/dependency_links.txt
+sanitized_report_parsers.egg-info/top_level.txt
