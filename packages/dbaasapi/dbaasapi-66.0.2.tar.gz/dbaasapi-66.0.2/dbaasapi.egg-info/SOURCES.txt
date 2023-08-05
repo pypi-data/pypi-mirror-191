@@ -1,0 +1,6 @@
+README.md
+setup.py
+dbaasapi.egg-info/PKG-INFO
+dbaasapi.egg-info/SOURCES.txt
+dbaasapi.egg-info/dependency_links.txt
+dbaasapi.egg-info/top_level.txt
