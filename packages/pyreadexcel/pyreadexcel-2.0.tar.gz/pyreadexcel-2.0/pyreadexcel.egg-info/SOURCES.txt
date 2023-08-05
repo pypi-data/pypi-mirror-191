@@ -1,0 +1,7 @@
+setup.py
+pyreadexcel/__init__.py
+pyreadexcel.egg-info/PKG-INFO
+pyreadexcel.egg-info/SOURCES.txt
+pyreadexcel.egg-info/dependency_links.txt
+pyreadexcel.egg-info/requires.txt
+pyreadexcel.egg-info/top_level.txt
