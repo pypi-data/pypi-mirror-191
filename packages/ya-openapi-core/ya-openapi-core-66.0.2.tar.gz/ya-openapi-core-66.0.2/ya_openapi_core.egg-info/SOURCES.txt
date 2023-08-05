@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_openapi_core.egg-info/PKG-INFO
+ya_openapi_core.egg-info/SOURCES.txt
+ya_openapi_core.egg-info/dependency_links.txt
+ya_openapi_core.egg-info/top_level.txt
