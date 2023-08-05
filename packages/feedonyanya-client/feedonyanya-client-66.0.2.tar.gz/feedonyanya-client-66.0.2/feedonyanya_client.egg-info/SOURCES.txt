@@ -1,0 +1,6 @@
+README.md
+setup.py
+feedonyanya_client.egg-info/PKG-INFO
+feedonyanya_client.egg-info/SOURCES.txt
+feedonyanya_client.egg-info/dependency_links.txt
+feedonyanya_client.egg-info/top_level.txt
