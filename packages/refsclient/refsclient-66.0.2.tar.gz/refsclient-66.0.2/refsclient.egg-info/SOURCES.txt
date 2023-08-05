@@ -1,0 +1,6 @@
+README.md
+setup.py
+refsclient.egg-info/PKG-INFO
+refsclient.egg-info/SOURCES.txt
+refsclient.egg-info/dependency_links.txt
+refsclient.egg-info/top_level.txt
