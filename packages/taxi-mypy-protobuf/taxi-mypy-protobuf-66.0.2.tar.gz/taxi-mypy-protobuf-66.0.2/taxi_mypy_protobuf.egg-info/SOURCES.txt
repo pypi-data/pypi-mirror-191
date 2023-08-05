@@ -1,0 +1,6 @@
+README.md
+setup.py
+taxi_mypy_protobuf.egg-info/PKG-INFO
+taxi_mypy_protobuf.egg-info/SOURCES.txt
+taxi_mypy_protobuf.egg-info/dependency_links.txt
+taxi_mypy_protobuf.egg-info/top_level.txt
