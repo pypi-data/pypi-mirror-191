@@ -1,0 +1,6 @@
+README.md
+setup.py
+pip3_multiple_versions.egg-info/PKG-INFO
+pip3_multiple_versions.egg-info/SOURCES.txt
+pip3_multiple_versions.egg-info/dependency_links.txt
+pip3_multiple_versions.egg-info/top_level.txt
