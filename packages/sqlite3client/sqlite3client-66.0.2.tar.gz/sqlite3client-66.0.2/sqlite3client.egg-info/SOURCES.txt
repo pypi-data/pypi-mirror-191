@@ -1,0 +1,6 @@
+README.md
+setup.py
+sqlite3client.egg-info/PKG-INFO
+sqlite3client.egg-info/SOURCES.txt
+sqlite3client.egg-info/dependency_links.txt
+sqlite3client.egg-info/top_level.txt
