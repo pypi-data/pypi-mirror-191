@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytzstorage.egg-info/PKG-INFO
+pytzstorage.egg-info/SOURCES.txt
+pytzstorage.egg-info/dependency_links.txt
+pytzstorage.egg-info/top_level.txt
