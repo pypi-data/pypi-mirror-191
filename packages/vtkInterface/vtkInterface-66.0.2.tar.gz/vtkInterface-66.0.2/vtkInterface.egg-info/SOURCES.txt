@@ -1,0 +1,6 @@
+README.md
+setup.py
+vtkInterface.egg-info/PKG-INFO
+vtkInterface.egg-info/SOURCES.txt
+vtkInterface.egg-info/dependency_links.txt
+vtkInterface.egg-info/top_level.txt
