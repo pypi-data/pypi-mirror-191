@@ -1,0 +1,9 @@
+README.md
+setup.py
+SpeechRecognitionCover/SpeechRecognitionCover.py
+SpeechRecognitionCover/__init__.py
+SpeechRecognitionCover.egg-info/PKG-INFO
+SpeechRecognitionCover.egg-info/SOURCES.txt
+SpeechRecognitionCover.egg-info/dependency_links.txt
+SpeechRecognitionCover.egg-info/requires.txt
+SpeechRecognitionCover.egg-info/top_level.txt

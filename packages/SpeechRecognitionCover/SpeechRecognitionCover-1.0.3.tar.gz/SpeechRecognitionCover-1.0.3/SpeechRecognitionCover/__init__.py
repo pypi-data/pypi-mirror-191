@@ -1,0 +1,1 @@
+from SpeechRecognitionCover.SpeechRecognitionCover import Cover
