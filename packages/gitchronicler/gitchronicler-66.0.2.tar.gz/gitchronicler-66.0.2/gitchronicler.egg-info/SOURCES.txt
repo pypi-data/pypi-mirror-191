@@ -1,0 +1,6 @@
+README.md
+setup.py
+gitchronicler.egg-info/PKG-INFO
+gitchronicler.egg-info/SOURCES.txt
+gitchronicler.egg-info/dependency_links.txt
+gitchronicler.egg-info/top_level.txt
