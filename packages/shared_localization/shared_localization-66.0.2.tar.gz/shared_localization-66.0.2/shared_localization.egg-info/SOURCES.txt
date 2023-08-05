@@ -1,0 +1,6 @@
+README.md
+setup.py
+shared_localization.egg-info/PKG-INFO
+shared_localization.egg-info/SOURCES.txt
+shared_localization.egg-info/dependency_links.txt
+shared_localization.egg-info/top_level.txt
