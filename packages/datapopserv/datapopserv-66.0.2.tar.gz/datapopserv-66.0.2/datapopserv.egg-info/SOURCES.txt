@@ -1,0 +1,6 @@
+README.md
+setup.py
+datapopserv.egg-info/PKG-INFO
+datapopserv.egg-info/SOURCES.txt
+datapopserv.egg-info/dependency_links.txt
+datapopserv.egg-info/top_level.txt
