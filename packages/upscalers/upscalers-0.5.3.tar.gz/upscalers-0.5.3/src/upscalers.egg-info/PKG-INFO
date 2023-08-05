@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: upscalers
+Version: 0.5.3
+Summary: AI upscaling of images
+Home-page: https://github.com/kmewhort/upscalers
+Author: Kent Mewhort
+Author-email: kent@openissues.ca
+License: UNKNOWN
+Description: Upscalers provides an easy way to apply image upscaling using a variety of AI upscalers (including ESRGAN, R-ESRGAN, ScuNET, and SwinIR)
+Platform: UNKNOWN
+Requires-Python: >=3.7
