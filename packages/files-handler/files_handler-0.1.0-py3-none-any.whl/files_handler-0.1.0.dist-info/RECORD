@@ -1,0 +1,7 @@
+files_handler/__init__.py,sha256=XMQBt4Jc0iADfkYSSeJzlH-Qe7kQ0mFUYmuFf84Op4Q,20
+files_handler/files_handler.py,sha256=464fvNtCZgevoQH2fLIxVEfmEgtqU2WheyoLdNHC58s,5351
+files_handler/logger.py,sha256=kUXPKV-UwrDhYRZWHeNR1BYdpMdN3QaYARNwVlvXja0,336
+files_handler-0.1.0.dist-info/METADATA,sha256=wWF9IwvrrWBy0CpGukvTNSYb_XGRDfYdD8sKwiaMsiI,750
+files_handler-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+files_handler-0.1.0.dist-info/top_level.txt,sha256=FCJD1Y1jT0fS1n59NVVIWTiQ7hi-SA_9G5wVijZRiBs,14
+files_handler-0.1.0.dist-info/RECORD,,
