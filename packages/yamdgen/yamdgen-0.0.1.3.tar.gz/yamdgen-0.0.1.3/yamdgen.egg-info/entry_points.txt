@@ -1,0 +1,3 @@
+[console_scripts]
+mdgen = yamdgen:main_md
+yamlgen = yamdgen:main_yaml
