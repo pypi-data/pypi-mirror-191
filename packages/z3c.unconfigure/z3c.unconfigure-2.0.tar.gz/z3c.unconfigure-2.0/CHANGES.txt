@@ -1,0 +1,32 @@
+Changes
+=======
+
+2.0 (2023-02-10)
+----------------
+
+* Drop support for Python < 3.7.
+
+* Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11.
+
+
+1.1 (2012-10-26)
+----------------
+
+* Added support for zope.configuration 3.8.0, which changed the internal
+  data structures from tuples to dicts.
+
+* Dropped support for zope.configuration 3.7.x and older.
+
+* Unconfiguring an entire zcml file (include statement inside an unconfigure
+  block) now works.
+
+1.0.1 (2008-08-07)
+------------------
+
+* Added a ``meta.zcml`` file so that the ``<unconfigure>`` directive
+  can actually be registered from ZCML.
+
+1.0 (2008-08-07)
+----------------
+
+First public release.
