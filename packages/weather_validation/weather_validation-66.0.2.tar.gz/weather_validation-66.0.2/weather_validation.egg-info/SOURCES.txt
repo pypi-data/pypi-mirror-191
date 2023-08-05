@@ -1,0 +1,6 @@
+README.md
+setup.py
+weather_validation.egg-info/PKG-INFO
+weather_validation.egg-info/SOURCES.txt
+weather_validation.egg-info/dependency_links.txt
+weather_validation.egg-info/top_level.txt
