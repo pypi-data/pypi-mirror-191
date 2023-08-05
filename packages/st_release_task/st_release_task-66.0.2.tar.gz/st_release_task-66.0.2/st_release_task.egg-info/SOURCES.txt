@@ -1,0 +1,6 @@
+README.md
+setup.py
+st_release_task.egg-info/PKG-INFO
+st_release_task.egg-info/SOURCES.txt
+st_release_task.egg-info/dependency_links.txt
+st_release_task.egg-info/top_level.txt
