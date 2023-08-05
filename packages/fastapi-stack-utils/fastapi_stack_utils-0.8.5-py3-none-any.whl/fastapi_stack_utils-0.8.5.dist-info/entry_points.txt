@@ -1,0 +1,3 @@
+[console_scripts]
+fsu=fastapi_stack_utils.cli.cli:cli
+
