@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_sform.egg-info/PKG-INFO
+django_sform.egg-info/SOURCES.txt
+django_sform.egg-info/dependency_links.txt
+django_sform.egg-info/top_level.txt
