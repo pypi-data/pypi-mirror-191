@@ -1,0 +1,6 @@
+README.md
+setup.py
+eblob_kit.egg-info/PKG-INFO
+eblob_kit.egg-info/SOURCES.txt
+eblob_kit.egg-info/dependency_links.txt
+eblob_kit.egg-info/top_level.txt
