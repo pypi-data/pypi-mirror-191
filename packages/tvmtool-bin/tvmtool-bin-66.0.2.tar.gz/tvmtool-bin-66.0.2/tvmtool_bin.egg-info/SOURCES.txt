@@ -1,0 +1,6 @@
+README.md
+setup.py
+tvmtool_bin.egg-info/PKG-INFO
+tvmtool_bin.egg-info/SOURCES.txt
+tvmtool_bin.egg-info/dependency_links.txt
+tvmtool_bin.egg-info/top_level.txt
