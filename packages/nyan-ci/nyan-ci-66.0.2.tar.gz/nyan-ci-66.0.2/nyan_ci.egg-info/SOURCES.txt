@@ -1,0 +1,6 @@
+README.md
+setup.py
+nyan_ci.egg-info/PKG-INFO
+nyan_ci.egg-info/SOURCES.txt
+nyan_ci.egg-info/dependency_links.txt
+nyan_ci.egg-info/top_level.txt
