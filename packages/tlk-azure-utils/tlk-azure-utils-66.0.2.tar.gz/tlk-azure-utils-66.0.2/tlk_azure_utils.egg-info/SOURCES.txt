@@ -1,0 +1,6 @@
+README.md
+setup.py
+tlk_azure_utils.egg-info/PKG-INFO
+tlk_azure_utils.egg-info/SOURCES.txt
+tlk_azure_utils.egg-info/dependency_links.txt
+tlk_azure_utils.egg-info/top_level.txt
