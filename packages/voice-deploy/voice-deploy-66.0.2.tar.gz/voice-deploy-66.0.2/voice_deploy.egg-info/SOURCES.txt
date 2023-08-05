@@ -1,0 +1,6 @@
+README.md
+setup.py
+voice_deploy.egg-info/PKG-INFO
+voice_deploy.egg-info/SOURCES.txt
+voice_deploy.egg-info/dependency_links.txt
+voice_deploy.egg-info/top_level.txt
