@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"../app/cells/charts/category/CategoryClient.js -> react-plotly.js":{id:8660,files:["static/chunks/e48519b3.4efda49dd7d14bb2.js","static/chunks/283.d1545230739a3bc2.js"]},"../app/cells/charts/histogram/HistogramClient.js -> react-plotly.js":{id:8660,files:["static/chunks/e48519b3.4efda49dd7d14bb2.js","static/chunks/283.d1545230739a3bc2.js"]}};
