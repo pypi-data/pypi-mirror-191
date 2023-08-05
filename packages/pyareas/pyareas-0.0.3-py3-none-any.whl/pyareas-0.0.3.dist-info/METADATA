@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyareas
+Version: 0.0.3
+Summary: Python package for Areas
+Home-page: UNKNOWN
+Author: TomTheCodingGuy
+Author-email: tomb80940@gmail.com
+License: UNKNOWN
+Keywords: python,pyareas
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Python package to help get the areas of 2D shapes
+
+
