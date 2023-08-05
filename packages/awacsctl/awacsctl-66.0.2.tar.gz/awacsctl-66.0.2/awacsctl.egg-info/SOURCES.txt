@@ -1,0 +1,6 @@
+README.md
+setup.py
+awacsctl.egg-info/PKG-INFO
+awacsctl.egg-info/SOURCES.txt
+awacsctl.egg-info/dependency_links.txt
+awacsctl.egg-info/top_level.txt
