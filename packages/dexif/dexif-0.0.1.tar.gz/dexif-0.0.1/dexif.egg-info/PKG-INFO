@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dexif
+Version: 0.0.1
+Summary: Parser for fixed point numbers
+Home-page: https://holbrook.no/src/python-dexif
+Author: Louis Holbrook
+Author-email: dev@holbrook.no
+License: WTFPL

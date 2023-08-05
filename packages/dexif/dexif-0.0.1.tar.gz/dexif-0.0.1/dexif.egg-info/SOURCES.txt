@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+dexif/__init__.py
+dexif/dexif.py
+dexif.egg-info/PKG-INFO
+dexif.egg-info/SOURCES.txt
+dexif.egg-info/dependency_links.txt
+dexif.egg-info/top_level.txt
