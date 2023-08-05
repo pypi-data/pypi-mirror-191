@@ -1,0 +1,6 @@
+README.md
+setup.py
+avia_mdb_replica_info.egg-info/PKG-INFO
+avia_mdb_replica_info.egg-info/SOURCES.txt
+avia_mdb_replica_info.egg-info/dependency_links.txt
+avia_mdb_replica_info.egg-info/top_level.txt
