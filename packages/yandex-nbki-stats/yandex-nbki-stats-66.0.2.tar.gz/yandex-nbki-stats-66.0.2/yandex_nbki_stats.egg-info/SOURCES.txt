@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_nbki_stats.egg-info/PKG-INFO
+yandex_nbki_stats.egg-info/SOURCES.txt
+yandex_nbki_stats.egg-info/dependency_links.txt
+yandex_nbki_stats.egg-info/top_level.txt
