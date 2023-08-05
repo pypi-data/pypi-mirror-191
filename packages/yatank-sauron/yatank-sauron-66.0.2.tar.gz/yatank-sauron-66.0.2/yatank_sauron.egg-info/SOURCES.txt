@@ -1,0 +1,6 @@
+README.md
+setup.py
+yatank_sauron.egg-info/PKG-INFO
+yatank_sauron.egg-info/SOURCES.txt
+yatank_sauron.egg-info/dependency_links.txt
+yatank_sauron.egg-info/top_level.txt
