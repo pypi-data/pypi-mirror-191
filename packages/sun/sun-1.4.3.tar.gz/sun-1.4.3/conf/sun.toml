@@ -1,0 +1,42 @@
+# Configuration file for sun.
+
+# sun.toml file is part of sun.
+
+# https://gitlab.com/dslackw/sun
+
+# sun is free software: you can redistribute it and/or
+# modify it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# Any change here you should restart the daemon:
+# $ sun restart
+
+[time]
+  # The interval between checks for updates, default is 60 minutes.
+  INTERVAL = 60
+  # Standby time icon notifier, default is 5 minutes.
+  STANDBY = 5
+
+[mirror]
+  # Alternative HTTP mirror, otherwise, uses from /etc/slackpkg/mirrors file.
+  HTTP_MIRROR = ""
+
+[library]
+  # Library path where the ChangeLog.txt located.
+  LIBRARY_PATH = "/var/lib/slackpkg/"
+  # The ChangeLog.txt file that sun checks the packages.
+  CHANGELOG_FILE = "ChangeLog.txt"
+
+[pattern]
+  # These patterns checks the end of the line.
+  # Use this pattern for checking the packages in the ChangeLog.txt file.
+  PACKAGES = ["z:  Upgraded.", "z:  Rebuilt.", "z:  Added.", "z:  Removed."]
+  # Use this pattern for checking the kernel in the ChangeLog.txt file.
+  KERNEL = ["*:  Upgraded.", "*:  Rebuilt."]
