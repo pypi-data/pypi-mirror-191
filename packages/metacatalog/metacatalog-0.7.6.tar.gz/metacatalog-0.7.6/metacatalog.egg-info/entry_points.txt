@@ -1,0 +1,2 @@
+[console_scripts]
+metacatalog = metacatalog.command_line:main
