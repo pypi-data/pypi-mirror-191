@@ -1,0 +1,6 @@
+README.md
+setup.py
+aio_yampush.egg-info/PKG-INFO
+aio_yampush.egg-info/SOURCES.txt
+aio_yampush.egg-info/dependency_links.txt
+aio_yampush.egg-info/top_level.txt
