@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+MorletWaveModal.egg-info/PKG-INFO
+MorletWaveModal.egg-info/SOURCES.txt
+MorletWaveModal.egg-info/dependency_links.txt
+MorletWaveModal.egg-info/requires.txt
+MorletWaveModal.egg-info/top_level.txt
+mwmodal/__init__.py
+mwmodal/mw_modal.py
+mwmodal/tools.py
