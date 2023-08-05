@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytest_star_track_issue.egg-info/PKG-INFO
+pytest_star_track_issue.egg-info/SOURCES.txt
+pytest_star_track_issue.egg-info/dependency_links.txt
+pytest_star_track_issue.egg-info/top_level.txt
