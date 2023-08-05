@@ -1,0 +1,6 @@
+README.md
+setup.py
+nirvana_api_wrapper.egg-info/PKG-INFO
+nirvana_api_wrapper.egg-info/SOURCES.txt
+nirvana_api_wrapper.egg-info/dependency_links.txt
+nirvana_api_wrapper.egg-info/top_level.txt
