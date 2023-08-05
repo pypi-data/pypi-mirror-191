@@ -1,0 +1,14 @@
+nonebot/adapters/telegram/__init__.py,sha256=-HloYP7YarQhVPRwZMhEkuYMvJIbRV7e4PONMGN1FVA,196
+nonebot/adapters/telegram/adapter.py,sha256=KohuIT810XgcdV_ax6e8U1X67Si0vmWsWHqJ2GsMdYc,9083
+nonebot/adapters/telegram/api.py,sha256=pI23lOfQ7sDkekBEE_eXkmOc17XZcENcVVjq3hGhN8c,32256
+nonebot/adapters/telegram/bot.py,sha256=0eCEl8UAW9WLSkjRv-03TAVvn7ImwXaFcJrI1fGcJSg,9726
+nonebot/adapters/telegram/config.py,sha256=HO7xvTNcvOAXRmEn06YBVZravQZ-UMDeeKZED0hFOQ0,969
+nonebot/adapters/telegram/event.py,sha256=xQiBjJyhyCAvn6RWTxjyYpOy1uBf_mwoSCF3zZDunls,19265
+nonebot/adapters/telegram/exception.py,sha256=cvdnZDmcAweuLmdlG85lVEyJJmfRaEBpfluwEfwGFKY,1353
+nonebot/adapters/telegram/message.py,sha256=XAGNQFi0KCPnKCPDdbHTgY3OYvHuF1x2GAJeRyEHIQ4,9841
+nonebot/adapters/telegram/model.py,sha256=61F6xlD4dmWCza4k6eKioOGjYxUPqFTV1ReiZ9PqKmk,36900
+nonebot/adapters/telegram/permission.py,sha256=pvgHQbAs6yqF-IEEKTHVKAm5ebA-54X-hF6Htm2vboI,1381
+nonebot_adapter_telegram-0.1.0b8.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+nonebot_adapter_telegram-0.1.0b8.dist-info/METADATA,sha256=u8YK1G5SCUT9lTFRZp5R8xLtQHc_UW4NZ79PwsUm_4o,1230
+nonebot_adapter_telegram-0.1.0b8.dist-info/licenses/LICENSE,sha256=x2dFOsVbjn4pBnwomoG3oFj4LICbtWVOplObsVY0XxM,1069
+nonebot_adapter_telegram-0.1.0b8.dist-info/RECORD,,
