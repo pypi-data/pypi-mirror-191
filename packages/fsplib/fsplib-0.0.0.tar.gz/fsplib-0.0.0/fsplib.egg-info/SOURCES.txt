@@ -1,0 +1,11 @@
+README.md
+setup.py
+fsplib/Dataset.py
+fsplib/ExpandingWindowCV.py
+fsplib/Model.py
+fsplib/SlidingWindowCV.py
+fsplib/__init__.py
+fsplib.egg-info/PKG-INFO
+fsplib.egg-info/SOURCES.txt
+fsplib.egg-info/dependency_links.txt
+fsplib.egg-info/top_level.txt

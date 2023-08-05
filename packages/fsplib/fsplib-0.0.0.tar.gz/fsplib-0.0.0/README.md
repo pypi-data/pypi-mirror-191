@@ -1,0 +1,1 @@
+This repo is used to track progress during internship in ООО "Фабрика инноваций и решений"
