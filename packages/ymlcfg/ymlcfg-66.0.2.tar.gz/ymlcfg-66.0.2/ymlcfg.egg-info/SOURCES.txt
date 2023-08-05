@@ -1,0 +1,6 @@
+README.md
+setup.py
+ymlcfg.egg-info/PKG-INFO
+ymlcfg.egg-info/SOURCES.txt
+ymlcfg.egg-info/dependency_links.txt
+ymlcfg.egg-info/top_level.txt
