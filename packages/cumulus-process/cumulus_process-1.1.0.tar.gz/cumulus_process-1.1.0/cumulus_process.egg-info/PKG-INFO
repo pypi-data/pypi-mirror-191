@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cumulus-process
+Version: 1.1.0
+Summary: Library for creating Cumulus Process tasks in Python
+Home-page: https://github.com/nasa-cumulus/cumulus-process-py
+Author: Matthew Hanson (matthewhanson), Alireza J (scisco)
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+
+UNKNOWN
+
