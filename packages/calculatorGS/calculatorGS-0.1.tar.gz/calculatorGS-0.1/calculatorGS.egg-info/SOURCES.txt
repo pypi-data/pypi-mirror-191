@@ -1,0 +1,9 @@
+setup.py
+calculatorGS/__init__.py
+calculatorGS/calculatorGS.py
+calculatorGS/test_calculator.py
+calculatorGS.egg-info/PKG-INFO
+calculatorGS.egg-info/SOURCES.txt
+calculatorGS.egg-info/dependency_links.txt
+calculatorGS.egg-info/not-zip-safe
+calculatorGS.egg-info/top_level.txt
