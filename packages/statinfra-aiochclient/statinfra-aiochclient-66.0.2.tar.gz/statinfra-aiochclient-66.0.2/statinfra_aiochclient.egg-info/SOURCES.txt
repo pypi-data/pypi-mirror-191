@@ -1,0 +1,6 @@
+README.md
+setup.py
+statinfra_aiochclient.egg-info/PKG-INFO
+statinfra_aiochclient.egg-info/SOURCES.txt
+statinfra_aiochclient.egg-info/dependency_links.txt
+statinfra_aiochclient.egg-info/top_level.txt
