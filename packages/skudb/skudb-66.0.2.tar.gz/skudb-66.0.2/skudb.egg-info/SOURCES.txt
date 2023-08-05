@@ -1,0 +1,6 @@
+README.md
+setup.py
+skudb.egg-info/PKG-INFO
+skudb.egg-info/SOURCES.txt
+skudb.egg-info/dependency_links.txt
+skudb.egg-info/top_level.txt
