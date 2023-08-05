@@ -1,0 +1,6 @@
+README.md
+setup.py
+yshanka.egg-info/PKG-INFO
+yshanka.egg-info/SOURCES.txt
+yshanka.egg-info/dependency_links.txt
+yshanka.egg-info/top_level.txt
