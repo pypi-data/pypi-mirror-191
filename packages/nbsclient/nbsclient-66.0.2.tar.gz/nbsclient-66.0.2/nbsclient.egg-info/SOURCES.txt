@@ -1,0 +1,6 @@
+README.md
+setup.py
+nbsclient.egg-info/PKG-INFO
+nbsclient.egg-info/SOURCES.txt
+nbsclient.egg-info/dependency_links.txt
+nbsclient.egg-info/top_level.txt
