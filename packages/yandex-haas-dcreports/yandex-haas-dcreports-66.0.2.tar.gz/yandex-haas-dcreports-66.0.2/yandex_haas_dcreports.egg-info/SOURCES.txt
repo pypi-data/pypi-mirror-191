@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_haas_dcreports.egg-info/PKG-INFO
+yandex_haas_dcreports.egg-info/SOURCES.txt
+yandex_haas_dcreports.egg-info/dependency_links.txt
+yandex_haas_dcreports.egg-info/top_level.txt
