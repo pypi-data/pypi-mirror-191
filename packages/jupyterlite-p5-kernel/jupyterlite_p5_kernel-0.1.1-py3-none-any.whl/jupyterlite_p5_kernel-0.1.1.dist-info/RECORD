@@ -1,0 +1,16 @@
+jupyterlite_p5_kernel/__init__.py,sha256=KoOC-D4dyuVXFmtXAOuUGWJ_Y8JdgKnmDqYrm_pfbpo,296
+jupyterlite_p5_kernel/_version.py,sha256=lFB9nR4WN0iXcp5UpfmTfw1Z2jWBDmClLEWF046NHmc,171
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/package.json,sha256=SGSl6WgWGPqK9Ro_Gy-7G0M2FXsTPSfZjrFZEzlmNZs,2293
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/19df2ee3dbf8f26fd06f05cdf2e6b37c4d582df4a820dbeb756d47aef1512840.png,sha256=Gd8u49v48m_QbwXN8uazfE1YLfSoINvrdW1HrvFRKEA,1824
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/309.1defe0dd2ed55462ff6a.js,sha256=He_g3S7VVGL_at7dgJnFXy73WN6Zn1xvqdWB-uIJ4_g,4963
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/467.0063efc44051e592b9e9.js,sha256=AGPvxEBR5ZK56WLdacWyr7U1WGSF2LaCgBj68DM8ges,837
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/528.f4c72ab28c06664089d0.js,sha256=9McqsowGZkCJ0CyatZs2fDogINnxtNWW5x-55In4AmU,4963
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/643.d500ad5bd3432621262b.js,sha256=1QCtW9NDJiEmK4GpunysgP32KFbMlRg7JVKdVMCZbBE,3660
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/remoteEntry.cdbf97db0179334e7548.js,sha256=zb-X2wF5M051SN4IWqA3H5Q7Ro6YnYLmEn1eyvnNDB0,7320
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/style.js,sha256=Kve4QJ28YLAUCkvARqw2In1WpeUmP-EBSqGH5w3yCpY,175
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/static/third-party-licenses.json,sha256=O3SnnLVVuPpzSZ7OHRn2Az99UuWKBd7HK1lrTvWUkcM,2596
+jupyterlite_p5_kernel-0.1.1.data/data/share/jupyter/labextensions/@jupyterlite/p5-kernel/install.json,sha256=pVpd13oOdG1jzAe_nr320TkawRTa4TEw7OOecj2IdgQ,203
+jupyterlite_p5_kernel-0.1.1.dist-info/METADATA,sha256=vpRWlLWROPNiXocYc0f3lXimAAEb7JWiKxFKEXRYoao,6315
+jupyterlite_p5_kernel-0.1.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+jupyterlite_p5_kernel-0.1.1.dist-info/licenses/LICENSE,sha256=KGzk8bScqF2N6SwZH_Rca0SINYqkaW73_7Gsgeu1WWc,1524
+jupyterlite_p5_kernel-0.1.1.dist-info/RECORD,,

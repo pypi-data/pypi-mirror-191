@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: jupyterlite-p5-kernel
+Version: 0.1.1
+Project-URL: Homepage, https://github.com/jupyterlite/p5-kernel
+Project-URL: Bug Tracker, https://github.com/jupyterlite/p5-kernel/issues
+Project-URL: Repository, https://github.com/jupyterlite/p5-kernel.git
+Author: JupyterLite Contributors
+License: BSD 3-Clause License
+        
+        Copyright (c) 2021, JupyterLite Contributors All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of the copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# jupyterlite-p5-kernel
+
+[![Github Actions Status](https://github.com/jupyterlite/p5-kernel/workflows/Build/badge.svg)](https://github.com/jupyterlite/p5-kernel/actions/workflows/build.yml)
+[![JupyterLite](https://jupyterlite.rtfd.io/en/latest/_static/badge-launch.svg)](https://jupyterlite-p5-kernel.readthedocs.io/en/latest/lite/lab)
+
+A p5.js kernel for JupyterLite.
+
+![image](https://user-images.githubusercontent.com/591645/135318337-8e63861c-c598-48db-8c90-2c86d3a8936b.png)
+
+## Requirements
+
+- [JupyterLite](https://github.com/jupyterlite/jupyterlite) `0.1.0b18+`
+
+## Install
+
+This JupyterLite kernel can be installed as a federated server extension.
+
+```bash
+# Install the kernel
+pip install jupyterlite-p5-kernel
+
+# Build a new JupyterLite site
+jupyter lite build
+```
+
+See the JupyterLite documentation for more information on how to build sites and include additional extensions: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
+
+## Uninstall
+
+```bash
+pip uninstall jupyterlite-p5-kernel
+```
+
+## Contributing
+
+### Development install
+
+```bash
+# Clone the repo to your local environment
+# Change directory to the fork directory
+
+# create a new enviroment
+mamba create --name jupyterlite-p5-kernel -c conda-forge python=3.9 yarn jupyterlab
+mamba activate jupyterlite-p5-kernel
+
+# Install package in development mode
+python -m pip install -e .
+
+# Link your development version of the extension with JupyterLab
+jlpm run install:extension
+
+# Rebuild the extension Typescript source after making changes
+jlpm run build
+```
+
+The extension should be linked to `PREFIX/share/jupyter/labextensions` and can be picked up by `jupyterlite`:
+
+```bash
+# Install jupyterlite
+python -m pip install jupyterlite
+
+# Build a new JupyterLite site
+jupyter lite build
+
+# Serve the site
+jupyter lite serve
+
+# Launch a browser to the Jupyterlite server url
+python -m webbrowser http://localhost:8000/
+```
+
+## References
+
+### p5.js
+
+- Processing > ProcessingJS > p5.js
+  https://en.wikipedia.org/wiki/Processing#p5.js
+- https://github.com/processing/p5.js
+- https://p5js.org/learn/
+- https://p5js.org/reference/ API docs
+- https://p5js.org/examples/
+  - https://p5js.org/examples/math-additive-wave.html
+  - https://p5js.org/examples/interaction-wavemaker.html
+- https://p5js.org/examples/objects-objects.html
+- https://github.com/processing/p5.js/wiki/Beyond-the-canvas#creating-html-images
+- https://github.com/processing/p5.js/wiki/Getting-started-with-WebGL-in-p5#introducing-webgl-in-p5js
+- Summer of Code
+  https://github.com/processing/p5.js/wiki#google-summer-of-code-and-processing-fellowships
+- Season of Docs
+  https://github.com/processing/p5.js/wiki#season-of-docs
+
+#### p5.js Learning Resources
+
+- https://github.com/processing/p5.js/wiki/Educational-Resources
+- https://www.khanacademy.org/computing/computer-programming/pjs-documentation
+  - https://www.khanacademy.org/computing/computer-programming/programming-games-visualizations/advanced-development-tools/a/using-processingjs-outside-khan-academy
+- Khan Academy > Computer Programming > "Intro to JS: Drawing & Animation"
+  https://www.khanacademy.org/computing/computer-programming/programming
+  - https://github.com/processing/p5.js/wiki/Processing-transition#overview-of-differences
+  - https://github.com/processing/p5.js/wiki/p5.js-overview#how-is-this-different-than-processingjs
+- Khan Academy > Computing > Pixar in a Box
+  https://www.khanacademy.org/computing/pixar
+  - https://www.khanacademy.org/computing/pixar/simulation#hair-simulation-code
+  - https://www.khanacademy.org/computing/pixar/pixar-rigging#code-character
+  - https://en.wikipedia.org/wiki/Lorentz_transformation Rotation about a point other than the origin
+  - https://en.wikipedia.org/wiki/Quaternion
