@@ -1,0 +1,6 @@
+README.md
+setup.py
+eddl_yt_toolkit.egg-info/PKG-INFO
+eddl_yt_toolkit.egg-info/SOURCES.txt
+eddl_yt_toolkit.egg-info/dependency_links.txt
+eddl_yt_toolkit.egg-info/top_level.txt
