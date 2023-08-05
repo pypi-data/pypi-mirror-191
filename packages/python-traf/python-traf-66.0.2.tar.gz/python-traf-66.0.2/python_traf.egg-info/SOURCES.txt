@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_traf.egg-info/PKG-INFO
+python_traf.egg-info/SOURCES.txt
+python_traf.egg-info/dependency_links.txt
+python_traf.egg-info/top_level.txt
