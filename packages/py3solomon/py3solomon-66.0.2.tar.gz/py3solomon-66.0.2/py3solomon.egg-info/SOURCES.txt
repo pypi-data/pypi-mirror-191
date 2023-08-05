@@ -1,0 +1,6 @@
+README.md
+setup.py
+py3solomon.egg-info/PKG-INFO
+py3solomon.egg-info/SOURCES.txt
+py3solomon.egg-info/dependency_links.txt
+py3solomon.egg-info/top_level.txt
