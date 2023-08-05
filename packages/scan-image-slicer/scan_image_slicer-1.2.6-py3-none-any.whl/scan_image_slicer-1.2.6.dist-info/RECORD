@@ -1,0 +1,14 @@
+scan_image_slicer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scan_image_slicer/config.py,sha256=S62192mwEX2y0HeRxvgLLkSNxZEkMrtUdJuwvHT_adY,1591
+scan_image_slicer/confparser.py,sha256=J0BQmZ4Kz6Cnm-m9LuLOwFYDbSFdwavAjq-0kfimg5s,12388
+scan_image_slicer/filters.py,sha256=SX8JxuHVc9-bwaghk5u8H3mnSjCNsVgtSBMTmGwt9rY,1727
+scan_image_slicer/scan_image_slicer.py,sha256=ikZnMHBQ7wz305BC2YPaFXTGj6N--G6YgUoq7S9cFsA,1505
+scan_image_slicer/scis.py,sha256=H1WiwtNg15EhsjsCWkvu3O08li-tXRd_R7gCafcQiXU,17718
+scan_image_slicer/imutils/LICENSE.txt,sha256=LIqZeANpA0pr2T4oIG2Bd2nMs4vocPuBXm3tEdYJazE,1118
+scan_image_slicer/imutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scan_image_slicer/imutils/perspective.py,sha256=AA6AB_CywbXDk1CbLDfYKYNbMWCJ-dJrWxG95cPtvMQ,2844
+scan_image_slicer-1.2.6.dist-info/entry_points.txt,sha256=FH81IYQM2zurkPMsLZU2PIfEYny90rgWYIVKKUK5kGs,78
+scan_image_slicer-1.2.6.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+scan_image_slicer-1.2.6.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+scan_image_slicer-1.2.6.dist-info/METADATA,sha256=xf2eBaRy0iUQratVH1Td14qnxkoK0SGGA-eBinssDq8,6352
+scan_image_slicer-1.2.6.dist-info/RECORD,,

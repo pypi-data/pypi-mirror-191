@@ -1,0 +1,3 @@
+[console_scripts]
+scan-image-slicer=scan_image_slicer.scan_image_slicer:main
+
