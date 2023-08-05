@@ -1,0 +1,6 @@
+README.md
+setup.py
+yodax.egg-info/PKG-INFO
+yodax.egg-info/SOURCES.txt
+yodax.egg-info/dependency_links.txt
+yodax.egg-info/top_level.txt
