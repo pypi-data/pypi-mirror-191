@@ -1,0 +1,6 @@
+README.md
+setup.py
+edu_enigma.egg-info/PKG-INFO
+edu_enigma.egg-info/SOURCES.txt
+edu_enigma.egg-info/dependency_links.txt
+edu_enigma.egg-info/top_level.txt
