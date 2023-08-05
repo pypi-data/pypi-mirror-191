@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_crypta_analytics_framework.egg-info/PKG-INFO
+yandex_crypta_analytics_framework.egg-info/SOURCES.txt
+yandex_crypta_analytics_framework.egg-info/dependency_links.txt
+yandex_crypta_analytics_framework.egg-info/top_level.txt
