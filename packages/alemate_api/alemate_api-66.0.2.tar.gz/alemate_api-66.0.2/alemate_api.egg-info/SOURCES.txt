@@ -1,0 +1,6 @@
+README.md
+setup.py
+alemate_api.egg-info/PKG-INFO
+alemate_api.egg-info/SOURCES.txt
+alemate_api.egg-info/dependency_links.txt
+alemate_api.egg-info/top_level.txt
