@@ -1,0 +1,6 @@
+README.md
+setup.py
+sdms_api.egg-info/PKG-INFO
+sdms_api.egg-info/SOURCES.txt
+sdms_api.egg-info/dependency_links.txt
+sdms_api.egg-info/top_level.txt
