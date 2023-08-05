@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.zookeeper.egg-info/PKG-INFO
+obedient.zookeeper.egg-info/SOURCES.txt
+obedient.zookeeper.egg-info/dependency_links.txt
+obedient.zookeeper.egg-info/top_level.txt
