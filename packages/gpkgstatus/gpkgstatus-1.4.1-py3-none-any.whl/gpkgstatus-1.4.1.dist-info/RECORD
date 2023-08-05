@@ -1,0 +1,10 @@
+gpkgstatus/JSONFileReader.py,sha256=Z2ax9X61HcBeGLZ5bsH69p4f1GXdHztk8XVXH9pZB0M,1686
+gpkgstatus/URLReader.py,sha256=Zvl0rHi7kHFhJo6P-1V3eLxUTrq00IsgbF6rKnx2gKE,1644
+gpkgstatus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpkgstatus/gpkgstatus.py,sha256=s3Gu9qSGDNLSrgkcsIaAglBj6tK5ZruYTUVR68ZZq9Y,2129
+gpkgstatus-1.4.1.data/scripts/gpkgstatus,sha256=NOnEDu6vrNVkj4rHXvBhhokSGnuP6FMP-WaFuaUDNmA,974
+gpkgstatus-1.4.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+gpkgstatus-1.4.1.dist-info/METADATA,sha256=4jOuuhD44QTli8u1eOIpzBN6s9cRQ3Q9ibO7Uwpb9-I,4644
+gpkgstatus-1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gpkgstatus-1.4.1.dist-info/top_level.txt,sha256=eZCM8taqI8L4TgUgfRKrELBuXRRhhLzN6h8EYo9223M,11
+gpkgstatus-1.4.1.dist-info/RECORD,,
