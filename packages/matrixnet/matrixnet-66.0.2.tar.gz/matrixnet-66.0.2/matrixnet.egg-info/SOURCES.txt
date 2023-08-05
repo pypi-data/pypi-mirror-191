@@ -1,0 +1,6 @@
+README.md
+setup.py
+matrixnet.egg-info/PKG-INFO
+matrixnet.egg-info/SOURCES.txt
+matrixnet.egg-info/dependency_links.txt
+matrixnet.egg-info/top_level.txt
