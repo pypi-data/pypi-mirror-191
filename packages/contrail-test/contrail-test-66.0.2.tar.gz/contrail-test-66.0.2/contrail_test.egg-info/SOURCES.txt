@@ -1,0 +1,6 @@
+README.md
+setup.py
+contrail_test.egg-info/PKG-INFO
+contrail_test.egg-info/SOURCES.txt
+contrail_test.egg-info/dependency_links.txt
+contrail_test.egg-info/top_level.txt
