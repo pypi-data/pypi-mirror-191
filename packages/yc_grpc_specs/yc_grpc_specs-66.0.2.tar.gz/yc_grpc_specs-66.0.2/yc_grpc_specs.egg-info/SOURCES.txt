@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_grpc_specs.egg-info/PKG-INFO
+yc_grpc_specs.egg-info/SOURCES.txt
+yc_grpc_specs.egg-info/dependency_links.txt
+yc_grpc_specs.egg-info/top_level.txt
