@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Anteater-Recon
+Version: 1.0.0
+Summary: Anteater is Reconnaissance tool for discovering interesting files and folders in a web application
+Home-page: https://github.com/Johnng007/Anteater
+Author: Pontiffico
+Author-email: hello@john.ng
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![](https://github.com/Johnng007/Anteater/blob/main/assets/logo.jpg?raw=true)
+# Anteater
+Anteater is Reconnaissance tool for discovering interesting files and folders in a web application that most likely has been misconfigured to be accessible. Anteater discovers admin pages alongside interesting folders.
