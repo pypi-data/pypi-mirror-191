@@ -1,0 +1,6 @@
+README.md
+setup.py
+yt_digger.egg-info/PKG-INFO
+yt_digger.egg-info/SOURCES.txt
+yt_digger.egg-info/dependency_links.txt
+yt_digger.egg-info/top_level.txt
