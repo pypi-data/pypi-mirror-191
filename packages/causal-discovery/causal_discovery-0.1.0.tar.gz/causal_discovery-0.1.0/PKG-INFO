@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: causal-discovery
+Version: 0.1.0
+Summary: 
+Author: nutorbit
+Author-email: nutorbitx@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: dm-haiku (>=0.0.9,<0.0.10)
+Requires-Dist: jax (>=0.4.1,<0.5.0)
+Requires-Dist: jaxlib (>=0.4.1,<0.5.0)
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: networkx (>=2.8.8,<3.0.0)
+Requires-Dist: optax (>=0.1.4,<0.2.0)
+Requires-Dist: pyvis (>=0.3.1,<0.4.0)
+Requires-Dist: seaborn (>=0.12.1,<0.13.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Causal discovery
+
+Causal discovery is the process of inferring causal relationships between variables from observational data. This repository aims to provide a collection of causal discovery algorithms implemented in Python.
+
+## Development setup
+
+This repository uses [Poetry](https://python-poetry.org/) as a dependency manager. To install the dependencies, run:
+
+```zsh
+$ poetry install
+```
+
+## Usage
+
+Pull this repository and run the following command:
+
+```zsh
+$ poetry build
+```
+
+Then, install the package:
+
+```zsh
+$ pip install dist/causal-discovery-0.1.0.tar.gz
+```
+
+example usage:
+
+```python
+from causal_discovery.algos.notears import NoTears
+
+# load dataset
+dataset = ...  
+
+# initialize model
+model = NoTears(
+    rho=1, 
+    alpha=0.1, 
+    l1_reg=0, 
+    lr=1e-2
+)
+
+# learn the graph
+_ = model.learn(dataset.X)
+
+# adjacency matrix
+print(model.W)
+```
+
+## Algorithms
+
+| Algorithm | Reference |
+|-----------|-----------|
+| **NOTEARS** | [DAGs with NO TEARS: Continuous Optimization for Structure Learning, 2019](https://arxiv.org/abs/1803.01422) |
+
+## Results
+
+This is the example of the results of the algorithm.
+
+![Results](./images/notears_res.png)
+
