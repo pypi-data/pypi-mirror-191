@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_passport_ch_stat_loader.egg-info/PKG-INFO
+yandex_passport_ch_stat_loader.egg-info/SOURCES.txt
+yandex_passport_ch_stat_loader.egg-info/dependency_links.txt
+yandex_passport_ch_stat_loader.egg-info/top_level.txt
