@@ -1,0 +1,6 @@
+README.md
+setup.py
+sdg_yandex_staff_client.egg-info/PKG-INFO
+sdg_yandex_staff_client.egg-info/SOURCES.txt
+sdg_yandex_staff_client.egg-info/dependency_links.txt
+sdg_yandex_staff_client.egg-info/top_level.txt
