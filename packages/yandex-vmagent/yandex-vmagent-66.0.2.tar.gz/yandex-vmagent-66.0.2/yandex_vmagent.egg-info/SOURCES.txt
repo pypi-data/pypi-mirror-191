@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_vmagent.egg-info/PKG-INFO
+yandex_vmagent.egg-info/SOURCES.txt
+yandex_vmagent.egg-info/dependency_links.txt
+yandex_vmagent.egg-info/top_level.txt
