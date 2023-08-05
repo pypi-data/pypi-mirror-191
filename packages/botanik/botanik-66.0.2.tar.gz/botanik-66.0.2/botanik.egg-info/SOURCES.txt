@@ -1,0 +1,6 @@
+README.md
+setup.py
+botanik.egg-info/PKG-INFO
+botanik.egg-info/SOURCES.txt
+botanik.egg-info/dependency_links.txt
+botanik.egg-info/top_level.txt
