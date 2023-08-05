@@ -1,0 +1,6 @@
+README.md
+setup.py
+mtrs_django_tools.egg-info/PKG-INFO
+mtrs_django_tools.egg-info/SOURCES.txt
+mtrs_django_tools.egg-info/dependency_links.txt
+mtrs_django_tools.egg-info/top_level.txt
