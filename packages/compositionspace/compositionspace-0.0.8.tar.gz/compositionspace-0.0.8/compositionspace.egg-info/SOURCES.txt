@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+compositionspace/__init__.py
+compositionspace/datautils.py
+compositionspace/models.py
+compositionspace/paraprobe_transcoder.py
+compositionspace/postprocessing.py
+compositionspace/segmentation.py
+compositionspace.egg-info/PKG-INFO
+compositionspace.egg-info/SOURCES.txt
+compositionspace.egg-info/dependency_links.txt
+compositionspace.egg-info/not-zip-safe
+compositionspace.egg-info/requires.txt
+compositionspace.egg-info/top_level.txt
+tests/test_read_files.py

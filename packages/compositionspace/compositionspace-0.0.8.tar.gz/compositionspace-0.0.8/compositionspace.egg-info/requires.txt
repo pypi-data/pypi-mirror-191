@@ -1,0 +1,9 @@
+numpy
+matplotlib
+pandas
+h5py
+scikit-learn
+tqdm
+pyevtk
+pyyaml
+pyvista
