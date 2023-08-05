@@ -1,0 +1,10 @@
+arraykit/__init__.py,sha256=XHG5cYSuMaVJxCnpeFtfpQxmV48JVI-w2aTiU4034y0,1179
+arraykit/__init__.pyi,sha256=h4bLVWo2zq6oAqm0gF2UITanOGTq1oqLRwxv6V5kusM,2681
+arraykit/_arraykit.c,sha256=q6nlN7bVoNaHUqYwusO2SYyXYjjtzXpQIW92eP0IuEg,139837
+arraykit/_arraykit.cp310-win_amd64.pyd,sha256=o1ynYHnWibeYXU8KPXkpKF0TaKC_Vd4OVfy1hOrBn48,47616
+arraykit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arraykit-0.2.9.dist-info/LICENSE.txt,sha256=3t-z3TUy-ObAbtNww27zjhtD70pPtxLG-bSU0fUEk1k,1816
+arraykit-0.2.9.dist-info/METADATA,sha256=83XV4yFK8rKYPVpYywmTH0s3rDpnAFOaygGPWbyff14,1153
+arraykit-0.2.9.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+arraykit-0.2.9.dist-info/top_level.txt,sha256=00W90765jXl-QEGzShY2mT-haT9R5aB_MiTmxrFaBhQ,9
+arraykit-0.2.9.dist-info/RECORD,,
