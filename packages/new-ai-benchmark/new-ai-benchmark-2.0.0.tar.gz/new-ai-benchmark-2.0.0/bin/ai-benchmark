@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+"""Simple AI-Benchmark runner"""
+from ai_benchmark.console import main
+main()
