@@ -1,0 +1,6 @@
+README.md
+setup.py
+srvmocker.egg-info/PKG-INFO
+srvmocker.egg-info/SOURCES.txt
+srvmocker.egg-info/dependency_links.txt
+srvmocker.egg-info/top_level.txt
