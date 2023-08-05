@@ -1,0 +1,6 @@
+README.md
+setup.py
+citclient.egg-info/PKG-INFO
+citclient.egg-info/SOURCES.txt
+citclient.egg-info/dependency_links.txt
+citclient.egg-info/top_level.txt
