@@ -1,0 +1,6 @@
+README.md
+setup.py
+clusterpb.egg-info/PKG-INFO
+clusterpb.egg-info/SOURCES.txt
+clusterpb.egg-info/dependency_links.txt
+clusterpb.egg-info/top_level.txt
