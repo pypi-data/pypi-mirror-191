@@ -1,0 +1,6 @@
+README.md
+setup.py
+cs_botolib.egg-info/PKG-INFO
+cs_botolib.egg-info/SOURCES.txt
+cs_botolib.egg-info/dependency_links.txt
+cs_botolib.egg-info/top_level.txt
