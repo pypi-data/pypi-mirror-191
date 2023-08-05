@@ -1,0 +1,6 @@
+README.md
+setup.py
+setuptools_scm_old.egg-info/PKG-INFO
+setuptools_scm_old.egg-info/SOURCES.txt
+setuptools_scm_old.egg-info/dependency_links.txt
+setuptools_scm_old.egg-info/top_level.txt
