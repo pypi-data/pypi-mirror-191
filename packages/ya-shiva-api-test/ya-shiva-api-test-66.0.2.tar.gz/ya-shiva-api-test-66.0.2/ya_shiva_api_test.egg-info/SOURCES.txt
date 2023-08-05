@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_shiva_api_test.egg-info/PKG-INFO
+ya_shiva_api_test.egg-info/SOURCES.txt
+ya_shiva_api_test.egg-info/dependency_links.txt
+ya_shiva_api_test.egg-info/top_level.txt
