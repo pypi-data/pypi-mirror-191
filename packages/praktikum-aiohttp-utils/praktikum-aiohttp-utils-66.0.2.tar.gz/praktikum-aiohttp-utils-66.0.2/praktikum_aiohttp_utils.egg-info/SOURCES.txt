@@ -1,0 +1,6 @@
+README.md
+setup.py
+praktikum_aiohttp_utils.egg-info/PKG-INFO
+praktikum_aiohttp_utils.egg-info/SOURCES.txt
+praktikum_aiohttp_utils.egg-info/dependency_links.txt
+praktikum_aiohttp_utils.egg-info/top_level.txt
