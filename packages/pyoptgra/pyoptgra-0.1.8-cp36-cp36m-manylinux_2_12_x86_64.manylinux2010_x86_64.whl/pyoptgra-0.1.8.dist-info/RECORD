@@ -1,0 +1,12 @@
+pyoptgra/__init__.py,sha256=eS9HKvJ2I0pGRODA0P_59YAN4sO8UgokX6w2ODV6rd4,899
+pyoptgra/_about.py,sha256=HjA--p0RzY3Er9-BipTW5Qgq4IoTMV44WGqVEKL83ig,112
+pyoptgra/optgra.py,sha256=j7CAzEZ9JKkcxVJIR0lPT9wNPAnqEgxWGcGnOdcbuGg,30520
+pyoptgra/core/__init__.py,sha256=nWXba2jbrnldlGia7lF74RXR34PP6wfAMZcSkleuu9E,858
+pyoptgra/core/core.cpython-36m-x86_64-linux-gnu.so,sha256=B2ApP66LypTp9lVLb3H-zGRsG2hfMa1nv5iEtrZIv_Y,466504
+pyoptgra/core/lib/liboptgra.a,sha256=7zymezN3l3F9L8aoyFzd8moyO5Bc3WNzi-ECy6Mkbuk,248056
+pyoptgra-0.1.8.dist-info/METADATA,sha256=MyKtRt14drRSXYmBjF2xB0O9-FP0lXK8bQ0YMJ8wE44,2453
+pyoptgra-0.1.8.dist-info/WHEEL,sha256=9qPgO5qmKa9ytaro1Gt3fbMSK9X7F4d-bSmmZhdPXCQ,144
+pyoptgra-0.1.8.dist-info/top_level.txt,sha256=z3wv-vF-puBlTrci2P9AjyS3NnSSuCQ-qcwgo9rBux0,9
+pyoptgra-0.1.8.dist-info/RECORD,,
+pyoptgra.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=iF7pNyumQrHZq6sLPdW_7YahPLHEhykty75kPBU2IyQ,2223184
+pyoptgra.libs/libquadmath-2d0c479f.so.0.0.0,sha256=nw_dV1mLMDFbFsMwYHIwErTgu6dsMaBajxJfe8TohIA,263992
