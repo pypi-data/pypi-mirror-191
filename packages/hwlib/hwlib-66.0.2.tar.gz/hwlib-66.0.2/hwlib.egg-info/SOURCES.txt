@@ -1,0 +1,6 @@
+README.md
+setup.py
+hwlib.egg-info/PKG-INFO
+hwlib.egg-info/SOURCES.txt
+hwlib.egg-info/dependency_links.txt
+hwlib.egg-info/top_level.txt
