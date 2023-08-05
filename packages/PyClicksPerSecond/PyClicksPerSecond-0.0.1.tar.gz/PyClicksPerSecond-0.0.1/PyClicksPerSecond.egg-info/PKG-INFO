@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PyClicksPerSecond
+Version: 0.0.1
+Summary: Measuring your clicks per second
+Author: Computer4062 (Mihan)
+Author-email: mihan.edirisinghe@gmail.com
+Keywords: python,cps,clicks,mouse,gamming
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

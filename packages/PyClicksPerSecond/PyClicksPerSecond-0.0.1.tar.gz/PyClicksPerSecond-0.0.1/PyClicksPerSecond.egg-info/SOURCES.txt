@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyClicksPerSecond.egg-info/PKG-INFO
+PyClicksPerSecond.egg-info/SOURCES.txt
+PyClicksPerSecond.egg-info/dependency_links.txt
+PyClicksPerSecond.egg-info/top_level.txt
+libcps/PyCPS.py
+libcps/__init__.py
