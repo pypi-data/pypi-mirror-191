@@ -1,0 +1,6 @@
+README.md
+setup.py
+easytaphttp.egg-info/PKG-INFO
+easytaphttp.egg-info/SOURCES.txt
+easytaphttp.egg-info/dependency_links.txt
+easytaphttp.egg-info/top_level.txt
