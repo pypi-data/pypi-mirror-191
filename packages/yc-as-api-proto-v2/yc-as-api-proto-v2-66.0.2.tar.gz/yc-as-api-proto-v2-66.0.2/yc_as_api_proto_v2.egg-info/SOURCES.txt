@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_as_api_proto_v2.egg-info/PKG-INFO
+yc_as_api_proto_v2.egg-info/SOURCES.txt
+yc_as_api_proto_v2.egg-info/dependency_links.txt
+yc_as_api_proto_v2.egg-info/top_level.txt
