@@ -1,0 +1,6 @@
+README.md
+setup.py
+datapopclient.egg-info/PKG-INFO
+datapopclient.egg-info/SOURCES.txt
+datapopclient.egg-info/dependency_links.txt
+datapopclient.egg-info/top_level.txt
