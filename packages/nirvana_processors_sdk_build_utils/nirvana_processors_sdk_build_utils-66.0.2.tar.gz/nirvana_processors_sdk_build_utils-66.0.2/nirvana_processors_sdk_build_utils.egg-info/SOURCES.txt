@@ -1,0 +1,6 @@
+README.md
+setup.py
+nirvana_processors_sdk_build_utils.egg-info/PKG-INFO
+nirvana_processors_sdk_build_utils.egg-info/SOURCES.txt
+nirvana_processors_sdk_build_utils.egg-info/dependency_links.txt
+nirvana_processors_sdk_build_utils.egg-info/top_level.txt
