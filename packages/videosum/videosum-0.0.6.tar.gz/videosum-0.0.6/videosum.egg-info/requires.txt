@@ -1,0 +1,7 @@
+numpy
+opencv-python
+numba
+faiss-gpu
+scikit-image
+scikit-learn-extra
+imageio_ffmpeg
