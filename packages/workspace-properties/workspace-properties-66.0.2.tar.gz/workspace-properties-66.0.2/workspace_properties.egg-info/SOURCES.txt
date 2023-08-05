@@ -1,0 +1,6 @@
+README.md
+setup.py
+workspace_properties.egg-info/PKG-INFO
+workspace_properties.egg-info/SOURCES.txt
+workspace_properties.egg-info/dependency_links.txt
+workspace_properties.egg-info/top_level.txt
