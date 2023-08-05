@@ -1,0 +1,6 @@
+README.md
+setup.py
+logbroker_sender.egg-info/PKG-INFO
+logbroker_sender.egg-info/SOURCES.txt
+logbroker_sender.egg-info/dependency_links.txt
+logbroker_sender.egg-info/top_level.txt
