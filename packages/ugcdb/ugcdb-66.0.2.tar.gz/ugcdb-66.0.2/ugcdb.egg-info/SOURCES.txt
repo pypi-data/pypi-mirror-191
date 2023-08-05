@@ -1,0 +1,6 @@
+README.md
+setup.py
+ugcdb.egg-info/PKG-INFO
+ugcdb.egg-info/SOURCES.txt
+ugcdb.egg-info/dependency_links.txt
+ugcdb.egg-info/top_level.txt
