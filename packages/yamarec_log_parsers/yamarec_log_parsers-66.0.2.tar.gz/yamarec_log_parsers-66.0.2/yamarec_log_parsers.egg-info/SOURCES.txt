@@ -1,0 +1,6 @@
+README.md
+setup.py
+yamarec_log_parsers.egg-info/PKG-INFO
+yamarec_log_parsers.egg-info/SOURCES.txt
+yamarec_log_parsers.egg-info/dependency_links.txt
+yamarec_log_parsers.egg-info/top_level.txt
