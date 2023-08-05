@@ -1,0 +1,6 @@
+README.md
+setup.py
+paramiko_3k.egg-info/PKG-INFO
+paramiko_3k.egg-info/SOURCES.txt
+paramiko_3k.egg-info/dependency_links.txt
+paramiko_3k.egg-info/top_level.txt
