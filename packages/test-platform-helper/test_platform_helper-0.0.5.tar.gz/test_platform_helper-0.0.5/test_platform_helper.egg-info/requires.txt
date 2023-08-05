@@ -1,0 +1,4 @@
+httpx
+sanic[ext]
+aioquic
+wsproto
