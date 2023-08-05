@@ -1,0 +1,6 @@
+README.md
+setup.py
+wf_pyv8.egg-info/PKG-INFO
+wf_pyv8.egg-info/SOURCES.txt
+wf_pyv8.egg-info/dependency_links.txt
+wf_pyv8.egg-info/top_level.txt
