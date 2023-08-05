@@ -1,0 +1,6 @@
+README.md
+setup.py
+sendr_qtools.egg-info/PKG-INFO
+sendr_qtools.egg-info/SOURCES.txt
+sendr_qtools.egg-info/dependency_links.txt
+sendr_qtools.egg-info/top_level.txt
