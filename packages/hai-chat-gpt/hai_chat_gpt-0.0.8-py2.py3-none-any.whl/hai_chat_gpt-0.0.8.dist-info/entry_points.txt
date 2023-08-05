@@ -1,0 +1,3 @@
+[console_scripts]
+HaiChatGPT = HaiChatGPT.src.cli.cli:cli_main
+haichatgpt = HaiChatGPT.src.cli.cli:cli_main
