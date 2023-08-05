@@ -1,0 +1,6 @@
+README.md
+setup.py
+nanny_tickets.egg-info/PKG-INFO
+nanny_tickets.egg-info/SOURCES.txt
+nanny_tickets.egg-info/dependency_links.txt
+nanny_tickets.egg-info/top_level.txt
