@@ -1,0 +1,8 @@
+README.rst
+setup.py
+wugang/__init__.py
+wugang/main.py
+wugang.egg-info/PKG-INFO
+wugang.egg-info/SOURCES.txt
+wugang.egg-info/dependency_links.txt
+wugang.egg-info/top_level.txt
