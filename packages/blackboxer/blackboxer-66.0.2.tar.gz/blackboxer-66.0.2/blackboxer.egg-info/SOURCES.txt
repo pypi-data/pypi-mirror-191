@@ -1,0 +1,6 @@
+README.md
+setup.py
+blackboxer.egg-info/PKG-INFO
+blackboxer.egg-info/SOURCES.txt
+blackboxer.egg-info/dependency_links.txt
+blackboxer.egg-info/top_level.txt
