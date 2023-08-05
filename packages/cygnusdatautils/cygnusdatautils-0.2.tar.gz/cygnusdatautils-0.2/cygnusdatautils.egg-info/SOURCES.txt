@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+cygnusdatautils/__init__.py
+cygnusdatautils/database_utils.py
+cygnusdatautils/sharefile.py
+cygnusdatautils.egg-info/PKG-INFO
+cygnusdatautils.egg-info/SOURCES.txt
+cygnusdatautils.egg-info/dependency_links.txt
+cygnusdatautils.egg-info/requires.txt
+cygnusdatautils.egg-info/top_level.txt
