@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: ccdfits
+Version: 1.0.0
+Summary: Utilities to work with .fits files that were taken with CCDs and Skipper CCDs
+Home-page: https://gitlab.com/nicolaseavalos/ccdfits
+Author: Nicolás Avalos
+Author-email: nicolaseavalos@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: astropy
+
+# CCDFits
+
+This package provides utilities to work with .fits files that were taken with CCDs. It provides a FITS class to easily view and analyse images, along with useful functions to process them. It is particularly useful for Skipper CCD images, which can be calibrated by fitting gaussians to the zero- and one-electron peaks.
+
+## Installation
+
+I strongly recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) to create a virtual environment and install ccdfits and pre-requisites there.
+
+### Pre-requisites
+
+This library has been developed for Python 3. It will not build in Python 2.
+
+`ccdfits` requires the following packages to be installed:
+* numpy
+* scipy
+* astropy
+* matplotlib
+
+In addition, if you intend to use `ccdfits.processing`, you will also need to install:
+* scikit-learn (for `cal2phys`)
+* scikit-image (for `generateMask`)
+
+### Installing in a conda environment
+
+Create a new environment and install the prerequisites:
+
+`conda create --name ccdfits numpy scipy astropy matplotlib`
+
+Activate the newly created environment:
+
+`conda activate ccdfits`
+
+Install ccdfits via pip:
+
+`pip install ccdfits`
+
+
+### Installing latest public version (may be different from that on pypi)
+
+`pip install git+https://gitlab.com/nicolaseavalos/ccdfits.git`
+
+
+### Installing elsewhere
+
+Although not recommended, the following command should work in any case as long as pip for python 3 is installed in the system:
+
+`pip3 install ccdfits`
+
+## Usage
+
+The following example shows how to load and view a .fits image. Replace `'ccd-image.fits'` with a string indicating the full or relative path to the image you are trying to load.
+
+    # imports
+    from ccdfits import Fits
+    import matplotlib.pyplot as plt
+    plt.ion()
+
+    # set the image path
+    fits_path = 'ccd-image.fits'
+
+    # load and view the image
+    img = Fits(fits_path)
+    img.view()
+
+Complete documentation is in process.
+
+## Changelog
+
+### Version 1.0
+- FITS class renamed to Fits
+- Some documentation inside the code
+- Various changes throughout the library
+
+### Hotfix 0.3.1
+- Optimized for installation via pip
+
+### Version 0.3.0
+- Added `skp2raw_lowmem` function to `ccdfits.processing`
+
+### Hotfix 0.2.1
+- Added `subtract_baseline` option to `ccdfits.processing.raw2proc`
+
+### Version 0.2.0
+- Added `skp2raw` function to `ccdfits.processing`

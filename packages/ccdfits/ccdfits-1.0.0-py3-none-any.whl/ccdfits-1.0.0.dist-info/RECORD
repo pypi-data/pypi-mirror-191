@@ -1,0 +1,12 @@
+ccdfits/__init__.py,sha256=6mikHILD6C619kStiJhghfS4JI1Z6d0IBpJ7j6hABvg,512
+ccdfits/_auxiliary.py,sha256=72xz4pyz8-W9wJWVFyqUkVrLDk_3nQT35tXW4JgIx7M,156
+ccdfits/classes.py,sha256=9MTC1lPrIjjLVKHfVdVwbI6cAHLiouHbZsw8K32N71w,16337
+ccdfits/extract.py,sha256=w1gycGzrcWlf-OvrALg3x0Hyj0wj1eK1Ia-n4qXMurA,1926
+ccdfits/gfits.py,sha256=wW815ayglCRACVTCv5abfd1yBgR9TJPmGkM1R35UD04,14158
+ccdfits/processing.py,sha256=9ze2TMix3EHp11V0HvJXSofa7kZH7Eqa4O85zcOkugY,27199
+ccdfits/utilities.py,sha256=fA_zt6EFzh7OFBSbtDBz6C4Od078I0U68gso5UYntYY,24124
+ccdfits-1.0.0.dist-info/LICENSE,sha256=Ck9xsZBve3bOU-t9XKDtWfvayEeTjXsU-rn3BxGICrc,1072
+ccdfits-1.0.0.dist-info/METADATA,sha256=Eb70RpDMlno6Ta8NKrXFJOOi9S1PMMWG45NeStYGuBQ,2920
+ccdfits-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ccdfits-1.0.0.dist-info/top_level.txt,sha256=iL7Zp9BueYHeldKHOJZR-j_jJPIzFRV_qSLQ8g-S_xs,8
+ccdfits-1.0.0.dist-info/RECORD,,
