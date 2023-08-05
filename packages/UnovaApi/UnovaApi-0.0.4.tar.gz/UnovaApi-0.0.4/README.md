@@ -1,0 +1,121 @@
+# UnovaApi
+Project Description:
+UnovaApi is a comprehensive platform for Pokemon trainers in the Unova region. With UnovaApi, trainers can manage their Pokemon team, buy items, heal their Pokemon, view their balance, send money and messages to other trainers, and adopt new Pokemon with ease.
+
+## Features:
+
+- **Login**: Securely log into your UnovaApi account and access your profile information.
+- **View Team**: View your Pokemon team, and search for other trainers' teams.
+- **Buy Items**: Purchase items for your Pokemon using the item name as a reference.
+- **View Items**: View the items in your inventory.
+- **Heal Pokemon**: Use the Heal Center to heal your Pokemon back to full health.
+- **Adopt Pokemon**: Adopt new Pokemon by searching for the Pokemon name.
+- **Get Battle Team Info**: View the stats and information of your battle team.
+- **Add Friends**: Add other trainers as friends and keep track of their progress.
+- **View Player Profile**: View your own profile or search for other trainers' profiles.
+- **Send Money**: Send money to other trainers by searching for their username.
+- **Send Message**: Send messages to other trainers by searching for their username.
+- **View Balance**: View your current balance and track your expenses.
+- **Read Messages**: Read messages from other trainers and keep track of your communication.
+- **Delete Messages**: Delete messages you no longer need.
+
+## Getting Started:
+**Download the package with pip**:
+```
+pip install UnovaApi
+```
+
+**Log into your UnovaRpg account with the client:**
+```
+from UnovaApi import unova_api
+client = unova_api.Client(username,password)
+- Returns the username for a successful login. Raises an Exception for a failed login.
+- Login can fail due to incorrect deails or due to your whole team being fainted.
+```
+## Client methods:
+```
+client.player_info(username)
+- Accepts a string for the username of the player whose profile you wish to view
+- If no argument is passed it will default to the user's profile
+- Returns a dictionary with the player information
+- Returns None if the username is not found
+
+client.view_team(username)
+- Accepts a string for the username of the player whose team you wish to view
+- If no argument is passed it will default to the user's profile
+- Returns a list of dictionaries each with a pokemon's information (Name, Level, Sprite)
+- Returns None if the username is not found
+
+client.battle_team()
+- Returns a list of a more detailed dictionary of the user's team.
+- Includes HP, Level, Status, Available evlolution, Held items, etc.
+
+client.heal_team()
+- Heals all your pokemon to full health
+- returns 'heal finished'
+
+client.adopt(pokemonName)
+- Accepts a string of the pokemon you wish to adopt
+- All adoptions cast IC$35,000
+- All adopted pokemon are level 15
+- Returns pokemonName for a successfull adoption and None for a failiure
+
+client.view_items()
+- Returns a list of dictionaries each with an items information (Name, Quantity)
+
+client.buy_item(item_name, quantity)
+- Accepts a string for the item name and an integer for the quantity of items to purchase
+- Returns 0 item_name for a successful purchase and None for a faliure
+
+client.check_balance()
+- Returns an integer of the user's balance
+
+client.messages(index, action)
+- Accepts an integer for the index
+- Accepts a string (either 'open' or 'delete') for the action
+- Default action is 'open'
+- Returns the ammount of messages if no index is passed
+- Returns a dictionary of the message details if 'open' is passed
+- Returns 1 if 'delete' is passed
+
+client.send_message(subject, username, message, captcha)
+- Accepts a string for the subject of the message
+- Accepts a string for the username
+- Accepts a string for the message content
+- Accepts an integer for the captcha mode (default: 1)
+- Returns a dictionary with information about the message
+- Returns None if the username cannot be found
+- If 0 is passed as the captcha mode the program will attempt to draw the captcha in terminal and prompt the user to solve it
+- If 1 is passed as the captcha mode the program will attempt to solve the captcha automatically (unstable)
+
+(All message related changes may take a while to reflect)
+
+client.send_money(username, quantity, captcha)
+- Accepts a string for the username
+- Accepts an integer for the quantity
+- Accepts an integer for the captcha mode (default: 0)
+- Returns the amount taken from your account
+- Returns None if the username cannot be found
+- Returns 0 if the quantity is less than 100
+- Returns -1 if the quantity is greater than the balance of the user
+- If 0 is passed as the captcha mode the program will attempt to draw the captcha in terminal and prompt the user to solve it
+- If 1 is passed as the captcha mode the program will attempt to solve the captcha automatically (unstable)
+```
+
+## Other mehthods:
+```
+unovaApi.shop()
+- Returns a list of all the shop items
+
+unovaApi.adoption_center()
+- Returns a list of all pokemon available for adoption
+```
+
+# Demo (outdated)
+https://user-images.githubusercontent.com/113714949/218002943-bb41a6b0-305b-4882-9a29-b5018b5b20db.mov
+
+# Other links
+## pypi:
+- https://pypi.org/project/UnovaApi/
+
+
