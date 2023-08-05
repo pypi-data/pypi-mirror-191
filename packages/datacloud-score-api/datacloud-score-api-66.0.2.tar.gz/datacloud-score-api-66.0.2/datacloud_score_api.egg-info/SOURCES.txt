@@ -1,0 +1,6 @@
+README.md
+setup.py
+datacloud_score_api.egg-info/PKG-INFO
+datacloud_score_api.egg-info/SOURCES.txt
+datacloud_score_api.egg-info/dependency_links.txt
+datacloud_score_api.egg-info/top_level.txt
