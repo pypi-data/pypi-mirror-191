@@ -1,0 +1,6 @@
+README.md
+setup.py
+yserver.egg-info/PKG-INFO
+yserver.egg-info/SOURCES.txt
+yserver.egg-info/dependency_links.txt
+yserver.egg-info/top_level.txt
