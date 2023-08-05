@@ -1,0 +1,6 @@
+README.md
+setup.py
+Flask_Sosoc.egg-info/PKG-INFO
+Flask_Sosoc.egg-info/SOURCES.txt
+Flask_Sosoc.egg-info/dependency_links.txt
+Flask_Sosoc.egg-info/top_level.txt
