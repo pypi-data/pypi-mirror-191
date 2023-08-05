@@ -1,0 +1,6 @@
+README.md
+setup.py
+wasp_secret_bin.egg-info/PKG-INFO
+wasp_secret_bin.egg-info/SOURCES.txt
+wasp_secret_bin.egg-info/dependency_links.txt
+wasp_secret_bin.egg-info/top_level.txt
