@@ -1,0 +1,6 @@
+README.md
+setup.py
+chrpc.egg-info/PKG-INFO
+chrpc.egg-info/SOURCES.txt
+chrpc.egg-info/dependency_links.txt
+chrpc.egg-info/top_level.txt
