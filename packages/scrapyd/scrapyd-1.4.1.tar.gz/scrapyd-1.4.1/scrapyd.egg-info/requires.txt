@@ -1,0 +1,16 @@
+packaging
+twisted>=17.9
+scrapy>=2.0.0
+setuptools
+w3lib
+zope.interface
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+
+[test]
+pytest
+pytest-cov
+requests
