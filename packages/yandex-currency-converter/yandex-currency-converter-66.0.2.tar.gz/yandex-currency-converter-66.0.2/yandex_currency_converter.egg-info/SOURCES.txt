@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_currency_converter.egg-info/PKG-INFO
+yandex_currency_converter.egg-info/SOURCES.txt
+yandex_currency_converter.egg-info/dependency_links.txt
+yandex_currency_converter.egg-info/top_level.txt
