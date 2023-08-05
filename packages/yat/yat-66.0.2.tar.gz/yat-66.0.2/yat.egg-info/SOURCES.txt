@@ -1,0 +1,6 @@
+README.md
+setup.py
+yat.egg-info/PKG-INFO
+yat.egg-info/SOURCES.txt
+yat.egg-info/dependency_links.txt
+yat.egg-info/top_level.txt
