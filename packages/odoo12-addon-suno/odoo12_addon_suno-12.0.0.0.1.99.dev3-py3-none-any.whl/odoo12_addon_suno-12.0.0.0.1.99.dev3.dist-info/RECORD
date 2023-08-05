@@ -1,0 +1,11 @@
+odoo/addons/suno/__init__.py,sha256=6NWfDffU8qtCaP3o6Oun2TS4YeHJM-r7cGYnp2SIr-U,21
+odoo/addons/suno/__manifest__.py,sha256=h5xiiWAWhUd4DPsMPTMnPUDwac9h-qGlDbUSVN3sy9Q,400
+odoo/addons/suno/i18n/ca_ES.po,sha256=IsrrwfctU9-rlRNYYSMETMeM6dK-KNXriP0hGI5BAvw,603
+odoo/addons/suno/i18n/es.po,sha256=9t9PcEeng7mfg10UjHOIQ4UwByEIuWiLAte3kHLOKH8,602
+odoo/addons/suno/report/__init__.py,sha256=0_MnfNXymSmNEgNKa9qAb4E3aFfzoHq26dct1ECR9OE,52
+odoo/addons/suno/report/project_profitability_report_analysis.py,sha256=5jidlHhPwzy5wSupIwHEprkwfUPk47OuUqao50GCX-M,9516
+odoo/addons/suno/views/project_profitability_report_analysis_views.xml,sha256=kGaNDS8IPdl2w4MSuVNgOIPgzQ3tj-eHu2kyEJneU0Y,568
+odoo12_addon_suno-12.0.0.0.1.99.dev3.dist-info/METADATA,sha256=Lh0B_8geNjDsv9j4cjlVgccNC3YEp7ULIZsvWVVBNm0,481
+odoo12_addon_suno-12.0.0.0.1.99.dev3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo12_addon_suno-12.0.0.0.1.99.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_suno-12.0.0.0.1.99.dev3.dist-info/RECORD,,

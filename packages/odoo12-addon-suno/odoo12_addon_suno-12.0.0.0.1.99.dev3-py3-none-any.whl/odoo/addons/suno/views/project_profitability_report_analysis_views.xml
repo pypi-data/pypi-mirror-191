@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="suno_project_profitability_report_view_search" model="ir.ui.view">
+        <field name="name">suno.project.profitability.report.search</field>
+        <field name="model">project.profitability.report</field>
+        <field name="inherit_id" ref="sale_timesheet.project_profitability_report_view_search" />
+        <field name="arch" type="xml">
+            <filter name="my_project" position="after">
+                <separator/>
+               
+            </filter>
+        </field>
+    </record>
+</odoo>
