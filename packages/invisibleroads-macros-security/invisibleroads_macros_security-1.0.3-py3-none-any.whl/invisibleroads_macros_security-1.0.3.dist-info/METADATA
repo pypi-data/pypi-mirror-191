@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: invisibleroads-macros-security
+Version: 1.0.3
+Summary: Shortcut functions for security operations
+Home-page: https://github.com/invisibleroads/invisibleroads-macros-security
+Author: Roy Hyunjin Han
+Author-email: rhh@crosscompute.com
+Keywords: invisibleroads
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# Shortcut Functions for Security Operations
+
+# 1.0
+- Restore make_random_string
