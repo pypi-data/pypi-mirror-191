@@ -1,0 +1,6 @@
+README.md
+setup.py
+nirvana_api_lpshka.egg-info/PKG-INFO
+nirvana_api_lpshka.egg-info/SOURCES.txt
+nirvana_api_lpshka.egg-info/dependency_links.txt
+nirvana_api_lpshka.egg-info/top_level.txt
