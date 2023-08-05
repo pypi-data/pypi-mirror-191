@@ -1,0 +1,3 @@
+[console_scripts]
+freidok=freidok_cli.cli.run:main
+
