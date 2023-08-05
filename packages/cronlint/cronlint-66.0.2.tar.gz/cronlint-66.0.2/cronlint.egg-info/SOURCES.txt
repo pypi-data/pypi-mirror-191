@@ -1,0 +1,6 @@
+README.md
+setup.py
+cronlint.egg-info/PKG-INFO
+cronlint.egg-info/SOURCES.txt
+cronlint.egg-info/dependency_links.txt
+cronlint.egg-info/top_level.txt
