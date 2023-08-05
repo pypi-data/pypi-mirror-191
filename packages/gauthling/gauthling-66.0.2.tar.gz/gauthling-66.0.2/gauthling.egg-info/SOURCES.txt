@@ -1,0 +1,6 @@
+README.md
+setup.py
+gauthling.egg-info/PKG-INFO
+gauthling.egg-info/SOURCES.txt
+gauthling.egg-info/dependency_links.txt
+gauthling.egg-info/top_level.txt
