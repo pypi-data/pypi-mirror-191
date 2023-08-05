@@ -1,0 +1,6 @@
+README.md
+setup.py
+jupyterlab_arcadia_share.egg-info/PKG-INFO
+jupyterlab_arcadia_share.egg-info/SOURCES.txt
+jupyterlab_arcadia_share.egg-info/dependency_links.txt
+jupyterlab_arcadia_share.egg-info/top_level.txt
