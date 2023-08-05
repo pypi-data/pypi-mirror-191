@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyhttpadapter/__init__.py
+pyhttpadapter/adp_config.py
+pyhttpadapter/api_request_adapter.py
+pyhttpadapter.egg-info/PKG-INFO
+pyhttpadapter.egg-info/SOURCES.txt
+pyhttpadapter.egg-info/dependency_links.txt
+pyhttpadapter.egg-info/requires.txt
+pyhttpadapter.egg-info/top_level.txt
