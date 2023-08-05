@@ -1,0 +1,6 @@
+README.md
+setup.py
+asrclient.egg-info/PKG-INFO
+asrclient.egg-info/SOURCES.txt
+asrclient.egg-info/dependency_links.txt
+asrclient.egg-info/top_level.txt
