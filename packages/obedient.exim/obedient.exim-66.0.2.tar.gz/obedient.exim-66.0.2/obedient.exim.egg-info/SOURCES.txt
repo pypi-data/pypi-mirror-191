@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.exim.egg-info/PKG-INFO
+obedient.exim.egg-info/SOURCES.txt
+obedient.exim.egg-info/dependency_links.txt
+obedient.exim.egg-info/top_level.txt
