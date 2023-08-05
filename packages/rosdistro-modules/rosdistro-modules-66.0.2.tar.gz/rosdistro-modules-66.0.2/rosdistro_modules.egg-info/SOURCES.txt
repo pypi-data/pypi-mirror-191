@@ -1,0 +1,6 @@
+README.md
+setup.py
+rosdistro_modules.egg-info/PKG-INFO
+rosdistro_modules.egg-info/SOURCES.txt
+rosdistro_modules.egg-info/dependency_links.txt
+rosdistro_modules.egg-info/top_level.txt
