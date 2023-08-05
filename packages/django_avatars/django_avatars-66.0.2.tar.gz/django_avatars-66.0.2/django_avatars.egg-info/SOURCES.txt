@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_avatars.egg-info/PKG-INFO
+django_avatars.egg-info/SOURCES.txt
+django_avatars.egg-info/dependency_links.txt
+django_avatars.egg-info/top_level.txt
