@@ -1,0 +1,9 @@
+aiohttp>=3.8.3
+asyncio
+certifi>=2022.9.24
+nest_asyncio>=1.5.5
+numpy
+pandas
+requests>=2.28.1
+tqdm
+typing
