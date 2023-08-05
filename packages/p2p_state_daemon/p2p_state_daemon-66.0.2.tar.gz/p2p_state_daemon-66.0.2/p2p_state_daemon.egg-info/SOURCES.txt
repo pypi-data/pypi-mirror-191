@@ -1,0 +1,6 @@
+README.md
+setup.py
+p2p_state_daemon.egg-info/PKG-INFO
+p2p_state_daemon.egg-info/SOURCES.txt
+p2p_state_daemon.egg-info/dependency_links.txt
+p2p_state_daemon.egg-info/top_level.txt
