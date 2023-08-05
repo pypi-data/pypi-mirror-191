@@ -1,0 +1,170 @@
+# Welcome to SunPeek
+SunPeek implements a dynamic, in situ test methodology for large solar thermal plants, packaged as an open source software 
+application and python library. It also includes the first open source implementation of the ISO 24194 procedure 
+for checking the yield of solar thermal collector fields
+
+SunPeek was originally developed as part of the HarvestIT research project, see https://www.collector-array-test.org
+
+## A Web Application and a Python Library
+SunPeek is available as both a complete, containerised web application - intended to make the ongoing monitoring of one or
+several solar thermal plants simple and intuitive - and as a python library, for use by researchers and for building into 
+other tools. To install the python library, simply run `pip install sunpeek`. To set up the web application, see below.
+
+## License
+Except where specifically noted otherwise, SunPeek is made available under the GNU Lesser General Public License. This means
+that you can use the software, copy it, redistribute it and include it in other software, including commercial, proprietary 
+software, for free, as long as you abide by the terms of the GNU GPL, with the exceptions provided by the LGPL. In particular, 
+if you redistribute a modified version of the software, you must make the source code of your modifications available, and
+if you include the software in another piece of software or physical product, you must give users notice that SunPeek is 
+used, and inform them where to obtain a copy of the SunPeek source code and license.
+
+Note that the SunPeek WebUI (https://gitlab.com/sunpeek/web-ui), is covered by a seperate licence, the BSD-3-Clause, see:
+https://opensource.org/licenses/BSD-3-Clause
+
+Copyright (c) 2020-2022, AEE - Institut für Nachhaltige Technologien, SOLID Solar Energy Systems GmbH, GASOKOL GmbH, Schneid Gesellschaft m.b.H. 
+Copyright (c) 2023, SunPeek Open Source Contributors
+
+SunPeek is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+
+# Run
+## Linux
+The preferred way to run the SunPeek application is with docker on a Linux host. Running on Docker on Windows ([see below](#windows)) 
+or installing directly on the host (not recommended) is also possible. 
+
+## Deploy Full Application with Docker Compose
+The full application can be run with docker compose. This requires docker engine 19.03+, supporting the `docker compose`
+command (instead of the older separate `docker-compose` tool). Use `docker version` to check. To install docker go to
+https://docs.docker.com/engine/install/ select the relevant platform and follow the instructions.
+
+1. Use https://gitlab.com/api/v4/projects/43333900/repository/archive?path=deploy to download an archive of the 
+deployment files and unzip it to the location you want to run it from.
+2. Open `api.env.template` and set `HIT_DB_PW` to a strong random password
+3. Open `db.env.template` and set `POSTGRES_PASSWORD` to _the same_ strong random password.
+4. If you want to access the application from anywhere except the local machine, open `ui.env.template` and replace `localhost`
+in `HIT_API_BASE_URL` with a URL which can be used to access the machine on which the application is running. **IMORTANT:
+it is strongly recommended that you don't make SunPeek accessible from the public internet. At present there are NO built
+in access controls**
+5. In a terminal in the unzipped folder, run `docker compose up -d`
+6. After at most 2 minutes (usually a few seconds), the web UI should be accessible at http://localhost, or the url set 
+in step 4.
+
+## Windows
+### Get Docker
+#### Windows 10 and 11
+On desktop windows, the easiest way to get Docker is to install [docker desktop](https://www.docker.com/products/docker-desktop/).
+#### Windows server 
+To install the Docker Engine on Windows Server, see [this guide from Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce)
+
+### Set up SunPeek
+Use https://gitlab.com/api/v4/projects/43333900/repository/archive?path=deploy to download an archive of the deployment files
+2. Open a powershell terminal (or e.g. the Terminal window in PyCharm) in the deployment folder, and run `.\quick-setup.ps1`
+3. Run `docker-compose up -d` to start the application in "detached" mode (i.e. in the background). If you want to run
+it attached to the terminal to see console output from the containers, run `docker-compose up`.
+4. After at most 2 minutes (usually a few seconds), the web UI should be accessible at `<external.url>` 
+(`localhost` by default), and the api at `<external.url>/api/v1`. See `<external.url>/api/v1/docs` for API documentation.
+5. To update the application to use newer images, run `docker compose pull` then `docker compose restart`
+
+##### Using the Easy Installer
+For convenience, if you wish to avoid using powershell, a simple graphical utility is provided for use on Windows. 
+Docker is still required. To use this method:
+1. Download and run [this file](https://gitlab.com/sunpeek/sunpeek/-/raw/main/easy_installer.exe?inline=false), 
+it will take a minute or so to unpack the setup program. 
+2. You should then get a small window with 2 fields. You must select a location to store the configuration files for the
+application, if you are running the application only for access from the local machine, leave the default in the url field. 
+3. Click setup. 
+4. Once the window closes open the directory you specified, and double click the start.bat file. A command prompt will 
+open to display the startup process.
+5. Docker compose will download the required application components, this may take several minutes, once you see all 
+components listed as 'started' or 'healthy' you can close the command prompt.
+6. Open a browser and go to the url specified in the setup tool, probably http://localhost to see the web-UI for the tool.
+7. To stop the application, assuming no other processes are running under docker on your machine, simply shut down the 
+docker engine. If you are using Docker Desktop, this can be done by right clicking the Docker icon the the system try and 
+selecting Quit
+
+#### Configuration
+Configuration is via environment variables, which can be set by any configuration management system you use, however the
+default setup uses `.env` files. To deploy the application on a single host, only the database password and external URL
+need to be set. The `.\quick-setup.ps1` does this for you, or you can manually set the value of `HIT_DB_PW` and `POSTGRES_PASSWORD` in 
+the `api.env` and `db.env` files to *the same* random, unique password string, and the value of `HIT_API_BASE_URL` in the 
+`ui.env` file to <external.url>/api/v1.  
+_*NOTE*_: This setup is designed to deploy all containers on a single machine where docker compose is running. 
+The configuration for the Traefik reverse proxy is stored in a directory which is *bind mounted* to the container. For 
+other deployment approaches (e.g. using Kubernetes), a different a more appropriate Traefik dynamic 
+[configuration provider](https://doc.traefik.io/traefik/providers/overview/) should be selected.
+
+#### Technical Details - What does compose do?
+[Docker Compose](https://docs.docker.com/compose/) is a tool for *orchestrating* docker containers, to create 
+applications made up of several docker containers. When the HarvestIT application is started with the default docker-compose 
+file, the following things happen:
+1. Compose checks if each of the images defined in the compose file, is available with the correct tag locally, if not it
+pulls them from the relevant registry
+2. A virtual network is created, for the containers to communicate with each other. This is segregated from the host machine's
+main network interfaces.
+3. The database container (using image `timescale/timescaledb:latest-pg14`), is started, with a healthcheck defined. 
+Alongside this container, a [Docker Volume](https://docs.docker.com/storage/volumes/) is created called `hit_postgres_data`, 
+which is mapped to the default data directory in the database container, to ensure that database data is persisted when 
+the containers are recreated (e.g. during an update).
+4. The reverse proxy container (using image `traefik:v2.8`) is started. As well as being attached to the virtual network 
+created by docker compose, this has port 80 exposed to the host, so that it can be accessed at `localhost/` or from an
+extrnal connection. This routes web requests to either the web-ui or api containers, depending on the path in the request 
+URL. It can also [be configured](https://doc.traefik.io/traefik/https/overview/) to terminate TLS (HTTPS) encrypted 
+connections and obtain certificates automatically, to secure connections to the application.
+5. Compose waits until the database container reports a "healthy" status, then starts the api container (using image 
+`sunpeek:latest)`, this is the main HarvestIT application.
+6. The `harvestit` container runs a database initialization scripts to get the database ready. 
+7. Once the api container has started, the webui container is started. 
+
+# Development
+## Development Environment
+SunPeek uses [Poetry](https://python-poetry.org/) as a virtual environment and dependency manager and build system. To 
+get started, [install poetry](https://python-poetry.org/docs/#installation), clone this repository 
+(or a fork of it, see [CONTRIBUTING](CONTRIBUTING.md)), open a terminal in the repository root and run `poetry install --with dev`.
+This will get you a python virtual environment with all the required dependencies. If you get errors from poetry, try running
+`poetry lock`, then `poetry install --with dev` again.
+If you are using PyCharm as your IDE, make sure you have version 2022.3 or newer, then follow [these instructions](https://www.jetbrains.com/help/pycharm/poetry.html)
+to set up PyCharm to work with the Poetry virtual env.
+
+## Getting a local development database
+The application can work with any postgresql database, provided it has the timescaledb extension installed. The `init_db`
+module in HarvestIT will create a new database according to your settings (see the [config variables](https://gitlab.com/sunpeek/sunpeek/-/issues/102),
+and add our "preinstalled data" (fluid definitions, sensor types etc...), to it.   
+The easiest way to get a local database is to run the [TimescaleDB docker image](https://hub.docker.com/r/timescale/timescaledb/), 
+this is what the test fixtures described in [Test Database] do automatically. There is a script called `setup_dev_db.py´ 
+provided as a convenience. The description below assumes you will use this method.
+
+## Running the application in the development environment
+### Run directly in a local terminal
+In a terminal window with the correct virtual environment active, run: `uvicorn api.main:app --reload`
+
+### Run standalone in Docker 
+Pull and run the latest image from the Gitlab image registry: `docker run -p 8000:8000 --name sunpeek:latest`
+
+#### Prerequisits:
+* You need to have docker desktop installed https://www.docker.com/products/docker-desktop/, on windows enabling WSL2 is recommended, but docker desktop should work without it https://docs.microsoft.com/en-us/windows/wsl/install
+  * You need to have [docker-compose](https://docs.docker.com/compose/) available, this is usually installed automatically with Docker desktop.
+#### To use:
+If you need to write integration tests, there are test fixtures that deal with the steps below automatically. See [Test Database](#Test Database)
+To create the container and set up the database with a test plant, run the following in a terminal, starting in the root project folder:
+```
+cd ./tests
+docker-compose up -d
+cd ..
+python -m setup_dev_db
+```
+
+# Maintainers and Steering Committee
+SunPeek is developed as an open source project, with contributions gladly accepted from interested members of the community.
+The overall direction of the project is managed by a **steering committee**, which currently consists of: 
+* Daniel Tschopp <d.tschopp@aee.at>
+* Philip Ohnewein <p.ohnewein@aee.at>
+* Marnoch Hamilton-Jones <m.hamilton-jones@aee.at>
+* Lukas Feierl <l.feierl@solid.at>
+* Maria Moser <m.moser@solid.at>
+
+The steering committee appoints the project maintainers, and makes final decisions on which contributors have commit 
+privileges on the official repository as well as ongoing implementation of new features and updates. The maintainers are
+responsible for reviewing and merging any merge (pull) requests. The current **maintainers** are:
+* Marnoch Hamilton-Jones <m.hamilton-jones@aee.at>
+* Lukas Feierl <l.feierl@solid.at>
+* Philip Ohnewein <p.ohnewein@aee.at>

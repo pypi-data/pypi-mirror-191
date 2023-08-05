@@ -1,0 +1,98 @@
+[build-system]
+    requires = ["poetry-core>=1.0.0"]
+    build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+    name="sunpeek"
+    description='Large Solar Thermal Monitoring Tool. Implements the Performance Check Method of ISO 24194'
+    readme = "README.md"
+    license = "LGPL-3.0-only"
+    version = "0.1.0"
+    authors = [
+        "HarvestIT Project Team",
+        "Philip Ohnewein <p.ohnewein@aee.at>",
+        "Daniel Tschopp <d.dschopp@aee.at>",
+        "Lukas Feierl <l.feierl@solid.at>",
+        "Marnoch Hamilton-Jones <m.hamilton-jones@aee.at>",
+        "Jonathan Cazco <j.cazco@aee.at>"
+    ]
+
+    maintainers = [
+        "Marnoch Hamilton-Jones <m.hamilton-jones@aee.at>",
+        "Philip Ohnewein <p.ohnewein@aee.at>",
+        "Daniel Tschopp <d.dschopp@aee.at>",
+        "Lukas Feierl <l.feierl@solid.at>"
+    ]
+    repository = "https://gitlab.com/sunpeek/sunpeek"
+#    documentation =
+
+    classifiers = [
+        "Programming Language :: Python :: 3.8"
+    ]
+
+    packages = [
+        { include = "sunpeek"}
+    ]
+
+    exclude = [
+        "tests",
+        "logs",
+        "dist",
+        "build",
+        "docs",
+        ".git",
+    ]
+
+    [tool.poetry.dependencies]
+        python = "~3.8"
+        fastapi = "*"
+        sqlalchemy = "^1.4"
+        psycopg2-binary = "*"
+        yamlloader = "*"
+        uvicorn = {extras = ["standard"], version = "<0.18"}
+        python-multipart = "*"
+        httpx = "*"
+        trio = "*"
+        kaleido = "0.2.1"
+        pandas = "*"
+        plotly = "*"
+        pint = "==0.19.2"
+        uncertainties = "*"
+        numpy = "*"
+        pvlib = "*"
+        metpy = "*"
+        statsmodels = "*"
+        pyephem = "*"
+        times = "*"
+        timezonefinder = "*"
+#google = {extras = ["protobuf"], version= "3.19"}
+        protobuf = "<4"
+        coolprop = "~6.4"
+        scikit-learn = "<1.2"
+        skl2onnx = "1.13"
+        onnxruntime = "*"
+        lxml = "*"
+        pint-pandas = "==0.2"
+        sqlalchemy-utils = "*"
+#        pyproj = "==3.4.0"
+        scipy = ">=1.10"
+        tomli = "^2.0.1"
+
+    [tool.poetry.group.dev]
+        optional = true
+    [tool.poetry.group.dev.dependencies]
+        autopep8 = "*"
+        pip-licenses = "*"
+        pytest-profiling = "*"
+        ipython = "*"
+        pytest = "*"
+        pytest-cov = "*"
+        pytest-env = "*"
+        pytest-docker = "*"
+        myst-parser = "*"
+        sphinxcontrib-redoc = "*"
+        sphinx = "*"
+        numpydoc = "*"
+        sphinx-rtd-theme = "*"
+        watchpoints = "^0.2.5"
+        pyinstaller = "^5.7.0"
