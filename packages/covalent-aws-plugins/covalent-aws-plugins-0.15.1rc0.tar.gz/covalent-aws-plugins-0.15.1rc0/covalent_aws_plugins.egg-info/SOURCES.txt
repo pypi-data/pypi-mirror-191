@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+covalent_aws_plugins/__init__.py
+covalent_aws_plugins/awsexecutor.py
+covalent_aws_plugins/exec.py
+covalent_aws_plugins.egg-info/PKG-INFO
+covalent_aws_plugins.egg-info/SOURCES.txt
+covalent_aws_plugins.egg-info/dependency_links.txt
+covalent_aws_plugins.egg-info/requires.txt
+covalent_aws_plugins.egg-info/top_level.txt
+covalent_aws_plugins/exceptions/__init__.py
+covalent_aws_plugins/exceptions/client_exception.py
+covalent_aws_plugins/exceptions/invalid_credentials.py
