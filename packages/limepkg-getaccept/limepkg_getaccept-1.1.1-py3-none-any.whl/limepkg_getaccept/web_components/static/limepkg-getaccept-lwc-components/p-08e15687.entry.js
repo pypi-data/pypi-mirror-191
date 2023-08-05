@@ -1,0 +1,1 @@
+import{r as o}from"./p-c89d00a0.js";const t=class{constructor(t){o(this,t),this.platform=void 0,this.context=void 0}componentWillLoad(){}disconnectedCallback(){}componentWillUpdate(){}};export{t as lwc_getaccept_loader}
