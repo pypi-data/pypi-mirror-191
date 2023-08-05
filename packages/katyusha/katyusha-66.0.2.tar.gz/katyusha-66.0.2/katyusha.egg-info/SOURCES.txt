@@ -1,0 +1,6 @@
+README.md
+setup.py
+katyusha.egg-info/PKG-INFO
+katyusha.egg-info/SOURCES.txt
+katyusha.egg-info/dependency_links.txt
+katyusha.egg-info/top_level.txt
