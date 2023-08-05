@@ -1,0 +1,13 @@
+nmtscore/__init__.py,sha256=vz7B9qRRBfbAzMYRm9A6n2Txp4HwyX-i72CYuCjHIDs,61
+nmtscore/scorer.py,sha256=fmOC8ZF_JGn-RZBYAROhXpZqnXdphQ0rHdZ6GA4N7nE,13446
+nmtscore/models/__init__.py,sha256=pSy6ORhs_H3H5h0sL_7Igeuv-yT1NXWJyFcQcFF3QdY,9794
+nmtscore/models/m2m100.py,sha256=JQN5y6NNVPKU5Dh5opRvIFgbuyszL-SODisuhfsCI5Q,4708
+nmtscore/models/prism.py,sha256=guWtthWIiLUnUh8AnEUIz5axE8UObe-sNpkpSMTrb64,15962
+nmtscore/models/small100.py,sha256=X17_ZxAdC12r5WRjt4iIKrUCM7lTi26kbIX7WDcK3AA,948
+nmtscore/models/tokenization_small100.py,sha256=6GxGq4IMlkX2xIwqegxcVdAuGtJQvQ9Wwk6ks5f81N8,16232
+nmtscore/models/utils.py,sha256=sTS8E3k5pYM1RX_Xcc8F3bkZeRk6XWGX7sf9m3cCVMU,176
+nmtscore-0.3.1.dist-info/LICENSE,sha256=DQDWnlPwdAHYz8vtitYPHVmk4gM99D4aZYpLJaRD7yg,1070
+nmtscore-0.3.1.dist-info/METADATA,sha256=t33W-UPLYZDd16MbUTl69YEB5RtJYHH7QYkWKHYUfhE,7252
+nmtscore-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nmtscore-0.3.1.dist-info/top_level.txt,sha256=w67a4W4IAA_O04dtkW_7ZfXbworIHaoDl556pI_Fq_8,9
+nmtscore-0.3.1.dist-info/RECORD,,
