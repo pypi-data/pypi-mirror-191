@@ -1,0 +1,6 @@
+README.md
+setup.py
+minify.egg-info/PKG-INFO
+minify.egg-info/SOURCES.txt
+minify.egg-info/dependency_links.txt
+minify.egg-info/top_level.txt
