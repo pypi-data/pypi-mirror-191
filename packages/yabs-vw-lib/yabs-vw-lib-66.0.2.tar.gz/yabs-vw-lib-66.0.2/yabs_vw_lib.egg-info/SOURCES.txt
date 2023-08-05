@@ -1,0 +1,6 @@
+README.md
+setup.py
+yabs_vw_lib.egg-info/PKG-INFO
+yabs_vw_lib.egg-info/SOURCES.txt
+yabs_vw_lib.egg-info/dependency_links.txt
+yabs_vw_lib.egg-info/top_level.txt
