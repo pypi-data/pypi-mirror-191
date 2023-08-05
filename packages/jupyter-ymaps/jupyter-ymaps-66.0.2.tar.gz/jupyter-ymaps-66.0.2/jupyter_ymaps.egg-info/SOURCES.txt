@@ -1,0 +1,6 @@
+README.md
+setup.py
+jupyter_ymaps.egg-info/PKG-INFO
+jupyter_ymaps.egg-info/SOURCES.txt
+jupyter_ymaps.egg-info/dependency_links.txt
+jupyter_ymaps.egg-info/top_level.txt
