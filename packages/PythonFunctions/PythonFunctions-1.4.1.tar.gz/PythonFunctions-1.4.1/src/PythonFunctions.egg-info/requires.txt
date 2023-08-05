@@ -1,0 +1,16 @@
+colorama
+readchar
+requests
+
+[encryption]
+cryptography>=38.0.3
+
+[google]
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
+[tools]
+pytest>=7.2.0
+pytest-repeat>=0.9.1
+pylint>=2.15.5
