@@ -1,0 +1,6 @@
+README.md
+setup.py
+sptaxi.egg-info/PKG-INFO
+sptaxi.egg-info/SOURCES.txt
+sptaxi.egg-info/dependency_links.txt
+sptaxi.egg-info/top_level.txt
