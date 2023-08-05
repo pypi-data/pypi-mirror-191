@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_ipymag.egg-info/PKG-INFO
+yandex_ipymag.egg-info/SOURCES.txt
+yandex_ipymag.egg-info/dependency_links.txt
+yandex_ipymag.egg-info/top_level.txt
