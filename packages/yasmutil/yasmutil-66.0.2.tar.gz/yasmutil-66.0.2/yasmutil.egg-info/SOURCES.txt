@@ -1,0 +1,6 @@
+README.md
+setup.py
+yasmutil.egg-info/PKG-INFO
+yasmutil.egg-info/SOURCES.txt
+yasmutil.egg-info/dependency_links.txt
+yasmutil.egg-info/top_level.txt
