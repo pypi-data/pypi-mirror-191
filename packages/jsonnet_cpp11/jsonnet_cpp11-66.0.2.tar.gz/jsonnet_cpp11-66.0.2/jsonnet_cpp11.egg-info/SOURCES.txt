@@ -1,0 +1,6 @@
+README.md
+setup.py
+jsonnet_cpp11.egg-info/PKG-INFO
+jsonnet_cpp11.egg-info/SOURCES.txt
+jsonnet_cpp11.egg-info/dependency_links.txt
+jsonnet_cpp11.egg-info/top_level.txt
