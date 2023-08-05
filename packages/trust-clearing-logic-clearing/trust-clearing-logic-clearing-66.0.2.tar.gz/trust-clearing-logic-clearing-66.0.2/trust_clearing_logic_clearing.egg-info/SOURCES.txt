@@ -1,0 +1,6 @@
+README.md
+setup.py
+trust_clearing_logic_clearing.egg-info/PKG-INFO
+trust_clearing_logic_clearing.egg-info/SOURCES.txt
+trust_clearing_logic_clearing.egg-info/dependency_links.txt
+trust_clearing_logic_clearing.egg-info/top_level.txt
