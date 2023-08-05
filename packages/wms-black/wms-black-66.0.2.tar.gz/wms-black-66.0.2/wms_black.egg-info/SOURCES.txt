@@ -1,0 +1,6 @@
+README.md
+setup.py
+wms_black.egg-info/PKG-INFO
+wms_black.egg-info/SOURCES.txt
+wms_black.egg-info/dependency_links.txt
+wms_black.egg-info/top_level.txt
