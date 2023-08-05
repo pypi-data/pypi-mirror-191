@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SmartCI
+Version: 1.0.2b0
+Summary: This package help reduce development time by choosing the right test files for your changes
+Author: Yoav Alroy
+Author-email: yoavalro@gmail.com
+License: MIT
+Keywords: CI,AUTOMATION,CLI
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: importlib-resources
+Requires-Dist: pygit2
+Requires-Dist: neo4j
+Requires-Dist: unidiff
+Requires-Dist: singleton-decorator
+Requires-Dist: pydeps
+
