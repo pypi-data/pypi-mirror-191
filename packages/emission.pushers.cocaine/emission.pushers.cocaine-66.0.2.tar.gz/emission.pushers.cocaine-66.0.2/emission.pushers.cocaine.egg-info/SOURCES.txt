@@ -1,0 +1,6 @@
+README.md
+setup.py
+emission.pushers.cocaine.egg-info/PKG-INFO
+emission.pushers.cocaine.egg-info/SOURCES.txt
+emission.pushers.cocaine.egg-info/dependency_links.txt
+emission.pushers.cocaine.egg-info/top_level.txt
