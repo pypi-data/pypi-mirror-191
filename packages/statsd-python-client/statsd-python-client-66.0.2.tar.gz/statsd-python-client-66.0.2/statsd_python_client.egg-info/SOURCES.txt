@@ -1,0 +1,6 @@
+README.md
+setup.py
+statsd_python_client.egg-info/PKG-INFO
+statsd_python_client.egg-info/SOURCES.txt
+statsd_python_client.egg-info/dependency_links.txt
+statsd_python_client.egg-info/top_level.txt
