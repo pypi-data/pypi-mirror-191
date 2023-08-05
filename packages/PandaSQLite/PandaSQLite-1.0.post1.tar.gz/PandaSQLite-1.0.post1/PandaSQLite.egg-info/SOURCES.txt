@@ -1,0 +1,12 @@
+AUTHORS
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+PandaSQLite/__init__.py
+PandaSQLite/pandasqlite.py
+PandaSQLite.egg-info/PKG-INFO
+PandaSQLite.egg-info/SOURCES.txt
+PandaSQLite.egg-info/dependency_links.txt
+PandaSQLite.egg-info/requires.txt
+PandaSQLite.egg-info/top_level.txt
