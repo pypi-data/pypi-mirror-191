@@ -1,0 +1,6 @@
+README.md
+setup.py
+releaser_cli.egg-info/PKG-INFO
+releaser_cli.egg-info/SOURCES.txt
+releaser_cli.egg-info/dependency_links.txt
+releaser_cli.egg-info/top_level.txt
