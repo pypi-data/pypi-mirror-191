@@ -1,0 +1,6 @@
+README.md
+setup.py
+sendr.egg-info/PKG-INFO
+sendr.egg-info/SOURCES.txt
+sendr.egg-info/dependency_links.txt
+sendr.egg-info/top_level.txt
