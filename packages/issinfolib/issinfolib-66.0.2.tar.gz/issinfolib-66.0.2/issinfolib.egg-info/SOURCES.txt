@@ -1,0 +1,6 @@
+README.md
+setup.py
+issinfolib.egg-info/PKG-INFO
+issinfolib.egg-info/SOURCES.txt
+issinfolib.egg-info/dependency_links.txt
+issinfolib.egg-info/top_level.txt
