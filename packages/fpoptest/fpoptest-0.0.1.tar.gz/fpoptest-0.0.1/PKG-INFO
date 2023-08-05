@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fpoptest
+Version: 0.0.1
+Summary: operators about first principle caculations
+Home-page: https://github.com/Chengqian-Zhang/FP_OPs
+Author: Chengqian Zhang
+Author-email: 2043899742@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Provides: fpoptest
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FP_OPs
+This repository is dedicated to writing reusable OPs(operators) related to first principles computation.
+tes

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+fpoptest.egg-info/PKG-INFO
+fpoptest.egg-info/SOURCES.txt
+fpoptest.egg-info/dependency_links.txt
+fpoptest.egg-info/requires.txt
+fpoptest.egg-info/top_level.txt
+tests/__init__.py
+tests/context.py
+tests/mocked_ops.py
+tests/test_prep_run_vasp.py
+tests/test_prep_vasp.py
+tests/test_run_vasp.py
+tests/test_vasp_inputs.py
