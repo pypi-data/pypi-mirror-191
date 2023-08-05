@@ -1,0 +1,6 @@
+README.md
+setup.py
+mds_client.egg-info/PKG-INFO
+mds_client.egg-info/SOURCES.txt
+mds_client.egg-info/dependency_links.txt
+mds_client.egg-info/top_level.txt
