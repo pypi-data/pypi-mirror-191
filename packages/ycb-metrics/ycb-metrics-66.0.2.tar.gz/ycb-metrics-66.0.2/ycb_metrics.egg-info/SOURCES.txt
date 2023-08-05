@@ -1,0 +1,6 @@
+README.md
+setup.py
+ycb_metrics.egg-info/PKG-INFO
+ycb_metrics.egg-info/SOURCES.txt
+ycb_metrics.egg-info/dependency_links.txt
+ycb_metrics.egg-info/top_level.txt
