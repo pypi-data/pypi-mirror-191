@@ -1,0 +1,6 @@
+README.md
+setup.py
+oort_simple_service.egg-info/PKG-INFO
+oort_simple_service.egg-info/SOURCES.txt
+oort_simple_service.egg-info/dependency_links.txt
+oort_simple_service.egg-info/top_level.txt
