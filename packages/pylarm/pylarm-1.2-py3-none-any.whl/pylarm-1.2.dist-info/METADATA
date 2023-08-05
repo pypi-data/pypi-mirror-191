@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pylarm
+Version: 1.2
+Summary: Minimalistic tool to set alarms from the terminal.
+Home-page: UNKNOWN
+Author: francisco
+Author-email: francisconfqsimoes@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: pipfile (==0.0.2)
+Requires-Dist: playsound (==1.3.0)
+Requires-Dist: pretty-errors (==1.2.25)
+Requires-Dist: toml (==0.10.2)
+
+Set alarms from your terminal.
+
+## Installation
+You can install this package using `pip` or `pipenv`.
+The command `pylarm` will then be available from your terminal.
+
+## Usage example
+
+``` sh
+pylarm --sound <PATH_TO_SOUND_FILE> --message='The time has come!' --at='17:00' &
+```
+
+You can also simply run
+``` sh
+pylarm --sound <PATH_TO_SOUND_FILE>
+```
+and you'll be prompted to select the time and the message.
+
+To know the details about each option of the command `pylarm` run `pylarm --help`.
+
+
+
+
