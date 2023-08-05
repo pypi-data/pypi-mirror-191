@@ -1,0 +1,6 @@
+README.md
+setup.py
+yar.egg-info/PKG-INFO
+yar.egg-info/SOURCES.txt
+yar.egg-info/dependency_links.txt
+yar.egg-info/top_level.txt
