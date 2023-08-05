@@ -1,0 +1,2 @@
+[console_scripts]
+pytorrentsearch = pytorrentsearch.__main__:main
