@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sysnet-directory"
+version = "1.1.1"
+authors = [
+  { name="Data Developer", email="info@sysnet.cz" },
+]
+description = "Directory client library"
+readme = "README.md"
+license = { file="LICENSE.md" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "License :: Free For Home Use",
+    "Operating System :: OS Independent",
+    "Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SYSNET-CZ/esmlouvy/tree/main/directory"
+
+[tool.setuptools.package-dir]
+sysnet_directory = "sysnet_directory"
