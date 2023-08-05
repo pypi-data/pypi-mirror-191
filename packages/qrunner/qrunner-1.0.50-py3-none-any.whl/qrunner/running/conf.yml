@@ -1,0 +1,12 @@
+app:
+  device_id: null
+  pkg_name: null
+common:
+  base_url: null
+  env: null
+  login: {}
+  platform: null
+  timeout: null
+  visit: {}
+web:
+  browser: null
