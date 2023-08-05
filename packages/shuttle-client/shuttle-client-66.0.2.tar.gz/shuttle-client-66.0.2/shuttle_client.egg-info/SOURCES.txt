@@ -1,0 +1,6 @@
+README.md
+setup.py
+shuttle_client.egg-info/PKG-INFO
+shuttle_client.egg-info/SOURCES.txt
+shuttle_client.egg-info/dependency_links.txt
+shuttle_client.egg-info/top_level.txt
