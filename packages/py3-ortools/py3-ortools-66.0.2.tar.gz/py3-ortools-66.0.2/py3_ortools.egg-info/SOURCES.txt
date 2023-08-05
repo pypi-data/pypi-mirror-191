@@ -1,0 +1,6 @@
+README.md
+setup.py
+py3_ortools.egg-info/PKG-INFO
+py3_ortools.egg-info/SOURCES.txt
+py3_ortools.egg-info/dependency_links.txt
+py3_ortools.egg-info/top_level.txt
