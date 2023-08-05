@@ -1,0 +1,6 @@
+README.md
+setup.py
+pelican_fab.egg-info/PKG-INFO
+pelican_fab.egg-info/SOURCES.txt
+pelican_fab.egg-info/dependency_links.txt
+pelican_fab.egg-info/top_level.txt
