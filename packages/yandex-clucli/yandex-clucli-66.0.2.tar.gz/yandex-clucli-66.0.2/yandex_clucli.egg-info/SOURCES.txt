@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_clucli.egg-info/PKG-INFO
+yandex_clucli.egg-info/SOURCES.txt
+yandex_clucli.egg-info/dependency_links.txt
+yandex_clucli.egg-info/top_level.txt
