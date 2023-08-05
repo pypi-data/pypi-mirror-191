@@ -1,0 +1,2 @@
+[console_scripts]
+get_T1_nifti_files = livingpark_utils.cli:get_T1_nifti_files
