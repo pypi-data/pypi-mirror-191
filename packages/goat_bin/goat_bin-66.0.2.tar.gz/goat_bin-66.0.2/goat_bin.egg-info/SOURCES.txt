@@ -1,0 +1,6 @@
+README.md
+setup.py
+goat_bin.egg-info/PKG-INFO
+goat_bin.egg-info/SOURCES.txt
+goat_bin.egg-info/dependency_links.txt
+goat_bin.egg-info/top_level.txt
