@@ -1,0 +1,3 @@
+[console_scripts]
+aiogram=entry:aiogram_manager.main:cli
+
