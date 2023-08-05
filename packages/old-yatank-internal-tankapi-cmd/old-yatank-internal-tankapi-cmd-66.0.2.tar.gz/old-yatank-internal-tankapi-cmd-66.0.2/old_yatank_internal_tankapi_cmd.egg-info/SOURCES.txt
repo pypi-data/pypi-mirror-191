@@ -1,0 +1,6 @@
+README.md
+setup.py
+old_yatank_internal_tankapi_cmd.egg-info/PKG-INFO
+old_yatank_internal_tankapi_cmd.egg-info/SOURCES.txt
+old_yatank_internal_tankapi_cmd.egg-info/dependency_links.txt
+old_yatank_internal_tankapi_cmd.egg-info/top_level.txt
