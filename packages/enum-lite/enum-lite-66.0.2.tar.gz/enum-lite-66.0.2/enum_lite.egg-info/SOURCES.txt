@@ -1,0 +1,6 @@
+README.md
+setup.py
+enum_lite.egg-info/PKG-INFO
+enum_lite.egg-info/SOURCES.txt
+enum_lite.egg-info/dependency_links.txt
+enum_lite.egg-info/top_level.txt
