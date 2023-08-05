@@ -1,0 +1,6 @@
+README.md
+setup.py
+lsmka.egg-info/PKG-INFO
+lsmka.egg-info/SOURCES.txt
+lsmka.egg-info/dependency_links.txt
+lsmka.egg-info/top_level.txt
