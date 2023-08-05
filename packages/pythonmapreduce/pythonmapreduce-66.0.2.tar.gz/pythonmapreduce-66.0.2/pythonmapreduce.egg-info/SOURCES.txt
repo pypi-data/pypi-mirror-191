@@ -1,0 +1,6 @@
+README.md
+setup.py
+pythonmapreduce.egg-info/PKG-INFO
+pythonmapreduce.egg-info/SOURCES.txt
+pythonmapreduce.egg-info/dependency_links.txt
+pythonmapreduce.egg-info/top_level.txt
