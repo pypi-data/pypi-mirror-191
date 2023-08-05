@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: iio
+Version: 7
+Summary: Python wrapper to iio
+Home-page: https://github.com/mnhrdt/iio
+Author: Jérémy Anger, Gabriele Facciolo, Enric Meinhardt-Llopis
+Author-email: enric.meinhardt@fastmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
