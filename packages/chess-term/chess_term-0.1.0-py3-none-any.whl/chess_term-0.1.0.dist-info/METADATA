@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: chess-term
+Version: 0.1.0
+Summary: Play chess in your terminal
+Home-page: https://gitlab.com/OldIronHorse/chess-term
+Author: Simon Redding
+Author-email: s1m0n.r3dd1ng@gmail.com
+License: GPL v3
+Keywords: chess,boardgame,terminal
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: chess
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+
+# Chess Terminal [![pipeline status](https://gitlab.com/OldIronHorse/chess-term/badges/master/pipeline.svg)](https://gitlab.com/OldIronHorse/chess-term/-/commits/master) [![coverage report](https://gitlab.com/OldIronHorse/chess-term/badges/master/coverage.svg)](https://gitlab.com/OldIronHorse/chess-term/-/commits/master)
+
+Play chess in your terminal
+
+## Installation
+
+`pip install chess-term`
+
+For computer play you need the stockfish engine installed
+
+`sudo apt install stockfish`
+
+or
+
+`brew install stockfish`
+
+## Usage
+
+```
+Usage: chess-term [OPTIONS]
+
+Options:
+
+  -w, --white [human|computer]    Who is playing as white? (default=human)
+  -b, --black [human|computer]    Who is playing as white? (default=human)
+  -u, --user-interface [text|curses]
+                                  Which user interface? (default=text)
+  --help                          Show this message and exit.
+```

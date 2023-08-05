@@ -1,0 +1,14 @@
+chessterm/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+chessterm/core/__init__.py,sha256=V-Nql-rveTAscdFQDFiFfnTu8vinqcoMJeflWHwzgxo,81
+chessterm/core/core.py,sha256=CwUTqHBnV1TpKBplt6R63-vtGCQlmiCoZRZxJ6R50Mo,1460
+chessterm/ui/__init__.py,sha256=KOrBn2V2SAtarK7S3D54224vbisAiUF-KR-1Zo5z2ec,129
+chessterm/ui/common.py,sha256=ojMDKO0inDYozNZHc4MIi7DOxN0YiQ1om9M6YqGUcQQ,496
+chessterm/ui/cursesui.py,sha256=h4cye1o186eEIgPx8khrVg2Vfpc08lJpWSy4ukv5Eog,3837
+chessterm/ui/main.py,sha256=1ykiw_90h8WLN4BA5Tcgc4SwilMdJn8LglTeVeaGVv0,1793
+chessterm/ui/textui.py,sha256=oeVFu00SNfsZVqbY3CFhCgDGxveczs8NdWKZJZ1XhSg,1238
+chess_term-0.1.0.dist-info/METADATA,sha256=eyo4mQtTXj5Mw2nIm9qe3FgU4gWPoqNoTvVEtEjMiAQ,1648
+chess_term-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chess_term-0.1.0.dist-info/entry_points.txt,sha256=rdMTRbr9WRp7_ZkPJ2L26fR3BSWAHrZPyGpI9pk9Y10,52
+chess_term-0.1.0.dist-info/top_level.txt,sha256=N9CZwwJ5GymuOfpMnJ6Ye35jH2NrFd-2LUZbmn5mybc,10
+chess_term-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+chess_term-0.1.0.dist-info/RECORD,,

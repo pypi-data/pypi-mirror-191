@@ -1,0 +1,2 @@
+[console_scripts]
+chess-term = chessterm.ui:ui_main
