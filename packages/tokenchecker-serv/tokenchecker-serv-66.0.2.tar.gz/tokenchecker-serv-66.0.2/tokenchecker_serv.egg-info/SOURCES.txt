@@ -1,0 +1,6 @@
+README.md
+setup.py
+tokenchecker_serv.egg-info/PKG-INFO
+tokenchecker_serv.egg-info/SOURCES.txt
+tokenchecker_serv.egg-info/dependency_links.txt
+tokenchecker_serv.egg-info/top_level.txt
