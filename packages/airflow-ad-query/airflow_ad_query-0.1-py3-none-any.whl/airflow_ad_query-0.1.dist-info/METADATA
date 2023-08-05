@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: airflow-ad-query
+Version: 0.1
+Summary: airflow ad query
+Home-page: 
+Author: wano
+Author-email: whox@foxmail.com
+License: Apahce
+Requires-Dist: apache-airflow (>=2.0.0)
+Requires-Dist: WTForms (>=2.3.3)
+
