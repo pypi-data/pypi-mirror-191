@@ -1,0 +1,7 @@
+vcr_langchain/__init__.py,sha256=JXk3H2iEpuywfHj6CLlZC8oxU4VuybavlEsCoDQZvb8,882
+vcr_langchain/patch.py,sha256=uLrhaPH98MfGOPfxkqOgAI6rX38bH_3q4buU7vikH7A,5473
+vcr_langchain/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vcr_langchain-0.0.12.dist-info/METADATA,sha256=5k5ygG4eNJUnD_qO_m5Q5sUciTbV-m36ShiipZJooN0,2335
+vcr_langchain-0.0.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+vcr_langchain-0.0.12.dist-info/LICENSE,sha256=2Kcmqs0poERcuFEyhn_REFOmy7Qp7rldLkH6onKg_i0,1064
+vcr_langchain-0.0.12.dist-info/RECORD,,
