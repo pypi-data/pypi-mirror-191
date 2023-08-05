@@ -1,0 +1,6 @@
+README.md
+setup.py
+airflow_azure_xcom_backend.egg-info/PKG-INFO
+airflow_azure_xcom_backend.egg-info/SOURCES.txt
+airflow_azure_xcom_backend.egg-info/dependency_links.txt
+airflow_azure_xcom_backend.egg-info/top_level.txt
