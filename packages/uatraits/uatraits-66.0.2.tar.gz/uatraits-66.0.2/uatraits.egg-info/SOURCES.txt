@@ -1,0 +1,6 @@
+README.md
+setup.py
+uatraits.egg-info/PKG-INFO
+uatraits.egg-info/SOURCES.txt
+uatraits.egg-info/dependency_links.txt
+uatraits.egg-info/top_level.txt
