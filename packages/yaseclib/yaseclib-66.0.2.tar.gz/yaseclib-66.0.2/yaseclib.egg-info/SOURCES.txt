@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaseclib.egg-info/PKG-INFO
+yaseclib.egg-info/SOURCES.txt
+yaseclib.egg-info/dependency_links.txt
+yaseclib.egg-info/top_level.txt
