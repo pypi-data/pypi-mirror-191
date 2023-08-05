@@ -1,0 +1,6 @@
+README.md
+setup.py
+juggler_stubs.egg-info/PKG-INFO
+juggler_stubs.egg-info/SOURCES.txt
+juggler_stubs.egg-info/dependency_links.txt
+juggler_stubs.egg-info/top_level.txt
