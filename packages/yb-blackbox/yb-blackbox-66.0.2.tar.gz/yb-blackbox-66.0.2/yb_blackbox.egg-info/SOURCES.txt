@@ -1,0 +1,6 @@
+README.md
+setup.py
+yb_blackbox.egg-info/PKG-INFO
+yb_blackbox.egg-info/SOURCES.txt
+yb_blackbox.egg-info/dependency_links.txt
+yb_blackbox.egg-info/top_level.txt
