@@ -1,0 +1,6 @@
+README.md
+setup.py
+sepelib.metrics.egg-info/PKG-INFO
+sepelib.metrics.egg-info/SOURCES.txt
+sepelib.metrics.egg-info/dependency_links.txt
+sepelib.metrics.egg-info/top_level.txt
