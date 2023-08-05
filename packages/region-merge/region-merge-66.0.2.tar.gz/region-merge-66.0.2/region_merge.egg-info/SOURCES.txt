@@ -1,0 +1,6 @@
+README.md
+setup.py
+region_merge.egg-info/PKG-INFO
+region_merge.egg-info/SOURCES.txt
+region_merge.egg-info/dependency_links.txt
+region_merge.egg-info/top_level.txt
