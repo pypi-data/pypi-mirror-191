@@ -1,0 +1,6 @@
+README.md
+setup.py
+afisha_sentry_telegram_plugin.egg-info/PKG-INFO
+afisha_sentry_telegram_plugin.egg-info/SOURCES.txt
+afisha_sentry_telegram_plugin.egg-info/dependency_links.txt
+afisha_sentry_telegram_plugin.egg-info/top_level.txt
