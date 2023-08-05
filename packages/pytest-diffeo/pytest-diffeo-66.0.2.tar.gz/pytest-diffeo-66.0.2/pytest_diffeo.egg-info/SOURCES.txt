@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytest_diffeo.egg-info/PKG-INFO
+pytest_diffeo.egg-info/SOURCES.txt
+pytest_diffeo.egg-info/dependency_links.txt
+pytest_diffeo.egg-info/top_level.txt
