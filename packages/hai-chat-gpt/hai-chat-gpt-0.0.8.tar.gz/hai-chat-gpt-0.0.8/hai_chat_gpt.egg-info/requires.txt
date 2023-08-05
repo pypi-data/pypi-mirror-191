@@ -1,0 +1,7 @@
+openai
+tiktoken
+pillow
+pyyaml
+damei
+numpy
+easydict
