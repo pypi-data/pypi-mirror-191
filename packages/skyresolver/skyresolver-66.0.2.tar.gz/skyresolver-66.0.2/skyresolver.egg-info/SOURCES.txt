@@ -1,0 +1,6 @@
+README.md
+setup.py
+skyresolver.egg-info/PKG-INFO
+skyresolver.egg-info/SOURCES.txt
+skyresolver.egg-info/dependency_links.txt
+skyresolver.egg-info/top_level.txt
