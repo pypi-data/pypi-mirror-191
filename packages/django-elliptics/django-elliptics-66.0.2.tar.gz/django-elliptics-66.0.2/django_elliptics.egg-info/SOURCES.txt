@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_elliptics.egg-info/PKG-INFO
+django_elliptics.egg-info/SOURCES.txt
+django_elliptics.egg-info/dependency_links.txt
+django_elliptics.egg-info/top_level.txt
