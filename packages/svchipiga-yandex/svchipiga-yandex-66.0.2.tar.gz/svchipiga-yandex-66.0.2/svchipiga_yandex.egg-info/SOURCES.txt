@@ -1,0 +1,6 @@
+README.md
+setup.py
+svchipiga_yandex.egg-info/PKG-INFO
+svchipiga_yandex.egg-info/SOURCES.txt
+svchipiga_yandex.egg-info/dependency_links.txt
+svchipiga_yandex.egg-info/top_level.txt
