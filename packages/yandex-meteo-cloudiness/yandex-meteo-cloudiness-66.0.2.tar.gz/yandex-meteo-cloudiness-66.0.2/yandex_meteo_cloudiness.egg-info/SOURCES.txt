@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_meteo_cloudiness.egg-info/PKG-INFO
+yandex_meteo_cloudiness.egg-info/SOURCES.txt
+yandex_meteo_cloudiness.egg-info/dependency_links.txt
+yandex_meteo_cloudiness.egg-info/top_level.txt
