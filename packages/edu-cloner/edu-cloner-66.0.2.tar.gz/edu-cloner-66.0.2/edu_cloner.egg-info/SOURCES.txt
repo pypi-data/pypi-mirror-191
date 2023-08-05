@@ -1,0 +1,6 @@
+README.md
+setup.py
+edu_cloner.egg-info/PKG-INFO
+edu_cloner.egg-info/SOURCES.txt
+edu_cloner.egg-info/dependency_links.txt
+edu_cloner.egg-info/top_level.txt
