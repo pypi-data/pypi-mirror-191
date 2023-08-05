@@ -1,0 +1,11 @@
+{% extends "blogorama/base.html" %}
+{% load static %}
+{% load i18n %}
+{% load markdownify %}
+{% block title %}
+    Blogorama - Blog Posts
+{% endblock title %}
+{% block content %}
+    <h1>{{ object.title }}</h1>
+    <p>{{ object.content|markdownify }}</p>
+{% endblock content %}
