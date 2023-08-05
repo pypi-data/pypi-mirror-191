@@ -1,0 +1,6 @@
+README.md
+setup.py
+aiohttp_trailers.egg-info/PKG-INFO
+aiohttp_trailers.egg-info/SOURCES.txt
+aiohttp_trailers.egg-info/dependency_links.txt
+aiohttp_trailers.egg-info/top_level.txt
