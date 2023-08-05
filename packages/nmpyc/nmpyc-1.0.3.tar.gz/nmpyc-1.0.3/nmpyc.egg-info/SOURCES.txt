@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+nmpyc/__init__.py
+nmpyc/constraints.py
+nmpyc/model.py
+nmpyc/nmpyc_array.py
+nmpyc/objective.py
+nmpyc/opti.py
+nmpyc/result.py
+nmpyc/system.py
+nmpyc/utils.py
+nmpyc.egg-info/PKG-INFO
+nmpyc.egg-info/SOURCES.txt
+nmpyc.egg-info/dependency_links.txt
+nmpyc.egg-info/requires.txt
+nmpyc.egg-info/top_level.txt
