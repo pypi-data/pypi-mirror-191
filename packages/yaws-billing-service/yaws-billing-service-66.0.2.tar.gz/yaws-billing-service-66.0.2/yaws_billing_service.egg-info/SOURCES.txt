@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaws_billing_service.egg-info/PKG-INFO
+yaws_billing_service.egg-info/SOURCES.txt
+yaws_billing_service.egg-info/dependency_links.txt
+yaws_billing_service.egg-info/top_level.txt
