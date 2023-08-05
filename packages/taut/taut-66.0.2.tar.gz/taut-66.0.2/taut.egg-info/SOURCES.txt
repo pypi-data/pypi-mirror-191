@@ -1,0 +1,6 @@
+README.md
+setup.py
+taut.egg-info/PKG-INFO
+taut.egg-info/SOURCES.txt
+taut.egg-info/dependency_links.txt
+taut.egg-info/top_level.txt
