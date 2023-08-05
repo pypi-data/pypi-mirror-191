@@ -1,0 +1,14 @@
+mistletoe>=1.0.1
+
+[doc]
+myst-parser>=0.18.1
+sphinx>=5.3.0
+sphinx-autoapi>=2.0.1
+furo>=2022.12.7
+myst-nb>=0.17.1
+pdf2image
+
+[test]
+pytest>=7.2.1
+pypdf>=3.3.0
+requests>=2.28.2
