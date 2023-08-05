@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_tools_wf_ws.egg-info/PKG-INFO
+yandex_tools_wf_ws.egg-info/SOURCES.txt
+yandex_tools_wf_ws.egg-info/dependency_links.txt
+yandex_tools_wf_ws.egg-info/top_level.txt
