@@ -1,0 +1,6 @@
+README.md
+setup.py
+yacern_tokenchecker.egg-info/PKG-INFO
+yacern_tokenchecker.egg-info/SOURCES.txt
+yacern_tokenchecker.egg-info/dependency_links.txt
+yacern_tokenchecker.egg-info/top_level.txt
