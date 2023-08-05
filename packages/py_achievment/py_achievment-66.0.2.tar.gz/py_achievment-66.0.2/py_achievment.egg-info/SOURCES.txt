@@ -1,0 +1,6 @@
+README.md
+setup.py
+py_achievment.egg-info/PKG-INFO
+py_achievment.egg-info/SOURCES.txt
+py_achievment.egg-info/dependency_links.txt
+py_achievment.egg-info/top_level.txt
