@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+grandiorite.egg-info/PKG-INFO
+grandiorite.egg-info/SOURCES.txt
+grandiorite.egg-info/dependency_links.txt
+grandiorite.egg-info/top_level.txt
