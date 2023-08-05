@@ -1,0 +1,6 @@
+README.md
+setup.py
+extractors.egg-info/PKG-INFO
+extractors.egg-info/SOURCES.txt
+extractors.egg-info/dependency_links.txt
+extractors.egg-info/top_level.txt
