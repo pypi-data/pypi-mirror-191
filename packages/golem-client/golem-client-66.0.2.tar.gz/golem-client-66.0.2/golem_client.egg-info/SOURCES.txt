@@ -1,0 +1,6 @@
+README.md
+setup.py
+golem_client.egg-info/PKG-INFO
+golem_client.egg-info/SOURCES.txt
+golem_client.egg-info/dependency_links.txt
+golem_client.egg-info/top_level.txt
