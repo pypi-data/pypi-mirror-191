@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_voice_audio_decoder.egg-info/PKG-INFO
+yandex_voice_audio_decoder.egg-info/SOURCES.txt
+yandex_voice_audio_decoder.egg-info/dependency_links.txt
+yandex_voice_audio_decoder.egg-info/top_level.txt
