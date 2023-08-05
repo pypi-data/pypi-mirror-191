@@ -1,0 +1,6 @@
+README.md
+setup.py
+b2b_mailer.egg-info/PKG-INFO
+b2b_mailer.egg-info/SOURCES.txt
+b2b_mailer.egg-info/dependency_links.txt
+b2b_mailer.egg-info/top_level.txt
