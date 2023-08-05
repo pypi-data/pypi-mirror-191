@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: owl_model_extractor
+Version: 0.1.2
+Summary: Librería que nos permite acceder a un fichero OWL tanto local como remoto y modelar la información que contiene
+Home-page: 
+Author: KnowledgeFactory
+Maintainer: KnowledgeFactory
+License: MIT
+Keywords: kfsembu,knowledge-factory,helpers,utils,utilities,useful-methods
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
