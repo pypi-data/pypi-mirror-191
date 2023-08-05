@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_orangery.egg-info/PKG-INFO
+django_orangery.egg-info/SOURCES.txt
+django_orangery.egg-info/dependency_links.txt
+django_orangery.egg-info/top_level.txt
