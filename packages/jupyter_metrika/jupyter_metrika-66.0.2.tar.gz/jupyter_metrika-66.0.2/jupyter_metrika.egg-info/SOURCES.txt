@@ -1,0 +1,6 @@
+README.md
+setup.py
+jupyter_metrika.egg-info/PKG-INFO
+jupyter_metrika.egg-info/SOURCES.txt
+jupyter_metrika.egg-info/dependency_links.txt
+jupyter_metrika.egg-info/top_level.txt
