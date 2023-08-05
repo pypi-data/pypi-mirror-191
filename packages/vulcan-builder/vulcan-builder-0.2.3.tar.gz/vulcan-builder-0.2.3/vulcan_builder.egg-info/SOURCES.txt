@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+vulcan/__init__.py
+vulcan/meta_builder.py
+vulcan/builder/__init__.py
+vulcan/builder/_vb.py
+vulcan/builder/classes.py
+vulcan/builder/common.py
+vulcan_builder.egg-info/PKG-INFO
+vulcan_builder.egg-info/SOURCES.txt
+vulcan_builder.egg-info/dependency_links.txt
+vulcan_builder.egg-info/entry_points.txt
+vulcan_builder.egg-info/requires.txt
+vulcan_builder.egg-info/top_level.txt
