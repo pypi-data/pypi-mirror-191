@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/delpinos/__init__.py
+src/delpinos/base.py
+src/delpinos_base.egg-info/PKG-INFO
+src/delpinos_base.egg-info/SOURCES.txt
+src/delpinos_base.egg-info/dependency_links.txt
+src/delpinos_base.egg-info/top_level.txt
