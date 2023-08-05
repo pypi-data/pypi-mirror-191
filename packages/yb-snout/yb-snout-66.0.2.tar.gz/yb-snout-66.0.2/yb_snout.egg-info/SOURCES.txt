@@ -1,0 +1,6 @@
+README.md
+setup.py
+yb_snout.egg-info/PKG-INFO
+yb_snout.egg-info/SOURCES.txt
+yb_snout.egg-info/dependency_links.txt
+yb_snout.egg-info/top_level.txt
