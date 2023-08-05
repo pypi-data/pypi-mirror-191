@@ -1,0 +1,6 @@
+README.md
+setup.py
+ansible_golovan_alert.egg-info/PKG-INFO
+ansible_golovan_alert.egg-info/SOURCES.txt
+ansible_golovan_alert.egg-info/dependency_links.txt
+ansible_golovan_alert.egg-info/top_level.txt
