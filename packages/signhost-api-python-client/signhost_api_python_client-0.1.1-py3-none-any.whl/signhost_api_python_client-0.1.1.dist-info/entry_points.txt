@@ -1,0 +1,3 @@
+[console_scripts]
+signhost-api-python-client=signhost.__main__:main
+
