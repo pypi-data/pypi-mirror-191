@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: py-graphql-mapper
+Version: 1.1.0
+Summary: A python library to call GraphQL APIs without using hardcoded strings
+Home-page: https://github.com/dapalex/py-graphql-mapper/
+Author: Alex Dap
+Author-email: Alex Dap <shlisi2017@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022 dapalex
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/dapalex/py-graphql-mapper/
+Project-URL: Source Code, https://github.com/dapalex/py-graphql-mapper/
+Project-URL: Bug Tracker, https://github.com/dapalex/py-graphql-mapper/issues
+Project-URL: Release Notes, https://github.com/dapalex/py-graphql-mapper/blob/develop/RELEASE_NOTES.MD
+Keywords: graphql,mapper
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Python package](https://github.com/dapalex/py-graphql-mapper/actions/workflows/python-package.yml/badge.svg)](https://github.com/dapalex/py-graphql-mapper/actions/workflows/python-package.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/280533e425784f7da9ecb0f6e529886b)](https://www.codacy.com/gh/dapalex/py-graphql-mapper/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dapalex/py-graphql-mapper&amp;utm_campaign=Badge_Grade)
+--------------------------------------------------------------------------------
+# py-graphql-mapper
+[![Code Generation Test](https://github.com/dapalex/py-graphql-mapper/actions/workflows/test-codegen.yml/badge.svg)](https://github.com/dapalex/py-graphql-mapper/actions/workflows/test-codegen.yml)
+[![Pyhon-GraphQL Mapping Test](https://github.com/dapalex/py-graphql-mapper/actions/workflows/test-map.yml/badge.svg)](https://github.com/dapalex/py-graphql-mapper/actions/workflows/test-map.yml)
+
+A python library to interact with GraphQL APIs with no need of hardcoded strings.
+
+## Introduction
+
+This library acts as a mapper between python and GraphQL languages for GraphQL clients, allowing a code-first approach when calling a GraphQL API server.
+It translates GraphQL entities into python objects and viceversa in order to avoid working with massive "copy&paste"s.
+
+This document contains a quick overview of the functionalities, for more details and options you can read here:
+
+* [Code Generation](https://github.com/dapalex/py-graphql-mapper/blob/main/codegen/README.MD)
+* [Core Mapper](https://github.com/dapalex/py-graphql-mapper/blob/main/pygqlmap/README.MD)
+* [Use Cases](https://github.com/dapalex/py-graphql-mapper/blob/main/tests/README.MD)
+
+
+The package does not use any third-party libraries, it relies only on python 3 (3.10+) standard libraries.
+
+
+## Usage in a nutshell
+
+### Installation
+
+Available in PyPI, the following command will install the library:
+
+```
+pip install py-graphql-mapper
+```
+
+
+### Generate python code from schema
+
+To generate the code execute the following command:
+
+```
+pgmcodegen generate ./pathToOutputFolder -apiArgs ./pathToArgsFile/generatorArgs.json
+```
+
+This command requires a json file containing the parameters needed to get the GraphQL schema
+
+![image](https://github.com/dapalex/py-graphql-mapper/blob/main/docs/cli_args_nutshell.png)
+
+A sample is availabe in the main folder 'cli_args.json'
+
+The following python files will be generated:
+
+* enums.py
+* scalars.py
+* gql_simple_types.py
+* gql_types.py
+* type_refs.py
+* queries.py
+* mutations.py
+
+These links show code generated using the library [Github GraphQL API](https://github.com/dapalex/py-graphql-mapper/blob/main/tests/output/github), [Rapid GraphQL API](https://github.com/dapalex/py-graphql-mapper/blob/main/tests/output/rapidapi) and [GeoDBCities API](https://github.com/dapalex/py-graphql-mapper/blob/main/tests/output/gdbc)
+
+More command options are available [here](https://github.com/dapalex/py-graphql-mapper/blob/main/codegen/README.MD)
+
+
+### Execution of a query
+
+Choose the query class you want to use from the generated file queries.py (or a mutation from mutations.py):
+
+Instantiate it adding GraphQL arguments as parameters:
+```python
+from .output.gdbc.queries import currencies
+
+my_currencies = currencies(last=7, before='MTE=')
+```
+or add them using the field _args_
+
+```python
+my_currencies._args.last = 7
+my_currencies._args.before = 'MTE='
+```
+Then call _export_gql_source_ property to pass the payload to the HTTP request:
+
+(example using _requests_ library)
+```python
+import requests
+
+response = requests.request('POST', url='https://geodb-cities-graphql.p.rapidapi.com/',
+                            json= { "query": my_currencies.export_gql_source },
+                            headers={
+                                    "content-type": "application/json",
+                                        "X-RapidAPI-Key": '123402mmri02fni230iif32jr420',
+                                        "X-RapidAPI-Host": "geodb-cities-graphql.p.rapidapi.com"
+                                    }
+                            )
+```
+
+More details on how to set a query [here](https://github.com/dapalex/py-graphql-mapper/blob/main/pygqlmap/README.MD#executing-an-operation)
+
+
+### Retrieval of a response
+
+Obtained the response from the GraphQL API the following code will map the received json payload into the python object
+
+```python
+from pygqlmap.network import GQLResponse
+
+gqlResponse = GQLResponse(response)
+
+gqlResponse.map_gqldata_to_obj(myCurrenciesQuery.type)
+
+print('Result object: ' + str(gqlResponse.result_obj))
+```
+
+The mapped response from the GraphQL server will be available within _gqlResponse_ object: _gqlResponse.result_obj_
+
+More details [here](https://github.com/dapalex/py-graphql-mapper/blob/main/pygqlmap/README.MD#parsing-of-a-response)
+
+
+
+A suite of use cases [here](https://github.com/dapalex/py-graphql-mapper/blob/main/tests/README.MD)
