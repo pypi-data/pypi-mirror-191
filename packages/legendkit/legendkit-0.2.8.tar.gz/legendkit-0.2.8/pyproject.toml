@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "legendkit"
+version = "0.2.8"
+description = "Legend creation and manipulation with ease for matplotlib"
+authors = ["Mr-Milk <yb97643@um.edu.mo>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Heatgraphy/legendkit"
+classifiers = [
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 3",
+      "Framework :: Matplotlib",
+      "Intended Audience :: Science/Research",
+      "Intended Audience :: Developers",
+      "Topic :: Scientific/Engineering :: Visualization"
+]
+
+
+[tool.poetry.dependencies]
+python = ["^3.8"]
+matplotlib = "^3.5"
+
+[tool.poetry.group.dev.dependencies]
+Sphinx = "^5.1.1"
+sphinx-gallery = "^0.11.1"
+furo = "^2022.6.21"
+pytest = "^7.1.2"
+numpydoc = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
