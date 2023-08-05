@@ -1,0 +1,6 @@
+README.md
+setup.py
+drf_batch_requests_ya.egg-info/PKG-INFO
+drf_batch_requests_ya.egg-info/SOURCES.txt
+drf_batch_requests_ya.egg-info/dependency_links.txt
+drf_batch_requests_ya.egg-info/top_level.txt
