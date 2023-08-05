@@ -1,0 +1,8 @@
+numpy>=1.9
+cython
+numexpr>=2.0
+tables>=3.4
+configparser
+scipy
+matplotlib
+python-casacore>=3.0
