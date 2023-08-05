@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_pydi_startrek.egg-info/PKG-INFO
+django_pydi_startrek.egg-info/SOURCES.txt
+django_pydi_startrek.egg-info/dependency_links.txt
+django_pydi_startrek.egg-info/top_level.txt
