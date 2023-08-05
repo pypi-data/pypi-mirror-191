@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_mds_jsonfield.egg-info/PKG-INFO
+django_mds_jsonfield.egg-info/SOURCES.txt
+django_mds_jsonfield.egg-info/dependency_links.txt
+django_mds_jsonfield.egg-info/top_level.txt
