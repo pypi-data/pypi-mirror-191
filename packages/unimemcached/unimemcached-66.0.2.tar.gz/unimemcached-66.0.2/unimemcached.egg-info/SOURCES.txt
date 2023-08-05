@@ -1,0 +1,6 @@
+README.md
+setup.py
+unimemcached.egg-info/PKG-INFO
+unimemcached.egg-info/SOURCES.txt
+unimemcached.egg-info/dependency_links.txt
+unimemcached.egg-info/top_level.txt
