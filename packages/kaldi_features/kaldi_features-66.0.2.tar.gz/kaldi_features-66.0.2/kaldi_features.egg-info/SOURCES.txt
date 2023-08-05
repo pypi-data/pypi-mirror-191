@@ -1,0 +1,6 @@
+README.md
+setup.py
+kaldi_features.egg-info/PKG-INFO
+kaldi_features.egg-info/SOURCES.txt
+kaldi_features.egg-info/dependency_links.txt
+kaldi_features.egg-info/top_level.txt
