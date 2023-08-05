@@ -1,0 +1,3 @@
+[flake8.extension]
+IM=flake8_import_as_module:Plugin
+
