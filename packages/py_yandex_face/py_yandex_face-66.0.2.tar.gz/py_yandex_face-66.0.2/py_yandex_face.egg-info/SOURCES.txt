@@ -1,0 +1,6 @@
+README.md
+setup.py
+py_yandex_face.egg-info/PKG-INFO
+py_yandex_face.egg-info/SOURCES.txt
+py_yandex_face.egg-info/dependency_links.txt
+py_yandex_face.egg-info/top_level.txt
