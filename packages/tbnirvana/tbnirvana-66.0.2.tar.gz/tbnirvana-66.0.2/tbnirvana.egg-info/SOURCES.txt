@@ -1,0 +1,6 @@
+README.md
+setup.py
+tbnirvana.egg-info/PKG-INFO
+tbnirvana.egg-info/SOURCES.txt
+tbnirvana.egg-info/dependency_links.txt
+tbnirvana.egg-info/top_level.txt
