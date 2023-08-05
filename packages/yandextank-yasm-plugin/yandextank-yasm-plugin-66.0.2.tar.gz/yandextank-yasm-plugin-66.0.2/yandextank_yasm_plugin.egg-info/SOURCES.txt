@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandextank_yasm_plugin.egg-info/PKG-INFO
+yandextank_yasm_plugin.egg-info/SOURCES.txt
+yandextank_yasm_plugin.egg-info/dependency_links.txt
+yandextank_yasm_plugin.egg-info/top_level.txt
