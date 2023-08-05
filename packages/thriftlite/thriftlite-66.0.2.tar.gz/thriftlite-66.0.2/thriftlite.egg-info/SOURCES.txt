@@ -1,0 +1,6 @@
+README.md
+setup.py
+thriftlite.egg-info/PKG-INFO
+thriftlite.egg-info/SOURCES.txt
+thriftlite.egg-info/dependency_links.txt
+thriftlite.egg-info/top_level.txt
