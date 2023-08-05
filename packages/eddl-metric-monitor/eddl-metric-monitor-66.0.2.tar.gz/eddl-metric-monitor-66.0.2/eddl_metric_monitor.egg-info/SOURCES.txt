@@ -1,0 +1,6 @@
+README.md
+setup.py
+eddl_metric_monitor.egg-info/PKG-INFO
+eddl_metric_monitor.egg-info/SOURCES.txt
+eddl_metric_monitor.egg-info/dependency_links.txt
+eddl_metric_monitor.egg-info/top_level.txt
