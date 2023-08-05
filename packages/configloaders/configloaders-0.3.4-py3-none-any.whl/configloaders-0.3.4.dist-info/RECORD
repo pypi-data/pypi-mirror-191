@@ -1,0 +1,8 @@
+configloaders/__init__.py,sha256=4sMd6NSITRCWt338h16wxxqLWwYWVwom36qNrSoSXXM,747
+configloaders/__log.py,sha256=lgMFRNQ06b-NLfIa70WGptYNXu3pAJc-2uCAHLtIwcQ,239
+configloaders/__message.py,sha256=OThlb2LsWR4CBs4n1uwNEoMr_oR-l8H3TNW8VnPQmlw,346
+configloaders/__util.py,sha256=Z3Y_UjYRkJaPR12pglzVvkTwaxr3FDn9qal1cQBb13U,108
+configloaders/loader.py,sha256=RoUHxk8Z-jEZ8_2UJcTZBFclivTx1c483szZnLjW26Q,14497
+configloaders-0.3.4.dist-info/METADATA,sha256=edVyXlo9KMUT8pxis3F8q3K3hc1OTd6ph1dTJ3xnPjQ,602
+configloaders-0.3.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+configloaders-0.3.4.dist-info/RECORD,,
