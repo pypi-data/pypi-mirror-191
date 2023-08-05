@@ -1,0 +1,6 @@
+README.md
+setup.py
+ats_mdb_patcher.egg-info/PKG-INFO
+ats_mdb_patcher.egg-info/SOURCES.txt
+ats_mdb_patcher.egg-info/dependency_links.txt
+ats_mdb_patcher.egg-info/top_level.txt
