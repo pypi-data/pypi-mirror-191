@@ -1,0 +1,6 @@
+README.md
+setup.py
+yamb_client.egg-info/PKG-INFO
+yamb_client.egg-info/SOURCES.txt
+yamb_client.egg-info/dependency_links.txt
+yamb_client.egg-info/top_level.txt
