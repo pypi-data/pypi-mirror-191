@@ -1,0 +1,6 @@
+README.md
+setup.py
+yatank_internal_offlinereport.egg-info/PKG-INFO
+yatank_internal_offlinereport.egg-info/SOURCES.txt
+yatank_internal_offlinereport.egg-info/dependency_links.txt
+yatank_internal_offlinereport.egg-info/top_level.txt
