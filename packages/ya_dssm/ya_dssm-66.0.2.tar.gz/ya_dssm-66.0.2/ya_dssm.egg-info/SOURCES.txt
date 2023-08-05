@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_dssm.egg-info/PKG-INFO
+ya_dssm.egg-info/SOURCES.txt
+ya_dssm.egg-info/dependency_links.txt
+ya_dssm.egg-info/top_level.txt
