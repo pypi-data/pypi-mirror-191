@@ -1,0 +1,3 @@
+# Exclude cache related files
+__pycache__/
+*.egg-info/

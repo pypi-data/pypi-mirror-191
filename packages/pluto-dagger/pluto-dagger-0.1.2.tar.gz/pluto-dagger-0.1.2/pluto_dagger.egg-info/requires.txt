@@ -1,0 +1,15 @@
+flake8-docstrings
+pytest
+pytest-cov
+sphinx-rtd-theme
+toml
+tox
+yapf
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov

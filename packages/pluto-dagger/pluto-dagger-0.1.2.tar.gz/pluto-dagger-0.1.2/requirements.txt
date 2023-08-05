@@ -1,0 +1,7 @@
+flake8-docstrings
+pytest
+pytest-cov
+sphinx-rtd-theme
+toml
+tox
+yapf
