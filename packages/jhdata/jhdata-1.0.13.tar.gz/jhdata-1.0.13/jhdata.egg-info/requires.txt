@@ -1,0 +1,8 @@
+requests
+boto3
+s3fs
+pandas
+pyarrow
+sqlalchemy
+psycopg2
+pandera
