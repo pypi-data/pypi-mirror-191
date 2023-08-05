@@ -1,0 +1,6 @@
+README.md
+setup.py
+old_pymongo.egg-info/PKG-INFO
+old_pymongo.egg-info/SOURCES.txt
+old_pymongo.egg-info/dependency_links.txt
+old_pymongo.egg-info/top_level.txt
