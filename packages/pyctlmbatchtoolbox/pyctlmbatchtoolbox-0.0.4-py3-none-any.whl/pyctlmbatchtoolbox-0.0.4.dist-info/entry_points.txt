@@ -1,0 +1,10 @@
+[console_scripts]
+batch_condition = pyctlmbatchtoolbox.command_condition:main
+batch_connectionprofile = pyctlmbatchtoolbox.command_connectionprofiles:main
+batch_deploy = pyctlmbatchtoolbox.command_deploy:main
+batch_hostgroup = pyctlmbatchtoolbox.command_hostgroup:main
+batch_logs = pyctlmbatchtoolbox.command_logs:main
+batch_order = pyctlmbatchtoolbox.command_order:main
+batch_status = pyctlmbatchtoolbox.command_status:main
+batch_token = pyctlmbatchtoolbox.command_token:main
+
