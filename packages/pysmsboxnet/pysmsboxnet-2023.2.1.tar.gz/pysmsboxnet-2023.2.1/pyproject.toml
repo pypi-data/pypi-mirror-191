@@ -1,0 +1,63 @@
+[build-system]
+requires = [ "setuptools>=41", "wheel", "setuptools-git-versioning<2", ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysmsboxnet"
+dynamic=["version"]
+authors = [
+    {name = "Patrick ZAJDA", email = "patrick@zajda.fr"}
+]
+description = "Client to send SMS using www.smsbox.net API"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["smsbox", "api", "sms"]
+license = {text = "MIT license"}
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: AsyncIO",
+    "Framework :: aiohttp",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Communications",
+    "Topic :: Communications :: Telephony",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "aiohttp>=3.8.0,<4.0",
+    "async-property==0.2.1",
+]
+
+[project.urls]
+"Source code" = "https://github.com/Nardol/pysmsboxnet"
+"Bug tracker" = "https://github.com/Nardol/pysmsboxnet/issues"
+"Documentation" = "https://nardol.github.io/pysmsboxnet/stable"
+"SMSBox API 1.1 doc" = "https://en.smsbox.net/docs/doc-API-SMSBOX-1.1-EN.html"
+"SMSBox account API doc" = "https://en.smsbox.net/docs/doc-APIFunctions-SMSBOX-FR.html"
+
+[tool.setuptools]
+platforms = ["any"]
+zip-safe  = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["pysmsboxnet*"]
+namespaces = false
+
+[tool.black]
+target-version = ["py39", "py310"]
+exclude = 'generated'
+
+[tool.isort]
+profile = "black"
+
+[tool.setuptools-git-versioning]
+enabled = true

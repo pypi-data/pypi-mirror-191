@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+pysmsboxnet/__init__.py
+pysmsboxnet/api.py
+pysmsboxnet/exceptions.py
+pysmsboxnet.egg-info/PKG-INFO
+pysmsboxnet.egg-info/SOURCES.txt
+pysmsboxnet.egg-info/dependency_links.txt
+pysmsboxnet.egg-info/not-zip-safe
+pysmsboxnet.egg-info/requires.txt
+pysmsboxnet.egg-info/top_level.txt
+tests/test_api.py
