@@ -1,0 +1,6 @@
+README.md
+setup.py
+sdg_internal_auth_client.egg-info/PKG-INFO
+sdg_internal_auth_client.egg-info/SOURCES.txt
+sdg_internal_auth_client.egg-info/dependency_links.txt
+sdg_internal_auth_client.egg-info/top_level.txt
