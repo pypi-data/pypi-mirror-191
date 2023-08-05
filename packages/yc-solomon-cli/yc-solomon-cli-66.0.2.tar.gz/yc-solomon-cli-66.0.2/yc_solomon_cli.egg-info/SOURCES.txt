@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_solomon_cli.egg-info/PKG-INFO
+yc_solomon_cli.egg-info/SOURCES.txt
+yc_solomon_cli.egg-info/dependency_links.txt
+yc_solomon_cli.egg-info/top_level.txt
