@@ -1,0 +1,6 @@
+README.md
+setup.py
+ya_m3u8.egg-info/PKG-INFO
+ya_m3u8.egg-info/SOURCES.txt
+ya_m3u8.egg-info/dependency_links.txt
+ya_m3u8.egg-info/top_level.txt
