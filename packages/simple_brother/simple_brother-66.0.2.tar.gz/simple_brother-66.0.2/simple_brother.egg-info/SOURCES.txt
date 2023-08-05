@@ -1,0 +1,6 @@
+README.md
+setup.py
+simple_brother.egg-info/PKG-INFO
+simple_brother.egg-info/SOURCES.txt
+simple_brother.egg-info/dependency_links.txt
+simple_brother.egg-info/top_level.txt
