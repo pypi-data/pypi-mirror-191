@@ -1,0 +1,7 @@
+README.md
+password_generator.py
+setup.py
+gen_passwrd.egg-info/PKG-INFO
+gen_passwrd.egg-info/SOURCES.txt
+gen_passwrd.egg-info/dependency_links.txt
+gen_passwrd.egg-info/top_level.txt
