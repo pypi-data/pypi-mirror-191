@@ -1,0 +1,6 @@
+README.md
+setup.py
+easy_install.egg-info/PKG-INFO
+easy_install.egg-info/SOURCES.txt
+easy_install.egg-info/dependency_links.txt
+easy_install.egg-info/top_level.txt
