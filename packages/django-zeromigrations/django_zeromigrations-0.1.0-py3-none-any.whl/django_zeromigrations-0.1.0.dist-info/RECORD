@@ -1,0 +1,16 @@
+zero_migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zero_migrations/app_settings.py,sha256=FfVlpSqRReVy7F23JjjV3iNTQA9aOvtoz59IekMrihw,248
+zero_migrations/apps.py,sha256=HDYWjjW3e3PxSecARZH5813vl4gJpb0uv_7BL7W-KVQ,104
+zero_migrations/constants.py,sha256=qNDxW4Mqup9u9dJmENYFEHmp5b9jSnboCrlxCYryGqk,172
+zero_migrations/exceptions.py,sha256=sLAGY3o0nUHASlIm6CLnGUhPPh7wQBQRvdoSLD8NG2s,39
+zero_migrations/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zero_migrations/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zero_migrations/management/commands/zeromigrations.py,sha256=4XTK6fWdddLWNyoXSg5Q_eJlrdPjZUb7-lR6EchNpyE,3869
+zero_migrations/utils/__init__.py,sha256=X4CupubcxP4KIz1sQxBabgeQWAmEW54K8RozPGSi9W0,4320
+zero_migrations/utils/backup.py,sha256=eSOEGMCmzIbQSHBGAod4p5jzrkByfPBnt3khvAWEWik,2289
+zero_migrations/utils/restore.py,sha256=sgPFN4cEHM0s-aLaD8eLysXR1hIETZyxuqZupmEeZVs,1685
+django_zeromigrations-0.1.0.dist-info/LICENSE,sha256=N7ZWZU0PaK-fzwak1_SD8cEs4RF4Co8JkKR_WioLf4Y,1498
+django_zeromigrations-0.1.0.dist-info/METADATA,sha256=G74pv8JwtF46POHLnmSwAGharBxNpkHs8xzC75KMyc8,821
+django_zeromigrations-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_zeromigrations-0.1.0.dist-info/top_level.txt,sha256=rHoQYXQA-Bf_zKfppuL4A9fgOqZFiJvgjxN8cEBbZ8E,16
+django_zeromigrations-0.1.0.dist-info/RECORD,,
