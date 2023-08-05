@@ -1,0 +1,6 @@
+README.md
+setup.py
+yutil.egg-info/PKG-INFO
+yutil.egg-info/SOURCES.txt
+yutil.egg-info/dependency_links.txt
+yutil.egg-info/top_level.txt
