@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dotbots/static/css/main.ab17a09a.css",
+    "main.js": "/dotbots/static/js/main.d9168b9a.js",
+    "static/media/bootstrap-icons.woff?": "/dotbots/static/media/bootstrap-icons.e559bf06bc84fd9525e6.woff",
+    "static/media/bootstrap-icons.woff2?": "/dotbots/static/media/bootstrap-icons.ea98e12d2d58747f9fc5.woff2",
+    "index.html": "/dotbots/index.html",
+    "main.ab17a09a.css.map": "/dotbots/static/css/main.ab17a09a.css.map",
+    "main.d9168b9a.js.map": "/dotbots/static/js/main.d9168b9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab17a09a.css",
+    "static/js/main.d9168b9a.js"
+  ]
+}
