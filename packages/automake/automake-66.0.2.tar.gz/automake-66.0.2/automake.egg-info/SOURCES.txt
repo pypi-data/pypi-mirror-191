@@ -1,0 +1,6 @@
+README.md
+setup.py
+automake.egg-info/PKG-INFO
+automake.egg-info/SOURCES.txt
+automake.egg-info/dependency_links.txt
+automake.egg-info/top_level.txt
