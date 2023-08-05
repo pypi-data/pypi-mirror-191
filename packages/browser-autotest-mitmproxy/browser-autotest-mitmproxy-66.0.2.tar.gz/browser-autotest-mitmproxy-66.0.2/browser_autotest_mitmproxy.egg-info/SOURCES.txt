@@ -1,0 +1,6 @@
+README.md
+setup.py
+browser_autotest_mitmproxy.egg-info/PKG-INFO
+browser_autotest_mitmproxy.egg-info/SOURCES.txt
+browser_autotest_mitmproxy.egg-info/dependency_links.txt
+browser_autotest_mitmproxy.egg-info/top_level.txt
