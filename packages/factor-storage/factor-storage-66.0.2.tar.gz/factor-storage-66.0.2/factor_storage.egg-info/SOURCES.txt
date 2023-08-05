@@ -1,0 +1,6 @@
+README.md
+setup.py
+factor_storage.egg-info/PKG-INFO
+factor_storage.egg-info/SOURCES.txt
+factor_storage.egg-info/dependency_links.txt
+factor_storage.egg-info/top_level.txt
