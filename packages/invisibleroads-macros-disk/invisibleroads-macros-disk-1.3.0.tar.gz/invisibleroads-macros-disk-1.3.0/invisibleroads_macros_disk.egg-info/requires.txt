@@ -1,0 +1,6 @@
+invisibleroads-macros-security>=1.0.3
+platformdirs
+
+[test]
+pytest
+pytest-cov
