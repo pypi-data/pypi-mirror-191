@@ -1,0 +1,36 @@
+DIST_DIR=./dist
+FUNC_NAME={{ func_name }}
+VERSION=`date "+%Y%m%d%H"`
+
+default_target: all
+
+all : black_format test build install package
+
+install: 
+	poetry install
+
+test:
+	poetry run pytest
+
+black_format:
+	poetry run black -l 120 ${FUNC_NAME} && poetry run black -l 120 tests
+
+# build the package, download all dependencies, and package them into single zip file
+package: build download_linux_offline
+	mkdir ${DIST_DIR}/${FUNC_NAME} && mv ${DIST_DIR}/*.whl ${DIST_DIR}/${FUNC_NAME} && cd ${DIST_DIR} && tar -zcvf ${FUNC_NAME}_table_func_${VERSION}.tar.gz ${FUNC_NAME} && cd -
+	@echo "linux offline package generated at ./dist/${FUNC_NAME}_table_func_${VERSION}.tar.gz"
+
+download_linux_offline: requirements
+	poetry run pip download --only-binary=:all: --platform linux_x86_64 --platform manylinux1_x86_64 --platform manylinux2010_x86_64  --platform manylinux2014_x86_64 --platform manylinux_x_y_x86_64 -r requirements.txt --dest ${DIST_DIR}
+
+offline_install:
+	poetry run pip install --no-index --find-links=${DIST_DIR} ${FUNC_NAME}
+
+requirements:
+	poetry export --without-hashes -f requirements.txt --output requirements.txt
+
+build: clean
+	poetry build -vvv
+
+clean:
+	rm -fr ${DIST_DIR}

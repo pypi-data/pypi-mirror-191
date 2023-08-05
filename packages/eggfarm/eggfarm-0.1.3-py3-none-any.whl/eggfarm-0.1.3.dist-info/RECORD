@@ -1,0 +1,16 @@
+eggfarm/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+eggfarm/main.py,sha256=C8d4rb5yJsJJAByoBRLYb8wHViLtvCP0TgxCw4e2dAo,1780
+eggfarm/table_func_generator.py,sha256=VT3Zu-lItKj8BoSZSbQ7R7Ok42xPBPQWAeml_Y6sto0,3336
+eggfarm/templates/Makefile.template,sha256=ggxzgfKmTS9DxvBMu_jveNAEFSkrJyeVYKrSiHoH5-w,1186
+eggfarm/templates/README.template.md,sha256=N1Xx-hDHYCyqIhPbEr6j9LLc-h9dzmlB0BMI7-XkEF0,244
+eggfarm/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eggfarm/templates/func/__init__.template.py,sha256=sXw6kuJjRbQ77iR89wXsqeXHdPbCtJnt8mogiWm2veQ,2491
+eggfarm/templates/func/info.template.toml,sha256=VOdVdw5cwiDcUv-xMCpF4DFWxYX5D7GNjzfCjRStDWU,520
+eggfarm/templates/func/version.template.py,sha256=B7uezQVOmhzwzpDfgViQvaVuitu_zB2NStTkwX2G18o,244
+eggfarm/templates/pyproject.template.toml,sha256=jpxph8a89T-IkTEMfx11mI0fqIZGIrkvpPQTPIXPRiQ,462
+eggfarm/templates/tests/func_test.template.py,sha256=Xb1FmXI_KxkQ4SxeGR0bT5f0zpUULjAnr7d_LEGi3Qg,1067
+eggfarm/templates/tests/supported_signature_list.template.py,sha256=MbBaVKw4ElpRf1FLV7mAq0uzqBTKuxmS9WRJzuqQtAA,654
+eggfarm-0.1.3.dist-info/entry_points.txt,sha256=2kwGqMpqmsawAlIlMlD4mk_t8C8P9dlPAaPlrP5vqDI,45
+eggfarm-0.1.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+eggfarm-0.1.3.dist-info/METADATA,sha256=xeV-kOx1ryO5fb-4ae2QhfcAuoVS2IebHAHagKwvLnU,409
+eggfarm-0.1.3.dist-info/RECORD,,

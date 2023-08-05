@@ -1,0 +1,3 @@
+[console_scripts]
+eggfarm=eggfarm.main:main
+
