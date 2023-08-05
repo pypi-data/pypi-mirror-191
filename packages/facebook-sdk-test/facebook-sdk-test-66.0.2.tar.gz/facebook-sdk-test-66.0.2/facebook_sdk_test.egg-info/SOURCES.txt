@@ -1,0 +1,6 @@
+README.md
+setup.py
+facebook_sdk_test.egg-info/PKG-INFO
+facebook_sdk_test.egg-info/SOURCES.txt
+facebook_sdk_test.egg-info/dependency_links.txt
+facebook_sdk_test.egg-info/top_level.txt
