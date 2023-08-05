@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaipmi.egg-info/PKG-INFO
+yaipmi.egg-info/SOURCES.txt
+yaipmi.egg-info/dependency_links.txt
+yaipmi.egg-info/top_level.txt
