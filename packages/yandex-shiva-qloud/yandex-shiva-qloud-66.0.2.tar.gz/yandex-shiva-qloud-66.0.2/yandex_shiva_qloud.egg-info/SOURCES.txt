@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_shiva_qloud.egg-info/PKG-INFO
+yandex_shiva_qloud.egg-info/SOURCES.txt
+yandex_shiva_qloud.egg-info/dependency_links.txt
+yandex_shiva_qloud.egg-info/top_level.txt
