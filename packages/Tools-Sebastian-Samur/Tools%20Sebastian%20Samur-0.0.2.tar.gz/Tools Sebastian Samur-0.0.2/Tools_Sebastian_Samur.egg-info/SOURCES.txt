@@ -1,0 +1,11 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+__init__.py
+licence.txt
+setup.cfg
+setup.py
+Tools_Sebastian_Samur.egg-info/PKG-INFO
+Tools_Sebastian_Samur.egg-info/SOURCES.txt
+Tools_Sebastian_Samur.egg-info/dependency_links.txt
+Tools_Sebastian_Samur.egg-info/top_level.txt
