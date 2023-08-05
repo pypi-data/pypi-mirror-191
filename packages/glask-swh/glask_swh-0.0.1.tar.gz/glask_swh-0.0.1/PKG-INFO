@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: glask_swh
+Version: 0.0.1
+Summary: A Flask-like python framework made from vanilla python
+Home-page: UNKNOWN
+Author: Sangwoo Han
+Author-email: sangw2ohan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9.6
+Description-Content-Type: text/markdown
+
+A Flask-like python framework made from vanilla python
+
