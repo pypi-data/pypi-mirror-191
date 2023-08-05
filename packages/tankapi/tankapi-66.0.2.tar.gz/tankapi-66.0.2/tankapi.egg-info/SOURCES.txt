@@ -1,0 +1,6 @@
+README.md
+setup.py
+tankapi.egg-info/PKG-INFO
+tankapi.egg-info/SOURCES.txt
+tankapi.egg-info/dependency_links.txt
+tankapi.egg-info/top_level.txt
