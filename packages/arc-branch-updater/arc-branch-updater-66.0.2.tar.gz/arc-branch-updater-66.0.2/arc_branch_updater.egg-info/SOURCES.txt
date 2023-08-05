@@ -1,0 +1,6 @@
+README.md
+setup.py
+arc_branch_updater.egg-info/PKG-INFO
+arc_branch_updater.egg-info/SOURCES.txt
+arc_branch_updater.egg-info/dependency_links.txt
+arc_branch_updater.egg-info/top_level.txt
