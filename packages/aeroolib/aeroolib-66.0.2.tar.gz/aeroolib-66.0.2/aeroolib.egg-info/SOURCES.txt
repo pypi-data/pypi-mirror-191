@@ -1,0 +1,6 @@
+README.md
+setup.py
+aeroolib.egg-info/PKG-INFO
+aeroolib.egg-info/SOURCES.txt
+aeroolib.egg-info/dependency_links.txt
+aeroolib.egg-info/top_level.txt
