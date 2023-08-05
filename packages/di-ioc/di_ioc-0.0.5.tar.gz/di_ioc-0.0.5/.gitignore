@@ -1,0 +1,6 @@
+*.egg-info
+dist
+.idea
+.hatch
+.pytest_cache
+.coverage
