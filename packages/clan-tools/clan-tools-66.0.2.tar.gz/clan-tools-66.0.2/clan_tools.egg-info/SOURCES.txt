@@ -1,0 +1,6 @@
+README.md
+setup.py
+clan_tools.egg-info/PKG-INFO
+clan_tools.egg-info/SOURCES.txt
+clan_tools.egg-info/dependency_links.txt
+clan_tools.egg-info/top_level.txt
