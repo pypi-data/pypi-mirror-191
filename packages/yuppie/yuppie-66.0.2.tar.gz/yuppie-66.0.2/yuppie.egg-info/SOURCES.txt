@@ -1,0 +1,6 @@
+README.md
+setup.py
+yuppie.egg-info/PKG-INFO
+yuppie.egg-info/SOURCES.txt
+yuppie.egg-info/dependency_links.txt
+yuppie.egg-info/top_level.txt
