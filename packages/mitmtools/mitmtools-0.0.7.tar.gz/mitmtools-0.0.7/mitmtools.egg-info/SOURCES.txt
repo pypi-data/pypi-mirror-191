@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+mitmtools/README.md
+mitmtools/__init__.py
+mitmtools/base.py
+mitmtools/demo.py
+mitmtools/hook.py
+mitmtools/log.py
+mitmtools/remove.py
+mitmtools/replace.py
+mitmtools/start.py
+mitmtools.egg-info/PKG-INFO
+mitmtools.egg-info/SOURCES.txt
+mitmtools.egg-info/dependency_links.txt
+mitmtools.egg-info/requires.txt
+mitmtools.egg-info/top_level.txt

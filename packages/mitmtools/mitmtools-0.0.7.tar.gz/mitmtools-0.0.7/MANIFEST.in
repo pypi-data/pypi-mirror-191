@@ -1,0 +1,2 @@
+include mitmtools/static/hookfile.js
+include mitmtools/README.md
