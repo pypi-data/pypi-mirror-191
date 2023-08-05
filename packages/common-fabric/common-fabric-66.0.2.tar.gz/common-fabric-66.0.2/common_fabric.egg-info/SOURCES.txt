@@ -1,0 +1,6 @@
+README.md
+setup.py
+common_fabric.egg-info/PKG-INFO
+common_fabric.egg-info/SOURCES.txt
+common_fabric.egg-info/dependency_links.txt
+common_fabric.egg-info/top_level.txt
