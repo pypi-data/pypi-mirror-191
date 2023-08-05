@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_celery_monitoring.egg-info/PKG-INFO
+django_celery_monitoring.egg-info/SOURCES.txt
+django_celery_monitoring.egg-info/dependency_links.txt
+django_celery_monitoring.egg-info/top_level.txt
