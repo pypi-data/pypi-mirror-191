@@ -1,0 +1,6 @@
+pymc>=5.0.0
+patsy
+
+[test]
+pytest>5.0.0
+pytest-cov[all]
