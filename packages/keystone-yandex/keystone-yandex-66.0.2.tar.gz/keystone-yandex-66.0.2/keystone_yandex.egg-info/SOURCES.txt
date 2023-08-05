@@ -1,0 +1,6 @@
+README.md
+setup.py
+keystone_yandex.egg-info/PKG-INFO
+keystone_yandex.egg-info/SOURCES.txt
+keystone_yandex.egg-info/dependency_links.txt
+keystone_yandex.egg-info/top_level.txt
