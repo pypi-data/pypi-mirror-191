@@ -1,0 +1,6 @@
+README.md
+setup.py
+nirvana_arguments_parser.egg-info/PKG-INFO
+nirvana_arguments_parser.egg-info/SOURCES.txt
+nirvana_arguments_parser.egg-info/dependency_links.txt
+nirvana_arguments_parser.egg-info/top_level.txt
