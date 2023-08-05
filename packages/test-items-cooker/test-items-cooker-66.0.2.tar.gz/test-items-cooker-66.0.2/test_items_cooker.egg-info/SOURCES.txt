@@ -1,0 +1,6 @@
+README.md
+setup.py
+test_items_cooker.egg-info/PKG-INFO
+test_items_cooker.egg-info/SOURCES.txt
+test_items_cooker.egg-info/dependency_links.txt
+test_items_cooker.egg-info/top_level.txt
