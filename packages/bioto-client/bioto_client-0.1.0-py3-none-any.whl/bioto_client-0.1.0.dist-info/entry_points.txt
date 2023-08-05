@@ -1,0 +1,3 @@
+[console_scripts]
+bioto-client=bioto_client.cli:app
+
