@@ -1,0 +1,6 @@
+README.md
+setup.py
+aiostat.egg-info/PKG-INFO
+aiostat.egg-info/SOURCES.txt
+aiostat.egg-info/dependency_links.txt
+aiostat.egg-info/top_level.txt
