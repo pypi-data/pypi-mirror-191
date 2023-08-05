@@ -1,0 +1,10 @@
+README.md
+setup.py
+a2b/__init__.py
+a2b/arxiv2bib.py
+a2b.egg-info/PKG-INFO
+a2b.egg-info/SOURCES.txt
+a2b.egg-info/dependency_links.txt
+a2b.egg-info/entry_points.txt
+a2b.egg-info/not-zip-safe
+a2b.egg-info/top_level.txt
