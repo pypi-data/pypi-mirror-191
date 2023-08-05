@@ -1,0 +1,6 @@
+README.md
+setup.py
+instancelooplib.egg-info/PKG-INFO
+instancelooplib.egg-info/SOURCES.txt
+instancelooplib.egg-info/dependency_links.txt
+instancelooplib.egg-info/top_level.txt
