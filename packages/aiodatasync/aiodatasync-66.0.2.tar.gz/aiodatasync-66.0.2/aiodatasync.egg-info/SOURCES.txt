@@ -1,0 +1,6 @@
+README.md
+setup.py
+aiodatasync.egg-info/PKG-INFO
+aiodatasync.egg-info/SOURCES.txt
+aiodatasync.egg-info/dependency_links.txt
+aiodatasync.egg-info/top_level.txt
