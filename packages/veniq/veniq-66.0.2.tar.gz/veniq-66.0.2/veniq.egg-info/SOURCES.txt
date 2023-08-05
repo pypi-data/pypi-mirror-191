@@ -1,0 +1,6 @@
+README.md
+setup.py
+veniq.egg-info/PKG-INFO
+veniq.egg-info/SOURCES.txt
+veniq.egg-info/dependency_links.txt
+veniq.egg-info/top_level.txt
