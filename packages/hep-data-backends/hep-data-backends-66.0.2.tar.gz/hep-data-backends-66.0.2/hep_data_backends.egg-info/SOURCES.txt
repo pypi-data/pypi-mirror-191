@@ -1,0 +1,6 @@
+README.md
+setup.py
+hep_data_backends.egg-info/PKG-INFO
+hep_data_backends.egg-info/SOURCES.txt
+hep_data_backends.egg-info/dependency_links.txt
+hep_data_backends.egg-info/top_level.txt
