@@ -1,0 +1,6 @@
+README.md
+setup.py
+uniagent.egg-info/PKG-INFO
+uniagent.egg-info/SOURCES.txt
+uniagent.egg-info/dependency_links.txt
+uniagent.egg-info/top_level.txt
