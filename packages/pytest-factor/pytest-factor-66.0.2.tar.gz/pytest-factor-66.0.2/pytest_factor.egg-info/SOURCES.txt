@@ -1,0 +1,6 @@
+README.md
+setup.py
+pytest_factor.egg-info/PKG-INFO
+pytest_factor.egg-info/SOURCES.txt
+pytest_factor.egg-info/dependency_links.txt
+pytest_factor.egg-info/top_level.txt
