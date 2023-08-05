@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_yoda.egg-info/PKG-INFO
+yandex_yoda.egg-info/SOURCES.txt
+yandex_yoda.egg-info/dependency_links.txt
+yandex_yoda.egg-info/top_level.txt
