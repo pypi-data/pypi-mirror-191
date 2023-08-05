@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: locdataMAC
+Version: 0.0.6
+Summary: A small python package
+Home-page: https://github.com/SachinMishra-ux/locdataMAC
+Author: SachinMishra-ux
+Author-email: sachin19566@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/SachinMishra-ux/locdataMAC/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# locdataMAC Python Package.
+## A python package to get analysis of time spent on each and every desktop application and websites.
