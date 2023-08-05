@@ -1,0 +1,6 @@
+README.md
+setup.py
+yabsservant.egg-info/PKG-INFO
+yabsservant.egg-info/SOURCES.txt
+yabsservant.egg-info/dependency_links.txt
+yabsservant.egg-info/top_level.txt
