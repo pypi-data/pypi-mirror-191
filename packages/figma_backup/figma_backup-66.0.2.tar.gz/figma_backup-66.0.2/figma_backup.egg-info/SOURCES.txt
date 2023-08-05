@@ -1,0 +1,6 @@
+README.md
+setup.py
+figma_backup.egg-info/PKG-INFO
+figma_backup.egg-info/SOURCES.txt
+figma_backup.egg-info/dependency_links.txt
+figma_backup.egg-info/top_level.txt
