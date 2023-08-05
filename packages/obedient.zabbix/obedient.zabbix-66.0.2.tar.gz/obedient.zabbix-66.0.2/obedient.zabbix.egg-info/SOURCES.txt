@@ -1,0 +1,6 @@
+README.md
+setup.py
+obedient.zabbix.egg-info/PKG-INFO
+obedient.zabbix.egg-info/SOURCES.txt
+obedient.zabbix.egg-info/dependency_links.txt
+obedient.zabbix.egg-info/top_level.txt
