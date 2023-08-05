@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_normalizer_general.egg-info/PKG-INFO
+yandex_normalizer_general.egg-info/SOURCES.txt
+yandex_normalizer_general.egg-info/dependency_links.txt
+yandex_normalizer_general.egg-info/top_level.txt
