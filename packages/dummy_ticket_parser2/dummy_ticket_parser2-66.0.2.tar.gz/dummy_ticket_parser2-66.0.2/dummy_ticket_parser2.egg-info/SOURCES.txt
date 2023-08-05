@@ -1,0 +1,6 @@
+README.md
+setup.py
+dummy_ticket_parser2.egg-info/PKG-INFO
+dummy_ticket_parser2.egg-info/SOURCES.txt
+dummy_ticket_parser2.egg-info/dependency_links.txt
+dummy_ticket_parser2.egg-info/top_level.txt
