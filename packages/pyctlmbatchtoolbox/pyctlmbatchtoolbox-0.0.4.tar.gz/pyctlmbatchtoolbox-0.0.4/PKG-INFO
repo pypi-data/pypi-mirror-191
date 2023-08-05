@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyctlmbatchtoolbox
+Version: 0.0.4
+Summary: Set of command line tools used to interact with Control-M.
+Home-page: https://github.com/AmadeusITGroup/pyctlmbatchtoolbox
+Author: Jose Morales Aragon
+Author-email: jmoralesaragon@users.noreply.github.com
+License: UNKNOWN
+Project-URL: Homepage, https://github.com/AmadeusITGroup/pyctlmbatchtoolbox
+Keywords: bmc controlm batch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Description
+`pyctlmbatchtoolbox` is command line wrapper around [Control-M REST API](https://docs.bmc.com/docs/automation-api/918/services-783053199.html#Services-TopIntroduction). The goal is to provide a developer friendly 
+command line tool easy to integrate with other tools.
+
+# Install
+```
+pip install pyctlmbatchtoolbox --upgrade
+```
+
+# SRE toolbox included
+Most of the tools include list/add/delete operations.
+
+Tools included:
+* batch_condition
+* batch_connectionprofile
+* batch_deploy
+* batch_hostgroup
+* batch_logs
+* batch_status
+* batch_token
+* batch_order
+```commandline
+export CTM_USER=user
+export CTM_PASS=***
+export CTM_REST_API=https://<<controlm server instance>>:8443/automation-api
+export CTM_BATCH_LOG_LEVEL=INFO
+
+batch_order --controlm-server CTMSERVER --folder folder  
+batch_logs --jobname JOBID 
+batch_logs  --jobname JOBID
+batch_condition --action GET --search-criteria 'name=*&server=CTMSERVER' 
+batch_hostgroup --controlm-server CTMSERVER 
+batch_hostgroup --controlm-server CTMSERVER --hostgroup HOSTGROUP1
+```
+
+
+
