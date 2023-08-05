@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_meteo_grid_data.egg-info/PKG-INFO
+yandex_meteo_grid_data.egg-info/SOURCES.txt
+yandex_meteo_grid_data.egg-info/dependency_links.txt
+yandex_meteo_grid_data.egg-info/top_level.txt
