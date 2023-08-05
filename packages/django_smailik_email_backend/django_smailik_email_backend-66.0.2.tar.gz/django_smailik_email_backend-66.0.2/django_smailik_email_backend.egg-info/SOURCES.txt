@@ -1,0 +1,6 @@
+README.md
+setup.py
+django_smailik_email_backend.egg-info/PKG-INFO
+django_smailik_email_backend.egg-info/SOURCES.txt
+django_smailik_email_backend.egg-info/dependency_links.txt
+django_smailik_email_backend.egg-info/top_level.txt
