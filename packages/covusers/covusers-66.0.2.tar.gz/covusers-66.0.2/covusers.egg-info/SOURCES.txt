@@ -1,0 +1,6 @@
+README.md
+setup.py
+covusers.egg-info/PKG-INFO
+covusers.egg-info/SOURCES.txt
+covusers.egg-info/dependency_links.txt
+covusers.egg-info/top_level.txt
