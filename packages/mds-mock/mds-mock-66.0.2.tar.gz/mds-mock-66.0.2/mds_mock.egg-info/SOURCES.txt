@@ -1,0 +1,6 @@
+README.md
+setup.py
+mds_mock.egg-info/PKG-INFO
+mds_mock.egg-info/SOURCES.txt
+mds_mock.egg-info/dependency_links.txt
+mds_mock.egg-info/top_level.txt
