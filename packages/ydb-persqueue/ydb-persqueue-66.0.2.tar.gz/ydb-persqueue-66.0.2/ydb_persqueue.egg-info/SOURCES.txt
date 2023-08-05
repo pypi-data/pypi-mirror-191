@@ -1,0 +1,6 @@
+README.md
+setup.py
+ydb_persqueue.egg-info/PKG-INFO
+ydb_persqueue.egg-info/SOURCES.txt
+ydb_persqueue.egg-info/dependency_links.txt
+ydb_persqueue.egg-info/top_level.txt
