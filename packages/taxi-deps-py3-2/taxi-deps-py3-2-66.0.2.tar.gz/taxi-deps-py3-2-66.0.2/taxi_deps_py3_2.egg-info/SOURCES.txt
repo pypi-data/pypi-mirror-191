@@ -1,0 +1,6 @@
+README.md
+setup.py
+taxi_deps_py3_2.egg-info/PKG-INFO
+taxi_deps_py3_2.egg-info/SOURCES.txt
+taxi_deps_py3_2.egg-info/dependency_links.txt
+taxi_deps_py3_2.egg-info/top_level.txt
