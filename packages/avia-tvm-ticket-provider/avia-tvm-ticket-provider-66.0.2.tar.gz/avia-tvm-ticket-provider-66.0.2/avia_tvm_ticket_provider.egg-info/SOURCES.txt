@@ -1,0 +1,6 @@
+README.md
+setup.py
+avia_tvm_ticket_provider.egg-info/PKG-INFO
+avia_tvm_ticket_provider.egg-info/SOURCES.txt
+avia_tvm_ticket_provider.egg-info/dependency_links.txt
+avia_tvm_ticket_provider.egg-info/top_level.txt
