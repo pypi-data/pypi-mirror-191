@@ -1,0 +1,6 @@
+README.md
+setup.py
+zen_scripts.egg-info/PKG-INFO
+zen_scripts.egg-info/SOURCES.txt
+zen_scripts.egg-info/dependency_links.txt
+zen_scripts.egg-info/top_level.txt
