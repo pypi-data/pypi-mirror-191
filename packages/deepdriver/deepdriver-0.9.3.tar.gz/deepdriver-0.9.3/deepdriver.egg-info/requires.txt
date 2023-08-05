@@ -1,0 +1,14 @@
+wheel
+assertpy
+grpcio
+grpcio-tools
+numpy
+pandas
+Pillow
+plotly
+psutil
+pynvml
+requests
+optuna
+psycopg2
+click
