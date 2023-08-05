@@ -1,0 +1,6 @@
+README.md
+setup.py
+omnibox.egg-info/PKG-INFO
+omnibox.egg-info/SOURCES.txt
+omnibox.egg-info/dependency_links.txt
+omnibox.egg-info/top_level.txt
