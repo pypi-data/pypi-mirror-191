@@ -1,0 +1,6 @@
+README.md
+setup.py
+edu_stands.egg-info/PKG-INFO
+edu_stands.egg-info/SOURCES.txt
+edu_stands.egg-info/dependency_links.txt
+edu_stands.egg-info/top_level.txt
