@@ -1,0 +1,91 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Kcli expose API
+  description: Kcli expose API
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+paths:
+  /exposecreate:
+    post:
+      description: Create a plan
+      requestBody:
+        required: true
+        description: Plan name
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:   
+                plan:
+                  type: string
+                parameters:
+                  type: string
+      responses:
+        '200':
+          description: Successfully created a new plan
+          content:
+            application/json:
+              schema:
+                type: object 
+                properties:
+                  plan:
+                    type: string
+                  result:
+                    type: string
+        '400':
+          description: Missing plan in data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                  message:
+                    type: string
+  /exposedelete:
+    delete:
+      description: Delete a plan
+      requestBody:
+        required: true
+        description: Plan name
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:   
+                plan:
+                  type: string
+      responses:
+        '200':
+          description: Successfully delete plan
+        '400':
+          description: Missing plan in data
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:   
+                  message:
+                    type: string
+  /exposelist:
+    get:
+      description: Returns list of plans
+      responses:
+        '200':
+          description: Successfully returned list of plans
+          content:
+            application/json:
+              schema:
+                type: object 
+                properties:
+                  plans:
+                    type: array
+                    items:
+                      type: string
+                  owners:
+                    type: object
+                    properties:
+                      owner:
+                        type: string
+                        description: Owner
