@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+
+'''
+            OMArk - Quality assesment of coding-gene repertoire annotation
+            (C) 2022 Yannis Nevers <yannis.nevers@unil.ch>
+            This file is part of OMArk.
+            OMArk is free software: you can redistribute it and/or modify
+            it under the terms of the GNU Lesser General Public License as published by
+            the Free Software Foundation, either version 3 of the License, or
+            (at your option) any later version.
+            OMArk is distributed in the hope that it will be useful,
+            but WITHOUT ANY WARRANTY; without even the implied warranty of
+            MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+            GNU Lesser General Public License for more details.
+            You should have received a copy of the GNU Lesser General Public License
+            along with OMArk. If not, see <http://www.gnu.org/licenses/>.
+        '''
+
+import argparse
+import omark.omark as omark
+
+def build_arg_parser():
+    """Handle the parameter sent when executing the script from the terminal
+
+    Returns
+    -----------
+    A parser object with the chosen option and parameters"""
+
+    parser = argparse.ArgumentParser(description="Compute an OMA quality score from the OMAmer file of a proteome.")   
+    parser.add_argument('-f', '--file', type=str, help="Input OMAmer file - obtained as output from an OMAmer search.", required=True)	
+    parser.add_argument('-d', '--database', type=str, help="The OMAmer database.", required=True)
+    parser.add_argument('-o', '--outputFolder', type=str, help="The folder containing output data the script wilp generate.", default="./omark_output/")
+    parser.add_argument('-t', '--taxid', type=int, help='Taxonomic identifier', default=None)
+    parser.add_argument('-of', '--og_fasta', type=str, help='Original FASTA file', default=None)
+    parser.add_argument('-i', '--isoform_file', type=str, help='A semi-colon separated file, listing all isoforoms of each genes, with one gene per line.', default=None)
+    parser.add_argument('-v', '--verbose', help='Turn on logging information about OMArk process', action='store_true')
+
+    return parser
+
+
+if __name__=='__main__':
+	
+    parser = build_arg_parser()  
+    arg = parser.parse_args()
+    omark.launcher(arg)

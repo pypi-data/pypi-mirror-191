@@ -1,0 +1,5 @@
+biopython
+ete3
+omamer>=0.2.2
+matplotlib
+jinja2
