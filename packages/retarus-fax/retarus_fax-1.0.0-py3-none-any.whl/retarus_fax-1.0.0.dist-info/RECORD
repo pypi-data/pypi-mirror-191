@@ -1,0 +1,13 @@
+retarus/fax/_async.py,sha256=42PDWivzR2x5BWrFB-0Xxtk8q3wW3whhfje5wbrOYrw,1554
+retarus/fax/client.py,sha256=SZa3_G9mrx70gvvvB9L5SmvoCJD2gIFaoU3d35roibQ,1341
+retarus/fax/model.py,sha256=B4HPsPMtupUvI-Zrj-cgVroviYKkANC59hftTrXNDHg,5220
+retarus/fax/sync.py,sha256=1NRMN-c8J3hV_jEVBPZI-GCKEjWDx-VLKO64cstjJ_E,1182
+retarus/fax_in_poll/_async.py,sha256=aVDz6hqA0cjY01pmSlbbdec9ewAP5UQIj9xI06ufgwk,2186
+retarus/fax_in_poll/client.py,sha256=DzpqUASyokEVTnvmr4_vmkiG_3LR4wAGWojzC7bwMpQ,926
+retarus/fax_in_poll/model.py,sha256=iWCe4egK0ZElnDJnk9rXB9sJ78zkpKqdow4udqrf1Pw,904
+retarus/fax_in_poll/sync.py,sha256=bv7Oeo0qjhTj6u6Tibb65wmVR5IEuuWTQWhjClBRfq8,857
+retarus_fax-1.0.0.dist-info/LICENSE,sha256=k_fYtF8MUBaR0oykYbB6dMKdCmNZOG6uTMOf92IV9_k,17675
+retarus_fax-1.0.0.dist-info/METADATA,sha256=NDad-tsJzd3i7PwBtTQXrhYBVJIxw8Vwo_jVWoCdQO4,23735
+retarus_fax-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+retarus_fax-1.0.0.dist-info/top_level.txt,sha256=UIBEdeDu7F8h7bERlsURqgLB7l3uhCk5IkE7O7pa4iM,8
+retarus_fax-1.0.0.dist-info/RECORD,,
