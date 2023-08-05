@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.module-cache*
+.project
+.pydevproject
+.idea
+checklist.txt
+test/
+build/
+dist/
+siridb_connector.egg-info/
+sample.py
