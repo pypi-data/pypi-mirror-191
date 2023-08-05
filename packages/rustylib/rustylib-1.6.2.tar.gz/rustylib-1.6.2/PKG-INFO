@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rustylib
+Version: 1.6.2
+Summary: A useful python library for everything.
+Home-page: https://github.com/ZeyaTsu/rustylib
+Author: ZeyaTsu
+Project-URL: Bug Tracker, https://github.com/ZeyaTsu/rustylib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Rustylib or Rusty
+## Rusty aka rustylib is a useful python library containing tools such as HTTP requests, mathematics, and more.
+
+* Rcolor
+* Rmath
+* Rrequests
+* Rsugaku
+* Rusty
