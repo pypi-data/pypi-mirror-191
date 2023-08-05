@@ -1,0 +1,6 @@
+README.md
+setup.py
+vins_core.egg-info/PKG-INFO
+vins_core.egg-info/SOURCES.txt
+vins_core.egg-info/dependency_links.txt
+vins_core.egg-info/top_level.txt
