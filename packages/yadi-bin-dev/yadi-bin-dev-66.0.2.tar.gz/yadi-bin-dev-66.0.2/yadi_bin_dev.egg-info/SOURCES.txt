@@ -1,0 +1,6 @@
+README.md
+setup.py
+yadi_bin_dev.egg-info/PKG-INFO
+yadi_bin_dev.egg-info/SOURCES.txt
+yadi_bin_dev.egg-info/dependency_links.txt
+yadi_bin_dev.egg-info/top_level.txt
