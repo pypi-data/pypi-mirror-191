@@ -1,0 +1,3 @@
+[console_scripts]
+talonfmt=talonfmt.cli:cli
+

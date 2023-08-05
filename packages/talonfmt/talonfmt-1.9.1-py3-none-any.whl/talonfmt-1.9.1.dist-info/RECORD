@@ -1,0 +1,11 @@
+talonfmt/__init__.py,sha256=IbBEeKc0P4XFKudJVojZRJtlnCu-90NuxnosZg0zpd0,5441
+talonfmt/assert_equivalent.py,sha256=AvWy6JKRRA8iPZcR1InhPpeeeN6Ecf4g_Jsb98d1kqM,1282
+talonfmt/cli.py,sha256=piD_du49rNPqKNG1tcIHtUP3l4wYnL_OJvI47U6N-_Q,5209
+talonfmt/editorconfig.py,sha256=VJwvvGSpi3riw9Aw5rRNaK3MaGAKJkZRn5-QLO7z2fA,909
+talonfmt/formatter.py,sha256=AbeZEPCo7SV9bDphOOBN8AZBEQw_0HWbcV4cKuiyCuM,22315
+talonfmt/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+talonfmt-1.9.1.dist-info/LICENSE,sha256=Qd1Q6abfHiuSYRq6U18--08_3nl-LTjsY6_pc9JOzDw,1066
+talonfmt-1.9.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+talonfmt-1.9.1.dist-info/entry_points.txt,sha256=0WNqpQD_a9oOUOKPCEP5TqzqR1T_XvQ_KRfO2j0e9mU,45
+talonfmt-1.9.1.dist-info/METADATA,sha256=WzbVHY3_Q9_5-7a2SRA6F6emkBt-SpV0bzZfphLBfAw,1550
+talonfmt-1.9.1.dist-info/RECORD,,
