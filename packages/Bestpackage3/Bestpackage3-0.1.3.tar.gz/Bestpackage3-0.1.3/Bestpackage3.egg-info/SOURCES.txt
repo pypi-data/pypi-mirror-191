@@ -1,0 +1,10 @@
+setup.py
+Bestpackage3.egg-info/PKG-INFO
+Bestpackage3.egg-info/SOURCES.txt
+Bestpackage3.egg-info/dependency_links.txt
+Bestpackage3.egg-info/top_level.txt
+text_module/__init__.py
+text_module/hello/__init__.py
+text_module/hello/welcome.py
+text_module/world/__init__.py
+text_module/world/new_world.py
