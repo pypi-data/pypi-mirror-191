@@ -1,0 +1,14 @@
+AUTHORS
+CMakeLists.txt
+LICENSE.CeCILL
+MANIFEST.in
+README.md
+setup.py
+modules/functions.cmake
+msvst/__init__.py
+msvst/msvst.py
+msvst/wrapper.py
+msvst.egg-info/PKG-INFO
+msvst.egg-info/SOURCES.txt
+msvst.egg-info/dependency_links.txt
+msvst.egg-info/top_level.txt
