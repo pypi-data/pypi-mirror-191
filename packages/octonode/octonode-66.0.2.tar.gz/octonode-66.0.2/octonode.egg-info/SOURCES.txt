@@ -1,0 +1,6 @@
+README.md
+setup.py
+octonode.egg-info/PKG-INFO
+octonode.egg-info/SOURCES.txt
+octonode.egg-info/dependency_links.txt
+octonode.egg-info/top_level.txt
