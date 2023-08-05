@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_gsmmodem_new_m3.egg-info/PKG-INFO
+python_gsmmodem_new_m3.egg-info/SOURCES.txt
+python_gsmmodem_new_m3.egg-info/dependency_links.txt
+python_gsmmodem_new_m3.egg-info/top_level.txt
