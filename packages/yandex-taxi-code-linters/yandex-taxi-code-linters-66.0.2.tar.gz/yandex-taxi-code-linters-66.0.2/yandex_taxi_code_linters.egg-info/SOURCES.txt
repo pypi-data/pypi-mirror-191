@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_taxi_code_linters.egg-info/PKG-INFO
+yandex_taxi_code_linters.egg-info/SOURCES.txt
+yandex_taxi_code_linters.egg-info/dependency_links.txt
+yandex_taxi_code_linters.egg-info/top_level.txt
