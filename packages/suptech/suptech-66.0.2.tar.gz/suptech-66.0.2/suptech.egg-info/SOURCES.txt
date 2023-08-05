@@ -1,0 +1,6 @@
+README.md
+setup.py
+suptech.egg-info/PKG-INFO
+suptech.egg-info/SOURCES.txt
+suptech.egg-info/dependency_links.txt
+suptech.egg-info/top_level.txt
