@@ -1,0 +1,6 @@
+README.md
+setup.py
+fingerprints_checker.egg-info/PKG-INFO
+fingerprints_checker.egg-info/SOURCES.txt
+fingerprints_checker.egg-info/dependency_links.txt
+fingerprints_checker.egg-info/top_level.txt
