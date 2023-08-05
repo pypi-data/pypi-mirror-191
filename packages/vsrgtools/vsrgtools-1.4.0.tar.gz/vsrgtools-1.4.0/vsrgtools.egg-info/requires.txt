@@ -1,0 +1,4 @@
+VapourSynth>=60
+vstools>=2.0.0
+vspyplugin>=1.3.0
+vsexprtools>=1.4.0
