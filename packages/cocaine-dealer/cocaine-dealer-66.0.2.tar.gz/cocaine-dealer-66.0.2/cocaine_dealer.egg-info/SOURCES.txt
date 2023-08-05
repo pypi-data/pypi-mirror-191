@@ -1,0 +1,6 @@
+README.md
+setup.py
+cocaine_dealer.egg-info/PKG-INFO
+cocaine_dealer.egg-info/SOURCES.txt
+cocaine_dealer.egg-info/dependency_links.txt
+cocaine_dealer.egg-info/top_level.txt
