@@ -1,0 +1,6 @@
+README.md
+setup.py
+werk.egg-info/PKG-INFO
+werk.egg-info/SOURCES.txt
+werk.egg-info/dependency_links.txt
+werk.egg-info/top_level.txt
