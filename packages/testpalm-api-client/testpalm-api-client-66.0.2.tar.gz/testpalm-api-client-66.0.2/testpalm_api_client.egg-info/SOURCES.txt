@@ -1,0 +1,6 @@
+README.md
+setup.py
+testpalm_api_client.egg-info/PKG-INFO
+testpalm_api_client.egg-info/SOURCES.txt
+testpalm_api_client.egg-info/dependency_links.txt
+testpalm_api_client.egg-info/top_level.txt
