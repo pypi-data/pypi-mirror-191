@@ -1,0 +1,6 @@
+README.md
+setup.py
+metrikatraficsource_bindings.egg-info/PKG-INFO
+metrikatraficsource_bindings.egg-info/SOURCES.txt
+metrikatraficsource_bindings.egg-info/dependency_links.txt
+metrikatraficsource_bindings.egg-info/top_level.txt
