@@ -1,0 +1,6 @@
+README.md
+setup.py
+nexus_rsync.egg-info/PKG-INFO
+nexus_rsync.egg-info/SOURCES.txt
+nexus_rsync.egg-info/dependency_links.txt
+nexus_rsync.egg-info/top_level.txt
