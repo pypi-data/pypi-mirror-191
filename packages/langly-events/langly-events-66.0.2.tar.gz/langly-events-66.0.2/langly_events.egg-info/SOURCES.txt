@@ -1,0 +1,6 @@
+README.md
+setup.py
+langly_events.egg-info/PKG-INFO
+langly_events.egg-info/SOURCES.txt
+langly_events.egg-info/dependency_links.txt
+langly_events.egg-info/top_level.txt
