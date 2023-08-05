@@ -1,0 +1,6 @@
+README.md
+setup.py
+sepelib.rpc.egg-info/PKG-INFO
+sepelib.rpc.egg-info/SOURCES.txt
+sepelib.rpc.egg-info/dependency_links.txt
+sepelib.rpc.egg-info/top_level.txt
