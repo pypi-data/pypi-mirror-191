@@ -1,0 +1,6 @@
+README.md
+setup.py
+ytensorflow.egg-info/PKG-INFO
+ytensorflow.egg-info/SOURCES.txt
+ytensorflow.egg-info/dependency_links.txt
+ytensorflow.egg-info/top_level.txt
