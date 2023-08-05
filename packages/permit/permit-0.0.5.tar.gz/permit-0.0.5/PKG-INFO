@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: permit
+Version: 0.0.5
+Summary: Permit.io python sdk
+Author: Asaf Cohen
+Author-email: asaf@permit.io
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
