@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: orzorng
+Version: 0.0.5
+Summary: learn to use
+Home-page: https://github.com/irnp/orzorng
+Author: hugo
+Author-email: orzorng@gmail.com
+License: MIT
+Keywords: orzorng,hugo
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
