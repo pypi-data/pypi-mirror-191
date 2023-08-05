@@ -1,0 +1,6 @@
+README.md
+setup.py
+tlkaf_misc.egg-info/PKG-INFO
+tlkaf_misc.egg-info/SOURCES.txt
+tlkaf_misc.egg-info/dependency_links.txt
+tlkaf_misc.egg-info/top_level.txt
