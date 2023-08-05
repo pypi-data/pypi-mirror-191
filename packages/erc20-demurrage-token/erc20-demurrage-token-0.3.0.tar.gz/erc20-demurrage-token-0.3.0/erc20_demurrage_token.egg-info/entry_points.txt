@@ -1,0 +1,3 @@
+[console_scripts]
+erc20-demurrage-token-apply = erc20_demurrage_token.runnable.apply:main
+erc20-demurrage-token-deploy = erc20_demurrage_token.runnable.deploy:main
