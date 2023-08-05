@@ -1,0 +1,13 @@
+README.md
+setup.py
+conannio/__init__.py
+conannio/build.py
+conannio/nioconanfile.py
+conannio/quickboot.py
+conannio/simulate.py
+niobuild.egg-info/PKG-INFO
+niobuild.egg-info/SOURCES.txt
+niobuild.egg-info/dependency_links.txt
+niobuild.egg-info/entry_points.txt
+niobuild.egg-info/requires.txt
+niobuild.egg-info/top_level.txt

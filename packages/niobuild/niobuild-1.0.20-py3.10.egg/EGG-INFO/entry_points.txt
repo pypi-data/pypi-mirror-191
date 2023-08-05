@@ -1,0 +1,2 @@
+[console_scripts]
+niobuild = conannio.build:main
