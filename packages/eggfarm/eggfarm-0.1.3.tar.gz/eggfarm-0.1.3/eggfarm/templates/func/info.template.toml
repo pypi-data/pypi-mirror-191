@@ -1,0 +1,7 @@
+# TODO: change the function sigature according to your needs
+# to support multiple signatures, you can add more signatures to this list
+# This file is for stonewave table function registration.
+# it is not supported to have multiple signatures with the same number of parameters
+# e.g. signature_list = [ [ "INT", "STRING", "INT",], [ "INT", "STRING", "INT", "BOOL",], [ "INT", "STRING", "INT", "BOOL", "FLOAT",],]
+# current valid data types are: [STRING | INT | BOOL | FLOAT | TALBE]
+signature_list = [ ["INT", "INT"] ]
