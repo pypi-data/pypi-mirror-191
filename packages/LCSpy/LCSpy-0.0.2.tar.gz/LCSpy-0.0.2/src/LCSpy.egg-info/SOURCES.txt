@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/LCSpy/LoFAR_cat_search.py
+src/LCSpy/__init__.py
+src/LCSpy/cutout_2d.py
+src/LCSpy/download_mosaic.py
+src/LCSpy.egg-info/PKG-INFO
+src/LCSpy.egg-info/SOURCES.txt
+src/LCSpy.egg-info/dependency_links.txt
+src/LCSpy.egg-info/top_level.txt
