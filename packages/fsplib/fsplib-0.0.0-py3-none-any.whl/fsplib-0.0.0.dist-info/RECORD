@@ -1,0 +1,9 @@
+fsplib/Dataset.py,sha256=60qBVFZmJ_PNq_RGkkDVkrVfG0VgqlUdK1NkI7c04JA,7355
+fsplib/ExpandingWindowCV.py,sha256=k16MOXsim_vKe6tx1jEUjqYHAibMXJQ3d-CJK9FQu3M,733
+fsplib/Model.py,sha256=YGusoaTMosv2hiv6Xskv9l-Es_NH7wB0edUefGTUt34,2154
+fsplib/SlidingWindowCV.py,sha256=X9tqQMEGi5Ih3I7k2IjIVA_st7HaNcZ7Sn5oMBgJGI4,914
+fsplib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fsplib-0.0.0.dist-info/METADATA,sha256=ZRS_300YtUHp6keqfdGuOMiR1GYLpTElseZVujLN0Qo,105
+fsplib-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fsplib-0.0.0.dist-info/top_level.txt,sha256=Y1qIODCtc3wqsdTtTeLhndnRHUPZb2Si3ZeCZZrCpb8,7
+fsplib-0.0.0.dist-info/RECORD,,
