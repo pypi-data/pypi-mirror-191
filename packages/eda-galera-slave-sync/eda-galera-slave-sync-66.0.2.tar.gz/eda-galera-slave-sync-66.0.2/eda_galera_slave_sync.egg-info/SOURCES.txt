@@ -1,0 +1,6 @@
+README.md
+setup.py
+eda_galera_slave_sync.egg-info/PKG-INFO
+eda_galera_slave_sync.egg-info/SOURCES.txt
+eda_galera_slave_sync.egg-info/dependency_links.txt
+eda_galera_slave_sync.egg-info/top_level.txt
