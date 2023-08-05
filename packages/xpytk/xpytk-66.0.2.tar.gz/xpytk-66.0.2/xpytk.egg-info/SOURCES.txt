@@ -1,0 +1,6 @@
+README.md
+setup.py
+xpytk.egg-info/PKG-INFO
+xpytk.egg-info/SOURCES.txt
+xpytk.egg-info/dependency_links.txt
+xpytk.egg-info/top_level.txt
