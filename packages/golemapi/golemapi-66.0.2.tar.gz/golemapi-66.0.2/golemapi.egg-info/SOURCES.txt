@@ -1,0 +1,6 @@
+README.md
+setup.py
+golemapi.egg-info/PKG-INFO
+golemapi.egg-info/SOURCES.txt
+golemapi.egg-info/dependency_links.txt
+golemapi.egg-info/top_level.txt
