@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ccdfits/__init__.py
+ccdfits/_auxiliary.py
+ccdfits/classes.py
+ccdfits/extract.py
+ccdfits/gfits.py
+ccdfits/processing.py
+ccdfits/utilities.py
+ccdfits.egg-info/PKG-INFO
+ccdfits.egg-info/SOURCES.txt
+ccdfits.egg-info/dependency_links.txt
+ccdfits.egg-info/requires.txt
+ccdfits.egg-info/top_level.txt
