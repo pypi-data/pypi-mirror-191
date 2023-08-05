@@ -1,0 +1,6 @@
+python_copasi-4.39.272.dist-info/RECORD,,
+python_copasi-4.39.272.dist-info/METADATA,sha256=DvqSdpd1DPnSrWqJJEMU61A48-wqFmLyEvxCxodvhfc,553
+python_copasi-4.39.272.dist-info/top_level.txt,sha256=alcBNMO80SwEg9mxj6uSjNAmtS5Swzz4yClzQjVF244,15
+python_copasi-4.39.272.dist-info/WHEEL,sha256=ZPo-cudG-FPYxyq1LXmKAMnRyaidvTmBVvSIj1CJfHY,152
+COPASI/__init__.py,sha256=1eP0RQX56HRGkRjcg-l38rtdnvKCBJG5X0C9DDQQ3-g,1303881
+COPASI/_COPASI.cpython-36m-aarch64-linux-gnu.so,sha256=LAvdqi6mYkL5hm2bNnt_rKvCQkoydFHlcGy2uBBRBwI,35540856
