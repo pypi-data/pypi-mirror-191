@@ -1,0 +1,6 @@
+README.md
+setup.py
+karrimat.egg-info/PKG-INFO
+karrimat.egg-info/SOURCES.txt
+karrimat.egg-info/dependency_links.txt
+karrimat.egg-info/top_level.txt
