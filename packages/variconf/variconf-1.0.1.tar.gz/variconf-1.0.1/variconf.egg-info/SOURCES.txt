@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+test/test_wconf.py
+variconf/__init__.py
+variconf/errors.py
+variconf/py.typed
+variconf/wconf.py
+variconf.egg-info/PKG-INFO
+variconf.egg-info/SOURCES.txt
+variconf.egg-info/dependency_links.txt
+variconf.egg-info/requires.txt
+variconf.egg-info/top_level.txt
