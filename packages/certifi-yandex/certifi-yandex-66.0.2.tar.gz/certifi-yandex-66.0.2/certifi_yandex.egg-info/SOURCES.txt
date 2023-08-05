@@ -1,0 +1,6 @@
+README.md
+setup.py
+certifi_yandex.egg-info/PKG-INFO
+certifi_yandex.egg-info/SOURCES.txt
+certifi_yandex.egg-info/dependency_links.txt
+certifi_yandex.egg-info/top_level.txt
