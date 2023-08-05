@@ -1,0 +1,6 @@
+README.md
+setup.py
+bki_stats.egg-info/PKG-INFO
+bki_stats.egg-info/SOURCES.txt
+bki_stats.egg-info/dependency_links.txt
+bki_stats.egg-info/top_level.txt
