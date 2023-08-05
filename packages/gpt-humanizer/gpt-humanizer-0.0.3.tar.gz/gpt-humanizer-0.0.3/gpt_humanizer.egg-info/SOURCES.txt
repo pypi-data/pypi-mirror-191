@@ -1,0 +1,9 @@
+README.md
+setup.py
+GPTHumanizer/GPTHumanizer.py
+GPTHumanizer/__init__.py
+gpt_humanizer.egg-info/PKG-INFO
+gpt_humanizer.egg-info/SOURCES.txt
+gpt_humanizer.egg-info/dependency_links.txt
+gpt_humanizer.egg-info/requires.txt
+gpt_humanizer.egg-info/top_level.txt
