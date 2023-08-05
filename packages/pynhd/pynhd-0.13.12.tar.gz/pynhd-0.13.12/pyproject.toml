@@ -1,0 +1,175 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=42",
+  "setuptools-scm>=7",
+]
+
+[project]
+name = "pynhd"
+description = "Access and navigate NHDPlus V2 via various web services, e.g., NLDI and WaterData."
+readme = "README.rst"
+license = {text = "MIT"}
+authors = [{name = "Taher Chegini", email = "cheginit@gmail.com"}]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Topic :: Scientific/Engineering :: Hydrology",
+  "Typing :: Typed"
+]
+dynamic = [
+  "version",
+]
+dependencies = [
+  "async-retriever>=0.3.12",
+  "cytoolz",
+  "geopandas>=0.10",
+  "networkx",
+  "numpy>=1.21",
+  "pandas>=1",
+  "pyarrow>=1.0.1",
+  "pygeoogc>=0.13.12",
+  "pygeoutils>=0.13.12",
+  "shapely>=1.8",
+]
+[project.optional-dependencies]
+nhdplus = [
+  "py7zr",
+  "pyogrio",
+]
+test = [
+  "coverage[toml]",
+  "pytest-cov",
+  "pytest-xdist[psutil]",
+]
+typeguard = [
+  "coverage[toml]",
+  "pygments",
+  "pytest-cov",
+  "pytest-xdist[psutil]",
+  "typeguard",
+]
+
+[project.urls]
+CI = "https://github.com/hyriver/pynhd/actions"
+Changelog = "https://docs.hyriver.io/changelogs/pynhd.html"
+Homepage = "https://docs.hyriver.io/readme/pynhd.html"
+Issues = "https://github.com/hyriver/pynhd/issues"
+
+
+[tool.bandit]
+targets = [
+  "pynhd"
+]
+
+[tool.black]
+line-length = 100
+
+[tool.codespell]
+skip = "__pycache__,_build,.mypy_cache,.git,./htmlcov,.nox"
+
+[tool.coverage.report]
+exclude_lines = [
+  'raise ServiceUnavailableError',
+  "if TYPE_CHECKING:"
+]
+ignore_errors = true
+
+[tool.coverage.run]
+branch = true
+omit = [
+  "**/__init__.py",
+  "**/print_versions.py"
+]
+parallel = true
+source = ['pynhd']
+
+[tool.isort]
+default_section = "THIRDPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+known_first_party = "pynhd"
+line_length = 100
+multi_line_output = 3
+profile = "black"
+use_parentheses = true
+
+[tool.mypy]
+allow_untyped_calls = true
+check_untyped_defs = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+strict = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[tool.pycln]
+all = true
+expand_stars = true
+no_gitignore = false
+verbose = true
+
+[tool.pyright]
+exclude = [
+  ".nox/",
+  "**/__pycache__",
+  "**/__init__.py",
+  "tests/"
+]
+include = ["pynhd"]
+reportMissingTypeStubs = false
+reportUnknownArgumentType = false
+reportUnknownLambdaType = false
+reportUnknownMemberType = false
+reportUnknownParameterType = false
+reportUnknownVariableType = false
+reportUnnecessaryIsInstance = false
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+addopts = "--ignore=noxfile.py -n=auto -v --cov=pynhd --cov-report xml --durations=5"
+doctest_optionflags = 'NORMALIZE_WHITESPACE IGNORE_EXCEPTION_DETAIL NUMBER'
+filterwarnings = [
+  "ignore:.*distutils.*",
+  "ignore:.*--rsyncdir command line argument.*",
+  "ignore:.*numpy.ndarray size changed.*",
+  "ignore:.*'cgi' is deprecated.*",
+]
+testpaths = [
+  "tests",
+  "pynhd"
+]
+
+[tool.refurb]
+python_version = "3.8"
+quiet = true
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+platforms = ["any"]
+zip-safe = false
+
+[tool.setuptools.package-data]
+pynhd = ["py.typed"]
+
+[tool.setuptools.packages]
+find = {namespaces = false}
+
+[tool.setuptools_scm]
+fallback_version = "999"
