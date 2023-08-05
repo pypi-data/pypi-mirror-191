@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: T5Custom
+Version: 1.1.0
+Summary: Custom T5 model creation with own csv training dataset
+Home-page: UNKNOWN
+Author: Sushil Ranjan
+Author-email: nikuraj006@gmail.com
+License: UNKNOWN
+Keywords: python,T5,T5-Base,T5-Large,T5-Small
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+To run this customT5 need a training dataset which have two coloumns "UseCase" which is a target and "Sentences" which is a source variable.
+
+Ex:
+	!pip install T5Custom
+
+    from T5Custom import main
+	import pandas as pd
+	path = "https://github.com/nikuraj006/customeT5/blob/main/T5_training%20Data.csv"
+	df = pd.read_csv(path).dropna()
+	
+	main.trainModel(df,True) # to train Model
+	
+	
+
+

@@ -1,0 +1,10 @@
+pandas
+sklearn
+scikit-learn
+torch
+numpy
+transformers
+flask
+pytorch_lightning
+flask-cors
+num2words
