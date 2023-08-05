@@ -1,0 +1,6 @@
+README.md
+setup.py
+yabs_p2p_client.egg-info/PKG-INFO
+yabs_p2p_client.egg-info/SOURCES.txt
+yabs_p2p_client.egg-info/dependency_links.txt
+yabs_p2p_client.egg-info/top_level.txt
