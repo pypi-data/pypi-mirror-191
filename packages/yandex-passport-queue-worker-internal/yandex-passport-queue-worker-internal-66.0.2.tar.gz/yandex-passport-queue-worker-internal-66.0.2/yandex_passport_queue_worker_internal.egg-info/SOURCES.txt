@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_passport_queue_worker_internal.egg-info/PKG-INFO
+yandex_passport_queue_worker_internal.egg-info/SOURCES.txt
+yandex_passport_queue_worker_internal.egg-info/dependency_links.txt
+yandex_passport_queue_worker_internal.egg-info/top_level.txt
