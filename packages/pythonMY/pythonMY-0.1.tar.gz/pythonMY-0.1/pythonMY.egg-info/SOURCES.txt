@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+pythonMY.egg-info/PKG-INFO
+pythonMY.egg-info/SOURCES.txt
+pythonMY.egg-info/dependency_links.txt
+pythonMY.egg-info/top_level.txt
