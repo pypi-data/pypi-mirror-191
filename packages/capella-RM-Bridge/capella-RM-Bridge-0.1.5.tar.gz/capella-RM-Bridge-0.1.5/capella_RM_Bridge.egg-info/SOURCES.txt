@@ -1,0 +1,76 @@
+.git_archival.txt
+.gitattributes
+.gitignore
+.pre-commit-config.yaml
+CONTRIBUTING.rst
+README.rst
+pyproject.toml
+setup.cfg
+.github/workflows/build-test-publish.yml
+.github/workflows/docs.yml
+.github/workflows/lint.yml
+LICENSES/.license_header.txt
+LICENSES/Apache-2.0.txt
+LICENSES/CC0-1.0.txt
+capella_RM_Bridge.egg-info/PKG-INFO
+capella_RM_Bridge.egg-info/SOURCES.txt
+capella_RM_Bridge.egg-info/dependency_links.txt
+capella_RM_Bridge.egg-info/not-zip-safe
+capella_RM_Bridge.egg-info/requires.txt
+capella_RM_Bridge.egg-info/top_level.txt
+capella_rm_bridge/__init__.py
+capella_rm_bridge/__main__.py
+capella_rm_bridge/auditing.py
+capella_rm_bridge/load.py
+capella_rm_bridge/py.typed
+capella_rm_bridge/changeset/__init__.py
+capella_rm_bridge/changeset/actiontypes.py
+capella_rm_bridge/changeset/change.py
+capella_rm_bridge/changeset/find.py
+capella_rm_bridge/changeset/snapshot_input.schema.json
+capella_rm_bridge/changeset/snapshot_input.schema.json.license
+docs/Makefile
+docs/make.bat
+docs/api/.project
+docs/api/.project.license
+docs/api/rm-bridge.afm
+docs/api/rm-bridge.afm.license
+docs/api/rm-bridge.aird
+docs/api/rm-bridge.aird.license
+docs/api/rm-bridge.capella
+docs/api/rm-bridge.capella.license
+docs/source/changeset.rst
+docs/source/conf.py
+docs/source/index.rst
+docs/source/snapshot.rst
+docs/source/_static/img/capella_migration.png
+docs/source/_static/img/capella_migration.png.license
+docs/source/examples/1 Access and change Auditing.ipynb
+docs/source/examples/1 Access and change Auditing.ipynb.license
+examples/model/.project
+examples/model/.project.license
+examples/model/RM Bridge Show.afm
+examples/model/RM Bridge Show.afm.license
+examples/model/RM Bridge Show.aird
+examples/model/RM Bridge Show.aird.license
+examples/model/RM Bridge Show.capella
+examples/model/RM Bridge Show.capella.license
+tests/__init__.py
+tests/conftest.py
+tests/test_auditing.py
+tests/test_changeset.py
+tests/data/config.yaml
+tests/data/changesets/create.yaml
+tests/data/changesets/delete.yaml
+tests/data/changesets/mod.yaml
+tests/data/model/.project
+tests/data/model/.project.license
+tests/data/model/RM Bridge.afm
+tests/data/model/RM Bridge.afm.license
+tests/data/model/RM Bridge.aird
+tests/data/model/RM Bridge.aird.license
+tests/data/model/RM Bridge.capella
+tests/data/model/RM Bridge.capella.license
+tests/data/snapshots/snapshot.yaml
+tests/data/snapshots/snapshot1.yaml
+tests/data/snapshots/snapshot2.yaml
