@@ -1,0 +1,6 @@
+README.md
+setup.py
+metacards_suggest.egg-info/PKG-INFO
+metacards_suggest.egg-info/SOURCES.txt
+metacards_suggest.egg-info/dependency_links.txt
+metacards_suggest.egg-info/top_level.txt
