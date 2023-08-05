@@ -1,0 +1,6 @@
+README.md
+setup.py
+xprod_crypta_util.egg-info/PKG-INFO
+xprod_crypta_util.egg-info/SOURCES.txt
+xprod_crypta_util.egg-info/dependency_links.txt
+xprod_crypta_util.egg-info/top_level.txt
