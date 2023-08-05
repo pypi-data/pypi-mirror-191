@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+ampdLib.egg-info/PKG-INFO
+ampdLib.egg-info/SOURCES.txt
+ampdLib.egg-info/dependency_links.txt
+ampdLib.egg-info/requires.txt
+ampdLib.egg-info/top_level.txt
+ampdlib/__init__.py
+ampdlib/ampdlib.py
+ampdlib/tests/test.py
