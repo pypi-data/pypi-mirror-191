@@ -1,0 +1,11 @@
+compositionspace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compositionspace/datautils.py,sha256=0-XST83IHlMx6yvYwBfgly4ZhmejF_QvGNp8WJ5DYoM,14907
+compositionspace/models.py,sha256=hMdp44oTI4z-TUDKxH94BUXkk2yyEixa-gIbIqK2osM,1067
+compositionspace/paraprobe_transcoder.py,sha256=7IihE7bDHcjx4r_-VEqZ2EFtd_oTJOGkUhTj_aAkfqQ,26697
+compositionspace/postprocessing.py,sha256=xkd5DE4rg-6zW-NaboPOYXGkh29qyJJ8Ot2YfsvYkhk,5369
+compositionspace/segmentation.py,sha256=Ks9HdFsKgXcW6aKW0VEztf-EbFqOWm_VdSrHoqXkEL0,9995
+compositionspace-0.0.8.dist-info/LICENSE,sha256=be_jPHYZZhbglDhsaeqeztfO3El7qn8_4fMgcuz2Nnc,1593
+compositionspace-0.0.8.dist-info/METADATA,sha256=pdJyrInhVJ4jQVCmCKDZqTgQfHCHFa-mUKiK3JK9xQc,2340
+compositionspace-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+compositionspace-0.0.8.dist-info/top_level.txt,sha256=3CqMouP90VZECLCFtn1WdxC05NdZLp15qkcPHNOsA1I,17
+compositionspace-0.0.8.dist-info/RECORD,,
