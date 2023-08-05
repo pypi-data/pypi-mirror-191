@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: petanalysis
+Version: 0.1.2
+Summary: The TIC wrapper API allows you to access the analysis on thousands of pets listed on Petfinder.com and animal welfare shelters hosting these pets.
+Home-page: https://github.com/atevhs/DATA534_PetAnalysis
+Author: ZiYing(Sophie) Chen, Shveta Sharma, Alyssa Foote
+Author-email: yamapi0927@hotmail.com, atevhs@gmail.com, alyssa.k.foote@gmail.com
+License: MIT
+Keywords: pets,dogs,adoption organizations,analysis,api wrapper,petfinder
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+
