@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: igor2
+Version: 0.4.0
+Summary: interface for reading binary IGOR files
+Author: Paul Kienzle, W. Trevor King, Aurelien Jaquier, Zbigniew Jędrzejewski-Szmek, Paul Müller
+License: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: cli
+Requires-Dist: matplotlib ; extra == 'cli'
+
