@@ -1,0 +1,6 @@
+README.md
+setup.py
+fdp_client.egg-info/PKG-INFO
+fdp_client.egg-info/SOURCES.txt
+fdp_client.egg-info/dependency_links.txt
+fdp_client.egg-info/top_level.txt
