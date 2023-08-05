@@ -1,0 +1,6 @@
+README.md
+setup.py
+yamarec_metarouter.egg-info/PKG-INFO
+yamarec_metarouter.egg-info/SOURCES.txt
+yamarec_metarouter.egg-info/dependency_links.txt
+yamarec_metarouter.egg-info/top_level.txt
