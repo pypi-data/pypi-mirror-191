@@ -1,0 +1,6 @@
+README.md
+setup.py
+nowcast_warnings.egg-info/PKG-INFO
+nowcast_warnings.egg-info/SOURCES.txt
+nowcast_warnings.egg-info/dependency_links.txt
+nowcast_warnings.egg-info/top_level.txt
