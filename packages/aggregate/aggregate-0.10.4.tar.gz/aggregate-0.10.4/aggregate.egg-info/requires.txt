@@ -1,0 +1,11 @@
+cycler
+ipykernel
+jinja2
+matplotlib
+numpy
+pandas
+psutil
+scipy
+sly
+titlecase
+IPython
