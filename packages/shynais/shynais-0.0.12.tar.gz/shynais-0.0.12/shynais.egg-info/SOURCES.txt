@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+shynais/Shynais.py
+shynais/__init__.py
+shynais.egg-info/PKG-INFO
+shynais.egg-info/SOURCES.txt
+shynais.egg-info/dependency_links.txt
+shynais.egg-info/requires.txt
+shynais.egg-info/top_level.txt
