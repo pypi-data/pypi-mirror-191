@@ -1,0 +1,6 @@
+README.md
+setup.py
+jenkins_job_builder_debuilder.egg-info/PKG-INFO
+jenkins_job_builder_debuilder.egg-info/SOURCES.txt
+jenkins_job_builder_debuilder.egg-info/dependency_links.txt
+jenkins_job_builder_debuilder.egg-info/top_level.txt
