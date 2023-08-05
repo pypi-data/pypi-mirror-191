@@ -1,0 +1,6 @@
+README.md
+setup.py
+lsmka_fetcher.egg-info/PKG-INFO
+lsmka_fetcher.egg-info/SOURCES.txt
+lsmka_fetcher.egg-info/dependency_links.txt
+lsmka_fetcher.egg-info/top_level.txt
