@@ -1,0 +1,6 @@
+README.md
+setup.py
+bclclient.egg-info/PKG-INFO
+bclclient.egg-info/SOURCES.txt
+bclclient.egg-info/dependency_links.txt
+bclclient.egg-info/top_level.txt
