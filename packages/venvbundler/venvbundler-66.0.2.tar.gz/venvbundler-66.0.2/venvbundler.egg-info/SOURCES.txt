@@ -1,0 +1,6 @@
+README.md
+setup.py
+venvbundler.egg-info/PKG-INFO
+venvbundler.egg-info/SOURCES.txt
+venvbundler.egg-info/dependency_links.txt
+venvbundler.egg-info/top_level.txt
