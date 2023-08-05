@@ -1,0 +1,6 @@
+README.md
+setup.py
+python_xq.egg-info/PKG-INFO
+python_xq.egg-info/SOURCES.txt
+python_xq.egg-info/dependency_links.txt
+python_xq.egg-info/top_level.txt
