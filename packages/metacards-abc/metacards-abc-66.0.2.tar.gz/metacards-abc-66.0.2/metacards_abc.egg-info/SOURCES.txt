@@ -1,0 +1,6 @@
+README.md
+setup.py
+metacards_abc.egg-info/PKG-INFO
+metacards_abc.egg-info/SOURCES.txt
+metacards_abc.egg-info/dependency_links.txt
+metacards_abc.egg-info/top_level.txt
