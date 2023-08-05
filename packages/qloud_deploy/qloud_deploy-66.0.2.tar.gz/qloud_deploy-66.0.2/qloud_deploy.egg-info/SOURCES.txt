@@ -1,0 +1,6 @@
+README.md
+setup.py
+qloud_deploy.egg-info/PKG-INFO
+qloud_deploy.egg-info/SOURCES.txt
+qloud_deploy.egg-info/dependency_links.txt
+qloud_deploy.egg-info/top_level.txt
