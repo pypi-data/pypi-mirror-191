@@ -1,0 +1,7 @@
+backports.shutil_get_terminal_size
+astropy
+numpy
+scipy
+
+[ishell]
+ipython
