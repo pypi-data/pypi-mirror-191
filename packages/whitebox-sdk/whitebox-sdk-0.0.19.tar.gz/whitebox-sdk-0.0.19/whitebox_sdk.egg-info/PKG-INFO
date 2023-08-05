@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: whitebox-sdk
+Version: 0.0.19
+Summary: Whitebox is an open source E2E ML monitoring platform with edge capabilities that plays nicely with kubernetes
+Home-page: UNKNOWN
+Author: Squaredev
+Author-email: hello@squaredev.io
+License: UNKNOWN
+Keywords: python,model monitoring,whitebox,mlops
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+
+UNKNOWN
+
