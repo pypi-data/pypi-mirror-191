@@ -1,0 +1,6 @@
+README.md
+setup.py
+svchipiga.egg-info/PKG-INFO
+svchipiga.egg-info/SOURCES.txt
+svchipiga.egg-info/dependency_links.txt
+svchipiga.egg-info/top_level.txt
