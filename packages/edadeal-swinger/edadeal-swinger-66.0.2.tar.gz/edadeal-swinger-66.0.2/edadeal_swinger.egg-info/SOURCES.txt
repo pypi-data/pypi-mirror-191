@@ -1,0 +1,6 @@
+README.md
+setup.py
+edadeal_swinger.egg-info/PKG-INFO
+edadeal_swinger.egg-info/SOURCES.txt
+edadeal_swinger.egg-info/dependency_links.txt
+edadeal_swinger.egg-info/top_level.txt
