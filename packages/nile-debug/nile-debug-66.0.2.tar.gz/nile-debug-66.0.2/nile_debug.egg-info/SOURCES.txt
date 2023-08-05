@@ -1,0 +1,6 @@
+README.md
+setup.py
+nile_debug.egg-info/PKG-INFO
+nile_debug.egg-info/SOURCES.txt
+nile_debug.egg-info/dependency_links.txt
+nile_debug.egg-info/top_level.txt
