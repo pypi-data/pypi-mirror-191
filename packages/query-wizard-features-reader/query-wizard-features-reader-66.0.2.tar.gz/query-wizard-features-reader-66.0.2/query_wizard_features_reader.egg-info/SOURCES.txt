@@ -1,0 +1,6 @@
+README.md
+setup.py
+query_wizard_features_reader.egg-info/PKG-INFO
+query_wizard_features_reader.egg-info/SOURCES.txt
+query_wizard_features_reader.egg-info/dependency_links.txt
+query_wizard_features_reader.egg-info/top_level.txt
