@@ -1,0 +1,6 @@
+README.md
+setup.py
+hnswlib_prebuilt.egg-info/PKG-INFO
+hnswlib_prebuilt.egg-info/SOURCES.txt
+hnswlib_prebuilt.egg-info/dependency_links.txt
+hnswlib_prebuilt.egg-info/top_level.txt
