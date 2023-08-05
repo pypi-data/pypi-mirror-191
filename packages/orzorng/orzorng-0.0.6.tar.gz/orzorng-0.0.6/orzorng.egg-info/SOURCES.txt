@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+orzorng/__init__.py
+orzorng/file.py
+orzorng/folder.py
+orzorng/network.py
+orzorng/string.py
+orzorng.egg-info/PKG-INFO
+orzorng.egg-info/SOURCES.txt
+orzorng.egg-info/dependency_links.txt
+orzorng.egg-info/requires.txt
+orzorng.egg-info/top_level.txt
+orzorng/res/bans.data
