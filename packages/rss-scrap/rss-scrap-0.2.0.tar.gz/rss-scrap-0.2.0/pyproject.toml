@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rss-scrap"
+version = "0.2.0"
+description = "Web scrapper which converts sites to RSS feeds."
+authors = ["Michal Goral <dev@goral.net.pl>"]
+license = "GPLv3"
+readme = "README.md"
+packages = [
+    { include = "torss", from = "src" },
+]
+homepage = "https://git.goral.net.pl/mgoral/rss-scrap"
+repository = "https://git.goral.net.pl/mgoral/rss-scrap"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiohttp = "^3.8.3"
+beautifulsoup4 = "^4.9.0"
+
+[tool.poetry.scripts]
+rss-scrap = "torss.app:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
