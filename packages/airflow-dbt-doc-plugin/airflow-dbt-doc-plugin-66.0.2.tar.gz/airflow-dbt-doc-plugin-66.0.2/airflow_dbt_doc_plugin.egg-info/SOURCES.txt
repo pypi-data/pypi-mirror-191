@@ -1,0 +1,6 @@
+README.md
+setup.py
+airflow_dbt_doc_plugin.egg-info/PKG-INFO
+airflow_dbt_doc_plugin.egg-info/SOURCES.txt
+airflow_dbt_doc_plugin.egg-info/dependency_links.txt
+airflow_dbt_doc_plugin.egg-info/top_level.txt
