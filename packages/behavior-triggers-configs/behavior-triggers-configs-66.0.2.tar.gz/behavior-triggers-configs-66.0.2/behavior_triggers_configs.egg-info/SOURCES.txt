@@ -1,0 +1,6 @@
+README.md
+setup.py
+behavior_triggers_configs.egg-info/PKG-INFO
+behavior_triggers_configs.egg-info/SOURCES.txt
+behavior_triggers_configs.egg-info/dependency_links.txt
+behavior_triggers_configs.egg-info/top_level.txt
