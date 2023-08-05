@@ -1,0 +1,6 @@
+README.md
+setup.py
+yc_marketplace_solomon_plugins.egg-info/PKG-INFO
+yc_marketplace_solomon_plugins.egg-info/SOURCES.txt
+yc_marketplace_solomon_plugins.egg-info/dependency_links.txt
+yc_marketplace_solomon_plugins.egg-info/top_level.txt
