@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: new-ai-benchmark
+Version: 1.0.0
+Summary: AI Benchmark is an open source python library for evaluating AI performance of various hardware platforms, including CPUs, GPUs and TPUs.
+Home-page: http://ai-benchmark.com
+Author: Andrey Ignatov
+Author-email: andrey@vision.ee.ethz.ch
+License: Apache License Version 2.0
+Keywords: AI Benchmark Tensorflow Machine Learning Inference Training
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Benchmark
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: py-cpuinfo
+Requires-Dist: pillow
+Requires-Dist: setuptools
+Requires-Dist: requests
+
+# ai-benchmark
