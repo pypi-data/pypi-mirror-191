@@ -1,0 +1,6 @@
+README.md
+setup.py
+vertis_schema_registry.egg-info/PKG-INFO
+vertis_schema_registry.egg-info/SOURCES.txt
+vertis_schema_registry.egg-info/dependency_links.txt
+vertis_schema_registry.egg-info/top_level.txt
