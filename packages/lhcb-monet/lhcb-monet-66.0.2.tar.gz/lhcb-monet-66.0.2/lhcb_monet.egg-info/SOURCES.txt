@@ -1,0 +1,6 @@
+README.md
+setup.py
+lhcb_monet.egg-info/PKG-INFO
+lhcb_monet.egg-info/SOURCES.txt
+lhcb_monet.egg-info/dependency_links.txt
+lhcb_monet.egg-info/top_level.txt
