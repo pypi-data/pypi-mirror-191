@@ -1,0 +1,2 @@
+recursive-include py23 *
+global-exclude *.py[cod]

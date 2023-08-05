@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+py23/__init__.py
+py23.egg-info/PKG-INFO
+py23.egg-info/SOURCES.txt
+py23.egg-info/dependency_links.txt
+py23.egg-info/top_level.txt
