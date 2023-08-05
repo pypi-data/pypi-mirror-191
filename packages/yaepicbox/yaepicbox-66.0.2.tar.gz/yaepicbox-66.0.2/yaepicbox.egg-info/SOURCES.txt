@@ -1,0 +1,6 @@
+README.md
+setup.py
+yaepicbox.egg-info/PKG-INFO
+yaepicbox.egg-info/SOURCES.txt
+yaepicbox.egg-info/dependency_links.txt
+yaepicbox.egg-info/top_level.txt
