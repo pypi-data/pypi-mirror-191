@@ -1,0 +1,6 @@
+README.md
+setup.py
+sshforwarder.egg-info/PKG-INFO
+sshforwarder.egg-info/SOURCES.txt
+sshforwarder.egg-info/dependency_links.txt
+sshforwarder.egg-info/top_level.txt
