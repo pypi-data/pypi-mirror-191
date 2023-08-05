@@ -1,0 +1,6 @@
+README.md
+setup.py
+meteo_converters.egg-info/PKG-INFO
+meteo_converters.egg-info/SOURCES.txt
+meteo_converters.egg-info/dependency_links.txt
+meteo_converters.egg-info/top_level.txt
