@@ -1,0 +1,6 @@
+README.md
+setup.py
+sepelib.zookeeper.egg-info/PKG-INFO
+sepelib.zookeeper.egg-info/SOURCES.txt
+sepelib.zookeeper.egg-info/dependency_links.txt
+sepelib.zookeeper.egg-info/top_level.txt
