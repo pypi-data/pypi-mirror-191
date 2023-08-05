@@ -1,0 +1,6 @@
+README.md
+setup.py
+alicelogs.egg-info/PKG-INFO
+alicelogs.egg-info/SOURCES.txt
+alicelogs.egg-info/dependency_links.txt
+alicelogs.egg-info/top_level.txt
