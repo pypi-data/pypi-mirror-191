@@ -1,0 +1,6 @@
+README.md
+setup.py
+yb_trust_rule_engine.egg-info/PKG-INFO
+yb_trust_rule_engine.egg-info/SOURCES.txt
+yb_trust_rule_engine.egg-info/dependency_links.txt
+yb_trust_rule_engine.egg-info/top_level.txt
