@@ -1,0 +1,6 @@
+README.md
+setup.py
+ids_jira.egg-info/PKG-INFO
+ids_jira.egg-info/SOURCES.txt
+ids_jira.egg-info/dependency_links.txt
+ids_jira.egg-info/top_level.txt
