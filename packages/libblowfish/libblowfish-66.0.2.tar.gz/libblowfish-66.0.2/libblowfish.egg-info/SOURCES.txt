@@ -1,0 +1,6 @@
+README.md
+setup.py
+libblowfish.egg-info/PKG-INFO
+libblowfish.egg-info/SOURCES.txt
+libblowfish.egg-info/dependency_links.txt
+libblowfish.egg-info/top_level.txt
