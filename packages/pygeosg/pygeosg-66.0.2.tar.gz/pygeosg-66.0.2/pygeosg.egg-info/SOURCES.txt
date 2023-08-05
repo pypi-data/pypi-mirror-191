@@ -1,0 +1,6 @@
+README.md
+setup.py
+pygeosg.egg-info/PKG-INFO
+pygeosg.egg-info/SOURCES.txt
+pygeosg.egg-info/dependency_links.txt
+pygeosg.egg-info/top_level.txt
