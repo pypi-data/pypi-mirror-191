@@ -1,0 +1,6 @@
+README.md
+setup.py
+tlk_airflow_jira.egg-info/PKG-INFO
+tlk_airflow_jira.egg-info/SOURCES.txt
+tlk_airflow_jira.egg-info/dependency_links.txt
+tlk_airflow_jira.egg-info/top_level.txt
