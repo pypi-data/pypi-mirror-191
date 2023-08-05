@@ -1,0 +1,6 @@
+README.md
+setup.py
+saaspy.egg-info/PKG-INFO
+saaspy.egg-info/SOURCES.txt
+saaspy.egg-info/dependency_links.txt
+saaspy.egg-info/top_level.txt
