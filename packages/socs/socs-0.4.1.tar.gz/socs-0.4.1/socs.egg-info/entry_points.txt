@@ -1,0 +1,2 @@
+[ocs.plugins]
+socs = socs.plugin
