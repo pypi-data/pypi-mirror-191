@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Mashup-GovindSingla-102016060
+Version: 0.0.1
+Summary: This module will create a mashup sort of thing of any singer you want of any duration with just simple command.
+Home-page: UNKNOWN
+Author: Govind Singla
+Author-email: <gsingla_be20@thapar.edu>
+License: UNKNOWN
+Keywords: MASHUP,YOUTUBE,PROJECT,MUSIC,MP3
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: pytube
+Requires-Dist: pydub
+
+UNKNOWN
+
