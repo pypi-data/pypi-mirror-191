@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mjml-python
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A Python wrapper for MRML (Rust port of MJML).
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/mgd020/mjml-python
+Project-URL: Bug Tracker, https://github.com/mgd020/mjml-python/issues
+
+# mjml-python
+
+A Python wrapper for [MRML](https://github.com/jolimail/mrml-core) (Rust port of [MJML](https://github.com/mjmlio/mjml)).
+
+## Installation
+
+```sh
+pip install mjml-python
+```
+
+## Usage
+
+```py
+from mjml import mjml2html
+
+html = mjml2html('''
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-image width="100px" src="/assets/img/logo-small.png"></mj-image>
+        <mj-divider border-color="#F45E43"></mj-divider>
+        <mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+''')
+```
+
+## Development
+
+```sh
+python -m venv env
+. env/bin/activate
+pip install -r requirements.txt
+maturin develop
+```
+
