@@ -1,0 +1,6 @@
+
+    [z3c.autoinclude.plugin]
+    target = plone
+    [console_scripts]
+    update_locale = acentoweb.ecv.locales.update:update_locale
+    

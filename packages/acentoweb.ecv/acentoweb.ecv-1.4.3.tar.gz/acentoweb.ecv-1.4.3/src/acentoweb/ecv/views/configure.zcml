@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="acentoweb.ecv">
+
+  -*- extra stuff goes here -*-
+
+  <browser:page
+    name="ecv-view"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".ecv_view.EcvView"
+    permission="zope2.View"
+  />
+
+  <browser:page
+    name="ecv-display"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    class=".ecv_view.EcvDisplay"
+    permission="zope2.View"
+  />
+
+
+</configure>

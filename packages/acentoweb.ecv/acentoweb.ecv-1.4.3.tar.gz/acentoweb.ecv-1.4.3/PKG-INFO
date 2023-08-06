@@ -1,0 +1,142 @@
+Metadata-Version: 1.2
+Name: acentoweb.ecv
+Version: 1.4.3
+Summary: CVE export function for Plone
+Home-page: https://github.com/collective/acentoweb.ecv
+Author: Espen Moe-Nilssen
+Author-email: espen@medialog.no
+License: GPL version 2
+Project-URL: Source, https://github.com/espenmn/acentoweb.ecv
+Project-URL: Tracker, https://github.com/espenmn/acentoweb.ecv/issues
+Project-URL: PyPI, https://pypi.python.org/pypi/acentoweb.ecv
+Description-Content-Type: UNKNOWN
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        =============
+        acentoweb.ecv
+        =============
+        
+        Exports ECV files from Plone CMS
+        
+        
+        Features
+        --------
+        
+        - View to export ECV files  
+        
+        
+         
+        
+        
+        Documentation
+        -------------
+        
+        Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+        
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - english (default=)
+        
+        
+        Installation
+        ------------
+        
+        Install acentoweb.ecv by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                acentoweb.ecv
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/espenmn/acentoweb.ecv/issues
+        - Source Code: https://github.com/espenmn/acentoweb.ecv
+        
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        espen@medialog.no
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Espen Moe-Nilssen, espen@medialog.no
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0 (02.11.2022)
+        ------------------
+        
+        - Initial release.
+          [espenmn]
+        
+        
+        1.1 (03.11.2022)
+        ------------------
+        
+        - Add view permission and portal action.
+          [espenmn]
+        
+        
+        1.2 (03.11.2022)
+        ------------------
+        
+        - Remove (uncomment) permissions [espenmn]
+        
+        
+        1.3 (05.12.2022)
+        ------------------
+        
+        - Added view ecv-display
+        
+        
+        1.4 (09.12.2022)
+        ------------------
+        
+        - Change id field name
+        - Change ' to "
+        
+        
+        1.4.2 (13.12.2022)
+        ------------------
+        
+        - Add replace in export ( " => ' ) 
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: ==2.7
