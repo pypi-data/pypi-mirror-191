@@ -1,0 +1,10 @@
+ezpackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezpackage/package_manager.py,sha256=80C62h6iTz2xMHJx-_fbzT3R3MqCBa_cUXGG3Ivarlc,4514
+ezpackage/templates/__init__.py,sha256=DQxDEdquHW8jw-0cdwdhS9_CpQRNy1TI9a0Wbe64QSM,120
+ezpackage/templates/manifest_template.txt,sha256=tWudk_H4jNRyWpfkSUebYXMGS-Ff2kZu1j_Dw0N_MLs,43
+ezpackage/templates/setup_template.txt,sha256=Osri5JQBWd9DClFFBLhkP960JItyHYOeCGJgZpyLL4E,419
+ezpackage-0.1.0.dist-info/LICENSE,sha256=hQnTlsXrCqZ0wlFiPd12rXNXpHc0ELngPObVdWqU8g8,1089
+ezpackage-0.1.0.dist-info/METADATA,sha256=IMyA7Wc4vaDKFg1RrZBzdN2Qqi5lDBTeS6iBeRGDTOM,217
+ezpackage-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ezpackage-0.1.0.dist-info/top_level.txt,sha256=JoC560VkbFprLEFLFQywp3hKX98fzWGar7ukcqM3nyY,10
+ezpackage-0.1.0.dist-info/RECORD,,
