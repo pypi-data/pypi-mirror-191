@@ -1,0 +1,26 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['pybok']
+
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'pybok',
+    'version': '0.0.1',
+    'description': 'The Python library to remove all the boilerplate from your code — inspired in https://projectlombok.org/ 🔥',
+    'long_description': '# Pybok\n\nThe Python library to remove all the boilerplate from your code — inspired in https://projectlombok.org/ 🔥\n\n## Installation\n\n```bash\npip install pybok\n```\n\n## Usage\n\nThere are multiple useful decorators.\n\n### ArgsConstructor\n\n```python\n@ArgsConstructor\nclass Student:\n    name: str\n    age: int\n\nstudent = Student("John", 21)\n\nprint(student._name) # John\nprint(student._age) # 21\n```\n\n### Getter\n\n```python\n@Getter\n@ArgsConstructor\nclass Student:\n    name: str\n    age: int\n\nstudent = Student("John", 21)\n\nprint(student.name) # John\nprint(student.age) # 21\n```\n\n### Setter\n\n```python\n@Setter\n@ArgsConstructor\nclass Student:\n    name: str\n    age: int\n\nstudent = Student("John", 21)\n\nstudent.name = "Jane"\nstudent.age = 19\n\nprint(student._name("Jane")) # Jane\nprint(student._age_(19)) # 19\n```\n\n### Data\n\n```python\n@Data\nclass Person:\n    name: str\n    age: int\n\np1 = Person("John", 21)\n\nprint(p1) # \'Person(name=John,age=21)\'\n\nprint(p1.name) # John\nprint(p1.age) # 21\n\nprint((hash(p1), hash((p1._name, p1._age))) # True\n\np1.name = "Mike"\np1.age = 28\n\nprint(p1._name) # Mike\nprint(p1.get_age()) # 28\n```\n\n### Builder\n\n```python\n@Builder\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\nperson = Person.builder().name("John").age(23).build()\n\nprint(person._name) # John\nprint(person._age # 23\n```\n\n### EqualsAndHashCode\n\n```python\n@EqualsAndHashCode\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\np1 = Person("John", 21)\n\nprint(hash(p1) == hash((p1._name, p1._age))) # True\n\np2 = Person("Jane", 19)\n\nprint(p1 == p2) # False\nprint(p1 == p1) # True\n```\n\n### ToString\n\n```python\n@ToString\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\nperson = Person("John", 21)\n\nprint(person) # Person(name=John,age=21)\n```\n\n### ToJSON\n\n```python\n@ToJSON\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\nperson = Person("John", 21)\n\nprint(person.json()) # {"name": "John", "age": 21} but pretty\n```\n\n### Singleton\n\n```python\n@Singleton\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\njohn = Person("John", 21)\njane = Person("Jane", 19)\nempty = Person()\n\nprint(john == jane) # True\nprint(john == empty) # True\n```\n\n### UtilityClass\n\n```python\n@UtilityClass\nclass MyClass:\n    def utility_method():\n        # whatever you need\n\nMyClass() # raises exception (cannot instantiate)\n```\n\n### With\n\n```python\n@With\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\nperson = Person("Jane", 19)\nsame = person.with_name("Jane")\nanother = person.with_age(21)\n        \nprint(person == same) # True\nprint(person == another) # False  \n```\n\n### Copy\n\n```python\n@ArgsConstructor\nclass Eyes:\n    color: str\n\n@Copy\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n    eyes: Eyes  \n\nperson = Person("Jane", 19, Eyes("blue"))\n\nshallow_copy = person.copy()\ndeep_copy = person.deepcopy()\n\nprint(person._name == shallow_copy._name) # True\nprint(person._age == shallow_copy._age) # True\nprint(person._eyes == shallow_copy._eyes) # True\n\nprint(person._name == deep_copy._name) # True\nprint(person._age == deep_copy._age) # True\nprint(person._eyes == deep_copy._eyes) # False\n```\n\n### Log\n\n```python\n@Log\n@ArgsConstructor\nclass Person:\n    name: str\n    age: int\n\n    def greet(self):\n        self.logger.info("{name} greets")\n\n@Log\n@ArgsConstructor\nclass Cat:\n    name: str\n    age: int\n\n    def meow(self):\n        self.logger.warning(f"{name}" meows!)\n\nperson = Person("Jane", 19)\n\nperson.greet() # 2005-03-23 23:47:11,663 - pybok_app - INFO - Jane greets\n\ncat = Cat("Tom", 8)\n\ncat.meow() # 2005-03-23 23:47:11,663 - pybok_app - WARN - Tom meows\n\nprint(person.logger == cat.logger) # True\n```\n\n### ConfigurationProperties\n\nReads any environment variable that you require. Supports default values as well.\n\nAlso, you can make it a singleton to inject it wherever you want by using the `@Singleton`.\n\n```python\nos.environ[self.DAY] = "1"\nos.environ[self.MONTH] = "10"\n\n@Singleton\n@ConfigurationProperties\nclass MyProps:\n    day: str\n    month: str\n    year: str = \'1991\'\n\nmyprops = MyProps()\n\nprint(myprops._day) # 1\nprint(myprops._month) # 10\nprint(myprops._year) # 1991\n\nmy_other_props = MyProps()\n\nprint(myprops == my_other_props) # True\n```\n\n## Contribution\n\nPlease read [CONTRIBUTION.md](CONTRIBUTION.md).\n\n## Code of Conduct\n\nPlease read the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md).\n\n## License\n\nThis project is licensed under the [MIT License](LICENSE).',
+    'author': 'Alvaro J. Gaona',
+    'author_email': 'alvgaona@gmail.com',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/alvgaona/pybok',
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
