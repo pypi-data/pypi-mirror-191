@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+DownloadDMARCAttachmentsFromGmail.egg-info/PKG-INFO
+DownloadDMARCAttachmentsFromGmail.egg-info/SOURCES.txt
+DownloadDMARCAttachmentsFromGmail.egg-info/dependency_links.txt
+DownloadDMARCAttachmentsFromGmail.egg-info/entry_points.txt
+DownloadDMARCAttachmentsFromGmail.egg-info/requires.txt
+DownloadDMARCAttachmentsFromGmail.egg-info/top_level.txt
+DownloadDMARCFilesFromGmail/GmailAuth.py
+DownloadDMARCFilesFromGmail/GmailLabelQuery.py
+DownloadDMARCFilesFromGmail/__init__.py
+DownloadDMARCFilesFromGmail/__main__.py
+DownloadDMARCFilesFromGmail/download.py
+tests/test_all.py
