@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+odd_airflow_2.egg-info/PKG-INFO
+odd_airflow_2.egg-info/SOURCES.txt
+odd_airflow_2.egg-info/dependency_links.txt
+odd_airflow_2.egg-info/entry_points.txt
+odd_airflow_2.egg-info/not-zip-safe
+odd_airflow_2.egg-info/requires.txt
+odd_airflow_2.egg-info/top_level.txt
+odd_airflow_integration/__init__.py
+odd_airflow_integration/airflow_odd_integrator.py
+odd_airflow_integration/listener.py
+odd_airflow_integration/plugin.py
