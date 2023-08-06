@@ -1,0 +1,6 @@
+dynaconf
+h5py
+scraps
+tk
+lmfit
+streamlit
