@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+syslogcef/__init__.py
+syslogcef/__version__.py
+syslogcef/testmessages.py
+syslogcef.egg-info/PKG-INFO
+syslogcef.egg-info/SOURCES.txt
+syslogcef.egg-info/dependency_links.txt
+syslogcef.egg-info/requires.txt
+syslogcef.egg-info/top_level.txt
+tests/__init__.py
+tests/test_syslogcef.py
