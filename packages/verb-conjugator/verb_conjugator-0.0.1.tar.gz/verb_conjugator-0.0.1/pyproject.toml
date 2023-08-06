@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "verb-conjugator"
+version = "0.0.1"
+authors = [
+  { name="Marc Smith", email="theonlymarcsmith@gmail.com" },
+]
+description = "A tool to practice verb conjugations in french and spanish"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "verbecc==1.8.1",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/theonlysam/verb-conjugator"
+"Bug Tracker" = "https://github.com/theonlysam/verb-conjugator/issues"
+
+[project.scripts]
+conjugator = "verb_conjugator.__main__:main"
