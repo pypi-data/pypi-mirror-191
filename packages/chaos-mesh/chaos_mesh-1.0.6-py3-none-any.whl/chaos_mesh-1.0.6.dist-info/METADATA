@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chaos-mesh
+Version: 1.0.6
+Summary: A client to create experiments in ChaosMesh
+Home-page: https://github.com/vishrantgupta/chaos-mesh
+Author: Vishrant Gupta
+Author-email: gvishrant@vmware.com
+Requires-Dist: auto-mix-prep (==0.2.0)
+Requires-Dist: kubernetes (==21.7.0)
+Requires-Dist: polling (==0.3.2)
+Requires-Dist: setuptools (==67.2.0)
+
