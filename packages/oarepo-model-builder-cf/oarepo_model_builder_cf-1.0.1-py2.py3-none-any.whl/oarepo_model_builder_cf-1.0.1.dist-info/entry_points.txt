@@ -1,0 +1,11 @@
+[oarepo_model_builder.builders.model]
+1000-cf-field = oarepo_model_builder_cf.builders:InvenioRecordCFBuilder
+
+[oarepo_model_builder.model_preprocessors.model]
+1000-cf = oarepo_model_builder_cf.model_preprocessors:CFModelPreprocessor
+
+[oarepo_model_builder.templates]
+99-cf-templates = oarepo_model_builder_cf
+
+[oarepo_model_builder.validation]
+cf = oarepo_model_builder_cf.validation:VALIDATION
