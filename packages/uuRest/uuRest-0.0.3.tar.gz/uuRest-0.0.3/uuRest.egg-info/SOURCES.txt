@@ -1,0 +1,10 @@
+README.md
+setup_uuRest.py
+uuRest/__init__.py
+uuRest/common.py
+uuRest/uuCommand.py
+uuRest/uuRest.py
+uuRest.egg-info/PKG-INFO
+uuRest.egg-info/SOURCES.txt
+uuRest.egg-info/dependency_links.txt
+uuRest.egg-info/top_level.txt
