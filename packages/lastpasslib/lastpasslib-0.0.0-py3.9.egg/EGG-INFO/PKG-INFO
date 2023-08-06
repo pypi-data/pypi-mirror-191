@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: lastpasslib
+Version: 0.0.0
+Summary: A library able to retrieve and decrypt all items in lastpass along with their change history and attachments.
+Home-page: https://github.com/schubergphilis/lastpasslib
+Author: Costas Tyfoxylos
+Author-email: ctyfoxylos@schubergphilis.com
+License: MIT
+Keywords: lastpasslib lastpass read-only
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+===========
+lastpasslib
+===========
+
+A library able to retrieve and decrypt all items in lastpass along with their change history and attachments.
+
+
+* Documentation: https://lastpasslib.readthedocs.org/en/latest
+
+
+Project Features
+================
+
+* Can completely decrypt all secrets, attachments, and all history of every field that supports it.
+* Can save the blob locally.
+* Can save attachments of secrets.
+* Exposes share info to and from people.
+
+Project Inspiration
+===================
+
+
+Initial inspiration was taken from https://github.com/konomae/lastpass-python. More features were needed and I could not
+really follow the design of that project so well, so I ended up rewriting all of it with a new design that made sense to
+me and implemented all the required features on that. This project is now quite further that the original project feature wise.
+
+During my reverse engineering efforts I also found https://github.com/cfbao/lastpass-vault-parser/blob/master/lastpass-vault-format.md
+sadly a little too late. Also extended my model further than the documentation of that project.
+
+
+
+
+History
+-------
+
+0.0.1 (08-02-2023)
+---------------------
+
+* First code creation
