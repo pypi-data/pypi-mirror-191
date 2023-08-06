@@ -1,0 +1,10 @@
+mkpyp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkpyp/__main__.py,sha256=Fd6kbkANoxo0jcmun9ghaTDn8e5dm67Khf-Q60zYRCw,35
+mkpyp/main.py,sha256=Kc6Xd1pL-lV55qO68DF7fwKpM-k3mpUI79Y37XuDPYM,9003
+mkpyp/templates.py,sha256=NKyIUlX3cS62DnXlbsFIXbNKtdcF7lpXH2bLIyCEMJI,16721
+mkpyp/version.py,sha256=QZ1mAlCNp8hZkZt9ppSnl1sW_zqQPE9sTcZ174CLvR4,867
+mkpyp-0.2.2.dist-info/METADATA,sha256=09sjPPdsciqBQy7kA22o8Qkl43Dce-k56q1rcAJtMuU,3826
+mkpyp-0.2.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+mkpyp-0.2.2.dist-info/entry_points.txt,sha256=zLdEAdorAU6FsBsn5O4W3GekAckYHBlrkudV45I11_Y,41
+mkpyp-0.2.2.dist-info/licenses/LICENSE,sha256=ZWII2kuhg_exmNswyWOS0UakVpUSjKNNuytkQEMlCqo,1097
+mkpyp-0.2.2.dist-info/RECORD,,
