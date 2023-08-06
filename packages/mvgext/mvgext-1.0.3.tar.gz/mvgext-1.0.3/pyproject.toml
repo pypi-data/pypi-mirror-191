@@ -1,0 +1,44 @@
+[build-system]
+requires      = [ "setuptools>=61.0", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name    = "mvgext"
+version = "1.0.3"
+
+description = "An unofficial interface to timetable information of the Münchner Verkehrsgesellschaft (MVG)."
+readme      = "README.md"
+
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+]
+
+requires-python = ">=3.7"
+dependencies    = [ "aiohttp~=3.8", "furl~=2.1" ]
+
+[[project.authors]]
+name  = "Andreas Haagner"
+email = "ahaagner@gmx.de"
+
+[project.urls]
+"Documentation" = "https://github.com/piehler73/mvgext"
+"Source"        = "https://github.com/piehler73/mvgext"
+"Bug Tracker"   = "https://github.com/piehler73/mvgext/issues"
+
+[project.optional-dependencies]
+dev = [
+  "autopep8",
+  "build",
+  "flake8",
+  "mypy",
+  "pylint",
+  "pytest",
+  "pytest-asyncio",
+  "sphinx",
+  "sphinx-mdinclude",
+  "sphinx-pyproject",
+  "sphinx-rtd-theme",
+  "twine",
+]
