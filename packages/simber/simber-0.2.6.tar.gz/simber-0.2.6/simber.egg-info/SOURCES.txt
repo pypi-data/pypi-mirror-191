@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+simber/__init__.py
+simber/colors.py
+simber/configurations.py
+simber/exceptions.py
+simber/formatter.py
+simber/logger.py
+simber/stream.py
+simber.egg-info/PKG-INFO
+simber.egg-info/SOURCES.txt
+simber.egg-info/dependency_links.txt
+simber.egg-info/requires.txt
+simber.egg-info/top_level.txt
