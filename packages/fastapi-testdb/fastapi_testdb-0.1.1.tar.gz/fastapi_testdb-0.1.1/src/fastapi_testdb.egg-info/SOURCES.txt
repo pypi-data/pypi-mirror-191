@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/fastapi_testdb/__init__.py
+src/fastapi_testdb/testdb.py
+src/fastapi_testdb.egg-info/PKG-INFO
+src/fastapi_testdb.egg-info/SOURCES.txt
+src/fastapi_testdb.egg-info/dependency_links.txt
+src/fastapi_testdb.egg-info/requires.txt
+src/fastapi_testdb.egg-info/top_level.txt
+tests/test_main.py
