@@ -1,0 +1,3 @@
+[console_scripts]
+signhost=signhost.__main__:main
+
