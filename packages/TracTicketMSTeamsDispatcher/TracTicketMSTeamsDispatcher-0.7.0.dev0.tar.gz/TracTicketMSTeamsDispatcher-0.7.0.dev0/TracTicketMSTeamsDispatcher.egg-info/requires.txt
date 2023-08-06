@@ -1,0 +1,13 @@
+requests
+Trac>=1.5
+
+[dev]
+isort
+black
+mypy
+pre-commit
+pytest
+pytest-mypy
+setuptools>=42
+setuptools_scm[toml]>=3.4
+wheel
