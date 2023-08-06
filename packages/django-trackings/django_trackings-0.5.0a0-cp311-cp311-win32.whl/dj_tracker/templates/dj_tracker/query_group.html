@@ -1,0 +1,81 @@
+{% extends "dj_tracker/base.html" %}
+
+{% load static %}
+
+{% block title %}Query Group #{{ object.pk }}{% endblock %}
+
+{% block h1 %}
+    Query Group {{ object.pk }}
+    <small class="text-muted">{{ object.num_queries }} quer{{ object.num_queries|pluralize:"y,ies" }}</small>
+{% endblock %}
+
+{% block body %}
+    <section class="flex">
+        <div class="shrink-0 pr-20 max-w-sm">
+            <form>
+                <fieldset>
+                    <legend class="section__subtitle">Filter</legend>
+                    <div class="mb-3">
+                        <input type="radio" id="show-related" name="select" data-select-type="related" value="related">
+                        <label class="ml-1.5" for="show-related">Related</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="show-duplicates" name="select" data-select-type="duplicates" value="duplicates">
+                        <label class="ml-1.5" for="show-duplicates">Duplicates</label>
+                    </div>
+                </fieldset>
+
+                {% if similar_sqls %}
+                    <fieldset>
+                        <legend class="section__subtitle">Similar SQLs</legend>
+                        {% for sql_id, objs in similar_sqls %}
+                            <div class="mb-3 flex justify-between">
+                                <label for="show-sql-{{ sql_id }}" class="shrink-0 flex items-center mr-5">
+                                    <span class="rounded-pill mr-1.5">{{ objs }}</span>
+                                    <span>{{ sql_id }}</span>
+                                </label>
+                                <input type="radio" id="show-sql-{{ sql_id }}" name="select" data-select-type="sql" value="{{ sql_id }}">
+                            </div>
+                        {% endfor %}
+                    </fieldset>
+                {% endif %}
+
+                {% if similar_tracebacks %}
+                    <fieldset>
+                        <legend class="section__subtitle">Similar Tracebacks</legend>
+                        {% for traceback_id, objs in similar_tracebacks %}
+                            <div class="mb-3 flex justify-between">
+                                <label for="show-traceback-{{ traceback_id }}" class="shrink-0 flex items-center mr-5">
+                                    <span class="rounded-pill mr-1.5">{{ objs }}</span>
+                                    <span>{{ traceback_id }}</span>
+                                </label>
+                                <input type="radio" id="show-traceback-{{ traceback_id }}" name="select" data-select-type="traceback" value="{{ traceback_id }}">
+                            </div>
+                        {% endfor %}
+                    </fieldset>
+                {% endif %}
+            </form>
+
+            <h5 class="section__subtitle mt-4">Requests</h5>
+            <ol>
+                {% for request in requests %}
+                    <li class="py-2.5 first:pt-0">
+                        <a href="{{ request.get_absolute_url }}" class="break-words">{{ request }}</a>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="grow">
+            <h5 class="section__subtitle">Queries</h5>
+            <div>
+                {% for qs_tracking in qs_trackings %}
+                    {% include "dj_tracker/qs_tracking.html" with qs_tracking=qs_tracking query=qs_tracking.query query_pk=qs_tracking.query.pk %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'dj_tracker/js/query_group.js' %}"></script>
+{% endblock %}
