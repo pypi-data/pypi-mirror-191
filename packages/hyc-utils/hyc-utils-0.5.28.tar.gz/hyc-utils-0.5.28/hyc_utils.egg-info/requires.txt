@@ -1,0 +1,14 @@
+numpy
+matplotlib
+statsmodels
+torch
+tomli
+h5py
+pandas
+tables
+tqdm
+mat73
+
+[test]
+pytest
+scipy
