@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+FreeDeepL.egg-info/PKG-INFO
+FreeDeepL.egg-info/SOURCES.txt
+FreeDeepL.egg-info/dependency_links.txt
+FreeDeepL.egg-info/not-zip-safe
+FreeDeepL.egg-info/requires.txt
+FreeDeepL.egg-info/top_level.txt
