@@ -1,0 +1,7 @@
+torch
+numpy
+scipy
+setproctitle
+pyvista
+xitorch
+torchdiffeq
