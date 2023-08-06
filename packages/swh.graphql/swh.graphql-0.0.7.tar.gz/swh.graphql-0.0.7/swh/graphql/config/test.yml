@@ -1,0 +1,15 @@
+# Config to be used with unit/functional tests
+
+storage:
+  cls: memory
+
+search:
+  cls: memory
+
+debug: yes
+
+introspection: yes
+
+max_query_cost:
+  anonymous: 100
+

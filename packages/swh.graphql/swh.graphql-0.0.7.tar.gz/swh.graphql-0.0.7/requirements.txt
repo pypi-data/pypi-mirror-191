@@ -1,0 +1,4 @@
+ariadne
+uvicorn
+starlette
+httpx
