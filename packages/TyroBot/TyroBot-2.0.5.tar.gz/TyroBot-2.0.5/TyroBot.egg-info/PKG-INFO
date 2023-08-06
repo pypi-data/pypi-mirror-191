@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: TyroBot
+Version: 2.0.5
+Summary: This is a powerful library for building self robots in Rubika
+Home-page: https://github.com/mrsalari/TyroBot
+Author: mohammad saeed salari
+Author-email: salari601601@gmail.com
+Keywords: rubika,rubino,tyrobot,pyrubika,rubika bot,rubika library,rubx,rubika-bot,rubika-lib,bot,self bot,rubika.ir,asyncio
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+    <br>
+        <img src="https://s2.uupload.ir/files/tyrobot_7ofw.png" alt="RUBIKA" width="128">
+    <br>
+    <br>
+        <b>Rubika Bot Self Library for Python</b>
+    <br>
+</p>
+
+## Rubika
+
+> A fast, beautiful and very powerful library for making your own robots in Rubika
+
+``` python
+from TyroBot import Bot, Message
+
+bot = Bot('TOKEN')
+
+for msg in bot.on_message():
+    m = Message(msg)
+    if m.text() == 'Hello':
+        bot.reply(msg, 'Hello from TyroBot Library')
+```
+
+**Tyrobot is** is an easy, fast and unofficial [rubika](https://rubika.ir) self bot library. 
+It enables you to easily interact with the main Telegram API through a user account (custom client) using Python.
+
+### Key Features
+
+- **Ready**: Install rubika with pip and start building your applications right away.
+- **Easy**: Makes the rubika API simple and intuitive, while still allowing advanced usages.
+- **Elegant**: Low-level details are abstracted and re-presented in a more convenient way.
+- **Fast**: Boosted up by aiohttp instead of requests.
+- **Powerful**: Full access to Rubika's API to execute any official client action and more.
+
+### Installing
+
+``` bash
+pip3 install TyroBot
+```
+
+This is not an official rubika product. It is not affiliated with nor endorsed by rubika Inc.
+
+© 2023 Mohammad Saeed Salari
