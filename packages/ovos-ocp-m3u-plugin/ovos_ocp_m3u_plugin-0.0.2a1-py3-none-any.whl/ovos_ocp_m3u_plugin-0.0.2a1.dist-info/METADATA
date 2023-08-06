@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ovos-ocp-m3u-plugin
+Version: 0.0.2a1
+Summary: OCP youtube stream extractor plugin
+Home-page: https://github.com/OpenVoiceOS/ovos-ocp-m3u-plugin
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Keywords: ovos ocp plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-plugin-common-play
+
+UNKNOWN
+
+

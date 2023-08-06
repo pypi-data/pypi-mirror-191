@@ -1,0 +1,6 @@
+[ovos.ocp.extractor]
+ovos-ocp-m3u-plugin = ovos_ocp_m3u_plugin:OCPPlaylistExtractor
+
+[ovos.ocp.extractor.config]
+ovos-ocp-m3u-plugin.config = ovos_ocp_m3u_plugin:OCPPlaylistExtractorConfig
+
