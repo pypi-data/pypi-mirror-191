@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/CVAE_GLRM.egg-info/PKG-INFO
+src/CVAE_GLRM.egg-info/SOURCES.txt
+src/CVAE_GLRM.egg-info/dependency_links.txt
+src/CVAE_GLRM.egg-info/entry_points.txt
+src/CVAE_GLRM.egg-info/requires.txt
+src/CVAE_GLRM.egg-info/top_level.txt
