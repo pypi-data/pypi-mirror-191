@@ -1,0 +1,7 @@
+pyspark
+confluent-kafka
+requests
+delta-spark==2.1.1
+
+[:python_version < "3.11"]
+tomli
