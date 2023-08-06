@@ -1,0 +1,4 @@
+[console_scripts]
+djplus=djplus.__main__:main
+djplusconfig=djplus.__main__:generate_config_file
+
