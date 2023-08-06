@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: aws-credentialer
+Version: 0.1.0
+Summary: An AWS MFA Credentials Updater
+Author-email: Hidayatullah Ahsan <hahsan@techicon.net>
+Project-URL: Homepage, https://github.com/hahsan-ti/aws-credentialer
+Project-URL: Bug Tracker, https://github.com/hahsan-ti/aws-credentialer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3 (==1.26.69)
+Requires-Dist: botocore (==1.29.69)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: s3transfer (==0.6.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.14)
+
+# AWS MFA Credentials Updater
+
+> A convinient way to update AWS credentials for an AWS profile with MFA enforced.
+
+## Installation
+
+Using `pip`
+
+```sh
+pip install aws_credentialer
+```
+
+## Usage Example
+
+Run the following command in your favorite terminal:
+
+```sh
+python -m aws_credentialer nnnnnn
+```
+
+Help is available with the `-h` parameter.
+
+## Release History
+
+* 0.1.0
+  * The first proper release.
