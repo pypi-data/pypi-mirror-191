@@ -1,0 +1,3 @@
+notesh
+notesh/drawables
+notesh/widgets
