@@ -1,0 +1,3 @@
+[console_scripts]
+saleor-sdk=saleor_sdk.console.app:cli
+
