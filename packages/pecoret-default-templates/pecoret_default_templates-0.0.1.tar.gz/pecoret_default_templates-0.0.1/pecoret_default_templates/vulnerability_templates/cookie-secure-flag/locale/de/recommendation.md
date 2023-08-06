@@ -1,0 +1,3 @@
+Um eine solche Schwachstelle zu beheben, müssen Sie lediglich das Secure-Flag für das anfällige Cookie setzen, um zu verhindern, dass es in unverschlüsselten Verbindungen, d. h. über HTTP, übertragen wird.
+
+Je nach verwendeter Sprache und Technologie kann das Setzen des Secure-Flags bedeuten, dass es entweder im Code der Anwendung selbst oder in einer Konfigurationsdatei des von Ihnen verwendeten Webservers oder Content Management Systems (CMS) aktiviert oder auf true gesetzt wird.

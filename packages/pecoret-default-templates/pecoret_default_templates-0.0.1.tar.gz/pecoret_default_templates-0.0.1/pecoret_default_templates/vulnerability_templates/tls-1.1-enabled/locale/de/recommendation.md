@@ -1,0 +1,1 @@
+Es wird empfohlen, TLS 1.1 zu deaktivieren und es durch TLS 1.2 oder höher zu ersetzen.

@@ -1,0 +1,3 @@
+recursive-include pecoret_default_templates/templates *
+recursive-include pecoret_default_templates/locale *
+recursive-include pecoret_default_templates/vulnerability_templates *
