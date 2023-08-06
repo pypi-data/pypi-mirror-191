@@ -1,0 +1,418 @@
+# Option Chain for Indian Stock Market with Kite APIs  
+
+This library uses Kite Connect APIs to fetch the option chain of all the derivatives present in Indian stock market. It supports all the exchanges including NFO, MCX, CDS and BCD. It also provides API to fetch the option chain of an asset.   
+
+Some major features are 
+* ✅ Light weight
+* ⚡️ Optimized for speed - Uses parallel connections through Python Multiprocessing   
+* 📈 Supports subscribing to all the derivatives across all exchanges (NFO for equity, MCX, CDS, BCD) in a single API
+* ⏱️ No considerable difference in execution time even when subscribed to all the symbols present in Indian exchanges - Uses cache wherever possible to eliminate network calls
+* 📊 Filters to remove unwanted options
+* 🔧 Installable via pip
+
+## Installation
+
+### Prerequisites
+This tool requires basic understanding of how kite websockets work.
+
+1. Working redis database
+2. Kite developer account and secrets (api_key and access token)
+
+## Usage 
+Fetching the option chain involves a 2-step process
+1. Subscribe to the trading symbols you are interested. It creates an option stream process which subscribes to all the resolved tokens. This process receives the option ticks/quotes and stores it in the database(Redis in our case).
+This is a background process which should be run to update the option chain. 
+2. Using the OptionChainFetcher APIs, fetch the option chain in your application. Option chain for each trading symbol can be fetched in 3 ms thanks to Redis.
+
+## Basic example 
+
+### Step 1: Start the Option Stream Process
+
+```python
+from expressoptionchain.option_stream import OptionStream
+from expressoptionchain.helper import get_secrets
+
+# the option stream start should be in main module
+if __name__ == '__main__':
+    secrets = {
+        'api_key': get_secrets()['api_key'],
+        'access_token': get_secrets()['access_token']
+    }
+    # there is no limit on the number of symbols to subscribe to
+    symbols = ['NFO:HDFCBANK', 'NFO:INFY', 'NFO:RELIANCE', 'NFO:DRREDDY', 'NFO:EICHERMOT']
+    # symbols = ['CDS:EURINR', 'CDS:GBPINR', 'CDS:JPYINR', 'CDS:USDINR', 'BCD:EURINR']
+    # symbols = ['MCX:GOLD', 'MCX:GOLDM', 'MCX:NATURALGAS', 'MCX:NICKEL', 'MCX:SILVER', 'MCX:SILVERM']
+
+    stream = OptionStream(symbols, secrets, expiry='23-02-2023')
+    stream.start()
+```
+
+
+### Step2: Fetch the option chain in your application
+
+```python
+from expressoptionchain.option_chain import OptionChainFetcher
+
+option_chain_fetcher = OptionChainFetcher()
+
+# option chain for each trading symbol can be fetched in 3 ms
+option_chain = option_chain_fetcher.get_option_chain('NFO:HDFCBANK')
+
+while True:
+    option_chains = option_chain_fetcher.get_option_chains(
+        ['NFO:HDFCBANK', 'NFO:INFY', 'NFO:RELIANCE', 'NFO:DRREDDY', 'NFO:EICHERMOT'])
+    # do some processing on option chains
+```
+
+**Option Chain Response:**
+
+<details>
+<summary>See the shortened response here</summary>
+
+```json
+{
+    "trading_symbol": "HDFCBANK",
+    "segment": "NFO-OPT",
+    "underlying_value": "1658.1",
+    "expiry": {
+        "23-02-2023": [
+            {
+                "strike_price": 1600.0,
+                "ce": {
+                    "bid_quantity": 1650,
+                    "bid_price": 63.4,
+                    "ask_quantity": 550,
+                    "ask_price": 65.2,
+                    "premium": 65.0,
+                    "last_trade_time": "13-02-2023 10:59:43",
+                    "exchange_timestamp": "13-02-2023 12:57:46",
+                    "last_traded_quantity": 550,
+                    "change": 3.916866506794569,
+                    "oi": 398750,
+                    "oi_day_high": 430100,
+                    "oi_day_low": 398750,
+                    "total_buy_quantity": 73700,
+                    "ohlc": {
+                        "open": 60.0,
+                        "high": 66.4,
+                        "low": 52.6,
+                        "close": 62.55
+                    },
+                    "total_sell_quantity": 47300,
+                    "volume": 202400,
+                    "bid": [
+                        {
+                            "quantity": 1650,
+                            "price": 63.4,
+                            "orders": 3
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 63.35,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 1100,
+                            "price": 63.3,
+                            "orders": 2
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 63.15,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 62.7,
+                            "orders": 1
+                        }
+                    ],
+                    "ask": [
+                        {
+                            "quantity": 550,
+                            "price": 65.2,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 65.25,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 65.3,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 68.25,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 69.0,
+                            "orders": 1
+                        }
+                    ],
+                    "tradable": true,
+                    "depth": {
+                        "buy": [
+                            {
+                                "quantity": 1650,
+                                "price": 63.4,
+                                "orders": 3
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 63.35,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 1100,
+                                "price": 63.3,
+                                "orders": 2
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 63.15,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 62.7,
+                                "orders": 1
+                            }
+                        ],
+                        "sell": [
+                            {
+                                "quantity": 550,
+                                "price": 65.2,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 65.25,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 65.3,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 68.25,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 69.0,
+                                "orders": 1
+                            }
+                        ]
+                    },
+                    "instrument_token": 20601602
+                },
+                "pe": {
+                    "bid_quantity": 550,
+                    "bid_price": 4.55,
+                    "ask_quantity": 550,
+                    "ask_price": 4.7,
+                    "premium": 4.55,
+                    "last_trade_time": "13-02-2023 10:59:55",
+                    "exchange_timestamp": "13-02-2023 12:57:46",
+                    "last_traded_quantity": 550,
+                    "change": -12.500000000000005,
+                    "oi": 1410200,
+                    "oi_day_high": 1499850,
+                    "oi_day_low": 1408000,
+                    "total_buy_quantity": 151250,
+                    "ohlc": {
+                        "open": 5.05,
+                        "high": 6.0,
+                        "low": 4.25,
+                        "close": 5.2
+                    },
+                    "total_sell_quantity": 191950,
+                    "volume": 2049300,
+                    "bid": [
+                        {
+                            "quantity": 550,
+                            "price": 4.55,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 4.35,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 11550,
+                            "price": 4.3,
+                            "orders": 2
+                        },
+                        {
+                            "quantity": 2200,
+                            "price": 4.25,
+                            "orders": 3
+                        },
+                        {
+                            "quantity": 1100,
+                            "price": 4.2,
+                            "orders": 2
+                        }
+                    ],
+                    "ask": [
+                        {
+                            "quantity": 550,
+                            "price": 4.7,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 1100,
+                            "price": 4.75,
+                            "orders": 2
+                        },
+                        {
+                            "quantity": 550,
+                            "price": 4.8,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 1100,
+                            "price": 4.9,
+                            "orders": 1
+                        },
+                        {
+                            "quantity": 1100,
+                            "price": 5.0,
+                            "orders": 2
+                        }
+                    ],
+                    "tradable": true,
+                    "depth": {
+                        "buy": [
+                            {
+                                "quantity": 550,
+                                "price": 4.55,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 4.35,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 11550,
+                                "price": 4.3,
+                                "orders": 2
+                            },
+                            {
+                                "quantity": 2200,
+                                "price": 4.25,
+                                "orders": 3
+                            },
+                            {
+                                "quantity": 1100,
+                                "price": 4.2,
+                                "orders": 2
+                            }
+                        ],
+                        "sell": [
+                            {
+                                "quantity": 550,
+                                "price": 4.7,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 1100,
+                                "price": 4.75,
+                                "orders": 2
+                            },
+                            {
+                                "quantity": 550,
+                                "price": 4.8,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 1100,
+                                "price": 4.9,
+                                "orders": 1
+                            },
+                            {
+                                "quantity": 1100,
+                                "price": 5.0,
+                                "orders": 2
+                            }
+                        ]
+                    },
+                    "instrument_token": 20601858
+                }
+            },
+            {
+                "strike_price": 1650.0,
+                "another_key": "and so on"
+            }
+        ]
+    },
+    "source": "kite_api",
+    "lot_size": 550
+}
+```
+</details>
+The actual response is big. You can see it here. 
+
+## Advanced Usage
+
+### Filter out unwanted options
+As of today, there are 217 underlying assets in Indian stock market across all the exchanges. It means we need to subscribe to approximately 16,000 instrument tokens to fetch the data of all the options. 
+
+However, it's not possible to fetch it with the access token of one application in Kite Connect. Kite websocket API restricts the parallel connections to 3 and there could be a maximum of 3000 tokens per connection. Hence, only 9000 tokens could be subscribed with a single access token. But you may not be interested in deep ITM/OTM options which are 15% to 30% away from the spot price of the underlying asset as these options are highly illiquid or have no open interest.
+
+With the percentage filter, you can filter out these options. You can specify value in percentage. Any option whose strike price is farther from the spot price by specified value will be filtered out. 
+Consider an example where the underlying asset say RELIANCE has a spot price of 1000 INR. If the percentage filter of value 20 is applied, all the options which are greater than 1200 and lesser than 800 are removed from the option chain. 
+
+### Other features
+- By default, db=0 (Database index) is selected in redis. You can change it by passing the RedisConfig instance. Make sure you pass the same configuration to OptionChainFetcher APIs if you use this configuration.
+
+## Code describing the advanced usage
+
+```python
+from expressoptionchain.option_stream import OptionStream
+from expressoptionchain.helper import get_secrets
+from expressoptionchain.redis_helper import RedisConfig
+
+# the option stream start should be in main module
+if __name__ == '__main__':
+    secrets = {
+        'api_key': get_secrets()['api_key'],
+        'access_token': get_secrets()['access_token']
+    }
+
+    symbols = ['NFO:HDFCBANK', 'NFO:INFY', 'NFO:RELIANCE', 'NFO:DRREDDY', 'NFO:EICHERMOT']
+
+    # The percentage criteria filters out options with strike prices that are more than a specified value away
+    # from the current spot price. In this example, percentage value is set to 12.5%.
+    # By adding this criteria filter, it resolves to 262 tokens instead of 438 tokens if no filter was
+    # applied
+    criteria = {'name': 'percentage', 'properties': {'value': 12.5}}
+
+    stream = OptionStream(symbols, secrets,
+                          expiry='23-02-2023',
+                          criteria=criteria,
+                          redis_config=RedisConfig(db=1)
+                          )
+    stream.start()
+
+```
+
+## How does it work internally? 
+Kite Connect APIs provides Websockets API. It enables us to subscribe to individual options of the underlying asset. Maximum of 3 websockets connections can be established and each connection can subscribe upto 3000 instrument tokens.
+
+KiteInstrumentManager runs once a day during the first run of the option stream to fetch the instruments. Once the OptionStream is instantiated with the underlying assets, the corresponding tokens are calculated. 
+Number of websocket connections are determined based on the length of the tokens with a limit of 3. Connections are created within separate python processes. Quotes/ticks are obtained after the websocket connection is established. Ticks are stored in redis hash. Storage of ticks is handled by separate worker threads. Another worker thread calculates the option chain using the stored ticks. 
+
+OptionChainFetcher class provides an interface to fetch the already stored ticks by the aforementioned thread. 
+
+## Contact
+Feel free to contact me if you need any support regarding this library. If there are bugs, create an issue in GitHub.  
