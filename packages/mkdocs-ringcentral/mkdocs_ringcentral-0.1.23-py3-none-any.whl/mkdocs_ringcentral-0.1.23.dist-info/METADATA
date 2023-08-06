@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mkdocs-ringcentral
+Version: 0.1.23
+Summary: RingCentral theme for MkDocs
+Home-page: https://github.com/byrnereese/mkdocs-ringcentral/
+Author: Byrne Reese
+Author-email: byrne.reese@ringcentral.com
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs (>=1.1)
+Requires-Dist: mkdocs-ringcentral-api-index (>=0.1.6)
+Requires-Dist: mkdocs-moonstone (>=0.2.0)
+Requires-Dist: mdx-include (>=0.4.1)
+
+This is a proprietary theme used to power RingCentral developer documentation. 
+
+The RingCentral logo is trademarked by RingCentral. Usage without express permission from RingCentral is prohibited. 
