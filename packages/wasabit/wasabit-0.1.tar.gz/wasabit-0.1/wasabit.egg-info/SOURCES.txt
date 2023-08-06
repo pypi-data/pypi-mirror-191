@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+wasabit/__init__.py
+wasabit/wasabi_auth.py
+wasabit/wasabi_download.py
+wasabit/wasabi_upload.py
+wasabit.egg-info/PKG-INFO
+wasabit.egg-info/SOURCES.txt
+wasabit.egg-info/dependency_links.txt
+wasabit.egg-info/requires.txt
+wasabit.egg-info/top_level.txt

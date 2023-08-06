@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: wasabit
+Version: 0.1
+Summary: This package offers a solution for uploading files, creating folders, and authenticating with Wasabi
+Author: Saurabh Harak
+Author-email: saurabh_harak@isb.edu
+License-File: LICENSE
