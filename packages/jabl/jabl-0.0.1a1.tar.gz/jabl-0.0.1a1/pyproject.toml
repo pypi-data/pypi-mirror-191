@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "jabl"
+version = "0.0.1a1"
+description = "An attempt to make lists in Python more useful, functional, and fun to use."
+authors = ["Nic Harvey <nicharvey@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+beartype = "^0.12"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.0"
+pytest = "^6.2"
+pytest-cov = "^3.0"
+flake8 = "^6.0.0"
+
+[tool.poetry.group.examples.dependencies]
+ipykernel = "^6.5"
+numpy = "^1.24"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
