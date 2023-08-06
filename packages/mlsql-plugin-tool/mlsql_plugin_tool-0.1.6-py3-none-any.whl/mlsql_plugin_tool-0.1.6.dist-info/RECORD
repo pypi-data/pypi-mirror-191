@@ -1,0 +1,17 @@
+mlsql_plugin_tool-0.1.6.dist-info/DESCRIPTION.rst,sha256=J6hiWokyt9k8_OXZ_DUmCO6DXR1VLE1CcxBXlKW9twQ,80
+mlsql_plugin_tool-0.1.6.dist-info/METADATA,sha256=-bYcYYKadNoa3pd0Euu55x_0gtnEV3pYnqLQODhvVCA,844
+mlsql_plugin_tool-0.1.6.dist-info/RECORD,,
+mlsql_plugin_tool-0.1.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+mlsql_plugin_tool-0.1.6.dist-info/entry_points.txt,sha256=Hn99TmCCofKQKcPnXZWWte561FWzJIk1jx_lIN4fA4A,92
+mlsql_plugin_tool-0.1.6.dist-info/metadata.json,sha256=vJ80ItyPqv5DLHo5x5Z9PD_OH8KrQpOuz2GoMLwWh5k,1128
+mlsql_plugin_tool-0.1.6.dist-info/top_level.txt,sha256=wWIyTjCg-fGhEjOvcdurcjtSh-sAi8Sy4iEdDAIkIAU,5
+tech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/tool/Plugin.py,sha256=clLo5FDmcQ_u0g5GgAethJ9jFjgNs8MNzyPSRjc3b10,2309
+tech/mlsql/plugin/tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/tool/http_manager.py,sha256=sfTsv4yum6gNsetrjmnNOQx-oSeDq-z1bVvBI51YJDw,363
+tech/mlsql/plugin/tool/shellutils.py,sha256=DEdYyxVJHIHhphz5jpsXSaF6a61CxCUttEIdeQua7kA,3489
+tech/mlsql/plugin/tool/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tech/mlsql/plugin/tool/commands/builder.py,sha256=GvBZJ-ZCBLZ3sy4wvE8rHQ8Mkq4LPE3Lz6jeoPSDmMM,5257
+tech/mlsql/plugin/tool/commands/compile_process.py,sha256=y61D-mBn3ScrJo4SVN7CJxiz2oNzCyqqfCloDxHJTPc,2893

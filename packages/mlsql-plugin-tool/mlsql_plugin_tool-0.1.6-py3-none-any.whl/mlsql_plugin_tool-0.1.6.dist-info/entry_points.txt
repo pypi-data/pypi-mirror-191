@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        mlsql_plugin_tool=tech.mlsql.plugin.tool.Plugin:main
+    
