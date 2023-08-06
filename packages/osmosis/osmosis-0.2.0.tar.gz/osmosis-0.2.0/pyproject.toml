@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osmosis"
+description = "An experimental Stable Diffusion frontend"
+authors = [{ name = "Ryan Cao", email = "hello@ryanccn.dev" }]
+
+readme = "README.md"
+requires-python = ">=3.9, <3.11"
+
+dynamic = ["version"]
+
+dependencies = [
+  "diffusers[torch]~=0.11",
+  "coremltools; sys_platform=='darwin'",
+  "transformers",
+  "accelerate",
+  "click>=8.1",
+  "eventlet",
+  "flask~=2.2.2",
+  "flask-socketio~=5.3.2",
+  "torch>=1.13.1",
+  "realesrgan",
+  "gfpgan",
+  "tqdm",
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: GPU",
+  "Environment :: GPU :: NVIDIA CUDA",
+  "Environment :: MacOS X",
+  "Environment :: Web Environment",
+  "Framework :: Flask",
+  "Intended Audience :: End Users/Desktop",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Natural Language :: English",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: JavaScript",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Multimedia :: Graphics",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+osmosis = "osmosis.cli:main"
+
+[project.optional-dependencies]
+"dev" = ["black"]
+"xformers" = [
+  "xformers~=0.0.16; sys_platform!='darwin'",
+  "triton; sys_platform=='linux'",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "osmosis.__version__" }
+
+[tool.setuptools.packages.find]
+"where" = ["."]
+"include" = ["osmosis*"]
+
+[tool.setuptools.package-data]
+"osmosis.frontend.dist" = ["**"]
