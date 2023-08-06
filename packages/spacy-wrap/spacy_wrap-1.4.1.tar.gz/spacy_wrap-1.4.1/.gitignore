@@ -1,0 +1,25 @@
+# Python
+__pycache__/*
+*.pyc
+*.egg-info
+build/*
+
+# MacOS
+.DS_store
+
+# VS code
+.vscode/*
+
+# docs
+docs/_build/*
+
+# test scripts
+tmp.py
+example.png
+test/*
+
+# virtual env
+spacy_wrap_venv1/*
+
+# ignore tmp files
+tmp*.py
