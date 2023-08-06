@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tcp-over-websocket
+Version: 1.0.2
+Summary: TCP over HTTPS Upgraded Websocket with Mutual TLS
+Home-page: https://github.com/Synerty/tcp-over-websocket
+Download-URL: https://codeload.github.com/Synerty/tcp-over-websocket/zip/refs/heads/master
+Author: Synerty
+Author-email: contact@synerty.com
+Keywords: TCP,Websocket,MutualTLS,synerty
+License-File: LICENSE
