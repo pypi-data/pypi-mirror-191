@@ -1,0 +1,8 @@
+pycryptodome
+websocket-client
+requests
+aiohttp
+urllib3
+pillow
+mutagen
+tinytag
