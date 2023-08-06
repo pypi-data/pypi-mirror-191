@@ -1,0 +1,12 @@
+scipy
+pyprind
+pandas
+xarray
+numpy<1.24.0
+klausen
+xlrd
+numexpr
+bw2io
+pycountry
+wurst
+pyyaml
