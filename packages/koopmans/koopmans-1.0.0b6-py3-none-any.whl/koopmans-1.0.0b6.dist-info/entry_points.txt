@@ -1,0 +1,2 @@
+[console_scripts]
+koopmans = koopmans.cli.main:main
