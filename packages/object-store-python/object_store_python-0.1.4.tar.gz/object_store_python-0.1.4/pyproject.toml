@@ -1,0 +1,44 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15", "typing_extensions"]
+build-backend = "maturin"
+
+[project]
+name = "object-store-python"
+version = "0.1.4"
+description = "A generic object store interface for uniformly interacting with AWS S3, Google Cloud Storage, Azure Storage and local files."
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = ["object-store", "azure", "aws", "gcp"]
+authors = [{ name = "Robert Pack", email = "robstar.pack@gmail.com" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Rust",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+]
+
+[project.optional-dependencies]
+pyarrow = ["pyarrow>=7.0"]
+
+[project.urls]
+Documentation = "https://github.com/roeap/object-store-python#readme"
+Repository = "https://github.com/roeap/object-store-python"
+
+[tool.maturin]
+bindings = "pyo3"
+sdist-include = ["Cargo.lock"]
+
+[tool.coverage.report]
+fail_under = 85
+exclude_lines = [
+  "pragma: no cover",
+  "@overload",
+  "except ImportError",
+  "if TYPE_CHECKING:",
+  "from typing_extensions import ",
+]
