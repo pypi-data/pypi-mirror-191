@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: getfast
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://getfast.dev
+Author: wd021
+Author-email: wd021 <dannywitters@gmail.com>
+Project-URL: Homepage, https://getfast.dev
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# getfast-python
