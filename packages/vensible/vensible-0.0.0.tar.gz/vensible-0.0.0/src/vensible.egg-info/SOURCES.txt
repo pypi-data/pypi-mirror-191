@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/vensible/__init__.py
+src/vensible.egg-info/PKG-INFO
+src/vensible.egg-info/SOURCES.txt
+src/vensible.egg-info/dependency_links.txt
+src/vensible.egg-info/top_level.txt
