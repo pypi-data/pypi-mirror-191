@@ -1,0 +1,3 @@
+[sceptre.resolvers]
+rcmd = resolver.rcmd:SceptreResolverCmd
+
