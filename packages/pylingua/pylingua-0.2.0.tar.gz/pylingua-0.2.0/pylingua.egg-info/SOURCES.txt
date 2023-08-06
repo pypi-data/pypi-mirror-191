@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+lingua/__init__.py
+lingua/hooks.py
+lingua/lingua_sdk.py
+lingua/utils.py
+pylingua.egg-info/PKG-INFO
+pylingua.egg-info/SOURCES.txt
+pylingua.egg-info/dependency_links.txt
+pylingua.egg-info/requires.txt
+pylingua.egg-info/top_level.txt
