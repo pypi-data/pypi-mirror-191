@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: codestare-maze
+Version: 0.1.1
+Summary: Simple Maze Generator
+Home-page: https://themenwhostareatco.de/
+Author: Maximilian Schmidt
+Author-email: ga97lul@mytum.de
+Keywords: maze,dnd,rpg
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: setuptools-changelog (==1.0.0) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (==7.1.2) ; extra == 'test'
+
+codestar-maze
+=============
+
+Simple maze generators in python.
+
+Usage
+-----
+Installing the package also installs the `maze-gen` entry point.
+
+::
+
+    usage: maze-gen [-h] [--file FILE] {growing_tree} ...
+
+    positional arguments:
+      {growing_tree}  sub-command help
+
+    options:
+      -h, --help      show this help message and exit
+      --file FILE
+
