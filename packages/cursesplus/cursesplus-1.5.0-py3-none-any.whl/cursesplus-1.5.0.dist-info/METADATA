@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cursesplus
+Version: 1.5.0
+Summary: An extension program to curses that offers option menus, message boxes, file dialogs and more
+Author-email: Enderbyte Programs <enderbyte09@gmail.com>
+Project-URL: Homepage, https://github.com/Enderbyte-Programs/Curses-Plus
+Project-URL: Bug Tracker, https://github.com/Enderbyte-Programs/Curses-Plus/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Curses Plus
+Extension library to curses
+
+## How To Install
+Use ```pip3 install cursesplus```
+on Linux or ```py -m pip install cursesplus```
+on Windows
+
+### SPECIAL INSTRUCTIONS FOR WINDOWS
+
+For Windows you need to also install ```windows-curses``` or related program
+to provide the basic curses functionality
+
+## What's New?
+## Version 1.5
+-Add progressbars file
+
+-Add readfile_progress_bar function
+
+-Add writefile_progress_bar function
+
+## Uses
+
+curses-plus offers many utilities to make writing TUI applications easy. (TUI stands for Terminal User Interface)
+
+### load_colours(grayscale=False)
+
+load_colours() accept 0-1 args and initializes some colours. Usage of this function is required for optionmenu.
+grayscale denotes if only grayscale should be used (grayscale can improve visibility on Windows)
+
+
+*If I have more time I will finish this blasted documentation*
