@@ -1,0 +1,134 @@
+# ****************************************
+# * FIGURE                               *
+# ****************************************
+
+figure.figsize: 8, 4.5
+figure.dpi: 100
+
+# ****************************************
+# * TITLE                                *
+# ****************************************
+
+axes.titlelocation: center
+# axes.titley: -0.42
+
+# ****************************************
+# * FONT                                 *
+# ****************************************
+
+font.family: Ricty diminished
+mathtext.fontset: stix
+font.style: normal
+font.weight: normal
+
+# ****************************************
+# * FONT SIZE                            *
+# ****************************************
+
+font.size: 18
+
+figure.titlesize: 32
+axes.titlesize: 32
+
+figure.labelsize: 24
+axes.labelsize: 24
+
+xtick.labelsize: 18
+ytick.labelsize: 18
+
+legend.fontsize: 18
+
+# ****************************************
+# * PADDING                              *
+# ****************************************
+
+axes.titlepad: 18.0
+axes.labelpad: 12.0
+
+xtick.major.pad: 4.5
+ytick.major.pad: 4.5
+xtick.minor.pad: 4.2
+ytick.minor.pad: 4.2
+
+# ****************************************
+# * AXES                                 *
+# ****************************************
+
+axes.spines.left: False
+axes.spines.bottom: True
+axes.spines.top: False
+axes.spines.right: False
+
+axes.linewidth: 1.25
+
+xtick.direction: in
+ytick.direction: in
+
+ytick.left: False
+
+# ****************************************
+# * GRID                                 *
+# ****************************************
+
+axes.grid: True
+axes.grid.axis: y
+axes.grid.which: both
+axes.axisbelow: True  # gridをグラフの下にする
+
+grid.linestyle: -
+grid.linewidth: 1.0
+grid.alpha: 1.0
+
+# ****************************************
+# * LEGEND                               *
+# ****************************************
+
+legend.fancybox: False  # 角丸
+legend.framealpha: 1.0
+
+legend.borderpad: 0.4
+legend.labelspacing: 0.5  # 垂直方向の距離
+legend.handlelength: 2.0  # 凡例の線の長さ
+legend.handletextpad: 0.5  # 凡例の線と文字の距離の長さ
+legend.markerscale: 1.0
+legend.borderaxespad: 0.5 # 凡例の端とグラフの端の間隔
+
+# ****************************************
+# * COLOR                                *
+# ****************************************
+
+figure.facecolor: fafafa
+axes.facecolor: fafafa
+savefig.facecolor: fafafa
+legend.facecolor: fafafa
+
+figure.edgecolor: fafafa
+savefig.edgecolor: fafafa
+legend.edgecolor: 424242
+
+axes.titlecolor: 282828
+
+text.color: 282828
+axes.labelcolor: 282828
+legend.labelcolor: 282828
+
+axes.edgecolor: 424242
+xtick.color: 424242
+ytick.color: 424242
+xtick.labelcolor: 424242
+ytick.labelcolor: 424242
+
+grid.color: c0c0c0
+
+# Reference : https://www3.dic-global.com/dic-graphics/navi/color/pdf/cud_guidebook.pdf
+axes.prop_cycle: cycler('color', ['005aff', 'f6aa00', '03af7a', 'ff4b00', '9467bd', '804000', 'ff8082', '84919e', 'fff100', '4dc4ff'])
+
+# original
+#axes.prop_cycle: cycler('color', ['5484B5', 'D18A52', 'C35967', '6BBFBF', '40AE4B', 'DFCB4A', '9A61A6', 'ACC255'])
+
+# ****************************************
+# * SAVEFIG                              *
+# ****************************************
+
+savefig.bbox: tight
+savefig.pad_inches: 0.1
