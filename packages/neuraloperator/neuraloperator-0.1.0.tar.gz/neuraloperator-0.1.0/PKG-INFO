@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: neuraloperator
+Version: 0.1.0
+Summary: Learning (Tensorized) Neural Operators in PyTorch.
+Home-page: UNKNOWN
+License: Modified BSD
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+
+Neural Operator
+===============
+
+Installation
+------------
+
+Just clone the repository and install locally (in editable mode so changes in the code are immediately reflected without having to reinstall):
+
+.. code::
+
+  git clone https://github.com/NeuralOperator/neuraloperator
+  cd neuraloperator
+  pip install -e .
+
+
+Using with weights and biases
+-----------------------------
+
+Create a file in `neuraloperator/config` called `wandb_api_key.txt` and paste your Weights and Biases API key there.
+You can configure the project you want to use and your username in the main yaml configuration files.
+
+
+
+
+
