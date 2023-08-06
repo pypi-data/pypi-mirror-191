@@ -1,0 +1,16 @@
+setup_uuRest.py
+uuRest/__init__.py
+uuRest/uuCommand.py
+uuRest/uuCommon.py
+uuRest/uuIO.py
+uuRest/uuLoging.py
+uuRest/uuRest.py
+uuRest/uuRestLogin.py
+uuRest/uuStopwatch.py
+uuRest.egg-info/PKG-INFO
+uuRest.egg-info/SOURCES.txt
+uuRest.egg-info/dependency_links.txt
+uuRest.egg-info/requires.txt
+uuRest.egg-info/top_level.txt
+uuTS/__init__.py
+uuTS/uuTS.py
