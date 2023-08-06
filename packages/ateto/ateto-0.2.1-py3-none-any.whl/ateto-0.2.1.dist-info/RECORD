@@ -1,0 +1,14 @@
+ateto/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+ateto/cli.py,sha256=r9ekUe17ZaC_90kGNcWJOFv9osBLmktVhnUVaCg-idw,7239
+ateto/conf.py,sha256=2C8jW5NZFYOpI4U54MnQsIVlO5DpAdeHStPVBPmggdQ,1613
+ateto/data.py,sha256=fpfmWWR2uy2ycfDsvUf3xnVoc2WwYnP0iuuwyETW0q8,2469
+ateto/medias.py,sha256=MyOuTISg-fPJrKxJJ56yxl0pozN-cnDhMwSiqkvQBnc,4664
+ateto/models.py,sha256=qd54Mc6r3Aa5OabNB6iWBuu192Qjf0hftYjJekfJH8c,10689
+ateto/sync.py,sha256=7XnNys88-jHICIcC_I0jfNBD9zGGcCnkfgz-GKxWSxY,4890
+ateto/templates.py,sha256=LYxkIupZR5mVsTiNF1r7ScmYWGX4pEAxogFMDy9chO0,3903
+ateto/utils.py,sha256=Hu3-bL8uoQqoOgsYUfjryFUubCxo6pmf558dhphdgLE,2671
+ateto/watcher.py,sha256=y-jjFR5VvGEbIenTJPGHrD4wQqizJu5_VxpiMUdJf6c,4035
+ateto-0.2.1.dist-info/METADATA,sha256=9ySoAtWVd4Q5hMyY_CUeRPzUqgn4b_rFapJkq0EAaTQ,5596
+ateto-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ateto-0.2.1.dist-info/entry_points.txt,sha256=SVHp44OcmErrtU_OeiKjROioJrub7YnBgNB-p9mux5Q,39
+ateto-0.2.1.dist-info/RECORD,,

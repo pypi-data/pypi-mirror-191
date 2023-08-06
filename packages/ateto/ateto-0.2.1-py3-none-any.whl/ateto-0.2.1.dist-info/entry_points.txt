@@ -1,0 +1,3 @@
+[console_scripts]
+ateto=ateto.cli:cli
+
