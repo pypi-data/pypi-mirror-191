@@ -1,0 +1,14 @@
+blinker
+dash
+dash-bootstrap-components
+flask<2.2
+flask-multipass
+flask-sqlalchemy<3
+flask-wtf
+hito-tools>=23.2
+pandas
+pymysql
+python-ldap
+pyyaml
+simplejson
+sqlalchemy
