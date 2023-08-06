@@ -1,0 +1,12 @@
+openpolicedata/__init__.py,sha256=kO_Tfxd_jD8dBPbSb1OdmqHIhen2DVe1Fz5wCQ_PGKY,569
+openpolicedata/_version.py,sha256=PQu9BZ4UZrI--6Rc-s0RhFPPEWVTqddrgsWkwYl87dI,21
+openpolicedata/data.py,sha256=-sgPtqnDNzcZ-Lritrzbxs-k-wIaxuBX9IN21BsLtbM,30603
+openpolicedata/data_loaders.py,sha256=nq92VI39v7OVKgi3mxme0dkHEbc1Xxw5QXW-tp3AMbI,72208
+openpolicedata/datasets.py,sha256=8fMwShJdekWQPuWhxRAALCL42bUfaHEjZHczvsC1Gy4,10387
+openpolicedata/defs.py,sha256=Gr16co_lfKhdwLskx2JZmqH5jpr5Z3DZS1oQF4nS1Yk,8334
+openpolicedata/exceptions.py,sha256=yDD1AseuhUMK83Jpz_dVrJj0MbUwjlJmNoDZ_Qyp1YY,1601
+openpolicedata-0.5.1.dist-info/LICENSE,sha256=ckdZoRUrD6P8EwMN_l7FHqVIiKYCrfohzzfOtr4LU0Q,1542
+openpolicedata-0.5.1.dist-info/METADATA,sha256=hsHc99dC1EEQXjTcY2tbDoGHF_OlBsJdg8j2iSCZKo8,12298
+openpolicedata-0.5.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+openpolicedata-0.5.1.dist-info/top_level.txt,sha256=ZOtgx6CACIiZ9tOKvfVL-_vO7GoXG5V6xKb_NfjzksE,15
+openpolicedata-0.5.1.dist-info/RECORD,,
