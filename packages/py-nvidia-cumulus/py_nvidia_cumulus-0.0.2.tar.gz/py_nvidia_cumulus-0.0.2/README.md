@@ -1,0 +1,44 @@
+# py-nvidia-cumulus
+Python API client for [Nvidia Cumulus Linux](https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-53/pdf/).
+
+## Installation
+
+To install the package, run the following command:
+```
+pip install py-nvidia-cumulus
+```
+
+## Quick Start
+
+To start using the client, instantiate the Cumulus object with the host and authentication details
+```python
+from cumulus.api import Cumulus
+
+api = Cumulus(
+    url="https://127.0.0.1:8765",
+    auth=("cumulus", "something")
+)
+# api.http_session = requests.Session() # set your own session if necessary
+api.http_session.verify = False # disable SSL verification if necessary
+```
+
+The client aims to provide a thin wrapper over the [Cumulus OpenAPI specification](https://docs.nvidia.com/networking-ethernet-software/cumulus-linux-53/api/index.html).<br>
+Therefore, it abstracts endpoints in pythonic fashion.
+
+For example, here is how you can get an interface and update its configuration relative to the OpenAPI endpoint:
+```python
+# Instantiate the Cumulus class first
+api.revision.create()
+loopback = api.interface.get("lo")
+api.interface.patch(rev=api.revision.rev,
+                    data={"10.255.255.2/32": {}},
+                    target_path="lo/ip/address")
+api.revision.apply()
+api.revision.is_applied()
+```
+
+## Tests
+To execute a set of unit tests, run the following command in the root of the project
+```bash
+make test
+```
