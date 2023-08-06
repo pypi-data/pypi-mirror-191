@@ -1,0 +1,3 @@
+[pysigrok.hardware]
+raspberrypi_pico=pysigrok_raspberrypi_pico:PicoDriver
+
