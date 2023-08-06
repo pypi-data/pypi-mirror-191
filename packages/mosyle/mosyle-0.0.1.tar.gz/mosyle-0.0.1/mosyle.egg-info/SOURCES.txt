@@ -1,0 +1,8 @@
+README.md
+setup.py
+mosyle/__init__.py
+mosyle.egg-info/PKG-INFO
+mosyle.egg-info/SOURCES.txt
+mosyle.egg-info/dependency_links.txt
+mosyle.egg-info/requires.txt
+mosyle.egg-info/top_level.txt
