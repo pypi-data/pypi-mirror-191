@@ -1,0 +1,10 @@
+sixauth/__init__.py,sha256=ff1IAMemFNwbkHY5T_k5vbAGX1A9FZKKxNbAK4mpJzg,184
+sixauth/auth.py,sha256=3Mcje44AfAAQhFFsEFyo2A5Cch7KtjeMdi4F8Z5ZuIc,12651
+sixauth/main.py,sha256=stMwgxIapQ8aKgXFi9eCE1tUYJqmRBIOnE-faYPKPHA,35027
+sixauth/logs/__init__.py,sha256=F_5WsfeorptpIN-QrQz-nW2nrrfT71Zo0aE29_S1_eI,19
+sixauth/logs/log_class.py,sha256=y6Be_-t3wMzU1IQ6fvw0Xy1c-4m8kWeyF-wIxy9d8ZM,3492
+sixauth-1.0.1.dist-info/LICENSE,sha256=PzBPn_jgujVC6d5waAf-Rk-WtY-CBEb5zl8B1DM8C9Y,1065
+sixauth-1.0.1.dist-info/METADATA,sha256=N84JxwZuFJffu1RojFtfo_2dkCGdPl-b0OJpMQqsJfs,14523
+sixauth-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sixauth-1.0.1.dist-info/top_level.txt,sha256=0PoMjs1uvtlI9184VnIMWxWxFEC9i4pOLgBKHWIFf2A,8
+sixauth-1.0.1.dist-info/RECORD,,
