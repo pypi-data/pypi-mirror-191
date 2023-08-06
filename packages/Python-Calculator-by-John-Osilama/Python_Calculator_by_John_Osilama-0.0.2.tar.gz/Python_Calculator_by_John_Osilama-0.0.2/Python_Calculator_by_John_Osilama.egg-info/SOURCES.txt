@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+Python_Calculator_by_John_Osilama.egg-info/PKG-INFO
+Python_Calculator_by_John_Osilama.egg-info/SOURCES.txt
+Python_Calculator_by_John_Osilama.egg-info/dependency_links.txt
+Python_Calculator_by_John_Osilama.egg-info/top_level.txt
+calculatorpackage/__init__.py
+calculatorpackage/calculator.py
+calculatorpackage/calculator_tests.py
