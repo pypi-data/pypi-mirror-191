@@ -1,0 +1,2 @@
+[console_scripts]
+misspellings = misspelling_lib.misspellings:main
