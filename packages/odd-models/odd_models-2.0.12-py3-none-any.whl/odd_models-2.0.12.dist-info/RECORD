@@ -1,0 +1,11 @@
+odd_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odd_models/api_client/__init__.py,sha256=jWHDXs_VYDi0187OZSfuOxsrl2lt8mUlSYPvlmYfNcA,59
+odd_models/api_client/http_client.py,sha256=GdvDGLx5vXzNk5YBwQ-_-qY9f3aQjQx-O6Hen2MBZ4E,3469
+odd_models/api_client/open_data_discovery_ingestion_api.py,sha256=XX-PKdK_NRGNciSiAOKjWkzNhYFyVnG-S_MCffwnK00,2539
+odd_models/integrator.py,sha256=8a2n4IbbBFdYCHQKis39c5JpvDqrcD3YOBgpyP5Vg4o,1880
+odd_models/models.py,sha256=8g4NydPe75oK841WV0DxgMBJDxw5k-LYkXsLQFDGSok,7622
+odd_models/sql_parser.py,sha256=x0GBE1RTjNSMQZ_iONqqjB7FAzeHZw9l-nZm9aVVA9Y,1713
+odd_models/utils.py,sha256=j8UbVyr7l-ipwSt2WgF4tuwWTWiwO3VHOK47fa6vB1k,4312
+odd_models-2.0.12.dist-info/METADATA,sha256=boj5CrN-B3HNucHJKFvZWA8uMdg-QEgaTr2s4SB9e2M,1267
+odd_models-2.0.12.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+odd_models-2.0.12.dist-info/RECORD,,
