@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "somos"
+version = "0.0.0"
+description = "A somos sequence generator for Python!"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name="thatgaypigeon", email="rapidpigeon43@gmail.com"},
+]
+keywords = ["somos", "sequence", "math", "maths", "oeis", "number", "numbers", "recurrence", "recurrence relation", "equation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: MIT License",
+    'Intended Audience :: Developers',
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Other/Nonlisted Topic",
+    "Typing :: Typed"
+]
+
+[project.urls]
+"Documentation" = "http://somos.rtfd.io/"
+"Homepage" = "https://github.com/Pigeon43/somos"
+"Issues / Bugs" = "https://github.com/Pigeon43/somos/issues"
+"PyPI" = "https://pypi.org/project/somos/"
+"Support Server" = "https://discord.gg/MyPTZBH4Q8"
+"Wikipedia Page" = "https://en.wikipedia.org/wiki/Somos_sequence"
