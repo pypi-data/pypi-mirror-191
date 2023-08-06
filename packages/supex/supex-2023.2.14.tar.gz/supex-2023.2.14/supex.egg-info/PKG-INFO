@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: supex
+Version: 2023.2.14
+Summary: skt_ca_team library
+Home-page: https://github.com/sktaiflow/advanced_analytics
+Author: skt_ca_team
+Author-email: rbska56455@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Description
+
+A Python package for CA Team made model registry.
+supex means Super Excellent.
+
+This python package includes
+- Custom Model made in CA Team
+
+## Installation
+
+Installation is automatically done by training containers in YE. If you want to install manually for local machines,
+
+```bash
+# develop
+pip install --index-url https://test.pypi.org/simple/ --no-deps supex
+
+# production
+pip install supex
+```
+
+## Development
+
+### Requirements for development
+- Python 3.6
+- requirements.txt
+
+### Version
+`supex` package version is automatically genereated followd by a production release on format `YY.MM.DD`  
+We use [Calendar Versioning](https://calver.org). 
+
+
