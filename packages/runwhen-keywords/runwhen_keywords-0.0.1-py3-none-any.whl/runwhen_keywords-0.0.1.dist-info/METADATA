@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: runwhen-keywords
+Version: 0.0.1
+Summary: A set of RunWhen published keywords and python libraries
+License: Apache-2.0
+Author: Kyle Forster
+Author-email: kyle.forster@runwhen.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=0.0)
+Requires-Dist: datadog-api-client (==2.8.0)
+Requires-Dist: dnspython (>=0.0)
+Requires-Dist: google-cloud-logging (>=0.0)
+Requires-Dist: google-cloud-monitoring (>=0.0)
+Requires-Dist: jmespath (>=1.0.1)
+Requires-Dist: jq (>=1.3.0)
+Requires-Dist: kubernetes (>=0.0)
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: prometheus-client (>=0.11.0)
+Requires-Dist: protobuf (>=0.0)
+Requires-Dist: pyopenssl (>=0.0)
+Requires-Dist: python-benedict (>=0.0)
+Requires-Dist: robotframework (>=4.1.2)
+Requires-Dist: rocketchat-api (>=0.0)
+Requires-Dist: ruamel-base (>=1.0.0)
+Requires-Dist: ruamel-yaml (>=0.17.20)
+Requires-Dist: sdcclient (>=0.16)
+Requires-Dist: slack-sdk (>=0.0)
+Requires-Dist: snscrape (>=0.4.3.20220106)
