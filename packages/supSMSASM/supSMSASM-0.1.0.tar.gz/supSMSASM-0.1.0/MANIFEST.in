@@ -1,0 +1,2 @@
+include src/supSMSASM/include/*
+include src/supSMSASM/ldscript/*
