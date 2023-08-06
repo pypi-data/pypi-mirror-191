@@ -1,0 +1,275 @@
+Metadata-Version: 2.1
+Name: laion-clap
+Version: 0.0.1
+Summary: Contrastive Language-Audio Pretraining Model from LAION
+Author: Yusong Wu, Tianyu Zhang, Yuchen Hui
+Author-email: Ke Chen <knutchen@ucsd.edu>
+Maintainer: Yusong Wu, Tianyu Zhang, Yuchen Hui
+Maintainer-email: Ke Chen <knutchen@ucsd.edu>
+License: Creative Commons Legal Code
+        
+        CC0 1.0 Universal
+        
+            CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+            LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+            ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+            INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+            REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+            PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+            THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+            HEREUNDER.
+        
+        Statement of Purpose
+        
+        The laws of most jurisdictions throughout the world automatically confer
+        exclusive Copyright and Related Rights (defined below) upon the creator
+        and subsequent owner(s) (each and all, an "owner") of an original work of
+        authorship and/or a database (each, a "Work").
+        
+        Certain owners wish to permanently relinquish those rights to a Work for
+        the purpose of contributing to a commons of creative, cultural and
+        scientific works ("Commons") that the public can reliably and without fear
+        of later claims of infringement build upon, modify, incorporate in other
+        works, reuse and redistribute as freely as possible in any form whatsoever
+        and for any purposes, including without limitation commercial purposes.
+        These owners may contribute to the Commons to promote the ideal of a free
+        culture and the further production of creative, cultural and scientific
+        works, or to gain reputation or greater distribution for their Work in
+        part through the use and efforts of others.
+        
+        For these and/or other purposes and motivations, and without any
+        expectation of additional consideration or compensation, the person
+        associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+        is an owner of Copyright and Related Rights in the Work, voluntarily
+        elects to apply CC0 to the Work and publicly distribute the Work under its
+        terms, with knowledge of his or her Copyright and Related Rights in the
+        Work and the meaning and intended legal effect of CC0 on those rights.
+        
+        1. Copyright and Related Rights. A Work made available under CC0 may be
+        protected by copyright and related or neighboring rights ("Copyright and
+        Related Rights"). Copyright and Related Rights include, but are not
+        limited to, the following:
+        
+          i. the right to reproduce, adapt, distribute, perform, display,
+             communicate, and translate a Work;
+         ii. moral rights retained by the original author(s) and/or performer(s);
+        iii. publicity and privacy rights pertaining to a person's image or
+             likeness depicted in a Work;
+         iv. rights protecting against unfair competition in regards to a Work,
+             subject to the limitations in paragraph 4(a), below;
+          v. rights protecting the extraction, dissemination, use and reuse of data
+             in a Work;
+         vi. database rights (such as those arising under Directive 96/9/EC of the
+             European Parliament and of the Council of 11 March 1996 on the legal
+             protection of databases, and under any national implementation
+             thereof, including any amended or successor version of such
+             directive); and
+        vii. other similar, equivalent or corresponding rights throughout the
+             world based on applicable law or treaty, and any national
+             implementations thereof.
+        
+        2. Waiver. To the greatest extent permitted by, but not in contravention
+        of, applicable law, Affirmer hereby overtly, fully, permanently,
+        irrevocably and unconditionally waives, abandons, and surrenders all of
+        Affirmer's Copyright and Related Rights and associated claims and causes
+        of action, whether now known or unknown (including existing as well as
+        future claims and causes of action), in the Work (i) in all territories
+        worldwide, (ii) for the maximum duration provided by applicable law or
+        treaty (including future time extensions), (iii) in any current or future
+        medium and for any number of copies, and (iv) for any purpose whatsoever,
+        including without limitation commercial, advertising or promotional
+        purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+        member of the public at large and to the detriment of Affirmer's heirs and
+        successors, fully intending that such Waiver shall not be subject to
+        revocation, rescission, cancellation, termination, or any other legal or
+        equitable action to disrupt the quiet enjoyment of the Work by the public
+        as contemplated by Affirmer's express Statement of Purpose.
+        
+        3. Public License Fallback. Should any part of the Waiver for any reason
+        be judged legally invalid or ineffective under applicable law, then the
+        Waiver shall be preserved to the maximum extent permitted taking into
+        account Affirmer's express Statement of Purpose. In addition, to the
+        extent the Waiver is so judged Affirmer hereby grants to each affected
+        person a royalty-free, non transferable, non sublicensable, non exclusive,
+        irrevocable and unconditional license to exercise Affirmer's Copyright and
+        Related Rights in the Work (i) in all territories worldwide, (ii) for the
+        maximum duration provided by applicable law or treaty (including future
+        time extensions), (iii) in any current or future medium and for any number
+        of copies, and (iv) for any purpose whatsoever, including without
+        limitation commercial, advertising or promotional purposes (the
+        "License"). The License shall be deemed effective as of the date CC0 was
+        applied by Affirmer to the Work. Should any part of the License for any
+        reason be judged legally invalid or ineffective under applicable law, such
+        partial invalidity or ineffectiveness shall not invalidate the remainder
+        of the License, and in such case Affirmer hereby affirms that he or she
+        will not (i) exercise any of his or her remaining Copyright and Related
+        Rights in the Work or (ii) assert any associated claims and causes of
+        action with respect to the Work, in either case contrary to Affirmer's
+        express Statement of Purpose.
+        
+        4. Limitations and Disclaimers.
+        
+         a. No trademark or patent rights held by Affirmer are waived, abandoned,
+            surrendered, licensed or otherwise affected by this document.
+         b. Affirmer offers the Work as-is and makes no representations or
+            warranties of any kind concerning the Work, express, implied,
+            statutory or otherwise, including without limitation warranties of
+            title, merchantability, fitness for a particular purpose, non
+            infringement, or the absence of latent or other defects, accuracy, or
+            the present or absence of errors, whether or not discoverable, all to
+            the greatest extent permissible under applicable law.
+         c. Affirmer disclaims responsibility for clearing rights of other persons
+            that may apply to the Work or any use thereof, including without
+            limitation any person's Copyright and Related Rights in the Work.
+            Further, Affirmer disclaims responsibility for obtaining any necessary
+            consents, permissions or other rights required for any use of the
+            Work.
+         d. Affirmer understands and acknowledges that Creative Commons is not a
+            party to this document and has no duty or obligation with respect to
+            this CC0 or use of the Work.
+        
+Project-URL: Homepage, https://github.com/LAION-AI/CLAP
+Project-URL: Bug Tracker, https://github.com/LAION-AI/CLAP/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: soundfile
+Requires-Dist: librosa
+Requires-Dist: torchlibrosa
+Requires-Dist: ftfy
+Requires-Dist: braceexpand
+Requires-Dist: webdataset
+Requires-Dist: wget
+Requires-Dist: wandb
+Requires-Dist: llvmlite
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: h5py
+Requires-Dist: tqdm
+Requires-Dist: regex
+Requires-Dist: transformers
+
+# CLAP
+
+Contrastive Language-Audio Pretraining, known as CLAP. Referring to the CLIP (Contrastive Language-Image Pretraining) architecture, similarly, the CLAP architecture is as follows.  
+<p align="center">
+  <img src="./assets/audioclip-arch.png" alt="The Contrastive Language-Audio Pretraining Model Architecture" width="60%"/>
+</p>
+
+
+
+The repository contains code for the following paper:
+ - [Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation](https://arxiv.org/abs/2211.06687)
+
+## About this project
+
+This project is a project in [LAION](https://laion.ai/) that aims at learning better audio understanding and getting more audio data. 
+This is an opensource project. We adopt the codebase of [open_clip](https://github.com/mlfoundations/open_clip) for this project. 
+The major opensource contributers of this project are (in equal contribution): Yusong Wu, Tianyu Zhang, Ke Chen.
+
+many thanks to <a href="https://github.com/cfoster0/CLAP">@cfoster0</a> for allowing us to use his repo name.
+
+## Environment Installation
+To install the same environment as we use, please run the following command:
+```bash
+conda create env -n clap python=3.10
+conda activate clap
+git clone https://github.com/LAION-AI/CLAP.git
+cd CLAP
+# you can also install pytorch by following the official instruction (https://pytorch.org/get-started/locally/)
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0+cu113 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -r requirements.txt
+```
+## Dataset format
+We use training data in webdataset format. For details of our dataset please see https://github.com/LAION-AI/audio-dataset.
+
+You can find an example of our dataset format in [here](https://drive.google.com/drive/folders/1aU54FGctrjhxA2sTN0wgHVsPm0nPEc_E?usp=share_link).
+It contains the full ESC50 dataset, split according to the first 5-fold split.
+
+## Training, Fine-tuning and Evaluation
+Please find the script of training, fine-tuning and evaluation (zero-shot and retrieval) in the [experiment_scripts](./experiment_scripts) folder. 
+The scripts included there are the one we used to train our model on a SLURM cluster. 
+You need to change the script to fit your own environment.
+For example, in a single machine multi-GPU setting, you might want to use `torchrun` instead of `srun` to run the script.
+To train on a single GPU machine, use `CUDA_VISIBLE_DEVICES=0 python -m ...` instead of `srun`.
+We use [Weights and Biases](https://wandb.ai/site) for experiment logging. You need to configure the weights and biases in your environment.
+
+## Loading Model and Inference
+Please refer to [infer_demo.py](src/training/infer_demo.py) to get the whole view of using our model to infer the audio and text embeddings.
+Below is the core code.
+```python
+# import necessary libraries
+def infer_audio():
+    
+    '''
+    set hyperparameters, and load pretrain model
+    '''
+    
+    # load the waveform of the shape (T,), should resample to 48000
+    audio_waveform, sr = librosa.load('/home/la/kechen/Research/KE_CLAP/ckpt/test_clap_long.wav', sr=48000) 
+    # quantize
+    audio_waveform = int16_to_float32(float32_to_int16(audio_waveform))
+    audio_waveform = torch.from_numpy(audio_waveform).float()
+    audio_dict = {}
+
+    # the 'fusion' truncate mode can be changed to 'rand_trunc' if run in unfusion mode
+    audio_dict = get_audio_features(
+        audio_dict, audio_waveform, 480000, 
+        data_truncating='fusion', 
+        data_filling='repeatpad',
+        audio_cfg=model_cfg['audio_cfg']
+    )
+    # can send a list to the model, to process many audio tracks in one time (i.e. batch size)
+    audio_embed = model.get_audio_embedding([audio_dict])
+    print(audio_embed.size())
+
+def infer_text():
+    '''
+    set hyperparameters, and load pretrain model
+    '''
+    
+    # load the text, can be a list (i.e. batch size)
+    text_data = ["I love the contrastive learning", "I love the pretrain model"] 
+    # tokenize for roberta, if you want to tokenize for another text encoder, please refer to data.py#L43-90 
+    text_data = tokenizer(text_data)
+    
+    text_embed = model.get_text_embedding(text_data)
+    print(text_embed.size())
+    
+```
+
+## Pretrained Models
+The pretrained checkpoints can be found in [here](https://drive.google.com/drive/folders/1Ni8lZ2pryTESjgq8gELLQNM_HGdWtFrE?usp=sharing).
+Please refer to the previous section for how to load and run the checkpoints.
+
+The checkpoints list here for each model setting is the one with the highest average mAP score in training.
+The average mAP score is calculated by averaging 4 scores: A-->T mAP@10 on AudioCaps, and T-->A mAP@10 on AudioCaps, A-->T mAP@10 on Clotho, and T-->A mAP@10 on Clotho.
+
+## Reproducibility
+An example of the preprocessed Clotho dataset in webdataset format can be download [here](https://drive.google.com/drive/folders/1mU9mBOe11jTFCrQRJQsUa4S-3TlNuYoI?usp=sharing) (by downloading, you will be agreeing the license described in the [Clotho dataset](https://zenodo.org/record/3490684#.Y9ALPeyZP1w)). The audio encoder pretrained with 48kHz AudioSet can be found [here](https://drive.google.com/drive/folders/1SMQyzJvc6DwJNuhQ_WI8tlCFL5HG2vk6?usp=sharing), where `HTSAT-fullset-imagenet-map=0.467.ckpt` is the checkpoint used to initalize our HTSAT audio encoder. You should get similar result by loading from the audio encoder checkpoint and training on same dataset.
+Because most of the dataset has copyright restriction, unfortunatly we cannot directly share other preprocessed datasets. The caption generated by keyword-to-caption model for Audioset can be found [here](https://github.com/LAION-AI/audio-dataset/tree/main/laion-audio-630k#keyword-to-caption-augmentation)
+
+
+## Citation
+If you find this project and the LAION-Audio-630K dataset useful, please cite our paper:
+```
+@article{wu2022large,
+  title = {Large-scale Contrastive Language-Audio Pretraining with Feature Fusion and Keyword-to-Caption Augmentation},
+  author = {Wu, Yusong and Chen, Ke and Zhang, Tianyu and Hui, Yuchen and Berg-Kirkpatrick, Taylor and Dubnov, Shlomo},
+  journal={arXiv preprint arXiv:2211:06687},
+  year = {2022},
+}
+```
+
+## Acknowledgements
+
+This project is working in progress, thus the codebase and model might not be perfect or bug-free. 
+We will very much appreciate any kind of contribution or and issue raised.
+If you find a bug or have any suggestion, please feel free to open an issue or contact us.
+If you would actively contribute to this project, please join the discord of LAION.
