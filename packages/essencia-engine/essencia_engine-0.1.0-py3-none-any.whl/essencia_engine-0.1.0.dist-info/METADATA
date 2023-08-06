@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: essencia-engine
+Version: 0.1.0
+Summary: 
+Author: Daniel Arantes
+Author-email: arantesdv@me.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: Unidecode (>=1.3.6,<2.0.0)
+Requires-Dist: anyio (>=3.6.2,<4.0.0)
+Requires-Dist: asgi-csrf (>=0.9,<0.10)
+Requires-Dist: bcrypt (>=4.0.1,<5.0.0)
+Requires-Dist: deta[async] (==1.1.0a2)
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: itsdangerous (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic[email,dotenv] (>=1.10.4,<2.0.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: starlette (>=0.24.0,<0.25.0)
+Requires-Dist: uvicorn (>=0.20.0,<0.21.0)
