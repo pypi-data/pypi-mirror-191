@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django-razorpay
+Version: 1.0.18
+Summary: Razorpay payment integration in a django project 
+Home-page: https://github.com/pupattan/django-razorpay
+Author: pupattan
+Author-email: pulak.pattanayak@gmail.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: Django (>=3.2)
+Requires-Dist: python-dateutil
+Requires-Dist: razorpay
+
+UNKNOWN
+
