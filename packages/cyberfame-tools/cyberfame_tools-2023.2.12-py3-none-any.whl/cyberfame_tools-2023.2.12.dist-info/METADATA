@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cyberfame-tools
+Version: 2023.2.12
+Summary: helper tools for cyberfame project
+Author: Cyberfame Team
+Author-email: contact@morphysm.com
+Keywords: cyberfame tools
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+
+# Cyberfame-tools
