@@ -1,0 +1,15 @@
+README.md
+setup.py
+mb_pandas.egg-info/PKG-INFO
+mb_pandas.egg-info/SOURCES.txt
+mb_pandas.egg-info/dependency_links.txt
+mb_pandas.egg-info/requires.txt
+mb_pandas.egg-info/top_level.txt
+mb_pandas/src/__init__.py
+mb_pandas/src/aio.py
+mb_pandas/src/dfload.py
+mb_pandas/src/profiler.py
+mb_pandas/src/transform.py
+mb_pandas/src/version.py
+scripts/df_profile
+scripts/df_view
