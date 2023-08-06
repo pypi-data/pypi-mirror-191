@@ -1,0 +1,1 @@
+print("Cargando el paquete mensajes") #Por lo general este mensaje o el codigo dentro de "__init__" por defecto de visual
