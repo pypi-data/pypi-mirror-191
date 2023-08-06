@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wiki_sents_retriever
+Version: 0.1.2
+Summary: Query English Wikipedia
+Home-page: https://huggingface.co/datasets/ChristophSchuhmann/wikipedia-3sentence-level-retrieval-index
+Author: Christoph Schuhmann
+Author-email: UNKNOWN
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN

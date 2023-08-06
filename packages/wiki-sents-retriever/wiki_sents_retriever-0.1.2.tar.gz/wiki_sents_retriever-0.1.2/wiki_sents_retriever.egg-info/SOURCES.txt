@@ -1,0 +1,8 @@
+setup.py
+wiki_sents_retriever/__init__.py
+wiki_sents_retriever/wikiindexquery.py
+wiki_sents_retriever.egg-info/PKG-INFO
+wiki_sents_retriever.egg-info/SOURCES.txt
+wiki_sents_retriever.egg-info/dependency_links.txt
+wiki_sents_retriever.egg-info/requires.txt
+wiki_sents_retriever.egg-info/top_level.txt
