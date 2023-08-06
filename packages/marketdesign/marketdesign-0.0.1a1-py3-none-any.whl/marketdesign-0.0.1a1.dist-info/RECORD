@@ -1,0 +1,10 @@
+md/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+md/auction.py,sha256=B4CK8Cr8LEcGEHU3hdJDbwRyW06-7U0VnkBJsX8amQc,8449
+md/auction_csv.py,sha256=ox3V1IZP9rXbHoCz7p84nbqgqMFJRL5zyMUj9XrlujQ,4899
+md/auction_json.py,sha256=35HuFl5NsUibS9pt7Il0xRLh_7Zfus567nBTpIdQfss,1718
+md/auction_txt.py,sha256=D1K9yp5dQyj94iDOny1qBkRN-ZcVSUE0qG1cZK-Y3iY,4512
+md/lindsay2018.py,sha256=gYzc4rroyhedx72q1f16FOThtJx4cEiexTMmtlvItJw,3674
+marketdesign-0.0.1a1.dist-info/METADATA,sha256=MI451RK1Pn4BcnlL65MXkq1bd7NCqi8oqMsAzqST6jY,3781
+marketdesign-0.0.1a1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+marketdesign-0.0.1a1.dist-info/licenses/LICENSE,sha256=DI6g1G5xuovzo4_tbvBwPmPRMOhXw7xsumgb9CuL4Qc,1098
+marketdesign-0.0.1a1.dist-info/RECORD,,
