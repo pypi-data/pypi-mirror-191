@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+src/pelican/plugins/pelican_mini_wiki/__init__.py
+src/pelican/plugins/pelican_mini_wiki/pelican_mini_wiki.py
+src/pelican/plugins/pelican_mini_wiki/test_pelican_mini_wiki.py
+src/pelican/themes/simple/templates/wiki_base.html
+src/pelican_mini_wiki.egg-info/PKG-INFO
+src/pelican_mini_wiki.egg-info/SOURCES.txt
+src/pelican_mini_wiki.egg-info/dependency_links.txt
+src/pelican_mini_wiki.egg-info/top_level.txt
