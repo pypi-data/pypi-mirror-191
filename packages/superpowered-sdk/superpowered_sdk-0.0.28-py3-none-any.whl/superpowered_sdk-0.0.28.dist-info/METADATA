@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: superpowered-sdk
+Version: 0.0.28
+Summary: Superpowered AI SDK
+Home-page: https://superpowered.ai
+Author: superpowered
+Author-email: justin@superpowered.ai
+License: Proprietary License
+Project-URL: Homepage, https://superpowered.ai
+Project-URL: Documentation, https://superpowered.ai/docs
+Project-URL: Contact, https://superpowered.ai/contact/
+Project-URL: End-User License Agreement, https://superpowered.ai/api-user-agreement/
+Keywords: Superpowered AI LLM Chat Agents
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# superpowered-python-sdk
+The official Python SDK of the Superpowered API
+
+
