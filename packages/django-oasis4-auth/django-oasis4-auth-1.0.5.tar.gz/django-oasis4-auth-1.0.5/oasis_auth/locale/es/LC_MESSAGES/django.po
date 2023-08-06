@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-25 22:14-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: api/services/oasis_auth.py:98
+msgid ""
+"The client id or email is invalid. Please confirm your details at the "
+"nearest office and try again."
+msgstr ""
+"El ID del cliente o el correo son inválidos. Por favor confirme los detalles "
+"en la oficina más cercana y reintente nuevamente."
+
+#: api/services/oasis_auth.py:99
+msgid "Invalid data"
+msgstr "Datos inválidos"
+
+#: api/services/oasis_auth.py:102
+msgid "The user is previously registered."
+msgstr "El usuario ya se encuentra registrado."
+
+#: api/services/oasis_auth.py:106
+msgid "Error at database validations"
+msgstr "Error en la validación de la base de datos"
+
+#: api/services/oasis_auth.py:112
+msgid "Customer does not exist."
+msgstr "El client no existe."
+
+#: api/services/oasis_auth.py:116
+msgid "Not controlled exception error."
+msgstr "Error de excepción no controlada."
+
+#: api/services/oasis_auth.py:138
+msgid "The code does not match."
+msgstr "El código enviado no coincide."
+
+#: api/services/oasis_auth.py:140
+msgid "The code has expired. Please request a new authorization code."
+msgstr ""
+"El código ha expirado. Por favor solicite un nuevo código de autorización."
+
+#: api/services/oasis_auth.py:192 api/services/oasis_auth.py:200
+#, fuzzy
+#| msgid "The email/password does not match."
+msgid "Email or Password incorrect."
+msgstr "Correo o clave incorrectos."
+
+#: lib/utils/auth_actions.py:38
+msgid "Invalid initialization data class."
+msgstr "Inicialización de clase inválida."
+
+#: lib/utils/auth_actions.py:50
+msgid "Action does not have an associated method."
+msgstr "La acción no tiene un método asociado."
+
+#: models.py:31
+msgid "The document id is invalid."
+msgstr "El documento es inválido."
+
+#: templates/default.html:8 templates/default.txt:2 templates/register.html:8
+#: templates/register.txt:2 templates/user_login.html:8
+#: templates/user_login.txt:2
+msgid "Hello"
+msgstr "Hola"
+
+#: templates/default.html:9 templates/user_login.html:9
+msgid ""
+"Thank you for use the <strong>CADEFIHUILA's</strong> transactional portal. "
+"For access to the portal options, please use the code below:"
+msgstr ""
+"Gracias por utilizar el portal transaccional de <strong>CADEFIHUILA</"
+"strong>. Para acceder a las opciones del portal, por favor use el código que "
+"encuentra a continuación:"
+
+#: templates/default.html:13 templates/default.txt:8 templates/register.html:13
+#: templates/register.txt:8 templates/user_login.html:13
+#: templates/user_login.txt:8
+#, python-format
+msgid "The code is valid for %(code_timeout)s minutes."
+msgstr "El código es válido por %(code_timeout)s minutos."
+
+#: templates/default.html:16 templates/default.txt:11
+#: templates/register.html:16 templates/register.txt:11
+#: templates/user_login.html:16 templates/user_login.txt:11
+#, python-format
+msgid ""
+"This email was generated automatically at %(email_datetime)s with id "
+"%(email_id)s. Please do not answer it."
+msgstr ""
+"Este correo fue generado automáticamente el %(email_datetime)s con el id "
+"%(email_id)s. Por favor no lo responda."
+
+#: templates/default.txt:4 templates/user_login.txt:4
+msgid ""
+"Thank you for use the CADEFIHUILA's transactional portal. For access to the "
+"portal options, please use the code below:"
+msgstr ""
+"Gracias por utilizar el portal transaccional de CADEFIHUILA. Para acceder a "
+"las opciones del portal, por favor utilice el código que encuentra a "
+"continuación:"
+
+#: templates/register.html:9
+msgid ""
+"Thank you for use the <strong>CADEFIHUILA's</strong> transactional portal. "
+"To finish your registration process, please use the code below:"
+msgstr ""
+"Gracias por utilizar el portal transaccional de <strong>CADEFIHUILA</"
+"strong>. Para finalizar su proceso de registro, por favor utilice el código "
+"que encuentra a continuación:"
+
+#: templates/register.txt:4
+msgid ""
+"Thank you for use the CADEFIHUILA's transactional portal. To finish your "
+"registration process, please use the code below:"
+msgstr ""
+"Gracias por utilizar el portal transaccional de CADEFIHUILA. Para finalizar "
+"su proceso de registro, por favor utilice el código que encuentra a "
+"continuación:"
+
+#~ msgid "The email is not registered."
+#~ msgstr "El correo no se encuentra registrado."
+
+#~ msgid "Data request not found."
+#~ msgstr "La data requerida no se encuentra."
+
+msgid "Register"
+msgstr "Registro de Usuario"
+
+msgid "Authorization Code"
+msgstr "Código de Autorización"
+
+msgid "Login"
+msgstr "Inicio de Sesión"
