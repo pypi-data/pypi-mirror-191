@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: paguaganetwork
+Version: 1.0.0
+Summary: Bayesian network
+Author: Sara Paguaga
+Author-email: sara.paguaga@gmail.com
+Keywords: probability,python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+Library to be able to create a bayesian network

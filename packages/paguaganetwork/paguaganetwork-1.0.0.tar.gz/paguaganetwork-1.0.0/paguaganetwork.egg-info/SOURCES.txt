@@ -1,0 +1,6 @@
+README.md
+setup.py
+paguaganetwork.egg-info/PKG-INFO
+paguaganetwork.egg-info/SOURCES.txt
+paguaganetwork.egg-info/dependency_links.txt
+paguaganetwork.egg-info/top_level.txt
