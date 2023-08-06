@@ -1,0 +1,4 @@
+[console_scripts]
+eth-owner = eth_owned.runnable.owner:main
+eth-owner-void = eth_owned.runnable.void:main
+eth-owner-void-deploy = eth_owned.runnable.void_deploy:main
