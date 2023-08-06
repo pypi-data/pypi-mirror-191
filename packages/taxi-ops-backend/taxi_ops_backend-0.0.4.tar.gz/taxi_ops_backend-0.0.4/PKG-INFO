@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: taxi_ops_backend
+Version: 0.0.4
+Summary: Taxi Ops Backend for capstone project
+Home-page: https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps
+Author: Abhinav Kumar
+Author-email: apache.abhinav.official@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Taxi Ops Backend
+
+WIP
+
