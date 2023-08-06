@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: selenium-geocoder
+Version: 0.5.0
+Summary: Modularizing selenium code for getting coordinates from address of a place.
+Project-URL: Homepage, https://github.com/hridayK/selenium-geocoder
+Project-URL: Bug Tracker, https://github.com/hridayK/selenium-geocoder/issues
+Author-email: Hriday Keswani <hridaykeswnai@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# selenium-geocoder
+Modularizing selenium code for getting coordinates from address of a place.
+
+# Exmaple:
+```python
+from selenium_geocoder import Globe, Browsers
+
+# code for selecting browser to automate on:
+globe = Globe(browser=Browsers.FIREFOX)
+"""
+Supported browsers:
+- Mozilla Firefox
+- Google Chrome
+- Microsoft Edge
+"""
+
+# code to get coordinates of a single locaiton: (returns a tuple)
+x,y = globe.get_coordinate(name='University of Mumbai')
+
+# code to get coordinates of a batch of locations: (returns a list)
+coordinates = globe.get_coordinates(name=['Grand Hyatt Mumbai','Tajlands Mumbai', 'Trident Mumbai'])
+```
