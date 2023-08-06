@@ -1,0 +1,14 @@
+frankenfit/__init__.py,sha256=jQOCVxPaNwDV42YiEXRLC5UO6qE23gvOoWbweEHpY4s,4674
+frankenfit/backend.py,sha256=1rlBUAb4FcY63MWpjE3oBI5GGVyB3aDtv2uXVJbTZM4,9339
+frankenfit/core.py,sha256=hC1uQIHWD_VufF4K9u9jPhtJXP8cMn20D1GKcbvU9oM,67449
+frankenfit/dataframe.py,sha256=1E5ZZ49nvEv2r7GUnqzHGGwTv91D4_nbGffIoANtuAc,68114
+frankenfit/mypy.py,sha256=GE3yWaMBybMHxEcXGhKigXC5aO8qj1C8nRASp3sKyug,5805
+frankenfit/params.py,sha256=5zi1f9Yc6hyPXrfjWWrQYtazeIh6ZobzZjoUazckOPY,17868
+frankenfit/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frankenfit/timeseries.py,sha256=gX7cz0JiPj-dkRuq2dWCiZZHw4btveWT8B8wUzO0jJE,2840
+frankenfit/universal.py,sha256=JCsvkQgWITl40N2wJaEZSDQUA0tEBcIZqRhZV1PKT5g,28528
+frankenfit-0.0.8.dist-info/LICENSE.txt,sha256=pmI6x_XoQp4PZTkPr0wo3T9o1wmHTLbPVCAHTNXD9t8,2575
+frankenfit-0.0.8.dist-info/METADATA,sha256=J3BjgZt_vmwGjR3g0vrTXyD7w-_fBWgP6kc2eHFjqJI,6257
+frankenfit-0.0.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+frankenfit-0.0.8.dist-info/top_level.txt,sha256=HRxndzK72ErbvbZ-QvheUCvi7tMBevtzwCpS4pRVAm0,11
+frankenfit-0.0.8.dist-info/RECORD,,
