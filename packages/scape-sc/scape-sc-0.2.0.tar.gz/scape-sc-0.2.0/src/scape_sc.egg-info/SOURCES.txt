@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/function.py
+src/loss.py
+src/model.py
+src/train.py
+src/scape_sc.egg-info/PKG-INFO
+src/scape_sc.egg-info/SOURCES.txt
+src/scape_sc.egg-info/dependency_links.txt
+src/scape_sc.egg-info/requires.txt
+src/scape_sc.egg-info/top_level.txt
