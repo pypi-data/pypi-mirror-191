@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-mcplayer
+Version: 2.0.0
+Summary: 基于OneBot适配器的NoneBot2查看MC服务器在线玩家信息与服务器状态的插件
+Home-page: https://github.com/SkyDynamic/nonebot_plugin_mcplayer
+Author: Sky_Dynamic
+Author-email: SkyDynamic@outlook.com
+Keywords: pip,nonebot2,nonebot,nonebot_plugin,mcplayer
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+<p align="center">
+  <a href="https://v2.nonebot.dev/"><img src="https://v2.nonebot.dev/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+  
+# Nonebot_Plugin_MCplayer
+  
+_✨ 基于OneBot适配器的[NoneBot2](https://v2.nonebot.dev/)查看MC服务器在线玩家信息与服务器状态的插件 ✨_
+  
+</div>
+
+## 功能
+
+- 查看MC服务器在线玩家信息与服务器状态
+
+## 安装
+
+- 使用 pip
+
+```
+pip install nonebot_plugin_mcplayer
+```
+
+# 帮助  
+(自行添加命令前缀)  
+mcplayer bind <服务器名称> <服务器IP> <服务器端口(留空则默认25565)> -> 绑定服务器  
+mcplayer list -> 获取玩家列表  
+mcplayer help -> 显示此信息  
+mcplayer delete -> 删除此群绑定的服务器  
