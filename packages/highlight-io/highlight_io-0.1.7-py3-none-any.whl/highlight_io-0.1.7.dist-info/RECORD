@@ -1,0 +1,8 @@
+highlight_io/__init__.py,sha256=iXoJdsdfAhJz_R9z98dTtEyJoIp2347L8cfT6ui5ptM,64
+highlight_io/integrations/__init__.py,sha256=JfEryMEGKWbEGQTPyunBFSkfUptQGYvPrM6CWacld1k,155
+highlight_io/integrations/azure.py,sha256=b5rLw8h4Y2ZQT6HKtCPijWC8peF_c1RAR1Zl05CmQx4,926
+highlight_io/integrations/flask.py,sha256=Iyzlrz4zDavuq6ZtqdXOVvmyBYRxP93jiidI7V-P1z0,1519
+highlight_io/sdk.py,sha256=mvYvhjl8rEQqeecFVTuvZwLPD_LtjB4bkny-8DdzHqg,6147
+highlight_io-0.1.7.dist-info/METADATA,sha256=KJNVCFlYc1ZeElkJqi9XvpaODuuc4-DigGNnbrbfrvU,1666
+highlight_io-0.1.7.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+highlight_io-0.1.7.dist-info/RECORD,,
