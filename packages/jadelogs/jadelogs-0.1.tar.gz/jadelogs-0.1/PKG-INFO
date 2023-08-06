@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: jadelogs
+Version: 0.1
+Summary: Package to log and track progress of machine learning programs run on the Jade supercomputer
+Home-page: https://github.com/vedmathai/jade-logs
+Author: Ved Mathai
+Author-email: vedu29@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: jade,supercomputer,logs
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
