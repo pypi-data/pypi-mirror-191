@@ -1,0 +1,19 @@
+[console_scripts]
+batch_metrics = schimpy.batch_metrics:main
+clip_dems = schimpy.clip_dems:main
+combine_consume = schimpy.combine_consume:main
+contour_smooth = schimpy.contour_smooth:main
+convert_linestrings = schimpy.convert_linestrings:main
+convert_mesh = schimpy.convert_mesh:main
+convert_polygons = schimpy.convert_polygons:main
+create_hotstart = schimpy.schism_hotstart:main
+create_nudging = schimpy.schism_nudging:main
+create_vgrid_lsc2 = schimpy.create_vgrid_lsc2:main
+gen_elev2d = schimpy.gen_elev2D:main
+interpolate_structure = schimpy.interpolate_structure:main
+model_time = schimpy.model_time:main
+prepare_schism = schimpy.prepare_schism:main
+schism_hotstart = schimpy.schism_hotstart:main
+small_areas = schimpy.small_areas:main
+split_quad = schimpy.split_quad:main
+station = schimpy.station:main

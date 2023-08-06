@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: schimpy
+Version: 1.4.3
+Summary: Python package for SCHISM
+Home-page: https://github.com/CADWRDeltaModeling/schimpy
+Author: California Department of Water Resources
+Author-email: Eli.Ateljevich@water.ca.gov, Kijin.Nam@water.ca.gov
+License: MIT license
+Keywords: schimpy
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+=======
+schimpy
+=======
+
+
+Python package for SCHISM
+
+
+* Free software: MIT license
+* Documentation: https://cadwrdeltamodeling.github.io/schimpy/html/index.html
+
+
+Features
+--------
+
+* TODO see issues
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.1 (2020-04-06)
+------------------
+* Added authors and doc cleanup
+
+0.1.0 (2020-04-06)
+------------------
+
+* First release on conda channel cadwr-dms

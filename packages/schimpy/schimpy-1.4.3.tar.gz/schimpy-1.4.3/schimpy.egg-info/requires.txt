@@ -1,0 +1,16 @@
+geopandas
+vtools3
+xarray
+netcdf4
+scipy
+matplotlib
+statsmodels
+palettable
+pyyaml
+scikit-learn
+statsmodels
+beautifulsoup4
+pyproj
+nodepy
+shapely<2.0
+rasterstats
