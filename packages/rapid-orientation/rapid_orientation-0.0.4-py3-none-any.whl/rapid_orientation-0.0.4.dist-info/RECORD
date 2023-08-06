@@ -1,0 +1,10 @@
+rapid_orientation/__init__.py,sha256=WYYdZeKq1BvJkoBpnM-9QZs1Nbx6RV9uagmVFrwGvxU,122
+rapid_orientation/config.yaml,sha256=6FyPLomim5pAjMZtKUO75NLV9XKGgyKihXItxFX-Wb4,350
+rapid_orientation/rapid_orientation.py,sha256=5Bc6NUIkNOYk1qiYR9uV2ZBvRCr6SsSzprwxWSm7szk,2644
+rapid_orientation/utils.py,sha256=kJcJtC1zMeclY7UzA9WZP7zYiuJ_HM3v3qvTyf190pA,5730
+rapid_orientation/models/rapid_orientation.onnx,sha256=nIShBBuY_HQTLRHtraf1r8jJEfrjVc3n0ExijTSvHYo,6792721
+rapid_orientation-0.0.4.dist-info/METADATA,sha256=Xl1-4HPaPC-w6LyP9el1vciJZZcFXA5QXnFPbCeuVSE,2514
+rapid_orientation-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rapid_orientation-0.0.4.dist-info/entry_points.txt,sha256=Yncu1HqYh7MxLxZvupD5ut3hJbU1DWxYCrtANCxbbBg,79
+rapid_orientation-0.0.4.dist-info/top_level.txt,sha256=6Xiql6N2aF4rctCG2D0W55YnVe7aS-9dSZJ6lEYejLc,18
+rapid_orientation-0.0.4.dist-info/RECORD,,
