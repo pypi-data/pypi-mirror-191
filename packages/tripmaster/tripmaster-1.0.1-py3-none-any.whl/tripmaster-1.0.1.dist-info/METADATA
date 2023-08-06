@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: tripmaster
+Version: 1.0.1
+Summary: A High Level Framework for Deep Learning App and Pipelines for Paddle.
+Home-page: https://github.com/baidu-research/tripmaster
+Author: Mingming Sun
+Author-email: sunmingming01@baidu.com
+License: Apache
+Keywords: Deep Learning,Framework,Pipelines
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: addict (>=2.4.0)
+Requires-Dist: bidict (>=0.21.4)
+Requires-Dist: more-itertools (>=8.12.0)
+Requires-Dist: networkx (>=2.6.3)
+Requires-Dist: port-for (>=0.6.1)
+Requires-Dist: schema (>=0.7.5)
+Requires-Dist: tableprint (>=0.9.1)
+
+# TripMaster Framework
+
+A High Level Framework for Deep Learning App and Pipelines for Paddle.
+
+## Install
+
+```
+pip install tripmaster
+```
+
+## Document
+
+* [Tutorial](docs/tutorial.md)
+* [Design Principles](docs/design.md)
+* [User's Guidance](docs/user_guidance.md)
