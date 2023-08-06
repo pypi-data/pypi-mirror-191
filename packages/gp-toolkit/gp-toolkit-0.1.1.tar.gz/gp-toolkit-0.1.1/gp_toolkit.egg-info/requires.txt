@@ -1,0 +1,7 @@
+Click>=7.0
+rich
+gpflow<2.6.0
+
+[datasets]
+scikit-learn
+pandas
