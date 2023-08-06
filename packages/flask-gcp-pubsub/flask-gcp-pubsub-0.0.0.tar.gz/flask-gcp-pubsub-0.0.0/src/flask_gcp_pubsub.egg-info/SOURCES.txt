@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/flask_gcp_pubsub/__init__.py
+src/flask_gcp_pubsub/publisher.py
+src/flask_gcp_pubsub/pubsub.py
+src/flask_gcp_pubsub.egg-info/PKG-INFO
+src/flask_gcp_pubsub.egg-info/SOURCES.txt
+src/flask_gcp_pubsub.egg-info/dependency_links.txt
+src/flask_gcp_pubsub.egg-info/requires.txt
+src/flask_gcp_pubsub.egg-info/top_level.txt
