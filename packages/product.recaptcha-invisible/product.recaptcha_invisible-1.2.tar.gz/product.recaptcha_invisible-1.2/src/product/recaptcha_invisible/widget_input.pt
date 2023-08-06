@@ -1,0 +1,44 @@
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+    $(function () {
+        let timestamp = ${python:view.timestamp}
+        let submitter = undefined
+        let form = $('#g-recaptcha-' + timestamp).closest('form')
+        let label = $('#g-recaptcha-' + timestamp).siblings('label')
+
+        label.hide()
+
+        form.on('submit', function (e) {
+            try {
+                submitter = e.submitter
+                if (!submitter) {
+                    submitter = form.find('.submit-widget')
+                }
+            } catch {
+                submitter = form.find('.submit-widget')
+            }
+
+            if (form.data('recaptcha-verified')) {
+                return true
+            }
+
+            e.preventDefault()
+            grecaptcha.execute()
+        })
+
+        window.recaptchaCallback_${python:view.timestamp} = function () {
+            form.data('recaptcha-verified', true)
+            if (submitter) {
+                submitter.click()
+            } else {
+                form.submit()
+            }
+        }
+
+    })
+</script>
+<div class="g-recaptcha" id="g-recaptcha-${view/timestamp}"
+    data-sitekey="${view/site_key}"
+    data-callback="recaptchaCallback_${python:view.timestamp}"
+    data-size="invisible">
+</div>

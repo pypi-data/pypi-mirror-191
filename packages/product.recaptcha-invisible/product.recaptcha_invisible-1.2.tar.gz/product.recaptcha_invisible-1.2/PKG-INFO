@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: product.recaptcha_invisible
+Version: 1.2
+Summary: Recaptcha Invisible suport for Plone
+Home-page: https://gitlab.com/csanahuja/product.recaptcha_invisible
+Author: csanahuja
+Author-email: csanahuja10@gmail.com
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ===========================
+        product.recaptcha_invisible
+        ===========================
+        
+        Recaptcha Invisible support for Plone. Provides a field and a widget ready to be used in zope schemas
+        
+        Features
+        --------
+        
+        - Field
+        - Widget
+        - Validator
+        
+        Translations
+        ------------
+        
+        This product has been translated into
+        
+        - Catalan
+        - Spanish
+        - English
+        
+        
+        Installation
+        ------------
+        
+        Install product.recaptcha_invisible by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                product.recaptcha_invisible
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Classifiers
+        -----------
+        
+        Framework
+        
+        - Plone 5.2
+        
+        Programming Language
+        
+        - Python 3.6
+        - Python 3.7
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - csanahuja, csanahuja10@gmail.com
+        
+        
+        Changelog
+        =========
+        
+        1.2 (13/02/2023)
+        ------------------
+        
+        Fixes:
+        
+        - Fix widget input submitting form with submit-widget input if exists
+          [csanahuja]
+        
+        1.1 (09/09/2021)
+        ------------------
+        
+        Fixes:
+        
+        - Fix widget input for easyform fields view.
+          [csanahuja]
+        
+        
+        1.0 (09/09/2021)
+        ------------------
+        
+        New features:
+        
+        - Initial release.
+          [csanahuja]
+        
+        
+        1.0a1 (unreleased)
+        ------------------
+        
+        - Initial release.
+          [csanahuja]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.6
+Provides-Extra: test

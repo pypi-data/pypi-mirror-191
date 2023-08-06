@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:z3c="http://namespaces.zope.org/z3c">
+
+    <adapter factory=".widget.ReCaptchaInvisibleFieldWidget" />
+
+    <z3c:widgetTemplate
+        template="widget_display.pt"
+        layer="z3c.form.interfaces.IFormLayer"
+        mode="display"
+        widget="product.recaptcha_invisible.interfaces.IRecaptchaInvisibleWidget"
+        />
+
+    <z3c:widgetTemplate
+        template="widget_input.pt"
+        layer="z3c.form.interfaces.IFormLayer"
+        mode="input"
+        widget="product.recaptcha_invisible.interfaces.IRecaptchaInvisibleWidget"
+        />
+
+</configure>

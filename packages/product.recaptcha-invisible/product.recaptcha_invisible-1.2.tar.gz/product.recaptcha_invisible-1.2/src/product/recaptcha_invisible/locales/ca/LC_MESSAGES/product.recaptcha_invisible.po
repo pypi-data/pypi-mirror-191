@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-09-09 07:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ../validator.py:10
+msgid "Failed to verify Recaptcha"
+msgstr "Error en verificar el Recaptcha"
+
+#: ../configure.zcml:23
+msgid "Installs the product.recaptcha_invisible add-on."
+msgstr "Installs the product.recaptcha_invisible add-on."
+
+#: ../browser/verify.py:59
+msgid "No recaptcha private key configured"
+msgstr "No s'ha configurat la clau privada del recaptcha"
+
+#: ../controlpanel.py:19
+msgid "Private key"
+msgstr "Clau privada"
+
+#: ../controlpanel.py:14
+msgid "Public key"
+msgstr "Clau pública"
+
+#: ../controlpanel.py:31
+#: ../field.py:18
+#: ../profiles/default/controlpanel.xml
+msgid "Recaptcha Invisible"
+msgstr "Recaptcha Invisible"
+
+#: ../widget.py:19
+msgid "Recaptcha Invisible Widget"
+msgstr "Recaptcha Invisible Widget"
+
+#: ../controlpanel.py:32
+msgid "Settings for recaptcha invisible. Configure the public and private key"
+msgstr "Configuració pel recaptcha invisible. Configureu la clau pública i la privada"
+
+#: ../configure.zcml:32
+msgid "Uninstalls the product.recaptcha_invisible add-on."
+msgstr "Uninstalls the product.recaptcha_invisible add-on."
+
+#: ../configure.zcml:23
+msgid "product.recaptcha_invisible"
+msgstr "product.recaptcha_invisible"
+
+#: ../configure.zcml:32
+msgid "product.recaptcha_invisible (uninstall)"
+msgstr "product.recaptcha_invisible (uninstall)"
