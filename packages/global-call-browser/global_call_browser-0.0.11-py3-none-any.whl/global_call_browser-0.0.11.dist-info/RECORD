@@ -1,0 +1,17 @@
+gbcall/__init__.py,sha256=lsYq8lgabwKnAiXB11f0dt6FIxqdQVVFHgzCvu0Gw9M,617
+gbcall/cli.py,sha256=cps6IRJdZyPCOIcUZedRipPCcN3szfu1QDB427gRLzk,2537
+gbcall/cli_interface.py,sha256=KOhRFndx-ibYGFZJ72Hzp0ogc7u3Zbf2aP2EU_XNcrk,62
+gbcall/handler.py,sha256=yxyW4Luv2nBfKIJEr_00C05Bfr9Gd3Ivzers76wyP4g,1330
+gbcall/server.py,sha256=9VErvRIELpbfxBBLoSBYQPcmXFA_ysVfZLJTcd5HgXk,1180
+gbcall/settings.py,sha256=CWb0-2Han3VMMKo9fvZB6Mz4-Ic7ndhc0S66gBPCQPY,224
+gbcall/typeConverter.py,sha256=I0vvuBDNgdM_gZSqnuL8oTBvNz5Hmz-FaF7AqFnZa74,1010
+gbcall/types.py,sha256=0PLM39bzok6qclZjsLu5bq-ooAkH-Z8G8O3NKnmllB0,101
+gbcall/utils.py,sha256=atNRv0sATnCzZP2gsA9jDhpAhWFbkmuLRMgsBqjwb8Y,1130
+src/__init__.py,sha256=pnP2CigXYjl5wCyag0D1bZi3z-Rb1XUDZ3ANYqjfkoI,30
+src/cli.py,sha256=ZzZBNT-fKyihbw72q8dU49YPqVFSUx0AWAIE-IN6msQ,510
+src/server.py,sha256=RcPbc4KdiKbiG9Z6FKjQi1kXXNdydBN072vN4nrFRlQ,15
+global_call_browser-0.0.11.dist-info/LICENSE,sha256=91RbW4JYSvZ1EZ3IhHyADyW9L4HYv7scl1TuX1Bl38k,1091
+global_call_browser-0.0.11.dist-info/METADATA,sha256=-1FcUklRoek8g8vUQKdN6uTeMeAia2NQe0JcfdV9FZE,256
+global_call_browser-0.0.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+global_call_browser-0.0.11.dist-info/top_level.txt,sha256=9TFQm8RxTefjDbVy519alzXGKLbOVOn7mYRWAOviTZw,7
+global_call_browser-0.0.11.dist-info/RECORD,,
