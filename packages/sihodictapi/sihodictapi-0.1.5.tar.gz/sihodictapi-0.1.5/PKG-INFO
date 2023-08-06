@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sihodictapi
+Version: 0.1.5
+Summary: 一些在线词典/翻译API
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# siho-dict-api
+
+![PyPI](https://img.shields.io/pypi/v/sihodictapi?style=flat-square)
+![PyPI - License](https://img.shields.io/pypi/l/sihodictapi?color=information&style=flat-square)
+
+> 一些在线词典/翻译API
+
+仅对API进行收集和密钥逆向破解，不修改返回结果
+
+## 使用
+```
+pip install sihodictapi
+```
