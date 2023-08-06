@@ -1,0 +1,17 @@
+esp_idf_size/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+idf_size/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idf_size/__main__.py,sha256=j8g6A34OH2hFX16jvKPZKfUF46tjPMNzI6g2RPgkNCo,62
+idf_size/core.py,sha256=cdXWbaf-HYRsHuQquYp6UQp5sSKHpxerAF2BwuYhhs4,56286
+idf_size/chip_info/esp32.yaml,sha256=Vfx-UsqsgHiz4xsR59Fobph8BYlJTvECOwqO7DkqU3Y,591
+idf_size/chip_info/esp32c2.yaml,sha256=JltrLTD9D3RfUp9wHZxHoL0Vx43swDp5sL7OL8Dfm7I,363
+idf_size/chip_info/esp32c3.yaml,sha256=flfkt2D645340VbZ5CNTZ3IxHa_-ajiPyx1lFssDqIk,422
+idf_size/chip_info/esp32c6.yaml,sha256=b7e0mZdWAaD-SVpSP8Lu4EeBfyOyQ6WYSRYRA8ewrcI,415
+idf_size/chip_info/esp32h2.yaml,sha256=7fdXcfzCkBuQdkYhG9UbbfheWqZ7PseK7ZTQ_wrCNfk,413
+idf_size/chip_info/esp32h4.yaml,sha256=flfkt2D645340VbZ5CNTZ3IxHa_-ajiPyx1lFssDqIk,422
+idf_size/chip_info/esp32s2.yaml,sha256=h8WkLuQ8X63TmzQ_HyDnNW5nIK7xgPLebYWYI0-Qo0w,539
+idf_size/chip_info/esp32s3.yaml,sha256=_YY8OlFVLXTLEQAEFTB_vN-3UapkJ-f3feJs_CrSwRE,586
+esp_idf_size-0.1.1.dist-info/LICENSE,sha256=Av-TG_oXJSCUlYSDbQDLLPFtw4cskCGjaZqTEuQ4wkE,11365
+esp_idf_size-0.1.1.dist-info/METADATA,sha256=4q_O13J2ZzrbThldC-uWtiJ9Jbn6aN0ADFhl_rt_Jz8,1414
+esp_idf_size-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+esp_idf_size-0.1.1.dist-info/top_level.txt,sha256=foKWiRPaSZCsNCEFm1Ue3KBIQ10bft-eBr96zp54zUA,22
+esp_idf_size-0.1.1.dist-info/RECORD,,
