@@ -1,0 +1,6 @@
+numpy>=1.16
+
+[gencalc]
+tc-pysh>=0.2.0
+chevron>=0.14.0
+ase>=3.22
