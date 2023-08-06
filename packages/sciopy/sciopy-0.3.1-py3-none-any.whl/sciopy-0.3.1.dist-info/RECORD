@@ -1,0 +1,12 @@
+sciopy/__init__.py,sha256=np7skzLZZeRjwfzAuS5LBn6xxYY-TbMI93TFyTv8zbk,2871
+sciopy/com_handling.py,sha256=U1ZMOKKRw65eWq1Jvrl6EnH7ogiurPkCJ4p1q96-8q4,2314
+sciopy/configurations.py,sha256=0CiST68CRIpqbuHrdMnmhvcXXQw5pRcAgEsFHPiKl-c,20865
+sciopy/doteit.py,sha256=WJjIWgYG_3abW848ccHxru3sHiBu9iRf98zWe2bSSxA,4417
+sciopy/print_command_info.py,sha256=rBnZJ1Tl_-QRCQnfqfet-znl8XnN7wvXTV4Z4krbFGQ,4372
+sciopy/sciopy_dataclasses.py,sha256=l4M8iHICn76RpPX88voZrZwq1LpwdzYbAEsabPanO_I,2749
+sciopy/setup_m.py,sha256=30ja6AhGyBo_jXPs84uaI1nSfdef98Ccvo81JiE7PfI,20413
+sciopy-0.3.1.dist-info/LICENSE,sha256=mvuu3JpofjFcd8rEvSAGR4EedNMH979iMwXp9BGi38Y,1062
+sciopy-0.3.1.dist-info/METADATA,sha256=4vOT-gYx_JI_JSluTGH-TzMQQapk0Ob-8DF-0XpO4y0,1462
+sciopy-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sciopy-0.3.1.dist-info/top_level.txt,sha256=Yfokv5CD23A5gda5ZEjDy0YfFwrFeo_EOXJLRv-QoEU,7
+sciopy-0.3.1.dist-info/RECORD,,
