@@ -1,0 +1,7 @@
+# standard imports
+import os
+
+# local imports
+
+#__script_dir = os.path.dirname(os.path.realpath(__file__))
+
