@@ -1,0 +1,5 @@
+numpy
+arm_pyart
+netCDF4
+wradlib
+pandas
