@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: stockly
+Version: 0.0.2
+Summary: All useful common functions
+Home-page: https://gitlab.com/mahendra210/python-package
+Author: Mahendra Bhanage
+Author-email: mbhanage@woyce.io
+License: MIT
+Keywords: stockly
+License-File: LICENSE.txt
