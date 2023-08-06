@@ -1,0 +1,12 @@
+README.md
+README.rst
+setup.py
+labelcsv/__init__.py
+labelcsv/__main__.py
+labelcsv/labelcsv.py
+labelcsv.egg-info/PKG-INFO
+labelcsv.egg-info/SOURCES.txt
+labelcsv.egg-info/dependency_links.txt
+labelcsv.egg-info/entry_points.txt
+labelcsv.egg-info/requires.txt
+labelcsv.egg-info/top_level.txt
