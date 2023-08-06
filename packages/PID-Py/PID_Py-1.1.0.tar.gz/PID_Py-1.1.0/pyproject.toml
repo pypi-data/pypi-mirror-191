@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["PID_Py"]
+
+[project]
+name = "PID_Py"
+version = "1.1.0"
+authors = [{name = "ThunderTecke", email = "thunder.tecke@gmail.com"}]
+maintainers = [{name = "ThunderTecke", email = "thunder.tecke@gmail.com"}]
+keywords = ["pid", "controller", "pid-controller", "control", "pid-control", "python", "raspberry", "raspberrypi", "raspberry-pi"]
+description = "Simple (but complete) PID controller in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/ThunderTecke/PID_Py"
+"Bug Tracker" = "https://github.com/ThunderTecke/PID_Py/issues"
+"Change log" = "https://github.com/ThunderTecke/PID_Py/blob/main/CHANGELOG.md"
