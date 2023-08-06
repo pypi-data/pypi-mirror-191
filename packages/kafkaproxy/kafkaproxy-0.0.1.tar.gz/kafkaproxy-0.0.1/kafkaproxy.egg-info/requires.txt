@@ -1,0 +1,10 @@
+pyproxypattern>=0.0.1
+
+[aio]
+aiokafka>=0.8.0
+
+[confluent]
+confluent-kafka>=2.0.0
+
+[kafka]
+kafka-python>=2.0.0
