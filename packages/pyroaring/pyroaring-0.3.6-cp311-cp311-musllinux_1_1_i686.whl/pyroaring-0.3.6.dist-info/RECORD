@@ -1,0 +1,8 @@
+pyroaring.cpython-311-i386-linux-musl.so,sha256=i-fSh5RhcPNODr83FX1uw2ZgN-rWEGzC8gqncXX5txk,3258320
+pyroaring-0.3.6.dist-info/METADATA,sha256=YmHJTV_9o8l83Pzuc60UGcys1dHTsc8wVWxCuLCAMoE,10522
+pyroaring-0.3.6.dist-info/WHEEL,sha256=HwWQK0WnprYUMCH9j1Gy9C1hWED1gzbGQk51O1WpaGM,111
+pyroaring-0.3.6.dist-info/RECORD,,
+pyroaring-0.3.6.dist-info/top_level.txt,sha256=SuxUJyNQofvyCjAIZszf3NSsQuFvm2uU-V80ItWxg9I,10
+pyroaring-0.3.6.dist-info/LICENSE,sha256=t7FgeWsSu0ES2f8GkHE6m-gVBBMm2ruT-zasUVJjDq0,1080
+pyroaring.libs/libgcc_s-8b50eaaa.so.1,sha256=aEf1qbEV-lDljbUGr6ql8FAfnxyJlKTeEsHNdrBlAHM,101648
+pyroaring.libs/libstdc++-8baf04f9.so.6.0.28,sha256=7dHa2sV5CgWXjdC4QqxbCNsm-pN9kkmNNqxtn5AaAvs,2428960
