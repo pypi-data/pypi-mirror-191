@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ocp-project-plugin"
+version = "0.0.0.0.249"
+description = "Netbox OCP Project Plugin"
+authors = [
+    "Tim Rhomberg <timrhomberg@hotmail.com>",
+]
+readme = "README.md"
+packages = [{include = "ocp_project_plugin"}]
+include = ["docs"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
