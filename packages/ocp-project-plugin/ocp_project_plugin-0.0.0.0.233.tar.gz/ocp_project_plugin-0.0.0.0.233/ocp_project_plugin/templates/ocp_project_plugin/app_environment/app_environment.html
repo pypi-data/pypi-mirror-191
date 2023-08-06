@@ -1,0 +1,192 @@
+{% extends 'generic/object.html' %}
+{% load helpers %}
+{% load plugins %}
+{% load settings %}
+{% load render_table from django_tables2 %}
+{% load perms %}
+
+{% block controls %}
+{{ block.super }}
+{% endblock controls %}
+
+{% block breadcrumbs %}
+{{ block.super }}
+{% endblock %}
+
+{% block tabs %}
+{{ block.super }}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header">App Environment</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Cluster env</th>
+                        <td>
+                            {% badge object.cluster_env bg_color=object.get_cluster_color %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">App env</th>
+                        <td>{{ object.app_env }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">MTLS</th>
+                        <td>{{ object.mtls }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Repo</th>
+                        <td><a href="{{ object.repo }}">{{ object.repo }}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Branch</th>
+                        <td>{{ object.branch }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Path</th>
+                        <td>{{ object.path }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Egress IP</th>
+                        <td>{{ object.egress_ip|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Deployment Kind</th>
+                        <td>{{ object.deployment_kind }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Monitoring</th>
+                        <td>{{ object.monitoring }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Postgres Monitoring</th>
+                        <td>{{ object.postgres_monitoring }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">OCP Project</th>
+                        <td>{{ object.ocp_project|linkify|placeholder }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">Additional Information</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Argo CD Link</th>
+                        <td><a href="{% get_url 'argocd' object.cluster_env %}">{% get_url 'argocd' object.cluster_env%}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">OCP Console Link</th>
+                        <td><a href="{% get_url 'ocp' object.cluster_env %}">{% get_url 'ocp' object.cluster_env%}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Prometheus Link</th>
+                        <td><a href="{% get_url 'prometheus' object.cluster_env %}">{% get_url 'prometheus' object.cluster_env%}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Grafana Link</th>
+                        <td><a href="{% get_url 'grafana' object.cluster_env %}">{% get_url 'grafana' object.cluster_env%}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Kibana Link</th>
+                        <td><a href="{% get_url 'kibana' object.cluster_env %}">{% get_url 'kibana' object.cluster_env%}</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header">Resource Quota</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr class="table-active">
+                        <th scope="row" colspan="2">Limits</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">CPU</th>
+                        <td>{{ object.limits_cpu|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Limits</th>
+                        <td>{{ object.limits_memory|placeholder }}</td>
+                    </tr>
+                    <tr class="table-active">
+                        <th scope="row" colspan="2">Requests</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Requests</th>
+                        <td>{{ object.requests_cpu|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Requests</th>
+                        <td>{{ object.requests_memory|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="{% get_ocp_resource_quota_url object.cluster_env object.app_env object.ocp_project.name %}">Resource Quota OCP</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">Price Table</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr class="table-active">
+                        <th scope="row">Element</th>
+                        <th scope="row">Amount</th>
+                        <th scope="row">Total</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            CPU
+                            <span class="form-text">1 CPU Core {% get_cpu_cost %} CHF</span>
+                        </td>
+                        <td>{{ object.limits_cpu|placeholder }}</td>
+                        {% if object.limits_cpu %}
+                            <td>{% calculate_cpu_cost object.limits_cpu %} CHF</td>
+                        {% else %}
+                            <td>{{ None|placeholder }}</td>
+                        {% endif %}
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Memory
+                            <span class="form-text">1 GB Memory {% get_memory_cost %} CHF</span>
+                        </th>
+                        <td>{{ object.limits_memory|placeholder }}</td>
+                        {% if object.limits_memory %}
+                            <td>{% calculate_memory_cost object.limits_memory %} CHF</td>
+                        {% else %}
+                            <td>{{ None|placeholder }}</td>
+                        {% endif %}
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            Storage
+                            <span class="form-text">1 GB Storage {% get_storage_cost %} CHF</span>
+                        </th>
+                        <td>{{ None|placeholder }}</td>
+                        <td>{{ None|placeholder }}</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Total (CHF)</td>
+                        <td></td>
+                        <td>{% calculate_total_cost object.limits_cpu object.limits_memory 0 %} CHF</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        {% include 'inc/panels/custom_fields.html' %}
+    </div>
+</div>
+
+{% endblock %}
