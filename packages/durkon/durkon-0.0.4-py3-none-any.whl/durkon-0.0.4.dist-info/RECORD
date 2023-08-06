@@ -1,0 +1,16 @@
+durkon/__init__.py,sha256=TFHngfxXJ-ju5KfpuTTldsk6Gwl4m3X9wLBe2Ka2Mik,239
+durkon/actual_modelling.py,sha256=ehNtO8_7XaPTKP-k7fg4dMeSIyUTjGSrKSnKeaou5Hk,35391
+durkon/calculus.py,sha256=K0nOEbYmZ55vFxZj4IKdLEy-8QT_A-0NhQC2aZMhK2E,5448
+durkon/export.py,sha256=MSj7Ef3XvmyX8G8CXzvyoaXL5RoBjeb8bVtBWM-3ORE,5662
+durkon/metrics.py,sha256=PQ_FHBZOGu7Huum5d1zeyRyNwvfYM-t9f86pkFYiIFs,2867
+durkon/misc.py,sha256=TP_wxeD9yr_5FfKaQW_4B5i2b8vjusxBQv-bbItrxw0,23479
+durkon/pena.py,sha256=Ilw-ekfHnGp5WE9B0zYa06MMwn_C1iHN8oTzM-Om74E,3283
+durkon/prep.py,sha256=vRdeT2JNXKwCO1bVmN_2VDk2J5l7mbh9HmN3C50Nxyw,5047
+durkon/rele.py,sha256=dm-uslZaVFlxe4w2YP55DlPPtkK_aDJ5pWnM0mC1BNk,3937
+durkon/util.py,sha256=m3ckoMtUJbjP_T-jSgiMio1_k5yME8x-msQN6YGg7u4,456
+durkon/viz.py,sha256=kdsYn1R72ldLiq1tRb-IQGA7tCmtMTE1ugoHNroilWY,12905
+durkon/wraps.py,sha256=WXoWezHv_cFfM48EGKAQ-nhpK8Sdl4ab7jC1x5I_g9M,38571
+durkon-0.0.4.dist-info/METADATA,sha256=qjLItvA6bGX2iyq1JJYYk_LXoks4PuOpnOHVIFN-9WI,628
+durkon-0.0.4.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+durkon-0.0.4.dist-info/licenses/LICENSE,sha256=WRDebhPA7uIG_u3Ah7XcBnRI4Eyz5fxLwxcB94M2rkU,1218
+durkon-0.0.4.dist-info/RECORD,,
