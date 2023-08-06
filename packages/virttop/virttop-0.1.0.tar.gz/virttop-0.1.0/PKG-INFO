@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: virttop
+Version: 0.1.0
+Summary: A top like utility for libvirt
+Home-page: https://github.com/terminaldweller/virttop
+License: GPL-3.0
+Keywords: libvirt,top
+Author: terminaldwelelr
+Author-email: devi@terminaldweller.com
+Requires-Python: >=3.11,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0)
+Requires-Dist: libvirt-python (>=9.0.0,<10.0.0)
+Project-URL: Repository, https://github.com/terminaldweller/virttop
+Description-Content-Type: text/markdown
+
+# virttop
+a top like utility for libvirt
+
