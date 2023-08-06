@@ -1,0 +1,4 @@
+Pillow
+PyQt5
+numpy
+harmony
