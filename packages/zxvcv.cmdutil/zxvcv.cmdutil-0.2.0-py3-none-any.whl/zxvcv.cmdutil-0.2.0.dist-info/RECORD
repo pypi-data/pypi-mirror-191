@@ -1,0 +1,16 @@
+zxvcv.cmdutil-0.2.0-py3.11-nspkg.pth,sha256=bokAq5-YBfQvhFqXVJIlBebCUuVNrsUOwRO2I-3wLRw,535
+zxvcv.cmdutil-0.2.0.dist-info/LICENSE,sha256=n2hCw5m6ODe-yYFv4Y8ABzd5HFDpWF0D0UqOOXVGgiY,1070
+zxvcv.cmdutil-0.2.0.dist-info/METADATA,sha256=-F4O1pwksJqGSFAoexOSuT3PkJYVslA4HExJBtHzlnU,1093
+zxvcv.cmdutil-0.2.0.dist-info/RECORD,,
+zxvcv.cmdutil-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zxvcv.cmdutil-0.2.0.dist-info/entry_points.txt,sha256=HSiIUE5w9q_l0GbbGWHLaU60GaHIOMLfXUsDjO_7WhY,219
+zxvcv.cmdutil-0.2.0.dist-info/namespace_packages.txt,sha256=GsKzKxmDAYGd7t-d3odRoamMPQEMgGzobA9nr8I147g,6
+zxvcv.cmdutil-0.2.0.dist-info/top_level.txt,sha256=GsKzKxmDAYGd7t-d3odRoamMPQEMgGzobA9nr8I147g,6
+zxvcv/cmdutil/virtual_env/venv.bat,sha256=jHBAcPt5MPFqr3zRPCjuTWJu9ZhEtET1ZoZaXaAoQBk,374
+zxvcv\cmdutil\__init__.pyc,sha256=sl5ebevlYSdccGA9pjWZrb_g1mAsZQmhaVWo7gEJPBQ,156
+zxvcv\cmdutil\__main__.pyc,sha256=bqghQb860L7gOKxX74DHJNn88B-AcBjkIaxnvd3eSpw,691
+zxvcv\cmdutil\git.pyc,sha256=vq81wI434z614H7KAQj7_CNPukVTUB7TFGvW8Lo3-9g,4232
+zxvcv\cmdutil\virtual_env\__init__.pyc,sha256=3obxXn8YbqMuuZGdmyHl0PcQPcmgwz0Cb_eefLA_vhk,339
+zxvcv\cmdutil\virtual_env\initialize.pyc,sha256=d8v0muwVoq5vGNqjp9yzdtWAluoVxvjG2dUSzRuVhG0,2875
+zxvcv\cmdutil\virtual_env\list.pyc,sha256=hzKOtB2mHAteAI3B-LOCNuvLS5uf4KzI4wB10EZsTT0,2220
+zxvcv\cmdutil\virtual_env\remove.pyc,sha256=Ua5vBDLwxDOKx7EmwVzaqN-pYaLYdYfNDMDejs8Kt3c,2983
