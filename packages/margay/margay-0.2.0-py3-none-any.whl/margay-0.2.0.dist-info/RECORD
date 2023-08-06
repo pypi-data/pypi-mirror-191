@@ -1,0 +1,14 @@
+margay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+margay/sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+margay/sdk/auth/__init__.py,sha256=16nu5KbJwp-pqdYep3FS8vweuXSv2k9Raaj2Ee_OGAs,1228
+margay/sdk/client/__init__.py,sha256=mzN-JC5o-hsb3V681uhsF3z-Pq5rI4ww_w6YPGlio8c,819
+margay/sdk/config/__init__.py,sha256=4rfMju_7MKGiMGi_94JWYibD2rnlw6eq_Fm6MQ27lps,984
+margay/sdk/logger/__init__.py,sha256=XwN-pfJnE29_V3UvHUH2KxW75lkWi1_INRyIIjOQJvI,59
+margay/sdk/protocol/__init__.py,sha256=MnLBEdnOBK_Hh_z49XlgeaN_U8-RxHzqPfL6kn2XphM,886
+margay/sdk/publisher/__init__.py,sha256=3JyJE0lKPZTlhA2e_mnR84Ge7Tq9cd-0YEYIRt_GXpo,1495
+margay/sdk/subscriber/__init__.py,sha256=Zl_obBGq5_opADjBpyRsjZkg-6S2AGfUpw23PkY_crg,2508
+margay-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+margay-0.2.0.dist-info/METADATA,sha256=51sjcjU3tdS0KXBT-8WwfPxGuaNDsyhVVMHxx49RSJY,3619
+margay-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+margay-0.2.0.dist-info/top_level.txt,sha256=Nhq0K63enwbpIdN5VH74kSK1AHca6Ti5UZ2nN-XMwSE,7
+margay-0.2.0.dist-info/RECORD,,
