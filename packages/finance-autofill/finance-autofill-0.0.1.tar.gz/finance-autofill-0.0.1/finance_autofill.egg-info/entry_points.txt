@@ -1,0 +1,3 @@
+[console_scripts]
+finance-autofill = finance_autofill.main:main
+

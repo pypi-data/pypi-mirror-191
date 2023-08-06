@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: finance-autofill
+Version: 0.0.1
+Summary: A light weight CLI to summarize transcations in an excel form.
+Home-page: https://github.com/st3107/finance-autofill
+Author: Songsheng Tao
+Author-email: songshengtao1@gmail.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+================
+finance-autofill
+================
+
+.. image:: https://img.shields.io/travis/st3107/finance-autofill.svg
+        :target: https://travis-ci.org/st3107/finance-autofill
+
+.. image:: https://img.shields.io/pypi/v/finance-autofill.svg
+        :target: https://pypi.python.org/pypi/finance-autofill
+
+
+A light weight CLI to summarize transcations in an excel form.
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://st3107.github.io/finance-autofill.
+
+Features
+--------
+
+* TODO
+
+
