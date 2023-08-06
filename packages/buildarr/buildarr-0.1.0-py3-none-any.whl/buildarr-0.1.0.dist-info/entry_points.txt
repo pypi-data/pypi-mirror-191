@@ -1,0 +1,6 @@
+[buildarr.plugins]
+sonarr=buildarr.plugins.sonarr.plugin:SonarrPlugin
+
+[console_scripts]
+buildarr=buildarr.cli.main:main
+
