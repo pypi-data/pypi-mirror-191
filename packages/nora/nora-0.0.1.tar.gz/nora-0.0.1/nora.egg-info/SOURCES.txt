@@ -1,0 +1,5 @@
+setup.py
+nora.egg-info/PKG-INFO
+nora.egg-info/SOURCES.txt
+nora.egg-info/dependency_links.txt
+nora.egg-info/top_level.txt
