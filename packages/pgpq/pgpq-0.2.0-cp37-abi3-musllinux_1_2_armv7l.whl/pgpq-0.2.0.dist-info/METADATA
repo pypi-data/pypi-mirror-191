@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pgpq
+Version: 0.2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pyarrow>=11
+License-File: LICENSE.txt
+Summary: Arrow -> PostgreSQL encoder
+Author: Adrian Garcia Badaracco
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: documentation, https://github.com/adriangb/pgpq/README.md
+Project-URL: repository, https://github.com/adriangb/pgpq
+Project-URL: homepage, https://github.com/adriangb/pgpq
+
+# pgpq
+
+![CI](https://github.com/adriangb/pgpq/actions/workflows/python.yaml/badge.svg)
+
+Proof of concept stage library for loading Parquet files into PostgreSQL directly by converting a stream of Arrow RecordBatches into PostgreSQL's binary format.
+There's currently bugs and it's slow!
+
