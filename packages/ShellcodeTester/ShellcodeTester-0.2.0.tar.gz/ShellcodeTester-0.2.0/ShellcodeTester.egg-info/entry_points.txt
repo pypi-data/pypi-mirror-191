@@ -1,0 +1,3 @@
+[console_scripts]
+shellcodetester = shellcodetester.shellcodetester:run
+
