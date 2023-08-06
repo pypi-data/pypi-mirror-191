@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        brot=brot.cli_brot:brot
+        knust_service=knust_service.cli_knust_service:knust_service
+    
