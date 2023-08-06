@@ -1,0 +1,8 @@
+setup.py
+Netstock/HTTP.py
+Netstock/HTTP_req.py
+Netstock/__init__.py
+Netstock.egg-info/PKG-INFO
+Netstock.egg-info/SOURCES.txt
+Netstock.egg-info/dependency_links.txt
+Netstock.egg-info/top_level.txt
