@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.12.3b2
+---------
+
+* Add charging target and ac charging limit (#516)
