@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: bb-apputils
+Version: 0.2.0
+Summary: App utilities
+Author: Erik Beebe
+Author-email: beebeapps_debugging@tuta.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
