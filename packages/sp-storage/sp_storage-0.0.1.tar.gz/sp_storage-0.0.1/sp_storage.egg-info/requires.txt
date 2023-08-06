@@ -1,0 +1,2 @@
+django-storages>=1.10.0
+Office365-REST-Python-Client>=2.3.10

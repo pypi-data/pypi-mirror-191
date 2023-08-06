@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: sp_storage
+Version: 0.0.1
+Summary: Storage provider for sharepoint service
+Author-email: Sungwon Um <shineum@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2023 Sungwon Um
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://github.com/shineum/sp_storage
+Keywords: storage,sharepoint
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Installation
+
+Use pip:
+
+```
+pip install sp_storage
+```
+or
+
+```
+pip install git+https://github.com/shineum/sp_storage.git
+```
+
+
+# Getting Started
+Set the following in your settings.py:
+
+```
+SHAREPOINT_TENANT = '<tenant name>'
+SHAREPOINT_TENANT_ID = '<tenant id - uuid format>'
+SHAREPOINT_CLIENT_ID = '<client id - uuid format>'
+SHAREPOINT_CLIENT_SECRET = '<client secret>'
+SHAREPOINT_USERNAME = '<username>'
+SHAREPOINT_PASSWORD = '<password>'
+SHAREPOINT_SITE_NAME = '<site name>'
+SHAREPOINT_ROOT_DIR = '<root dir>'
+SHAREPOINT_BLOB_MAX_MEMORY_SIZE = '<blob file size - defulat 16M>'
+```
+
+> note: 
+> If 'SHAREPOINT_CLIENT_ID' and 'SHAREPOINT_CLIENT_SECRET' are provided 'SHAREPOINT_USERNAME' and 'SHAREPOINT_PASSWORD' will be ignored.
+
+
+# Usage
+
+## Fields
+Set the default storage as 'sp_storage.sharepoint.SharepointStorage'
+or import SharepointStorage and set storage for each models.
+
+```
+DEFAULT_FILE_STORAGE = 'sp_storage.sharepoint.SharepointStorage'
+
+# model
+from django.db import models
+
+class Sample(models.Model):
+    pdf = models.FileField(upload_to='pdfs')
+
+```
+
+or
+
+```
+# model
+from sp_storage.sharepoint import SharepointStorage
+from django.db import models
+
+class Sample(models.Model):
+    pdf = models.FileField(upload_to='pdfs', storage=SharepointStorage)
+```
+
+## Storage
+```
+>>> from sp_storage.sharepoint import SharepointStorage
+>>> storage = SharepointStorage()
+
+>>> storage.exists('storage_test')
+False
+
+>>> file = storage.open('storage_test', 'w')
+>>> file.write('storage test')
+>>> file.close()
+
+>>> storage.exists('storage_test')
+True
+
+>>> file = storage.open('storage_test', 'r')
+>>> file.read()
+b'storage test'
+>>> file.close()
+
+>>> storage.delete('storage_test')
+>>> storage.exists('storage_test')
+False
+```

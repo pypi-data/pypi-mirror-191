@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sp_storage/__init__.py
+sp_storage/sharepoint.py
+sp_storage.egg-info/PKG-INFO
+sp_storage.egg-info/SOURCES.txt
+sp_storage.egg-info/dependency_links.txt
+sp_storage.egg-info/requires.txt
+sp_storage.egg-info/top_level.txt
