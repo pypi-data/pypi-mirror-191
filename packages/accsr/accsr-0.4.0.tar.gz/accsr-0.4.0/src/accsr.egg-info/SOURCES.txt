@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/accsr/__init__.py
+src/accsr/config.py
+src/accsr/conversions.py
+src/accsr/files.py
+src/accsr/loading.py
+src/accsr/remote_storage.py
+src/accsr.egg-info/PKG-INFO
+src/accsr.egg-info/SOURCES.txt
+src/accsr.egg-info/dependency_links.txt
+src/accsr.egg-info/requires.txt
+src/accsr.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+numpy>=1.18.4
+apache-libcloud~=3.7.0
+tqdm>=4.48.2
+
+[docs]
+Sphinx==3.2.1
+sphinxcontrib-websupport==1.2.4
+sphinx_rtd_theme
+nbsphinx
+ipython
+
+[test]
+pytest
