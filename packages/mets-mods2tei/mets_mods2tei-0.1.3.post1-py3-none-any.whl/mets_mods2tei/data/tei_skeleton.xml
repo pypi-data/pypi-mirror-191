@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">[Haupttitel]</title>
+      </titleStmt>
+      <publicationStmt>
+        <idno>
+        </idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="M">[Zitiertitel]</bibl>
+        <biblFull>
+          <publicationStmt>
+          </publicationStmt>
+        </biblFull>
+        <msDesc>
+          <msIdentifier>
+            <idno>
+            </idno>
+          </msIdentifier>
+          <physDesc>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+  </text>
+</TEI>
