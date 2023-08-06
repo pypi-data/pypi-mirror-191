@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ms_ovba_crypto
+Version: 0.0.1
+Summary: Encryption and hashing functions for Office VBA files.
+Author-email: Kevin Nowaczyk <beakerboy99@yahoo.com>
+Project-URL: Homepage, https://github.com/Beakerboy/MS-OVBA-Crypto
+Project-URL: Bug Tracker, https://github.com/Beakerboy/MS-OVBA-Crypto/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# MS-OVBA-Crypto
+Cryptographic Functions for Office Visual Basic files
