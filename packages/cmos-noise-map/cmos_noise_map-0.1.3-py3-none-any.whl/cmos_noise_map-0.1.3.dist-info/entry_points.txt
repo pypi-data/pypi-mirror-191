@@ -1,0 +1,3 @@
+[console_scripts]
+rts-maker=cmos_noise_map.main:cli
+
