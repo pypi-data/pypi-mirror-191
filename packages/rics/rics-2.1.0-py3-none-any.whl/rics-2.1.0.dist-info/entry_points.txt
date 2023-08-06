@@ -1,0 +1,3 @@
+[console_scripts]
+mtimeit=rics.performance.cli:main
+
