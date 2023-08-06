@@ -1,0 +1,7 @@
+talkkeeper/__init__.py,sha256=YkQVZVWRQZt8OMqgvbzPOHvlDQGXZE3aJMO3W8F4Ib4,79
+talkkeeper/__main__.py,sha256=oqKgg1emfPMQXnWuGvNk1cZXslm8cjnHGfLx8cKccRM,81
+talkkeeper/cli/application.py,sha256=TLF4va-giZKtiypGIup-KkaPVCnOUbwzocYOyV58u1Q,72
+talkkeeper-0.0.0.dist-info/entry_points.txt,sha256=dZUc1GxvrNrtp8wBxGTD-wYtdVy1COLrbM5oSLuoDCw,52
+talkkeeper-0.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+talkkeeper-0.0.0.dist-info/METADATA,sha256=Hh6uGJTXhDzCN0A07kqc7dEPR-r2ZGC8c9T3k6LqUeg,1354
+talkkeeper-0.0.0.dist-info/RECORD,,
