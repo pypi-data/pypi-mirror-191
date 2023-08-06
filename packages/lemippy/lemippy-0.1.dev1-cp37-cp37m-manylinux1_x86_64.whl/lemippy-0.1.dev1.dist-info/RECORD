@@ -1,0 +1,10 @@
+highspy/__init__.py,sha256=tHtMzk9lMS3s98IE-8SkgPudJP_U9z4ERoLYa-c0c6g,449
+highspy/highs.py,sha256=TpxGTohV5C-BWWMY0PGA1MJaK9sIC7LtxQpRuhcW0f8,824
+highspy/highs_bindings.cpp,sha256=hmCOGB8xkJqJIjaEswp-WDWC3CKHBhBITXKgPLvm_9A,31549
+highspy/highs_bindings.cpython-37m-x86_64-linux-gnu.so,sha256=WlKjphUKdrllG2fugG6fVx5UkReEy9gWEy99MVOZ6kU,904296
+highspy/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+highspy/tests/test_highspy.py,sha256=SDoRHkRvyT0V96Pm0_CBGDDRErg3KY5NkDdgA0s14_0,8522
+lemippy-0.1.dev1.dist-info/METADATA,sha256=NfuuMvacTaaDOdJsYp1BIE6uCzkvTqydyKidsWjx8wU,631
+lemippy-0.1.dev1.dist-info/WHEEL,sha256=Z4FzB2xqw6vYQxoyakqd002-5PYy8veBCmol_EQUEco,109
+lemippy-0.1.dev1.dist-info/top_level.txt,sha256=CCLmVcJJAA7KzHtPuazFdg8oEynKmc1ROuTvyRJjH1E,8
+lemippy-0.1.dev1.dist-info/RECORD,,
