@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+demo/demo_func.py
+demo/demo_qubo.py
+protes/__init__.py
+protes/protes.py
+protes/protes_jax.py
+protes/protes_jax_fast.py
+protes/protes_tor.py
+protes.egg-info/PKG-INFO
+protes.egg-info/SOURCES.txt
+protes.egg-info/dependency_links.txt
+protes.egg-info/top_level.txt
