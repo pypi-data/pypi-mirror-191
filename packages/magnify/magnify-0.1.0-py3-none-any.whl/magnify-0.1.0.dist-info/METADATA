@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: magnify
+Version: 0.1.0
+Summary: A microscopy image processing toolkit.
+Author: Karl Krauth
+Author-email: karl.krauth@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: basicpy (>=1.0.1,<2.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: opencv-python (>=4.7.0,<5.0.0)
+Requires-Dist: scipy (==1.9.1)
+Description-Content-Type: text/markdown
+
+# magnify
+A microscopy image processing toolkit.
+
