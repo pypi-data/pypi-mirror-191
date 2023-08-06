@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+dev_requirements.txt
+pyproject.toml
+requirements.txt
+src/CnyZodiac.py
+src/ChineseNewYear_Zodiac.egg-info/PKG-INFO
+src/ChineseNewYear_Zodiac.egg-info/SOURCES.txt
+src/ChineseNewYear_Zodiac.egg-info/dependency_links.txt
+src/ChineseNewYear_Zodiac.egg-info/requires.txt
+src/ChineseNewYear_Zodiac.egg-info/top_level.txt
+tests/test_chinese_new_year_zodiac.py
