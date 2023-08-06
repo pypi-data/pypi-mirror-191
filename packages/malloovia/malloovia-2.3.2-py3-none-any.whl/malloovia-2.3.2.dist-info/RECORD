@@ -1,0 +1,16 @@
+malloovia/__init__.py,sha256=a4e6NjDqUhBJxNJC-lFpbYQRQBsK9G_u9vNmD_VVPn8,154
+malloovia/__version__.py,sha256=J4CRnpR3v72FGOMp8gqSua_XWZpAfXuqgVWiQFB-gTY,22
+malloovia/cli.py,sha256=ztpalB-YCXSy-T1AqaUQjBZX2n3mJDzsicKPWK4n_fI,7697
+malloovia/lpsolver.py,sha256=PMb_gBEOgc5Yd70QlxhW9vSYLZKErkfqIDD8DhVjCZY,33503
+malloovia/malloovia.schema.yaml,sha256=s-yCOQmK0csm6VRLWySKZE_aO8t95yTpVwMQWUhyGqA,8773
+malloovia/model.py,sha256=LvclcCMJazZOWejVsHAs5n2Dju917GQVQuqMRsO7AnU,15085
+malloovia/phases.py,sha256=px98kARmMiiqv1dY5x0uvNwl2nlmNIn-YvYpkXIM7NI,23237
+malloovia/problem.schema.yaml,sha256=HrT-w34O_599FCV5y2A1BPwpgiXyjX_Y2oQT-pj-cbM,3472
+malloovia/py.test,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malloovia/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+malloovia/solution_model.py,sha256=MKxqZm2_bK7YzeXbcdS4f_PXtKOFXIinND4an_JtuLQ,11913
+malloovia/util.py,sha256=0agpqVHIrdYg9cVfg6VzUNXgLlYfnn2XVaUYWLz_Vsc,41558
+malloovia-2.3.2.dist-info/LICENSE,sha256=raFbob7GPsK4DYZAn0AJRRnBQBwgxfWcTluJjwMtx44,1074
+malloovia-2.3.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+malloovia-2.3.2.dist-info/METADATA,sha256=SkIDKRx7oac11yyCtQvjVZbT8yYBr6QBUfrJ2ELt_G0,6457
+malloovia-2.3.2.dist-info/RECORD,,
