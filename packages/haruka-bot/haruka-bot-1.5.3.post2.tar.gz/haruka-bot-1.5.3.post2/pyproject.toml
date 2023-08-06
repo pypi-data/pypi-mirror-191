@@ -1,0 +1,71 @@
+[project]
+authors = [
+    { name = "SK-415", email = "2967923486@qq.com" },
+]
+requires-python = ">=3.8,<4.0"
+dependencies = [
+    "click~=8.1",
+    "httpx~=0.23",
+    "nonebot-adapter-onebot~=2.2",
+    "nonebot-plugin-apscheduler~=0.2",
+    "nonebot2[fastapi]<3,>=2.0.0rc3",
+    "playwright~=1.30",
+    "pydantic~=1.10",
+    "python-dotenv~=0.21",
+    "tortoise-orm[asyncpg]~=0.19",
+    "bilireq~=0.2",
+    "packaging~=23.0",
+    "nonebot-plugin-guild-patch~=0.2",
+    "msvc-runtime~=14.34; sys_platform == \"win32\"",
+]
+dynamic = []
+name = "haruka-bot"
+description = "Push dynamics and live informations from bilibili to QQ. Based on nonebot2."
+readme = "README.md"
+keywords = [
+    "nonebot",
+    "nonebot2",
+    "qqbot",
+    "bilibili",
+    "bot",
+]
+version = "1.5.3.post2"
+
+[project.license]
+text = "AGPL-3.0-or-later"
+
+[project.urls]
+homepage = "https://github.com/SK-415/HarukaBot"
+repository = "https://github.com/SK-415/HarukaBot/tree/master/src/plugins/haruka_bot"
+documentation = "https://github.com/SK-415/HarukaBot#readme"
+
+[project.scripts]
+hb = "haruka_bot.__main__:main"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "nonebot-plugin-gocqhttp>=0.6.4",
+]
+
+[tool.pdm.version]
+source = "file"
+path = "haruka_bot/version.py"
+
+[tool.pdm.build]
+
+[tool.nonebot]
+adapters = [
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+]
+plugins = [
+    "haruka_bot",
+    "nonebot_plugin_gocqhttp",
+]
+plugin_dirs = []
+builtin_plugins = []
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
