@@ -1,0 +1,14 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+vicolib/__init__.py
+vicolib.egg-info/PKG-INFO
+vicolib.egg-info/SOURCES.txt
+vicolib.egg-info/dependency_links.txt
+vicolib.egg-info/top_level.txt
+vicolib/converter/__init__.py
+vicolib/converter/time.py
+vicolib/decorators/__init__.py
+vicolib/decorators/benchmark.py
+vicolib/decorators/debug.py

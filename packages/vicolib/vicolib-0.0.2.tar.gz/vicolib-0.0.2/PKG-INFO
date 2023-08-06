@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: vicolib
+Version: 0.0.2
+Summary: Vicos python library with useful decorators and functions.
+Home-page: https://github.com/VicoShortman/vico-lib-py
+Author: Vico Shortman
+Author-email: vico.shortman@gmail.com
+License: MIT
+Keywords: tools,time,timestamp,conversion,decorators,benchmark
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+Vico's personal python library with useful decorators and functions.
+Use at your own risk!
+
+View Project on Github:
+https://github.com/VicoShortman/vico-lib-py
+
+Change Log
+==========
+
+0.0.1 (12.02.2023)
+------------------
+- First Release
+
+0.0.2
+- Updated README.txt
+- Changed important debug: Added create_important_decorator and standart important decorator
