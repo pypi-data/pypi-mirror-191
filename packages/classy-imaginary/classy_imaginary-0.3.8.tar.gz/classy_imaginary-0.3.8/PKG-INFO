@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: classy-imaginary
+Version: 0.3.8
+Summary: This is not a useful package. It is a wrapper around imaginary to provide a Class interface.
+Author: Hanoush
+Author-email: hanoush87@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (>=8.0.0)
+Requires-Dist: click (>=8.0.4)
+Requires-Dist: click-shell (>=2.1)
+Requires-Dist: diffusers
+Requires-Dist: einops (>=0.3.0)
+Requires-Dist: facexlib
+Requires-Dist: fairscale (>=0.4.4)
+Requires-Dist: ftfy
+Requires-Dist: imageio (==2.9.0)
+Requires-Dist: kornia (>=0.6)
+Requires-Dist: llvmlite (>=0.39.1,<0.40.0)
+Requires-Dist: numpy
+Requires-Dist: omegaconf (>=2.1.1)
+Requires-Dist: open-clip-torch
+Requires-Dist: opencv-python
+Requires-Dist: protobuf (!=3.20.2,!=3.19.5)
+Requires-Dist: psutil
+Requires-Dist: pytorch-lightning (>=1.4.2)
+Requires-Dist: requests
+Requires-Dist: safetensors
+Requires-Dist: timm (>=0.4.12)
+Requires-Dist: torch (>=1.2.0)
+Requires-Dist: torchdiffeq
+Requires-Dist: torchmetrics (>=0.6.0)
+Requires-Dist: torchvision (>=0.13.1)
+Requires-Dist: tqdm
+Requires-Dist: transformers (>=4.19.2)
+Description-Content-Type: text/markdown
+
+This is not a useful package. It is a wrapper around imaginary to provide a Class interface.
+
