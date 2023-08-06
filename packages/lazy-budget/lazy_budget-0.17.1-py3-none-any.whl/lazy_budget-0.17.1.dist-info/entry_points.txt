@@ -1,0 +1,3 @@
+[console_scripts]
+lbud = lazy_budget.main:main
+
