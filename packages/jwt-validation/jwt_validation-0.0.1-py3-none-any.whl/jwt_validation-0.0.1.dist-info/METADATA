@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jwt-validation
+Version: 0.0.1
+Summary: JWT validation
+Home-page: UNKNOWN
+Author: x227970
+License: UNKNOWN
+Keywords: python,JWT,validation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: pyjwt (==2.6.0)
+Requires-Dist: cryptography (==39.0.0)
+
+Utilities used for JWT validation.
+
