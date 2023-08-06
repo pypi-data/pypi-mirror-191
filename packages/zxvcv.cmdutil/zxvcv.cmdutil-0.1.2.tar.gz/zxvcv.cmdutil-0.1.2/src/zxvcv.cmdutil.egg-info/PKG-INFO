@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: zxvcv.cmdutil
+Version: 0.1.2
+Summary: Toolbox for other projects
+Author: Pawel Piskorz
+Author-email: ppiskorz0@gmail.com
+License: MIT License
+Keywords: toolbox,tool
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4.0.0,>=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zxvcv.cmdutil
+Toolbox for other projects.
+
+# Build
+```
+tox -e build
+```
+
+# Publish
+```
+tox -e publish -- -u <username> -p <password>
+```
+
+publish on testpypi
+```
+tox -e publish -- --repository testpypi -u <username> -p <password>
+
+Changelog
+=========
+
+0.1.2 (2023-02-12)
+------------------
+- General package setup updates.
+
+0.1.0 (2023-02-09)
+------------------
+- Initial commit.

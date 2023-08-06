@@ -1,0 +1,16 @@
+CHANGES.rst
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/zxvcv/__init__.py
+src/zxvcv.cmdutil.egg-info/PKG-INFO
+src/zxvcv.cmdutil.egg-info/SOURCES.txt
+src/zxvcv.cmdutil.egg-info/dependency_links.txt
+src/zxvcv.cmdutil.egg-info/entry_points.txt
+src/zxvcv.cmdutil.egg-info/namespace_packages.txt
+src/zxvcv.cmdutil.egg-info/top_level.txt
+src/zxvcv/cmdutil/__init__.py
+src/zxvcv/cmdutil/__main__.py
+src/zxvcv/cmdutil/git.py
