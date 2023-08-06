@@ -1,0 +1,1 @@
+# Inteligencia Artificial: Laboratorio 2 - Inferencia Probabilistica
