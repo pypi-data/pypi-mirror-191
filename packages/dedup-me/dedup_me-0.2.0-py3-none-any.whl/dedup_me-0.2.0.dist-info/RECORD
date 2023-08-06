@@ -1,0 +1,7 @@
+dedup_me/__init__.py,sha256=W4kDAOwPVCR0RE85XIi-NzfmhanRHqelTkXNFSp9Gd0,197
+dedup_me/_async.py,sha256=3FtjwsIcZXFITov_-GFrjohv12HZW4BOFOv-SiWirXw,5955
+dedup_me/_threading.py,sha256=rBLOnWqK6LRwCo4too8omte4yvPcuVMSLNOzB82AVD0,6627
+dedup_me-0.2.0.dist-info/LICENSE,sha256=iwmwh7-fjNKKZIY-19Wv0_kXscGtZUV3QZxlLjcGt4c,1075
+dedup_me-0.2.0.dist-info/METADATA,sha256=NO0Zx-uIDXlTi-z9ydgjlHhvbQoWLYQ-ldaQ6k8e_FU,3458
+dedup_me-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dedup_me-0.2.0.dist-info/RECORD,,
