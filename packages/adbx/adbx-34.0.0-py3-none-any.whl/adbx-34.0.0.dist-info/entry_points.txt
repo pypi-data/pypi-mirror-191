@@ -1,0 +1,3 @@
+[console_scripts]
+adb = adbx.__main__:adb
+fastboot = adbx.__main__:fastboot
