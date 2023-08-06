@@ -1,0 +1,14 @@
+mat73
+matplotlib
+nibabel
+nilearn
+numba
+numpy
+pandas
+pre-commit
+pyyaml
+pqdm
+scipy
+scikit-learn
+tensorflow_probability
+tqdm
