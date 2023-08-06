@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=63.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apidevtools"
+version = "1.0.3"
+authors = [
+    { name="cxllmerichie", email="cxllmerichie@gmail.com" },
+]
+description = "All in one tools for API development."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: FastAPI",
+    "Topic :: Software Development",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cxllmerichie/apidevtools"
+"Bug Tracker" = "https://github.com/cxllmerichie/apidevtools/issues"
