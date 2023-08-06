@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: squirrel-decompiler
+Version: 0.0.1
+Summary: NutCracker - Squirrel-Lang bytecode cracker, used to decompile .cnut bytecode
+Home-page: https://github.com/shabbywu/Battle-Brothers-CN
+Author: shabbywu
+Author-email: shabbywu@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+UNKNOWN
+
+
