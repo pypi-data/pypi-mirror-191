@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: touca-fbs
+Version: 0.0.3
+Summary: Auto-generated python implementation of Touca FlatBuffers schema
+Home-page: https://touca.io
+License: Apache-2.0
+Keywords: touca
+Author: Touca, Inc.
+Author-email: hello@touca.io
+Maintainer: Pejman Ghorbanzade
+Maintainer-email: pejman@touca.io
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: flatbuffers (>=23.1.4,<24.0.0)
+Project-URL: Changelog, https://github.com/trytouca/trytouca/blob/main/sdk/python/Changelog.md
+Project-URL: Documentation, https://touca.io/docs
+Project-URL: Repository, https://github.com/trytouca/trytouca
+Project-URL: Twitter, https://twitter.com/trytouca
+Description-Content-Type: text/markdown
+
+# Touca FBS
+
+Package with auto-generated Python implementation of Touca FlatBuffers schema
+
