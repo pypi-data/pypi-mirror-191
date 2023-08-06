@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: EC2StepShell
+Version: 0.0.1
+Summary: EC2StepShell is an AWS post-exploitation tool for getting reverse shells in public or private EC2 instances
+Home-page: https://github.com/saw-your-packet/EC2StepShell
+Author: Eduard Agavriloae
+Author-email: saw-your-packet@breakingbreakpoints.com
+License: MIT
+Description: # EC2StepShell
+        
+        EC2StepShell is an AWS post-exploitation tool for getting reverse shells in public or private EC2 instances
+        
+        ## Usage
+        
+        ```bash
+        EC2StepShell -h
+        ```
+        
+        ## Installation
+        
+        ```bash
+        python -m pip install EC2StepShell
+        ```
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (12/02/2023)
+        ------------------
+        First publish
+Keywords: EC2StepShell
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires: colorama
+Requires: termcolor
+Requires: pyfiglet
+Requires: boto3
