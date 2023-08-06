@@ -1,0 +1,10 @@
+np_datajoint/__init__.py,sha256=RveykhgO36Ait9Js3pZhvV_SbEEa7Y55aZ9ie4g3aHU,255
+np_datajoint/classes.py,sha256=kj14CRyNc6y1gBMfwWX8jtGYbUAx2ZSalky5sf9NHJc,29862
+np_datajoint/comparisons.py,sha256=hLLvLi2FdZxhHU7J2hDH5jCx2X5HNw0qVMtCWKKPBac,5324
+np_datajoint/config.py,sha256=78Z5OE_D_VOvWPRYsP_yGkz9Z591KrG7JNQGY6pYmYI,3033
+np_datajoint/hpc/slurm_launcher.py,sha256=pz0BfK0ec2TDxHiYRf1Y7pLdBfD72ZEehe-bW31GJ90,1029
+np_datajoint/hpc/upload_session.py,sha256=TTOB9VHDeOK7d3ajhiA6oA1rCm7DhqUnZuRL4FaSON8,861
+np_datajoint/utils.py,sha256=wNb5mFW5o9gxh7i4y_dTnxsBCC592fLgieDdPzbSuVs,32692
+np_datajoint-0.0.4.dist-info/METADATA,sha256=Mt49-tx1-dK2tY_c45CfjpHOrqVxA4EN-XwtLangtmI,1312
+np_datajoint-0.0.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+np_datajoint-0.0.4.dist-info/RECORD,,

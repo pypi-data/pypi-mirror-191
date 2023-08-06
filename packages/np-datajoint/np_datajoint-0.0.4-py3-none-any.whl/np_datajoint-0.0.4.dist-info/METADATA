@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: np-datajoint
+Version: 0.0.4
+Summary: Tools for spike-sorting Mindscope neuropixels ecephys sessions on DataJoint, retrieving results and comparing with locally-sorted equivalents.
+Author: Ben Hardcastle
+Author-email: ben.hardcastle@alleninstitute.org
+Maintainer: Ben Hardcastle
+Maintainer-email: ben.hardcastle@alleninstitute.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: datajoint (==0.13)
+Requires-Dist: djsciops (>=1,<2)
+Requires-Dist: fabric (>=2,<3)
+Requires-Dist: ipywidgets (>=7,<8)
+Requires-Dist: np_logging
+Requires-Dist: np_session
+Requires-Dist: numpy (>=1,<2)
+Requires-Dist: pandas (>=1,<2)
+Requires-Dist: requests
+Requires-Dist: seaborn
+Project-URL: Bug Tracker, https://github.com/alleninstitute/np_datajoint/issues
+Project-URL: Repository, https://github.com/alleninstitute/np_datajoint
+Description-Content-Type: text/markdown
+
+Tools for spike-sorting Mindscope neuropixels ecephys sessions on DataJoint, retrieving results and comparing with locally-sorted equivalents.
