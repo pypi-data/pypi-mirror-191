@@ -1,0 +1,6 @@
+django_structlog_duration/__init__.py,sha256=q6GZN2jTcZpoEE8Pg6JzLLjw4VTHsADW_U_qYqqdYUY,85
+django_structlog_duration/middleware.py,sha256=swXGN53lFpwhP7oMANzXeuCMg9qSQ0LCKKPrPa4cobo,1870
+django_structlog_duration-0.0.1.dist-info/LICENSE,sha256=mXoGqod6ZzJh81DsqSriYoIWwK_iHFYYEz-xcRGhFZc,1070
+django_structlog_duration-0.0.1.dist-info/METADATA,sha256=a6A7ITiBV6_oHpF8fHJhVbsKCg9aCZXqAa1O6ccoV2g,1418
+django_structlog_duration-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_structlog_duration-0.0.1.dist-info/RECORD,,
