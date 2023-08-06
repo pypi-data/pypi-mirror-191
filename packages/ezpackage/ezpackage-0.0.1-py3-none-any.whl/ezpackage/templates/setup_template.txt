@@ -1,0 +1,14 @@
+from setuptools import setup, find_packages
+
+# Setting up
+setup(
+    name="template_package_name",
+    version="template_version",
+    author="template_author_name",
+    author_email="template_author_email",
+    description="template_description",
+    packages=find_packages(),
+    keywords="template_keywords",
+    include_package_data=template_include_package_data,
+    package_data={"": ["*.txt", "*.rst", ".csv"]}
+)
