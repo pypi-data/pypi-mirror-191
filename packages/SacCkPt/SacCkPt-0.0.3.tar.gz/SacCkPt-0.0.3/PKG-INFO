@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: SacCkPt
+Version: 0.0.3
+Summary: A Python package to save and load checkpoint data.
+Author: Dikshita
+Author-email: dikshita.poojari@neosoftmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This python package provides a checkpoint class which allow you to save and load the state of your streaming data as a checkpoint.
