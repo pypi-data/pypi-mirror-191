@@ -1,0 +1,108 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "walnats"
+authors = [
+    {name = "Gram", email = "git@orsinium.dev"},
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.8"
+dynamic = ["version", "description"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Typing :: Typed",
+]
+keywords = [
+    "nats",
+    "dramatiq",
+    "celery",
+    "microservices",
+    "rabbitmq",
+    "arq",
+    "rq",
+    "huey",
+    "event-driven",
+    "distributed",
+]
+dependencies = ["nats-py"]
+
+[project.optional-dependencies]
+integrations = [
+    "aiozipkin",
+    "cryptography",
+    "datadog",
+    "marshmallow",
+    "msgpack",
+    "opentelemetry-distro",
+    "prometheus-client",
+    "protobuf",
+    "pydantic",
+    "sentry-sdk",
+]
+docs = [
+    "sphinx",
+    "myst-parser",
+]
+test = [
+    "hypothesis",
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+]
+lint = [
+    "flake8",
+    "isort",
+    "mypy",
+    "types-protobuf",
+    "unify",
+]
+
+[project.entry-points."flake8.extension"]
+WNS0 = "walnats._linter:Flake8Checker"
+
+[project.urls]
+Source = "https://github.com/orsinium-labs/walnats"
+
+[tool.mypy]
+files = ["walnats", "tests"]
+python_version = 3.8
+ignore_missing_imports = true
+# follow_imports = "silent"
+show_error_codes = true
+check_untyped_defs = true
+no_implicit_optional = true
+strict_equality = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[tool.isort]
+profile = "django"
+lines_after_imports = 2
+skip = ".venvs/"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov=walnats",
+    "--cov-report=html",
+    "--cov-report=term-missing:skip-covered",
+    "--cov-fail-under=97",
+]
+asyncio_mode = "auto"
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING",
+    "    pass",
+    "except ImportError:",
+    "raise NotImplementedError",
+]
+
+[tool.coverage.run]
+branch = true
