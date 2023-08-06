@@ -1,0 +1,6 @@
+aorta[google]>=2.15.0
+cbra[google]>=0.163.0
+canonical
+google-cloud-datastore
+gunicorn>=20.1.0
+pydantic>=1.10.2
