@@ -1,0 +1,92 @@
+[tool.poetry]
+
+name = "color-bottles-puzzle"
+version = "0.0.2"
+
+description = "Water color sort puzzle game"
+authors = ["Stepan Dvoiak <dvoiak.stepan@gmail.com>"]
+license = "MIT"
+
+readme = "README.md"
+packages = [{ include = "color_bottles" }]
+
+keywords = ["game", "puzzle"]
+
+homepage = "https://github.com/oyvsyo/color-bottles-puzzle"
+repository = "https://github.com/oyvsyo/color-bottles-puzzle"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pygame = { version = "^2", optional = true }
+
+[tool.poetry.extras]
+pygame = ["pygame"]
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+black = "^23"
+isort = "^5.10"
+
+# Linters
+mypy = "~0.990"
+pylint = "^2.10"
+pydocstyle = "^6.1"
+
+# Testing
+pytest = "^7.1"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+coverage = "^7.0.5"
+
+
+[tool.black]
+
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+# in respect for 13" monitors 2 side split
+line-length = 100
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+no_implicit_optional = true
+check_untyped_defs = true
+namespace_packages = false
+
+cache_dir = ".cache/mypy/"
+
+[tool.pytest.ini_options]
+
+addopts = """
+--strict-markers
+-r sxX
+--show-capture=log
+--no-cov-on-fail
+"""
+
+cache_dir = ".cache/pytest/"
+
+markers = []
+
+[tool.coverage.run]
+data_file = ".cache/coverage/coverage.sqlite"
+
+[tool.coverage.html]
+directory = ".cache/coverage/htmlcov"
+
+[tool.coverage.xml]
+output = ".cache/coverage/coverage.xml"
+
+[tool.poetry.scripts]
+color-bottles = "color_bottles.play_game:run"
+color-bottles-console = "color_bottles.frontend.console_front:run_game"
+color-bottles-pygame = { callable = "color_bottles.frontend.pygame_front:run_game", extras = [
+    "pygame",
+] }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
