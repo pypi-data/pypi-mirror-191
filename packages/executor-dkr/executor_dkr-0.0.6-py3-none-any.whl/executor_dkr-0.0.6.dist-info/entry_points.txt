@@ -1,0 +1,2 @@
+[console_scripts]
+dml-dkr = executor_dkr.cli:cli
