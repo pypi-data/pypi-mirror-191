@@ -1,0 +1,6 @@
+bpyth
+nbformat
+nbconvert
+ipytest
+matplotlib
+ipython-autotime
