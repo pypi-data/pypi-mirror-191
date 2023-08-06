@@ -1,0 +1,3 @@
+[console_scripts]
+torchinstall=torchinstaller.main:main
+
