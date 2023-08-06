@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: frequenz-sdk
+Version: 0.18.0
+Summary: Frequenz Python SDK
+Author-email: Frequenz Energy-as-a-Service GmbH <floss@frequenz.com>
+License: MIT
+Project-URL: Changelog, https://github.com/frequenz-floss/frequenz-sdk-python/releases
+Project-URL: Repository, https://github.com/frequenz-floss/frequenz-sdk-python
+Project-URL: Issues, https://github.com/frequenz-floss/frequenz-sdk-python/issues
+Project-URL: Support, https://github.com/frequenz-floss/frequenz-sdk-python/discussions/categories/support
+Keywords: frequenz,sdk,microgrid,actor
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: frequenz-api-microgrid (<0.12.0,>=0.11.0)
+Requires-Dist: frequenz-channels (<0.14.0,>=0.13.0)
+Requires-Dist: google-api-python-client (<3,>=2.71)
+Requires-Dist: grpcio (<2,>=1.51.1)
+Requires-Dist: grpcio-tools (<2,>=1.51.1)
+Requires-Dist: networkx (<3,>=2.8)
+Requires-Dist: pandas (<2,>=1.5.2)
+Requires-Dist: protobuf (<5,>=4.21.6)
+Requires-Dist: pyarrow (<11,>=10.0.1)
+Requires-Dist: pydantic (>=1.9)
+Requires-Dist: sympy (<2,>=1.10.1)
+Requires-Dist: toml (>=0.10)
+Requires-Dist: tqdm (<5,>=4.38.0)
+Requires-Dist: typing-extensions (<5,>=4.4.0)
+Requires-Dist: watchfiles (>=0.15.0)
+Provides-Extra: dev
+Requires-Dist: frequenz-sdk[docs-gen,docs-lint,format,mypy,nox,pylint,pytest] ; extra == 'dev'
+Provides-Extra: docs-gen
+Requires-Dist: mike (<2,>=1.1.2) ; extra == 'docs-gen'
+Requires-Dist: mkdocs-gen-files (<0.5.0,>=0.4.0) ; extra == 'docs-gen'
+Requires-Dist: mkdocs-literate-nav (<0.5.0,>=0.4.0) ; extra == 'docs-gen'
+Requires-Dist: mkdocs-material (<9,>=8.5.7) ; extra == 'docs-gen'
+Requires-Dist: mkdocs-section-index (<0.4.0,>=0.3.4) ; extra == 'docs-gen'
+Requires-Dist: mkdocstrings[python] (<0.20.0,>=0.19.0) ; extra == 'docs-gen'
+Provides-Extra: docs-lint
+Requires-Dist: pydocstyle ; extra == 'docs-lint'
+Requires-Dist: darglint ; extra == 'docs-lint'
+Provides-Extra: format
+Requires-Dist: black ; extra == 'format'
+Requires-Dist: isort ; extra == 'format'
+Provides-Extra: mypy
+Requires-Dist: mypy ; extra == 'mypy'
+Requires-Dist: pandas-stubs ; extra == 'mypy'
+Requires-Dist: grpc-stubs ; extra == 'mypy'
+Requires-Dist: frequenz-sdk[docs-gen,nox,pytest] ; extra == 'mypy'
+Provides-Extra: nox
+Requires-Dist: nox ; extra == 'nox'
+Requires-Dist: toml ; extra == 'nox'
+Provides-Extra: pylint
+Requires-Dist: pylint ; extra == 'pylint'
+Requires-Dist: frequenz-sdk[docs-gen,nox,pytest] ; extra == 'pylint'
+Provides-Extra: pytest
+Requires-Dist: pytest ; extra == 'pytest'
+Requires-Dist: pytest-cov ; extra == 'pytest'
+Requires-Dist: pytest-mock ; extra == 'pytest'
+Requires-Dist: pytest-asyncio ; extra == 'pytest'
+Requires-Dist: time-machine ; extra == 'pytest'
+Requires-Dist: async-solipsism ; extra == 'pytest'
+
+# Frequenz Python SDK
+
+[![Build Status](https://github.com/frequenz-floss/frequenz-sdk-python/actions/workflows/ci.yaml/badge.svg)](https://github.com/frequenz-floss/frequenz-sdk-python/actions/workflows/ci.yaml)
+[![PyPI Package](https://img.shields.io/pypi/v/frequenz-sdk)](https://pypi.org/project/frequenz-sdk/)
+[![Docs](https://img.shields.io/badge/docs-latest-informational)](https://frequenz-floss.github.io/frequenz-sdk-python/)
+
+A development kit to interact with the Frequenz development platform.
+
+## Supported Python versions
+
+* For x86_64 Python 3.8 - 3.11 are supported (tested).
+* For arm64 only Python 3.8 is supported (due to some dependencies that only support 3.8).
+
+## Contributing
+
+If you want to know how to build this project and contribute to it, please
+check out the [Contributing Guide](CONTRIBUTING.md).
