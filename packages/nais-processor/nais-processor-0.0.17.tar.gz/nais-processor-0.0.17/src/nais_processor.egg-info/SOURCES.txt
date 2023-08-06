@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+docs/index.html
+src/nais_processor.py
+src/nais_processor.egg-info/PKG-INFO
+src/nais_processor.egg-info/SOURCES.txt
+src/nais_processor.egg-info/dependency_links.txt
+src/nais_processor.egg-info/requires.txt
+src/nais_processor.egg-info/top_level.txt
