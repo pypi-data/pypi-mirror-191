@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "chatbot_webraft"
+version = "0.1.3"
+license = {file="LICENSE"}
+keywords = ["chatbot", "bot","chat bot", "webraft", "chatter", "chatgpt","chatbotwebraft","chat bot library","code writer","ai code","ai","ai writer","code generator","ai code generator","generator","Artificial intelligence"]
+authors = [
+  { name="Webraft", email="team@webraft.in" },
+]
+description = "A package for building chatbots easily without needing of any high system resources."
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"nltk"
+]
+
+
+
+
