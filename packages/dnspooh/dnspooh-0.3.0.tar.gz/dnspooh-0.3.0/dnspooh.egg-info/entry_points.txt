@@ -1,0 +1,2 @@
+[console_scripts]
+dnspooh = dnspooh.cli:main
