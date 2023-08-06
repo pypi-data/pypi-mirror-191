@@ -1,0 +1,12 @@
+aws_excom/__init__.py,sha256=1ELWdViu0bISOIF39kFT6Vyw0UAx9SOFhT_yENsgzCk,140
+aws_excom/aws.py,sha256=4KlvCAXQXlN4_NLTwdGkTV2twmcu29MFVBVCwut14VY,2436
+aws_excom/cli.py,sha256=Qf0kdO9OBB01PHhCVCDwwrorOOexhU_C0_jc8Lixyg8,5388
+aws_excom/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_excom/tests/test_aws.py,sha256=4dibb7NIFXu0VSVu1Vbf48rGLBRFW8a4njhGbmcUb5U,976
+aws_excom/tests/test_install.py,sha256=hYKrpMIy8YoTuVSqpJmqutfhg-jsBDqUgtauMZvmXJM,519
+aws_excom-0.0.19.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+aws_excom-0.0.19.dist-info/METADATA,sha256=M51SQD2B1PkRULLAu_mxexwQeueeRzQSsnTVol3Iukg,1512
+aws_excom-0.0.19.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_excom-0.0.19.dist-info/entry_points.txt,sha256=3QlY982XwMZyXY96-IVp7HB7z7nGdvDSaV73ENmKczo,49
+aws_excom-0.0.19.dist-info/top_level.txt,sha256=kFB8AbAEDRum_ZpFRTAhgyTlEajgB0oYV6oM-WukQOo,10
+aws_excom-0.0.19.dist-info/RECORD,,
