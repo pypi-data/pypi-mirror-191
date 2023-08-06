@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: typed_stream
+Version: 0.1.1
+Summary: Java-like typed Stream class for easier handling of generators.
+Author-email: Joshix <joshix@asozial.org>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Project-URL: Home, https://github.com/Joshix-1/typed_stream
+
+# typed_stream
+Java-like typed Stream for Python
+
