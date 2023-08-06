@@ -1,0 +1,13 @@
+{% extends 'generic/object.html' %}
+{% load perms %}
+
+{% load buttons %}
+{% load helpers %}
+{% load plugins %}
+
+{% block extra_controls %}
+<a href="{% url 'plugins:ocp_project_plugin:appenvironment_add' %}?ocp_project={{ object.id }}" class="btn btn-sm btn-primary" role="button">
+    <i class="mdi mdi-plus-thick"></i> Add App Environments
+</a>
+{{ block.super }}
+{% endblock %}
