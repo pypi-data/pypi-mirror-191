@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "discord-linker-pythonAPI"
+version = "0.1.4"
+authors = [
+    { name="Vbrawl", email="konstantosjim@gmail.com" },
+]
+description = "This is the python API for a wordpress plugin that allows linking discord into your website"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Vbrawl/discord-linker-pythonAPI"
+"Bug Tracker" = "https://github.com/Vbrawl/discord-linker-pythonAPI/issues"
+"Documentation" = "https://vbrawl.github.io/discord-linker-pythonAPI/"
