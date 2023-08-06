@@ -1,0 +1,5 @@
+f5py-0.2.2.dist-info/METADATA,sha256=uhsoQAOCfFIyBU4Ki-7fNGuhNRl6AuKDlRmgFoBJ0Ws,5911
+f5py-0.2.2.dist-info/WHEEL,sha256=74Vp7u92eHOwN8KE7T8R4AGEP4XDPbJkMbArgKDpKG4,97
+f5py/__init__.py,sha256=MGVyvm1mkhajL_YHe-UaB-yVjdAKj-pXkiYBRtEnvEU,99
+f5py/f5py.cp310-win_amd64.pyd,sha256=qsWeaq559CZEkT23x5HN7qXluVW4GVBtsUHFN5VFAY8,3347968
+f5py-0.2.2.dist-info/RECORD,,
