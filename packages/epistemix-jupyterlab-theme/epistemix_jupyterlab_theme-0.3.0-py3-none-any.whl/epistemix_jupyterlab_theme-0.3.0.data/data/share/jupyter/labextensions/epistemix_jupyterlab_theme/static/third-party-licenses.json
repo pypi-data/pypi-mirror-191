@@ -1,0 +1,10 @@
+{
+  "packages": [
+    {
+      "name": "@lumino/polling",
+      "versionInfo": "1.11.4",
+      "licenseId": "BSD-3-Clause",
+      "extractedText": ""
+    }
+  ]
+}
