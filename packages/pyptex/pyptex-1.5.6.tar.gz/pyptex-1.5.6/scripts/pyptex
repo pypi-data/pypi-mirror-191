@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/opt/python@3.10/bin/python3.10 -u -m pyptex $@
