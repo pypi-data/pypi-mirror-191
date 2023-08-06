@@ -1,0 +1,2 @@
+[console_scripts]
+alectio = alectio_sdk.cli.cmd:main
