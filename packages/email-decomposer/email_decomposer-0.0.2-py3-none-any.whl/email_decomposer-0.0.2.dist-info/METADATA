@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: email-decomposer
+Version: 0.0.2
+Summary: Fuzzy decomposition of email prefix to first/last name
+Home-page: https://github.com/intuit/email-decomposer
+Author: Elhanan Mishraky
+Author-email: elhanan_mishraky@intuit.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.1.5)
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: nltk (==3.5)
+Provides-Extra: test
+Requires-Dist: names (>=0.3.0) ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+
+<!--[![codecov](https://codecov.io/gh/intuit/email-decomposer/branch/main/graph/badge.svg)](https://codecov.io/gh/intuit/email-decomposer)-->
+[![CircleCI](https://circleci.com/gh/intuit/email-decomposer.svg?style=shield)](https://circleci.com/gh/intuit/email-decomposer)
+[![License](https://img.shields.io/github/license/intuit/email-decomposer)](https://raw.githubusercontent.com/intuit/email-decomposer/master/LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/email-decomposer)](https://pypi.org/project/email-decomposer)
+[![Downloads](https://pepy.tech/badge/email-decomposer)](https://pepy.tech/project/email-decomposer)
+
+# Email Decomposer
+**Decomposition of email address to first name, last name, and host.**
+### How to use
+#### Install
+```
+pip install email_decomposer
+```
+#### Import
+```
+from email_decomposer.EmailDecomposer import EmailDecomposer
+```
+#### Decompose emails list
+```
+EmailDecomposer().decompose(data=['johndue@intuit.com'], get_host=True).head()
+```
+
+|    | first_name   | last_name   | host                    |
+|---:|:-------------|:------------|:------------------------|
+|  johndoe@intuit.com | John       | Doe        | intuit.com |
+#### Decompose a single email
+```
+EmailDecomposer().decompose(data='johndoe@intuit.com', get_host=True)
+```
+{'first_name': 'John', 'last_name': 'Doe', 'host': 'intuit.com'}
+### Contributing
+
+See [CONTRIBUTING.md](https://github.com/intuit/email-decomposer/blob/main/CONTRIBUTING.md).
+
+
