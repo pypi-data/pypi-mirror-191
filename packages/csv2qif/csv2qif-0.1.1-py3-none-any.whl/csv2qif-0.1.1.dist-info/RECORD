@@ -1,0 +1,8 @@
+csv2qif/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csv2qif/csv2qif.py,sha256=HoNvAMx5gB_4e1D9-rLnFSojFCKQDi2q7X1szWiVlWU,3682
+csv2qif/transaction_writer.py,sha256=jXRTVGzAApPC3hp3305v79IK-kntgbn4zp4KwxhBNXA,3999
+csv2qif-0.1.1.dist-info/LICENSE.md,sha256=iPhAjqHx6e70wGw8JRg319Lik84SwPcLZspMZSR1WRY,1078
+csv2qif-0.1.1.dist-info/METADATA,sha256=2n54mGLNbu5tbfF7_M45Onl59MfrvxyzCuXwtZdAipM,1828
+csv2qif-0.1.1.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+csv2qif-0.1.1.dist-info/entry_points.txt,sha256=zAziJsg0GsnJZ2EXj8eu6aIoNQTAk70Wr-qYeAtWP-E,48
+csv2qif-0.1.1.dist-info/RECORD,,
