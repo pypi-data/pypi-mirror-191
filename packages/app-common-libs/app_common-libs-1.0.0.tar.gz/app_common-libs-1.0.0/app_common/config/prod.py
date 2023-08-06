@@ -1,0 +1,7 @@
+BASE_SITE_URL = 'https://admin.mobilads.co/'
+STRIPE_BASE_URL = 'https://dashboard.stripe.com/'
+SLACK_PAYMENT_CHANNEL = 'payment-notification-prod'
+SLACK_LOCATION_PERMISSION = 'driver-location-permission'
+SLACK_FAQ_CHANNEL = 'faq-support'
+SLACK_BUGS_CHANNEL = 'api-errors'
+CONFIG_MESSAGE = 'Production env loaded'
