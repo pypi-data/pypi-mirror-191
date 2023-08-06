@@ -1,0 +1,3 @@
+[console_scripts]
+foobar = tethys.foo:bar
+tethys = tethys.cli:cli
