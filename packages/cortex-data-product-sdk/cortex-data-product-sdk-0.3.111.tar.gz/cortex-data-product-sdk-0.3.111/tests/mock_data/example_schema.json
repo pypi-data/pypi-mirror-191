@@ -1,0 +1,20 @@
+{
+    "fields": [
+        {
+            "metadata": {
+                "comment": "identificador"
+            },
+            "name": "id",
+            "nullable": false,
+            "type": "int"
+        },
+        {
+            "metadata": {
+                "comment": "rotulo"
+            },
+            "name": "label",
+            "nullable": true,
+            "type": "string"
+        }
+    ]
+}
