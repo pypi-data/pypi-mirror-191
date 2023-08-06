@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: wrighter-plugins
+Version: 0.0.1
+Summary: Collection of plugins for Wrighter
+Home-page: https://github.com/zigai/wrighter
+Author: Žiga Ivanšek
+Author-email: ziga.ivansek@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wrighter (==0.1.1)
+Requires-Dist: stdl (>=0.4.1)
+Requires-Dist: jsonschema (==4.17.3)
+Requires-Dist: jsonpath-ng (==1.5.3)
+Requires-Dist: playwright (>=1.29.0)
+
+# Wrighter plugins
+Plugins for [wrighter](https://github.com/zigai/wrighter)
+# Installation
+#### From PyPi
+```
+pip install wrighter-plugins
+```
+#### From source
+```
+pip install git+https://github.com/zigai/wrighter-plugins.git
+```
+# License
+[MIT License](https://github.com/zigai/wrighter-plugins/blob/master/LICENSE)
