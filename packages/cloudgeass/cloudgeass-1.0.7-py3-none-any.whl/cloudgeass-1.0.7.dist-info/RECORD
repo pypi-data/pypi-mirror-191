@@ -1,0 +1,15 @@
+cloudgeass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudgeass/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudgeass/aws/s3.py,sha256=-pQLFXW2OPR_5WlHVN_QiAkn0meX3kUDt_CaQ3e4fLk,16548
+cloudgeass/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudgeass/utils/log.py,sha256=1xvuBESp4sPEbqK_9d4Htabq74sBrwte5jFocMGGpQI,1747
+cloudgeass/utils/prep.py,sha256=y_SbqFwy4lo6dqSMHFnvrR3gIliUgo6kAtfrtuPjZlI,1338
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=f-IPhabt_bd-SKbh96YYpP2b9VAYLrzlfOpSxeEEoCo,4647
+tests/test_s3.py,sha256=szrzo_9C4AOcCw2pYBLwQbZh6qcMK6JkGbA9DPSu4PI,20069
+tests/test_utils.py,sha256=Qqv_zo711mWQiRIoMZmDvNZ5h-zsi6otQASsyfbUI_s,4132
+cloudgeass-1.0.7.dist-info/LICENSE,sha256=UFpxU3brBnJZq-0ij-NH6Z7wRpftsweHFKFwG1MNm4w,1070
+cloudgeass-1.0.7.dist-info/METADATA,sha256=B9SfseUOr8nB1dAIl5Up27XrSmjyWFA9aZs1D4R83UI,8945
+cloudgeass-1.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cloudgeass-1.0.7.dist-info/top_level.txt,sha256=NH2-PgjpXZkDGM76VZI-hwVetv9B15wmN0XJPPl49fY,17
+cloudgeass-1.0.7.dist-info/RECORD,,
