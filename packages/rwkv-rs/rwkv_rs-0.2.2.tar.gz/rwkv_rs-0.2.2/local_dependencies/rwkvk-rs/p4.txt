@@ -1,0 +1,9 @@
+Tokenizer load: 43.841999ms
+SafeTensors parse: 179.652µs
+embedding: [100288, 512]
+embedding optim: 81.975626ms
+blocks_num: 12
+RWKV load: 82.144051ms (81.975626ms 168.425µs)
+Tokenization: 160.221µs [5451, 47317, 25]
+Preprocess: 37.145049ms (47ns 37.145002ms)
+ burn Rx8em heraceolys pl heraceol heredood*cre*em donition heredOScc car allG someitionys follow*proShader*proertainShader*ol heredanted*ol heredanted*ort don herem shown ItTable."ian New concolor*ol millionianion six*ortolysianment*em her2012ion six* Newemysition*em her2012red 2itionment*proShader*proShader*ol heredanted*ol millionian dutices herion six*ortion entering*ol heredoodolysianmentuel*em her2012red 2ion entering Thort*em donition heredOScc carolion bioxidants*em some joinhest*ol million conf excusecolorildaBution entering*ol hered Con*ol hered Con*ol hered Con*ol200ion entering 2*olysition*ol heredoodolion six* New ItTable*ol ItTable."ian New*ol ItTable."ian New*ol200ion entering Th*ol heredoodolysianmentuel*em her2012red 2ion
