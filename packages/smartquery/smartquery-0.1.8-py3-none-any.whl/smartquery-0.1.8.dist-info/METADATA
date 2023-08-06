@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smartquery
+Version: 0.1.8
+Summary: SmartQuery
+Author: Aleksey Leontiev
+Author-email: alekseyl@list.ru
+License: CC BY-NC-SA 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: Free for non-commercial use
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.md
+Requires-Dist: setuptools (>=40.6.2)
+Requires-Dist: regex (>=2020.11.13)
+Provides-Extra: repl
+Requires-Dist: prompt-toolkit (==3.0.36) ; extra == 'repl'
+
+SmartQuery is a simple interpreted programming language designed to be easily embedded in other programs
