@@ -1,0 +1,7 @@
+Click
+humanize
+humanize
+pydbus
+pygi
+pyyaml
+rpi-thingamajigs>=0.5
