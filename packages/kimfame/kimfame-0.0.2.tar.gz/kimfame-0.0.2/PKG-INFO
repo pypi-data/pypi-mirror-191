@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kimfame
+Version: 0.0.2
+Summary: PyPI test project
+Home-page: https://github.com/kimfame/kimfame
+Author: kimfame
+Author-email: renownkim@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Kimfame
+
+PyPI Test Project
