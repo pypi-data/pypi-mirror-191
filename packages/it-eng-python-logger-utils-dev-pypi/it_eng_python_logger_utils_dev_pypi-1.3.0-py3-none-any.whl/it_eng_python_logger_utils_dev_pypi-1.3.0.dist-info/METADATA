@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: it-eng-python-logger-utils-dev-pypi
+Version: 1.3.0
+Summary: A logger util helper for Azure app insights and structured logging
+Home-page: https://github.com/github/it-eng-packages/it_eng_python_logger_utils
+Author: Dinnermonster
+Author-email: it-engineering@github.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: opencensus-ext-requests
+Requires-Dist: opencensus-ext-azure
+Requires-Dist: requests
+
+# Logger Utility
+
+Included with the IT-Offboarding suite is a custom logger library located in `./lib/logger_utils.py` that standardizes our logs and sends them to azure app insights. The library utilizes the native python `logging` library and functions similarly to the native library.
+When the class is initialized in our scripts, the logger library also logs all API call information automatically and sends them to Azure app insights.
+
+## To use
+
+### Requirements included with package
+
+`opencensus-ext-azure`
+`requests`
+`opencensus-ext-requests`
+
+### Quick set up (dev)
+
+`pip3 install it-eng-python-logger-utils-dev`
+
+Import the `logger_utils.py` library
+
+```python
+from it_eng_python_logger_utils.logger_utils import LoggerHelper
+
+logger = LoggerHelper("Logger_Test", <app_insights_token> or "",  "INFO")
+
+logger.info("Hello wurld!")
+```
+
+When deployed to moda we should be pulling the octofactory packe
+
+`octofactory package here`
+
+### Contribute
+
+1. Make your changes
+2. Build your package `make build`
+3. Bootstrap your package `make bootstrap`
+4. Test your package `python3 test/test.py`
+5. Upload your package `make upload`
+6. Username is `__token__`, password is the token stored in 1password under `API Token`. 
+![image](https://user-images.githubusercontent.com/27932024/218221570-c911e78f-f005-48ff-9745-b84a14c3d8b8.png)
+7. Test out your package by pulling from pypi
+8. Win
+
+If you're getting a lot of installs from cache, an _optional_ suggestion is to clear your pip cache so you know you're working with a fresh version install of the package and dependencies. But this is totally optional and only suggested if you're running into consitency issues.
+
+To find your pip cache - `pip3 cache dir`
+
+ex: `rm -rf /Users/dinnermonster/Library/Caches/pip`
+
+
+### Class instantiation
+
+When initializing our logger class, we have three parameters and one optional:
+
+1. Logger_name :required `string` - this should be your app/job name
+2. Level :optional `string` - this should be the level of logs you wish to be displayed to console. Ex: If set to `INFO or DEBUG` (with debug being incredibly granular) all log messages no matter the level will be logged. If set to `CRITICAL`, only critical messages will be logged.
+3. App insights token :optional `string`- Your instrementation **key only** if you pass the connection string you will receive an `exception`.
+4. Send_to_azure: optional `boolean` - defaulted to `True`. Sends your logs to Azure app insights if you have an instrumentation key initilized.
+
+### Method Parameters
+
+example: `logger.info('your message')`
+
+1. message `any` - the message you want to send to Azure app insights/logged in your app.
+2. structured `boolean` - defaulted to `True`. When set to `True` your `messages` will structure your log with a default JSON structure which includes information to signify what job the logs came from, the severity and message. The JSON structure allows us to parse Splunk and Azure app insights logs with more clarity and granularity by formatting everything by a JSON key/value. To enable the JSON log structure in splunk, update your jobs `deployments/{job}.yaml` to use JSON via `fluentbit.io/parser: json`
