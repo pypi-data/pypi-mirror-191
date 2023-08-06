@@ -1,0 +1,3 @@
+[jumonc]
+llview = jumonc_llview.jumonc_llview_plugin
+

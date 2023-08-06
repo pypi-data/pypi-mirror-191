@@ -1,0 +1,12 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jumonc_llview/jumonc_llview_plugin.py
+jumonc_llview.egg-info/PKG-INFO
+jumonc_llview.egg-info/SOURCES.txt
+jumonc_llview.egg-info/dependency_links.txt
+jumonc_llview.egg-info/entry_points.txt
+jumonc_llview.egg-info/requires.txt
+jumonc_llview.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+
+recursive-include jumonc_llview/* *.py
+
+
+recursive-exclude * __pycache__
+
+
