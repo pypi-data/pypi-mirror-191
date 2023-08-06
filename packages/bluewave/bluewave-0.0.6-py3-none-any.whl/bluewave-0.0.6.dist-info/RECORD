@@ -1,0 +1,9 @@
+bluewave/compare_pdfs.py,sha256=1l1SqvXsEhutxibnX53UYFi09Sn3jI3bduoDEPqkZv4,15780
+bluewave/pdf_to_img.py,sha256=YY8mYq0cuIcmvX2712FlH5Xo-sAKsmTymDOXTafuY64,2028
+bluewave/result_json_to_training_csv.py,sha256=ylE_5Ahq15l0kXGwZvWL2pzfzx9ixl1yiWnfc92jEFs,1321
+bluewave/show_similarity_rectangles.py,sha256=sdEf1B0dmyjgo8C30CJsc2ACtfyYqDQxmc95DOM6Y_A,3343
+bluewave-0.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+bluewave-0.0.6.dist-info/METADATA,sha256=yz9t2A3lZL-yX5_Xspgb2gkg8vM9W82nKbDTI7--UXQ,2267
+bluewave-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bluewave-0.0.6.dist-info/top_level.txt,sha256=KnqiIZ0Zb3B-YAS5qLnj2HFo3LePGfWl2tDrLs6V1fs,9
+bluewave-0.0.6.dist-info/RECORD,,
