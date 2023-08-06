@@ -1,0 +1,10 @@
+tethys/__init__.py,sha256=MpVHFFoITiYyPltTb_qFrdeX2entdTm4x0PczXi3txY,21
+tethys/cli.py,sha256=R6HIXvlwBKkStsvQCfarueu4zvKDdFDHYdnB1zmjl_0,713
+tethys/docs.py,sha256=H9d4Gye8DS-DWn6KUp4ev-ypKD6xHzZUiUQtNnBbxa4,9775
+tethys/foobar.py,sha256=7bl_CCpewgoNqNZUKpPD6yLThAuOZIkUZ2HmMRQXcqM,430
+tethys_template-1.0.3.dist-info/LICENSE,sha256=YAt_Ysumf8kFlEFCACcx9b9Dqv9GQbz0TSvQ8aDUtUk,1060
+tethys_template-1.0.3.dist-info/METADATA,sha256=PZ7SWgAJzYyosG0ytJqO3Gd02RKnqxKwy-jTUvYWahQ,7050
+tethys_template-1.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tethys_template-1.0.3.dist-info/entry_points.txt,sha256=PdvHyZN4nExHs_FC2ddYALtjbDZFuebvL5oRza8H-u0,43
+tethys_template-1.0.3.dist-info/top_level.txt,sha256=1BKM9eZt1gIcVLaUHwqWX3ZmDKuPSq06DkYharJmWmI,7
+tethys_template-1.0.3.dist-info/RECORD,,
