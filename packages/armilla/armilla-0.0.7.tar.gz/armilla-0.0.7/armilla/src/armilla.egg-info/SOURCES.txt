@@ -1,0 +1,8 @@
+README.md
+setup.py
+armilla/src/armilla.py
+armilla/src/armilla.egg-info/PKG-INFO
+armilla/src/armilla.egg-info/SOURCES.txt
+armilla/src/armilla.egg-info/dependency_links.txt
+armilla/src/armilla.egg-info/requires.txt
+armilla/src/armilla.egg-info/top_level.txt

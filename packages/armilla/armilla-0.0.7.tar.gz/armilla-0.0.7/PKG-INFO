@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: armilla
+Version: 0.0.7
+Summary: Python dev kit for armilla platform
+Author: Armilla Dev
+Project-URL: Homepage, https://armilla.ai/
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Armilla Client
+
+## To install the Armilla library
+
+`pip install armilla`
+
+## To view existing standard use_cases
+
+see submit_tool.py and use_cases/cases.py
+
+## To submit projects using submit tool
+
+`python submit_tool.py --user <user_name> --pw <password> --env <env LOCAL|DEMO|PRODUCTION|STAGING> --case <specific case or ALL> --run --all_models`
