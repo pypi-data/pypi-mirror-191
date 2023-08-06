@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "aiobitrix24"
+version = "0.4.3"
+description = "Simple async bitrix-24 rest client"
+authors = ["andrpocc <andrey.pochatkov@mail.ru>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/prin-it/bitrix24-tools"
+repository = "https://github.com/prin-it/bitrix24-tools"
+keywords = ["bitrix24", "asyncio", "httpx"]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+exclude = [
+    ".gitignore",
+    "setup.cfg"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.23.0"
+
+[tool.poetry.dev-dependencies]
+black = "^22.10.0"
+wemake-python-styleguide = "^0.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
