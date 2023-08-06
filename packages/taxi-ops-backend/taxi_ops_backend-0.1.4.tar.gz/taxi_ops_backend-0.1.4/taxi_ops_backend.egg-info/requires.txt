@@ -1,0 +1,2 @@
+pymongo==4.3.3
+geojson~=3.0.0
