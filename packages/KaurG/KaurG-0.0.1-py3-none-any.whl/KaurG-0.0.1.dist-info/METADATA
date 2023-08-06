@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: KaurG
+Version: 0.0.1
+Summary: Package for Updating All Python Packages
+Author: Lone Walker
+Author-email: lonewalkerns@gmail.com
+License: MIT
+Keywords: pip
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A package that makes it easy to update all python packages and classifies the packages on basis of updated & not updated.
