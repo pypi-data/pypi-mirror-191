@@ -1,0 +1,11 @@
+accsr/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+accsr/config.py,sha256=0gSzcx93fa-IEFoUNnfddlB6BbzHZHeLB5lsjdmzXRA,10507
+accsr/conversions.py,sha256=cFkPAYpUpqatOLvm2VTynQNPq6xqo2yf77tediySkkE,1441
+accsr/files.py,sha256=gQenov5CP3YPee6Nr_xx4eZlZmBrZZNUgEB-Jelm57s,265
+accsr/loading.py,sha256=K8ZWGKzfGZabao30mPa9-8fR0K1OHu0g5ozLNLPxqNY,2888
+accsr/remote_storage.py,sha256=nQBKxY3tqTZ3X1ca5eijHl8sYGntbsuTFCzDVEt5Gl4,35264
+accsr-0.4.0.dist-info/LICENSE.md,sha256=NvMapYTzKSYfZvoRPm61Y8MZ9BaCTg0bhztnveERfeA,1066
+accsr-0.4.0.dist-info/METADATA,sha256=08C4r9deQ0dmwDTHxT1jYgb2IiLIrRG2k0gynopTt_g,640
+accsr-0.4.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+accsr-0.4.0.dist-info/top_level.txt,sha256=DA1aaz2e2Qc3z-FETW3q1FMMVwOHcAfIo-QkWxlzdzQ,6
+accsr-0.4.0.dist-info/RECORD,,
