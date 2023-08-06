@@ -1,0 +1,3 @@
+[console_scripts]
+elit = elit.main:main
+
