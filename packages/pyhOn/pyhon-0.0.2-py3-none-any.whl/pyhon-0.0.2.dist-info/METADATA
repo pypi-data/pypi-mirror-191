@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyhon
+Version: 0.0.2
+Summary: Control hOn devices with python
+Home-page: https://github.com/Andre0512/pyhon
+Author: Andre Basche
+License: MIT
+Platform: any
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# pyhOn
