@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: oaas-sdk-py
+Version: 0.0.2
+Summary: SDK for developing OaaS function in Python
+Author-email: pawissanutt <pawissanutt@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: aiohttp (>=3.8.3)
+Requires-Dist: aiofiles (>=22.1.0)
+
