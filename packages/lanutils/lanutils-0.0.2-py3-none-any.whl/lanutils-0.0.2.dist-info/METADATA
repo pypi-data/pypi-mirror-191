@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: lanutils
+Version: 0.0.2
+Summary: Small package to probe ip addresses and ports on a local network
+Project-URL: Homepage, https://github.com/matt-manes/lanutils
+Project-URL: Documentation, https://github.com/matt-manes/lanutils/tree/main/docs
+Project-URL: Source code, https://github.com/matt-manes/lanutils/tree/main/src/lanutils
+Author-email: Matt Manes <mattmanes@pm.me>
+License-File: LICENSE.txt
+Keywords: discovery,lan,network,networking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: icmplib~=3.0.3
+Requires-Dist: ifaddr~=0.2.0
+Requires-Dist: pytest~=7.2.1
+Description-Content-Type: text/markdown
+
+# lanutils
+Small package to probe ip addresses and ports on a local network <br>
+Install with:<br>
+<pre>
+pip install lanutils
+</pre>
+<br>
+Usage (assuming your local ip is 10.0.0.10 with prefix 24, you're connected via ethernet, you have a http server running on port 8000, and there are a few other devices on your network):
+<pre>
+>>> import lanutils
+>>> lanutils.get_myip()
+>>> [("10.0.0.10", 24, "Ethernet")]
+>>> lanutils.ip_is_alive("10.0.0.10")
+>>> True
+>>> lanutils.ip_is_alive("10.0.0.11")
+>>> False
+>>> lanutils.enumerate_devices()
+>>> ["10.0.0.7", "10.0.0.10", "10.0.0.133", "10.0.0.187"]
+>>> lanutils.port_is_open("10.0.0.10", 8000)
+>>> True
+>>> lanutils.scan_ports("10.0.0.10", (7990, 8010))
+>>> [8000]
+>>> lanutils.get_available_port("10.0.0.10", (8000, 8001))
+>>> 8001
+</pre>
