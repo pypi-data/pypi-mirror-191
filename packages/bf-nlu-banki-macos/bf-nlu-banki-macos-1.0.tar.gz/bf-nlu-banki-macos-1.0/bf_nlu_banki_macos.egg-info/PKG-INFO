@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bf-nlu-banki-macos
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: botsfactory
+Maintainer: botsfactory
+License: UNKNOWN
+Description: <h1 align="center">Bf Nlu BANKI Package</h1>
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7,<3.10
+Provides-Extra: full
+Provides-Extra: gh-release-notes
+Provides-Extra: jieba
+Provides-Extra: spacy
+Provides-Extra: transformers
