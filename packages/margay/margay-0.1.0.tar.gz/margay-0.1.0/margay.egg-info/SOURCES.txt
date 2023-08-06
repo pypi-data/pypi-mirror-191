@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+margay/__init__.py
+margay.egg-info/PKG-INFO
+margay.egg-info/SOURCES.txt
+margay.egg-info/dependency_links.txt
+margay.egg-info/requires.txt
+margay.egg-info/top_level.txt
+margay/sdk/__init__.py
+margay/sdk/client/__init__.py
+margay/sdk/config/__init__.py
+margay/sdk/logger/__init__.py
+margay/sdk/protocol/__init__.py
+margay/sdk/publisher/__init__.py
+margay/sdk/subscriber/__init__.py
