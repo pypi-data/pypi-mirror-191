@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/roapipy/__init__.py
+src/roapipy.egg-info/PKG-INFO
+src/roapipy.egg-info/SOURCES.txt
+src/roapipy.egg-info/dependency_links.txt
+src/roapipy.egg-info/top_level.txt

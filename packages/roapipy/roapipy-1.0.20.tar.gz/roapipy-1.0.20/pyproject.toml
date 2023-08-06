@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 40.0.4", "setuptools_scm >= 2.0.0", "requests"]
+build-backend="setuptools.build_meta"
+
+[project]
+name = "roapipy"
+version = "1.0.20"
+authors = [
+  { name="Gytis" },
+]
+description = "roapipy - A wrapper for the Roblox API built for Python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Developer" = "https://discord.com/users/301014178703998987"
