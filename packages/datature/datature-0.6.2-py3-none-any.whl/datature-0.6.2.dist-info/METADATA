@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: datature
+Version: 0.6.2
+Summary: Python bindings for the Datature API
+Author: Raighne Weng
+Author-email: raighne@datature.io
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: google-crc32c
+Requires-Dist: pyhumps
+
