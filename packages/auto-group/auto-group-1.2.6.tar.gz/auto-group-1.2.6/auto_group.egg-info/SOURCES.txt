@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+auto_group/__init__.py
+auto_group/advanced.py
+auto_group/tools.py
+auto_group.egg-info/PKG-INFO
+auto_group.egg-info/SOURCES.txt
+auto_group.egg-info/dependency_links.txt
+auto_group.egg-info/not-zip-safe
+auto_group.egg-info/top_level.txt
