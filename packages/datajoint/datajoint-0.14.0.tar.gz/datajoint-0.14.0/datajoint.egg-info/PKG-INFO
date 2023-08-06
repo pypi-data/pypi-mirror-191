@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: datajoint
+Version: 0.14.0
+Summary: A relational data pipeline framework.
+Home-page: https://datajoint.com
+Author: DataJoint Contributors
+Author-email: support@datajoint.com
+License: GNU LGPL
+Keywords: database,data pipelines,scientific computing,automated research workflows
+Requires-Python: ~=3.7
+License-File: LICENSE.txt
+
+A relational data framework for scientific data pipelines with MySQL backend.
