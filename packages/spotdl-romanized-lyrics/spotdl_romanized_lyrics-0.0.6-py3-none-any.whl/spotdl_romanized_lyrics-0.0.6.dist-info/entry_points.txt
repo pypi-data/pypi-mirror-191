@@ -1,0 +1,3 @@
+[console_scripts]
+spotdl_romanized_lyrics=spotdl_romanized_lyrics:console_entry_point
+
