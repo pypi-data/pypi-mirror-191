@@ -1,0 +1,14 @@
+anytree
+chp_sim
+dill
+latextools
+matplotlib
+networkx
+numpy<=1.23
+projectq
+pydot
+scipy
+simpleeval
+tqdm
+
+[dev]
