@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ndradexhyperfine
+Version: 0.2.6
+Summary: Python package for RADEX grid calculation
+License: MIT
+Author: Thomas Williams
+Author-email: thomas.g.williams94@gmail.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astropy (>=4.0)
+Requires-Dist: astroquery (>=0.4)
+Requires-Dist: netcdf4 (>=1.5)
+Requires-Dist: numpy (>=1.18)
+Requires-Dist: pandas (>=0.25)
+Requires-Dist: toml (>=0.10)
+Requires-Dist: tqdm (>=4.41)
+Requires-Dist: xarray (>=0.15)

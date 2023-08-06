@@ -1,0 +1,14 @@
+ndradexhyperfine/__init__.py,sha256=dCHc5zNGF8wtd7CEtCUE8wBNQEKKzrAUSGr1u4XLl2E,1361
+ndradexhyperfine/bin/.gitignore,sha256=dP1OTn5rdiGlKp-_-LZwH0n2Kv6L47xes0VkWovFO5w,7
+ndradexhyperfine/bin/.travis.yml,sha256=HBn_j8oD294ZJDlBRNiAuAuEqFkPsD2JYYOX1itQvSU,85
+ndradexhyperfine/bin/LICENSE,sha256=hO3ma7qlnFS6VV7I3GnZ4IvNtGq1WbSYQn4xYc3RK2A,1071
+ndradexhyperfine/bin/Makefile,sha256=K-T6mU5w0UVHCVXpPPTFT0SZ_rLowCGlB0oH0cSU9xU,2484
+ndradexhyperfine/bin/README.md,sha256=qsaN7g4AV-TtH9jP89GsHLKbS03uHrI4ysDq_1KUqPk,2459
+ndradexhyperfine/db.py,sha256=94KTekDHoGbGLaISOeCIZu9f-azGjdKEu5z7iY6GjGU,6775
+ndradexhyperfine/grid.py,sha256=ibOKdcCDyYTUmILo5O1y1CDo8HKg__nMar49nS2jMFc,12699
+ndradexhyperfine/radex.py,sha256=Ifs2_lglb40QnJkG2X1jKqSyF5uo6zbrcusf8dnu8j8,4045
+ndradexhyperfine/utils.py,sha256=BpwCbWb2tdjs4aiSTmSrQV-_RDQh7t1ZOd7f5DXqhcM,1973
+ndradexhyperfine-0.2.6.dist-info/LICENSE,sha256=QQBspwh8NpURu8UHqQ61RVKHEcczPlAXIMiDUSI-8bY,1076
+ndradexhyperfine-0.2.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+ndradexhyperfine-0.2.6.dist-info/METADATA,sha256=Mgrzny_arC43xel5XG94-NA1522sNSJ5xYIzX1xbWrM,663
+ndradexhyperfine-0.2.6.dist-info/RECORD,,
