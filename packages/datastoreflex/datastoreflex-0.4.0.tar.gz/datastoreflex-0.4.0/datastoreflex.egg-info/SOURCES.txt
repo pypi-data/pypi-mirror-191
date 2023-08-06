@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+datastoreflex/__init__.py
+datastoreflex/client.py
+datastoreflex.egg-info/PKG-INFO
+datastoreflex.egg-info/SOURCES.txt
+datastoreflex.egg-info/dependency_links.txt
+datastoreflex.egg-info/requires.txt
+datastoreflex.egg-info/top_level.txt
