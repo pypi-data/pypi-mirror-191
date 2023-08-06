@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools==54", "wheel", "poetry==1.1.8", "poetry-core==1.0.4"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+skip-string-normalization = true
+line-length = 79
+include = "\\.pyi?$"
+exclude = "/(\n    \\.git\n  | \\.hg\n  | \\.mypy_cache\n  | \\.tox\n  | \\.venv\n  | _build\n  | buck-out\n  | build\n  | dist\n)/\n"
+
+[tool.poetry]
+name = "roc-dingo"
+version = "1.3.8"
+readme = "README.md"
+license = "CeCILL-C"
+repository = "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/DINGO"
+description = "Data INgestOr (DINGO) plugin is used to ingest data into the ROC pipeline database"
+authors = [ "Florence Henry <florence.henry@obspm.fr>", "Xavier Bonnin <xavier.bonnin@obspm.fr>", "ROC Team <roc.support@sympa.obspm.fr>",]
+exclude = [ "bump_descriptor.py",]
+[[tool.poetry.packages]]
+include = "roc"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+numpy = "!=1.19.5"
+astropy = '^5.2'
+pandas = ">=1.1.3"
+psycopg2 = "^2.8.4"
+SQLAlchemy = "^1.3"
+alembic = "^1.4"
+spacepy = "^0.4.1"
+xmltodict = "^0.13"
+spice_manager = {version ="^1.1.0"}
+"poppy-core" =  {version = ">=0.9.4"}
+"poppy-pop" = {version = ">=0.7.5"}
+"roc-idb" = {version = "^1.0"}
+"roc-rpl" = {version = "^1.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.10.1"
+pytest-timeout = "^1.4"
+pre-commit = "^2.8"
+toml = "*"
+PyYAML = "*"

@@ -1,0 +1,258 @@
+{
+  "identification": {
+    "project": "ROC-SGSE",
+    "name": "Data Ingestor SGSE",
+    "identifier": "roc.dingo",
+    "description": "Module to ingest new incoming data into the ROC-TDB"
+  },
+  "release": {
+    "version": "1.3.8",
+    "date": "2023-02-14",
+    "author": "Florence Henry <florence.henry@obspm.fr>, Xavier Bonnin <xavier.bonnin@obspm.fr>, ROC Team <roc.support@sympa.obspm.fr>",
+    "contact": "roc.support@sympa.obspm.fr",
+    "institute": "LESIA",
+    "modification": "Modify view rpw_events_per_day",
+    "url": "https://gitlab.obspm.fr/ROC/Pipelines/Plugins/DINGO"
+  },
+  "tasks": [
+    {
+      "name": "clear_rocdb",
+      "category": "Database handling",
+      "description": "Clear content of ROC database.",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "move_processed_files",
+      "category": "File handling",
+      "description": "Move successfully processed input files into a target directory.",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "move_failed_files",
+      "category": "File handling",
+      "description": "Copy failed input files into a target directory.",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "check_dds_tmraw",
+      "category": "File handling",
+      "description": "Return list of MOC DDS TmRaw response XML file(s) to be processed (use to insert packet by chunk in the database)",
+      "inputs": {
+        "dds_tmraw_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TMRAW"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "check_dds_tcreport",
+      "category": "File handling",
+      "description": "Return list of MOC DDS TcReport response XML file(s) to be processed (use to insert packet by chunk in the database)",
+      "inputs": {
+        "dds_tcreport_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TCREPORT"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "export_to_json",
+      "category": "Database export",
+      "description": "Export ROC pipeline database content into a JSON format file",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "tmraw_to_raw",
+      "category": "Data file parsing",
+      "description": "Parse and store input MOC DDS TmRaw response XML file(s) into RawData object, but by chunks.",
+      "inputs": {
+        "dds_tmraw_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TMRAW"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "tcreport_to_raw",
+      "category": "Data file parsing",
+      "description": "Parse and store input MOC DDS TcReport response XML file(s) into RawData object, but bu chunks",
+      "inputs": {
+        "dds_tcreport_xml": {
+          "identifier": "SOLO_LZ_RPW-DDS-TCREPORT"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "parse_file_tree",
+      "category": "Database handling",
+      "description": "Parse file tree before logging files into the database",
+      "inputs": {},
+      "outputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      }
+    },
+    {
+      "name": "check_file_in_db",
+      "category": "Database handling",
+      "description": "Checks if file is up-to-date in the database",
+      "inputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      },
+      "outputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      }
+    },
+    {
+      "name": "search_missing_parents_files",
+      "category": "Database handling",
+      "description": "Search for files with Missing parents in error_log",
+      "inputs": {},
+      "outputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      }
+    },
+    {
+      "name": "update_parents_in_db",
+      "category": "Database handling",
+      "description": "Update parents_file_log table with existing missing parents",
+      "inputs": {},
+      "outputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      }
+    },
+    {
+      "name": "store_delivered",
+      "category": "Database handling",
+      "description": "Store into file_log files that have been delivered by GFTS",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "store_public_filename",
+      "category": "Database handling",
+      "description": "Store into file_log the name given for the ESA delivery",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "check_soar",
+      "category": "Database handling",
+      "description": "Check delivered files are available in SOAR",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "search_for_update",
+      "category": "Database handling",
+      "description": "Search files to be updated in file_log table",
+      "inputs": {},
+      "outputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      }
+    },
+    {
+      "name": "log_file_to_db",
+      "category": "Database handling",
+      "description": "Log files into the database",
+      "inputs": {
+        "roc_data_files": {
+          "identifier": "SOLO_ROC_DATA_FILES"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "l0_to_db",
+      "category": "Database handling",
+      "description": "L0 files into the database",
+      "inputs": {
+        "rpw_l0_files": {
+          "identifier": "SOLO_L0_RPW"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "event_to_db",
+      "category": "Database handling",
+      "description": "SOLO/RPW-related event data into the database",
+      "inputs": {
+        "rpw_l0_files": {
+          "identifier": "SOLO_L0_RPW"
+        },
+        "solo_hk_files": {
+          "identifier": "SOLO_HK_PLATFORM"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "solohk_to_db",
+      "category": "Database handling",
+      "description": "Insert Solo HK EDDS data files into the ROC database",
+      "inputs": {
+        "solo_hk_files": {
+          "identifier": "SOLO_HK_PLATFORM"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "db_to_solohk",
+      "category": "Database handling",
+      "description": "Export solo_hk_param table data of the ROC database into output daily files",
+      "inputs": {},
+      "outputs": {
+        "solo_hk_files": {
+          "identifier": "SOLO_HK_PLATFORM"
+        }
+      }
+    },
+    {
+      "name": "efecs_to_db",
+      "category": "Database handling",
+      "description": "Insert Solo EFECS data files into the ROC database",
+      "inputs": {
+        "efecs_files": {
+          "identifier": "SOLO_EFECS"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "name": "update_utc_time",
+      "category": "Database handling",
+      "description": "Make sure to have up-to-date utc_times in the ROC database",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "name": "l0_to_hfrtimelog",
+      "category": "Database handling",
+      "description": "HFR science TM time L0 info into the database",
+      "inputs": {
+        "rpw_l0_files": {
+          "identifier": "SOLO_L0_RPW"
+        }
+      },
+      "outputs": {}
+    }
+  ]
+}
