@@ -1,0 +1,17 @@
+doodleverse_utils/__init__.py,sha256=BJqnMdp4oEiUz4fuOUxz4FXy85oE6AgTgHI3SPQv9QY,147
+doodleverse_utils/_version.py,sha256=MC4JxFLfIl6g5t2RZvAqFfB_hYu9thi8yVHn-IUf1uA,499
+doodleverse_utils/imports.py,sha256=ZM4EijMaikgxMgvvBZ1HQFrB_gDaeiWvvBH8qIpGGHo,8247
+doodleverse_utils/make_mndwi_4pred.py,sha256=BQ6TNkZho8VUHCrHd8ozJViDk-XFr9im_9eiONa-WDI,3196
+doodleverse_utils/make_mndwi_dataset.py,sha256=MWSHPc7nyYA0AWxAn-gHwH1qXbMKIl1qS52KbuMkzhI,22168
+doodleverse_utils/make_ndwi_4pred.py,sha256=0m78BZKmQB3vTF0L9CLWDD2hu2wke4Yse-tQuM2oiaw,3174
+doodleverse_utils/make_ndwi_dataset.py,sha256=eJfDvPiGpUDcr7iymmkYsOJgg9VCP_0C5wSj7O4B44E,22051
+doodleverse_utils/merge_nd_inputs4pred.py,sha256=zAAq4jWRp9xh5SuywiBH6tCo2AIHSVC_IaEB3UD-ZjQ,5910
+doodleverse_utils/model_imports.py,sha256=frayUqbO_FaCq8q0HY-GFItaTkNRKX2lGQBsKcdfXCY,35697
+doodleverse_utils/model_metrics.py,sha256=pLDBm--HiJbj2VI0QA9aSuxP8kHK0QuEkmFqmXi4Cv0,5383
+doodleverse_utils/prediction_imports.py,sha256=xveeNJ7ngS_unWsJPKiZVf5sRAlEQY-k0rJQAvlnSNU,28217
+doodleverse_utils/vggjson2mask.py,sha256=GURLEbRCXv7fTrRgkWu6AByFlv2IOFxQ7R0mzhDFFic,10198
+doodleverse_utils-0.0.20.dist-info/LICENSE,sha256=2iu1gHn76liQOSjkl880WZ1hdulnvPJF1cZA-4oXO7k,1068
+doodleverse_utils-0.0.20.dist-info/METADATA,sha256=a5ga7iWLcuBcDTTy9hzzrn38ctoXVwWSXJGYfmTxDz4,415
+doodleverse_utils-0.0.20.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+doodleverse_utils-0.0.20.dist-info/top_level.txt,sha256=3puZXP0LIPTKQWbiWIIcew_iOVNrwiseY3mY5I7XEYY,18
+doodleverse_utils-0.0.20.dist-info/RECORD,,
