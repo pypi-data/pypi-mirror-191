@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fntlib
+Version: 1.0.0
+Summary: A Python library to work with bitmap .fnt font files.
+Home-page: https://github.com/JaanDev/fntlib
+Author: Jaan
+License: MIT
+Keywords: python library font fnt bitmap fonts interaction
+License-File: LICENSE.rst
+
+Ok test desc here
