@@ -1,0 +1,7 @@
+README.md
+new_reader.py
+setup.py
+new_reader.egg-info/PKG-INFO
+new_reader.egg-info/SOURCES.txt
+new_reader.egg-info/dependency_links.txt
+new_reader.egg-info/top_level.txt
