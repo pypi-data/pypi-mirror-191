@@ -1,0 +1,9 @@
+python-dateutil
+cryptography
+urllib3
+phonenumbers
+email_validator
+Flask-Caching
+Flask-Script
+basicauth
+flask-restful>=0.3.9
