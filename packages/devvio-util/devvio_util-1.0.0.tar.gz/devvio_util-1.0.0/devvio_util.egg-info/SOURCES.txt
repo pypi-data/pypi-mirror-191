@@ -1,0 +1,9 @@
+README.txt
+setup.py
+devvio_util/__init__.py
+devvio_util/lib_creds.py
+devvio_util.egg-info/PKG-INFO
+devvio_util.egg-info/SOURCES.txt
+devvio_util.egg-info/dependency_links.txt
+devvio_util.egg-info/not-zip-safe
+devvio_util.egg-info/top_level.txt
