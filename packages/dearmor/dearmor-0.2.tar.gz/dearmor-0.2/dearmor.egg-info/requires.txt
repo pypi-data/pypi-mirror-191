@@ -1,0 +1,11 @@
+pyinjector
+psutil
+
+[package]
+build
+twine
+
+[test]
+pytest
+pytest-timeout
+pyarmor

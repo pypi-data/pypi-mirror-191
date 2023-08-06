@@ -1,0 +1,2 @@
+[console_scripts]
+dearmor = dearmor.__main__:main_cli
