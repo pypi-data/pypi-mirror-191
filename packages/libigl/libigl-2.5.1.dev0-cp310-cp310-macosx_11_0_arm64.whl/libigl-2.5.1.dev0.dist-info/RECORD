@@ -1,0 +1,11 @@
+igl/_version.py,sha256=1sKqkMBzZiNh4Sgc4jtRAGoKaK2R1_-ieX2_qGgf_mM,25
+igl/pyigl_classes.cpython-310-darwin.so,sha256=_g0fmQBUU8ZZTT0F4oK_gn5LTVhDTm0AoBFG0gWirZE,905008
+igl/__init__.py,sha256=LI3KBk-BGPmyguuzAaLRBgtCypprxBNuR55BS3-J--Y,107
+igl/pyigl.cpython-310-darwin.so,sha256=Ll1iA0PfVA_uPfdrMXUX-mfVNdKVoRG0LYwpBVSGnzQ,39222104
+igl/helpers.py,sha256=z5pVFTx4kzfF_FrrgEeGHa2-jjGSR4RU62LmYAUwQX8,2026
+igl/copyleft/cgal/__init__.py,sha256=NJ2qNq7xwEOa5a4Ra09v8ADkIgrNvBjz6whcz3C0QPk,34
+igl/copyleft/cgal/pyigl_copyleft_cgal.cpython-310-darwin.so,sha256=4iPiKWtHimXMlb24DYybtIqC8bg1MmSHdl1Bqfzb4fo,2540134
+libigl-2.5.1.dev0.dist-info/RECORD,,
+libigl-2.5.1.dev0.dist-info/WHEEL,sha256=oMFc9-KjvMLKiqM40kAaafsHJktZGp0eIX_k197YDRk,110
+libigl-2.5.1.dev0.dist-info/top_level.txt,sha256=TF1tYDKDOv891WW8VMKHYFbUMW0bi_1a2OKWpZzoVUQ,10
+libigl-2.5.1.dev0.dist-info/METADATA,sha256=H4revd0qdqTbRte9LUYSxiK1jQHv4O24zMzAFMiWl7U,2122
