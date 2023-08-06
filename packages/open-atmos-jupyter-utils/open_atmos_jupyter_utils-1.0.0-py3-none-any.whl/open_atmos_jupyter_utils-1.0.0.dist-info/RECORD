@@ -1,0 +1,9 @@
+open_atmos_jupyter_utils/__init__.py,sha256=yGNti_jzgX2RES_kCcO5tePoEd-Xh6ZFy0G7SxAmSGU,300
+open_atmos_jupyter_utils/pip_install_on_colab.py,sha256=Ye6ikFpuzfUK90gLKEbXzvXnpXC2SG38AQ1t3bNeHYA,601
+open_atmos_jupyter_utils/show_plot.py,sha256=6zdmnW5sl9x4pvwWSTZw_CrRuzV4jSJJsCfYtoGJMqw,935
+open_atmos_jupyter_utils/temporary_file.py,sha256=9sPsKpkv_FBtVngtJS07xLZRxkMJQ2PWbIUym3_5IN0,1427
+open_atmos_jupyter_utils-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+open_atmos_jupyter_utils-1.0.0.dist-info/METADATA,sha256=TtZkwQaLav7J3gwqRWJwC7zcdqK_OWC-__8-lQ5MT2s,2104
+open_atmos_jupyter_utils-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+open_atmos_jupyter_utils-1.0.0.dist-info/top_level.txt,sha256=SfMx82fEoV5qsaLoakd2Gelq-ZOLLFSXXUvH4hcj_34,25
+open_atmos_jupyter_utils-1.0.0.dist-info/RECORD,,
