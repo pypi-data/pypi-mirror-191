@@ -1,0 +1,10 @@
+net_automation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+net_automation/j2templates.py,sha256=ruCqf-UbjSA3O-Pnu90PjIWXWeO4mxTEjAASqxcgrRQ,21448
+net_automation/net_automation.py,sha256=JJJSL87VaT2amATcQgULslGzJjyqXbvWyCao6LXsCYo,39543
+net_automation/test.py,sha256=cn2RKPaJjs1dqQc0wEDqJxp7oE-YHLAWHV5ty9wAihw,80
+net_automation/test.yml,sha256=Dccqgj3LqJGm5BwNNX0b_QFB3CIwaiwFjswSSPohtYg,18364
+net_automation/vyosbgp.template,sha256=oxE6jbIbtQ7D-GcMd_y2PH02l-7tfNM8ddURANyhdtc,1585
+network_automation_usman_u-0.1.17.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+network_automation_usman_u-0.1.17.dist-info/METADATA,sha256=JT-bIv40rL7G9S1SgX7fhNtSPdAlsVYHOISQGJc9lO8,639
+network_automation_usman_u-0.1.17.dist-info/LICENSE,sha256=1_70amn8hYgOkG9LXFsWHYHzohH2AbuEsKzqzT0d2tY,1518
+network_automation_usman_u-0.1.17.dist-info/RECORD,,
