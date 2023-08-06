@@ -1,0 +1,9 @@
+[console_scripts]
+asap7_gds_scale=hammer.technology.asap7.gds_scale:main
+get-config=hammer.shell.get_config:main
+hammer-generate-mdf=hammer.shell.hammer_generate_mdf:main
+hammer-shell-test=hammer.shell.hammer_shell_test:main
+hammer-vlsi=hammer.shell.hammer_vlsi:main
+readlink-array=hammer.shell.readlink_array:main
+yaml2json=hammer.shell.yaml2json:main
+
