@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: FROST2STAC
+Version: 0.73
+Summary: A package to create STAC metada catalog using The Fraunhofer Open-source SensorThings Server (Frost Server)
+Home-page: https://codebase.helmholtz.cloud/CAT4KIT/frost2stac
+Author: Mostafa Hadizadeh
+Author-email: mostafa.hadizadeh@kit.edu
+License: EUPL-1.2
+Project-URL: Documentation, https://frost2stac.readthedocs.io
+Project-URL: Source, https://codebase.helmholtz.cloud/CAT4KIT/frost2stac
+Project-URL: Tracker, https://codebase.helmholtz.cloud/CAT4KIT/frost2stac/issues/
+Keywords: CAT4KIT,KIT,EXU-Vorhaben-Research-Data-Management,helmholtz
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: types-requests ; extra == 'dev'
+Requires-Dist: isort (==5.9.3) ; extra == 'dev'
+Requires-Dist: black (==22.3.0) ; extra == 'dev'
+Requires-Dist: blackdoc (==0.3.4) ; extra == 'dev'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest-django ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: mde-sphinx-ext ; extra == 'dev'
+Requires-Dist: autodocsumm ; extra == 'dev'
+Requires-Dist: sphinxcontrib-django ; extra == 'dev'
+Provides-Extra: testsite
+Requires-Dist: tox ; extra == 'testsite'
+Requires-Dist: requests ; extra == 'testsite'
+Requires-Dist: types-requests ; extra == 'testsite'
+Requires-Dist: isort (==5.9.3) ; extra == 'testsite'
+Requires-Dist: black (==22.3.0) ; extra == 'testsite'
+Requires-Dist: blackdoc (==0.3.4) ; extra == 'testsite'
+Requires-Dist: flake8 (==3.9.2) ; extra == 'testsite'
+Requires-Dist: pre-commit ; extra == 'testsite'
+Requires-Dist: mypy ; extra == 'testsite'
+Requires-Dist: pytest-django ; extra == 'testsite'
+Requires-Dist: pytest-cov ; extra == 'testsite'
+
+==========
+FROST2STAC
+==========
+
+
+.. image:: https://codebase.helmholtz.cloud/cat4kit/frost2stac/-/raw/main/frost2stac.png
+
+
+
+
+
+=============================
+
+.. image:: https://img.shields.io/pypi/v/frost2stac.svg
+        :target: https://pypi.python.org/pypi/frost2stac
+
+
+.. image:: https://readthedocs.org/projects/frost2stac/badge/?version=latest
+        :target: https://frost2stac.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+STAC specification is a method of exposing spatial and temporal data collections in a standardized manner. Specifically, the `SpatioTemporal Asset Catalog (STAC) <https://stacspec.org/en>`_ specification describes and catalogs spatiotemporal assets using a common structure. 
+This package creates STAC metadata by harvesting time series data from the `Fraunhofer Open-source SensorThings Server (Frost Server) <https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html>`_. After creating STAC Catalogs, Collections, and Items, it imports them into `pgSTAC <https://stac-utils.github.io/pgstac/pgstac/>`_ and `STAC-FastAPI <https://stac-utils.github.io/stac-fastapi/>`_.
+
+
+* Free software: EUPL-1.2
+* Documentation: https://frost2stac.readthedocs.io.
+
+
+Quick start
+-------------
+
+To install FROST2STAC, run this command in your terminal:
+
+.. code-block:: console
+
+    pip install frost2stac
+
+Or for installing manually, you can either clone the public repository:
+.. code-block:: console
+
+    git clone git://codebase.helmholtz.cloud/CAT4KIT/frost2stac
+    cd frost2stac
+    python -m venv venv
+    source venv/bin/activate
+    pip install -r requirements_dev.txt
+
+Use case:
+
+You may use the package by following the `link <https://codebase.helmholtz.cloud/cat4kit/frost2stac/-/blob/main/docs/usage.rst>`_ instructions. . 
+
+
+
+
+
+Copyright
+---------
+Copyright © 2023 Karlsruher Institut für Technologie
+
+Licensed under the EUPL-1.2-or-later
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the EUPL-1.2 license for more details.
+
+You should have received a copy of the EUPL-1.2 license along with this
+program. If not, see https://www.eupl.eu/.
+
+
