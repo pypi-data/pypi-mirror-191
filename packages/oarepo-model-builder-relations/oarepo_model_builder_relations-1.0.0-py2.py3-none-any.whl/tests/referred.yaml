@@ -1,0 +1,24 @@
+model:
+    use: invenio
+    schema-server: 'local://'
+    custom-fields:
+    - config: TEST_CF
+    properties:
+        metadata:
+            properties:
+                title: fulltext
+                description: fulltext
+                hint: keyword
+                price: float
+                arr[]: keyword
+                objarr[]:
+                    type: object
+                    properties:
+                        title: fulltext
+                arrarr[]:
+                    type: object
+                    properties:
+                        title[]:
+                            type: object
+                            properties:
+                                title: fulltext 

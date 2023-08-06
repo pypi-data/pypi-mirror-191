@@ -1,0 +1,29 @@
+from invenio_records.systemfields import RelationsField
+
+{% for rel in invenio_relations %}
+{% for imp in rel.imports or [] %}
+{% if imp.alias %}
+import {{ imp["import"] }} as {{ imp.alias }}
+{% else %}
+from {{ imp["import"]|package_name }} import {{imp["import"]|base_name}}
+{% endif %}
+{% endfor %}
+{% endfor %}
+
+from invenio_records.dumpers.relations import RelationDumperExt
+
+class {{ current_model.record_class|base_name }}:
+
+    dumper_extensions = [
+        RelationDumperExt("relations"),
+    ]
+
+    relations = RelationsField(
+        {% for rel in invenio_relations %}
+        {{ rel.name }}={{ rel.relation_class }}("{{rel.path}}",
+            {% for param, val in rel.relation_args.items() %}
+                {{ param }} = {{ val }},
+            {% endfor %}
+        ),
+        {% endfor %}
+    )
