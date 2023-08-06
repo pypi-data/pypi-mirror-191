@@ -1,0 +1,11 @@
+LICENCE.txt
+setup.py
+calc_with_mem/__init__.py
+calc_with_mem/calculator_with_memory.py
+calc_with_mem.egg-info/PKG-INFO
+calc_with_mem.egg-info/SOURCES.txt
+calc_with_mem.egg-info/dependency_links.txt
+calc_with_mem.egg-info/not-zip-safe
+calc_with_mem.egg-info/top_level.txt
+tests/__init__.py
+tests/test.py
