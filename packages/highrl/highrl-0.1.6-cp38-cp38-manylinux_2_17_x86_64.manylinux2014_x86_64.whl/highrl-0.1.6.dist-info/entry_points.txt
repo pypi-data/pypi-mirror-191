@@ -1,0 +1,2 @@
+[console_scripts]
+highrl = highrl.__main__:main
