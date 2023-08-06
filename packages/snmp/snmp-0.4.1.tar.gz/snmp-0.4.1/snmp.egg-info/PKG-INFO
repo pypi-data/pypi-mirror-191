@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: snmp
+Version: 0.4.1
+Summary: A user-friendly SNMP library
+Home-page: https://github.com/charlestolley/python-snmp
+Author: Charles C. D. Tolley
+Author-email: charlescdtolley@protonmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Installation
+This library is available in PyPi under the name `snmp`. Installation is as simple as
+
+    pip install snmp
+
+If you are having trouble importing the snmp.security.usm.priv module, see [this section](https://python-snmp.readthedocs.io/en/latest/installation.html#integration-with-openssl) of the documentation.
+
+## Documentation
+Documentation for this library, including a simple tutorial and a library reference, is available in [ReadTheDocs](https://python-snmp.readthedocs.io).
