@@ -1,0 +1,12 @@
+util_moderngl_qt/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+util_moderngl_qt/drawer_meshpos.py,sha256=0Pq7dJAAPr2HiMWD3DOy16tuunt-6eiOXGJtRZczfDY,1846
+util_moderngl_qt/drawer_meshposcolor.py,sha256=x9yAHYvrru7sb_WavzJGwYj5DXZWJc5cc1PH40Jky4E,1441
+util_moderngl_qt/drawer_meshpostex.py,sha256=w62Qp1tYd_elQPJJ_i2aSbNNDI39ZAF5xwHX9JHwTv8,2830
+util_moderngl_qt/drawer_transform.py,sha256=66ZWJKaUOn7WWm7sHa1N2WghLE-zAqKYWq13zDZLbOQ,459
+util_moderngl_qt/qtglwidget_viewer3.py,sha256=1HWkXQ-XBeBEAsCMtPpYnQJmYHoGNoFjxS7lo8B-BMs,2605
+util_moderngl_qt/qtglwidget_viewer3_texture.py,sha256=GX3621aDCH0tWyHRMtzAyoCJ2qPp1M7rfegkmDWV3EM,2744
+util_moderngl_qt/view_navigation3.py,sha256=jeSnIw6h1QrvPMDGit-oOqUwMVgBcpXDma_dl-JN9Yo,2402
+util_moderngl_qt-0.1.5.dist-info/METADATA,sha256=kfqu6KrM6W4kmEkf_t38J90v__KXbQh1YVfoiEJv18Q,231
+util_moderngl_qt-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+util_moderngl_qt-0.1.5.dist-info/top_level.txt,sha256=ciWtExLulACxAVC3ge1ay5gH2GRTIF3lQMUP4aLPzeE,17
+util_moderngl_qt-0.1.5.dist-info/RECORD,,
