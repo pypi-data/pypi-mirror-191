@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Vikash
+Version: 0.0.1
+Summary: <>
+Author-email: Jay Singh <jaysinghdulrasar@gmail.com>
+Project-URL: Instagram, https://www.instagram.com/ij.a.y.s.i.n.g.h/
+Project-URL: WebApp, https://bias-ai.web.app/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.text
+
