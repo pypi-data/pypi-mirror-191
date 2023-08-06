@@ -1,0 +1,8 @@
+colorama
+GitPython
+validators
+ipdb
+pipreqs
+dirhash
+rich
+docstring-parser
