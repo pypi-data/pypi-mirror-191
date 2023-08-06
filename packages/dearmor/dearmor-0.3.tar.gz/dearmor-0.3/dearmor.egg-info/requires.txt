@@ -1,0 +1,7 @@
+pyinjector
+psutil
+
+[test]
+pytest
+pytest-timeout
+pyarmor
