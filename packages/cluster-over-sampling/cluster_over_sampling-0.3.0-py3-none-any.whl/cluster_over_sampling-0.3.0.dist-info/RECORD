@@ -1,0 +1,14 @@
+clover/__init__.py,sha256=8yauI170j9-oNGKBSqatHduwYv2Z8UIZQNmI39v3OQ8,1567
+clover/distribution/__init__.py,sha256=KY-zt7u1DfmgoRwY6IpbXECrJC3m7yPx8bAq3gjOve4,137
+clover/distribution/_density.py,sha256=ikfmntEw5eoVglfnlswB-LyxMSrT30ETEk6RcTlKKI8,13982
+clover/distribution/base.py,sha256=0uYTU2EoWBuRG1jknX4jYBnFPdsT5Cwd6ikL35CPJNI,6401
+clover/over_sampling/__init__.py,sha256=jFkMVWicMIH8N1cfk2rw_lHryX7vofHaFW9CY_O7dAM,756
+clover/over_sampling/_cluster.py,sha256=fg8-dNqDdi1W7aVu36db0ibfqc0jaLAzjwcstEEa-4c,20547
+clover/over_sampling/_gsomo.py,sha256=O8diBdjvEY-RqCWkU3AiBxAjVraG7PQKxoIp5XJ9xsQ,10968
+clover/over_sampling/_kmeans_smote.py,sha256=akUtu_S186g2Gh9HEEN5fIwzd8QaKw6NRq2QqJiiKB4,9411
+clover/over_sampling/_somo.py,sha256=nGvtH82vS1vrLeRD-nsfsMADXT_pCHBQp7OL-c4XbV4,8705
+clover/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cluster_over_sampling-0.3.0.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+cluster_over_sampling-0.3.0.dist-info/METADATA,sha256=mQrEkFTXpc1Oh6tzq22g0ezQ9M_t1uJVZ1szRW6G5d4,6849
+cluster_over_sampling-0.3.0.dist-info/licenses/LICENSE,sha256=c5SX1qBHItX60Tq7FCEzyB_xJvnW__2fmcld7NrWNOQ,1072
+cluster_over_sampling-0.3.0.dist-info/RECORD,,
