@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+taskstodo/calcurse.py
+taskstodo/tasklists.py
+taskstodo/tasks.py
+taskstodo/taskstodo.py
+taskstodo.egg-info/PKG-INFO
+taskstodo.egg-info/SOURCES.txt
+taskstodo.egg-info/dependency_links.txt
+taskstodo.egg-info/entry_points.txt
+taskstodo.egg-info/requires.txt
+taskstodo.egg-info/top_level.txt
+tests/test_calcurse.py
+tests/test_tasklists.py
+tests/test_tasks.py
