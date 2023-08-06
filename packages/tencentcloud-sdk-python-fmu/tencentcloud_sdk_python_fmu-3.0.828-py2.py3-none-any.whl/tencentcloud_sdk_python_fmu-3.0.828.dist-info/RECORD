@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=T6-egJJZGvqP2XX_EVCvSjk00J6V1N6AqcV0DTr4iig,630
+tencentcloud/fmu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/fmu/v20191213/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/fmu/v20191213/errorcodes.py,sha256=I2rf8tvgJQlIhTpTcEck-zmM7moZiA-u7fUY4estAh4,6907
+tencentcloud/fmu/v20191213/fmu_client.py,sha256=l932e4O8e3mfJWmIcEmSrJ78dT7lTGva3P42t-6XHWY,10489
+tencentcloud/fmu/v20191213/models.py,sha256=iKq0S5CNFMhpgYwcNg9qv4Y49Nkd0oZkPzPkgZPfIdk,31051
+tencentcloud_sdk_python_fmu-3.0.828.dist-info/METADATA,sha256=Z54H-oC9vZiDFxl0FPCsN4lqgt3lNFS2l7VdYKYKYE8,1432
+tencentcloud_sdk_python_fmu-3.0.828.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_fmu-3.0.828.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_fmu-3.0.828.dist-info/RECORD,,
