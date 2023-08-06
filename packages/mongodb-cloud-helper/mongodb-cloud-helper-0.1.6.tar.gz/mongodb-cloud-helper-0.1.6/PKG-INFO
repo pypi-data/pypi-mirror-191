@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mongodb-cloud-helper
+Version: 0.1.6
+Summary: Helper Microservice when a MongoDB Cloud instance is required
+Home-page: https://github.com/craigtrim/mongodb-cloud-helper
+License: MIT
+Keywords: mongo,mongodb,api,utility,helper
+Author: Craig Trim
+Author-email: craigtrim@gmail.com
+Maintainer: Craig Trim
+Maintainer-email: craigtrim@gmail.com
+Requires-Python: >=3.8.5,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: baseblock
+Requires-Dist: pymongo (>=4.1.0,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/craigtrim/mongodb-cloud-helper/issues
+Project-URL: Repository, https://github.com/craigtrim/mongodb-cloud-helper
+Description-Content-Type: text/markdown
+
+# MongoDB Cloud Helper (mongodb-cloud-helper)
+Helps enforce consistency across microservices when a MongoDB Cloud instance is required.
+
