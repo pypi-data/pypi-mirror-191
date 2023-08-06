@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+bluewave/compare_pdfs.py
+bluewave/pdf_to_img.py
+bluewave/result_json_to_training_csv.py
+bluewave/show_similarity_rectangles.py
+bluewave.egg-info/PKG-INFO
+bluewave.egg-info/SOURCES.txt
+bluewave.egg-info/dependency_links.txt
+bluewave.egg-info/requires.txt
+bluewave.egg-info/top_level.txt
