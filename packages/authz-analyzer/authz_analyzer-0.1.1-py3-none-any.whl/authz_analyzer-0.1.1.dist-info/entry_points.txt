@@ -1,0 +1,3 @@
+[console_scripts]
+authz-analyzer=authz_analyzer.cli:main
+
