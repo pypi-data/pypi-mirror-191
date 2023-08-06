@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "daemonprocessing"
+version = "0.1.1"
+description = "cross-platform daemon"
+authors = ["jawide <596929059@qq.com>"]
+readme = "README.md"
+packages = [{include = "daemonprocessing"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
