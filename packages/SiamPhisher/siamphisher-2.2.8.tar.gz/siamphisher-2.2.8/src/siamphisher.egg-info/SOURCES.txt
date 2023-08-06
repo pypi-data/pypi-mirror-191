@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Siam/__init__.py
+src/Siam/linux.py
+src/Siam/siamphisher.py
+src/Siam/win.py
+src/Siam/windows.py
+src/siamphisher.egg-info/PKG-INFO
+src/siamphisher.egg-info/SOURCES.txt
+src/siamphisher.egg-info/dependency_links.txt
+src/siamphisher.egg-info/top_level.txt
