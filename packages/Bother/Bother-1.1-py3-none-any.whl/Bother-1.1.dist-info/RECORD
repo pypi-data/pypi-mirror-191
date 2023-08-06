@@ -1,0 +1,9 @@
+Bother-1.1.data/scripts/bother,sha256=cvE7YvtV2Cs-bdww6tLGnUSkuhtciVbEAg_Qoea_Tac,9785
+bother_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bother_utils/heightmap.py,sha256=KSd8nTZa0JjG0NFtE9VW2oRn3sMa0wm3zAS-imYDLyE,11858
+bother_utils/srtm.py,sha256=Vlj1iy2HMVla7wTWtVXdo0gH0-j2h8ml0889Lroki_0,8208
+Bother-1.1.dist-info/LICENSE,sha256=hdia9X84F1laZ3-ehWM8AaWVO18mvwM8drApOiOBBT8,1065
+Bother-1.1.dist-info/METADATA,sha256=WQwsQnWm5t-E9wC9hcDvnmvlf1kvYWviZT56iS4_Bbs,10835
+Bother-1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Bother-1.1.dist-info/top_level.txt,sha256=z8zFUMvn1Cd1gzEb1CRopx1UnX9QMQv5v_ffosgBw64,13
+Bother-1.1.dist-info/RECORD,,
