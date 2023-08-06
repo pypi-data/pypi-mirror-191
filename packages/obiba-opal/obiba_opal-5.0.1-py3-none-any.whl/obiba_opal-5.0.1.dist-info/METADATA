@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: obiba-opal
+Version: 5.0.1
+Summary: OBiBa/Opal python client.
+License: GPL-v3
+Author: Yannick Marcon
+Author-email: yannick.marcon@obiba.org
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pycurl (>=7.45.2,<8.0.0)
+Description-Content-Type: text/markdown
+
+# Opal Python [![Build Status](https://app.travis-ci.com/obiba/opal-python-client.svg?branch=master)](https://app.travis-ci.com/github/obiba/opal-python-client)
+
+This Python-based command line tool allows to access to a Opal server through its REST API. This is the perfect tool
+for automating tasks in Opal. This will be the preferred client developed when new features are added to the REST API.
+
+* Read the [documentation](http://opaldoc.obiba.org).
+* Have a bug or a question? Please create an issue on [GitHub](https://github.com/obiba/opal-python-client/issues).
+* Continuous integration is on [Travis](https://travis-ci.org/obiba/opal-python-client).
+
+## Usage
+
+Install with:
+
+```
+pip install obiba_opal
+```
+
+To get the options of the command line:
+
+```
+opal --help
+```
+
+This command will display which sub-commands are available. For each sub-command you can get the help message as well:
+
+```
+opal <subcommand> --help
+```
+
+The objective of having sub-command is to hide the complexity of applying some use cases to the Opal REST API. More
+sub-commands will be developed in the future.
+
+## Development
+
+Opal Python client can be easily extended by using the classes defined in `core.py` and `io.py`.
+
+## Mailing list
+
+Have a question? Ask on our mailing list!
+
+obiba-users@googlegroups.com
+
+[http://groups.google.com/group/obiba-users](http://groups.google.com/group/obiba-users)
+
+## License
+
+OBiBa software are open source and made available under the [GPL3 licence](http://www.obiba.org/pages/license/). OBiBa software are free of charge.
+
+## OBiBa acknowledgments
+
+If you are using OBiBa software, please cite our work in your code, websites, publications or reports.
+
+"The work presented herein was made possible using the OBiBa suite (www.obiba.org), a  software suite developed by Maelstrom Research (www.maelstrom-research.org)"
+
