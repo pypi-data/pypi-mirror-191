@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysortfolder"
+description = "Sort folders and files by size and display it in folder tree format."
+readme = "README.md"
+requires-python = ">=3.7.0"
+keywords = ["sort", "folder", "size"]
+license = {text = "MIT-License"}
+authors = [
+  {name = "Muhammad Yasirroni", email = "48709672+yasirroni@users.noreply.github.com"},
+]
+maintainers = [
+  {name = "Muhammad Yasirroni", email = "48709672+yasirroni@users.noreply.github.com"},
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/yasirroni/pysortfolder#readme"
+Issues = "https://github.com/yasirroni/pysortfolder/issues"
+Source = "https://github.com/yasirroni/pysortfolder"
+
+[tool.setuptools]
+packages = ["pysortfolder"]
+
+[tool.autopep8]
+in-place = true
+recursive = true
+verbose = true
+max_line_length = 88
+aggressive = 3
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/6.2.x/customize.html#pyproject-toml
+# Directories that are not visited by pytest collector:
+norecursedirs =["hooks", "*.egg", ".eggs", "dist", "build", "docs", ".tox", ".git", "__pycache__"]
+
+# Extra options:
+addopts = [
+  "--strict-markers",
+  "--tb=short",
+]
+
+[tool.coverage.run]
+source = ["tests"]
+
+[coverage.paths]
+source = "pysortfolder"
+
+[coverage.run]
+branch = true
+
+[coverage.report]
+fail_under = 50
+show_missing = true

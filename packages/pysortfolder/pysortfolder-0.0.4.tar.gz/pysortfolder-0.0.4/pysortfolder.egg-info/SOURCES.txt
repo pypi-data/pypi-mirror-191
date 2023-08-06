@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pysortfolder/__init__.py
+pysortfolder/dirsize.py
+pysortfolder/tree.py
+pysortfolder/version.py
+pysortfolder.egg-info/PKG-INFO
+pysortfolder.egg-info/SOURCES.txt
+pysortfolder.egg-info/dependency_links.txt
+pysortfolder.egg-info/top_level.txt
+tests/test_sort.py
