@@ -1,0 +1,11 @@
+tudelft_pycar/__init__.py,sha256=iswmp3ygy7HP9gqJPzL7xA6kwEdaPMRB58hUAy1yPP0,29
+tudelft_pycar/arbitrator.py,sha256=ECRAR4iPBU9Ehew5_w_o5uPePq_W0J51aoHlRCAEhZs,1206
+tudelft_pycar/settings.py,sha256=Ce84RndrUeORv4yMiMazQDs7MuIWI1lZFq22bj7H6Pc,3591
+tudelft_pycar/demo/main.py,sha256=SlvQJG9vOmqO4FLnU6ptbogX6yUog9Jbrcff2dE972g,7553
+tudelft_pycar/simulator/car.py,sha256=OIRB6kOOwyKFSqlY8uk8lxfMRcqmFyggb01UDi6QMk8,6339
+tudelft_pycar/simulator/main.py,sha256=-aOSDUWcpf4IlGUwRRVmsLHGoT-XLw9z6RScaouZDWU,848
+tudelft_pycar/simulator/microphones.py,sha256=x5veyimJdO6K0196v8Cqb9Du9bxupHeX1C9AcRliA8Y,3043
+tudelft_pycar-0.0.3.dev0.dist-info/METADATA,sha256=WVux48ngz0WW4jwIvvi0oZRZigKx2Cm_sUqYpkx6xCo,5845
+tudelft_pycar-0.0.3.dev0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+tudelft_pycar-0.0.3.dev0.dist-info/licenses/LICENSE,sha256=NFA7uRzQ0WWMKc1To3b1DL1wZtvq27zAUs8BPN8ICQw,1087
+tudelft_pycar-0.0.3.dev0.dist-info/RECORD,,
