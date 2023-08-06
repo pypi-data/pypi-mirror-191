@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: hydroforecast
+Version: 0.0.2
+Summary: hydrology forecast (Concept model, ML model)
+Home-page: https://github.com/chooron
+Author: jingx
+Author-email: jingxin0107@qq.com
+Maintainer: jingx
+Maintainer-email: jingxin0107@qq.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+
+# A Unify time series forecast Machine learning Library
+
+## *Content*
+
+### Customer Dataset
+- 鏁版嵁闆嗘瀯寤鸿嚜瀹氫箟鍖, 姣斿傛牴鎹妯″瀷涓嶅悓鐢熸垚Torch鐨勬暟鎹闆嗚繕鏄疭klearn鐨勬暟鎹闆;
+- 鐒跺悗纭瀹氭暟鎹闆嗚緭鍏ョ淮搴︿笌杈撳嚭缁村害, 杩欓噷鍙浠ュ垎涓哄氬瑰, 澶氬逛竴, 涓瀵逛竴;
+- 鍚屾椂鏍规嵁棰勬祴姝ラ暱闇瑕佺‘瀹氬崟姝ユ暟鎹闆嗗拰澶氭ユ暟鎹闆;
+- 鏈鍚庨拡瀵逛竴浜涙繁搴﹀︿範妯″瀷杩斿洖璁缁冭繃绋嬬殑宸寮傝繕闇瑕佹牴鎹闇姹備慨鏀规暟鎹闆嗘瘡娆¤凯浠ｇ殑杩斿洖鍊;
+- 鏁版嵁闆嗕竴浜涘弬鏁, 鏍囧噯鍖, 鏁版嵁闆嗗垝鍒嗘瘮渚, 鐢氳嚦鏁版嵁闆嗛噰鏍锋柟娉;
+- 鏁版嵁闆嗕竴浜涘唴缃鍔熻兘, 濡傚彲瑙嗗寲, 鍩烘湰鐨勭粺璁℃柟娉曪紝鏁版嵁鐨勭己澶卞煎勭悊锛屽紓甯稿煎勭悊绛
+
+### Customer trainer
+- 妯″瀷璁缁冩柟寮忎緷璧栦簬涓嶅悓妗嗘灦鍏惰缁冭繃绋嬫湁鎵鍖哄埆,
+涓虹患鍚堝悇涓妗嗘灦, 璇ュ簱鏁村悎浜唗orch銆乻klearn鍜宬eras涓夌嶅父鐢ㄥ簱鐨勮缁冭繃绋嬶紝鍏朵腑torch鍩轰簬pytorch-lightning
+- 瀵逛簬torch鐨勯儴鍒嗘ā鍨嬶紝鍏惰缁冩柟寮忔垨鏈変笉鍚屽洜涓轰篃闇瑕佹彁渚涗竴涓鑷瀹氫箟璁缁冭繃绋嬬殑绫
+- 鍦ㄨ缁冧腑锛岄渶瑕佺‘瀹氳缁冪殑鎹熷け鍑芥暟锛屾彁渚涗竴浜涘唴缃鐨勫父鐢ㄦ崯澶卞嚱鏁板拰鑷瀹氫箟鐨勫嚱鏁
+- 璁缁冭繕闇瑕佷竴浜涘弬鏁帮紝濡傝缁僢atch銆佸︿範鐜囩瓑绛夛紝浠ュ強浜ゅ弶楠岃瘉绛夎缁冩柟娉
+
+### Unify optimization structure
+缁欏畾鑷瀹氫箟鐨勬暟鎹闆嗕互鍙婅缁冨櫒涔嬪悗锛屽氨鍙浠ュ湪涓涓缁熶竴鐨勮缁冩嗘灦涓嬪畬鎴愭墍闇鐨勮缁冩ā寮忎簡锛
+杩欓噷鍚屾牱闇瑕佽惧畾浼樺寲杩囩▼鐨勭浉鍏冲弬鏁
+
+### Result Visual
+
+- 绮惧害瀵规瘮鍥
+- 鍙瑙ｉ噴鎬х粨鏋滃浘
+- 鍙傛暟瀵讳紭鍥
+- 鎹熷け鍑芥暟鍙樺寲鍥
+
+
