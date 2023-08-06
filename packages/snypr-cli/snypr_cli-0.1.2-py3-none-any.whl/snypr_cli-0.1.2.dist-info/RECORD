@@ -1,0 +1,9 @@
+omega/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+omega/cli/configuration.py,sha256=WctfB-J0OD2DEM9eV52G-xez4MKpwCOHvkgPJrO8Vbw,428
+omega/cli/convert.py,sha256=0ODo3DkYM6yr7fEGphrcAfz0pgnds1CVKrb_r44Twsw,1069
+omega/cli/main.py,sha256=IYqBpV6dgB20SQgibQIagGZEwcnBrv2zqdx0f8RP7e0,206
+omega/cli/spotter.py,sha256=kEceeMasHopb5l7FED_zPfpNGHmI_l5iKYqyQjfV6Qg,6804
+snypr_cli-0.1.2.dist-info/entry_points.txt,sha256=ClapxerwPfJxbp5l_989VViiBCjP1jhYnsZjl3gyPQM,49
+snypr_cli-0.1.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+snypr_cli-0.1.2.dist-info/METADATA,sha256=-pR2K_DKuHQiDoPCNoqi2XIQwpbhRit14RbrVK2G9h4,589
+snypr_cli-0.1.2.dist-info/RECORD,,
