@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MultiSpecX
+Version: 0.1.0
+Summary: A package for calculating vibrational spectra of condensed-phase systems
+Home-page: https://github.com/shuds13/pyexample
+Author: Alexei A. Kananenka
+Author-email: akanane@udel.edu
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: iOS
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: mdtraj
+
