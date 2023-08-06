@@ -1,0 +1,10 @@
+LICENSE
+README.md
+deims.py
+pyproject.toml
+setup.cfg
+deims.egg-info/PKG-INFO
+deims.egg-info/SOURCES.txt
+deims.egg-info/dependency_links.txt
+deims.egg-info/requires.txt
+deims.egg-info/top_level.txt
