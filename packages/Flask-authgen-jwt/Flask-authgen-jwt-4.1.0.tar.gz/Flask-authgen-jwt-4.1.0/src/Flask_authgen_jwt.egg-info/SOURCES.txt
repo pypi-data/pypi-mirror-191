@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/flask_authgen_jwt.py
+src/Flask_authgen_jwt.egg-info/PKG-INFO
+src/Flask_authgen_jwt.egg-info/SOURCES.txt
+src/Flask_authgen_jwt.egg-info/dependency_links.txt
+src/Flask_authgen_jwt.egg-info/not-zip-safe
+src/Flask_authgen_jwt.egg-info/requires.txt
+src/Flask_authgen_jwt.egg-info/top_level.txt
