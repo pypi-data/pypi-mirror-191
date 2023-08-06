@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: epot_test_deps
+Version: 3.1.1
+Summary: Deps of `epot-test`
+Author-email: Conchylicultor <etils@google.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# epot-test-deps
+
+Test dependency for `epot-test`.
+
+See: https://github.com/marketplace/actions/pypi-github-auto-release
+
