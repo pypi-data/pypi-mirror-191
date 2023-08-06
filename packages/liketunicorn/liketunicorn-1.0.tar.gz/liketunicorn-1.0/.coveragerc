@@ -1,0 +1,16 @@
+[run]
+omit =
+    */__init__.py
+    __main__.py
+    */main.py
+
+[report]
+exclude_lines =
+    def main()
+    if TYPE_CHECKING:
+    pragma: no cover
+    if __name__ == .__main__.:
+    @(abc\.)?abstractmethod
+
+[html]
+directory = covreport
