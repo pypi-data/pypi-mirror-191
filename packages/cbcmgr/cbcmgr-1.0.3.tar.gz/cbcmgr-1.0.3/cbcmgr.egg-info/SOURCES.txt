@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+cbcmgr/__init__.py
+cbcmgr/cb_connect.py
+cbcmgr/cb_session.py
+cbcmgr/exceptions.py
+cbcmgr/httpsessionmgr.py
+cbcmgr/retry.py
+cbcmgr.egg-info/PKG-INFO
+cbcmgr.egg-info/SOURCES.txt
+cbcmgr.egg-info/dependency_links.txt
+cbcmgr.egg-info/requires.txt
+cbcmgr.egg-info/top_level.txt
