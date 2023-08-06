@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PointSystem
+Version: 1.2.2
+Summary: A small project for a point system
+Project-URL: Homepage, https://github.com/sandfrys/PointSystem
+Project-URL: Bug Tracker, https://github.com/sandfrys/PointSystem/issues
+Author-email: Totallyahuman15 <sandfrysyt@gmail.com>
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# This is just something I made for fun :)
