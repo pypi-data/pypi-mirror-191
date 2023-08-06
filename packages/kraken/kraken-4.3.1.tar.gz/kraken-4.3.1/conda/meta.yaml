@@ -1,0 +1,39 @@
+package:
+  name: kraken
+  version: {{ GIT_DESCRIBE_TAG }}
+
+source:
+  git_url: ..
+
+requirements:
+  build:
+     - python
+     - setuptools
+     - pbr
+  run:
+     - python-bidi
+     - lxml
+     - regex
+     - requests
+     - click>=8.1
+     - numpy<=1.23.99
+     - pillow>=9.2.0
+     - scipy
+     - jinja2
+     - conda-forge::torchvision>=0.12.0
+     - conda-forge::pytorch>=1.12.0
+     - cudatoolkit>=10.0
+     - jsonschema
+     - scikit-image>=0.17.0,<=0.19.3
+     - shapely==1.8.5
+     - pyvips
+     - coremltools>=4.0
+     - pyarrow
+     - conda-forge::pytorch-lightning>=1.7
+     - conda-forge::torchmetrics>=0.10.0
+     - conda-forge::albumentations
+     - conda-forge::rich
+about:
+  home: http://kraken.re
+  license: APACHE
+  summary: 'OCR/HTR engine for all the languages'
