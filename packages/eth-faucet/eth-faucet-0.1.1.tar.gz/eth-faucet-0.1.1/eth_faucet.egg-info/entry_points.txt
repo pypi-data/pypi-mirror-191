@@ -1,0 +1,3 @@
+[console_scripts]
+eth-faucet-gen = eth_faucet.runnable.gen:main
+eth-faucet-publish = eth_faucet.runnable.publish:main
