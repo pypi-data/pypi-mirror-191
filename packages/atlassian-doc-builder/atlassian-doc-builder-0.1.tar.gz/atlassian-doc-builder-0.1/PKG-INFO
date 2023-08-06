@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: atlassian-doc-builder
+Version: 0.1
+Summary: Creating Atlassian Document in a programmatic way.
+Home-page: https://github.com/khwong-c/atlassian-doc-builder
+Author: khwong-c
+Author-email: kin.hin.wong.c@gmail.com 
+License: MIT License
+Requires: jsonschema
+License-File: LICENSE

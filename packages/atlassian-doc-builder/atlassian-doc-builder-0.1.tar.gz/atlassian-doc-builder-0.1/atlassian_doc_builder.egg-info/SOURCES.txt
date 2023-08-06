@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+atlassian_doc_builder/__init__.py
+atlassian_doc_builder/adf_object.py
+atlassian_doc_builder.egg-info/PKG-INFO
+atlassian_doc_builder.egg-info/SOURCES.txt
+atlassian_doc_builder.egg-info/dependency_links.txt
+atlassian_doc_builder.egg-info/top_level.txt
