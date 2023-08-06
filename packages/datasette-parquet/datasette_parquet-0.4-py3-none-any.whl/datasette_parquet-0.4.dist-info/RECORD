@@ -1,0 +1,14 @@
+datasette_parquet/__init__.py,sha256=P7if-whYiOC9vWXlksYNqkOUJmdoDWDhFozuAaM08MM,891
+datasette_parquet/ddl.py,sha256=JV7auDPbO64HgS43EHvplW8lqsPwJrOiAHrwv1w86sk,1628
+datasette_parquet/debounce.py,sha256=CnNL_jk5JbvWh3zkMy6c-D_tqkDAJYGjLn7A8dkxhrM,993
+datasette_parquet/ducky.py,sha256=2_RwPs8hsRGmbi10iQgkkPIvhnmeV38wUX6r843I4Rg,2890
+datasette_parquet/patches.py,sha256=tAsc2VVvjKdg2mWyQ6s5NnQQD48vGxs1JPKYiWdrXNg,590
+datasette_parquet/rewrite.py,sha256=tz3z6lfpOO1ADcLrYzPXsNIbqwn-ZadmE40dboouUQc,2806
+datasette_parquet/winging_it.py,sha256=5J-ibKWXiWUYLaTW4H6vfgn3_vgOCjqEVUKJT4ljTqo,4025
+datasette_parquet-0.4.dist-info/COPYING,sha256=oZmDdHBh2kwsqjd0hPJqJnxchCBmKQL9ac1Y_0L96Bc,1761
+datasette_parquet-0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_parquet-0.4.dist-info/METADATA,sha256=wDCSdy7jfxZ7DzYJ6o5zIzFThLSpSn4FUj6YezyvwjE,8318
+datasette_parquet-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datasette_parquet-0.4.dist-info/entry_points.txt,sha256=kirQGSDx5w-hDfu5Dl9UDd7QlEhmZDaUIBdC1nKivps,40
+datasette_parquet-0.4.dist-info/top_level.txt,sha256=kQqbRYQ1aprLX3ynnGNZHvPAY4RN0DhAJ2It1vla8lk,18
+datasette_parquet-0.4.dist-info/RECORD,,

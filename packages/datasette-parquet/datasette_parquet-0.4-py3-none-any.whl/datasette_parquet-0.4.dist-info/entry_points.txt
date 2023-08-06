@@ -1,0 +1,2 @@
+[datasette]
+parquet = datasette_parquet
