@@ -1,0 +1,8 @@
+requests
+simplejson
+numpy
+pandas
+kaleido
+fpdf
+plotly
+redmail
