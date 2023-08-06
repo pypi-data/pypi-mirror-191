@@ -1,0 +1,1 @@
+from kolibri.backend.sklearn.extensions.lazy_learner import LazyRegression
