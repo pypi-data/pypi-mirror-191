@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/python/txtchat/__init__.py
+src/python/txtchat.egg-info/PKG-INFO
+src/python/txtchat.egg-info/SOURCES.txt
+src/python/txtchat.egg-info/dependency_links.txt
+src/python/txtchat.egg-info/top_level.txt
