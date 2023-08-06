@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: larkspur
+Version: 0.2.3
+Summary: a Redis-backed, scalable Bloom filter
+Author: Thomas R Storey
+Author-email: orey.st@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: redis (>=3.5.3,<4.0.0)
