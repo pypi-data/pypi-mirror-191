@@ -1,0 +1,9 @@
+httpx
+requests
+tqdm
+opencv-python
+numpy
+pandas
+pymysql
+psycopg2
+redis
