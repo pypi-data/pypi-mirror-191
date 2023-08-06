@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: finbright_futures
+Version: 0.0.4
+Summary: binance futures api
+Author-email: Hamid Moradi <hordimad21@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.28.2
+Requires-Dist: rich>=13.2.0
+Requires-Dist: tqdm>=4.64.1
+Requires-Dist: urllib3>=1.26.14
+Description-Content-Type: text/markdown
+
+# Binance Futures HTTPS client
