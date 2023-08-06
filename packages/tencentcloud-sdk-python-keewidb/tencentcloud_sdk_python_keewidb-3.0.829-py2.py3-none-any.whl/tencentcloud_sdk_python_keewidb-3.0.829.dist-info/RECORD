@@ -1,0 +1,10 @@
+tencentcloud/__init__.py,sha256=eM0H6fPwCkYJfimcqg5F_1xoEGc1qTQaRfsdrgLb-qQ,630
+tencentcloud/keewidb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/keewidb/v20220308/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/keewidb/v20220308/errorcodes.py,sha256=DdrHLRKusP1H5JmedlzKn0kWGxndzdBQzjd7UqOfu3g,5675
+tencentcloud/keewidb/v20220308/keewidb_client.py,sha256=HoWhjKRpbF0XLSsDM6kQxPjfe9cDd-c3zoFRDnKoI4s,35268
+tencentcloud/keewidb/v20220308/models.py,sha256=G00d4NrdociciEoFqMY0iO5E2qziaLRnNcu3EGQfR0U,131610
+tencentcloud_sdk_python_keewidb-3.0.829.dist-info/METADATA,sha256=qQKfCW-8kkA6cmluExdIWLoB9cuG3SaZK0Fqoh0fMFs,1452
+tencentcloud_sdk_python_keewidb-3.0.829.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tencentcloud_sdk_python_keewidb-3.0.829.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_keewidb-3.0.829.dist-info/RECORD,,
