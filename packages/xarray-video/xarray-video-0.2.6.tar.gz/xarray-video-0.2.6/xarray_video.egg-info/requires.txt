@@ -1,0 +1,6 @@
+xarray
+numcodecs
+av==9.2.0
+
+[plotting]
+matplotlib
