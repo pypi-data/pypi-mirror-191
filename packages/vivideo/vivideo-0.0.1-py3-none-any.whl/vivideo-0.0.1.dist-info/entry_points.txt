@@ -1,0 +1,3 @@
+[console_scripts]
+vivideo-edit = vivideo.edit:edit_main
+vivideo-transcribe = vivideo.transcribe:transcribe_main
