@@ -1,0 +1,8 @@
+pyqt_openai/__init__.py,sha256=d_q48-7mIOuCGhXlI4d20iW7Np9OptD5wBEDxp-9ojo,50
+pyqt_openai/chatWidget.py,sha256=9Tg1J2Sa7RCcmR4Xf_KRdBCvQcvOuhhD9BmvkSwptRo,2505
+pyqt_openai/main.py,sha256=uaMJ1RYx0rgoJM2NHm9EiOD63_UihVkQWP8rh7wABiw,6466
+pyqt_openai-0.0.121.dist-info/LICENSE,sha256=9rl72iiTYvrFm5LduQxySwfjTTDk3t8jGCfyGJWv22Q,1091
+pyqt_openai-0.0.121.dist-info/METADATA,sha256=8cSc17xjSOATPtzkmtls2_PVbEncyCBq8ve28incu4Y,2325
+pyqt_openai-0.0.121.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyqt_openai-0.0.121.dist-info/top_level.txt,sha256=JFp4TxcSacZlQ2EOPRYs_0xdkS1jbsea90uhlJXBJQQ,12
+pyqt_openai-0.0.121.dist-info/RECORD,,
