@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/detectors.py
+src/detectors_world.py
+src/detectors_world.egg-info/PKG-INFO
+src/detectors_world.egg-info/SOURCES.txt
+src/detectors_world.egg-info/dependency_links.txt
+src/detectors_world.egg-info/requires.txt
+src/detectors_world.egg-info/top_level.txt
