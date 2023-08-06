@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pwclient
+Version: 2.5.0
+Summary: The command-line client for the Patchwork patch tracking tool
+Home-page: https://github.com/getpatchwork/pwclient
+Author: Nate Case
+Author-email: ncase@xes-inc.com
+Maintainer: Stephen Finucane
+Maintainer-email: stephen@that.guru
+License: GPL v2
+Project-URL: Bug Tracker, https://github.com/getpatchwork/pwclient/issues
+Project-URL: Source Code, https://github.com/getpatchwork/pwclient
+Project-URL: Documentation, https://pwclient.readthedocs.io
+Keywords: patchwork api
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: COPYING
+
+The command-line client for the Patchwork patch tracking tool
