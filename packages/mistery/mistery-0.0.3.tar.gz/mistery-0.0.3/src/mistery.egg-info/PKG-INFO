@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mistery
+Version: 0.0.1
+Summary: Python module for retrieving data from the MESA Isochrones and Stellar
+Author: Warrick Ball
+Project-URL: Homepage, https://gitlab.com/warrickball/mistery
+Project-URL: Bug Tracker, https://gitlab.com/warrickball/mistery/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mistery
+
+``mistery`` (c.f. "MIST query") is a Python module for retrieving data
+from the [MESA Isochrones and Stellar
+Tracks](http://waps.cfa.harvard.edu/MIST/) (MIST) database of stellar
+models.  The module allows you to fetch data by submitting requests to
+the web interpolator.  It is intended as a lightweight teaching tool
+that lets students access real-world stellar model data.  If you're
+doing intensive scientific work, you're probably better off accessing
+the data in other ways (e.g. by downloading [packaged model
+grids](http://waps.cfa.harvard.edu/MIST/model_grids.html)).
+
+To use ``mistery``, copy the module file ``mistery.py`` to somewhere
+your Python interpreter will find it (e.g. your working directory or
+somewhere in your ``$PYTHON_PATH``).  Then fetch a single track with
+
+```python
+    track = mistery.get_track(M=3.1081, FeH=-0.8128)
+```
+
+The data is returned as a structured NumPy array. i.e. you can access
+the columns by name rather than number.  To see a list of names, use
+
+```python
+    print(track.dtype.names)
+```
+
+and access columns with statements like ``track['log_L']``.
+
+You can download multiple tracks in one call by instead passing an
+iterable of masses to ``mistery.get_tracks``, e.g.
+
+```python
+    tracks = mistery.get_tracks(M=[1.086718, 2.8511], FeH=0.012756)
+```
+
+The data in ``tracks`` is now a list of tracks and can be accessed
+with e.g. ``tracks[0]['log_L']``.

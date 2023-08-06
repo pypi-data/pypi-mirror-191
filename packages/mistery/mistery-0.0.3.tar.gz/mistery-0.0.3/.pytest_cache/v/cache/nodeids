@@ -1,0 +1,6 @@
+[
+  "tests/test_mistery.py::TestMistery::test_argument_bounds",
+  "tests/test_mistery.py::TestMistery::test_argument_types",
+  "tests/test_mistery.py::TestMistery::test_interpolate",
+  "tests/test_mistery.py::TestMistery::test_mass_lower_bound"
+]

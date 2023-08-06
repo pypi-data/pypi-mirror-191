@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/mistery/__init__.py
+src/mistery.egg-info/PKG-INFO
+src/mistery.egg-info/SOURCES.txt
+src/mistery.egg-info/dependency_links.txt
+src/mistery.egg-info/top_level.txt
