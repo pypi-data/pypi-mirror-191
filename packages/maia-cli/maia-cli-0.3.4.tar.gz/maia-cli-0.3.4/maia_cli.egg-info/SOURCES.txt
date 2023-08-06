@@ -1,0 +1,8 @@
+README.md
+main.py
+setup.py
+maia_cli.egg-info/PKG-INFO
+maia_cli.egg-info/SOURCES.txt
+maia_cli.egg-info/dependency_links.txt
+maia_cli.egg-info/entry_points.txt
+maia_cli.egg-info/top_level.txt
