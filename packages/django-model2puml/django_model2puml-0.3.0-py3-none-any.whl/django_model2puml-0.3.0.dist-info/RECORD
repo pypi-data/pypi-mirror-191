@@ -1,0 +1,17 @@
+django2puml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django2puml/asgi.py,sha256=gPH7n2qIY1jcNbrglw3YjYLSKe19_pmKf8Hh0Wt2sn4,399
+django2puml/settings.py,sha256=kQ32IPUkIfMyKaKS_ACKiCnqmtrQthv5cFr3zZG57k8,629
+django2puml/urls.py,sha256=iltDEpWDggiZHGwiUK8Rolkq2yW0fz0LORoRZWqHmhk,760
+django2puml/wsgi.py,sha256=fOoYbQhcDoKRol8KLDUtWsG_5_8CaoCfYFEzt8ypzB0,399
+puml_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/apps.py,sha256=UUJVnT6VqrBrd5vUktfDGntNNKULXGMHYU8I4P7I8dc,101
+puml_generator/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/generate_puml.py,sha256=gQe7EO8lQpJA9uY3Bte5py3Xg7Ev-zqI8_3bQjlqEJs,3706
+puml_generator/management/commands/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/utils/utils.py,sha256=nHdx22hIDTGWbKHlptPlLQlZsgNJel9kacLk-jj0un4,11514
+django_model2puml-0.3.0.dist-info/LICENSE,sha256=QvJGlOo4w5mAolwpaTg7Q5pgx41_aczlOIHKQrhwp-0,1073
+django_model2puml-0.3.0.dist-info/METADATA,sha256=0brwT1onhljcVf-F2DGqAgVBeR3N679DVYC8P3yz6nQ,3694
+django_model2puml-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_model2puml-0.3.0.dist-info/top_level.txt,sha256=7L2Q_akBwHOs2YSetzf6uiHwdTA9ic6doEKIm77kG_M,27
+django_model2puml-0.3.0.dist-info/RECORD,,
