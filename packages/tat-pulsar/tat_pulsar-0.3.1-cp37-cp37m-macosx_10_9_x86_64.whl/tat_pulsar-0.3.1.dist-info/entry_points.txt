@@ -1,0 +1,3 @@
+[console_scripts]
+TATResiduals = tatpulsar.launcher.TATResiduals:main
+TATfold2d = tatpulsar.launcher.TATfold2d:main
