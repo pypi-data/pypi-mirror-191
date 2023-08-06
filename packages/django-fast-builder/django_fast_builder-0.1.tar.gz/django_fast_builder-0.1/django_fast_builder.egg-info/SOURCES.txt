@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+django_fast_builder/__init__.py
+django_fast_builder/main.py
+django_fast_builder.egg-info/PKG-INFO
+django_fast_builder.egg-info/SOURCES.txt
+django_fast_builder.egg-info/dependency_links.txt
+django_fast_builder.egg-info/not-zip-safe
+django_fast_builder.egg-info/top_level.txt
