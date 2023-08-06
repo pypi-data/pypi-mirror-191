@@ -1,0 +1,3 @@
+[console_scripts]
+supervise_jobs = jobs_supervisor.supervise_jobs:main
+
