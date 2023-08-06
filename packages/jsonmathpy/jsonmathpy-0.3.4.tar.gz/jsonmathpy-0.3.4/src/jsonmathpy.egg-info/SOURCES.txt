@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/jsonmathpy/math_json.py
+src/jsonmathpy.egg-info/PKG-INFO
+src/jsonmathpy.egg-info/SOURCES.txt
+src/jsonmathpy.egg-info/dependency_links.txt
+src/jsonmathpy.egg-info/top_level.txt
+src/jsonmathpy/interpreter/__init__.py
+src/jsonmathpy/interpreter/interpreter.py
+src/jsonmathpy/interpreter/lexer.py
+src/jsonmathpy/interpreter/nodes.py
+src/jsonmathpy/interpreter/parser_.py
+src/jsonmathpy/interpreter/token.py
+src/jsonmathpy/interpreter/types.py
