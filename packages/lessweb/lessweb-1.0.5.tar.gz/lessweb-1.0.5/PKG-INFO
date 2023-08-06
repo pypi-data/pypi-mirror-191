@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lessweb
+Version: 1.0.5
+Summary: A pythonic web framework
+Home-page: https://github.com/lessweb/lessweb
+Author: qorzj
+Author-email: goodhorsezxj@gmail.com
+License: Apache 2
+Keywords: lessweb web web.py aiohttp
+Platform: any
+License-File: LICENSE.txt
+
+
+README: https://github.com/lessweb/lessweb
+
+Cookbook: http://www.lessweb.cn
+
