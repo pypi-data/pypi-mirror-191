@@ -1,0 +1,7 @@
+# Test-only dependencies are unpinned.
+coverage
+mock
+flake8
+ipython
+twine
+ipdb

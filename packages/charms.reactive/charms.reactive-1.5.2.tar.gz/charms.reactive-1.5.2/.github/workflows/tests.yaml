@@ -1,0 +1,45 @@
+name: Test Suite
+on: [pull_request]
+jobs:
+  lint-and-unit-tests:
+    name: Lint & Unit Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python:
+          - '3.7'
+          - '3.8'
+          - '3.9'
+          - '3.10'
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Tox
+        run: pip install tox
+      - name: Run lint & unit tests
+        run: tox
+
+  integration-test:
+    name: Integration test with LXD
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Setup operator environment
+      uses: charmed-kubernetes/actions-operator@main
+      with:
+        provider: lxd
+        bootstrap-options: "--agent-version 2.9.29"
+    - name: Install extra tools
+      run: |
+        sudo snap install juju-wait --classic
+    - name: Run integration test
+      run: tests/integration.sh
