@@ -1,0 +1,2 @@
+[console_scripts]
+makepie = makepie.__main__:makepie
