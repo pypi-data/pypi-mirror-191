@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: python-code-parse
+Version: 0.0.6
+Summary: Parse code to get information about functions, etc.
+Author-email: Jake Cyr <cyrjake@gmail.com>
+License: MIT
+Keywords: code,parse,python,ast,abstract syntax tree
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+
+# Python Code Parser
+
+Parse Python code to extract information about functions, classes, methods, etc.
+
+## Install with pip
+
+```bash
+pip install python_code_parse
+```
+
+## Usage
+
+Below is the output of running the parser on the example `examples/basic_example.py`:
+
+```python
+from python_code_parse import get_all_function_info_from_code, FunctionInfo
+from typing import List
+
+with open("examples/basic_example.py", "r") as f:
+    data = f.read()
+
+function_infos: List[FunctionInfo] = get_all_function_info_from_code(data)
+
+print(function_infos)
+
+"""
+[
+  FunctionInfo(
+    name='sum',
+    args=[
+      FunctionArg(name='a', annotation='int'),
+      FunctionArg(name='b', annotation='')
+      ],
+      return_type='None',
+      line=1
+    ),
+    FunctionInfo(
+      name='subtract',
+      args=[
+        FunctionArg(name='a', annotation=''),
+        FunctionArg(name='b', annotation='')
+      ],
+      return_type='int',
+      line=4
+    )
+]
+"""
+```
+
+## Setup for Development
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -e .
+pip install -e .[dev]
+```
+
+## Upload to PyPi
+
+First you have to build the wheel file:
+
+```bash
+python3 -m pip wheel .
+```
+
+Then the wheel file can be uploaded to PyPi with:
+
+```bash
+twine upload --skip-existing python_code_parse-*.whl
+```
