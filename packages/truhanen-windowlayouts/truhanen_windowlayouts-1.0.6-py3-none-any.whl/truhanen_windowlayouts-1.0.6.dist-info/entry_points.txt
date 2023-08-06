@@ -1,0 +1,3 @@
+[console_scripts]
+windowlayouts=truhanen.windowlayouts:main
+
