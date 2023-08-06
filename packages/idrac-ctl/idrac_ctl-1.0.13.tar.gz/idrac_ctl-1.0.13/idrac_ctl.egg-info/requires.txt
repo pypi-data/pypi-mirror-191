@@ -1,0 +1,8 @@
+requests~=2.28.2
+tqdm~=4.61
+urllib3~=1.26.6
+pygments==2.14.0
+setuptools~=67.0.0
+
+[dev]
+pytest>=3.7
