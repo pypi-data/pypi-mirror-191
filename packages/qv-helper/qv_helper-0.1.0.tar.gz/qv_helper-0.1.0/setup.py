@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+package_dir = \
+{'': 'src'}
+
+packages = \
+['qv_helper']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['matplotlib>=3.6.3,<4.0.0',
+ 'pandas>=1.5.3,<2.0.0',
+ 'scipy>=1.10.0,<2.0.0',
+ 'seaborn>=0.12.2,<0.13.0',
+ 'tabulate>=0.9.0,<0.10.0']
+
+setup_kwargs = {
+    'name': 'qv-helper',
+    'version': '0.1.0',
+    'description': 'A helper package for quick visualization',
+    'long_description': "# Quick Visualization Helper\n\n> THE helper package for Quick Visualization that you need\n\n`qv_helper` is a newly designed package to faciliate data visualization. As researchers or analysts, we often need to perform preliminary visualizations before analysis. While the plots may show some seemingly promosing effects, a statistical test may reveal the other wise.\n\nSometimes, we will want to look at both the plots and the statistical tests results. Currently, there is no single package or function that performs both visualization and tests simutaneously. Having statistical tests results automatically generated can facilitate the pipeline of exploratory data analysis (EDA) while helping researchers to quickly grap a better sense of the data with statistics as supplements to plots. This is why I wanto to build `qv_helper`. With `qv_helper`, visualizations and statistical tests are no longer separated by parallel processes, achieving by just 1 line of code.\n\nWhile the package is specially designed for EDA, it is more recommended to be used in notebook documents instead of in the terminal.\n\n## Usage\n\n### Installation\n\nInstallation is easy as the package is published in PyPI.\n\n```bash\n$ pip install qv_helper\n```\n\n### `qv_groups`\n\nTo illustrate the functionalities, the [Palmer penguins dataset](https://github.com/mcnakhaee/palmerpenguins) will be used.\n\n`qv_groups` take 1 numeric variable and 1 categorical variable to build a histogram for the numeric variable and a boxplot of the numeric variable grouped by the categorical variable. When there are more than 2 classes in the grouping variable, a one-way ANOVA test will be performed.\n\n```python\nfrom palmerpenguins import load_penguins\ndf = load_penguins()\nfrom qv_helper.qv_helper import qv_groups\nqv_groups(value='bill_length_mm', group='species', data=df, title='Bill Length in Different Species', xlabel='Bill length (mm)', ylabel='Species')\n```\n\n```text\nNull values are dropped in statistical tests.\nTest                F       p\n-------------  ------  ------\nOne-way ANOVA  397.30  0.0000\n```\n\n![](docs/img/README-01-qv_groups-F.png)\n\nWhen there are only 2 groups, t-tests will be performed automatically.\n\n```python\nqv_groups(value='bill_length_mm', group='sex', data=df, title='Bill Length in 2 Sex', xlabel='Bill length (mm)', ylabel='Sex')\n```\n\n```text\nNull values are dropped in statistical tests.\nTest                       t       p\n----------------------  ----  ------\nEqual var. assumed      0.00  1.0000\nEqual var. not assumed  0.00  1.0000\n```\n\n![](docs/img/README-01-qv_groups-t.png)\n\n### `qv_scatter`\n\n`qv_scatter` takes 2 numeric values as arguments and plot the corresponding scatter plot. 2 correlation statistics will be printed based on the needs of users.\n\n```python\nqv_scatter(valuex='bill_length_mm', valuey='bill_depth_mm', data=df, title='Relationship between Bill Length and Bill Depth', xlabel='Bill Length (mm)', ylabel='Bill Depth (mm)')\n```\n\n```text\nNull values are dropped in statistical tests.\nTest                r       p\n------------  -------  ------\nPearson's r   -0.2286  0.0000\nSpearman's r  -0.2139  0.0001\n```\n\n![](docs/img/README-02-qv_scatter.png)\n\n### `qv_2cat`\n\n`qv_2cat` takes 2 categorical variables as arguments and plot the corresponding heatmap and a stacked barchart for to illustrate the proportion of each class in `groupx` in `groupy`. When both of the categorical variables are with exactly 2 classes, Barnard's exact test and Fisher's exact test will also be performed.\n\n```python\nqv_2cat(groupx='species', groupy='island', data=df, title_heatmap='Count of each Species on each Island',\n    title_bar='Proportion of each Species on each Island', xlabel='Species', ylabel='Island')\n```\n\n```text\nTest              Test statistic      Value    df       p\n----------------  ----------------  -------  ----  ------\nChi-squared test  Chi-squared        299.55     4  0.0000\n```\n\n![](docs/img/README-03-qv_2cat.png)\n\n### `qv_count`\n\n`qv_count` takes 1 categorical variable as argument and plot a barchart. The count in numeric values will also be printed and supplemented by the the number of null values.\n\n```python\nqv_count(value='species', data=df, title='Count of each Species', label='Species')\n```\n\n```text\nGroup        Count\n---------  -------\nAdelie         152\nGentoo         124\nChinstrap       68\nNA               0\n```\n\n![](docs/img/README-04-qv_count.png)\n\n### `qv_dist`\n\n`qv_dist` takes 1 numeric variable as argument and plot a histogram. Summary statistics will be printed as well.\n\n```python\nqv_dist(value='bill_length_mm', data=df, title='Distribution of Bill Length', label='Bill Length (mm)')\n```\n\n```text\nNull values are dropped in the chart and statistics.\nStatistics      Value\n------------  -------\nMean            43.99\nVariance        29.82\nSample size    333.00\n# of NAs         0.00\nSkewness         0.05\n```\n\n![](docs/img/README-05-qv_dist.png)\n\n## Contributing\n\nInterested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.\n\n## License\n\n`qv_helper` was created by Morris Chan. It is licensed under the terms of the MIT license.\n\n## Credits\n\n`qv_helper` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).\n\nSpecial thanks go to @MNBhat, @Lorraine97, @austin-shih, who finished an academic project in `prelim_eda_helper` with me. `Quick Visualizaiont Helper` is inspired by `prelim_eda_helper`. The development of the current project is agreed by all authors of `prelim_eda_helper`.\n",
+    'author': 'Morris Chan',
+    'author_email': 'None',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'None',
+    'package_dir': package_dir,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<3.12',
+}
+
+
+setup(**setup_kwargs)
