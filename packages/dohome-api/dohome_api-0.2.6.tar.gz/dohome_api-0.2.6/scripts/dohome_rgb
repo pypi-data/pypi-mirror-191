@@ -1,0 +1,71 @@
+#!/usr/bin/env python
+"""DoHome Lights API CLI script"""
+from arrrgs import command, arg, global_args, run
+from dohome_api import DoHomeGateway, DoHomeLightsBroadcast
+
+global_args(
+    arg("--sids", "-s", default=None, help="Comma separated list of devices sID"),
+    arg("--debug", "-g", action='store_true', help="Enables debugging output")
+)
+
+brightness_arg = arg("--brightness", "-b", type=int, default=None, help="0-255 brightness value")
+
+@command()
+async def state(_, lights: DoHomeLightsBroadcast):
+    """Prints lights state"""
+    current_state = await lights.get_state()
+    print(current_state)
+
+@command()
+async def disable(_, lights: DoHomeLightsBroadcast):
+    """Disables lights"""
+    await lights.turn_off()
+
+@command()
+async def enable(_, lights: DoHomeLightsBroadcast):
+    """Enables lights"""
+    await lights.turn_on()
+
+def _hex_to_rgb(hex_color: str):
+    if len(hex_color) == 7:
+        hex_color = hex_color[1:]
+    return tuple(int(hex_color[i : i + 2], 16) for i in (0, 2, 4))
+
+@command(
+    arg("color", default=None, help="HEX color value"),
+    brightness_arg,
+)
+async def color(args, lights: DoHomeLightsBroadcast):
+    """Set lights color"""
+    rgb = _hex_to_rgb(args.color)
+    if args.brightness:
+        await lights.set_rgb(rgb, args.brightness)
+    else:
+        await lights.set_rgb(rgb)
+
+@command(
+    arg("temperature", type=int, default=None, help="Mireds value. Between 166 and 400"),
+    brightness_arg,
+)
+async def white(args, lights: DoHomeLightsBroadcast):
+    """Set light white temperature. """
+    if args.brightness:
+        await lights.set_white(args.temperature, args.brightness)
+    else:
+        await lights.set_white(args.temperature)
+
+async def prepare(args):
+    """Prepare DoHome API"""
+    gateway = DoHomeGateway('192.168.1.255')
+    if args.sids is None:
+        sids = await gateway.discover_devices()
+    else:
+        # Parse sids
+        entries = args.sids.split(",")
+        sids = list(map(lambda x: x.strip(), entries))
+    lights = gateway.add_lights(sids)
+    args.sids = sids
+    return args, lights
+
+if __name__ == "__main__":
+    run(prepare=prepare)
