@@ -1,0 +1,22 @@
+2023-02-13 22:32:31,258 - ================================================================================
+2023-02-13 22:32:31,258 - EXPERIMENT STARTED
+2023-02-13 22:32:31,258 -     namespace:          example/inheritance
+2023-02-13 22:32:31,258 -     start time:         Monday, 13 Feb 2023  at 22:32
+2023-02-13 22:32:31,258 -     archive path:       /media/data/Programming/PyCharm/pycomex/pycomex/examples/example/inheritance/debug
+2023-02-13 22:32:31,258 -     debug mode?         True
+2023-02-13 22:32:31,258 - ================================================================================
+2023-02-13 22:32:31,770 - removing 10 random words
+2023-02-13 22:32:31,772 - saved text file with 3824 characters
+2023-02-13 22:32:31,773 - saved text file with 3764 characters
+2023-02-13 22:32:31,775 - saved text file with 3750 characters
+2023-02-13 22:32:31,775 - We can even use the logging here!
+2023-02-13 22:32:31,779 - ================================================================================
+2023-02-13 22:32:31,780 - EXPERIMENT ENDED
+2023-02-13 22:32:31,780 -     start time:         Monday, 13 Feb 2023  at 22:32
+2023-02-13 22:32:31,780 -     end time:           Monday, 13 Feb 2023  at 22:32
+2023-02-13 22:32:31,780 -     duration:           0.000 hrs
+2023-02-13 22:32:31,780 -     error?              None
+2023-02-13 22:32:31,780 - ================================================================================
+2023-02-13 22:32:31,785 - Starting analysis of experiment results
+2023-02-13 22:32:31,785 - saved analysis results
+2023-02-13 22:32:31,790 - hello from sub experiment

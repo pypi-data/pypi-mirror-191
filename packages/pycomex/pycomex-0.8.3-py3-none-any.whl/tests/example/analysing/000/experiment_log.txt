@@ -1,0 +1,26 @@
+2023-02-13 22:33:35,834 - ================================================================================
+2023-02-13 22:33:35,834 - EXPERIMENT STARTED
+2023-02-13 22:33:35,834 -     namespace:          example/analysing
+2023-02-13 22:33:35,834 -     start time:         Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:35,834 -     archive path:       /media/data/Programming/PyCharm/pycomex/tests/example/analysing/000
+2023-02-13 22:33:35,834 -     debug mode?         False
+2023-02-13 22:33:35,835 - ================================================================================
+2023-02-13 22:33:36,001 - saved text file with 7671 characters
+2023-02-13 22:33:36,004 - saved text file with 7571 characters
+2023-02-13 22:33:36,006 - saved text file with 7532 characters
+2023-02-13 22:33:36,009 - saved text file with 7556 characters
+2023-02-13 22:33:36,011 - saved text file with 7655 characters
+2023-02-13 22:33:36,013 - saved text file with 7763 characters
+2023-02-13 22:33:36,015 - saved text file with 7586 characters
+2023-02-13 22:33:36,017 - saved text file with 7649 characters
+2023-02-13 22:33:36,019 - saved text file with 7523 characters
+2023-02-13 22:33:36,022 - saved text file with 7698 characters
+2023-02-13 22:33:36,024 - ================================================================================
+2023-02-13 22:33:36,024 - EXPERIMENT ENDED
+2023-02-13 22:33:36,024 -     start time:         Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:36,025 -     end time:           Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:36,025 -     duration:           0.000 hrs
+2023-02-13 22:33:36,025 -     error?              None
+2023-02-13 22:33:36,025 - ================================================================================
+2023-02-13 22:33:36,040 - Starting analysis of experiment results
+2023-02-13 22:33:36,040 - saved analysis results
