@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "zana"
+version = "0.1.5"
+description = "general utility functions and types"
+authors = ["David Kyalo <davidmkyalo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/python-zana/zana"
+documentation = "https://python-zana.github.io/zana"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+keywords = [
+    "zana",
+    "toolkit",
+]
+packages = [{ include = "zana" }]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+typing-extensions = "^4.4.0"
+attrs = "^22.2.0"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+ipython = "^8.10.0"
+
+[tool.poetry.group.test]
+optional = true
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+pytest-asyncio = "^0.20.3"
+pytest-cov = {version = "^4.0.0", extras = ["toml"]}
+pytest-lazy-fixture = "^0.6.3"
+
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "*"
+mkdocs-material = "*"
+mike = "*"
+mkdocstrings = {version = "*", extras = ["python"]}
+
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = "True"
+
+
+[tool.pytest.ini_options]
+addopts = "--showlocals --cov=zana --cov-report html --cov-config pyproject.toml"
+asyncio_mode="auto"
+xfail_strict= "True"
+log_level = "DEBUG"
+python_files = "tests.py test.py test_*.py"
+python_classes = "test_* Test_*"
+python_functions = "test_* test"
+
+
+
+[tool.coverage.report]
+# Here we specify plugins for coverage to be used:
+exclude_lines = [
+    "pragma: no cover",
+    "^\\s*pass\\s*$",
+    "^\\s*\\.\\.\\.\\s*$",
+    "raise NotImplementedError",
+    "if\\s+([a-zA-Z0-9_]+\\.)?TYPE_CHECKING",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
