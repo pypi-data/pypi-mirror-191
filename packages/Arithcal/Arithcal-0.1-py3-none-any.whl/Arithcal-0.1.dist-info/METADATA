@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: Arithcal
+Version: 0.1
+Summary: A small example package
+Home-page: https://github.com/vikash130795/Arithcal
+Author: Vikash Singh
+Author-email: Vikash Singh <vikash@ineuron.ai>
+License: UNKNOWN
+Project-URL: Homepage, https://github.com/vikash130795/Arithcal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# ArithematicCalc: A Basic Arithematic Calculator
+-------------------
+## What is it?
+
+**ArithematicCalc** is a Python package that provides basic arithematic calculation 
+of two numbers such as addition, substraction, multiplication and division.
+
+## Functions
+ArithematicCalc
+
+This module contains basic calculator functions for addition, subtraction, multiplication, and division.
+
+Functions:
+
+    add(a, b)
+        Returns the sum of two numbers.
+
+    subtract(a, b)
+        Returns the difference of two numbers.
+
+    multiply(a, b)
+        Returns the product of two numbers.
+
+    divide(a, b)
+        Returns the division of two numbers.
+
+## Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/vikash130795/Arithcal
+
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/ArithematicCalc).
+
+
+```sh
+# PyPI
+pip install Arithcal
+```
+
+## License
+[MIT](LICENSE)
+
