@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "convnets"
+version = "0.2.6"
+description = "Convolutional Neural Networks and utilities for Computer Vision"
+authors = ["juansensio <sensio.juan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+black = "^22.12.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
