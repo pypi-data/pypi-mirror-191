@@ -1,0 +1,8 @@
+love_packaging/__init__.py,sha256=4ML4lJsMWebCqDU_BSWao-8PNR-XA0LhAq3iTJbvudo,47
+love_packaging/__main__.py,sha256=hx_2YRE3d9U1meK5MFzwq_7QYBWfc0JLo-qk9tvVbaM,158
+love_packaging/__version__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+love_packaging/windows_packager.py,sha256=gBUW3wXZW5_e7X3Mso4RJJ9mcV2fr4ibfPZy1cooQcs,8758
+love_packaging-0.1.1.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+love_packaging-0.1.1.dist-info/METADATA,sha256=LU136OdRxSHxBIBgL-TujwAu8waXOgmDZpwiy0E_lMM,1424
+love_packaging-0.1.1.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+love_packaging-0.1.1.dist-info/RECORD,,
