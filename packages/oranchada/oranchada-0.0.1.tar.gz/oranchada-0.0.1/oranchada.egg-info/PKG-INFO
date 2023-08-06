@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: oranchada
+Version: 0.0.1
+Summary: Orange add-on for Raman spectroscopy
+Home-page: https://github.com/h2020charisma/ramanchada-orange
+Author: IDEAconsult Ltd.
+Author-email: dev-charisma@ideaconsult.net
+License: MIT
+Keywords: Raman,oranchada,orange3 add-on,spectroscopy
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE
+
+# ramanchada-orange
+Orange workflow add-on with ramanchada2 functionality
+
+
+https://github.com/biolab/orange3-example-addon
+https://orange3.readthedocs.io/projects/orange-development/en/latest/tutorial.html#defining-a-widget
+
+For developers
+--------------
+
+If you would like to install from cloned git repository, run
+
+    pip install .
+
+To register this add-on with Orange, but keep the code in the development
+directory (do not copy it to Python's site-packages directory), run
+
+    pip install -e .
+
+Further details can be found in [CONTRIBUTING.md](CONTRIBUTING.md)

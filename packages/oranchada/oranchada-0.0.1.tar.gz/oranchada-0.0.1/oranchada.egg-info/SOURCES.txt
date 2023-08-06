@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+oranchada.egg-info/PKG-INFO
+oranchada.egg-info/SOURCES.txt
+oranchada.egg-info/dependency_links.txt
+oranchada.egg-info/entry_points.txt
+oranchada.egg-info/namespace_packages.txt
+oranchada.egg-info/not-zip-safe
+oranchada.egg-info/requires.txt
+oranchada.egg-info/top_level.txt
+orangecontrib/__init__.py
