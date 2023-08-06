@@ -1,0 +1,11 @@
+jancode/__init__.py,sha256=B-MhzQj-4yeEwsz3Kif7k5RibtsaKKWDuTk5Fs-Sns0,56
+jancode/characters.py,sha256=dkhzo-w4oPx-9KstKb4TKwuirJOUmXJz2qZ-RC1dv2w,1229
+jancode/check_digit.py,sha256=4OBxsm2aa66B1dEWmA6mXAxN-DcwzqzxxYkoQeh9XKc,995
+jancode/convert.py,sha256=9StfSmTIFR662gU1XGF0ERF_YQpYZGDwid8iyFW8LNI,1149
+jancode/create_svg.py,sha256=M096HSGT-8Y6-C1axEJV0zUG2wAYUqH4N1NvUvvTzig,2091
+jancode/main.py,sha256=l7MvfptBWVNMA7UMQazhmO0hX9McldRmDHknVnrlnPw,871
+jancode/property.py,sha256=nR7q_M2vTQEvX1D2_W3FzqHOjRxxrAQbakXR4Msq6D4,762
+jancode-1.0.0.dist-info/METADATA,sha256=lJPdUbM6rUh-CUP0GNYX7Nr_LiX6-QfhwJZ8YtmtSTU,1035
+jancode-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jancode-1.0.0.dist-info/top_level.txt,sha256=-rEA47AunvqGQnLuuWSGlE9Db1lGDLTsNPyBHyieX5w,8
+jancode-1.0.0.dist-info/RECORD,,

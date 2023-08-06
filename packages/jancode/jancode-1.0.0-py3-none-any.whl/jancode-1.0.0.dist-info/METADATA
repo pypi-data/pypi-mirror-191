@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jancode
+Version: 1.0.0
+Summary: Generate JANcode
+Home-page: https://github.com/yashikota/jancode
+Author: kota
+Author-email: 52403688+yashikota@users.noreply.github.com
+Maintainer: kota
+Maintainer-email: 52403688+yashikota@users.noreply.github.com
+License: MIT
+Download-URL: https://github.com/yashikota/jancode
+Keywords: jancode
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# JANcode
+
+## What is this
+
+Library to generate barcode called JANcode.  
+
+![jancode](https://raw.githubusercontent.com/yashikota/jancode/master/example.png)
+
+## Features
+
+- Compatible with standard JANcode and short JANcode
+- Calculate checkdigit
+- Display numbers below the bar JANcode
+
+## Example
+
+```py
+import jancode
+
+jancode.generate(4933032010579, "./img")
+```
+
+The first argument is the JANcode, and the second argument is the directory where it will be stored.  
+The directory to be saved can be omitted.  
+
+
