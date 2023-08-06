@@ -1,0 +1,9 @@
+numpy
+numba
+matplotlib
+astropy
+jplephem
+scipy
+pint-pulsar
+SciencePlots
+tk
