@@ -1,0 +1,8 @@
+levenshtein_distance/__init__.py,sha256=Zg_gDCcLK18yK3qNIIXWwP3KWZGY5d03TVfXUhE3X6k,60
+levenshtein_distance/core.py,sha256=E-xzL8I2mtg62jPtrx_ddpqeAbTwo8U3BLB74HLUMAA,5164
+levenshtein_distance/shared_dcs.py,sha256=EQ3Ijgw8XrqE7E4tume4jkFHSuGianB1JTHSFhhM83E,804
+levenshtein_distance-1.0.1.dist-info/LICENSE,sha256=80eE7nURzghWAGwl7cNRD9524GSeSwJTeCU6rm-6QLI,1091
+levenshtein_distance-1.0.1.dist-info/METADATA,sha256=xNqfw9BP8-LW_wwziph7178LCn7jVHPbpbfeqPNTDLQ,1412
+levenshtein_distance-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+levenshtein_distance-1.0.1.dist-info/top_level.txt,sha256=TnQi1O824F-Sf2H3At78Tkp7E6BKd-kcKvofnyvKLy4,21
+levenshtein_distance-1.0.1.dist-info/RECORD,,
