@@ -1,0 +1,16 @@
+pygamesim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygamesim/cardgames/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygamesim/cardgames/cards.py,sha256=5GTnc1vl_YLD_kEn5oq_xTM-FjmOCqFVj20MQfN9jFk,1051
+pygamesim/cardgames/blackjack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygamesim/cardgames/blackjack/hand.py,sha256=e7hNRwmo6VwzxBMAm8Pmah8vjbwnPKBdtKv2AFwajsc,950
+pygamesim/cardgames/blackjack/casino/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygamesim/cardgames/blackjack/casino/dealer.py,sha256=IVx3eEbsUq8AG9IhMTm_jLAAj0nXyjfdqTLA8vhXhhU,895
+pygamesim/cardgames/blackjack/casino/game.py,sha256=IRdTkXeGL9gaNalQllHR_7kRXMdhp-IIQA05qsFbFUM,12221
+pygamesim/cardgames/blackjack/casino/player.py,sha256=vPsqf8hm1b0MWoNqgmFyXWkXdN-6tkTkXcqipp9wj0k,2086
+pygamesim/cardgames/blackjack/casino/strategy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygamesim/cardgames/blackjack/casino/strategy/basic.py,sha256=RSWiS6JXZtqfOmB93UMjN2pINTwrXRNJrUDDAQnF05w,1715
+jeremydimond.pygamesim-1.0.1.dist-info/LICENSE,sha256=Cd7XpHKClQfuNuSAdzv8f1b-coXDY6LX8_oohDYeS1U,1068
+jeremydimond.pygamesim-1.0.1.dist-info/METADATA,sha256=G8yfBoXAiY6OBbqNYlPnY7hKQxJVqEF3tvH75IyWznE,1930
+jeremydimond.pygamesim-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jeremydimond.pygamesim-1.0.1.dist-info/top_level.txt,sha256=F6fMlKhe_Pq13U2lWgGnYQmix-_b6ocEGA08AlsIGIE,10
+jeremydimond.pygamesim-1.0.1.dist-info/RECORD,,
