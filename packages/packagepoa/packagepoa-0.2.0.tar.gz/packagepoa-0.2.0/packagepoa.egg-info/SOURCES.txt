@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+packagepoa/__init__.py
+packagepoa/conf.py
+packagepoa/decapitate_pdf.py
+packagepoa/transform.py
+packagepoa.egg-info/PKG-INFO
+packagepoa.egg-info/SOURCES.txt
+packagepoa.egg-info/dependency_links.txt
+packagepoa.egg-info/requires.txt
+packagepoa.egg-info/top_level.txt
+tests/test_conf.py
+tests/test_decapitate.py
+tests/test_transform.py
