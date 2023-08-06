@@ -1,0 +1,13 @@
+py2neo
+neo4j
+graphio
+
+[docs]
+mkdocs
+mkdocstrings[python]
+mkdocs-autorefs
+mkdocs-material
+
+[tests]
+pytest
+deepdiff
