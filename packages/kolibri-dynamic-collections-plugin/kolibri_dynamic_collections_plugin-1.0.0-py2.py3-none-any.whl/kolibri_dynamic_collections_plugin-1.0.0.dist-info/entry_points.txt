@@ -1,0 +1,2 @@
+[kolibri.plugins]
+kolibri_dynamic_collections_plugin = kolibri_dynamic_collections_plugin
