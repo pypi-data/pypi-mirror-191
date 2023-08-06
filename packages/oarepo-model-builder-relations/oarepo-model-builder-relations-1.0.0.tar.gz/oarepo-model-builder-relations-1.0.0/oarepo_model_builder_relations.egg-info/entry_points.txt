@@ -1,0 +1,11 @@
+[oarepo_model_builder.builders.model]
+1000-relation-field = oarepo_model_builder_relations.builders:InvenioRecordRelationsBuilder
+
+[oarepo_model_builder.datatypes]
+relations = oarepo_model_builder_relations.datatypes:DATATYPES
+
+[oarepo_model_builder.templates]
+99-relations-templates = oarepo_model_builder_relations
+
+[oarepo_model_builder.validation]
+relations = oarepo_model_builder_relations.datatypes:VALIDATORS
