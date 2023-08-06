@@ -1,0 +1,5 @@
+numpy>=1.23.2
+matplotlib>=3.5.3
+pyserial>=3.5
+pymodbus<2.6,>=2.5.3
+bronkhorst-propar>=1.0
