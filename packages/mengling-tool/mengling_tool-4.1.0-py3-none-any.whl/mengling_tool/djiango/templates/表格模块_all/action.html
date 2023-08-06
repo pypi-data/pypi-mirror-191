@@ -1,0 +1,311 @@
+{#数据初始化#}
+<script>
+    //查找栏字段
+    var finds ={{ finds|safe|default:'[]' }};
+    //查找栏数量
+    var find_num ={{ find_num|safe }};
+    //字典组表格数据
+    var rowdts ={{ rowdts|safe }};
+    //显示列
+    var temp ={{ lies|safe }}, lies_map = {};
+    for (let i in temp) lies_map[temp[i]] = true;
+    //是否可选列显示
+    var if_view_lie ={{ if_view_lie|safe }};
+    //是否查询显示
+    var if_view_find ={{ if_view_find|safe }};
+    //默认可选列显示
+    var def_view_lies ={{ def_view_lies|safe }};
+    //当前页数及最大页数
+    var page ={{ page|safe }}, maxpage ={{ maxpage|safe }};
+    //cookie名称
+    var cookie_name0 = '{{ cookie_name0|safe|default:'table_all' }}';
+    //表格长高,不定高度
+    var table_width = '{{ table_width|safe|default:'' }}';
+    var table_height = '{{ table_height|safe|default:'' }}';
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+    //新增数据列及链接
+    var addurl = '{{ addurl|safe|default:'' }}';
+    //下载数据
+    var downloadurl = '{{ downloadurl|safe|default:'' }}';
+    //修改链接
+    var updateurl = '{{ updateurl|safe|default:'' }}';
+    //可修改列
+    var updatelies = {{ updatelies|safe|default:'[]' }};
+    //修改及新增可选项列设置字典
+    var select_liedt = {{ select_liedt|safe|default:'{}' }};
+    //临时变量
+    var temp1, temp2, temp3, eq;
+    var ajaxer = new Ajax();
+</script>
+
+{#表格生成#}
+<script src="/statics/js/colResizable-1.6.min.js"></script>
+<script>
+    var input_tmp = '<div class="col-sm-12">{0}:&nbsp;&nbsp;<input name="{0}" type="text" style="width: 450px;" value="{1}"></div>';
+    var select_tmp = '<div class="col-sm-12">{0}:&nbsp;&nbsp;<select name="{0}" class="form-control" style="width: 450px;">{1}</select></div>';
+
+    function update_func(id, oldd) {
+        let datadt = {}, dt0 = $('#' + id).serializeArray();
+        for (let i in dt0) datadt[dt0[i]['name']] = dt0[i]['value'];
+        alert(ajaxer.run_json(updateurl, oldd == null ? {'new': datadt} : {'old': oldd, 'new': datadt}));
+        location.reload()
+    };
+
+    function _add() {
+        temp = '<form id="add_form"><div class="row">{0}</div></form>';
+        let ls = [];
+        for (let k in lies_map) {
+            if (updatelies.length == 0 || updatelies.indexOf(k) >= 0) {
+                if (select_liedt[k]) ls.push(format(select_tmp, [k, get_option(select_liedt[k])]));
+                else ls.push(format(input_tmp, [k, '']));
+            }
+        }
+        actionWindow(format(temp, [ls.join('')]), "update_func('add_form',null)", '新增');
+    }
+
+    function _del(tr) {
+        let index = tr.classList[2].split('_')[1] - 0;
+        alert(ajaxer.run_json(updateurl, {'old': rowdts[index]}));
+        location.reload()
+    }
+
+    function _ud(tr) {
+        let index = tr.classList[2].split('_')[1] - 0;
+        temp2 = rowdts[index];
+        temp = '<form id="ud_form"><div class="row">{0}</div></form>';
+        let ls = [];
+        for (let k in temp2) {
+            if (updatelies.length == 0 || updatelies.indexOf(k) >= 0) {
+                if (select_liedt[k]) ls.push(format(select_tmp, [k, get_option(select_liedt[k])]));
+                else ls.push(format(input_tmp, [k, temp2[k]]));
+            }
+        }
+        actionWindow(format(temp, [ls.join('')]), "update_func('ud_form',temp2)", '修改');
+    }
+
+    function _bt1(a) {
+        //确定或编辑
+        if (a.text == '编辑') {
+            _ud(a.parentNode.parentNode);
+        } else {
+            //执行动作
+            _del(a.parentNode.parentNode);
+            a.text = '编辑';
+            a.nextElementSibling.text = '删除';
+        }
+    }
+
+    function _bt2(a) {
+        //取消或删除
+        if (a.text == '删除') {
+            a.text = '取消';
+            a.previousElementSibling.text = '确定';
+        } else {
+            a.text = '删除';
+            a.previousElementSibling.text = '编辑';
+        }
+    }
+
+    //表格刷新方法
+    function createTable() {
+        //列名
+        let thr = updateurl.length > 0 ? '<th>▼</th>' : '';
+        for (let lie in lies_map) {
+            if (lies_map[lie])
+                if (lie in helpdt) {
+                    thr += format('<th>{0}<span class="help-tip"><p>{1}</p></span></th>', [lie, helpdt[lie]]);
+                } else {
+                    thr += format('<th>{0}</th>', [lie]);
+                }
+        }
+        $('#table_lie')[0].innerHTML = thr;
+        //值
+        let tr = '';
+        if (rowdts.length > 0)
+            for (let i in rowdts) {
+                let dt = rowdts[i];
+                let row = updateurl.length > 0 ? '<td><a href="javascript:null" onclick="_bt1(this);">编辑</a> / <a href="javascript:null" onclick="_bt2(this);">删除</a></div></td>' : '';
+                for (let lie in lies_map) {
+                    if (lies_map[lie] && lie in dt) {
+                        if (typeof dt[lie] != 'object') row += format('<td style="vertical-align: middle;">{0}</td>', [dt[lie]]);
+                        else if (dt[lie]['text'] != undefined) row += format('<td style="vertical-align: middle;" rowspan="{0}">{1}</td>', [dt[lie]['rowspan'], dt[lie]['text']]);
+                    }
+                }
+                tr += format('<tr class="even gradeC lies_{1}">{0}</tr>', [row, i]);
+            }
+        else alert('没有数据!');
+        $('#table_body')[0].innerHTML = tr;
+        //此处实现表格可拖放属性
+        $("#example-r").colResizable({
+            liveDrag: true,//实现实时拖动，可看见拖动轨迹
+            draggingClass: "dragging", //防止拖动出险虚标线
+        });
+    }
+</script>
+
+{#选项#}
+<script>
+
+    function setButton(id, func_txt) {
+        eq = $('#' + id)[0];
+        eq.parentNode.style.display = '';
+        eq.setAttribute("onclick", func_txt);
+        $('#bj')[0].style.display = '';
+    }
+
+    function _download() {
+        temp = getUrlArgdt(downloadurl);
+        temp1 = getUrlArgdt(window.location.href);
+        for (let key in temp[1]) temp1[1][key] = temp[1][key];
+        //alert(getMergeUrl(temp[0], temp1[1]));
+        window.open(getMergeUrl(temp[0], temp1[1]));
+    }
+
+    if (addurl.length > 0) {
+        setButton('bj_add', "");
+        $('#bj_add')[0].onclick = _add;
+    }
+    if (downloadurl.length > 0) setButton('bj_download', "_download()");
+</script>
+
+{#查找#}
+<script>
+    if (if_view_find) {
+        $('#cx').show();
+        var mh1 = $('#cx_mh1')[0], mh2 = $('#cx_mh2')[0], mh3 = $('#cx_mh3')[0];
+        var fkey1 = $('#cx_fkey1')[0], fvalue1 = $('#cx_fvalue1')[0];
+        var fkey2 = $('#cx_fkey2')[0], fvalue2 = $('#cx_fvalue2')[0];
+        var fkey3 = $('#cx_fkey3')[0], fvalue3 = $('#cx_fvalue3')[0];
+        var okey = $('#cx_okey')[0], ovalue = $('#cx_ovalue')[0];
+
+        //初始化查找栏
+        if (finds.length > 0) {
+            temp = '<option value="">所有类别</option>';
+            for (let i in finds) {
+                temp += format('<option value="{0}">{0}</option>', [finds[i]]);
+            }
+            fkey1.innerHTML = temp;
+            fkey2.innerHTML = temp;
+            fkey3.innerHTML = temp;
+            okey.innerHTML = temp;
+        }
+
+        //初始化搜索显示
+        fkey1.value = getCookie(cookie_name0 + '_fkey1', '');
+        fkey2.value = getCookie(cookie_name0 + '_fkey2', '');
+        fkey3.value = getCookie(cookie_name0 + '_fkey3', '');
+        fvalue1.value = getCookie(cookie_name0 + '_fvalue1', '');
+        fvalue2.value = getCookie(cookie_name0 + '_fvalue2', '');
+        fvalue3.value = getCookie(cookie_name0 + '_fvalue3', '');
+        okey.value = getCookie(cookie_name0 + '_okey', '');
+        ovalue.value = getCookie(cookie_name0 + '_ovalue', 'down');
+        mh1.checked = getCookie(cookie_name0 + '_mh1', '0') == '1';
+        mh2.checked = getCookie(cookie_name0 + '_mh2', '0') == '1';
+        mh3.checked = getCookie(cookie_name0 + '_mh3', '0') == '1';
+
+
+        //添加查找方法
+        $('#cx_find')[0].onclick = function () {
+            //保存cookie
+            document.cookie = cookie_name0 + '_fkey1=' + fkey1.value;
+            document.cookie = cookie_name0 + '_fkey2=' + fkey2.value;
+            document.cookie = cookie_name0 + '_fkey3=' + fkey3.value;
+            document.cookie = cookie_name0 + '_fvalue1=' + fvalue1.value;
+            document.cookie = cookie_name0 + '_fvalue2=' + fvalue2.value;
+            document.cookie = cookie_name0 + '_fvalue3=' + fvalue3.value;
+            document.cookie = cookie_name0 + '_okey=' + okey.value;
+            document.cookie = cookie_name0 + '_ovalue=' + ovalue.value;
+            document.cookie = cookie_name0 + '_mh1=' + (mh1.checked ? '1' : '0');
+            document.cookie = cookie_name0 + '_mh2=' + (mh2.checked ? '1' : '0');
+            document.cookie = cookie_name0 + '_mh3=' + (mh3.checked ? '1' : '0');
+            let data = {
+                'fkey1': fkey1.value, 'fvalue1': fvalue1.value,
+                'fkey2': fkey2.value, 'fvalue2': fvalue2.value,
+                'fkey3': fkey3.value, 'fvalue3': fvalue3.value,
+                'okey': okey.value, 'ovalue': ovalue.value,
+                'mh1': mh1.checked ? '1' : '0', 'mh2': mh2.checked ? '1' : '0', 'mh3': mh3.checked ? '1' : '0'
+            };
+            window.location.href = getMergeUrl(window.location.href, data);
+        };
+
+        //隐藏多余查询栏
+        switch (find_num) {
+            case 1:
+                fkey2.parentElement.style.display = "none";
+                fvalue2.parentElement.style.display = "none";
+                fkey3.parentElement.style.display = "none";
+                fvalue3.parentElement.style.display = "none";
+                break;
+            case 2:
+                fkey3.parentElement.style.display = "none";
+                fvalue3.parentElement.style.display = "none";
+                break;
+        }
+    }
+</script>
+
+{#可选#}
+<script>
+    if (if_view_lie) {
+        eq = $('#kx');
+        eq.show();
+        //初始化列名,交集
+        temp = getCookie(cookie_name0 + '_view_lies', '').split('###');
+        //默认设置可选列
+        if (temp.length == 0) temp = def_view_lies;
+        for (let lie in lies_map) lies_map[lie] = false;
+        for (let i in temp) if (temp[i] in lies_map) lies_map[temp[i]] = true;
+        //排序显示
+        var view_charge = function (e) {
+            lies_map[e.value] = e.checked;
+            temp = [];
+            for (let lie in lies_map) if (lies_map[lie]) temp.push(lie);
+            document.cookie = cookie_name0 + '_view_lies=' + temp.join('###');
+            //移除效果
+            console.log($("#example-r").colResizable)
+            $("#example-r").colResizable({disable: true});
+            createTable();
+        };
+        //初始化生成显示
+        temp = [];
+        for (let lie in lies_map) {
+            let c = lies_map[lie] ? 'checked' : '';
+            temp.push(format('<input type="checkbox" value="{0}" {1} onchange="view_charge(this)"/>{0}&nbsp;&nbsp;&nbsp;&nbsp;', [lie, c]));
+        }
+        eq[0].innerHTML += getTableViewTxt(temp, 10);
+    }
+    createTable();
+</script>
+
+{#表格#}
+<script>
+    $('#table')[0].style = format('{0} {1} overflow:auto;',
+        [table_width == '' ? '' : ('width:' + table_width + 'px;'), table_height == '' ? '' : ('height:' + table_height + 'px;')]);
+</script>
+
+{#翻页#}
+<script>
+    function toPage(page, maxpage) {
+        page = page - 0;
+        //最大约束
+        if (page > maxpage && maxpage > 0) page = maxpage;
+        else if (page < 1) page = 1;
+        window.location.href = getMergeUrl(window.location.href, {'page': page});
+    }
+
+    //翻页渲染
+    function createIndexs(page, maxpage) {
+        let li0 = '<li {0}><a href="{1}">{2}</a></li>';
+        let txt = format(li0, [page <= 1 ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': 1}), '<<']);
+        txt += format(li0, [page <= 1 ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': page - 1}), '<']);
+        txt += format(li0, [page >= maxpage ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': page + 1}), '>']);
+        txt += format(li0, [page >= maxpage ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': maxpage}), '>>']);
+        txt += format('<input type="text" style="width: 50px;height: 20px;" value="{0}" onkeyup="value=value.replace(/[^\\d]/g,\'\')">/{1}&nbsp;&nbsp;' +
+            '<button type="button" onclick="toPage(this.previousElementSibling.value,maxpage);">跳转</button>',
+            [page, maxpage < 1 ? 'N' : maxpage]);
+        $('#pageul')[0].innerHTML = txt;
+    }
+
+    createIndexs(page, maxpage);
+</script>

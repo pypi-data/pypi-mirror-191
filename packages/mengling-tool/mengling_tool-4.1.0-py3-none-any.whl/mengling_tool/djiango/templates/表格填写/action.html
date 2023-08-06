@@ -1,0 +1,49 @@
+<script>
+    //列名与字段字典
+    var liedt ={{ liedt|safe|default:'{}' }};
+    //表单提交响应
+    var action = '{{ action|safe|default:"#" }}';
+    //随机字段生成,默认随机数在字段后方,值为纯文本
+    var ramliedt ={{ ramliedt|safe|default:'{}' }};
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+    ////<- get参数 page
+</script>
+<script>
+    var index = 1;//行数
+
+    //新增行
+    function addrow() {
+        var txt = format('<td>{0}</td>', [index.toString()]);
+        for (let lie in liedt) {
+            if (lie in ramliedt) txt += format('<td>{0}<input name="{1}" value="{0}" style="display: none" readonly/></td>', [ramliedt[lie] + new Date().getTime(), lie]);
+            else txt += format('<td>{0}</td>', [liedt[lie]]);
+        }
+        var tr = document.createElement('tr');
+        tr.id = 'bgtx_row' + index;
+        tr.innerHTML = txt;
+        $('#bgtx_dels')[0].innerHTML += format('<option value="{0}">{0}</option>', [index.toString()]);
+        $('#bgtx_body')[0].appendChild(tr);
+        index += 1;
+    }
+
+    function delrow() {
+        var del_index = $('#bgtx_dels')[0].value;
+        $('#bgtx_row' + del_index)[0].remove();
+        getXpathElement(format('//*[@id="bgtx_dels"]/*[@value="{0}"]', [del_index])).remove();
+    }
+</script>
+<script>
+    var tr_lie = $('#bgtx_lie')[0];
+    $('#bgtx_form')[0].action = action;
+    //初始化列名
+    tr_lie.innerHTML += '<th> </th>';
+    for (let lie in liedt) {
+        if (lie in helpdt) {
+            tr_lie.innerHTML += format('<th>{0}<span class="help-tip"><p>{1}</p></span></th>', [lie, helpdt[lie]]);
+        } else {
+            tr_lie.innerHTML += format('<th>{0}</th>', [lie]);
+        }
+    }
+    addrow();
+</script>

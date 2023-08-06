@@ -1,0 +1,93 @@
+<div class="row">
+    {# 编辑栏#}
+    <div id="bj" class="col-sm-12" style="display: none">
+        <div class="row" style="width: 30%">
+            <div class="col-4" style="display: none">
+                <button class="am-icon-plus" id="bj_add" type="button">
+                    新增
+                </button>
+            </div>
+            <div class="col-4" style="display: none">
+                <button class="am-icon-download" id="bj_download" type="button">
+                    下载当前数据
+                </button>
+            </div>
+        </div>
+    </div>
+    {# 查询栏#}
+    <div id="cx" class="col-sm-12" style="margin-top: 10px;display: none;">
+        <div class="row" style="border:1px solid #d2cdcd;">
+            {# 排序#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                排序方式：
+                <select id="cx_okey" class="form-control" style="width: 150px;"></select>
+                <select id="cx_ovalue" class="form-control" style="width: 100px;">
+                    <option value="up">升序</option>
+                    <option value="down">降序</option>
+                </select>
+            </div>
+            {# 查询栏1#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="cx_fkey1" class="form-control" style="width: 150px;height: 35px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="cx_fvalue1"/>
+                &nbsp;&nbsp;
+                <input type="checkbox" id="cx_mh1" value="模糊查询">
+                <span style="position:relative; left:10px; top:5px" class="help-tip"><p style="width: 150px;">是否为模糊查询?</p></span>
+            </div>
+            {# 查询栏2#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="cx_fkey2" class="form-control" style="width: 150px;height: 35px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="cx_fvalue2"/>
+                &nbsp;&nbsp;
+                <input type="checkbox" id="cx_mh2" value="模糊查询">
+                <span style="position:relative; left:10px; top:5px" class="help-tip"><p style="width: 150px;">是否为模糊查询?</p></span>
+            </div>
+            {# 查询栏3#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="cx_fkey3" class="form-control" style="width: 150px;height: 35px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="cx_fvalue3"/>
+                &nbsp;&nbsp;
+                <input type="checkbox" id="cx_mh3" value="模糊查询">
+                <span style="position:relative; left:10px; top:5px" class="help-tip"><p style="width: 150px;">是否为模糊查询?</p></span>
+            </div>
+            {# 查询键#}
+            <div class="col-sm-12" style="display: flex;margin-bottom: 20px;margin-top: 20px;">
+                <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"
+                        style="margin-right: 80px;" id="cx_find"
+                        type="button">查询
+                </button>
+                <span style="position:relative; left:-75px; top:10px" class="help-tip">
+                    <p style="width: 300px;">选项为所有类别或值为空时,该行搜索不会生效;若需要搜索字段为空的情况,输入空格即可</p>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    {# 可选栏#}
+    <div id="kx" class="col-sm-12" style="margin-top: 10px;display: none;">
+        <div><br/> <label>显示字段:</label></div>
+    </div>
+    {# 表格#}
+    <div id="table" class="col-sm-12" style="margin-top: 10px;">
+        <table class="am-table am-table-compact am-table-bordered am-table-radius am-table-striped tpl-table-black "
+               id="example-r">
+            <thead>
+            <tr id="table_lie" style="color: #1d98dc;"></tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+        </table>
+    </div>
+    {# 翻页#}
+    <div id="fy" class="col-sm-12 am-u-lg-12 am-cf" style="margin-top: 10px;">
+        <div class="am-fr">
+            <ul class="am-pagination tpl-pagination" id="pageul">
+                {# class="am-disabled" class="am-active"#}
+            </ul>
+        </div>
+    </div>
+</div>
+
+

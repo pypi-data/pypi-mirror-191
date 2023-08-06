@@ -1,0 +1,49 @@
+<script>
+    //列名与字段字典,text,date,select_选项1_选项2_选项2,checkbox
+    var lieclassdt ={{ lieclassdt|safe|default:'{}' }};
+    //表单提交响应
+    var action = '{{ action|safe|default:"#" }}';
+    //随机字段生成,默认随机数在字段后方,值为纯文本
+    var ramliedt ={{ ramliedt|safe|default:'{}' }};
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+</script>
+
+<script>
+    //根据字典生成对应元素
+    let txt = '';
+    for (let name in lieclassdt) {
+        let value = lieclassdt[name];
+        txt += '<div class="am-form-group"><label for="user-name" class="am-u-sm-3 am-form-label">' + name + '</label><div class="am-u-sm-9">';
+        switch (value) {
+            case 'text':
+                txt += format('<input type="text" class="tpl-form-input" name="{0}" placeholder="{1}">',
+                    [name, helpdt.hasOwnProperty(name) ? helpdt[name] : '']);
+                break;
+            case 'date':
+                txt += format('<input type="text" class="am-form-field tpl-form-no-bg" name="{0}" placeholder="{1}" data-am-datepicker="">',
+                    [name, helpdt.hasOwnProperty(name) ? helpdt[name] : '']);
+                break;
+            case 'checkbox':
+                txt += format('<div class="tpl-switch">' +
+                    '<input type="checkbox" class="ios-switch bigswitch tpl-switch-btn" name="{0}" value="0" onchange="this.value=(this.check?\'1\':\'0\');">' +
+                    '<div class="tpl-switch-btn-view"><div></div>',
+                    [name]);
+                break;
+            //为select
+            default:
+                let ts = value.split('_'), txt1 = "";
+                for (let i = 1; i < ts.length; i++) {
+                    txt1 += format('<option value="{0}" selected="">{0}</option>', [ts[i]]);
+                }
+                txt += format('<select class="select" name="{0}">' +
+                    '<option value="" selected="">未选择</option>{1}</select>',
+                    [name, txt1]);
+                break;
+        }
+        txt += '</div></div>';
+    }
+    let e = $('#bdtx_form')[0];
+    e.innerHTML = txt + e.innerHTML;
+    e.action = action;
+</script>

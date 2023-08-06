@@ -1,0 +1,208 @@
+{#数据初始化#}
+<script>
+    //表格标题
+    var title = '{{ title|safe|default:"" }}';
+    //查找栏字段
+    var finds ={{ finds|safe|default:'[]' }};
+    //查找栏数量
+    var find_num ={{ find_num|safe }};
+    //字典组表格数据
+    var liedts ={{ liedts|safe }};
+    //显示列
+    var lies ={{ lies|safe }};
+    //是否可选列显示
+    var if_view_lie ={{ if_view_lie|safe }};
+    //是否选项栏显示
+    var if_view_options ={{ if_view_options|safe }};
+    //当前页数及最大页数
+    var page ={{ page|safe }}, maxpage ={{ maxpage|safe }};
+    //cookie名称
+    var cookie_name0 = '{{ cookie_name0|safe|default:'table' }}';
+    //表格长高,不定高度
+    var table_width = '{{ table_width|safe|default:'' }}';
+    var table_height = '{{ table_height|safe|default:'' }}';
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+    //下载数据
+    var if_view_download ={{ if_view_download|safe }};
+    var temp, table_viewfunc;
+</script>
+
+{#查找栏#}
+<script>
+    if (if_view_options) {
+        $('#options_div').show();
+        var mh = $('#mh')[0];
+        var fkey1 = $('#fkey1')[0], fvalue1 = $('#fvalue1')[0];
+        var fkey2 = $('#fkey2')[0], fvalue2 = $('#fvalue2')[0];
+        var fkey3 = $('#fkey3')[0], fvalue3 = $('#fvalue3')[0];
+        var okey = $('#okey')[0], ovalue = $('#ovalue')[0];
+
+        //初始化查找栏
+        if (finds.length > 0) {
+            temp = '<option value="">--请选择--</option>';
+            for (let i in finds) {
+                temp += format('<option value="{0}">{0}</option>', [finds[i]]);
+            }
+            fkey1.innerHTML = temp;
+            fkey2.innerHTML = temp;
+            fkey3.innerHTML = temp;
+            okey.innerHTML = temp;
+        }
+
+        //初始化搜索显示
+        fkey1.value = getCookie(cookie_name0 + '_fkey1', '');
+        fkey2.value = getCookie(cookie_name0 + '_fkey2', '');
+        fkey3.value = getCookie(cookie_name0 + '_fkey3', '');
+        okey.value = getCookie(cookie_name0 + '_okey', '');
+        ovalue.value = getCookie(cookie_name0 + '_ovalue', 'down');
+        mh.checked = getCookie(cookie_name0 + '_mh', '0') == '1';
+
+        //重写查找方法
+        var findfunc = function (download = 0) {
+            //保存cookie
+            document.cookie = cookie_name0 + '_fkey1=' + fkey1.value;
+            document.cookie = cookie_name0 + '_fkey2=' + fkey2.value;
+            document.cookie = cookie_name0 + '_fkey3=' + fkey3.value;
+            document.cookie = cookie_name0 + '_okey=' + okey.value;
+            document.cookie = cookie_name0 + '_ovalue=' + ovalue.value;
+            document.cookie = cookie_name0 + '_mh=' + (mh.checked ? '1' : '0');
+            let data = {
+                'fkey1': fkey1.value, 'fvalue1': fvalue1.value,
+                'fkey2': fkey2.value, 'fvalue2': fvalue2.value,
+                'fkey3': fkey3.value, 'fvalue3': fvalue3.value,
+                'okey': okey.value, 'ovalue': ovalue.value,
+                'mh': mh.checked ? '1' : '0'
+            };
+            if (download == 0) {
+                window.location.href = getMergeUrl(window.location.href, data);
+            } else {
+                //下载文件
+                window.open(getMergeUrl(window.location.href, {'download': 1}));
+                {#ajax(data, getLocationUrl0(), 'GET');#}
+            }
+        };
+
+        //隐藏多余查询栏
+        switch (find_num) {
+            case 0:
+                mh.parentElement.style.display = "none";
+                fkey1.parentElement.style.display = "none";
+                fvalue1.parentElement.style.display = "none";
+                fkey2.parentElement.style.display = "none";
+                fvalue2.parentElement.style.display = "none";
+                fkey3.parentElement.style.display = "none";
+                fvalue3.parentElement.style.display = "none";
+                break;
+            case 1:
+                fkey2.parentElement.style.display = "none";
+                fvalue2.parentElement.style.display = "none";
+                fkey3.parentElement.style.display = "none";
+                fvalue3.parentElement.style.display = "none";
+                break;
+            case 2:
+                fkey3.parentElement.style.display = "none";
+                fvalue3.parentElement.style.display = "none";
+                break;
+
+        }
+        //下载键
+        if (if_view_download) $('#download').show();
+        else $('#download').hide();
+    } else $('#options_div').hide();
+</script>
+
+{#可选列展示#}
+<script>
+    let e = $('#view_div');
+    if (if_view_lie) {
+        e.show();
+        var view = function () {
+            let view_lies = [], cookie = '';
+            for (let i in lies) {
+                let lie = lies[i];
+                if ($(format("input[value='{0}']", [lie]))[0].checked) {
+                    view_lies.push(lie);
+                    cookie += lie + '###';
+                }
+            }
+            document.cookie = cookie_name0 + '_view_lies=' + cookie;
+            table_viewfunc(view_lies);
+        };
+        //初始化列名
+        let cs = getCookie(cookie_name0 + '_view_lies', '').split('###');
+        temp = '';
+        for (let i in lies) {
+            let lie = lies[i];
+            let c = cs.indexOf(lie) > -1 ? 'checked' : '';
+            temp += format('<input type="checkbox" value="{0}" {1} onchange="view()"/>{0}&nbsp;&nbsp;&nbsp;&nbsp;', [lie, c])
+        }
+        e[0].innerHTML += temp + '<div><br/></div>';
+    } else e.hide();
+</script>
+
+{#表格渲染#}
+<script>
+    $('#table_div')[0].style = format('{0} {1} overflow:auto;',
+        [table_width == '' ? '' : ('width:' + table_width + 'px;'), table_height == '' ? '' : ('height:' + table_height + 'px;')]);
+    $('#table_title')[0].innerHTML = title == '' ? '' : format('<label style="font-size: 15px; ">{0}</label>', [title]);
+    //渲染方法
+    table_viewfunc = function (view_lies) {
+        //列名
+        let thr = '';
+        for (let i in view_lies) {
+            let lie = view_lies[i];
+            if (lie in helpdt) {
+                thr += format('<th>{0}<span class="help-tip"><p>{1}</p></span></th>', [lie, helpdt[lie]]);
+            } else {
+                thr += format('<th>{0}</th>', [lie]);
+            }
+        }
+        $('#table_lie')[0].innerHTML = thr;
+        //值
+        let tr = '';
+        for (let i in liedts) {
+            let dt = liedts[i];
+            let row = '';
+            for (let i in view_lies) {
+                let lie = view_lies[i];
+                if (lie in dt) {
+                    row += format('<td>{0}</td>', [dt[lie]]);
+                }
+            }
+            tr += format('<tr class="even gradeC">{0}</tr>', [row]);
+        }
+        $('#table_body')[0].innerHTML = tr;
+    };
+
+    if (if_view_lie) {
+        view();
+    } else {
+        table_viewfunc(lies);
+    }
+</script>
+
+{#翻页栏#}
+<script>
+    //翻页渲染
+    function createIndexs(page, maxpage) {
+        let li0 = '<li {0}><a href="{1}">{2}</a></li>', i;
+        let txt = format(li0, [page === 1 ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': 1}), '<<']);
+        if (maxpage <= 5) {
+            for (let i = 1; i <= maxpage; i++) {
+                if (i === page) txt += format(li0, ['class="am-active"', getMergeUrl(window.location.href, {'page': i}), i]);
+                else txt += format(li0, ['', getMergeUrl(window.location.href, {'page': i}), i]);
+            }
+        } else {
+            i = page - 2 >= 1 ? (page + 2 <= maxpage ? page : maxpage - 2) : 3;
+            for (let i1 = i - 2; i1 <= i + 2; i1++) {
+                if (i1 === page) txt += format(li0, ['class="am-active"', getMergeUrl(window.location.href, {'page': i1}), i1]);
+                else txt += format(li0, ['', getMergeUrl(window.location.href, {'page': i1}), i1]);
+            }
+        }
+        txt += format(li0, [page === maxpage ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': maxpage}), '>>']);
+        $('#pageul')[0].innerHTML = txt;
+    }
+
+    createIndexs(page, maxpage);
+</script>

@@ -1,0 +1,178 @@
+<script>
+    //表格标题
+    var title = '{{ title|safe|default:"" }}';
+    //表单提交响应
+    var action = '{{ action|safe|default:"#" }}';
+    //查找栏字段
+    var finds ={{ finds|safe|default:'[]' }};
+    //字典组表格数据
+    var dts ={{ liedts|safe|default:'[]' }};
+    //当前页数及最大页数
+    var page ={{ page|safe }}, maxpage ={{ maxpage|safe }};
+    //cookie名称
+    var cookie_name = '{{ cookie_name|safe|default:'table_check' }}';
+    //表格长高,不定高度
+    var w = '{{ table_width|safe|default:'1850' }}';
+    var h = '{{ table_height|safe|default:'null' }}';
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+    ////<-get请求参数 page,find_key,find_value
+</script>
+
+<script>
+    $('#table_title')[0].innerHTML = title;
+    $('#table_form')[0].action = action;
+    $('#table_div')[0].style = format('width:{0}px; {1} overflow:auto;', [w, h == null ? '' : ('height:' + h + 'px;')]);
+    var xz = '', temp;
+    temp = getUrlArgdt(window.location.href);
+    //记录当前参数
+    var get_argdt = temp[1];
+
+    //初始化列名
+    var temps = getCookie(cookie_name, '').split('###');
+    for (let lie in dts[0]) {
+        temp = temps.indexOf(lie) > -1 ? 'checked' : '';
+        xz += format('<input type="checkbox" value="{0}" {1} onchange="view()"/>{0}&nbsp;&nbsp;&nbsp;&nbsp;', [lie, temp])
+    }
+    $('#table_xz')[0].innerHTML += xz;
+
+    //初始化查找栏
+    xz = '';
+    for (let i in finds) {
+        xz += format('<option value="{0}">{0}</option>', [finds[i]]);
+    }
+    $('#find_select')[0].innerHTML += xz;
+
+    //显示可选项
+    function view() {
+        let lie_txt = format('<th>{0}</th>', ['操作']), body_txt = '', cookie = cookie_name + '=';
+        for (let i in dts) {
+            dt = dts[i];
+            //
+            for (let lie in dt) {
+                if (getXpathElement(format('//input[@type="checkbox"][@value="{0}"]', [lie])).checked) {
+                    if (i === '0') {
+                        //
+                        //添加备注信息
+                        if (lie in helpdt) {
+                            lie_txt += format('<th>{0}<span class="help-tip"><p>{1}</p></span></th>', [lie, helpdt[lie]]);
+                        } else {
+                            lie_txt += format('<th>{0}</th>', [lie]);
+                        }
+                        cookie += lie + '###';
+                    }
+                    body_txt += dt[lie];
+                }
+            }
+            if (row.length > 0) {
+                 format('<tr class="even gradeC">{0}</tr>', [row]);
+            }
+        }
+        //有数据才改动cookie值
+        if (dts.length > 0) document.cookie = cookie;
+        $('#table_lie')[0].innerHTML = lie_txt;
+        $('#table_body')[0].innerHTML = body_txt;
+        //用于处理负责人可选项设计
+        var es = $('select[name="媒介负责人"]'), txt = '';
+        for (let i in mj_mans) {
+            txt += format('<option value="{0}">{0}</option>', [mj_mans[i]]);
+        }
+        for (let i in es) {
+            es[i].innerHTML += txt;
+        }
+        es = $('select[name="内容负责人"]');
+        txt = '';
+        for (let i in nr_mans) {
+            txt += format('<option value="{0}">{0}</option>', [nr_mans[i]]);
+        }
+        for (let i in es) {
+            es[i].innerHTML += txt;
+        }
+    }
+
+    //翻页渲染
+    function createIndexs(page, maxpage) {
+        txt = '';
+        for (let temp in get_argdt) {
+            if (temp != 'page') txt += format('{0}={1}&', [temp, get_argdt[temp]]);
+        }
+        txt += 'page=';
+        var url0 = action + '?' + txt;
+        var li0 = '<li {0}><a href="{1}">{2}</a></li>', txt = '', i;
+        txt = format(li0, [page === 1 ? 'class="am-disabled"' : '', url0 + 1, '<<']);
+        if (maxpage <= 5) {
+            for (let i = 1; i <= maxpage; i++) {
+                if (i === page) txt += format(li0, ['class="am-active"', url0 + i, i]);
+                else txt += format(li0, ['', url0 + i, i]);
+            }
+        } else {
+            i = page - 2 >= 1 ? (page + 2 <= maxpage ? page : maxpage - 2) : 3;
+            for (let i1 = i - 2; i1 <= i + 2; i1++) {
+                if (i1 === page) txt += format(li0, ['class="am-active"', url0 + i1, i1]);
+                else txt += format(li0, ['', url0 + i1, i1]);
+            }
+        }
+        txt += format(li0, [page === maxpage ? 'class="am-disabled"' : '', url0 + maxpage, '>>']);
+        $('#pageul')[0].innerHTML = txt;
+    }
+
+    //查找
+    function findfunc() {
+        window.location.href = getMergeUrl(window.location.href,
+            {'find_key': $('#find_select')[0].value, 'find_value': $('#find_txt')[0].value});
+    }
+
+    createIndexs(page, maxpage);
+    view();
+</script>
+
+
+<script>
+    var mhe = document.getElementById('ifmh');
+    var fst = document.getElementById('find_select'), ft = document.getElementById('find_txt');
+    var fst1 = document.getElementById('find_select1'), ft1 = document.getElementById('find_txt1');
+    var fst2 = document.getElementById('find_select2'), ft2 = document.getElementById('find_txt2');
+    var ordere = document.getElementById('order_name'), orderf = document.getElementById('order');
+
+    //初始化查找栏
+    var xz = '';
+    for (let i in finds) {
+        xz += format('<option value="{0}">{0}</option>', [finds[i]]);
+    }
+    fst1.innerHTML += xz;
+    fst2.innerHTML += xz;
+    ordere.innerHTML += xz;
+
+    //初始化搜索显示
+    fst.value = getCookie('find_select', '所有类别');
+    fst1.value = getCookie('find_select1', '所有类别');
+    fst2.value = getCookie('find_select2', '所有类别');
+    ordere.value = getCookie('order_name', '录入时间');
+    orderf.value = getCookie('order', 'down');
+    ft.value = getCookie('find_txt', '');
+    ft1.value = getCookie('find_txt1', '');
+    ft2.value = getCookie('find_txt2', '');
+    mhe.checked = getCookie('ifmh', '0') == '1';
+
+    //重写查找方法
+    function findfunc() {
+        //保存cookie
+        document.cookie = 'find_select=' + fst.value;
+        document.cookie = 'find_select1=' + fst1.value;
+        document.cookie = 'find_select2=' + fst2.value;
+        document.cookie = 'find_txt=' + ft.value;
+        document.cookie = 'find_txt1=' + ft1.value;
+        document.cookie = 'find_txt2=' + ft2.value;
+        document.cookie = 'order_name=' + ordere.value;
+        document.cookie = 'order=' + orderf.value;
+        document.cookie = 'ifmh=' + (mhe.checked ? '1' : '0');
+        window.location.href = getMergeUrl(window.location.href,
+            {
+                'find_key': fst.value, 'find_value': ft.value,
+                'find_key1': fst1.value, 'find_value1': ft1.value,
+                'find_key2': fst2.value, 'find_value2': ft2.value,
+                'order_name': ordere.value, 'order': orderf.value,
+                'ifmh': mhe.checked ? '1' : '0'
+            });
+    }
+</script>

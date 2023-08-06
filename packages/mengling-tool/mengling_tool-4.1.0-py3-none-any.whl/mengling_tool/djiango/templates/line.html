@@ -1,0 +1,14 @@
+<div id="main_line" style="width:auto;height:800px;"></div>
+<script src="/statics/js/jquery-3.5.1.min.js"></script>
+<script src="/statics/echarts/echarts.min.js"></script>
+<script src="/statics/js/line.js"></script>
+<script type="text/javascript">
+    let title = '{{ title|safe }}';
+    let names ={{ names|safe }};
+    let xs ={{ xs|safe }};
+    let datas ={{ datas|safe }};
+
+    lines0($('#main_line')[0], title, names, xs, datas);
+    {#line0($('#main')[0], title, xs, datas[0]);#}
+</script>
+
