@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pypi_examiner/__init__.py
+pypi_examiner/client.py
+pypi_examiner.egg-info/PKG-INFO
+pypi_examiner.egg-info/SOURCES.txt
+pypi_examiner.egg-info/dependency_links.txt
+pypi_examiner.egg-info/requires.txt
+pypi_examiner.egg-info/top_level.txt
