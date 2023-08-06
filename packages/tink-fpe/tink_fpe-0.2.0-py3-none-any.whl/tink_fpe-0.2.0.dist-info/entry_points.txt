@@ -1,0 +1,3 @@
+[console_scripts]
+tink-fpe=tink_fpe.__main__:main
+
