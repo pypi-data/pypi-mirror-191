@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: qfinuwa
+Version: 1.0.2
+Summary: Framework for backtesting quantitative trading algorithims.
+Home-page: https://github.com/QFinUWA/algo-backtester/issues
+Author: Isaac Bergl
+Author-email: tberg644@gmail.com
+Project-URL: Bug Tracker, https://github.com/QFinUWA/algo-backtester/issues
+Project-URL: repository, https://github.com/QFinUWA/algo-backtester
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# QFIN's Algorithmic Backtester (QFAB)
+
+## Setup
+
+To set up, run the following command at the root of the codebase:
+
+``python setup.py build_ext --inplace``
+
+This will compile the cython shared objects that provide functionality. 
+
+Currently, I am working on automatiting this via conda forge or PyPI. 
+
+The final goal is to simply run either:
+
+- conda install qfin
+- pip install qfin
+
+## Running 
+
+An example script is provided (``frontend_plan.py``) which is currently being used to model the design of the framework.
+
+The design of the framework is to provide a base ``Algorithm`` class that contains 
+
+- the functions used to add indicators
+- the logic function for trading
+- any variables required for the above
+
+The implemented algoirthm (instanciated via ``class MyAlgorithm(qfin.Algorithm)``), will take a Portfolio object that contains the cash, holdings and history of trades and use incoming and past information (in the form of a dictionary of arrays of data).
+
+The ``Backtester`` class will handle all of this and return results. 
+MIT License
+
+Copyright (c) 2022 Isaac Bergl, QFIN UWA
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
