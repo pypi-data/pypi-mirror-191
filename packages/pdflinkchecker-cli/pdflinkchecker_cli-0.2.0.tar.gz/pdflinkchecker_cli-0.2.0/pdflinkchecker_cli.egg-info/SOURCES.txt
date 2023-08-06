@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pdflinkchecker_cli/__init__.py
+pdflinkchecker_cli/__version__.py
+pdflinkchecker_cli/pdfchecker.py
+pdflinkchecker_cli.egg-info/PKG-INFO
+pdflinkchecker_cli.egg-info/SOURCES.txt
+pdflinkchecker_cli.egg-info/dependency_links.txt
+pdflinkchecker_cli.egg-info/entry_points.txt
+pdflinkchecker_cli.egg-info/requires.txt
+pdflinkchecker_cli.egg-info/top_level.txt
