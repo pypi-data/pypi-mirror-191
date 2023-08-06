@@ -1,0 +1,11 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools >= 40.8",
+    "wheel",
+]
+
+[tool.ruff]
+select = ["E", "F"] # TODO : pass bugbear "B"]
+ignore = ["B905"]
+line-length = 90
