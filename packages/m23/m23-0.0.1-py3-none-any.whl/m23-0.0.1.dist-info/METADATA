@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: m23
+Version: 0.0.1
+Requires-Python: >3.10.1
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: astropy (==5.2.1)
+Requires-Dist: astroalign (==2.4.1)
+Requires-Dist: typing-extensions (==4.4.0)
+
