@@ -1,0 +1,80 @@
+[tool.poetry.scripts]
+flow = 'gregtech.__main__:run_cli'
+
+[tool.poetry]
+name = "gregtech-flow"
+packages = [{ include = "gregtech", from = "./src" }]
+version = "1.0.0"
+description = "YAML Driven Flowcharts for Gregtech: New Horizons"
+authors = ["velolib <vlocitize@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://velolib.github.io/gregtech-flow"
+repository = "https://github.com/velolib/gregtech-flow"
+documentation = "https://velolib.github.io/gregtech-flow"
+keywords = ["gregtech", "minecraft", "graphviz", "graphs"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Intended Audience :: End Users/Desktop",
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+graphviz = "^0.20.1"
+rich = "^13.0.0"
+sympy = "^1.11.1"
+typer = "^0.7.0"
+ruamel-yaml = "^0.17.21"
+prompt-toolkit = "^3.0.36"
+fastjsonschema = "^2.16.2"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+coverage = "^7.0.4"
+isort = "^5.12.0"
+mypy = "^0.991"
+pre-commit = "^2.21.0"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+types-colorama = "^0.4.15.4"
+types-commonmark = "^0.9.2"
+types-jsonschema = "^4.17.0.3"
+types-pillow = "^9.4.0.0"
+types-pygments = "^2.14.0.0"
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.1.20"
+flake8-comprehensions = "^3.10.1"
+flake8-docstrings = "^1.7.0"
+flake8-print = "^5.0.0"
+flake8-pyproject = "^1.2.2"
+flake8-simplify = "^0.19.3"
+flake8-type-checking = "^2.3.0"
+pep8-naming = "^0.13.3"
+snakeviz = "^2.1.1"
+
+[tool.autopep8]
+ignore = "E402"
+max-line-length = 100
+aggressive = true
+recursive = true
+in-place = true
+
+[tool.flake8]
+ignore = ["E402", "E501", "E741", "W504", "W503", "F841"]
+per-file-ignores = [
+    "cli.py:B008"  # For typer
+]
+exclude = ["__main__.py",]
+docstring-convention = "google"
+
+[tool.mypy]
+exclude = ["./.venv"]
+disable_error_code = "attr-defined"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
