@@ -1,0 +1,69 @@
+<nav>
+    <a href="/tasks/">ALL</a>
+    <a href="?status=PENDING">PENDING</a>
+    <a href="?status=QUEUED">QUEUED</a>
+    <a href="?status=RUNNING">RUNNING</a>
+    <a href="?status=SUCCESS">SUCCESS</a>
+    <a href="?status=FAILED">FAILED</a>
+    <a href="?status=CANCELED">CANCELED</a>
+</nav>
+<table>
+<thead>
+    <tr>
+        <th>id</th>
+        <th>dag_id</th>
+        <th>status</th>
+        <th>input_data</th>
+        <th>output_data</th>
+        <th>created_at</th>
+        <th>updated_at</th>
+        <th>started_at</th>
+        <th>stopped_at</th>
+        <th>duration_seconds</th>
+        <th>logs</th>
+        <th>worker_name</th>
+    </tr>
+</thead>
+<tbody>
+{% for task in tasks %}
+    <tr>
+        <td><a href="/tasks/{{ task.id }}"><code>{{ task.id|string|truncate(8, end='') }}</code></a></td>
+        <td>
+            {% if task.dag_id is not none %}
+            <a href="/tasks/{{ task.dag_id }}"><code>{{ task.dag_id|string|truncate(8, end='') if task.dag_id is not none else 'NULL' }}</code></a>
+            {% else %}
+            <code>NULL</code>
+            {% endif %}
+        </td>
+        <td><code>{{ task.status.value }}</code></td>
+        <td>
+            {% if task.input_data is not none %}
+            <a href="/tasks/{{ task.id }}/input_data.json"><code>{{ task.input_data | string | truncate(12) }}</code></a>
+            {% else %}
+            <code>NULL</code>
+            {% endif %}
+        </td>
+        <td>
+            {% if task.output_data is not none %}
+            <a href="/tasks/{{ task.id }}/output_data.json"><code>{{ task.output_data | string | truncate(12) }}</code></a>
+            {% else %}
+            <code>NULL</code>
+            {% endif %}
+        </td>
+        <td><code>{{ task.created_at|format_time if task.created_at is not none else 'NULL'}}</code></td>
+        <td><code>{{ task.updated_at|format_time if task.updated_at is not none else 'NULL'}}</code></td>
+        <td><code>{{ task.started_at|format_time if task.started_at is not none else 'NULL'}}</code></td>
+        <td><code>{{ task.stopped_at|format_time if task.stopped_at is not none else 'NULL'}}</code></td>
+        <td><code>{{ task.duration_seconds|round(1) if task.duration_seconds is not none else 'NULL' }}</code></td>
+        <td><a href="/logs/{{ task.id }}.txt">logs</code></a></td>
+        <td>
+            {% if task.worker_id is not none %}
+            <a href="/workers/{{ task.worker_id }}"><code>{{ task.worker_name|truncate(8, end='') if task.worker_id is not none else 'NULL' }}</code></a>
+            {% else %}
+            NULL
+            {% endif %}
+        </td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
