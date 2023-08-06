@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tgw
+Version: 1.0.0
+Summary: tgw_sdk
+Home-page: UNKNOWN
+Author: archforce
+License: tgwpythonsdk
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
+
+tgw_sdk
+
+
