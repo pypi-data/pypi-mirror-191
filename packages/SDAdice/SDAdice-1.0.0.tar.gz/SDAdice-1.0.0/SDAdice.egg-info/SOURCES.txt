@@ -1,0 +1,8 @@
+README.md
+setup.py
+SDAdice/__init__.py
+SDAdice/main.py
+SDAdice.egg-info/PKG-INFO
+SDAdice.egg-info/SOURCES.txt
+SDAdice.egg-info/dependency_links.txt
+SDAdice.egg-info/top_level.txt
