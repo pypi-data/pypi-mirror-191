@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: Netstock
+Version: 1.3
+Summary: A package for building TCP Server and other Networking options.
+Author: Hunter Mikesell
+Author-email: huntermikesell84@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# NETSTOCK
+
+## Code Example
+```py 
+import Netsock
+
+# Server Side
+def Stock():
+    try:
+        Server = Netstock.TCPserver('localhost', 4000)
+        Server.create()
+        Server.start_listener()
+        while (True):
+            Server.accept_all()
+            rb = Server.recv_bytes()
+            print(rb)
+            Server.disconnect_client()
+    except Exception as error:
+        print(error)
+
+# Client Side
+def clientStock():
+    Client = Netstock.TCPClient()
+    Client.connectToServer('localhost', 4000)
+    Client.sendMsg('Hello')
+
+
+```
+
+## Code Example:2
+
+```py
+from Netstock.HTTP import UploadCurrentDirectory
+
+def __init__(host: str, port: int) -> None:
+    try:
+        main = UploadCurrentDirectory()
+        main.Create(host, port)
+        main.get_all_req()
+        main.run_forever()
+
+        # Other options below
+        # main.getServerByPort()
+        # main.close_server()
+
+        main.Server()
+    except Exception as error:
+        print(error)
+
+__init__('localhost', 80)
+```
+
+# What new in v1.3?
+- Bug fixes
+- HTTP_req Changed To "req"
+- More Networking Options!
+
+## [Github](https://github.com/DeepsSleepMusic)
+
+## [Lib.io](https://libraries.io/pypi/Netstock)
+
+# Instalation / Update
+Run: py -m install Netstock
+Update: py -m install Netstock --upgrade
+
