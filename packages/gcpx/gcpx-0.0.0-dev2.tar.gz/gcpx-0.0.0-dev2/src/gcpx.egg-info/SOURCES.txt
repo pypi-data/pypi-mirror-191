@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/gcpx.egg-info/PKG-INFO
+src/gcpx.egg-info/SOURCES.txt
+src/gcpx.egg-info/dependency_links.txt
+src/gcpx.egg-info/requires.txt
+src/gcpx.egg-info/top_level.txt
