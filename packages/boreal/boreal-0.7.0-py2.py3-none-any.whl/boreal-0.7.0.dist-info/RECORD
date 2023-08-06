@@ -1,0 +1,16 @@
+boreal/__init__.py,sha256=g7ih9ya16Jn0beZZhKR24kzr_tZcYIf6HzbTvLrFfUo,183
+boreal/beatles.wav,sha256=q8eY6-H0srFUGwe24aAbI1ZDfymGk3Lo6LI2gvIr3eA,2646044
+boreal/boreal.py,sha256=KZw75SAfpCKfwJlAcKUhUbrQR3k69xPqCn4GXn20nDM,3392
+boreal/audio_widgets/__init__.py,sha256=eXj0B3moLOP5TkGSv6s8nBEM7HRgX5WBZIexE4sJNOE,153
+boreal/audio_widgets/audio.py,sha256=5jkUJ4zGMN-DSO3xf_MbqI-XW1IJmIdBkk9IXuxg6AQ,6041
+boreal/audio_widgets/audio_processors.py,sha256=jlyZDxjBe1xogYBr86mVYPey6hAcCdrSbFu8trgd5eI,2628
+boreal/audio_widgets/audio_widgets.py,sha256=hw17Ok7lQiV6YxiSOO0chxEn5BVWgfgKSt5JJRnf1e0,9384
+boreal/audio_widgets/description.html,sha256=EqDXl9AKzZgEmMy82rjetE7ArcxGV-Ybjgt-_U1xkhM,586
+boreal/audio_widgets/main.py,sha256=Ivm0KLgB-ogfBu5VWy_ghBcOrrZd1Uq6HW0yAtdInEE,7164
+boreal-0.7.0.dist-info/AUTHORS.rst,sha256=2Ftwlrc430yIqukaLbZg4PaQ2gLYRFDJE8k_cbnay2g,159
+boreal-0.7.0.dist-info/LICENSE,sha256=yV-BYEjI2jlhOAsKGLDaf1eg-O_0uGA3ah2D8pyl6mU,1076
+boreal-0.7.0.dist-info/METADATA,sha256=L-pcCr912wEmnZcbD0hekfxDBOd8g15EoJxul10VDGw,3668
+boreal-0.7.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+boreal-0.7.0.dist-info/entry_points.txt,sha256=nKSPAAMyMCv0LgdatIn_Fv43AvcEjsREg4V1lyBwmSI,43
+boreal-0.7.0.dist-info/top_level.txt,sha256=5BSqLoknK65g9Ibh5_zuv-5lVRSNztGRd5SqT4QxCpc,7
+boreal-0.7.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+boreal = boreal.cli:main
