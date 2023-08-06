@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+hasana/__init__.py
+hasana.egg-info/PKG-INFO
+hasana.egg-info/SOURCES.txt
+hasana.egg-info/dependency_links.txt
+hasana.egg-info/requires.txt
+hasana.egg-info/top_level.txt
