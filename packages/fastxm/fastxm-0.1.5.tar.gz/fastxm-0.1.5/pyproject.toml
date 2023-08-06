@@ -1,0 +1,29 @@
+[project]
+name = "fastxm"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+authors = [
+  {name = "Jeff Shen"},
+  {email = "shenjeff@princeton.edu"}
+]
+description = "blazing fast cross-matching"
+
+dependencies = ["numpy>=1.21"]
+dev-dependencies = ["pytest", "pytest-benchmark"]
+
+[project.urls]
+repository = "https://github.com/al-jshen/fastxm"
+
+[tool.maturin]
+bindings = "pyo3"
+python-source = "python"
+strip = true
+profile = "release"
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
