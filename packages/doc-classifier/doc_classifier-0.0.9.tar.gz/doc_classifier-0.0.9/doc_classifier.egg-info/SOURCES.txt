@@ -1,0 +1,12 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+doc_classifier/__init__.py
+doc_classifier/doc_classifier.py
+doc_classifier.egg-info/PKG-INFO
+doc_classifier.egg-info/SOURCES.txt
+doc_classifier.egg-info/dependency_links.txt
+doc_classifier.egg-info/requires.txt
+doc_classifier.egg-info/top_level.txt
+doc_classifier/data/doc_classifier.pkl
