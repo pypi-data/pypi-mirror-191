@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CI_tartanair.egg-info/PKG-INFO
+CI_tartanair.egg-info/SOURCES.txt
+CI_tartanair.egg-info/dependency_links.txt
+CI_tartanair.egg-info/top_level.txt
