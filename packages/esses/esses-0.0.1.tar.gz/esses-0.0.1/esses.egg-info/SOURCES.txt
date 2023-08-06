@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+esses.egg-info/PKG-INFO
+esses.egg-info/SOURCES.txt
+esses.egg-info/dependency_links.txt
+esses.egg-info/not-zip-safe
+esses.egg-info/top_level.txt
+sss/__init__.py
+sss/core.py
+sss/util.py

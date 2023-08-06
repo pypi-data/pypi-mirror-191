@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: esses
+Version: 0.0.1
+Summary: Stupidly Simple Storage
+Home-page: https://github.com/thomasms/sss
+Author: Tom Stainer
+Author-email: me@physicstom.com
+License: Apache License 2.0
+Requires-Python: >=3.8
+License-File: LICENSE
