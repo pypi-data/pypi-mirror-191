@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipycanvas_drawing"
+version = "0.0.5"
+authors = [
+    { name = "Ruben Wiersma", email = "rubenwiersma@gmail.com" },
+]
+description = "A small widget to let users draw by hand in a Jupyter notebook."
+readme = "README.md"
+requires-python = ">3.6"
+dependencies = ["ipycanvas", "ipywidgets", "numpy"]
+
+[project.urls]
+"Homepage" = "https://github.com/rubenwiersma/ipycanvas_drawing"
+"Bug Tracker" = "https://github.com/rubenwiersma/ipycanvas_drawing/issues"
