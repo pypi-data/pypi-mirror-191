@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: alaspo
+Version: 0.2.3
+Summary: ALASPO: ASP + Large-Neighborhood Search
+Author-email: Tobias Geibinger <tobias.geibinger@tuwien.ac.at>, Thomas Eiter <thomas.eiter@tuwien.ac.at>, Johannes Oetsch <johannes.oetsch@tuwien.ac.at>, Nelson Higuera Ruiz <nelson.ruiz@tuwien.ac.at>, Nysret Musliu <nysret.musliu@tuwien.ac.at>, Daria Stepanova <daria.stepanova@de.bosch.com>
+Project-URL: Homepage, https://gitlab.tuwien.ac.at/kbs/BAI/alaspo
+Project-URL: Bug Tracker, https://gitlab.tuwien.ac.at/kbs/BAI/alaspo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi (>=1.15)
+Requires-Dist: clingo (>=5.6)
+Requires-Dist: clingo-dl (>=1.4)
+Requires-Dist: clingcon (>=5.2)
+
+# ALASPO
+
+An (adaptive) LNS framework for the for ASP systems. Currently, the system only supports solvers based on [clingo](https://potassco.org/). 
+
+## Installation
+
+It should work out-of-the-box in a conda env after running the following commands:
+```
+conda create -n alaspo python=3.9
+conda activate alaspo
+conda install -c potassco clingo clingo-dl clingcon
+python -m pip install alaspo
+```
+
+The command-line options of the problem-independent LNS can be shown as follows:
+```
+alaspo -h
+```
+
+Examples for portfolio config files can be found in the [git repository](https://gitlab.tuwien.ac.at/kbs/BAI/alaspo).
