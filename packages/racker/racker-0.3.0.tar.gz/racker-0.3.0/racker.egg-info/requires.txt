@@ -1,0 +1,14 @@
+click<9,>=7
+furl<3,>=2
+subprocess-tee<1,>=0.3
+python-slugify<7,>=6
+tld<1,>=0.10
+
+[release]
+build<1
+twine<5
+
+[test]
+pytest<8,>=6
+pytest-cov<3,>=2
+re-assert<2,>=1
