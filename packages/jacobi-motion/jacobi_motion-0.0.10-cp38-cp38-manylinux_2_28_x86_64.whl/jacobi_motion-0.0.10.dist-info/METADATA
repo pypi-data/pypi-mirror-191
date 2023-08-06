@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jacobi-motion
+Version: 0.0.10
+Summary: Next-Generation Motion Planning.
+Home-page: https://www.jacobirobotics.com
+Author: Jacobi Robotics
+Author-email: lars.berscheid@jacobirobotics.com
+License: Other/Proprietary License
+Keywords: robotics,motion-planning,trajectory-generation,obstacle-avoidance
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: C++
+Requires-Python: >=3.7
+
