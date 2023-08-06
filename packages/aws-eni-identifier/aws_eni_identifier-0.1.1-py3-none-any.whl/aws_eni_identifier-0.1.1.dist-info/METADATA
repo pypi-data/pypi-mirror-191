@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: aws-eni-identifier
+Version: 0.1.1
+Summary: Identify to which AWS service network interface is associated
+Author: Eremin
+Author-email: haru.eaa@gmail.com
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: glom (>=23.1.1,<24.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+# aws-eni-identifier
+Identify to which AWS service network interface is associated
+
+![aws-eni-identifier-cli.png](docs/aws-eni-identifier-cli.png?raw=true)
+
+# Installation
+
+```bash
+pip install git+https://github.com/fivexl/aws-eni-identifier.git
+```
+TODO: pip install aws-eni-identifier
+
+# Usage
+aws-eni-identifier does not connect to AWS by itself, so you will need to load data wit aws-cli
+
+Login to aws:
+```bash
+aws sso login --profile my-profile
+```
+
+Use pipe:
+```bash
+aws ec2 describe-network-interfaces | aws-eni-identifier
+```
+
+Or save to file with aws-cli and read it:
+```bash
+aws ec2 describe-network-interfaces > ni.json
+aws-eni-identifier -i ni.json
+```
+
+
+
+# Developing
+
+Install the package:
+```bash
+poetry install
+```
+Run tests:
+```bash
+pytest
+```

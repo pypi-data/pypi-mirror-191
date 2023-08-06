@@ -1,0 +1,8 @@
+aws_eni_identifier/__init__.py,sha256=ejybOJHwNXpyDFxweMamgtYQHib4ExxzOtttnF5f_EQ,36
+aws_eni_identifier/cli.py,sha256=b7jGUnFGhH92twkEiJZJp5vKtIB6Dh_Z_oGedRcBWhs,2539
+aws_eni_identifier/description.py,sha256=2HuaEhYm4ndKICRu82QtsMsKLrXZzmRoLnuKJgoAIl8,1961
+aws_eni_identifier/identify.py,sha256=yspP4rdb_F1h2gAA29kFBHCy0WjRhYTcL8ThgijiHaM,1550
+aws_eni_identifier-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aws_eni_identifier-0.1.1.dist-info/entry_points.txt,sha256=13MBMS8xkVXOzapsea6mAjFR3fzPPi8tfgg16xmzbIY,66
+aws_eni_identifier-0.1.1.dist-info/METADATA,sha256=nV2ev9gP0294VwPI5Yje9Z92mUCmW1TRnpsLqebbGvM,1333
+aws_eni_identifier-0.1.1.dist-info/RECORD,,
