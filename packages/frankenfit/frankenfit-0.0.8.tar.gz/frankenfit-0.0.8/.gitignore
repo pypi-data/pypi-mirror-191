@@ -1,0 +1,23 @@
+syntax: glob
+.*.sw[op]
+*~
+.*.py[co]
+*.egg-info
+build/
+dist/
+.tox/
+__pycache__/
+.eggs/
+.vscode
+.venv-*
+requirements.txt
+*.whl
+.ipynb_checkpoints/
+docs/_build
+docs/conf.py
+diamonds.csv
+.dmypy.json
+scratch*
+.coverage/
+notebooks/*.ipynb
+notebooks/_static

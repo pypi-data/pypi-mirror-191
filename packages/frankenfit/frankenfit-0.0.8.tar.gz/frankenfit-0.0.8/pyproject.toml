@@ -1,0 +1,215 @@
+# Copyright (c) 2022 Max Bane <max@thebanes.org>
+#
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this list of
+# conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice, this list
+# of conditions and the following disclaimer in the documentation and/or other materials
+# provided with the distribution.
+#
+# Subject to the terms and conditions of this license, each copyright holder and
+# contributor hereby grants to those receiving rights under this license a perpetual,
+# worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except for failure to
+# satisfy the conditions of this license) patent license to make, have made, use, offer
+# to sell, sell, import, and otherwise transfer this software, where such license
+# applies only to those patent claims, already acquired or hereafter acquired,
+# licensable by such copyright holder or contributor that are necessarily infringed by:
+#
+# (a) their Contribution(s) (the licensed copyrights of copyright holders and
+# non-copyrightable additions of contributors, in source or binary form) alone; or
+#
+# (b) combination of their Contribution(s) with the work of authorship to which such
+# Contribution(s) was added by such copyright holder or contributor, if, at the time the
+# Contribution is added, such addition causes such combination to be necessarily
+# infringed. The patent license shall not apply to any other combinations which include
+# the Contribution.
+#
+# Except as expressly stated above, no rights or licenses from any copyright holder or
+# contributor is granted under this license, whether expressly, by implication, estoppel
+# or otherwise.
+#
+# DISCLAIMER
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+# EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+# OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
+# SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+# TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY
+# WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+# DAMAGE.
+
+
+[build-system]
+requires = ["setuptools>=62", "wheel", "setuptools_scm[toml]~=7.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[project]
+name = "frankenfit"
+dynamic = ["version"]
+authors = [
+    {name = "Max Bane", email = "max@thebanes.org"}
+]
+description = """
+A Python library for creating, fitting, and applying predictive data modeling \
+pipelines."""
+readme = "README-pypi.md"
+
+requires-python = ">=3.8"
+dependencies = [
+    'attrs',
+    'pandas',
+    'pyarrow',
+    'graphviz',
+]
+
+classifiers = [
+    "License :: OSI Approved :: BSD License",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/maxbane/frankenfit"
+"Documentation" = "https://maxbane.github.io/frankenfit/current"
+
+[project.optional-dependencies]
+dask = [
+    'distributed'
+]
+
+tests = [
+    'frankenfit[dask]',
+    'pytest',
+    'pytest-xdist',
+    'pytest-cov',
+    'pydataset == 0.2.0',
+    'scikit-learn',
+    'statsmodels',
+
+    'mypy == 0.991',
+    'pandas-stubs == 1.5.1.221024',
+]
+
+docs = [
+    'jupyter-server < 2', # https://github.com/executablebooks/jupyter-book/issues/1907
+    'jupyter-book ~= 0.13',
+    'furo',
+    'jupytext',
+    'pydataset',
+    'scikit-learn',
+    'matplotlib ~= 3.6',
+    'distributed',
+]
+
+dev = [
+    'frankenfit[dask,docs,tests]',
+    'pre-commit',
+    'build',
+    'tox < 4',
+    # convenience: running linters outside of tox/pre-commit
+    'flake8',
+    'flake8-pyproject',
+    'black',
+    'isort',
+]
+
+[tool.flake8]
+# for compat with black
+max-line-length = 88
+
+# in case someone runs `flake8` with no file args
+extend-exclude = [
+    'scratch_*',
+    'docs',
+    'dist',
+    '.venv-dev',
+    '.mypy-cache',
+    '.pytest_cache',
+    '.vscode',
+    'notebooks',
+]
+
+# compat with black around slice operators
+extend-ignore = ["E203"]
+
+per-file-ignores = [
+	# Unused imports are expected in package __init__.
+	'__init__.py: F401',
+
+	# function name should be lower case. Our convention can include class
+	# names (which are upper case) in test function names.
+	'*/tests/*.py: N802',
+]
+
+
+[tool.mypy]
+plugins = "frankenfit.mypy"
+warn_unused_ignores = true
+warn_redundant_casts = true
+mypy_path = [
+    "src",
+    "tests",
+]
+files = [
+    "src",
+    "tests",
+]
+
+# some indirectly imported libraries cause annoying mypy errors; suppress them.
+[[tool.mypy.overrides]]
+# .tox/mypy/lib/python3.10/site-packages/_pytest/compat.py:22: error: Skipping analyzing
+# "py": module is installed, but missing library stubs or py.typed marker  [import]
+module = "_pytest.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# .tox/mypy/lib/python3.10/site-packages/click/decorators.py:436: error: Cannot find
+# implementation or library stub for module named "importlib_metadata"  [import]
+module = "click.*"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    'ignore:There is no current event loop:DeprecationWarning',
+    'ignore:make_current is deprecated:DeprecationWarning',
+    'ignore::pytest.PytestUnraisableExceptionWarning',
+]
+addopts = "-n auto"
+markers = [
+    "dask"
+]
+
+[tool.coverage]
+[tool.coverage.run]
+omit = [
+    "src/frankenfit/mypy.py"
+]
+data_file = ".coverage/coverage"
+
+[tool.isort]
+profile = "black"
+
+[tool.jupytext]
+formats = "notebooks///ipynb,docs///md:myst"
