@@ -1,0 +1,9 @@
+numpy==1.22.0
+scipy==1.7.3
+salem
+shapely==1.8.0
+rioxarray==0.9.1
+geopandas==0.10.2
+scikit-image
+oggm==1.5.3
+gdal

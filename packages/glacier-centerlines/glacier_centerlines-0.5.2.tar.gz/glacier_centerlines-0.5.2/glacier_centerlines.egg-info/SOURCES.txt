@@ -1,0 +1,15 @@
+setup.py
+glacier_centerlines/RGI11check.py
+glacier_centerlines/__init__.py
+glacier_centerlines/centerlines_rgi.py
+glacier_centerlines/functions.py
+glacier_centerlines/functions_rgi.py
+glacier_centerlines/main.py
+glacier_centerlines/params.py
+glacier_centerlines/setup.py
+glacier_centerlines/utils.py
+glacier_centerlines.egg-info/PKG-INFO
+glacier_centerlines.egg-info/SOURCES.txt
+glacier_centerlines.egg-info/dependency_links.txt
+glacier_centerlines.egg-info/requires.txt
+glacier_centerlines.egg-info/top_level.txt
