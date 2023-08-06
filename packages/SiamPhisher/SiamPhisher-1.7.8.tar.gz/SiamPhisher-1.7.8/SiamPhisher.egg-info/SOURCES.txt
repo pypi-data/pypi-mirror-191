@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+siamphisher
+SiamPhisher.egg-info/PKG-INFO
+SiamPhisher.egg-info/SOURCES.txt
+SiamPhisher.egg-info/dependency_links.txt
+SiamPhisher.egg-info/requires.txt
+SiamPhisher.egg-info/top_level.txt
+files/email.json
+files/maxphisher.gif
+files/requirements.txt
+files/version.txt
