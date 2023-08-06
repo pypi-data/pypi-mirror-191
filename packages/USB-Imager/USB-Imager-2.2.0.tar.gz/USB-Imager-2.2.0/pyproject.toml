@@ -1,0 +1,51 @@
+[build-system]
+requires = ["flit_core >=3.7,<4"]  # >=3.7 for external data section
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "usbimager"
+
+[project]
+name = "USB-Imager"
+
+requires-python = ">=3.9"
+dependencies = [
+    "PySide2",
+    "PyGObject",
+]
+
+authors = [
+    {name = "Skynet-Devel", email = "skynet-devel.tech@secu-design.com"},
+]
+keywords = [
+    "usb", "image", "img", "iso", "write", "writer", "dd", "flash", "boot",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: System",
+    "Topic :: Utilities",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Natural Language :: English",
+]
+
+readme = "README.md"
+license = {file = "LICENSE.md"}
+
+dynamic = ["version", "description"]
+
+[project.urls]
+GitLab = "https://gitlab.com/secu-design/usb-imager"
+PyPI = "https://pypi.org/project/usb-imager"
+
+[tool.flit.sdist]
+exclude = ["usbimager/resources/*.ui"]
+
+[tool.flit.external-data]
+directory = "system_data"
+
+[project.gui-scripts]
+usb-imager = "usbimager.__main__:main"
