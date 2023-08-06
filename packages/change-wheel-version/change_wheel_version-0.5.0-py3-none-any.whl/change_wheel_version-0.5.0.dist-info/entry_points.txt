@@ -1,0 +1,3 @@
+[console_scripts]
+change_wheel_version=change_wheel_version:main
+
