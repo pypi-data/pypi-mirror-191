@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+traefik_validator/__init__.py
+traefik_validator/settings.py
+traefik_validator/tests.py
+traefik_validator/utils.py
+traefik_validator.egg-info/PKG-INFO
+traefik_validator.egg-info/SOURCES.txt
+traefik_validator.egg-info/dependency_links.txt
+traefik_validator.egg-info/entry_points.txt
+traefik_validator.egg-info/top_level.txt
