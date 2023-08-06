@@ -1,0 +1,23 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+
+#################
+# cashbook.book #
+#################
+msgctxt "field:cashbook.book,analytic:"
+msgid "Analytic Account"
+msgstr "Kostenstelle"
+
+
+#################
+# cashbook.line #
+#################
+msgctxt "view:cashbook.line:"
+msgid "Analytic Lines"
+msgstr "Kostenstellenzeilen"
+
+msgctxt "field:cashbook.line,analytic_lines:"
+msgid "Analytic Lines"
+msgstr "Kostenstellenzeilen"
