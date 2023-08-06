@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: damagescanner
+Version: 0.6.0
+Summary: Direct damage assessments for natural disasters
+Author-email: Elco Koks <elco.koks@vu.nl>
+License: MIT License
+Keywords: GIS,natural_hazards,geopandas
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: geopandas (>=0.12.2)
+Requires-Dist: matplotlib (>=3.0)
+Requires-Dist: numpy (>=1.20)
+Requires-Dist: pyproj (>=3.0)
+Requires-Dist: rasterio (>=1.2.6)
+Requires-Dist: xarray (>=0.19.0)
+Requires-Dist: rioxarray (>=0.7.1)
+Requires-Dist: packaging
+Requires-Dist: pandas (>=1.4.0)
+Requires-Dist: shapely (>=2.0)
+
+A python toolkit for direct damage assessments for natural disasters. Even though the method is initially developed for flood damage assessments, it can calculate damages for any hazard for which you just require a vulnerability curve (i.e. a one-dimensional relation).
