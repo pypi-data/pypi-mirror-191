@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: love_packaging
+Version: 0.1.0
+Summary: Package your lua LOVE games with Python
+License: GNU General Public License v3.0
+Author-email: Richard Dally <r.dally@protonmail.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# lua-love-packaging
+Package your LOVE games with Python
+
