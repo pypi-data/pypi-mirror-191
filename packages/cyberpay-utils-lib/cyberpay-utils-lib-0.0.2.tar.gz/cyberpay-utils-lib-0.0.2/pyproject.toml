@@ -1,0 +1,9 @@
+[tool.isort]
+skip_glob = ["src/cyberpay_utils/billing/proto/*"]
+
+[tool.mypy]
+exclude = ['src/cyberpay_utils/billing/proto/*']
+
+[[tool.mypy.overrides]]
+module = ["grpc", "setuptools"]
+ignore_missing_imports = true
