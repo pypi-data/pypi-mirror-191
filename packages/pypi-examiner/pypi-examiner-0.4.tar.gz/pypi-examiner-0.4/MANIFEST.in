@@ -1,0 +1,4 @@
+include LICENSE.md
+include README.md
+include pypi_examiner/__init__.py
+include pypi_examiner/client.py
