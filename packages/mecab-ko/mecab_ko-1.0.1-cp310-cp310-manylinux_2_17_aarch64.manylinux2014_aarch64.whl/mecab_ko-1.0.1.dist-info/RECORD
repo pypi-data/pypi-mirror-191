@@ -1,0 +1,11 @@
+mecab_ko-1.0.1.dist-info/AUTHORS,sha256=psij2ATcniJ3j1Ecbsy8HB-abOSBirq2fbuRO7YGyEg,323
+mecab_ko-1.0.1.dist-info/METADATA,sha256=UY0rvHkZSp8XEMdOgRPYp8JJfIGuS4PRoFPqmkyH2Ho,5904
+mecab_ko-1.0.1.dist-info/entry_points.txt,sha256=H5eUuxKlPeVZKI5KsxeM6FHd72A9cvDfq8Kca4A1zDs,82
+mecab_ko-1.0.1.dist-info/WHEEL,sha256=3AHslvWgUfMTlQQ8cD8Y_NJI60eRP-kac0ENn0XDVG4,154
+mecab_ko-1.0.1.dist-info/RECORD,,
+mecab_ko-1.0.1.dist-info/top_level.txt,sha256=tmR6tP-wMVgBJlK9QLLj3ixcZaEyo0ttFCAlyAT1WQk,9
+mecab_ko-1.0.1.dist-info/COPYING,sha256=ntigF_Iia28Nbdah0lQEgAN0oSxw4UpWypYTF294d44,240
+mecab_ko/cli.py,sha256=SGeqdRm9FDYxfxfV1PW6VJ2pBawvb6CjEQoox5ByD1g,994
+mecab_ko/_MeCab.cpython-310-aarch64-linux-gnu.so,sha256=ofqS4pBeT6jgI-rPKzVv5-qjgwMXLjs7YNZAUl88uFg,858153
+mecab_ko/__init__.py,sha256=Eot1XYNyOLD19FVk7ol55DQ1JLLYYE5fLSg4lTA9s0o,4838
+mecab_ko.libs/libmecab-e489e462.so.2.0.0,sha256=jL5Tit_qachjUkr2jLFCuhnA-sZhESgUioG45skK95I,1047233
