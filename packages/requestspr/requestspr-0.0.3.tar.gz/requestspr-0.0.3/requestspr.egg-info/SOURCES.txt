@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+requestspr/__init__.py
+requestspr.egg-info/PKG-INFO
+requestspr.egg-info/SOURCES.txt
+requestspr.egg-info/dependency_links.txt
+requestspr.egg-info/not-zip-safe
+requestspr.egg-info/requires.txt
+requestspr.egg-info/top_level.txt
