@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+TyroBot/__init__.py
+TyroBot/rubika.py
+TyroBot.egg-info/PKG-INFO
+TyroBot.egg-info/SOURCES.txt
+TyroBot.egg-info/dependency_links.txt
+TyroBot.egg-info/requires.txt
+TyroBot.egg-info/top_level.txt
