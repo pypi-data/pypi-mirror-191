@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tresbackup
+Version: 0.0.1
+Summary: CLI for easy ES backup with simple tracking of non-modified indexes
+Home-page: https://github.com/Stranger65536/tresbackup
+Author: Stranger65536
+Author-email: stranger.65536@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: elasticsearch (==7.10.1)
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: dataclasses-json (==0.5.7)
+Requires-Dist: zipstream-ng (==1.4.0)
+Requires-Dist: tqdm (==4.64.1)
+
+# ES backup tool
+
+CLI for easy ES backup with simple tracking of non-modified indexes
+
+```
+usage: Elasticsearch backup [-h] -e es_url [-b batch_size] [-s scroll_time] [-t request_timeout] [-i [indexes ...]] [-x exclude] [-m meta_file] [-f force] [-o output_path]
+
+Makes a backup of all (or specified) indices
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -e es_url, --es-url es_url
+                        Elasticsearch url with url-encoded credentials (if required)
+  -b batch_size, --batch-size batch_size
+                        Elasticsearch batch size (size) parameter to fetch documents
+  -s scroll_time, --scroll-time scroll_time
+                        Elasticsearch scroll time parameter to fetch documents
+  -t request_timeout, --timeout request_timeout
+                        Elasticsearch request timeout in seconds
+  -i [indexes ...], --index [indexes ...]
+                        Index(es) to backup. If not specified, all indexes are backed up. ES regexes are supported
+  -x exclude, --exclude exclude
+                        Regular expression to exclude indexes. By default skips all indexes start with '.'
+  -m meta_file, --meta-file meta_file
+                        Path to metadata file to track indexes changes
+  -f force, --force force
+                        Ignores exising metadata file and creates backup of all specified indexes
+  -o output_path, --output-path output_path
+                        Path where backup archives will be stored
+
+```
