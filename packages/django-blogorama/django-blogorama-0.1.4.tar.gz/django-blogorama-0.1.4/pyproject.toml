@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[project]
+name = "django-blogorama"
+version = "0.1.4"
+
+authors = [
+  { name="Grant Viklund", email="renderbox@gmail.com" }
+]
+description = "Blogging App to add to any project"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["django", "app"]
+dependencies = [
+    "Django>=3.0,<4.2",
+    "djangorestframework",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+dev = [
+    "django-crispy-forms",
+    "crispy-bootstrap5",
+    "django-allauth",
+    "django-extensions",
+    "django-markdownify",
+    "ipython",
+    "black",
+    "flake8",
+    "flake8-black",
+    "mypy",
+    "bandit",
+    "isort",
+    "toml",
+    "djlint",
+]
+test = ["coverage"]
+docs = [
+    "django_extensions",
+    "coverage",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/renderbox/django-blogorama/"
+"Bug Tracker" = "https://github.com/renderbox/django-blogorama//issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+blogorama = ["templates/blogorama/*.html"]
+
+
+[tool.black]
+line-length = 119
+
+
+[tool.djlint]
+profile="django"
+blank_line_after_tag="load,extends,include"
+blank_line_before_tag="block"
