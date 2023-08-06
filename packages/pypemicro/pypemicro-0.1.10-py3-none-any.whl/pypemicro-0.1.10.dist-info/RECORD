@@ -1,0 +1,16 @@
+pypemicro/__init__.py,sha256=OnK9V1CeGvOusV8-4M5umGDDQLFTYxR503czIsMkqe0,2050
+pypemicro/pemicro.py,sha256=GaZE-qU1BbDKSAh8vDRjnnO3xZQcRITow9FC39MToC8,53626
+pypemicro/pemicro_const.py,sha256=ZdteGpO-T5QjTu-XyW5iunZXk_yA-XfNZMIFmBqccgw,7018
+pypemicro/libs/Linux/unitacmp-64.so,sha256=ZR-YPp0MxzFpl76H5-othpQRMqt4yyZmcl-yihxUVkg,3845344
+pypemicro/libs/MacOS/libusb.dylib,sha256=rax7_BSvyTd41isRbP59MGCVZhzI7paqFDMaXsvGNKQ,131508
+pypemicro/libs/MacOS/unitacmp-64.dylib,sha256=2NuFKj9J_mBsMxQA6f4m4cwhjdFXBd2kkvSAQiJsu2w,3504848
+pypemicro/libs/Windows/unitacmp-32.dll,sha256=i_xZnyPZdf09afLGI2gARs_P2bI5i-IulWfY-9zdN8k,1464984
+pypemicro/libs/Windows/unitacmp-64.dll,sha256=PQyiUVL63psm3zeARZNTCS1XsUqLEBTI5l_Tl1RYqnM,1905816
+tests/__init__.py,sha256=DCvuwCuY88Hlv7IRm_R8zhJBkWAFD8DfvNTrasTfVIQ,115
+tests/conftest.py,sha256=6j5bAiCkHTlACwNg2MpFGW5lmDreUfnEf2hnR8nkdjc,134
+tests/test_basic.py,sha256=qlH5xunPZ2DUMxXFT3CRMasboMniBvr9o8mH6koAaSM,1225
+pypemicro-0.1.10.dist-info/LICENSE,sha256=1XiY7xnUvtW1AHrGj59xb7rlwPhahJvz_2QeP5y1yA8,1948
+pypemicro-0.1.10.dist-info/METADATA,sha256=zyZo-Qp2ppM_b45M58snCXSCw05TQVPsMA-r3SZ4R4I,3228
+pypemicro-0.1.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pypemicro-0.1.10.dist-info/top_level.txt,sha256=75jBmvVpdTSIwxi4VybY2XMzZy4Rxpk4MFAZKVNaKoE,16
+pypemicro-0.1.10.dist-info/RECORD,,
