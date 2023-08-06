@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chatgpt_mixin.egg-info/PKG-INFO
+chatgpt_mixin.egg-info/SOURCES.txt
+chatgpt_mixin.egg-info/dependency_links.txt
+chatgpt_mixin.egg-info/entry_points.txt
+chatgpt_mixin.egg-info/requires.txt
+chatgpt_mixin.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/chatgpt_browser.py
+src/chatgpt_openai.py
+src/mixinbot.py
+src/test.py

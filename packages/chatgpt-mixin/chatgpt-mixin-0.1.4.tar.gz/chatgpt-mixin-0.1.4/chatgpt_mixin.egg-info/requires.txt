@@ -1,0 +1,7 @@
+pyyaml
+mixin-python
+openai
+
+[browser]
+playwright
+cf_clearance
