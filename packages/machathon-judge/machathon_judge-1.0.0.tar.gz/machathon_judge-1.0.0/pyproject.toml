@@ -1,0 +1,25 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "machathon_judge"
+version = "1.0.0"
+description = "Judge library used for evaluating the first phase in the Machathon 4.0 competition"
+readme = "README.md"
+authors = [{ name = "STP", email = "stp23.official@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["machathon", "stp", "autonomous", "coppelia"]
+dependencies = [
+    "pyzmq",
+    "cbor",
+    "numpy",
+    "requests",
+    "websockets"
+]
+requires-python = ">=3.7"

@@ -1,0 +1,5 @@
+pyzmq
+cbor
+numpy
+requests
+websockets
