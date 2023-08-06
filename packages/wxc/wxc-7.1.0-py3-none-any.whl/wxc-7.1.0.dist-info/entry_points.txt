@@ -1,0 +1,2 @@
+[console_scripts]
+wxc = wxc.cli:main
