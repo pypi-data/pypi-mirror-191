@@ -1,0 +1,10 @@
+drf_polymorphic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_polymorphic/apps.py,sha256=8fq6qcRypPwh9wERKAQ6WNWqSjkdOarS07Ycx4GuoFg,246
+drf_polymorphic/extensions.py,sha256=tBphs_loCpZPVOtI20M_zYhcg-nzOlNVZgXTlsYJZbs,3064
+drf_polymorphic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drf_polymorphic/serializers.py,sha256=tsUShseKGkfrCBxZHDNmxchjJXJ32vxYGitPX32g5I4,5105
+drf_polymorphic-0.1.0.dist-info/LICENSE,sha256=KhNTGevqThZfFEC1ONiUS3TexPrgpJ7750e0Y3iGkEU,1061
+drf_polymorphic-0.1.0.dist-info/METADATA,sha256=SONyKHKaFdiObzadDokO8oDR6Z3drQBBa4QrIayPErQ,4505
+drf_polymorphic-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+drf_polymorphic-0.1.0.dist-info/top_level.txt,sha256=wg8_MOpAqsfYZ_VWXJgynXbmRptFX2J1D4RBWMT3dRw,16
+drf_polymorphic-0.1.0.dist-info/RECORD,,
