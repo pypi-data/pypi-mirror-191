@@ -1,0 +1,2 @@
+[console_scripts]
+coverage-rich = coverage_rich.cli.app:app
