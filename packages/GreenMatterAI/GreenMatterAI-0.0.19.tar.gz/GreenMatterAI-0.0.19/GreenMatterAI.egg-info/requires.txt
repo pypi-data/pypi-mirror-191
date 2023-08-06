@@ -1,0 +1,6 @@
+requests
+shortuuid
+aws_requests_auth
+boto3
+pathlib
+datetime
