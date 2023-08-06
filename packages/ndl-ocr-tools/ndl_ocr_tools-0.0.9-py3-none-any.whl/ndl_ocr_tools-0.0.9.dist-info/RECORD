@@ -1,0 +1,10 @@
+ndl_ocr_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndl_ocr_tools/_modidx.py,sha256=KS8pb_R3FgpzbPeBMDsRGgxVdybmwJBiRy_XTLAeKb8,1285
+ndl_ocr_tools/api.py,sha256=AcGxkSQ1-ro36uEl89fhBFCbZ3gz_WJL38yimmGoKu8,6735
+ndl_ocr_tools/core.py,sha256=HOCfdsSGs_ffiI_PNX8puoZ2zomzQaroHdJIpkSxmFU,402
+ndl_ocr_tools-0.0.9.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+ndl_ocr_tools-0.0.9.dist-info/METADATA,sha256=6kvl7soRfxibXDXgjm29qJt1FEX0PHZvGX9R2OykLVE,1109
+ndl_ocr_tools-0.0.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ndl_ocr_tools-0.0.9.dist-info/entry_points.txt,sha256=Qt3xGciCL4Rof0zx4D346UCdz65SJ3fYaMgKw0FZ5cM,48
+ndl_ocr_tools-0.0.9.dist-info/top_level.txt,sha256=rg6VMbIgjOnIiBELkqXwW-bPYcHXlQCs5VYNH7N5Npg,14
+ndl_ocr_tools-0.0.9.dist-info/RECORD,,
