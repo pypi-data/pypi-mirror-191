@@ -1,0 +1,11 @@
+puretabix/__init__.py,sha256=Z7Bz1jb7snA-QSphTmtlkzgjYKVrX3U48VdQYI4weOU,397
+puretabix/bgzip.py,sha256=raUU13hhMwJgev3pLgEu0Pojd7y9t3S1Rc3_HDqqz2o,15359
+puretabix/fsm.py,sha256=0_OyJIefjA8nt4gYatFMcKKg7swWHX57GB_S2lUcJKA,3479
+puretabix/mp.py,sha256=-cTzP__FaarAg99ekDdAq79LaM-eWs32eoYpY5OT990,5054
+puretabix/tabix.py,sha256=-TtrtsBMo9odMEF9gamVLr01F_Fho2nDyerow7IBfK8,20471
+puretabix/vcf.py,sha256=O1Ckne19oQ3YS2vlA4TJoYo3t_5NQf6k19uXtffTNLc,21267
+puretabix-5.3.3.dist-info/LICENSE.txt,sha256=WNor_0_uLygTqvGix_VPVbYC5bGTFifPCtbFPzNJ_KM,1075
+puretabix-5.3.3.dist-info/METADATA,sha256=QrlQZyhIGWUjWCJSq11NYXoJ8X2CRVzpdzQHS0ZQJ7c,5282
+puretabix-5.3.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+puretabix-5.3.3.dist-info/top_level.txt,sha256=r_i2cOsWLmOZcTlYTg1ZSlot5XwSpCZRV87SpDfko4k,10
+puretabix-5.3.3.dist-info/RECORD,,
