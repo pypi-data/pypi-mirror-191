@@ -1,0 +1,78 @@
+{% extends "dj_tracker/base.html" %}
+
+{% block title %}Query Group #{{ object.pk }}{% endblock %}
+
+{% block h1 %}
+    Query Group {{ object.pk }}
+    <small class="text-muted">{{ object.num_queries }} quer{{ object.num_queries|pluralize:"y,ies" }}</small>
+{% endblock %}
+
+{% block body %}
+    <section class="flex">
+        <div class="w-1/4 pr-16">
+            <h5 class="section__subtitle">Filter</h5>
+            <div role="group">
+                <div class="mb-3 mt-1">
+                    <input type="checkbox" id="show-related" autocomplete="off">
+                    <label for="show-related">related</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="show-duplicates" autocomplete="off">
+                    <label for="show-duplicates">duplicates</label>
+                </div>
+            </div>
+            <h5 class="section__subtitle mt-4">Requests</h5>
+            <ol>
+                {% for request in requests %}
+                    <li class="py-2.5 first:pt-0">
+                        <a href="{{ request.get_absolute_url }}" class="break-words">{{ request }}</a>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+        <div class="w-3/4">
+            <h5 class="section__subtitle">Queries</h5>
+            <div>
+                {% for qs_tracking in qs_trackings %}
+                    {% include "dj_tracker/qs_tracking.html" with qs_tracking=qs_tracking query=qs_tracking.query query_pk=qs_tracking.query.pk %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    {{ query_pks|json_script:"query-pks" }}
+
+    <script>
+        const queryPKs = JSON.parse(document.getElementById("query-pks").textContent, (k, v) => v);
+        const showDuplicates = document.querySelector("#show-duplicates");
+        const showRelated = document.querySelector("#show-related");
+        showDuplicates.addEventListener("click", e => {
+            const display = showDuplicates.checked ? "none" : "";
+            if (showRelated.checked) {
+                showRelated.checked = false;
+            }
+            queryPKs.forEach(queryPK => {
+                const el = document.getElementById(queryPK);
+                if (!el.dataset.duplicate) {
+                    el.style.display = display;
+                } else if (el.style.display === "none") {
+                    el.style.display = "";
+                }
+            })
+        })
+        showRelated.addEventListener("click", e => {
+            const display = showRelated.checked ? "none" : "";
+            if (showDuplicates.checked) {
+                showDuplicates.checked = false;
+            }
+            queryPKs.forEach(queryPK => {
+                const el = document.getElementById(queryPK);
+                if (!el.dataset.related) {
+                    el.style.display = display;
+                } else if (el.style.display === "none") {
+                    el.style.display = "";
+                }
+            })
+        })
+    </script>
+{% endblock %}
