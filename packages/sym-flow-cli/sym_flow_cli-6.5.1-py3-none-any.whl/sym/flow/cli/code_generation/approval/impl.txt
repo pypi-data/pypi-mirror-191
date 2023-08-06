@@ -1,0 +1,38 @@
+from sym.sdk.annotations import reducer, hook
+from sym.sdk.integrations import slack
+
+
+# Reducers fill in the blanks that your workflow needs in order to run.
+@reducer
+def get_approvers(event):
+    """Route Sym requests to a specified channel."""
+
+    # Make sure that this channel has been created in your workspace!
+    return slack.channel("#sym-requests", allow_self=True)
+
+
+@hook
+def after_approve(event):
+    header = f":tada: Congratulations, you just ran your first Sym Flow!\nYou're now approved to hyper-warp to `{event.payload.fields['galaxy-name']}` :rocket:\n\n"
+    send_next_steps_message("after_approve", header)
+
+
+@hook
+def after_deny(event):
+    header = f":tada: Congratulations, you just ran your first Sym Flow!\nHowever, you were denied hyper-warp to `{event.payload.fields['galaxy-name']}` :slightly_frowning_face:\n\n"
+    send_next_steps_message("after_deny", header)
+
+
+def send_next_steps_message(hook, header):
+    message = f"""
+{header}
+*Next, you might want to try:*\n
+\t•\tAdding an <https://docs.symops.com/docs/sym-access-flows|Access Target>
+\t•\tAdding <https://docs.symops.com/docs/customizing-implpy-logic|custom logic> to your Flow's `impl.py`
+\t•\tChecking out our <https://github.com/symopsio/examples|Examples Repo> to see some full Flows in action
+
+If you have any questions or would like help, please reach out at support@symops.com, or by running `/sym support` in Slack.
+
+_Hint: You can remove this message by modifying the `{hook}` hook in the `impl.py`, and running `terraform apply` to apply your changes._\n
+    """
+    slack.send_message(slack.channel("#sym-requests"), message)
