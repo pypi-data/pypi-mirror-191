@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: uripecker
+Version: 0.0.9
+Summary: uripecker - Peck them URIs out
+Home-page: https://gitlab.com/vornet/python/python-uripecker
+Author: UNKNOWN
+Author-email: Alois Mahdal <netvor+uripecker@vornet.cz>
+License: LGPLv2
+Description: uripecker takes text and finds URLs.  Along
+        with URLs it also supports several forms
+        of short-hand indentifiers such as "bug 1234",
+        which it can also locate and translate to URLs
+        according to provided mapping.
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires: neaty
