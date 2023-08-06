@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pywaterkotte
+Version: 0.1.2
+Summary: pywaterkotte is a library to communicate with Waterkotte heatpumps.
+Project-URL: Documentation, https://github.com/chboland/pywaterkotte#readme
+Project-URL: Issues, https://github.com/chboland/pywaterkotte/issues
+Project-URL: Source, https://github.com/chboland/pywaterkotte
+Author-email: Christian Boland <github@chbol.de>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# pywaterkotte
+
+pywaterkotte is a library to communicate with Waterkotte heatpumps. Functions tested with my DS 5012.5AI geothermal heatpump.
+
+# Basic usage
+
+```
+>>> from pywaterkotte import Ecotouch, EcotouchTags
+>>> e = Ecotouch('192.168.1.123')
+>>> e.login()
+>>> e.read_value(EcotouchTags.OUTSIDE_TEMPERATURE)
+12.7
+```
+
+# Warning
+
+> "With great power comes great responsibility"
+
+This library allows writing to fields usually not accessible to the end-user. This option should be used with caution as it might damage your heatpump. No responsibility is taken in any form.
+
+# Contributions
+
+Contributions to this library are encouraged. Feel free to create pull-requests or file bug reports.
+
+
