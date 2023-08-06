@@ -1,0 +1,9 @@
+rpithingamajigs
+rpithingamajigs/chardisplay
+rpithingamajigs/chardisplay_sysinfo
+rpithingamajigs/lcdd
+rpithingamajigs/lcdd/client
+rpithingamajigs/lcdd/service
+rpithingamajigs/logging
+rpithingamajigs/platform
+rpithingamajigs/temperature_sensor
