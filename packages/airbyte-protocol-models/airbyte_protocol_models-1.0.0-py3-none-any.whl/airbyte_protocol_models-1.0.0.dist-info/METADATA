@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: airbyte-protocol-models
+Version: 1.0.0
+Summary: Declares the Airbyte Protocol.
+Home-page: https://github.com/airbytehq/airbyte-protocol
+Author: Airbyte
+Author-email: contact@airbyte.io
+License: MIT
+Project-URL: Documentation, https://docs.airbyte.io/
+Project-URL: Source, https://github.com/airbytehq/airbyte-protocol
+Project-URL: Tracker, https://github.com/airbytehq/airbyte-protocol/issues
+Keywords: airbyte airbyte-protocol
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pydantic (~=1.9.2)
+
+# airbyte-protocol
+
+Declares the Airbyte Protocol.
+
+## Key Files
+* `airbyte_protocol.yaml` - declares the Airbyte Protocol (in JSONSchema)
+* `io.airbyte.protocol.models` - this package contains various java helpers for working with the protocol.

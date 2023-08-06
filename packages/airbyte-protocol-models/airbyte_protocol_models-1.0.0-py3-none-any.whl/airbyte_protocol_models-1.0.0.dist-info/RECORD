@@ -1,0 +1,8 @@
+airbyte_protocol/models/__init__.py,sha256=6tb71CwypNjRj1dAM0BT0h7ePFlkGkoIcoQgYwBm4g8,119
+airbyte_protocol/models/airbyte_protocol.py,sha256=969SKSsCqX1xvmffYl3JK3jgVgoVbJlAtxJJZRj8A3c,18672
+airbyte_protocol/models/well_known_types.py,sha256=HD1O-crGnUo-3YIYm3k2Pf3Uq8mcvPLvfIxv5mMDMic,2737
+airbyte_protocol_models-1.0.0.dist-info/LICENSE.txt,sha256=Wfe61S4BaGPj404v8lrAbvhjYR68SHlkzeYrg3_bbuM,1051
+airbyte_protocol_models-1.0.0.dist-info/METADATA,sha256=v43FKIO_pZlE5CfvbVpmb_6S9GNjZdAFtFjsvroSaCE,1132
+airbyte_protocol_models-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+airbyte_protocol_models-1.0.0.dist-info/top_level.txt,sha256=JdeNJoNGD2e_BMIrt8f74PJ3-MrrRGJZQAuQV5rH8fY,17
+airbyte_protocol_models-1.0.0.dist-info/RECORD,,
