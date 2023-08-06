@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: anywidget
+Version: 0.1.1
+Summary: custom jupyter widgets made easy
+Project-URL: homepage, https://github.com/manzt/anywidget
+Author-email: Trevor Manz <trevor.j.manz@gmail.com>
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.7
+Requires-Dist: importlib-metadata; python_version < '3.8'
+Requires-Dist: ipywidgets
+Requires-Dist: typing-extensions
+Provides-Extra: dev
+Requires-Dist: psygnal; extra == 'dev'
+Requires-Dist: watchfiles; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: black[jupyter]; extra == 'test'
+Requires-Dist: pydantic; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: ruff==0.0.238; extra == 'test'
+Description-Content-Type: text/markdown
+
+# anywidget <a href="https://github.com/manzt/anywidget"><img align="right" src="https://raw.githubusercontent.com/manzt/anywidget/main/docs/public/favicon.svg" height="38"></img></a>
+
+[![PyPI](https://img.shields.io/pypi/v/anywidget.svg?color=green)](https://pypi.org/project/anywidget)
+[![License](https://img.shields.io/pypi/l/anywidget.svg?color=green)](https://github.com/manzt/anywidget/raw/main/LICENSE)
+[![codecov](https://codecov.io/gh/manzt/anywidget/branch/main/graph/badge.svg)](https://codecov.io/gh/manzt/anywidget)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/manzt/anywidget/blob/main/examples/Counter.ipynb)
+
+custom jupyter widgets made easy
+
+- create widgets **without complicated cookiecutter templates**
+- **publish to PyPI** like any other Python package
+- prototype **within** `.ipynb` or `.py` files
+- run in **Jupyter**, **JupyterLab**, **Google Colab**, **VSCode**, and more
+- develop (optionally) with [Vite](https://vitejs.dev/) for **instant HMR**
+
+Learn more in
+[the announcement](https://anywidget.dev/blog/introducing-anywidget).
+
+## Installation
+
+> **Warning**: **anywidget** is new and under active development. It is not yet
+> ready for production as APIs are subject to change.
+
+**anywidget** is available on [PyPI](https://pypi.org/project/anywidget/) and
+may be installed with `pip`:
+
+```bash
+pip install anywidget
+```
+
+It is also available on
+[conda-forge](https://anaconda.org/conda-forge/anywidget). If you have
+[Anaconda](https://www.anaconda.com/distribution/#download-section) or
+[Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your
+computer, you can install **anywidget** with the following command:
+
+```bash
+conda install -c conda-forge anywidget
+```
+
+## Usage
+
+```python
+import anywidget
+import traitlets
+
+class CounterWidget(anywidget.AnyWidget):
+    # Widget front-end JavaScript code
+    _esm = """
+    export function render(view) {
+      let getCount = () => view.model.get("count");
+      let button = document.createElement("button");
+      button.innerHTML = `count is ${getCount()}`;
+      button.addEventListener("click", () => {
+        view.model.set("count", getCount() + 1);
+        view.model.save_changes();
+      });
+      view.model.on("change:count", () => {
+        button.innerHTML = `count is ${getCount()}`;
+      });
+      view.el.appendChild(button);
+    }
+    """
+    # Stateful property that can be accessed by JavaScript & Python
+    count = traitlets.Int(0).tag(sync=True)
+```
+
+Read [the documentation](https://anywidget.dev/en/getting-started) to learn
+more.
+
+## Development
+
+```bash
+pip install -e .
+```
+
+If you are using the classic Jupyter Notebook you need to install the
+nbextension:
+
+```bash
+jupyter nbextension install --py --symlink --sys-prefix anywidget
+jupyter nbextension enable --py --sys-prefix anywidget
+```
+
+Note for developers:
+
+- the `-e` pip option allows one to modify the Python code in-place. Restart the
+  kernel in order to see the changes.
+- the `--symlink` argument on Linux or OS X allows one to modify the JavaScript
+  code in-place. This feature is not available with Windows.
+
+For developing with JupyterLab:
+
+```bash
+jupyter labextension develop --overwrite anywidget
+```
+
+## Sending PRs
+
+### Code styling
+
+There are a few guidelines we follow:
+
+- For JavaScript, internal variables are written with
+  `snake_case` while external APIs are written with `camelCase` (if applicable).
+- For Python, ensure `black --check .` and `ruff .` pass. You can run
+  `black .` and `ruff --fix .` to format and fix linting errors.
+
+### Generating changelogs
+
+For changes to be reflected in package changelogs, run `npx changeset` and
+follow the prompts. 
+
+> **Note** not every PR requires a changeset. Since changesets are focused on 
+> releases and changelogs, changes to the repository that don't effect these
+> won't need a changeset (e.g., documentation, tests).
+
+## Release
+
+The [Changesets GitHub action](https://github.com/changesets/action) will create
+and update a PR that applies changesets and publishes new versions of
+**anywidget** to NPM and PyPI.

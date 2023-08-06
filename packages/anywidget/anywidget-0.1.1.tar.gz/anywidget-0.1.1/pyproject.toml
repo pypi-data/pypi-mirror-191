@@ -1,0 +1,102 @@
+[build-system]
+requires = ["hatchling", "jupyterlab==3.*"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anywidget"
+description = "custom jupyter widgets made easy"
+authors = [
+    { name = "Trevor Manz", email = "trevor.j.manz@gmail.com" }
+]
+license = { text = "MIT" }
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "ipywidgets",
+    "importlib_metadata ; python_version < '3.8'",
+    "typing_extensions",
+]
+
+[project.optional-dependencies]
+test = [
+    "black[jupyter]",
+    "pydantic",
+    "pytest",
+    "pytest-cov",
+    "ruff==0.0.238",
+]
+dev = [
+    "psygnal",
+    "watchfiles",
+]
+
+[project.urls]
+homepage = "https://github.com/manzt/anywidget"
+
+[tool.hatch.build]
+artifacts = [
+    "anywidget/nbextension/index.*",
+    "anywidget/labextension/*.tgz",
+    "anywidget/labextension",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"anywidget/nbextension" = "share/jupyter/nbextensions/anywidget"
+"anywidget/labextension" = "share/jupyter/labextensions/anywidget"
+"./anywidget.json" = "etc/jupyter/nbconfig/notebook.d/anywidget.json"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+    "anywidget/nbextension/index.js",
+    "anywidget/labextension/package.json",
+]
+skip-if-exists = [
+    "anywidget/nbextension/index.js",
+    "anywidget/labextension/package.json",
+]
+dependencies = [
+    "hatch-jupyter-builder>=0.5.0",
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+build_cmd = "build"
+
+[tool.hatch.version]
+path = "package.json"
+pattern = "\"version\": \"(?P<version>.+?)\""
+
+[tool.hatch.envs.default]
+features = ["test", "dev"]
+
+[tool.hatch.envs.default.scripts]
+fmt = "black ."
+lint = "ruff ."
+test = "pytest . --cov anywidget --cov-report term-missing"
+
+# https://docs.pytest.org/en/latest/customize.html
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
+filterwarnings = [
+    "error:::anywidget",  # make warnings coming from anywidget errors in tests
+    "ignore:Jupyter is migrating its paths:DeprecationWarning",
+    "ignore:Deprecated in traitlets 4.1, use the instance .metadata:DeprecationWarning",
+]
+
+# https://coverage.readthedocs.io/en/6.4/config.html
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+    "@overload",
+    "except ImportError",
+    "\\.\\.\\.",
+    "raise NotImplementedError()"
+]
