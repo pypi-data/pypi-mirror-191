@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: mfdfloods
+Version: 0.1.32
+Summary: Multiple flow direction floods hydrodynamic modelation
+Author-email: Orzo Cogorzo <orzocogorzo@hotmail.com>
+Project-URL: Homepage, https://github.com/orzocogorzo/mfdfloods
+Keywords: mfdfloods,mfd,flood,drainpaths,hidrology,downstreams,multiple flow direction
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: richdem
+Requires-Dist: gdal
+
+# MFD Floods
+
+A python script to model hidrologic behavior of downstream drainpaths. With a DTM cover of your study area you can define longitude and latitude (in the DTM distance unit) as a start point and an income flow to see how the water will flood the territory.
+
+## Installation
+
+With pip `pip install mfdfloods`
+
+From source `python -m pip install -r /path/to/mfdfloods/directory`
+
+## Dependencies
+
+The script requires GDAL installed on your system and python-gdal as a python dependency.
+
+To install GDAL execute `apt install gdal-bin libgdal-dev`.
+
+## Module
+
+Execute .py from inside the folder to test the algorithm.
+
+The test.py is a script that call the class MFD and execute its modelization with
+the datasource from the `data/` folder. There you have to place your GeoJSON files
+with the modelized line geometry.
+
+`python test.py <path:data> <lng:float> <lat:float>`
+
+Arguments:
+
+1. **data** is the pathname of the data directory. There you have to place a
+   `dtm.tif`, a `mannings.tif` and a `hydrogram.csv` files.
+2. **lng** is the longitude in your reference dtm distance units.
+3. **lat** is the latitude in your reference dtm distance units.
+
+The output will be placed in your **data** floder as three files with the name _(draft|flood|speed)\_{lng}-{lat}.tif_.
+
+## Use
+
+Include mfdfloods as a module on your scripts with `from mfdfloods import MFD` then instantiate the class MFD to execute its drainpaths method.
