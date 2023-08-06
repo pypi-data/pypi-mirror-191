@@ -1,0 +1,23 @@
+{
+  "drop_objects": [
+    "vw",
+    "trg",
+    "tab",
+    "prc",
+    "fct",
+    "idx"
+  ],
+  "create_objects": [
+    "tab",
+    "cst",
+    "fct",
+    "prc",
+    "vw",
+    "trg",
+    "idx"
+  ],
+  "plugins": [
+    "noora.plugins.GeneratePlugin.GeneratePlugin",
+    "noora.plugins.mysql.help.HelpPlugin.HelpPlugin"
+  ]
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+mynoora = noora.mynoora_cli:main
