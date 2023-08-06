@@ -1,0 +1,15 @@
+core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core/custom_error.py,sha256=0_hCs0iQkjcl5HaP0MrPY226m067eGGE1MdkythrYgI,319
+core/taxi_ops_logger.py,sha256=kt8-xqju4RzuvVpPa3wsQWnfjN0ayHNGiNPbtMaMYow,1320
+db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db/database.py,sha256=kfjxdNcGDRwOIjWr_80wNTFzU95LuHEby-dKQIfuFww,9283
+db/database_management.py,sha256=vJb1HN4SSVwZ-7DcJJl7rNCCR1L0d6S0R9Lo3zwiOwo,12077
+db/model.py,sha256=O6OzvMdSZgs9jsZMVAD7dnrpjT6OC23ucFHXV2ztQDk,3519
+service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+service/operation_management.py,sha256=-GUpUy4R7BUo9N75FiPDsEs2QSCQ2vXjqwBqAs3n7pY,1048
+service/taxi_driver_management.py,sha256=537TQ8Ivt-JaxTUkhMSt1bwr3aVP6de0Pf96A7Ek16w,6520
+service/user_management.py,sha256=BVbh4qcaLcaMJvnw7ScqRdXNKURtP8PQAq3iW-RqEWk,509
+taxi_ops_backend-0.0.3.dist-info/METADATA,sha256=m_P7YfvY46jI4rdxIC0Lq35tAu4dRes7Gvga6z9W2DA,7686
+taxi_ops_backend-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+taxi_ops_backend-0.0.3.dist-info/top_level.txt,sha256=6tYTjxtAmrz_luDsocZjMh_58uVIpZ6CLKc-zsiBiVE,16
+taxi_ops_backend-0.0.3.dist-info/RECORD,,
