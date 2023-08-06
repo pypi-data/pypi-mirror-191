@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block title %}Kijiji Manager{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+<table id="header"><tr><td><h2>Listings</h2></td><td valign="bottom" align="right"><h2></h2></td></tr></table>
+<div>
+    <p>Welcome back, {{ name }}!<span class="button" style="float:right;"><a href="{{ url_for('ad.repost_all') }}">Repost all ads <i class="fas fa-reply"></i></a></span></p>
+    <table id="adlist">
+        <thead>
+        <tr>
+            <th>Image</th>
+            <th>Ad ID</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Views</th>
+            <th>Page</th>
+            <th>Created</th>
+            <th>Expires</th>
+            <th>Repost</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% if 'ad:ad' in data['ad:ads'] %}
+        {% set ads = data['ad:ads']['ad:ad'] %}
+
+        {#- If only one ad, make it an array of one member in for loop #}
+        {% if ads|islist == false %}
+            {% set ads = [ads] %}
+        {% endif -%}
+
+        {% for ad in ads %}
+        <tr data-href="{{ url_for('ad.show', ad_id=ad['@id']) }}">
+            <td align="center"><img src="{{ ad|imgthumbfirst }}"></td>
+            <td align="center"><a href="{{ url_for('ad.show', ad_id=ad['@id']) }}">{{ ad['@id'] }}</a></td>
+            <td>{{ ad['ad:title'] }}</td>
+            <td>{{ ad['cat:category']['cat:id-name'] }}</td>
+            <td align="right">
+            {%- if 'ad:price' in ad -%}
+            {%- if ad['ad:price']['types:price-type']['types:value'] == 'SPECIFIED_AMOUNT' -%}
+            {%- if 'types:currency-iso-code' in ad['ad:price'] -%}
+                {{ ad['ad:price']['types:currency-iso-code']['types:value']['@localized-label'] }}{{ ad['ad:price']['types:amount'] }}
+            {%- else -%}
+                {{ '$%s' % ad['ad:price']['types:amount'] if ad['ad:price']['types:amount'] is not none else '' }}
+            {%- endif -%}
+            {%- else -%}
+                {{ ad['ad:price']['types:price-type']['types:value'] }}
+            {%- endif -%}
+            {%- endif -%}
+            </td>
+            <td align="center">{{ ad['ad:view-ad-count'] }}</td>
+            <td align="center">{{ ad['ad:rank']|adpage }}</td>
+            <td align="center">{{ ad['ad:start-date-time']|datetime }}</td>
+            <td align="center">{{ ad['ad:end-date-time']|datetime }}</td>
+            <td align="center"><a href="{{ url_for('ad.repost', ad_id=ad['@id']) }}"><i class="fas fa-reply"></i></a></td>
+            <td align="center"><a href="{{ url_for('ad.delete', ad_id=ad['@id']) }}"><i class="fas fa-trash"></i></a></td>
+        </tr>
+        {% endfor %}
+        {% endif %}
+        </tbody>
+    </table>
+</div>
+<script>
+$(function () {
+    $("#adlist").DataTable({
+        "order": [[ 7, "desc" ]] // Default sort "Created" column descending
+    });
+
+    // Make each table row clickable and link to specific ad page
+    $("#adlist *[data-href]").on("click", function () {
+        window.location = $(this).data("href");
+    });
+});
+</script>
+{% endblock %}

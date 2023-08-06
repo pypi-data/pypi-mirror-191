@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+{% set ad = data['ad:ad'] %}
+
+{% block title %}Ad {{ ad['@id'] }}{% endblock %}
+
+{% block content %}
+<h2>Ad {{ ad['@id'] }}</h2>
+<div>
+    <table>
+        <tr>
+            <td>Ad Title</td>
+            <td>{{ ad['ad:title'] }}</td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td>{{ ad['cat:category']['cat:id-name'] }}<td>
+        </tr>
+        <tr>
+            <td>Category ID</td>
+            <td>{{ ad['cat:category']['@id'] }}</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>
+            {%- if 'ad:price' in ad -%}
+            {%- if ad['ad:price']['types:price-type']['types:value'] == 'SPECIFIED_AMOUNT' -%}
+            {%- if 'types:currency-iso-code' in ad['ad:price'] -%}
+                {{ ad['ad:price']['types:currency-iso-code']['types:value']['@localized-label'] }}{{ ad['ad:price']['types:amount'] }}
+            {%- else -%}
+                {{ '$%s' % ad['ad:price']['types:amount'] if ad['ad:price']['types:amount'] is not none else '' }}
+            {%- endif -%}
+            {%- else -%}
+                {{ ad['ad:price']['types:price-type']['types:value'] }}
+            {%- endif -%}
+            {%- endif -%}
+            </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>{{ ad['ad:description'] }}</td>
+        </tr>
+        <tr>
+            <td>Location ID</td>
+            <td>{{ ad['loc:locations']['loc:location']['@id'] }}</td>
+        </tr>
+        <tr>
+            <td>Longitude</td>
+            <td>{{ ad['loc:locations']['loc:location']['loc:longitude'] }}</td>
+        </tr>
+        <tr>
+            <td>Latitude</td>
+            <td>{{ ad['loc:locations']['loc:location']['loc:latitude'] }}</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>{{ ad['ad:ad-address']['types:full-address'] }}</td>
+        </tr>
+        <tr>
+            <td>Ranking</td>
+            <td>{{ ad['ad:rank'] }}</td>
+        </tr>
+        <tr>
+            <td>Page</td>
+            <td>{{ ad['ad:rank']|adpage }}</td>
+        </tr>
+        <tr>
+            <td>View Count</td>
+            <td>{{ ad['ad:view-ad-count'] }}</td>
+        </tr>
+        <tr>
+            <td>Creation Date</td>
+            <td>{{ ad['ad:creation-date-time']|datetime }}</td>
+        </tr>
+        <tr>
+            <td>Start Date</td>
+            <td>{{ ad['ad:start-date-time']|datetime }}</td>
+        </tr>
+        <tr>
+            <td>End Date</td>
+            <td>{{ ad['ad:end-date-time']|datetime }}</td>
+        </tr>
+        <tr>
+            <td>Images</td>
+            <td>
+            {%- for img in ad|imgthumbs -%}
+                <a href="{{ img }}"><img src="{{ img }}"></a>
+                {%- if not img.last %}{{ '\n' }}{% endif -%}
+            {%- endfor %}
+            </td>
+        </tr>
+        <tr>
+            <td>Public URL</td>
+            <td><a href="{{ ad|adurl }}">{{ ad|adurl }}</a></td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
