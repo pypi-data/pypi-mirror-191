@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: unduplicate-itunes
+Version: 1.0.0
+Summary: Remove duplicated iTunes song files from your computer
+License: MIT
+Author: Ariff Jeff
+Author-email: ariffjeff@icloud.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: send2trash (>=1.8.0,<2.0.0)
+Requires-Dist: tinytag (>=1.8.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# unduplicate-itunes
+Moves duplicate song files from your itunes directory to the trash.
+
+Given that iTunes doesn't automatically remove missing songs (that you have deleted because they are duplicates), you will still need to manually remove the missing song entries from iTunes itself.
+
+## Behavior
+* Directories (usually albums folders) that only contain duplicate files will be moved to the trash.
+* A log file of all actions is output once the script finishes.
+
+## Install
+```
+pip install unduplicate-itunes
+```
+## Usage
+Just run [remove_by_artist_and_title.py](/unduplicate_itunes/remove_by_artist_and_title.py) and follow the prompts.
+
+There are other scripts included that try to find duplicate by other methods but they are unfinished.
+

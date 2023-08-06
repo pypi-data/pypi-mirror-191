@@ -1,0 +1,8 @@
+unduplicate_itunes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unduplicate_itunes/remove_by_artist_and_title.py,sha256=TF2-OOv0xP9MZYbsryG8jF6iRRtITNqmZPAXdNtsrH4,5095
+unduplicate_itunes/remove_by_hash.py,sha256=nFGPJ3TGddaXdE2vhzL_zZ_sVWxQJX-O6EFBByXK_uw,2758
+unduplicate_itunes/remove_duplicate_itunes_songs.py,sha256=jvkKRU4SdnrAsNQCqAAlRchbArPY3DP2QXQQiL9DbGA,5014
+unduplicate_itunes-1.0.0.dist-info/LICENSE,sha256=6e4OsIQgiYxOpZJCFgxvtVltfwN78Ms4cZRx4TMH_Bs,1067
+unduplicate_itunes-1.0.0.dist-info/METADATA,sha256=FZSgXECwApTNZh1E9S6Vyv9P8-Tf4jGT9pULeChp8ME,1342
+unduplicate_itunes-1.0.0.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+unduplicate_itunes-1.0.0.dist-info/RECORD,,
