@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: flexout
+Version: 0.1.2
+Summary: Write text or tabular data to a flexible, easily configurable output: CSV or Excel file, or tabulated stdout/stderr.
+Author-email: Ipamo <dev@ipamo.net>
+Project-URL: Homepage, https://github.com/ipamo/flexout
+Project-URL: Bug Tracker, https://github.com/ipamo/flexout/issues
+Keywords: csv,excel,tabulate,smb,samba,share
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7.3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: all
+Requires-Dist: tabulate ; extra == 'all'
+Requires-Dist: openpyxl ; extra == 'all'
+Requires-Dist: defusedxml ; extra == 'all'
+Requires-Dist: smbprotocol ; extra == 'all'
+Provides-Extra: excel
+Requires-Dist: openpyxl ; extra == 'excel'
+Requires-Dist: defusedxml ; extra == 'excel'
+Provides-Extra: smb
+Requires-Dist: smbprotocol ; extra == 'smb'
+Provides-Extra: tabulate
+Requires-Dist: tabulate ; extra == 'tabulate'
+
+Flexout
+=======
+
+A Python library to write text or tabular data to a flexible, easily configurable output: CSV or Excel file, or tabulated stdout/stderr.
+
+The output file may be on the local file system or on a Windows/Samba share (including when the library is used on Linux).
+
+
+## Installation
+
+Install with all optional dependencies:
+
+    pip install flexout[all]
+
+Optional dependencies may also be requested individually:
+
+    pip install flexout[tabulate,excel,smb]
+
+
+## Usage
+    
+Export text to stdout or to a file:
+
+```py
+from flexout import Flexout
+
+with Flexout(filename or "stdout") as o:
+    o.file.write("Content")
+```
+    
+Export tabular data to stdout or to a file:
+
+```py
+from flexout import Flexout
+
+with Flexout(filename or "stdout") as o:
+    o.append_headers("Id", "Word")
+    o.append_row(1, "Hello")
+    o.append_row(2, "World")
+```
+
+If `filename` has extension with `.xlsx`, output will be in Excel 2010 format.
+Otherwise it will be in CSV format.
+
+If `filename` starts with `\\`, output will be done on the corresponding Windows/Samba share.
+To indicate Samba credentials, call `configure_smb_credentials` before using class `Flexout`.
+Example:
+
+```py
+from flexout import Flexout, configure_smb_credentials
+
+configure_smb_credentials(user=..., password=...)
+
+with Flexout(r"\\server\share\path\to\file") as o:
+    ...
+```
