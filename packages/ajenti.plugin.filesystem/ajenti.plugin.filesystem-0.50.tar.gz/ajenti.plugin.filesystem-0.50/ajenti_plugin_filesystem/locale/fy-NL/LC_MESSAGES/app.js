@@ -1,0 +1,1 @@
+{"": "", "All combined": "", "Cancel": "Annulearje", "File name": "", "Filesystem": "", "Save": "Bewarje", "Select this directory": "", "Total": "", "Up one level": "", "Disk space": "", "File transfer": "", "Deleting": "", "Read from the filesystem": "", "Write to the filesystem": "", "Could not load directory": ""}

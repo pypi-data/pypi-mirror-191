@@ -1,0 +1,1 @@
+{"": "", "All combined": "", "Cancel": "Ni\u00feili\u00e7arh", "File name": "N\u00f3mina del fischeir", "Filesystem": "", "Save": "Guardarh", "Select this directory": "", "Total": "", "Up one level": "", "Disk space": "", "File transfer": "", "Deleting": "", "Read from the filesystem": "", "Write to the filesystem": "", "Could not load directory": ""}

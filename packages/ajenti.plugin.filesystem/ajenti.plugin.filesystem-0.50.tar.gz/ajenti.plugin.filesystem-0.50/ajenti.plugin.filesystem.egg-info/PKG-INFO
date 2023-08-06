@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ajenti.plugin.filesystem
+Version: 0.50
+Summary: Filesystem API
+Home-page: https://ajenti.org
+Author: Ajenti project
+Author-email: e@ajenti.org
+Requires-Python: >=3
+
+A Filesystem API plugin for Ajenti panel

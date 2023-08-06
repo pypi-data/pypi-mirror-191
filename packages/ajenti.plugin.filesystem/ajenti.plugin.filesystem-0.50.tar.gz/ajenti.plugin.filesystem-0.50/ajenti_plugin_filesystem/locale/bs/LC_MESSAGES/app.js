@@ -1,0 +1,1 @@
+{"": "", "All combined": "", "Cancel": "", "File name": "", "Filesystem": "", "Save": "", "Select this directory": "", "Total": "", "Up one level": "", "Disk space": "", "File transfer": "", "Deleting": "", "Read from the filesystem": "", "Write to the filesystem": "", "Could not load directory": ""}

@@ -1,0 +1,1 @@
+{"": "", "All combined": "Tot combinat", "Cancel": "Cancel\u00b7lar", "File name": "", "Filesystem": "Sistema d'arxius", "Save": "Desar", "Select this directory": "", "Total": "", "Up one level": "", "Disk space": "", "File transfer": "", "Deleting": "", "Read from the filesystem": "", "Write to the filesystem": "", "Could not load directory": ""}
