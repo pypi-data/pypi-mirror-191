@@ -1,0 +1,2 @@
+[console_scripts]
+bpyth = bpyth.__main__:main
