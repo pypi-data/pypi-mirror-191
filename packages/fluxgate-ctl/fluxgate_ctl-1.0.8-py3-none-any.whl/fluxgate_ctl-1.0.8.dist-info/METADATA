@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: fluxgate-ctl
+Version: 1.0.8
+Summary: fluxgate-ctl package for TUCAN
+Author-email: Bryerton Shaw <bryerton@triumf.ca>
+License: MIT License
+        
+        Copyright (c) [2023] [Bryerton Shaw]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zmq
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+
+# FLUXGATE-CTL
+
+## Overview
+
+A python-based command line utility for accessing the TUCAN Fluxgate Magnetometer module
+
+The tool allows for the plotting of one or all channels, capturing channel data to a file, and setting (or getting) the configuration of the module
+
+The available subcommands are:
+
+- `discover`
+- `data`
+- `plot`
+- `status`
+- `read`
+- `write`
+- `set-config`
+- `get-config`
+
+## Installation
+
+The recommended installation method is via pip
+
+  To install:
+    `pip install fluxgate-ctl`
+
+  To upgrade:
+    `pip install -U fluxgate-ctl`
+
+  To run it locally from the source:
+    `python -m fluxgate_ctl`
+
+## Interactive
+
+ Command:
+  `fluxgate-ctl [-h] [-i INI_FILE] [-l LOGFILE] [discover|data|plot|status|read|write|set-config|get-config]`
+
+ Purpose:
+  Connects to an esper service located at `url` and opens an interactive shell
+
+ Options:
+
+  `-h` or `--help`
+  Print out help for this subcommand
+
+  `--verison`
+  Print out current version
+
+  `-i INI_FILE` or  `--ini`
+   Ini file to use, will be created if using `get-config`
+
+  `-v` or `--verbose`
+   Increase logging level, can be used multiple times
+
+  `-l LOG_FILE` or `--log LOG_FILE`
+   Log to file instead of standard out

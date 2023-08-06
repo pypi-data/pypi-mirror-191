@@ -1,0 +1,2 @@
+[console_scripts]
+fluxgate-ctl = fluxgate_ctl.__main__:main
