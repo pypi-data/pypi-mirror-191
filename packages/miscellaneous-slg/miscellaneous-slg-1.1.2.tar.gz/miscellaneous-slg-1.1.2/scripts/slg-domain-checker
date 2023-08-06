@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+import subprocess
+import os
+import argparse
+import time
+
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+
+    # argument groups can have their tickers combined (ie -su)
+    bools = parser.add_argument_group()
+
+    parser.add_argument(
+        '-d', '--domain_file', default='/home/steven/domains-to-check.txt',
+        help='path to a file defining what domains to check, line by line')
+
+    args = parser.parse_args()
+
+    return args
+
+
+if __name__ == '__main__':
+    args = get_arguments()
+
+    available_domains = []
+    with open(args.domain_file) as f:
+        domains = [line.rstrip() for line in f]
+        for domain in domains:
+            try:
+                output = subprocess.check_output(f'whois {domain}', shell=True)
+            except Exception as e:
+                available_domains.append(domain)
+            # time.sleep(5)
+
+    if len(available_domains) > 0:
+        subprocess.run(
+            f'slg-send-text-message -m "These domains are now available: {", ".join(available_domains)}"',
+            shell=True)

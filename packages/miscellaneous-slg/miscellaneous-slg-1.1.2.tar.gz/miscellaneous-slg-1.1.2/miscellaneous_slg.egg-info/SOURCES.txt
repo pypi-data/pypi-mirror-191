@@ -1,0 +1,10 @@
+README.md
+setup.py
+miscellaneous_slg/__init__.py
+miscellaneous_slg.egg-info/PKG-INFO
+miscellaneous_slg.egg-info/SOURCES.txt
+miscellaneous_slg.egg-info/dependency_links.txt
+miscellaneous_slg.egg-info/requires.txt
+miscellaneous_slg.egg-info/top_level.txt
+scripts/slg-domain-checker
+scripts/slg-send-text-message

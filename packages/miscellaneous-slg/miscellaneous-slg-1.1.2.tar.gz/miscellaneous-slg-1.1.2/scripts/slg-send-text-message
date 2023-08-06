@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+import aiosmtplib
+from typing import Tuple, Union
+from email.message import EmailMessage
+import re
+import asyncio
+import argparse
+from argparse import RawTextHelpFormatter
+from logger_slg import init_logger
+import yaml
+from pprint import pformat
+
+HOST = "smtp.gmail.com"
+
+
+CARRIER_MAP = {
+    "verizon": "vtext.com",
+    "tmobile": "tmomail.net",
+    "sprint": "messaging.sprintpcs.com",
+    "at&t": "txt.att.net",
+    "boost": "smsmyboostmobile.com",
+    "cricket": "sms.cricketwireless.net",
+    "uscellular": "email.uscc.net",
+}
+
+# # this section is here because when we pass in a config file we also want to include those variables as potential arguments
+# # and required=True in the argparse arguments would not allow that to happen.
+# # So from now on I'm using these two sections to verify arguments are up to standard
+# REQUIRED_ARGUMENTS = []
+# SENSITIVE_ARGUMENTS = [] # place any passwords or other sensitive arguments in here to not expose them in configuration printing
+# SPECIAL_REQUIREMENTS = { # variable must return a truthy value for these lambda functions in order to proceed with running the script; follow the example requirements precedence for setting new requirements
+#     'config_filepath': [
+#         {
+#             'name': 'Filepath is an absolute filepath',
+#             'requirement': lambda value: value.startswith('/')
+#         },
+#     ]
+# }
+
+# this section is here because when we pass in a config file we also want to include those variables as potential arguments
+# and required=True in the argparse arguments would not allow that to happen.
+# So from now on I'm using these two sections to verify arguments are up to standard
+REQUIRED_ARGUMENTS = [
+    'sending_email',
+    'phone_number',
+    'phone_carrier',
+    'message',
+    'subject',
+    'app'
+]
+SENSITIVE_ARGUMENTS = [
+    'app'
+] # place any passwords or other sensitive arguments in here to not expose them in configuration printing
+SPECIAL_REQUIREMENTS = { # variable must return a truthy value for these lambda functions in order to proceed with running the script; follow the example requirements precedence for setting new requirements
+    'phone_number': [
+        {
+            'name': 'Phone number is 10 digit number',
+            'requirement': lambda value: re.match(re.compile('^\d{10}$'), str(value))
+        },
+    ],
+    'phone_carrier': [
+        {
+            'name': 'Carrier exists in carrier list',
+            'requirement': lambda value: value in CARRIER_MAP.keys()
+        },
+    ],
+}
+
+def get_arguments():
+    parser = argparse.ArgumentParser('''
+
+
+        Any arguments defined from the command line will take precedence over config values.
+    ''', formatter_class=RawTextHelpFormatter)
+
+    parser.add_argument(
+        '-e', '--sending_email',
+        help='The email to send the text message from')
+
+    parser.add_argument('-p', '--phone_number',
+                        help='The phone number to send the text to')
+
+    parser.add_argument(
+        '-C', '--phone_carrier',
+        help=f"The phone's carrier. Available options are {', '.join(list(CARRIER_MAP.keys()))}")
+
+    parser.add_argument(
+        '-m', '--message', required=True,
+        help='The message to send to the recipient')
+
+    parser.add_argument('-s', '--subject',
+                        help='Subject of the text message')
+
+    parser.add_argument('-a', '--app',
+                        help='The application p@$sword. Defined this way for obfuscation of grepping purposes.')
+
+    parser.add_argument('-c', '--config_filepath', default='/home/steven/.config/slg/slg-send-text-message.yml',
+                    help='Path to your configuration file')
+
+    args = parser.parse_args()
+
+    return args
+
+def build_true_configuration(args, config_filepath=None):
+    # arguments defined at the command line take precedence over config file variables
+    config = {}
+    if config_filepath:
+        config = read_config_file(config_filepath)
+
+    dict_args = args.__dict__
+    for arg in dict_args:
+        if dict_args[arg] is not None:
+            config[arg] = dict_args[arg]
+
+    return config
+
+def strip_sensitive_arguments(config):
+    return {k: v for k, v in config.items() if k not in SENSITIVE_ARGUMENTS}
+
+def guarantee_requirements_met(config):
+    # config is the config object after assigning arg values to the config file values
+
+    # first iterate over required arguments
+    for argument in REQUIRED_ARGUMENTS:
+        if not config.get(argument):
+            logger.error(f'\n\nRequired argument "{argument}" not found. Exiting...')
+            exit(0)
+
+    # then well iterate over the special requirements
+    for argument in SPECIAL_REQUIREMENTS:
+        value = config.get(argument)
+        for requirement_obj in SPECIAL_REQUIREMENTS[argument]:
+            if not requirement_obj['requirement'](value):
+                logger.error(f'\n\nSpecial requirement "{requirement_obj["name"]}" was not met for the argument "{argument}". Exiting...')
+                exit(0)
+
+def read_config_file(filepath):
+    try:
+        with open(filepath, 'r') as stream:
+            try:
+                config = yaml.safe_load(stream)
+                return config
+            except yaml.YAMLError as exc:
+                print(exc)
+                logger.error('\n\nYAML Error. Exiting...')
+                exit(0)
+    except FileNotFoundError:
+        logger.exception('Config file not found. Proceeding with defaults')
+        return {}
+
+# pylint: disable=too-many-arguments
+async def send_txt(
+    num: Union[str, int], carrier: str, email: str, pword: str, msg: str, subj: str
+) -> Tuple[dict, str]:
+    to_email = CARRIER_MAP[carrier]
+
+    # build message
+    message = EmailMessage()
+    message["From"] = email
+    message["To"] = f"{num}@{to_email}"
+    message["Subject"] = subj
+    message.set_content(msg)
+
+    # send
+    send_kws = dict(username=email, password=pword,
+                    hostname=HOST, port=587, start_tls=True)
+    res = await aiosmtplib.send(message, **send_kws)  # type: ignore
+    msg = "failed" if not re.search(r"\sOK\s", res[1]) else "succeeded"
+    return res
+
+
+if __name__ == "__main__":
+    args = get_arguments()
+
+    try:
+        logger = init_logger(
+            name=__name__,
+            log_path=f'/var/log/slg/{__file__.split("/")[-1]}.log'
+        )
+        config = build_true_configuration(args, args.config_filepath)
+        guarantee_requirements_met(config)
+        sensitive_stripped_config = strip_sensitive_arguments(config)
+        logger.info(f'\nUsing configuration:\n\n{pformat(sensitive_stripped_config)}')
+
+        asyncio.run(send_txt(
+            config.get('phone_number'),
+            config.get('phone_carrier'),
+            config.get('sending_email'),
+            config.get('app'),
+            config.get('message'),
+            config.get('subject'),
+        ))
+        logger.info('Text sent successfully')
+    except SystemExit:
+        pass
+
+    except:
+        logger.exception('An error occurred')
