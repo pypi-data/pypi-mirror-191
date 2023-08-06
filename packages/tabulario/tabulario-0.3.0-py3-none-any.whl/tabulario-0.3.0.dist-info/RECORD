@@ -1,0 +1,12 @@
+tab/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+tab/cli.py,sha256=NW9hCzG3lIiObJOmT2Dxt9r1eSrdFLP5r2pCZqEIvh0,3786
+tab/exceptions.py,sha256=Srux-BY7YY4vFfo_5lmE05RrQLt6SBNRuUzJhk8jhN0,871
+tab/oauth.py,sha256=5KZb1KDbE4F9Uiz0caqOB6dEWwR_Xz82cJzN81QTsCg,5185
+tab/util.py,sha256=oev3lsGSRhd3LQm82GVvWMSi073O1TxL6sRCOCWf7zg,1004
+tabular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabular/loader.py,sha256=bAXbDp0YY_tW8yvv_8LoFKNu7A6A0Ph-H7vRcoejQjE,4955
+tabulario-0.3.0.dist-info/entry_points.txt,sha256=ZMjEaLpseKBxtEYI9-gXZJJKPXa67kmWlfSQg1hbc9E,35
+tabulario-0.3.0.dist-info/METADATA,sha256=RRvhZnG8tMjN1oCLqAgNT_7Fa4kXG3P-4c7W3d9WOgI,7018
+tabulario-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tabulario-0.3.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+tabulario-0.3.0.dist-info/RECORD,,
