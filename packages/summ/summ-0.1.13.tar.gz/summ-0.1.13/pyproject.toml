@@ -1,0 +1,85 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "summ"
+description = 'Summ provides intelligent question-answering and search capabilities across user interview transcripts.'
+readme = "README.md"
+requires-python = ">=3.11"
+license = "AGPL-3.0-only"
+keywords = []
+authors = [
+  { name = "Yasyf Mohamedali", email = "yasyfm+pypi@gmail.com" },
+  { name = "Markie Wagner", email = "me@markiewagner.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "langchain",
+  "openai",
+  "tiktoken",
+  "pinecone-client",
+  "metrohash",
+  "redis[hiredis]",
+  "redis-om",
+  "joblib",
+  "termcolor",
+  "retry",
+  "click",
+  "jinja2",
+  "dirtyjson",
+  "textual",
+  "python-dotenv",
+  "pyperclip",
+]
+dynamic = ["version"]
+
+[project.scripts]
+summ-example = "summ.tools.example:main"
+summ = "summ.tools.cli:summ"
+
+[project.urls]
+Documentation = "https://github.com/yasyf/summ#readme"
+Issues = "https://github.com/yasyf/summ/issues"
+Source = "https://github.com/yasyf/summ"
+
+[tool.hatch.version]
+path = "summ/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest",
+  "pytest-cov",
+  "requests-mock",
+  "mkdocs",
+  "mkdocs-material~=8.5.10",
+  "mkdocs-git-committers-plugin-2",
+  "mkdocstrings[python]~=0.19.0",
+  "mkdocs~=1.4.2",
+  "pygments~=2.13.0",
+  "typing-extensions",
+  "pillow",
+  "lxml",
+  "cairosvg",
+  "textual[dev]",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=user_interview_summary --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["summ/__about__.py"]
+
+[tool.coverage.report]
+exclude_lines = ["no cov", "if __name__ == .__main__.:", "if TYPE_CHECKING:"]
