@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "nanoQA"
+version = "0.0.12"
+description = ""
+authors = ["Kunpeng GUO <gabin.guo@gmail.com>"]
+keywords = ["Question Answering", "Huggingface Transformers"]
+readme = "README.md"
+license = "Apache"
+homepage = "https://github.com/gabinguo/nanoQA"
+repository = "https://github.com/gabinguo/nanoQA"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+adapter-transformers = "3.1.0"
+torch = "1.13.1"
+wheel = "0.38.4"
+python-docx = "0.8.11"
+nltk = "3.8.1"
+more_itertools = "9.0.0"
+fpdf2 = "2.6.1"
+elasticsearch = "7.17.4"
+datasets = "2.9.0"
+rich = "13.3.1"
+mmh3 = "3.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+cli_command_name = 'package_name:function'
+
+[build-system]
+requires = ["poetry>=1.3"]
+build-backend = "poetry.masonry.api"
