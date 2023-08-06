@@ -1,0 +1,13 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/app.py,sha256=NMreyV-YefdlpGXackn94rszc30uipaZ9-MPERLDOHU,2147
+app/conftest.py,sha256=cBRCYtUoil0FAESglyqXwoC2p--qfBmEm5k8WLfbfW0,168
+app/test_bumbo.py,sha256=EPw0K-wGidaPo-oWCUJKFykEJI6_xTwOJT-SH-CMSxs,6492
+bumbo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bumbo/api.py,sha256=uEty4OI5XpC6cwajijXoV5mwsTEJvNjf1lE2uCbqszE,3817
+bumbo/middleware.py,sha256=NFjKCFVpQw1bSwh_Rd8rn-WP6SZrQ5ebDj6IPBcm5PQ,729
+bumbo/orm.py,sha256=BVVQt34rha2H7caLwETzcvBTUHZUGeWyLB3zMVJ-efo,6916
+bumbo/response.py,sha256=g0CGri3CzLYfgi3evY_Bt9lV_1tMWze8w34OFQ3QfFg,975
+marcosgeo_bumbo-0.0.5.dist-info/METADATA,sha256=kMTEy4bHYsOwDpaxMh5_h5xA_ZT7Z_KQF8NhzgO1jDo,4129
+marcosgeo_bumbo-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+marcosgeo_bumbo-0.0.5.dist-info/top_level.txt,sha256=HsfMZW0VnTKHJzzIAJraf-S-udRCKVpzxHw7YaQ_XrM,10
+marcosgeo_bumbo-0.0.5.dist-info/RECORD,,
