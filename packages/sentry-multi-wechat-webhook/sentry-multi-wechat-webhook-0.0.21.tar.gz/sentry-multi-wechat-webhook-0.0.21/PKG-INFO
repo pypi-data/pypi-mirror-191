@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sentry-multi-wechat-webhook
+Version: 0.0.21
+Summary: Sentry 企业微信 Webhook 插件
+Home-page: https://github.com/badx/sentry-multi-webhook
+Author: badx
+Author-email: badx16@gmail.com
+License: MIT
+Description: # sentry-multi-wechat-webhook
+        
+        Sentry 企业微信 Webhook 插件
+        
+        ## 安装
+        
+        ```bash
+        pip install sentry-multi-wechat-webhook
+        ```
+        
+Keywords: sentry multi wechat webhook
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
