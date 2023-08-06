@@ -1,0 +1,11 @@
+gpterm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpterm/config.py,sha256=F7LWUzBjHjcydwufYXBXgjaADWHJFEmPzIxqjxQITM0,3221
+gpterm/enums.py,sha256=L8qH4GxRf6np0m4kSLanowoQlSlhrSqhtTVOy38XvwU,1075
+gpterm/gpterm.py,sha256=WuiPKuWCocCQNaESTwMHTmsbQ-bciKrqrNTTKziIaZg,17927
+gpterm/shell.py,sha256=P04VNoL0kSnCC2H05FjlXeh7rcYhut_MtehhPJ-fqMA,10504
+gpterm-0.2.4.dist-info/LICENSE,sha256=8WwkN31vKHrOTCsBaoSqsxQWC8wBWR0YjoYQjeHXODs,1063
+gpterm-0.2.4.dist-info/METADATA,sha256=EYyJ2GD0qAdXFMvgD2g8iBn2dVPpsVYGz7MDGjk8-uY,3241
+gpterm-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gpterm-0.2.4.dist-info/entry_points.txt,sha256=1LR-RztqZlvFdORlpgfsFKKxcuzo1K9Ptgu54uFLVUY,53
+gpterm-0.2.4.dist-info/top_level.txt,sha256=oT78MGv9m_TIEYxZtfpyoB3Lz6MWWZBRBI9V9F64pSY,7
+gpterm-0.2.4.dist-info/RECORD,,
