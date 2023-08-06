@@ -1,0 +1,2 @@
+[console_scripts]
+arcor2_scene = arcor2_scene.scripts.scene:main

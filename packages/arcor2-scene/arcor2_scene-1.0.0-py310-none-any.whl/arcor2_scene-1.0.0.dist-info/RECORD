@@ -1,0 +1,12 @@
+arcor2_scene/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+arcor2_scene/__init__.py,sha256=zCX7xi2FwqU6NXbDew5KHV-vqoLgSLl7MmNZD9zH5MU,215
+arcor2_scene/exceptions.py,sha256=bnPY0ElZD7_Rdu6RyrnghSccCGZruPCAnVjBY8pOvDc,437
+arcor2_scene/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_scene/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_scene/scripts/scene.py,sha256=2bFqBN6eQ7DsFrFmkYK9vWlKND8kbbcy_oH0A5Am3fM,16963
+arcor2_scene-1.0.0.dist-info/METADATA,sha256=WwMLRbU_Zkmxlkw6AUIva82WzWpR0vlDIUJeFPbzMMk,2056
+arcor2_scene-1.0.0.dist-info/WHEEL,sha256=KxatxaZA14OswIJTdImHhiM2tdZgU-xLZEzs-sYveVc,94
+arcor2_scene-1.0.0.dist-info/entry_points.txt,sha256=-l3WVlVUUWTtKxSVYsyqVAy9JYlqLylvha1IJnus-IQ,65
+arcor2_scene-1.0.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_scene-1.0.0.dist-info/top_level.txt,sha256=NRcyRLcXtJYw8aqNrVKcrCq_Dv8qcJ-vvM0D01UGBu4,13
+arcor2_scene-1.0.0.dist-info/RECORD,,
