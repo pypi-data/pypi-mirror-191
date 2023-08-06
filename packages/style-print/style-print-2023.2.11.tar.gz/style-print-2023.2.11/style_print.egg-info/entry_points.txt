@@ -1,0 +1,2 @@
+[console_scripts]
+style-print = style_print.style_print:main

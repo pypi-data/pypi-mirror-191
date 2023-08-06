@@ -1,0 +1,2 @@
+setuptools>=9.1
+printy>=2.2.0
