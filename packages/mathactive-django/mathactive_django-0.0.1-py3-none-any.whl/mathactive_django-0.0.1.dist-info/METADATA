@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mathactive-django
+Version: 0.0.1
+Summary: Web Application for conversational active learning activities for math students - a math learning chatbot.
+License: AGPLv3
+Author: hobs
+Author-email: engineering@tangibleai.com
+Requires-Python: >=3.7,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django (>=4.1,<5.0)
+Requires-Dist: mathactive (>=0.0.1,<0.0.2)
