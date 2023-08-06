@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "schema-registry-python"
+version = "0.1.0"
+description = ""
+authors = ["h-silva <h-silva@outlook.com>"]
+readme = "README.md"
+packages = [{include = "schema_registry_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+httpx = "^0.23.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+schema_registry_python_cli='schema_registry_python.cli:cli'
