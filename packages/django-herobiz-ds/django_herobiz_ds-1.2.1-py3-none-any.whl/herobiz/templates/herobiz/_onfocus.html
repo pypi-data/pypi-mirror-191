@@ -1,0 +1,47 @@
+{% load static %}
+<style>
+.onfocus .video-play {
+  background: linear-gradient(rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7)), url("{% static 'herobiz_ds/onfocus/bg.jpg' %}") center center;
+}
+
+.onfocus .content {
+  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8)), url("{% static 'herobiz/img/onfocus-content-bg.jpg' %}") center center;
+}
+</style>
+
+<section id="onfocus" class="onfocus">
+  <div class="container-fluid p-0" data-aos="fade-up">
+
+    <div class="row g-0">
+      <div class="col-lg-6 video-play position-relative">
+        {% if onfocus.video_link %}
+        <a href="{{ onfocus.video_link }}" class="glightbox play-btn"></a>
+        {% endif %}
+      </div>
+      <div class="col-lg-6">
+        <div class="content d-flex flex-column justify-content-center h-100">
+          {% autoescape off %}
+          <h3>{{ onfocus.h3 }}</h3>
+          <p class="fst-italic">
+            {{ onfocus.desc }}
+          </p>
+          <ul>
+            {% for item in onfocus.li %}
+            <li><i class="bi bi-check-circle"></i>{{ item }}</li>
+            {% endfor %}
+          </ul>
+
+          {% if onfocus.btn.link %}
+            {% if onfocus.btn.type == 'onclick' %}
+            <a class="read-more align-self-start" onclick="onfocus_btn_gtag_report_conversion('{{ onfocus.btn.link }}')"><span>{{ onfocus.btn.title }}</span><i class="bi bi-arrow-right"></i></a>
+            {% elif onfocus.btn.type == 'href' %}
+            <a href="{{ onfocus.btn.link }}" class="read-more align-self-start" target="_blank"><span>{{ onfocus.btn.title }}</span><i class="bi bi-arrow-right"></i></a>
+            {% endif %}
+          {% endif %}
+          {% endautoescape %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
