@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pypirc-voidei
+Version: 1.1.0
+Summary: PyPiRC: .pypirc Manager
+Home-page: https://github.com/voidei/pypirc
+License: Apache-2.0
+Author: Greg Albrecht
+Author-email: gba@splunk.com
+Maintainer: Dawn Walker
+Maintainer-email: dawniepieuwu@gmail.com
+Requires-Python: >=3.11,<4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: prettyprinter (>=0.18.0,<0.19.0)
+Project-URL: Repository, https://github.com/voidei/pypirc
+Project-URL: pypirc-chappers, https://github.com/chappers/pypirc
+Project-URL: pypirc-original, https://github.com/ampledata/pypirc
+Description-Content-Type: text/markdown
+
+<!-- markdownlint-disable MD026 MD036-->
+
+# `.pypirc` File Management Client
+
+**"This is hopefully a temporary fork, as the official project looks dead."**
+said [Chappers](https://github.com/charliec443), who originally forked this project. Unfortunately, that fork is also dead.
+So here I am. Forking it again, making it work with Python 3.10+ (no backwards compatibility).
+
+If you want to have it work in older versions of Python, please go download the [original](https://github.com/ampledata/pypirc), or [Chapper's fork](https://github.com/charliec443/pypirc).
+
+## Installation
+
+Install from [pypi](https://pypi.org) via the following:
+
+```bash
+pip install pypirc-voidei
+```
+
+## Usage Example
+
+Display current pypi configuration:
+
+```bash
+pypirc
+```
+
+Add a pypi server:
+
+```bash
+pypirc -s mypypi -u foo -p bar -r https://mypypi.example.com/
+```
+
+### Credits:
+
+#### Source
+
+Official: <https://github.com/ampledata/pypirc>
+Chappers: <https://github.com/chappers/pypirc>
+voidei: <https://github.com/voidei/pypirc>
+
+#### Author
+
+Greg Albrecht <gba@splunk.com>
+<http://ampledata.org/>
+
+#### Copyright
+
+```plaintext
+Copyright 2012 Splunk, Inc.
+```
+
+#### License
+
+**Apache License 2.0**
+
