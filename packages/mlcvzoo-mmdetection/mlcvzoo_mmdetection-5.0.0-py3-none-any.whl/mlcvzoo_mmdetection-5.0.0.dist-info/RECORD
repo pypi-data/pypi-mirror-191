@@ -1,0 +1,14 @@
+mlcvzoo_mmdetection/__init__.py,sha256=LF8jsFa-w8OfxJs0rQ3CdFgaHBF_rim-zx1vShaDxYw,177
+mlcvzoo_mmdetection/configuration.py,sha256=rsrpTjagxAv8bWQB5WkHoV6KEr7q-hzOK6C4og5k2V8,5280
+mlcvzoo_mmdetection/mlcvzoo_mmdet_dataset.py,sha256=DmaDm5MuJaSSjtVMuMK-9NdlvZD2H4FBa_q_X6bqzro,7641
+mlcvzoo_mmdetection/model.py,sha256=Kq7ZhzIO1EV1qJdobDIBmeUefJNgsM2UXTBoiO4a_-8,15883
+mlcvzoo_mmdetection/object_detection_model.py,sha256=tExsxqoNyhXw--WZImc9zPthzn1IoveD2TE0eBwUSf0,6836
+mlcvzoo_mmdetection/py.typed,sha256=8hzvo_jpzs7tuf2I0_TzilG8zWbzxcO75UQ5n7LpIf0,154
+mlcvzoo_mmdetection/third_party/LICENSE,sha256=h0uLLm8SMGof94EsBooNv4gEGLisH3GQOCvWxtqfI6E,11398
+mlcvzoo_mmdetection/third_party/README.md,sha256=cDnNqI_jV1T0ONev14l0PGDGv4g6Gdo061ZKjLyV7aQ,109
+mlcvzoo_mmdetection/third_party/__init__.py,sha256=sN8uv10XYiGuwx2SkKdq30jDAI5mTJfqLlKpSbICTxA,154
+mlcvzoo_mmdetection/third_party/mmdetection.py,sha256=gqCLHoinRt-hjG9rqgtHyVrykEc_qYqb7nuBMSE5kH4,2623
+mlcvzoo_mmdetection/utils.py,sha256=4w5jNiyqjA_M8Uz97IreRoqCq1ADZjy6YDBuDmhHkUo,2650
+mlcvzoo_mmdetection-5.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mlcvzoo_mmdetection-5.0.0.dist-info/METADATA,sha256=LFoCyTsF7K9DPwgGaKsgejvYQnQP5b0OADe7RFm8GHE,1998
+mlcvzoo_mmdetection-5.0.0.dist-info/RECORD,,
