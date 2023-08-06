@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+datalabel/UI.py
+datalabel/__init__.py
+datalabel.egg-info/PKG-INFO
+datalabel.egg-info/SOURCES.txt
+datalabel.egg-info/dependency_links.txt
+datalabel.egg-info/requires.txt
+datalabel.egg-info/top_level.txt
+datalabel/class_utils/__init__.py
+datalabel/class_utils/main.py
+datalabel/class_utils/templates/__init__.py
+datalabel/class_utils/templates/template.html
