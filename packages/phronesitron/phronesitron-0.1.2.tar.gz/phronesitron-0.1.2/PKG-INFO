@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: phronesitron
+Version: 0.1.2
+Summary: Interact with scientific papers and ML language models
+Keywords: openai,literature
+Author-email: Reto Stamm <phronesitron@retostamm.edu>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: wheel
+Requires-Dist: openai
+Requires-Dist: argparse
+Requires-Dist: datetime
+Requires-Dist: pyperclip
+Requires-Dist: pdfminer.six
+Requires-Dist: termcolor
+Project-URL: Home, https://github.com/retospect/phronesitron
+
+# Phronesitron
+
+Phronesitron is a set of tools to interact with textual AI
+tools like OpenAI's models.
+
+Example use:
+
+```
+> phronesitron what is the metaphysical meaning of a slinky
+The metaphysical meaning of a slinky can be interpreted in several
+ways. On one level, it can represent the interconnectedness of all
+things, with its seemingly endless loops of energy and motion. It can
+also be seen as a symbol of resilience and adaptability, as it can be
+stretched and bent without breaking. Finally, it can be seen as a
+metaphor for the impermanence of life, with its ever-changing shapes
+and movements.
+```
+
+Currently, openAI models are supported.
+
+You can alias phronesitron to ph if you like.
+```
+alias ph=phronesitron
+```
+
+# Setup
+
+Set the openAI API key (get it from here: https://platform.openai.com/account/api-keys)
+
+```
+export OPENAIKEY=<put key here>
+```
+
+# Versioning
+
+Uses semantic versioning. https://semver.org/
+
+
