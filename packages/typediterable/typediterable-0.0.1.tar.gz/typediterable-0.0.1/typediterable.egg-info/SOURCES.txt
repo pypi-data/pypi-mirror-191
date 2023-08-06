@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tests/test_core.py
+typediterable/__init__.py
+typediterable/core.py
+typediterable.egg-info/PKG-INFO
+typediterable.egg-info/SOURCES.txt
+typediterable.egg-info/dependency_links.txt
+typediterable.egg-info/requires.txt
+typediterable.egg-info/top_level.txt
