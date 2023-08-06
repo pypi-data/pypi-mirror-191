@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: somacore
+Version: 0.0.0a13
+Summary: Python-language API specification and base utilities for implementation of the SOMA system.
+Project-URL: repository, https://github.com/single-cell-data/SOMA.git
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anndata
+Requires-Dist: attrs (>=22.1)
+Requires-Dist: numba
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: scipy
+Requires-Dist: typing-extensions
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy (~=1.0) ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+# `somacore`: the Python version of the SOMA specification
+
+`somacore` is a (currently in-development) Python interpretation of the
+[abstract SOMA specification](https://github.com/single-cell-data/SOMA/blob/main/abstract_specification.md). Like the abstract
+specification, it is still in flux and in progress, and we gladly accept
+feedback. This will evolve in tandem with the abstract spec itself as well as
+the [initial TileDB-based implementation](
+  https://github.com/single-cell-data/TileDB-SOMA).
+
+For more information about our development process see [this project
+plan](https://docs.google.com/document/d/1e6L36SS-eazG6tHYwwnCfEfUcx_3dTFJUEE-gGxgFM4/edit).
