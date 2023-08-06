@@ -1,0 +1,12 @@
+mpl_multitab/__init__.py,sha256=N5DBE2ManTJpJtN_lA5FfLLBDCqtHF4e-Efu7D2_tu4,77
+mpl_multitab/_logging.py,sha256=Odtsr3MR-YzbuYNmKuaIZpcRF4ApAf_7IfNAJ1X0QPQ,2300
+mpl_multitab/core.py,sha256=d2CyHPCf-i1wzyVPoB305MMpzZQefvmPhl6ktlltE6E,22024
+mpl_multitab/examples/_1d.py,sha256=hcSg5o2kl6-DhGx89NnxexVNSLp8PTwecAcLHANBejc,1362
+mpl_multitab/examples/_2d.py,sha256=gCtVKm9oGWYyspOqeSfNXL7-rGYL44P7Hu6FZOKKSrU,1929
+mpl_multitab/examples/__init__.py,sha256=UIQmOXK8_vMP35kSUuRnNDUXS-oJdVrVDupElMgnIf0,53
+mpl_multitab/examples/_nd.py,sha256=lBT5r70V5XNTWLFF9cJMTB3nGzFE07AgD-n3Vq9IO-I,2875
+mpl_multitab-1.0.0.dist-info/LICENSE,sha256=lmOLb3ks8MOUIM4eEtDTAPiFjdIaDDZ_hrPmvG6LD-w,1080
+mpl_multitab-1.0.0.dist-info/METADATA,sha256=zn4H2qOgHE371G_wtwWaX4Shfd7vDJhy5Uq8X5EzLeI,7203
+mpl_multitab-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mpl_multitab-1.0.0.dist-info/top_level.txt,sha256=gK0Fwc_oiYN4tPtFj12zYZFeQC6yHJDTnsqjoTQi03U,13
+mpl_multitab-1.0.0.dist-info/RECORD,,
