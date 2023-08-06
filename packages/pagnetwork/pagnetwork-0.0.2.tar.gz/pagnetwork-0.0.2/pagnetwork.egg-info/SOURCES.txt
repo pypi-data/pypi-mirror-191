@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pagnetwork/__init__.py
+pagnetwork/paguaga_network.py
+pagnetwork.egg-info/PKG-INFO
+pagnetwork.egg-info/SOURCES.txt
+pagnetwork.egg-info/dependency_links.txt
+pagnetwork.egg-info/requires.txt
+pagnetwork.egg-info/top_level.txt
