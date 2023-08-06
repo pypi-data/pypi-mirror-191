@@ -1,0 +1,12 @@
+flet_mvp_utils/__init__.py,sha256=KRclihZxA2TQJZ_MUPx3zcvb16LDMiVH6La_9f-kVLo,354
+flet_mvp_utils/datasource.py,sha256=tCz1bXnyzcA_PigcOY6Cxw-UlbQWpcVEyAsZlPdCQGA,1419
+flet_mvp_utils/error.py,sha256=AiG5xYDlWFZKM8K7_2CuFKwL2lbqRd6jgj8Vh17cU7w,84
+flet_mvp_utils/model.py,sha256=W39eNNKZPbxTxgilB1wlorDY6BqruJ4D1yr_fWaAfCw,158
+flet_mvp_utils/observable.py,sha256=BItXAHPEs4U4rLzms4-HXRPDbRU34uS4peH6fLFV7CE,297
+flet_mvp_utils/presenter.py,sha256=zEs0zxjHsVXFvc7nmP9fPBb3IRNneriI34Iq9Fu2QT4,582
+flet_mvp_utils/protocols.py,sha256=uKJXL20WDc9Hk12RdRgc5efeF6MIho-DsGXNJU1zEQg,359
+flet_mvp_utils/view.py,sha256=P72_oGhrPhEM1OU-6Jav4ysbV21LStQYarGQy9sMdBs,2257
+flet_mvp_utils-0.4.1.dist-info/METADATA,sha256=8VBNG5JEOT9smo3_k8kdzo7YFtJ3lFx3ju2AUSvT0bY,10314
+flet_mvp_utils-0.4.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+flet_mvp_utils-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flet_mvp_utils-0.4.1.dist-info/RECORD,,
