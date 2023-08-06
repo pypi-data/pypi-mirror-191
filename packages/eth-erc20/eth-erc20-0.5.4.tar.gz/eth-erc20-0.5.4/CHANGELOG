@@ -1,0 +1,43 @@
+* 0.5.4
+	- Enable setting sender address on contract read calls
+* 0.5.3
+	- Fix giftable token cli commands
+* 0.5.2
+	- Add block height to balance call
+* 0.5.1
+	- Change license to AGPL3 and copyright waived to public domain
+* 0.5.0
+	- Upgrade dependencies
+* 0.4.1
+	- Implement chainlib 0.4.x for giftable token
+	- Fix broken inputs in erc20 cli tools
+* 0.4.0
+	- Implement chainlib 0.3.0
+* 0.3.1
+	- Upgrade chainlib to 0.2.0
+* 0.1.10
+	- Apply transfer ownership protection in GiftableToken contract
+* 0.1.9
+	- Add statictoken contract
+* 0.0.10
+	- Upgrade chainlib dependency, providing customizable jsonrpc id
+	- Move to chainlib-eth
+* 0.0.7
+	- Implement keystore signing.
+	- Change makefile to compile contract for Byzantium.
+	- Change mint method name to mintTo
+	- Add add minter executable script
+* 0.0.6
+	- Rename contracts-dir flag to abi-dir
+	- Use package data dir as default abi dir
+* 0.0.5
+	- Add token owner flag to deploy script
+* 0.0.4
+	- Bundle abi in data subfolder
+* 0.0.3
+	- Add gift executable
+* 0.0.2
+	- Move deploy script to package
+* 0.0.1
+	- Adapt Bancor ERC20 token contract
+	- Add deploy-and-gift script

@@ -1,0 +1,7 @@
+[console_scripts]
+erc20-balance = eth_erc20.runnable.balance:main
+erc20-info = eth_erc20.runnable.info:main
+erc20-transfer = eth_erc20.runnable.transfer:main
+giftable-token-deploy = giftable_erc20_token.runnable.deploy:main
+giftable-token-gift = giftable_erc20_token.runnable.gift:main
+giftable-token-minter = giftable_erc20_token.runnable.minter:main
