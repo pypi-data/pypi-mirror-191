@@ -1,0 +1,10 @@
+fuzzy/__init__.py,sha256=oapECsWriuJhy5dwdnbuUImOXqFy3NSXa9idZjx_7iA,52
+fuzzy/collections.py,sha256=56IM_ny6lcZ5G_1_l8wniZWB3xg3dNW_f_31oggUBq4,65
+fuzzy/_src/__init__.py,sha256=pQtSZJ24jTIJZJkL2rgUsH5hevwgxc4PV91bg3yysvc,108
+fuzzy/_src/fuzzy_frozen_dict.py,sha256=-7DCEeBTM--mJbZofdsra2xHy422c_RkUvipGbJ7Cck,1752
+fuzzy/_src/fuzzy_frozen_set.py,sha256=K0QVAwCbH8AW2OSrIrm0lbdKLPc3txoL-yzMVWSe85c,3069
+easy_fuzzy-0.0.1.dist-info/LICENSE,sha256=64G2QTN98bBhZeWtEk7aqxkoV71HCK_NCbP7B53Q2IM,1086
+easy_fuzzy-0.0.1.dist-info/METADATA,sha256=mciGC6_7L2VaEqLT-AAaNl-kECdZjj-7gBo1Z-jPiR8,785
+easy_fuzzy-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+easy_fuzzy-0.0.1.dist-info/top_level.txt,sha256=qWJMi7lNlUptqetDDy-HgjPeFEG5OFjyys9tOYCIcBs,6
+easy_fuzzy-0.0.1.dist-info/RECORD,,
