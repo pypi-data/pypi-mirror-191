@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/bluescan/__init__.py
+src/bluescan/__main__.py
+src/bluescan.egg-info/PKG-INFO
+src/bluescan.egg-info/SOURCES.txt
+src/bluescan.egg-info/dependency_links.txt
+src/bluescan.egg-info/entry_points.txt
+src/bluescan.egg-info/top_level.txt
