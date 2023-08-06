@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+bibquery/__init__.py
+bibquery/bibquery.py
+bibquery/utils.py
+bibquery.egg-info/PKG-INFO
+bibquery.egg-info/SOURCES.txt
+bibquery.egg-info/dependency_links.txt
+bibquery.egg-info/requires.txt
+bibquery.egg-info/top_level.txt
+bin/bibquery
