@@ -1,0 +1,2 @@
+#define LLVM_REVISION "git"
+#undef LLVM_REPOSITORY
