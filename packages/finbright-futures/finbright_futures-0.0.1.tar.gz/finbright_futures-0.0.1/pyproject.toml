@@ -1,0 +1,46 @@
+[project]
+name="finbright_futures"
+version="0.0.1"
+authors = [
+  { name="Hamid Moradi", email="hordimad21@gmail.com" },
+]
+description = "binance futures api"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "mdurl>=0.1.2",
+  "requests>=2.28.2",
+  "rich>=13.2.0",
+  "tqdm>=4.64.1",
+  "urllib3>=1.26.14",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+line-length = 88
+target_version = ['py38', 'py39', 'py310']
+preview = true
+exclude = '''
+/(
+    \.eggs         # exclude a few common directories in the
+  | \.git          # root of the project
+  | \.mypy_cache
+  | \.vscode
+  | build
+  | dist
+  | data
+  | doc/tutorial
+  | doc/_build
+  | doc/auto_examples
+  | sklearn/externals
+  | asv_benchmarks/env
+)/
+'''
