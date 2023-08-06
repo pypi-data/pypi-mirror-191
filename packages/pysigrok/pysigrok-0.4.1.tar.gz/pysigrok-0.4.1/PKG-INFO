@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pysigrok
+Version: 0.4.1
+Summary: Python implementation of sigrok tools
+Author-email: Scott Shawcroft <scott@tannewt.org>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: click < 9
+Requires-Dist: importlib-metadata < 7
+Project-URL: Home, https://github.com/pysigrok/pysigrok
