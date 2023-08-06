@@ -1,0 +1,17 @@
+nickgen/ForSyllableGroups.py,sha256=TOiVdnAkzsQhDN8qMjD8O8atOIiRiomHdQ3VRn680A4,1762
+nickgen/GroupChain.py,sha256=DqysMTMo24nfPA5rUQSyyqN3IFbot4jykrGM2GhQUm4,742
+nickgen/__init__.py,sha256=AV4YD4xPuF6ZvWorJBfY_MDUKzVipGAiM7IfttLQFK8,2167
+nickgen/login_macros_handler.py,sha256=3v__eUrClTqUvGGuNtmo2lfHaBt65S-oC7FkUEs9EFE,3812
+nickgen/macros_handler.py,sha256=CYd4dmdfNdQgIsIf6qXmpl-R4QxR3jOi_IKPoIX1Pm0,2235
+nickgen/syllable_chain.py,sha256=ZIUvRK6gBTergi3tNSe0dNPzFI1Oap2ydAuMRKWwxcg,647
+nickgen/syllable_eng.py,sha256=Oln62iGVja5vk4N6HevN6NoPafOuEGkWQSFBZsriQQM,9700
+nickgen/syllable_groups.py,sha256=AHZ5SwYiYTDCW4UM2F8wntN5pIsC5uCNwxmu8T8FBGg,3030
+nickgen/syllable_jap.py,sha256=KxP1sMsMZBaaSTPNWYaGSrjM4sdjSEucGlDqGEuIrpo,6919
+nickgen/syllable_loader.py,sha256=XGmk-cKBC2dEDYoeKBl039-J__6PKamhHiHOfJbSytw,1608
+nickgen/data/eng.json,sha256=SCkfH9FyxGACOCFfRde_LmSpwoSCrNV6cEWgFttyO1A,1816470
+nickgen/data/jap.json,sha256=oupIXqBESIsN_e3zjd5VIp7xDoACATeex_E_W80yCxg,12987
+nickgen/data/lat.json,sha256=WQlhPyP8ol7DYJIFCQmDsFot-NTPQL23kYq1YnIM0vw,61794
+nickgen-0.0.1.dist-info/METADATA,sha256=Jsnh2eIOZlWd9euoQszRa9nhKhbcFx8JNzc7wCAEvx0,52
+nickgen-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nickgen-0.0.1.dist-info/top_level.txt,sha256=CuF6dK0hQzhiHRs_UrRsJKXseqxNyPvR4sbOtC8VE7U,8
+nickgen-0.0.1.dist-info/RECORD,,
