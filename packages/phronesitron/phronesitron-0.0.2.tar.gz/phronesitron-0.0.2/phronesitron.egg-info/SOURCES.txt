@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+phronesitron/__init__.py
+phronesitron/ph
+phronesitron.egg-info/PKG-INFO
+phronesitron.egg-info/SOURCES.txt
+phronesitron.egg-info/dependency_links.txt
+phronesitron.egg-info/requires.txt
+phronesitron.egg-info/top_level.txt
