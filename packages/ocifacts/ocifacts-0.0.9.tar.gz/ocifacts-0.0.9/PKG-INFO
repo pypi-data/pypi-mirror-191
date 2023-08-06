@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ocifacts
+Version: 0.0.9
+Summary: OCI Artifacts for Python
+Home-page: https://github.com/aunum/ocifacts
+Maintainer: Patrick Barker
+Project-URL: Documentation, https://github.com/aunum/ocifacts
+Project-URL: Code, https://github.com/aunum/ocifacts
+Project-URL: Issue tracker, https://github.com/aunum/ocifacts
+Requires-Python: >=3.6
+License-File: LICENSE
