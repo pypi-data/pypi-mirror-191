@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+spotfm/__init__.py
+spotfm/cli.py
+spotfm/lastfm.py
+spotfm.egg-info/PKG-INFO
+spotfm.egg-info/SOURCES.txt
+spotfm.egg-info/dependency_links.txt
+spotfm.egg-info/entry_points.txt
+spotfm.egg-info/requires.txt
+spotfm.egg-info/top_level.txt

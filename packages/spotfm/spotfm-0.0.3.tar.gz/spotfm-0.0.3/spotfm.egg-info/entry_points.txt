@@ -1,0 +1,2 @@
+[console_scripts]
+spfm = spotfm.cli:main
