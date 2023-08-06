@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+TeleAuth.egg-info/PKG-INFO
+TeleAuth.egg-info/SOURCES.txt
+TeleAuth.egg-info/dependency_links.txt
+TeleAuth.egg-info/requires.txt
+TeleAuth.egg-info/top_level.txt
+teleauth/__init__.py
+teleauth/auth.py
+teleauth/store.py
+teleauth.egg-info/PKG-INFO
+teleauth.egg-info/SOURCES.txt
+teleauth.egg-info/dependency_links.txt
+teleauth.egg-info/requires.txt
+teleauth.egg-info/top_level.txt
