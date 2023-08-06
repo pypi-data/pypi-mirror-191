@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: gpt-humanizer
+Version: 0.0.6
+Summary: Humanize GPT Responses
+Author: Shaffan
+Keywords: python,openai,chatgpt,artificial intelligence,avoid ai detection,chatgpt humanizer,gpt3,gpt-3,gpt 3,chat-gpt humanizer,gpt humanizer
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+
+
+# gpt-humanizer
+
+a Python package that enhances ChatGPT's ability to produce human-like responses while avoiding detection from AI detectors
+
+
+
+## Installation:
+
+```pip install gpt-humanizer```
+
+
+
+## Usage:
+
+
+
+```py
+
+from GPTHumanizer import Humanizer
+
+
+
+text = Humanizer.humanize(# input text)
+
+
+
+print(text)
+
+```
