@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "huble"
+version = "0.2.269"
+description = ""
+authors = ["Rugz007 <rugvedsomwanshi007@gmail.com>"]
+maintainers = [
+    "Arjit Agarwal <arjitagarwal123@gmail.com>",
+    "Ashmika Gupte <ashmikagupte01@gmail.com>",
+]
+readme = "README.md"
+packages = [{include = "huble", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<3.10"
+scikit-learn = "0.24.2"
+pandas = "^1.3.5"
+black = "^22.8.0"
+auto-sklearn="0.14.7"
+scipy = ">=1.7.0,<1.8.0"
+woodwork = "^0.21.1"
+lightgbm = "^3.3.5"
+xgboost = "^1.7.3"
+catboost = "^1.1.1"
+py-AutoClean = "^1.1.3"
+pydantic = "^1.10.4"
+datacleaner = "^0.1.5"
+boto3 = "^1.26.63"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.15.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
