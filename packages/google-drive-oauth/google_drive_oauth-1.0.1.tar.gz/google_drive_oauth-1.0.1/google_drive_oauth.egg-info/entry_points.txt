@@ -1,0 +1,3 @@
+[console_scripts]
+drive_reader = google_drive_oauth.drive_reader:main
+
