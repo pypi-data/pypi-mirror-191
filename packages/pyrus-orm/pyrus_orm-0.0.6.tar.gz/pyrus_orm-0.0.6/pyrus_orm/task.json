@@ -1,0 +1,538 @@
+{
+    "id": 145852189,
+    "text": "Реестр записей на посещение Фонда:",
+    "formatted_text": "Реестр записей на посещение Фонда:",
+    "create_date": "2022-12-03T23:07:44Z",
+    "last_modified_date": "2022-12-03T23:07:44Z",
+    "author": {
+        "id": 732985,
+        "first_name": "А1 бот",
+        "last_name": "",
+        "email": "bot@7dc54ced-6051-4b65-891d-9c8f42ea2ef0",
+        "type": "bot",
+        "external_id": "",
+        "banned": false,
+        "position": "",
+        "skype": "",
+        "phone": "",
+        "login_phone": "",
+        "web_session_settings": {
+            "disable": false
+        },
+        "mobile_session_settings": {
+            "disable": false
+        },
+        "web_session_inactive_settings": {
+            "disable": false
+        },
+        "mobile_session_inactive_settings": {
+            "disable": false
+        }
+    },
+    "list_ids": [
+        1172566
+    ],
+    "form_id": 1172566,
+    "approvals": [
+        [],
+        [],
+        [],
+        [
+            {
+                "person": {
+                    "id": 703688,
+                    "first_name": "",
+                    "last_name": "Пустая роль БФ ПБ",
+                    "email": "",
+                    "type": "role",
+                    "external_id": "",
+                    "banned": false,
+                    "position": "",
+                    "skype": "",
+                    "phone": "",
+                    "web_session_settings": {},
+                    "mobile_session_settings": {},
+                    "web_session_inactive_settings": {},
+                    "mobile_session_inactive_settings": {}
+                },
+                "approval_choice": "waiting"
+            }
+        ]
+    ],
+    "current_step": 4,
+    "fields": [
+        {
+            "id": 1,
+            "type": "date",
+            "name": "Дата",
+            "tooltip": "",
+            "value": "2021-12-31"
+        },
+        {
+            "id": 2,
+            "type": "time",
+            "name": "Время",
+            "tooltip": "",
+            "value": "11:15"
+        },
+        {
+            "id": 4,
+            "type": "catalog",
+            "name": "Услуга",
+            "tooltip": "",
+            "value": {
+                "item_id": 99586038,
+                "item_ids": [
+                    99586038
+                ],
+                "headers": [
+                    "id",
+                    "Цель посещения"
+                ],
+                "values": [
+                    "2",
+                    "Посещение шоурума одежды и обуви"
+                ],
+                "rows": [
+                    [
+                        "2",
+                        "Посещение шоурума одежды и обуви"
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "type": "catalog",
+            "name": "Семья",
+            "tooltip": "",
+            "visibility_condition": {
+                "field_id": 0,
+                "condition_type": 11,
+                "value": "",
+                "children": [
+                    {
+                        "field_id": 0,
+                        "condition_type": 10,
+                        "value": "",
+                        "children": [
+                            {
+                                "field_id": 4,
+                                "condition_type": 5,
+                                "value": "99586037"
+                            },
+                            {
+                                "field_id": 4,
+                                "condition_type": 5,
+                                "value": "99586038"
+                            },
+                            {
+                                "field_id": 4,
+                                "condition_type": 5,
+                                "value": "99586039"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "value": {
+                "item_id": 97473078,
+                "item_ids": [
+                    97473078
+                ],
+                "headers": [
+                    "№ заявки",
+                    "ФИО",
+                    "Статус"
+                ],
+                "values": [
+                    "3301",
+                    "Близнюкова Варвара Алексеевна",
+                    "На учете"
+                ],
+                "rows": [
+                    [
+                        "3301",
+                        "Близнюкова Варвара Алексеевна",
+                        "На учете"
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 14,
+            "type": "catalog",
+            "name": "Кураторы",
+            "tooltip": "",
+            "value": {
+                "item_id": 97076214,
+                "item_ids": [
+                    97076214
+                ],
+                "headers": [
+                    "УИН куратора",
+                    "Фамилия",
+                    "Имя",
+                    "Телефон",
+                    "Email",
+                    "Telegram",
+                    "Чат с куратором",
+                    "Дата подключения",
+                    "Статус"
+                ],
+                "values": [
+                    "11",
+                    "Кириллова",
+                    "Надежда",
+                    "79257288200",
+                    "7288200@gmail.com",
+                    "@NK7288200",
+                    "https://t.me/+sqgPF9R23W85MDdi",
+                    "19.08.22",
+                    "Принят"
+                ],
+                "rows": [
+                    [
+                        "11",
+                        "Кириллова",
+                        "Надежда",
+                        "79257288200",
+                        "7288200@gmail.com",
+                        "@NK7288200",
+                        "https://t.me/+sqgPF9R23W85MDdi",
+                        "19.08.22",
+                        "Принят"
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 13,
+            "type": "number",
+            "name": "Количество человек",
+            "tooltip": "",
+            "value": 2
+        },
+        {
+            "id": 16,
+            "type": "number",
+            "name": "ID бронирования в easyweek",
+            "tooltip": "",
+            "value": 112
+        },
+        {
+            "id": 10,
+            "type": "catalog",
+            "name": "Куратор",
+            "tooltip": ""
+        },
+        {
+            "id": 6,
+            "type": "catalog",
+            "name": "Статус",
+            "tooltip": "",
+            "default_value": "99586052",
+            "value": {
+                "item_id": 99586052,
+                "item_ids": [
+                    99586052
+                ],
+                "headers": [
+                    "id",
+                    "Статус"
+                ],
+                "values": [
+                    "1",
+                    "Новая"
+                ],
+                "rows": [
+                    [
+                        "1",
+                        "Новая"
+                    ]
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "type": "number",
+            "name": "Стол",
+            "tooltip": ""
+        },
+        {
+            "id": 11,
+            "type": "text",
+            "name": "Изменить запись",
+            "tooltip": ""
+        },
+        {
+            "id": 12,
+            "type": "title",
+            "name": "Техническая информация",
+            "tooltip": "",
+            "value": {
+                "checkmark": "unchecked",
+                "fields": [
+                    {
+                        "id": 7,
+                        "type": "due_date_time",
+                        "name": "Срок",
+                        "tooltip": "",
+                        "parent_id": 12
+                    },
+                    {
+                        "id": 8,
+                        "type": "creation_date",
+                        "name": "Дата создания",
+                        "tooltip": "",
+                        "parent_id": 12,
+                        "value": "2022-12-03"
+                    },
+                    {
+                        "id": 9,
+                        "type": "step",
+                        "name": "Этап",
+                        "tooltip": "",
+                        "parent_id": 12,
+                        "value": 4
+                    }
+                ]
+            }
+        }
+    ],
+    "steps": [
+        {
+            "step": 4,
+            "name": "3",
+            "elapsed_time": 323183565
+        }
+    ],
+    "comments": [
+        {
+            "id": 1470193589,
+            "create_date": "2022-12-03T23:07:44Z",
+            "author": {
+                "id": 732985,
+                "first_name": "А1 бот",
+                "last_name": "",
+                "email": "bot@7dc54ced-6051-4b65-891d-9c8f42ea2ef0",
+                "type": "bot",
+                "external_id": "",
+                "banned": false,
+                "position": "",
+                "skype": "",
+                "phone": "",
+                "login_phone": "",
+                "web_session_settings": {
+                    "disable": false
+                },
+                "mobile_session_settings": {
+                    "disable": false
+                },
+                "web_session_inactive_settings": {
+                    "disable": false
+                },
+                "mobile_session_inactive_settings": {
+                    "disable": false
+                }
+            },
+            "added_list_ids": [
+                1172566
+            ],
+            "reassigned_to": {
+                "id": 1730,
+                "first_name": "",
+                "last_name": "Pyrus.com",
+                "type": "user",
+                "external_id": "",
+                "web_session_settings": {},
+                "mobile_session_settings": {},
+                "web_session_inactive_settings": {},
+                "mobile_session_inactive_settings": {}
+            },
+            "field_updates": [
+                {
+                    "id": 1,
+                    "type": "date",
+                    "name": "Дата",
+                    "tooltip": "",
+                    "value": "2021-12-31"
+                },
+                {
+                    "id": 2,
+                    "type": "time",
+                    "name": "Время",
+                    "tooltip": "",
+                    "value": "11:15"
+                },
+                {
+                    "id": 4,
+                    "type": "catalog",
+                    "name": "Услуга",
+                    "tooltip": "",
+                    "value": {
+                        "item_id": 99586038,
+                        "item_ids": [
+                            99586038
+                        ],
+                        "headers": [
+                            "id",
+                            "Цель посещения"
+                        ],
+                        "values": [
+                            "2",
+                            "Посещение шоурума одежды и обуви"
+                        ],
+                        "rows": [
+                            [
+                                "2",
+                                "Посещение шоурума одежды и обуви"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "id": 5,
+                    "type": "catalog",
+                    "name": "Семья",
+                    "tooltip": "",
+                    "value": {
+                        "item_id": 97473078,
+                        "item_ids": [
+                            97473078
+                        ],
+                        "headers": [
+                            "№ заявки",
+                            "ФИО",
+                            "Статус"
+                        ],
+                        "values": [
+                            "3301",
+                            "Близнюкова Варвара Алексеевна",
+                            "На учете"
+                        ],
+                        "rows": [
+                            [
+                                "3301",
+                                "Близнюкова Варвара Алексеевна",
+                                "На учете"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "id": 14,
+                    "type": "catalog",
+                    "name": "Кураторы",
+                    "tooltip": "",
+                    "value": {
+                        "item_id": 97076214,
+                        "item_ids": [
+                            97076214
+                        ],
+                        "headers": [
+                            "УИН куратора",
+                            "Фамилия",
+                            "Имя",
+                            "Телефон",
+                            "Email",
+                            "Telegram",
+                            "Чат с куратором",
+                            "Дата подключения",
+                            "Статус"
+                        ],
+                        "values": [
+                            "11",
+                            "Кириллова",
+                            "Надежда",
+                            "79257288200",
+                            "7288200@gmail.com",
+                            "@NK7288200",
+                            "https://t.me/+sqgPF9R23W85MDdi",
+                            "19.08.22",
+                            "Принят"
+                        ],
+                        "rows": [
+                            [
+                                "11",
+                                "Кириллова",
+                                "Надежда",
+                                "79257288200",
+                                "7288200@gmail.com",
+                                "@NK7288200",
+                                "https://t.me/+sqgPF9R23W85MDdi",
+                                "19.08.22",
+                                "Принят"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "id": 13,
+                    "type": "number",
+                    "name": "Количество человек",
+                    "tooltip": "",
+                    "value": 2
+                },
+                {
+                    "id": 16,
+                    "type": "number",
+                    "name": "ID бронирования в easyweek",
+                    "tooltip": "",
+                    "value": 112
+                },
+                {
+                    "id": 6,
+                    "type": "catalog",
+                    "name": "Статус",
+                    "tooltip": "",
+                    "default_value": "99586052",
+                    "value": {
+                        "item_id": 99586052,
+                        "item_ids": [
+                            99586052
+                        ],
+                        "headers": [
+                            "id",
+                            "Статус"
+                        ],
+                        "values": [
+                            "1",
+                            "Новая"
+                        ],
+                        "rows": [
+                            [
+                                "1",
+                                "Новая"
+                            ]
+                        ]
+                    }
+                }
+            ],
+            "approvals_added": [
+                [
+                    {
+                        "person": {
+                            "id": 703688,
+                            "first_name": "",
+                            "last_name": "Пустая роль БФ ПБ",
+                            "email": "",
+                            "type": "role",
+                            "external_id": "",
+                            "banned": false,
+                            "position": "",
+                            "skype": "",
+                            "phone": "",
+                            "web_session_settings": {},
+                            "mobile_session_settings": {},
+                            "web_session_inactive_settings": {},
+                            "mobile_session_inactive_settings": {}
+                        },
+                        "step": 4
+                    }
+                ]
+            ]
+        }
+    ],
+    "is_closed": false
+}
