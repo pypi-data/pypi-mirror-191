@@ -1,0 +1,25 @@
+auth:
+    ssh_user: ""
+    # you must specify paths to matching private and public key pair files
+    # use `ssh-keygen -t rsa -b 4096` to generate a new ssh key pair
+    ssh_private_key: ~/.ssh/id_rsa
+
+
+endpoint: ""
+zone_name: ""
+iam_api_key: ""
+
+node_config:
+    ip_address: ""
+    vpc_id: ""
+    vsi_id: ""
+    resource_group_id: ""
+    security_group_id: ""
+    subnet_id: ""
+    key_id: ""
+    image_id: ""
+    instance_profile_name: ""  
+    boot_volume_capacity: 100
+    volume_tier_name: general-purpose
+
+

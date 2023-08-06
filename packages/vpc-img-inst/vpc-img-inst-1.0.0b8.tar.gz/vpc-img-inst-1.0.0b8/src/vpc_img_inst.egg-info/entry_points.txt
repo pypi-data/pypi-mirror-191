@@ -1,0 +1,2 @@
+[console_scripts]
+vpc-img-inst = vpc_img_inst:main.builder
