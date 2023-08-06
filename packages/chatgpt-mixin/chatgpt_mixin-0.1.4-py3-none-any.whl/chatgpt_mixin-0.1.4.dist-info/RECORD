@@ -1,0 +1,12 @@
+chatgpt_mixin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt_mixin/__main__.py,sha256=0DA7w-nPIUQBptgKX9aVmv2LVUPnaIZRdJ6VKdBaOi4,70
+chatgpt_mixin/chatgpt_browser.py,sha256=hp5KFcdBnLSCjZwgWE2vfiYW17-JcL6REwtpRY-V--c,15260
+chatgpt_mixin/chatgpt_openai.py,sha256=m9Et2vrr_gKfLDUz65MCkz1HIBQFnOdzeHqUBK2CawY,6219
+chatgpt_mixin/mixinbot.py,sha256=B74t2itN2ukET17PUk_4l_HzMZLLctlAKU2-9myccVU,16562
+chatgpt_mixin/test.py,sha256=0lRsS2pRe7LZeayep9BzI7FY1HlhdjgtzjlIiDqDqgE,1983
+chatgpt_mixin-0.1.4.dist-info/LICENSE,sha256=XpquwkDj5NIBrtvKyP2ZaymjrQizS0vLly6S_grsNks,1073
+chatgpt_mixin-0.1.4.dist-info/METADATA,sha256=b81Aeqr7Q2Ghz3ddioUduZ-XjwJ7WLTTsBP7WLbME_k,2977
+chatgpt_mixin-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chatgpt_mixin-0.1.4.dist-info/entry_points.txt,sha256=9ozrxOVD8aaMsHKic177jHh85YzKgT4SsI3_mKtAOok,59
+chatgpt_mixin-0.1.4.dist-info/top_level.txt,sha256=KP4BCjc-RemekIU1u9g5jEjAodE3AXozPSFkfNsusJw,14
+chatgpt_mixin-0.1.4.dist-info/RECORD,,

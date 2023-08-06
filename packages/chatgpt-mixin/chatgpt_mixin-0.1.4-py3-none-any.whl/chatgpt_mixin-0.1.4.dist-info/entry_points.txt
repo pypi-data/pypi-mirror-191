@@ -1,0 +1,2 @@
+[console_scripts]
+chatgpt_bot = chatgpt_mixin.mixinbot:run
