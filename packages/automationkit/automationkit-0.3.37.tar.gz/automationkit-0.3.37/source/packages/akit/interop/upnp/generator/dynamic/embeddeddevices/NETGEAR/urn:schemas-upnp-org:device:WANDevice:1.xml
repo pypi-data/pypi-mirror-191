@@ -1,0 +1,11 @@
+<device>
+    <serviceList xmlns="urn:schemas-upnp-org:device-1-0">
+        <service>
+            <serviceType>urn:schemas-upnp-org:service:WANCommonInterfaceConfig:1</serviceType>
+            <serviceId>urn:upnp-org:serviceId:WANCommonIFC1</serviceId>
+            <controlURL>/ctl/CmnIfCfg</controlURL>
+            <eventSubURL>/evt/CmnIfCfg</eventSubURL>
+            <SCPDURL>/WANCfg.xml</SCPDURL>
+        </service>
+    </serviceList>
+</device

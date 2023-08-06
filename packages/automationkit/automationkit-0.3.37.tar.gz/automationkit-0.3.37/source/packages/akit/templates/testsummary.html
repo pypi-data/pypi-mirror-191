@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        __author__ = "Myron Walker"
+        __copyright__ = "Copyright 2020, Myron W Walker"
+        __credits__ = []
+        __version__ = "1.0.0"
+        __maintainer__ = "Myron Walker"
+        __email__ = "myron.walker@gmail.com"
+        __status__ = "Development" # Prototype, Development or Production
+        __license__ = "MIT"
+    -->
+    <head>
+
+        <link rel="stylesheet" href="/static/v0/testsummary.css" ></link>
+
+        <script type="text/javascript" src="/static/v0/testsummary.js" ></script>
+
+        <script type="text/javascript">
+
+            refresh_page().then(function() {
+                console.log("Page loaded");
+            }, function(err) {
+                console.log("ERROR:\n" + err);
+                console.log(err.stack)
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div class='section-header'>
+            <h1 id='summary-title' class='summary-title'>Test Title</h1>
+            <table class='summary-table'>
+                <tbody>
+                    <tr class='summary-row' >
+                        <td class='summary-label'>Branch</td><td id='summary-branch' class='summary-value'>blah</td>
+                        <td class='summary-label'>Build</td><td id='summary-build' class='summary-value'>1.0.0.1.169</td>
+                        <td class='summary-label'>Flavor</td><td id='summary-flavor' class='summary-value'>release</td>
+                        <td class='summary-label'>Pod</td><td id='summary-apod' class='summary-value'>Automation Rig 2</td>
+                    </tr>
+                    <tr></tr>
+                    <tr class='summary-row'>
+                        <td class='summary-label'>Start</td><td id='summary-start' class='summary-value'>2019-09-21 22:43:07.863278</td>
+                        <td class='summary-label'>Stop</td><td id='summary-stop' class='summary-value'>2019-09-21 22:43:08.195637</td>
+                        <td class='summary-label'>Status</td><td id='summary-status' class='summary-value'>RUNNING</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br />
+            <table class='summary-table'>
+                    <tbody>
+                        <tr class='summary-row'>
+                            <td class='summary-label'>Errors</td><td id='summary-error' class='summary-value color-error'>0</td>
+                            <td class='summary-label'>Failed</td><td id='summary-fail' class='summary-value color-fail'>0</td>
+                            <td class='summary-label'>Skipped</td><td id='summary-skip' class='summary-value color-skip'>0</td>
+                            <td class='summary-label'>Passed</td><td id='summary-pass' class='summary-value color-pass'>0</td>
+                            <td class='summary-label'>Total</td><td id='summary-total' class='summary-value'>0</td>
+                        </tr>
+                        <tr class='summary-row'>
+                            <td class='summary-label'></td><td class='summary-value'></td>
+                            <td class='summary-label'></td><td class='summary-value'></td>
+                            <td class='summary-label'></td><td class='summary-value'></td>
+                            <td class='summary-label'></td><td class='summary-value'></td>
+                            <td class='summary-label'>Score</td><td id='summary-score' class='summary-value'>0.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <br />
+        <div class='section-body'>
+            <h2 id='test-configuration-title' class='body-title'>Configuration</h2>
+            <div id='test-configuration-header'>
+
+            </div>
+            <div id='test-configuration-body' class='landscape-table'>
+            </div>
+            <h2 id='test-results-title' class='body-title'>Test Cases</h2>
+            <div id='test-results-header' class='results-headers'>
+                <div class='results-hdr-start'>Start</div>
+                <div class='results-hdr-name'>Test Name</div>
+                <div class='results-hdr-e'>E</div>
+                <div class='results-hdr-f'>F</div>
+                <div class='results-hdr-s'>S</div>
+                <div class='results-hdr-p'>P</div>
+            </div>
+            <div id='test-results-body' class='results-table'>
+            </div>
+            <br />
+            <h2 id='import-errors-title' class='body-title'>Import Failures</h2>
+            <div id='import-errors-header' class='imp-error-headers'>
+                <div class='imp-error-hdr-filename'>Filename</div>
+            </div>
+            <div id='import-errors-body' class='imp-error-table' >
+                
+            </div>
+            <br />
+            <h2 id='artifacts-title' class='body-title' style="display: none">Artifacts</h2>
+            <div id='artifacts-tab-bar' class='tab' style="display: none">
+            </div>
+            <div id='artifacts-tab-content' style="display: none">
+            </div>
+        </div>
+        <br />
+        <div class='section-footer'>
+            <h2>Folders</h2>
+            <div id='container-folders' class='ff-list'>
+                
+            </div>
+            <br/>
+            <h2>Files</h2>
+            <div id='container-files' class='ff-list'>
+                
+            </div>
+        </div>
+    </body>
+</html>
