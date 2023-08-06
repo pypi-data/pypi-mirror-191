@@ -1,0 +1,8 @@
+local_tuya_ceiling_fan/__init__.py,sha256=baGRI9o4aHWUY6MF4HXDemsA4qJqcT9kPleIIuUuqi0,199
+local_tuya_ceiling_fan/device.py,sha256=hmkam9x5aeM0X45xAM5D-nSDOZgDAVSGtWzRxvNyhT8,3091
+local_tuya_ceiling_fan/domoticz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+local_tuya_ceiling_fan/domoticz/install.py,sha256=uBn2if9rlnlHogWmDMGZk1kDA40pE145YWT5EwEIIPE,3166
+local_tuya_ceiling_fan-1.2.0.dist-info/METADATA,sha256=Zo4BHmhyXiRlXrXxTC9l4c057P4frMCURNlwquLQ-cM,3240
+local_tuya_ceiling_fan-1.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+local_tuya_ceiling_fan-1.2.0.dist-info/LICENSE,sha256=pz9qNRqggCs2PHrkgSrCNED2tV0zzWWOslaMj1LRtZk,1070
+local_tuya_ceiling_fan-1.2.0.dist-info/RECORD,,
