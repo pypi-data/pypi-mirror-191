@@ -1,0 +1,7 @@
+setup.py
+src/PyCMSRRtcm/__init__.py
+src/PyCMSRRtcm/rtcm.py
+src/PyCMSRRtcm.egg-info/PKG-INFO
+src/PyCMSRRtcm.egg-info/SOURCES.txt
+src/PyCMSRRtcm.egg-info/dependency_links.txt
+src/PyCMSRRtcm.egg-info/top_level.txt

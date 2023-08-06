@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: PyCMSRRtcm
+Version: 1.0.0
+Home-page: 
+Author: yujingrong
+Author-email: jakubik@126.com
+License: MIT Licence
+Keywords: testing testautomation
+Platform: any
+Requires-Python: >=3.7
