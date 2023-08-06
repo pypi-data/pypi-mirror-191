@@ -1,0 +1,56 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.compoundcriterion">
+
+    <i18n:registerTranslations directory="locales" />
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <include package="plone.api" />
+    <include file="profiles.zcml" />
+
+    <!--adapter for="*"
+             factory="collective.compoundcriterion.tests.adapter.TestingCompoundCriterionFilterAdapter"
+             provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+             name="testing-compound-adapter" /-->
+
+    <!-- adapter for="*"
+             factory="collective.compoundcriterion.tests.adapter.SampleCompoundCriterionFilterAdapter"
+             provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+             name="sample-compound-adapter" /-->
+
+    <adapter
+        for="*"
+        factory="collective.compoundcriterion.adapters.NegativePreviousIndexValuesAdapter"
+        provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+        name="negative-previous-index" />
+    <adapter
+        zcml:condition="installed ftw.labels"
+        for="*"
+        factory="collective.compoundcriterion.adapters.NegativePersonalLabelsAdapter"
+        provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+        name="negative-personal-labels" />
+
+    <utility
+        component=".vocabularies.CompoundCriterionVocabularyFactory"
+        name="collective.compoundcriterion.Filters" />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="collective.compoundcriterion"
+        directory="profiles/default"
+        description="Installs the collective.compoundcriterion add-on."
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+    <genericsetup:importStep
+        name="collectivecompoundcriterion-postInstall"
+        title="collective.compoundcriterion post_install import step"
+        description="Post install import step from collective.compoundcriterion"
+        handler=".setuphandlers.post_install">
+    </genericsetup:importStep>
+
+</configure>

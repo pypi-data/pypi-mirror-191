@@ -1,0 +1,9 @@
+archetypes.querywidget>=1.1.2
+imio.helpers
+plone.api
+setuptools
+
+[test]
+ftw.labels
+plone.app.robotframework
+plone.app.testing

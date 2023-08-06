@@ -1,0 +1,160 @@
+Metadata-Version: 2.1
+Name: collective.compoundcriterion
+Version: 0.6
+Summary: Compound criterion for plone.app.collection managing complex query
+Home-page: http://pypi.python.org/pypi/collective.compoundcriterion
+Author: IMIO
+Author-email: support@imio.be
+License: GPL
+Keywords: Plone collection criterion
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Provides-Extra: test
+
+============================
+collective.compoundcriterion
+============================
+
+.. image:: https://secure.travis-ci.org/collective/collective.compoundcriterion.png
+   :target: http://travis-ci.org/collective/collective.compoundcriterion
+
+.. image:: https://coveralls.io/repos/collective/collective.compoundcriterion/badge.svg?branch=master&service=github
+  :target: https://coveralls.io/github/collective/collective.compoundcriterion?branch=master
+
+
+This package add a new kind of criterion available for plone.app.collection.
+
+Motivation
+----------
+
+Sometimes, some index are composed of different elements with a certain logic or you need to query particular elements of the site like groups of the current user or anything else.
+This is not achievable using default indexes and Collection UI, you need to write python code.
+
+How to use
+----------
+
+When adding/editing a Collection, a new criterion filed under the 'Other' category of available indexes called 'Filter' is available.
+
+When selecting a 'Filter', a selection box will show you named adapter that provide the collective.compoundcriterion.interfaces.ICoumpondCriterionFilter interface.
+
+You will be able to select among available ones.  This can still be used together with other criteria.
+
+To register this complex query builder named adapter, you will have to add this kind of code :
+
+.. code:: xml
+
+   <adapter for="*"
+            factory="collective.compoundcriterion.tests.adapter.CompoundCrietrionFilterAdapter"
+            provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+            name="testing-compound-adapter" />
+
+How to test
+-----------
+
+Add the adapter registration zcml here above to a configure.zcml file (like the one in collective.compoundcriterion), it will make the 'testing-compound-adapter' available in the Collection 'Filter' index.
+
+This testing adapter will query elements of the site having string 'special_text_to_find' in the title.  So create a document with such title and it should work.
+
+A second adapter can be used to test :
+
+.. code:: xml
+
+    <adapter for="*"
+             factory="collective.compoundcriterion.tests.adapter.SampleCompoundCrietrionFilterAdapter"
+             provides="collective.compoundcriterion.interfaces.ICompoundCriterionFilter"
+             name="sample-compound-adapter" />
+
+This one will query elements having 'title_with_sample_text' in the title.
+
+
+Negative index adapters
+-----------------------
+
+Two specific adapters exist to negativize query:
+
+- `negative-previous-index` that will negativize the values of the previous index defined in the query;
+- `negative-personal-labels` that does the same but for ftw.labels personal labels that needs specific handling as current user id is managed in indexed values.
+
+
+Translations
+------------
+
+This product has been translated into
+
+- French.
+
+- Spanish.
+
+You can contribute for any message missing or other new languages, join us at `Plone Collective Team <https://www.transifex.com/plone/plone-collective/>`_ into *Transifex.net* service with all world Plone translators community.
+
+
+Contributors
+============
+
+- IMIO, support@imio.be
+- Leonardo J. Caballero G., leonardocaballero@gmail.com
+
+
+Changelog
+=========
+
+
+0.6 (2023-02-13)
+----------------
+
+- Added `negative-previous-index` and `negative-personal-labels` default adapters.
+  Rely on `imio.helpers`. Removed dependency on `unittest2`.
+  [gbastien]
+
+0.5 (2021-04-20)
+----------------
+
+- Add Transifex.net service integration to manage the translation process.
+  [macagua]
+- Add Spanish translation
+  [macagua]
+
+0.4 (2018-08-31)
+----------------
+
+- When getting the adapter, if context is not the Collection, try to get real context
+  following various cases.  This is the case when using Collection
+  from plone.app.contenttypes.
+  [gbastien]
+- Do not use a SelectionWidget to render the querystring widget as it does not
+  exist anymore for plone.app.contenttypes Collection.
+  Use the MultipleSelectionWidget.  This way finally we may select several
+  filters to build the query.
+  [gbastien]
+- When using 'not' in queries for ZCatalog 3, 'query' level must be replaced by 'not' in query dictionary.
+  [sgeulette]
+
+0.3 (2016-12-08)
+----------------
+
+- Return clear message when a query format is not plone.app.querystring compliant.
+  [gbastien]
+
+
+0.2 (2015-09-04)
+----------------
+
+- Raise a KeyError if the format of the query returned by the named adapter
+  is not compliant with what is returned by
+  plone.app.querystring.queryparser.parseFormquery, this way it behaves
+  correctly with collective.eeafaceted.collectionwidget.
+  [gbastien]
+
+
+0.1 (2015-06-02)
+----------------
+
+- Initial release.
+  [IMIO]
+
+
+
