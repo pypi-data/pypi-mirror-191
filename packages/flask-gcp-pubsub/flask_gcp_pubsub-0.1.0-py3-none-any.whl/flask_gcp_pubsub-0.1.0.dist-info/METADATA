@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flask-gcp-pubsub
+Version: 0.1.0
+Summary: Google Pub/Sub as task manager, like Celery can do
+Author-email: WildSys <hello@wildsys.io>
+Project-URL: Homepage, https://github.com/wildsys/flask-gcp-pubsub
+Project-URL: Bug Tracker, https://github.com/wildsys/flask-gcp-pubsub/issues
+Keywords: cloud pubsub,tasks,flask
+Classifier: Framework :: Flask
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: flask (<2.3,>=2.2)
+Requires-Dist: google-cloud-pubsub (==2.14.1)
+
