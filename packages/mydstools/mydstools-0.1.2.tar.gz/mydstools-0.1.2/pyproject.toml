@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mydstools"
+version = "0.1.2"
+description = "Data Science Toolbox"
+authors = ["Antonio Buzzelli"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.5.3"
+matplotlib = "^3.6.3"
+seaborn = "^0.12.2"
+simple-salesforce = "^1.12.3"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.20.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
