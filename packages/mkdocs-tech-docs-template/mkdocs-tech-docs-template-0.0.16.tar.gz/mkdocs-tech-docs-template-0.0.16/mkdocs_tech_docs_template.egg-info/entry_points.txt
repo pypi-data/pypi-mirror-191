@@ -1,0 +1,2 @@
+[mkdocs.themes]
+tech_docs_template = tech_docs_template
