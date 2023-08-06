@@ -1,0 +1,13 @@
+beautifulsoup4
+boltons
+fastcore
+loguru
+numpy
+oceano-algos
+pandas
+psutil
+psycopg2-binary
+selenium
+sqlalchemy
+sshtunnel
+tqdm
