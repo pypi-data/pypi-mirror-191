@@ -1,0 +1,66 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lamindb"
+authors = [{name = "Lamin Labs", email = "laminlabs@gmail.com"}]
+readme = "README.md"
+dynamic = ["version", "description"]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    # Lamin pinned packages
+    "lndb==0.32.4",
+    "lnschema_core==0.26.1",
+    "lnschema_wetlab==0.13.4",
+    "lnschema_bionty==0.6.9",
+    "bionty==0.7.0",
+    "nbproject>=0.8.0",
+    "readfcs>=1.1.0",
+    # External packages
+    "anndata>=0.8.0",
+    "hjson",
+    "sqlmodel>=0.0.8",
+    "typeguard",
+    "tabulate",
+    "erdiagram",
+    "zarr",
+]
+
+[project.urls]
+Home = "https://github.com/laminlabs/lamindb"
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "nox",
+]
+test = [
+    "pytest>=6.0",
+    "coverage",
+    "pytest-cov",
+    "scanpy",
+    "scikit-learn>=1.1.1",
+    "nbproject_test>=0.3.0",
+    "psycopg2-binary",
+    "matplotlib<3.7"
+]
+
+[tool.black]
+preview = true
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+    "docs/faq",
+    "docs/guide",
+]
+
+[tool.coverage.run]
+omit = [
+    "lamindb/*",
+]
