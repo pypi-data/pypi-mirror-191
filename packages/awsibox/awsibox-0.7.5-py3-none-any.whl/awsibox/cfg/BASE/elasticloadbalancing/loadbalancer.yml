@@ -1,0 +1,10 @@
+IBoxLoader: !include
+  - elasticloadbalancing/base.yml
+  - classic-loadbalancer.yml
+  - v2-loadbalancer.yml
+
+global:
+  EC2SecurityGroup:
+    - LoadBalancer:
+        GroupDescription: 'Enable access to LoadBalancer'
+        SecurityGroupIngress: {}

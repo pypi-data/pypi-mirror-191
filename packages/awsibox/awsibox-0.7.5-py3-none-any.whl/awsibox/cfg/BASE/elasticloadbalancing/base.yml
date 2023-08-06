@@ -1,0 +1,15 @@
+IBoxLoader: !include
+  - hostedzoneid.yml
+  - listener.yml
+  - targetgroup.yml
+  - crm/certificate-regional.yml
+  - ec2/securitygroup.yml
+  - route53/recordset.yml
+
+global:
+
+
+IBoxLoaderAfter: !include [
+  #certificate-adhoc.yml,
+]
+
