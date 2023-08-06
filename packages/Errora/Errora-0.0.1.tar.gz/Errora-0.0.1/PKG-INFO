@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Errora
+Version: 0.0.1
+Summary: Package for debugging Python Code
+Author: Lone Walker
+Author-email: lonewalkerns@gmail.com
+License: MIT
+Keywords: debug
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+A package that makes it easy to debug all python programs and lists helpful and relevant links on the same error on Github & Stackoverflow.

@@ -1,0 +1,6 @@
+setup.py
+Errora.egg-info/PKG-INFO
+Errora.egg-info/SOURCES.txt
+Errora.egg-info/dependency_links.txt
+Errora.egg-info/requires.txt
+Errora.egg-info/top_level.txt
