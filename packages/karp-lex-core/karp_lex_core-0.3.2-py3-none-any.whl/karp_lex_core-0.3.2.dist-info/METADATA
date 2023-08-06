@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: karp-lex-core
+Version: 0.3.2
+Summary: The core of karp-lex
+Home-page: https://spraakbanken.gu.se
+License: MIT
+Author: Språkbanken at the University of Gothenburg
+Author-email: sb-info@svenska.gu.se
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: ulid-py (>=1.1.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/spraakbanken/karp-backend/issues
+Project-URL: Documentation, https://github.com/spraakbanken/karp-backend
+Project-URL: Repository, https://github.com/spraakbanken/karp-backend
+Description-Content-Type: text/markdown
+
+# karp-lex-core
+
+- **karp-lex-core** [![PyPI version](https://badge.fury.io/py/karp-lex-core.svg)](https://badge.fury.io/py/karp-lex-core)
+
+The core for karp-lex
+
+Contains commands, entry_dto and unique_id for `karp.lex` in `karp.backend`.
+
+
