@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_terminal/__init__.py
+easy_terminal/terminal.py
+easy_terminal.egg-info/PKG-INFO
+easy_terminal.egg-info/SOURCES.txt
+easy_terminal.egg-info/dependency_links.txt
+easy_terminal.egg-info/requires.txt
+easy_terminal.egg-info/top_level.txt
