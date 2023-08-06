@@ -1,0 +1,11 @@
+name: napari-pointslayer-projection
+display_name: Projection of Points layers
+contributions:
+  commands:
+    - id: napari-pointslayer-projection.make_func_widget
+      python_name: napari_pointslayer_projection._widget:project_points
+      title: Project points into 2d
+  widgets:
+    - command: napari-pointslayer-projection.make_func_widget
+      autogenerate: true
+      display_name: Project points into 2d
