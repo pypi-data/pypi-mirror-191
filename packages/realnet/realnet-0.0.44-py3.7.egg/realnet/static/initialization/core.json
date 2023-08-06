@@ -1,0 +1,302 @@
+{
+    "types": [
+        {
+            "name": "Type",
+            "attributes": {
+                "icon": "extension",
+                "resource": "types"
+            }
+        },
+        {
+            "name": "Instance",
+            "attributes": {
+                "icon": "approval",
+                "resource": "types"
+            }
+        },
+        {
+            "name": "Item",
+            "attributes": {
+                "icon": "square"
+            }
+        },
+        {
+            "name": "Attribute",
+            "base": "Item",
+            "attributes": {
+                "icon": "segment"
+            }
+        },
+        {
+            "name": "Func",
+            "base": "Item",
+            "attributes": {
+                "icon": "function",
+                "views": [
+                    {
+                        "name": "Code",
+                        "type": "CodeView"
+                    },
+                    {
+                        "name": "Attributes",
+                        "type": "AttributesView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Account",
+            "base": "Item",
+            "attributes": {
+                "icon": "person",
+                "resource": "accounts"
+            }
+        },
+        {
+            "name": "Role",
+            "base": "Item",
+            "attributes": {
+                "icon": "switch_account",
+                "resource": "roles",
+                "views": [
+                    {
+                        "name": "Apps",
+                        "type": "ListView"
+                    }
+                ],
+                "menu": [
+                    {
+                        "name": "Add",
+                        "icon": "add",
+                        "form": "RoleAppForm"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Group",
+            "base": "Item",
+            "attributes": {
+                "icon": "group",
+                "resource": "groups"
+            }
+        },
+        {
+            "name": "Org",
+            "base": "Item",
+            "attributes": {
+                "icon": "supervisor_account"
+            }
+        },
+        {
+            "name": "Auth",
+            "base": "Item",
+            "attributes": {
+                "icon": "lock_open",
+                "resource": "auths"
+            }
+        },
+        {
+            "name": "Client",
+            "base": "Item",
+            "attributes": {
+                "icon": "safety_check",
+                "resource": "clients"
+            }
+        },
+        {
+            "name": "Exp",
+            "base": "Item",
+            "attributes": {
+                "icon": "calculate"
+            }
+        },
+        {
+            "name": "Op",
+            "base": "Item",
+            "attributes": {
+                "icon": "rebase"
+            }
+        },
+        {
+            "name": "Endpoint",
+            "base": "Item",
+            "attributes": {
+                "icon": "functions",
+                "views": [
+                    {
+                        "name": "Attributes",
+                        "type": "AttributesView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Task",
+            "base": "Item",
+            "attributes": {
+                "icon": "assignment_turned_in"
+            }
+        },
+        {
+            "name": "Exec",
+            "base": "Item"
+        },
+        {
+            "name": "Resource",
+            "base": "Item",
+            "attributes": {
+                "icon": "border_all",
+                "types": ["Func"],
+                "query": {"types": ["Func"], "children": "true"},
+                "views": [
+                    {
+                        "name": "Methods",
+                        "type": "ListView"
+                    },
+                    {
+                        "name": "Attributes",
+                        "type": "AttributesView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Query",
+            "base": "Item"
+        },
+        {
+            "name": "Menu",
+            "base": "Item"
+        },
+        {
+            "name": "Media",
+            "base": "Item",
+            "attributes": {
+                "icon": "collections",
+                "creatable": "false"
+            }
+        },
+        {
+            "name": "File",
+            "base": "Media"
+        },
+        {
+            "name": "Folder",
+            "base": "Media",
+            "attributes": {
+                "icon": "folder",
+                "creatable": "true",
+                "types": ["Media"],
+                "query": {"types": ["Media"], "my_items": "true"},
+                "menu": [
+                    {
+                        "name": "Upload Media",
+                        "icon": "file_upload",
+                        "form": "Import",
+                        "import": "true"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Document",
+            "base": "Media",
+            "attributes": {
+                "icon": "description",
+                "creatable": "false",
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "DocumentView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Page",
+            "base": "Media",
+            "attributes": {
+                "icon": "web_asset",
+                "creatable": "false",
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "PageView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Image",
+            "base": "Media",
+            "attributes": {
+                "icon": "image",
+                "creatable": "false",
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "ImageView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Video",
+            "base": "Media",
+            "attributes": {
+                "icon": "ondemand_video",
+                "creatable": "false",
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "VideoView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Drawing",
+            "base": "Media",
+            "attributes": {
+                "icon": "gesture",
+                "creatable": "false",
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "DrawingView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Folder",
+            "base": "Media",
+            "attributes": {
+                "icon": "folder",
+                "creatable": "true",
+                "views": [
+                    {
+                        "name": "Children",
+                        "type": "ListView"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Scene",
+            "base": "Media",
+            "attributes": {
+                "icon": "view_in_ar",
+                "creatable": "false",
+                "types": ["Layer", "Query"],
+                "views": [
+                    {
+                        "name": "View",
+                        "type": "SceneView"
+                    }
+                ]
+            }
+        }
+    ]
+}
