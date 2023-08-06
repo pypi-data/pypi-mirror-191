@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: datavizml
+Version: 0.0.2
+Summary: A package to explore and visualise a dataset in preparation for an ML project
+Home-page: https://github.com/dibble07/datavizml
+Author: Robert Dibble
+Author-email: robertdibble@live.co.uk
+License: UNKNOWN
+Description: # DataVizML
+        Create visualisations of data for ML EDA
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown

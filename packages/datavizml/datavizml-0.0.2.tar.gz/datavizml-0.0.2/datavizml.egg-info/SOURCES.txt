@@ -1,0 +1,9 @@
+README.md
+setup.py
+datavizml/__init__.py
+datavizml/datavizml.py
+datavizml.egg-info/PKG-INFO
+datavizml.egg-info/SOURCES.txt
+datavizml.egg-info/dependency_links.txt
+datavizml.egg-info/requires.txt
+datavizml.egg-info/top_level.txt
