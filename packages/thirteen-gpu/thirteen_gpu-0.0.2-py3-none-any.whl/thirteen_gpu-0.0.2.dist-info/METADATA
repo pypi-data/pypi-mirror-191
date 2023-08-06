@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: thirteen-gpu
+Version: 0.0.2
+Summary: simple gpu scheduler
+Home-page: https://github.com/thirteen-ai/simple_gpu_scheduler
+Author: seil.na
+Author-email: seil.na@thirteen.ai
+License: UNKNOWN
+Download-URL: https://github.com/thirteen-ai/simple_gpu_scheduler/archive/master.zip
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: fastapi
+Requires-Dist: paramiko
+Requires-Dist: uvicorn
+
+UNKNOWN
+

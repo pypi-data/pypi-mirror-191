@@ -1,0 +1,3 @@
+[console_scripts]
+submit = thirteen_gpu.submit:main
+
