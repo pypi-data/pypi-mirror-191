@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+randomGenjnp.egg-info/PKG-INFO
+randomGenjnp.egg-info/SOURCES.txt
+randomGenjnp.egg-info/dependency_links.txt
+randomGenjnp.egg-info/top_level.txt
+sample/__init__.py
+sample/mod1.py
+sample/mod3.py
