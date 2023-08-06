@@ -1,0 +1,3 @@
+[console_scripts]
+kmr = kmrpp.__main__:main
+
