@@ -1,0 +1,3 @@
+[console_scripts]
+scd30-exporter=scd30_exporter.cli:main
+
