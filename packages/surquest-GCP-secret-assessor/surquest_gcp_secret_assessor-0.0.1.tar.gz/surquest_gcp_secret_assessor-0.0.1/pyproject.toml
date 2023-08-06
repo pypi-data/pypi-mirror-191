@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "surquest-GCP-secret-assessor"
+version = "0.0.1"
+description = "Utility package for assessing Google Cloud Platform (GCP) secrets uniformly"
+authors = [
+    {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
+]
+readme = "README.md"
+dependencies = [
+    "PyYAML >=6.0",
+    "google-cloud-secret-manager >= 2.10.0, < 3.0.0",
+    "google-auth >= 2.10.0, < 3.0.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.2.1",
+    "pytest-cov>=4.0.0",
+]
+
+
+
+[project.urls]
+"Homepage" = "https://github.com/surquest/python-gcp-secrets-assessor"
+"Bug Tracker" = "https://github.com/surquest/python-gcp-secrets-assessor/issues"
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+"scripts" = "surquest"
+
+[tool.hatch.build.targets.sdist.sources]
+"src" = ""
+"scripts" = "surquest"
