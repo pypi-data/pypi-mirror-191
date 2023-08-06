@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: bibReader
+Version: 0.0.8.13
+Summary: Turns data into panda dataframe
+Home-page: https://github.com/jshinm/bibReader/
+Author: Jong M. Shin
+Author-email: jshinm@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: pandas
+Requires: requests
+Requires: pyyaml
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: pyyaml
+
+[![PyPI](https://github.com/jshinm/pandarize/actions/workflows/publish-package.yml/badge.svg)](https://github.com/jshinm/pandarize/actions/workflows/publish-package.yml)
+# bibReader
+The bibReader reads non-standard bib format from files/url and convert them into pandas DataFrames to easily work with the data, and then tranforms them back into a standardized bib file.
+
+# Installation
+```
+pip install bibReader
+```
+
+# Basic Usage Guide
+```python
+from bibReader.frame import bReader
+
+bib = bReader() #instantiate bReader class
+bib.load(source='https://somewebsite.com/filename.bib') #it can load from url or local source
+bib.fit() #infers data types and parse it into pandas dataframe
+bib.transform() #changes pandas dataframe into different mode of data types
+```
