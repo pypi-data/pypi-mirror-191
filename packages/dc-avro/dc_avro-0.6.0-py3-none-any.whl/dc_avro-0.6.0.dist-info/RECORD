@@ -1,0 +1,10 @@
+dc_avro/__init__.py,sha256=OdrxZ_qCkK_RdLUb4B4jTuJHSAuOECgvTGyNxlUKZgs,35
+dc_avro/_schema_utils.py,sha256=fM6KsPVHP16IHcfjcQejthamPRgtgFwpci9GIt1ByIE,1232
+dc_avro/_types.py,sha256=wgD0dHBtK1B68Y_daK4Ya2zEnFeKsu6Zf0PvClcaz4k,193
+dc_avro/exceptions.py,sha256=FyBracl3p_TujtmY8Zn5MVrNoZ5lNjXU_19XbUzXZDI,81
+dc_avro/main.py,sha256=iDyHqiJ1JeZoGTXjkSJAqQYRYd1ZKJPN_gBSl_D5ZIo,4145
+dc_avro-0.6.0.dist-info/METADATA,sha256=gw21BhyJ19DRWrS81KeLsSIZjxsGRfjxl_-TgSrBtR8,3667
+dc_avro-0.6.0.dist-info/entry_points.txt,sha256=PkS6adBO3g2WxC-84J0g44wyKk9fDR6ZN4Adb3t_GeU,44
+dc_avro-0.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dc_avro-0.6.0.dist-info/LICENSE,sha256=EV-mhRS413VSZqu9BU6rfW7ks_jHuUFIMEwTWKtVM7k,1081
+dc_avro-0.6.0.dist-info/RECORD,,
