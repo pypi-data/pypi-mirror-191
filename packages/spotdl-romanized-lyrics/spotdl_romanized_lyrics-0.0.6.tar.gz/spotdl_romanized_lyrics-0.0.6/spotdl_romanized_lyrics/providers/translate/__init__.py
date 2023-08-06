@@ -1,0 +1,1 @@
+from spotdl_romanized_lyrics.providers.translate.lyricstranslate import Lyricstranslate
