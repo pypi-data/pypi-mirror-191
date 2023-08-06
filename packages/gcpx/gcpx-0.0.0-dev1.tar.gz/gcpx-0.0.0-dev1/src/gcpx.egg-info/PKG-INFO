@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gcpx
+Version: 0.0.0-dev1
+Summary: A python package for interacting with Google Cloud Platform (GCP)
+Home-page: https://github.com/Hassi34/gcpx
+Author: Hasanain Mehmood
+Author-email: hasanain@aicaliber.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Hassi34/gcpx/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gcpx
+A python package for interacting with Google Cloud Platform (GCP)
+
+
