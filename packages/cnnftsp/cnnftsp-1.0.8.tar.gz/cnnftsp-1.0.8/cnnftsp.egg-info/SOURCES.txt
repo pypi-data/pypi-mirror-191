@@ -1,0 +1,7 @@
+setup.py
+cnnfortsp/__init__.py
+cnnftsp.egg-info/PKG-INFO
+cnnftsp.egg-info/SOURCES.txt
+cnnftsp.egg-info/dependency_links.txt
+cnnftsp.egg-info/not-zip-safe
+cnnftsp.egg-info/top_level.txt
