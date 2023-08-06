@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: greenformatics-ds2-utils
+Version: 0.0.2
+Summary: This is a utility package to support data scraping from different data sources.
+Author: Adam Fónagy
+Keywords: python,data scraping,utilities,util,utility
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+
+This is a utility package to support data scraping from different data sources like RESTand SOAP APIs, Google Sheets, online CSV files, databases including SQL, NoSQL and LDAP etc.The goal of this package to get all the necessary utilities together, maintain them in a singlecode base and make the available for all the data scraping project from PyPi hence it isupgradeable in a particular data scraper program.
