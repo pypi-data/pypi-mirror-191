@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: django-helper-builder
+Version: 0.1
+Summary: Quick deployment of a Django project
+Author-email: sergey_wilson@mail.ru
