@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: omnikeeper-client
+Version: 2.0.1
+Summary: Python library containing helper functions for implementing omnikeeper clients
+Author: Maximilian Csuk
+License: Apache 2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: webcolors (==1.3)
+Requires-Dist: aiohttp (==3.8.3)
+Requires-Dist: gql (==3.4.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: oauthlib (==3.2.0)
+Requires-Dist: requests-oauthlib (==1.3.0)
+Requires-Dist: python-json-logger (==2.0.2)
+
+# omnikeeper-client-python
+
+## Requirements
+
+* Python 3.10
+
+## Development Setup
+
+### create virtual environment (optional)
+
+```bash
+virtualenv -p python3.10 venv
+```
+
+or
+
+```bash
+python3.10 -m venv venv
+```
+
+### enter virtual environment (optional)
+
+```bash
+source ./venv/bin/activate
+```
+
+### install requirements
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### build library
+
+```bash
+python setup.py bdist_wheel
+```
+
+### upload to PyPi
+
+```bash
+twine upload dist/omnikeeper_client-2.0.0-py3-none-any.whl
+```
