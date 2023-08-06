@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/main/python/consumption_pkg/psquared_consume/__init__.py
+src/main/python/consumption_pkg/psquared_consume/consumption.py
+src/main/python/consumption_pkg/psquared_consume/execution_request.py
+src/main/python/consumption_pkg/psquared_consume/mock_server.py
+src/main/python/consumption_pkg/psquared_consume/pp_execute.py
+src/main/python/consumption_pkg/psquared_consume/psquared_engine.py
+src/main/python/consumption_pkg/psquared_consume/utils.py
+src/main/python/consumption_pkg/psquared_consume.egg-info/PKG-INFO
+src/main/python/consumption_pkg/psquared_consume.egg-info/SOURCES.txt
+src/main/python/consumption_pkg/psquared_consume.egg-info/dependency_links.txt
+src/main/python/consumption_pkg/psquared_consume.egg-info/entry_points.txt
+src/main/python/consumption_pkg/psquared_consume.egg-info/requires.txt
+src/main/python/consumption_pkg/psquared_consume.egg-info/top_level.txt

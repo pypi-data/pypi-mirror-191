@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psquared_consume"
+version = "1.0.2.dev2"
+description = "Consumes PSquared execution requests from a RabbitMQ queue."
+readme = "README.md"
+authors = [
+    { "name"="Simon Patton", "email" ="sjpatton@lbl.gov"}
+]
+license = { text = "BSD-3-Clause-LBNL" }
+classifiers=[  # Optional
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3.10",
+]
+keywords=["rabbitmq", "rabbitmq_consume"]  # Optional
+dependencies = [ # Optional
+    "rabbitmq-consume >= 1.0",
+    "requests > 2.28"
+]
+requires-python = ">=3.10, <4"
+
+[project.scripts]
+pp-execute = "psquared_consume.pp_execute:main"
+
+# Note the quotes around drip.rmq_consume.consumption in order to escape the dot.
+[project.entry-points."rmq_consume.consumption"]
+psquared_consumption = "psquared_consume:PSquaredConsumption"
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src/main/python/consumption_pkg"]  # ["."] by default
+# include = # ["*"] by default
+# exclude = # [] by default
+
+[tool.setuptools]
+py-modules = ["psquared_consume"]
+
+[tool.setuptools.package-data]
+mypkg = ["py.typed"]
