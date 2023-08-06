@@ -1,0 +1,5 @@
+[console_scripts]
+find-nsf-award-ids-in-github-readmes-and-link = soft_search.bin.find_nsf_award_ids_in_github_readmes_and_link:main
+fit-and-eval-all-models = soft_search.bin.fit_and_eval_all_models:main
+generate-nsf-soft-search-2022-dataset = soft_search.bin.generate_nsf_soft_search_2022_dataset:main
+get-github-repositories-with-nsf-ref = soft_search.bin.get_github_repositories_with_nsf_ref:main
