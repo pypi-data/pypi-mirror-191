@@ -1,0 +1,2 @@
+[console_scripts]
+homespeaker = homespeaker.main:homespeaker_entrypoint
