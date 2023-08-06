@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: project47a
+Version: 0.1.0
+Summary: Code name generator
+License: Apache-2.0
+Author: Henryk Plötz
+Author-email: henryk@ploetzli.ch
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+## Project 47A -- Code Name Generator
+
+````python
+from project47a import get_generator
+
+gen = get_generator("de")
+print(gen())
+# krude Lichtwolke
+print(gen())
+# schaler Wintertag
+````
+
