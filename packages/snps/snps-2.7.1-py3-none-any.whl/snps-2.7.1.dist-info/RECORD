@@ -1,0 +1,15 @@
+snps/__init__.py,sha256=WseQPai0I7lp6nntHgfiQ5UZZX7fjeXZozdPqSWxC20,1765
+snps/_version.py,sha256=68LdJcDXwvbfHYFezFgnGC_UorzE5hdB-nfoml5vJXk,497
+snps/ensembl.py,sha256=ELC9WoliaSkaD2n3tfcl6-7Li5NcZf1nWOGvgK2wJ0k,4345
+snps/resources.py,sha256=JfbGXX-5BTr7eEyc28Dv7VUlIJvVGuoL2FzCVpT0svQ,34947
+snps/snps.py,sha256=3aNS-zJsNMMTBi6kXzQI9ZH5okyid-J1u-Cj3kUTmsQ,71901
+snps/utils.py,sha256=G-tNzQKyt3mJJAyibRD3PrkE_vINGva44LJN4NyPxV8,7127
+snps/io/__init__.py,sha256=qv7gre7PTKwBo1JCd2KaqXR6rKwwTV_p0Mj27agiISw,1657
+snps/io/reader.py,sha256=YEykAaqUvzhCHTOi7RokN2W70I0ql1MJc81tEKRSB8c,48161
+snps/io/writer.py,sha256=v4Y3drFatTVtrDnyhEsHVHkpqlbA3U0n80lPySspnag,14149
+snps-2.7.1.dist-info/LICENSE.txt,sha256=H0rRf-6CLZSyphSmm1LiN-5j8RSst9Y3xWoC4fbCPuw,1519
+snps-2.7.1.dist-info/LICENSES-3RD-PARTY.txt,sha256=GDIWlLzHmsLCc3AdDgkErUm5s3xTkp4pJxUjcLUOtSQ,13454
+snps-2.7.1.dist-info/METADATA,sha256=8BKC8Arj3PaJt12EegTCQ3n27eGbLK609iu3GheS4lY,12826
+snps-2.7.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+snps-2.7.1.dist-info/top_level.txt,sha256=8L7UcgewDWaUUZ7nE4Yiiy_i4HIVpQLc2A3d29gSGvA,5
+snps-2.7.1.dist-info/RECORD,,
