@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/easypipinstall/__init__.py
+src/easypipinstall/install.py
+src/easypipinstall.egg-info/PKG-INFO
+src/easypipinstall.egg-info/SOURCES.txt
+src/easypipinstall.egg-info/dependency_links.txt
+src/easypipinstall.egg-info/entry_points.txt
+src/easypipinstall.egg-info/requires.txt
+src/easypipinstall.egg-info/top_level.txt
