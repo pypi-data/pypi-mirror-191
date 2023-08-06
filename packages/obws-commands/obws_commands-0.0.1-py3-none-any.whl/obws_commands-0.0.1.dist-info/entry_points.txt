@@ -1,0 +1,2 @@
+[console_scripts]
+obws-command = obwsc.cli:run_obws_command
