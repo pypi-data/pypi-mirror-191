@@ -1,0 +1,73 @@
+[project]
+name = "dtuhpc"
+description = "Python package for interfacing with DTU's HPC cluster"
+version = "1.0.0"
+authors = [
+    { name = "Jonas Hoffmann", email = "jonashoffmanns@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11"
+]
+
+[tool.poetry]
+name = "dtuhpc"
+version = "1.0.12"
+description = ""
+authors = ["Jonas Hoffmannn <s204071@student.dtu.dk>"]
+readme = "README.md"
+packages = [{include = "dtuhpc"}]
+
+[tool.poetry.scripts]
+dtuhpc = "dtuhpc.cli.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fabric = "^2.7.0"
+rich = "^13.2.0"
+gitpython = "^3.1.30"
+pygithub = "^1.57"
+tomli = "^2.0.1"
+cryptography = "^39.0.1"
+python-semantic-release = "^7.33.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.0.0"
+pytest-mock = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+bump2version = "^1.0.1"
+flake8 = "^6.0.0"
+isort = "^5.11.4"
+pre-commit = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+atomic = true
+profile = "black"
+line_length = 88
+skip_gitignore = true
+
+[tool.semantic_release]
+version_toml = "pyproject.toml:tool.poetry.version"
+branch = "master"                           # branch to make releases of
+build_command = "poetry build"              # command to build the package
+dist_path = "dist/"                         # path to the distribution files
+remove_dist = false                         # remove the dist folder before building
+changelog_file = "CHANGELOG.md"             # changelog file
+upload_to_release = true                    # auto-create GitHub release
+upload_to_pypi = false                      # don't auto-upload to PyPI
+patch_without_tag = true
