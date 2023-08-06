@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "trigger-count"
+version = "0.1.1"
+description = ""
+authors = ["Mathis <mathis.bassler@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "trigger_count"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+labjack-ljm = "^1.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
