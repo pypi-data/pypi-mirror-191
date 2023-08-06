@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Mashup_Pulkit_102003619.egg-info/PKG-INFO
+Mashup_Pulkit_102003619.egg-info/SOURCES.txt
+Mashup_Pulkit_102003619.egg-info/dependency_links.txt
+Mashup_Pulkit_102003619.egg-info/entry_points.txt
+Mashup_Pulkit_102003619.egg-info/requires.txt
+Mashup_Pulkit_102003619.egg-info/top_level.txt
+mashup/102003619.py
+mashup/__init__.py
+mashup/__main__.py

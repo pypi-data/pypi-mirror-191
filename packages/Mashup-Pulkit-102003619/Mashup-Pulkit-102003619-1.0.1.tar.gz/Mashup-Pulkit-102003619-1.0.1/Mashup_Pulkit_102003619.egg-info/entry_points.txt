@@ -1,0 +1,2 @@
+[console_scripts]
+mashup = mashup.__main__:main
