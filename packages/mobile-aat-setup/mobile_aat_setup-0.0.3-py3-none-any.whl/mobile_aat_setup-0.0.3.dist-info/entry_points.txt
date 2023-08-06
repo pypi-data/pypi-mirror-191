@@ -1,0 +1,2 @@
+[nbdev]
+mobile_aat_setup = mobile_aat_setup._modidx:d
