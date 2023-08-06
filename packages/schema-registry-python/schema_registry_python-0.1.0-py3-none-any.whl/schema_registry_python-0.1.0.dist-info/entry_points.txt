@@ -1,0 +1,3 @@
+[console_scripts]
+schema_registry_python_cli=schema_registry_python.cli:cli
+
