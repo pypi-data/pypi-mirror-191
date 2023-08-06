@@ -1,0 +1,10 @@
+README.rst
+setup.py
+django_owo.egg-info/PKG-INFO
+django_owo.egg-info/SOURCES.txt
+django_owo.egg-info/dependency_links.txt
+django_owo.egg-info/requires.txt
+django_owo.egg-info/top_level.txt
+owo/connector.py
+owo/handler.py
+owo/settings.py
