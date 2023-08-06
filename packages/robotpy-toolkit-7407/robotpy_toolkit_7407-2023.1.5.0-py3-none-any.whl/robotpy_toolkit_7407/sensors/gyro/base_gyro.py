@@ -1,0 +1,26 @@
+from robotpy_toolkit_7407.utils.units import radians
+
+
+class BaseGyro:
+    """
+    Extendable class for gyro.
+    """
+
+    def init(self, gyro_start_angle=0):
+        """
+        Initialize the gyro. Overridden class.
+        """
+        ...
+
+    def get_robot_heading(self) -> radians:
+        """
+        Get the robot heading in radians. Overridden class. Must return radians.
+        """
+        ...
+
+    def reset_angle(self, angle: radians = 0):
+        """
+        Reset the robot heading. Overridden class.
+        """
+        ...
+
