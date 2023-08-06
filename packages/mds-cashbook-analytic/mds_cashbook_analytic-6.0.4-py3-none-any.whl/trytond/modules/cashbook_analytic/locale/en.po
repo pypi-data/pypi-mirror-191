@@ -1,0 +1,12 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:cashbook.book,analytic:"
+msgid "Analytic Account"
+msgstr "Analytic Account"
+
+msgctxt "view:cashbook.line:"
+msgid "Analytic Lines"
+msgstr "Analytic Lines"
+

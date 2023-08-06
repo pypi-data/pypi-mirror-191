@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@name='references']" position="after">
+        <page name="analytic_lines" string="Analytic Lines" col="1">
+            <field name="analytic_lines"/>
+        </page>
+    </xpath>
+
+</data>

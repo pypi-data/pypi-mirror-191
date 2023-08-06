@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    cashbook_analytic = trytond.modules.cashbook_analytic
+    
