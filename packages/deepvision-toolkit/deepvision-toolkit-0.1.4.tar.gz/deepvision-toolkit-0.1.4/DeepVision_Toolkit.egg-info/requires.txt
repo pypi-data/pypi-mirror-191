@@ -1,0 +1,6 @@
+matplotlib
+pytorch_lightning
+scikit_learn
+tensorflow
+torch
+torchmetrics
