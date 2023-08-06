@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nonebot-plugin-picmcstat"
+version = "0.2.6.post1"
+description = "A NoneBot2 plugin generates a pic from a Minecraft server's MOTD"
+authors = ["lgc2333 <lgc2333@126.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+nonebot-plugin-imageutils = "^0.1.13.5"
+mcstatus = "^10.0.1"
+nonebot2 = "^2.0.0rc2"
+nonebot-adapter-onebot = "^2.2.0"
+pydantic = "^1.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
