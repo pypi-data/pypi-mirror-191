@@ -1,0 +1,13 @@
+pdfbrain/__init__.py,sha256=L9vhEsvae95vI7SiYdFf0mYJ0VGbeKYedBXsu5O3Phw,82
+pdfbrain/pdf_file.py,sha256=GPkvS67O2fZVuK0yuPQY4iqFe7kGSLhljCTGlptEuak,1427
+pdfbrain/pdf_page.py,sha256=Uh_wIjsavxWUpW64MpCjLV4xo6hCm6ktn8BqZh0LveM,6173
+pdfbrain/pdf_text_page.py,sha256=wj35S5t8fYzwmcS5-GhwZUonOUyM2qrVo2rbRlAhG54,3502
+pdfbrain/tools.py,sha256=L5sInNWC39e441QfLFHVpF1Mwmqv1NuEFyp90ZjwWe4,716
+pdfbrain/test/__init__.py,sha256=qXyTYy96VLZMZc3vMK98PyfUtWTpxQGfxUuvSyutp1k,94
+pdfbrain/test/test_smoke.py,sha256=Le9-ZsG672sBa8t7xnCD43ZBRAWNYuOxNntC_PMP678,2369
+pdfbrain/test/test_text.py,sha256=VL3FS2dwf2xAsdWHF4rCEc5HlsW6lblItgzTN-aw_Es,215
+pdfbrain-0.0.5.dist-info/LICENSE,sha256=JzFPT42f44YvyAGx0r0CmDrC7EA7_nG-lrkSeeMAiGw,1070
+pdfbrain-0.0.5.dist-info/METADATA,sha256=Tsx03wSgxSEbqKrVn-tktx-i4MVMlT8EQxbgYp8_qpk,806
+pdfbrain-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pdfbrain-0.0.5.dist-info/top_level.txt,sha256=ihDXWpk0wmfwfgF0Zl_NHkhlwsKxOFB7lIDZCSm7tdE,9
+pdfbrain-0.0.5.dist-info/RECORD,,
