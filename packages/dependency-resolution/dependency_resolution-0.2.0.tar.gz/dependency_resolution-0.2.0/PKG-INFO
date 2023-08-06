@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: dependency-resolution
+Version: 0.2.0
+Summary: A simple dependency resolution library using container concepts
+License: MIT
+Keywords: dependency,resolution,injection
+Author: Saroopashree K
+Author-email: saroopa25@gmail.com
+Requires-Python: >=3.8.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Dependency Resolution
+
+## How to use
+
+```python
+from dependency_resolution import ProviderCache
+
+class Image:
+  def __init__(self, file: str):
+    self.file = file
+
+
+class ImageProcessor:
+  def __init__(self, image: Image):
+    self.image = image
+
+  def sharpen(self):
+    pass
+
+
+def init_image():
+  instance = ProviderCache.get_instance()
+  instance += Image("image.png")
+  # Can also be done like this
+  # instance[Image] = Image("image.png")
+
+
+def init_processor():
+  instance = ProviderCache.get_instance()
+  instance += ImageProcessor(instance[Image])
+
+
+def process_image():
+  instance = ProviderCache.get_instance()
+  processor = instance[ImageProcessor]
+  processor.sharpen()
+
+
+if __name__ == "__main__":
+  init_image()
+  init_processor()
+  process_image()
+```
+
+## Future Plans
+
+- [ ] Add autowire support
+- [ ] Add Providers to pass specific arguments to the constructor
+
