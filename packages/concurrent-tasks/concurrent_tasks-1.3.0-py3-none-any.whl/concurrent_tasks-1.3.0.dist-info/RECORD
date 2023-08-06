@@ -1,0 +1,13 @@
+concurrent_tasks/__init__.py,sha256=l6btH34W8SjtrRinYmGpRpieR2K_KijYRjfJtZzM9ak,399
+concurrent_tasks/background.py,sha256=AOVDVXFhbSM779U1J07F3WWUyupASd-V6jX8GhhYRKY,1458
+concurrent_tasks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+concurrent_tasks/restartable.py,sha256=_eQXe_Bs3TuTSDnPlyRzEIxmlRen3XQHpJt7lEvqexc,3087
+concurrent_tasks/thread_safe_pool.py,sha256=UvpEG-WScT8Q57f4vNHS0tplFowzAY0bQ-bhvNboRew,4208
+concurrent_tasks/threaded_pool/__init__.py,sha256=vv9I5ppd2fF13xM9DoTdogmNgAHPscBKe9hxugXsxFM,228
+concurrent_tasks/threaded_pool/aio.py,sha256=IJH-cD-iZTnpHUl_qKgIVO5cLtOoWuuGx2gnTdE-oY0,1587
+concurrent_tasks/threaded_pool/base.py,sha256=dQhFyuG-yprF8qHaPz-nkgf-U7rr2H7q0btETGuFOWs,4527
+concurrent_tasks/threaded_pool/blocking.py,sha256=50-ZrDIvB9gUxwho8OvlIj83g-Hd6ZHu6_OaKPHDaok,1529
+concurrent_tasks-1.3.0.dist-info/METADATA,sha256=FiqrAsF4WOrekUNgRjM2Jm5K4lOLwrG0RI_MKAQijzs,5353
+concurrent_tasks-1.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+concurrent_tasks-1.3.0.dist-info/LICENSE,sha256=k1XbRr481g0XYlViYM6al_NUYbxRDy68wcGSt35qBqg,1070
+concurrent_tasks-1.3.0.dist-info/RECORD,,
