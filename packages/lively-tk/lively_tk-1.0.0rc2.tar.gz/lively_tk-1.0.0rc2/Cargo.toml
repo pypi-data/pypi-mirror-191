@@ -1,0 +1,106 @@
+[package]
+name = "lively"
+version = "1.0.0-rc.2"
+description = "A real-time robot control framework with liveliness."
+repository = "https://github.com/Wisc-HCI/lively"
+homepage = "https://wisc-hci.github.io/lively/"
+license = "MIT"
+authors = ["andrewjschoen <schoen.andrewj@gmail.com>","djrakita <djrakita@gmail.com>"]
+edition = "2021"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+pybindings = ["pyo3","pyo3-log"]
+jsbindings = ["console_error_panic_hook"]
+profile-with-puffin = ["profiling/profile-with-puffin"]
+bevy = ["dep:bevy", "winit", "bevy_transform_gizmo", "bevy_mod_picking","smooth-bevy-cameras"]
+
+[dependencies]
+# Benchmarking
+rafx = { version = "=0.0.14", features = ["rafx-vulkan", "framework"], optional = true }
+winit = {version = "0.27.4", optional = true}
+bincode = {version = "1.3.1", optional = true}
+lazy_static = {version = "1", optional = true}
+imgui = {version = "0.8", optional = true}
+imgui-winit-support = {version = "0.8", optional = true}
+puffin-imgui = {version = "0.15.0", optional = true}
+glam = {version = "0.8.6", optional = true}
+puffin = { version = "0.12.1", optional = true}
+env_logger = {version = "0.6", optional = true}
+tracing-tracy = { version = "0.4.0" , optional = true}
+tracing-subscriber = { version = "0.2" , optional = true}
+profiling = { version = "1.0" , optional = true}
+
+# Bevy
+bevy_transform_gizmo = {version = "0.3.1", optional = true}
+bevy_mod_picking = {version = "0.9", optional = true}
+smooth-bevy-cameras = {git = "https://github.com/bonsairobo/smooth-bevy-cameras", optional = true}
+bevy = {version = "0.8.1", optional = true}
+
+# Python
+pyo3 = {version = "0.16.5", features = ["extension-module","abi3-py37","serde"], optional = true}
+pyo3-log = {version = "0.6.0", optional = true}
+
+# Javascript
+console_error_panic_hook = { version = "0.1.7", optional = true }
+getrandom = { version = "0.2", features = ["js"] }
+
+nalgebra = { version = "0.31", features = ["serde-serialize-no-std"]}
+array2d = "0.2.1"
+parry3d-f64 = "0.9.0"
+wasm-bindgen = { version = "0.2.81", features = ["serde-serialize"] }
+yaml-rust = "0.4"
+optimization_engine = { version = "0.7.7", features = ["wasm"] }
+ndarray = "0.13.0"
+num = "0.2.0"
+# nlopt = "0.5.1"
+rand = "0.8.1"
+noise = "0.7.0"
+# k = {git = "https://github.com/AndrewJSchoen/k"}
+k = { version = "0.29.1" }
+urdf-rs = "0.6.8"
+serde-wasm-bindgen = { version = "0.4.5" }
+serde = { version = "1.0", features = ["derive"]}
+log = {version = "0.4.14"}
+instant = { version = "0.1", features = [ "stdweb" ] }
+indexmap = "1.9.1"
+
+[profile.dev]
+opt-level = 3
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = true
+codegen-units = 1
+
+[patch.crates-io]
+k = {git = "https://github.com/AndrewJSchoen/k"}
+
+
+[lib]
+name = "lively"
+path = "src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[[example]]
+name = "basic_initialization_example"
+path = "examples/rust_examples/basic_initialization_example.rs"
+
+[[example]]
+name = "advanced_initialization_example"
+path = "examples/rust_examples/advanced_initialization_example.rs"
+
+[[example]]
+name = "solving_example"
+path = "examples/rust_examples/solving_example.rs"
+
+[[example]]
+name = "liveliness_example"
+path = "examples/rust_examples/liveliness_example.rs"
+
+[[example]]
+name = "environmental_modeling_example"
+path = "examples/rust_examples/environmental_modeling_example.rs"

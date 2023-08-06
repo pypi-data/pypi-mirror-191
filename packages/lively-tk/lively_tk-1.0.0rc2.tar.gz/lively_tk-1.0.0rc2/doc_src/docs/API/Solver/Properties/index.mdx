@@ -1,0 +1,150 @@
+# Properties
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+| Property | Description |
+| --- | --- | 
+|`robot_model`|A set of information and properties of a robot|
+|`vars`|A set of useful features within the optimization, including history, joint, and link information|
+|`lower_bounds`|A vector representing the lower bounds in the optimization vector. This is derived from the robot base limits and joint limits|
+|`upper_bounds`|A vector representing the upper bounds in the optimization vector. This is derived from the robot base limits, as well as joint limits|
+|`objective_set`|A lookup table containing all of the current [`objectives`](../../Objectives/) in use|
+|`max_retries`|The maximum number of randomly initialized rounds allowed for each invocation of [`solve`](../Methods/solve)|
+|`max_iterations`|The number of maximum iterations per round within the optimization|
+
+## Retriving current [`state`](../../state)
+Returns the solution [`state`](../../state) from the last invocation of [`solve`](../Methods/solve)
+<Tabs>
+<TabItem value="js" label="Javascript">
+
+```js
+let current_state = solver.current_state();
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+current_state = solver.get_current_state();
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust
+let current_state = solver.get_current_state();
+```
+
+</TabItem>
+</Tabs>
+
+## Retriving current [`objectives`](../../Objectives/)
+Returns the current [`objectives`](../../Objectives/) as a lookup table
+<Tabs>
+<TabItem value="js" label="Javascript">
+
+```js
+let current_objectives = solver.objectives();
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+current_objectives = solver.get_objectives();
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust
+let current_state = solver::get_objectives();
+```
+
+</TabItem>
+</Tabs>
+
+## Modifying current [`objectives`](../../Objectives/)
+Replace the current [`objectives`](../../Objectives/) with new [`objectives`](../../Objectives/) lookup table
+<Tabs>
+<TabItem value="js" label="Javascript">
+
+```js
+solver.objectives = new_objectives;
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+solver.objectives = new_objectives;
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust
+solver.set_objectives(new_objectives);
+```
+
+</TabItem>
+</Tabs>
+
+## Retriving current [`goals`](../../Goals/goal)
+Returns the current [`goals`](../../Goals/goal) as a lookup table
+<Tabs>
+<TabItem value="js" label="Javascript">
+
+```js
+let current_goals = solver.current_goals();
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+current_goals = solver.get_current_goals();
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust
+let current_goals = solver.get_current_goals();
+```
+
+</TabItem>
+</Tabs>
+
+## Modifying current [`goals`](../../Goals/goal)
+Replace the current [`goals`](../../Goals/goal) with new [`goals`](../../Goals/goal) lookup table
+<Tabs>
+<TabItem value="js" label="Javascript">
+
+```js
+solver.goals = new_goals;
+```
+
+</TabItem>
+<TabItem value="py" label="Python">
+
+```py
+solver.goals = new_goals;
+```
+
+</TabItem>
+<TabItem value="rust" label="Rust">
+
+```rust
+solver.set_goals(new_goals);
+```
+
+</TabItem>
+</Tabs>
+
+
+
+
+
+

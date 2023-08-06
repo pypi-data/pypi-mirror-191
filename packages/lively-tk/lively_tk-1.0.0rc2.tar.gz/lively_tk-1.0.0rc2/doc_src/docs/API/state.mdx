@@ -1,0 +1,83 @@
+# State
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+The `State` object is the response back after calling [`solve`](Solver/Methods/solve). 
+It contains the state of the robot in terms of joint and frames, as well as some diagnostic information regarding [`proximity`](../API/Info/proximityInfo) of various [`shapes`](../API/Shapes/) and the `center_of_mass` of the robot. 
+
+:::note
+For [`Solver initialization`](docs/API/Solver/initialization.mdx), only `origin` and `joints` parameters have to be defined if user decided to provide a `State`object to the `initial_state` parameter.
+:::
+
+| Parameter |Type|Optional | Description |
+|---|---|---|---|
+|`origin`|isometry consisted of translation and rotation|no|The transform of the root of the robot. This data is also included in `frames`|
+|`joints`|lookup table of float indexed by a string key|no|A lookup table of the joint values for each movable joint|
+|`frames`|lookup table of [`TransformInfo`](../API/Info/transformInfo) indexed by string key|can be ignored for [`Solver initialization`](docs/API/Solver/initialization.mdx)|A lookup table of each link’s position in both world and local coordinates|
+|`proximity`|list of [`ProximityInfo`](../API/Info/proximityInfo)|can be ignored for [`Solver initialization`](docs/API/Solver/initialization.mdx)|A vector of data representing pairwise proximity between the robot’s parts and other robot parts and the environment. Each entry contains distance, as well as the closest points between the pair of colliders|
+|`center_of_mass`|list of float|can be ignored for [`Solver initialization`](docs/API/Solver/initialization.mdx)|A 3-vector representing the center of mass of the robot in the world frame|
+
+ 
+
+## Import
+
+:::note
+There is no need to import for Javascript.
+:::
+
+<Tabs>
+  <TabItem value="py" label="Python">
+
+  ```py
+    from lively import State
+  ```
+   </TabItem>
+   <TabItem value= "rust" label="Rust"> 
+
+   ```rust
+     use lively::utils::state::State;
+   ``` 
+   </TabItem>
+</Tabs> 
+
+## Declaration Example
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+    let state = {origin:{translation:[0,0,0],rotation:[1,0,0,0]},joints:{"panda_joint1":0.0,"panda_joint2":0.0}}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+    state = State(origin=Transform.identity(),joints={"panda_joint1":0.0,"panda_joint2":0.0})
+  ```
+   </TabItem>
+   <TabItem value= "rust" label="Rust"> 
+
+   ```rust
+    let iso = Isometry3::from_parts(
+         Translation3::new(
+             0.6497281999999998,
+             -0.24972819999999987,
+             0.050000000000000044,
+         ),
+         UnitQuaternion::from_quaternion(Quaternion::new(
+             0.0,
+             0.0,
+             -0.7069999677447771,
+             0.7072135784958345,
+         )),
+     );
+     let mut joints: HashMap<String, f64> = HashMap::new();
+     let mut frames: HashMap<String,TransformInfo> = HashMap::new();
+     let mut proximities = Vec::new();
+     let mut center_of_mass: Vector3<f64>::new();
+     let state = State::new(iso, joints, frames, proximities, center_of_mass);
+   ``` 
+   </TabItem>
+</Tabs>
+
+

@@ -1,0 +1,63 @@
+# Objective
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+Lively allows for a wide range of robot with which users program robot motion. These 24 properties, which serve as building blocks for defining the behavior and motion of the robot, fit into five categories: 
+`Base`, `Bounding`, `Matchting`, `Mirroring`, `Liveliness`, and `Forces` listed blow. 
+
+| Category | Description |
+| --- | --- | 
+| `Base` | Revolve around the fluidity of robot motion by limiting rapid changes and considering possible collisions between the links of the robot |
+| `Bounding` | Limit the space within which joints can assume angles and links can move or be oriented | 
+| `Matching` | Specify exact positions and orientations of links or angles of joints, while bounding behavior properties set limits |
+| `Mirroring` | Allow users to mirror the current state of a link's position or orientation in a different link, or the current angle of one joint in another |
+| `Liveliness` | Allow adding smooth, coordinated motion to joint angles or link positions/orientations |
+| `Forces` | Proximating the physcial forces applied to the robot |
+
+## Customizing the priority of the Objective
+
+The priority of the `Objective` is determined by the `weight` parameter. Higher `weight` indicates a higher priority for an `objective`. A value between 0 and 5 is suggestive, 5 to 40 is true [`goal-driven`](../Goals/goals) behavior, and after that it behaves more like a constraint.
+
+`Weight` can be adjusted in real-time, allowing for prioritization of certain `objectives` and [`goals`](../Goals/goals), or the deactivation of others, based on the current needs of the developer. Since `Objectives` are organized by key, and atomic updates are possible for `goals` and `weights`, only the needed changes need to be included each round of [`solve`](../Solver/Methods/solve).
+
+## Import
+
+For Javascript, there is no need for additional import. Only a object need to be constructed. 
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  const objectives = {
+    "eePosition": {
+            type: "PositionMatch",
+            name: "EE Position",
+            link: "torso",
+            weight: 2},
+    "eeRotation": {
+            type: "OrientationMatch",
+            name: "EE Rotation",
+            link: "base",
+            weight: 3}}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  from lively import PositionMatchObjective 
+  from lively import OrientationMatchObjective
+  ```
+   </TabItem>
+   <TabItem value= "rust" label="Rust"> 
+
+   ```rust
+   use lively::objectives::core::matching::PositionMatchObjective;
+   use lively::objectives::core::matching::OrientationMatchObjective;
+   ``` 
+   </TabItem>
+</Tabs> 
+
+
+
+

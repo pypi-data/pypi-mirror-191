@@ -1,0 +1,287 @@
+# Advanced Initialization
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+:::note
+Since Lively is still in beta, the design is subject to change and should not be considered final!
+:::
+
+We have also created examples in Javascript, Python, and Rust for Advanced Initialization. You can find the file by clicking the links in the table down below.
+
+| Language | Path                                                                                                             | Command to run the example                                           |
+| -------- | ---------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| Rust     | [link](https://github.com/Wisc-HCI/lively/blob/master/examples/rust_examples/advanced_initialization_example.rs) | cargo run --package lively --example advanced_initialization_example |
+| Python |[link](https://github.com/Wisc-HCI/lively/blob/master/examples/python_examples/advanced_initialization_example.ipynb)|run in the Jupyter Notebook|
+| Javascript| [link](https://github.com/Wisc-HCI/lively/tree/master/examples/js_examples/advanced_initialization)|`yarn build`, `yarn dev`|
+
+
+
+<Tabs>
+  <TabItem value="jsx" label="Live">
+
+```jsx live
+function InitializationExample(props) {
+  const [livelySolver, setLivelySolver] = useState(null);
+  const [robotState, setRobotState] = useState(null);
+  const [robot, setRobot] = useState("panda");
+
+  const initialRootBounds = [ // An exmaple of root bounds
+    { value: 0.0, delta: 0.0 },
+    { value: 0.25, delta: 0.0 },
+    { value: 0.5, delta: 0.0 },
+    { value: 0.0, delta: 0.0 },
+    { value: 0.0, delta: 0.0 },
+    { value: 0.0, delta: 0.0 },
+  ];
+
+  const initialObjectives = {
+    smoothness: {
+      // An example objective (smoothness macro)
+      name: "MySmoothnessObjective",
+      type: "SmoothnessMacro",
+      weight: 5,
+    },
+    collision: {
+      // An example objective (collision avoidance)
+      name: "MyCollisionDetection",
+      type: "CollisionAvoidance",
+      weight: 5,
+    },
+    jointLimit: {
+      // An example objective (joint limit)
+      name: "MyJointLimit",
+      type: "JointLimits",
+      weight: 5,
+    },
+  };
+  const initialEnvShapes = [
+    {
+      type: "Cylinder", // The Cylinder here is an example of static environmental shape. This shape will be not able to be moved or deleted.
+      name: "pill",
+      frame: "world",
+      physical: true,
+      length: 0.3,
+      radius: 0.2,
+      localTransform: {
+        translation: [-0.8, 0.0, 0.1],
+        rotation: [1.0, 0.0, 0.0, 0.0],
+      }, // [x, y, z, w] ordering for quaternion
+    },
+  ];
+
+  let collision_settings = {// This is an example of customized collision_settings
+    dMax: 0.1,
+    r: 0.0,
+    aMax: 2.0,
+    timeBudget: 100,
+    timed: false,
+  }; 
+
+  useEffect(() => {
+    /* 
+      Given that we are showing this example in a declarative
+      react context, we need to use the useEffect hook to execute
+      imperative (sequential) code. That means that if you are
+      writing standard javascript, your code will look like the
+      contents of the "init" function.
+      * Note also that the "init" function is async. This is
+      because the lively library is built on web assembly (WASM),
+      which needs to be imported asynchronously.
+      */
+
+    // Instantiate a new solver
+    const newSolver = new lively.Solver(
+      urdfs[robot], // The urdf of the robot
+      initialObjectives, // objectives
+      initialRootBounds,
+      initialEnvShapes, // environmental shapes
+      null, // initial_state
+      null, // max_retries
+      null, // max_iterations
+      collision_settings // customized collision settings
+    );
+
+    // Run collision normalization
+    newSolver.computeAverageDistanceTable();
+
+    // Assign the solver to the value
+    setLivelySolver(newSolver);
+
+    // Run solve to get a solved state
+    const newState = newSolver.solve({}, {}, 0.0);
+    // Update the solver's current state
+    setRobotState(newState);
+
+    return () => {
+      // Provide a function to clear previous values
+      setLivelySolver(null);
+      setRobotState(null);
+    };
+  }, [robot]);
+
+  return (
+    <div>
+      <Button active={robot === "panda"} onClick={() => setRobot("panda")}>
+        Panda
+      </Button>
+      <Button active={robot === "ur3e"} onClick={() => setRobot("ur3e")}>
+        UR3e
+      </Button>
+      <RobotViewer
+        state={robotState}
+        links={livelySolver ? livelySolver.links : []}
+      />
+      <Tree label="state" data={robotState} />
+    </div>
+  );
+}
+```
+
+  </TabItem>
+
+  <TabItem value="js" label="Javascript">
+
+```js
+import { panda, ur3e } from './urdfs.js';
+import { Solver } from '@people_and_robots/lively';
+
+const initialRootBounds = [
+  // An exmaple of root bounds
+  { value: 0.0, delta: 0.0 },
+  { value: 0.25, delta: 0.0 },
+  { value: 0.5, delta: 0.0 },
+  { value: 0.0, delta: 0.0 },
+  { value: 0.0, delta: 0.0 },
+  { value: 0.0, delta: 0.0 },
+];
+
+const initialObjectives = {
+  smoothness: {
+    // An example objective (smoothness macro)
+    name: 'MySmoothnessObjective',
+    type: 'SmoothnessMacro',
+    weight: 5,
+  },
+  collision: {
+    // An example objective (collision avoidance)
+    name: 'MyCollisionDetection',
+    type: 'CollisionAvoidance',
+    weight: 5,
+  },
+  jointLimit: {
+    // An example objective (joint limit)
+    name: 'MyJointLimit',
+    type: 'JointLimits',
+    weight: 5,
+  },
+};
+
+const initialEnvShapes = [
+  {
+    type: 'Cylinder', // The Cylinder here is an example of static environmental shape. This shape will be not able to be moved or deleted.
+    name: 'pill',
+    frame: 'world',
+    physical: true,
+    length: 0.3,
+    radius: 0.2,
+    localTransform: {
+      translation: [-0.8, 0.0, 0.1],
+      rotation: [1.0, 0.0, 0.0, 0.0],
+    }, // [x, y, z, w] ordering for quaternion
+  },
+];
+
+const collision_settings = {
+  // This is an example of customized collision_settings
+  dMax: 0.1,
+  r: 0.0,
+  aMax: 2.0,
+  timeBudget: 100,
+  timed: false,
+};
+
+const newSolver = new Solver(
+  panda,
+  initialObjectives,
+  initialRootBounds,
+  initialEnvShapes,
+  null,
+  null,
+  null,
+  collision_settings
+);
+
+newSolver.computeAverageDistanceTable();
+const newState = newSolver.solve({}, {}, 0.0);
+
+document.querySelector('#app').innerHTML = `
+  <div>
+   ${JSON.stringify(newState)}
+  </div>`;
+
+console.log(newState);
+
+```
+
+  </TabItem>
+
+  <TabItem value="py" label="Python">
+
+```py
+from lively import Solver, SmoothnessMacroObjective
+
+# Instantiate a new solver
+solver = Solver(
+  urdf='<?xml version="1.0" ?><robot name="panda">...</robot>', # Full urdf as a string
+  objectives={
+      # An example objective (smoothness macro)
+      "smoothness":SmoothnessMacroObjective(name="MySmoothnessObjective",weight=5)
+  }
+)
+
+# Run solve to get a solved state
+state = solver.solve({},{},0.0)
+# Log the initial state
+print(state)
+```
+
+  </TabItem>
+
+  <TabItem value="rs" label="Rust">
+
+```rust
+use lively::lively::Solver;
+use lively::objectives::core::base::SmoothnessMacroObjective;
+use lively::objectives::objective::Objective;
+use std::collections::HashMap;
+
+// Create a map of objectives
+let mut objectives: HashMap<String,Objective> = HashMap::new();
+// Add a Smoothness Macro Objective
+objectives.insert(
+  "smoothness".into(),
+  // An example objective (smoothness macro)
+  Objective::SmoothnessMacro(SmoothnessMacroObjective::new("MySmoothnessObjective",5.0))
+);
+
+// Instantiate a new solver struct
+let mut solver = Solver::new(
+  urdf:'<?xml version="1.0" ?><robot name="panda">...</robot>', // Full urdf as a string
+  objectives
+);
+
+// Run solve to get a solved state
+let state = solver.solve(
+  HashMap::new(),
+  HashMap::new(),
+  0.0,
+  None
+);
+// Log the initial state
+println!("{:?}",state);
+```
+
+  </TabItem>
+
+</Tabs>

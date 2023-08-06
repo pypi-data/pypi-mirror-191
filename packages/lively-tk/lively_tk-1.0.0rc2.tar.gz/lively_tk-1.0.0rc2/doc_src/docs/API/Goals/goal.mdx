@@ -1,0 +1,246 @@
+---
+id: goal
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Goals
+There are a variety of different "goal" types that can be provided. Think of these as settings that you would like to achieve (e.g. a [`PositionMatch`](../Objectives/matching) objective accepts a `Translation` goal). 
+
+## Translation
+A 3-vector representing coordinates that is used by the [`PositionMatch`](../Objectives/matching), [`PositionMirroring`](../Objectives/mirroring) objectives.
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {Translation:[1.0,0.0,0.5]}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = Translation(x:1.0,y:0.0,z:0.5);
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let goal = Translation3::new(0.0,0.0,0.0);
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+## Rotation
+
+A Quaternion representing rotation that is used by the [`OrientationMatch`](../Objectives/matching), [`OrientationMirroring`](../Objectives/mirroring) objectives.
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {Rotation:[0.707,0.0,0.0,0.707]} // [x, y, z, w] ordering
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = Rotation(w:0.707,x:0.0,y:0.0,z:0.707)
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let goal = UnitQuaternion::from_quaternion(Quaternion::new(0.0,0.0,-0.7069999677447771,0.7072135784958345));
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+
+## Scalar
+
+A float value that is used by the [`JointMatch`](../Objectives/matching), [`JointMirroring`](../Objectives/mirroring), [`DistanceMatch`](../Objectives/matching), [`JointLiveliness`](../Objectives/liveliness), and [`RelativeMotionLiveliness`](../Objectives/liveliness) objectives.
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {Scalar:0.5}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = 0.5
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let goal = 0.5;
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+
+## Size
+
+A 3-vector representing scale of a 3D shape that is used by the [`PositionLiveliness`](../Objectives/liveliness), [`OrientationLiveliness`](../Objectives/liveliness), [`OriginPositionLiveliness`](../Objectives/liveliness) objectives.
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {Size:[1.0,0.1,0.5]}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = Size(x:1.0,y:0.1,z:0.5)
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let goal = Vector3::new(1.0,0.1,0.5);
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+## Ellipse
+
+A structure designating a rotated ellipsoid, with `Translation`, `Rotation`, and `Size` components. The `ellipse` goal is used by the [`PositionBounding`](../Objectives/bounding) objective.
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {Ellipse: {
+    pose: {translation: [1.0,0.0,0.4], rotation: [0.707,0.0,0.0,0.707]}, // [x, y, z, w] ordering for quaternion
+    size: [0.1,0.1,0.2]}}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = Ellipse(
+    translation=Translation(x:1.0,y:0.0,z:0.4),
+    rotation=Rotation(w:0.707,x:0.0,y:0.0,z:0.707),
+    size=Size(x:0.1,y:0.1,z:0.2)
+  )
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let pose = Isometry3::from_parts(
+            Translation3::new(
+                0.0,
+                0.0,
+                0.0,
+            ),
+            UnitQuaternion::from_quaternion(Quaternion::new(
+                0.0,
+                0.0,
+                -0.7069999677447771,
+                0.7072135784958345,
+            )),
+        );
+  let goal = Ellipse::new(pose, Vector3::new(0.1,0.1,0.2));
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+
+## RotationRange
+
+A structure including a center `Rotation`, as well as a float value indicating allowed delta in radians from that rotation. The `RotationRange` goal is used by the [`RotationBounding`](../Objectives/bounding) objective.
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {RotationRange: {rotation: [0.707,0.0,0.0,0.707], // [x, y, z, w] ordering for quaternion
+                              delta:0.4}}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = RotationRange(rotation=Rotation(w:0.707,x:0.0,y:0.0,z:0.707),delta=0.4)
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let rotation = (
+            UnitQuaternion::from_quaternion(Quaternion::new(
+                0.0,
+                0.0,
+                -0.7069999677447771,
+                0.7072135784958345,
+            )),
+        );
+  let goal = RotationRange::new(rotation,0.4);
+  ``` 
+  </TabItem>
+</Tabs> 
+
+
+
+## ScalarRange
+
+A structure including a center float value, and float value representing allowed delta from that value. The `ScalarRange` goal is used by the [`JointBounding`](../Objectives/bounding) objective.
+
+<Tabs>
+  <TabItem value="js" label="Javascript">
+
+  ```js
+  let goal = {ScalarRange: {value:0.0,delta:0.4}}
+  ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+  ```py
+  goal = ScalarRange(value=0.0,delta=0.4)
+  ```
+  </TabItem>
+  <TabItem value= "rust" label="Rust"> 
+
+  ```rust
+  let goal = ScalarRange::new(0.0,0.4);
+  ``` 
+  </TabItem>
+</Tabs> 
+
+## Import
+
+:::note
+There is no need to import for Javascript.
+:::
+
+<Tabs>
+  <TabItem value="py" label="Python">
+
+  ```py
+  from lively import Translation #Rotation, Scalar, Size, Ellipse, RotationRange, ScalarRange
+  ```
+   </TabItem>
+   <TabItem value= "rust" label="Rust"> 
+
+   ```rust
+   use lively::utils::goals::Goal;
+   ``` 
+   </TabItem>
+</Tabs> 

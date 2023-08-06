@@ -1,0 +1,20 @@
+# Mirroring
+
+Mirroring objectives allow users to mirror the current state of a link's position or orientation in a different link, or the current angle of one joint in another.
+
+| Objective | Category | Description |
+| --- | --- | --- |
+| Position Mirroring | [`Translation`](../Goals/goal)  | Mirror the positions of two links with an optional offset |
+| Orientation Mirroring |  [`Rotation`](../Goals/goal)   | Mirror the rotations of two links with an optional offset |
+| Joint Mirroring|  [`Scalar`](../Goals/goal)  | Mirror the values of two joints with an optional offset |
+
+## Parameters for constructing Mirroring Objectives
+|Parameter|Objectives|Type|Optional|Defauly value/behavior|Description|
+|---|---|---|---|---|---|
+|`name`|all of the objectives mentioned above|string|no|none|Name can be arbitrary and should be unqiue|
+|`weight`|all of the objectives mentioned above|float|no|none|Indicates the prioritization of the objective|
+|`link1`|`Position Mirroring`, `Orientation Mirroring`|string|no|none|The name of the first link this objective is applied to |
+|`link2`|`Position Mirroring`, `Orientation Mirroring`|string|no|none|The name of the second link this objective is applied to |
+|`joint1`|`Joint Mirroring`|string|no|none|The name of the first joint or joint this objective is applied to|
+|`joint2`|`Joint Mirroring`|string|no|none|The name of the second joint or joint this objective is applied to|
+|`goal`|all of the objectives mentioned above|[`Goal`](../Goals/goal)|yes|origin for `Translation`, no rotation for `Rotation`, and 0.0 for `Scalar`|The goal for objectives to achieve|

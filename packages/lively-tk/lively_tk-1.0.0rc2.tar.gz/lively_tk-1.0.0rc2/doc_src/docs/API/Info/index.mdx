@@ -1,0 +1,31 @@
+# Info
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+`Lively` provides a set of data structures as `Info` objects that contains diagnostic information and are returned from the [`solver`](../Solver/) as output.
+
+:::note
+The users are not expected to construct `Info` objects because they are output. However, the [`CollisionSettingInfo`](collisionSettingInfo) object can be constructed by the user to be fed into the `Solver` during [`initialization`](../Solver/initialization)
+:::
+
+## Import
+
+:::note
+There is no need to import for Javascript.
+:::
+
+<Tabs>
+
+  <TabItem value="py" label="Python">
+
+   ```py
+   from lively import TransformInfo #can be 'MimicInfo', 'JointInfo', 'LinkInfo', 'ProximityInfo', or 'CollisionInfo'
+   ```
+   </TabItem>
+   <TabItem value= "rust" label="Rust"> 
+
+   ```rust
+   use lively::utils::info::TransformInfo; //can be 'MimicInfo', 'JointInfo', 'LinkInfo', 'ProximityInfo', or 'CollisionInfo'
+   ``` 
+   </TabItem>
+</Tabs> 
