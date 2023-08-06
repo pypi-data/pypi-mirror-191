@@ -1,0 +1,2 @@
+[console_scripts]
+autogasuptake = Autogasuptake.__main__:main

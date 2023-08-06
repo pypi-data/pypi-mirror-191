@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Autogasuptake
+Version: 1.2.9
+Summary: ::A tool to automatically treat the data and plot the gas uptake curve::
+Home-page: https://pypi.org/project/autogasuptake/
+Author: wjgoarxiv
+Author-email: woo_go@yahoo.com
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+Requires-Dist: pyfiglet
+Requires-Dist: tabulate
+Requires-Dist: uniplot
+
+Modified the axis rescaler...
