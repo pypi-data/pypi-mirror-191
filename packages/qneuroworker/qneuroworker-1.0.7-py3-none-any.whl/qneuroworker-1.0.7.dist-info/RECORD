@@ -1,0 +1,9 @@
+neurocore_worker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurocore_worker/main.py,sha256=2UcNombO3ud_0X3ov07UhtjiJLB5r1TABqMY0ZH9FIs,2603
+neurocore_worker/transliter.py,sha256=suwGgqVHRmXkVQW01RJncCyF1W2vCyf_V-SQKmD4fdc,496
+neurocore_worker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neurocore_worker/tests/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qneuroworker-1.0.7.dist-info/METADATA,sha256=vVvk2aPrm1CChAnvUg8jkGFF09nox1t81oSWx4dJ4wU,199
+qneuroworker-1.0.7.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+qneuroworker-1.0.7.dist-info/top_level.txt,sha256=sR72dg6oW-qSjJ_12SHlYShZ8f0J7zybp4PdNSBHh-8,17
+qneuroworker-1.0.7.dist-info/RECORD,,
