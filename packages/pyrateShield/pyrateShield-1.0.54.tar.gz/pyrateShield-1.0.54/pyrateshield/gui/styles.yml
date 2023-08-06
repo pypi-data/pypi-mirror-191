@@ -1,0 +1,188 @@
+# under default are style items that are not changed during selection / deselection
+
+# pick radius must match marker size other wise part of the marker is not pickable
+
+Origin [cm]:
+  default: 
+    marker: +
+    color: red 
+    markersize: 18
+    markersize: 10
+
+  
+Pixel size [cm]:
+  default:
+    visible: False
+    linewidth: 2 
+    color: red     
+  selected:
+    visible: True
+    linewidth: 2 
+    color: red 
+    
+PixelSizeMarker:
+  default:
+     visible: False
+     marker: + 
+     markersize: 18 
+     markerfacecolor: black
+     markeredgecolor: black
+  selected:
+    visible: True
+    marker: + 
+    markersize: 18 
+    markerfacecolor: black
+    markeredgecolor: black
+
+   
+Shielding:  
+  default:
+    color: k 
+    linewidth: 3
+   
+Walls:
+  default:
+    linestyle: '-'
+    picker: True
+    pickradius: 25    
+  selected: 
+    linestyle: '-'
+    picker: False # pick only markers
+    pickradius: 25
+    
+
+WallMarker:
+  default:
+    visible: False
+    marker: s
+    markersize: 10
+    picker: False
+    pickradius: 0
+    
+    
+  selected:
+    visible: True
+    marker: s
+    markersize: 10
+    picker: True
+    pickradius: 25
+    
+   
+
+Sources NM:
+  default:
+    marker: o
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  selected: 
+    marker: o
+    markerfacecolor: blue
+    markeredgecolor: red
+    markersize: 25
+    markeredgewidth: 5
+    picker: True
+    pickradius: 25
+    
+  disabled:
+    marker: o
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: gray
+    markeredgecolor: gray
+    #picker: False
+    
+Sources CT:
+  default:
+    marker: d
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  selected: 
+    marker: d
+    markersize: 25
+    markeredgewidth: 5
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  disabled:
+    marker: d
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: gray
+    markeredgecolor: gray
+    picker: False
+    pickradius: 10
+    
+    
+Sources Xray:
+  default:
+    marker: '*'
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  selected: 
+    marker: '*'
+    markersize: 25
+    markeredgewidth: 5
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  disabled:
+    marker: '*'
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: gray
+    markeredgecolor: gray
+    picker: False
+    pickradius: 0
+    
+    
+Critical points:
+  default:
+    marker: X
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  selected: 
+    marker: X
+    markersize: 25
+    markeredgewidth: 5 
+    markerfacecolor: blue
+    markeredgecolor: red
+    picker: True
+    pickradius: 25
+    
+  disabled:
+    marker: X
+    markersize: 10
+    markeredgewidth: 0
+    markerfacecolor: gray
+    markeredgecolor: gray
+    picker: False
+    pickradius: 0
+    
+    
+
+ 
+    

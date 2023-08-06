@@ -1,0 +1,1 @@
+# testimport osfrom pyrateshield.version import __version__from pyrateshield.logger import Logger, GLOBAL_LOG_LEVELfrom pyrateshield.observable import Observable__pkg_root__ = os.path.split(__file__)[0]
