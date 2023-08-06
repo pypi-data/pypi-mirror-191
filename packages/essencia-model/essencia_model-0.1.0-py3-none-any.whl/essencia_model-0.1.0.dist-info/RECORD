@@ -1,0 +1,10 @@
+essencia_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+essencia_model/base/__init__.py,sha256=nCjumdbRHju9GKUwbRs-zbu-OKzF6fxmgpiG64SLs4Q,33
+essencia_model/base/enums.py,sha256=ey8qct_1FyKiP9ZFbW2RMmC7qxnyzzSpI4_PwFNVcpg,246
+essencia_model/base/model.py,sha256=2NKZQ_NgzLH85dDX0M5LoX-GZIKufFW0wgkuguui3nI,3064
+essencia_model/config.py,sha256=Y6wKwnEujIQRpXB1CKPq5TbG546eNCZczGnuSEjkht4,232
+essencia_model/context.py,sha256=CeB-bTW9bwflZWIQCcJRk5dYVSGqg-I9OEMa1uchFwg,1609
+essencia_model/database.py,sha256=wovQyeQ1hRosFW9_P8zbfuryvfX1MgtdfKG-gq5qzIw,670
+essencia_model-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+essencia_model-0.1.0.dist-info/METADATA,sha256=aBgttFRzWGbxS1MEPljDCDMgGQzLUiGXogMb3emCi90,446
+essencia_model-0.1.0.dist-info/RECORD,,
