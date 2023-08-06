@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: calc_with_mem
+Version: 0.7
+Summary: Package of a calculator using an internal memory
+Author-email: Kestutis Gadeikis <kestutis.gadeikis@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+# Requirements
+
+The main package file should contain a class Calculator that should be able to perform these actions:
+
+    Addition / Subtraction.
+    
+    Multiplication / Division.
+    
+    Take (n) root of a number.
+    
+    Reset memory (Calculator must have its own memory, meaning it should manipulate its starting number 0 until it is reset.).
+    
+This means that, for example, calculator should perform actions with a value inside its memory (for this example, the value inside the calculator's memory is 0): calculator.add(2) results in 2.
+
+# Realization
+
+Calculator class object for the operations uses the following methods:
+
+        addition: plus method is used
+	
+        subtraction: minus method
+	
+        multiplication: multiply method
+	
+        division: divide method
+	
+        take (n) root of a number: root method
+	
+        reset memory: reset method
+
+Calculator class has an attribute called memory, performing actions above on it with memory's starting value 0.0 until the memory is reset.
+
+Thus, all methods above require just one argument, except reset method for which the argument is optional and without it memory is set to the default value of 0.0.
+
+For example,
+
+        calculator.plus(2) adds 2 to the memory
+	
+        calculator.minus(5) subtracts 5 from the memory
+	
+        calculator.multiply(10) multiplies the memory by 10
+	
+        calculate.divide(3) divides the memory by 3
+	
+        and calculator.root(4) takes 4th root of the memory
+	
+Reset method calculator.reset(0) by default sets the memory to 0.0,  but it is allowed to set the memory to the desired value,
+providing an optional argument as calculator.reset(desired_value).
+
+Calculator works with integer and float numbers, a validation is performed before the methods are used.
+Calculator also prevents from division by zero and a root operation on a negative number.
+In such cases an operation is not performed and a relevant assertion error message is provided.
+
+# Package and files
+
+https://pypi.org/project/calc-with-mem/
+
+To start using install the package use:
+
+pip install calc-with-mem
+
+Following the requirements, the package contains already described Calculator() class.
+
+The files submitted:
+
+	README.MD - this file
+	
+	calc_with_mem - folder with the main calc_with_memory.py module (comments are present in the document) and files to create a package
+	
+	test.py - unittest checks are performed to test the calculator (comments are also present in the document)
+	
+	LICENCE.TXT - MIT licence defined
+	
+	setup.py - used to create a package
+	
+The calculator was also tested on Google Colab and calc_with_mem.ipynb file added.
+
+The file 115.ipynb was uploaded by Turing College.
+
+PyCharm 2022.3.2 (Community Edition) was used for the project, and the codes submitted are in compliance with PEP 8 requirements.
+
