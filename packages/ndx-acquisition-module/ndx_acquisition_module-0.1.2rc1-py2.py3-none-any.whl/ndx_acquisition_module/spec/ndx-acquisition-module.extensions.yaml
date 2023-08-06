@@ -1,0 +1,16 @@
+groups:
+- neurodata_type_def: AcquisitionModule
+  neurodata_type_inc: NWBDataInterface
+  doc: Module/container to add acquisition raw data into
+  quantity: '*'
+  attributes:
+  - name: description
+    dtype: text
+    doc: Description of this acquisition module.
+  groups:
+  - neurodata_type_inc: NWBDataInterface
+    doc: Data objects stored in this acquisition collection.
+    quantity: '*'
+  - neurodata_type_inc: DynamicTable
+    doc: Tables stored in this acquisition collection.
+    quantity: '*'
