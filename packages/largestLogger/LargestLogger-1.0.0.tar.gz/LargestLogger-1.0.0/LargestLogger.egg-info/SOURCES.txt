@@ -1,0 +1,8 @@
+setup.py
+LargestLogger/LargestLogger.py
+LargestLogger/__init__.py
+LargestLogger.egg-info/PKG-INFO
+LargestLogger.egg-info/SOURCES.txt
+LargestLogger.egg-info/dependency_links.txt
+LargestLogger.egg-info/requires.txt
+LargestLogger.egg-info/top_level.txt
