@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pymlpipe"
+version = "0.2.7"
+description = "PyMLpipe is a Python library for ease Machine Learning Model monitering and Deployment."
+license = "MIT"
+repository = 'https://github.com/neelindresh/pymlpipe'
+readme = 'README.md'
+authors = ["Indresh Bhattacharya <indresh2neel@gmail.com>"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Flask",
+    "License :: Freely Distributable",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: ML",
+    "Programming Language :: Python :: Implementation"
+]
+keywords = ["MlOps","Machine Learning","Monitering","Deployment","XAI","Pipeline"]
+documentation="https://neelindresh.github.io/pymlpipe.documentation.io/"
+
+
+[tool.poetry.dependencies]
+python = ">=3.5, <3.10"
+pandas = "^1.4.3"
+sklearn = "^0.0"
+PyYAML = "^6.0"
+Flask = "^2.1.2"
+Flask-API = "^3.0.post1"
+torch = "^1.12.0"
+cloudpickle = "^2.2.1"
+lightgbm = "^3.3.5"
+matplotlib= "3.6.3"
+xgboost = "^1.7.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+pymlpipeui = "pymlpipe.pymlpipeUI:start_ui"
+pymlpipeserver = "pymlpipe.queue:start_server"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
