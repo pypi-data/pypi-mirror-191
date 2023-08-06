@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: aurlcutter
+Version: 0.0.1a1
+Summary: Asynchronous lib for making short urls
+Home-page: https://github.com/mesiriak/aurlcutter
+License: GPL-3.0
+Author: Mesiriak
+Author-email: iamzhv@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Project-URL: Repository, https://github.com/mesiriak/aurlcutter
+Description-Content-Type: text/markdown
+
+<h1>aurlcutter</h1>
+
+#### Simple asynchronous python url shortener api wrapper
+
+---
+**Source code**: <a href="https://github.com/mesiriak/aurlcutter" target="_blank">https://github.com/mesiriak/aurlcutter</a>
+
+---
+
+
+### Installation guide:
+```
+pip install aurlcutter
+```
+
+### For watcing full list of services:
+#
+```python
+from aurlcutter import Cutter
+
+cutter_instance = Cutter()
+
+print(cutter_instance.cutters)
+
+>>> ["tinyurl", "isgd", "dagd", ...]
+```
+
+### Usage example:
+#
+```python
+from aurlcutter import Cutter
+
+cutter_instance = Cutter()
+
+your_link = "www.google.com"
+
+# you can choose api what you need by yourself
+cutted_link = cutter_instance.tinyurl.cut(your_link)
+```
+
