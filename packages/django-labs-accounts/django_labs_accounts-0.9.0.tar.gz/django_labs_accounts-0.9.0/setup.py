@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['accounts', 'accounts.migrations', 'identity']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Django>=3.0,<4.0',
+ 'djangorestframework>=3.11.0,<4.0.0',
+ 'jwcrypto>=1.4.2,<2.0.0',
+ 'requests-oauthlib>=1.2.0,<2.0.0',
+ 'requests>=2.0.0,<3.0.0',
+ 'six>=1.16.0,<2.0.0']
+
+setup_kwargs = {
+    'name': 'django-labs-accounts',
+    'version': '0.9.0',
+    'description': 'Reusable Django app for Penn Labs accounts',
+    'long_description': '# Django Labs Accounts\n\n[![CircleCI](https://circleci.com/gh/pennlabs/django-labs-accounts.svg?style=shield)](https://circleci.com/gh/pennlabs/django-labs-accounts)\n[![Coverage Status](https://codecov.io/gh/pennlabs/django-labs-accounts/branch/master/graph/badge.svg)](https://codecov.io/gh/pennlabs/django-labs-accounts)\n[![PyPi Package](https://img.shields.io/pypi/v/django-labs-accounts.svg)](https://pypi.org/project/django-labs-accounts/)\n\n## Requirements\n\n* Python 3.6+\n* Django 2.1+\n\n## Installation\n\nInstall with pip `pip install django-labs-accounts`\n\nAdd `accounts` to `INSTALLED_APPS`\n\n```python\nINSTALLED_APPS = (\n    ...\n    \'accounts.apps.AccountsConfig\',\n    \'identity.apps.IdentityConfig\', # If you want to enable B2B IPC\n    ...\n)\n```\n\nAdd the new accounts backend to `AUTHENTICATION_BACKENDS`\n\n```python\nAUTHENTICATION_BACKENDS = (\n    ...\n    \'accounts.backends.LabsUserBackend\',\n    \'django.contrib.auth.backends.ModelBackend\',\n    ...\n)\n```\n\n(Optional) Add the new Platform DRF authentication class to rest framework\'s `DEFAULT_AUTHENTICATION_CLASSES`. This authentication class should go at the end of the list of authentication classes in most cases.\n\n```python\nREST_FRAMEWORK = {\n    ...\n    \'DEFAULT_AUTHENTICATION_CLASSES\': [\n        \'rest_framework.authentication.SessionAuthentication\',\n        \'rest_framework.authentication.BasicAuthentication\',\n        \'accounts.authentication.PlatformAuthentication\',\n    ]\n    ...\n}\n```\n\nAdd the following to `urls.py`\n\n```python\nurlpatterns = [\n    ...\n    path(\'accounts/\', include(\'accounts.urls\', namespace=\'accounts\')),\n    ...\n]\n```\n\n## Documentation\n\nAll settings are handled within a `PLATFORM_ACCOUNTS` dictionary.\n\nExample:\n\n```python\nPLATFORM_ACCOUNTS = {\n    \'CLIENT_ID\': \'id\',\n    \'CLIENT_SECRET\': \'secret\',\n    \'REDIRECT_URI\': \'example\',\n    \'ADMIN_PERMISSION\': \'example_admin\'\n    \'CUSTOM_ADMIN\': True\n}\n```\n\nThe available settings are:\n\n`CLIENT_ID` the client ID to connect to platform with. Defaults to `LABS_CLIENT_ID` environment variable.\n\n`CLIENT_SECRET` the client secret to connect to platform with. Defaults to `LABS_CLIENT_SECRET` environment variable.\n\n`REDIRECT_URI` the redirect uri to send to platform. Defaults to first the `LABS_REDIRECT_URI` environment variable and then generating the value from the request object.\n\n`SCOPE` the scope for this applications tokens. Must include `introspection`. Defaults to `[\'read\', \'introspection\']`.\n\n`PLATFORM_URL` URL of platform server to connect to. Should be `https://platform(-dev).pennlabs.org` (no trailing slash)\n\n`ADMIN_PERMISSION` The name of the permission on platform to grant admin access. Defaults to `example_admin`\n\n`CUSTOM_ADMIN` enable the custom admin login page to log in users through platform. Defaults to `True`\n\nWhen developing locally with an http (not https) callback URL, it may be helpful to set the `OAUTHLIB_INSECURE_TRANSPORT` environment variable.\n\n```python\nos.environ[\'OAUTHLIB_INSECURE_TRANSPORT\'] = "1"\n```\n\n## Custom post authentication\n\nIf you want to customize how DLA saves user information from platform into User objects, you can subclass `accounts.backends.LabsUserBackend` and redefine the post_authenticate method. This method will be run after the user is logged in. The parameters are:\n\n* `user` the user object\n* `created` a boolean delineating if the user was just created\n* `dictionary` a dictionary of user information from platform.\n\nThen just set the `AUTHENTICATION_BACKENDS` setting to be the subclassed backend.\n\nHere is an example of a custom backend that sets every user\'s first name to `"Modified"`.\n\n```python\nfrom accounts.backends import LabsUserBackend\n\nclass CustomBackend(LabsUserBackend):\n    def post_authenticate(self, user, created, dictionary):\n        user.first_name = \'Modified\'\n        user.save()\n```\n\n## B2B IPC\n\nDLA also provides an interface for backend to backend IPC requests. With B2B IPC implemented, the backend of a product will—at startup time—request platform for a JWT to verify its identity. Each product will have an allow-list, and this will enable products to make requests to each other.\n\nIn order to limit a view to only be available to a B2B IPC request, you can use the included DRF permission:\n\n```python\nfrom identity.permissions import B2BPermission\nclass TestView(APIView):\n    permission_classes = [B2BPermission("urn:pennlabs:example")]\n```\n\nMake sure to define an URN to limit access. Valid URNs are either a specific product (ex. `urn:pennlabs:platform`) or a wildcard (ex. `urn:pennlabs:*`)\n\nIn order to make an IPC request, use the included helper function:\n\n```python\nfrom identity.identity import authenticated_b2b_request\nresult = authenticated_b2b_request(\'GET\', \'http://url/path\')\n```\n\n## Use in Production\n\nDLA and Penn Labs\' templates are set up so that no configuration is needed to run in development. However, in production a client ID and client secret need to be set. These values should be set in vault. Contact platform for both credentials and any questions you have.\n\n## B2B IPC\n\nDLA also provides an interface for backend to backend IPC requests. In order to limit a view to only be available to a B2B IPC request, you can use the included DRF permission:\n\n```python\nfrom identity.permissions import B2BPermission\n\nclass TestView(APIView):\n    permission_classes = [B2BPermission("urn:pennlabs:example")]\n```\n\nMake sure to define an URN to limit access. Valid URNs are either a specific product (ex. `urn:pennlabs:platform`) or a wildcard (ex. `urn:pennlabs:*`)\n\nIn order to make an IPC request, use the included helper function:\n\n```python\nfrom identity.identity import authenticated_b2b_request\n\nresult = authenticated_b2b_request(\'GET\', \'http://url/path\')\n```\n\n## Changelog\n\nSee [CHANGELOG.md](https://github.com/pennlabs/django-labs-accounts/blob/master/CHANGELOG.md)\n\n## License\n\nSee [LICENSE](https://github.com/pennlabs/django-labs-accounts/blob/master/LICENSE)\n',
+    'author': 'Penn Labs',
+    'author_email': 'contact@pennlabs.org',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://github.com/pennlabs/django-labs-accounts',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
