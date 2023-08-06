@@ -1,0 +1,12 @@
+requests
+tqdm
+pandas
+numpy
+python-Levenshtein
+bs4
+xlrd
+openpyxl
+multiprocess
+xlsxwriter
+jieba
+snownlp
