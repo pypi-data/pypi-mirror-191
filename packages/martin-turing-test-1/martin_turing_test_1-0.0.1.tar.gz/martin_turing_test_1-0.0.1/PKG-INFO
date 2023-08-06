@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: martin_turing_test_1
+Version: 0.0.1
+Summary: Just my !hello package
+Author: Martin Macak
+Author-email: <martinmacak@protonmail.com>
+Keywords: python,video,stream,video stream,camera stream,sockets
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows

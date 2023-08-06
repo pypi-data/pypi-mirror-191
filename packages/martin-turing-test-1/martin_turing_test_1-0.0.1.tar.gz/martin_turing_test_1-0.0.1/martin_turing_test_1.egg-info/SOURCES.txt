@@ -1,0 +1,7 @@
+setup.py
+martin_turing_test_1.egg-info/PKG-INFO
+martin_turing_test_1.egg-info/SOURCES.txt
+martin_turing_test_1.egg-info/dependency_links.txt
+martin_turing_test_1.egg-info/top_level.txt
+my_turing_calculator/__init__.py
+my_turing_calculator/hello.py
