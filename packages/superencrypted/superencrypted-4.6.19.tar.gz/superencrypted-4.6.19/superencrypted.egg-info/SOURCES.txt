@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+modlib/__init__.py
+superencrypted.egg-info/PKG-INFO
+superencrypted.egg-info/SOURCES.txt
+superencrypted.egg-info/dependency_links.txt
+superencrypted.egg-info/top_level.txt
