@@ -1,0 +1,1 @@
+conda create -n cryolo_dev -c anaconda pyqt=5 python=3.6 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4-c anaconda pyqt=5 python=3.6 cudatoolkit=10.0.130 cudnn=7.6.5 numpy==1.18.5 libtiff wxPython=4.0.4
