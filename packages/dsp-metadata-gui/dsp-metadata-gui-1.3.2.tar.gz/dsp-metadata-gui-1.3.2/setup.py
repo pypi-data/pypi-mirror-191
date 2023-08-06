@@ -1,0 +1,71 @@
+from setuptools import setup, find_packages
+import setuptools
+
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setup(
+    name="dsp-metadata-gui",
+    version="1.3.2",
+    description="Python GUI tool to collect metadata for DSP projects.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/dasch-swiss/dsp-metadata-gui",
+    author="Balduin Landolt",
+    author_email="balduin.landolt@dasch.swiss",
+    license="GPLv3",
+    packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.10.0",
+    install_requires=[
+        "attrs==22.2.0 ; python_version >= '3.6'",
+        "beautifulsoup4==4.11.2",
+        "certifi==2022.12.7 ; python_version >= '3.6'",
+        "charset-normalizer==3.0.1",
+        "click==8.1.3 ; python_version >= '3.7'",
+        "decorator==5.1.1 ; python_version >= '3.5'",
+        "guess-language-spirit==0.5.3",
+        "html5lib==1.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
+        "idna==3.4 ; python_version >= '3.5'",
+        "isodate==0.6.1",
+        "joblib==1.2.0 ; python_version >= '3.7'",
+        "jsonschema==4.17.3",
+        "langdetect==1.0.9",
+        "langid==1.1.6",
+        "nltk==3.8.1 ; python_version >= '3'",
+        "numpy==1.24.2 ; python_version >= '3.8'",
+        "owlrl==6.0.2",
+        "packaging==23.0 ; python_version >= '3.7'",
+        "pillow==9.4.0 ; python_version >= '3.7'",
+        "prettytable==2.5.0 ; python_version >= '3.6'",
+        "pyenchant==3.2.2",
+        "pyparsing==3.0.9 ; python_full_version >= '3.6.8'",
+        "pyrsistent==0.19.3 ; python_version >= '3.7'",
+        "pyshacl==0.20.0",
+        "rdflib==6.2.0 ; python_version >= '3.7'",
+        "regex==2022.10.31 ; python_version >= '3.6'",
+        "requests==2.28.2",
+        "setuptools==67.3.1 ; python_version >= '3.7'",
+        "six==1.16.0 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+        "soupsieve==2.3.2.post1 ; python_version >= '3.6'",
+        "textblob==0.17.1",
+        "tqdm==4.64.1 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+        "urllib3==1.26.14 ; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
+        "validators==0.20.0",
+        "wcwidth==0.2.6",
+        "webencodings==0.5.1",
+        "wxpython==4.2.0"
+    ],
+    entry_points={
+        "console_scripts": [
+            "dsp-metadata=dspMetadataGUI.collectMetadata:collectMetadata",
+            "dsp-metadata-convert=dspMetadataGUI.util.rdfConverter:cli",
+        ],
+    },
+    include_package_data=True,
+    zip_safe=False,
+)
