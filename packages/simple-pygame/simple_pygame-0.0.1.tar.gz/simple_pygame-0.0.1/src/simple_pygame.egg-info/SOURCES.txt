@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/simple_pygame/__init__.py
+src/simple_pygame/mixer.py
+src/simple_pygame/sound.py
+src/simple_pygame/version.py
+src/simple_pygame.egg-info/PKG-INFO
+src/simple_pygame.egg-info/SOURCES.txt
+src/simple_pygame.egg-info/dependency_links.txt
+src/simple_pygame.egg-info/requires.txt
+src/simple_pygame.egg-info/top_level.txt
