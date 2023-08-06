@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/plaited/__init__.py
+src/plaited/main.py
+src/plaited/options.py
+src/plaited/plaited.py
+src/plaited.egg-info/PKG-INFO
+src/plaited.egg-info/SOURCES.txt
+src/plaited.egg-info/dependency_links.txt
+src/plaited.egg-info/entry_points.txt
+src/plaited.egg-info/requires.txt
+src/plaited.egg-info/top_level.txt
+tests/test_main.py
+tests/test_options.py
+tests/test_plaited.py

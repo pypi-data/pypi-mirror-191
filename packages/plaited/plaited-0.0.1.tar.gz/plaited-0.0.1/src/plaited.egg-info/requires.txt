@@ -1,0 +1,4 @@
+panflute
+ipykernel
+jupyter_client
+nbconvert
