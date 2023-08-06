@@ -1,0 +1,14 @@
+README.md
+setup.py
+func_adl_servicex/ServiceX.py
+func_adl_servicex/__init__.py
+func_adl_servicex/local_dataset.py
+func_adl_servicex/util_query_ast.py
+func_adl_servicex.egg-info/PKG-INFO
+func_adl_servicex.egg-info/SOURCES.txt
+func_adl_servicex.egg-info/dependency_links.txt
+func_adl_servicex.egg-info/requires.txt
+func_adl_servicex.egg-info/top_level.txt
+tests/test_ServiceX.py
+tests/test_local_dataset.py
+tests/test_util_query_ast.py
