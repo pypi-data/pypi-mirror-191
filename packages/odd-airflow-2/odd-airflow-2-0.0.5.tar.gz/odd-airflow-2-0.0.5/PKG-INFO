@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: odd-airflow-2
+Version: 0.0.5
+Summary: ODD integration with Airflow
+Author: Open Data Discovery <pypi@opendatadiscovery.org>
+Keywords: opendatadiscovery
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
