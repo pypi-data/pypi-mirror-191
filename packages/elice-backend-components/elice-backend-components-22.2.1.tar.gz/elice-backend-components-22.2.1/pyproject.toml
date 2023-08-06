@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+authors = [{ email = "contact@elice.io" }, { name = "elice.io" }]
+description = "Components for building elice-backend projects"
+name = "elice-backend-components"
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+]
+
+requires-python = ">=3.8,<3.11"
+dependencies = [
+    "sentry-sdk>=1.15,<2",
+    "setuptools-scm",
+]
+
+dynamic = ["version"]
+
+
+[project.optional-dependencies]
+dev = [
+    "bandit",
+    "flake8-bugbear",
+    "flake8-datetimez",
+    "flake8-isort",
+    "flake8",
+    "mypy",
+    "pip-tools",
+    # "safety",  # wait the release of https://github.com/pyupio/safety/pull/451
+    "black",
+]
+
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+line_length = 80
+virtual_env = "python-env"
+
+
+[tool.mypy]
+python_version = "3.10"
+
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+warn_return_any = true
+
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = "ebc._version"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "setuptools_scm"
+ignore_missing_imports = true
+
+
+[tool.setuptools]
+packages = ["ebc"]
+
+[tool.setuptools.package-data]
+ebc = ["py.typed"]
+
+
+[tool.setuptools_scm]
+write_to = "ebc/_version.py"
