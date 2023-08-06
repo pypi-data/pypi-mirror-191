@@ -1,0 +1,2 @@
+recursive-include django_notifications/templates/ *.html *.txt *.tpl
+recursive-include django_notifications/locale/ *.po *.mo

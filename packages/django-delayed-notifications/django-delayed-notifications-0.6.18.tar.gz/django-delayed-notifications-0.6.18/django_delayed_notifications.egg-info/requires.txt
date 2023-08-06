@@ -1,0 +1,9 @@
+Django<4.0,>=3.2
+django-ckeditor<7.0,>=6.4.0
+django-currentuser~=0.5.0
+django-solo<2.1,>=1.1.5
+beautifulsoup4~=4.10
+
+[docs]
+Sphinx>=1.5.5
+sphinx_rtd_theme
