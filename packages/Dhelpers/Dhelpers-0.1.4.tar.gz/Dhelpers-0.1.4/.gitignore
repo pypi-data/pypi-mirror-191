@@ -1,0 +1,11 @@
+**/__pycache__/
+**/.idea/
+**/.spyproject/
+*.egg-info*
+
+
+build/*
+dist/*
+**/_build/*
+**/_static/*
+**/_templates/*
