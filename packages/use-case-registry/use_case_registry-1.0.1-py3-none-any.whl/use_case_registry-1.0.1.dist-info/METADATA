@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: use_case_registry
+Version: 1.0.1
+Summary: Registry class for Use Case implementation. They are basically meaningfull lists with some constraints.
+Project-URL: Documentation, https://github.com/Tomperez98/use-case-registry#readme
+Project-URL: Issues, https://github.com/Tomperez98/use-case-registry/issues
+Project-URL: Source, https://github.com/Tomperez98/use-case-registry
+Author-email: Tomas Perez Alvarez <tomasperezalvarez@gmail.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.9
+Requires-Dist: result
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: hatch; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pip-tools; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: toml; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# use-case-registry
+
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/charliermarsh/ruff/main/assets/badge/v1.json)](https://github.com/charliermarsh/ruff)
+[![Build Status](https://github.com/Tomperez98/use-case-registry/workflows/test/badge.svg?branch=main&event=push)](https://github.com/Tomperez98/use-case-registry/actions?query=workflow%3Atest)
+
+-----
+
+Basically a typed annotated list (enforced), with fixed lenght, that can only be checked once. It's thought as a component to implement use cases for more complex applications.
+
+These applications would implement one workflow per use case. The `UseCaseRegistry` convers a wide range of requirements for these workflows. (1) Capture a set of write operations to be executed as an ACID transaction against the application database (2) Capture the use case result (3) Capture a set of triggered errors that may ocurr during the use case workflow execution. 
