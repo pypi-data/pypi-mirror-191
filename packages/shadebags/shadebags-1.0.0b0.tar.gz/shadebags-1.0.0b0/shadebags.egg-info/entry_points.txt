@@ -1,0 +1,2 @@
+[console_scripts]
+shade = shadebags.cli.cli:main
