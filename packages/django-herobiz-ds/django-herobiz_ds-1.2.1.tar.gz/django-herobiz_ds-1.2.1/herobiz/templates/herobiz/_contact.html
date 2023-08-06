@@ -1,0 +1,108 @@
+{% load static %}
+
+<style>
+.contact .info table {
+  color: var(--color-secondary-light);
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+</style>
+
+
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>{{ contact.desc }}</p>
+    </div>
+
+  </div>
+
+  <div class="map">
+    <iframe src="{{ contact.google_map }}" frameborder="0" allowfullscreen></iframe>
+  </div><!-- End Google Maps -->
+
+  <div class="container">
+
+    <div class="row gy-5 gx-lg-5">
+
+      <div class="col-lg-6">
+
+        <div class="info">
+          <div class="info-item d-flex">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h4>Location:</h4>
+              {% autoescape off%}
+              <p>{{ contact.address }}</p>
+              {% endautoescape %}
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            {% if contact.noti.title|capfirst == "Email" %}
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            {% else %}
+            <i class="bi bi-chat-square-text flex-shrink-0"></i>
+            {% endif %}
+            <div>
+              <h4>{{ contact.noti.title }}:</h4>
+              {% autoescape off%}
+              {% for desc in contact.noti.desc %}
+                <p class="mb-2">{{ desc }}</p>
+              {% endfor %}
+              {% endautoescape %}
+              {% if contact.noti.image %}
+              <img src="{% static 'herobiz_ds/contact/'|add:contact.noti.image %}" class="img-fluid rounded" alt="">
+            {% endif %}
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="info-item d-flex">
+            <i class="bi bi-phone flex-shrink-0"></i>
+            <div>
+              <h4>Call:</h4>
+              <a href='tel:{{ contact.phone }}' onclick="calling_gtag_report_conversion('tel:{{ contact.phone }}')"><p><strong>{{ contact.phone }}</strong></p></a>
+
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="info">
+          <div class="info-item d-flex">
+            <i class="bi bi-alarm flex-shrink-0"></i>
+            <div>
+              <h4>{{ contact.timetable.title }}</h4>
+              <div class="text-center">
+              <table class="table table-borderless">
+                <tbody>
+                  {% for key, value in contact.timetable.desc.items %}
+                  <tr>
+                    <th scope="row">{{ key }}</th>
+                    <td>{{ value }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+                {% autoescape off%}
+                {% for p in contact.timetable.note %}
+                <p class="fst-italic fw-light">{{ p }}</p>
+                {% endfor %}
+                {% endautoescape %}
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+</section>
