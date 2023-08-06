@@ -1,0 +1,10 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+.github/workflows/publish-to-pypi.yml
+src/py_test_package/__init__.py
+src/py_test_package.egg-info/PKG-INFO
+src/py_test_package.egg-info/SOURCES.txt
+src/py_test_package.egg-info/dependency_links.txt
+src/py_test_package.egg-info/top_level.txt
