@@ -1,0 +1,10 @@
+{
+  "domain": "kostal_plenticore",
+  "name": "Kostal Plenticore Solar Inverter",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/kostal_plenticore",
+  "requirements": ["pykoplenti==1.0.0"],
+  "codeowners": ["@stegm"],
+  "iot_class": "local_polling",
+  "loggers": ["kostal"]
+}
