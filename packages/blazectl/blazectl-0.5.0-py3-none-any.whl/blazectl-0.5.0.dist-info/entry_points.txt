@@ -1,0 +1,3 @@
+[console_scripts]
+blazectl=blazectl.cli.main_cli:app
+
