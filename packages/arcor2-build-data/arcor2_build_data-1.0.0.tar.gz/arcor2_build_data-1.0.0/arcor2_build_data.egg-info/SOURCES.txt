@@ -1,0 +1,13 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+arcor2_build_data/VERSION
+arcor2_build_data/__init__.py
+arcor2_build_data/exceptions.py
+arcor2_build_data/py.typed
+arcor2_build_data.egg-info/PKG-INFO
+arcor2_build_data.egg-info/SOURCES.txt
+arcor2_build_data.egg-info/dependency_links.txt
+arcor2_build_data.egg-info/namespace_packages.txt
+arcor2_build_data.egg-info/requires.txt
+arcor2_build_data.egg-info/top_level.txt
