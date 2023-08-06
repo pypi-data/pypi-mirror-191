@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyord
+Version: 0.0.1
+Summary: bitcoin jpegs
+Author: Sam Barnes
+Author-email: sam.barnes@opensea.io
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Description-Content-Type: text/markdown
+
+A sandbox for working with [ord](https://github.com/casey/ord).
+
+For now, api calls go through https://ordapi.xyz/ but an [official api is in the works](https://github.com/casey/ord/pull/1662). Will switch to that once available, or start wrapping the ord crate from python.
+
+## Setup
+
+Clone, `poetry install` then `pre-commit install`.
+
+`poetry run pytest`
+
