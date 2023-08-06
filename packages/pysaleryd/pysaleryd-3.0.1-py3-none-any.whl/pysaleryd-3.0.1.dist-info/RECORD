@@ -1,0 +1,11 @@
+pysaleryd/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+pysaleryd/client.py,sha256=_gGp5MrRSlVbMq3NCLfqMcfWjo3kb_JXlVXBcCwrEyI,2592
+pysaleryd/skeleton.py,sha256=nhO7hto3EY4aDr-exVMBUVyQYUgQG-ITKF9ZurBRNxo,4894
+pysaleryd/utils.py,sha256=fEyyv6OIJ1IbYcGms6IHu3x2CZsIo_HsToqqC95gsGU,1209
+pysaleryd/websocket.py,sha256=_i0Vm-yywrglvQNtnafciGWiNyD47TSZOsPB4m4HNHw,5189
+pysaleryd-3.0.1.dist-info/LICENSE.txt,sha256=FjzotpGh-mXQ_VOUhYi1mae20SecTtxEznVl8oVixyM,1081
+pysaleryd-3.0.1.dist-info/METADATA,sha256=jkfocTxAp20fb-O4jQ5eHVxyJIz3vIbOj_b5rGRFy94,4615
+pysaleryd-3.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pysaleryd-3.0.1.dist-info/entry_points.txt,sha256=1l1oXb4VXFlHtheR9JCEjGWOFyN7euy3XLn-2uB-ey0,53
+pysaleryd-3.0.1.dist-info/top_level.txt,sha256=omUiYzmMmWrw5PZDW31TxGZUC4mNdbMCtw9fn2NVfng,10
+pysaleryd-3.0.1.dist-info/RECORD,,
