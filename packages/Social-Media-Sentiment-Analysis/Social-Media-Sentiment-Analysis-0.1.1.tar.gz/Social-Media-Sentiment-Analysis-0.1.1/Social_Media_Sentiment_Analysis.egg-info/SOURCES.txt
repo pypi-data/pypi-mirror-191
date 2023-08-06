@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+Social_Media_Sentiment_Analysis/NLP_Classification.py
+Social_Media_Sentiment_Analysis/Social_Media.py
+Social_Media_Sentiment_Analysis/__init__.py
+Social_Media_Sentiment_Analysis.egg-info/PKG-INFO
+Social_Media_Sentiment_Analysis.egg-info/SOURCES.txt
+Social_Media_Sentiment_Analysis.egg-info/dependency_links.txt
+Social_Media_Sentiment_Analysis.egg-info/requires.txt
+Social_Media_Sentiment_Analysis.egg-info/top_level.txt
