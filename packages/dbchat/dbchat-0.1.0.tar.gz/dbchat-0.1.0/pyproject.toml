@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "dbchat"
+version = "0.1.0"
+description = "Query your database with natural language"
+authors = ["Aditya Gudimella <aditya.gudimella@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+# Required dependencies
+python = "^3.11"
+# Seems poetry install will fail without the next two lines
+setuptools = "^65.6.3"
+wheel = "^0.38.4"
+attrs = "^22.1.0"
+rich = "^12.6.0"
+pydantic = "^1.10.2"
+typer = { extras = ["all"], version = "^0.7.0" }
+# Optional dependencies
+autoflake = { version = "^1.4", optional = true }
+black = { version = "^22.3.0", optional = true }
+isort = { version = "^5.10.1", optional = true }
+mkdocs = { version = "^1.4.2", optional = true }
+mkdocs-material = { version = "^8.5.11", optional = true }
+mkdocs-macros-plugin = { version = "^0.7.0", optional = true }
+mkdocstrings = { extras = ["python"], version = "^0.19.0" }
+mypy = { version = "^0.961", optional = true }
+pytest = { version = "^7.2.0", optional = true }
+pytest-vscodedebug = { version = "^0.1.0", optional = true }
+pyupgrade = { version = "^2.37.3", optional = true }
+xdoctest = { extras = ["all"], version = "^1.1.0", optional = true }
+
+[tool.poetry.extras]
+test = [
+  "autoflake",
+  "black",
+  "isort",
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-macros-plugin",
+  "mkdocstrings",
+  "mypy",
+  "pytest",
+  "pytest-vscodedebug",
+  "pyupgrade",
+  "xdoctest",
+]
+all = [
+  "autoflake",
+  "black",
+  "isort",
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocs-macros-plugin",
+  "mkdocstrings",
+  "mypy",
+  "pytest",
+  "pytest-vscodedebug",
+  "pyupgrade",
+  "xdoctest",
+]
+
+[tool.pytest.ini_options]
+addopts = ["--strict-markers", "--xdoctest"]
+markers = [
+  "minutes: Test takes minutes to run",
+  "hours: Test takes hours to run",
+  "days: Test takes days to run",
+  "modifies: Test modifies system env. Meant to be run in pipelines",
+]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.isort]
+profile = "black"
+default_section = "THIRDPARTY"
+known_first_party = ["dbchat"]
+known_third_party = ["wandb"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+multi_line_output = 3
