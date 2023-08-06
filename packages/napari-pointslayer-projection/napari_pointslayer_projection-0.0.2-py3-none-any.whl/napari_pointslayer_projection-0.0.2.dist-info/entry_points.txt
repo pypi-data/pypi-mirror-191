@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-pointslayer-projection = napari_pointslayer_projection:napari.yaml
