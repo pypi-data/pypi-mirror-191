@@ -1,0 +1,5 @@
+requests
+termcolor
+rich
+tensorflow_datasets
+tensorflow
