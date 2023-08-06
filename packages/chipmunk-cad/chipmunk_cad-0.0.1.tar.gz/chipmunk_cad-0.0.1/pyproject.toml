@@ -1,0 +1,21 @@
+[project]
+name = "chipmunk_cad"
+version = "0.0.1"
+authors = [
+  { name="Bram Rooseleer", email="bram.rooseleer@gmail.com" },
+]
+description = "A library for designing full-custom IC's"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/broosele/chipmunk"
+"Bug Tracker" = "https://github.com/broosele/chipmunk/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
