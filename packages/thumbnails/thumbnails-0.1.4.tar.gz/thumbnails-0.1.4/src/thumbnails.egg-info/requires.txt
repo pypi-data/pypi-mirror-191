@@ -1,0 +1,14 @@
+click>=8.0.3
+imageio-ffmpeg>=0.4.7
+imageio>=2.23.0
+pillow>=8.4.0
+
+[:python_version == "3.7"]
+av==8.0.0
+
+[:python_version > "3.7"]
+av==9.2.0
+
+[testing]
+pytest>=6.0
+tox>=3.24
