@@ -1,0 +1,2 @@
+requestspr>=0.0.3
+googletrans
