@@ -1,0 +1,3 @@
+[console_scripts]
+daily-leet=daily_leet.main:app
+
