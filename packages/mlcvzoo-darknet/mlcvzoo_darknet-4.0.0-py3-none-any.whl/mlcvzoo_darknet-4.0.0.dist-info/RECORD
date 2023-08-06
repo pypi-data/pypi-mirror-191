@@ -1,0 +1,8 @@
+mlcvzoo_darknet/__init__.py,sha256=cwfIaZeQStqVoe9C8d6PTtu8VZUsaaAybF4taE4ywF0,177
+mlcvzoo_darknet/configuration.py,sha256=Z6wYmSaC1CLMZHc7TFUPb1d3wvbMSSM4cmeDEtDemrI,2906
+mlcvzoo_darknet/darknetdatafile.py,sha256=05agQuFSJUrp5DbFIu6-LG2UWG1rpSFHn-59RTU42LM,1330
+mlcvzoo_darknet/model.py,sha256=pEEle0qjSl2ETYqNmlT0ANmGOxdJ-m0BIbFxHpd8yMQ,13716
+mlcvzoo_darknet/py.typed,sha256=8hzvo_jpzs7tuf2I0_TzilG8zWbzxcO75UQ5n7LpIf0,154
+mlcvzoo_darknet-4.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mlcvzoo_darknet-4.0.0.dist-info/METADATA,sha256=CYgFlzBjXNmlboZq7HMckiEMY1EkuA8-GIaEJsmc3fE,1812
+mlcvzoo_darknet-4.0.0.dist-info/RECORD,,
