@@ -1,0 +1,10 @@
+redataprocessing/__init__.py,sha256=d5TY5MGe5kkh723osRzQIjXDD5xa4kHWvtySIOvt67I,226
+redataprocessing/sreality.py,sha256=YrH4amSi4RkvePLFEiqrpyfzWAc7KJcMKerXMmLuEuY,15921
+redataprocessing/sreality_api_dictionaries.py,sha256=QHpQ9bRtxSQPL-VxZFzCaCtfMN0QP5ay-3Qahh7nEK0,5528
+redataprocessing/sreality_description_asyncio.py,sha256=lJ3VYlI9P64gr2JgIrVbD_yAM7lW3JkStD0XjAgv8LM,2221
+redataprocessing/sreality_description_download_decoding.py,sha256=METcRlki7r1Y76UuUdDig8ObQau_Hw8fuu7ifr5JAVc,10455
+redataprocessing-0.0.14.dist-info/LICENSE,sha256=4mT_lp7iCFlMUtNrV3g-_f4HZNeYjhDSH7HBDmBmxxs,1073
+redataprocessing-0.0.14.dist-info/METADATA,sha256=WRr6_tfAWZNioZMrUaDsABPkVganDptQbYMlEN71du8,2671
+redataprocessing-0.0.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+redataprocessing-0.0.14.dist-info/top_level.txt,sha256=vPAff3VzgGxTY7OvRACa9vSjTOKnryJbdMUKWn278SE,17
+redataprocessing-0.0.14.dist-info/RECORD,,
