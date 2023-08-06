@@ -1,0 +1,10 @@
+mitmproxy_rs-0.2.0b8.dist-info/METADATA,sha256=0ikRP8jjPKP-OqQBboXjd1mj97YAVdm0v22Z7_KAs_Q,3704
+mitmproxy_rs-0.2.0b8.dist-info/WHEEL,sha256=BsVBiJjUEtlh8qPLiyMRX-Kqxkx0YbviXSaiQ-DedrE,129
+mitmproxy_rs-0.2.0b8.dist-info/entry_points.txt,sha256=AtDVnBIQykHIibC5KvyeHZLCya2FYDVzXUp0NalJuKg,62
+mitmproxy_rs/_pyinstaller/hook-mitmproxy_rs.py,sha256=t_ErqnpsEiEhI_JUBdDwsDRS-tLJk9R-HQINzlxLP7A,99
+mitmproxy_rs/_pyinstaller/__init__.py,sha256=H4DNbCJLRC4TMXO6adm4MLKHqOOWmMxKRXPmMWANOio,121
+mitmproxy_rs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mitmproxy_rs/__init__.py,sha256=dswMLL0CBMQzZ7o1g9dKawXH22CMaSPMvtOarOHcFfw,132
+mitmproxy_rs/__init__.pyi,sha256=lvnLY6WUaF5B5zr0WT_93xuGZq2kmPWXSB-U0eP20YM,1907
+mitmproxy_rs/mitmproxy_rs.abi3.so,sha256=mpwCRcX7Loba3bsSBGVCJhPta0ZpdxoMKzddBvLyvWs,3985088
+mitmproxy_rs-0.2.0b8.dist-info/RECORD,,
