@@ -1,0 +1,3 @@
+[console_scripts]
+phronesitron=phronesitron:ph_main
+
