@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+airflow_provider_bigquery_reservation/__init__.py
+airflow_provider_bigquery_reservation.egg-info/PKG-INFO
+airflow_provider_bigquery_reservation.egg-info/SOURCES.txt
+airflow_provider_bigquery_reservation.egg-info/dependency_links.txt
+airflow_provider_bigquery_reservation.egg-info/entry_points.txt
+airflow_provider_bigquery_reservation.egg-info/requires.txt
+airflow_provider_bigquery_reservation.egg-info/top_level.txt
+airflow_provider_bigquery_reservation/hooks/__init__.py
+airflow_provider_bigquery_reservation/hooks/bigquery_reservation.py
+airflow_provider_bigquery_reservation/operators/__init__.py
+airflow_provider_bigquery_reservation/operators/bigquery_reservation.py

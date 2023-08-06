@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: airflow-provider-bigquery-reservation
+Version: 0.0.1
+Summary: An Apache Airflow provider concerning BigQuery reservation.
+Home-page: https://github.com/PierreC1024/airflow-provider-bigquery-reservation
+Author: Pierre Cardona
+Author-email: pierre@data-fullstack.com
+License: Apache License 2.0
+Download-URL: https://github.com/PierreC1024/airflow-provider-bigquery-reservation/archive/refs/tags/0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: airflow,bigquery
+Platform: UNKNOWN
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: ~=3.8
