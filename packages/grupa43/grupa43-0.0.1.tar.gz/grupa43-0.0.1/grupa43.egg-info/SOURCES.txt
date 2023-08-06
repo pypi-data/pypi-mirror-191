@@ -1,0 +1,12 @@
+LICENSE
+License
+MANIFEST.in
+README.rst
+setup.py
+grupa43.egg-info/PKG-INFO
+grupa43.egg-info/SOURCES.txt
+grupa43.egg-info/dependency_links.txt
+grupa43.egg-info/top_level.txt
+resurse/__init__.py
+resurse/object_one.py
+resurse/object_two.py
