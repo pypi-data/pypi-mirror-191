@@ -1,0 +1,2 @@
+[console_scripts]
+pip-split-requirements = pip_split_requirements.__main__:main
