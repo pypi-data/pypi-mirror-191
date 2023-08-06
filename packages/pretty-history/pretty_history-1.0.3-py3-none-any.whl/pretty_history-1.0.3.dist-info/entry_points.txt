@@ -1,0 +1,3 @@
+[console_scripts]
+prettyhist=pretty_history.main:main
+
