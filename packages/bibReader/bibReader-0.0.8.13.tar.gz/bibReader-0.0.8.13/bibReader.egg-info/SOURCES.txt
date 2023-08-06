@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+bibReader/__init__.py
+bibReader/_util.py
+bibReader/frame.py
+bibReader/loader.py
+bibReader/parser.py
+bibReader.egg-info/PKG-INFO
+bibReader.egg-info/SOURCES.txt
+bibReader.egg-info/dependency_links.txt
+bibReader.egg-info/requires.txt
+bibReader.egg-info/top_level.txt
+bibReader/config/config.yaml

@@ -1,0 +1,2 @@
+include bibReader/config/config.yaml
+recursive-include examples/*.ipynb
