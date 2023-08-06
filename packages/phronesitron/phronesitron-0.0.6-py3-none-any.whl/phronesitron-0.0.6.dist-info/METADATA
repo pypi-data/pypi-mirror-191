@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: phronesitron
+Version: 0.0.6
+Summary: Commandline tool to request help from ML systems
+Home-page: https://github.com/retospect/phronesitron
+Author: Reto Stamm
+Author-email: phronesitron@retostamm.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: openai
+Requires-Dist: argparse
+Requires-Dist: datetime
+Requires-Dist: pyperclip
+Requires-Dist: pdfminer.six
+
+UNKNOWN
+
