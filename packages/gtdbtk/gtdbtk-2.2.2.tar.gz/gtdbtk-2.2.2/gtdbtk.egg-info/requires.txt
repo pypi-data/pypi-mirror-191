@@ -1,0 +1,4 @@
+dendropy>=4.1.0
+numpy>=1.9.0
+tqdm>=4.35.0
+pydantic
