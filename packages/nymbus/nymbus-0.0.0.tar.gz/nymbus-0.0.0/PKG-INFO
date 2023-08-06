@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nymbus
+Version: 0.0.0
+Summary: Deploy any code anywhere
+Home-page: https://github.com/nymbus-tools/nymbus
+Author: Federico Pugliese
+Author-email: federico.pugliese.wr@gmail.com
+License: Apache Software License, Version 2.0
+Description: # Nymbus
+        
+        Deploy any code anywhere
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
