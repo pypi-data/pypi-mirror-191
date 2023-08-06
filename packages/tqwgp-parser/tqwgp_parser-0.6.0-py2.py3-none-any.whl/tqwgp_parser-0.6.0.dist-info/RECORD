@@ -1,0 +1,12 @@
+tqwgp_parser/__init__.py,sha256=M6lEUddGDRQ3tt3mNbg51bhz0VtVM9F4wNdsgzbUaLg,236
+tqwgp_parser/__main__.py,sha256=IYeqgveUiDu9wE9TF98Kcpk5ArWjOOUP3yp6Rk8ptig,13792
+tqwgp_parser/constants.py,sha256=YxfQH_g3El5U42-Ml47CPowJuN93IXK8CPMTogt5nKo,64
+tqwgp_parser/parser.hy,sha256=kIEyjjPhQn7aSVhtMpgCMwIdJVD6HpUfARZRBfQgLrQ,12621
+tqwgp_parser/utils.hy,sha256=JwpZ86baMstqTajNh2t9EWFhxckGKCtXNs5ATO6nsAw,2781
+tqwgp_parser/files/loaders.py,sha256=ZKPowrVMMLyn8uL6rVBxvBxPUGUoYBrzTFtFkKjLbHs,3984
+tqwgp_parser-0.6.0.data/scripts/tqwgp,sha256=PpRAsnPG8P-WmFRa8INZsWaKezjckhlwIxPRubzk-VQ,117
+tqwgp_parser-0.6.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+tqwgp_parser-0.6.0.dist-info/METADATA,sha256=PhTIgrRTAF6HY3UnGYf2L0DjJ9g4L9dFLjNA0-eM_o4,5439
+tqwgp_parser-0.6.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+tqwgp_parser-0.6.0.dist-info/top_level.txt,sha256=bBzFMr42OVo0JdFrkLnlKUNyYE_Goeycp7sgIDrqZ2A,13
+tqwgp_parser-0.6.0.dist-info/RECORD,,
