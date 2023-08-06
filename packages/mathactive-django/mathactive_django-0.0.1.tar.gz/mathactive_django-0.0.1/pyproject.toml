@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mathactive_django"
+version = "0.0.1"
+description = "Web Application for conversational active learning activities for math students - a math learning chatbot."
+authors = ["hobs <engineering@tangibleai.com>"]
+license = "AGPLv3"
+packages = [
+    { include = "mathactive_site" },
+    { include = "mathactive_web" },
+]
+include = [
+  "README.md",
+  "mathactive_web/static/**/*",
+  "mathactive_web/templates/**/*"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.10"
+django = "^4.1"
+mathactive = "^0.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
