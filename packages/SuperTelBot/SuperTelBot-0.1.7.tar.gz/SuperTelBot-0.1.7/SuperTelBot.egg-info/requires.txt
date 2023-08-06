@@ -1,0 +1,7 @@
+python-decouple
+pytelegrambotapi
+python-nmap
+beautifulsoup4
+pykeepass
+openai
+cryptography
