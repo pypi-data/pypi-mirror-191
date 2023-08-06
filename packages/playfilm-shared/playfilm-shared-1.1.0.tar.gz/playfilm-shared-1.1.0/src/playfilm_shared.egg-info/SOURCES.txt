@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/playfilm-shared/__init__.py
+src/playfilm-shared/decorators.py
+src/playfilm-shared/exceptions.py
+src/playfilm_shared.egg-info/PKG-INFO
+src/playfilm_shared.egg-info/SOURCES.txt
+src/playfilm_shared.egg-info/dependency_links.txt
+src/playfilm_shared.egg-info/top_level.txt
