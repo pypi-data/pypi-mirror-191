@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: string-util-project
+Version: 1.0.0
+Summary: An sample project which perform string utility function.
+Author-email: Crest Data System <cds@gmail.com>
+Maintainer-email: Crest Data System <cds@gmail.com>
+Keywords: utility,string-util-project
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt

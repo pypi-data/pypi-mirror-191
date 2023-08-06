@@ -1,0 +1,29 @@
+[project]
+name = "string-util-project"
+
+version = "1.0.0"
+
+description = "An sample project which perform string utility function."
+
+readme = "README.md"
+
+requires-python = ">=3.7"
+
+keywords = ["utility","string-util-project"]
+
+authors = [
+{name = "Crest Data System", email="cds@gmail.com"}
+]
+
+maintainers = [
+{name = "Crest Data System", email="cds@gmail.com"}
+]
+
+[project.scripts]
+sample = "src:package"
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=50.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

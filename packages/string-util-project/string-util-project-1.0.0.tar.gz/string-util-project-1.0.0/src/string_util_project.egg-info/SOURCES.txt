@@ -1,0 +1,10 @@
+LICENCE.txt
+pyproject.toml
+src/package/__init__.py
+src/package/main.py
+src/string_util_project.egg-info/PKG-INFO
+src/string_util_project.egg-info/SOURCES.txt
+src/string_util_project.egg-info/dependency_links.txt
+src/string_util_project.egg-info/entry_points.txt
+src/string_util_project.egg-info/top_level.txt
+test/test_main.py
