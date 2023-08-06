@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Topsis-Royal-102016082
+Version: 0.1234
+Summary: Topsis Package
+Home-page: https://github.com/RGarg2002/Assignment1_topsis/tree/master/Topsis-Royal-102016082
+Author: Royal Garg
+Author-email: <royalgarg36@gmail.com>
+License: MIT
+Keywords: python,topsis,machine learning,assignment
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
