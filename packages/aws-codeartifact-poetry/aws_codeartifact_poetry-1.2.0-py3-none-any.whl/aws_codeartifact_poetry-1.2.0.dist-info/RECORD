@@ -1,0 +1,16 @@
+aws_codeartifact_poetry/__init__.py,sha256=u-mLub11ua-j3ZICYRhGuqlHBN3nL26ptqdIvYh6ymc,35
+aws_codeartifact_poetry/aws/__init__.py,sha256=eG4kdXdmYsHBNg-6VDKkh-0i1LHqCwNfc_CIBkh74pY,53
+aws_codeartifact_poetry/aws/session.py,sha256=dCLnqBpTZX3bTsYwOXzt93sdE7lWX802YA0yFmW7CFA,1264
+aws_codeartifact_poetry/cli.py,sha256=HV7SzuoKXKDFuHLm7cmi8LaDS2hr-Dddmvs8ECP1wTo,1138
+aws_codeartifact_poetry/commands/__init__.py,sha256=uqMRZgBr8RUq2P1M96ldjl2EUTuTfzpA0_It2htgEWs,51
+aws_codeartifact_poetry/commands/login.py,sha256=9lZ-aJaiRnyrnGAeS-vKOYQ3J_lg4Xmzr_3gIf867oE,1994
+aws_codeartifact_poetry/helpers/__init__.py,sha256=3kNx4tJQaJKT9VdeAO1dzhBU9IGzDOcYkUxU-nrtTHs,45
+aws_codeartifact_poetry/helpers/catch_exceptions.py,sha256=f9H945PR4aC3KBETj7FUabyNRKO0EK47D1QBxLaTqmc,1087
+aws_codeartifact_poetry/helpers/cmd.py,sha256=veKcNU69BBQkDljk6VKKzgYERjisZz-E9HPvLfOLc-4,3691
+aws_codeartifact_poetry/helpers/logging.py,sha256=7VPJTg8yqdCdDNRlWGEflpyoJRSOfDvP0V3-F3QhC4k,2056
+aws_codeartifact_poetry/helpers/poetry.py,sha256=8e6RVrTVqnB5cUCoG4AEr5benhRr-LW51Scuw7BYHBo,4244
+aws_codeartifact_poetry-1.2.0.dist-info/entry_points.txt,sha256=I0LnvbCYWqJzpmBGCaM-WSVfsi3MjQIFW9MzKEylNdM,75
+aws_codeartifact_poetry-1.2.0.dist-info/LICENSE,sha256=ub5NkBeOqV_31R1V_kkmGIrFS6HNH1E2O3ZgBoWXoss,1069
+aws_codeartifact_poetry-1.2.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+aws_codeartifact_poetry-1.2.0.dist-info/METADATA,sha256=92SJlLlyLzur5Bv438XaAW4Ty38Rv87iVj1E4OIE95Q,3272
+aws_codeartifact_poetry-1.2.0.dist-info/RECORD,,
