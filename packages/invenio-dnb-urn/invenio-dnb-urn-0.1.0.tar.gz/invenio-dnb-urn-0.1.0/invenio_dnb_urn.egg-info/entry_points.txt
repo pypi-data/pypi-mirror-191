@@ -1,0 +1,8 @@
+[invenio_base.api_apps]
+invenio_dnb_urn = invenio_dnb_urn:InvenioSerializerXMetaDissPlus
+
+[invenio_base.apps]
+invenio_dnb_urn = invenio_dnb_urn:InvenioSerializerXMetaDissPlus
+
+[invenio_i18n.translations]
+invenio_dnb_urn = invenio_dnb_urn
