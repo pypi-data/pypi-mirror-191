@@ -1,0 +1,7 @@
+dependency_resolution/__init__.py,sha256=zLEpkXSW0jjTL1La8XD1jc6-qk7Pvkp_vXJyUbA3FvE,176
+dependency_resolution/auto_wired_cache.py,sha256=PtEM82vKeKl3DDP-0BIyd46JoR81MtVCANvgewyU4Sc,3275
+dependency_resolution/provider_cache.py,sha256=YZUyNr9XqnJ_l6zrVHQR_JVULQ28xcD0LqnvgqDlBBg,935
+dependency_resolution-0.2.0.dist-info/LICENSE,sha256=CRAZLYxRbzH1f5EOzLNu8hKvycyZbYRuR2uqVwL35lA,1069
+dependency_resolution-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dependency_resolution-0.2.0.dist-info/METADATA,sha256=doagBM4GHRWMBU5R5pPiKwKzY__BqiEGYjc1udRcuw4,1506
+dependency_resolution-0.2.0.dist-info/RECORD,,
