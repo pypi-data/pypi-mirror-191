@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "*"
+pyaudio = "~=0.2.12"
+pyserial = "~=3.5"
+pyglet = "~=2.0.4"
+
+[dev-packages]
+sphinx = "*"
+
+[requires]
+python_version = "3.10"
