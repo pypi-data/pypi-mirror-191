@@ -1,0 +1,11 @@
+textrl/__init__.py,sha256=C99lH2Jsxccjoh_zqIMpKz0hM0uYUo8hipGUYiew-G0,132
+textrl/actor.py,sha256=D0xofDweZ2pSinxnj5MF-vDjk15xgR9E3nzRljC0dWw,10865
+textrl/dump.py,sha256=6lqovUpaLofgqmp0c464XRm8ItpBR970QPBqszXMkM4,1140
+textrl/environment.py,sha256=z-kPY-nOUuM130gDTWXdsTChIuQO7cZeOXysFVDZKwo,5980
+textrl/trainer.py,sha256=BaqhBu33xrmVrslGUy3EQON-_jmw3BB2CutxkX1sDbk,7530
+textrl-0.2.10.dist-info/LICENSE,sha256=GnWa8Q9-zIeKLzBIG6cyHzIoF8rrM-XdZhF8thBsKYY,1064
+textrl-0.2.10.dist-info/METADATA,sha256=wqMmOdK0BA4K_ZNYd1Idgqzw4jkOPm08gJn4nfeUPLw,10429
+textrl-0.2.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+textrl-0.2.10.dist-info/entry_points.txt,sha256=suEfq_9Z3inOJWIudQ_8tVHOIuP5wZwank4LZAHYbGY,50
+textrl-0.2.10.dist-info/top_level.txt,sha256=FwmC_VCoI3wk6Oix5GcHgLD756ZL1qqrCoO28eGZ71I,7
+textrl-0.2.10.dist-info/RECORD,,
