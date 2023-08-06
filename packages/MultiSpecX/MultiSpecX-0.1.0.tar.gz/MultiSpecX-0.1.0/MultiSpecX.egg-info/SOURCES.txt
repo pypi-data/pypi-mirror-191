@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+MultiSpecX/__init__.py
+MultiSpecX.egg-info/PKG-INFO
+MultiSpecX.egg-info/SOURCES.txt
+MultiSpecX.egg-info/dependency_links.txt
+MultiSpecX.egg-info/requires.txt
+MultiSpecX.egg-info/top_level.txt
