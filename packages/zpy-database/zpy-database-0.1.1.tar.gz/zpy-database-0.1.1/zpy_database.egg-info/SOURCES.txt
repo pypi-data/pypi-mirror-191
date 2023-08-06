@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+zpy_database/__init__.py
+zpy_database/database.py
+zpy_database.egg-info/PKG-INFO
+zpy_database.egg-info/SOURCES.txt
+zpy_database.egg-info/dependency_links.txt
+zpy_database.egg-info/requires.txt
+zpy_database.egg-info/top_level.txt
