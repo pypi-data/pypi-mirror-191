@@ -1,0 +1,2 @@
+recursive-include labeler *
+recursive-exclude labeler *.pyc
