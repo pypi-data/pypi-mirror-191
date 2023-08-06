@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "simple-spell-checker"
+version = "0.0.2"
+description = "Simple Spell Checker is a spell checker based on prefix tree search. It find nearest to input word from known words (from input list). The algorithm finds mistakes in a word (insertions, deletions, replacements)."
+authors = [ "Tetiana Lytvynenko <lytvynenkotv@gmail.com>", "Denis Shchutskyi <denisshchutskyi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simple_spell_checker"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fuzzy-multi-dict = "^0.0.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
