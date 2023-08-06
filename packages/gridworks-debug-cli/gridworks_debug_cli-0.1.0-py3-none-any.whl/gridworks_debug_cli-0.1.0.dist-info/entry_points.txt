@@ -1,0 +1,4 @@
+[console_scripts]
+gwd=gwdcli.__main__:app
+gwd-events=gwdcli.events.__main__:app
+
