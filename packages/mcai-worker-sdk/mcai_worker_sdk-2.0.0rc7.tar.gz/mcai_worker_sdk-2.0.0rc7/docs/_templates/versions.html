@@ -1,0 +1,19 @@
+{%- if current_version %}
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    <span class="fa fa-book"> Other Versions</span>
+    {{ current_version.name }}
+    <span class="fa fa-caret-down"></span>
+  </span>
+  <div class="rst-other-versions">
+    {%- if versions.tags %}
+    <dl style="display: flex; flex-direction: column;">
+      <dt>Versions</dt>
+      {%- for item in versions.tags | reverse %}
+      <dd style="margin-left: 10px;"><a href="{{ item.url }}">{{ item.name }}</a></dd>
+      {%- endfor %}
+    </dl>
+    {%- endif %}
+  </div>
+</div>
+{%- endif %}
