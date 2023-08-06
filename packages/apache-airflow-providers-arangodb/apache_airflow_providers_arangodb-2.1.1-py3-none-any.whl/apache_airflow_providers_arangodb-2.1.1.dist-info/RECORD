@@ -1,0 +1,17 @@
+airflow/providers/arangodb/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/arangodb/get_provider_info.py,sha256=2sU6Cb8FNpitO69Hw3FL47SAg1yI30B4X5LxHCK1AzM,2309
+airflow/providers/arangodb/example_dags/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/arangodb/example_dags/example_arangodb.py,sha256=RQEFLlsPIZuhyEFgZP5HpFjxnMhp3ClnnXEzQpTFr8Q,2210
+airflow/providers/arangodb/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/arangodb/hooks/arangodb.py,sha256=w2fVjHRTWwoja_zzfAcS45pDFEVc_A272ItbKf5RRiE,5517
+airflow/providers/arangodb/operators/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/arangodb/operators/arangodb.py,sha256=FP9dg7SXl2ogywbZivLZm7hmPKq4_IChTBeHBfmejyI,2402
+airflow/providers/arangodb/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/arangodb/sensors/arangodb.py,sha256=AzHpF4425WH1vxbyttCS4n-eDwKMRLC2DvhaX5Ewjng,2191
+apache_airflow_providers_arangodb-2.1.1.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_providers_arangodb-2.1.1.dist-info/METADATA,sha256=vlaQVJp_LfMopo_q_eM-v7z4FEZ35vY45HJ3oV6Yc50,6283
+apache_airflow_providers_arangodb-2.1.1.dist-info/NOTICE,sha256=m-6s2XynUxVSUIxO4rVablAZCvFq-wmLrqV91DotRBw,240
+apache_airflow_providers_arangodb-2.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+apache_airflow_providers_arangodb-2.1.1.dist-info/entry_points.txt,sha256=GvIwuYszWCMNlXAofI5B0C9adNwo_bJILMkkD_Y8FbA,106
+apache_airflow_providers_arangodb-2.1.1.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_providers_arangodb-2.1.1.dist-info/RECORD,,
