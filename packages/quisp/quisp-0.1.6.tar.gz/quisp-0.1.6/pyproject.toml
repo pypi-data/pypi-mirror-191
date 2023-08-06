@@ -1,0 +1,115 @@
+[build-system]
+requires = [
+    "hatchling>=1.3.1",
+    "jupyterlab==3.*",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "quisp"
+version = "0.1.6"
+description = "A Custom Jupyter Widget Library"
+readme = "README.md"
+license = { file = "LICENSE.txt" }
+requires-python = ">=3.7"
+authors = [
+    { name = "zigen", email = "hrlclb@gmail.com" },
+]
+keywords = [
+    "IPython",
+    "Jupyter",
+    "Widgets",
+]
+classifiers = [
+    "Framework :: Jupyter",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "ipywidgets>=7.0.0",
+    "rich>=10.16.1",
+]
+
+[project.optional-dependencies]
+docs = [
+    "jupyter_sphinx",
+    "nbsphinx",
+    "nbsphinx-link",
+    "pypandoc",
+    "pytest_check_links",
+    "recommonmark",
+    "sphinx>=1.5",
+    "sphinx_rtd_theme",
+]
+examples = []
+test = [
+    "nbval",
+    "pytest-cov",
+    "pytest>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sfc-aqua/quisp.py"
+
+[tool.hatch.build]
+artifacts = [
+    "quisp/nbextension/index.*",
+    "quisp/labextension/*.tgz",
+    "quisp/labextension",
+]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"quisp/nbextension" = "share/jupyter/nbextensions/quisp"
+"quisp/labextension" = "share/jupyter/labextensions/quisp"
+"./install.json" = "share/jupyter/labextensions/quisp/install.json"
+"./quisp.json" = "etc/jupyter/nbconfig/notebook.d/quisp.json"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    ".github",
+]
+
+[tool.hatch.build.hooks.jupyter-builder]
+build-function = "hatch_jupyter_builder.npm_builder"
+ensured-targets = [
+    "quisp/nbextension/index.js",
+    "quisp/labextension/package.json",
+]
+skip-if-exists = [
+    "quisp/nbextension/index.js",
+    "quisp/labextension/package.json",
+]
+dependencies = [
+    "hatch-jupyter-builder>=0.5.0",
+]
+
+[tool.hatch.build.hooks.jupyter-builder.build-kwargs]
+path = "."
+build_cmd = "build:prod"
+
+[tool.tbump]
+field = [
+    { name = "channel", default = "" },
+    { name = "release", default = "" },
+]
+file = [
+    { src = "pyproject.toml", version_template = "version = \"{major}.{minor}.{patch}{channel}{release}\"" },
+    { src = "quisp/_version.py" },
+    { src = "quisp/_frontend.py", search = 'module_version = "{current_version}"' },
+    { src = "package.json", search = '"version": "{current_version}"'}
+]
+
+[tool.tbump.version]
+current = "0.1.6"
+regex = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)((?P<channel>a|b|rc|.dev)(?P<release>\\d+))?"
+
+[tool.tbump.git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
