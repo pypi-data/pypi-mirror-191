@@ -1,0 +1,16 @@
+trame/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/modules/formkit.py,sha256=oCShZu7th_lFXG2M-VL57mcf_rXjxUcF6k35Ip-9j1E,35
+trame/widgets/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+trame/widgets/formkit.py,sha256=dhoXqM4-ZXyvaLF_I8FMwSwifv_RRMMgBeyLrtoeGoY,141
+trame_formkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_formkit/module/__init__.py,sha256=I8P5JlP74yo3nLCZ2pHs-KBK8FEJu1qt__L-pbTn1mU,365
+trame_formkit/module/vue3.py,sha256=DbZAGbfWHY7wGh334zwaZqsLN1SPGOH3kUdn02Zj5HA,296
+trame_formkit/module/serve/formkit.js,sha256=q_OZSNmFCA1Z94zZ5VLor56XvYCeZNNWd2gxWqsCHlc,331006
+trame_formkit/widgets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trame_formkit/widgets/formkit.py,sha256=gE041wtAuXMJ4BdBXUTTM9LlITUVJY-IAYeeJ1QlPFg,2543
+trame_formkit-0.1.0.dist-info/LICENSE,sha256=7dL1WDpiF73LrGXHIYOuJ5QGHutJIjh2CY3ikLWzpqA,1070
+trame_formkit-0.1.0.dist-info/METADATA,sha256=HfVi85P_CVAL4nHqJi9WhLybKdAWZbP0jEmXDiItj3s,902
+trame_formkit-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+trame_formkit-0.1.0.dist-info/top_level.txt,sha256=kK37O5xdAq_lxcktnCldPGhCcmUVPUq17PnTbLFxhoY,20
+trame_formkit-0.1.0.dist-info/RECORD,,
