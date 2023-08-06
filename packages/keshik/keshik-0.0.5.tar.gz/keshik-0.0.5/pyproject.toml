@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keshik"
+version = "0.0.5"
+authors = [
+  { name="Rafat Ashraf Joy", email="rafat.joy99@gmail.com" },
+]
+description = "A package which lets users oversample class imbalanced(binary) data by Denoising Diffusion Probabilistic Model (DDPM)."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "torch",
+    "numpy",
+    "tqdm",
+    "pandas",
+    "scikit-learn",
+    "pathlib"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rajoy99/keshik"
+"Bug Tracker" = "https://github.com/rajoy99/keshik/issues"
+
+
