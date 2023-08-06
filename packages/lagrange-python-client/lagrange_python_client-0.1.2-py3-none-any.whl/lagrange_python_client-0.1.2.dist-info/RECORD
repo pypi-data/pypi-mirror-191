@@ -1,0 +1,15 @@
+lagrange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/lagrange_client.py,sha256=1sh00JvEba6f-8UiYCqQX5XPGATUaHvVvP1axbVw_b0,1236
+lagrange/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/api/dataset.py,sha256=_RUryzVyYUeGcP1AoEKK9nqBBpBK4Iz8Lez1n8ddCWE,265
+lagrange/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/common/dataset.py,sha256=WKzz9oYDwd3HjyoRhsYbXNqUvq9ekBvGH3AeW33cCHk,666
+lagrange/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_datasets.py,sha256=Tgq-DTGi8UM11RlOKBgtZ9L3Ai2Q1dOCVj7VF9lh650,375
+lagrange_python_client-0.1.2.dist-info/LICENCE,sha256=bo3mnHLYWtCr4OUL5XF4wOogvcTcrzLGYpXpMfSrVY4,1070
+lagrange_python_client-0.1.2.dist-info/METADATA,sha256=CLi82HrwN3J8kb2CuT0BX-zHazKI4JT-LlNoZ2mQ7KE,736
+lagrange_python_client-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lagrange_python_client-0.1.2.dist-info/top_level.txt,sha256=ybFCGXgvmlwjS4x9k5ZIA3NhKsQAI3o18rdllIcjbHo,15
+lagrange_python_client-0.1.2.dist-info/RECORD,,
