@@ -1,0 +1,10 @@
+surfy/__init__.py,sha256=TAVlAtJUmOQi-E3mtPPWtEx8Ck4Rrf2Uh_q_DTPdOTo,89
+surfy/__main__.py,sha256=sFKf0Vkj0YipV7z4vMrrN5YsmZYifvMRrZ4VxuZY8RY,72
+surfy/surfy.py,sha256=bf61AgUYv6ZeknOyVOKpep9VeJy_MJZb1u0WE_IwAUI,268
+surfy/sqlite/__init__.py,sha256=SRey6vh3PGGR0ehI36y0Jrbo3fBeB6Cj3c3jtEHCWCU,59
+surfy/sqlite/__main__.py,sha256=bV0mkCflPpllywatcCaLbjQAdvzUmqCBabikoRjwu_o,76
+surfy/sqlite/db.py,sha256=Vyu4AkavawiAW2SK0SkyC-gO3D0QRtnb36eBwqywfpM,4318
+surfy-1.0.1.dist-info/METADATA,sha256=uJPtpSBLRs9kc0M3bVzZG8s2otsI73bv-hG4XkdYAhM,912
+surfy-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+surfy-1.0.1.dist-info/top_level.txt,sha256=eH9y4EClHj60CETIcf_ihYP1ZTlI_ldyYu5ECNDjfNM,6
+surfy-1.0.1.dist-info/RECORD,,
