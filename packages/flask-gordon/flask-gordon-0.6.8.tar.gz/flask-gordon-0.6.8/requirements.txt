@@ -1,0 +1,5 @@
+# vim: ft=conf
+flask
+# flask_gordon.ext.argparse
+pyyaml
+torxtools
