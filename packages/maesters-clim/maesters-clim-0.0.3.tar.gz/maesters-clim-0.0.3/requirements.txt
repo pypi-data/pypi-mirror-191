@@ -1,0 +1,6 @@
+toml
+requests
+pandas
+numpy
+beautifulsoup4
+retrying
