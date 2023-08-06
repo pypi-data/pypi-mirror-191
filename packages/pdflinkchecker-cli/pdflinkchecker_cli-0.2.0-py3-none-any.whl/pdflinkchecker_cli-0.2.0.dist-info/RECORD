@@ -1,0 +1,9 @@
+pdflinkchecker_cli/__init__.py,sha256=7XUL_4yJ8R9T9JBA22eV-MGacZjYUxUyXPlYVzgI9Xk,26
+pdflinkchecker_cli/__version__.py,sha256=zpHIM4v-sIMttitw4o_oPc-eiqXwmlmmcSwU6b3-XYw,63
+pdflinkchecker_cli/pdfchecker.py,sha256=Tta_t_FrLliEGgcO9XgEje-qPhYJpJ8CXQ7YnI1ttdE,3981
+pdflinkchecker_cli-0.2.0.dist-info/LICENSE,sha256=eDO9Jic18b-sAibfB-NATTXwVCyadEqadRokf_DVI7A,1100
+pdflinkchecker_cli-0.2.0.dist-info/METADATA,sha256=hOZTT3sRWlFnX9HMNMmg0tdD8C2Nv-P5yNB0gQ2Ts7s,3084
+pdflinkchecker_cli-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pdflinkchecker_cli-0.2.0.dist-info/entry_points.txt,sha256=Fn1TnnJT6K7sTFKkravqkYYVitBMJlC2Edydgz97SI4,60
+pdflinkchecker_cli-0.2.0.dist-info/top_level.txt,sha256=SXodkYQEVaBkxvSVlPgnu0L-vcpdOQ7w6eP5bv2yNCk,19
+pdflinkchecker_cli-0.2.0.dist-info/RECORD,,
