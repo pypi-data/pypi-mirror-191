@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pymaskmx
+Version: 0.0.0
+Summary: Configuration of tracking simulations for the LHC and other accelerators
+Home-page: https://github.com/xsuite/pymaskmx/issues
+Download-URL: https://pypi.python.org/pypi/pymaskmx
+Author: G. Iadarola et al.
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/xsuite/pymaskmx/issues
+Project-URL: Source Code, https://github.com/xsuite/pymaskmx/
+Provides-Extra: tests
+License-File: LICENSE
+
+Configuration of tracking simulations for the LHC and other accelerator

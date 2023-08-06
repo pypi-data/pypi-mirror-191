@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+pyproject.toml
+setup.py
+pymaskmx/__init__.py
+pymaskmx/_version.py
+pymaskmx.egg-info/PKG-INFO
+pymaskmx.egg-info/SOURCES.txt
+pymaskmx.egg-info/dependency_links.txt
+pymaskmx.egg-info/requires.txt
+pymaskmx.egg-info/top_level.txt
