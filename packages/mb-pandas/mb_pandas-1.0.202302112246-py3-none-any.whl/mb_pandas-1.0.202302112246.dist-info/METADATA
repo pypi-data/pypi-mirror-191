@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mb-pandas
+Version: 1.0.202302112246
+Summary: Basic Pandas functions package
+Home-page: UNKNOWN
+Author: ['Malav Bateriwala']
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: colorama
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
