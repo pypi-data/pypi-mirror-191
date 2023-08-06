@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+prettypy/__init__.py
+prettypy/composer.py
+prettypy/layout.py
+prettypy/pretty.py
+prettypy/style.py
+prettypy.egg-info/PKG-INFO
+prettypy.egg-info/SOURCES.txt
+prettypy.egg-info/dependency_links.txt
+prettypy.egg-info/top_level.txt
