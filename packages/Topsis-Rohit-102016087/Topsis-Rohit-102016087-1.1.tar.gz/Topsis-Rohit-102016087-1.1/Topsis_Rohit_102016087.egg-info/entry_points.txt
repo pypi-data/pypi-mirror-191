@@ -1,0 +1,3 @@
+[console_scripts]
+topsis = Topsis_Rohit_102016087.102016087:main
+
