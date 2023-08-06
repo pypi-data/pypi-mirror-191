@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Oracle4Grid
+Version: 1.0.6
+Summary: Oracle agent that finds the best course of actions aposteriori, within a given perimeter of actions
+Home-page: https://github.com/marota/Oracle4Grid/
+Download-URL: https://github.com/marota/Oracle4Grid/archive/refs/tags/1.0.4.tar.gz
+Author: Nicolas Megel, Mario Jothy, Antoine Marot
+Author-email: nico.megel@gmail.com, mariojothy@gmail.com, antoine-marot@live.fr
+License: Mozilla Public License 2.0 (MPL 2.0)
+Keywords: ML powergrid optmization RL power-systems
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE.md
+Requires-Dist: grid2op (>=1.6.4)
+Requires-Dist: lightsim2grid (>=0.5.5)
+Requires-Dist: pandas (>=1.2.4)
+Requires-Dist: psutil (>=5.7.2)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: pybind11 (>=2.5.0)
+Requires-Dist: ipykernel (>=5.3.4)
+Requires-Dist: ipywidgets (>=7.5.1)
+Requires-Dist: numpy (>=1.19.3)
+Requires-Dist: pytest (>=6.2.2)
+Requires-Dist: lightsim2grid (>=0.6.0)
+Requires-Dist: scipy (<=1.6.0)
+
