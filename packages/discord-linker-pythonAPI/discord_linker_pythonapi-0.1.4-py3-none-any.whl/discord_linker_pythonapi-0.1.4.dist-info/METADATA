@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: discord-linker-pythonAPI
+Version: 0.1.4
+Summary: This is the python API for a wordpress plugin that allows linking discord into your website
+Project-URL: Homepage, https://github.com/Vbrawl/discord-linker-pythonAPI
+Project-URL: Bug Tracker, https://github.com/Vbrawl/discord-linker-pythonAPI/issues
+Project-URL: Documentation, https://vbrawl.github.io/discord-linker-pythonAPI/
+Author-email: Vbrawl <konstantosjim@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Description
+This package allows python to communicate with a wordpress plugin "discord-linker" that allows you to link discord with wordpress.
+
+This api is used to create discord bots that can communicate with the website and perform actions on behalf of the discord users.
+
+# Requirements
+* requests => ```pip install requests```
+
+# Installation
+```
+pip install discord-linker-pythonAPI
+```
+
+# Usage
+```
+from discord_linker_pythonAPI.wordpress_client import WP_Client
+
+wpclient = WP_Client("<URL>", "<Username>", "<Application Password>")
+```
+
+
+# Links
+* **Documentation**: https://vbrawl.github.io/discord-linker-pythonAPI/
+* **PyPi**: https://pypi.org/project/discord-linker-pythonAPI/
