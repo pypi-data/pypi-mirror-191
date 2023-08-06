@@ -1,0 +1,2 @@
+[indico.plugins]
+sso_group_mapping = indico_sso_group_mapping.plugin:SSOGroupMappingPlugin
