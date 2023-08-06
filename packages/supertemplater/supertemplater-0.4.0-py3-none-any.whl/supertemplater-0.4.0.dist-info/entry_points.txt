@@ -1,0 +1,3 @@
+[console_scripts]
+supertemplater=supertemplater.cli:main
+
