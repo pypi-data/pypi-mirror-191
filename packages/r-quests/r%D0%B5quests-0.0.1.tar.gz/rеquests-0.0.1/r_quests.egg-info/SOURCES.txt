@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+r_quests.egg-info/PKG-INFO
+r_quests.egg-info/SOURCES.txt
+r_quests.egg-info/dependency_links.txt
+r_quests.egg-info/top_level.txt
+rеquests/__init__.py
+rеquests/uro.py
