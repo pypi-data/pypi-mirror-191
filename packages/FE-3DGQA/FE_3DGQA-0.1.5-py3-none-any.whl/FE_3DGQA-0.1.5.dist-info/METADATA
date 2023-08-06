@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: FE-3DGQA
+Version: 0.1.5
+Summary: 3DJCG Models
+Home-page: https://github.com/buaacoder/FE-3DGQA
+Download-URL: https://github.com/buaacoder/FE-3DGQA/tags
+Author: Zhen Wang
+Author-email: 1440475233@qq.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: aiofiles
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: python-multipart
+Requires-Dist: plyfile
+Requires-Dist: opencv-python
+Requires-Dist: trimesh (==2.35.39)
+Requires-Dist: tensorboardX
+Requires-Dist: easydict
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+
+# 3DJCG-3Dvisual-question-answering
