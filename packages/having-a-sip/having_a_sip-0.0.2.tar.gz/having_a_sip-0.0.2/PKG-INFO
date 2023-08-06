@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: having_a_sip
+Version: 0.0.2
+Summary: Contain common Python functions to help you have a sip instead of rebuilding them.
+Home-page: https://github.com/vkhanhqui/having-a-sip
+Author: Steve
+Author-email: vkhanhqui@gmail.com
+Project-URL: Documentation, https://having-a-sip.readthedocs.io/en/latest
+Project-URL: Bug Reports, https://github.com/vkhanhqui/having-a-sip/issues/new
+Project-URL: Source Code, https://github.com/vkhanhqui/having-a-sip
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Having a sip
+Contain common Python functions to help you have a sip instead of rebuilding them.
+
+
+## Features
+For more information, refer to the [documentation](https://having-a-sip.readthedocs.io/en/latest)
+
+## Installation
+The following command installs [Having a sip](https://pypi.org/project/having-a-sip) from the Python Package Index. You will need a working installation of Python and pip.
+```
+pip install having-a-sip
+```
+
