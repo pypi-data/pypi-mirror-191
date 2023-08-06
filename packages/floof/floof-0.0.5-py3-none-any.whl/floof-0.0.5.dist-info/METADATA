@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: floof
+Version: 0.0.5
+Summary: A library for fuzzymatching
+Home-page: https://github.com/CangyuanLi/floof
+Author: Cangyuan Li
+Author-email: everest229@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: jarowinkler
+Requires-Dist: jellyfish
+Requires-Dist: Levenshtein
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: sklearn
+Requires-Dist: thefuzz[speedup]
+Requires-Dist: tqdm
+
