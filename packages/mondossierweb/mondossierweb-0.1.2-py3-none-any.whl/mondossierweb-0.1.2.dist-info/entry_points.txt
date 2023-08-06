@@ -1,0 +1,3 @@
+[console_scripts]
+mondossierweb=mondossierweb.main:main
+
