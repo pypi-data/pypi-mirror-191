@@ -1,0 +1,2 @@
+[console_scripts]
+zipind = zipind.cli:cli_group
