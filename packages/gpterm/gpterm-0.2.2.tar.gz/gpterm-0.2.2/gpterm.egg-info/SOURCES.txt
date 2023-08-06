@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+gpterm/__init__.py
+gpterm/config.py
+gpterm/enums.py
+gpterm/gpterm.py
+gpterm/shell.py
+gpterm.egg-info/PKG-INFO
+gpterm.egg-info/SOURCES.txt
+gpterm.egg-info/dependency_links.txt
+gpterm.egg-info/entry_points.txt
+gpterm.egg-info/requires.txt
+gpterm.egg-info/top_level.txt
