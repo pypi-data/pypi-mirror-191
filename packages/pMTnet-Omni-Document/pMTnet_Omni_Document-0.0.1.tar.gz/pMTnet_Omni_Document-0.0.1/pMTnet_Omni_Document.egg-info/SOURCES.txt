@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pMTnet_Omni_Document/__init__.py
+pMTnet_Omni_Document/__main__.py
+pMTnet_Omni_Document/data_curation.py
+pMTnet_Omni_Document.egg-info/PKG-INFO
+pMTnet_Omni_Document.egg-info/SOURCES.txt
+pMTnet_Omni_Document.egg-info/dependency_links.txt
+pMTnet_Omni_Document.egg-info/requires.txt
+pMTnet_Omni_Document.egg-info/top_level.txt
