@@ -1,0 +1,7 @@
+{
+  "NotebookApp": {
+    "nbserver_extensions": {
+      "tvb_ext_bucket": true
+    }
+  }
+}
