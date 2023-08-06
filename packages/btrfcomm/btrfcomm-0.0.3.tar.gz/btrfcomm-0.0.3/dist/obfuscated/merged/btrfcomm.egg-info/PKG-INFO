@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: btrfcomm
+Version: 0.0.3
+Summary: Bluetooth RFCOMM Utilities
+Home-page: https://pypi.org/project/btrfcomm
+Author: Cibo
+Author-email: cibo@bio-electric.com
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Wireless Controller
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# btrfcomm
+
+Currently, btrfcomm is neither an open source software or the GNU defined free software.
