@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mitmproxy2swagger"
+version = "0.8.0"
+description = ""
+authors = ["alufers <alufers@wp.pl>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mitmproxy = "^9.0.1"
+"ruamel.yaml" = "^0.17.21"
+json-stream = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mitmproxy2swagger = 'mitmproxy2swagger.mitmproxy2swagger:main'
