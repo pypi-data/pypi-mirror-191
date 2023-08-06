@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: labelcsv
+Version: 0.1.1
+Summary: Label a csv file directly in your terminal.
+Author: jtheol
+Author-email: 
+Keywords: python,dataset,label,csv,text,classification
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pandas
+Requires-Dist: inquirerpy
+Requires-Dist: colorama
+Requires-Dist: plotext
+
+   A simple python package to quickly label csv files.
+
+Installation
+============
+
+.. code:: console
+
+   pip install labelcsv
+
+Usage
+=====
+
+1. Navigate to a directory that contains one or more csv files and run
+   labelcsv.
+
+.. code:: console
+
+   labelcsv 
+
+2. Select the csv file to start labeling
+
+.. code:: console
+
+   Select file:
+   > movie_reviews.csv
+   iris.csv
+
+3. Choose the column in the csv file to label. The number next to each
+   column shows the number of missing values for that column.
+
+.. code:: console
+
+   Select column to label from movie_reviews.csv (Rows: 150, Columns: 2):
+   Movie Description → (0)
+   > Movie Reviews → (5)
+
+4. Add labels that are separated by a single space. A **Skip** label
+   will automatically be added which will replace the label with a blank
+   value.
+
+.. code:: console
+
+   Add labels separated by a space:
+
+   Positive Negative Neutral
+
+5. Start labeling by using the **UP** and **DOWN** arrow keys to select
+   the label and then hit **ENTER** to label the row:
+
+.. code:: console
+
+   > Remaining Movie Reviews to be labeled: 150 - Skipped: 0
+
+   ? I like the movie.
+   > Positive
+   Negative
+   Skip
+
+6. After you are done labeling, the file will be saved as:
+   “feature_name.csv” and the distribution of labels will show.
