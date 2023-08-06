@@ -1,0 +1,27 @@
+[tool.pytest.ini_options]
+addopts = "-s --disable-pytest-warnings"
+
+[tool.coverage.run]
+source = ["the_spymaster_util"]
+
+[tool.ruff]
+line-length = 120
+select = ["B", "C", "E", "F", "W"]
+ignore = []
+exclude = ["local", ".deployment"]
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+skip = ["__init__.py", ".deployment/"]
+
+[tool.mypy]
+ignore_missing_imports = true
+exclude = ["local/", ".deployment/", "dist/", "build/"]
+
+[tool.pylint]
+max-line-length = 120
+disable = ["C0114", "C0115", "C0116", "R0903", "R0902", "R0913", "W0703", "W1203"]
+extension-pkg-allow-list = ["pydantic"]
