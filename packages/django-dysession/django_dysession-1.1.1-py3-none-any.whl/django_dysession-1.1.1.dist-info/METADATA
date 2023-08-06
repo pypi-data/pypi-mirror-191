@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: django-dysession
+Version: 1.1.1
+Summary: "django-dysession is a django extension which integrated AWS DynamoDB as a session backend"
+Home-page: https://github.com/MissterHao/django-dysession/releases/latest/download/django-dysession.tar.gz
+Download-URL: https://github.com/MissterHao/django-dysession/releases/latest/download/django-dysession.tar.gz
+Author: "Hao-Wei, Li"
+Author-email: "henryliking@gmail.com"
+Maintainer: "MissterHao"
+Maintainer-email: "henryliking@gmail.com"
+License: MIT
+Keywords: "django,session,aws,dynamodb"
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Topic :: Security
+Classifier: Topic :: Database
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django (>=3.2)
+Requires-Dist: boto3 (>=1.26.59)
+
+<div align="center">
+<h1>django-dysession</h1>
+<p>django-dysession is a django extension by using AWS DynamoDB as a session backend</p>
+<img src="asset/banner.png" alt="django-dysession" width="640" height="320" />
+<!-- <img src="https://socialify.git.ci/MissterHao/django-dysession/image?description=1&font=Source%20Code%20Pro&language=1&name=1&owner=1&pattern=Plus&stargazers=1&theme=Light" alt="django-dysession" width="640" height="320" /> -->
+
+<p align="center" >
+<!-- First line -->
+<a href="https://codecov.io/gh/MissterHao/django-dysession" style="margin-right: 8px;">
+<img src="https://img.shields.io/codecov/c/gh/MissterHao/django-dysession?style=for-the-badge&token=M0U87NR9KI&logo=Codecov" alt="codecov" />
+</a>
+<a href="https://github.com/MissterHao/django-dysession">
+<img src="https://img.shields.io/pypi/pyversions/django-dysession?style=for-the-badge&logo=Python" alt="Supported Python version badge" >
+</a>
+<br>
+<!-- Second line -->
+<a href="https://github.com/MissterHao/django-dysession" style="margin-right: 8px;">
+<img src="https://img.shields.io/github/issues/MissterHao/django-dysession?style=for-the-badge" alt="Github Issue badge" />
+</a>
+<a href="https://github.com/MissterHao/django-dysession" style="margin-right: 8px;">
+<img src="https://img.shields.io/github/license/MissterHao/django-dysession?style=for-the-badge" alt="Lience badge" />
+</a>
+<a href="https://github.com/MissterHao/django-dysession" style="margin-right: 8px;">
+<img src="https://img.shields.io/pypi/dm/django-dysession?logo=python&style=for-the-badge" alt="Downloads badge" />
+</a>
+<br>
+</p>
+</div>
+
+
+## What is a django-dysession?
+
+Django-dysession is a simple and easy-to-use app which allow Django developers to take DyanmoDB as Session Backend Database.
+
+DynamoDB is Fast, flexible NoSQL database service for single-digit millisecond performance at any scale.
+
+Using DynamoDB for session storage alleviates issues that occur with session handling in a distributed web application by moving sessions off of the local file system and into a shared location. [[1]]
+
++ Easy to use! All you need is add **2 lines** of Code!
++ Support **TTL(Time to Live) attribute**
+  Django's default session won't delete expired session data.
+  By using DynamoDB, we can take advantage of DynamoDB's ttl attrubute to auto delete expired session data.
++ No more effort to maintain and autoscale your session database ( Taking advantage of AWS serverless service! )
++ Provide beautiful, clearful and colorful error log
+
+
+## Requirements
+**django-dysession** use [boto3](https://aws.amazon.com/tw/sdk-for-python/) to interact with AWS DynamoDB.
+Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like **DynamoDB**.
+
++ Django >= 3.2
++ boto3 >= 1.26.59
+
+## Installation
+
+Install from PyPI ( or manually download from [PyPI](https://pypi.org/project/django-dysession/#files) ):
+```bash
+pip install -U django-dysession
+```
+
+## Getting Started
+First of all, add `dysession` into `INSTALLED_APPS` in settings.py.
+Change `SESSION_ENGINE` to `dysession.backends.db` in order use our SessionStore.
+```python
+INSTALLED_APPS = [
+    ...
+    "dysession", # add dysession to installed apps
+    # 'django.contrib.sessions', # remove this default session
+    ...
+]
+
+SESSION_ENGINE = "dysession.backends.db"
+```
+
+Second, we need to create a DynamoDB to store session data which's name is `sessions` as default.
+Run the commands bellow in cmd.
+```bash
+python manage.py dysession_init
+```
+
+Then, we can enjoy it now!
+```python
+from django.http import HttpResponse
+
+def mainpage(request):
+    request.session["is_admin"] = True
+    request.session["bottle_of_milks"] = 20
+    request.session["planet_have_been_to"] = ["Earth", "Jupiter", "Saturn"]
+
+    return HttpResponse("Ayyy")
+```
+
+Enjoy!
+
+![](asset/dynamodb-real-demo-image.png)
+
+
+## Django Commands
+
+django-dysession offer two commands for developers:
++ dysession_destory: Destory DynamoDB Table ( Will delete whole data of the table )
++ dysession_init: Create DyanmoDB Table
+
+```bash
+python manage.py --help
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[dysession]
+    dysession_destory
+    dysession_init
+```
+
+## Settings
+
+This section outlines all the settings and configurations that you can put in Django's settings.py to adjust `dysession`'s behavior.
+
+You can overwrite any value in `DYSESSION` or just ignore it to use the default value!
+```python
+DYSESSION = {
+    "DYNAMODB_TABLENAME": "sessions",
+    "PARTITION_KEY_NAME": "PK",
+    "SORT_KEY_NAME": "SK",
+    "TTL_ATTRIBUTE_NAME": "ttl",
+    "CACHE_PERIOD": 3600,
+    "DYNAMODB_REGION": "ap-northeast-1",
+    "LOGGING": {
+        "TYPE": "CONSOLE",
+    },
+}
+```
+
+| Argument             | Default        | Description                                                                                                                                                                                                                                               |
+|----------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DYNAMODB_TABLENAME   | sessions       | DynamoDB table name                                                                                                                                                                                                                                       |
+| PARTITION_KEY_NAME   | PK             | Partition key name                                                                                                                                                                                                                                        |
+| TTL_ATTRIBUTE_NAME   | ttl            | Time to live attribute name                                                                                                                                                                                                                               |
+| CACHE_PERIOD         | 3600           | Define how long should be the cache live in DynamoDB's table                                                                                                                                                                                              |
+| DYNAMODB_REGION      | ap-northeast-1 | The region of the DynamoDB table                                                                                                                                                                                                                          |
+| LOGGING              | Dict           | Configuration of Logging                                                                                                                                                                                                                                  |
+| LOGGING["TYPE"]      | CONSOLE        | Only accept two kinds of parameters: `CONSOLE`, `FILE`. If this set to `CONSOLE`, django-dysession will use `StreamHandler` to stream to the console. If this set to `FILE`, django-dysession will use `FileHandler` to stream to `LOGGING["FILE_PATH"]`. |
+| LOGGING["FILE_PATH"] | session.log    | Optional. Only use this configuration when LOGGING["TYPE"] is set to `FILE`. The file path to save logs of session managements.                                                                                                                           |
+
+
+## Logging
+
+Django-Dysession support three kinds of logging.
+
+1. Colorful TTY-based Console Log
+
+   Support colorful and beautiful log when django-dysession interacting with AWS Dysession.
+   ![](/asset/dysession-beautiful-error-log-example.png)
+2. Default logging stream
+
+   Django-Dysession use python core library `logging.StreamHandler`
+3. Default File Stream
+
+   Django-Dysession use python core library `logging.FileHandler`
+
