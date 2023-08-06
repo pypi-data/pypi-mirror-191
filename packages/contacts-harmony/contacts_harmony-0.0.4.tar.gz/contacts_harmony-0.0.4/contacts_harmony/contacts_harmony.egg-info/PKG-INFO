@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: contacts-harmony
+Version: 0.0.4
+Summary: A Python library to normalize and validate email addresses and phone numbers entered into web forms.
+Home-page: https://github.com/TheHenryWills/contacts_harmony/tree/main/contacts_harmony
+Author: Henry Wills
+Author-email: henry@debutwith.com
+Project-URL: Documentation , https://contacts-harmony.readthedocs.io/
+Project-URL: Source Code, https://github.com/TheHenryWills/contacts_harmony/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# contacts_harmony [![PyPI version](https://badge.fury.io/py/contacts_harmony.svg)](https://badge.fury.io/py/contacts_harmony) [![Documentation Status](https://readthedocs.org/projects/contacts-harmony/badge/?version=latest)](https://contacts-harmony.readthedocs.io/en/latest/?badge=latest) ![GitHub](https://img.shields.io/github/license/TheHenryWills/contacts_harmony)
+A Python library to normalize and validate email addresses and phone numbers entered into web forms.
+
+
+
+
+## Email Address 
+## Phone Number 
+## License
+Copyright © 2023 Henry Wills
+
+Licensed under the MIT license.

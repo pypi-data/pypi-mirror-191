@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+contacts_harmony/contacts_harmony.egg-info/PKG-INFO
+contacts_harmony/contacts_harmony.egg-info/SOURCES.txt
+contacts_harmony/contacts_harmony.egg-info/dependency_links.txt
+contacts_harmony/contacts_harmony.egg-info/top_level.txt
