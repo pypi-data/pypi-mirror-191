@@ -1,0 +1,9 @@
+plunetapi>=0.2
+pydantic>=1.10
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
