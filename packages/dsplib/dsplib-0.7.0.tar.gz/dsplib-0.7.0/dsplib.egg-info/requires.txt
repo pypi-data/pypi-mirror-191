@@ -1,0 +1,6 @@
+numpy>=1.15.0
+
+[dev]
+bumpver
+pre-commit
+pytest
