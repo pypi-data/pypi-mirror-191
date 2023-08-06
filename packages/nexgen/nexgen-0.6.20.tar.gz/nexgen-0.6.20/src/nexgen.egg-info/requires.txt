@@ -1,0 +1,8 @@
+freephil
+h5py
+hdf5plugin>=4.0.1
+numpy
+pint
+importlib_resources>=1.1
+scanspec
+dataclasses-json
