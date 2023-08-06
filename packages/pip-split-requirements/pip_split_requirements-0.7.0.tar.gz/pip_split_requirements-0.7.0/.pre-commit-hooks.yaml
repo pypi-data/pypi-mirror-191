@@ -1,0 +1,8 @@
+- id: pip-split-requirements
+  name: pip-split-requirements
+  description: "Split pip requirements"
+  entry: pip-split-requirements
+  language: python
+  require_serial: true
+  files: ^(pyproject.toml|.pre-commit-config.yaml|.*requirement.*\.txt)$
+  pass_filenames: false
