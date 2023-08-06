@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- views -->
+        <record model="ir.ui.view" id="book_view_list">
+            <field name="model">cashbook.book</field>
+            <field name="inherit" ref="cashbook.book_view_list"/>
+            <field name="name">book_list</field>
+        </record>
+        <record model="ir.ui.view" id="book_view_form">
+            <field name="model">cashbook.book</field>
+            <field name="inherit" ref="cashbook.book_view_form"/>
+            <field name="name">book_form</field>
+        </record>
+
+        <!-- field permission: account -->
+        <record model="ir.model.field.access" id="fa_book-account-anon">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'account')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-account-group_cashbook_admin">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'account')]"/>
+            <field name="group" ref="cashbook.group_cashbook_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-account-group_cashbook">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'account')]"/>
+            <field name="group" ref="cashbook.group_cashbook"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+        <!-- field permission: party_account -->
+        <record model="ir.model.field.access" id="fa_book-party_account-anon">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'party_account')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-party_account-group_cashbook_admin">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'party_account')]"/>
+            <field name="group" ref="cashbook.group_cashbook_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-party_account-group_cashbook">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'party_account')]"/>
+            <field name="group" ref="cashbook.group_cashbook"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+        <!-- field permission: journal -->
+        <record model="ir.model.field.access" id="fa_book-journal-anon">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'journal')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-journal-group_cashbook_admin">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'journal')]"/>
+            <field name="group" ref="cashbook.group_cashbook_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+        </record>
+        <record model="ir.model.field.access" id="fa_book-journal-group_cashbook">
+            <field name="field"
+                search="[('model.model', '=', 'cashbook.book'), ('name', '=', 'journal')]"/>
+            <field name="group" ref="cashbook.group_cashbook"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+        </record>
+
+    </data>
+</tryton>
