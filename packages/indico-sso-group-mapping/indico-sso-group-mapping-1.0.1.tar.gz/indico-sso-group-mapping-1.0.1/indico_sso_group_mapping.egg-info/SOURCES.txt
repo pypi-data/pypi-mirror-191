@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+indico_sso_group_mapping/__init__.py
+indico_sso_group_mapping/plugin.py
+indico_sso_group_mapping/task.py
+indico_sso_group_mapping.egg-info/PKG-INFO
+indico_sso_group_mapping.egg-info/SOURCES.txt
+indico_sso_group_mapping.egg-info/dependency_links.txt
+indico_sso_group_mapping.egg-info/entry_points.txt
+indico_sso_group_mapping.egg-info/not-zip-safe
+indico_sso_group_mapping.egg-info/requires.txt
+indico_sso_group_mapping.egg-info/top_level.txt
