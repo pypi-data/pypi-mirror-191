@@ -1,0 +1,8 @@
+pip_change_repo/__init__.py,sha256=BROM3eHoVDgbBAMwU3ysQfi2whA7TE3ZveX7x6_I4Bw,32
+pip_change_repo/__main__.py,sha256=2ywSvjejlwzXs0CMIR06n34IR8gSZURlMjzp2pWYe4c,47
+pip_change_repo/_cli.py,sha256=kFDxsIrN18zHjQNknQi-fO6AIp_rt6lTvJkWwR5KknA,508
+pip_change_repo-0.0.1.dist-info/METADATA,sha256=z8RCVpRS-2IU3pWzGT6-JLXVvgIv_AQ6FWrrSZ_2MNY,568
+pip_change_repo-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pip_change_repo-0.0.1.dist-info/entry_points.txt,sha256=r88IiUeouBbRlj2-T4lvTDDCnxf8KivM3_8LnKrGhCM,62
+pip_change_repo-0.0.1.dist-info/top_level.txt,sha256=gB3PqEOgN0zTYCZzrspi-uIwL1GRJpscphlNgi9oFuw,16
+pip_change_repo-0.0.1.dist-info/RECORD,,

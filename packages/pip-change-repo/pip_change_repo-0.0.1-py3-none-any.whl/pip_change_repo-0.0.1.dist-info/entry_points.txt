@@ -1,0 +1,2 @@
+[console_scripts]
+pip-change-repo = pip_change_repo._cli:main

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pip-change-repo
+Version: 0.0.1
+Summary: Redirecting Base URL of the Python Package Index to Mirrors
+Author-email: "xiaojian.liang" <wakeam@outlook.com>
+Project-URL: Homepage, https://gitee.com/siogian/pip-change-repo
+Project-URL: Bug Tracker, https://gitee.com/siogian/pip-change-repo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: inquirer
+
