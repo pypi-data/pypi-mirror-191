@@ -1,0 +1,5 @@
+six
+requests
+setuptools
+yk-utils<2,>=1.1.4
+yk-bit-api-model<2,>=1.3.3
