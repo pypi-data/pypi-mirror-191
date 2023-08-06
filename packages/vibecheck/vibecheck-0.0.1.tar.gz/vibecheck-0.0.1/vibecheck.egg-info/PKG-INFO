@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vibecheck
+Version: 0.0.1
+Summary: vibecheck is a Python library for getting hyperlocal feedback from notebook users.
+Home-page: https://github.com/KordingLab/vibecheck/tarball/0.0.1
+Author: Jordan Matelsky
+Author-email: opensource@matelsky.com
+License: Apache 2.0
+Keywords: datatops,serverless,jupyter,notebook
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# jupyter-vibecheck
+
+A Jupyter Widget to get atomic feedback as a student progresses through a didactic jupyter notebook.
+
+<img width="1164" alt="image" src="https://user-images.githubusercontent.com/693511/215613608-4746b8ed-77ff-4696-9f92-3ba720448a8f.png">
+
+
