@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "ms_graph_client"
+# NickC - This will always be out of date.  CI modifies this dynamically
+version = "0.1.8"
+description = "Provides a python wrapper around the Microsoft Graph API.  Current SDKs from Microsoft are in Preview mode."
+authors = ["Nick Carpenter"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/carpnick/ms_graph_client"
+
+include = ["src/ms_graph_client/*.pyi"]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+requests = "^2.28.0"
+cachetools = "^5.0.0"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+mypy = "^0.991"
+flake8 = "^6.0.0"
+black = "^22.12.0"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+types-requests = "^2.28.11"
+types-cachetools = "^5.2.1"
+
+#Integration test classes
+boto3 = "^1.26.63"
