@@ -1,0 +1,13 @@
+ConservedWaterSearch/__init__.py,sha256=DORrcET92bDOAQ9Y9TH2atqmGKjpHEeYH3RS65fuNXQ,93
+ConservedWaterSearch/hydrogen_orientation.py,sha256=2VIC5j4jzwleWRZLp_EsjNdU-08ZAdHb_yc10bEoN9M,44616
+ConservedWaterSearch/utils.py,sha256=PQZB2fbtk4Q4x5kxVRwWrhSYpYQ7OaHRdffDkPDN0Eg,21152
+ConservedWaterSearch/water_clustering.py,sha256=Xwx4h3eLzgE_Gk7lPEqF43YWksJ5D1aak84cBq-DmtU,54161
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_hydrogen_orientation.py,sha256=jjD68DsWSNNAVehdjsZyZ8j5u6yz2t5vZDwaxyS_2qY,6676
+tests/test_utils.py,sha256=2iVvJpR90xwwBPLki-0N69EygjDp69Q0ZRr-46N7Zi8,2409
+tests/test_water_clustering.py,sha256=SSnI5sGmtraRq-RdyYN9IrQpKuIkPBsBYN3bVh8btHQ,8805
+ConservedWaterSearch-0.1.1.dist-info/LICENSE,sha256=B03HGG_yfWhXuhQXOht_fjwBXDwqhTPXrp3mSGPVuWo,1522
+ConservedWaterSearch-0.1.1.dist-info/METADATA,sha256=TedZf7la3DLUWeIqAQ5OATQ6Hxr4gha2iz1h4fHfZXU,6672
+ConservedWaterSearch-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ConservedWaterSearch-0.1.1.dist-info/top_level.txt,sha256=ZWWKCMjEnet5CZA4JU-k3O6wdM-AIRC0cZmr0m42l34,27
+ConservedWaterSearch-0.1.1.dist-info/RECORD,,
