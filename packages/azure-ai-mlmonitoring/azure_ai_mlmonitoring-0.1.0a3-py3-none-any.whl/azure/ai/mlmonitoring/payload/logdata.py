@@ -1,0 +1,32 @@
+# ---------------------------------------------------------
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# ---------------------------------------------------------
+
+
+def get_type_fullname(o):
+    klass = o.__class__
+    module = klass.__module__
+    if module == 'builtins':
+        return "python." + klass.__qualname__  # avoid outputs like 'builtins.str'
+    return module + '.' + klass.__qualname__
+
+
+class LogData(dict):
+    def __init__(self, data):
+        dict.__init__(self)
+        self._data = data
+
+    def type(self):
+        return get_type_fullname(self._data)
+
+    def to_json(self):
+        pass
+
+    def to_bytes(self):
+        pass
+
+
+class PandasFrameData(LogData):
+
+    def to_json(self):
+        return self._data.to_json(orient="records")
