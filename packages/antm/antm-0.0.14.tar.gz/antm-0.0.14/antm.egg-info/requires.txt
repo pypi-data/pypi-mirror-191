@@ -1,0 +1,12 @@
+hdbscan
+swifter
+sentence-transformers
+umap-learn
+transformers
+torch
+gensim
+plotly
+matplotlib
+pyarrow
+pandas
+kaleido
