@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: django-msgpack-serializer
+Version: 1.0.0
+Summary: A MsgPack serializer for Django.
+Home-page: https://github.com/fcurella/django-msgpack-serializer
+License: MIT
+Author: Flavio Curella
+Author-email: flavio.curella@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: django (>=3.2,<5)
+Requires-Dist: msgpack (>=1.0.4,<2.0.0)
+Project-URL: Repository, https://github.com/fcurella/django-msgpack-serializer
+Description-Content-Type: text/x-rst
+
+==================
+msgpack_serializer
+==================
+
+Provides a msgpack_ serializer/deserializer for Django models instances.
+
+------------
+Installation
+------------
+
+Add the module `msgpack_serializer.serializer` to your `SERIALIZATION_MODULES` setting:
+
+::
+
+    SERIALIZATION_MODULES = {
+        "msgpack" : "msgpack_serializer.serializer",
+    }
+
+-----
+Usage
+-----
+
+To serialize:
+
+::
+
+    from django.core import serializers
+
+    msgpack_serializer = serializers.get_serializer("msgpack")()
+    data = msgpack_serializer.serialize(my_objects)  # returns bytes
+
+
+To deserialize:
+
+::
+
+    from django.core import serializers
+
+    deserialized_objects = serializers.deserialize('msgpack', data)
+    objs = [deserialized.object for deserialized in deserialized_objects]
+
+.. _msgpack: http://msgpack.org
+
