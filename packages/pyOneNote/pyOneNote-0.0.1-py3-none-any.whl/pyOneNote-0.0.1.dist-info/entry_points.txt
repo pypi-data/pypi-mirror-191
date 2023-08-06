@@ -1,0 +1,2 @@
+[console_scripts]
+pyonenote = pyOneNote.Main:main
