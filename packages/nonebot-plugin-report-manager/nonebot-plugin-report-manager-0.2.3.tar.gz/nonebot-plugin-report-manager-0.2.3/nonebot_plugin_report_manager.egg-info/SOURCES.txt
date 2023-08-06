@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_report_manager/__init__.py
+nonebot_plugin_report_manager/blacklist.py
+nonebot_plugin_report_manager.egg-info/PKG-INFO
+nonebot_plugin_report_manager.egg-info/SOURCES.txt
+nonebot_plugin_report_manager.egg-info/dependency_links.txt
+nonebot_plugin_report_manager.egg-info/requires.txt
+nonebot_plugin_report_manager.egg-info/top_level.txt
