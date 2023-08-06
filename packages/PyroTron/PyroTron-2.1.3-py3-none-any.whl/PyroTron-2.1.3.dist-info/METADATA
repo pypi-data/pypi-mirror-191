@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: PyroTron
+Version: 2.1.3
+Summary: Elegant, modern and asynchronous Telegram MTProto API framework in Python for users and bots
+Home-page: https://github.com/TronUb
+Download-URL: https://github.com/TronUb/pyrotron/releases/latest
+Author: Beast
+Author-email: beastzx18@gmail.com
+License: LGPLv3
+Project-URL: Tracker, https://github.com/TronUb/pyrotron/issues
+Project-URL: Community, https://t.me/pyrotron
+Project-URL: Source, https://github.com/TronUb/pyrotron
+Project-URL: Documentation, https://docs.pyrogram.org
+Keywords: telegram chat messenger mtproto api client library python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: COPYING
+License-File: COPYING.lesser
+License-File: NOTICE
+Requires-Dist: pyaes (==1.6.1)
+Requires-Dist: pysocks (==1.7.1)
+
+## PyroTron
+
+> Smart Fork of [Pyrogram](https://github.com/pyrogram/pyrogram)
+
+``` python
+from pyrogram import Client, filters
+
+app = Client("my_account")
+
+
+@app.on_message(filters.private)
+async def hello(client, message):
+    await message.reply("Hello from PyroTron!")
+
+
+app.run()
+```
+
+**PyroTron** is a fork of pyrogram, this fork consists of extra high level api methods
+which weren't added by Dan (Owner of pyrogram) in pyrogram, all credits of this library goes to him.
+
+### Installing
+
+``` bash
+pip3 install PyroTron
+```
+
+### Difference in Pyrogram & PyroTron
+
+- There is no difference in Pyrogram & PyroTron, all the methods in Pyrogram
+are added in PyroTron, including some new extra methods which are not available
+in Pyrogram, both libraries are same.
+
+### Contact
+
+- Join the official channel of PyroTron https://t.me/PyroTronOfficial and stay tuned for news, updates and announcements.
