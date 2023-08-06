@@ -1,0 +1,1 @@
+recursive-include src/bluing/res *.txt *.csv *.hex
