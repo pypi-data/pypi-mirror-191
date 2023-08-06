@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "arcaflow-plugin-sdk"
+# Do not change, the version is automatically updated in CI.
+version = "0.10.1"
+description = "Plugin SDK for Python for the Arcaflow workflow engine"
+authors = ["Arcalot Contributors"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "arcaflow_plugin_sdk", from = "src"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.com/arcalot/arcaflow-plugin-sdk-python"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/arcalot/arcaflow-plugin-sdk-python/issues"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cbor2 = "^5.4.3"
+PyYAML = "^5.4"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+html2text = "^2020.1.16"
+pre-commit = "^2.20.0"
+sphinx = "^5.3.0"
+sphinx-rtd-theme = "^1.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
