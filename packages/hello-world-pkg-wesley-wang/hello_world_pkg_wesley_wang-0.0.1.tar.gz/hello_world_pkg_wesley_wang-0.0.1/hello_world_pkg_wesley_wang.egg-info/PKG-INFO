@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hello-world-pkg-wesley-wang
+Version: 0.0.1
+Summary: This is a temporary description for the package.
+Home-page: 
+Author: wesleywang
+Author-email: wangwes@gmail.com
+License: MIT
+Keywords: temporary,hello,world
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
