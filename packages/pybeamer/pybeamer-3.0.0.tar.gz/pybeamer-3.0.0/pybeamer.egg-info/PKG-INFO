@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pybeamer
+Version: 3.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/jodafons/pybeamer
+Author: João Victor da Fonseca Pinto, Werner Freund
+Author-email: jodafons@lps.ufrj.br, wsfreund@lps.ufrj.br
+License: GPL-3.0
+Description: # pybeamer
+        
+Keywords: python,beamer,tex
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

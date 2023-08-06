@@ -1,0 +1,10 @@
+README.md
+setup.py
+pybeamer/BeamerAPI.py
+pybeamer/TexAPI.py
+pybeamer/__init__.py
+pybeamer.egg-info/PKG-INFO
+pybeamer.egg-info/SOURCES.txt
+pybeamer.egg-info/dependency_links.txt
+pybeamer.egg-info/requires.txt
+pybeamer.egg-info/top_level.txt
