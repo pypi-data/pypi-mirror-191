@@ -1,0 +1,4 @@
+pexpect>=4.8.0
+pyte>=0.8.0
+pathos>=0.2.7
+monkeydict>=1.0
