@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+coss/__init__.py
+coss/interpolation.py
+coss/utils.py
+coss.egg-info/PKG-INFO
+coss.egg-info/SOURCES.txt
+coss.egg-info/dependency_links.txt
+coss.egg-info/requires.txt
+coss.egg-info/top_level.txt
+coss/areal/__init__.py
+coss/areal/areal_geobootstrap.py
+coss/areal/areal_weighting.py
+coss/areal/dasy.py
+coss/areal/model.py
