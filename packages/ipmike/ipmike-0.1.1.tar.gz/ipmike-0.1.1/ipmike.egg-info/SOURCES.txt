@@ -1,0 +1,10 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+ipmike/__init__.py
+ipmike/ipmike.py
+ipmike.egg-info/PKG-INFO
+ipmike.egg-info/SOURCES.txt
+ipmike.egg-info/dependency_links.txt
+ipmike.egg-info/top_level.txt
