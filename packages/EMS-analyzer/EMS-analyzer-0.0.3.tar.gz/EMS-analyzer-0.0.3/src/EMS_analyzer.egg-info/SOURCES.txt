@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/EMS-analyzer/Client.py
+src/EMS-analyzer/Server.py
+src/EMS-analyzer/__init__.py
+src/EMS_analyzer.egg-info/PKG-INFO
+src/EMS_analyzer.egg-info/SOURCES.txt
+src/EMS_analyzer.egg-info/dependency_links.txt
+src/EMS_analyzer.egg-info/top_level.txt
