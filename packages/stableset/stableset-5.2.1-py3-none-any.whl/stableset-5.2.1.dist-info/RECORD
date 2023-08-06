@@ -1,0 +1,12 @@
+ordered_set/__init__.py,sha256=3kIoJf9XlMAIP8aeUTQc133uAZji1x6MlKjynW2qPoI,32100
+ordered_set/test/__init__.py,sha256=xVSBX0ennawO2hGjyuJ9S6IHWW6fmWfl6PxJUAUnNQo,532
+ordered_set/test/_test_mypy.py,sha256=Ga9Kr369n2Amc1eYXjIkhwP42B0WPrhHeXdWRQqJf8o,89
+ordered_set/test/_test_ordered_set_all.py,sha256=RIOxV8R917siVx0EoNs6q7d_5dY8DItJH4-HtPBwH-Q,177
+ordered_set/test/pytest_util.py,sha256=b0lKb-DOBFz_jcqRb8mCL9kGQSkEqZ328Z31TyAT4JE,531
+ordered_set/test/test_ordered_set_1.py,sha256=545vQk0xUWADii9d0EHE_K8eDXLErqWUOrTgJCnaYJM,14766
+ordered_set/test/test_ordered_set_2.py,sha256=B37FfucHERsu60YlE6H3-WBs98JK9gqvBvE2eTTD3K8,15658
+ordered_set/test/test_ordered_set_3.py,sha256=avxY1Jabkh8W4NfcN0tFEx3IbK9zbXJsNtj6BxedfCg,2753
+stableset-5.2.1.dist-info/METADATA,sha256=5SJ3JT5mwAPzIMHiQljR4cVq1szPIQPr5Y17gLnEILc,8165
+stableset-5.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stableset-5.2.1.dist-info/top_level.txt,sha256=NTY2_aDi1Do9fl3Z9EmWPxasFkUeW2dzO2D3RDx5CfM,12
+stableset-5.2.1.dist-info/RECORD,,
