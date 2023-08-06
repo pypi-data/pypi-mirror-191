@@ -1,0 +1,10 @@
+.vscode
+dist
+protocol
+py
+stubs
+panda_model-stubs
+build
+_build
+__pycache__
+*.so
