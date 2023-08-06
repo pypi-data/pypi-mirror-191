@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: odoo-addon-mrp-account-bom-attribute-match
+Version: 15.0.1.1.0
+Summary: Glue module between `mrp_account` and `mrp_bom_attribute_match`
+Home-page: https://github.com/OCA/manufacture
+Author: Camptocamp, Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 15.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: >=3.8
+Requires-Dist: odoo-addon-mrp-bom-attribute-match (<15.1dev,>=15.0dev)
+Requires-Dist: odoo (<15.1dev,>=15.0a)
+
+TO BE GENERATED
+
+
