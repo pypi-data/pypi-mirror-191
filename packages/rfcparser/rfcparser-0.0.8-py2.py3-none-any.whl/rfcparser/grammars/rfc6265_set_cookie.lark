@@ -1,0 +1,25 @@
+set_cookie_header   :  set_cookie_string
+set_cookie_string   :   cookie_pair ( ";" SP cookie_av )*
+cookie_pair         :   cookie_name "=" cookie_value
+cookie_name         :   _token
+cookie_value        :   _cookie_octet* | ( DQUOTE _cookie_octet* DQUOTE )
+_cookie_octet        :   "\x21" | (/[\x23-\x2b]/) | (/[\x2d-\x3a]/) | (/[\x3c-\x5b]/) | (/[\x5d-\x7e]/)
+cookie_av           :    max_age_av | domain_av | path_av | secure_av | httponly_av | extension_av
+sane_cookie_date    :   cookie_date
+max_age_av          :   "Max-Age=" _non_zero_digit DIGIT*
+_non_zero_digit      :   /[\x31-\x39]/
+domain_av           :   "Domain=" _domain_value
+_domain_value        :   domain
+path_av             :   "Path=" path_value
+path_value          :   (/[^;\x00-\x1f\x7f]/)+
+secure_av           :   "Secure"
+httponly_av         :   "HttpOnly"
+extension_av        :   (/[^\x00-\x1f;\x7f]/)+
+_token               :   /[^\"()<>@,;:\\\[\]?={}\x09]/+
+char_except_ctl     :      //
+
+%import .rfc1034_domain.domain
+%import .rfc6265_date.cookie_date
+%import .rfc5234_core.SP
+%import .rfc5234_core.DQUOTE
+%import .rfc5234_core.DIGIT
