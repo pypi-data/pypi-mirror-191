@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rebullet
+Version: 2.3.1
+Summary: Beautiful Python prompts made simple.
+Home-page: https://github.com/h4rldev/rebullet
+Author: bchao1, h4rldev and Maintainers
+License: MIT
+Keywords: cli list prompt customize colors
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md
