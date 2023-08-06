@@ -1,0 +1,5 @@
+[console_scripts]
+pp-execute = psquared_consume.pp_execute:main
+
+[rmq_consume.consumption]
+psquared_consumption = psquared_consume:PSquaredConsumption
