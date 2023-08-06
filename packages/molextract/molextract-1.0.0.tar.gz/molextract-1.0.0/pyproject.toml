@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "molextract"
+authors = [{name = "Nithin Chintala", email = "chintala.v@northeastern.edu"}]
+description = "Parse Molcas/OpenMolcas log files in a modular way"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = [
+    "chemistry",
+    "computational-chemistry",
+    "log-files",
+    "parsing",
+    "parser",
+    "molcas",
+    "open-molcas"
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Topic :: Scientific/Engineering :: Chemistry",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "molextract.__version__"}
+
+[project.urls]
+Homepage = "https://github.com/sdonglab/molextract"
