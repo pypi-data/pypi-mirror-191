@@ -1,0 +1,16 @@
+doopass/appdata
+build
+dist
+
+*.egg-info
+
+venv
+
+.idea
+.fleet
+.vscode
+
+__pycache__
+./*/__pycache__
+./*/*/__pycache__
+./*/*/*/__pycache__
