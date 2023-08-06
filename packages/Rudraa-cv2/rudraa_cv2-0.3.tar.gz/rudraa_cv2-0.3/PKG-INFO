@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Rudraa-cv2
+Version: 0.3
+Summary: This Package Use for Document Edit
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Rudraa <rudraa2213@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Install This Package
+
+``` pip install cv2 ```
+
+# About Me
+
+Telegram Id : [Rudraa](https://t.me/rudraa332)

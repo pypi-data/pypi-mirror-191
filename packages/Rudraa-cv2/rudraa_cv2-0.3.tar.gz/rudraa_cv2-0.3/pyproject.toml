@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling","wheel"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Rudraa-cv2"
+version = "0.3"
+authors = [
+  { name="Rudraa", email="rudraa2213@gmail.com" },
+]
+description = "This Package Use for Document Edit"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
