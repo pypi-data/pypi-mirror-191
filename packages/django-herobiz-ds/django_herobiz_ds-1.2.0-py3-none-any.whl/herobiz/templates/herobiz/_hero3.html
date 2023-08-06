@@ -1,0 +1,25 @@
+{% load static %}
+
+<style>
+  .hero-fullscreen {
+  width: 100%;
+  min-height: 100vh;
+  background: url("{% static 'herobiz_ds/hero/'|add:hero.0.bg|add:'.jpg' %}") center center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0 60px;
+}
+</style>
+
+<section id="hero-fullscreen" class="hero-fullscreen d-flex align-items-center">
+  <div class="container d-flex flex-column align-items-center position-relative" data-aos="zoom-out">
+    {% autoescape off %}
+    <h2>{{ hero.0.title }}</h2>
+    <p>{{ hero.0.slogan }}</p>
+    {% endautoescape %}
+    <div class="d-flex">
+      <a href="{{ hero.0.btn.link }}" class="btn-get-started scrollto">{{ hero.0.btn.title }}</a>
+      <a href="{{ hero.0.video_link }}" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+    </div>
+  </div>
+</section>
