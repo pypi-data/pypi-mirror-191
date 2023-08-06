@@ -1,0 +1,4 @@
+[console_scripts]
+Quickner=quickner:Quickner
+[gui_scripts]
+Quickner=quickner:Quickner
