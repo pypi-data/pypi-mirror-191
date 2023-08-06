@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlib-nsi"
+version = "1.0.2"
+description = "MLib is a little python library make by a 12 degrees french students"
+readme = "README.md"
+authors = [{ name = "Matt_o", email = "mmattmmo@gmail.com" }]
+license = { file = "LICENSE.txt" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = [
+    "pygame",
+    "Pillow",
+    "pyperclip",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://matto.glitch.me/?mlib=go"

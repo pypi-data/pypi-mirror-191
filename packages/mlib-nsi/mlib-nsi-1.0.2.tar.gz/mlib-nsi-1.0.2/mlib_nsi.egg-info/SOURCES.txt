@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+mlib.py
+pyproject.toml
+mlib_nsi.egg-info/PKG-INFO
+mlib_nsi.egg-info/SOURCES.txt
+mlib_nsi.egg-info/dependency_links.txt
+mlib_nsi.egg-info/requires.txt
+mlib_nsi.egg-info/top_level.txt
