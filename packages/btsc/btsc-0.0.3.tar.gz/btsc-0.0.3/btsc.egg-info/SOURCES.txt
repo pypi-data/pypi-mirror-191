@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+btsc/__init__.py
+btsc/app.py
+btsc.egg-info/PKG-INFO
+btsc.egg-info/SOURCES.txt
+btsc.egg-info/dependency_links.txt
+btsc.egg-info/entry_points.txt
+btsc.egg-info/top_level.txt
