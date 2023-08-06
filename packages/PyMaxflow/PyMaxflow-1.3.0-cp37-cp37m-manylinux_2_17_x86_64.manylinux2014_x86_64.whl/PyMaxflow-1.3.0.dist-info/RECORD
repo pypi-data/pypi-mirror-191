@@ -1,0 +1,8 @@
+PyMaxflow-1.3.0.dist-info/METADATA,sha256=URjC8JlSF0l3OCqSr8WAp8VAdVxre6UME_r7OHSakEA,1499
+PyMaxflow-1.3.0.dist-info/WHEEL,sha256=5qaUL7R7UuAgTpV1hnYjoipMHezG5YJtRxtV3_rU2Ew,150
+PyMaxflow-1.3.0.dist-info/top_level.txt,sha256=gHkR9ckK3594F_F8Ee6sxRRSOGOo3efERzgU4DMoLE8,8
+PyMaxflow-1.3.0.dist-info/RECORD,,
+maxflow/_maxflow.cpython-37m-x86_64-linux-gnu.so,sha256=k2nXDHfVq-Mo8PyvZncsQADCF6QuKTyysLv7WXn3q2U,2840976
+maxflow/version.py,sha256=pdjfdDaFsa5aQIMiRGL-XkDLJuimThn-fdvwnsgtcM8,129
+maxflow/__init__.py,sha256=d5nsFAT2WrKp-faYqSUPH_ffmuuPPGwPMz0k5bwJfqs,1386
+maxflow/fastmin.py,sha256=Sva_XQCvILO4luKNJH9TgrGggTiUZRXpLUy3hj3GAxc,7725
