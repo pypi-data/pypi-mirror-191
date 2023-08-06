@@ -1,0 +1,4 @@
+include MANIFEST.in
+include pyproject.toml
+include readme.md
+include setup.py
