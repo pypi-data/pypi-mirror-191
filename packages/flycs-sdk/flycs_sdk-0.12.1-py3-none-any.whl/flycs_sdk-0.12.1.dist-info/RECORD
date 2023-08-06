@@ -1,0 +1,15 @@
+flycs_sdk/__init__.py,sha256=4h-euL5lZCEYVsN6rNkdP34ikyp3wIyTz6I8qkg9GpY,149
+flycs_sdk/custom_code.py,sha256=0dRrz1C6na4IJOq2StsNMUsku3Ei8XDCtI7GugrxzNs,4762
+flycs_sdk/entities.py,sha256=Zj7GwlqjH4M43IeohjEoM4n90KFvUu9zqxzsu31i7S4,23274
+flycs_sdk/functions.py,sha256=Hs6Jlh-YtNQg8sqf16E3rX2-FAHCaxcmbKrbpxxS9Qg,5477
+flycs_sdk/pipelines.py,sha256=JlEw9LIqR_r8yPib6J0l2vtVEbbOINWZUkqG8mDupxg,14181
+flycs_sdk/procedures.py,sha256=PoBPE7QELeUsjuSsIBV8nAs-jnva0mDdfTqXfE9hNPI,5858
+flycs_sdk/query_base.py,sha256=kKYGSFsv5iN5SvAWhT7S7tz4ZoF8_XeMjVHqYAWD7OQ,1634
+flycs_sdk/query_base_schema.py,sha256=9crjYpehCfpTz5TUe1E_8Vb1JlTVr8LOXssOWF6WJoo,5886
+flycs_sdk/transformations.py,sha256=ZDf-HXOblx2BNSB3oWZMpdLSEY3kPfl7lOGz5SIITKY,13124
+flycs_sdk/triggers.py,sha256=TuL85sIu3_1pUf9qKd_7gxDN8pJOAiqQ2vvwTRs_Fuw,5920
+flycs_sdk/views.py,sha256=jh-QKDNxvsgGPno_XjXujcWl-7MsFT5Aq-_RIPKcMwQ,4760
+flycs_sdk-0.12.1.dist-info/METADATA,sha256=C6ePi2uOUoQFCgwY41fIdQIqGoWikosWj0kehDERfLw,2310
+flycs_sdk-0.12.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+flycs_sdk-0.12.1.dist-info/LICENSE,sha256=SZSNvCemeN9t9OVjMxnMVBha4847d10ivYTDTVNr2UI,1077
+flycs_sdk-0.12.1.dist-info/RECORD,,
