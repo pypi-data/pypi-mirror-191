@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: wagtail-donate
+Version: 1.7.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Torchbox
+Author-email: info@torchbox.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Requires-Python: >=3.6
+Provides-Extra: testing
+Provides-Extra: docs
+License-File: LICENSE.txt
+
+Copyright (c) 2021 Torchbox
+
+This is not free software.
+
+You may not use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell this software and associated documentation files without the express
+consent of Torchbox.
+
+
