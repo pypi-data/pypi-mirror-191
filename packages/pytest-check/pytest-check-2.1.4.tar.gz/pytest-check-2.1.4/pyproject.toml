@@ -1,0 +1,33 @@
+[project]
+name = "pytest-check"
+authors = [{name = "Brian Okken"}]
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+requires-python = ">3.7"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Pytest" ,
+    "Topic :: Software Development :: Testing",
+]
+dynamic = ["version", "description"]
+dependencies = ["pytest"]
+
+[project.urls]
+Home = "https://github.com/okken/pytest-check"
+
+[project.entry-points.pytest11]
+check = "pytest_check.plugin"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "pytest_check"
+
+[tool.flit.sdist]
+include = ["changelog.md", "examples", "tests", "tox.ini"]
