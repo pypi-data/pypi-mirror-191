@@ -1,0 +1,46 @@
+<device>
+	<serviceList xmlns="urn:schemas-upnp-org:device-1-0">
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:RenderingControl:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:RenderingControl</serviceId>
+			<controlURL>/MediaRenderer/RenderingControl/Control</controlURL>
+			<eventSubURL>/MediaRenderer/RenderingControl/Event</eventSubURL>
+			<SCPDURL>/xml/RenderingControl1.xml</SCPDURL>
+		</service>
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:ConnectionManager:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:ConnectionManager</serviceId>
+			<controlURL>/MediaRenderer/ConnectionManager/Control</controlURL>
+			<eventSubURL>/MediaRenderer/ConnectionManager/Event</eventSubURL>
+			<SCPDURL>/xml/ConnectionManager1.xml</SCPDURL>
+		</service>
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:AVTransport:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:AVTransport</serviceId>
+			<controlURL>/MediaRenderer/AVTransport/Control</controlURL>
+			<eventSubURL>/MediaRenderer/AVTransport/Event</eventSubURL>
+			<SCPDURL>/xml/AVTransport1.xml</SCPDURL>
+		</service>
+		<service>
+			<serviceType>urn:schemas-sonos-com:service:Queue:1</serviceType>
+			<serviceId>urn:sonos-com:serviceId:Queue</serviceId>
+			<controlURL>/MediaRenderer/Queue/Control</controlURL>
+			<eventSubURL>/MediaRenderer/Queue/Event</eventSubURL>
+			<SCPDURL>/xml/Queue1.xml</SCPDURL>
+		</service>
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:GroupRenderingControl:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:GroupRenderingControl</serviceId>
+			<controlURL>/MediaRenderer/GroupRenderingControl/Control</controlURL>
+			<eventSubURL>/MediaRenderer/GroupRenderingControl/Event</eventSubURL>
+			<SCPDURL>/xml/GroupRenderingControl1.xml</SCPDURL>
+		</service>
+		<service>
+			<serviceType>urn:schemas-upnp-org:service:VirtualLineIn:1</serviceType>
+			<serviceId>urn:upnp-org:serviceId:VirtualLineIn</serviceId>
+			<controlURL>/MediaRenderer/VirtualLineIn/Control</controlURL>
+			<eventSubURL>/MediaRenderer/VirtualLineIn/Event</eventSubURL>
+			<SCPDURL>/xml/VirtualLineIn1.xml</SCPDURL>
+		</service>
+	</serviceList>
+</device
