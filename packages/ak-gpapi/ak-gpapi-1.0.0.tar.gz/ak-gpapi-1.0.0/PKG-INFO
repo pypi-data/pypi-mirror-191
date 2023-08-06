@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ak-gpapi
+Version: 1.0.0
+Summary: Unofficial python api for google play
+Home-page: https://github.com/appknox/googleplay-api
+Author: appknox
+Author-email: engineering@appknox.com
+License: GPL3
+License-File: LICENSE.md
