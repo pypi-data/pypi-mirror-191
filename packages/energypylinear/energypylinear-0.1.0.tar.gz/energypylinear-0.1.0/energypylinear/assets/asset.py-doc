@@ -1,0 +1,11 @@
+
+"""
+Module:
+This module contains the Asset class which is used to define the energy assets in a model.
+
+Class:
+The Asset class is used to define the energy assets in a model. It contains variables for electric generation, high and low temperature generation, electric load, high and low temperature load, charge, discharge, and gas consumption.
+
+Function:
+None
+"""
