@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: eng-task
+Version: 0.2.0
+Author: Jack Edmundson
+Author-email: <jackedmundson1997@gmail.com>
+License-File: LICENSE
+Provides-Extra: output_dir
+Requires-Dist: output-dir ; extra == 'output_dir'
+
