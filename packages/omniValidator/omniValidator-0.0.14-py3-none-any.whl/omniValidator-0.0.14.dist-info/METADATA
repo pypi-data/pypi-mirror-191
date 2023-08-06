@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: omniValidator
+Version: 0.0.14
+Summary: Validator of output files for Omnibencharmk.
+Home-page: https://github.com/omnibenchmark/omniValidator
+Author: A. Sonrel
+Author-email: anthony.sonrel@uzh.ch
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: jsonref (>=1.0.1)
+Requires-Dist: jsonschema (>=4.17.3)
+Requires-Dist: json2table (>=1.1.5)
+
