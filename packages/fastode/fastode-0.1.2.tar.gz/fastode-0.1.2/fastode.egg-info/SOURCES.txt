@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+fastapi/__init__.py
+fastapi/fast_baidu_translate.py
+fastode/__init__.py
+fastode/fast_color.py
+fastode/fast_config.py
+fastode/fast_list.py
+fastode/fast_log.py
+fastode/fast_xml.py
+fastode/fast_zip.py
+fastode.egg-info/PKG-INFO
+fastode.egg-info/SOURCES.txt
+fastode.egg-info/dependency_links.txt
+fastode.egg-info/requires.txt
+fastode.egg-info/top_level.txt
