@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ooler-ble-client
+Version: 0.1.1
+Summary: A library to communicate with Ooler Sleep System Bluetooth devices.
+Home-page: https://github.com/PostLogical/ooler_ble_client
+License: Apache-2.0
+Author: Robby Griffin
+Author-email: rgriffin@postlogical.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bleak (>=0.19.0)
+Requires-Dist: bleak-retry-connector (>=2.3.0)
+Project-URL: Repository, https://github.com/PostLogical/ooler_ble_client
+Description-Content-Type: text/markdown
+
+# ooler_ble_client
+A library to communicate with Ooler Sleep System Bluetooth devices.
