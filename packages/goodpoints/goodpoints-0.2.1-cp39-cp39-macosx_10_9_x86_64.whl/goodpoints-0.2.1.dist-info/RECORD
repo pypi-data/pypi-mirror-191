@@ -1,0 +1,16 @@
+goodpoints/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodpoints/compress.py,sha256=71h7O7W_omfqVRQZTmTwW7UR8dJPkCKKFur-ukGhN4Y,6825
+goodpoints/compressc.cpython-39-darwin.so,sha256=ukOnUYcOX0ZkYdN6nIC4I3sECC57QTyARsljvmkO3DQ,179120
+goodpoints/ctt.py,sha256=af4dqK0BUKn5CD7YJzaEU2xbhm89S9DZrW_QfXq4aSs,39507
+goodpoints/cttc.cpython-39-darwin.so,sha256=dQsgSn3wj-JMbnnF73fRPrsXDkJXFKjsYAbGA0lBN8M,160808
+goodpoints/gaussianc.cpython-39-darwin.so,sha256=ojORUNR2X7EQ_5VprUYZWRkZzt-7c-O8x7usmn0VXfI,299416
+goodpoints/herding.py,sha256=pNJEfClbu_KrNg22krDco5HL8Ts4V3HKLiKV3ojtjPM,2292
+goodpoints/kt.py,sha256=XWAFr3ALKIVL4ghzY7Pyk3JccmpM9A_4l46GMD1YkMo,39288
+goodpoints/ktc.cpython-39-darwin.so,sha256=uqavEJDnLY8KKA0J7QY6koVVaxRveiRXjOXNtej3BXw,238360
+goodpoints/tictoc.py,sha256=Stbe5tJ5ILpmNaJlLfvCbs-SCUuUH5ZMfBvGUvh86J4,7721
+goodpoints/util.py,sha256=-Rbd5fSFIfb3HRTMD10P604TSGFid0_m2xcqKeZtBsg,756
+goodpoints-0.2.1.dist-info/LICENSE,sha256=ws_MuBL-SCEBqPBFl9_FqZkaaydIJmxHrJG2parhU4M,1141
+goodpoints-0.2.1.dist-info/METADATA,sha256=ri4NkNq7KbEU6mfLj7Tem2p-b3zV4_Z7jvxAqhbBHiY,9634
+goodpoints-0.2.1.dist-info/WHEEL,sha256=pfjXB0CCNW4PSSqQc2t4Up6p3o0jxBnHy_2o38FQkyE,109
+goodpoints-0.2.1.dist-info/top_level.txt,sha256=aBCntC_SN868fAmr2SRlBskKHbillnvIJdlNDf-KelM,11
+goodpoints-0.2.1.dist-info/RECORD,,
