@@ -1,0 +1,2 @@
+[console_scripts]
+dvtagcc = main:main
