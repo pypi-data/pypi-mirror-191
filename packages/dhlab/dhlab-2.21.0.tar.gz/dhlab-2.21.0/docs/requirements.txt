@@ -1,0 +1,11 @@
+Sphinx>=5.3
+furo>=2022.12
+myst-parser>=0.18
+sphinx-inline-tabs>=2022.1.2b11
+readthedocs-sphinx-search>=0.1.2
+sphinx-togglebutton>=0.3.2
+sphinx-copybutton>=0.5.1
+sphinx-design
+
+
+
