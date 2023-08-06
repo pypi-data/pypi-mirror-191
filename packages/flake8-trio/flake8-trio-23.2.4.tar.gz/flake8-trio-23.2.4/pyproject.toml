@@ -1,0 +1,6 @@
+[tool.pyright]
+strict = ["*.py", "tests/test_flake8_trio.py", "tests/conftest.py"]
+exclude = ["**/node_modules", "**/__pycache__", "**/.*"]
+
+[tool.codespell]
+ignore-words-list = 'spawnve'
