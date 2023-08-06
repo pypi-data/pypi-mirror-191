@@ -1,0 +1,11 @@
+arcaverborum/__init__.py,sha256=HTHHhQEnnj8BU6tqKwSThrHJqM4_8MEBDEJVqN6IGCU,392
+arcaverborum/common.py,sha256=Wq2RnMgjsDFNxxMPNaaOWRpTSDN3wTprxKwpJtMdLFc,3315
+arcaverborum/sampling.py,sha256=dXEOrjlACAog6Q8ZmIXdQEsNZW0w9x9vNZD4iR5oBFc,8514
+arcaverborum/etc/gled_global.dst,sha256=BNG1bFR0Lpp5ZgMBsnLz46bcgV2E_A-HPRGwNWExbHw,67817129
+arcaverborum/etc/haversine.tsv.gz,sha256=yGHjXD_4pJiWa7xFSEr2GeFFoVbieEQ1LrDyez5deSo,89522082
+arcaverborum-0.2.1.dist-info/AUTHORS.md,sha256=jpu5B57UQQunnLikMIur_I2-1CEjGyEXPRW4iEsD8_A,89
+arcaverborum-0.2.1.dist-info/LICENSE,sha256=x6i-HI-VCsCGU5VTphVIN16rVIW9grlUkPWqfkPwZfU,1071
+arcaverborum-0.2.1.dist-info/METADATA,sha256=dVDmtqQ96oABoHx33pFfrWVxi00XRM4XGpWOB4hswIY,3149
+arcaverborum-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+arcaverborum-0.2.1.dist-info/top_level.txt,sha256=A_Jst16iNrQIObNNmA21RBeOt4nj87gneCs2fhJzScY,13
+arcaverborum-0.2.1.dist-info/RECORD,,
