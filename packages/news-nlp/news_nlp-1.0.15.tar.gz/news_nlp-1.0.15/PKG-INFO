@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: news-nlp
+Version: 1.0.15
+Summary: This package aims to collect news data via Google News API, preporcessing, implement pretrained news type classifer, sentiment classifier and perform statistical hierarchy predictive model for news event and then implememnt multiple geolocator.
+Author: Jason Lu
+Author-email: luzhenxian@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: gdown (==4.6.2)
+Requires-Dist: mediacloud-cliff (==2.6.1)
+Requires-Dist: newsapi-python (>=0.2.6,<0.3.0)
+Requires-Dist: nltk (>=3.8.1,<4.0.0)
+Requires-Dist: openpyxl (==3.1.0)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Requires-Dist: spacy (>=3.4.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+
+<!-- ![](/home/jason/Documents/data/newplot.png) -->
+# News NLP for Global Geopolitical Risk
+=======================================
+
+This is a Python client for the news NLP.
+
+Usage
+-----
+First install it
+
+```
+pip install news-nlp -U
+```
+
+Then instantiate and use it like this:
+
+```python
+import News_NLP
+from News_NLP.GNews import GNews
+from News_NLP.preprocessing import Preprocessing_Clf_SA, Preprocessing_GEO,Combine_Col
+from News_NLP.gpr_classifier import GPR_Clf
+from News_NLP.sentiment_clf import Sen_Clf
+from News_NLP.geolocator import Get_CSC_Prob, CSC_Prob
+```
+
+* Fetch news articles from Google News API, `from News_NLP.GNews import GNews`
+* Preproces news data for sentiment analysis and news type classifier
+   `from News_NLP.preprocessing import Preprocessing_Clf_SA`
+* Preproces news data for multiple-geolocator
+  `from News_NLP.preprocessing import Preprocessing_GEO`
+* Implement pretrained deep leanring model to caterise news article 
+  `from News_NLP.gpr_classifier import GPR_Clf`
+* Perform sentiment classifier `from News_NLP.sentiment_clf import Sen_Clf`
+* Implement multiple geolocator `form News_NLP.geolocator import Get_CSC_Prob, CSC_Prob`,
+
+# GitHub
+For a demonstration in Jupyter notebook see https://github.com/HigherHoopern/News_NLP/NewsApp.ipynb
+
+download sample news data
+https://github.com/HigherHoopern/News_NLP/blob/main/data/SampleNews.csv

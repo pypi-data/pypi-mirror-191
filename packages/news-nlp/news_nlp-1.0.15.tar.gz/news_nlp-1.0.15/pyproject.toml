@@ -1,0 +1,59 @@
+[tool.poetry]
+name = "News_NLP"
+version = "1.0.15"
+description = "This package aims to collect news data via Google News API, preporcessing, implement pretrained news type classifer, sentiment classifier and perform statistical hierarchy predictive model for news event and then implememnt multiple geolocator."
+authors = ["Jason Lu <luzhenxian@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "News_NLP"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+newsapi-python ="^0.2.6"
+spacy = "^3.4.0"
+nltk = "^3.8.1"
+scikit-learn = "^1.2.1"
+mediacloud-cliff = "2.6.1"
+gdown="4.6.2"
+openpyxl="3.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+
+
+[project]
+#name = "News_NLP"
+#version = "2023.0.3"
+#description = "News NLP"
+#readme = "README.md"
+#requires-python = ">=3.8"
+#license = {file = "LICENSE.txt"}
+#keywords = ["news","nlp",'text classification','geopolitical risk']
+#authors = [
+#  {name = "Jason Lu", email = "luzhenxian@hotmail.com"},
+#]
+#maintainers = [
+#  {name = "Jason Lu", email = "luzhenxian@hotmail.com"}
+#]
+#classifiers = [
+#  "Development Status :: 4 - Beta",
+#  "Programming Language :: Python"
+#]
+
+#dependencies = ['newsapi-python','spacy','tqdm','nltk','pandas','openpyxl','wget']
+
+# dynamic = ["version", "description"]
+
+
+#[project.urls]
+#homepage = "https://example.com"
+#documentation = "https://readthedocs.org"
+#repository = "https://github.com/me/spam.git"
+#changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
