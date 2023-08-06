@@ -1,0 +1,4 @@
+flask>=2.2.2
+flask-wtf
+python-dateutil
+sqlalchemy>=2.0.0
