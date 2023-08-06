@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+JvMcControll/JvMcControll.py
+JvMcControll/__init__.py
+JvMcControll.egg-info/PKG-INFO
+JvMcControll.egg-info/SOURCES.txt
+JvMcControll.egg-info/dependency_links.txt
+JvMcControll.egg-info/requires.txt
+JvMcControll.egg-info/top_level.txt

@@ -1,0 +1,5 @@
+Se você é um streamer de Minecraft Bedrock e deseja tornar suas transmissões mais interativas, este script pode ser útil para você. Com este script, seus espectadores podem enviar comandos diretamente ao jogo por meio de uma conexão WebSocket. Tudo o que você precisa fazer é usar a função start() e seguir as instruções para se conectar ao servidor.
+
+Este projeto é especialmente adequado para noites de jogos, lives interativas e outras atividades do tipo. Ele permite que seus espectadores participem ativamente do jogo, enviando comandos diretamente ao seu personagem, tornando a experiência mais divertida e envolvente para todos os envolvidos.
+
+Ao usar este script, você pode tornar sua transmissão mais atraente e aumentar o engajamento dos espectadores. Se você é um streamer que deseja melhorar a experiência de seus espectadores, este script pode ser uma ótima adição ao seu arsenal.
