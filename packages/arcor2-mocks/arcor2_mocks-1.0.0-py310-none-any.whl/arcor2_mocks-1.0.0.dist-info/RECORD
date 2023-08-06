@@ -1,0 +1,14 @@
+arcor2_mocks/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+arcor2_mocks/__init__.py,sha256=KdBS3D3l5M3fDvBO3dZ5JSny78OY49tB3a6OuHzdRes,351
+arcor2_mocks/exceptions_asset.py,sha256=xS5k-Q5PrvPg2jDFiOLFfHIjAr2Zyu1TqS5hVg1Yad8,731
+arcor2_mocks/exceptions_project.py,sha256=rIu5gfw4s6nvKwQAgJZSZz4vQMNcdafi3OE9YoL2UcU,447
+arcor2_mocks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_mocks/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_mocks/scripts/mock_asset.py,sha256=fiYHmPh6dm4A7s0J3GGFrQG9H8rlBJouGZiwqz09FTk,6597
+arcor2_mocks/scripts/mock_project.py,sha256=EJypko9AqHAE6ykq7-T1NNauP7kbmKPNxAgQKY8L3ZA,23766
+arcor2_mocks-1.0.0.dist-info/METADATA,sha256=RKgQHe6vD2bWvzKmJhFnp71CJFO9lY7GKjBlB9NoXMU,3554
+arcor2_mocks-1.0.0.dist-info/WHEEL,sha256=KxatxaZA14OswIJTdImHhiM2tdZgU-xLZEzs-sYveVc,94
+arcor2_mocks-1.0.0.dist-info/entry_points.txt,sha256=TxSjq_ojntpqXaMAqj5N6ERPv4J-Nv7P3_N089PGlUE,136
+arcor2_mocks-1.0.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_mocks-1.0.0.dist-info/top_level.txt,sha256=ZkA4Ftv4YtJZ8tXrto55daearqm1hJsLxEykdpdkUdE,13
+arcor2_mocks-1.0.0.dist-info/RECORD,,
