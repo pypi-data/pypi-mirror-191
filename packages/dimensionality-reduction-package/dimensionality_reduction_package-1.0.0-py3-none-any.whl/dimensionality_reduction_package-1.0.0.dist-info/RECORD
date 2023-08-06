@@ -1,0 +1,9 @@
+dimensionality_reduction/__init__.py,sha256=sdrbeSozjmzg3w9Fe96tITL6XW7zRe_9Yu_78JUJMg0,86
+dimensionality_reduction/dimensionality_reduction.py,sha256=t8zmjEWBmErVusq8vNL1-QAG9N0BbkGZjLQlYLN30Zc,6479
+dimensionality_reduction/services/__init__.py,sha256=dB89BNtFPZfbxU8qyo0VRDStDpKWUU0ihSWsK27Y0TY,27
+dimensionality_reduction/services/plot_service.py,sha256=NLGXedkYyRPOUxnIP1R1lzCg2Y04sYzIor9sa6d7wxo,1812
+dimensionality_reduction_package-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+dimensionality_reduction_package-1.0.0.dist-info/METADATA,sha256=CYifQPCo1Ht-6DKGpljl8iaCIFEQH9QngBWgc0jvcu8,12026
+dimensionality_reduction_package-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dimensionality_reduction_package-1.0.0.dist-info/top_level.txt,sha256=hu83VIrQ4ln9to29328JqNnTnoDz2IVrEoqh3pzLytY,25
+dimensionality_reduction_package-1.0.0.dist-info/RECORD,,
