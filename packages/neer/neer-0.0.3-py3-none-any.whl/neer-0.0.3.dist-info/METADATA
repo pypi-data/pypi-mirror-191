@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: neer
+Version: 0.0.3
+Home-page: https://github.com/NEERINC/pyoneer
+License: UNLICENSED
+Project-URL: Homepage, https://github.com/neerinc/pyoneer
+Project-URL: Bug Tracker, https://github.com/neerinc/pyoneer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: sqlalchemy
+Requires-Dist: loguru
+Requires-Dist: dotenv
+
+# pyoneer
+Package tools for development in python, including Data Cleaning pipelines and others
