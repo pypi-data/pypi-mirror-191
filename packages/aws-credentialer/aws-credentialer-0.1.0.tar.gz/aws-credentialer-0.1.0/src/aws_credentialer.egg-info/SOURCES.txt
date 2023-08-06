@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/aws_credentialer/__init__.py
+src/aws_credentialer/__main__.py
+src/aws_credentialer.egg-info/PKG-INFO
+src/aws_credentialer.egg-info/SOURCES.txt
+src/aws_credentialer.egg-info/dependency_links.txt
+src/aws_credentialer.egg-info/requires.txt
+src/aws_credentialer.egg-info/top_level.txt
