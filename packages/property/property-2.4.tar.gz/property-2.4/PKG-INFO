@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: property
+Version: 2.4
+Summary: A python module to read a property file.Similar to PropertyPlaceholderConfigurer in spring (java).Example : http://anandjoshi.me/pythonpropertyfileloader/
+Home-page: UNKNOWN
+Author: Anand Joshi
+Author-email: anandhjoshi@outlook.com
+License: MIT
+Download-URL: https://github.com/anandjoshi91/pythonpropertyfileloader/archive/refs/tags/2.4.zip
+Description: UNKNOWN
+Keywords: property,read-property-file,property-interpolation
+Platform: UNKNOWN
