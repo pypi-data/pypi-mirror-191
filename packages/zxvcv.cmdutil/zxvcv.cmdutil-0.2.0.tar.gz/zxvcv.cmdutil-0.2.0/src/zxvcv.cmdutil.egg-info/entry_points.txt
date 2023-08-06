@@ -1,0 +1,5 @@
+[console_scripts]
+zxvcv.pullall = zxvcv.cmdutil.git:pull_all
+zxvcv.venvi = zxvcv.cmdutil.virtual_env.initialize:main
+zxvcv.venvl = zxvcv.cmdutil.virtual_env.list:main
+zxvcv.venvr = zxvcv.cmdutil.virtual_env.remove:main
