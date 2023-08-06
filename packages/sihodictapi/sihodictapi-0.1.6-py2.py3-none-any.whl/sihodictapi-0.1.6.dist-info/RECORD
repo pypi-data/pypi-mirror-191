@@ -1,0 +1,15 @@
+sihodictapi/__init__.py,sha256=s-hazZPilDCT_uAaGHzfpCe45rU7_c6HlPhTslYl-eI,40
+sihodictapi/utils.py,sha256=AX32OQJmo39SXGvcbdk2gF_Ue8Zc_wUzcvAwsH2hffY,392
+sihodictapi/dictionaries/__init__.py,sha256=xgI8oaR9yGvEJluKzK6Sn6CSF4Y3yoibWL88FgFK8iI,188
+sihodictapi/dictionaries/baidu.py,sha256=WC6MCi9o76wZhKMCu2mFCzxt7GEBWcUv2dufHL368Pk,3348
+sihodictapi/dictionaries/foxit.py,sha256=Ff29nrWD0wUWNFDkzu3iDP9L4G2i047IkilsAI_XLeY,2169
+sihodictapi/dictionaries/google.py,sha256=_-jgDvbvIouHiBAncJ7JATX-wRdtQgImPExceohaoVg,5421
+sihodictapi/dictionaries/hujiang.py,sha256=QDyVVfnVv-2nHLY08edhmXduCRWP3XS_r93KeAZKa0A,959
+sihodictapi/dictionaries/iciba.py,sha256=ewt225khVyQxBbS89xlTfi6yY_sVzfvugDDoaNd-nWE,3163
+sihodictapi/dictionaries/moji.py,sha256=X5qJIE-NIt81x4iSuCgCXMUcZUdiTm1lHb7TECPL2Mc,9262
+sihodictapi/dictionaries/youdao.py,sha256=w-Rr6yW6UumYEiA9tvF3IWGUIqeCK9aO3e7JkMqhE8E,2166
+sihodictapi-0.1.6.dist-info/LICENSE,sha256=kHvJV5sgJnek0uZxsAHjfPps2WQQLQZ4vhYENtNLRlc,1086
+sihodictapi-0.1.6.dist-info/METADATA,sha256=IFg-rgF5Qqo2e5glClTOIojlQ3sWMYvBFhMaXJEPzPY,633
+sihodictapi-0.1.6.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sihodictapi-0.1.6.dist-info/top_level.txt,sha256=4veVw6Q_7ArFptBXQlrVynaTbP7ty3SftTMNurM-uIc,12
+sihodictapi-0.1.6.dist-info/RECORD,,
