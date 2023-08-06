@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fintreepy
+Version: 0.0.4
+Home-page: https://github.com/sammuharem/fintreepy
+Author: Sam Muharem
+Author-email: sj.muharem@gmail.com
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
