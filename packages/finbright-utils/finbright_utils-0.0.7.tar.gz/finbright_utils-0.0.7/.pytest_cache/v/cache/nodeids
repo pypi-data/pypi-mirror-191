@@ -1,0 +1,6 @@
+[
+  "tests/test_resample.py::Test_resample::test_resample_1m_to_1",
+  "tests/test_resample.py::Test_resample::test_resample_from_1d",
+  "tests/test_resample.py::Test_resample::test_resample_from_1h",
+  "tests/test_resample.py::Test_resample::test_resample_from_1m"
+]

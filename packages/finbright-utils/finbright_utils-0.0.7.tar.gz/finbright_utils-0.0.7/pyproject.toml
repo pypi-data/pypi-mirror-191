@@ -1,0 +1,42 @@
+[project]
+name = "finbright_utils"
+version = "0.0.7"
+authors = [
+  { name="Ali Zahedi", email="alizahedi499@gmail.com" },
+]
+description = "finbright private utils package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "statsmodels",
+  "pandas"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310']
+exclude = '''
+(
+    asv_bench/env
+  | \.egg
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | setup.py
+)
+'''

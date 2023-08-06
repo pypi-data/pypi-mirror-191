@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: finbright_utils
+Version: 0.0.7
+Summary: finbright private utils package
+Author-email: Ali Zahedi <alizahedi499@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pandas
+Requires-Dist: statsmodels

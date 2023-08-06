@@ -1,0 +1,3 @@
+{
+  "tests/test_resample.py::Test_resample::test_resample_from_1m": true
+}
