@@ -1,0 +1,19 @@
+
+# PyCharm files #
+#################
+.idea/
+
+
+# Logs and databases #
+######################
+*.log
+**/logs
+
+# git files #
+#############
+.git/
+
+
+# Package files #
+#################
+dist/
