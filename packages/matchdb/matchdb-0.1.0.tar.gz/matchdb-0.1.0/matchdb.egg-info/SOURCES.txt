@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+matchdb/__init__.py
+matchdb/_modidx.py
+matchdb/matchdb.py
+matchdb.egg-info/PKG-INFO
+matchdb.egg-info/SOURCES.txt
+matchdb.egg-info/dependency_links.txt
+matchdb.egg-info/entry_points.txt
+matchdb.egg-info/not-zip-safe
+matchdb.egg-info/requires.txt
+matchdb.egg-info/top_level.txt
