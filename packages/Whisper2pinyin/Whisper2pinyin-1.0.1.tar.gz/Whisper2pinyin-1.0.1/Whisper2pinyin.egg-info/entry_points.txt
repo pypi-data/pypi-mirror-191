@@ -1,0 +1,2 @@
+[console_scripts]
+whisper2pinyin = whisper2pinyin.transcribe:cli
