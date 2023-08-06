@@ -1,0 +1,220 @@
+Metadata-Version: 2.1
+Name: libmv
+Version: 0.4.2
+Summary: a library to create music videos
+Home-page: https://gitea.tandav.me/bhairava/libmv
+Author: Alexander Rodionov
+Author-email: tandav@tandav.me
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: ==3.10
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==1.4.0)
+Requires-Dist: aiofiles (==22.1.0)
+Requires-Dist: amfm-decompy (==1.0.11)
+Requires-Dist: anyio (==3.6.2)
+Requires-Dist: appdirs (==1.4.4)
+Requires-Dist: asttokens (==2.2.1)
+Requires-Dist: astunparse (==1.6.3)
+Requires-Dist: async-timeout (==4.0.2)
+Requires-Dist: audioread (==3.0.0)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: cachetools (==5.3.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: cffi (==1.15.1)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colortool (==0.2.0)
+Requires-Dist: comm (==0.1.2)
+Requires-Dist: crepe (==0.0.13)
+Requires-Dist: cycler (==0.11.0)
+Requires-Dist: cython (==0.29.33)
+Requires-Dist: dagops (==0.4.2)
+Requires-Dist: debugpy (==1.6.6)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: dsplib (==0.7.0)
+Requires-Dist: executing (==1.2.0)
+Requires-Dist: extraredis (==0.1.0)
+Requires-Dist: fastapi (==0.89.1)
+Requires-Dist: flatbuffers (==23.1.21)
+Requires-Dist: fonttools (==4.38.0)
+Requires-Dist: gast (==0.4.0)
+Requires-Dist: gitdb (==4.0.10)
+Requires-Dist: gitpython (==3.1.30)
+Requires-Dist: google-auth (==2.16.0)
+Requires-Dist: google-auth-oauthlib (==0.4.6)
+Requires-Dist: google-pasta (==0.2.0)
+Requires-Dist: greenlet (==2.0.2)
+Requires-Dist: grpcio (==1.51.1)
+Requires-Dist: h11 (==0.14.0)
+Requires-Dist: h5py (==3.8.0)
+Requires-Dist: hiredis (==2.2.1)
+Requires-Dist: hmmlearn (==0.2.8)
+Requires-Dist: humanize (==4.6.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: imageio (==2.25.0)
+Requires-Dist: ipykernel (==6.21.1)
+Requires-Dist: ipython (==8.9.0)
+Requires-Dist: jedi (==0.18.2)
+Requires-Dist: jinja2 (==3.1.2)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: jupyter-client (==8.0.2)
+Requires-Dist: jupyter-core (==5.2.0)
+Requires-Dist: keras (==2.11.0)
+Requires-Dist: kiwisolver (==1.4.4)
+Requires-Dist: libclang (==15.0.6.1)
+Requires-Dist: librosa (==0.9.1)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: markdown (==3.4.1)
+Requires-Dist: markupsafe (==2.1.2)
+Requires-Dist: matplotlib (==3.5.3)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Requires-Dist: mido (==1.2.10)
+Requires-Dist: musictool (==1.7.0)
+Requires-Dist: nest-asyncio (==1.5.6)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: numpy (==1.23.5)
+Requires-Dist: nvidia-cublas-cu11 (==11.10.3.66)
+Requires-Dist: nvidia-cuda-nvrtc-cu11 (==11.7.99)
+Requires-Dist: nvidia-cuda-runtime-cu11 (==11.7.99)
+Requires-Dist: nvidia-cudnn-cu11 (==8.5.0.96)
+Requires-Dist: oauthlib (==3.2.2)
+Requires-Dist: opt-einsum (==3.3.0)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: pillow (==9.4.0)
+Requires-Dist: pipe21 (==1.0.10)
+Requires-Dist: platformdirs (==3.0.0)
+Requires-Dist: pooch (==1.6.0)
+Requires-Dist: praat-parselmouth (==0.4.1)
+Requires-Dist: prompt-toolkit (==3.0.36)
+Requires-Dist: protobuf (==3.19.6)
+Requires-Dist: psutil (==5.9.4)
+Requires-Dist: psycopg2-binary (==2.9.5)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: pure-eval (==0.2.2)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pyaudio (==0.2.13)
+Requires-Dist: pycparser (==2.21)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: pygments (==2.14.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: pyreaper (==0.0.9)
+Requires-Dist: pysptk (==0.2.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-dotenv (==0.21.1)
+Requires-Dist: pyworld (==0.3.2)
+Requires-Dist: pyzmq (==25.0.0)
+Requires-Dist: redis[hiredis] (==4.5.0)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: requests-oauthlib (==1.3.1)
+Requires-Dist: resampy (==0.2.2)
+Requires-Dist: rsa (==4.9)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: scipy (==1.9.1)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: smmap (==5.0.0)
+Requires-Dist: sniffio (==1.3.0)
+Requires-Dist: soundfile (==0.11.0)
+Requires-Dist: sqlalchemy (==2.0.3)
+Requires-Dist: stack-data (==0.6.2)
+Requires-Dist: starlette (==0.22.0)
+Requires-Dist: tensorboard (==2.11.2)
+Requires-Dist: tensorboard-data-server (==0.6.1)
+Requires-Dist: tensorboard-plugin-wit (==1.8.1)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: tensorflow-estimator (==2.11.0)
+Requires-Dist: tensorflow-hub (==0.12.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.30.0)
+Requires-Dist: termcolor (==2.2.0)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: torch (==1.13.1)
+Requires-Dist: torch-yin (==0.1.3)
+Requires-Dist: torchcrepe (==0.0.17)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: traitlets (==5.9.0)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: uvicorn (==0.20.0)
+Requires-Dist: wcwidth (==0.2.6)
+Requires-Dist: werkzeug (==2.2.2)
+Requires-Dist: wheel (==0.38.4)
+Requires-Dist: wrapt (==1.14.1)
+Provides-Extra: dev
+Requires-Dist: asttokens (==2.2.1) ; extra == 'dev'
+Requires-Dist: attrs (==22.2.0) ; extra == 'dev'
+Requires-Dist: backcall (==0.2.0) ; extra == 'dev'
+Requires-Dist: build (==0.10.0) ; extra == 'dev'
+Requires-Dist: bumpver (==2022.1120) ; extra == 'dev'
+Requires-Dist: cfgv (==3.3.1) ; extra == 'dev'
+Requires-Dist: click (==8.1.3) ; extra == 'dev'
+Requires-Dist: colorama (==0.4.6) ; extra == 'dev'
+Requires-Dist: comm (==0.1.2) ; extra == 'dev'
+Requires-Dist: debugpy (==1.6.6) ; extra == 'dev'
+Requires-Dist: decorator (==5.1.1) ; extra == 'dev'
+Requires-Dist: distlib (==0.3.6) ; extra == 'dev'
+Requires-Dist: exceptiongroup (==1.1.0) ; extra == 'dev'
+Requires-Dist: executing (==1.2.0) ; extra == 'dev'
+Requires-Dist: filelock (==3.9.0) ; extra == 'dev'
+Requires-Dist: identify (==2.5.17) ; extra == 'dev'
+Requires-Dist: iniconfig (==2.0.0) ; extra == 'dev'
+Requires-Dist: ipykernel (==6.21.1) ; extra == 'dev'
+Requires-Dist: ipython (==8.9.0) ; extra == 'dev'
+Requires-Dist: jedi (==0.18.2) ; extra == 'dev'
+Requires-Dist: jupyter-client (==8.0.2) ; extra == 'dev'
+Requires-Dist: jupyter-core (==5.2.0) ; extra == 'dev'
+Requires-Dist: lexid (==2021.1006) ; extra == 'dev'
+Requires-Dist: matplotlib-inline (==0.1.6) ; extra == 'dev'
+Requires-Dist: nest-asyncio (==1.5.6) ; extra == 'dev'
+Requires-Dist: nodeenv (==1.7.0) ; extra == 'dev'
+Requires-Dist: packaging (==23.0) ; extra == 'dev'
+Requires-Dist: parso (==0.8.3) ; extra == 'dev'
+Requires-Dist: pathlib2 (==2.3.7.post1) ; extra == 'dev'
+Requires-Dist: pexpect (==4.8.0) ; extra == 'dev'
+Requires-Dist: pickleshare (==0.7.5) ; extra == 'dev'
+Requires-Dist: pip-tools (==6.12.2) ; extra == 'dev'
+Requires-Dist: platformdirs (==3.0.0) ; extra == 'dev'
+Requires-Dist: pluggy (==1.0.0) ; extra == 'dev'
+Requires-Dist: pre-commit (==3.0.4) ; extra == 'dev'
+Requires-Dist: prompt-toolkit (==3.0.36) ; extra == 'dev'
+Requires-Dist: psutil (==5.9.4) ; extra == 'dev'
+Requires-Dist: ptyprocess (==0.7.0) ; extra == 'dev'
+Requires-Dist: pure-eval (==0.2.2) ; extra == 'dev'
+Requires-Dist: pygments (==2.14.0) ; extra == 'dev'
+Requires-Dist: pyproject-hooks (==1.0.0) ; extra == 'dev'
+Requires-Dist: pytest (==7.2.1) ; extra == 'dev'
+Requires-Dist: python-dateutil (==2.8.2) ; extra == 'dev'
+Requires-Dist: pyyaml (==6.0) ; extra == 'dev'
+Requires-Dist: pyzmq (==25.0.0) ; extra == 'dev'
+Requires-Dist: six (==1.16.0) ; extra == 'dev'
+Requires-Dist: stack-data (==0.6.2) ; extra == 'dev'
+Requires-Dist: toml (==0.10.2) ; extra == 'dev'
+Requires-Dist: tomli (==2.0.1) ; extra == 'dev'
+Requires-Dist: tornado (==6.2) ; extra == 'dev'
+Requires-Dist: traitlets (==5.9.0) ; extra == 'dev'
+Requires-Dist: virtualenv (==20.19.0) ; extra == 'dev'
+Requires-Dist: wcwidth (==0.2.6) ; extra == 'dev'
+Requires-Dist: wheel (==0.38.4) ; extra == 'dev'
+
+# libmv
+
+## dev install
+
+```shell
+pip-sync requirements.txt dev-requirements.txt
+```
+
+https://stackoverflow.com/questions/20023131/cannot-install-pyaudio-gcc-error#comment69269324_35593426
+
+# nvidia notes
+- image/video should have even dimenshions (add 1px to fix)
+- my GPU support max 4096x4096 encoding using `h264_nvenc`. You should scale image down if it exceeds this size
+
+```sh
+# download single videos from server to local
+rsync -avhP --delete u60:/home/tandav/docs/bhairava/libmv/data/single/video/* video/
+```
