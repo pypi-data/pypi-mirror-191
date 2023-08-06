@@ -1,0 +1,3 @@
+[console_scripts]
+brezn=brezn.main:main
+
