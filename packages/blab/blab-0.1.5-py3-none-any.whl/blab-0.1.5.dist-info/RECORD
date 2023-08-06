@@ -1,0 +1,11 @@
+blab/1.txt,sha256=v9a5lViOxUzhaHG8gqesht1DosIjCepo5HmlAENoOTc,4
+blab/__init__.py,sha256=X-7KGqeGwTf0b4APzZO96vHjVrYQL7Y5Pc_qqHhXp9M,269
+blab/__main__.py,sha256=QKdko1MDhrLgLbyL2TuJh4dNV6O-CYF8NuSBybY0qx8,193
+blab/blab_startup.ipynb,sha256=T-f6Ai1DTTqc8lYVQeEVylhuZAEyMq6-Zrx6jpINjcs,9590
+blab/blab_tools.py,sha256=Ej27Y51PlU-BezOqk1IVTVJ7vOhHBoZJUdHN328DCJk,6115
+blab-0.1.5.dist-info/LICENSE,sha256=yRV_jnrEqjOE2zSEixa7i7holk7tDYFgT5ACLSA_HU0,1063
+blab-0.1.5.dist-info/METADATA,sha256=PhKxzsL-MtJ6FtF8v8Wt-jkJGcQGfF1eg9xVeZUj0Ns,1556
+blab-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+blab-0.1.5.dist-info/entry_points.txt,sha256=DEWroxMKdPhv_2bAwge4YkpzTMLxUNaHzX0mVpXiIH8,44
+blab-0.1.5.dist-info/top_level.txt,sha256=grPZWlKw8LGQLALHM0e-C6JXJNQQ_t9XKknTnPNGgL8,5
+blab-0.1.5.dist-info/RECORD,,
