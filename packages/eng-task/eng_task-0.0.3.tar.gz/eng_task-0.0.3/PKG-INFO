@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: eng_task
+Version: 0.0.3
+Author: Jack Edmundson
+Author-email: <jackedmundson1997@gmail.com>
+Provides-Extra: output_dir
+License-File: LICENSE
