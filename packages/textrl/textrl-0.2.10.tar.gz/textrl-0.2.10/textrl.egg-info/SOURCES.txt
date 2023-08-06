@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+requirement.txt
+setup.py
+textrl/__init__.py
+textrl/actor.py
+textrl/dump.py
+textrl/environment.py
+textrl/trainer.py
+textrl.egg-info/PKG-INFO
+textrl.egg-info/SOURCES.txt
+textrl.egg-info/dependency_links.txt
+textrl.egg-info/entry_points.txt
+textrl.egg-info/not-zip-safe
+textrl.egg-info/requires.txt
+textrl.egg-info/top_level.txt
