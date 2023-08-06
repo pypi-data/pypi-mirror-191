@@ -1,0 +1,5 @@
+[console_scripts]
+jecret=jommerce.__main__:get_random_secret_key
+jommerce=jommerce.__main__:main
+jonfig=jommerce.__main__:generate_config_file
+
