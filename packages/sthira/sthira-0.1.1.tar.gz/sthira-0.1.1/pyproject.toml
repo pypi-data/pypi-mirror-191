@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "sthira"
+version = "0.1.1"
+description = "The `Constant` class is a metaclass for creating classes with constant attributes"
+authors = ["neelabalan <neelabalan.n@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
