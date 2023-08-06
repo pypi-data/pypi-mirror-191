@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wasabit
+Version: 0.1
+Summary: This package offers a solution for uploading files, creating folders, and authenticating with Wasabi
+Author: Saurabh Harak
+Author-email: saurabh_harak@isb.edu
+License-File: LICENSE
+Requires-Dist: boto3 (==1.26.65)
+Requires-Dist: botocore (==1.29.65)
+Requires-Dist: jmespath (==1.0.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: s3transfer (==0.6.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.14)
+

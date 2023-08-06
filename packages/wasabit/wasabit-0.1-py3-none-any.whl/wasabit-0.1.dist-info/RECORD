@@ -1,0 +1,9 @@
+wasabit/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+wasabit/wasabi_auth.py,sha256=3-1o8tjqRv-QmzlCdfzuxP2fm4iOBylEFDCRHce6M48,1129
+wasabit/wasabi_download.py,sha256=BUXoSpzvVutu9jq-UhzmJso4s8aD7nI1dAB8Jm7nc7w,1626
+wasabit/wasabi_upload.py,sha256=84dmVoObSKoLB6zAzWgPcWw4WTAS9YGjmqXV22n-Sio,5480
+wasabit-0.1.dist-info/LICENSE,sha256=rMrkUv0Y2LNvNBAhUza8rJEW_QEwT7B36rEVo7McbOM,1111
+wasabit-0.1.dist-info/METADATA,sha256=bYiV2GPHt7v27qvr5cDRn1IWIVPih5lxEJU9fxGhcBU,485
+wasabit-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wasabit-0.1.dist-info/top_level.txt,sha256=fmBi7sUnph_HxyQeSms_a95o2dX4LPI-v5tyCyaiN_I,8
+wasabit-0.1.dist-info/RECORD,,
