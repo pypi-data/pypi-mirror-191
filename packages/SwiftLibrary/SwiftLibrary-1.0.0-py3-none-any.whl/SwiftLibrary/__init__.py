@@ -1,0 +1,1 @@
+from SwiftRubika.Method import *
