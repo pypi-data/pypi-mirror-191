@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "pkg-cli"
+version = "3.2.1.post"
+description = ""
+authors = ["githashem <PersonalHashem@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pkg_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
