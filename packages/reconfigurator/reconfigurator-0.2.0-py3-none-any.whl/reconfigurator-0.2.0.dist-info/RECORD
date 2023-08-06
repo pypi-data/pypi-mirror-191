@@ -1,0 +1,11 @@
+reconfigurator/__init__.py,sha256=bebfHwsDfQT2sWGgXe1FeKk_y7qVgxov_zPmATGpndY,117
+reconfigurator/compiler.py,sha256=HuwdbkVXZ1d2Ephndjnr5JXHWxIV-NZ_UUoWEyW_6T4,6364
+reconfigurator/reconfigurator.py,sha256=XPgMPg9on_VINHwTCyewPpfKQjC-Whq-3aHu8Q3azMk,8600
+reconfigurator/sample.py,sha256=xo0vy1ikKzjt9cQH35T9wfGn0W4M6YObEnSHEPWNFiE,5081
+reconfigurator/config/config.json,sha256=fuBI8hCYxaK_KTg8ds0hcRfLjJbfw8i_JosBrBgdi1Y,23
+reconfigurator/scripts/add_cli.bash,sha256=Iqg_fblDKTiwKW_hoHQQTe-ffoXED5K556K5-pD3KlI,521
+reconfigurator-0.2.0.dist-info/LICENSE,sha256=j-bxRqOBdQaK4aeW8jJtg7P-_XCfhhhJFaz7YtKZGJU,1498
+reconfigurator-0.2.0.dist-info/METADATA,sha256=US1RxA9aQxdxJlAVLqtbD3jUs4aPM8NT9IvESOwnVEY,1528
+reconfigurator-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+reconfigurator-0.2.0.dist-info/top_level.txt,sha256=_qjA7Vo5A2cXeAnpHxPYM0FbeSipUzCXCKNQUK0o-SM,15
+reconfigurator-0.2.0.dist-info/RECORD,,
