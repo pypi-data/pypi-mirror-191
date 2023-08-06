@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "event-manager-lib"
+version = "0.1.0"
+description = "Event/ State Manager library/ SDK"
+authors = ["David Lubomirov <davidlubomirov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "3.8.*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
