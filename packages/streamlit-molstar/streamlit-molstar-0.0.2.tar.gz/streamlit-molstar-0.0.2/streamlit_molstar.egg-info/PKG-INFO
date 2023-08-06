@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: streamlit-molstar
+Version: 0.0.2
+Home-page: https://github.com/mapix/streamlit-molstar
+Author: mapix
+Author-email: mapix.me@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+
+# streamlit-molstar
+
+[Mol*](https://molstar.org/) (/'molstar/) is a modern web-based open-source toolkit for visualisation and analysis of large-scale molecular data.
+
+## Install
+`pip install streamlit-molstar`
+
+## Usage
+```python
+    import streamlit as st
+    from streamlit_molstar import st_molstar, st_molstar_rcsb, st_molstar_remote
+
+    st_molstar_rcsb('1LOL', key='xx')
+    st_molstar_remote("https://files.rcsb.org/view/1LOL.cif", key='sds')
+    st_molstar('examples/complex.pdb',key='3')
+    st_molstar('examples/complex.pdb', 'examples/complex.xtc', key='4')
+```
+
+![](examples/example.png)
