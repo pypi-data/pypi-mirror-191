@@ -1,0 +1,12 @@
+PyYAML
+pandas
+progress
+ase
+numpy
+cclib
+matplotlib
+seaborn
+cffi
+goodvibes
+py3Dmol
+ipywidgets
