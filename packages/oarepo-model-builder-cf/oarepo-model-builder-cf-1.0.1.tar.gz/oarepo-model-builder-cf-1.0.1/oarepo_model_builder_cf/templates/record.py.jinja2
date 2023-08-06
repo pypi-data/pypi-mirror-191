@@ -1,0 +1,23 @@
+from invenio_records_resources.records.dumpers import CustomFieldsDumperExt
+from oarepo_runtime.cf import CustomFields, InlinedCustomFields
+
+class {{ current_model.record_class|base_name }}:
+
+    dumper_extensions = [
+{% for cf in custom_fields %}
+        CustomFieldsDumperExt("{{cf.config}}"),
+{% endfor %}
+    ]
+
+    {% for cf in custom_fields %}
+    {%if cf.element %}
+    {{cf.element}} = CustomFields(
+        "{{cf.config}}",
+        "{{cf.element}}",
+        clear_none=True,
+        create_if_missing=True,
+    )
+    {% else %}
+    inlined_custom_fields = InlinedCustomFields("{{cf.config}}")
+    {% endif %}
+    {% endfor %}
