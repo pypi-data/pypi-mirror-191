@@ -1,0 +1,52 @@
+[project]
+name = "simple-git-versioning"
+description = "Thinly scoped and opinionated project that computes a version number from git tags and trailers"
+license = { text = "MIT" }
+requires-python = ">=3.7"
+authors = [
+    { name = "Quentin Bouget", email = "ypsah@devyard.org" },
+]
+keywords = [
+    "versioning",
+    "git",
+    "git-trailers",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dynamic = ["dependencies", "version"]
+
+[project.scripts]
+version = "versioning.__main__:main"
+
+[build-system]
+requires = ["setuptools>=63", "setuptools_scm[toml]>=6.2", "setuptools-pipfile"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.setuptools-pipfile]
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py310', 'py311']
+# enrole in feature-preview
+preview = true
+
+[tool.isort]
+profile = "black"
+src_paths = ["snippets", "tests"]
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --cov=versioning --cov-branch --cov-fail-under=90"
