@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: poked
+Version: 0.9.0
+Summary: Play with Pokemon Data using Pandas
+Author: Kyle Kelley
+Author-email: rgbkrk@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.8,<4.0)
+Requires-Dist: appdirs (>=1.4,<2.0)
+Requires-Dist: gql (>=3.4,<4.0)
+Requires-Dist: ipython (>=8.9.0,<9.0.0)
+Requires-Dist: pandas (>=1.5,<2.0)
