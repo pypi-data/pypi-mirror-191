@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+qsample = qsample._modidx:d
+
