@@ -1,0 +1,7 @@
+aiohttp>=3.7
+
+[:os_name == "nt"]
+tzdata
+
+[:python_version < "3.9"]
+backports.zoneinfo
