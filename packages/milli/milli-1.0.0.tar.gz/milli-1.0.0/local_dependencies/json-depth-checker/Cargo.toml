@@ -1,0 +1,13 @@
+[package]
+name = "json-depth-checker"
+version = "1.0.0"
+edition = "2021"
+description = "A library that indicates if a JSON must be flattened"
+publish = false
+
+[dependencies]
+serde_json = "1.0"
+
+[[bench]]
+name = "depth"
+harness = false

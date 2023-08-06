@@ -1,0 +1,89 @@
+extern crate milli as mi;
+
+use pyo3::prelude::*;
+use pyo3::types::*;
+
+use mi::Index;
+use mi::update::{IndexerConfig, IndexDocumentsConfig, IndexDocuments};
+use mi::documents::{DocumentsBatchBuilder, DocumentsBatchReader};
+use mi::Search;
+use mi::DocumentId;
+mod conv;
+mod obkv;
+
+use serde::Deserializer;
+
+#[pyclass(name="Index")]
+struct PyIndex {
+    index: Index,
+}
+
+#[pymethods]
+impl PyIndex {
+    #[new]
+    fn new(path: String, map_size: usize) -> Self {
+        let mut options = mi::heed::EnvOpenOptions::new();
+        options.map_size(map_size);
+        let index = Index::new(options, &path).unwrap();
+        return PyIndex{ index };
+    }
+
+    fn add_documents(&self, py: Python<'_>, list: &PyList) -> PyResult<DocumentAdditionResult> {
+        let mut wtxn = self.index.write_txn().unwrap();
+        let config = IndexerConfig::default();
+        let indexing_config = IndexDocumentsConfig::default();
+        let builder = IndexDocuments::new(
+            &mut wtxn, &self.index, &config, indexing_config.clone(), |_| (), || false).unwrap();
+
+        // Convert Python array into Vec<milli::Object>
+        let list = list.to_object(py);
+        let list = conv::to_json(py, &list)?;
+        let mut docbuilder = DocumentsBatchBuilder::new(Vec::new());
+        for item in list.as_array().unwrap() {
+            let object = item.as_object().unwrap();
+            docbuilder.append_json_object(object).unwrap();
+        }
+        let vector = docbuilder.into_inner().unwrap();
+        let reader = DocumentsBatchReader::from_reader(std::io::Cursor::new(vector)).unwrap();
+
+        let (builder, _user_error) = builder.add_documents(reader).unwrap();
+        builder.execute().unwrap();
+        wtxn.commit().unwrap();
+        Ok(DocumentAdditionResult{})
+    }
+
+    fn get_document(&self, py: Python<'_>, id: DocumentId) -> PyResult<Py<PyDict>> {
+        let rtxn = self.index.read_txn().unwrap();
+        let (_docid, obkv) = self.index.documents(&rtxn, [id]).unwrap()[0];
+        let fields = self.index.fields_ids_map(&rtxn).unwrap();
+
+        // Deserialize JSON into Python objects
+        let dict = PyDict::new(py);
+        for (id, bytes) in obkv.iter() {
+            let key = fields.name(id);
+            let mut deserializer = serde_json::Deserializer::from_slice(&bytes);
+            let value = obkv::ObkvValue::new(py);
+            let value = deserializer.deserialize_any(value).unwrap();
+            dict.set_item(key, value).unwrap();
+        }
+        Ok(dict.into())
+    }
+
+    fn search(&self, query: String) -> Vec<DocumentId> {
+        let rtxn = self.index.read_txn().unwrap();
+        let mut search = Search::new(&rtxn, &self.index);
+        search.query(query);
+        let results = search.execute().unwrap();
+        return results.documents_ids;
+    }
+}
+
+#[pyclass]
+pub struct DocumentAdditionResult {
+}
+
+#[pymodule]
+fn milli(_py: Python<'_>, m: &PyModule) -> PyResult<()> {
+    m.add_class::<PyIndex>()?;
+    Ok(())
+}
