@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dploot
+Version: 2.1.14
+Summary: DPAPI looting remotely in Python
+Home-page: https://github.com/zblurx/dploot
+Author: zblurx
+Author-email: seigneuret.thomas@pm.me
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+README.md
+
