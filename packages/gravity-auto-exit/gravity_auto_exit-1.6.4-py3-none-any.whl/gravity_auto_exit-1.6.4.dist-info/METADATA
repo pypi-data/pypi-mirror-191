@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gravity-auto-exit
+Version: 1.6.4
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License-File: LICENSE
+Requires-Dist: qcad (==0.6.0)
+Requires-Dist: whikoperator
+Requires-Dist: pillow
+Requires-Dist: qneuroworker (>=1.0.7)
+
+WHIKoperator - фреймворк для работы с камерой HV в Gravity-core
