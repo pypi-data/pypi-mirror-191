@@ -1,0 +1,15 @@
+petromodder/__init__.py,sha256=PfePGbCew3ju1-Ci6rgsbIVRFpM-nX-NywGAVq7eKUU,319
+petromodder/base_model.py,sha256=rq5kfhPiCbmlgFCMOX9zDO4B9nm8rWu0NwK-lQS9JS8,1672
+petromodder/cultural_data.py,sha256=GkwGcYKE_pB9-UOUo9TnNB3gyWW_O9atgUgxHxBKTpk,3359
+petromodder/lithology.py,sha256=Uv8UhP9B9SKLj_J7JYT8oC5f49sgY3J4QqEWuiAHmoU,3100
+petromodder/logging.py,sha256=86Ku979Rju7YyswvQvKKBgQxrU9TOygZbtkU2VQJanE,52
+petromodder/model3D.py,sha256=SkMTGWo5d6_rCQXa9OS0CUEiF9U5UIWRkwL_xpQ3h9c,16098
+petromodder/models.py,sha256=2CpM1rbIi3XHbdkj41l9e6YOSEzl5Fz67cmkhX9cH_4,589
+petromodder/project.py,sha256=dkj56bbAc2xJPQDjveaDj7UZyGlgz5V69gmoNQ3Rxg8,2806
+petromodder/project_data.py,sha256=7uuz2ZdREA40dAlkwbou2ERz8KPp7gmE45K6TAefmYk,682
+petromodder/utils.py,sha256=nxQ39iP5Yhpe4Vab4_t_KGAcM6pj5CW-jkraWPlYkMg,5823
+petromodder-0.1.2.dist-info/LICENSE.md,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+petromodder-0.1.2.dist-info/METADATA,sha256=NjRlZIM4naC2VnKnnZoCfh4EIuRrnAVxVrxVckyYuOU,861
+petromodder-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+petromodder-0.1.2.dist-info/top_level.txt,sha256=kAeRQmH7TJ_7k0yBPtiE5KXnqHLa5_lDOqMTyJuRvPk,12
+petromodder-0.1.2.dist-info/RECORD,,
