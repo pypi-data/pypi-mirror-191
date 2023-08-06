@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "surquest-fastapi-schemas"
+version = "0.0.1rc3"
+description = "This project provides collection of standard schemas for FastAPI framework as: startDate, endDate, offset, limit, etc."
+authors = [
+    {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
+]
+readme = "README.md"
+dependencies = [
+    "fastapi >= 0.91.0"
+]
+[project.optional-dependencies]
+test = [
+    "pytest>=7.2.1",
+    "pytest-cov>=4.0.0",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/surquest/python-fastapi-schemas"
+"Bug Tracker" = "https://github.com/surquest/python-fastapi-schemas/issues"
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+"scripts" = "surquest"
+
+[tool.hatch.build.targets.sdist.sources]
+"src" = ""
+"scripts" = "surquest"
