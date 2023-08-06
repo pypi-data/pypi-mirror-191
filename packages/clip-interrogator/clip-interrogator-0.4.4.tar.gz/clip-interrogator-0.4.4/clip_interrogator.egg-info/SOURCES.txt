@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+clip_interrogator/__init__.py
+clip_interrogator/clip_interrogator.py
+clip_interrogator.egg-info/PKG-INFO
+clip_interrogator.egg-info/SOURCES.txt
+clip_interrogator.egg-info/dependency_links.txt
+clip_interrogator.egg-info/requires.txt
+clip_interrogator.egg-info/top_level.txt
+clip_interrogator/data/artists.txt
+clip_interrogator/data/flavors.txt
+clip_interrogator/data/mediums.txt
+clip_interrogator/data/movements.txt
+clip_interrogator/data/negative.txt
