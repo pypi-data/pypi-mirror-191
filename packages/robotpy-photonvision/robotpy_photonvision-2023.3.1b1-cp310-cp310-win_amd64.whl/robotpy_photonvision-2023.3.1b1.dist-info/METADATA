@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: robotpy-photonvision
+Version: 2023.3.1b1
+Summary: RobotPy wrappers for photonvision
+Home-page: https://github.com/robotpy/robotpy-photonvision
+Author: RobotPy Development Team
+Author-email: robotpy@googlegroups.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyntcore (<2024.0.0,>=2023.3.2)
+Requires-Dist: robotpy-apriltag (<2024.0.0,>=2023.3.2)
+Requires-Dist: robotpy-wpimath (<2024.0.0,>=2023.3.2)
+Requires-Dist: wpilib (<2024.0.0,>=2023.3.2)
+
+# robotpy-photonvision
+This is a python wrapper around the Photonvision Photonlib library. The RobotPy project is not associated with or endorsed by Photonvision.
+
