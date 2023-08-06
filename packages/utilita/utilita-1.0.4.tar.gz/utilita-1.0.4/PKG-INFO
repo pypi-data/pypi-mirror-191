@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: utilita
+Version: 1.0.4
+Summary: a utility library
+Home-page: https://github.com/json2d/utilita
+Author: Jason Yung
+Author-email: json.yung@gmail.com
+License: MIT
+Download-URL: https://github.com/json2d/utilita/archive/v0.4.0.tar.gz
+Description: UNKNOWN
+Keywords: starter,template,python,thing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
