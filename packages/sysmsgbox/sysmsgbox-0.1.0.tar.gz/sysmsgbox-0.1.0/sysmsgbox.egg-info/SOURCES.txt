@@ -1,0 +1,7 @@
+README.md
+setup.py
+sysmsgbox/__init__.py
+sysmsgbox.egg-info/PKG-INFO
+sysmsgbox.egg-info/SOURCES.txt
+sysmsgbox.egg-info/dependency_links.txt
+sysmsgbox.egg-info/top_level.txt
