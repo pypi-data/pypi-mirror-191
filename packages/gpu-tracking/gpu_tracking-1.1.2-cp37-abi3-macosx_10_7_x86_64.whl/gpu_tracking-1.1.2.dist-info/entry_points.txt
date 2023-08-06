@@ -1,0 +1,2 @@
+[console_scripts]
+gpu_tracking=gpu_tracking:run_app
