@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: daemonflux
+Version: 0.4.0
+Summary: Tabulated representation of a muon-calibrated neutrino flux model
+Home-page: https://github.com/mceq-project/daemon
+Download-URL: https://pypi.python.org/pypi/daemonflux
+Author: Anatoli Fedynitch
+Maintainer-email: afedynitch@gmail.com
+License: BSD 3-Clause License
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: examples
+License-File: LICENSE
+
+# daemonflux: DAta-drivEn and MuOn-calibrated Neutrino flux
+
+Daemonflux is a tabulated/splined version of the an atmospheric flux model calibrated on muon spectrometer data.
+
+## Requirements
+ * `Python > 3.7`, `numpy`, `scipy`
+ * `matplotlib` for examples
+
+## Installation
+
+`pip install daemonflux`
+
+## Usage
+
+Follow the [example](examples/example.ipynb).
+
+## Citation
+
+Coming soon.
+
+## LICENSE
+
+[BSD 3-Clause License](LICENSE)
