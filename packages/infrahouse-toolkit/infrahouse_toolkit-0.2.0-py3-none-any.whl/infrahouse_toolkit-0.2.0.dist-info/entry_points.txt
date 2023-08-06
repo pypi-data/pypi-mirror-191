@@ -1,0 +1,2 @@
+[console_scripts]
+infrahouse-toolkit = infrahouse_toolkit.cli:main
