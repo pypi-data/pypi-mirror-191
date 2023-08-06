@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+pydobe/__init__.py
+pydobe/adobe_objects.py
+pydobe/core.py
+pydobe/utils.py
+pydobe.egg-info/PKG-INFO
+pydobe.egg-info/SOURCES.txt
+pydobe.egg-info/dependency_links.txt
+pydobe.egg-info/requires.txt
+pydobe.egg-info/top_level.txt
+pydobe/after_effects/ae_utils.py
+pydobe/after_effects/data.py
+pydobe/after_effects/objects/ae_objects.py
+pydobe/after_effects/objects/root.py
