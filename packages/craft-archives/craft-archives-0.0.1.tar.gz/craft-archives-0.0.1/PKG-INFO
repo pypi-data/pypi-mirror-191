@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: craft-archives
+Version: 0.0.1
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: dev-lint
+Provides-Extra: types
+Provides-Extra: docs
+License-File: LICENSE
+
+TODO for craft-archives
