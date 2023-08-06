@@ -1,0 +1,10 @@
+gdelt2py/__init__.py,sha256=6kyqIayKFN1alUAg9ecRxYmnzbBte58mwB-XYcwA-_E,251
+gdelt2py/check.py,sha256=sXKmulpVoI93XGfsM2b-f_4GIUqYGwZI-096uCG_ORM,1171
+gdelt2py/gdelt2.py,sha256=sZYnctOJmXjIITNlQr9qyQ7kLaInbPQCx_pPTgANEiI,3898
+gdelt2py/gdelt2event.py,sha256=pRdQXNcsxJvdKsvucjLrfgu1XK8gaPFbWCxf6rz1vn0,105
+gdelt2py/task.py,sha256=g_VPKtZwnd1qLOojZ7H3qaycY8gRvO-P41DzYKto0Kw,4283
+gdelt2py-0.1.6.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+gdelt2py-0.1.6.dist-info/METADATA,sha256=qb9AlXcmnmZreneF60R6MpZno1n00MQMyXbgv9CKy0g,6082
+gdelt2py-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gdelt2py-0.1.6.dist-info/top_level.txt,sha256=_miTtlpqNY35iWeCJIitPS3A2ShqDzcQB278tc5-ZTE,9
+gdelt2py-0.1.6.dist-info/RECORD,,
