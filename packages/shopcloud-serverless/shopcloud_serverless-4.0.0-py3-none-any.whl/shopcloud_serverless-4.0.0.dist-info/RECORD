@@ -1,0 +1,17 @@
+shopcloud_serverless/__init__.py,sha256=8jS4Zy4MW2R5wRMiWU7iDEHVXBo_xTQf0bx36kKj5m8,479
+shopcloud_serverless/__main__.py,sha256=3ZkqvUDvsc39VpWujmv-cwQR274JU2xia6y8jIeWVvA,2257
+shopcloud_serverless/cli.py,sha256=n7OD1Ypo-gps1tQMmkD5zhYSxJTV4Wz62Z19Jrf3N9A,1364
+shopcloud_serverless/configs.py,sha256=mxyE9rG392e7o3QSnmK7zhwNPvYmeQPXmD9xCnPe6n0,1818
+shopcloud_serverless/endpoints.py,sha256=iTnb9UBT0TGLh0HChAjw5m1QhwJvUv4X5jQmKB2W3b4,7690
+shopcloud_serverless/exceptions.py,sha256=FsUsyMqNdXrgfGThqu0zkA4uI7QvatuLIGc_f51Xnqw,90
+shopcloud_serverless/file_contents.py,sha256=ibtgXZieLomPnC3mprfiowx9CkYBz9JGHHaASUjRaO4,3498
+shopcloud_serverless/gateways.py,sha256=WBi8wR8TH6OJLcJguu-Sp2XVM8Rvhl4szrD-q7xxE8I,3952
+shopcloud_serverless/helpers.py,sha256=oaoojyWgD9CikOd_CMIx3AEvqtqDgGOfPOaVd-i2Sf4,968
+shopcloud_serverless/jobs.py,sha256=6Xsi_0yDvUrWUELHP08odUKQI9k_tUIZLfjYjT8FU44,9537
+shopcloud_serverless/steps.py,sha256=5Qz4ZsrZemszLYiwTRMtGNXubR_OZvcc6cFhIvxTcF0,4266
+shopcloud_serverless-4.0.0.data/scripts/serverless,sha256=BjP4NNozWanQ3k8BCIp5m1BmkRk0m6GfLnHmAMQlcTM,127
+shopcloud_serverless-4.0.0.dist-info/LICENSE,sha256=L9qExrnLduRUhcEKh6lnhIdiOaTjp90gBdVfHCQXc_Q,1072
+shopcloud_serverless-4.0.0.dist-info/METADATA,sha256=JHQkPHIUcxcQ4i3MDGV6h2MTHdNXKDCbLvcdZySKnYQ,1894
+shopcloud_serverless-4.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shopcloud_serverless-4.0.0.dist-info/top_level.txt,sha256=4l_jDEbvfPchr8jgOf-KtPW5JNsU31XqWmDfvyuSphQ,21
+shopcloud_serverless-4.0.0.dist-info/RECORD,,
