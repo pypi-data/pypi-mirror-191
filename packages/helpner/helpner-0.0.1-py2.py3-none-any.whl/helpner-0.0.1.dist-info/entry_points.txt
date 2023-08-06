@@ -1,0 +1,3 @@
+[console_scripts]
+helpner=helpner.main:app
+
