@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mmkg-sgg
+Version: 0.1.4
+Summary: MMKG Models
+Author: Qingyuan Xu
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: easydict
+Requires-Dist: yacs
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+Requires-Dist: pycocotools
+Requires-Dist: cityscapesscripts
+
+# 场景图理解使用说明
+
+## 1. 算法描述
+
+## 2. 依赖及安装
+
+CUDA版本: 11.3
+其他依赖库的安装命令如下：
+
+```bash
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+```
+
+可使用如下命令下载安装算法包：
+```bash
+pip install -U mmkg-sgg
+```
+
+## 3. 使用示例及运行参数说明
+
+```python
+from mmkg_sgg import SGG
+image_path = 'test.jpg'
+meta = {'image_size': (224, 224)}
+output = SGG().inference(image_path, meta)
+```
