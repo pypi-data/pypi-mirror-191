@@ -1,0 +1,14 @@
+serde/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serde/byteline.py,sha256=0mEE0op1CLvphAiSycCnuUhiOvzfi7MZXiuzRIpQ8Ac,746
+serde/csv.py,sha256=Yf3xv5fdHmYOtf2YF8fuP2VrmLWzpF1VOi4HOkM-ZKM,604
+serde/helper.py,sha256=TsAY7Sr4S-Sd3FmUiMWMDkb5LWfuho272ZB6aqMulkM,3341
+serde/jl.py,sha256=FO_Dp7lUIWHzh7m0CyUGlp_JUzYMPd8xKrLVDlzB0sE,1907
+serde/json.py,sha256=TMCK_eIPUVlPIhxxR2uJAIexzPnq5tRmMBbxObI-S-s,1313
+serde/pickle.py,sha256=WFJ5KGD_c3EP7cHH_ns8BP6YdBqIKBMrJaGBpucHQes,308
+serde/prelude.py,sha256=zXchEZTXhTa07Nu8vfx2zD9vT77iUotnKlXv3bBYQFg,392
+serde/textline.py,sha256=EDq_2XeWO7vHjXztLyQz-44n4Vlk_nqJeXvbzqKbHgM,962
+serde/yaml.py,sha256=s1SoPUHPumM71ix2R9vpwyM1VgAuN9sXG2zCXVxr9dI,380
+serde2-1.6.0.dist-info/METADATA,sha256=IeWbZh4uatQkl00XGyzqTAwRZ44WtLablSecunjFILo,1038
+serde2-1.6.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+serde2-1.6.0.dist-info/LICENSE,sha256=RFga2USXvuQy8Cm9bc_bQPGXZSjO10jTUVzHSEknUuI,1064
+serde2-1.6.0.dist-info/RECORD,,
