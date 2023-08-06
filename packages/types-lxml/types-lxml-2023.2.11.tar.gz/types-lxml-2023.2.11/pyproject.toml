@@ -1,0 +1,91 @@
+[build-system]
+requires = [
+    "pdm-backend ~= 2.0",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "types-lxml"
+dynamic = []
+description = "Type annotations for lxml striving for completeness"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "lxml",
+]
+keywords = [
+    "lxml",
+    "typing",
+    "stubs",
+]
+authors = [
+    { name = "Jelle Zijlstra", email = "jelle.zijlstra@gmail.com" },
+    { name = "Michael van Tellingen", email = "michaelvantellingen@gmail.com" },
+    { name = "Stefan Behnel", email = "gh@behnel.de" },
+]
+maintainers = [
+    { name = "Abel Cheung", email = "abelcheung@gmail.com" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Stubs Only",
+]
+version = "2023.2.11"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+homepage = "https://github.com/abelcheung/types-lxml"
+
+[project.optional-dependencies]
+extra = [
+    "types-beautifulsoup4",
+    "types-html5lib",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pdm.build]
+includes = [
+    "lxml-stubs/",
+    "py.typed",
+]
+excludes = [
+    "**/*.bak",
+]
+source-includes = [
+    "test-data/",
+    "LICENSE",
+    "README.md",
+    "tox.ini",
+]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "test-data",
+]
+
+[tool.isort]
+profile = "black"
+combine_as_imports = true
+
+[tool.pyright]
+include = [
+    "lxml-stubs",
+]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    ".tox",
+    ".mypy_cache",
+]
+reportPrivateUsage = false
