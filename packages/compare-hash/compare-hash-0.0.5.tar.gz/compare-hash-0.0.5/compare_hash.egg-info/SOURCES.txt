@@ -1,0 +1,8 @@
+setup.py
+compare_hash/__init__.py
+compare_hash/compare_hash.py
+compare_hash.egg-info/PKG-INFO
+compare_hash.egg-info/SOURCES.txt
+compare_hash.egg-info/dependency_links.txt
+compare_hash.egg-info/entry_points.txt
+compare_hash.egg-info/top_level.txt

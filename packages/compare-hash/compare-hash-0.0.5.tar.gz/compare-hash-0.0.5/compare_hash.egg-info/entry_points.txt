@@ -1,0 +1,2 @@
+[console_scripts]
+compare-hash = compare_hash.compare_hash:main

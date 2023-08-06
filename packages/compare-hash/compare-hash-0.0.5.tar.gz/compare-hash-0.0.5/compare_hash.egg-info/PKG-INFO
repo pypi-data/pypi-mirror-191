@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: compare-hash
+Version: 0.0.5
+Summary: Compare the contents of two folders
+Home-page: https://github.com/jaytrairat/python-compare-hashes
+Author: jaytrairat
+Author-email: jaytrairat@outlook.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# python compare hashes
+script เพื่อใช้ตรวจสอบค่า hash ของ files ใน 2 folders ใช้ในกรณีเช่น ตรวจเจอ apk ที่มีค่า hash ของ apk ไม่ตรงกัน เมื่อ decompiled ออกมาแล้วใช้ตรวจสอบแยกแต่ละไฟล์ว่าระหว่าง 2 apks มีไฟล์ไหนไม่ตรงกันบ้าง
+
+## Table of Contents
+
+- [Usage](#usage)
+
+
+## Installation
+```sh
+pip install compare-hash
+
+```
+
+
+## Usage
+```sh
+compare-hash './folder_1' './folder_2'
+2023-01-30 12:56:00 :: Start comparison between ./folder_1 and folder_2
+2023-01-30 12:56:01 :: End comparison
+2023-01-30 12:56:01 :: Finished
+```
+
+
+| Name           | Version | Release          |
+| -------------- | ------- | ---------------- |
+| compare_hash | v.0.5   | 2023-02-13 14:46 |
