@@ -1,0 +1,9 @@
+airton_ac/__init__.py,sha256=dVgpUP2myJMoMKpqyFF6wPk1Nf6MfPSCZWyNu3KTm7Y,67
+airton_ac/device.py,sha256=MapwHbiq0cwZ4sjauAD0JjHU8OSsjP9tND1gZ1bdL58,4567
+airton_ac/domoticz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airton_ac/domoticz/install.py,sha256=vmqi1VpMb7YUW1itrgY5DzyTgd_EVn2h7QZiBkfFe3o,5135
+airton_ac/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airton_ac-2.0.0.dist-info/METADATA,sha256=PV0_WQ-llxSTxct25OZMCn7worzZEk5INYFPuUrTIx0,3332
+airton_ac-2.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+airton_ac-2.0.0.dist-info/LICENSE,sha256=k1XbRr481g0XYlViYM6al_NUYbxRDy68wcGSt35qBqg,1070
+airton_ac-2.0.0.dist-info/RECORD,,
