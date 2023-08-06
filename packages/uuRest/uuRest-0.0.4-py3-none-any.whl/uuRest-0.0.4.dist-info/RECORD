@@ -1,0 +1,16 @@
+uuRest/__init__.py,sha256=tg0GcfXg9dtBD3O7Fz1lYmAMNCBVCJAMlXe6Cir0bSs,60
+uuRest/common.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uuRest/uuCommand.py,sha256=0FLoOSZ7YrgPHuTamJos5Y3TGPfiaafSYoIviAd0tx8,70
+uuRest/uuCommon.py,sha256=7mzbJ8vj0nUplfY2MaRPS0GmhGkSdNk1zboymM8Ub18,2285
+uuRest/uuIO.py,sha256=FJnY1meTjzjKmGeGprIQ9wrAF-TNYp8n3DC2rEse4PM,7059
+uuRest/uuLoging.py,sha256=MySiL40Kl_PR3pycqlwzeGOyw56mAyKpffw79M8y8Dc,2886
+uuRest/uuRest.py,sha256=JhVeWV8Yj326hW7fXglSY2_dse2mT4X6moHSTWj1mgE,10718
+uuRest/uuRestLogin.py,sha256=kOtl5DtCw_8FeyHdPDKQjkh_Bm7bXLvh-m3c0W-sETc,900
+uuRest/uuStopwatch.py,sha256=qTPjm2_q0VkAKtI2v8luvOsSFrYGQVUAYFSXJ8HjCtE,2344
+uuTS/__init__.py,sha256=2CRD57Ij4-vBiW9eVdNdbu73LOo83JSKHbb6J33Li1g,23
+uuTS/uuTS.py,sha256=ojZ4Grne-ZV6TMXjVk9Gl4YaaYAPDWJciLED3xKDWoA,63
+uuRest-0.0.4.dist-info/LICENSE,sha256=XfPafM-lmkwqYX4HXaDAl0ngjiArAFQPjUs17gOjZPQ,1075
+uuRest-0.0.4.dist-info/METADATA,sha256=BGeMXAltAvnZrdiRYHltppl0LuXsARZ9XTruPM2HhVY,1305
+uuRest-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+uuRest-0.0.4.dist-info/top_level.txt,sha256=Q6H9zxZ3TUW9_pWpiDK9zAAvYmX6sH2W-rWd9-YHxKI,12
+uuRest-0.0.4.dist-info/RECORD,,

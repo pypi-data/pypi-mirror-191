@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: uuRest
+Version: 0.0.4
+Summary: Unicorn Universe REST API (Unicorn Systems & Unicorn Application Framework)
+Home-page: UNKNOWN
+Author: jaromirsivic (Jaromir Sivic)
+Author-email: <email@email.com>
+License: UNKNOWN
+Keywords: python,uuRest,Unicorn Systems,UAF,Unicorn Application Framework
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: json
+
+
+# uuTS
+Library that allows developers to easily integrate their application(s) with Unicorn Systems solutions and products using REST API.
+## Examples of How To Use (uuREST)
+Simple Request
+```python
+text
+```
+
+Iterating through the list of items
+```python
+from vidstream import CameraClient
+from vidstream import VideoClient
+from vidstream import ScreenShareClient
+
+# Choose One
+client1 = CameraClient('127.0.0.1', 9999)
+client2 = VideoClient('127.0.0.1', 9999, 'video.mp4')
+client3 = ScreenShareClient('127.0.0.1', 9999)
+
+client1.start_stream()
+client2.start_stream()
+client3.start_stream()
+```
+
+Check out: https://www.youtube.com/
+
