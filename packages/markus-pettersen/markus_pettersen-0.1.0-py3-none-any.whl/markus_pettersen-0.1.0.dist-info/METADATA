@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: markus-pettersen
+Version: 0.1.0
+Summary: Random useful python stuff I sometimes use
+License: MIT
+Author: Markus Pettersen
+Author-email: mp.markus94@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
