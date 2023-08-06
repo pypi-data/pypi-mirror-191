@@ -1,0 +1,64 @@
+{% extends "base.html" %} {% block content %} {% include "styles.html" %}
+<body>
+  <header>
+    <h2>SST Hierarchical Composition Tool</h2>
+  </header>
+  <div class="wrapper">
+    {% if element_divs|length %}
+    <div id="element_list" class="col">{{ element_divs|safe }}</div>
+    {% else %}
+    <div id="element_list" class="col"></div>
+    {% endif %}
+    <div id="element_inputs"></div>
+    <div class="col-right">
+      <div class="menu">
+        <ul id="hierarchy">
+          <li onclick="editor.changeModule('Home'); changeModule(event);">
+            Home
+          </li>
+        </ul>
+      </div>
+      <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <form method="post">
+          {# library_name text input #}
+          <input
+            class="library"
+            id="library"
+            type="text"
+            value="library_name"
+          />
+          {# group_name text input #}
+          <input
+            class="group"
+            id="group_nodes_name"
+            type="text"
+            value="group_name_0"
+          />
+          {# group checkbox #}
+          <input id="group_nodes" class="toggle" type="checkbox" />
+          {# group button #}
+          <div class="btn-group" id="group_button">Group</div>
+          {# modal dialog box #} {% include "modal.html" %} {# create button #}
+          <div
+            data-micromodal-trigger="modal-create"
+            class="btn-create"
+            id="create_button"
+          >
+            Create
+          </div>
+          {# clear button #}
+          <div class="btn-clear" onclick="editor.clearModuleSelected()">
+            Clear
+          </div>
+          {# export button #}
+          <div class="btn-export" id="export_button">Export</div>
+        </form>
+
+        <div class="bar-zoom">
+          <span id="group_nodes_msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+{% endblock %}
