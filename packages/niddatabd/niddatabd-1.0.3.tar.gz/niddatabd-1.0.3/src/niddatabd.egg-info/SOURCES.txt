@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/niddatabd.egg-info/PKG-INFO
+src/niddatabd.egg-info/SOURCES.txt
+src/niddatabd.egg-info/dependency_links.txt
+src/niddatabd.egg-info/top_level.txt
