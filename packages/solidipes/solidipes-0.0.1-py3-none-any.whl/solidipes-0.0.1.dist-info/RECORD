@@ -1,0 +1,12 @@
+solidipes/__init__.py,sha256=v4eXqk4kNvs90JuyCER8DlD2jcfiiypvcSndu-sIZMQ,213
+solidipes/__main__.py,sha256=bzG4kI-LFGzlYEhhdaWo9DQI769v-R_KpuOp_PTTjxA,91
+solidipes/converters.py,sha256=3sq93j5k2iMg3l7G7FQo5FCmd1SrH9eHNNYdvEuiFQY,561
+solidipes/datas.py,sha256=JkBs1gZ2TCarYEPZurTVSRYIDgVFkipI9BF5xNaGmAA,662
+solidipes/files.py,sha256=kR3HM9XkV1lyE76RZ61S76caiVoekp59rIhVhZWZpoY,1333
+solidipes/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solidipes/singleton.py,sha256=Hc_95uy_NpMVn1nNjBCJlFOmwC030DOvPYNYEJQcDiw,393
+solidipes/viewerBackends.py,sha256=r3fAotxunRtu5pOLQN_gy7LG8liXQh-byY7Rd2xKiaU,1794
+solidipes/viewers.py,sha256=isk2AKxkPlSNtXKo2YTzvcssGTKAzDv6LOtrgbwfGKU,1109
+solidipes-0.0.1.dist-info/METADATA,sha256=UIHgh5UmOXzFx4txaxRdWLbJGJLuvM_IZOkXcAkN-4Y,988
+solidipes-0.0.1.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+solidipes-0.0.1.dist-info/RECORD,,
