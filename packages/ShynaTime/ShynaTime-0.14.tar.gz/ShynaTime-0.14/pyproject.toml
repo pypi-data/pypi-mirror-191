@@ -1,0 +1,9 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "python-dateutil",
+    'datefinder',
+    'datetime'
+]
+build-backend = "setuptools.build_meta"

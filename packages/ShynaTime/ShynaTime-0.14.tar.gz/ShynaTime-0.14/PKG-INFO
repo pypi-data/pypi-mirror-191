@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: ShynaTime
+Version: 0.14
+Summary: Shyna Backend Functionality Package For Time manipulation
+Author: Shivam Sharma
+Author-email: shivamsharma1913@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Shyna Time Package
+
+***Suggested: NOT TO USE***
+
+ShynaTime Package for call time manipulation needed by Shyna and to maintain the default and standard date and time application wide. The Package is still under development and new methods and functions will be added as per Shyna's processing needs.
+
+Class have the following methods in the class by far:
+
+* add_date
+* add_hour
+* add_min
+* alternative
+* check_am_pm
+* daily
+* get_date_and_time
+* get_day_of_week
+* get_weekdays
+* is_time_passed
+* now_date
+* now_time
+* string_to_date
+* string_to_time
+* string_to_time_with_date
+* subtract_date
+* subtract_hour
+* subtract_min
+* time_digit
+* weekends
+* get_date_and_time_for_alarm
+* get_date_and_time
+* convert_to_am_pm
+
+```
+from Shynatime import ShTime
+
+st = ShTime.ClassTime()
+
+# 24-hour time format: 19:34:18 <class 'str'>
+print(st.now_time, type(st.now_time))
+
+# yyyy-mm-dd date format: 2021-12-20 <class 'datetime.date'>
+print(st.now_date, type(st.now_date))
+
+# subtract hours: 17:34:18 <class 'datetime.time'>
+print(st.subtract_hour(from_time=st.now_time, how_many=2), type(st.subtract_hour(from_time=st.now_time, how_many=2)))
+
+# subtract days: 2021-12-18 00:00:00 <class 'datetime.datetime'>
+print(st.subtract_date(from_date=st.now_date, how_many=2), type(st.subtract_date(from_date=st.now_date, how_many=2)))
+
+# add time: 21:54:52 <class 'datetime.time'>
+print(st.add_hour(from_time=st.now_time, how_many=2), type(st.add_hour(from_time=st.now_time, how_many=2)))
+
+# add date: 2021-12-22 00:00:00 <class 'datetime.datetime'>
+print(st.add_date(from_date=st.now_date, how_many=2), type(st.add_date(from_date=st.now_date, how_many=2)))
+
+# string to date format: 2021-12-20 <class 'datetime.datetime'>
+print(st.string_to_date(date_string=str(st.now_date)), type(st.string_to_date(date_string=str(st.now_date))))
+
+# string to time format: 20:01:16 <class 'datetime.datetime'>
+print(st.string_to_time(time_string=str(st.now_time)), type(st.string_to_time(time_string=str(st.now_time))))
+
+# get day of the week: 0 <class 'str'> 0 as Monday and 6 as Sunday
+print(st.get_day_of_week(), type(st.get_day_of_week()))
+
+# add minutes to the time: 19:10:33 <class 'datetime.time'>
+print(st.add_min(from_time=st.now_time, how_many=3), type(st.add_min(from_time=st.now_time, how_many=3)))
+
+# string to time with date value: 1900-01-01 19:14:02 <class 'datetime.datetime'> the date will be always 1900-01-01
+print(st.string_to_time_with_date(st.now_time), type(st.string_to_time_with_date(st.now_time)))
+
+# Get tomorrow's date: 2021-12-22 00:00:00 <class 'datetime.datetime'>
+print(st.daily(), type(st.daily()))
+
+# Get date of upcoming weekend (Saturday/sunday): 2021-12-25 <class 'datetime.date'>
+print(st.weekends(), type(st.weekends()))
+
+# Get date of upcoming weekend (Saturday/sunday) from a specific date. Date should be in string: 2022-01-01 <class
+# 'datetime.date'>
+print(st.upcoming_weekends_from_specific_date(string_date="2021-12-27"),type(st.upcoming_weekends_from_specific_date(string_date="2021-12-27")))
+
+# Get date of upcoming weekday (NOT Saturday/Sunday): 2021-12-22 00:00:00 <class 'datetime.datetime'>
+print(st.get_weekdays(), type(st.get_weekdays()))
+
+# Check if the time is passed or not. It follows 24-hour clock format: False <class 'bool'>
+print(st.is_time_passed(item_time='23:00:00'), type(st.is_time_passed(item_time='23:00:00')))
+
+# check if am/pm is there in the string: if not False otherwise returns am/pm as per string
+print(st.check_am_pm(text_string='7 '), type(st.check_am_pm(text_string='7 ')))
+
+# return if there is a digit in the sentence. if not it returns False
+print(st.time_digit(text_string='together 7'), type(st.time_digit(text_string='together 7')))
+
+# return possible upcoming time: if today 7 PM is over it will return tomorrow's 7 PM in case PM is not mention then it will return 7 AM.: (True, '2021-12-22', '06:00:00') <class 'tuple'>
+# best for setting alarm: sent the string and return alarm set time and date as tuple
+print(st.get_date_and_time(text_string='Wake me up 6 am'), type(st.get_date_and_time(text_string='wake me up at 6 am')))
+
+
+```
