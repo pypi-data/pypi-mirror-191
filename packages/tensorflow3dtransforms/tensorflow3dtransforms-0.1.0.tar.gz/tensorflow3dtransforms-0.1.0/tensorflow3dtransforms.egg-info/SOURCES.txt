@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tensorflow3d_transforms/__init__.py
+tensorflow3d_transforms/rotation_conversions.py
+tensorflow3d_transforms/so3_ops.py
+tensorflow3d_transforms/version.py
+tensorflow3dtransforms.egg-info/PKG-INFO
+tensorflow3dtransforms.egg-info/SOURCES.txt
+tensorflow3dtransforms.egg-info/dependency_links.txt
+tensorflow3dtransforms.egg-info/requires.txt
+tensorflow3dtransforms.egg-info/top_level.txt

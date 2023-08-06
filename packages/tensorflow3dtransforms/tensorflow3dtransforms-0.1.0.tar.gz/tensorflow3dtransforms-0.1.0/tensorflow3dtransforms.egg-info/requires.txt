@@ -1,0 +1,11 @@
+tensorflow>=2.5.0
+
+[dev]
+check-manifest
+twine
+numpy
+black
+isort
+sphinx
+sphinx-rtd-theme
+pytest
