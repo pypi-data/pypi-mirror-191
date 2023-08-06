@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: business-validator
+Version: 0.1.1
+Author-Email: maksyutov vlad <maksyutov.vlad@gmail.com>
+License: MIT
+Project-URL: Homepage, https://gitlab.com/1PaCHeK1/business-validator
+Requires-Python: >=3.11
+Requires-Dist: pydantic>=1.10.4
+Description-Content-Type: text/markdown
+
+# business-validator
