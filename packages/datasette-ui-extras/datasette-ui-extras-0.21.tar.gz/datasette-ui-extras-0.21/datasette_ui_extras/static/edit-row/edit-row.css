@@ -1,0 +1,97 @@
+/* Try to hide the Other links section */
+body.edit-row h2, body.edit-row h2 + ul {
+  display: none;
+}
+
+body.row .table-wrapper {
+  overflow-x: initial;
+}
+
+body.row .awesomplete {
+  width: 100%;
+}
+
+body.row .awesomplete li {
+  list-style-type: none;
+}
+
+body.row .awesomplete mark {
+  background: initial;
+}
+
+
+body.row input[type=text], body.row textarea, body.row select {
+  padding: 6px 12px;
+  box-sizing: content-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  width: 80%;
+}
+
+body.row input.dux-date-picker {
+  width: 20em;
+}
+
+body.row input.dux-fkey-picker {
+  width: 20em;
+}
+
+body.row form .dux-nullable-date-picker label, body.row form .dux-nullable-fkey-picker label {
+  font-weight: normal;
+  width: auto;
+  color: initial;
+}
+
+body.row .dux-nullable-fkey-picker .awesomplete {
+  display: inline;
+}
+
+body.row input[type="checkbox"] {
+  appearance: auto;
+  width: 24px;
+  height: 24px;
+}
+
+body.row input[type="radio"] {
+  appearance: auto;
+  width: initial;
+  height: initial;
+}
+
+body.row input:focus, body.row textarea:focus, body.row select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+body.row select {
+  appearance: auto;
+}
+
+.dux-json-tags li {
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.dux-json-tags li span {
+  vertical-align: top;
+}
+
+.dux-remove-me {
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 0.25em;
+  margin-bottom: 0.5em;
+}

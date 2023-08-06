@@ -1,0 +1,2 @@
+[datasette]
+ui_extras = datasette_ui_extras
