@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/redataprocessing/__init__.py
+src/redataprocessing/sreality.py
+src/redataprocessing/sreality_api_dictionaries.py
+src/redataprocessing/sreality_description_asyncio.py
+src/redataprocessing/sreality_description_download_decoding.py
+src/redataprocessing.egg-info/PKG-INFO
+src/redataprocessing.egg-info/SOURCES.txt
+src/redataprocessing.egg-info/dependency_links.txt
+src/redataprocessing.egg-info/requires.txt
+src/redataprocessing.egg-info/top_level.txt
