@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: sm_utils
+Version: 0.1.1
+Summary: Utility Scripts
+Author-email: Scott McLean <smclean@databankimx.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Scott McLean's Utility Scripts
+
+This project includes functions to perform execution timing and use relative paths in VS Code
+
+# Setup
+
+By default, the relative paths will point to the directory of the running script.  
+To specify a subfolder, you have two options:
+
+## JSON Configuration File
+Create a file called "sm_utils.json" in the directory containing your script and include the following:
+```json
+{
+    "default_path" : "YOUR_SUBFOLDER"
+}
+```
+
+or...
+
+## Call the set_path() function
+In your code, add the following:
+```py
+from sm_utils import set_path
+set_path("YOUR_SUBFOLDER")
+```
+
+# Usage
+
+## Timer
+To use the timer function, simply import it and decorate the function you want to time with "@timer"
+```python
+from sm_utils import timer
+@timer
+def timed_function():
+    # Your code
+```
+
+## Relative Paths
+There are three relative path functions:
+
+- root_path()  
+returns the path to the directory in which your script is running  
+Example:
+```py
+from sm_utils import root_path
+dir = root_path()
+```
+
+- dir_path(folder_path)  
+returns the path to the specified subdirectory  
+if the subdirectory is omitted, returns the root_path() directory  
+Example:
+```py
+from sm_utils import dir_path
+dir = dir_path(["YOUR_SUBFOLDER"])
+```
+
+- file_path(filename, folder_path)  
+returns the full path to the specified file in the specified subdirectory  
+if the subdirectory is omitted, returns the full path to the specified file in the root_path() directory  
+Example:
+```py
+from sm_utils import file_path
+file = file_path("YOUR_FILE_NAME"[, "YOUR_OPTIONAL_SUBFOLDER"])
+```
+
+## Internal Notes for Packaging Training
+
+To install, use the following command:  
+From Test PyPI: py -m pip install --index-url https://test.pypi.org/simple/ --no-deps sm_utils  
+From PyPI: py -m pip install sm_utils  
+
+Project Commands:  
+(Build)
+```
+py -m build
+```
+
+Upload:  
+(Test PyPI)
+```
+py -m twine upload --repository testpypi dist/*
+```
+(PyPI)
+```
+py -m twine upload dist/*
+```
