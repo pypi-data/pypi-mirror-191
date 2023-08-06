@@ -1,0 +1,2 @@
+[console_scripts]
+gptk_run = gptk.cli:main
