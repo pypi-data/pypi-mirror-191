@@ -1,0 +1,105 @@
+#!/bin/bash
+USAGE=$(cat <<-END
+     Perform various useful operations on the folders/directories
+
+     folder
+     folder size        ./            #### Print folder size in Gb
+     folder topfile     ./   20       #### Print 20 biggest size files
+     folder recentifle  ./   10       #### Print recently modified files   
+
+                                
+     folder backup   mypathXYZ/                           #### copied into default path ~/zarchive/mypath_suffix_20230202/
+     folder backup   ~/mypathXYZ   ~/mypath_target/       #### copied from mypathXYZ to mypath_target/
+
+
+     folder copysmallfile   mypathFROm/   mypathTO/   100m       ### copy files recursively, filter big files
+     
+
+END
+)
+
+#### Global Config. #################################
+# set -x  # Output commands being run.
+set -e  # Exit on error.
+
+
+#### Global vars ###################################
+FUNAME=`basename "$0"`
+YMD=$(date '+%Y%m%d')
+
+
+
+### Input Params and Defaults ##################################
+[ $# -eq 0 ] &&    echo -e "$USAGE" && exit       ###  No input print doc
+task=$1    &&  [ -z $1 ] && task="size"           ###  print folder size
+ppath=$2   &&  [ -z $2 ] && ppath="$PWD"          ###  current path as default
+
+
+### Core ###########################################
+if [[ "$task" = size ]]; then
+      ssize=$3   &&  [ -z $3 ] &&  ssize=20 
+
+      df -h $ppath
+      echo  # Newline
+      du -h -d 10 $ppath     2>&1   |\
+         # grep '[0-9]G\>'         |\
+         grep -v 'denied'           |\ 
+         sort -hr                   |\
+         head -n $ssize 
+
+
+
+exit 0
+elif [[ "$task" = topfile ]]; then
+      ssize=$3          &&  [ -z $3 ] &&  ssize=20 
+      eexcludedirs=$4   &&  [ -z $4 ] &&  excludedirs="~/zzzzz" 
+
+      df -H $ppath
+      echo  # Newline
+      du -a $ppath  --exclude='${eexcludedirs}' |\
+         sort -n -r |\
+         head -n $ssize  
+
+
+
+exit 0
+elif [[ "$task" = recentfile ]]; then
+      ### recent file modified files + created
+      ssize=$3   &&  [ -z $3 ] &&  ssize=20 
+
+      if [[ "$OSTYPE" == "darwin"* ]]; then
+         ### MacoS
+         find $ppath -type f -exec stat -lt "%F %T" {} \+ | cut -d' ' -f6- | sort -n | tail -n $ssize
+      else 
+          ### Linux 
+          find $ppath -type f -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n $ssize
+
+      fi
+
+
+exit 0
+elif [[ "$task" =  backup ]]; then
+      ### backup quickly currently folder, skip big files.
+      pathbase="suffix of path_$YMD"
+      dir_to=  dir_to=$3     &&  [ -z $3 ] &&    "~/zbackup/$pathbase"
+
+      rsync -ar $ppath  dir_to
+
+
+
+exit 0
+elif [[ "$task" =  copysmallfile ]]; then
+      ### Copy only small files, exclude big one
+      dir_to=$3         &&  [ -z $3 ] &&    "~/zbackup/$pathbase"
+      max_file_size=$4  &&  [ -z $4 ] &&    "100"
+
+      #### Add File filtering
+      rsync -ar $ppath  dir_to
+
+
+
+exit 0
+else
+   echo $USAGE
+fi
+
