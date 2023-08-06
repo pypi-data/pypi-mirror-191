@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: seq_align_two_vars
+Version: 0.0.3
+Summary: undecided name package
+Project-URL: Homepage, https://gitlab.bucknell.edu/jc092/doc_networks
+Project-URL: Bug Tracker, https://gitlab.bucknell.edu/jc092/doc_networks/-/issues
+Author-email: Jeffrey Cai <jc092@bucknell.edu>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Undecided Names
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+This project is created by Jeffrey Cai under supervised by Nathan Ryan, Professor in Mathematics department of Bucknell University.
+It is used to align sequences with non-uniform varaibales like time or distance. It is based on the idea of Alexandar Murph(https://github.com/cran/sawnuti). We implemented his method in this python package and not only to analysis non-uniform time intervals, but including  analysis of more than one varaibles like both time and dis.
+
+## Technologies
+Project is created with:
+* numpy version: -
+* pandas version: -
+* matplotlib version: -
+* networkx version: -
+
+## Setup
+To run this project, install it locally using pip install:
+
+```
+$ pip install ...
+```
