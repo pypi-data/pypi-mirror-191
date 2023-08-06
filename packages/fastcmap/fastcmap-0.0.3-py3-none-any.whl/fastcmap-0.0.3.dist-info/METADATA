@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fastcmap
+Version: 0.0.3
+Summary: a fast colormap library.
+Home-page: UNKNOWN
+Author: fallnjump
+Author-email: UNKNOWN
+License: LICENSE
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+see https://github.com/FallnJump/fastcmap
+
+
