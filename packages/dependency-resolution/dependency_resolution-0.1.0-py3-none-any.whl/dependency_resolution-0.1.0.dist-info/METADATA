@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dependency-resolution
+Version: 0.1.0
+Summary: A simple dependency resolution library using container concepts
+License: MIT
+Keywords: dependency,resolution,injection
+Author: Saroopashree K
+Author-email: saroopa25@gmail.com
+Requires-Python: >=3.10.0,<3.11.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10

@@ -1,0 +1,6 @@
+dependency_resolution/__init__.py,sha256=K_wwZj4zo9Fr2vJFtLl9SJCNeGCNR3ckJHEaD1f4JGc,92
+dependency_resolution/provider_cache.py,sha256=RqaeLdd4mw5Vh1wN0Xn-m2cpFulqDaSeaT5K1fGosEo,814
+dependency_resolution-0.1.0.dist-info/LICENSE,sha256=CRAZLYxRbzH1f5EOzLNu8hKvycyZbYRuR2uqVwL35lA,1069
+dependency_resolution-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+dependency_resolution-0.1.0.dist-info/METADATA,sha256=Saz9H5qMLT7qTUOqhh7Fso4qLbXZTdOvK3YsL9pbkR8,434
+dependency_resolution-0.1.0.dist-info/RECORD,,
