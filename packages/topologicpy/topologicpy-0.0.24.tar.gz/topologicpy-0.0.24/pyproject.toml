@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "topologicpy"
+version = "0.0.24"
+authors = [
+  { name="Wassim Jabi", email="wassim.jabi@gmail.com" },
+]
+description = "Topologic is a software modelling library enabling hierarchical and topological representations of architectural spaces, buildings and artefacts through non-manifold topology."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "plotly",
+    "numpy",
+    "scipy",
+]
+[project.urls]
+"Homepage" = "https://github.com/wassimj/TopologicPy"
+"Bug Tracker" = "https://github.com/wassimj/TopologicPy/issues"
+"Documentation" = "https://topologic.app/topologicpy_doc/topologic_pdoc/"
+
