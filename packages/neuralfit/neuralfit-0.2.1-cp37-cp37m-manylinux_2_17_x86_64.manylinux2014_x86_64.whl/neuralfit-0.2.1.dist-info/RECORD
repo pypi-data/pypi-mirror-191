@@ -1,0 +1,8 @@
+neuralfit-0.2.1.dist-info/METADATA,sha256=hLY_gxaIWB-M4abwQq1YfX07FQlCS2V3gLHA5QujnJw,645
+neuralfit-0.2.1.dist-info/WHEEL,sha256=5qaUL7R7UuAgTpV1hnYjoipMHezG5YJtRxtV3_rU2Ew,150
+neuralfit-0.2.1.dist-info/top_level.txt,sha256=WKhpI39xyUJx5Pz7B-FhNmtO27z3ihS9W4eqKD3DNmA,10
+neuralfit-0.2.1.dist-info/RECORD,,
+neuralfit/__init__.pyi,sha256=LVC82YPP9tWtySWaSmh7sbfA3WTHkWTr9wW3PCzUHZk,2776
+neuralfit/neuralfit.cpython-37m-x86_64-linux-gnu.so,sha256=nM9Tc9rvUgAHH7Rsian7xm3NBag4t7xRF1XIZ7mBjOg,4442480
+neuralfit/__init__.py,sha256=_e5diyT9QkIAR3JinDvQTDKkCxmgpbE_mfvjKWSFHh0,24
+neuralfit/optimizers/__init__.pyi,sha256=AKVGU8qAXK4jwE_DQDWcemtDWGsRw8-BNpZn5N7lzqc,176
