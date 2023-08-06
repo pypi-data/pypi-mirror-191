@@ -1,0 +1,15 @@
+LICENCE
+pyproject.toml
+readme.md
+setup.cfg
+src/sundata/__init__.py
+src/sundata/sundata.py
+src/sundata.egg-info/PKG-INFO
+src/sundata.egg-info/SOURCES.txt
+src/sundata.egg-info/dependency_links.txt
+src/sundata.egg-info/requires.txt
+src/sundata.egg-info/top_level.txt
+tests/test_get_period_with_date.py
+tests/test_lighting_information.py
+tests/test_lighting_period.py
+tests/test_sun_altitude.py
