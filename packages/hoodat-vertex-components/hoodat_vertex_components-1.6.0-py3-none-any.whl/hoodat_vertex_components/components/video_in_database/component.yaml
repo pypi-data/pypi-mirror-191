@@ -1,0 +1,94 @@
+name: Video in database
+inputs:
+- {name: secret_sql_conn, type: String}
+- {name: input_video, type: Artifact}
+outputs:
+- {name: output, type: Artifact}
+- {name: video_id, type: String}
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/video_in_database
+    command:
+    - sh
+    - -c
+    - |2
+
+      if ! [ -x "$(command -v pip)" ]; then
+          python3 -m ensurepip || python3 -m ensurepip --user || apt-get install python3-pip
+      fi
+
+      PIP_DISABLE_PIP_VERSION_CHECK=1 python3 -m pip install --quiet     --no-warn-script-location 'kfp==1.8.18' && "$0" "$@"
+    - sh
+    - -ec
+    - |
+      program_path=$(mktemp -d)
+      printf "%s" "$0" > "$program_path/ephemeral_component.py"
+      python3 -m kfp.v2.components.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+    - "\nimport kfp\nfrom kfp.v2 import dsl\nfrom kfp.v2.dsl import *\nfrom typing\
+      \ import *\n\ndef video_in_database(\n    secret_sql_conn: str,\n    input_video:\
+      \ Input[Artifact],\n    output: Output[Artifact],  #\_TODO: Rename this to video_id?\n\
+      \    video_id: OutputPath(str)\n):\n    # Local imports\n    from loguru import\
+      \ logger\n    from pathlib import Path\n\n    # Library imports\n    import\
+      \ pandas as pd\n    from sqlalchemy import create_engine\n    from sqlalchemy.orm\
+      \ import Session\n    from sqlalchemy.exc import IntegrityError\n    from google.cloud\
+      \ import secretmanager\n\n    # Hoodat utils imports\n    from hoodat_utils\
+      \ import models\n\n    ################################\n    # Parse input video\
+      \ path\n    ################################\n\n    input_video_path = input_video.path\n\
+      \    logger.info(f\"input_video_path: {input_video_path}\")\n    if \"not_youtube\"\
+      \ in input_video_path:\n        VIDEO_TYPE_DB = \"Not Youtube\"\n    elif \"\
+      youtube\" in input_video_path:\n        VIDEO_TYPE_DB = \"Youtube\"\n    logger.info(f\"\
+      VIDEO_TYPE_DB: {VIDEO_TYPE_DB}\")\n    VIDEO_SAVE_NAME = input_video_path.split(\"\
+      /\")[-1]\n    logger.info(f\"VIDEO_SAVE_NAME: {VIDEO_SAVE_NAME}\")\n\n    ################################\n\
+      \    # Helper functions\n    ################################\n\n    def create_sql_engine(secret_sql_conn:\
+      \ str):\n        # Get db uri from secret manager\n        secret_client = secretmanager.SecretManagerServiceClient()\n\
+      \        response = secret_client.access_secret_version(\n            request={\"\
+      name\": secret_sql_conn}\n        )\n        SQLALCHEMY_DATABASE_URI = response.payload.data.decode(\"\
+      UTF-8\")\n        # Create connection to database\n        engine = create_engine(SQLALCHEMY_DATABASE_URI)\n\
+      \        return engine\n\n    def query_db(engine, query: str):\n        # Run\
+      \ query\n        result = pd.read_sql(sql=query, con=engine)\n        # Return\
+      \ result\n        return result\n\n    # Check if file exists\n    def check_file_exists(file_path):\n\
+      \        if file_path.startswith(\"gs://\"):\n            file_path = file_path.replace(\"\
+      gs://\", \"/gcs/\")\n        logger.info(f\"Checking if file exists at {file_path}\"\
+      )\n        if Path(file_path).exists():\n            logger.info(\"File exists\"\
+      )\n            return True\n        else:\n            logger.info(\"File does\
+      \ not exist\")\n            return False\n\n    def save_string_to_file(string,\
+      \ save_path):\n        logger.info(f\"Creating parent directory of save_path\
+      \ {save_path}\")\n        Path(save_path).parent.mkdir(parents=True, exist_ok=True)\n\
+      \        logger.info(f\"Writing string {string} to save_path {save_path}\")\n\
+      \        with open(save_path, \"w\") as f:\n            f.write(str(string))\n\
+      \        logger.info(\"String written\")\n\n    def insert_video(engine, video_name,\
+      \ video_save_name, video_type):\n        session = Session(engine)\n       \
+      \ try:\n            video = models.Video(\n                user_id=1,\n    \
+      \            video_name=video_name,\n                save_name=video_save_name,\n\
+      \                video_type=video_type,\n            )\n            session.add(video)\n\
+      \            session.flush()\n        except IntegrityError:\n            logger.info(\"\
+      Record violated table constraints\")\n            session.rollback()\n     \
+      \   else:\n            logger.info(\"Adding row\")\n            session.commit()\n\
+      \n    ################################\n    # Main\n    ################################\n\
+      \n    # Check if file exists\n    video_file_exists = check_file_exists(input_video_path)\n\
+      \    logger.info(f\"video_file_exists: {video_file_exists}\")\n    if not video_file_exists:\n\
+      \        logger.info(\"Video file does not exist, exiting\")\n        SystemExit(1)\n\
+      \    else:\n        # Create engine\n        engine = create_sql_engine(secret_sql_conn=secret_sql_conn)\n\
+      \        # Check if file already in database\n        query = f\"\"\"\n    \
+      \        SELECT v.video_id\n            FROM videos v\n            WHERE v.video_type\
+      \ = '{VIDEO_TYPE_DB}'\n            AND v.save_name = '{VIDEO_SAVE_NAME}'\n \
+      \       \"\"\"\n        logger.info(f\"Running query: {query}\")\n        result\
+      \ = query_db(engine=engine, query=query)\n        logger.info(\"Query result:\"\
+      )\n        logger.info(result)\n        if result.shape[0] > 1:\n          \
+      \  logger.info(\"Query result has more than 1 row\")\n            SystemExit(1)\n\
+      \        if result.shape[1] > 1:\n            logger.info(\"Query result has\
+      \ more than 1 column\")\n            SystemExit(1)\n        if result.shape\
+      \ == (0, 1):\n            logger.info(\"Query result is an empty data frame\"\
+      )\n            # Insert video into database\n            logger.info(\"Inserting\
+      \ video into database\")\n            insert_video(\n                engine=engine,\n\
+      \                video_name=VIDEO_SAVE_NAME,\n                video_save_name=VIDEO_SAVE_NAME,\n\
+      \                video_type=VIDEO_TYPE_DB,\n            )\n            result\
+      \ = query_db(engine=engine, query=query)\n        save_string_to_file(string=result.iloc[0][0],\
+      \ save_path=output.uri)\n        logger.info(f\"Data saved to {output.uri}\"\
+      )\n        save_string_to_file(string=result.iloc[0][0], save_path=video_id)\n\
+      \        logger.info(f\"Data saved to {video_id}\")\n\n"
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - video_in_database

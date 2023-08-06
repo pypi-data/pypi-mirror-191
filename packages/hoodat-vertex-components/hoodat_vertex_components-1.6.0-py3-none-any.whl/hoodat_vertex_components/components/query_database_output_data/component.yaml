@@ -1,0 +1,22 @@
+name: Query Database Output Data
+description: Query the hoodat database and save the result to a file. Use this when the output is more than one cell
+
+inputs:
+- {name: secret_sql_conn, type: String, default: "projects/176634837938/secrets/hoodat_db_connection_string/versions/latest", description: "The secret that contains the connection string for the database"}
+- {name: query, type: String, default: "SELECT video_id, video_name FROM videos LIMIT 2", description: "Query to run against the database"}
+
+outputs:
+- {name: query_result, type: Data, description: "The result of the query"}
+
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/query_database_output_data
+    command:
+    - sh
+    - -c
+    - |
+      python src/query_db.py --secret_sql_conn "$0" --query "$1" --query_result "$2"
+    args:
+    - {inputValue: secret_sql_conn}
+    - {inputValue: query}
+    - {outputPath: query_result}
