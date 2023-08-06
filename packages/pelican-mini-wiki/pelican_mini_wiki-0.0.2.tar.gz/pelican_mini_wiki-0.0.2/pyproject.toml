@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pelican_mini_wiki"
+version = "0.0.2"
+authors = [
+  { name="Michael Haslam", email="hreikin@gmail.com" },
+]
+description = "Pelican Mini Wiki allows you to add a minimal wiki to any Pelican theme and website."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE.md"}
+requires-python = ">=3.7"
+
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Framework :: Pelican",
+    "Framework :: Pelican :: Plugins",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hreikin/pelican-mini-wiki"
+"Bug Tracker" = "https://github.com/hreikin/pelican-mini-wiki/issues"
+
+[tool.setuptools.packages.find]
+where = ["pelican"]
+
+[tool.setuptools.package-data]
+templates = ["*.html"]
