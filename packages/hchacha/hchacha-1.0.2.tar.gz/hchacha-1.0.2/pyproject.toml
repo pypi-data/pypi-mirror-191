@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "hchacha"
+version = "1.0.2"
+description = "Human CHromosome Accession CHAnge - Convert between different human chromosome naming systems (of the same assembly/version)"
+authors = ["Bradford Powell <bpow@drpowell.org>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://bitbucket.org/bpow/hchacha"
+homepage = "https://bitbucket.org/bpow/hchacha"
+keywords = [ "genetics", "bam", "sam", "vcf", "variants", "bed", "fasta", "genome", "exome"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Intended Audience :: Science/Research"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+
+[tool.poetry.scripts]
+hchacha = 'hchacha:cli'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
