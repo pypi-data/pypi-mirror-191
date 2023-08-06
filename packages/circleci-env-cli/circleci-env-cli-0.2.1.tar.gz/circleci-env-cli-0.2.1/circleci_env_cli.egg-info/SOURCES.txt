@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+circleci_env_cli.py
+setup.py
+circleci_env_cli.egg-info/PKG-INFO
+circleci_env_cli.egg-info/SOURCES.txt
+circleci_env_cli.egg-info/dependency_links.txt
+circleci_env_cli.egg-info/entry_points.txt
+circleci_env_cli.egg-info/requires.txt
+circleci_env_cli.egg-info/top_level.txt

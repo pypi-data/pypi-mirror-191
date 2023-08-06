@@ -1,0 +1,3 @@
+[console_scripts]
+circleci-env-cli = circleci_env_cli:cli
+
