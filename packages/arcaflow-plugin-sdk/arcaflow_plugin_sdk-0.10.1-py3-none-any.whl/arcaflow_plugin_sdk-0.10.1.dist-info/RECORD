@@ -1,0 +1,16 @@
+arcaflow_plugin_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcaflow_plugin_sdk/annotations.py,sha256=gdhAUCbKepcqz6lvIKqQRp-8_RwF2Gy0ykKydLt6eZ4,126
+arcaflow_plugin_sdk/atp.py,sha256=75MynEYETJ3AnHW1_QCr5ysoPnsSssPo-dHrs4IbI8g,5513
+arcaflow_plugin_sdk/jsonschema.py,sha256=8AB9BAzjR7-O3Pd9EI-D2RROw1gwmLtZXT3o65jb9eg,1377
+arcaflow_plugin_sdk/plugin.py,sha256=3NKrkgZWwJxzVGYShFrxpARvPoTHX0Z9DuAIFdaOBjs,11865
+arcaflow_plugin_sdk/schema.py,sha256=PF1-oNr0HK_MOuowcGTiCtb8-Du9PTCaYxBmmhEKdl0,206553
+arcaflow_plugin_sdk/serialization.py,sha256=U5Qxx7fPGBN3mM6iSfHWRKxWDrkH5yjxngM6s-j_Hu8,2224
+arcaflow_plugin_sdk/test_atp.py,sha256=21sq2uUmnXaOOoMstcm1b2O0EmVswzqBKR1Az4uWw08,3049
+arcaflow_plugin_sdk/test_jsonschema.py,sha256=VKPcHGVaYna5aKm5pFh70gPy6QsSWL5UOIzc2YK__4w,5827
+arcaflow_plugin_sdk/test_plugin.py,sha256=b6aciPTNaSLbSAbGrIcwSG17Qe4cJGOJXwRcFrFmHD8,1141
+arcaflow_plugin_sdk/test_schema.py,sha256=YNH2ec5TiZWYi2x6GEPelWpSra_MZCsHQJCz692saeI,48457
+arcaflow_plugin_sdk/validation.py,sha256=wLNeVSFbDHGiWhAG2wfQVdM34nz1HKX5DxclqUDmWCg,202
+arcaflow_plugin_sdk-0.10.1.dist-info/METADATA,sha256=PrcSC3SZMqPjIcYnlp2ZbaD2aLFiqsbVXen9DtgdTsg,3568
+arcaflow_plugin_sdk-0.10.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arcaflow_plugin_sdk-0.10.1.dist-info/LICENSE,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+arcaflow_plugin_sdk-0.10.1.dist-info/RECORD,,
