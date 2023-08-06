@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: 2021 Jeff Epler
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+[build-system]
+requires = [
+    "beautifulsoup4",
+    "click",
+    "requests",
+    "platformdirs",
+    "python-dateutil",
+    "leapseconddata",
+    "setuptools>=45",
+    "setuptools_scm[toml]>=6.0",
+    "tzdata",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+[tool.setuptools_scm]
+write_to = "src/wwvb/__version__.py"
