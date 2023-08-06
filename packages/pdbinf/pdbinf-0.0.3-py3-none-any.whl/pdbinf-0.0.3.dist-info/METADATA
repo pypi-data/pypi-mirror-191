@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pdbinf
+Version: 0.0.3
+Summary: Load PDB files into rdkit with nonstandard residues
+Author-email: Richard J Gowers <richardjgowers@gmail.com>
+Project-URL: Homepage, https://github.com/OpenFreeEnergy/pdbinf
+Project-URL: Bug Tracker, https://github.com/OpenFreeEnergy/pdbinf/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rdkit
+Requires-Dist: gemmi
+Requires-Dist: numpy
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: pooch ; extra == 'tests'
+
+[![Logo](https://img.shields.io/badge/OSMF-OpenFreeEnergy-%23002f4a)](https://openfree.energy/)
+[![build](https://github.com/OpenFreeEnergy/pdbinf/actions/workflows/ci.yaml/badge.svg)](https://github.com/OpenFreeEnergy/pdbinf/actions/workflows/ci.yaml)
+[![coverage](https://codecov.io/gh/OpenFreeEnergy/pdbinf/branch/main/graph/badge.svg)](https://codecov.io/gh/OpenFreeEnergy/pdbinf)
+
+PDBInf allows you to read PDB files using RDKit and assign bond orders from .cif (PDBx) template files.
+
+```python
+# provide a PDBx defining the TPO nonstandard residue
+nonstandard_residues = gemmi.cif.read('./tpo.cif')
+
+# load a PDB file using the built-in standard amino acid doc and providing information on the nonstandard residues
+pdbinf.load_pdb_file('./tpo.pdb', templates=[pdbinf.STANDARD_AA_DOC, nonstandard_residues])
+
+```
