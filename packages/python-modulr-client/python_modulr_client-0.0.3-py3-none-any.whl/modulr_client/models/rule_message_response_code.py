@@ -1,0 +1,21 @@
+from enum import Enum
+
+
+class RuleMessageResponseCode(str, Enum):
+    BUSINESSRULE = "BUSINESSRULE"
+    MFAERROR = "MFAERROR"
+    MFASTATUS = "MFASTATUS"
+    MFAMESSAGEINVALID = "MFAMESSAGEINVALID"
+    RETRY = "RETRY"
+    NOTFOUND = "NOTFOUND"
+    INVALID = "INVALID"
+    PERMISSION = "PERMISSION"
+    DUPLICATE = "DUPLICATE"
+    MFATIMEOUT = "MFATIMEOUT"
+    MFADEVICEMM = "MFADEVICEMM"
+    CONNECTION = "CONNECTION"
+    RATELIMIT = "RATELIMIT"
+    GENERAL = "GENERAL"
+
+    def __str__(self) -> str:
+        return str(self.value)
