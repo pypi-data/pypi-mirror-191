@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "nonebot-plugin-mahjong-scoreboard"
+version = "0.1.10"
+description = "日麻寄分器（NoneBot插件）"
+authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
+readme = "README.MD"
+license = "MIT"
+repository = "https://github.com/ssttkkl/nonebot-plugin-mahjong-scoreboard"
+packages = [
+    { include = "nonebot_plugin_mahjong_scoreboard", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nonebot2 = "^2.0.0rc1"
+nonebot-adapter-onebot = "^2.1.5"
+nonebot-plugin-sqlalchemy = "^0.1.4"
+aiosqlite = ">=0.17,<0.19"
+tzlocal = "^4.2"
+nonebot_plugin_apscheduler = "^0.2.0"
+cachetools = "^5.2.0"
+nonebot-plugin-gocqhttp-cross-machine-upload-file = "^0.1.0"
+
+[tool.poetry.group.dev.dependencies]
+nonebug = "^0.2.1"
+flake8 = "^5.0.4"
+sqlalchemy2-stubs = "^0.0.2a29"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
