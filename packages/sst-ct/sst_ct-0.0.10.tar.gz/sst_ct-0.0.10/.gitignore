@@ -1,0 +1,13 @@
+*.pyc
+__pycache__/
+.venv/
+
+.clang-format
+*.pro.user
+.vscode/
+
+.env
+build/
+/run.py
+dump.json
+*.xml
