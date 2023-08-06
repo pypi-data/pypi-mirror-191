@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/sky_test.egg-info/PKG-INFO
+src/sky_test.egg-info/SOURCES.txt
+src/sky_test.egg-info/dependency_links.txt
+src/sky_test.egg-info/top_level.txt
+src/sky_test1/__init__.py
+src/sky_test1/dest_test/join.py
+src/sky_test1/dest_test/try_run.py
+src/sky_test1/dest_test/try_run/__init__.py
+src/sky_test1/dest_test/try_run/run.py
