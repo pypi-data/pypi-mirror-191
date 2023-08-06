@@ -1,0 +1,9 @@
+siogeen/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+siogeen/tools/IoddComChecker.cp310-win_amd64.pyd,sha256=E5SGRJsgsjpJzgevSkd80Wtpfso7iGYAYuF6iZT7YRk,107008
+siogeen/tools/__init__.py,sha256=CCpWoKGerJjGcTDaC48F6skWG4rDZuBzIKxBIZqL74w,462
+siogeen/tools/cli/IoddComChecker.py,sha256=055FuCrKYio4xKOlE-uncCtc95w7P_7jqZbGEmgSncY,1188
+IoddComChecker-1.6.3.dist-info/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+IoddComChecker-1.6.3.dist-info/METADATA,sha256=XZe-rT2g2CsBM_uQYfeBaq5lE0KRu-GYOuMUpNh-0GQ,5653
+IoddComChecker-1.6.3.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+IoddComChecker-1.6.3.dist-info/top_level.txt,sha256=vIFg0bLkihbkHyuCZUdHmA-50LP8LvTwDknGWir0T5o,8
+IoddComChecker-1.6.3.dist-info/RECORD,,
