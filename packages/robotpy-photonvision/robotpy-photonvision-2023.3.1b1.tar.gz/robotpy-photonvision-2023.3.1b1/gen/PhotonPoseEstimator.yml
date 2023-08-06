@@ -1,0 +1,29 @@
+---
+
+enums:
+  PoseStrategy:
+classes:
+  EstimatedRobotPose:
+    attributes:
+      estimatedPose:
+      timestamp:
+    methods:
+      EstimatedRobotPose:
+        param_override:
+          pose_:
+            name: estimatedPose
+          time_:
+            name: timestamp
+  PhotonPoseEstimator:
+    methods:
+      PhotonPoseEstimator:
+      GetFieldLayout:
+      GetPoseStrategy:
+      SetPoseStrategy:
+      GetReferencePose:
+      SetReferencePose:
+      GetRobotToCameraTransform:
+      SetRobotToCameraTransform:
+      SetLastPose:
+      Update:
+      GetCamera:

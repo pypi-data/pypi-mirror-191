@@ -1,0 +1,49 @@
+---
+
+enums:
+  LEDMode:
+classes:
+  PhotonCamera:
+    shared_ptr: true
+    attributes:
+      test:
+      testResult:
+      mainTable:
+      rootTable:
+      rawBytesEntry:
+      driverModeEntry:
+      inputSaveImgEntry:
+      inputSaveImgSubscriber:
+      outputSaveImgEntry:
+      outputSaveImgSubscriber:
+      pipelineIndexPub:
+      pipelineIndexSub:
+      ledModePub:
+      ledModeSub:
+      versionEntry:
+      driverModeSubscriber:
+      driverModePublisher:
+      pipelineIndexSubscriber:
+      ledModeSubscriber:
+      m_topicNameSubscriber:
+      path:
+      m_cameraName:
+        ignore: true
+      packet:
+    methods:
+      PhotonCamera:
+        overloads:
+          nt::NetworkTableInstance, std::string_view:
+          std::string_view:
+      GetLatestResult:
+      SetDriverMode:
+      GetDriverMode:
+      TakeInputSnapshot:
+      TakeOutputSnapshot:
+      SetPipelineIndex:
+      GetPipelineIndex:
+      GetLEDMode:
+      SetLEDMode:
+      GetCameraName:
+      HasTargets:
+      SetVersionCheckEnabled:

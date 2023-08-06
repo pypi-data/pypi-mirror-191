@@ -1,0 +1,23 @@
+---
+extra_includes:
+  - frc/apriltag/AprilTagFieldLayout.h
+
+enums:
+  PoseStrategy:
+    ignore: true  # duplicated in PhotonPoseEstimator.h
+classes:
+  RobotPoseEstimator:
+    force_type_casters:
+      - units::millisecond_t
+    typealias:
+      - map_value_type = std::pair<std::shared_ptr<PhotonCamera>, frc::Transform3d>
+    methods:
+      RobotPoseEstimator:
+      getFieldLayout:
+      SetCameras:
+      GetPoseStrategy:
+      SetPoseStrategy:
+      GetReferencePose:
+      SetReferencePose:
+      SetLastPose:
+      Update:

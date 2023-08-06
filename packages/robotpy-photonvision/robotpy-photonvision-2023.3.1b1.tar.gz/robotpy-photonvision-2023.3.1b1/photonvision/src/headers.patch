@@ -1,0 +1,75 @@
+From a4d022e535b47989d0ac0710966644e49046267a Mon Sep 17 00:00:00 2001
+From: David Vo <auscompgeek@users.noreply.github.com>
+Date: Sat, 11 Feb 2023 17:50:54 +1100
+Subject: [PATCH] Yeet PhotonCamera from PhotonPoseEstimator
+
+---
+ photonlib/PhotonPoseEstimator.h | 13 +------------
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+
+diff --git a/photonlib/PhotonPoseEstimator.h b/photonlib/PhotonPoseEstimator.h
+index 367043d73b20..a878e887ae5a 100644
+--- a/photonlib/PhotonPoseEstimator.h
++++ b/photonlib/PhotonPoseEstimator.h
+@@ -28,11 +28,10 @@
+ 
+ #include <frc/apriltag/AprilTagFieldLayout.h>
+ #include <frc/geometry/Pose3d.h>
+ #include <frc/geometry/Transform3d.h>
+ 
+-#include "photonlib/PhotonCamera.h"
+ #include "photonlib/PhotonPipelineResult.h"
+ 
+ namespace photonlib {
+ enum PoseStrategy : int {
+   LOWEST_AMBIGUITY,
+@@ -69,16 +68,15 @@ class PhotonPoseEstimator {
+    * at (1.0,2.0,3.0) </code> }
+    *
+    * @param aprilTags A AprilTagFieldLayout linking AprilTag IDs to Pose3ds with
+    * respect to the FIRST field.
+    * @param strategy The strategy it should use to determine the best pose.
+-   * @param camera PhotonCameras and
+    * @param robotToCamera Transform3d from the center of the robot to the camera
+    * mount positions (ie, robot ➔ camera).
+    */
+   explicit PhotonPoseEstimator(frc::AprilTagFieldLayout aprilTags,
+-                               PoseStrategy strategy, PhotonCamera&& camera,
++                               PoseStrategy strategy,
+                                frc::Transform3d robotToCamera);
+ 
+   /**
+    * Get the AprilTagFieldLayout being used by the PositionEstimator.
+    *
+@@ -141,28 +139,19 @@ class PhotonPoseEstimator {
+    *
+    * @param lastPose the lastPose to set
+    */
+   inline void SetLastPose(frc::Pose3d lastPose) { this->lastPose = lastPose; }
+ 
+-  /**
+-   * Update the pose estimator. Internally grabs a new PhotonPipelineResult from
+-   * the camera and process it.
+-   */
+-  std::optional<EstimatedRobotPose> Update();
+-
+   /**
+    * Update the pose estimator.
+    */
+   std::optional<EstimatedRobotPose> Update(const PhotonPipelineResult& result);
+ 
+-  inline PhotonCamera& GetCamera() { return camera; }
+-
+  private:
+   frc::AprilTagFieldLayout aprilTags;
+   PoseStrategy strategy;
+ 
+-  PhotonCamera camera;
+   frc::Transform3d m_robotToCamera;
+ 
+   frc::Pose3d lastPose;
+   frc::Pose3d referencePose;
+ 
+-- 
+2.39.1
+

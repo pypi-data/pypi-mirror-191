@@ -1,0 +1,23 @@
+---
+
+classes:
+  SimVisionSystem:
+    shared_ptr: true
+    attributes:
+      cam:
+      cameraToRobot:
+      dbgField:
+      dbgRobot:
+      dbgCamera:
+      targetList:
+    methods:
+      SimVisionSystem:
+      AddSimVisionTarget:
+      ClearVisionTargets:
+      MoveCamera:
+      ProcessFrame:
+        overloads:
+          frc::Pose2d:
+          frc::Pose3d:
+      GetM2PerPx:
+      CamCamSeeTarget:

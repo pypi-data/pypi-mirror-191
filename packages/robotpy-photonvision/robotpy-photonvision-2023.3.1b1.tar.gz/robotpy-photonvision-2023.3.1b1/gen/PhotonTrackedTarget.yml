@@ -1,0 +1,26 @@
+---
+
+classes:
+  PhotonTrackedTarget:
+    shared_ptr: true
+    methods:
+      PhotonTrackedTarget:
+        overloads:
+          "":
+          ? double, double, double, double, int, frc::Transform3d&, frc::Transform3d&,
+            double, wpi::SmallVector<std::pair<double, double>, 4>, std::vector<std::pair<double,
+            double>>
+          :
+      GetYaw:
+      GetPitch:
+      GetArea:
+      GetSkew:
+      GetFiducialId:
+      GetMinAreaRectCorners:
+      GetDetectedCorners:
+      GetPoseAmbiguity:
+      GetBestCameraToTarget:
+      GetAlternateCameraToTarget:
+      GetCameraRelativePose:
+      operator==:
+      operator!=:

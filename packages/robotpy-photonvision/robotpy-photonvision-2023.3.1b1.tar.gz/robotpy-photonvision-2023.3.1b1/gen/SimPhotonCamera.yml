@@ -1,0 +1,17 @@
+---
+
+classes:
+  SimPhotonCamera:
+    force_no_trampoline: true
+    shared_ptr: true
+    methods:
+      SimPhotonCamera:
+        overloads:
+          nt::NetworkTableInstance, std::string&:
+          std::string&:
+      SubmitProcessedFrame:
+        overloads:
+          units::millisecond_t, std::vector<PhotonTrackedTarget>:
+          ? units::millisecond_t, std::function<bool ( const PhotonTrackedTarget &
+            target1, const PhotonTrackedTarget & target2 )>, std::vector<PhotonTrackedTarget>
+          :

@@ -1,0 +1,17 @@
+---
+
+classes:
+  Smallest:
+    subpackage: target_sort_mode
+  Largest:
+    subpackage: target_sort_mode
+  Highest:
+    subpackage: target_sort_mode
+  Lowest:
+    subpackage: target_sort_mode
+  RightMost:
+    subpackage: target_sort_mode
+  LeftMost:
+    subpackage: target_sort_mode
+  CenterMost:
+    subpackage: target_sort_mode
