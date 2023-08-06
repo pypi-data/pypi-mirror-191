@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ortega
+Version: 0.0.20
+Summary: UNKNOWN
+Home-page: https://move.geog.ucsb.edu/
+Author: MOVE lab@UCSB
+Author-email: rongxiangsu@ucsb.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: shapely
+Requires-Dist: attrs
+Requires-Dist: matplotlib
+Requires-Dist: statistics
+Requires-Dist: geographiclib
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
