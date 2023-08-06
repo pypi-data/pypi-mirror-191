@@ -1,0 +1,3 @@
+[console_scripts]
+qdc-converter = qdc_converter:main
+
