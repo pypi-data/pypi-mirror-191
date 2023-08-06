@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: luadoc
+Version: 1.3.0
+Summary: A lua ldoc tool in Python !
+Home-page: https://github.com/boolangery/py-lua-doc
+Download-URL: https://github.com/boolangery/py-lua-doc/archive/1.3.0.tar.gz
+Author: Eliott Dumeix
+Author-email: eliott.dumeix@gmail.com
+License: GNU
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: luaparser (>=3.2.1)
+Requires-Dist: parsimonious
+
