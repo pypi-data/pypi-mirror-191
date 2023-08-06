@@ -1,0 +1,15 @@
+Pillow
+PyAutoGUI
+PyWinCtl>=0.0.43
+
+[:python_version < "3.10"]
+typing_extensions
+
+[dev]
+black
+mypy>=0.900
+types-Pillow
+types-PyAutoGUI>0.9.3.2
+
+[extra]
+pygame
