@@ -1,0 +1,15 @@
+pyclf/__init__.py,sha256=KDYNp8FuzBa3cgIdqMoYDqzh5it26qwtpKVFPOzlkdI,17
+pyclf/lda/__init__.py,sha256=hBdxUQDR8AlRd7v8ArBvEAFN2nYHxbxw_a6W3DwbyC0,79
+pyclf/lda/benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyclf/lda/classification/__init__.py,sha256=ZLR4oWbHkzxhOYKiYWvYp0S7WEGEqO2WELjfsHQwSzQ,140
+pyclf/lda/classification/covariance.py,sha256=VuOIUPBPc3lEwMhSMB-PehlICgVPMFMRFB2_J1NQFvM,5885
+pyclf/lda/classification/toeplitzlda.py,sha256=0bL5YdpSzKaQ46AdkN-IwjEJWAvFwGIErE9kq5jKPvE,23695
+pyclf/lda/classification/unsupervised.py,sha256=Lm4w8BUHyDcVWhDxmTWmsDZSZdM_D6Qe24XMLuQXscg,1493
+pyclf/lda/usup_replay/__init__.py,sha256=RSuEWxyZVeY29MuxksD_BphjQtj6Eyc1vZeVyjnQksQ,92
+pyclf/lda/usup_replay/llp.py,sha256=dRlONOxF1ZPNkGONDmf2_JFcVoIHj6-RfAfgyievkJ0,4432
+pyclf/lda/usup_replay/visual_speller.py,sha256=Bu2L90HjPwQOZ-RvQf8Uwe00vtoLbqBwBdO_Hk2ctVA,24382
+pyclf_bci-0.0.5.dist-info/LICENSE,sha256=O77d3bHh1qhaNkNvsq2ZfRpILuMWDMEZDkMLYpEFBgA,1090
+pyclf_bci-0.0.5.dist-info/METADATA,sha256=8cNRPy1-lhCbogz23ArhXTj7fgMTkkDl4Nb9dxcSLT0,693
+pyclf_bci-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyclf_bci-0.0.5.dist-info/top_level.txt,sha256=sW06NMOxX4TEZ2ykGzwUkOqwJKNKMwwkRekPDE25Efw,6
+pyclf_bci-0.0.5.dist-info/RECORD,,
