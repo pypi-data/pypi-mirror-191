@@ -1,0 +1,20 @@
+rules:
+- id: use-array-literal
+  description: Use literal syntax for array creation.
+  explanation: |
+    From the [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/#arrays--literals)
+  tags:
+  - airbnb-javascript-style-guide
+  - airbnb
+  - default
+  pattern: |
+    new Array()
+  replacement: '[]'
+  language: javascript
+  tests:
+  - match: |
+      const items = new Array();
+    expect: |
+      const items = [];
+  - no-match: |
+      const items = [];
