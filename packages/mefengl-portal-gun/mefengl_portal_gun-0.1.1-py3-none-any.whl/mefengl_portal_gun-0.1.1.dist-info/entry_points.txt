@@ -1,0 +1,3 @@
+[console_scripts]
+mefengl-portal-gun=mefengl_portal_gun.main:app
+

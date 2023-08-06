@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mefengl-portal-gun
+Version: 0.1.1
+Summary: 
+Author: 冯不游
+Author-email: meme.fenglei@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Portal Gun
+
+The awesome Portal Gun
+
