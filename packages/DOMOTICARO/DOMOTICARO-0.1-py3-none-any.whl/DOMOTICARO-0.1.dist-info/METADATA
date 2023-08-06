@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DOMOTICARO
+Version: 0.1
+Summary: Paquete de instalacion de DOMOTICARO
+Home-page: http://roboticaro.org
+Author: Valentin Basel
+Author-email: valentinbasel@gmail.com
+License: GPL3
+Platform: UNKNOWN
+License-File: COPYING
+License-File: AUTHORS
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: pyserial
+Requires-Dist: numpy
+
+UNKNOWN
+
