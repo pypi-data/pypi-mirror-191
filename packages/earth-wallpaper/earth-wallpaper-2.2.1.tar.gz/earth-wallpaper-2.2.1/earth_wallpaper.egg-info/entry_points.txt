@@ -1,0 +1,2 @@
+[console_scripts]
+earth-wallpaper = earth_wallpaper.main:main
