@@ -1,0 +1,71 @@
+name: PythonOperator
+description: The configuration for migrating Airflow PythonOperator to DolphinScheduler Python task.
+
+migration:
+  module:
+    - action: replace
+      src:
+        - airflow.operators.python_operator.PythonOperator
+        - airflow.operators.python.PythonOperator
+      dest: pydolphinscheduler.tasks.python.Python
+  parameter:
+    - action: replace
+      src: task_id
+      dest: name
+    - action: replace
+      src: python_callable
+      dest: definition
+
+examples:
+  python_operator:
+    description: The example of migrating `airflow.operators.python_operator.PythonOperator`.
+    src: |
+      from airflow.operators.python_operator import PythonOperator
+
+      def foo():
+          print('Hello World!')
+
+      bash = PythonOperator(
+          task_id='python',
+          python_callable=foo,
+      )
+    dest: |
+      from pydolphinscheduler.tasks.python import Python
+
+      def foo():
+          print('Hello World!')
+
+      bash = Python(
+          name='python',
+          definition=foo,
+      )
+  nested_python:
+    description: |
+      The example of migrating `airflow.operators.python_operator.PythonOperator` with nested function in
+      `python_callable`.
+    src: |
+      from airflow.operators.python_operator import PythonOperator
+
+      def bar():
+          print('Hello World!')
+
+      def foo():
+          bar()
+
+      bash = PythonOperator(
+          task_id='python',
+          python_callable=foo,
+      )
+    dest: |
+      from pydolphinscheduler.tasks.python import Python
+
+      def bar():
+          print('Hello World!')
+
+      def foo():
+          bar()
+
+      bash = Python(
+          name='python',
+          definition=foo,
+      )

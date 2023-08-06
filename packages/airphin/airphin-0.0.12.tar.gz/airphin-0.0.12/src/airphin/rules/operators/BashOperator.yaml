@@ -1,0 +1,51 @@
+name: BashOperator
+description: The configuration for migrating Airflow BashOperator to DolphinScheduler Shell task.
+
+migration:
+  module:
+    - action: replace
+      src:
+        - airflow.operators.bash.BashOperator
+        - airflow.operators.bash_operator.BashOperator
+      dest: pydolphinscheduler.tasks.shell.Shell
+  parameter:
+    - action: replace
+      src: task_id
+      dest: name
+    - action: replace
+      src: bash_command
+      dest: command
+
+examples:
+  bash:
+    description: The example of migrating `airflow.operators.bash.BashOperator` to `pydolphinscheduler.tasks.shell.Shell`.
+    src: |
+      from airflow.operators.bash import BashOperator
+
+      bash = BashOperator(
+          task_id='bash',
+          bash_command='echo "Hello World!"',
+      )
+    dest: |
+      from pydolphinscheduler.tasks.shell import Shell
+
+      bash = Shell(
+          name='bash',
+          command='echo "Hello World!"',
+      )
+  bash_operator:
+    description: The example of migrating `airflow.operators.bash_operator.BashOperator` to `pydolphinscheduler.tasks.shell.Shell`.
+    src: |
+      from airflow.operators.bash_operator import BashOperator
+
+      bash = BashOperator(
+          task_id='bash',
+          bash_command='echo "Hello World!"',
+      )
+    dest: |
+      from pydolphinscheduler.tasks.shell import Shell
+
+      bash = Shell(
+          name='bash',
+          command='echo "Hello World!"',
+      )

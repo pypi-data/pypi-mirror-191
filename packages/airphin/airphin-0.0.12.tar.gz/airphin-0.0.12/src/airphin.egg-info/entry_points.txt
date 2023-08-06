@@ -1,0 +1,2 @@
+[console_scripts]
+airphin = airphin.cli.command:main
