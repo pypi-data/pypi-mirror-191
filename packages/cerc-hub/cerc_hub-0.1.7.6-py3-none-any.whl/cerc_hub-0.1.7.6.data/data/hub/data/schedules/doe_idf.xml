@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<archetypes reference_library_building_type="DOE">
+  <archetypes ID="0" building_type="high-rise apartment" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_OfficeSmall_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="1" building_type="midrise apartment" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_ApartmentMidRise_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="2" building_type="hospital" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_Hospital_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="3" building_type="large hotel" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_HotelLarge_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="4" building_type="small hotel" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_HotelSmall_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="5" building_type="large office" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_OfficeLarge_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="6" building_type="medium office" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_OfficeMedium_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="7" building_type="small office" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_OfficeSmall_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="8" building_type="outpatient healthcare" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_OutPatientHealthCare_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="9" building_type="quick service restaurant" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_RestaurantFastFood_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="10" building_type="full service restaurant" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_RestaurantSitDown_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="11" building_type="stand-alone-retail" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_RetailStandalone_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="12" building_type="strip mall" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_RetailStripmall_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="13" building_type="primary school" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_SchoolPrimary_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="14" building_type="secondary school" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_SchoolSecondary_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+  <archetypes ID="15" building_type="warehouse" reference_standard="ASHRAE 90.1-2019" climate_zone="ASHRAE_2009:6A">
+    <idf>
+      <path>idf_files/ASHRAE901_Warehouse_STD2019_Rochester.idf</path>
+    </idf>
+  </archetypes>
+</archetypes>

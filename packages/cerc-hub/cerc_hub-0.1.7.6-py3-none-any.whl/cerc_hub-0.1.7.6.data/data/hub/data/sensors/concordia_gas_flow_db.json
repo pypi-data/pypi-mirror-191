@@ -1,0 +1,10 @@
+{
+  "sensors": [
+    { "city_object" :  "GM",
+      "sensors": ["MDICOR.GM"]
+    },
+    { "city_object" :  "GM_MB_EV",
+      "sensors": ["TOTAL.GAZ.MOIS.ENCS.IC"]
+    }
+  ]
+}

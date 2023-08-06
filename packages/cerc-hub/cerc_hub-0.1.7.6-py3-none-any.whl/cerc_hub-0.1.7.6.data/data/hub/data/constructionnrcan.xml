@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<nrcan base_url_archetypes="https://raw.githubusercontent.com/canmet-energy/necb-2011-baselines/master/output/"
+       base_url_construction="https://raw.githubusercontent.com/NREL/openstudio-standards/master/lib/openstudio-standards/standards/necb/">
+    <standards_per_period>
+        <standard period_of_construction="1000_1979">
+            <constructions_location>BTAPPRE1980/data/surface_thermal_transmittance.json</constructions_location>
+            <g_value_location>BTAPPRE1980/data/window_characteristics.json</g_value_location>
+        </standard>
+        <standard period_of_construction="1980_2010">
+            <constructions_location>BTAP1980TO2010/data/surface_thermal_transmittance.json</constructions_location>
+            <g_value_location>BTAP1980TO2010/data/window_characteristics.json</g_value_location>
+        </standard>
+        <standard period_of_construction="2011_2016">
+            <constructions_location>NECB2011/data/surface_thermal_transmittance.json</constructions_location>
+            <g_value_location>BTAP1980TO2010/data/window_characteristics.json</g_value_location>
+        </standard>
+        <standard period_of_construction="2017_2019">
+            <constructions_location>NECB2017/data/surface_thermal_transmittance.json</constructions_location>
+            <g_value_location>BTAP1980TO2010/data/window_characteristics.json</g_value_location>
+        </standard>
+        <standard period_of_construction="2020_3000">
+            <constructions_location>NECB2020/data/surface_thermal_transmittance.json</constructions_location>
+            <g_value_location>BTAP1980TO2010/data/window_characteristics.json</g_value_location>
+        </standard>
+    </standards_per_period>
+    <standards_per_function>
+        <standard function="FullServiceRestaurant">
+            <file_location>FullServiceRestaurant/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/8414706d-3ba9-4d70-ad3c-4db62d865e1b-os-report.html</file_location>
+        </standard>
+        <standard function="HighriseApartment">
+            <file_location>HighriseApartment/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/83ab3764-046e-48a8-85cd-a3c0ac761efa-os-report.html</file_location>
+        </standard>
+        <standard function="Hospital">
+            <file_location>Hospital/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/210dac7e-2d51-40a9-bc78-ad0bc1c57a89-os-report.html</file_location>
+        </standard>
+        <standard function="LargeHotel">
+            <file_location>LargeHotel/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/d0185276-7fe0-4da9-bb5d-8c8a7c13c405-os-report.html</file_location>
+        </standard>
+        <standard function="LargeOffice">
+            <file_location>LargeOffice/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/2da33707-50a7-4554-91ed-c5fdbc1ce3b9-os-report.html</file_location>
+        </standard>
+        <standard function="MediumOffice">
+            <file_location>MediumOffice/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/65d97bf8-8749-410b-b53d-5a9c60e0227c-os-report.html</file_location>
+        </standard>
+        <standard function="MidriseApartment">
+            <file_location>MidriseApartment/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/19518153-9c28-4e40-8bbd-98ef949c1bdb-os-report.html</file_location>
+        </standard>
+        <standard function="Outpatient">
+            <file_location>Outpatient/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/deab93c7-d086-432d-bb90-33c8c4e1fab3-os-report.html</file_location>
+        </standard>
+        <standard function="PrimarySchool">
+            <file_location>PrimarySchool/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/87f45397-5ef4-4df9-be41-d33c4b6d2fb7-os-report.html</file_location>
+        </standard>
+        <standard function="QuickServiceRestaurant">
+            <file_location>QuickServiceRestaurant/CAN_PQ_Montreal.Intl.AP.716270_CWEC/ 0bc55858-a81b-4d07-9923-1d84e8a23194-os-report.html</file_location>
+        </standard>
+        <standard function="RetailStandalone">
+            <file_location>RetailStandalone/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/a3643bcb-0eea-47d4-b6b9-253ed188ec0c-os-report.html</file_location>
+        </standard>
+        <standard function="RetailStripmall">
+            <file_location>RetailStripmall/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/ebaf5a16-00af-49de-9672-6b373fc825be-os-report.html</file_location>
+        </standard>
+        <standard function="SecondarySchool">
+            <file_location>SecondarySchool/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/3a4f105f-93ed-4b8b-9eb3-c8ca40c5de6e-os-report.html</file_location>
+        </standard>
+        <standard function="SmallHotel">
+            <file_location>SmallHotel/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/dff0a3fc-d9e5-4866-9e6a-dee9a0da60b2-os-report.html</file_location>
+        </standard>
+        <standard function="SmallOffice">
+            <file_location>SmallOffice/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/a9a3669d-beb8-4951-aa11-c27dbc61a344-os-report.html</file_location>
+        </standard>
+        <standard function="Warehouse">
+            <file_location>Warehouse/CAN_PQ_Montreal.Intl.AP.716270_CWEC/os_report/569ec649-8017-4a3c-bd0a-337eba3ec488-os-report.html</file_location>
+        </standard>
+    </standards_per_function>
+</nrcan>
