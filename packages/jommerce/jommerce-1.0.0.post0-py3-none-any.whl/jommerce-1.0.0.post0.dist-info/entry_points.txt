@@ -1,0 +1,3 @@
+[console_scripts]
+djplus=djplus.__main__:main
+
