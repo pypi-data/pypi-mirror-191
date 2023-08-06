@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pocket_newsletter"
+version = "0.1.2"
+description = "Retrieve articles from pocket"
+authors = ["José Cabeda <jecabeda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+pocket_newsletter = "pocket_newsletter.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.6.1"
+pocket-api = "^0.1.5"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^5.0.4"
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
