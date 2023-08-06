@@ -1,0 +1,13 @@
+eng_task-0.0.1.data/data/config/configure.ini,sha256=qBuaOi7TynqXQcXsvRqIVyzp55eZZRURazBfNpeDWts,136
+task/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+task/additional_reports.py,sha256=vZ5oYKyI2X8ViZtUz36Boe4uiaDQjUvUPLiyCKs-8VI,1588
+task/configwrite.py,sha256=KInaOTCASgq5v1qXki5vf8ZlUnMx-ZSy-f-fS1JoUwY,337
+task/csv_utils.py,sha256=4pK396vFw4-pGh9yIdpYyirbr_FxtI-ChnVIRhUnagk,3690
+task/logic.py,sha256=R5YmgHe3M15TUOqqtPXkDttynpJYvSuukjaltPdkiCw,5718
+task/main.py,sha256=mjFereKY4zbf_63nqN8ZJUKxbxbDphk_YOq0stDQbvM,3966
+task/preprocess.py,sha256=jD0Ml78IwvgnqVK8F-vJoKQLzJ8C0hO1VdPWqsEzGz0,1316
+eng_task-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+eng_task-0.0.1.dist-info/METADATA,sha256=OOfBRNc5WfLbGcgGRueJiPRNJ-NDkBF27hyfZYRQiOk,219
+eng_task-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+eng_task-0.0.1.dist-info/top_level.txt,sha256=jZLIHweWDFNjofQk6I3Utkod1CUTeNU4c_pl6hqrJxs,5
+eng_task-0.0.1.dist-info/RECORD,,
