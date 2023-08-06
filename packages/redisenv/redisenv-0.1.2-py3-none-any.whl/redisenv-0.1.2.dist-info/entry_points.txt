@@ -1,0 +1,3 @@
+[console_scripts]
+redisenv=redisenv:__main__.main
+
