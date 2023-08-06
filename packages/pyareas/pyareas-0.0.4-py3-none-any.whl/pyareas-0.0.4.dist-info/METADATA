@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyareas
+Version: 0.0.4
+Summary: Python package for areas
+Home-page: UNKNOWN
+Author: TomTheCodingGuy
+Author-email: tomb80940@gmail.com
+License: UNKNOWN
+Keywords: python,pyareas
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+
+Python package to find the areas of 2D shapes
+Shapes Included:
+Square, Rectangle, Circle, Rhombus, Triangle, Parellelogram, Ellipse, Trapezoid
+
