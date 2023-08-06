@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+morseTranslate/__init__.py
+morseTranslate/morseTranslate.py
+morseTranslate.egg-info/PKG-INFO
+morseTranslate.egg-info/SOURCES.txt
+morseTranslate.egg-info/dependency_links.txt
+morseTranslate.egg-info/top_level.txt
