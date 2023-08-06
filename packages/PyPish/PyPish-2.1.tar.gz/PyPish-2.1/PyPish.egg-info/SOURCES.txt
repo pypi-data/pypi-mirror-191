@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pypish
+setup.cfg
+setup.py
+PyPish.egg-info/PKG-INFO
+PyPish.egg-info/SOURCES.txt
+PyPish.egg-info/dependency_links.txt
+PyPish.egg-info/requires.txt
+PyPish.egg-info/top_level.txt
+files/email.json
+files/pyphisher.gif
+files/requirements.txt
+files/version.txt
