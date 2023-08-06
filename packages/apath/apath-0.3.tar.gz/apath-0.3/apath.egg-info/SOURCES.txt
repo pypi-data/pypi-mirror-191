@@ -1,0 +1,6 @@
+README.md
+setup.py
+apath.egg-info/PKG-INFO
+apath.egg-info/SOURCES.txt
+apath.egg-info/dependency_links.txt
+apath.egg-info/top_level.txt
