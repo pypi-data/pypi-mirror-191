@@ -1,0 +1,10 @@
+freakble/__init__.py,sha256=9UiEfTRmu-CeTQM8cj3vhdnNqiHvstgF8K2XCc_pHN4,118
+freakble/__main__.py,sha256=KfsbFWlI5y2hcFooIZ2RTxMwzNugNeVdBFYolTyASTs,561
+freakble/ble.py,sha256=5LdV8GgUSht4EHm0dXWhKa0wigwUlZsAn_CTCPTZCLA,1189
+freakble/cli.py,sha256=jzQco4aHevDylVNsSngX_mLzjDsVEi7Ib4WvEgp5eIQ,4276
+freakble/repl.py,sha256=Cd86DA6LvtwmWhERcaIEGEqqbQpR2OK93o-c8U690rk,2068
+freakble-0.3.1.dist-info/LICENSE,sha256=6aF43Ut9ng8nEfLlcwrTw9VszHcDB7aQLtzwrXG6-Uw,1494
+freakble-0.3.1.dist-info/METADATA,sha256=iWBbcgHf93q7SbKoHpWFh_4JviD9JsOmNrJs8kFy92U,5274
+freakble-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+freakble-0.3.1.dist-info/entry_points.txt,sha256=QS371o2bDAyg67XAEXxg70rgOBRw46a9P5I-KmXchas,50
+freakble-0.3.1.dist-info/RECORD,,
