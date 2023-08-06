@@ -1,0 +1,6 @@
+sqlalchemy_privileges/__init__.py,sha256=3ZH_L8zKD0e3hIdosLD3CBZYrG41mmBQ-s3q6tPZOY4,84
+sqlalchemy_privileges/privileges.py,sha256=THA8PvAskAG6_TKg82Bd2y3n4soYX6c07VhuNbem0to,2316
+sqlalchemy_privileges/privileges.pyi,sha256=zDErIJSvwwxUr-TcmueJ2vn7jOwEO-yhNg56BLDgo5c,1692
+sqlalchemy_privileges-0.1.0.dist-info/METADATA,sha256=uyvaiIl-5UTMwyTho5I8XfCm4ZZABx3g5GD3vNSK0NY,1598
+sqlalchemy_privileges-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqlalchemy_privileges-0.1.0.dist-info/RECORD,,

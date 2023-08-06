@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-privileges
+Version: 0.1.0
+Summary: module provide manipulation with privileges with sqlalchemy
+Home-page: https://github.com/GrozniyToaster/sqlalchmey-privileges
+License: MIT
+Author: Nedosekov Ivan
+Author-email: ivan-nedd@mail.ru
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: sqlalchemy (>=1.0.0)
+Project-URL: Repository, https://github.com/GrozniyToaster/sqlalchmey-privileges
+Description-Content-Type: text/markdown
+
+
