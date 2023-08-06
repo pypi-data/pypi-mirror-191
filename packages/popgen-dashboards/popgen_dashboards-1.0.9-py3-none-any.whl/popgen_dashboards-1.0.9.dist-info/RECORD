@@ -1,0 +1,9 @@
+popgen_dashboards/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+popgen_dashboards/arg.py,sha256=VkxFi2HCw8EV77wDhdSPFaidbpmiz3ToPk7UBXq_yDM,30374
+popgen_dashboards/arg_dashboard.py,sha256=J5SLltCiuKsD_Iv9DC4IAAD8j2L-aQy4wTdKdBRUP10,36356
+popgen_dashboards/index.py,sha256=f_WKhRuV2-u4uN8TqIIhEB75ZKzpnjQdvKOKSwSjh6I,80
+popgen_dashboards-1.0.9.dist-info/LICENSE,sha256=EMsNUS73Iruk2biiLwF5ZmvbZZpxFdtexg_uKe4p5eo,1069
+popgen_dashboards-1.0.9.dist-info/METADATA,sha256=lS2TgLTlo6PnODfM1f3-cgufqzWkCHSkETIowXYNk50,586
+popgen_dashboards-1.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+popgen_dashboards-1.0.9.dist-info/top_level.txt,sha256=85JjoBz6-LrpG6RwNBbEHi_lOd8MY52TgLCjyLVn1kw,18
+popgen_dashboards-1.0.9.dist-info/RECORD,,
