@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: concave-uhull
+Version: 0.2.2
+Summary: A simple (but not simpler) algorithm for concave hull of 2D point sets using an alpha shape algorithm.
+Home-page: https://luanleonardo.github.io/concave_uhull/
+Author: Luan
+Author-email: llvdmoraes@gmail.com
+Requires-Python: >=3.8.1,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.24.1,<2.0.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Project-URL: Repository, https://github.com/luanleonardo/concave_uhull
+Description-Content-Type: text/x-rst
+
+concave_uhull*
+--------------
+
+A simple (but not simpler) algorithm for concave hull of 2D point sets using an alpha shape algorithm.
+
+Notes
+-----
+  * uhull! (Brazil) yeah! (expresses joy or celebration)
+
+Homepage
+--------
+* `Project Homepage <https://luanleonardo.github.io/concave_uhull/>`_
+
