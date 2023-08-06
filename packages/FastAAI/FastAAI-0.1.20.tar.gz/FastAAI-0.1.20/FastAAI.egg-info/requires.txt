@@ -1,0 +1,3 @@
+numpy
+pyrodigal==1.0.2
+pyhmmer
