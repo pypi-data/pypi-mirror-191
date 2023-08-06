@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: stake-api
+Version: 0.0.2
+Summary: Stake API
+Home-page: https://github.com/stake-player/stake-api
+Author: stake player
+License: Apache License 2.0
+Keywords: stake api undetected tip casino bot discord twitter youtube twitch instagram tiktok facebook reddit google app exchange ticket
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Stake-API
+A simple module for automating [Stake](https://stake.com/) Casino, this module avoids detection.
+
+## Overview
+This is an informal module using the official API that allows you to transfer, withdraw, and get balance tips on Stake.
+By using this module, you can perform various operations in conjunction with Discord Bots, etc.
+
+In the future, there will be methods to play original games such as Dice.
+
+## Features
+- You can:
+    * Check your own KYC status.
+    * Send tip to designated users.
+    * Check your balance.
+    * Check the information registered in your account.
+    * View a list of sessions and delete them.
+    * See the list of API keys that have been issued.
+    * Withdraw your tip to the address.
+    * Get crypto currency and real money rates.
+
+## Install
+`pip install -U stake-api`
+
+## Usage
+```python
+from stake_api import Stake
+
+stake = Stake('Your API Key.')
+
+response = stake.user_balances()
+for currency in response['data']['user']['balances']:
+    print(f"{currency['available']['amount']} {currency['available']['currency'].upper()}")
+```
+
+## Legal
+This is not official on Twitter. Use at your own risk.
