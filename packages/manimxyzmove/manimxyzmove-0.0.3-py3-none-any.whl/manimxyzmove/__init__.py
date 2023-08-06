@@ -1,0 +1,1 @@
+from manimxyzmove.xyzmove import MoveAlongXYZPath
