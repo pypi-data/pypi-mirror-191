@@ -1,0 +1,6 @@
+jupyter
+pandas
+requests
+tqdm
+marshmallow
+requests_toolbelt
