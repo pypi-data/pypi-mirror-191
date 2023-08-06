@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<library name="LCA">
+    <fuels>
+        <fuel id="1" name="Black_coal">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.32</carbon_emission_factor>
+        </fuel>
+        <fuel id="2" name="Brown_coal">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.4</carbon_emission_factor>
+        </fuel>
+        <fuel id="3" name="Brown_coal_briquette">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.4</carbon_emission_factor>
+        </fuel>
+        <fuel id="4" name="Brown_coal_coke">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.5</carbon_emission_factor>
+        </fuel>
+        <fuel id="5" name="CNG">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.18</carbon_emission_factor>
+        </fuel>
+        <fuel id="6" name="Coal_coke">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.39</carbon_emission_factor>
+        </fuel>
+        <fuel id="7" name="Crude_oil">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.27</carbon_emission_factor>
+        </fuel>
+        <fuel id="8" name="Diesel_Machine">
+            <carbon_emission_factor unit="kgCO2/ liter">4.16</carbon_emission_factor>
+        </fuel>
+        <fuel id="9" name="Diesel_Vehicle">
+            <carbon_emission_factor unit="kgCO2/ liter">2.24</carbon_emission_factor>
+        </fuel>
+        <fuel id="10" name="Ethane">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.2</carbon_emission_factor>
+        </fuel>
+        <fuel id="11" name="Fuel_oil">
+            <carbon_emission_factor unit="kgCO2/ liter">3.19</carbon_emission_factor>
+        </fuel>
+        <fuel id="12" name="Gas_flared">
+            <carbon_emission_factor unit="kgCO2/ kg">3.53</carbon_emission_factor>
+        </fuel>
+        <fuel id="13" name="Kerosene">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.27</carbon_emission_factor>
+        </fuel>
+        <fuel id="14" name="LNG">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.21</carbon_emission_factor>
+        </fuel>
+        <fuel id="15" name="LPG">
+            <carbon_emission_factor unit="kgCO2/ liter">1.69</carbon_emission_factor>
+        </fuel>
+        <fuel id="16" name="Natural_gas">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.21</carbon_emission_factor>
+        </fuel>
+        <fuel id="17" name="Petroleum_coke">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.35</carbon_emission_factor>
+        </fuel>
+        <fuel id="18" name="UNG">
+            <carbon_emission_factor unit="kgCO2/ kWh">0.18</carbon_emission_factor>
+        </fuel>
+        <fuel id="19" name="Biodiesel">
+            <carbon_emission_factor unit="kgCO2/ liter">0.81</carbon_emission_factor>
+        </fuel>
+        <fuel id="20" name="Bioethanol">
+            <carbon_emission_factor unit="kgCO2/ kg">1.21</carbon_emission_factor>
+        </fuel>
+        <fuel id="21" name="Biogas">
+            <carbon_emission_factor unit="kgCO2/ kg">1.61</carbon_emission_factor>
+        </fuel>
+        <fuel id="22" name="Biomass">
+            <carbon_emission_factor unit="kgCO2/ kg">0.11</carbon_emission_factor>
+        </fuel>
+        <fuel  id="23" name="Methanol">
+            <carbon_emission_factor unit="kgCO2/ kg">0.3</carbon_emission_factor>
+        </fuel>
+        <fuel  id="24" name="Petrol_eightyfive_ethanol">
+            <carbon_emission_factor unit="kgCO2/ kg">1.16</carbon_emission_factor>
+        </fuel>
+        <fuel  id="25" name="Steam">
+            <carbon_emission_factor unit="kgCO2/ kg">0.61</carbon_emission_factor>
+        </fuel>
+   </fuels>
+    <machines>
+        <machine id="1" name="Rock_drill">
+            <work_efficiency unit="h/m3">0.347</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">16.5</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="2" name="Hydraulic_hammer">
+            <work_efficiency unit="h/m3">0.033</work_efficiency>
+            <energy_consumption_rate unit="kg_fuel/h">25.2</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">4.16 </carbon_emission_factor>
+        </machine>
+        <machine id="3" name="Crawler_bulldozer">
+            <work_efficiency unit="h/m3">0.027</work_efficiency>
+            <energy_consumption_rate unit="kg_fuel/h3">16.8</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">2.239</carbon_emission_factor>
+        </machine>
+        <machine id="4" name="Crawler_excavator">
+            <work_efficiency unit="h/m3">0.023</work_efficiency>
+            <energy_consumption_rate unit="kg_fuel/h">16.8</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">2.239</carbon_emission_factor>
+        </machine>
+        <machine id="5" name="Crawler_hydraulic_rock_crusher">
+            <work_efficiency unit="h/m3">0.109</work_efficiency>
+            <energy_consumption_rate unit="kg_fuel/h">25.2</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">2.239</carbon_emission_factor>
+        </machine>
+        <machine id="6" name="Mobile_recycling_equipment">
+            <work_efficiency unit="h/ton">0.003</work_efficiency>
+            <energy_consumption_rate unit="kg_fuel/h">16.4</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">4.16</carbon_emission_factor>
+        </machine>
+        <machine id="7" name="Vibration_feeder">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">11</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="8" name="Jaw_crusher">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">90</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="9" name="Electromagnetic_separator">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">10</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="10" name="Wind_sorting_machine">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">11</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="11" name="Impact_crusher">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">132</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="12" name="Double_circular_vibrating_plug">
+            <work_efficiency unit=" h/ton ">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">15</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kW">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="13" name="Spiral_sand_washing_machine">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">5.5</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+        <machine id="14" name="Conveyor_belts">
+            <work_efficiency unit="h/ton">0.002</work_efficiency>
+            <energy_consumption_rate unit="kWh/h">22.5</energy_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </machine>
+   </machines>
+    <vehicles>
+        <vehicle id="1" name="Freight_lorry_18_ton">
+            <fuel_consumption_rate unit="kg_fuel/ton.km">0.0123</fuel_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kg_fuel">2.239</carbon_emission_factor>
+        </vehicle>
+        <vehicle id="2" name="Freight_train">
+            <fuel_consumption_rate unit="kWh/ton.km">0.042</fuel_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">0.918</carbon_emission_factor>
+        </vehicle>
+        <vehicle id="3" name="Freight_ship">
+            <fuel_consumption_rate unit="kWh/ton.km">0.01</fuel_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">1.00000</carbon_emission_factor>
+        </vehicle>
+        <vehicle id="4" name="Freight_Air">
+            <fuel_consumption_rate unit="kWh/ton.km">1.3</fuel_consumption_rate>
+            <carbon_emission_factor unit="kgCO2/kWh">1.00000</carbon_emission_factor>
+        </vehicle>
+   </vehicles>
+    <building_materials>
+        <material type="brick" id="1"  name="clay brick">
+            <density unit="ton/m3">1.8</density>
+            <embodied_carbon unit="kgCO2/ton">560</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0.3</onsite_recycling_ratio>
+            <company_recycling_ratio>0.7</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="brick" id="2"  name="light clay brick">
+            <density unit="ton/m3">1.2</density>
+            <embodied_carbon unit="kgCO2/ton">310</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0.3</onsite_recycling_ratio>
+            <company_recycling_ratio>0.7</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="brick" id="3"  name="refractory">
+            <density unit="ton/m3">2</density>
+            <embodied_carbon unit="kgCO2/ton">3080</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0.3</onsite_recycling_ratio>
+            <company_recycling_ratio>0.7</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="brick" id="4"  name="sand-lime brick">
+            <density unit="ton/m3">1.4</density>
+            <embodied_carbon unit="kgCO2/ton">300</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0.3</onsite_recycling_ratio>
+            <company_recycling_ratio>0.7</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="5"  name="light weight expanded clay">
+            <density unit="ton/m3">1.6</density>
+            <embodied_carbon unit="kgCO2/ton">900</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="6"  name="lightweight Expanded perlite">
+            <density unit="ton/m3">1.6</density>
+            <embodied_carbon unit="kgCO2/ton">2340</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="7"  name="lightweight expanded vermiculite">
+            <density unit="ton/m3">1.6</density>
+            <embodied_carbon unit="kgCO2/ton">1570</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="8"  name="lightweight polystyrene">
+            <density unit="ton/m3">1.4</density>
+            <embodied_carbon unit="kgCO2/ton">1840</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="9"  name="lightweight pumice">
+            <density unit="ton/m3">1.3</density>
+            <embodied_carbon unit="kgCO2/ton">410</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="10"  name="concrete 20 MPa">
+            <density unit="ton/m3">2.3</density>
+            <embodied_carbon unit="kgCO2/ton">160</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="11"  name="concrete 25 MPa">
+            <density unit="ton/m3">2.3</density>
+            <embodied_carbon unit="kgCO2/ton">170</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="12"  name="concrete 30-32 MPa">
+            <density unit="ton/m3">2.3</density>
+            <embodied_carbon unit="kgCO2/ton">230</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="13"  name="concrete 35 MPae">
+            <density unit="ton/m3">2.4</density>
+            <embodied_carbon unit="kgCO2/ton">240</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="14"  name="concrete 50 MPa">
+            <density unit="ton/m3">2.4</density>
+            <embodied_carbon unit="kgCO2/ton">280</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="15"  name="concrete block">
+            <density unit="ton/m3">2.3</density>
+            <embodied_carbon unit="kgCO2/ton">170</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="concrete" id="16"  name="concrete roof tile">
+            <density unit="ton/m3">1.2</density>
+            <embodied_carbon unit="kgCO2/ton">440</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="glass" id="17"  name="flat glass, coated">
+            <density unit="ton/m3">2.58</density>
+            <embodied_carbon unit="kgCO2/ton">2660</embodied_carbon>
+            <recycling_ratio>0.95</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.05</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+        </material>
+        <material type="glass" id="18"  name="glass fibre">
+            <density unit="ton/m3">2.58</density>
+            <embodied_carbon unit="kgCO2/ton">5260</embodied_carbon>
+            <recycling_ratio>0.95</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.05</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="19"  name="cellulose fibre">
+            <density unit="ton/m3">0.06</density>
+            <embodied_carbon unit="kgCO2/ton">1760</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="20"  name="cork slab">
+            <density unit="ton/m3">0.122</density>
+            <embodied_carbon unit="kgCO2/ton">3080</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="21"  name="polystyren foam">
+            <density unit="ton/m3">0.028</density>
+            <embodied_carbon unit="kgCO2/ton">3180</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="22"  name="polystyrene 10% recycled">
+            <density unit="ton/m3">0.024</density>
+            <embodied_carbon unit="kgCO2/ton">5140</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="23"  name="stone wool">
+            <density unit="ton/m3">0.1</density>
+            <embodied_carbon unit="kgCO2/ton">6040</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="24"  name="foam glass">
+            <density unit="ton/m3">0.3</density>
+            <embodied_carbon unit="kgCO2/ton">5380</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="insulation" id="25"  name="glass wool mat">
+            <density unit="ton/m3">0.032</density>
+            <embodied_carbon unit="kgCO2/ton">2150</embodied_carbon>
+            <recycling_ratio>0.9</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="wood" id="26"  name="fiberboard, hard">
+            <density unit="ton/m3">0.9</density>
+            <embodied_carbon unit="kgCO2/ton">3420</embodied_carbon>
+            <recycling_ratio>0.6</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.4</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="wood" id="27"  name="three layerd laminated board">
+            <density unit="ton/m3">0.7</density>
+            <embodied_carbon unit="kgCO2/ton">1430</embodied_carbon>
+            <recycling_ratio>0.6</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.4</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="wood" id="28"  name="fibreboard, soft">
+            <density unit="ton/m3">0.65</density>
+            <embodied_carbon unit="kgCO2/ton">2780</embodied_carbon>
+            <recycling_ratio>0.6</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.4</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="wood" id="29"  name="plywood">
+            <density unit="ton/m3">0.72</density>
+            <embodied_carbon unit="kgCO2/ton">2190</embodied_carbon>
+            <recycling_ratio>0.6</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.4</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="30"  name="acrylic filler">
+            <density unit="ton/m3">1.43</density>
+            <embodied_carbon unit="kgCO2/ton">1070</embodied_carbon>
+            <recycling_ratio>0</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>0</company_recycling_ratio>
+            <landfilling_ratio>1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="31"  name="anhydrite floor">
+            <density unit="ton/m3">1.43</density>
+            <embodied_carbon unit="kgCO2/ton">240</embodied_carbon>
+            <recycling_ratio>0</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>0</company_recycling_ratio>
+            <landfilling_ratio>1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="32"  name="base plaster">
+            <density unit="ton/m3">1.43</density>
+            <embodied_carbon unit="kgCO2/ton">430</embodied_carbon>
+            <recycling_ratio>0</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>0</company_recycling_ratio>
+            <landfilling_ratio>1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="33"  name="cement cast plaster floor">
+            <density unit="ton/m3">1.43</density>
+            <embodied_carbon unit="kgCO2/ton">340</embodied_carbon>
+            <recycling_ratio>0</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>0</company_recycling_ratio>
+            <landfilling_ratio>1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="34"  name="cement tile">
+            <density unit="ton/m3">1.2</density>
+            <embodied_carbon unit="kgCO2/ton">440</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="35"  name="ceramic tile">
+            <density unit="ton/m3">2.1</density>
+            <embodied_carbon unit="kgCO2/ton">1410</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="36"  name="clay plaster">
+            <density unit="ton/m3">1.43</density>
+            <embodied_carbon unit="kgCO2/ton">250</embodied_carbon>
+            <recycling_ratio>0</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>0</company_recycling_ratio>
+            <landfilling_ratio>1</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="37"  name="fiber cement corrugated slab">
+            <density unit="ton/m3">1.44</density>
+            <embodied_carbon unit="kgCO2/ton">1480</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="38"  name="fiber cement facing tile">
+            <density unit="ton/m3">1.44</density>
+            <embodied_carbon unit="kgCO2/ton">2220</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="wood" id="39"  name="gypsum fibreboard">
+            <density unit="ton/m3">1.27</density>
+            <embodied_carbon unit="kgCO2/ton">3960</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="covering" id="40"  name="gypsum plaster board">
+            <density unit="ton/m3">1.15</density>
+            <embodied_carbon unit="kgCO2/ton">760</embodied_carbon>
+            <recycling_ratio>0.8</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.2</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="metal" id="41"  name="steel">
+            <density unit="ton/m3">8</density>
+            <embodied_carbon unit="kgCO2/ton">3160</embodied_carbon>
+            <recycling_ratio> 0.98</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.02</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="metal" id="42"  name="aluminium">
+            <density unit="ton/m3">2.7</density>
+            <embodied_carbon unit="kgCO2/ton">5370</embodied_carbon>
+            <recycling_ratio> 0.98</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.02</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+        <material type="metal" id="43"  name="reinforcing steel">
+            <density unit="ton/m3">7.85</density>
+            <embodied_carbon unit="kgCO2/ton">3910</embodied_carbon>
+            <recycling_ratio> 0.98</recycling_ratio>
+            <onsite_recycling_ratio>0</onsite_recycling_ratio>
+            <company_recycling_ratio>1</company_recycling_ratio>
+            <landfilling_ratio>0.02</landfilling_ratio>
+            <cost unit="CAD">0.1</cost>
+       </material>
+</building_materials>
+</library>

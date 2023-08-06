@@ -1,0 +1,8 @@
+{
+  "sensors": [
+    { "city_object" :  "EV",
+      "sensors": ["TOTKWCH3.IC","TOTKWEV.IC","COMPTEUR.SQD.017.IC:POWER 3P", "COMPTEUR.SQD.B1.IC:POWER 3P",
+        "COMPTEUR.SQD.B2.IC:POWER 3P"]
+    }
+  ]
+}

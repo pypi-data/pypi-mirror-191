@@ -1,0 +1,7 @@
+{
+  "sensors": [
+    { "city_object" :  "EV",
+      "sensors": ["MTX-017.IC", "MTACBT.IC","MTRCBT.IC"]
+    }
+  ]
+}
