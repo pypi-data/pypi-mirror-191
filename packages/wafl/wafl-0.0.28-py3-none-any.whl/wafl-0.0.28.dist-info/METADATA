@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: wafl
+Version: 0.0.28
+Summary: A hybrid chatbot.
+Home-page: http://github.com/fractalego/wafl
+Author: Alberto Cetoli
+Author-email: alberto@fractalego.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: flask (==2.0.1)
+Requires-Dist: flask-cors (==3.0.10)
+Requires-Dist: flask-dropzone (==1.6.0)
+Requires-Dist: transformers (==4.24.0)
+Requires-Dist: accelerate (==0.13.2)
+Requires-Dist: bitsandbytes (==0.35.3)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: torch (==1.13.1)
+Requires-Dist: nltk (==3.6.2)
+Requires-Dist: gensim (==4.0.1)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: python-Levenshtein (==0.12.2)
+Requires-Dist: wave (==0.0.2)
+Requires-Dist: creak-sense (==0.0.4)
+Requires-Dist: protobuf (==4.21.5)
+Requires-Dist: fairseq (==0.12.2)
+Requires-Dist: g2p-en (==2.1.0)
+Requires-Dist: fuzzywuzzy (==0.18.0)
+Requires-Dist: PyAudio (==0.2.11)
+Requires-Dist: pyctcdecode (==0.2.1)
+Requires-Dist: huggingface-hub (==0.10.0)
+Requires-Dist: num2words (==0.5.12)
+
+# WAFL 0.0.1. [![Linter Tests](https://github.com/fractalego/wafl/actions/workflows/development-tests1.yml/badge.svg)](https://github.com/fractalego/wafl/actions/workflows/development-tests1.yml)
+
+## Placeholder version. Please do not use.
+![Logo](images/logo.png)
+
+
+# Installation
+```bash
+sudo apt-get install portaudio19-dev ffmpeg
+pip install wafl
+```
+
+
+<a rel="me" href="https://fractalego.social/@wafl">Mastodon</a>
+

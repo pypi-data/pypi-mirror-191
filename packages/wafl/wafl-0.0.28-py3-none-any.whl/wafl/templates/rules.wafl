@@ -1,0 +1,8 @@
+The user says "bring yourself online"
+  SAY Hello there!
+
+
+the user wishes good bye
+  SAY Good bye!
+  close_conversation()
+
