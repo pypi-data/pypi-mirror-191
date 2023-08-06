@@ -1,0 +1,8 @@
+.env
+.eggs/
+build/
+manylinux-wheels/
+mecab/
+src/mecab_ko.egg-info/
+wheels/
+
