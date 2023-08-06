@@ -1,0 +1,14 @@
+searchlogit/__init__.py,sha256=bTC6Uge2XytYF3QZaRcmnZqTst8j9sRI3whayMqiSKM,248
+searchlogit/_choice_model.py,sha256=N_urewC8DBL4xUVyhMtSMb9ZLSMoWs-_0zdAgc4zs3U,34894
+searchlogit/_device.py,sha256=pXfb4UVEPuEcN1DT7OAx7kot0ScsBsEjlqC9FFqeDWc,1920
+searchlogit/boxcox_functions.py,sha256=2WPFibk59WgfmkgYIP6EZ2tzRCgf2WCYyMgXtr9U7Qc,4662
+searchlogit/latent_class_mixed_model.py,sha256=S8jodq6sm5n2x8LZZBMxxTAtEprHSqe12DItAWmxk_8,60464
+searchlogit/latent_class_model.py,sha256=ruU5a010oINrAtQUahU2U0WddagtJatgD9CxOx_Dtq8,39259
+searchlogit/mixed_logit.py,sha256=Yy470xOFks4EZxt8q1dP9-noEunprpnJs4Vagj_13zw,60861
+searchlogit/multinomial_logit.py,sha256=C3l1hK0AKgCI2RUV7LNorYhWlLRqnqTl1nBpxzpaShU,15155
+searchlogit/search.py,sha256=VU8WKMqBD6pwwvCTzdQ8LnArJPind7AVBqGRTwJtep4,161523
+searchlogit-0.2.137.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+searchlogit-0.2.137.dist-info/METADATA,sha256=dn1Mql8_Q9WGqp9giXCFuZ78evEYt8dbGiQxSVTFgYg,10958
+searchlogit-0.2.137.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+searchlogit-0.2.137.dist-info/top_level.txt,sha256=TMHYdiE3j21SgWKFg4UVSOdERgMvaWYjHQ89WQLF2Bc,12
+searchlogit-0.2.137.dist-info/RECORD,,
