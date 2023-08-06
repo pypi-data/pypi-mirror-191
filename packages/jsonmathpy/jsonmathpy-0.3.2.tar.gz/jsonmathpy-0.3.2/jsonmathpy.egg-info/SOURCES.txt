@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jsonmathpy.egg-info/PKG-INFO
+jsonmathpy.egg-info/SOURCES.txt
+jsonmathpy.egg-info/dependency_links.txt
+jsonmathpy.egg-info/requires.txt
+jsonmathpy.egg-info/top_level.txt
+src/__init__.py
