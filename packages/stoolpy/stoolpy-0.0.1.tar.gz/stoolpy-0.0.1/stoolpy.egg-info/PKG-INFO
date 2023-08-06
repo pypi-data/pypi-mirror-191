@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stoolpy
+Version: 0.0.1
+Summary: A Scientific Computing Toolbox package
+Author: Qcuincy (Quincy Sproul)
+Author-email: <quincy.sproul@gmail.com>
+Keywords: python,numerical,science,scientific,modelling,data,visualizer
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A package that allows to compute, model and analyse scientific tasks with the use of numerical methods and visualizers.

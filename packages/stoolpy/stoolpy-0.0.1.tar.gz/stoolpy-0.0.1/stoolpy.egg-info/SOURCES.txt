@@ -1,0 +1,8 @@
+setup.py
+stoolpy/__init__.py
+stoolpy/solvers.py
+stoolpy.egg-info/PKG-INFO
+stoolpy.egg-info/SOURCES.txt
+stoolpy.egg-info/dependency_links.txt
+stoolpy.egg-info/requires.txt
+stoolpy.egg-info/top_level.txt
