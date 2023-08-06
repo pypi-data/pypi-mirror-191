@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+slavko_package/__init__.py
+slavko_package/package_1.py
+slavko_package.egg-info/PKG-INFO
+slavko_package.egg-info/SOURCES.txt
+slavko_package.egg-info/dependency_links.txt
+slavko_package.egg-info/requires.txt
+slavko_package.egg-info/top_level.txt
