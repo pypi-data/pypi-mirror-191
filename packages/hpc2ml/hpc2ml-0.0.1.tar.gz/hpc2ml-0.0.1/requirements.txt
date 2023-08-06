@@ -1,0 +1,11 @@
+deprecated
+pandas
+numpy
+torch
+ase
+numba
+scipy
+joblib~=0.14.1
+tqdm~=4.47.0
+pymatgen~=2020.11.11
+mgetool>=0.0.30
