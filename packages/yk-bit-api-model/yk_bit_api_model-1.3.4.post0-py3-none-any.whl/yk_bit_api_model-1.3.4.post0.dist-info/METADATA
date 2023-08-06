@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: yk-bit-api-model
+Version: 1.3.4.post0
+Summary: Youverse Biometric In Things API data model package.
+Home-page: https://www.youverse.id
+Author: Youverse
+Author-email: tech@youverse.id
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: yk-utils (<2,>=1.1.4)
+
+![logo](https://yk-website-images.s3.eu-west-1.amazonaws.com/LogoV4_TRANSPARENT.png?)
+
+# Youverse Biometric In Things API Models
+
+This package contains the data models for Youverse Biometric In Things API, an offering within [Youverse Services](https://www.youverse.id).
+
+For more information please [contact us](mailto:tech@youverse.id).
+
