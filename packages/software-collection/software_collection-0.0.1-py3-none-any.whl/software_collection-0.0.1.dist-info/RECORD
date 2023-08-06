@@ -1,0 +1,8 @@
+software_collection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+software_collection/cli.py,sha256=JCU-T29V1ZrqCwMYubMlCskrMhHIHAgepvOWruF2Ulg,1175
+software_collection/collection.py,sha256=tyW0-TYWgSYP0aMtuZbLwNOB1WE1kAI_nLX8di021XE,3238
+software_collection-0.0.1.dist-info/METADATA,sha256=LIFRpLy_3DpvrrP79FxkKQhpJoNjZXeWpVHKDCMi1Lw,1100
+software_collection-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+software_collection-0.0.1.dist-info/entry_points.txt,sha256=ysPNLrLFAPjCQQH0zqqEzG3ggOAqNB9KtbcXTFJ9J-w,51
+software_collection-0.0.1.dist-info/top_level.txt,sha256=g_6vuDa76A8zCHSRGM12emMM94GO9gsAeWT4nRAcnlA,20
+software_collection-0.0.1.dist-info/RECORD,,

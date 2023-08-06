@@ -1,0 +1,2 @@
+[console_scripts]
+sc = software_collection.cli:run
