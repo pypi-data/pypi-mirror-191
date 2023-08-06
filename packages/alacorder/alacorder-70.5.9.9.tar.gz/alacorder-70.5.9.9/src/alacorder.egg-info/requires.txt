@@ -1,0 +1,13 @@
+pandas
+xarray
+numpy
+xlrd
+openpyxl
+setuptools
+PyPDF2
+xlwt
+build
+pip
+jupyter
+numexpr
+bottleneck
