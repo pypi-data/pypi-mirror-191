@@ -1,0 +1,9 @@
+[xarray.backends]
+radolan = wradlib.io.backends:RadolanBackendEntrypoint
+wradlib-cfradial1 = wradlib.io.backends:CfRadial1BackendEntrypoint
+wradlib-cfradial2 = wradlib.io.backends:CfRadial2BackendEntrypoint
+wradlib-furuno = wradlib.io.backends:FurunoBackendEntrypoint
+wradlib-gamic = wradlib.io.backends:GamicBackendEntrypoint
+wradlib-iris = wradlib.io.backends:IrisBackendEntrypoint
+wradlib-odim = wradlib.io.backends:OdimBackendEntrypoint
+wradlib-rainbow = wradlib.io.backends:RainbowBackendEntrypoint
