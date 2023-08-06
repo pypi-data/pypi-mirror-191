@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: chessan
+Version: 0.0.1
+Author: Hart Traveller
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: rich
+Requires-Dist: requests
+
+# chessan
+
+An api client for interacting with the chess.com API.
