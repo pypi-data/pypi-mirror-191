@@ -1,0 +1,4 @@
+[console_scripts]
+copy-files = skm_pyutils.path:cli_copy_files_in_dir
+dir-list = skm_pyutils.path:cli_entry
+pdf-merge = skm_pyutils.pdf:cli_entry

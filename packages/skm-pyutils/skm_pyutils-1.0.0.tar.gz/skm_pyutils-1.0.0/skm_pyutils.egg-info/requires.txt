@@ -1,0 +1,8 @@
+numpy
+matplotlib
+seaborn
+PyPDF2
+rich
+psutil
+pyyaml
+pingouin
