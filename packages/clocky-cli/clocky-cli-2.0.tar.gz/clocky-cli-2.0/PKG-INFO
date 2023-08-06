@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: clocky-cli
+Version: 2.0
+Summary: Clock in, clock out, track your working hours.
+Author-email: espehon <espehon@gmail.com>
+Project-URL: Homepage, https://github.com/espehon/clocky
+Project-URL: Bug Tracker, https://github.com/espehon/clocky/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# clocky
+Track working hours

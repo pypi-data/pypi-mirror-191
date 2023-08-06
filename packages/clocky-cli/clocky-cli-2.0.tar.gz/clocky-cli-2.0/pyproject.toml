@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]                             # Boilerplate
+build-backend = "setuptools.build_meta"               # Boilerplate
+
+[project]
+name = "clocky-cli"                                     # Your pip install <name> (must be unique)
+version = "2.0"                                         # Must be manually updated here with every change
+authors = [
+	{ name="espehon", email="espehon@gmail.com" },      # Email is optional (as array?)
+]
+description = "Clock in, clock out, track your working hours."               # Header on PyPI (above readme)
+readme = "README.md"                                  # Boilerplate and will be added to the PyPI page
+requires-python = ">=3.8"                             # Python version
+dependencies = [                                      # Any site-package dependencies (as a list)
+	"colorama >= 0.4.6"                                    # NOTE: if any given, the pip test will be different
+]
+classifiers = [                                       # Kinda boilerplate. Used as hashtags really
+	"Programming Language :: Python :: 3",            # Tweak this to match your project
+	"Development Status :: 3 - Alpha",                # https://pypi.org/classifiers/
+	"Environment :: Console",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: Microsoft :: Windows :: Windows 10",
+	"Topic :: Utilities"
+]
+
+[project.scripts]                                     # The entrypoint for CLI app (if needed)
+clocky = "clocky.clocky:clocky"                       # SYNTAX: <commandlet> = "folder.file:function"
+                                                      # def main in __main__ and place in if name check
+[project.urls]
+"Homepage" = "https://github.com/espehon/clocky"              # Boilerplate links to GitHub repo
+"Bug Tracker" = "https://github.com/espehon/clocky/issues"    # Boilerplate links to GitHub repo issues
