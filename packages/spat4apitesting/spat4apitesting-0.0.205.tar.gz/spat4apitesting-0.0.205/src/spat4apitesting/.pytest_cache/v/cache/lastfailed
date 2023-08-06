@@ -1,0 +1,5 @@
+{
+  "sample_tests/wpT01.py::test_tmp": true,
+  "sample_tests/wpT02.py::test_Make_Good_New_Post": true,
+  "sample_tests/wpT02.py::test_Make_Good_New_Post_2": true
+}

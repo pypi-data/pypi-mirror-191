@@ -1,0 +1,10 @@
+[
+  "sample_tests/wpT01.py::test_tmp",
+  "sample_tests/wpT02.py::test_Get_Posts",
+  "sample_tests/wpT02.py::test_Get_Posts_Call_Failed",
+  "sample_tests/wpT02.py::test_Get_Posts_Call_Succeeded",
+  "sample_tests/wpT02.py::test_Make_Failed_New_Post",
+  "sample_tests/wpT02.py::test_Make_Good_New_Post",
+  "sample_tests/wpT02.py::test_Make_Good_New_Post_2",
+  "sample_tests/wpT02.py::test_tmp"
+]
