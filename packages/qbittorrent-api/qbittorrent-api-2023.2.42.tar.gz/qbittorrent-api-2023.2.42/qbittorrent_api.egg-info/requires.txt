@@ -1,0 +1,33 @@
+requests>=2.16.0
+six
+urllib3>=1.24.2
+setuptools
+
+[:python_version < "3"]
+enum34
+
+[:python_version < "3.3"]
+backports.functools-lru-cache
+
+[dev]
+black
+build
+flake8
+furo
+mypy
+pre-commit
+sphinx
+sphinx-copybutton
+types-requests
+types-six
+
+[test]
+build
+codecov
+coverage[toml]
+coveralls
+pytest
+pytest-cov
+
+[test:python_version < "3"]
+mock
