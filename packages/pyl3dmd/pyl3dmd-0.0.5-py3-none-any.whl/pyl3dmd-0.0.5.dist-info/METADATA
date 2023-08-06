@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyl3dmd
+Version: 0.0.5
+Summary: Python LAMMPS 3-Dimensional Molecular Dynamics/Descriptors
+Author: Pawan Panwar, Quanpeng Yang, Ashlie Martini
+Author-email: panwarp@msoe.edu
+Keywords: Python,LAMMPS,Molecular Dynamics Simulations,Molecular Descriptors,Machine Learning,MD Simulations,3-Dimensional
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: multiprocessing
+Requires-Dist: math
+Requires-Dist: time
+
+PyL3dMD stands for Python LAMMPS 3-Dimensional Molecular Dynamics/Descriptors, a python package for 3D descriptors calculation
