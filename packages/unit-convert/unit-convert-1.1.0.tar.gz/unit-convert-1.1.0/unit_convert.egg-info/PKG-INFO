@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: unit-convert
+Version: 1.1.0
+Summary: Easy way of converting units.
+Home-page: https://github.com/huntfx/unit-convert
+Download-URL: https://github.com/huntfx/unit-convert/archive/1.1.0.tar.gz
+Author: Peter Hunt
+Author-email: peterh@blue-zoo.co.uk
+License: MIT
+Project-URL: Source, https://github.com/huntfx/unit-convert
+Project-URL: Issues, https://github.com/huntfx/unit-convert/issues
+Keywords: unit,convert,conversion
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# unit-convert
+Easily convert units to different quantities.
+
+For conveniance, abbreviations are accepted, where an attempt will be made to calculate the type based on the other inputs (eg. "m" can evaluate as either "minute" or "metre").
+
+> **This library is deprecated**: A recommendation is to use [pint](https://github.com/hgrecco/pint) instead.
+
+
+## Example Usage
+```python
+>>> from unit_convert import UnitConvert
+
+# Yards + kilometres to miles
+>>> UnitConvert(yards=136.23, kilometres=60)['miles']
+37.35976780046479
+
+# Bytes to terabytes
+>>> UnitConvert('b', 19849347813875, 'megabytes', 512)['tb']
+18.053364951617368
+
+# List available conversions
+>>> UnitConvert(metres=1).keys()
+['nm', 'nanometres', 'Î¼m', 'micrometres', 'mm', 'millimetres', 'cm', 'centimetres', 'i', 'inches', 'ft', 'feet', 'm', 'metres', 'meters', 'yd', 'yards', 'km', 'kilometres', 'kilometers', 'miles', 'lightyears', 'au', 'astronomical_units', 'parsec']
+```
+
+Data size, time, distance, mass and temperatures are supported.
