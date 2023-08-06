@@ -1,0 +1,3 @@
+[console_scripts]
+hitfactorpy-sqlalchemy=hitfactorpy_sqlalchemy.cli:cli
+
