@@ -1,0 +1,174 @@
+.gitignore
+.readthedocs.yaml
+CITATION.cff
+LICENSE
+README.md
+TODO.md
+_config.yml
+changelog_new.md
+qpcr.toml
+requirements.txt
+setup.py
+Examples/0_getting_started.ipynb
+Examples/1_manual_tutorial.ipynb
+Examples/2_pipeline_tutorial.ipynb
+Examples/3_filters.ipynb
+Examples/4_custom_anchor.ipynb
+Examples/5_customisable_piplines.ipynb
+Examples/6_irregular_files.ipynb
+Examples/7_big_table_files.ipynb
+Examples/8_decorating_datafiles.ipynb
+Examples/9_custom_efficiencies.ipynb
+Examples/.resources/decorator1.png
+Examples/.resources/decorator2.png
+Examples/.resources/decorator3.png
+Examples/.resources/decorator4.png
+Examples/.resources/decorator5.png
+Examples/Example Data/28S.csv
+Examples/Example Data/HNRNPL_nmd.csv
+Examples/Example Data/HNRNPL_prot.csv
+Examples/Example Data/SRSF11_nmd.csv
+Examples/Example Data/SRSF11_prot.csv
+Examples/Example Data/actin.csv
+Examples/Example Data/actin.xlsx
+Examples/Example Data/Big Table Files/horizontal_bigtable_decorated.csv
+Examples/Example Data/Big Table Files/hybrid_bigtable.xlsx
+Examples/Example Data/Big Table Files/hybrid_bigtable_decorated.csv
+Examples/Example Data/Big Table Files/vertical_bigtable_decorated.csv
+Examples/Example Data/Big Table Files/vertical_bigtable_decorated.xlsx
+Examples/Example Data/Big Table Files/vertical_bigtable_decorated_irregular.xlsx
+Examples/Example Data/Calibration/calibrators_only.csv
+Examples/Example Data/Calibration/efficiencies.csv
+Examples/Example Data/Calibration/full_assay.csv
+Examples/Example Data/Calibration/no_calibrators.csv
+Examples/Example Data/Irregular Files/28S_irregular.csv
+Examples/Example Data/Irregular Files/actin_irregular.xlsx
+Examples/Example Data/Irregular Files/irregular_multi_assay.csv
+Examples/Example Data/Irregular Files/irregular_multi_assay_decorated.csv
+Examples/Example Data/Irregular Files/irregular_multi_assay_decorated.xlsx
+Examples/Example Results/PreviewResults_1.jpg
+Examples/Example Results/PreviewResults_2.jpg
+Examples/Example Results/PreviewResults_3.jpg
+Examples/Example Results/RangeFilter_after.jpg
+Examples/Example Results/RangeFilter_before.jpg
+Examples/Example Results/colorful.png
+Examples/Example Results/filter_28S.txt
+Examples/Example Results/filter_HNRNPL_nmd.txt
+Examples/Example Results/filter_HNRNPL_prot.txt
+Examples/Example Results/filter_SRSF11_nmd.txt
+Examples/Example Results/filter_SRSF11_prot.txt
+Examples/Example Results/filter_actin.txt
+Examples/Example Results/rel_28S+actin_df.csv
+Examples/Example Results/rel_28S+actin_stats.csv
+docs/.DS_Store
+docs/Makefile
+docs/make.bat
+docs/requirements.txt
+docs/source/.DS_Store
+docs/source/conf.py
+docs/source/gettingstarted.rst
+docs/source/index.rst
+docs/source/modules.rst
+docs/source/qpcr.Curves.rst
+docs/source/qpcr.Filters.rst
+docs/source/qpcr.Parsers.rst
+docs/source/qpcr.Pipes.rst
+docs/source/qpcr.Plotters.rst
+docs/source/qpcr.Readers.rst
+docs/source/qpcr.defaults.rst
+docs/source/qpcr.main.rst
+docs/source/qpcr.rst
+docs/source/qpcr_dark.svg
+docs/source/qpcr_light.svg
+docs/source/qpcr_small.svg
+docs/source/tutorials.rst
+docs/source/_static/pygments.css
+docs/source/resources/Qupid_upload_files.png
+docs/source/resources/boxplot.html
+docs/source/resources/boxplot.png
+docs/source/resources/colorful.png
+docs/source/resources/filter_summary.html
+docs/source/resources/preview_AssayBars.html
+docs/source/resources/preview_AssayBars.png
+docs/source/resources/preview_AssayDots.html
+docs/source/resources/preview_AssayDots.png
+docs/source/resources/preview_AssayDots_modified.png
+docs/source/resources/preview_GroupBars.html
+docs/source/resources/preview_GroupBars.png
+docs/source/resources/preview_GroupDots.html
+docs/source/resources/preview_GroupDots.png
+docs/source/resources/preview_index.html
+docs/source/resources/tutorials_screenshot.png
+docs/source/tutorials/0_getting_started.ipynb
+docs/source/tutorials/1_manual_tutorial.ipynb
+docs/source/tutorials/2_pipeline_tutorial.ipynb
+docs/source/tutorials/3_filters.ipynb
+docs/source/tutorials/4_custom_anchor.ipynb
+docs/source/tutorials/5_customisable_piplines.ipynb
+docs/source/tutorials/6_irregular_files.ipynb
+docs/source/tutorials/7_big_table_files.ipynb
+docs/source/tutorials/8_decorating_datafiles.ipynb
+docs/source/tutorials/9_custom_efficiencies.ipynb
+docs/source/tutorials/big_table_files.rst
+docs/source/tutorials/custom_anchor.rst
+docs/source/tutorials/custom_efficiencies.rst
+docs/source/tutorials/customisable_piplines.rst
+docs/source/tutorials/decorating_datafiles.rst
+docs/source/tutorials/filters.rst
+docs/source/tutorials/getting_started.rst
+docs/source/tutorials/irregular_files.rst
+docs/source/tutorials/manual_tutorial.rst
+docs/source/tutorials/pipeline_tutorial.rst
+docs/source/tutorials/.resources/decorator1.png
+docs/source/tutorials/.resources/decorator2.png
+docs/source/tutorials/.resources/decorator3.png
+docs/source/tutorials/.resources/decorator4.png
+docs/source/tutorials/.resources/decorator5.png
+qpcr/__init__.py
+qpcr.egg-info/PKG-INFO
+qpcr.egg-info/SOURCES.txt
+qpcr.egg-info/dependency_links.txt
+qpcr.egg-info/requires.txt
+qpcr.egg-info/top_level.txt
+qpcr/Curves/EfficiencyCurve.py
+qpcr/Curves/__init__.py
+qpcr/Filters/Filters.py
+qpcr/Filters/__init__.py
+qpcr/Parsers/Parsers.py
+qpcr/Parsers/__init__.py
+qpcr/Pipes/Pipes.py
+qpcr/Pipes/__init__.py
+qpcr/Plotters/AssaySubplotResults.py
+qpcr/Plotters/EfficiencyLines.py
+qpcr/Plotters/FilterSummary.py
+qpcr/Plotters/GroupSubplotResults.py
+qpcr/Plotters/PairwiseHeatmap.py
+qpcr/Plotters/PairwisePlot.py
+qpcr/Plotters/PreviewResults.py
+qpcr/Plotters/ReplicateBoxPlot.py
+qpcr/Plotters/__init__.py
+qpcr/Plotters/_base.py
+qpcr/Plotters/func_api.py
+qpcr/Readers/Readers.py
+qpcr/Readers/__init__.py
+qpcr/_auxiliary/__init__.py
+qpcr/_auxiliary/graphical.py
+qpcr/_auxiliary/warnings/__init__.py
+qpcr/_auxiliary/warnings/warnings.py
+qpcr/defaults/__init__.py
+qpcr/defaults/defaults.py
+qpcr/main/Analyser.py
+qpcr/main/Assay.py
+qpcr/main/Calibrator.py
+qpcr/main/DataReader.py
+qpcr/main/Normaliser.py
+qpcr/main/Results.py
+qpcr/main/__init__.py
+qpcr/main/func_api.py
+qpcr/stats/Anova.py
+qpcr/stats/Comparisons.py
+qpcr/stats/Evaluator.py
+qpcr/stats/PairwiseTests.py
+qpcr/stats/StatsTest.py
+qpcr/stats/__init__.py
+qpcr/stats/func_api.py

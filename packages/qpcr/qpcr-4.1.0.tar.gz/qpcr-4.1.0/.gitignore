@@ -1,0 +1,15 @@
+Example Data *
+Example Results *
+__pycache__
+__*/
+dist
+*.egg*
+*rex*
+build*
+test*ipynb
+test*py
+html*
+testfiles
+worktools
+*.DS_Store
+.vscode
