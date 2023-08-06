@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pretty-history
+Version: 2.0.1
+Summary: Generate a pretty view of your browser history from a JSON export
+Home-page: https://github.com/apatel762/pretty-history
+License: AGPL-3.0-or-later
+Author: Arjun Patel
+Author-email: relay-git-1LKQ1GqLp0Nn4@aspatel.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: browserexport (>=0.2.10,<0.3.0)
+Project-URL: Repository, https://github.com/apatel762/pretty-history
+Description-Content-Type: text/markdown
+
+# pretty-history
+
+[![PyTest](https://github.com/apatel762/pretty-history/actions/workflows/pytest.yml/badge.svg)](https://github.com/apatel762/pretty-history/actions/workflows/pytest.yml) [![PyPi version](https://img.shields.io/pypi/v/browserexport.svg)](https://pypi.python.org/pypi/browserexport) [![Python 3.7|3.8|3.9](https://img.shields.io/pypi/pyversions/browserexport.svg)](https://pypi.python.org/pypi/browserexport) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+
+The `pretty-history` app is a simple Python script that can be run via the command-line, and will generate Markdown files summarising your browser history.
+
+## Installation
+
+Install from the PyPi repository using `pip`:
+
+```
+pip install pretty-history
+```
+
+## Usage
+
+After installing the app, run:
+
+```
+prettyhist --help
+```
+
+To see some instructions for how to use it.
+
+### Example
+
+Pretty-format browsing history from Firefox:
+
+```bash
+prettyhist -b firefox
+```
+
+Pretty-format browsing history from Firefox, merging with data from Brave Browser:
+
+```bash
+browserexport save --browser brave --to .
+browserexport merge --json ./*.sqlite > ./history.json
+
+prettyhist -b firefox -f ./history.json
+```
+
+## References
+
+1. [seanbreckenridge/browserexport](https://github.com/seanbreckenridge/browserexport)
+
