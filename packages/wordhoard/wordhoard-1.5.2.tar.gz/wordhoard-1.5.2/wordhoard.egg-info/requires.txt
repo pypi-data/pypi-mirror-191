@@ -1,0 +1,10 @@
+backoff>=2.2.1
+beautifulsoup4>=4.11.2
+certifi>=2022.12.7
+charset-normalizer>=3.0.1
+deckar01-ratelimit>=3.0.2
+deepl>=1.13.0
+lxml>=4.9.2
+requests>=2.28.2
+soupsieve>=1.2
+urllib3>=1.26.14
