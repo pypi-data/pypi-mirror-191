@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "django-structlog-duration"
+version = "0.0.1"
+description = "Add request duration to django-structlog request log."
+authors = ["Tomasz Knapik <tomasz@knapik.net>"]
+readme = "README.md"
+packages = [{include = "django_structlog_duration"}]
+license = "MIT"
+repository = "https://github.com/tm-kn/django-structlog-duration"
+classifiers  = [
+    "Topic :: System :: Logging",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django-structlog = "~4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
