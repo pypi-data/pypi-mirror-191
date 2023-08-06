@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: datajoint
+Version: 0.14.0
+Summary: A relational data pipeline framework.
+Home-page: https://datajoint.com
+Author: DataJoint Contributors
+Author-email: support@datajoint.com
+License: GNU LGPL
+Keywords: database,data pipelines,scientific computing,automated research workflows
+Requires-Python: ~=3.7
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pymysql (>=0.7.2)
+Requires-Dist: pyparsing
+Requires-Dist: ipython
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: networkx (<=2.6.3)
+Requires-Dist: pydot
+Requires-Dist: minio (>=7.0.0)
+Requires-Dist: matplotlib
+Requires-Dist: cryptography
+Requires-Dist: otumat
+Requires-Dist: urllib3
+
+A relational data framework for scientific data pipelines with MySQL backend.
