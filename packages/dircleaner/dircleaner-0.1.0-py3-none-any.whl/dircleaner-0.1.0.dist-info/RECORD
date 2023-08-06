@@ -1,0 +1,9 @@
+dircleaner/__init__.py,sha256=zK6vv1khlXO6TK912RAJP5QQ1wRl6APhH0oM5afTkX0,92
+dircleaner/__main__.py,sha256=Qd-f8z2Q2vpiEP2x6PBFsJrpACWDVxFKQk820MhFmHo,59
+dircleaner/cli.py,sha256=KxxFnA7gNheT8OG1bZYOSREaWq7iivQthHcVJJP_tvM,3499
+dircleaner/func.py,sha256=qLkijepTjF2ZqxQ4DlSg7emdoDgk7TYZPAKa4WwK3Fo,8030
+dircleaner-0.1.0.dist-info/METADATA,sha256=-b1EjYAmzQRVsxNWrgPuaQY1M-cK43IamDMdM0y7NEc,3255
+dircleaner-0.1.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+dircleaner-0.1.0.dist-info/entry_points.txt,sha256=hB9cEmm5XnscOAOXJPUxsgHaA1DVGGToY4DNp4svFmg,46
+dircleaner-0.1.0.dist-info/licenses/LICENSE,sha256=F74l8x0Bqj9IPgP2F87-O5i5He24Lm9mYBmvkHu1ETc,1524
+dircleaner-0.1.0.dist-info/RECORD,,
