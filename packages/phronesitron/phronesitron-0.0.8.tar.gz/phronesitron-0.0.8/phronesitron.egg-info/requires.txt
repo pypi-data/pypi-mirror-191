@@ -1,0 +1,7 @@
+wheel
+openai
+argparse
+datetime
+pyperclip
+pdfminer.six
+termcolor
