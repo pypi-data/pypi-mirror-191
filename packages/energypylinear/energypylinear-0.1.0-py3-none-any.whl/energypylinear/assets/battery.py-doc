@@ -1,0 +1,16 @@
+
+"""
+Module docstring:
+This module contains the Battery class and associated functions for optimizing battery operations.
+
+Class docstring:
+The Battery class is used to optimize battery operations.
+
+Function docstring:
+battery_one_interval(optimizer, cfg, i, freq) -> BatteryOneInterval:
+    This function creates a BatteryOneInterval object for a given optimizer, configuration, interval, and frequency.
+
+constrain_within_interval(optimizer, vars, configs):
+    This function constrains the battery operations within a given interval.
+
+constrain_only_charge_or_dis
