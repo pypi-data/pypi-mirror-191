@@ -1,0 +1,9 @@
+{% load form_extras %}
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        {% for template_item in template_items %}
+            {% include "components/field_text_short.html" with field=form|field:template_item.id_as_str %}
+        {% endfor %}
+    </div>
+</div>
