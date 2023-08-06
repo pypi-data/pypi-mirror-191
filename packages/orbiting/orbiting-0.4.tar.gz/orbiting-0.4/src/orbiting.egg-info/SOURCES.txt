@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/classes.py
+src/rg_cities1000.csv
+src/tle.py
+src/orbiting.egg-info/PKG-INFO
+src/orbiting.egg-info/SOURCES.txt
+src/orbiting.egg-info/dependency_links.txt
+src/orbiting.egg-info/requires.txt
+src/orbiting.egg-info/top_level.txt
