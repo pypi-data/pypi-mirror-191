@@ -1,0 +1,18 @@
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Virtual Environment
+venv/
+
+# Visual Studio Code
+.vscode/
+__pycache__
+metastore_db/
+spark
+spark-warehouse
+test
+test_location/
+*.log
