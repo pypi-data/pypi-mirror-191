@@ -1,0 +1,7 @@
+py-fbchat
+validators
+pillow
+ffmpeg-python
+wget
+pytube
+windows-curses

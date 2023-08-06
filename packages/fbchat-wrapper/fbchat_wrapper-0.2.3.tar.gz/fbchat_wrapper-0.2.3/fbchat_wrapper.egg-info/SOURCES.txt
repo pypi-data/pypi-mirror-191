@@ -1,0 +1,10 @@
+README.md
+setup.py
+fbchat_wrapper/__init__.py
+fbchat_wrapper/fbchat_wrapper.py
+fbchat_wrapper/test.py
+fbchat_wrapper.egg-info/PKG-INFO
+fbchat_wrapper.egg-info/SOURCES.txt
+fbchat_wrapper.egg-info/dependency_links.txt
+fbchat_wrapper.egg-info/requires.txt
+fbchat_wrapper.egg-info/top_level.txt
