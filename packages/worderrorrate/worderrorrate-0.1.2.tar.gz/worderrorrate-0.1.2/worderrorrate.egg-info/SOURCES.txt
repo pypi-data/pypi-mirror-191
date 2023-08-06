@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+worderrorrate/__init__.py
+worderrorrate/version.py
+worderrorrate.egg-info/PKG-INFO
+worderrorrate.egg-info/SOURCES.txt
+worderrorrate.egg-info/dependency_links.txt
+worderrorrate.egg-info/requires.txt
+worderrorrate.egg-info/top_level.txt
