@@ -1,0 +1,5 @@
+rwkv_rs-0.1.0.dist-info/METADATA,sha256=RE5zvt4y3Ek0eS_9hBLEj1KfdUIRY1hRCvdcZHK6DIg,256
+rwkv_rs-0.1.0.dist-info/WHEEL,sha256=DHnzE782AzYNJjAhoRwV_5GkgzqUX7ePlB3335ZS4kA,110
+rwkv_rs/__init__.py,sha256=GPAL0t9BCYvGCPs0FrF73fUBkWOa-PJpF-KZWYEKPEw,111
+rwkv_rs/rwkv_rs.cpython-310-x86_64-linux-gnu.so,sha256=HD_gegAI4MRinrv2VGZculG4CjQJc2GkCjyxbB3YpZQ,711144
+rwkv_rs-0.1.0.dist-info/RECORD,,
