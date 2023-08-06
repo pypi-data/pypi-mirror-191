@@ -1,0 +1,17 @@
+deepchecks_client/__init__.py,sha256=c6tw_dFmmNuoYOUh923OTUwV6GLZRoSeBxjsubv-Ax0,19267
+deepchecks_client/_shared_docs.py,sha256=0KPV9ytPPiUJpy1_GDajt5Uy4ECn3x_MMs6Xo-QopOo,4728
+deepchecks_client/core/AmazonRootCA1.cer,sha256=LEOVLungAP8qzE4u0Il8CnKtX6csPZNOgXQcvVTwW9E,1188
+deepchecks_client/core/__init__.py,sha256=ZQwDrLbk_6IvMEMisEIdzIw0ulur5vOx7uzF1kvW90s,728
+deepchecks_client/core/api.py,sha256=PslWJAakyE3VbN6pXFcKYJpqsYhEtkMz5V1Xq83NOAc,34462
+deepchecks_client/core/client.py,sha256=7X7Y5CcCNY-x5HqiG6nhy2OvdwnAbtNZYXuzw7-V9_s,24761
+deepchecks_client/core/utils.py,sha256=Lsyo8OlFfQ_uEybG1ZxBr7hzepPy-lLW3e9rs1yD9cw,12531
+deepchecks_client/tabular/__init__.py,sha256=zlRxEMj4LBppI12tKPqrtLlm0Dx93pAMncdzGSeyhmM,766
+deepchecks_client/tabular/client.py,sha256=LxJJ-VwtqvXsqUyUKkwhVXLD3YQWmI39ryHcSxSFdro,34128
+deepchecks_client/tabular/utils.py,sha256=GdxOiCcEues4b6sAj1kWSp4aXP_hGM3TZd1h9dLp1IA,6291
+deepchecks_client/vision/__init__.py,sha256=6MXfnh7ej5rDZZjJqTsW0MjrkhaPbsvzQKb3PzkFCuY,1237
+deepchecks_client/vision/client.py,sha256=3A-NI3B0zfGkNBIILw1ytXgHqGTAAJmdHIyhGX44Ve0,25532
+deepchecks_client/vision/utils.py,sha256=dVHr5uq0fqTFYPcQHr4hKS0mfY-3iIaL5y3OoZEA7uQ,8812
+deepchecks_client-0.0.27.dev0.dist-info/METADATA,sha256=25zW9aZx93gcbiCIrA2WjtPnuXkJ2U2WZOI5y3dddgE,727
+deepchecks_client-0.0.27.dev0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+deepchecks_client-0.0.27.dev0.dist-info/top_level.txt,sha256=AX41JSwLA_Aoyd1jG4xZ4CyKF-WfjHFYRPgunpTGA18,18
+deepchecks_client-0.0.27.dev0.dist-info/RECORD,,
