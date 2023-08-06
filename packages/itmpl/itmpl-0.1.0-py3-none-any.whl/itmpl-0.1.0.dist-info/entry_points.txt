@@ -1,0 +1,3 @@
+[console_scripts]
+itmpl=itmpl.main:app
+
