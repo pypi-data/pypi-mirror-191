@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/emtransmission/__init__.py
+src/emtransmission/fk_recoding.py
+src/emtransmission/fk_recoding_snap.py
+src/emtransmission/fk_recoding_without_graphic.py
+src/emtransmission.egg-info/PKG-INFO
+src/emtransmission.egg-info/SOURCES.txt
+src/emtransmission.egg-info/dependency_links.txt
+src/emtransmission.egg-info/top_level.txt
