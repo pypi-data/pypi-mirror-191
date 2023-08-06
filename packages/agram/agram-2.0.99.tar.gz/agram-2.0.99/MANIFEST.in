@@ -1,0 +1,11 @@
+## Include
+include README.md COPYING COPYING.lesser NOTICE requirements.txt
+recursive-include compiler *.py *.tl *.tsv *.txt
+recursive-include tests *.py
+
+## Exclude
+prune agram/errors/exceptions
+prune agram/raw/functions
+prune agram/raw/types
+prune agram/raw/base
+exclude agram/raw/all.py
