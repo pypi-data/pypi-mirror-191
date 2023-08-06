@@ -1,0 +1,17 @@
+ckanext_resource_indexer-0.3.2-py3.9-nspkg.pth,sha256=VaH--vNo0_vzXvZAeqyq-Bg6m47pBBRlxwvBj0KQxe0,544
+ckanext/resource_indexer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/resource_indexer/config.py,sha256=u4ccpPGLOMFgzsOw4gDcxhFy4Au0PflkPaiyA6qRbgY,2254
+ckanext/resource_indexer/interface.py,sha256=IIduwAwm9ZnwJjo--CYXJf4wgN_xRRUvSMUT-YLuvfE,1714
+ckanext/resource_indexer/plugin.py,sha256=A3_B87LOP3IvIqHSb36R03pXFMlHXLJ56xN_HNsrN58,2789
+ckanext/resource_indexer/utils.py,sha256=MSPYzBtkUO_41soJb9VreiRJVHy0l8KErH4aW19C_zM,7899
+ckanext/resource_indexer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/resource_indexer/tests/conftest.py,sha256=4WBkxFcEqKaYVKhmE5Mj63ik7YsgIErpVbzryGxZ02Q,213
+ckanext/resource_indexer/tests/test_plugin.py,sha256=MzGKFhl1iK5-YYtlnk082ALNOV1PdJtRcggzEKDCORc,4942
+ckanext/resource_indexer/tests/test_utils.py,sha256=-FdF9tR4wrLWZrHazPn9TRaC7S0bS3Gd6qx_T69U0Ks,551
+ckanext_resource_indexer-0.3.2.dist-info/LICENSE,sha256=566LXaF3CUdLolMWRBvAZBSIQc8QHn7vMYw8PuWggns,34499
+ckanext_resource_indexer-0.3.2.dist-info/METADATA,sha256=PtOGautavFOes4KtahTjb7qFNUAN2LrHe1oyc4bmn7M,9521
+ckanext_resource_indexer-0.3.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ckanext_resource_indexer-0.3.2.dist-info/entry_points.txt,sha256=febUbQLM-8bcAVJyOUcx34PqfkJOc0JifEGCH6n4FVc,391
+ckanext_resource_indexer-0.3.2.dist-info/namespace_packages.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_resource_indexer-0.3.2.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_resource_indexer-0.3.2.dist-info/RECORD,,
