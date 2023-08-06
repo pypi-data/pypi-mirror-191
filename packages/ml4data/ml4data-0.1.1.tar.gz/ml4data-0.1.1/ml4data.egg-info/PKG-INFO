@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ml4data
+Version: 0.1.1
+Summary: A client for ML4Data apis
+Home-page: https://ml4data.com/
+Author: ML4Data Team
+Author-email: ML4Data Team <info@ml4data.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# ML4Data Python SDK
+
+Homepage: [https://ml4data.com](https://ml4data.com)
+
+## Installation
+
+### From setup
+
+```bash
+python3 setup.py install
+```
+
+## Usage
+
+### NLP
+
+```python
+from ml4data import NLPClient
+client = NLPClient('YOUR API KEY HERE!')
+client.analyze_sentiment("Este cine no esta bueno porque era muy sucio")
+```
+
+### Vision 
+
+```python
+from ml4data import VisionClient
+client = VisionClient('YOUR API KEY HERE!')
+client.detect_objects('examples/restaurant.png')
+```
+

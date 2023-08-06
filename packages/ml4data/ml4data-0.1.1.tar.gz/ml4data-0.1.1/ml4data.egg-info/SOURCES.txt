@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+ml4data/__init__.py
+ml4data/base.py
+ml4data/nlp.py
+ml4data/vision.py
+ml4data.egg-info/PKG-INFO
+ml4data.egg-info/SOURCES.txt
+ml4data.egg-info/dependency_links.txt
+ml4data.egg-info/requires.txt
+ml4data.egg-info/top_level.txt
+tests/test_nlp.py
