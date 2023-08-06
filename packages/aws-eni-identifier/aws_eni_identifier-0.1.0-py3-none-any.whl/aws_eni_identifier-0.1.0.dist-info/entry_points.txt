@@ -1,0 +1,3 @@
+[console_scripts]
+aws-eni-identifier=aws_eni_identifier.cli:main
+
