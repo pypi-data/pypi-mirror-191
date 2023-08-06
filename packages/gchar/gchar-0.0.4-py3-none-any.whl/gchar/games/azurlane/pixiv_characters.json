@@ -1,0 +1,4247 @@
+{
+    "characters": [
+        {
+            "index": "003",
+            "illustrations": {
+                "all": 34,
+                "r18": 6
+            }
+        },
+        {
+            "index": "068",
+            "illustrations": {
+                "all": 1219,
+                "r18": 343
+            }
+        },
+        {
+            "index": "137",
+            "illustrations": {
+                "all": 109,
+                "r18": 11
+            }
+        },
+        {
+            "index": "217",
+            "illustrations": {
+                "all": 874,
+                "r18": 265
+            }
+        },
+        {
+            "index": "231",
+            "illustrations": {
+                "all": 1845,
+                "r18": 439
+            }
+        },
+        {
+            "index": "268",
+            "illustrations": {
+                "all": 1242,
+                "r18": 307
+            }
+        },
+        {
+            "index": "529",
+            "illustrations": {
+                "all": 441,
+                "r18": 84
+            }
+        },
+        {
+            "index": "539",
+            "illustrations": {
+                "all": 193,
+                "r18": 91
+            }
+        },
+        {
+            "index": "574",
+            "illustrations": {
+                "all": 112,
+                "r18": 21
+            }
+        },
+        {
+            "index": "Plan010",
+            "illustrations": {
+                "all": 637,
+                "r18": 215
+            }
+        },
+        {
+            "index": "Plan011",
+            "illustrations": {
+                "all": 944,
+                "r18": 287
+            }
+        },
+        {
+            "index": "Plan014",
+            "illustrations": {
+                "all": 246,
+                "r18": 74
+            }
+        },
+        {
+            "index": "Plan019",
+            "illustrations": {
+                "all": 188,
+                "r18": 40
+            }
+        },
+        {
+            "index": "Plan020",
+            "illustrations": {
+                "all": 1264,
+                "r18": 378
+            }
+        },
+        {
+            "index": "Plan023",
+            "illustrations": {
+                "all": 219,
+                "r18": 62
+            }
+        },
+        {
+            "index": "Plan027",
+            "illustrations": {
+                "all": 142,
+                "r18": 43
+            }
+        },
+        {
+            "index": "002",
+            "illustrations": {
+                "all": 126,
+                "r18": 15
+            }
+        },
+        {
+            "index": "028",
+            "illustrations": {
+                "all": 1445,
+                "r18": 386
+            }
+        },
+        {
+            "index": "036",
+            "illustrations": {
+                "all": 716,
+                "r18": 89
+            }
+        },
+        {
+            "index": "050",
+            "illustrations": {
+                "all": 2042,
+                "r18": 870
+            }
+        },
+        {
+            "index": "063",
+            "illustrations": {
+                "all": 571,
+                "r18": 184
+            }
+        },
+        {
+            "index": "064",
+            "illustrations": {
+                "all": 392,
+                "r18": 87
+            }
+        },
+        {
+            "index": "065",
+            "illustrations": {
+                "all": 491,
+                "r18": 155
+            }
+        },
+        {
+            "index": "077",
+            "illustrations": {
+                "all": 6258,
+                "r18": 759
+            }
+        },
+        {
+            "index": "107",
+            "illustrations": {
+                "all": 2302,
+                "r18": 671
+            }
+        },
+        {
+            "index": "115",
+            "illustrations": {
+                "all": 7545,
+                "r18": 2459
+            }
+        },
+        {
+            "index": "129",
+            "illustrations": {
+                "all": 970,
+                "r18": 224
+            }
+        },
+        {
+            "index": "131",
+            "illustrations": {
+                "all": 1433,
+                "r18": 219
+            }
+        },
+        {
+            "index": "134",
+            "illustrations": {
+                "all": 40,
+                "r18": 3
+            }
+        },
+        {
+            "index": "135",
+            "illustrations": {
+                "all": 649,
+                "r18": 208
+            }
+        },
+        {
+            "index": "136",
+            "illustrations": {
+                "all": 299,
+                "r18": 79
+            }
+        },
+        {
+            "index": "145",
+            "illustrations": {
+                "all": 5098,
+                "r18": 1727
+            }
+        },
+        {
+            "index": "146",
+            "illustrations": {
+                "all": 647,
+                "r18": 138
+            }
+        },
+        {
+            "index": "147",
+            "illustrations": {
+                "all": 8312,
+                "r18": 2607
+            }
+        },
+        {
+            "index": "164",
+            "illustrations": {
+                "all": 2351,
+                "r18": 451
+            }
+        },
+        {
+            "index": "166",
+            "illustrations": {
+                "all": 1447,
+                "r18": 214
+            }
+        },
+        {
+            "index": "195",
+            "illustrations": {
+                "all": 198,
+                "r18": 36
+            }
+        },
+        {
+            "index": "200",
+            "illustrations": {
+                "all": 4276,
+                "r18": 1397
+            }
+        },
+        {
+            "index": "201",
+            "illustrations": {
+                "all": 7701,
+                "r18": 2605
+            }
+        },
+        {
+            "index": "202",
+            "illustrations": {
+                "all": 330,
+                "r18": 33
+            }
+        },
+        {
+            "index": "203",
+            "illustrations": {
+                "all": 253,
+                "r18": 68
+            }
+        },
+        {
+            "index": "212",
+            "illustrations": {
+                "all": 2064,
+                "r18": 524
+            }
+        },
+        {
+            "index": "214",
+            "illustrations": {
+                "all": 96,
+                "r18": 14
+            }
+        },
+        {
+            "index": "215",
+            "illustrations": {
+                "all": 495,
+                "r18": 79
+            }
+        },
+        {
+            "index": "224",
+            "illustrations": {
+                "all": 4946,
+                "r18": 967
+            }
+        },
+        {
+            "index": "225",
+            "illustrations": {
+                "all": 4805,
+                "r18": 767
+            }
+        },
+        {
+            "index": "228",
+            "illustrations": {
+                "all": 1746,
+                "r18": 363
+            }
+        },
+        {
+            "index": "229",
+            "illustrations": {
+                "all": 1795,
+                "r18": 436
+            }
+        },
+        {
+            "index": "230",
+            "illustrations": {
+                "all": 7126,
+                "r18": 2750
+            }
+        },
+        {
+            "index": "232",
+            "illustrations": {
+                "all": 2169,
+                "r18": 398
+            }
+        },
+        {
+            "index": "243",
+            "illustrations": {
+                "all": 135,
+                "r18": 31
+            }
+        },
+        {
+            "index": "244",
+            "illustrations": {
+                "all": 7191,
+                "r18": 1844
+            }
+        },
+        {
+            "index": "250",
+            "illustrations": {
+                "all": 1492,
+                "r18": 356
+            }
+        },
+        {
+            "index": "251",
+            "illustrations": {
+                "all": 922,
+                "r18": 157
+            }
+        },
+        {
+            "index": "252",
+            "illustrations": {
+                "all": 1837,
+                "r18": 328
+            }
+        },
+        {
+            "index": "262",
+            "illustrations": {
+                "all": 233,
+                "r18": 49
+            }
+        },
+        {
+            "index": "267",
+            "illustrations": {
+                "all": 1178,
+                "r18": 220
+            }
+        },
+        {
+            "index": "288",
+            "illustrations": {
+                "all": 1310,
+                "r18": 69
+            }
+        },
+        {
+            "index": "320",
+            "illustrations": {
+                "all": 705,
+                "r18": 98
+            }
+        },
+        {
+            "index": "322",
+            "illustrations": {
+                "all": 1207,
+                "r18": 210
+            }
+        },
+        {
+            "index": "324",
+            "illustrations": {
+                "all": 103,
+                "r18": 9
+            }
+        },
+        {
+            "index": "329",
+            "illustrations": {
+                "all": 412,
+                "r18": 36
+            }
+        },
+        {
+            "index": "338",
+            "illustrations": {
+                "all": 612,
+                "r18": 189
+            }
+        },
+        {
+            "index": "341",
+            "illustrations": {
+                "all": 153,
+                "r18": 28
+            }
+        },
+        {
+            "index": "343",
+            "illustrations": {
+                "all": 537,
+                "r18": 114
+            }
+        },
+        {
+            "index": "347",
+            "illustrations": {
+                "all": 183,
+                "r18": 30
+            }
+        },
+        {
+            "index": "353",
+            "illustrations": {
+                "all": 741,
+                "r18": 111
+            }
+        },
+        {
+            "index": "354",
+            "illustrations": {
+                "all": 625,
+                "r18": 158
+            }
+        },
+        {
+            "index": "356",
+            "illustrations": {
+                "all": 134,
+                "r18": 34
+            }
+        },
+        {
+            "index": "357",
+            "illustrations": {
+                "all": 1010,
+                "r18": 128
+            }
+        },
+        {
+            "index": "358",
+            "illustrations": {
+                "all": 398,
+                "r18": 115
+            }
+        },
+        {
+            "index": "364",
+            "illustrations": {
+                "all": 354,
+                "r18": 102
+            }
+        },
+        {
+            "index": "367",
+            "illustrations": {
+                "all": 1292,
+                "r18": 185
+            }
+        },
+        {
+            "index": "368",
+            "illustrations": {
+                "all": 186,
+                "r18": 23
+            }
+        },
+        {
+            "index": "371",
+            "illustrations": {
+                "all": 6442,
+                "r18": 2175
+            }
+        },
+        {
+            "index": "378",
+            "illustrations": {
+                "all": 212,
+                "r18": 38
+            }
+        },
+        {
+            "index": "380",
+            "illustrations": {
+                "all": 98,
+                "r18": 14
+            }
+        },
+        {
+            "index": "381",
+            "illustrations": {
+                "all": 158,
+                "r18": 34
+            }
+        },
+        {
+            "index": "393",
+            "illustrations": {
+                "all": 374,
+                "r18": 120
+            }
+        },
+        {
+            "index": "394",
+            "illustrations": {
+                "all": 2900,
+                "r18": 777
+            }
+        },
+        {
+            "index": "398",
+            "illustrations": {
+                "all": 119,
+                "r18": 16
+            }
+        },
+        {
+            "index": "399",
+            "illustrations": {
+                "all": 49,
+                "r18": 5
+            }
+        },
+        {
+            "index": "401",
+            "illustrations": {
+                "all": 202,
+                "r18": 48
+            }
+        },
+        {
+            "index": "402",
+            "illustrations": {
+                "all": 46,
+                "r18": 10
+            }
+        },
+        {
+            "index": "410",
+            "illustrations": {
+                "all": 328,
+                "r18": 73
+            }
+        },
+        {
+            "index": "413",
+            "illustrations": {
+                "all": 1647,
+                "r18": 683
+            }
+        },
+        {
+            "index": "418",
+            "illustrations": {
+                "all": 77,
+                "r18": 3
+            }
+        },
+        {
+            "index": "419",
+            "illustrations": {
+                "all": 212,
+                "r18": 30
+            }
+        },
+        {
+            "index": "425",
+            "illustrations": {
+                "all": 241,
+                "r18": 29
+            }
+        },
+        {
+            "index": "426",
+            "illustrations": {
+                "all": 94,
+                "r18": 24
+            }
+        },
+        {
+            "index": "433",
+            "illustrations": {
+                "all": 1207,
+                "r18": 271
+            }
+        },
+        {
+            "index": "435",
+            "illustrations": {
+                "all": 60,
+                "r18": 11
+            }
+        },
+        {
+            "index": "436",
+            "illustrations": {
+                "all": 604,
+                "r18": 197
+            }
+        },
+        {
+            "index": "440",
+            "illustrations": {
+                "all": 241,
+                "r18": 67
+            }
+        },
+        {
+            "index": "441",
+            "illustrations": {
+                "all": 454,
+                "r18": 72
+            }
+        },
+        {
+            "index": "442",
+            "illustrations": {
+                "all": 238,
+                "r18": 60
+            }
+        },
+        {
+            "index": "443",
+            "illustrations": {
+                "all": 6071,
+                "r18": 2796
+            }
+        },
+        {
+            "index": "445",
+            "illustrations": {
+                "all": 643,
+                "r18": 170
+            }
+        },
+        {
+            "index": "453",
+            "illustrations": {
+                "all": 674,
+                "r18": 139
+            }
+        },
+        {
+            "index": "454",
+            "illustrations": {
+                "all": 220,
+                "r18": 47
+            }
+        },
+        {
+            "index": "455",
+            "illustrations": {
+                "all": 326,
+                "r18": 107
+            }
+        },
+        {
+            "index": "461",
+            "illustrations": {
+                "all": 200,
+                "r18": 48
+            }
+        },
+        {
+            "index": "462",
+            "illustrations": {
+                "all": 1149,
+                "r18": 280
+            }
+        },
+        {
+            "index": "463",
+            "illustrations": {
+                "all": 342,
+                "r18": 74
+            }
+        },
+        {
+            "index": "467",
+            "illustrations": {
+                "all": 65,
+                "r18": 15
+            }
+        },
+        {
+            "index": "468",
+            "illustrations": {
+                "all": 226,
+                "r18": 21
+            }
+        },
+        {
+            "index": "474",
+            "illustrations": {
+                "all": 194,
+                "r18": 47
+            }
+        },
+        {
+            "index": "475",
+            "illustrations": {
+                "all": 136,
+                "r18": 21
+            }
+        },
+        {
+            "index": "476",
+            "illustrations": {
+                "all": 137,
+                "r18": 28
+            }
+        },
+        {
+            "index": "479",
+            "illustrations": {
+                "all": 175,
+                "r18": 16
+            }
+        },
+        {
+            "index": "480",
+            "illustrations": {
+                "all": 189,
+                "r18": 33
+            }
+        },
+        {
+            "index": "481",
+            "illustrations": {
+                "all": 110,
+                "r18": 16
+            }
+        },
+        {
+            "index": "482",
+            "illustrations": {
+                "all": 236,
+                "r18": 37
+            }
+        },
+        {
+            "index": "483",
+            "illustrations": {
+                "all": 635,
+                "r18": 182
+            }
+        },
+        {
+            "index": "484",
+            "illustrations": {
+                "all": 30,
+                "r18": 7
+            }
+        },
+        {
+            "index": "489",
+            "illustrations": {
+                "all": 797,
+                "r18": 345
+            }
+        },
+        {
+            "index": "496",
+            "illustrations": {
+                "all": 133,
+                "r18": 24
+            }
+        },
+        {
+            "index": "500",
+            "illustrations": {
+                "all": 409,
+                "r18": 141
+            }
+        },
+        {
+            "index": "501",
+            "illustrations": {
+                "all": 128,
+                "r18": 31
+            }
+        },
+        {
+            "index": "502",
+            "illustrations": {
+                "all": 14,
+                "r18": 5
+            }
+        },
+        {
+            "index": "508",
+            "illustrations": {
+                "all": 90,
+                "r18": 13
+            }
+        },
+        {
+            "index": "511",
+            "illustrations": {
+                "all": 108,
+                "r18": 34
+            }
+        },
+        {
+            "index": "512",
+            "illustrations": {
+                "all": 110,
+                "r18": 14
+            }
+        },
+        {
+            "index": "513",
+            "illustrations": {
+                "all": 59,
+                "r18": 22
+            }
+        },
+        {
+            "index": "517",
+            "illustrations": {
+                "all": 89,
+                "r18": 18
+            }
+        },
+        {
+            "index": "518",
+            "illustrations": {
+                "all": 50,
+                "r18": 23
+            }
+        },
+        {
+            "index": "520",
+            "illustrations": {
+                "all": 71,
+                "r18": 12
+            }
+        },
+        {
+            "index": "521",
+            "illustrations": {
+                "all": 67,
+                "r18": 20
+            }
+        },
+        {
+            "index": "522",
+            "illustrations": {
+                "all": 88,
+                "r18": 7
+            }
+        },
+        {
+            "index": "525",
+            "illustrations": {
+                "all": 29,
+                "r18": 10
+            }
+        },
+        {
+            "index": "527",
+            "illustrations": {
+                "all": 113,
+                "r18": 23
+            }
+        },
+        {
+            "index": "530",
+            "illustrations": {
+                "all": 218,
+                "r18": 53
+            }
+        },
+        {
+            "index": "533",
+            "illustrations": {
+                "all": 31,
+                "r18": 3
+            }
+        },
+        {
+            "index": "535",
+            "illustrations": {
+                "all": 129,
+                "r18": 18
+            }
+        },
+        {
+            "index": "538",
+            "illustrations": {
+                "all": 101,
+                "r18": 24
+            }
+        },
+        {
+            "index": "540",
+            "illustrations": {
+                "all": 81,
+                "r18": 14
+            }
+        },
+        {
+            "index": "541",
+            "illustrations": {
+                "all": 44,
+                "r18": 5
+            }
+        },
+        {
+            "index": "543",
+            "illustrations": {
+                "all": 80,
+                "r18": 9
+            }
+        },
+        {
+            "index": "544",
+            "illustrations": {
+                "all": 190,
+                "r18": 33
+            }
+        },
+        {
+            "index": "547",
+            "illustrations": {
+                "all": 238,
+                "r18": 74
+            }
+        },
+        {
+            "index": "550",
+            "illustrations": {
+                "all": 147,
+                "r18": 16
+            }
+        },
+        {
+            "index": "553",
+            "illustrations": {
+                "all": 835,
+                "r18": 231
+            }
+        },
+        {
+            "index": "555",
+            "illustrations": {
+                "all": 133,
+                "r18": 33
+            }
+        },
+        {
+            "index": "556",
+            "illustrations": {
+                "all": 63,
+                "r18": 11
+            }
+        },
+        {
+            "index": "558",
+            "illustrations": {
+                "all": 85,
+                "r18": 18
+            }
+        },
+        {
+            "index": "559",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "561",
+            "illustrations": {
+                "all": 44,
+                "r18": 11
+            }
+        },
+        {
+            "index": "566",
+            "illustrations": {
+                "all": 109,
+                "r18": 30
+            }
+        },
+        {
+            "index": "567",
+            "illustrations": {
+                "all": 9,
+                "r18": 0
+            }
+        },
+        {
+            "index": "569",
+            "illustrations": {
+                "all": 153,
+                "r18": 38
+            }
+        },
+        {
+            "index": "570",
+            "illustrations": {
+                "all": 120,
+                "r18": 41
+            }
+        },
+        {
+            "index": "571",
+            "illustrations": {
+                "all": 109,
+                "r18": 23
+            }
+        },
+        {
+            "index": "572",
+            "illustrations": {
+                "all": 25,
+                "r18": 5
+            }
+        },
+        {
+            "index": "575",
+            "illustrations": {
+                "all": 15,
+                "r18": 2
+            }
+        },
+        {
+            "index": "577",
+            "illustrations": {
+                "all": 27,
+                "r18": 6
+            }
+        },
+        {
+            "index": "578",
+            "illustrations": {
+                "all": 15,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab005",
+            "illustrations": {
+                "all": 11,
+                "r18": 4
+            }
+        },
+        {
+            "index": "Collab006",
+            "illustrations": {
+                "all": 8,
+                "r18": 3
+            }
+        },
+        {
+            "index": "Collab007",
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab008",
+            "illustrations": {
+                "all": 10,
+                "r18": 3
+            }
+        },
+        {
+            "index": "Collab031",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab032",
+            "illustrations": {
+                "all": 6,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab033",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab042",
+            "illustrations": {
+                "all": 5,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab043",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab044",
+            "illustrations": {
+                "all": 18,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab061",
+            "illustrations": {
+                "all": 397,
+                "r18": 199
+            }
+        },
+        {
+            "index": "Collab062",
+            "illustrations": {
+                "all": 167,
+                "r18": 46
+            }
+        },
+        {
+            "index": "Collab063",
+            "illustrations": {
+                "all": 29,
+                "r18": 7
+            }
+        },
+        {
+            "index": "Collab064",
+            "illustrations": {
+                "all": 20,
+                "r18": 5
+            }
+        },
+        {
+            "index": "Collab071",
+            "illustrations": {
+                "all": 9,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab072",
+            "illustrations": {
+                "all": 10,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab073",
+            "illustrations": {
+                "all": 10,
+                "r18": 3
+            }
+        },
+        {
+            "index": "Collab074",
+            "illustrations": {
+                "all": 9,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab081",
+            "illustrations": {
+                "all": 66,
+                "r18": 21
+            }
+        },
+        {
+            "index": "Collab082",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab085",
+            "illustrations": {
+                "all": 8,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab086",
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab091",
+            "illustrations": {
+                "all": 104,
+                "r18": 31
+            }
+        },
+        {
+            "index": "Collab092",
+            "illustrations": {
+                "all": 12,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab093",
+            "illustrations": {
+                "all": 7,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab096",
+            "illustrations": {
+                "all": 4,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META001",
+            "illustrations": {
+                "all": 44,
+                "r18": 1
+            }
+        },
+        {
+            "index": "META002",
+            "illustrations": {
+                "all": 16,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META003",
+            "illustrations": {
+                "all": 119,
+                "r18": 21
+            }
+        },
+        {
+            "index": "META004",
+            "illustrations": {
+                "all": 5,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META007",
+            "illustrations": {
+                "all": 12,
+                "r18": 1
+            }
+        },
+        {
+            "index": "META009",
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META012",
+            "illustrations": {
+                "all": 19,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META014",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META017",
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Plan001",
+            "illustrations": {
+                "all": 461,
+                "r18": 75
+            }
+        },
+        {
+            "index": "Plan002",
+            "illustrations": {
+                "all": 428,
+                "r18": 110
+            }
+        },
+        {
+            "index": "Plan003",
+            "illustrations": {
+                "all": 407,
+                "r18": 95
+            }
+        },
+        {
+            "index": "Plan004",
+            "illustrations": {
+                "all": 126,
+                "r18": 19
+            }
+        },
+        {
+            "index": "Plan005",
+            "illustrations": {
+                "all": 1782,
+                "r18": 365
+            }
+        },
+        {
+            "index": "Plan006",
+            "illustrations": {
+                "all": 557,
+                "r18": 112
+            }
+        },
+        {
+            "index": "Plan007",
+            "illustrations": {
+                "all": 132,
+                "r18": 20
+            }
+        },
+        {
+            "index": "Plan008",
+            "illustrations": {
+                "all": 152,
+                "r18": 19
+            }
+        },
+        {
+            "index": "Plan009",
+            "illustrations": {
+                "all": 130,
+                "r18": 19
+            }
+        },
+        {
+            "index": "Plan012",
+            "illustrations": {
+                "all": 538,
+                "r18": 57
+            }
+        },
+        {
+            "index": "Plan013",
+            "illustrations": {
+                "all": 1898,
+                "r18": 330
+            }
+        },
+        {
+            "index": "Plan015",
+            "illustrations": {
+                "all": 228,
+                "r18": 52
+            }
+        },
+        {
+            "index": "Plan016",
+            "illustrations": {
+                "all": 155,
+                "r18": 18
+            }
+        },
+        {
+            "index": "Plan017",
+            "illustrations": {
+                "all": 230,
+                "r18": 24
+            }
+        },
+        {
+            "index": "Plan018",
+            "illustrations": {
+                "all": 402,
+                "r18": 80
+            }
+        },
+        {
+            "index": "Plan021",
+            "illustrations": {
+                "all": 982,
+                "r18": 180
+            }
+        },
+        {
+            "index": "Plan022",
+            "illustrations": {
+                "all": 90,
+                "r18": 10
+            }
+        },
+        {
+            "index": "Plan024",
+            "illustrations": {
+                "all": 167,
+                "r18": 23
+            }
+        },
+        {
+            "index": "Plan025",
+            "illustrations": {
+                "all": 68,
+                "r18": 19
+            }
+        },
+        {
+            "index": "Plan026",
+            "illustrations": {
+                "all": 49,
+                "r18": 13
+            }
+        },
+        {
+            "index": "001",
+            "illustrations": {
+                "all": 231,
+                "r18": 39
+            }
+        },
+        {
+            "index": "010",
+            "illustrations": {
+                "all": 167,
+                "r18": 40
+            }
+        },
+        {
+            "index": "013",
+            "illustrations": {
+                "all": 94,
+                "r18": 12
+            }
+        },
+        {
+            "index": "019",
+            "illustrations": {
+                "all": 6244,
+                "r18": 881
+            }
+        },
+        {
+            "index": "033",
+            "illustrations": {
+                "all": 876,
+                "r18": 103
+            }
+        },
+        {
+            "index": "037",
+            "illustrations": {
+                "all": 2102,
+                "r18": 298
+            }
+        },
+        {
+            "index": "038",
+            "illustrations": {
+                "all": 154,
+                "r18": 16
+            }
+        },
+        {
+            "index": "043",
+            "illustrations": {
+                "all": 102,
+                "r18": 17
+            }
+        },
+        {
+            "index": "045",
+            "illustrations": {
+                "all": 627,
+                "r18": 115
+            }
+        },
+        {
+            "index": "046",
+            "illustrations": {
+                "all": 76,
+                "r18": 18
+            }
+        },
+        {
+            "index": "047",
+            "illustrations": {
+                "all": 58,
+                "r18": 18
+            }
+        },
+        {
+            "index": "048",
+            "illustrations": {
+                "all": 45,
+                "r18": 6
+            }
+        },
+        {
+            "index": "049",
+            "illustrations": {
+                "all": 63,
+                "r18": 3
+            }
+        },
+        {
+            "index": "055",
+            "illustrations": {
+                "all": 125,
+                "r18": 14
+            }
+        },
+        {
+            "index": "060",
+            "illustrations": {
+                "all": 306,
+                "r18": 53
+            }
+        },
+        {
+            "index": "061",
+            "illustrations": {
+                "all": 73,
+                "r18": 8
+            }
+        },
+        {
+            "index": "062",
+            "illustrations": {
+                "all": 91,
+                "r18": 7
+            }
+        },
+        {
+            "index": "073",
+            "illustrations": {
+                "all": 177,
+                "r18": 20
+            }
+        },
+        {
+            "index": "074",
+            "illustrations": {
+                "all": 925,
+                "r18": 125
+            }
+        },
+        {
+            "index": "076",
+            "illustrations": {
+                "all": 458,
+                "r18": 50
+            }
+        },
+        {
+            "index": "078",
+            "illustrations": {
+                "all": 603,
+                "r18": 73
+            }
+        },
+        {
+            "index": "080",
+            "illustrations": {
+                "all": 206,
+                "r18": 32
+            }
+        },
+        {
+            "index": "093",
+            "illustrations": {
+                "all": 178,
+                "r18": 33
+            }
+        },
+        {
+            "index": "094",
+            "illustrations": {
+                "all": 145,
+                "r18": 10
+            }
+        },
+        {
+            "index": "096",
+            "illustrations": {
+                "all": 59,
+                "r18": 3
+            }
+        },
+        {
+            "index": "101",
+            "illustrations": {
+                "all": 4417,
+                "r18": 764
+            }
+        },
+        {
+            "index": "103",
+            "illustrations": {
+                "all": 1206,
+                "r18": 279
+            }
+        },
+        {
+            "index": "111",
+            "illustrations": {
+                "all": 1228,
+                "r18": 322
+            }
+        },
+        {
+            "index": "112",
+            "illustrations": {
+                "all": 71,
+                "r18": 21
+            }
+        },
+        {
+            "index": "113",
+            "illustrations": {
+                "all": 130,
+                "r18": 46
+            }
+        },
+        {
+            "index": "114",
+            "illustrations": {
+                "all": 214,
+                "r18": 34
+            }
+        },
+        {
+            "index": "118",
+            "illustrations": {
+                "all": 238,
+                "r18": 25
+            }
+        },
+        {
+            "index": "119",
+            "illustrations": {
+                "all": 199,
+                "r18": 51
+            }
+        },
+        {
+            "index": "124",
+            "illustrations": {
+                "all": 44,
+                "r18": 2
+            }
+        },
+        {
+            "index": "125",
+            "illustrations": {
+                "all": 95,
+                "r18": 10
+            }
+        },
+        {
+            "index": "126",
+            "illustrations": {
+                "all": 44,
+                "r18": 13
+            }
+        },
+        {
+            "index": "127",
+            "illustrations": {
+                "all": 339,
+                "r18": 40
+            }
+        },
+        {
+            "index": "130",
+            "illustrations": {
+                "all": 1298,
+                "r18": 271
+            }
+        },
+        {
+            "index": "132",
+            "illustrations": {
+                "all": 590,
+                "r18": 219
+            }
+        },
+        {
+            "index": "133",
+            "illustrations": {
+                "all": 463,
+                "r18": 152
+            }
+        },
+        {
+            "index": "142",
+            "illustrations": {
+                "all": 7364,
+                "r18": 1643
+            }
+        },
+        {
+            "index": "143",
+            "illustrations": {
+                "all": 36,
+                "r18": 5
+            }
+        },
+        {
+            "index": "144",
+            "illustrations": {
+                "all": 639,
+                "r18": 118
+            }
+        },
+        {
+            "index": "148",
+            "illustrations": {
+                "all": 279,
+                "r18": 77
+            }
+        },
+        {
+            "index": "149",
+            "illustrations": {
+                "all": 599,
+                "r18": 56
+            }
+        },
+        {
+            "index": "150",
+            "illustrations": {
+                "all": 429,
+                "r18": 70
+            }
+        },
+        {
+            "index": "151",
+            "illustrations": {
+                "all": 610,
+                "r18": 78
+            }
+        },
+        {
+            "index": "152",
+            "illustrations": {
+                "all": 65,
+                "r18": 7
+            }
+        },
+        {
+            "index": "154",
+            "illustrations": {
+                "all": 71,
+                "r18": 15
+            }
+        },
+        {
+            "index": "155",
+            "illustrations": {
+                "all": 6221,
+                "r18": 1166
+            }
+        },
+        {
+            "index": "160",
+            "illustrations": {
+                "all": 322,
+                "r18": 52
+            }
+        },
+        {
+            "index": "165",
+            "illustrations": {
+                "all": 1227,
+                "r18": 169
+            }
+        },
+        {
+            "index": "170",
+            "illustrations": {
+                "all": 67,
+                "r18": 6
+            }
+        },
+        {
+            "index": "179",
+            "illustrations": {
+                "all": 173,
+                "r18": 34
+            }
+        },
+        {
+            "index": "185",
+            "illustrations": {
+                "all": 30,
+                "r18": 7
+            }
+        },
+        {
+            "index": "186",
+            "illustrations": {
+                "all": 156,
+                "r18": 32
+            }
+        },
+        {
+            "index": "188",
+            "illustrations": {
+                "all": 78,
+                "r18": 8
+            }
+        },
+        {
+            "index": "189",
+            "illustrations": {
+                "all": 21,
+                "r18": 3
+            }
+        },
+        {
+            "index": "198",
+            "illustrations": {
+                "all": 75,
+                "r18": 14
+            }
+        },
+        {
+            "index": "199",
+            "illustrations": {
+                "all": 38,
+                "r18": 4
+            }
+        },
+        {
+            "index": "204",
+            "illustrations": {
+                "all": 307,
+                "r18": 39
+            }
+        },
+        {
+            "index": "205",
+            "illustrations": {
+                "all": 425,
+                "r18": 73
+            }
+        },
+        {
+            "index": "206",
+            "illustrations": {
+                "all": 356,
+                "r18": 51
+            }
+        },
+        {
+            "index": "207",
+            "illustrations": {
+                "all": 196,
+                "r18": 27
+            }
+        },
+        {
+            "index": "213",
+            "illustrations": {
+                "all": 342,
+                "r18": 35
+            }
+        },
+        {
+            "index": "220",
+            "illustrations": {
+                "all": 140,
+                "r18": 18
+            }
+        },
+        {
+            "index": "223",
+            "illustrations": {
+                "all": 292,
+                "r18": 28
+            }
+        },
+        {
+            "index": "226",
+            "illustrations": {
+                "all": 530,
+                "r18": 73
+            }
+        },
+        {
+            "index": "227",
+            "illustrations": {
+                "all": 598,
+                "r18": 52
+            }
+        },
+        {
+            "index": "233",
+            "illustrations": {
+                "all": 320,
+                "r18": 43
+            }
+        },
+        {
+            "index": "236",
+            "illustrations": {
+                "all": 2780,
+                "r18": 587
+            }
+        },
+        {
+            "index": "237",
+            "illustrations": {
+                "all": 40,
+                "r18": 3
+            }
+        },
+        {
+            "index": "242",
+            "illustrations": {
+                "all": 1032,
+                "r18": 184
+            }
+        },
+        {
+            "index": "245",
+            "illustrations": {
+                "all": 1146,
+                "r18": 230
+            }
+        },
+        {
+            "index": "246",
+            "illustrations": {
+                "all": 1852,
+                "r18": 180
+            }
+        },
+        {
+            "index": "248",
+            "illustrations": {
+                "all": 185,
+                "r18": 43
+            }
+        },
+        {
+            "index": "249",
+            "illustrations": {
+                "all": 327,
+                "r18": 102
+            }
+        },
+        {
+            "index": "253",
+            "illustrations": {
+                "all": 76,
+                "r18": 10
+            }
+        },
+        {
+            "index": "254",
+            "illustrations": {
+                "all": 69,
+                "r18": 8
+            }
+        },
+        {
+            "index": "255",
+            "illustrations": {
+                "all": 189,
+                "r18": 16
+            }
+        },
+        {
+            "index": "256",
+            "illustrations": {
+                "all": 144,
+                "r18": 29
+            }
+        },
+        {
+            "index": "257",
+            "illustrations": {
+                "all": 247,
+                "r18": 42
+            }
+        },
+        {
+            "index": "258",
+            "illustrations": {
+                "all": 772,
+                "r18": 212
+            }
+        },
+        {
+            "index": "259",
+            "illustrations": {
+                "all": 989,
+                "r18": 234
+            }
+        },
+        {
+            "index": "286",
+            "illustrations": {
+                "all": 129,
+                "r18": 21
+            }
+        },
+        {
+            "index": "287",
+            "illustrations": {
+                "all": 68,
+                "r18": 8
+            }
+        },
+        {
+            "index": "295",
+            "illustrations": {
+                "all": 119,
+                "r18": 23
+            }
+        },
+        {
+            "index": "296",
+            "illustrations": {
+                "all": 125,
+                "r18": 27
+            }
+        },
+        {
+            "index": "297",
+            "illustrations": {
+                "all": 180,
+                "r18": 47
+            }
+        },
+        {
+            "index": "301",
+            "illustrations": {
+                "all": 214,
+                "r18": 17
+            }
+        },
+        {
+            "index": "305",
+            "illustrations": {
+                "all": 3348,
+                "r18": 1713
+            }
+        },
+        {
+            "index": "309",
+            "illustrations": {
+                "all": 264,
+                "r18": 29
+            }
+        },
+        {
+            "index": "321",
+            "illustrations": {
+                "all": 109,
+                "r18": 18
+            }
+        },
+        {
+            "index": "325",
+            "illustrations": {
+                "all": 34,
+                "r18": 4
+            }
+        },
+        {
+            "index": "326",
+            "illustrations": {
+                "all": 11,
+                "r18": 0
+            }
+        },
+        {
+            "index": "330",
+            "illustrations": {
+                "all": 171,
+                "r18": 15
+            }
+        },
+        {
+            "index": "335",
+            "illustrations": {
+                "all": 566,
+                "r18": 122
+            }
+        },
+        {
+            "index": "336",
+            "illustrations": {
+                "all": 160,
+                "r18": 43
+            }
+        },
+        {
+            "index": "339",
+            "illustrations": {
+                "all": 231,
+                "r18": 77
+            }
+        },
+        {
+            "index": "340",
+            "illustrations": {
+                "all": 69,
+                "r18": 13
+            }
+        },
+        {
+            "index": "342",
+            "illustrations": {
+                "all": 54,
+                "r18": 8
+            }
+        },
+        {
+            "index": "344",
+            "illustrations": {
+                "all": 54,
+                "r18": 5
+            }
+        },
+        {
+            "index": "345",
+            "illustrations": {
+                "all": 126,
+                "r18": 20
+            }
+        },
+        {
+            "index": "349",
+            "illustrations": {
+                "all": 68,
+                "r18": 22
+            }
+        },
+        {
+            "index": "350",
+            "illustrations": {
+                "all": 237,
+                "r18": 52
+            }
+        },
+        {
+            "index": "352",
+            "illustrations": {
+                "all": 716,
+                "r18": 128
+            }
+        },
+        {
+            "index": "359",
+            "illustrations": {
+                "all": 172,
+                "r18": 29
+            }
+        },
+        {
+            "index": "370",
+            "illustrations": {
+                "all": 35,
+                "r18": 3
+            }
+        },
+        {
+            "index": "375",
+            "illustrations": {
+                "all": 53,
+                "r18": 9
+            }
+        },
+        {
+            "index": "376",
+            "illustrations": {
+                "all": 40,
+                "r18": 8
+            }
+        },
+        {
+            "index": "377",
+            "illustrations": {
+                "all": 112,
+                "r18": 12
+            }
+        },
+        {
+            "index": "379",
+            "illustrations": {
+                "all": 80,
+                "r18": 10
+            }
+        },
+        {
+            "index": "382",
+            "illustrations": {
+                "all": 397,
+                "r18": 145
+            }
+        },
+        {
+            "index": "383",
+            "illustrations": {
+                "all": 75,
+                "r18": 10
+            }
+        },
+        {
+            "index": "384",
+            "illustrations": {
+                "all": 458,
+                "r18": 90
+            }
+        },
+        {
+            "index": "385",
+            "illustrations": {
+                "all": 277,
+                "r18": 30
+            }
+        },
+        {
+            "index": "386",
+            "illustrations": {
+                "all": 207,
+                "r18": 20
+            }
+        },
+        {
+            "index": "387",
+            "illustrations": {
+                "all": 44,
+                "r18": 3
+            }
+        },
+        {
+            "index": "388",
+            "illustrations": {
+                "all": 46,
+                "r18": 8
+            }
+        },
+        {
+            "index": "390",
+            "illustrations": {
+                "all": 70,
+                "r18": 16
+            }
+        },
+        {
+            "index": "391",
+            "illustrations": {
+                "all": 42,
+                "r18": 9
+            }
+        },
+        {
+            "index": "392",
+            "illustrations": {
+                "all": 24,
+                "r18": 3
+            }
+        },
+        {
+            "index": "395",
+            "illustrations": {
+                "all": 48,
+                "r18": 6
+            }
+        },
+        {
+            "index": "396",
+            "illustrations": {
+                "all": 116,
+                "r18": 41
+            }
+        },
+        {
+            "index": "397",
+            "illustrations": {
+                "all": 46,
+                "r18": 8
+            }
+        },
+        {
+            "index": "400",
+            "illustrations": {
+                "all": 18,
+                "r18": 1
+            }
+        },
+        {
+            "index": "403",
+            "illustrations": {
+                "all": 181,
+                "r18": 12
+            }
+        },
+        {
+            "index": "405",
+            "illustrations": {
+                "all": 75,
+                "r18": 4
+            }
+        },
+        {
+            "index": "408",
+            "illustrations": {
+                "all": 130,
+                "r18": 31
+            }
+        },
+        {
+            "index": "412",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "415",
+            "illustrations": {
+                "all": 33,
+                "r18": 3
+            }
+        },
+        {
+            "index": "416",
+            "illustrations": {
+                "all": 160,
+                "r18": 29
+            }
+        },
+        {
+            "index": "420",
+            "illustrations": {
+                "all": 117,
+                "r18": 12
+            }
+        },
+        {
+            "index": "421",
+            "illustrations": {
+                "all": 68,
+                "r18": 7
+            }
+        },
+        {
+            "index": "422",
+            "illustrations": {
+                "all": 75,
+                "r18": 11
+            }
+        },
+        {
+            "index": "424",
+            "illustrations": {
+                "all": 290,
+                "r18": 71
+            }
+        },
+        {
+            "index": "428",
+            "illustrations": {
+                "all": 46,
+                "r18": 4
+            }
+        },
+        {
+            "index": "429",
+            "illustrations": {
+                "all": 48,
+                "r18": 4
+            }
+        },
+        {
+            "index": "431",
+            "illustrations": {
+                "all": 124,
+                "r18": 22
+            }
+        },
+        {
+            "index": "432",
+            "illustrations": {
+                "all": 86,
+                "r18": 4
+            }
+        },
+        {
+            "index": "434",
+            "illustrations": {
+                "all": 1134,
+                "r18": 275
+            }
+        },
+        {
+            "index": "437",
+            "illustrations": {
+                "all": 265,
+                "r18": 59
+            }
+        },
+        {
+            "index": "444",
+            "illustrations": {
+                "all": 106,
+                "r18": 16
+            }
+        },
+        {
+            "index": "446",
+            "illustrations": {
+                "all": 34,
+                "r18": 3
+            }
+        },
+        {
+            "index": "449",
+            "illustrations": {
+                "all": 505,
+                "r18": 79
+            }
+        },
+        {
+            "index": "450",
+            "illustrations": {
+                "all": 85,
+                "r18": 15
+            }
+        },
+        {
+            "index": "451",
+            "illustrations": {
+                "all": 107,
+                "r18": 25
+            }
+        },
+        {
+            "index": "452",
+            "illustrations": {
+                "all": 168,
+                "r18": 51
+            }
+        },
+        {
+            "index": "456",
+            "illustrations": {
+                "all": 100,
+                "r18": 15
+            }
+        },
+        {
+            "index": "457",
+            "illustrations": {
+                "all": 123,
+                "r18": 11
+            }
+        },
+        {
+            "index": "458",
+            "illustrations": {
+                "all": 39,
+                "r18": 7
+            }
+        },
+        {
+            "index": "459",
+            "illustrations": {
+                "all": 205,
+                "r18": 26
+            }
+        },
+        {
+            "index": "460",
+            "illustrations": {
+                "all": 26,
+                "r18": 3
+            }
+        },
+        {
+            "index": "464",
+            "illustrations": {
+                "all": 135,
+                "r18": 19
+            }
+        },
+        {
+            "index": "465",
+            "illustrations": {
+                "all": 125,
+                "r18": 25
+            }
+        },
+        {
+            "index": "466",
+            "illustrations": {
+                "all": 33,
+                "r18": 5
+            }
+        },
+        {
+            "index": "469",
+            "illustrations": {
+                "all": 349,
+                "r18": 91
+            }
+        },
+        {
+            "index": "470",
+            "illustrations": {
+                "all": 142,
+                "r18": 53
+            }
+        },
+        {
+            "index": "471",
+            "illustrations": {
+                "all": 107,
+                "r18": 21
+            }
+        },
+        {
+            "index": "472",
+            "illustrations": {
+                "all": 2787,
+                "r18": 1256
+            }
+        },
+        {
+            "index": "473",
+            "illustrations": {
+                "all": 54,
+                "r18": 3
+            }
+        },
+        {
+            "index": "477",
+            "illustrations": {
+                "all": 28,
+                "r18": 4
+            }
+        },
+        {
+            "index": "478",
+            "illustrations": {
+                "all": 155,
+                "r18": 52
+            }
+        },
+        {
+            "index": "485",
+            "illustrations": {
+                "all": 75,
+                "r18": 15
+            }
+        },
+        {
+            "index": "486",
+            "illustrations": {
+                "all": 211,
+                "r18": 57
+            }
+        },
+        {
+            "index": "487",
+            "illustrations": {
+                "all": 58,
+                "r18": 4
+            }
+        },
+        {
+            "index": "488",
+            "illustrations": {
+                "all": 52,
+                "r18": 8
+            }
+        },
+        {
+            "index": "490",
+            "illustrations": {
+                "all": 15,
+                "r18": 2
+            }
+        },
+        {
+            "index": "491",
+            "illustrations": {
+                "all": 45,
+                "r18": 2
+            }
+        },
+        {
+            "index": "492",
+            "illustrations": {
+                "all": 41,
+                "r18": 13
+            }
+        },
+        {
+            "index": "493",
+            "illustrations": {
+                "all": 120,
+                "r18": 22
+            }
+        },
+        {
+            "index": "494",
+            "illustrations": {
+                "all": 93,
+                "r18": 16
+            }
+        },
+        {
+            "index": "495",
+            "illustrations": {
+                "all": 66,
+                "r18": 13
+            }
+        },
+        {
+            "index": "497",
+            "illustrations": {
+                "all": 64,
+                "r18": 7
+            }
+        },
+        {
+            "index": "498",
+            "illustrations": {
+                "all": 166,
+                "r18": 16
+            }
+        },
+        {
+            "index": "499",
+            "illustrations": {
+                "all": 38,
+                "r18": 10
+            }
+        },
+        {
+            "index": "503",
+            "illustrations": {
+                "all": 144,
+                "r18": 43
+            }
+        },
+        {
+            "index": "504",
+            "illustrations": {
+                "all": 72,
+                "r18": 17
+            }
+        },
+        {
+            "index": "505",
+            "illustrations": {
+                "all": 125,
+                "r18": 32
+            }
+        },
+        {
+            "index": "506",
+            "illustrations": {
+                "all": 26,
+                "r18": 6
+            }
+        },
+        {
+            "index": "509",
+            "illustrations": {
+                "all": 67,
+                "r18": 10
+            }
+        },
+        {
+            "index": "510",
+            "illustrations": {
+                "all": 477,
+                "r18": 83
+            }
+        },
+        {
+            "index": "514",
+            "illustrations": {
+                "all": 144,
+                "r18": 35
+            }
+        },
+        {
+            "index": "515",
+            "illustrations": {
+                "all": 23,
+                "r18": 2
+            }
+        },
+        {
+            "index": "516",
+            "illustrations": {
+                "all": 97,
+                "r18": 15
+            }
+        },
+        {
+            "index": "519",
+            "illustrations": {
+                "all": 64,
+                "r18": 4
+            }
+        },
+        {
+            "index": "523",
+            "illustrations": {
+                "all": 75,
+                "r18": 4
+            }
+        },
+        {
+            "index": "524",
+            "illustrations": {
+                "all": 98,
+                "r18": 24
+            }
+        },
+        {
+            "index": "526",
+            "illustrations": {
+                "all": 597,
+                "r18": 96
+            }
+        },
+        {
+            "index": "528",
+            "illustrations": {
+                "all": 20,
+                "r18": 5
+            }
+        },
+        {
+            "index": "531",
+            "illustrations": {
+                "all": 30,
+                "r18": 3
+            }
+        },
+        {
+            "index": "532",
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": "534",
+            "illustrations": {
+                "all": 260,
+                "r18": 73
+            }
+        },
+        {
+            "index": "536",
+            "illustrations": {
+                "all": 63,
+                "r18": 27
+            }
+        },
+        {
+            "index": "537",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "542",
+            "illustrations": {
+                "all": 150,
+                "r18": 48
+            }
+        },
+        {
+            "index": "545",
+            "illustrations": {
+                "all": 17,
+                "r18": 4
+            }
+        },
+        {
+            "index": "546",
+            "illustrations": {
+                "all": 87,
+                "r18": 31
+            }
+        },
+        {
+            "index": "548",
+            "illustrations": {
+                "all": 171,
+                "r18": 31
+            }
+        },
+        {
+            "index": "549",
+            "illustrations": {
+                "all": 113,
+                "r18": 24
+            }
+        },
+        {
+            "index": "551",
+            "illustrations": {
+                "all": 34,
+                "r18": 2
+            }
+        },
+        {
+            "index": "552",
+            "illustrations": {
+                "all": 74,
+                "r18": 13
+            }
+        },
+        {
+            "index": "554",
+            "illustrations": {
+                "all": 25,
+                "r18": 0
+            }
+        },
+        {
+            "index": "557",
+            "illustrations": {
+                "all": 6262,
+                "r18": 759
+            }
+        },
+        {
+            "index": "560",
+            "illustrations": {
+                "all": 11,
+                "r18": 1
+            }
+        },
+        {
+            "index": "562",
+            "illustrations": {
+                "all": 13,
+                "r18": 0
+            }
+        },
+        {
+            "index": "563",
+            "illustrations": {
+                "all": 31,
+                "r18": 5
+            }
+        },
+        {
+            "index": "564",
+            "illustrations": {
+                "all": 29,
+                "r18": 6
+            }
+        },
+        {
+            "index": "568",
+            "illustrations": {
+                "all": 21,
+                "r18": 1
+            }
+        },
+        {
+            "index": "573",
+            "illustrations": {
+                "all": 6,
+                "r18": 0
+            }
+        },
+        {
+            "index": "576",
+            "illustrations": {
+                "all": 25,
+                "r18": 1
+            }
+        },
+        {
+            "index": "579",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "580",
+            "illustrations": {
+                "all": 35,
+                "r18": 14
+            }
+        },
+        {
+            "index": "Collab001",
+            "illustrations": {
+                "all": 39,
+                "r18": 9
+            }
+        },
+        {
+            "index": "Collab002",
+            "illustrations": {
+                "all": 24,
+                "r18": 9
+            }
+        },
+        {
+            "index": "Collab003",
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab004",
+            "illustrations": {
+                "all": 25,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab021",
+            "illustrations": {
+                "all": 12,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab022",
+            "illustrations": {
+                "all": 2,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab034",
+            "illustrations": {
+                "all": 6,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab035",
+            "illustrations": {
+                "all": 5,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab036",
+            "illustrations": {
+                "all": 8,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab041",
+            "illustrations": {
+                "all": 73,
+                "r18": 6
+            }
+        },
+        {
+            "index": "Collab065",
+            "illustrations": {
+                "all": 17,
+                "r18": 6
+            }
+        },
+        {
+            "index": "Collab066",
+            "illustrations": {
+                "all": 54,
+                "r18": 20
+            }
+        },
+        {
+            "index": "Collab067",
+            "illustrations": {
+                "all": 22,
+                "r18": 8
+            }
+        },
+        {
+            "index": "Collab075",
+            "illustrations": {
+                "all": 2,
+                "r18": 2
+            }
+        },
+        {
+            "index": "Collab076",
+            "illustrations": {
+                "all": 1,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab077",
+            "illustrations": {
+                "all": 4,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab083",
+            "illustrations": {
+                "all": 4,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab084",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "Collab087",
+            "illustrations": {
+                "all": 4,
+                "r18": 1
+            }
+        },
+        {
+            "index": "Collab094",
+            "illustrations": {
+                "all": 15,
+                "r18": 8
+            }
+        },
+        {
+            "index": "Collab095",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META005",
+            "illustrations": {
+                "all": 34,
+                "r18": 8
+            }
+        },
+        {
+            "index": "META006",
+            "illustrations": {
+                "all": 4,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META008",
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META010",
+            "illustrations": {
+                "all": 36,
+                "r18": 4
+            }
+        },
+        {
+            "index": "META011",
+            "illustrations": {
+                "all": 8,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META013",
+            "illustrations": {
+                "all": 3,
+                "r18": 2
+            }
+        },
+        {
+            "index": "META015",
+            "illustrations": {
+                "all": 3,
+                "r18": 0
+            }
+        },
+        {
+            "index": "META016",
+            "illustrations": {
+                "all": 6,
+                "r18": 1
+            }
+        },
+        {
+            "index": "META018",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "004",
+            "illustrations": {
+                "all": 79,
+                "r18": 6
+            }
+        },
+        {
+            "index": "007",
+            "illustrations": {
+                "all": 173,
+                "r18": 10
+            }
+        },
+        {
+            "index": "011",
+            "illustrations": {
+                "all": 167,
+                "r18": 45
+            }
+        },
+        {
+            "index": "014",
+            "illustrations": {
+                "all": 76,
+                "r18": 5
+            }
+        },
+        {
+            "index": "018",
+            "illustrations": {
+                "all": 130,
+                "r18": 9
+            }
+        },
+        {
+            "index": "026",
+            "illustrations": {
+                "all": 539,
+                "r18": 51
+            }
+        },
+        {
+            "index": "027",
+            "illustrations": {
+                "all": 1936,
+                "r18": 330
+            }
+        },
+        {
+            "index": "031",
+            "illustrations": {
+                "all": 122,
+                "r18": 40
+            }
+        },
+        {
+            "index": "032",
+            "illustrations": {
+                "all": 129,
+                "r18": 19
+            }
+        },
+        {
+            "index": "034",
+            "illustrations": {
+                "all": 131,
+                "r18": 12
+            }
+        },
+        {
+            "index": "035",
+            "illustrations": {
+                "all": 371,
+                "r18": 94
+            }
+        },
+        {
+            "index": "041",
+            "illustrations": {
+                "all": 87,
+                "r18": 15
+            }
+        },
+        {
+            "index": "042",
+            "illustrations": {
+                "all": 98,
+                "r18": 29
+            }
+        },
+        {
+            "index": "044",
+            "illustrations": {
+                "all": 761,
+                "r18": 164
+            }
+        },
+        {
+            "index": "054",
+            "illustrations": {
+                "all": 85,
+                "r18": 19
+            }
+        },
+        {
+            "index": "058",
+            "illustrations": {
+                "all": 128,
+                "r18": 23
+            }
+        },
+        {
+            "index": "059",
+            "illustrations": {
+                "all": 131,
+                "r18": 22
+            }
+        },
+        {
+            "index": "070",
+            "illustrations": {
+                "all": 910,
+                "r18": 123
+            }
+        },
+        {
+            "index": "079",
+            "illustrations": {
+                "all": 29,
+                "r18": 6
+            }
+        },
+        {
+            "index": "081",
+            "illustrations": {
+                "all": 190,
+                "r18": 31
+            }
+        },
+        {
+            "index": "082",
+            "illustrations": {
+                "all": 88,
+                "r18": 6
+            }
+        },
+        {
+            "index": "083",
+            "illustrations": {
+                "all": 59,
+                "r18": 12
+            }
+        },
+        {
+            "index": "092",
+            "illustrations": {
+                "all": 82,
+                "r18": 19
+            }
+        },
+        {
+            "index": "100",
+            "illustrations": {
+                "all": 76,
+                "r18": 1
+            }
+        },
+        {
+            "index": "102",
+            "illustrations": {
+                "all": 368,
+                "r18": 92
+            }
+        },
+        {
+            "index": "105",
+            "illustrations": {
+                "all": 40,
+                "r18": 7
+            }
+        },
+        {
+            "index": "106",
+            "illustrations": {
+                "all": 470,
+                "r18": 115
+            }
+        },
+        {
+            "index": "110",
+            "illustrations": {
+                "all": 115,
+                "r18": 7
+            }
+        },
+        {
+            "index": "116",
+            "illustrations": {
+                "all": 63,
+                "r18": 5
+            }
+        },
+        {
+            "index": "117",
+            "illustrations": {
+                "all": 18,
+                "r18": 2
+            }
+        },
+        {
+            "index": "120",
+            "illustrations": {
+                "all": 220,
+                "r18": 48
+            }
+        },
+        {
+            "index": "121",
+            "illustrations": {
+                "all": 144,
+                "r18": 37
+            }
+        },
+        {
+            "index": "122",
+            "illustrations": {
+                "all": 193,
+                "r18": 41
+            }
+        },
+        {
+            "index": "123",
+            "illustrations": {
+                "all": 232,
+                "r18": 39
+            }
+        },
+        {
+            "index": "128",
+            "illustrations": {
+                "all": 575,
+                "r18": 62
+            }
+        },
+        {
+            "index": "159",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "161",
+            "illustrations": {
+                "all": 234,
+                "r18": 20
+            }
+        },
+        {
+            "index": "162",
+            "illustrations": {
+                "all": 307,
+                "r18": 33
+            }
+        },
+        {
+            "index": "163",
+            "illustrations": {
+                "all": 210,
+                "r18": 11
+            }
+        },
+        {
+            "index": "167",
+            "illustrations": {
+                "all": 86,
+                "r18": 7
+            }
+        },
+        {
+            "index": "171",
+            "illustrations": {
+                "all": 85,
+                "r18": 10
+            }
+        },
+        {
+            "index": "173",
+            "illustrations": {
+                "all": 41,
+                "r18": 3
+            }
+        },
+        {
+            "index": "174",
+            "illustrations": {
+                "all": 69,
+                "r18": 8
+            }
+        },
+        {
+            "index": "175",
+            "illustrations": {
+                "all": 52,
+                "r18": 5
+            }
+        },
+        {
+            "index": "176",
+            "illustrations": {
+                "all": 95,
+                "r18": 12
+            }
+        },
+        {
+            "index": "177",
+            "illustrations": {
+                "all": 77,
+                "r18": 6
+            }
+        },
+        {
+            "index": "178",
+            "illustrations": {
+                "all": 70,
+                "r18": 2
+            }
+        },
+        {
+            "index": "183",
+            "illustrations": {
+                "all": 226,
+                "r18": 36
+            }
+        },
+        {
+            "index": "196",
+            "illustrations": {
+                "all": 59,
+                "r18": 8
+            }
+        },
+        {
+            "index": "197",
+            "illustrations": {
+                "all": 42,
+                "r18": 8
+            }
+        },
+        {
+            "index": "208",
+            "illustrations": {
+                "all": 512,
+                "r18": 107
+            }
+        },
+        {
+            "index": "209",
+            "illustrations": {
+                "all": 2693,
+                "r18": 646
+            }
+        },
+        {
+            "index": "210",
+            "illustrations": {
+                "all": 79,
+                "r18": 9
+            }
+        },
+        {
+            "index": "211",
+            "illustrations": {
+                "all": 110,
+                "r18": 21
+            }
+        },
+        {
+            "index": "218",
+            "illustrations": {
+                "all": 30,
+                "r18": 4
+            }
+        },
+        {
+            "index": "219",
+            "illustrations": {
+                "all": 73,
+                "r18": 4
+            }
+        },
+        {
+            "index": "222",
+            "illustrations": {
+                "all": 297,
+                "r18": 37
+            }
+        },
+        {
+            "index": "241",
+            "illustrations": {
+                "all": 152,
+                "r18": 32
+            }
+        },
+        {
+            "index": "263",
+            "illustrations": {
+                "all": 53,
+                "r18": 6
+            }
+        },
+        {
+            "index": "264",
+            "illustrations": {
+                "all": 176,
+                "r18": 33
+            }
+        },
+        {
+            "index": "269",
+            "illustrations": {
+                "all": 137,
+                "r18": 28
+            }
+        },
+        {
+            "index": "270",
+            "illustrations": {
+                "all": 137,
+                "r18": 18
+            }
+        },
+        {
+            "index": "277",
+            "illustrations": {
+                "all": 205,
+                "r18": 36
+            }
+        },
+        {
+            "index": "278",
+            "illustrations": {
+                "all": 57,
+                "r18": 13
+            }
+        },
+        {
+            "index": "293",
+            "illustrations": {
+                "all": 34,
+                "r18": 4
+            }
+        },
+        {
+            "index": "299",
+            "illustrations": {
+                "all": 37,
+                "r18": 4
+            }
+        },
+        {
+            "index": "300",
+            "illustrations": {
+                "all": 59,
+                "r18": 7
+            }
+        },
+        {
+            "index": "304",
+            "illustrations": {
+                "all": 2593,
+                "r18": 1106
+            }
+        },
+        {
+            "index": "306",
+            "illustrations": {
+                "all": 54,
+                "r18": 3
+            }
+        },
+        {
+            "index": "307",
+            "illustrations": {
+                "all": 61,
+                "r18": 0
+            }
+        },
+        {
+            "index": "308",
+            "illustrations": {
+                "all": 66,
+                "r18": 8
+            }
+        },
+        {
+            "index": "310",
+            "illustrations": {
+                "all": 38,
+                "r18": 4
+            }
+        },
+        {
+            "index": "316",
+            "illustrations": {
+                "all": 110,
+                "r18": 32
+            }
+        },
+        {
+            "index": "317",
+            "illustrations": {
+                "all": 202,
+                "r18": 101
+            }
+        },
+        {
+            "index": "318",
+            "illustrations": {
+                "all": 181,
+                "r18": 43
+            }
+        },
+        {
+            "index": "319",
+            "illustrations": {
+                "all": 57,
+                "r18": 4
+            }
+        },
+        {
+            "index": "327",
+            "illustrations": {
+                "all": 36,
+                "r18": 10
+            }
+        },
+        {
+            "index": "328",
+            "illustrations": {
+                "all": 82,
+                "r18": 27
+            }
+        },
+        {
+            "index": "331",
+            "illustrations": {
+                "all": 236,
+                "r18": 19
+            }
+        },
+        {
+            "index": "332",
+            "illustrations": {
+                "all": 224,
+                "r18": 64
+            }
+        },
+        {
+            "index": "333",
+            "illustrations": {
+                "all": 79,
+                "r18": 3
+            }
+        },
+        {
+            "index": "334",
+            "illustrations": {
+                "all": 201,
+                "r18": 38
+            }
+        },
+        {
+            "index": "337",
+            "illustrations": {
+                "all": 72,
+                "r18": 16
+            }
+        },
+        {
+            "index": "346",
+            "illustrations": {
+                "all": 87,
+                "r18": 21
+            }
+        },
+        {
+            "index": "348",
+            "illustrations": {
+                "all": 104,
+                "r18": 32
+            }
+        },
+        {
+            "index": "351",
+            "illustrations": {
+                "all": 52,
+                "r18": 10
+            }
+        },
+        {
+            "index": "355",
+            "illustrations": {
+                "all": 49,
+                "r18": 4
+            }
+        },
+        {
+            "index": "360",
+            "illustrations": {
+                "all": 76,
+                "r18": 5
+            }
+        },
+        {
+            "index": "361",
+            "illustrations": {
+                "all": 163,
+                "r18": 47
+            }
+        },
+        {
+            "index": "362",
+            "illustrations": {
+                "all": 190,
+                "r18": 45
+            }
+        },
+        {
+            "index": "363",
+            "illustrations": {
+                "all": 132,
+                "r18": 35
+            }
+        },
+        {
+            "index": "365",
+            "illustrations": {
+                "all": 21,
+                "r18": 2
+            }
+        },
+        {
+            "index": "366",
+            "illustrations": {
+                "all": 71,
+                "r18": 14
+            }
+        },
+        {
+            "index": "369",
+            "illustrations": {
+                "all": 57,
+                "r18": 5
+            }
+        },
+        {
+            "index": "372",
+            "illustrations": {
+                "all": 48,
+                "r18": 15
+            }
+        },
+        {
+            "index": "373",
+            "illustrations": {
+                "all": 35,
+                "r18": 5
+            }
+        },
+        {
+            "index": "374",
+            "illustrations": {
+                "all": 27,
+                "r18": 4
+            }
+        },
+        {
+            "index": "389",
+            "illustrations": {
+                "all": 17,
+                "r18": 2
+            }
+        },
+        {
+            "index": "404",
+            "illustrations": {
+                "all": 30,
+                "r18": 1
+            }
+        },
+        {
+            "index": "406",
+            "illustrations": {
+                "all": 87,
+                "r18": 9
+            }
+        },
+        {
+            "index": "407",
+            "illustrations": {
+                "all": 1467,
+                "r18": 632
+            }
+        },
+        {
+            "index": "409",
+            "illustrations": {
+                "all": 41,
+                "r18": 9
+            }
+        },
+        {
+            "index": "411",
+            "illustrations": {
+                "all": 0,
+                "r18": 0
+            }
+        },
+        {
+            "index": "414",
+            "illustrations": {
+                "all": 126,
+                "r18": 27
+            }
+        },
+        {
+            "index": "417",
+            "illustrations": {
+                "all": 95,
+                "r18": 20
+            }
+        },
+        {
+            "index": "423",
+            "illustrations": {
+                "all": 177,
+                "r18": 28
+            }
+        },
+        {
+            "index": "427",
+            "illustrations": {
+                "all": 66,
+                "r18": 13
+            }
+        },
+        {
+            "index": "447",
+            "illustrations": {
+                "all": 103,
+                "r18": 22
+            }
+        },
+        {
+            "index": "448",
+            "illustrations": {
+                "all": 217,
+                "r18": 75
+            }
+        },
+        {
+            "index": "507",
+            "illustrations": {
+                "all": 32,
+                "r18": 3
+            }
+        },
+        {
+            "index": "005",
+            "illustrations": {
+                "all": 205,
+                "r18": 33
+            }
+        },
+        {
+            "index": "006",
+            "illustrations": {
+                "all": 166,
+                "r18": 19
+            }
+        },
+        {
+            "index": "008",
+            "illustrations": {
+                "all": 74,
+                "r18": 11
+            }
+        },
+        {
+            "index": "009",
+            "illustrations": {
+                "all": 171,
+                "r18": 15
+            }
+        },
+        {
+            "index": "015",
+            "illustrations": {
+                "all": 97,
+                "r18": 19
+            }
+        },
+        {
+            "index": "016",
+            "illustrations": {
+                "all": 252,
+                "r18": 37
+            }
+        },
+        {
+            "index": "017",
+            "illustrations": {
+                "all": 119,
+                "r18": 12
+            }
+        },
+        {
+            "index": "029",
+            "illustrations": {
+                "all": 55,
+                "r18": 6
+            }
+        },
+        {
+            "index": "030",
+            "illustrations": {
+                "all": 42,
+                "r18": 6
+            }
+        },
+        {
+            "index": "039",
+            "illustrations": {
+                "all": 46,
+                "r18": 9
+            }
+        },
+        {
+            "index": "040",
+            "illustrations": {
+                "all": 27,
+                "r18": 2
+            }
+        },
+        {
+            "index": "052",
+            "illustrations": {
+                "all": 57,
+                "r18": 5
+            }
+        },
+        {
+            "index": "053",
+            "illustrations": {
+                "all": 157,
+                "r18": 12
+            }
+        },
+        {
+            "index": "071",
+            "illustrations": {
+                "all": 202,
+                "r18": 10
+            }
+        },
+        {
+            "index": "072",
+            "illustrations": {
+                "all": 205,
+                "r18": 33
+            }
+        },
+        {
+            "index": "075",
+            "illustrations": {
+                "all": 334,
+                "r18": 107
+            }
+        },
+        {
+            "index": "086",
+            "illustrations": {
+                "all": 39,
+                "r18": 8
+            }
+        },
+        {
+            "index": "087",
+            "illustrations": {
+                "all": 75,
+                "r18": 9
+            }
+        },
+        {
+            "index": "088",
+            "illustrations": {
+                "all": 136,
+                "r18": 16
+            }
+        },
+        {
+            "index": "089",
+            "illustrations": {
+                "all": 391,
+                "r18": 57
+            }
+        },
+        {
+            "index": "090",
+            "illustrations": {
+                "all": 867,
+                "r18": 240
+            }
+        },
+        {
+            "index": "091",
+            "illustrations": {
+                "all": 93,
+                "r18": 33
+            }
+        },
+        {
+            "index": "104",
+            "illustrations": {
+                "all": 115,
+                "r18": 20
+            }
+        },
+        {
+            "index": "140",
+            "illustrations": {
+                "all": 121,
+                "r18": 10
+            }
+        },
+        {
+            "index": "168",
+            "illustrations": {
+                "all": 331,
+                "r18": 46
+            }
+        },
+        {
+            "index": "182",
+            "illustrations": {
+                "all": 382,
+                "r18": 96
+            }
+        },
+        {
+            "index": "187",
+            "illustrations": {
+                "all": 59,
+                "r18": 11
+            }
+        },
+        {
+            "index": "190",
+            "illustrations": {
+                "all": 63,
+                "r18": 15
+            }
+        },
+        {
+            "index": "191",
+            "illustrations": {
+                "all": 62,
+                "r18": 15
+            }
+        },
+        {
+            "index": "192",
+            "illustrations": {
+                "all": 154,
+                "r18": 13
+            }
+        },
+        {
+            "index": "193",
+            "illustrations": {
+                "all": 49,
+                "r18": 16
+            }
+        },
+        {
+            "index": "238",
+            "illustrations": {
+                "all": 45,
+                "r18": 13
+            }
+        },
+        {
+            "index": "239",
+            "illustrations": {
+                "all": 44,
+                "r18": 3
+            }
+        },
+        {
+            "index": "240",
+            "illustrations": {
+                "all": 61,
+                "r18": 3
+            }
+        },
+        {
+            "index": "265",
+            "illustrations": {
+                "all": 84,
+                "r18": 19
+            }
+        },
+        {
+            "index": "266",
+            "illustrations": {
+                "all": 60,
+                "r18": 10
+            }
+        },
+        {
+            "index": "271",
+            "illustrations": {
+                "all": 607,
+                "r18": 138
+            }
+        },
+        {
+            "index": "272",
+            "illustrations": {
+                "all": 1485,
+                "r18": 283
+            }
+        },
+        {
+            "index": "274",
+            "illustrations": {
+                "all": 108,
+                "r18": 19
+            }
+        },
+        {
+            "index": "276",
+            "illustrations": {
+                "all": 105,
+                "r18": 19
+            }
+        },
+        {
+            "index": "280",
+            "illustrations": {
+                "all": 94,
+                "r18": 17
+            }
+        },
+        {
+            "index": "303",
+            "illustrations": {
+                "all": 52,
+                "r18": 4
+            }
+        }
+    ],
+    "last_updated": 1676064044.629005
+}
