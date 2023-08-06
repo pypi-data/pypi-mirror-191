@@ -1,0 +1,16 @@
+prettymaps/__init__.py,sha256=B8wWpexpdsBddX7biH5FBAptiEgbptkeiXKXHx54IBc,90
+prettymaps/draw.py,sha256=EF-hHccaF9KknyvQ-C2rFsgCJm5HDt5qgKbn4TsDFUY,33291
+prettymaps/fetch.py,sha256=vunkHJmSS4LO2NGJtYI5iELPGg9-peTSM1_XLBtvIyY,6378
+prettymaps/presets/barcelona-plotter.json,sha256=nzwfcWpVGTTuUSAjn7AZl6Zsw6Qgx07-H3HqMH05WTk,867
+prettymaps/presets/barcelona.json,sha256=jXp6_MnOKEPKd8gzeQ4wZzSWlBWV_I1GwKh8cDnkGrY,845
+prettymaps/presets/cb-bf-f.json,sha256=Qq5JaLy0XLTZLGIvmA3RO_-VqK-hb86cXJprYk3gelk,2043
+prettymaps/presets/default.json,sha256=WLyGB-dt726IMcEHCji5hncaizY6TQ0eDDdI6rOLsRA,2958
+prettymaps/presets/heerhugowaard.json,sha256=c21Qdsx_drHkBb-Y7RLJAo-VF-VHWUz2wZ5uoUnYwCM,2977
+prettymaps/presets/macao.json,sha256=P1tlF11dv84rZbgOw_jwEdelTKYBwI5Jkoo-8VjuJH4,2829
+prettymaps/presets/minimal.json,sha256=ReUxwqKmv_YYz9qP3oPF6sMrqJ1OT-P9-E6cHQ5VnVQ,892
+prettymaps/presets/tijuca.json,sha256=YDpTZJeJIbqnFxrzM9XxOMR9kBF0Z3j3jFclLIYDw5Q,1390
+prettymaps-0.2b2.dist-info/LICENSE,sha256=OwkTBvikwiwsx_My8y9OwUaky_mYmGiKBOWeyNbDw1U,34503
+prettymaps-0.2b2.dist-info/METADATA,sha256=BDhRynwNf1gNuFe-QlT4jKrJHIjuT-csVjm3SxKHnt8,32996
+prettymaps-0.2b2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+prettymaps-0.2b2.dist-info/top_level.txt,sha256=EayjivrwSZ3VIzYGwcb7oqSsEwDgOtZChEP7CDJrRmc,11
+prettymaps-0.2b2.dist-info/RECORD,,
