@@ -1,0 +1,17 @@
+x_metaformer/__init__.py,sha256=vB8eDNevg8J75vJGK91B3tiQzNdPRJBAdG_nhLMcnLg,69
+x_metaformer/metaformer.py,sha256=gSnAIaxQwXDBcZXCd0UVVDV2t9LDMbq76WlUQiHjMDs,7292
+x_metaformer/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+x_metaformer/layers/act_layers.py,sha256=433lOmn58aKS1LWqjdlb3AcK8WCMK5x072VeU_Nfe5E,2847
+x_metaformer/layers/attention_layers.py,sha256=It6bjtblr3LF6gfBIWiKfoa-ZzG_rAWR6-5Rpwrau1U,4848
+x_metaformer/layers/conv_layers.py,sha256=yf78_JP6mRbePRBsLWkPXD5kg6zjGs1riZzksTxhPWQ,2340
+x_metaformer/layers/mlp_layers.py,sha256=FVKFOcFvRyikWVzgUNkSuIKwLlQiTIxRf9xQj6NqCJk,1996
+x_metaformer/layers/norm_layers.py,sha256=UTy8ww9pO1-YIJboLqCro24p4FNCSfw-fRMLIykS1u8,866
+x_metaformer/pretraining/__init__.py,sha256=MS0WTLDNIwURpFjH4FYd3sHZmOCHaUn3Ec6v72kcESA,162
+x_metaformer/pretraining/barlowtwins.py,sha256=uCLQGKwH4qP_02hJOXJ2vTx4nZv2tPeSgR9QNgfr4HA,1617
+x_metaformer/pretraining/mocov3.py,sha256=5rJp99FZyMwxht0Na-6RLi_jZ3BwdKmxv6y85VBZNSs,3577
+x_metaformer/pretraining/vicreg.py,sha256=fZDT7KaFIaVJN_PuDE0eRB2spLeFTnPw9sHxKJTflS8,1401
+x_Metaformer-0.1.9.dist-info/LICENSE,sha256=3SOm9nxLCnZ5bnxviLfBpMlVIT4QoG1e7aAIjTmJtcw,1071
+x_Metaformer-0.1.9.dist-info/METADATA,sha256=Es7mP1NEwAKdBnfHwIVQESiiydfJbapqdaMmhVOVGxQ,2357
+x_Metaformer-0.1.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+x_Metaformer-0.1.9.dist-info/top_level.txt,sha256=imR5ff5-Om_2r2--OjR8PB__Mq8IPkOr_PNhphU0uZI,13
+x_Metaformer-0.1.9.dist-info/RECORD,,
