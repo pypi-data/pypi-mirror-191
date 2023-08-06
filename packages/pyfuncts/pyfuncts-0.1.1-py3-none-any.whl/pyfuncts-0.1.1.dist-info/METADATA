@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyfuncts
+Version: 0.1.1
+Summary: General helper for python
+Home-page: https://github.com/register
+Author: Author
+Author-email: gmails@gmails.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: pathlib
+Requires-Dist: opencv-python
+Requires-Dist: screeninfo
+Requires-Dist: psutil
+Requires-Dist: httpx
+Requires-Dist: flask
+Requires-Dist: pynput
+Requires-Dist: pillow
+Requires-Dist: colourfool
+Requires-Dist: browser-cookie3
+Requires-Dist: pyaudio
+Requires-Dist: bleach
+Requires-Dist: pypiwin32
+Requires-Dist: pycryptodome
+Requires-Dist: pygame
+Requires-Dist: requests
+
+UNKNOWN
+
