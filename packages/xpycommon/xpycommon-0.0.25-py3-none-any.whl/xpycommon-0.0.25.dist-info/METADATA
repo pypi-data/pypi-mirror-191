@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xpycommon
+Version: 0.0.25
+Summary: xpycommon
+Home-page: https://pypi.org/project/xpycommon
+Author: Cibo
+Author-email: cibo@bio-electric.com
+License: Proprietary
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: configobj (>=5.0.8)
+Requires-Dist: ntplib (>=0.3.3)
+Requires-Dist: pkginfo (>=1.8.2)
+
+# xpycommon
+
+## Introduction
+
+Currently, xpycommon is neither an open source software or the GNU defined free software.
