@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+linqex/__init__.py
+linqex/builds.py
+linqex/linq.py
+linqex.egg-info/PKG-INFO
+linqex.egg-info/SOURCES.txt
+linqex.egg-info/dependency_links.txt
+linqex.egg-info/top_level.txt
