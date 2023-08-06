@@ -1,0 +1,252 @@
+.. pypi_safe_1_start
+
+Python Parallel Hierarchy
+=========================
+
+A utility for creating a parallel class hierarchy based on a primary set of classes.
+
+How does it work?
+-----------------
+This package gives you an easy to use factory.  This factory takes as input a class from an original model, and outputs
+a new class in a new parallel inheritance structure.
+
+.. pypi_safe_1_end
+
+Suppose you have these classes as part of your model.  Maybe you're using a Domain Driven Design, and you're trying to
+keep that design separate from database considerations and presentation.
+
+.. plantuml::
+    :caption: Original, hand-crafted classes.
+
+    hide empty members
+    package model {
+        A <|-- B
+        A <|-- C
+        C <|-- D
+        B <|-- E
+        D <|-- E
+    }
+
+Now you find yourself needing to implement some Foo functionality, and most of the work will be repetitive code that
+basically mimics the same class structure.  You could hijack the original structure by injecting your Foo specific
+code.  You could hand-craft a whole new set of classes.  Or... you could let the software do the work for you.
+
+With ``parallel_hierarchy`` you just need a few original classes to you get you started.
+
+The following class diagram shows you how you can leverage this concept to multiple parallel hierarchies.
+
+.. plantuml::
+    :caption: Three factory classes with different options for each.
+
+    hide empty members
+
+    package parallel_hierarchy {
+        class ParallelFactory<SourceBase, ParaBase> {
+            source_base: type[SourceBase] = SourceBase
+            para_base: type[ParaBase] = ParaBase
+            prefix: Optional[str] = None
+            suffix: Optional[str] = None
+
+        }
+    }
+    package foo {
+        class Foo
+        object foos {
+            source_base = A
+            para_base = Foo
+            suffix = "Foo"
+        }
+    }
+    package bar {
+        class Bar
+        object bars {
+            source_base = A
+            para_base = Bar
+            prefix = "Bar"
+        }
+
+        class MetaBar << (M, teal) type>>
+    }
+    package kitkat {
+        class Kit_A_Kat
+
+        object kitkat_factory {
+            source_base = A
+            para_base = Kit_A_Kat
+            prefix = "Kit_"
+            suffix = "_Kat"
+        }
+    }
+    ParallelFactory <|-- foos
+    ParallelFactory <|-- bars
+    ParallelFactory <|-- kitkat_factory
+    foos *- Foo
+    bars *- Bar
+    kitkat_factory *- Kit_A_Kat
+    Bar -right-{ MetaBar : metaclass
+
+.. pypy_safe_2_begin
+
+Here's the code to get you show you different options for getting you started:
+
+.. code:: python
+
+    # foo.py
+    from parallel_hierarchy import ParallelFactory
+    from model import A
+
+    class Foo:
+        def __init_subclass__(cls):
+            # Do something to customize the new classes to make them Foo-like
+            ...
+
+    foos = ParallelFactory(A, Foo, suffix="Foo")
+        """Foo Factory"""
+        # `A` is the root of the tree of source classes.
+        # `Foo` is the class from which all classes from the hierarchy will inherit
+        # `suffix="Foo"` means all the classes in the parallel hierarchy will have names of the form OriginalNameFoo
+
+In some other part of the code when you need to access a ``Foo`` version of ``A``:
+
+.. code:: python
+
+    new_cls = foos(model.A)
+    assert new_cls.__name__ == "AFoo"
+
+Another way to dynamically define the new classes is with a metaclass:
+
+.. code:: python
+
+    # bar.py
+    from parallel_hierarchy import ParallelFactory
+    import model
+
+    class MetaBar(type):
+        """Define the things that make classes more like a Bar."""
+        ...
+
+    class Bar(metaclass=MetaBar):
+        """Root of the Bar hierarchy."""
+        ...
+
+    bars = ParallelFactory(model.A, Bar, prefix="Bar")
+        """Bar Factory"""
+
+In some other part of the code when you need to access a ``Bar`` version of ``B``:
+
+.. code:: python
+
+    new_cls = bars(model.B)
+    assert new_cls.__name__ == "BarB"
+
+In the two examples above, Foo and Bar were "above" the parallel hierarchy.  It's a good way to separate the overall
+structure of the new classes.  However, you can start with your first class being parallel to the source class as well.
+
+.. code:: python
+
+    # kitkat.py
+    from parallel_hierarchy import ParallelFactory
+    from model import A
+
+    class Kit_A_Kat:
+        """Root of the KitKat hierarchy, parallels class A."""
+        ...
+
+    kitkat_factory = ParallelFactory(A, Kit_A_Kat, prefix="Kit_", suffix="_Kat")
+        """Maker of KitKat classes."""
+
+In some other part of the code when you need to access a ``KitKat`` version of ``E``:
+
+.. code:: python
+
+    new_cls = kitkat_factory(model.E)
+    assert new_cls.__name__ == "Kit_E_Kat"
+
+.. pypi_safe_2_end
+
+Your three new factory classes now give you free access to these three new class hierarchies:
+
+.. plantuml::
+    :caption: Three class hierarchies parallel to the original one, generated by the corresponding factory classes.
+
+    hide empty members
+
+    package foo {
+        Foo <|-- AFoo
+        AFoo <|-- BFoo
+        AFoo <|-- CFoo
+        CFoo <|-- DFoo
+        BFoo <|-- EFoo
+        DFoo <|-- EFoo
+
+        Foo : {static} __init_subclass__(cls)
+    }
+
+    package bar {
+        Bar <|-- BarA
+        BarA <|-- BarB
+        BarA <|-- BarC
+        BarC <|-- BarD
+        BarB <|-- BarE
+        BarD <|-- BarE
+        Bar -right-{ MetaBar : metaclass
+
+        class MetaBar << (M, teal) type>> {
+            {static} __new__(mcs, ...)
+            __init__(cls, ...)
+        }
+    }
+
+    package kitkat {
+        AlignmentHelper <|-- Kit_A_Kat
+        Kit_A_Kat <|-- Kit_B_Kat
+        Kit_A_Kat <|-- Kit_C_Kat
+        Kit_C_Kat <|-- Kit_D_Kat
+        Kit_B_Kat <|-- Kit_E_Kat
+        Kit_D_Kat <|-- Kit_E_Kat
+
+        hide AlignmentHelper
+    }
+
+.. pypi_safe_3_begin
+
+Now let's say you discover that a Foo counterpart of the class D needs special handling that the generated version
+can't express properly.  Well, you can hand-craft a ``DFoo`` class and register it with your ``foos`` factory object.
+
+.. code:: python
+
+    class DFoo(foos(C)):
+        """My hand-crafted Foo of D class."""
+        ...
+
+    foos.register(DFoo)
+
+.. note::
+    Calling ``foos(C)`` as a base class ensures that ``DFoo`` fits properly in it's position in the parallel hierarchy.
+
+.. hint::
+    If you're using a metaclass or ``__init_subclass__`` in your root class, you can put the call to ``register`` there.
+    This ensures that all your hand-crafted classes are registered.
+
+Real-World Examples
+-------------------
+I've used this kind of factory to automatically generate 'marshmallow' Schemas and HTML presentation Views from a core
+set of domain model classes.  The Schemas saved me from repeating all my fields in the model to define my storage.
+The generated Views allowed me to quickly prototype the HTML presentation layer for each of my model classes.
+From there I could fine tune specific View classes.
+
+Convinced?
+
+How to install
+--------------
+.. code::
+
+    pip install https://gitlab.com/joel.larose/python-parallel-hierarchy.git
+
+or
+
+.. code::
+
+    pip install python-parallel-hierarchy
+
+.. pypi_safe_3_end
