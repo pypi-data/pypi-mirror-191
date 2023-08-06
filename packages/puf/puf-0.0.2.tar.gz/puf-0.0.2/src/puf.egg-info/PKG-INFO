@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: puf
+Version: 0.0.2
+Summary: Python Utility Functions
+Author-email: Sokrato <dlutxx@gmail.com>
+Project-URL: Homepage, https://github.com/sokrato/puf
+Project-URL: Bug Tracker, https://github.com/sokrato/puf/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# Python utility functions
+
+## install
+[PyPI home](https://pypi.org/project/puf/).
+
+`pip install puf`
+
+Use `pip install -e .` to test locally.
+
+## build, publish
+See this [tutorial](https://packaging.python.org/en/latest/tutorials/packaging-projects/) for detailed instructions.
+```shell
+pip install -U pip build twine
+
+python -m build
+python -m twine upload dist/*
+# enter __token__
+# enter PyPI token
+```
+
+## test
+See [python unittest](https://docs.python.org/3/library/unittest.html).
+```shell
+python -m unittest
+```
+
+- https://mysqlclient.readthedocs.io/user_guide.html
+- https://pypi.org/project/mysqlclient/
