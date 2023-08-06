@@ -1,0 +1,3 @@
+[console_scripts]
+runCVAEGLRM = cvaeglrm:main
+runImputation = imputation:main
