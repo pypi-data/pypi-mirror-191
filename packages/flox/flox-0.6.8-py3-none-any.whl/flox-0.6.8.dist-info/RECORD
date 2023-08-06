@@ -1,0 +1,17 @@
+flox/__init__.py,sha256=pXvxu27y2BC-2c3i_6FtcEFoi9IAsK-J2WJ4ie9JbPI,410
+flox/_version.py,sha256=qbWTdDuFyvScwNj95KArnOcQph9tiLZZ8rgNJYlJ4AE,21
+flox/aggregate_flox.py,sha256=Fn8vHs6H_E1G3g_ktMaI_ILYC-7gbKGcxuY6YQ0s0nA,4015
+flox/aggregate_npg.py,sha256=mjtxc29EJdnjXwQcyj1SCvt_YYTiwuPjM65Tk-NCeYA,2351
+flox/aggregations.py,sha256=vG3i3rudb1BkRTVQxEsNL2QtmTbfNP1vjGPT8S1e_6U,18259
+flox/cache.py,sha256=tu2dKo8wUqMh5qc727TnnK2OQEgFFfMxtiN5W6ybDwI,255
+flox/core.py,sha256=qMG16ICgy9Oijr9Msu6kGor1lUomqUPTZjDk3hDK1FE,69899
+flox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flox/visualize.py,sha256=8YKWj_iFkdHruucitEqFefRYbYLIDSi079GwqtBt-RM,5241
+flox/xarray.py,sha256=QlnmOUuvYKkmIm85KOM1bUO0gK7WKBowCHKZzlF35-M,23346
+flox/xrdtypes.py,sha256=XIVkY8FqsPb5ve-M3mqc-jAAdYFkWhjDPZO1qdLMCfo,4089
+flox/xrutils.py,sha256=v6N4-7b6NeLL7al0aUIdkTEdUAcAWrQT1_YA3gscbDU,9197
+flox-0.6.8.dist-info/LICENSE,sha256=IayqHV9saw9sn7tAUYqWE3pcFO5G5RVUOcWHYsDfvPs,11324
+flox-0.6.8.dist-info/METADATA,sha256=pt-sk3erZRmzOLLZGzNXRP5NDPj9fPqBXMH_uZ4MF0M,17938
+flox-0.6.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flox-0.6.8.dist-info/top_level.txt,sha256=ToVvesHvA4pegruUxqdJ2gkmKACaQRSWPIKAoqyR9_0,5
+flox-0.6.8.dist-info/RECORD,,
