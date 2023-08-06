@@ -1,0 +1,91 @@
+/* Headline */
+@font-face {
+  font-family: 'Epistemix Headline';
+  src: url('fonts/EpistemixHeadline-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epistemix Headline';
+  src: url('fonts/EpistemixHeadline-Small.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Text */
+@font-face {
+  font-family: 'Epistemix Text';
+  src: url('fonts/EpistemixText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epistemix Text';
+  src: url('fonts/EpistemixText-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epistemix Text';
+  src: url('fonts/EpistemixText-Semibold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'Epistemix Text';
+  src: url('fonts/EpistemixText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Label */
+@font-face {
+  font-family: 'Epistemix Label';
+  src: url('fonts/EpistemixLabel-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epistemix Label';
+  src: url('fonts/EpistemixLabel-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'Epistemix Label';
+  src: url('fonts/EpistemixLabel-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* Code */
+@font-face {
+  font-family: 'Epistemix Code';
+  src: url('fonts/EpistemixCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Epistemix Code';
+  src: url('fonts/EpistemixCode-RegularItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}

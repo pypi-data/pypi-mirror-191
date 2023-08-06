@@ -1,0 +1,75 @@
+.jupyterlab-notifications {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.jupyterlab-notifications * {
+  pointer-events: all;
+}
+
+.jupyterlab-notifications-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.jupyterlab-notifications-container.visible {
+  opacity: 1;
+}
+
+.jupyterlab-notification {
+  position: relative;
+  width: 300px;
+  background-color: var(--epistemix-night-3);
+  color: var(--epistemix-night-7);
+  padding: 20px 35px 20px 20px;
+  border-radius: var(--epistemix-border-radius-2);
+  opacity: 1;
+  transition: 0.3s;
+  box-shadow: inset 0 0.5px 0 0 var(--epistemix-night-4),
+    0 0 0 0.5px rgba(0, 0, 0, 0.15), 0 1px 2px 0 rgba(0, 0, 0, 0.15),
+    0 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.jupyterlab-notification:has(+ .jupyterlab-notification) {
+  margin-bottom: 20px;
+}
+
+.jupyterlab-notification.hide {
+  opacity: 0;
+}
+
+.jupyterlab-notifications .dismiss-notification {
+  box-sizing: border-box;
+  position: absolute;
+  background: none;
+  fill: white;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.jupyterlab-notifications .dismiss-notification:hover {
+  background: var(--epistemix-night-2);
+}
+
+.jupyterlab-notifications .notification-date {
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}

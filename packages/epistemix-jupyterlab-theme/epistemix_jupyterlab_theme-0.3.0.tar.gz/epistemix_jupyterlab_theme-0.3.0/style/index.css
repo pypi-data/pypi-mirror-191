@@ -1,0 +1,570 @@
+@import './fonts.css';
+@import './variables.css';
+@import './notifications.css';
+@import './splash.css';
+@import './welcome.css';
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+/* Menu */
+#jp-MainLogo svg {
+  display: none;
+}
+
+#jp-MainLogo::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' %3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.67 0H3.33C2.17 0 1.75 0.12 1.33 0.35C0.9 0.57 0.57 0.91 0.35 1.33C0.12 1.75 0 2.17 0 3.33V28.67C0 29.83 0.12 30.25 0.35 30.67C0.571224 31.0874 0.912615 31.4288 1.33 31.65C1.75 31.88 2.17 32 3.33 32H28.67C29.83 32 30.25 31.88 30.67 31.65C31.0874 31.4288 31.4288 31.0874 31.65 30.67C31.88 30.25 32 29.83 32 28.67V3.33C32 2.17 31.88 1.75 31.65 1.33C31.43 0.91 31.09 0.57 30.67 0.35C30.25 0.12 29.83 0 28.67 0ZM22.53 17.64V14.36H8.1V24.2H24.5V20.92H13.35V17.64H22.53ZM8.1 7.8V11.08H23.84V7.8H8.1Z' fill='%23e8ecfc' /%3E%3C/svg%3E");
+  width: 18px;
+  height: 18px;
+  margin: 0 0 1px 7px;
+}
+
+#jp-top-panel {
+  border-bottom: 1px solid var(--epistemix-night-3);
+}
+
+.lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
+  background: var(--epistemix-night-4);
+}
+
+.lm-Menu {
+  background: var(--epistemix-night-4);
+  border-radius: var(--jp-border-radius);
+  border-top-left-radius: 0;
+  box-shadow: var(--epistemix-menu-shadows);
+}
+
+.lm-Menu-item.lm-mod-active {
+  background: var(--epistemix-brand-2);
+}
+
+.lm-Menu-item[data-type='separator'] > div::after {
+  border-top: 1px solid var(--epistemix-night-2);
+}
+
+/* Left Sidebar */
+.jp-FileBrowser,
+.jp-FileBrowser-toolbar,
+.jp-DirListing-content,
+.jp-RunningSessions,
+.jp-TableOfContents,
+.jp-extensionmanager-view,
+.jp-extensionmanager-pending,
+.jp-TableOfContents-content,
+.jp-SideBar .lm-TabBar-tab.lm-mod-current,
+.jp-SideBar .lm-TabBar-tab.lm-mod-current:hover {
+  background: var(--epistemix-night-1);
+}
+
+.jp-SideBar.lm-TabBar.jp-mod-left .lm-TabBar-tab:not(.lm-mod-current) {
+  opacity: 0.7;
+}
+
+.jp-InputGroup input {
+  background: var(--epistemix-night-4);
+  color: var(--epistemix-night-9);
+  border-radius: var(--jp-border-radius);
+  box-shadow: var(--epistemix-control-shadows);
+}
+
+.jp-InputGroup input:focus {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+.jp-InputGroup input::placeholder {
+  color: var(--epistemix-night-9);
+  opacity: 0.8;
+}
+
+/* File Browser */
+.jp-FileBrowser-toolbar
+  .jp-CommandToolbarButton:first-child
+  button.jp-Button.bp3-button.bp3-minimal {
+  opacity: 1;
+  box-shadow: var(--epistemix-control-shadows);
+}
+
+.jp-FileBrowser-toolbar
+  .jp-CommandToolbarButton:first-child
+  button.jp-Button.bp3-button.bp3-minimal
+  svg {
+  width: 18px;
+  height: 18px;
+}
+
+.jp-FileBrowser-toolbar.jp-Toolbar
+  .jp-Toolbar-item:first-child
+  .jp-ToolbarButtonComponent
+  .jp-icon3 {
+  fill: var(--epistemix-night-9);
+}
+
+.jp-FileBrowser-filterBox {
+  overflow: initial;
+}
+
+.jp-DirListing-itemModified {
+  color: var(--epistemix-night-5);
+}
+
+.jp-DirListing-item,
+.jp-RunningSessions-item {
+  opacity: 0.9;
+}
+
+.jp-DirListing-item:hover,
+.jp-RunningSessions-item:hover {
+  opacity: 1;
+}
+
+.jp-DirListing-item:hover:not(.jp-mod-selected) {
+  background: transparent;
+}
+
+.jp-DirListing-item.jp-mod-selected {
+  color: #fff;
+}
+
+.jp-DirListing-item.jp-mod-selected .jp-DirListing-itemModified {
+  color: var(--epistemix-night-7);
+}
+
+.jp-DirListing-item.jp-mod-running.jp-mod-selected
+  .jp-DirListing-itemIcon::before {
+  color: var(--jp-success-color1);
+}
+
+/* Running Sessions */
+.jp-RunningSessions-shutdownAll.jp-mod-styled {
+  background: var(--epistemix-night-4);
+  border-radius: var(--jp-border-radius);
+}
+
+.jp-RunningSessions-shutdownAll.jp-mod-styled:hover {
+  background: var(--epistemix-night-4);
+}
+
+/* Table of Contents */
+.toc-toolbar-icon {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.toc-toolbar-icon [fill] {
+  fill: var(--epistemix-night-9);
+}
+
+[data-jp-theme-light='false'] .toc-toolbar-icon:hover {
+  opacity: 1;
+  background: none;
+}
+
+[data-jp-theme-light='false'] .toc-toolbar-icon-selected {
+  background: var(--epistemix-night-4);
+}
+
+/* Extension Manager */
+.jp-extensionmanager-view
+  .jp-stack-panel-header
+  .jp-extensionmanager-headerTextDisabled {
+  color: var(--epistemix-night-7);
+}
+
+.jp-extensionmanager-view .jp-stack-panel-header > .jp-ToolbarButtonComponent {
+  background: none;
+}
+
+.jp-extensionmanager-disclaimer-disable {
+  box-shadow: var(--epistemix-control-shadows) !important;
+}
+
+.jp-extensionmanager-disclaimer-enable {
+  box-shadow: var(--epistemix-control-shadows) !important;
+}
+
+/* Right Sidebar */
+.jp-NotebookTools,
+.jp-ActiveCellTool,
+.jp-DebuggerSidebar,
+.jp-PropertyInspector,
+.jp-DebuggerSidebar > .jp-stack-panel-header {
+  background: var(--epistemix-night-1);
+}
+
+.jp-DebuggerSidebar-body .jp-stack-panel-header,
+.jp-DebuggerSidebar-body .jp-Toolbar {
+  background: var(--epistemix-night-2);
+}
+
+.jp-Collapse-header {
+  background: var(--epistemix-night-2);
+}
+
+.jp-Collapse-header:hover {
+  background: var(--epistemix-night-2);
+}
+
+.jp-Collapse-contents {
+  background: var(--epistemix-night-1);
+}
+
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) {
+  opacity: 0.7;
+}
+
+.jp-Collapse {
+  border: 0;
+}
+
+.CodeMirror.cm-s-jupyter {
+  background: var(--epistemix-night-2);
+}
+
+button.jp-Button.bp3-button.bp3-minimal:not([disabled]),
+button.jp-Button.bp3-button.bp3-minimal.jp-TableView:not([disabled]) {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+button.jp-Button.bp3-button.bp3-minimal:hover,
+button.jp-Button.bp3-button.bp3-minimal.jp-TableView:hover {
+  background: none;
+}
+
+button.jp-Button.bp3-button.bp3-minimal:not([disabled]):hover,
+button.jp-Button.bp3-button.bp3-minimal.jp-TableView:not([disabled]):hover {
+  opacity: 1;
+}
+
+/* Main */
+#jp-main-dock-panel {
+  padding: 0;
+}
+
+.lm-DockPanel-tabBar
+  .lm-TabBar-tab.lm-mod-closable.jp-mod-dirty
+  > .lm-TabBar-tabCloseIcon
+  > :not(:hover)
+  > .jp-icon-busy[fill],
+.jp-icon-hover :hover .jp-icon3-hover[fill] {
+  fill: var(--epistemix-brand-1);
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  background: transparent;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  background: var(--epistemix-night-3);
+  border-top-left-radius: var(--jp-border-radius);
+  border-top-right-radius: var(--jp-border-radius);
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current::before {
+  background: var(--epistemix-yellow);
+}
+
+.jp-HTMLSelect.jp-DefaultStyle select {
+  color: var(--jp-inverse-layout-color3);
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.jp-HTMLSelect.jp-DefaultStyle select:hover {
+  background: none;
+  color: var(--jp-inverse-layout-color3);
+  opacity: 1;
+}
+
+.jp-NotebookPanel-toolbar {
+  border-bottom: 1px solid var(--epistemix-night-0);
+}
+
+.jp-Notebook .jp-Cell.jp-mod-active .jp-Collapser {
+  background: var(--epistemix-brand-2);
+}
+
+.jp-Notebook .jp-Cell .jp-InputPrompt,
+.jp-Notebook .jp-Cell .jp-OutputPrompt {
+  min-width: 65px;
+}
+
+.jp-Launcher-cwd::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 360 50' %3E%3Cpath d='m337.43 31.87-4.28 5.14h-8.32l8.87-9.73 3.73 4.59Zm-10.01-19.86h7.56l6.19 7.73 6.08-7.73h8.25l-9.37 11.92 10.66 13.08h-8.76l-20.61-25Zm-27.42 25v-25h8v25h-8Zm-55 0v-25h10l7.89 13.67 7.71-13.67H281v25h-8V20.26l-9.33 16.75h-2.65l-9-16.75v16.75H245Zm-43 0v-25h24v5h-16v5h14v5h-14v5h17v5h-25Zm-34 0v-20h-9v-5h26v5h-9v20h-8Zm-37.27.46c-9.39 0-14.25-3-14.64-8.46h8c.39 1.82 1.89 3.25 6.5 3.25 3.61 0 5.68-.89 5.68-2.57 0-1.68-1.86-2.07-6.71-2.54-9.11-.79-12.61-3-12.61-8 0-4.75 4.79-8 12.89-8 8.1 0 12.79 2.43 13.43 7.86h-7.89c-.5-1.75-2.25-2.64-5.46-2.64-3.39 0-5 .75-5 2.21s1.29 1.82 6.32 2.29c8.36.68 13.11 2.39 13.11 8.07-.01 5.07-4.74 8.53-13.63 8.53h.01ZM91 37.01v-25h8v25h-8Zm-35-13h4.5c2.9 0 4.5-1.17 4.5-3.52v-.09c0-2.38-1.67-3.34-4.47-3.34H56v6.95Zm-8 13v-25h12.83c8.22 0 12.17 2.76 12.17 8.21v.18c0 5.38-4.3 8.65-11.83 8.65H56v8l-8-.04Zm-21-15v5H13v5h17v5H5v-15h22Zm-22-5v-5h24v5H5Z' fill='%23e8ecfc' /%3E%3C/svg%3E");
+  display: block;
+  width: 200px;
+  margin: 0 0 0 4px;
+}
+
+/* Footer */
+#jp-bottom-panel {
+  opacity: 0.55;
+  transition: 0.2s;
+}
+
+#jp-bottom-panel:hover {
+  opacity: 1;
+}
+
+.jp-switch[aria-checked='true'] .jp-switch-track {
+  background-color: var(--epistemix-brand-2);
+}
+
+[name='lineColumnForm'] .lm-lineForm-wrapper {
+  height: 24px !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+[name='lineColumnForm'] input + div {
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  top: 5px;
+  right: 14px;
+}
+
+[name='lineColumnForm'] input + div svg {
+  height: 12px;
+}
+
+/* Markdown */
+.cm-s-jupyter span.cm-header-1 {
+  color: var(--epistemix-yellow);
+}
+
+.jp-RenderedHTMLCommon {
+  padding-right: 0;
+}
+
+.jp-RenderedHTMLCommon h1 {
+  font-family: 'Epistemix Headline', serif;
+  font-weight: 400;
+  color: var(--epistemix-yellow);
+}
+
+.jp-RenderedHTMLCommon h2 {
+  font-family: 'Epistemix Headline', serif;
+  font-weight: 300;
+  color: var(--epistemix-brand-1);
+}
+
+.jp-RenderedHTMLCommon h3,
+.jp-RenderedHTMLCommon h4,
+.jp-RenderedHTMLCommon h5,
+.jp-RenderedHTMLCommon h6 {
+  font-family: 'Epistemix Text', serif;
+  font-weight: 600;
+  color: var(--epistemix-brand-1);
+}
+
+.jp-RenderedHTMLCommon a:link {
+  text-decoration: underline;
+}
+
+.jp-RenderedHTMLCommon blockquote {
+  background: var(--epistemix-night-3);
+  padding: 1em 1em 0.01em;
+  font-size: var(--jp-content-font-size2);
+  font-style: italic;
+  border-radius: var(--jp-border-radius);
+}
+
+.jp-RenderedHTMLCommon hr {
+  border-color: var(--jp-mirror-editor-hr-color);
+}
+
+.jp-Notebook .jp-Cell {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Code Editor */
+.CodeMirror-lines {
+  padding: var(--jp-code-padding);
+}
+
+.CodeMirror-scroll {
+  margin-right: calc(var(--jp-code-padding) * -2);
+}
+
+.jp-InputArea-editor,
+.jp-Notebook.jp-mod-editMode .jp-Cell.jp-mod-active .jp-InputArea-editor {
+  border-width: 1px;
+  border-radius: var(--epistemix-border-radius-2);
+  box-shadow: none;
+}
+
+.jp-RenderedText[data-mime-type*='err'] {
+  border: 1px solid rgba(235, 90, 54, 0.7);
+  border-radius: var(--epistemix-border-radius-2);
+  padding-bottom: var(--jp-code-padding);
+}
+
+/* Dialog */
+.jp-Dialog-content {
+  background: var(--epistemix-night-2);
+  box-shadow: var(--epistemix-material-lower-shadows);
+  border-radius: var(--epistemix-border-radius-2);
+}
+
+.jp-Dialog-body {
+  background: var(--epistemix-night-2);
+}
+
+button.jp-mod-styled.jp-mod-accept {
+  background: var(--epistemix-brand-2);
+  box-shadow: var(--epistemix-control-shadows);
+  outline: none !important;
+}
+
+button.jp-mod-styled.jp-mod-accept:hover {
+  background: var(--epistemix-brand-2);
+  opacity: 0.8;
+}
+
+button.jp-mod-styled.jp-mod-accept:focus {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+button.jp-mod-styled.jp-mod-warn {
+  background: var(--epistemix-red);
+  box-shadow: var(--epistemix-control-shadows);
+  outline: none !important;
+}
+
+button.jp-mod-styled.jp-mod-warn:hover {
+  background: var(--epistemix-red);
+  opacity: 0.8;
+}
+
+button.jp-mod-styled.jp-mod-warn:focus {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+button.jp-mod-styled.jp-mod-reject {
+  background: var(--epistemix-night-4);
+  box-shadow: var(--epistemix-control-shadows);
+  outline: none !important;
+}
+
+button.jp-mod-styled.jp-mod-reject:hover {
+  background: var(--epistemix-night-4);
+  opacity: 0.8;
+}
+
+button.jp-mod-styled.jp-mod-reject:focus {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+/* Misc */
+[disabled] {
+  opacity: var(--epistemix-disabled-opacity);
+}
+
+.jp-icon-contrast0[fill] {
+  fill: var(--epistemix-night-9);
+}
+
+.jp-switch-track {
+  background: var(--epistemix-night-4);
+  box-shadow: var(--epistemix-control-shadows);
+  width: 30px;
+}
+
+.jp-switch-track::before {
+  background: var(--epistemix-night-7);
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+}
+
+.jp-switch[aria-checked='true'] .jp-switch-track::before {
+  left: 14px;
+}
+
+.tag {
+  border-radius: var(--epistemix-border-radius-0);
+  background: var(--epistemix-night-7);
+  border: 0;
+  color: var(--epistemix-night-1);
+  box-shadow: var(--epistemix-control-shadows);
+}
+
+.tag .jp-icon3[fill] {
+  fill: var(--epistemix-night-1);
+}
+
+.add-tag {
+  background: var(--epistemix-night-7);
+  color: var(--epistemix-night-1);
+}
+
+.jp-select-wrapper {
+  background: none;
+  padding: 2px;
+  height: 34px;
+}
+
+.jp-select-wrapper svg {
+  top: 8px;
+}
+
+.jp-select-wrapper.jp-mod-focused select.jp-mod-styled {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+select.jp-mod-styled {
+  border-radius: var(--jp-border-radius);
+  box-shadow: var(--epistemix-control-shadows);
+}
+
+select.jp-mod-styled:focus {
+  box-shadow: var(--epistemix-control-shadows-focus);
+}
+
+.CodeMirror-linenumber {
+  margin-left: -13px;
+}
+
+/* FRED syntax */
+.cm-fred-comment {
+  color: var(--epistemix-code-gray);
+  font-style: italic;
+}
+
+.cm-fred-block {
+  color: var(--epistemix-code-yellow);
+}
+
+.cm-fred-property {
+  color: var(--epistemix-code-orange);
+}
+
+.cm-fred-function {
+  color: var(--epistemix-code-lightblue);
+}
+
+.cm-fred-keyword {
+  color: var(--epistemix-code-lavender);
+}
+
+.cm-fred-string {
+  color: var(--epistemix-code-limegreen);
+}
+
+.cm-fred-number {
+  color: var(--epistemix-code-purple);
+}
+
+.cm-fred-operator {
+  color: var(--epistemix-code-pink);
+}
