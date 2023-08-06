@@ -1,0 +1,86 @@
+fail_fast: false
+default_language_version:
+  python: python3
+default_stages:
+- commit
+- push
+minimum_pre_commit_version: 2.16.0
+repos:
+- repo: https://github.com/google/yapf
+  rev: v0.32.0
+  hooks:
+  - id: yapf
+    additional_dependencies: [toml]
+- repo: https://github.com/nbQA-dev/nbQA
+  rev: 1.6.1
+  hooks:
+  - id: nbqa-pyupgrade
+    args: [--py38-plus]
+  - id: nbqa-black
+  - id: nbqa-isort
+- repo: https://github.com/PyCQA/isort
+  rev: 5.12.0
+  hooks:
+  - id: isort
+- repo: https://github.com/asottile/yesqa
+  rev: v1.4.0
+  hooks:
+  - id: yesqa
+    additional_dependencies:
+    - flake8-tidy-imports
+    - flake8-docstrings
+    - flake8-comprehensions
+    - flake8-bugbear
+    - flake8-blind-except
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.6.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: detect-private-key
+  - id: check-ast
+  - id: check-toml
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+    args: [--fix=lf]
+  - id: trailing-whitespace
+  - id: check-case-conflict
+- repo: https://github.com/myint/autoflake
+  rev: v2.0.1
+  hooks:
+  - id: autoflake
+    args:
+    - --in-place
+    - --remove-all-unused-imports
+    - --remove-unused-variable
+    - --ignore-init-module-imports
+- repo: https://github.com/PyCQA/flake8
+  rev: 6.0.0
+  hooks:
+  - id: flake8
+    additional_dependencies:
+    - flake8-tidy-imports
+    - flake8-docstrings
+    - flake8-comprehensions
+    - flake8-bugbear
+    - flake8-blind-except
+    args: [--docstring-convention, google]
+- repo: https://github.com/asottile/pyupgrade
+  rev: v3.3.1
+  hooks:
+  - id: pyupgrade
+    args: [--py38-plus, --keep-runtime-typing]
+- repo: https://github.com/rstcheck/rstcheck
+  rev: v6.1.1
+  hooks:
+  - id: rstcheck
+    additional_dependencies: [tomli]
+    args: [--config=pyproject.toml]
+- repo: https://github.com/PyCQA/doc8
+  rev: v1.1.1
+  hooks:
+  - id: doc8
+    args: [--config=pyproject.toml]
