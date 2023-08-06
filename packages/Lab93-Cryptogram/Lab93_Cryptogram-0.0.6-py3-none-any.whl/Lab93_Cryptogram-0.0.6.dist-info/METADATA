@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Lab93-Cryptogram
+Version: 0.0.6
+Summary: Lab-93 credential management system.
+Author-email: Hunter Dale <guyyatsu@gmail.com>
+Project-URL: Homepage, https://github.com/guyyatsu/Lab93-Cryptogram
+Project-URL: Bug Tracker, https://github.com/guyyatsu/Lab93-Cryptogram/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+
