@@ -1,0 +1,7 @@
+markertif/__init__.py,sha256=Twed1zf761pJimzRWTct5l-ecqoTO5X-GoFwbnDIAn0,210
+markertif/_calculate_tfidf.py,sha256=9Nto8GDp_06bEdfdEb2lFhzLPSogqPJRH7wzRHV3no0,9132
+markertif/_rank_genes.py,sha256=w4z7d4fuzriwfIfeQeEFRwLAYrojiuNZq7FN13xEMK8,1021
+markertif-0.0.0.dist-info/METADATA,sha256=2kMphuXMGcq5e24acyhHvwVGkiqpcQDb2c8b9QAL2_0,115
+markertif-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+markertif-0.0.0.dist-info/top_level.txt,sha256=5THkYr-OUj1FkzKovt3JdCtTSnITZbnWc-BbVYnk7ko,10
+markertif-0.0.0.dist-info/RECORD,,
