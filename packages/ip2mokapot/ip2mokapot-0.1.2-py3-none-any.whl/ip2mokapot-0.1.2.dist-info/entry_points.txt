@@ -1,0 +1,2 @@
+[console_scripts]
+mokafilter = ip2mokapot.filter:run
