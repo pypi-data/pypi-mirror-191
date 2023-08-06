@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cykooz.rehash
+Version: 0.1
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Rust
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: wheel; extra == 'dev'
+Requires-Dist: maturin; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-benchmark; extra == 'dev'
+Requires-Dist: tabulate; extra == 'dev'
+Requires-Dist: patchelf; (sys_platform=='linux') and extra == 'dev'
+Provides-Extra: dev
+License-File: LICENSE
+Summary: A resumable implementation of SHA1 hasher
+Keywords: sha1,resumable
+Author: Kirill Kuzminykh <cykooz@gmail.com>
+Author-email: Kirill Kuzminykh <cykooz@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# cykooz.rehash
+
+`cykooz.rehash` is a resumable implementation of SHA1 hasher.
+
+Usage example:
+
+```python
+from cykooz.rehash import Sha1
+
+
+hasher = Sha1()
+hasher.update(b'x' * 78)
+hasher_state = hasher.serialize()
+assert len(hasher_state) == 94
+hasher.update(b'x' * 41)
+assert hasher.hexdigest() == '4300320394f7ee239bcdce7d3b8bcee173a0cd5c'
+
+new_hasher = Sha1.deserialize(hasher_state)
+new_hasher.update(b'x' * 41)
+assert new_hasher.hexdigest() == '4300320394f7ee239bcdce7d3b8bcee173a0cd5c'
+```
+
