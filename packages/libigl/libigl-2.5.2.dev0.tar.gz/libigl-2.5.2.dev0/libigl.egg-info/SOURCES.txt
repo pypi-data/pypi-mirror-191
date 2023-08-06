@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+igl/__init__.py
+igl/_version.py
+igl/helpers.py
+libigl.egg-info/PKG-INFO
+libigl.egg-info/SOURCES.txt
+libigl.egg-info/dependency_links.txt
+libigl.egg-info/requires.txt
+libigl.egg-info/top_level.txt
+tests/test_basic.py
