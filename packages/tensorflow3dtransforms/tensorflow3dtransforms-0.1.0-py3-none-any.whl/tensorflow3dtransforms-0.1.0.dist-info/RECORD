@@ -1,0 +1,9 @@
+tensorflow3d_transforms/__init__.py,sha256=xghIZWR8ZAuGH66yNuqkCNca0rtUenG2mtW9EhTQZRE,748
+tensorflow3d_transforms/rotation_conversions.py,sha256=hUs8rq-XwL-6mMPJ7vnO3tXgkGXWRWF4Ff_5p-CZpbw,26674
+tensorflow3d_transforms/so3_ops.py,sha256=AAoqwMhWAwZzaaAwiIx0zo_EcGJWJEGmceDbFCIqMJM,16330
+tensorflow3d_transforms/version.py,sha256=LVLvDHN63eXlcEX4sd1gUdnQzNw8riry_ivRaTKC5Gs,228
+tensorflow3dtransforms-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tensorflow3dtransforms-0.1.0.dist-info/METADATA,sha256=0Z2YEa5Su0gkn-x7JJprwGDYr1PzB5-p2hmuqsV7SRI,5074
+tensorflow3dtransforms-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tensorflow3dtransforms-0.1.0.dist-info/top_level.txt,sha256=qqQsF3YeNjijg258UPoMqzUiZtrngO-CfAaaQhL4Dzk,24
+tensorflow3dtransforms-0.1.0.dist-info/RECORD,,
