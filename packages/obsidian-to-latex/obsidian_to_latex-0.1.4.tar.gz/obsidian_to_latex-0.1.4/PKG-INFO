@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: obsidian-to-latex
+Version: 0.1.4
+Summary: Convert Obsidian vault documents to latex
+Home-page: https://github.com/drbartling/obsidian-to-latex
+License: MIT
+Author: Ryan Bartling
+Author-email: ryan.bartling@gmail.com
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: colored-traceback (>=0.3.0,<0.4.0)
+Requires-Dist: coloredlogs (>=15.0.1,<16.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Project-URL: Repository, https://github.com/drbartling/obsidian-to-latex
+Description-Content-Type: text/markdown
+
+# Obsidian to Latex
+
+This utility attempts to make it easy to convert markdown documents written using obsidian into PDFs.
+
+## Requirements
+
+- latex
+- mermaid
+
+## Getting Started
+
+This project uses python [poetry](https://python-poetry.org/).  Follow the [intallation instructions](https://python-poetry.org/docs/#installation) for poetry.
+
+I'm using miktex for latex support.  On windows, you can run `winget install miktex`
+
+Run `poetry install` and `poetry shell` to install and and activate the python virtual environment.
+
+Than, run `obsidian_to_latex .\examples\feature_guide\Widget.md` to convert the example document to a PDF.  The PDF will be placed in `.\examples\feature_guide\output\Widget.pdf`.
+
+```powershell
+watchexec.exe -crd500 -e py "isort . && black . && pytest && obsidian_to_latex.cmd .\examples\feature_guide\Widget.md"
+```
+
