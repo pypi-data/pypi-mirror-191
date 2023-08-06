@@ -1,0 +1,2 @@
+[console_scripts]
+validate_traefik = traefik_validator:validate_traefik

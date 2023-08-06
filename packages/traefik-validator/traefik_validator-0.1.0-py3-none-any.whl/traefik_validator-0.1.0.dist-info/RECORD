@@ -1,0 +1,10 @@
+traefik_validator/__init__.py,sha256=f596dVktme14eGzq0ml7MvkLJuWip8h4CSXogi2TSeU,546
+traefik_validator/settings.py,sha256=dozQ3ULi5lykAYcDXSYbGXttwdEdE1AEcLafbM0NkiM,161
+traefik_validator/tests.py,sha256=-U8JgEavJoEPQDQCZz3yBA_jmWcP8yzCtugIA4Dpp7Y,4261
+traefik_validator/utils.py,sha256=ZiV4cTfw0LUagnP_V_gBLytzYEN6Y7Bes5Qxu9tHqlQ,2844
+traefik_validator-0.1.0.dist-info/LICENSE,sha256=AK2PonK_77Z_C1ONUmdc5M5YPaTovPRmkjWV8_vlh7c,1499
+traefik_validator-0.1.0.dist-info/METADATA,sha256=svHMbnGmzwyBxjUo4MPEdR2LmlkfKrHik2NuVlkkQGs,1802
+traefik_validator-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+traefik_validator-0.1.0.dist-info/entry_points.txt,sha256=DuvfBfv4wRvLJj86kyRIbrN90OCg8zzvaA38L024zos,72
+traefik_validator-0.1.0.dist-info/top_level.txt,sha256=GZDi5PAYIN_SZOaeNTAsiVzO86R1zDnkitgJjEr5fUY,18
+traefik_validator-0.1.0.dist-info/RECORD,,
