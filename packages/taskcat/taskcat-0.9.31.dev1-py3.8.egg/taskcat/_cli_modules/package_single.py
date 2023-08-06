@@ -1,0 +1,54 @@
+import logging
+import tempfile
+import yaml
+from pathlib import Path
+
+from taskcat._config import Config, PROJECT
+from taskcat._lambda_build import LambdaBuild
+
+LOG = logging.getLogger(__name__)
+
+
+class PackageSingle:
+    """packages lambda source files into zip files. If a dockerfile is present in a
+    source folder, it will be run prior to zipping the contents"""
+    CLINAME = "package-single"
+    def __init__(
+        self,
+        project_root: str = "./",
+        source_folder: str = "lambda_functions/source",
+        zip_folder: str = "lambda_functions/packages",
+        from_ref: str = None,
+        to_ref: str = None,
+        name: str = None,
+    ):
+        """
+        :param project_root: base path for project
+        :param source_folder: folder containing the lambda source files, relative to the
+        project_root
+        :param zip_folder: folder to output zip files, relative to the project root
+        :param config_file: path to taskcat project config file
+        """
+        project_root_path: Path = Path(project_root).expanduser().resolve()
+        if not PROJECT.exists():
+            fd , path = tempfile.mkstemp()
+            path = Path(path).expanduser().resolve()
+            d = {"project":{"name":"blah", "regions":["us-east-1"]}}
+            with open(path, 'w') as f:
+                f.write(yaml.dump(d))
+            pc = path
+
+        config = Config.create(
+            project_config_path = pc if pc else None,
+            project_root=project_root_path,
+            args={
+                "project": {
+                    "lambda_zip_path": zip_folder,
+                    "lambda_source_path": source_folder,
+                }
+            },
+        )
+        if not config.config.project.package_lambda:
+            LOG.info("Lambda packaging disabled by config")
+            return
+        LambdaBuild(config, project_root_path, from_ref, to_ref, name)
