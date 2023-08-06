@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: CVAE-GLRM
+Version: 1.0.0
+Summary: conditional variational autoencoder - graph Laplacian regularized model.
+Home-page: https://github.com/az7jh2/CVAE-GLRM
+Author: Ningshan Li
+Author-email: hill103.2@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy (==1.8.1)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: networkx (==2.8.4)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: scikit-learn (==1.1.1)
+Requires-Dist: numba (==0.55.2)
+Requires-Dist: openpyxl (==3.0.10)
+Requires-Dist: tensorflow (==2.9.1)
+Requires-Dist: scanpy (==1.9.1)
+Requires-Dist: scikit-misc (==0.1.4)
+Requires-Dist: psutil (==5.9.1)
+Requires-Dist: seaborn (==0.11.2)
+Requires-Dist: umap-learn (==0.5.3)
+Requires-Dist: distinctipy (==1.2.2)
+Requires-Dist: adjustText (==0.7.3)
+
+# CVAE-GLRM
+CVAE-GLRM (conditional variational autoencoder - graph Laplacian regularized model) is a two-step **hybrid** machine learning and regression method considering platform effect, spatial information and sparsity in **deconvolution** of spatial transcriptomic data using reference single-cell RNA sequencing data from same tissue type.
+
+## Installation
+
+We provided **Docker** and **Singularity** images of CVAE-GLRM
+
+```bash
+# For Docker
+docker pull az7jh2/trftarget:0.3.2
+# For Singularity
+singularity build trftarget-0.3.2.sif docker://az7jh2/trftarget:0.3.2
+```
+
+To test the installation (should print the version of tRFtarget-pipeline)
+
+```bash
+# For Docker
+docker run -it --rm az7jh2/trftarget:0.3.2 tRFtarget -v
+# For Singularity
+singularity exec trftarget-0.3.2.sif tRFtarget -v
+```
+
+## Usage
+
+### Command
+
+The command to run tRFtarget-pipeline with default setting is:
+
+```bash
+# For Docker
+docker run -it --rm -v <path>:/data az7jh2/trftarget:0.3.2 tRFtarget -q <query_fasta_file_name> -t <target_fasta_file_name> -n 1 --e_rnahybrid -15 --e_intarna 0 -b 1 -s 6
+# For Singularity
+singularity exec -B <path>:/data trftarget-0.3.2.sif tRFtarget -q <query_fasta_file_name> -t <target_fasta_file_name> -n 1 --e_rnahybrid -15 --e_intarna 0 -b 1 -s 6
+```
+
+`<path>` is the valid and **absolute** path of the folder in the host machine to be mounted in the Docker/Singularity image for data exchanging (`readlink -f` can be used to get the absolute path of one folder)
+
+ `<query_fasta_file_name>` and `<target_fasta_file_name>` are the file names (**Without path**) of *FASTA* files of query small RNAs and target RNAs respectively. both of them are required to be located in the `<path>` folder
+
+### Input
+
+* A *FASTA* file of query small RNAs. Compressed file (such as `.gz`) currently not supported
+* A *FASTA* file of target RNAs (optional). Compressed file (such as `.gz`) currently not supported. If not provided, use 100,218 Protein-coding transcript sequences (GRCh38.p13) as target RNAs instead
+
+### All options
+
+| Option              | Description                |
+| ------------------- | -------------------------- |
+| `-h` or`--help`     | print help messages        |
+| `-v` or `--version` | print version of CVAE-GLRM |
+
+#### Input options
+
+| Option                | Description                                                  |
+| --------------------- | ------------------------------------------------------------ |
+| `-q` or `--query`     | input csv file of raw nUMI counts of **spatial transcriptomic** data (spots * genes), with absolute or relative path. Rows as spots and columns as genes. Row header as spot barcodes and column header as gene symbols are both required |
+| `-r` or `--ref`       | input csv file of raw nUMI counts of **scRNA-seq** data (cells * genes), with absolute or relative path. Rows as cells and columns as genes. Row header as cell barcodes and column header as gene symbols are both required |
+| `-c` or `--ref_anno`  | input csv file of **cell-type annotations** for all cells in scRNA-seq data, with absolute or relative path. Rows as cells and only 1 column as cell-type annotation. Row header as cell barcodes and column header as cell-types are both required. |
+| `-m` or `--maker`     | input csv file of already curated **cell-type marker gene expression** (cell-types * genes; already normalized by sequencing depth), with absolute or relative path. Rows as cell-types and columns as genes. Row header as cell-type names and column header as gene symbols are both required. If marker gene expression is provided, the built-in differential analysis will be skipped and genes from this csv file will be directly used for cell-type deconvolution, as well as CVAE building. If not provided, Wilcoxon rank sum test will be performed to select cell-type marker genes. |
+| `-a` or `--adjacency` | input csv file of **Adjacency Matrix** of spots in spatial transcriptomic data (spots * spots), with absolute or relative path. In Adjacency Matrix, entry value **1** represents corresponding two spots are adjacent spots according to the definition of neighborhood, while value **0** for non-adjacent spots. All diagonal entries are set as 0. Row header and column header as spot barcodes are both required. And the spot order should be consist with row order in spatial data. Default value is None. |
+
+#### Output options
+
+| Option             | Description                                                  |
+| ------------------ | ------------------------------------------------------------ |
+| `-o` or `--output` | name of csv file of the cell-type deconvolution result. Only specify the file name WITHOUT path. If ignored, the result file will be named as "celltype_proportions.csv" |
+
+#### General options
+
+| Option              | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `-n` or `--n_cores` | number of CPU cores used for parallel computing. Default value is 1, i.e. no parallel computing |
+| `--threshold`       | threshold for hard thresholding the estimated cell-type proportions, i.e. for one spot, estimated cell-type proportions smaller than this threshold value will be set to 0, then re-normalize all proportions of this spot to sum as 1. Default value is 0, which means no hard thresholding |
+| `--use_cvae`        | control whether to build Conditional Variational Autoencoder (CVAE) to remove the platform effect between spatial transcriptomic and scRNA-seq data (true/false). Default value is true. Building CVAE requires raw nUMI counts and corresponding cell-type annotation of scRNA-seq data specified |
+| `--diagnosis`       | if true, provide more output files related to CVAE building and hyper-parameter selection for diagnosis. Default value is false |
+| `--verbose`         | control whether to print more info such as output of each ADMM iteration step during program running (true/false). Default value is true |
+
+#### Cell-type marker identification options
+
+| Option               | Description                                                  |
+| -------------------- | ------------------------------------------------------------ |
+| `--n_marker_per_cmp` | number of selected TOP cell-type specified marker genes for each comparison of ONE cell-type against another ONE cell-type using Wilcoxon rank sum test. Default number is 30. For each comparison, genes with a FDR adjusted p value < 0.05 will be selected first, then these marker genes will be sorted by a combined rank of log fold change and pct.1/pct.2, and finally pick up specified number of gene with TOP ranks |
+
+#### CVAE related options
+
+| Option                   | Description                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| `--n_hv_gene`            | number of highly variable genes identified in reference scRNA-seq data, and these HV genes will be used together with identified cell-type marker genes for building CVAE. Default number is 1,000. If the actual number of genes in scRNA-seq data is less than the specified value, all available genes in scRNA-seq data will be used for building CVAE |
+| `--pseudo_spot_min_cell` | minimum value of cells in one pseudo-spot when combining cells into pseudo-spots. Default value is 2 |
+| `--pseudo_spot_max_cell` | maximum value of cells in one pseudo-spot when combining cells into pseudo-spots. Default value is 8 |
+| `--seq_depth_scaler`     | a scaler of scRNA-seq sequencing depth to transform CVAE decoded values (sequencing depth normalized gene expressions) back to raw nUMI counts. Default value is 10,000 for all cells |
+| `--cvae_input_scaler`    | maximum value of the scaled input for CVAE input layer. Default value is 10, i.e. linearly scale all the sequencing depth normalized gene expressions to range [0, 10] |
+| `--cvae_init_lr`         | initial learning rate for training CVAE. Default value is 0.003. Although learning rate will decreasing automatically during training, large initial learning rate will cause training failure at the very beginning of training. If loss function value do NOT monotonically decrease, please try smaller initial learning rate |
+| `--redo_de`              | control whether to redo Differential analysis on CVAE transformed scRNA-seq gene expressions to get a new set of marker gene list of cell-types (true/false). Default value is true. It's recommended to redo Differential analysis since CVAE transformation may change the marker gene profile of cell-types |
+| `--seed`                 | seed value of TensorFlow to control the randomness in building CVAE. Default value is 383 |
+
+#### GLRM hyper-parameter related options
+
+| Option                 | Description                                                  |
+| ---------------------- | ------------------------------------------------------------ |
+| `--lambda_r`           | hyper-parameter for **adaptive Lasso**. Default value is None, i.e. use cross-validation to find the optimal value. The list of `lambda_r` candidates will has total `lambda_r_range_k` values, and candidate values will be evenly selected on a log scale (geometric progression) from range [`lambda_r_range_min`, `lambda_r_range_max`]. If `lambda_r` is specified as a valid value, then `lambda_r_range_k`, `lambda_r_range_min` and `lambda_r_range_max` will be ignored |
+| `--lambda_r_range_min` | minimum value of the range of `lambda_r` candidates used for hyper-parameter selection. Default value is 0.1 |
+| `--lambda_r_range_max` | maximum value of the range of `lambda_r` candidates used for hyper-parameter selection. Default value is 100 |
+| `--lambda_r_range_k`   | number of `lambda_r` candidates used for hyper-parameter selection. Default value is 8 (including the values of `lambda_r_range_min` and `lambda_r_range_max`) |
+| `--lambda_g`           | hyper-parameter for **graph Laplacian constrain**, which depends on the edge weights used in the graph created from the Adjacency Matrix. Default value is None, i.e. use cross-validation to find the optimal value. The list of `lambda_g` candidates will has total `lambda_g_range_k` values, and candidate values will be evenly selected on a log scale (geometric progression) from range [`lambda_g_range_min`, `lambda_g_range_max`]. If `lambda_g` is specified as a valid value, then `lambda_g_range_k`, `lambda_g_range_min` and `lambda_g_range_max` will be ignored |
+| `--lambda_g_range_min` | minimum value of the range of `lambda_g` candidates used for hyper-parameter selection. Default value is 0.1 |
+| `--lambda_g_range_max` | maximum value of the range of `lambda_g` candidates used for hyper-parameter selection. Default value is 100 |
+| `--lambda_g_range_k`   | number of `lambda_g` candidates used for hyper-parameter selection. Default value is 8 (including the values of `lambda_g_range_min` and `lambda_g_range_max`) |
