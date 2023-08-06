@@ -1,0 +1,3 @@
+[console_scripts]
+fixie=fixie.client.console:fixie
+
