@@ -1,0 +1,4 @@
+[console_scripts]
+scaled_cluster = scaled.entry_points.cluster:main
+scaled_poke = scaled.entry_points.poke:main
+scaled_scheduler = scaled.entry_points.scheduler:main
