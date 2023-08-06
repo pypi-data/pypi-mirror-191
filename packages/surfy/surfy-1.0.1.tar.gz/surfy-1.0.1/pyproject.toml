@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surfy"
+version = "1.0.1"
+authors = [
+  { name="Alexander Yermolenko" },
+  { name="PugoBoss" },
+  { name="Eugen Nukatak" },
+]
+description = "This repository contains all the libraries for successful working with Surfy Ecosystem in a Python environment."
+keywords = ["surfy", "sqlite"]
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Homepage" = "https://surfy.one"
+"GitHub" = "https://github.com/surfy-one/core.py"
+"Bug Tracker" = "https://github.com/surfy-one/core.py/issues"
+
+[tool.setuptools]
+packages=["surfy","surfy.sqlite"]
