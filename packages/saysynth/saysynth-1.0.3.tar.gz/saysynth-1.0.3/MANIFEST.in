@@ -1,0 +1,3 @@
+include saysynth/cli/commands/demos/*
+include saysynth/tests/fixtures/*
+include README.md
