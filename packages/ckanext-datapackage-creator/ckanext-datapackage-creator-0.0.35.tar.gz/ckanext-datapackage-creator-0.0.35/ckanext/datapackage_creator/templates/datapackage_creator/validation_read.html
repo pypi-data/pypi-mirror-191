@@ -1,0 +1,46 @@
+{% extends "package/read.html" %}
+
+
+{%- block subtitle %}{{ _('Validation Report') }}{% endblock -%}
+
+{% block breadcrumb_content_selected %}{% endblock %}
+{% block breadcrumb_content %}
+  {{ super() }}
+  <li class="active"><a href="">{{ _('Validation Report') }}</a></li>
+{% endblock %}
+
+{% block primary_content %}
+<h1 style="margin-top: 20px;">{{ _('Validation Report') }}</h1>
+<div>
+  <div class="accordion" id="accordionExample">
+    {% for datapackage in datapackage_list %}
+    {% if datapackage.errors %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading-{{ datapackage.id }}">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ datapackage.id }}" aria-expanded="true" aria-controls="collapseOne">
+          {% if datapackage.errors.valid %}
+          <span class="badge bg-success">VALID</span>
+          {% else %}
+          <span class="badge bg-danger">NOT VALID</span>
+          {% endif %}
+          <span style="margin-left: 15px;">
+            {{ h.render_datetime(datapackage.created) }}
+          </span>
+        </button>
+      </h2>
+      <div id="collapse-{{ datapackage.id }}" class="accordion-collapse collapse" aria-labelledby="heading-{{ datapackage.id }}" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <pre class="frictionless-validation">{{ datapackage.errors_json() }}</pre>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="/datapackage_creator/js/validation.js"></script>
+{% endblock %}
