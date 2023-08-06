@@ -1,0 +1,7 @@
+surquest/GCP/logger/__init__.py,sha256=8Rkdy1dC9b2eSQutAcyepeaa6tMtMddaCPB0KzrrVS0,48
+surquest/GCP/logger/json_encoder.py,sha256=c9wduSh9-sgOvRYMuyCblzY16emaNSi8L6WoD-LZiXU,240
+surquest/GCP/logger/logger.py,sha256=-p4PxXR_VeXBgnSk4UrZVJhWdb4YiCxPF92mVply_So,4724
+surquest_gcp_logger-0.0.1rc5.dist-info/METADATA,sha256=WVqW63Nufog5LBrgfeLpnj3wqXtll4kDca1n0g0VxtI,4400
+surquest_gcp_logger-0.0.1rc5.dist-info/WHEEL,sha256=nYNlZuHZ28ui1K118WE5qpb9yEZSMQ3u8pC2H4PftME,105
+surquest_gcp_logger-0.0.1rc5.dist-info/licenses/LICENSE,sha256=KOiPns08mrVoPpr69KqBwqhskIUuqM0H-2mmfxMjiac,1065
+surquest_gcp_logger-0.0.1rc5.dist-info/RECORD,,
