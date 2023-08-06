@@ -1,0 +1,13 @@
+psquared_consume/__init__.py,sha256=Q5gLObC4v12XgmzhlFl3EArMJZhRZpVD419655HuwIo,116
+psquared_consume/consumption.py,sha256=pLwLDxNoUZad_jNwLOJoRCQ9i-m8IC-Ei3wYwiNbQ2I,2757
+psquared_consume/execution_request.py,sha256=HG1w1vhqL-Kqimq5otJj_JcagPx9C30AgLr9Os-7zIo,5573
+psquared_consume/mock_server.py,sha256=vx5nNcnyKuP-MyAhfHMydR1RiJ8qEmbu_XnTmCP1QPc,2387
+psquared_consume/pp_execute.py,sha256=CsRJswrqpEGuNZVXs3qs5qgGSpUq0Bd28l454ognnes,4873
+psquared_consume/psquared_engine.py,sha256=MRcCHS4mV239T6b7cOAMnws3C8G8Kvvx5sXIWuUrQI0,14913
+psquared_consume/utils.py,sha256=0FiA_fSpVZkOhx0mEXOkkI7TtAWGA5xHkgQWgI_Obtk,1325
+psquared_consume-1.0.2.dev1.dist-info/LICENSE.txt,sha256=pAbLiMYnfczRLRNYMT0CBnyT53AkvoEaCPe5i-cTqX8,2448
+psquared_consume-1.0.2.dev1.dist-info/METADATA,sha256=lBxBZWe-vpdFzrcK8clHceIiNpwJPOR0lwY3KrE-1ts,923
+psquared_consume-1.0.2.dev1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+psquared_consume-1.0.2.dev1.dist-info/entry_points.txt,sha256=eXSNinS_ROq5kQIF9JQ2k6elGImYiP1y1B9JAE4azJ8,151
+psquared_consume-1.0.2.dev1.dist-info/top_level.txt,sha256=rTvhXQvY_oYdEuFWrvht3h1Zg86OtkxP45ExuRs_WqQ,17
+psquared_consume-1.0.2.dev1.dist-info/RECORD,,
