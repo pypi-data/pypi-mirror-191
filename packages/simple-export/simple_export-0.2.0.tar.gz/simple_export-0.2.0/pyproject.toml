@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-export"
+version = "0.2.0"
+description = "简单的模板导出工具"
+authors = ["mtl <576694002@qq.com>"]
+license = "Apache"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+openpyxl = "^3.0.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/mtl940610/simple_export"
+"Bug Tracker" = "https://github.com/mtl940610/simple_export/issues"
