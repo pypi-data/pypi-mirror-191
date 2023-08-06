@@ -1,0 +1,14 @@
+LICENSE,sha256=HoXhyHma4_JrNCDILpzTISThTvLAGWjp4oPenYwb-ow,1089
+nonebot_plugin_maimai/__init__.py,sha256=PdFFKBXL286XXWDz2zBvAxnLXajP6iDV-iEthQvkTQk,12078
+nonebot_plugin_maimai/libraries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_maimai/libraries/image.py,sha256=6JI7HwiVHZC5CGQ5dZztDW1w5kwl5Ir_JWVDZNsjEHE,1605
+nonebot_plugin_maimai/libraries/maimai_best_40.py,sha256=rTi_hL3rxp4ZFeUCNvSd9EwJQnyeqGaxlyiQDJLp1u8,17833
+nonebot_plugin_maimai/libraries/maimai_best_50.py,sha256=R091M7BS2IEpL74Rbm2GmsFV4MAIO9kOUd5vIrfef9w,17924
+nonebot_plugin_maimai/libraries/maimaidx_music.py,sha256=d-XQ66HomSRjgc-xuIg5CUvGZ1cAmNNyUa0F_A3HMO4,5218
+nonebot_plugin_maimai/libraries/tool.py,sha256=3wTHUVHgredsLM9lGF_QiAvww38hSh-boqvUw0XmO_M,298
+nonebot_plugin_maimai/public.py,sha256=vvTS7BjmWq3ZmtTZpxxsaEnt4oa4LwZe-vniLDoMuu4,1983
+README.md,sha256=Um0k-qmKx8tNwCwFqZaRRZw1nVEFfs569VChOiuWpb8,3015
+nonebot_plugin_maimai-0.0.9.dist-info/LICENSE,sha256=HoXhyHma4_JrNCDILpzTISThTvLAGWjp4oPenYwb-ow,1089
+nonebot_plugin_maimai-0.0.9.dist-info/METADATA,sha256=6pgkAU9nZj4KEbBtAQSikx6lkKO6H5Ae_73VTWpnkNs,4167
+nonebot_plugin_maimai-0.0.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nonebot_plugin_maimai-0.0.9.dist-info/RECORD,,
