@@ -1,0 +1,4 @@
+PyIBIS-AMI>=4.0.5
+pyside6
+pyyaml>=6
+scikit-rf>=0.24
