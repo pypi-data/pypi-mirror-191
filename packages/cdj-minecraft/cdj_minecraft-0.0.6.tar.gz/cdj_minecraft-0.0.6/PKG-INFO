@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cdj_minecraft
+Version: 0.0.6
+Summary: Een minecraft wrapper bovenop de mineflayer wrapper gemaakt voor CoderDojo Zwalm
+Home-page: https://github.com/Arthurdw/CoderdojoMinecraft
+Download-URL: https://github.com/Arthurdw/CoderdojoMinecraft/archive/version.tar.gz
+Author: Arthurdw
+Author-email: dev@arthurdw.com
+License: MIT
+Keywords: Minecraft,CoderDojo,Python,Wrapper,Bot,Mineflayer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
