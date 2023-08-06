@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+speechinput/__init__.py
+speechinput.egg-info/PKG-INFO
+speechinput.egg-info/SOURCES.txt
+speechinput.egg-info/dependency_links.txt
+speechinput.egg-info/requires.txt
+speechinput.egg-info/top_level.txt
