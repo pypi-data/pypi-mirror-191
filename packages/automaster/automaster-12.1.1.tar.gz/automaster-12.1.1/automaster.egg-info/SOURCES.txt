@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+automaster.egg-info/PKG-INFO
+automaster.egg-info/SOURCES.txt
+automaster.egg-info/dependency_links.txt
+automaster.egg-info/not-zip-safe
+automaster.egg-info/top_level.txt
