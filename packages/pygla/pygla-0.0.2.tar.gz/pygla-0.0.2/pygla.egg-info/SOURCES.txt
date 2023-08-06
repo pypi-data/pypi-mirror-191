@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gla/check_excel_id_integrity.py
+gla/gla.py
+gla/helper.py
+gla/ref_map.py
+pygla.egg-info/PKG-INFO
+pygla.egg-info/SOURCES.txt
+pygla.egg-info/dependency_links.txt
+pygla.egg-info/requires.txt
+pygla.egg-info/top_level.txt
