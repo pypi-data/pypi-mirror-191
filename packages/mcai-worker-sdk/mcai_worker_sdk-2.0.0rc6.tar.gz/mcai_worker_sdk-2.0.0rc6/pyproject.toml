@@ -1,0 +1,16 @@
+[project]
+name = "mcai_worker_sdk"
+description = "MCAI SDK to develop Python worker"
+documentation = "https://media-cloud-ai.gitlab.io/sdks/py_mcai_worker_sdk/mcai_worker_sdk/v2.0.0-rc6"
+repository = "https://gitlab.com/media-cloud-ai/sdks/py_mcai_worker_sdk"
+version = "2.0.0-rc6"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["json-strong-typing"]
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
