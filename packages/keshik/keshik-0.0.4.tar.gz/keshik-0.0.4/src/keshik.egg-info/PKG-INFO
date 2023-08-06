@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: keshik
+Version: 0.0.4
+Summary: A package which lets users oversample class imbalanced(binary) data by Denoising Diffusion Probabilistic Model (DDPM).
+Author-email: Rafat Ashraf Joy <rafat.joy99@gmail.com>
+Project-URL: Homepage, https://github.com/rajoy99/keshik
+Project-URL: Bug Tracker, https://github.com/rajoy99/keshik/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Keshik 
+
+A package which oversamples class imbalanced tabular data by (Denoising Diffusion Probabilistic Model) DDPM.
