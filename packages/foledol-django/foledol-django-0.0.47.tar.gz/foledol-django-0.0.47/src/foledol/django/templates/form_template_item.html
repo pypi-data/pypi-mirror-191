@@ -1,0 +1,48 @@
+{% extends base %}
+{% load form_extras %}
+
+{% block content %}
+
+    <form id="form" method="post">
+        {% csrf_token %}
+        <input type="hidden" id="action" name="action" value="{{action}}"/>
+        <input type="hidden" name="path" value="{{path}}"/>
+        <input type="hidden" name="back" value="{{back}}"/>
+        <input type="hidden" name="form_template_id" value="{{form_template_id}}"/>
+
+        {% include "components/banners.html" %}
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                {% include "components/field_text_short.html" with field=form|field:'label' %}
+
+                <div class="form-group">
+                    <div class="col-sm-4">
+                        <label>Type</label>
+                    </div>
+                    <div class="col-sm-8">
+                        <select name="type" class="form-control">
+                            {% for key, value in type_set.items %}
+                            <option value="{{key}}" {% if type == key %}selected{% endif %}>{{value}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+
+                {% include "components/field_text_short.html" with field=form|field:'order' %}
+                {% include "components/field_text_short.html" with field=form|field:'comment' %}
+
+            </div>
+            <div class="panel-footer">
+                <button type="button" class="btn btn-default" onclick="go_back('{{ back }}')">Annuler</button>
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                {% if user.is_staff and form_template_item %}
+                <button type="button" class="btn btn-danger" onclick="open2('{% url 'django:form_template_item_delete' form_template_item.id %}')">Supprimer</button>
+                {% endif %}
+            </div>
+        </div>
+
+    </form>
+
+{% endblock %}
