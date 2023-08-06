@@ -1,0 +1,2 @@
+[console_scripts]
+openapi_spec_sanitizer = openapi_spec_sanitizer.__main__:main
