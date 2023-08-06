@@ -1,0 +1,47 @@
+[project]
+name = "caustic"
+version = "0.0.1a0"
+authors = [{name="Adam Coogan", email="dr.adam.coogan@gmail.com"}]
+description = "The lensing pipeline of the future."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "gravitational lensing",
+    "astrophysics",
+    "differentiable programming",
+    "pytorch",
+]
+dependencies = [
+    "astropy",
+    "h5py",
+    "numpy",
+    "scipy",
+    "torch",
+    "torchinterp1d"
+]
+
+[project.optional-dependencies]
+dev = [
+    "icecream",
+    "jupyter",
+    "lenstronomy",
+    "matplotlib",
+    "pytest"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Ciela-Institute/caustic"
+"Bug Tracker" = "https://github.com/Ciela-Institute/caustic"
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"

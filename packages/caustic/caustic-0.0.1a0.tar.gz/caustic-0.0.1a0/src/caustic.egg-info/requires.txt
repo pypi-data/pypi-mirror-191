@@ -1,0 +1,13 @@
+astropy
+h5py
+numpy
+scipy
+torch
+torchinterp1d
+
+[dev]
+icecream
+jupyter
+lenstronomy
+matplotlib
+pytest
