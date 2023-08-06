@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: auth-lib-profcomff
+Version: 0.0.4
+Home-page: https://github.com/profcomff/auth-lib
+Author: Semyon Grigoriev
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: setuptools
+Provides-Extra: fastapi
+Requires-Dist: fastapi ; extra == 'fastapi'
+Requires-Dist: starlette ; extra == 'fastapi'
+
+# auth-lib
+Библиотека функций авторизации для микросервисов Твой ФФ!
