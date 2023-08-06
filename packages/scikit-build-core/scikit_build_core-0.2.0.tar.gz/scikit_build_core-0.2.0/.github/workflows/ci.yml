@@ -1,0 +1,208 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FORCE_COLOR: 3
+
+jobs:
+  lint:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - uses: pre-commit/action@v3.0.0
+        with:
+          extra_args: --hook-stage manual --all-files
+      - name: Run PyLint
+        run: |
+          echo "::add-matcher::$GITHUB_WORKSPACE/.github/matchers/pylint.json"
+          pipx run nox -s pylint
+
+  checks:
+    name:
+      Check 🐍 ${{ matrix.python-version }} • CMake ${{ matrix.cmake-version }}
+      on ${{ matrix.runs-on }}
+    runs-on: ${{ matrix.runs-on }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.7", "pypy-3.8", "3.11"]
+        runs-on: [ubuntu-latest, macos-latest]
+        cmake-version: ["3.15.x"]
+
+        include:
+          - python-version: "3.7"
+            runs-on: windows-2022
+            cmake-version: "3.21.x"
+          - python-version: "pypy-3.8"
+            runs-on: windows-2022
+            cmake-version: "3.21.x"
+          - python-version: "3.11"
+            runs-on: windows-2022
+            cmake-version: "3.25.x"
+          - python-version: "pypy-3.7"
+            runs-on: ubuntu-latest
+            cmake-version: "3.15.x"
+          - python-version: "3.8"
+            runs-on: ubuntu-latest
+            cmake-version: "3.21.x"
+          - python-version: "3.9"
+            runs-on: ubuntu-latest
+            cmake-version: "3.20.x"
+          - python-version: "3.10"
+            runs-on: ubuntu-latest
+            cmake-version: "3.22.x"
+          - python-version: "3.8"
+            runs-on: windows-2019
+            cmake-version: "3.24.x"
+          - python-version: "3.12-dev"
+            runs-on: ubuntu-latest
+            cmake-version: "3.15.x"
+    continue-on-error: ${{ endsWith(matrix.python-version, '-dev') }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install package
+        run: pip install .[test,cov] cmake ninja rich
+
+      - name: Test package
+        run: pytest -ra --showlocals --cov=scikit_build_core
+
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v3.1.1
+        with:
+          name: ${{ runner.os }}-${{ matrix.python-version }}
+
+      - name: Min requirements
+        run: |
+          pip uninstall -y cmake
+          pip install --constraint tests/constraints.txt .[test]
+
+      - name: Setup CMake ${{ matrix.cmake-version }}
+        uses: jwlawson/actions-setup-cmake@v1.13
+        with:
+          cmake-version: "${{ matrix.cmake-version }}"
+
+      - name: Test min package
+        run: pytest -ra --showlocals
+
+  cygwin:
+    name: Tests on 🐍 3.9 • cygwin
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: cygwin/cygwin-install-action@v3
+        with:
+          platform: x86_64
+          packages:
+            cmake ninja git make gcc-g++ gcc-fortran python39 python39-devel
+            python39-pip
+
+      - name: Install
+        run: python3.9 -m pip install .[test]
+
+      - name: Test package
+        run: python3.9 -m pytest -ra --showlocals -m "not virtualenv"
+
+  msys:
+    name: Tests on 🐍 3 • msys
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: msys2 {0}
+
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: msys
+          path-type: minimal
+          update: true
+          install: >-
+            base-devel git
+          pacboy: >-
+            python python-pip gcc cmake
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        run: python -m pip install .[test]
+
+      - name: Test package
+        run: python -m pytest -ra --showlocals
+
+  mingw64:
+    name: Tests on 🐍 3 • mingw64
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: msys2 {0}
+
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: mingw64
+          path-type: minimal
+          update: true
+          install: >-
+            base-devel git
+          pacboy: >-
+            python:p python-pip:p gcc:p cmake:p
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        run: python -m pip install .[test]
+
+      - name: Test package
+        run: python -m pytest -ra --showlocals -m "not setuptools"
+        env:
+          SETUPTOOLS_USE_DISTUTILS: "local"
+
+  dist:
+    name: Distribution build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: hynek/build-and-inspect-python-package@v1
+
+  pass:
+    if: always()
+    needs: [lint, checks, cygwin, dist]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decide whether the needed jobs succeeded or failed
+        uses: re-actors/alls-green@release/v1
+        with:
+          jobs: ${{ toJSON(needs) }}
