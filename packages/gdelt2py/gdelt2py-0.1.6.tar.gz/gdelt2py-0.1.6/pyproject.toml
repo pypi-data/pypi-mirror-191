@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdelt2py"
+version = "0.1.6"
+
+authors = [
+  { name="RakerZh", email="gitrustz10@gmail.com" },
+]
+
+dependencies = [
+"aiohttp>=3.8.3",
+"numpy>=1.24.2",
+"pandas>=1.5.2",
+]
+
+license = {file = "LICENSE"}
+description = "A Python package for downloading and processing Gdelt data (current only GKG, will be extened)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RakerZh/gdelt2py"
+"Bug Tracker" = "https://github.com/RakerZh/gdelt2py/issues"
