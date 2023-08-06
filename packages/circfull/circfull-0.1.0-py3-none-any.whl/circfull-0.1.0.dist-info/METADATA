@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: circfull
+Version: 0.1.0
+Summary: circfull: a tool to detect and quantify full-length circRNA isoforms from circFL-seq
+Home-page: https://github.com/yangence/circfull
+Author: Zelin Liu
+Author-email: zlliu@bjmu.edu.cn
+License: GPL3
+Keywords: circular RNAs
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: pysam (>=0.15.2)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: docopt (>=0.6.2)
+Requires-Dist: python-intervals
+Requires-Dist: interval
+Requires-Dist: progressbar
+Requires-Dist: pyfasta
+Requires-Dist: mappy
+
+UNKNOWN
+
