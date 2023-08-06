@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/kurzgesagt/__init__.py
+src/kurzgesagt.egg-info/PKG-INFO
+src/kurzgesagt.egg-info/SOURCES.txt
+src/kurzgesagt.egg-info/dependency_links.txt
+src/kurzgesagt.egg-info/requires.txt
+src/kurzgesagt.egg-info/top_level.txt

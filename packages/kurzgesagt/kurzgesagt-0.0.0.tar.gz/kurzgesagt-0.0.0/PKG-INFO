@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kurzgesagt
+Version: 0.0.0
+Summary: A puzzle.
+Home-page: https://gitlab.com/eklenske/kurzgesagt
+Author: Edgar Klenske
+Author-email: carl-friedrich@mailbox.org
+Keywords: puzzle
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# kurzgesagt
+
+This puzzle only works in combination with a painting at the University of
+Tübingen. Find the painting of Carl Friedrich Gauß and you'll know what to do.

@@ -1,0 +1,6 @@
+
+[dev]
+black
+isort
+pylint
+rope
