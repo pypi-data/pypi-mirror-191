@@ -1,0 +1,3 @@
+Um eine Sicherheitslücke dieser Art zu beheben, müssen Sie lediglich das HttpOnly-Flag für das anfällige Cookie setzen, wodurch verhindert wird, dass es von clientseitigen Skripten gelesen wird.
+
+Je nach Sprache und Technologie, die Sie verwenden, kann das Setzen des HttpOnly-Flags bedeuten, dass es entweder im Code der Anwendung selbst oder in einer Konfigurationsdatei des verwendeten Webservers oder Content Management Systems (CMS) aktiviert oder auf true gesetzt wird.
