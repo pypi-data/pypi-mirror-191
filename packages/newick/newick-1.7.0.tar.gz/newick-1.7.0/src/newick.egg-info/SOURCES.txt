@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/newick.py
+src/newick.egg-info/PKG-INFO
+src/newick.egg-info/SOURCES.txt
+src/newick.egg-info/dependency_links.txt
+src/newick.egg-info/not-zip-safe
+src/newick.egg-info/requires.txt
+src/newick.egg-info/top_level.txt
+tests/test_nescent.py
+tests/test_newick.py
