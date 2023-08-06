@@ -1,0 +1,12 @@
+LICENSE
+pyproject.toml
+setup.py
+DigitalizationTools/__init__.py
+DigitalizationTools/components.py
+DigitalizationTools/mongodb_api.py
+DigitalizationTools/postgresql_api.py
+DigitalizationTools/sqlite3_api.py
+DigitalizationTools.egg-info/PKG-INFO
+DigitalizationTools.egg-info/SOURCES.txt
+DigitalizationTools.egg-info/dependency_links.txt
+DigitalizationTools.egg-info/top_level.txt
