@@ -1,0 +1,3 @@
+# ShynaTaskManager
+
+Work in progress
