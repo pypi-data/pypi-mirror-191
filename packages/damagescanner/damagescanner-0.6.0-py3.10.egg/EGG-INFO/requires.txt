@@ -1,0 +1,8 @@
+pandas
+geopandas
+xarray
+rasterio
+rioxarray
+numpy
+matplotlib
+tqdm
