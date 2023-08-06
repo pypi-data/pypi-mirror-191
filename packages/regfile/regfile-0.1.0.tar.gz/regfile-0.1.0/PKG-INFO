@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: regfile
+Version: 0.1.0
+Summary: 
+Home-page: https://gitlab.com/fnrir/regfile
+License: MPL-2.0
+Author: fnrir
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Bug Tracker, https://gitlab.com/fnrir/regfile/-/issues
+Project-URL: Repository, https://gitlab.com/fnrir/regfile

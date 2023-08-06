@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "regfile"
+version = "0.1.0"
+description = ""
+authors = ["fnrir"]
+license = "MPL-2.0"
+#readme = "README.md"
+repository = "https://gitlab.com/fnrir/regfile"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/fnrir/regfile/-/issues"
+
+[tool.poetry.group.dev.dependencies]
+flakeheaven = "^3.2.1"
+mypy = "^0.991"
+pylint = "^2.15.10"
+parameterized = "^0.8.1"
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+
+[tool.flakeheaven]
+show_source = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
