@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: optimization-algorithms-tools
+Version: 1.0.1
+Summary: A collection of classes and tools
+Author-email: Alaa Khamis <alaakhamis@gmail.com>
+Project-URL: Homepage, https://github.com/Optimization-Algorithms-Book/Code-Listings
+Project-URL: Bug Tracker, https://github.com/Optimization-Algorithms-Book/Code-Listings/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Optimization Algorithm Tools
+
+This package provides a collection of classes and tools for use alongside the book: Optimization Algorithms: AI techniques for design, planning, and control problems.
+
+It contains the following modules:
+
+## algorithms
+* graph search and metaheuristic algorithms
+
+## problem
+*  problem base class and instances
+
+## `structures.py`
+* `Node`
+
+## `routing.py`
+* `cost(G, route)`
+* `draw_route(G, route)`
+
+[More information](https://github.com/search-and-optimization/Code-Listings)
