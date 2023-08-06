@@ -1,0 +1,14 @@
+InstallRelease/Makefile,sha256=7lHab3eW0Kwn_IGmuJJjc_R5hgdxY7bEoAJXrtWBAvo,295
+InstallRelease/__init__.py,sha256=F8OVhAhMXSkvvXYgZtbPn2SG1AQC3joK4yu-FrHt81Y,22
+InstallRelease/cli.py,sha256=qP7RJw04ZmhW83givWJbS53k9i3nB0B18kn33X2rHR0,4344
+InstallRelease/cli_interact.py,sha256=vXBVZ0Kes-C0ts28FO_3qxSSGXHGp7BY3Y3EA4oQw5A,8447
+InstallRelease/constants.py,sha256=ulye_8JNFeNI2T1CiLgdeobpwTa5dySAW_6ML4W4ceo,1351
+InstallRelease/core.py,sha256=DYJeaGrG1D_lebdONcq_8gw7rnmSbLne1aNMchrw024,7126
+InstallRelease/data.py,sha256=-nvO5NTPLgHfb8LAe_hy2Mz-9XOmmkXAw6iXdvMc90M,2166
+InstallRelease/state.py,sha256=FjbFiVf-N65ibBi15zmmvn2u0Um5EkdEXowmZ_Jcolo,2285
+InstallRelease/utils.py,sha256=cLhS-uu1f3APSWURlx_oe4VH7ojxeQ9lDWqFlM8TvRM,6974
+install_release-0.2.9.dist-info/METADATA,sha256=iN4EscCbVT4XwAHESsVRiiiLSF0JwFAkO609vdIQY7Q,8698
+install_release-0.2.9.dist-info/entry_points.txt,sha256=S-tW-NqmS8d4XYNGj9MiOIKWqJ2JgPPJ5IaCPW5s_94,58
+install_release-0.2.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+install_release-0.2.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+install_release-0.2.9.dist-info/RECORD,,
