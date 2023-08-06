@@ -1,0 +1,11 @@
+mecab_ko/_MeCab.cp310-win_amd64.pyd,sha256=ipvaCovExotECaZ0hFrbDGr6glSBWF6vQfX20XMVZTU,133632
+mecab_ko/__init__.py,sha256=DqNI3zFlBLCRjchr6zhoBxRLan6N4JbV7nIY3F3-5U8,4997
+mecab_ko/cli.py,sha256=JlpDaSGBip3TQjKt7LO13ybaOa596LQgLNm0FPQFBQ0,1030
+mecab_ko-1.0.1.data/data/lib/site-packages/mecab_ko/libmecab.dll,sha256=lRhwboyrXWEXXnDn8soNA05id3UvWfPpP7bvTXj5iH4,1908736
+mecab_ko-1.0.1.dist-info/AUTHORS,sha256=djSALdRVp9_ZnYuVReTdqHMwKnZib5Z7wppcZnRoy4U,336
+mecab_ko-1.0.1.dist-info/COPYING,sha256=o0kggseR-6YtP2-PFVS5YV2YPqKx92_jc8xJDViP-7s,244
+mecab_ko-1.0.1.dist-info/METADATA,sha256=8sgdH8v29ZupMBajZTRxrfQVNhNBOJVfyfL7Cec0y-I,6045
+mecab_ko-1.0.1.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+mecab_ko-1.0.1.dist-info/entry_points.txt,sha256=H5eUuxKlPeVZKI5KsxeM6FHd72A9cvDfq8Kca4A1zDs,82
+mecab_ko-1.0.1.dist-info/top_level.txt,sha256=tmR6tP-wMVgBJlK9QLLj3ixcZaEyo0ttFCAlyAT1WQk,9
+mecab_ko-1.0.1.dist-info/RECORD,,
