@@ -1,0 +1,18 @@
+[project]
+name = "autologpy"
+version = "0.0.1"
+authors = [
+  { name="pandaxyzzz", email="pandaxyz@tourble.org" },
+]
+description = "A python package that allows you to log the time of an action and save any movement."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Pandaxyzzz/AutologPY"
+"Bug Tracker" = "https://github.com/Pandaxyzzz/AutologPY/issues"

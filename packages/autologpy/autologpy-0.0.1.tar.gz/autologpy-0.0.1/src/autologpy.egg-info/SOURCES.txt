@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/autologpy/__init__.py
+src/autologpy.egg-info/PKG-INFO
+src/autologpy.egg-info/SOURCES.txt
+src/autologpy.egg-info/dependency_links.txt
+src/autologpy.egg-info/top_level.txt

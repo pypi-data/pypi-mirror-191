@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: autologpy
+Version: 0.0.1
+Summary: A python package that allows you to log the time of an action and save any movement.
+Author-email: pandaxyzzz <pandaxyz@tourble.org>
+Project-URL: Homepage, https://github.com/Pandaxyzzz/AutologPY
+Project-URL: Bug Tracker, https://github.com/Pandaxyzzz/AutologPY/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+<h1> Auto Log Python 📃</h1>
+
+<a href="https://pypi.org/project/AutoLogPY/">
+<img src="https://img.shields.io/pypi/v/ceh-v11-mod-allinone"></a>
+
+</div>
+<div align="left">
+
+## Features
+- 📃‣ Log minute, hour, day, month and year.
+- 🚀‣ Quick and instant login.
+- 📁‣ You can save the file. (optional)
+- 🕧‣ The file is saved in a folder with the date and in a file with the exact time. (optional)
+
+### PyPi
+Thanks to PyPi for maintaining the python package manager website and giving me the ability to upload this package.
+
+<a href="https://pypi.org/"><img src="https://img.shields.io/badge/-PyPi-blueviolet"></a>
+</div>
