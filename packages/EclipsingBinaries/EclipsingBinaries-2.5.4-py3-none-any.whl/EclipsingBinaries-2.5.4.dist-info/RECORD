@@ -1,0 +1,17 @@
+EclipsingBinaries/IRAF_Reduction.py,sha256=oDQbnIl0kPAoK2VfKuqQ7ipOW-7wDUbtTmxjBWfXBAE,14650
+EclipsingBinaries/Night_Filters.py,sha256=nkxbYbH2gV3-jK7ZppIyY3SGFUneRJy6__H-JCuVM1U,11133
+EclipsingBinaries/OC_plot.py,sha256=q-i_8IGEvlEcCGgoFOaY-KQmJZyk58YdRUHUw2ZHTkU,19090
+EclipsingBinaries/OConnell.py,sha256=oLkEqDvKEAJ4QcyezSWvVi5kkJpMsbos2pfi8FTxsbs,22277
+EclipsingBinaries/__init__.py,sha256=0e02yDsnq6T9AWPOXLhokZh4iJgKCC4xMJEzIgjVi20,23
+EclipsingBinaries/apass.py,sha256=EqETbkDtIfFgAHrqC_6vxzDgPUt-3xewNgXbyKFVU9Q,17999
+EclipsingBinaries/color_light_curve.py,sha256=o8hU1ecp_SG2kNPSfPGvT4a3VUsU8aa2KC6scVl1C8Q,27729
+EclipsingBinaries/menu.py,sha256=n10oHtBDZJ-3WiRPZ6FwvDm3_jV7owkviTqws4KOqXk,2098
+EclipsingBinaries/tess_data_search.py,sha256=P0GRJVHa_1IH4Unu0MMDx5S8tUTnttyOcZeYAaig1uM,2914
+EclipsingBinaries/tesscut.py,sha256=4wouj42BMHNtTOmHSLO9qwoISrW7aAO0XXbpPJlVPkU,4477
+EclipsingBinaries/vseq_updated.py,sha256=PSTHx6VF7Lk2q61LXuQ505huCl_uOfDAH5hevaz6RDc,86121
+EclipsingBinaries-2.5.4.dist-info/LICENSE,sha256=YgUkjcDkHtbw57dEOsJX9nIk_x-pk5pCMoOlEhbSbjw,1069
+EclipsingBinaries-2.5.4.dist-info/METADATA,sha256=DtHb9wA2KlNRgUpgatqX23S6vfBhAdkDbMLvCrlCDvI,5985
+EclipsingBinaries-2.5.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+EclipsingBinaries-2.5.4.dist-info/entry_points.txt,sha256=w1osKkkgTZ0rLHuoX9mwQd-GjiRyRvzh733ly26MowY,66
+EclipsingBinaries-2.5.4.dist-info/top_level.txt,sha256=1DLLdb0oW38hAI5rvnSIhHL34oyIfwgzKuYvkx4rDYc,18
+EclipsingBinaries-2.5.4.dist-info/RECORD,,
