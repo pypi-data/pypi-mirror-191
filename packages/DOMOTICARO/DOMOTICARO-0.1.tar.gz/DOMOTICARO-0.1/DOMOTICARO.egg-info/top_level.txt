@@ -1,0 +1,3 @@
+bot
+domoticaro
+voz
