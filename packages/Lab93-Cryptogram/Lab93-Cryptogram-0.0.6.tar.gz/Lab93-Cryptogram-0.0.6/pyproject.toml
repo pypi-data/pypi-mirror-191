@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Lab93-Cryptogram"
+version = "0.0.6"
+authors = [
+  { name="Hunter Dale", email="guyyatsu@gmail.com" },
+]
+description = "Lab-93 credential management system."
+readme = "readme.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "cryptography"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/guyyatsu/Lab93-Cryptogram"
+"Bug Tracker" = "https://github.com/guyyatsu/Lab93-Cryptogram/issues"
