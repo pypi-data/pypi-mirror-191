@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: easypipinstall
+Version: 0.1.1
+Summary: pip install Python packages with automatic requirements.txt, prod-requirements.txt and setup.cfg files updates. It also easily uninstall all the dependencies from those files.
+Author: Nicolas Dao
+Author-email: nicolas.dao@gmail.com
+License: BSD-3-Clause
+Keywords: pip,install,uninstall
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
