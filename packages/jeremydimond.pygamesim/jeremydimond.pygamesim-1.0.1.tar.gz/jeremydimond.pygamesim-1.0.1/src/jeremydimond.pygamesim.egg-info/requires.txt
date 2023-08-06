@@ -1,0 +1,8 @@
+
+[dev]
+pytest
+pytest-cov
+pytest-tldr
+bumpver
+build
+twine
