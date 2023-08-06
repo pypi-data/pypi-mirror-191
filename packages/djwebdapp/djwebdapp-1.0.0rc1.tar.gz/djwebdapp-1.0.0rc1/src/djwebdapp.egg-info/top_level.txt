@@ -1,0 +1,7 @@
+djwebdapp
+djwebdapp_ethereum
+djwebdapp_example
+djwebdapp_fa2
+djwebdapp_multisig
+djwebdapp_rest_framework
+djwebdapp_tezos
