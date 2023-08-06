@@ -1,0 +1,9 @@
+verb_conjugator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verb_conjugator/__main__.py,sha256=Fxc7G4YZtqq0stHicKWY84qzcyeDUwU4ZhXt_jLvcHw,618
+verb_conjugator/common_verbs.txt,sha256=HXIuCcvIuCN8LapeJ1HV2iJeXF57-VKuqxp2cUluz_c,696
+verb_conjugator/verb_conjugator.py,sha256=DuyngkHFXKpJDwn37cCaguzI-eaP_s66Wez4qY8JbuY,8913
+verb_conjugator-0.0.1.dist-info/METADATA,sha256=zCi5bTSBXnq-VZ2HSEl-wLt5LTUeCX-ucRuAa8eOO4U,1421
+verb_conjugator-0.0.1.dist-info/WHEEL,sha256=sb4ZHsmozXdkdXRvpMHZmhxsxQvL8DERDUEGA9tAfc8,83
+verb_conjugator-0.0.1.dist-info/entry_points.txt,sha256=5OXBF6WBQOeBgFWDGwPBDRe54x4hSOmA3ZM7yR_3y1g,61
+verb_conjugator-0.0.1.dist-info/license_files/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+verb_conjugator-0.0.1.dist-info/RECORD,,
