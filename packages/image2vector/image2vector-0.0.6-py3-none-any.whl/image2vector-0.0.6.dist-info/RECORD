@@ -1,0 +1,15 @@
+iv/__init__.py,sha256=LssRSwBxTPRxW4tTKwwPqEdmA7RLLz_eK21KZxlsSHw,2729
+iv/schemas.py,sha256=TIKITn1y8o98BNeVmFjuVluJIiIEeygGEi0v4hsu8C4,184
+iv/cirtorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iv/cirtorch/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iv/cirtorch/datasets/genericdataset.py,sha256=FDPqyFNQRnCXOvVpEBkMVoUSYLWntH0Qo5kz6HM-OhQ,1179
+iv/cirtorch/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iv/cirtorch/layers/functional.py,sha256=Bo8JzB4oFFmKleEvt9S9TSKGM3BZihYl76Y8ildag4o,2203
+iv/cirtorch/layers/normalization.py,sha256=mwEmDfRpZog3Iy21Ee7EashR9E1Ts2lbK_cQOJJxauU,350
+iv/cirtorch/layers/pooling.py,sha256=1oTfdCxfQ71IPg4mbxtmzZj8H7X0iNrik9zeR_Odx24,3086
+iv/cirtorch/networks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iv/cirtorch/networks/imageretrievalnet.py,sha256=svAnHGYXFo9SEkVTmLOj4xffn7BbZlMG074FKfqtpOc,4833
+image2vector-0.0.6.dist-info/METADATA,sha256=iCE1p_J4piMYwp5rev-Kn6AZK42O_q6L2PAYB0eoSbc,2454
+image2vector-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+image2vector-0.0.6.dist-info/top_level.txt,sha256=yUljgdDezSOKHR3PUfr497S-NaNeXin_CnsihoLUYTo,3
+image2vector-0.0.6.dist-info/RECORD,,
