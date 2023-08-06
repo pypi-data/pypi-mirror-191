@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: gp-toolkit
+Version: 0.1.0
+Summary: Various extensions and mods for GPflow
+Home-page: https://github.com/ltiao/gp-toolkit
+Author: Louis Tiao
+Author-email: louistiao@gmail.com
+License: MIT license
+Keywords: gptk
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Provides-Extra: datasets
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==========
+gp-toolkit
+==========
+
+
+.. image:: https://img.shields.io/pypi/v/gptk.svg
+        :target: https://pypi.python.org/pypi/gptk
+
+.. image:: https://img.shields.io/travis/ltiao/gptk.svg
+        :target: https://travis-ci.com/ltiao/gptk
+
+.. image:: https://readthedocs.org/projects/gp-toolkit/badge/?version=latest
+        :target: https://gp-toolkit.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/ltiao/gptk/shield.svg
+     :target: https://pyup.io/repos/github/ltiao/gp-toolkit/
+     :alt: Updates
+
+
+
+Various extensions and mods for GPflow
+
+
+* Free software: MIT license
+* Documentation: https://gp-toolkit.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2023-01-14)
+------------------
+
+* First release on PyPI.
