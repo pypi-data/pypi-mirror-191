@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: sphinx-cldomain-theme
+Version: 0.0.1
+Summary: Sphinx Common Lisp Domain Theme
+Author-email: Russell Sim <rsl@simopolis.xyz>
+License: MIT
+Project-URL: Homepage, https://sr.ht/~rsl/sphinxcontrib-cldomain/
+Project-URL: Bug Reports, https://todo.sr.ht/~rsl/sphinxcontrib-cldomain
+Project-URL: Source, https://git.sr.ht/~rsl/sphinx-cldomain-theme
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: sphinx
+
+======================
+Sphinx CL Domain Theme
+======================
+
+Official sphinx theme for the Common Lisp domain for sphinx
+https://git.sr.ht/~rsl/sphinxcontrib-cldomain
+
+Forked from `Sphinx Nameko Theme
+<https://github.com/nameko/sphinx-nameko-theme>`_. Which was intern
+forked from `Sphinx Readable Theme
+<https://github.com/ignacysokolowski/sphinx-readable-theme>`_, and
+combined with elements of the `Read The Docs
+<https://github.com/snide/sphinx_rtd_theme>`_ theme.
+
+
+Installation and setup
+======================
+
+
+Install from PyPI::
+
+    $ pip install sphinx-cldomain-theme
+
+And add this to your Sphinx ``conf.py``:
+
+.. code-block:: python
+
+    import sphinx_cldomain_theme
+
+    html_theme_path = [sphinx_cldomain_theme.get_html_theme_path()]
+    html_theme = 'cldomain'
+
+
+Example
+=======
+
+The official `CL Domain
+<https://sphinxcontrib-cldomain.russellsim.org/>`_ documentation uses
+this theme.
+
+License
+=======
+
+Sphinx CL Domain Theme is licensed under the MIT license.
+
+
+Changelog
+=========
+
+Version 0.0.1
+-------------
+
+Initial fork

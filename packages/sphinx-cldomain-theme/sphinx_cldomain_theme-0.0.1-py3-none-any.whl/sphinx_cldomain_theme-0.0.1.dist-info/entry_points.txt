@@ -1,0 +1,2 @@
+[sphinx_themes]
+path = sphinx_cldomain_theme:get_html_theme_path
