@@ -1,0 +1,10 @@
+pyproject.toml
+src/pip_change_repo/__init__.py
+src/pip_change_repo/__main__.py
+src/pip_change_repo/_cli.py
+src/pip_change_repo.egg-info/PKG-INFO
+src/pip_change_repo.egg-info/SOURCES.txt
+src/pip_change_repo.egg-info/dependency_links.txt
+src/pip_change_repo.egg-info/entry_points.txt
+src/pip_change_repo.egg-info/requires.txt
+src/pip_change_repo.egg-info/top_level.txt
