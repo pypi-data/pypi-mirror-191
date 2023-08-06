@@ -1,0 +1,12 @@
+pd_extras/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/check/sanitize.py,sha256=k_ALMIRKBVMxCe-9quq6TpPPcYdsPLW8k7K0s-wZJ7w,3345
+pd_extras/extra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/extra/flatten.py,sha256=Nw8cio124Bbx9Y5eUkI7Rg6bX74oPy6EHfu1tJ5ZFi4,3830
+pd_extras/extra/operations.py,sha256=fRGwzDG9vMljq4hDWjii0xh8crhhrsp31-PvcQTvti8,2681
+pd_extras/optimize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pd_extras/optimize/df_ops.py,sha256=g31d6hC5T5h4GdPTXgHPe0tktbQsEot4npZitkCCfQs,1801
+pd_extras-3.1.6.dist-info/LICENSE,sha256=kJDQNXGKS-wAqrpBRA35TWB8_dHL-Vpq6mhEgXC_mAk,1069
+pd_extras-3.1.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pd_extras-3.1.6.dist-info/METADATA,sha256=z3JoZWv8Nc97EfZ0jTwSWDIqGRja2pjtnC5hdSxqEAE,1322
+pd_extras-3.1.6.dist-info/RECORD,,

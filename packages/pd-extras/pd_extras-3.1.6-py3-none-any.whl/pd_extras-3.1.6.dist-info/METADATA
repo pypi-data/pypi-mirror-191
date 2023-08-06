@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pd-extras
+Version: 3.1.6
+Summary: Some utility functions on top of pandas.
+Home-page: https://github.com/proafxin/pandas-utils
+License: MIT
+Author: Masum Billal
+Author-email: billalmasum93@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.5.3)
+Project-URL: Documentation, https://pandas-utils.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/proafxin/pandas-utils
+Description-Content-Type: text/markdown
+
+# Pandas Utilities
+
+![Build](https://github.com/proafxin/pandas-utils/actions/workflows/tox_build.yml/badge.svg)
+![Workflow for Codecov Action](https://github.com/proafxin/pd-extras/actions/workflows/codecov.yml/badge.svg)
+[![codecov](https://codecov.io/gh/proafxin/pd-extras/branch/develop/graph/badge.svg?token=AQA0IJY4N1)](https://codecov.io/gh/proafxin/pd-extras)[![Documentation Status](https://readthedocs.org/projects/pd-extras/badge/?version=latest)](https://pd-extras.readthedocs.io/en/latest/?badge=latest)
+
+Some functions on top of pandas.
+
