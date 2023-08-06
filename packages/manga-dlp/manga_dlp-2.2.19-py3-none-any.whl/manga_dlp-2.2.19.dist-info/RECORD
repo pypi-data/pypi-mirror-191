@@ -1,0 +1,17 @@
+mangadlp/__about__.py,sha256=bCvXTPWtyIYVG2yISha1-D5DHVJ1OH-DM6TXyHxTFQQ,23
+mangadlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlp/__main__.py,sha256=pfOYlvoIlqxXtMc_W5jDOU7lqWaEi-uqlguwFLnD7D0,136
+mangadlp/app.py,sha256=j49duafItAx6goSnfKWbNU32_Viic8mqgGaitOUPBKA,14416
+mangadlp/cache.py,sha256=aFRyYEDZnU1L8BtbJw3FdIoxTvbcusHVcnZKT8iw8MM,1826
+mangadlp/cli.py,sha256=bEeeLpvCk0fnaMt-vPfxbIX4kQKsjLBwCZiQLX5Do10,6649
+mangadlp/downloader.py,sha256=G4n3WbRS8Tv8V26RF9meBRl4r_-goCxqpBUQdvl4cic,1812
+mangadlp/hooks.py,sha256=ia1Op_UJVEs0N781tFWjRiO5ojuiwW9CHCgzaWo_M04,1087
+mangadlp/logger.py,sha256=72lKzWPPTvSwU897hBerTXisbGCKST7XqWFQkRgxwEk,1264
+mangadlp/utils.py,sha256=OiHzeR1cq1XMsjO-g8OELVEjPDwhP6TFiTqWPNrA1AU,5981
+mangadlp/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mangadlp/api/mangadex.py,sha256=LYE6qvYd-PLum2Sx2-9iXCX-wboAwzLFTWt99WPOIwM,10573
+manga_dlp-2.2.19.dist-info/METADATA,sha256=le1fpVgqycNsyRqYSb2w1j95EdF06OMZyBWhGSUv3Wc,7592
+manga_dlp-2.2.19.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+manga_dlp-2.2.19.dist-info/entry_points.txt,sha256=04vaZ14r14g8qpkOyN3a9JLUaaLsp3BlwlEaKKxrj3s,77
+manga_dlp-2.2.19.dist-info/licenses/LICENSE,sha256=5Q8GAVcvvRDsV6AaceOlgoBQpQGY5LNLGgAcSPqpBXg,1070
+manga_dlp-2.2.19.dist-info/RECORD,,
