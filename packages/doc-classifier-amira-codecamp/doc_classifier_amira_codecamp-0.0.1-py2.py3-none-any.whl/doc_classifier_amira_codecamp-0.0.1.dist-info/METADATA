@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: doc-classifier_amira-codecamp
+Version: 0.0.1
+Summary: A machine learning model to classify scientific documents (articles & thesis) by field of study
+Project-URL: repository, https://github.com/amira-codecamp/doc-classifier
+Author: amira-codecamp
+License-File: LICENSE.md
+Keywords: classification,machine learning,scientific-documents
+Description-Content-Type: text/markdown
+
+#
+A machine learning model to classify scientific documents (articles & thesis) by field of study.
+#
+Training : 17976 , Test : 50558 , Accuracy : 87.32%.
+#
+Available languages : Arabic, French, English.
+#
+Labels : Sciences and technology - Matter sciences - Mathematics and computer science - Natural and life sciences - Earth and universe sciences - Economics, management and business sciences - Law and political sciences - Languages and literature - Humanities and social sciences - Sciences and techniques of physical and sports activities - Architecture, urban planning and city professions - Health sciences.
+#
+![architecture](architecture.png)
