@@ -1,0 +1,6 @@
+websocket-client
+kombu
+pydantic
+pyjwt
+
+[test]
