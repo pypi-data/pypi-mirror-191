@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: hyena-py
+Version: 0.0.1.dev1
+Summary: data purifier with schema
+Home-page: https://github.com/jrog612/hyena
+License: MIT
+Author: jrog612
+Author-email: jrog612@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/jrog612/hyena
+Description-Content-Type: text/markdown
+
+[![version badge](https://badge.fury.io/py/hyena.svg)](https://badge.fury.io/py/hyena)
+
+**hyena** is data purifier with schema
+
+## Warning
+
+This repository is on developing. Some bugs may exist, possible to change suddenly. And no document yet.
+
+
+## Installation
+
+    pip install hyena
+
