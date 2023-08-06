@@ -1,0 +1,3 @@
+[console_scripts]
+tessif=tessif.cli:main_cli_entry
+
