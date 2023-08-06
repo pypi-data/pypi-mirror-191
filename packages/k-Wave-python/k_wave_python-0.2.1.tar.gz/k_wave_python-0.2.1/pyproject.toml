@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "k-Wave-python"
+dynamic = ["version"]
+description = "Acoustics toolbox for time domain acoustic and ultrasound simulations in complex and tissue-realistic media."
+readme = "docs/README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+authors = [
+    { name = "Farid Yagubbayli", email = "farid.yagubbayli@tum.de" },
+    { name = "Walter Simson", email = "walter.simson@tum.de"}
+]
+maintainers = [
+    { name = "Walter Simson", email = "walter.simson@tum.de" },
+    { name = "Farid Yagubbayli", email = "farid.yagubbayli@tum.de" }
+]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "h5py==3.6.0",
+    "scipy==1.7.3",
+    "opencv-python==4.7.0.68",
+    "deepdiff==5.2.3",
+    "matplotlib==3.6.3",
+    "numpy>=1.22.2,<1.25.0",
+    "scikit-image==0.19.3",
+    "uff-reader==0.0.2",
+]
+
+[project.urls]
+Homepage = "http://www.k-wave.org/"
+Documentation = "https://waltersimson.com/k-wave-python/"
+Repository = "https://github.com/waltsims/k-wave-python"
+Bug-tracker = "https://github.com/waltsims/k-wave-python/issues"
+
+[project.optional-dependencies]
+test = ["pytest", "phantominator"]
+example = ["gdown==4.6.0"]
+docs = ["m2r2==0.3.2",
+    "sphinx-copybutton==0.5.1",
+    "sphinx-tabs==3.4.1",
+    "sphinx-toolbox==3.2.0",
+    "furo==2022.12.7"]
+
+[tool.hatch.version]
+path = "kwave/__init__.py"
+
+[tool.hatch.metadata]
+
+# can be removed as soon as uff is published and no longer a direct reference
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["kwave", "kwave.utils", "kwave.reconstruction", "kwave.kWaveSimulation_helper"]
+
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.github",
+    "/docs",
+    "/examples",
+    "/tests",
+    "/kwave/bin/*",
+    "*.mat",
+]
+
+[tools.pytest.ini_options]
+testpaths = ["tests"]
