@@ -1,0 +1,16 @@
+pandas
+numpy>=1.16
+matplotlib
+seaborn
+optbinning
+snowflake-connector-python
+snowflake.sqlalchemy
+sqlalchemy
+cryptography>=3.4.8
+joblib
+xgboost
+statsmodels
+hyperopt>=0.2.7
+scipy
+shap
+lightgbm
