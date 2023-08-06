@@ -1,0 +1,69 @@
+global:
+  IAMManagedPolicy:
+    - IBOX_BASE:
+        IBOX_RESNAME: IAMPolicy.IBOX_INDEXNAME
+        IBOX_OUTPUT:
+          - _:
+              IBOX_ENABLED_IF: get_endvalue(f"{IBOX_MAPNAME}Export") == True
+              Value: Ref(IBOX_RESNAME)
+              Export: Export(IBOX_RESNAME)
+        Export: True
+        PolicyDocument:
+          Statement:
+            - IBOX_LIST: {}
+          Version: "2012-10-17"
+  IAMRole:
+    - IBOX_BASE:
+        IBOX_RESNAME: Role.IBOX_INDEXNAME
+        IBOX_OUTPUT:
+          - _:
+              IBOX_ENABLED_IF: get_endvalue(f"{IBOX_MAPNAME}Export") == True
+              Value: GetAtt(IBOX_RESNAME, "Arn")
+              Export: Export(IBOX_RESNAME)
+        Export: False
+        AssumeRolePolicyDocument:
+          Statement:
+            - IBOX_LIST:
+            - 1:
+                Action: 'sts:AssumeRole'
+                Effect: Allow
+                Principal:
+                  Service:
+                    - get_endvalue(f"{IBOX_MAPNAME}Principal")
+        Path: "/"
+  IAMPolicy:
+    - IBOX_BASE:
+        IBOX_OUTPUT:
+          - _:
+              IBOX_ENABLED_IF: get_endvalue(f"{IBOX_MAPNAME}Export") == True
+              Value: Ref(IBOX_RESNAME)
+              Export: Export(IBOX_RESNAME)
+        Export: False
+        PolicyName: IBOX_INDEXNAME
+        PolicyDocument:
+          Statement:
+            - IBOX_LIST: {}
+          Version: "2012-10-17"
+  IAMUser:
+    - IBOX_BASE:
+        IBOX_LINKED_OBJ:
+          Key: SSMParameter
+          Type: UserPasswordBase
+          Conf:
+            IBOX_RESNAME: SSMParameterPassword.IBOX_INDEXNAME
+            IBOX_LINKED_OBJ_NAME: IBOX_RESNAME
+            IBOX_LINKED_OBJ_INDEX: IBOX_INDEXNAME
+        IBOX_PARAMETER:
+          - PasswordBase.IBOX_INDEXNAME:
+              Description: "Base Password, must be changed at first login"
+              NoEcho: True
+        IBOX_CONDITION:
+          - _:
+              get_condition("", "equals", "yes", f"{IBOX_RESNAME}Enabled")
+          - _RoleAccount:
+              get_condition("", "not_equals", "none", f"{IBOX_RESNAME}RoleAccount")
+        Condition: IBOX_RESNAME
+        UserName: str(IBOX_REMAPNAME)
+        LoginProfile:
+          Password: GetAtt(f"SSMParameterPassword{IBOX_INDEXNAME}", "Value")
+          PasswordResetRequired: True

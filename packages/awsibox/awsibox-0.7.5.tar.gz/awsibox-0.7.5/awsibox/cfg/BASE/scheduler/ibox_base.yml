@@ -1,0 +1,37 @@
+global:
+  SchedulerSchedule:
+    - IBOX_BASE:
+        Description: "Events Rule Schedule - empty for default based on mapping"
+        ScheduleExpression.IBOX_AUTO_PO: {}
+        State.IBOX_AUTO_PO: {}
+        Target:
+          RoleArn: ImportValue("RoleSchedulerExecution")
+    - TargetLambda:
+        IBOX_BASE_SKIP: True
+        IBOX_ENABLED: False
+        IBOX_LINKED_OBJ:
+          Lambda:
+            Key: LambdaPermission
+            Type: SchedulerSchedule
+            Name: LambdaPermission.IBOX_RESNAME
+            Conf:
+              IBOX_RESNAME: LambdaPermission.IBOX_RESNAME
+              IBOX_LINKED_OBJ_NAME: getattr(cfg, f"{IBOX_RESNAME}TargetArn")
+              IBOX_LINKED_OBJ_INDEX: GetAtt("IBOX_RESNAME", 'Arn')
+    - TargetECSCluster:
+        IBOX_BASE_SKIP: True
+        IBOX_ENABLED: False
+        Target:
+          Arn: 'get_subvalue("arn:aws:ecs:${AWS::Region}:${AWS::AccountId}:cluster/${1E}", "Cluster", stack="ClusterStack")'
+          EcsParameters:
+            LaunchType: get_endvalue("ServiceBaseLaunchType")
+            NetworkConfiguration:
+              IBOX_IF:
+                - ECSTaskDefinitionBaseNetworkModeAwsVpc
+                - IBOX_IFVALUE
+                - Ref("AWS::NoValue")
+              AwsvpcConfiguration:
+                SecurityGroups: cfg.SecurityGroupsImport
+                Subnets: Split(",", get_expvalue("SubnetsPrivate"))
+            TaskDefinitionArn: Ref("TaskDefinition")
+          RoleArn: get_expvalue("RoleECSEvents")
