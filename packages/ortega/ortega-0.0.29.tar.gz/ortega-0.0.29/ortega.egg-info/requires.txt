@@ -1,0 +1,10 @@
+numpy
+pandas
+shapely
+attrs
+matplotlib
+statistics
+geographiclib
+seaborn
+typing_extensions
+utm
