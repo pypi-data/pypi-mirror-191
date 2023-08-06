@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tkapps_py_packages"
+version = "0.1.2"
+authors = [
+  { name="Gyan Ranjan", email="granjan@tekion.com" },
+  { name="Sasidhar Janne", email="sjanne@tekion.com"},
+]
+description = "A common package to be used across multiple projects"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
