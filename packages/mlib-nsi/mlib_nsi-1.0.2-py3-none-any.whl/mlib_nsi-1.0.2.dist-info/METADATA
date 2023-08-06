@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mlib-nsi
+Version: 1.0.2
+Summary: MLib is a little python library make by a 12 degrees french students
+Author-email: Matt_o <mmattmmo@gmail.com>
+License: MIT License
+        
+        Copyright (c) [2023] [Matt_o]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://matto.glitch.me/?mlib=go
+Keywords: feed,reader,tutorial
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pygame
+Requires-Dist: Pillow
+Requires-Dist: pyperclip
+
+<h1>MLib</h1>
+
+MLib is a simple python library made by a 12th degrees french student, for others 12 and 13th degrees students with the ISN speciality education.
+It use pygame to displays graphics content.
+For now, the main goal is to provide a GUI library.
+
+For more documentation, go to this website (he is written in french) : https://matto.glitch.me/?mlib=go.
+
+<h2>MGui</h2>
+
+MGui allows the use of an GUI to make easily a GUI app.
