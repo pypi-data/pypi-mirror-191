@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@id='general']" position="after">
+
+        <page name="account" string="Account and Tax" col="6">
+            <label name="account"/>
+            <field name="account"/>
+            <newline/>
+
+            <label name="tax0"/>
+            <field name="tax0"/>
+            <label name="tax1"/>
+            <field name="tax1"/>
+            <label name="tax2"/>
+            <field name="tax2"/>
+        </page>
+
+    </xpath>
+
+</data>

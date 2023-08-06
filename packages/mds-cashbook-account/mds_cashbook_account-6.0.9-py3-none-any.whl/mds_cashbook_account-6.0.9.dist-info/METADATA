@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: mds-cashbook-account
+Version: 6.0.9
+Summary: Tryton module to add accounts to cashbook.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Keywords: tryton cashbook account
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: mds-cashbook (<=6.0.999,>=6.0.25)
+Requires-Dist: trytond (<6.1,>=6.0)
+Requires-Dist: trytond-account (<6.1,>=6.0)
+
+mds-cashbook-account
+====================
+Tryton module to add accounts to cashbook.
+
+Install
+=======
+
+pip install mds-cashbook-account
+
+Requires
+========
+- Tryton 6.0
+
+Changes
+=======
+
+*6.0.9 - 14.02.2023*
+
+- fix: form-xpath, rec_name in tax
+
+*6.0.8 - 04.10.2022*
+
+- updt: optimized second currency support
+
+*6.0.7 - 30.09.2022*
+
+- add: taxes
+
+*6.0.6 - 13.09.2022*
+
+- booking of transfer in split-line
+
+*6.0.5 - 07.09.2022*
+
+- updt: permissions
+
+*6.0.4 - 05.09.2022*
+
+- updt: view of book optimized
+
+*6.0.3 - 05.09.2022*
+
+- fix: category view
+
+*6.0.2 - 25.08.2022*
+
+- add: split-bookings
+
+*6.0.1 - 23.08.2022*
+
+- works
+
+*6.0.0 - 15.08.2022*
+
+- init
+
+

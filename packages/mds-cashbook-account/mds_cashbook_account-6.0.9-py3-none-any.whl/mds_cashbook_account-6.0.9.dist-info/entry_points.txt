@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    cashbook_account = trytond.modules.cashbook_account
+    

@@ -1,0 +1,316 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.message,text:msg_category_account_unique"
+msgid "The account is already in use for a category."
+msgstr "The account is already in use for a category."
+
+msgctxt "model:ir.message,text:msg_line_missing_category_account"
+msgid "There is no account associated with the '%(catname)s' category."
+msgstr "There is no account associated with the '%(catname)s' category."
+
+msgctxt "model:ir.message,text:msg_line_missing_book_account"
+msgid "There is no account associated with the '%(bookname)s' cashbook."
+msgstr "There is no account associated with the '%(bookname)s' cashbook."
+
+msgctxt "model:ir.message,text:msg_line_missing_tax"
+msgid "There is no tax associated with the '%(catname)s' category."
+msgstr "There is no tax associated with the '%(catname)s' category."
+
+msgctxt "model:ir.message,text:msg_line_amount_none"
+msgid "The amount for '%(taxname)s' in the line '%(linename)s' cannot be empty."
+msgstr "The amount for '%(taxname)s' in the line '%(linename)s' cannot be empty."
+
+msgctxt "model:ir.message,text:msg_line_tax_tax0"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "model:ir.message,text:msg_line_tax_tax1"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "model:ir.message,text:msg_line_tax_tax2"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "model:ir.message,text:msg_line_netamount"
+msgid "Net"
+msgstr "Net"
+
+msgctxt "model:ir.message,text:msg_line_total_mismatch"
+msgid "In the line '%(linename)s' is the sum of taxes and net is not equal to the gross amount."
+msgstr "In the line '%(linename)s' is the sum of taxes and net is not equal to the gross amount."
+
+msgctxt "model:ir.message,text:msg_line_tax_must_disabled"
+msgid "In the line '%(linename)s' the fields for taxes must be inactive for the current bookingtype."
+msgstr "In the line '%(linename)s' the fields for taxes must be inactive for the current bookingtype."
+
+msgctxt "view:cashbook.book:"
+msgid "Account Configuration"
+msgstr "Account Configuration"
+
+msgctxt "field:cashbook.book,account:"
+msgid "Account"
+msgstr "Account"
+
+msgctxt "field:cashbook.book,journal:"
+msgid "Journal"
+msgstr "Journal"
+
+msgctxt "field:cashbook.book,party_account:"
+msgid "Involve party accounts"
+msgstr "Involve party accounts"
+
+msgctxt "help:cashbook.book,party_account:"
+msgid "The Receivable/Payable accounts of the party are included in move line records."
+msgstr "The Receivable/Payable accounts of the party are included in move line records."
+
+msgctxt "view:cashbook.line:"
+msgid "Moves"
+msgstr "Moves"
+
+msgctxt "view:cashbook.line:"
+msgid "Net and Tax Amounts"
+msgstr "Net and Tax Amounts"
+
+msgctxt "view:cashbook.line:"
+msgid "Tax Lines"
+msgstr "Tax Lines"
+
+msgctxt "view:cashbook.line:"
+msgid "If you want to specify taxes, turn on the appropriate fields."
+msgstr "If you want to specify taxes, turn on the appropriate fields."
+
+msgctxt "view:cashbook.line:"
+msgid "The values are automatically calculated based on the tax stored in the category."
+msgstr "The values are automatically calculated based on the tax stored in the category."
+
+msgctxt "field:cashbook.line,moves:"
+msgid "Moves"
+msgstr "Moves"
+
+msgctxt "field:cashbook.line,account_cashbook:"
+msgid "Account Cashbook"
+msgstr "Account Cashbook"
+
+msgctxt "field:cashbook.line,amount_net:"
+msgid "Net"
+msgstr "Net"
+
+msgctxt "help:cashbook.line,amount_net:"
+msgid "Net Amount of current booking."
+msgstr "Net Amount of current booking."
+
+msgctxt "field:cashbook.line,amount_tax0:"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "field:cashbook.line,ena_tax0:"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "field:cashbook.line,avail_tax0:"
+msgid "Tax Null available"
+msgstr "Tax Null available"
+
+msgctxt "field:cashbook.line,amount_tax1:"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "field:cashbook.line,ena_tax1:"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "field:cashbook.line,avail_tax1:"
+msgid "Tax Half available"
+msgstr "Tax Half available"
+
+msgctxt "field:cashbook.line,amount_tax2:"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "field:cashbook.line,ena_tax2:"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "field:cashbook.line,avail_tax2:"
+msgid "Tax Full available"
+msgstr "Tax Full available"
+
+msgctxt "field:cashbook.line,taxes:"
+msgid "Tax Lines"
+msgstr "Tax Lines"
+
+msgctxt "view:cashbook.split:"
+msgid "Net and Tax Amounts"
+msgstr "Net and Tax Amounts"
+
+msgctxt "view:cashbook.split:"
+msgid "If you want to specify taxes, turn on the appropriate fields."
+msgstr "If you want to specify taxes, turn on the appropriate fields."
+
+msgctxt "view:cashbook.split:"
+msgid "The values are automatically calculated based on the tax stored in the category."
+msgstr "The values are automatically calculated based on the tax stored in the category."
+
+msgctxt "field:cashbook.split,amount_net:"
+msgid "Net"
+msgstr "Net"
+
+msgctxt "help:cashbook.split,amount_net:"
+msgid "Net Amount of current booking."
+msgstr "Net Amount of current booking."
+
+msgctxt "field:cashbook.split,amount_tax0:"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "field:cashbook.split,ena_tax0:"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "field:cashbook.split,avail_tax0:"
+msgid "Tax Null available"
+msgstr "Tax Null available"
+
+msgctxt "field:cashbook.split,amount_tax1:"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "field:cashbook.split,ena_tax1:"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "field:cashbook.split,avail_tax1:"
+msgid "Tax Half available"
+msgstr "Tax Half available"
+
+msgctxt "field:cashbook.split,amount_tax2:"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "field:cashbook.split,ena_tax2:"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "field:cashbook.split,avail_tax2:"
+msgid "Tax Full available"
+msgstr "Tax Full available"
+
+msgctxt "model:cashbook_account.tax,name:"
+msgid "Tax Line"
+msgstr "Tax Line"
+
+msgctxt "field:cashbook_account.tax,line:"
+msgid "Line"
+msgstr "Line"
+
+msgctxt "field:cashbook_account.tax,splitline:"
+msgid "Split Booking"
+msgstr "Split Booking"
+
+msgctxt "field:cashbook_account.tax,tax:"
+msgid "Tax"
+msgstr "Tax"
+
+msgctxt "field:cashbook_account.tax,base:"
+msgid "Base"
+msgstr "Base"
+
+msgctxt "field:cashbook_account.tax,amount:"
+msgid "Amount"
+msgstr "Amount"
+
+msgctxt "field:cashbook_account.tax,currency:"
+msgid "Currency"
+msgstr "Currency"
+
+msgctxt "field:cashbook_account.tax,currency_digits:"
+msgid "Currency Digits"
+msgstr "Currency Digits"
+
+msgctxt "field:cashbook_account.tax,bookingtype:"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Revenue"
+msgstr "Revenue"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Revenue Splitbooking"
+msgstr "Revenue Splitbooking"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Expense"
+msgstr "Expense"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Expense Splitbooking"
+msgstr "Expense Splitbooking"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Transfer from"
+msgstr "Transfer from"
+
+msgctxt "selection:cashbook_account.tax,bookingtype:"
+msgid "Transfer to"
+msgstr "Transfer to"
+
+msgctxt "field:cashbook_account.tax,state:"
+msgid "State"
+msgstr "State"
+
+msgctxt "selection:cashbook_account.tax,state:"
+msgid "Edit"
+msgstr "Edit"
+
+msgctxt "selection:cashbook_account.tax,state:"
+msgid "Checked"
+msgstr "Checked"
+
+msgctxt "selection:cashbook_account.tax,state:"
+msgid "Done"
+msgstr "Done"
+
+msgctxt "field:cashbook_account.tax,state_cashbook:"
+msgid "State of Cashbook"
+msgstr "State of Cashbook"
+
+msgctxt "view:cashbook.category:"
+msgid "Account and Tax"
+msgstr "Account and Tax"
+
+msgctxt "field:cashbook.category,account:"
+msgid "Account"
+msgstr "Account"
+
+msgctxt "field:cashbook.category,account_code:"
+msgid "Account"
+msgstr "Account"
+
+msgctxt "field:cashbook.category,tax0:"
+msgid "Tax Null"
+msgstr "Tax Null"
+
+msgctxt "field:cashbook.category,tax1:"
+msgid "Tax Half"
+msgstr "Tax Half"
+
+msgctxt "field:cashbook.category,tax2:"
+msgid "Tax Full"
+msgstr "Tax Full"
+
+msgctxt "field:cashbook.configuration,cataccno:"
+msgid "Category: Show account number"
+msgstr "Category: Show account number"
+
+msgctxt "help:cashbook.configuration,cataccno:"
+msgid "Shows the number of the linked account in the name of a category."
+msgstr "Shows the number of the linked account in the name of a category."
+
+msgctxt "field:cashbook.configuration_user,cataccno:"
+msgid "Category: Show account number"
+msgstr "Category: Show account number"
+

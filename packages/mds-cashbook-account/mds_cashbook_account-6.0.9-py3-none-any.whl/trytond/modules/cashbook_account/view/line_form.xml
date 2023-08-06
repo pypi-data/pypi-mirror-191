@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@name='references']" position="after">
+
+        <page name="moves" col="1" string="Moves">
+            <field name="moves"/>
+            <field name="party_required"/>
+        </page>
+
+    </xpath>
+
+    <xpath expr="/form/notebook/page[@name='references']" position="before">
+
+        <page name="amount_net" col="6" string="Net and Tax Amounts">
+            <label name="amount_net"/>
+            <field name="amount_net" symbol="currency"/>
+            <newline/>
+
+            <label name="ena_tax0" colspan="2" xalign="0.0"/>
+            <label name="ena_tax1" colspan="2" xalign="0.0"/>
+            <label name="ena_tax2" colspan="2" xalign="0.0"/>
+
+            <field name="ena_tax0" xexpand="0"/>
+            <field name="amount_tax0" symbol="currency"/>
+
+            <field name="ena_tax1" xexpand="0"/>
+            <field name="amount_tax1" symbol="currency"/>
+
+            <field name="ena_tax2" xexpand="0"/>
+            <field name="amount_tax2" symbol="currency"/>
+
+            <field name="avail_tax0"/>
+            <field name="avail_tax1"/>
+            <field name="avail_tax2"/>
+
+            <label id="lab0" xalign="0.0" colspan="6" string=" "/>
+            <label id="lab1" xalign="0.0" colspan="6"
+                string="If you want to specify taxes, turn on the appropriate fields."/>
+            <label id="lab2" xalign="0.0" colspan="6"
+                string="The values are automatically calculated based on the tax stored in the category."/>
+        </page>
+        <page name="taxes" col="1" string="Tax Lines">
+            <field name="taxes"/>
+        </page>
+
+    </xpath>
+
+</data>

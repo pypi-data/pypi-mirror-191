@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.message" id="msg_category_account_unique">
+            <field name="text">The account is already in use for a category.</field>
+        </record>
+        <record model="ir.message" id="msg_line_missing_category_account">
+            <field name="text">There is no account associated with the '%(catname)s' category.</field>
+        </record>
+        <record model="ir.message" id="msg_line_missing_book_account">
+            <field name="text">There is no account associated with the '%(bookname)s' cashbook.</field>
+        </record>
+        <record model="ir.message" id="msg_line_missing_tax">
+            <field name="text">There is no tax associated with the '%(catname)s' category.</field>
+        </record>
+        <record model="ir.message" id="msg_line_amount_none">
+            <field name="text">The amount for '%(taxname)s' in the line '%(linename)s' cannot be empty.</field>
+        </record>
+        <record model="ir.message" id="msg_line_tax_tax0">
+            <field name="text">Tax Null</field>
+        </record>
+        <record model="ir.message" id="msg_line_tax_tax1">
+            <field name="text">Tax Half</field>
+        </record>
+        <record model="ir.message" id="msg_line_tax_tax2">
+            <field name="text">Tax Full</field>
+        </record>
+        <record model="ir.message" id="msg_line_netamount">
+            <field name="text">Net</field>
+        </record>
+        <record model="ir.message" id="msg_line_total_mismatch">
+            <field name="text">In the line '%(linename)s' is the sum of taxes and net is not equal to the gross amount.</field>
+        </record>
+        <record model="ir.message" id="msg_line_tax_must_disabled">
+            <field name="text">In the line '%(linename)s' the fields for taxes must be inactive for the current bookingtype.</field>
+        </record>
+
+    </data>
+</tryton>

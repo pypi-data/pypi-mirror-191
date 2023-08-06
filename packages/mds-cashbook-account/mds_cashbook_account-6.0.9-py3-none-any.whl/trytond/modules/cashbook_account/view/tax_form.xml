@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form col="4">
+    <label name="line"/>
+    <field name="line"/>
+    <label name="splitline"/>
+    <field name="splitline"/>
+
+    <label name="tax"/>
+    <field name="tax"/>
+    <newline/>
+
+    <label name="base"/>
+    <field name="base" symbol="currency"/>
+    <label name="amount"/>
+    <field name="amount" symbol="currency"/>
+</form>
