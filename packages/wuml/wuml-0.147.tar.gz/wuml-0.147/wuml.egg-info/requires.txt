@@ -1,0 +1,12 @@
+matplotlib==3.6.1
+wplotlib
+sklearn
+shap
+ppscore
+numpy==1.21.4
+ipython
+imbalanced-learn
+pandas
+xgboost
+POT
+torch
