@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jobs_supervisor/FeishuBot.py
+src/jobs_supervisor/__init__.py
+src/jobs_supervisor/jobs_supervisor.py
+src/jobs_supervisor/supervise_jobs.py
+src/jobs_supervisor.egg-info/PKG-INFO
+src/jobs_supervisor.egg-info/SOURCES.txt
+src/jobs_supervisor.egg-info/dependency_links.txt
+src/jobs_supervisor.egg-info/entry_points.txt
+src/jobs_supervisor.egg-info/requires.txt
+src/jobs_supervisor.egg-info/top_level.txt
+src/jobs_supervisor.egg-info/zip-safe
