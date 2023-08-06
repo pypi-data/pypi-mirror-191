@@ -1,0 +1,11 @@
+virtualenvwrapper/hook_loader.py,sha256=YW98vTEoWJWIsl7SAaGoPETb_Ni6Y2X5J2D0kh0Ibrg,6870
+virtualenvwrapper/project.py,sha256=IptaA-j6xe5-OTGK0WBlr2oLy5DxCHPyoYXmzlD0L_U,1411
+virtualenvwrapper/user_scripts.py,sha256=-qN8zepMAFW2PusGmi0tuBPX7W9CHRMm63lRM6ftix0,9398
+virtualenvwrapper-0.0.0.data/scripts/virtualenvwrapper.sh,sha256=czgLuWPSZFDCVslu_heJKWM_6MJWlVJi4ibp5Pcj_RY,42556
+virtualenvwrapper-0.0.0.data/scripts/virtualenvwrapper_lazy.sh,sha256=eDsBBT2GUsLdPWC7lNdJjgpPCbwzmUD0Hzy2HOcNzcw,2210
+virtualenvwrapper-0.0.0.dist-info/LICENSE,sha256=Q7nymeNOCB_ySQS5uokKRcmz2hWnT2ckt1m7ktAcUe0,952
+virtualenvwrapper-0.0.0.dist-info/METADATA,sha256=sieE4JsTxlNXT7jjVqLsamM-PxwBU7gv-wb4fWCDRwI,4902
+virtualenvwrapper-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+virtualenvwrapper-0.0.0.dist-info/entry_points.txt,sha256=T_YeOFtChl0lDUQockizyDvZgV9f5aYAZ4SymRvzDZQ,1662
+virtualenvwrapper-0.0.0.dist-info/top_level.txt,sha256=dMyzcfQMYyC3JQ15o2vhaoSkzzB9wm6UgJ8lkmbxlHg,18
+virtualenvwrapper-0.0.0.dist-info/RECORD,,
