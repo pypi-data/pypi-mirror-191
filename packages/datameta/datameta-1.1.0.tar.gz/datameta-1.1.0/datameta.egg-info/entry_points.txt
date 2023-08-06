@@ -1,0 +1,5 @@
+[console_scripts]
+initialize_datameta_db = datameta.scripts.initialize_db:main
+
+[paste.app_factory]
+main = datameta:main
