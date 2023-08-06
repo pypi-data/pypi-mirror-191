@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+BRL/__init__.py
+BRL/formatar.py
+format_BRL.egg-info/PKG-INFO
+format_BRL.egg-info/SOURCES.txt
+format_BRL.egg-info/dependency_links.txt
+format_BRL.egg-info/top_level.txt
