@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ev-manager
+Version: 0.0.1
+Summary: Bind functions to events that can be called from any other script at any time.
+Home-page: https://github.com/nils-soderman/event-manager
+Author: Nils Soderman
+Keywords: event,manager,bind,subscribe,fire,function,callback
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# event-manager
+
+Useful when working with DCCs like Maya, MotionBuilder, Unreal Engine, etc. and you want different tools/scripts to communicate with each other.
+
+## Installation:
+```batch
+pip install ev-manager
+```
+
+## Examples:
+
+```python
+import ev_manager
+
+def hello_world():
+    print("Hello World")
+
+ev_manager.bind(hello_world, "MyEvent")
+```
+
+```python
+>>> import ev_manager
+>>> ev_manager.emit("MyEvent")
+>>> "Hello World"
+```
+
+## Limitations:
+Events are per Python instance. So they will for example not be communicating between different applications.

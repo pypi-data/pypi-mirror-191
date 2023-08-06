@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+ev_manager/__init__.py
+ev_manager/ev_manager.py
+ev_manager.egg-info/PKG-INFO
+ev_manager.egg-info/SOURCES.txt
+ev_manager.egg-info/dependency_links.txt
+ev_manager.egg-info/top_level.txt
