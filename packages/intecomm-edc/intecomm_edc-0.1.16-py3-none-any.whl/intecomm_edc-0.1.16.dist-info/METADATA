@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: intecomm-edc
+Version: 0.1.16
+Summary: INTECOMM Trial EDC (http://www.isrctn.com/ISRCTN76157257)
+Home-page: https://github.com/intecomm-trial/intecomm-edc
+Author: Erik van Widenfelt
+Author-email: ew2789@gmail.com
+License: GPL license, see LICENSE
+Keywords: django edc INTECOMM EDC,clinicedc,clinical trials
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: edc (==0.4.69)
+Requires-Dist: beautifulsoup4
+Requires-Dist: canned-views
+Requires-Dist: edc-microscopy (==0.1.0)
+Requires-Dist: edc-rx (==0.1.1)
+Requires-Dist: intecomm-eligibility (==0.1.3)
+Requires-Dist: intecomm-form-validators (==0.1.10)
+Requires-Dist: intecomm-rando (==0.1.4)
+
+|pypi| |actions| |codecov| |downloads|
+
+
+
+intecomm-edc
+------------
+
+
+Controlling chronic diseases in Africa: Development and evaluation of an integrated community-based management model for HIV, Diabetes and Hypertension in Tanzania and Uganda (INTE-COMM study)
+
+
+Liverpool School of Tropical Medicine
+
+
+http://www.isrctn.com/ISRCTN15319595
+
+
+See also https://github.com/clinicedc/edc
+
+
+
+Installation
+------------
+
+... in development
+
+.. |pypi| image:: https://img.shields.io/pypi/v/intecomm-edc.svg
+    :target: https://pypi.python.org/pypi/intecomm-edc
+
+.. |actions| image:: https://github.com/intecomm-trial/intecomm-edc/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/intecomm-trial/intecomm-edc/actions?query=workflow:build
+
+.. |codecov| image:: https://codecov.io/gh/intecomm-trial/intecomm-edc/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/intecomm-trial/intecomm-edc
+
+.. |downloads| image:: https://pepy.tech/badge/intecomm-edc
+   :target: https://pepy.tech/project/intecomm-edc
