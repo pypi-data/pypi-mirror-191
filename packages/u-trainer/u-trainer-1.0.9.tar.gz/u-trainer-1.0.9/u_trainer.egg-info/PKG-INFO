@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: u-trainer
+Version: 1.0.9
+Summary: trainer
+Home-page: https://github.com/geasyheart/u-trainer
+Author: yuzhang
+Author-email: geasyheart@163.com
+License: MIT
+Description: ## install
+        
+        ```bash
+        pip install u-trainer
+        ```
+        
+        
+        ## build package
+        
+        ```bash
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
+        
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
