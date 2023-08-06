@@ -1,0 +1,4 @@
+[console_scripts]
+IsoDetect = MassiveQC.IsoDetect:main
+MultiQC = MassiveQC.MultiProcess:main
+SingleQC = MassiveQC.SingleProcess:main

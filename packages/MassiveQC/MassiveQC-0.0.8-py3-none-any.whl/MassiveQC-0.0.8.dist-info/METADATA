@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: MassiveQC
+Version: 0.0.8
+Summary: Tools for QC massive RNA-seq samples
+Home-page: https://github.com/shimw6828/MassiveQC
+Author: shimw6828
+Author-email: shimw6828@qq.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: shap
+Requires-Dist: xopen
+Requires-Dist: NumPy
+Requires-Dist: Pandas (>=1.3.2)
+Requires-Dist: fastparquet
+Requires-Dist: more-itertools
+Requires-Dist: tqdm
+
