@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: coverage-rich
+Version: 0.0.0
+Summary: A rich terminal report for coveragepy.
+Project-URL: Documentation, https://github.com/waylonwalker/coverage-rich#readme
+Project-URL: Issues, https://github.com/waylonwalker/coverage-rich/issues
+Project-URL: Source, https://github.com/waylonwalker/coverage-rich
+Project-URL: Changelog, https://github.com/waylonwalker/coverage-rich
+Author-email: "Waylon S. Walker" <waylon@waylonwalker.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: anyconfig
+Requires-Dist: coverage
+Requires-Dist: rich
+Requires-Dist: textual
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# coverage-rich
+
+[![PyPI - Version](https://img.shields.io/pypi/v/coverage-rich.svg)](https://pypi.org/project/coverage-rich)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/coverage-rich.svg)](https://pypi.org/project/coverage-rich)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install coverage-rich
+```
+
+## License
+
+`coverage-rich` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
