@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: telaio
+Version: 0.0.3
+Summary: A toolset to work with video files
+Author-email: Dzmitry Plashchynski <plashchynski@gmail.com>
+Project-URL: Homepage, https://github.com/plashchynski/telaio
+Project-URL: Bug Tracker, https://github.com/plashchynski/telaio/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: av (>=10.0.0)
+Requires-Dist: numpy (>=1.18.5)
+Requires-Dist: ffmpeg-python (>=0.2.0)
+Requires-Dist: opencv-python (>=4.7.0.68)
+
+# Telaio
+A toolset to work with video files.
+
+## Requirements
+
+[ffmpeg](https://ffmpeg.org/) is required to run this package. It can be installed with:
+
+```bash
+sudo apt install ffmpeg # for Debian-based systems
+yum install ffmpeg # for Red Hat-based systems
+brew install ffmpeg # for macOS
+```
+
+## Installation
+
+```bash
+pip install telaio
+```
+
+To install the package locally, run:
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+```python
+from telaio import VideoFile
+
+video = VideoFile("path/to/video.mp4")
+
+video.fps # Average frames per second for the video
+video.width # Width of the video frames
+video.height # Height of the video frames
+video.frames_count # Number of frames in the video
+
+video.first_frame() # Get the first frame of the video
+
+# Memory efficient way to iterate over the frames:
+for (frame_id, frame_data) in video.frames():
+    print(frame_id, frame_data.shape)
+```
