@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+0.12.3
+------
+
+* Make new attributes available for HA (#517)
