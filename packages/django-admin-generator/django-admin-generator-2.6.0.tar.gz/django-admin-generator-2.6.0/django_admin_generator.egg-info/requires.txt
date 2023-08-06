@@ -1,0 +1,14 @@
+django-utils2>=2.12.1
+python-utils>=3.5.2
+six
+
+[docs]
+django>=3.2
+mock
+sphinx>=1.6.0
+
+[tests]
+pytest
+pytest-cov
+pytest-django
+flake8
