@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: scape-sc
+Version: 0.1.0
+Summary: Single-Cell data Analysis via Perturbation Estimation
+Author-email: Yuzhe Li <liyuzhezju@gmail.com>
+Project-URL: Homepage, https://github.com/ericli0419/SCAPE
+Project-URL: Bug Tracker, https://github.com/ericli0419/SCAPE/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Stars](https://img.shields.io/github/stars/ericli0419/SPACE?logo=GitHub&color=yellow)](https://github.com/ericli0419/SPACE) [![PyPI](https://img.shields.io/pypi/v/space-srt.svg)](https://pypi.org/project/space-srt)
+
+# **SP**atial transcriptomics **A**nalysis via **C**ell **E**mbedding
+
+## Installation  	
+#### install from PyPI
+
+```shell
+pip install space-srt
+```
+
+#### install from GitHub
+
+install the latest develop version
+
+```shell
+git clone https://github.com/ericli0419/SPACE.git
+cd SPACE
+python setup.py install
+```
+
+SPACE is implemented in [Pytorch](https://pytorch.org/) framework.  
+SPACE can be run on CPU devices, and running SPACE on GPU devices if available is recommended.   
+
