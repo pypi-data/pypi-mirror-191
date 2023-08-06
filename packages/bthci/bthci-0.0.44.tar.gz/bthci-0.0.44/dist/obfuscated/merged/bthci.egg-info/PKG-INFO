@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bthci
+Version: 0.0.44
+Summary: Bluetooth HCI Utilities
+Home-page: https://pypi.org/project/bthci
+Author: Cibo
+Author-email: cibo@bio-electric.com
+License: Proprietary
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# bthci ---- Bluetooth HCI Utilities
+
+## Introduction
+
+Currently, bthci is neither an open source software or the GNU defined free software.
