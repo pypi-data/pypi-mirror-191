@@ -1,0 +1,9 @@
+chipmunk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunk/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunk/common/geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chipmunk/common/geometry/point.py,sha256=yBxmg9iX6xWByv930kw1TrJIruK8obxrBwAcpTYyk7g,21
+chipmunk_cad-0.0.1.dist-info/LICENSE,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+chipmunk_cad-0.0.1.dist-info/METADATA,sha256=XtCxXdnzPXdwe-TzW_GC_sQHpn3E6hOAGMOcy7lZKTo,484
+chipmunk_cad-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+chipmunk_cad-0.0.1.dist-info/top_level.txt,sha256=vz0RshgQ-qPWjibIWU9oh3EKttpupn87UBuESKI_6Sw,9
+chipmunk_cad-0.0.1.dist-info/RECORD,,
