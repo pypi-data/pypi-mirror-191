@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: serverdb
+Version: 0.1.0
+Summary: asd
+Home-page: https://github.com/ZziriosS/serverdb
+Download-URL: https://github.com/ZziriosS/serverdb/archive/v0.1.0
+Author: ZziriosS
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+
+serverdb

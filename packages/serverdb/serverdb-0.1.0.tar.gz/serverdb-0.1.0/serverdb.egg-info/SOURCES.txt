@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+serverdb/__init__.py
+serverdb.egg-info/PKG-INFO
+serverdb.egg-info/SOURCES.txt
+serverdb.egg-info/dependency_links.txt
+serverdb.egg-info/requires.txt
+serverdb.egg-info/top_level.txt
