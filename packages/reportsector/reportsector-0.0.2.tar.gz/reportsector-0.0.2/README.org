@@ -1,0 +1,21 @@
+cd reportsector
+
+#+begin_example
+vagrant destroy --force
+vagrant up
+source .venv/bin/activate
+python main.py
+./cache.sh # cache to mbp/workstation
+./vagrant_upload.sh
+vagrant ssh
+sudo ./misc.sh
+./install.sh # dont run as sudo because nerdctl-full-${version}-linux-amd64/bin/containerd-rootless-setuptool.sh install needs to run as regular user
+nerdctl run -it --rm alpine cat /etc/os-release
+time sudo kubeadm config images pull --v=100 # takes 5m at starbucks, 30s at home
+sudo kubeadm init --v=100
+
+# To start using your cluster, you need to run the following as a regular user:
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+#+end_example
