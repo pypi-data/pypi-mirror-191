@@ -1,0 +1,12 @@
+udm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+udm/commandline.py,sha256=eJagmuF0pMl-h4M8sh-zEK5WcyPVo9eNlrr1Z4EZh24,8291
+udm/configs.py,sha256=_ROLynD5YpCK037zPdlJHbWNo5UiX8f6OAcwvygGgoY,3008
+udm/dependency.py,sha256=ztasASsdvzfI-dRHwTIpv5DGLXaxeldKD_0_sirli8M,12504
+udm/main.py,sha256=nHz4UiaO46A63p9zvS88kXv3mOAwXi_tZdSNO0Lp2WQ,3479
+udm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyudm-1.0.0.dist-info/LICENSE,sha256=qghB5mH0LsMrn1C_P41plXnKVt8VGzWu3LyA9Zb3Uak,18031
+pyudm-1.0.0.dist-info/METADATA,sha256=ofEqfraJUTZROX6QxzFN4LJhwHx4XC_eUNEwqv6KQPg,636
+pyudm-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyudm-1.0.0.dist-info/entry_points.txt,sha256=NUIyxJvjPExnfENQT8cuEtX7IlVAUw6-soO6_RxORQQ,38
+pyudm-1.0.0.dist-info/top_level.txt,sha256=1agmU3ZDjSp1eIaYODTcvmFOX1MRAd-lR3dnzoHh5pk,4
+pyudm-1.0.0.dist-info/RECORD,,
