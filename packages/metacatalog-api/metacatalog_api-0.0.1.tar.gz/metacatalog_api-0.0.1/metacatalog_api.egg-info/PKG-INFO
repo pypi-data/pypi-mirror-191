@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: metacatalog-api
+Version: 0.0.1
+Summary: Lightweight FastAPI server for metacatalog
+Author: Mirko Mälicke
+Author-email: mirko.maelicke@kit.edu
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# metacatalog_api
+Lightweight FastAPI server for metacatalog
