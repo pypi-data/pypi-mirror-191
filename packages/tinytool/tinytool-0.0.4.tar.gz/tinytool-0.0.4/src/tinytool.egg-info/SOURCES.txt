@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/tinytool/NetTools.py
+src/tinytool/XlsxTools.py
+src/tinytool/__init__.py
+src/tinytool.egg-info/PKG-INFO
+src/tinytool.egg-info/SOURCES.txt
+src/tinytool.egg-info/dependency_links.txt
+src/tinytool.egg-info/top_level.txt
