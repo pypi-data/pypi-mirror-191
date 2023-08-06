@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tweakpane"
+dynamic = ["version"]
+description = "Python bindings for Tweakpane UI"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+keywords = []
+authors = [
+  { name = "Trevor Manz", email = "trevor.j.manz@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+  "anywidget"
+]
+
+[project.urls]
+Documentation = "https://github.com/manzt/ipytweakpane#readme"
+Issues = "https://github.com/manzt/ipytweakpane/issues"
+Source = "https://github.com/manzt/ipytweakpane"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "black",
+  "isort",
+]
+[tool.hatch.envs.default.scripts]
+fmt = "isort --profile black . && black ."
+
+[tool.isort]
+profile = "black"
