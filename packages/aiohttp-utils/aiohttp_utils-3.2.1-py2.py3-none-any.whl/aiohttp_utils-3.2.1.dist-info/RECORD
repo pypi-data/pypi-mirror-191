@@ -1,0 +1,10 @@
+aiohttp_utils/__init__.py,sha256=sDDLm902oNCPeEyNZOyvFuyGszpPRQbz10-_zW3qE80,271
+aiohttp_utils/constants.py,sha256=VjyXBc2JEP56jF_l1qWrSYmvCg2DSHA8CvF2KjJ3FDU,146
+aiohttp_utils/negotiation.py,sha256=T08hIKjwNXwGXAfLjjZzjFt5U0gmXAxj4fAYsrAihzA,8312
+aiohttp_utils/routing.py,sha256=aixIm51NzbocrDUk9womAPdmMEqmiMl89FnG9r_SLYI,9633
+aiohttp_utils/runner.py,sha256=nn68fDC3kMjNNuyxVBJkEUeTM8yFJ7R1BOjIKjXhT80,3677
+aiohttp_utils-3.2.1.dist-info/LICENSE,sha256=RvxbuHcTqaejSauDZgyrCBO7UvCJvA5rPqPb4LaLz3s,1090
+aiohttp_utils-3.2.1.dist-info/METADATA,sha256=7q0s2RaPJxhKl-UN8E6UCAXcj65ejeoxXk24B4Beves,2615
+aiohttp_utils-3.2.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+aiohttp_utils-3.2.1.dist-info/top_level.txt,sha256=ERcBZgkxQ5QBIvQNCGJ1ijFASRJpzWlpB1vW40mXyrc,14
+aiohttp_utils-3.2.1.dist-info/RECORD,,
