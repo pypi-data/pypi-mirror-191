@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pocket-newsletter
+Version: 0.1.1
+Summary: Retrieve articles from pocket
+License: MIT
+Author: José Cabeda
+Author-email: jecabeda@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pocket-api (>=0.1.5,<0.2.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Description-Content-Type: text/markdown
+
+# Pocket Newsletter
+
+Allows extraction of articles in markdown set with newsletter tag from Pocket.
+
