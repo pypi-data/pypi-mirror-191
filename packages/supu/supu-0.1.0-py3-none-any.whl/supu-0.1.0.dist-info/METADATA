@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: supu
+Version: 0.1.0
+Summary: Slightly Useful Python Utility functions
+Home-page: https://github.com/moredatarequired/supu
+License: MIT
+Author: Hugh Wimberly
+Author-email: hugh.wimberly@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: pandas (>=1.0,<2.0)
+Requires-Dist: scipy (>=1.9,<2.0)
+Project-URL: Repository, https://github.com/moredatarequired/supu
+Description-Content-Type: text/markdown
+
+# SUPU
+
+Slightly Useful Python Utilities – a grab bag of small functions
+
+These are really more like gists, but in a place where I can test them; if you want to
+use them, it might just be easier to copy them into your own code than to add `supu` as
+a dependency.
+
