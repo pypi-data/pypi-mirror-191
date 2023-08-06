@@ -1,0 +1,12 @@
+
+[clip]
+transformers>=4.26.0
+
+[image]
+matplotlib>=3.6.2
+numpy>=1.24.0
+opencv-python>=4.7.0.68
+Pillow>=9.3.0
+
+[interactive]
+jupyterlab>=3.5.2
