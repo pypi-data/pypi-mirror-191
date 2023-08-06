@@ -1,0 +1,9 @@
+xia_agent/__init__.py,sha256=KFy45nOLpbHcbUz64wZ5gKejEOOpFu8vrVV2_YokjTU,197
+xia_agent/puller.cpython-310-darwin.so,sha256=wpa_GlWlv9wuWL59oRiIsnzhCEJTVO1h8R2I4M9CAU4,235104
+xia_agent/pusher.cpython-310-darwin.so,sha256=LEtlJOG6QoWzqCseE0g0CyNqijFi31mMnG4GftTmTIY,235536
+xia_agent/synchronizer.cpython-310-darwin.so,sha256=wnhnI3aWUwwNAZ76imRWTFQHJC5BXOCzwuilfn9cocQ,218976
+xia_agent-0.0.1.dist-info/LICENSE.txt,sha256=ya9ullmRKUoJ8dO9_fHVUFPeoVKHdFZYvmLkh7VFEgg,155
+xia_agent-0.0.1.dist-info/METADATA,sha256=fykzjQncUob2R-gpbPo5n1qcI6yXmNK-xB7T7tDyZbI,648
+xia_agent-0.0.1.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_agent-0.0.1.dist-info/top_level.txt,sha256=uiK8HE2yj2wekdrxVgGRL0zCqajqbV6xrgTp7HlCXYU,10
+xia_agent-0.0.1.dist-info/RECORD,,
