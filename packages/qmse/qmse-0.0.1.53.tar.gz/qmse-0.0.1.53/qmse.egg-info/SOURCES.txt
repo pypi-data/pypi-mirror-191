@@ -1,0 +1,8 @@
+README.md
+setup.py
+qmse/__init__.py
+qmse/quickdb.py
+qmse.egg-info/PKG-INFO
+qmse.egg-info/SOURCES.txt
+qmse.egg-info/dependency_links.txt
+qmse.egg-info/top_level.txt
