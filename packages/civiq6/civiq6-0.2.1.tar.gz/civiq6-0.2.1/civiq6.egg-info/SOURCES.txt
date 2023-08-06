@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+civiq6/__init__.py
+civiq6/camera.py
+civiq6/capture.py
+civiq6/devices.py
+civiq6/py.typed
+civiq6/qt_compat.py
+civiq6/version.py
+civiq6.egg-info/PKG-INFO
+civiq6.egg-info/SOURCES.txt
+civiq6.egg-info/dependency_links.txt
+civiq6.egg-info/requires.txt
+civiq6.egg-info/top_level.txt
