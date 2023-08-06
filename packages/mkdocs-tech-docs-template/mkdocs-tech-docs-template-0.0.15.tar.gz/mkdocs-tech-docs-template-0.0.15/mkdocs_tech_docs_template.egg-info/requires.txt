@@ -1,0 +1,5 @@
+mkdocs-material
+
+[docs]
+markdown-include
+mkdocs
