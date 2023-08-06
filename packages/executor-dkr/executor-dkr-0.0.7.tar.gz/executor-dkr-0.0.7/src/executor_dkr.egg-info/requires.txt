@@ -1,0 +1,7 @@
+daggerml>=0.0.15
+
+[all]
+executor-s3>=0.0.9
+
+[s3]
+executor-s3>=0.0.9
