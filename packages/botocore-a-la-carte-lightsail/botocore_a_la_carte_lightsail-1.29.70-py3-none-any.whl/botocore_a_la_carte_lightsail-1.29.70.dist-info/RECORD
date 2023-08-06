@@ -1,0 +1,9 @@
+botocore/data/lightsail/2016-11-28/endpoint-rule-set-1.json,sha256=Ru0Tvi5XyCj4VeCug-XMDkVgjNSPHhyvH-Yndiihk4k,13704
+botocore/data/lightsail/2016-11-28/examples-1.json,sha256=K3b6mgYkitvcecSlJT-iV_EQATmvOySs66iKJI5qx0g,44
+botocore/data/lightsail/2016-11-28/paginators-1.json,sha256=9EaLlqeMLm1cO4A5z-uPznc4OgcKMLV3tbvMLdSjZF4,2925
+botocore/data/lightsail/2016-11-28/service-2.json,sha256=Urigz6rG27n0hNc7m7zKiEZHWHBMYu-P4sJyLxRU8nQ,636982
+botocore_a_la_carte_lightsail-1.29.70.dist-info/LICENSE.txt,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+botocore_a_la_carte_lightsail-1.29.70.dist-info/METADATA,sha256=U3ss6Zw8ylPHM3toM_34_fk9ewTPjuhjgn37O0ZzHhI,962
+botocore_a_la_carte_lightsail-1.29.70.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+botocore_a_la_carte_lightsail-1.29.70.dist-info/top_level.txt,sha256=IdlNr9dnwi3lQt66dKnShE5HBUhIqBFqJmVhm11aijk,9
+botocore_a_la_carte_lightsail-1.29.70.dist-info/RECORD,,
