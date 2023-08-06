@@ -1,0 +1,13 @@
+pydantic
+datamodel-code-generator
+mwclient
+mwparserfromhell
+SPARQLWrapper
+jsonpath-ng
+numpy
+pyyaml
+
+[testing]
+setuptools
+pytest
+pytest-cov
