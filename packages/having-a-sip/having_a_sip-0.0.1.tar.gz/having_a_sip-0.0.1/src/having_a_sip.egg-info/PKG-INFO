@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: having-a-sip
+Version: 0.0.1
+Summary: Contain common Python functions which I used.
+Home-page: https://github.com/vkhanhqui/having-a-sip
+Author: Steve
+Author-email: vkhanhqui@gmail.com
+Project-URL: Documentation, https://github.com/vkhanhqui/having-a-sip
+Project-URL: Bug Reports, https://github.com/vkhanhqui/having-a-sip/issues/new
+Project-URL: Source Code, https://github.com/vkhanhqui/having-a-sip
+Requires-Python: >=3.9

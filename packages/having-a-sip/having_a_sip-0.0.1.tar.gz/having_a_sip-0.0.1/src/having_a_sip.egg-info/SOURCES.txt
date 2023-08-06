@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/having_a_sip/__init__.py
+src/having_a_sip/file_utils.py
+src/having_a_sip.egg-info/PKG-INFO
+src/having_a_sip.egg-info/SOURCES.txt
+src/having_a_sip.egg-info/dependency_links.txt
+src/having_a_sip.egg-info/not-zip-safe
+src/having_a_sip.egg-info/top_level.txt
