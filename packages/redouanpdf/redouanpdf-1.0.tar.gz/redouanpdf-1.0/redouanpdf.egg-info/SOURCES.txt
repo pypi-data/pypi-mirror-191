@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+redouanpdf.egg-info/PKG-INFO
+redouanpdf.egg-info/SOURCES.txt
+redouanpdf.egg-info/dependency_links.txt
+redouanpdf.egg-info/top_level.txt
