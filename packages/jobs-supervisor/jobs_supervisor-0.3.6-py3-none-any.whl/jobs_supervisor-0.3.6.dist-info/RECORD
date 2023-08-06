@@ -1,0 +1,11 @@
+jobs_supervisor/FeishuBot.py,sha256=smkYR4rSIQY-mRJHlZeFBmyuSXY9JqB7v5mrlC4qcCo,530
+jobs_supervisor/__init__.py,sha256=EKdGOO4UtqAmUEZpyno4UkY85VzWHiocnoDsXjGj3GE,102
+jobs_supervisor/jobs_supervisor.py,sha256=CeobH2-Y6pU8Pc4SC3nhA_6Wl5MVAJ-y6PUHwACl9v8,5503
+jobs_supervisor/supervise_jobs.py,sha256=29ZGlcHXbE1mJxJBxWe2PnUES6CEtIOSSKtn2dlacuI,2331
+jobs_supervisor-0.3.6.dist-info/LICENSE,sha256=woZmJ0DysYkutQkc1nqfF22UwEEs_fn2DXn0-1J_3pI,1065
+jobs_supervisor-0.3.6.dist-info/METADATA,sha256=CtBPvXxIYw2BI76GfQoYd6XvJKNJptZqSWnZKqWsUmI,2045
+jobs_supervisor-0.3.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jobs_supervisor-0.3.6.dist-info/entry_points.txt,sha256=LBYAVrN0jD-EBO2UID4j461TRR80n8ZO0T07dsXFX04,72
+jobs_supervisor-0.3.6.dist-info/top_level.txt,sha256=LG7i29FT6gM8f8ubBYtsHhj4VYE_1az9Xq1Owo3-lz8,16
+jobs_supervisor-0.3.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jobs_supervisor-0.3.6.dist-info/RECORD,,
