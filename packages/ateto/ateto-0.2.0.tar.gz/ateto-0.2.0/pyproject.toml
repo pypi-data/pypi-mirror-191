@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ateto"
+version = "0.2.0"
+description = "This is a set of tools to write templates outside of Anki."
+authors = ["bisam <bisam@r4.re>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+xdg = "^5.1"
+requests = "^2.28"
+beautifulsoup4 = "^4.1"
+watchdog = "^2.2"
+click = "^8.1"
+Jinja2 = "^3.1"
+pyyaml = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1"
+ipython = "^8.4"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^6.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ateto = 'ateto.cli:cli'
+
+[tool.poetry_bumpversion.file."ateto/__init__.py"]
+
+[[tool.poetry_bumpversion.replacements]]
+files = ["docs/conf.py"]
+search  = "release = '{current_version}'"
+replace = "release = '{new_version}'"
