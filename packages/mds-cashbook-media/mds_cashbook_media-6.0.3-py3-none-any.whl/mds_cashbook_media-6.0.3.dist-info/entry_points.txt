@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    cashbook_media = trytond.modules.cashbook_media
+    
