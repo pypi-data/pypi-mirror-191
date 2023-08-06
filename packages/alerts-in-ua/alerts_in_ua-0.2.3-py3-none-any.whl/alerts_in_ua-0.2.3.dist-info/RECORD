@@ -1,0 +1,13 @@
+alerts_in_ua/__init__.py,sha256=0gTz08YUpsrxS0VwGOzTauFzYDWpUxFtGVOI-T5QCLs,123
+alerts_in_ua/alert.py,sha256=bt-FOdBGNzbwp19A8KN0WLzgvGIQFxQc5Cmu-4CLzyI,1413
+alerts_in_ua/alerts.py,sha256=dI_DPlwRX0aHddmpcBr70cjBCIa_mCVV9wQeU4Pu46w,2733
+alerts_in_ua/async_client.py,sha256=llMO_Ckb9UsTYZmtfb4UZKhenvG2SKAqy4OHLh8NORo,3275
+alerts_in_ua/client.py,sha256=nTVIZgPoJhpgCnxDLWe8ZB1b4y53Mi9QYGR-tu-Gkrw,3041
+alerts_in_ua/errors.py,sha256=sxb5iPl2M_SC6RKz16jNSmgQ_P9Db-kA8I6dj0VqPlg,310
+alerts_in_ua/ua_date_parser.py,sha256=8MrckVsSe0wHk_SGEETO6LK6s8A0YQ0RhH6xswski5g,713
+alerts_in_ua/user_agent.py,sha256=-qu2Cng5ZMaflrtclccZaxG6QZxTnkYbQiVT5jaScsw,167
+alerts_in_ua-0.2.3.dist-info/LICENSE.txt,sha256=zN5JNSULOzNf0YhIwcbBUFQ4ZrXN3t1gPWF6yqHxdpw,1067
+alerts_in_ua-0.2.3.dist-info/METADATA,sha256=jZ2mRMb_NdZyTwSsaq9k7jkLYQHl4j27bado3hPn8Z8,5664
+alerts_in_ua-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alerts_in_ua-0.2.3.dist-info/top_level.txt,sha256=ID8v6qr4Y2AKvMy7IJoD13YcLyqS4LYrpaZnLY2TqLs,13
+alerts_in_ua-0.2.3.dist-info/RECORD,,
