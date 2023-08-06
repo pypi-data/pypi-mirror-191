@@ -1,0 +1,2 @@
+[console_scripts]
+hyper-bump-it = hyper_bump_it._hyper_bump_it.cli:app
