@@ -1,0 +1,2 @@
+[console_scripts]
+lotc = lotc.main:cli
