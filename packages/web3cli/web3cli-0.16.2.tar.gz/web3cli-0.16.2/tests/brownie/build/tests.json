@@ -1,0 +1,153 @@
+{
+  "contracts": {},
+  "tests": {
+    "tests/web3cli/controllers/db/test_db_address.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "........",
+      "sha1": "5c1c72902cb7c4253b7b549735747972672479e8",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_base.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "5695a607b9d39deaf656200b1ae569d25645b06b",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_chain.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".....",
+      "sha1": "727911ece84c7b8c819386e87305c2dbae4bec74",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_contract.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".....",
+      "sha1": "309b8f4c51a8653130c4a02980e39064eeb17cdd",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_rpc.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "......",
+      "sha1": "c768388cdfdfb56fb45bdc6baae9a8c528db2f7d",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_signer.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".....",
+      "sha1": "8552d28170b7cafcd2b3f14aeed78d3a87eb8626",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/db/test_db_tx.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".....",
+      "sha1": "0f22edc8eecd64619ee1490575c38231024bc77d",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_call.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..........",
+      "sha1": "a06652554a9026fd5bed2924bbbb8da03921f432",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_key.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "b169724084aa3f6484ed27bb3595ed106e07e27c",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_misc.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..........",
+      "sha1": "2b72c960421d0ba1a4f7d8e9dc8172e49bbd19a5",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_send.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "........",
+      "sha1": "100884894414c436c18b1b6ec8ab141ca8722cd3",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_transact.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..........",
+      "sha1": "7173040111557c4fcb15fd87781e669d153055c2",
+      "txhash": []
+    },
+    "tests/web3cli/controllers/test_tx.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "6ba1c526860cf28f4685cabef42fbe54725dfad8",
+      "txhash": []
+    },
+    "tests/web3cli/helpers/test_client_factory.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "71a6b7c676db58b13b26ccbe4e5ec82219cbc4fd",
+      "txhash": []
+    },
+    "tests/web3cli/helpers/test_crypto.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "....",
+      "sha1": "a424eb5b97f4c2b83270795c10d4878bc8567876",
+      "txhash": []
+    },
+    "tests/web3cli/test_db.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "....",
+      "sha1": "297afb4dfe32d0ac44a09a6d873bd5682855bd8f",
+      "txhash": []
+    },
+    "tests/web3core/helpers/test_abi.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "............",
+      "sha1": "5029f214430b9243ce7d1b1022e24f891633e6d4",
+      "txhash": []
+    },
+    "tests/web3core/helpers/test_crypto.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "....",
+      "sha1": "7b14b186e184cb16f868b31c7db014c368d28a26",
+      "txhash": []
+    },
+    "tests/web3core/helpers/test_resolve_address.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".......",
+      "sha1": "987c6de01ff4c9033d66a77cc2566be2767222cd",
+      "txhash": []
+    },
+    "tests/web3core/helpers/test_validation.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": ".",
+      "sha1": "548305d335ec0886d9f976f36504765e114a8106",
+      "txhash": []
+    },
+    "tests/web3core/models/test_contract_model.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "....",
+      "sha1": "9f12dbcdc46d2746105ace73a5569ad661c61a98",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}
