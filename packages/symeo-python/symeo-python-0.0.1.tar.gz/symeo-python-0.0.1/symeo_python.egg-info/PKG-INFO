@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: symeo-python
+Version: 0.0.1
+Summary: Symeo python SDK with embedded CLI for conf as code
+Home-page: https://github.com/symeo-io/symeo-python
+Author: Symeo.io
+Author-email: support@symeo.io

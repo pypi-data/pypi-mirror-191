@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[tool.pytest.ini_options]
+testpaths = "test"
+
+[tool.coverage.run]
+branch = true
+source_pkgs = ["symeo_python"]
+
+[tool.coverage.report]
+fail_under = 80
+omit = [
+    "symeo_python/config.py",
+    "symeo_python/cli/main.py"
+]
