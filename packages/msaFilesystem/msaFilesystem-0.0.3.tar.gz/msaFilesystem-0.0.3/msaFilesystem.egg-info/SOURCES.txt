@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+msaFilesystem/__init__.py
+msaFilesystem/msafs.py
+msaFilesystem.egg-info/PKG-INFO
+msaFilesystem.egg-info/SOURCES.txt
+msaFilesystem.egg-info/dependency_links.txt
+msaFilesystem.egg-info/top_level.txt
+msaFilesystem.egg-info/zip-safe
