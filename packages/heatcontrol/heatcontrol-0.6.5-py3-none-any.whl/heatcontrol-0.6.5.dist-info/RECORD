@@ -1,0 +1,7 @@
+heatcontrol/__init__.py,sha256=lONzMYno2NKdFbElvCFHsM9lhpRxBDJZk4TKm8oniDc,37
+heatcontrol/spot_price_control.py,sha256=l_NvqpFfqOiN0Acy55bhcqoXZgFGo3OuzUE8ubOPwVQ,9436
+heatcontrol-0.6.5.dist-info/entry_points.txt,sha256=6Gvs88qQY7jj1sjVafBn6fhZekTjKeqvzYs-gobagq0,55
+heatcontrol-0.6.5.dist-info/LICENSE,sha256=X4IfTmy_vPNFE8TVLl_mUp5sy7TfzRzwMDNyGH5q088,1071
+heatcontrol-0.6.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+heatcontrol-0.6.5.dist-info/METADATA,sha256=8o5DizA20HlFhL6txfi1gjZmu6A4ekW4V5IGMAIYAZE,657
+heatcontrol-0.6.5.dist-info/RECORD,,
