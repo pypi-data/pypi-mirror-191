@@ -1,0 +1,11 @@
+six
+
+[:python_version < "3"]
+pathlib
+
+[dev]
+flake8
+flake8-import-order
+mypy
+pytest
+yapf
