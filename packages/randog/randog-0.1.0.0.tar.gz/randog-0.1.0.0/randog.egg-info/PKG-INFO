@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: randog
+Version: 0.1.0.0
+Summary: Generate data randomly
+Author: k-izumi
+Author-email: k.izumi.ysk@gmail.com
+Maintainer: k-izumi
+Maintainer-email: k.izumi.ysk@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/unaguna/random-obj-generator/issues
+Project-URL: Source Code, https://github.com/unaguna/random-obj-generator
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+**randog 0.1.0.x — Randomly object generator**
+
+**randog** is a package which helps to generate data randomly.
+
+For example:
+
+```python
+import uuid
+import randog.factory
+
+factory = randog.factory.from_example({"uuid": uuid.uuid4, "name": "", "age": 20})
+generated = factory.next()
+
+assert isinstance(generated, dict)
+assert isinstance(generated["uuid"], uuid.UUID)
+assert isinstance(generated["name"], str)
+assert isinstance(generated["age"], int)
+```
