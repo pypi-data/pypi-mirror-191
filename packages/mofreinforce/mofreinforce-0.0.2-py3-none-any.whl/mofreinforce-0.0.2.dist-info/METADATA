@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: mofreinforce
+Version: 0.0.2
+Summary: mofreinforce
+Download-URL: https://github.com/hspark1212/MOFreinforce
+Author: Hyunsoo Park
+Author-email: phs68660888@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pytorch-lightning (==1.8.0)
+Requires-Dist: torchmetrics (==0.9.0)
+Requires-Dist: sacred (>=0.8.2)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: sklearn (>=0.0)
+Requires-Dist: scikit-learn (>=1.1.1)
+Requires-Dist: tqdm (>=4.64.0)
+Requires-Dist: timm (>=0.5.4)
+Requires-Dist: transformers (>=4.20.1)
+Requires-Dist: SmilesPE (>=0.0.3)
+Requires-Dist: rdkit
+Requires-Dist: wget
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: livereload ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+
+![scheme_rl-01](https://user-images.githubusercontent.com/64190846/218362539-740997c9-d198-4e0a-89e0-3277c5b45a51.jpg)
+
+# Reinforcement Learning Framework For MOFs
+
+This package is a reinforcement learning framework for MOFs. 
+The framework consists of `agent` and `environment` which are a generator and a predictor, respectively.
+The agent takes an action (which is generating a MOF structure). 
+This action is then evaluated in the environment by the predictor, which predicts the value of the property we are interested in. 
+Based on the prediction, a reward is returned in form of an update to the agent to generate the next round of MOFs.
+
+## Installation
+
+### OS and hardware requirements
+
+Linux : Ubuntu 20.04, 22.04
+
+For optimal performance, we recommend running with GPUs
+
+### Dependencies
+```angular2html
+python>=3.8
+```
+
+### Install
+Please install pytorch (>= 1.12.0) according to your environments before installation of requirements.
+```angular2html
+pip install -e .
+```
+
+## Getting Started
+
+### download pre-trained models
+In order to run the reinforcement learning framework, `predictor` (environment) and `generator` (agent) should be pre-trained. 
+
+```angular2html
+mofreinforce download default
+```
+Then, you can find the pre-trained generator and predictors in `mofreinforce/model`.
+
+### [Predictor]()
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/64190846/218362135-275e50d4-5a1b-4c5d-b8f3-3434193a3de9.jpg" width="500")
+</p>
+
+If you want to train the predictor for your own desired property, please refer to [predictor.md]().
+
+### [Generator]()
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/64190846/218362193-5540b285-d622-4698-8be9-f2bd789da264.jpg" width="800")
+</p>
+
+We provide a generator which selects a topology and a metal cluster, which are categorical variables, in order and then creates an organic linker represented by SELFIES string.
+The generator was pre-trained with about 650,000 MOFs created by PORMAKE, which allows for generating feasible MOFs.
+You can find the pre-trained generator at `model/generator.ckpt`.
+
+### [Reinforcement Learning]()
+
+(1) reinforcement learning with CO2 heat of adsorption
+```angular2html
+python run.py with v0_qkh
+```
+
+(2) reinforcement learning with CO2/H2O selectivity
+```angular2html
+python run.py with v1_selectivity
+```
+
+if you want to experiment with other parameters by modifying `mofreinforce/reinforce/config_freinforce.py` 
