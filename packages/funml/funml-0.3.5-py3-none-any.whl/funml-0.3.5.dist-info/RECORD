@@ -1,0 +1,16 @@
+funml/__init__.py,sha256=jYy-h9INLsCrnH7-Dxkg1b9fV5ygK3729S7QmtN_kik,1767
+funml/data/__init__.py,sha256=M8-S5YnfWoK15CJux8Ioo1tXlK7j2Mu-f62w1owAnAk,35
+funml/data/enum.py,sha256=w8DAA7dkD5lLVQdV-YRsS6-VRGqJRuDlM70s9wHwsLQ,7170
+funml/data/lists.py,sha256=4zkG7v5dlIl66hZY93SxA0ETvn1LYpOLSx3cWsP83OM,12125
+funml/data/monads.py,sha256=WUmRA4DRA8lH0Sa32sUEGoAzpE_wn0gooK6Aa5j3VHM,11472
+funml/data/records.py,sha256=Xr24pHJVNTU8QtiWWKb-0Q3rQMkWacENOGvhEYt-148,3812
+funml/errors.py,sha256=4rlIMW55SUd4GyJSo7sOzzUUu1cbihxEpW9v_27Mh2Q,365
+funml/expressions.py,sha256=3NyFYrfFi3jnI2_WJesLlxR1GcNKDyqXF3AY5S3QgDg,956
+funml/pattern_match.py,sha256=ziKP-aXblD4rUiMahJIc4VDM-xd5IewhPd3tQU-GGPI,1340
+funml/pipeline.py,sha256=YMtMbJUQ9G7XbLoGsDa-o0E_tnZQYuNW8F7zP4hLoYo,906
+funml/types.py,sha256=NyT34zONkB2ZlrBrHQ4SUEmrXI7n0-OWg0tM-mW_gqA,13688
+funml/utils.py,sha256=OE1o1m4iVpdh-NKwYgAcZwFXxX8khVK-hk3HqUAU-4o,2276
+funml-0.3.5.dist-info/METADATA,sha256=jmn_ofVY4pXdhbgJlDvU3X0qdoPRqkZutEIkrqwX-aA,9124
+funml-0.3.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+funml-0.3.5.dist-info/LICENSE,sha256=aplW1wCJu2M7e6HQFMfUSDOu1muuq1NuvKi1ttP9q-A,1072
+funml-0.3.5.dist-info/RECORD,,
