@@ -1,0 +1,2 @@
+[console_scripts]
+idrac_ctl = idrac_ctl.idrac_main:idrac_main_ctl
