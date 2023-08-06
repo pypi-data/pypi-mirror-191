@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: karuo
+Version: 0.81
+Summary: collection of some tools
+Home-page: https://github.com/caimmy/karuo
+Author: caimmy
+Author-email: caimmy@hotmail.com
+License: MIT Licence
+Keywords: helpers,tools,widgets
+Platform: any
+License-File: LICENSE
+
+collection of tools
