@@ -1,0 +1,19 @@
+graft docs
+graft src
+graft tests
+
+include README.rst
+include LICENSE
+
+include tox.ini .travis.yml
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+
+include NOTICE
+include .env.example
+
+exclude src/mlx/__version__.py
+
+# added by check_manifest.py
+include *.tjp
+include Makefile
