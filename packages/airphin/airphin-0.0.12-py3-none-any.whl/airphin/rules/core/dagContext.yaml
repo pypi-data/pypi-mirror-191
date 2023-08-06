@@ -1,0 +1,69 @@
+name: DAG-Context
+description: The configuration for migrating airflow.DAG context to pydolphinscheduler workflow context.
+
+migration:
+  module:
+    - action: replace
+      src: airflow.DAG
+      dest: pydolphinscheduler.core.process_definition.ProcessDefinition
+  parameter:
+    - action: replace
+      src: dag_id
+      dest: name
+    - action: replace
+      src: start_date
+      dest: start_time
+    - action: replace
+      src: schedule_interval
+      dest: schedule
+
+examples:
+  assign:
+    description: |
+      The example of migrating `airflow.DAG` declaration with assigned.
+    src: |
+      from airflow import DAG
+      from datetime import datetime
+  
+      dag = DAG(
+          dag_id='dag',
+          description='DAG description',
+          start_date=datetime(2020, 1, 1),
+          schedule_interval='5 4 * * *',
+      )
+    dest: |
+      from pydolphinscheduler.core.process_definition import ProcessDefinition
+      from datetime import datetime
+  
+      dag = ProcessDefinition(
+          name='dag',
+          description='DAG description',
+          start_time=datetime(2020, 1, 1),
+          schedule='0 5 4 * * ? *',
+      )
+  context:
+    description: |
+      The example of migrating `airflow.DAG` in context mode.
+    src: |
+      from airflow import DAG
+      from datetime import datetime
+  
+      with DAG(
+          dag_id='dag',
+          description='DAG description',
+          start_date=datetime(2020, 1, 1),
+          schedule_interval='@once',
+      ) as dag:
+          pass
+    dest: |
+      from pydolphinscheduler.core.process_definition import ProcessDefinition
+      from datetime import datetime
+  
+      with ProcessDefinition(
+          name='dag',
+          description='DAG description',
+          start_time=datetime(2020, 1, 1),
+          schedule='0 0 0 * * ? *',
+      ) as dag:
+          pass
+      dag.submit()

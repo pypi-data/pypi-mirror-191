@@ -1,0 +1,37 @@
+name: DummyOperator
+description: The configuration for migrating Airflow DummyOperator to DolphinScheduler Shell task.
+
+migration:
+  module:
+    - action: replace
+      src: airflow.operators.dummy_operator.DummyOperator
+      dest: pydolphinscheduler.tasks.shell.Shell
+  parameter:
+    - action: replace
+      src: task_id
+      dest: name
+    - action: add
+      arg: command
+      default: 
+        type: str
+        value: "echo 'Airflow DummyOperator'"
+
+examples:
+  dummy:
+    description: |
+      The example of migrating `airflow.operators.dummy_operator.DummyOperator`, we migrate it to `pydolphinscheduler.tasks.shell.Shell`
+      with default value :code:``echo 'Airflow DummyOperator'`` as command because DolphinScheduler do not have any task like dummy operator.
+    src: |
+      from airflow.operators.dummy_operator import DummyOperator
+
+      bash = DummyOperator(
+          task_id='dummy',
+      )
+    # TODO: We have some indentation issues when add new arguments
+    dest: |
+      from pydolphinscheduler.tasks.shell import Shell
+
+      bash = Shell(
+          name='dummy',
+      command="echo 'Airflow DummyOperator'",
+      )
