@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "blazectl"
+version = "0.5.0"
+description = ""
+authors = ["Shailendra Sharma <shailendra.sharma@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "blazectl" }]
+
+[tool.poetry.scripts]
+blazectl = "blazectl.cli.main_cli:app"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "0.7"
+rich = "^12.6.0"
+shellingham = "^1.5.0.post1"
+kubernetes = "^25.3.0"
+dacite = "^1.6.0"
+ray = {extras = ["default"], version = "^2.2.0"}
+pyfiglet = "^0.8.post1"
+dnspython = "^2.2.1"
+pydantic = "^1.10.4"
+mysql-connector-python = "^8.0.32"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
