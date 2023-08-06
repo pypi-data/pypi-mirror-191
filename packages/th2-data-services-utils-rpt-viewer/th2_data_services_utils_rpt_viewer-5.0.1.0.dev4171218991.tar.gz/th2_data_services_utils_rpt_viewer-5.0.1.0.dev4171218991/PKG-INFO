@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: th2_data_services_utils_rpt_viewer
+Version: 5.0.1.0.dev4171218991
+Summary: th2_data_services_utils_rpt_viewer
+Home-page: https://github.com/th2-net/th2-data-services-utils
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+License: Apache License 2.0
+Description: # th2-data-services-utils-rpt-viewer
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
