@@ -1,0 +1,9 @@
+odd_airflow_integration/plugin.py,sha256=O2KYibw0afVoiGk5x85_BYOIPFn4v_SZSraK_ppO5nI,160
+odd_airflow_integration/dir/airflow_odd_integrator.py,sha256=hXr5GduZYDaX5P_EEJBXzEkfZMev35h9X_wOUMIMtCo,4220
+odd_airflow_integration/dir/listener.py,sha256=rF_9iKFfjGTtiIyOQdy0DkEuHmvIddhy5plYbS-919M,3455
+odd_airflow_2-0.0.5.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+odd_airflow_2-0.0.5.dist-info/METADATA,sha256=BlNpgtkFDAjlUdnKHVG-IsrxYX9yTL-JoVy8xHn4Sqg,303
+odd_airflow_2-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odd_airflow_2-0.0.5.dist-info/entry_points.txt,sha256=Ia8spkRs8Oo3Ra6qNxilEr_Z7j019YvWaYGHTV0Jj7Y,71
+odd_airflow_2-0.0.5.dist-info/top_level.txt,sha256=89R9LK8xCi1GapJC3CNO29geOjWck-WCXZkZXrCLImo,24
+odd_airflow_2-0.0.5.dist-info/RECORD,,
