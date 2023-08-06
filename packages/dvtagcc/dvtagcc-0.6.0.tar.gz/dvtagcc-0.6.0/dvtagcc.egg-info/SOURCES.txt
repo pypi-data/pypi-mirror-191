@@ -1,0 +1,16 @@
+LICENSE
+README.md
+main.py
+setup.cfg
+setup.py
+utils.py
+dvtag/__init__.py
+dvtag/doujinvoice.py
+dvtag/dvtag.py
+dvtag/utils.py
+dvtagcc.egg-info/PKG-INFO
+dvtagcc.egg-info/SOURCES.txt
+dvtagcc.egg-info/dependency_links.txt
+dvtagcc.egg-info/entry_points.txt
+dvtagcc.egg-info/requires.txt
+dvtagcc.egg-info/top_level.txt
