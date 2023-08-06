@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+sqlalchemy_timescaledb/__init__.py
+sqlalchemy_timescaledb/dialect.py
+sqlalchemy_timescaledb.egg-info/PKG-INFO
+sqlalchemy_timescaledb.egg-info/SOURCES.txt
+sqlalchemy_timescaledb.egg-info/dependency_links.txt
+sqlalchemy_timescaledb.egg-info/entry_points.txt
+sqlalchemy_timescaledb.egg-info/requires.txt
+sqlalchemy_timescaledb.egg-info/top_level.txt
+tests/test_connection.py
