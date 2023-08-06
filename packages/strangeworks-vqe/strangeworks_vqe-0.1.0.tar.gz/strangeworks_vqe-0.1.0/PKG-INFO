@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: strangeworks-vqe
+Version: 0.1.0
+Summary: Extension to strangeworks sdk to allow user to run qaoa service
+Author: SFlann
+Author-email: stuart@strangeworks.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: networkx (>=3.0,<4.0)
+Requires-Dist: numpy (==1.23.2)
+Requires-Dist: qiskit (>=0.41.0,<0.42.0)
+Requires-Dist: strangeworks (==0.4.0rc1)
+Requires-Dist: tweedledum (>=1.1.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# strangeworks-vqe
+
