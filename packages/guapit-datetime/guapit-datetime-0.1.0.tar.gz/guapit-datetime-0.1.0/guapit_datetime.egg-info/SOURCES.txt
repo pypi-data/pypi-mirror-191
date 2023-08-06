@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+guapit_datetime.egg-info/PKG-INFO
+guapit_datetime.egg-info/SOURCES.txt
+guapit_datetime.egg-info/dependency_links.txt
+guapit_datetime.egg-info/top_level.txt

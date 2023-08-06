@@ -1,0 +1,18 @@
+[project]
+name = "guapit-datetime"
+version = "0.1.0"
+authors = [
+  { name="guapit", email="guapit@qq.com" },
+]
+description = "Custom flask jwt token"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/guapit/guapit-datetime"
+"Bug Tracker" = "https://github.com/guapit/guapit-datetime/issues"
