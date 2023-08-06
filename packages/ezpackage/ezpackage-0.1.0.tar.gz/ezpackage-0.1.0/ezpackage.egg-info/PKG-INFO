@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ezpackage
+Version: 0.1.0
+Summary: This is an easy way to write your own package.
+Author: datanooblol
+Author-email: data.noob.lol@gmail.com
+Keywords: ['python3','ez']
+License-File: LICENSE

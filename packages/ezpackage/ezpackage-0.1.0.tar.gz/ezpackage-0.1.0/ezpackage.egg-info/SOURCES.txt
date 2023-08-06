@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ezpackage/__init__.py
+ezpackage/package_manager.py
+ezpackage.egg-info/PKG-INFO
+ezpackage.egg-info/SOURCES.txt
+ezpackage.egg-info/dependency_links.txt
+ezpackage.egg-info/top_level.txt
+ezpackage/templates/__init__.py
+ezpackage/templates/manifest_template.txt
+ezpackage/templates/setup_template.txt
