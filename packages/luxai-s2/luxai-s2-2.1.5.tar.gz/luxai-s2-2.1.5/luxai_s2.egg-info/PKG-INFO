@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: luxai-s2
+Version: 2.1.5
+Summary: The Lux AI Challenge Season 2
+Home-page: https://github.com/Lux-AI-Challenge/Lux-Design-S2
+Author: Lux AI Challenge
+License: MIT
+Keywords: reinforcement-learning machine-learning ai
+Requires-Python: >=3.7
+
+Code for the Lux AI Challenge Season 2
