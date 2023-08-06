@@ -1,0 +1,207 @@
+:root{
+  --page-width: 8.5in;
+  --margin-right: 0.5in;
+  --margin-left: 0.5in;
+  --content-width: calc(var(--page-width) - var(--margin-right) - var(--margin-left));
+  --root-font-size: 12pt;
+  --sidebar-width: calc(var(--pagedjs-margin-left) + var(--margin-top-left));
+  --sidebar-background-color: #f2f2f2;
+  --contact-background-color: #013437;
+  --decorator-horizontal-margin: 0.2in;
+  --center: calc(
+      var(--pagedjs-pagebox-width) - var(--pagedjs-margin-left) - var(--pagedjs-margin-right)
+    );
+  --margin-top-left: calc(var(--center) / 3);
+  --margin-left-top-height:1.5in;
+  --aside-width: var(--sidebar-width)
+}
+
+@media print {
+/*Fixes headless print disfunctioning*/
+}
+
+#profile_pic {
+  border-radius: 50%;
+  object-position: center;
+  top: -1in;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+@page{
+  /* variables are not supported in page https://pagedjs.org/documentation/5-web-design-for-print/#%40page-rule */
+  size: letter portrait;
+  margin: 1in 0.5in 1in 0.5in;
+  background: linear-gradient(to right, var(--sidebar-background-color), var(--sidebar-background-color) var(--aside-width), white var(--aside-width));
+}
+
+.pagedjs_page {
+  --content-area-height: calc(var(--pagedjs-height) - var(--pagedjs-margin-top) - var(--pagedjs-margin-bottom));
+}
+
+
+
+html {
+  font-size: var(--root-font-size);
+}
+
+body{
+  width: var(--content-width);
+  font-family: "Roboto";
+  font-weight: 300;
+  color: black;
+  hyphens: auto;
+}
+
+ul{
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+
+img{
+  max-width: 100%;
+}
+
+#main{
+  /* padding: 0 0.25in 0 0.25in; */
+  float:right;
+  right:0;
+  /*left: var(--aside-width);*/
+  font-size: 0.8rem;
+  width: calc(var(--pagedjs-pagebox-width) - var(--aside-width));
+  padding-left: 0.25in;
+}
+
+#main .content{
+  padding-left: var(--pagedjs-margin-left);
+  padding-top: 0;
+}
+
+#main .content h1 {
+  padding-top:0;
+  margin-top:0;
+}
+
+aside{
+  /* height: var(--pagedjs-height); */
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+  position:absolute;
+  float:left;
+  left:calc(var(--pagedjs-margin-left) * -1);
+  top:calc(var(--pagedjs-margin-top) * -1);
+  width: var(--aside-width);
+}
+
+
+.aside-body-area{
+  padding-left:var(--pagedjs-margin-left)
+}
+
+.aside .contact {
+  padding-bottom: 2em;
+  color:whitesmoke;
+  padding-left: var(--pagedjs-margin-left);
+}
+
+#contact {
+  padding-top: var(--pagedjs-margin-top);
+}
+
+
+
+.aside .description .content {
+  padding-left: var(--pagedjs-margin-left);
+  padding-top: 0.2in;
+}
+
+
+.aside .contact strong {
+  font-size:large;
+}
+
+h1{
+  font-size: 1.5rem;
+  font-weight:400;
+}
+h2{
+  font-size: 1.3rem;
+  font-weight:400;
+}
+
+/* .pagedjs_pagebox {
+  position:relative;
+} */
+
+/* The following commented block solves one issue but as a result, automatic break page considers absolute positionned block and yields a bug */
+
+/* .pagedjs_pagebox > .pagedjs_area > .pagedjs_page_content {
+  position: static;
+} */
+
+
+
+.pagedjs_pages .pagedjs_pagebox .pagedjs_margin:not(.hasContent){
+  visibility: visible;
+  /* Without visibility all colors are hidden in margin boxes */
+}
+
+
+.pagedjs_margin-left{
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.aside .level2{
+  margin-top: 0.5in;
+}
+
+.box{
+  background-color: none;
+}
+
+.aside .contact{
+  background-color: var(--contact-background-color);
+}
+
+
+.contact a {
+  text-decoration: none;
+  font-weight:400;
+  font-size: small;
+}
+
+.contact a {
+  color: whitesmoke;
+}
+
+.contact .box{
+  margin-top:0.3rem;
+  margin-bottom:0.3rem;
+}
+
+.contact a:link {
+  color: whitesmoke;
+}
+
+.contact i {
+  font-weight:370;
+}
+
+.contact .box i {
+  padding-right:0.2em;
+  font-family: "FontAwesome";
+}
+
+
+
+#main .box i {
+  padding-right:0.2em;
+  font-family: "FontAwesome";
+}
+
