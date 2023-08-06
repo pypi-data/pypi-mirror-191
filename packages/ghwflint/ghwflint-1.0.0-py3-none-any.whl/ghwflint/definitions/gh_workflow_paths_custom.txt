@@ -1,0 +1,2 @@
+jobs.<job_id>.steps[*].with[*]
+on.<event_name>[*]

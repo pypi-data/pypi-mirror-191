@@ -1,0 +1,3 @@
+[console_scripts]
+ghwflint=ghwflint.__main__:main
+

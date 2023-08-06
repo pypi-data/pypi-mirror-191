@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: ghwflint
+Version: 1.0.0
+Summary: 
+Home-page: https://github.com/release-engineers/lint-github-workflow
+Author: SkPhilipp
+Author-email: philipp@release-engineers.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: ruamel.yaml (==0.17.21)
+Description-Content-Type: text/markdown
+
+# lint-github-workflow
+
+Linter for GitHub Workflow definitions.
+
+Install the `ghwflint` CLI utility and Python package with;
+
+```bash
+pip install ghwflint
+```
+
+## Usage
+
+Lint a GitHub Workflow definition with:
+
+```bash
+ghwflint -- .github/workflows/build.yml
+```
+
+## Development
+
+### Build
+
+Build with Poetry:
+
+```shell
+poetry install
+```
+
+Run locally with your favorite shell:
+
+```bash
+./bin/ghwflint --help
+```
+
+Alternatively, install as a Python module:
+
+```shell
+poetry build
+pip install --force-reinstall dist/ghwflint-*-none-any.whl
+ghwflint --help
+```
+
+Be aware that when making changes to the CLI, you would need to re-install the module.
+
+### Release
+
+Publish to PyPI with Poetry & Twine:
+
+```shell
+poetry build
+twine upload dist/ghwflint-*-none-any.whl
+```
+
