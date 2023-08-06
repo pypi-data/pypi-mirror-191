@@ -1,0 +1,10 @@
+humanize
+loguru
+discord-webhook
+py-cpuinfo
+command_runner
+psutil
+httpx
+WMI
+pywin32
+Pillow
