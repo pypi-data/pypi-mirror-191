@@ -1,0 +1,15 @@
+markdown
+numpy
+pandas
+python-dateutil
+requests
+tqdm
+
+[sphinx]
+sphinx
+myst_parser
+sphinx_book_theme
+
+[testing]
+pytest
+pytest-regressions
