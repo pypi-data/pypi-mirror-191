@@ -1,0 +1,6 @@
+click
+requests
+
+[test]
+pytest
+pytest-recording
