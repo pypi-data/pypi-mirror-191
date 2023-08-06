@@ -1,0 +1,4 @@
+[console_scripts]
+mecab-py = mecab_ko.cli:parse
+mecab-py-info = mecab_ko.cli:info
+
