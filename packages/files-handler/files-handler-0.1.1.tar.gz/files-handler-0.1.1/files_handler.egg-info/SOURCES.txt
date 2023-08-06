@@ -1,0 +1,9 @@
+README.md
+setup.py
+files_handler/__init__.py
+files_handler/files_handler.py
+files_handler.egg-info/PKG-INFO
+files_handler.egg-info/SOURCES.txt
+files_handler.egg-info/dependency_links.txt
+files_handler.egg-info/requires.txt
+files_handler.egg-info/top_level.txt
