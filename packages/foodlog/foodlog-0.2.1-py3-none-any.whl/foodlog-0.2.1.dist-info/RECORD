@@ -1,0 +1,15 @@
+foodlog/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+foodlog/__main__.py,sha256=pMWnooGVtVgQnPGdly_r8OkiAbAmjb2BJqk0kEuATIo,141
+foodlog/app.py,sha256=6TXTSIn9Er7mSsVp4iFHuXBM5xVPYyq7wyZ6rvHFxGI,1362
+foodlog/calculator.py,sha256=UU5NTQZVWpvdw1xQ_N-HkRyr5WTOXMaeDiSOdgQBHoA,3715
+foodlog/logs_browser.py,sha256=bHXO7ijqX0OoFpeE8dIzyYGfMPhVIx9573sjcmjBNTQ,1786
+foodlog/logs_viewer.py,sha256=HMKgQxi4t7hF9DTLnsSY5s45jV-zvNb_TNpZKpz6hPs,5359
+foodlog/menu.py,sha256=XQYKLLI6ULsItTELQ0CodDOAPpmU6rw5jtY2Gr24p7M,3517
+foodlog/reference_daily_intake.py,sha256=YbHPSCsZ9HN21DiNSmYBz8W_VyaWLPxL7TWcW3AwqvM,1540
+foodlog/version.py,sha256=FkenXC28_Hr2x-wq4XbX1zE-w1cNowgspHLQcqxUbCA,74
+foodlog-0.2.1.dist-info/LICENSE,sha256=VnRyyfWtcQcdIN5pJy7x3lj5L0RvHOQqkeuzehQ5AM8,1074
+foodlog-0.2.1.dist-info/METADATA,sha256=gONq4PH9h_zLgYC1KSvm8yZQyYlASTE8oRN0czdjy1o,5756
+foodlog-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+foodlog-0.2.1.dist-info/entry_points.txt,sha256=o6iKRltuc17VL_ih6QRDcdmGVJ3EivqPrJxy9H_3sAc,50
+foodlog-0.2.1.dist-info/top_level.txt,sha256=TlEwh5ctaXhQC_nLFtkLaL70O8LsTsoHxCCe_ZwIn3A,8
+foodlog-0.2.1.dist-info/RECORD,,
