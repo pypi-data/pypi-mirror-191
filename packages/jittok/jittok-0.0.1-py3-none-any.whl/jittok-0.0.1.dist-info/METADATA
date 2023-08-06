@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jittok
+Version: 0.0.1
+Summary: Swiss Army Knife-like toolbox for data processing
+Home-page: https://github.com/osoken/jittok
+Author: osoken
+Author-email: osoken.devel@outlook.jp
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: regex
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: types-regex ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+
+# jittok
