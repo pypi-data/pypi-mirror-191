@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: navalmartin_mir_vision_utils
+Version: 0.0.2
+Summary: Various utilities for working with images in Python 3. for the mir project
+Project-URL: Homepage, https://github.com/Navalmartin/navalmartin_mir_vision_utils
+Project-URL: Bug Tracker, https://github.com/Navalmartin/navalmartin_mir_vision_utils/issues
+Author-email: Alexandros Giavaras <a.giavaras@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# navalmartin_mir_vision_utils
+
+Various utilities for working with images in the _mir_ project. 
+
+## Acknowledgements 
+
+The project incorporates the following repositories
+
+- ```image-quality``` https://github.com/ocampor/image-quality (for BRISQUE)
+- ```imutils```: https://github.com/PyImageSearch/imutils (for various utilities with OpenCV)
+
+## Dependencies
+
+- torch
+- torchvision
+- numpy
+- dataclasses
+- Pillow
+- matplotlib
+- opencv-python
+- scipy
+- scikit-image
+- libsvm
+
+## Installation
+
+Installing the utilities via ```pip```
+
+```
+pip install -navalmartin-mir-vision-utils
+```
+
+For a specific version use
+
+```
+pip install -navalmartin-mir-vision-utils==x.x.x
+```
+
+You can uninstall the project via
+
+```commandline
+pip3 uninstall navalmartin_mir_vision_utils
+```
+
+## How to use
