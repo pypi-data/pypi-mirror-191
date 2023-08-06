@@ -1,0 +1,12 @@
+pygeckodriver/__init__.py,sha256=sITdgujcdlLw1FYUvq9-s7NbLhNq_p_gSGJ8y_ZclpA,929
+pygeckodriver/geckodriver_aarch64,sha256=U_ErmCATAfRTEAQsEr9-_1cFB_QcWwRGGF2wun3CPoA,3312032
+pygeckodriver/geckodriver_linux32,sha256=-9_hb2_KitsjQrRl9f_JfCZ5vs0f1N-hDPX00Ts-Igc,8732444
+pygeckodriver/geckodriver_linux64,sha256=9duqNSpC-nutvk6xexsO-0Ri4YEFgZjWGaGI07zqb6Q,9584928
+pygeckodriver/geckodriver_macos,sha256=rgtp11j4rY1PNKFL-h1L9Pa1zcEVSjK-_F3eroLW0HY,5459984
+pygeckodriver/geckodriver_win32.exe,sha256=NpKvXz2MqVuzWPLsHJPf0xTELkLbu3uwXXaXIOTAK7w,3419040
+pygeckodriver/geckodriver_win64.exe,sha256=EljOhcH183YFZTIyVnvNhDSysZlix6aYibFwwi1rU68,3872672
+pygeckodriver-0.32.2.dist-info/LICENSE,sha256=ZII8wmtlUZKlxo-vIia8QiwGXf7bo5w46LOsBsZjyWU,11359
+pygeckodriver-0.32.2.dist-info/METADATA,sha256=70iNvIrfrcvKtOd16lLmzNVVhQSHt6a6TpJX_pKJJWw,759
+pygeckodriver-0.32.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pygeckodriver-0.32.2.dist-info/top_level.txt,sha256=DKW5x1yg00s1fINduguwZ8DCDKAGTZQ51G8FUR-2UeE,14
+pygeckodriver-0.32.2.dist-info/RECORD,,
