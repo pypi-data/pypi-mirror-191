@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: deepchecks-client
+Version: 0.0.27.dev0
+Summary: The SDK client for communicating with Deepchecks monitoring service
+Home-page: UNKNOWN
+Author: deepchecks
+Author-email: info@deepchecks.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

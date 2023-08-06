@@ -1,0 +1,15 @@
+numpy
+pandas
+deepchecks
+httpx>=0.23.0
+pendulum==2.1.2
+fastjsonschema==2.16.2
+termcolor
+PyYAML
+pip-system-certs>=3.1
+typing_extensions==4.4.0
+rfc3339-validator==0.1.4
+packaging==23.0
+
+[:python_version < "3.8"]
+importlib_metadata
