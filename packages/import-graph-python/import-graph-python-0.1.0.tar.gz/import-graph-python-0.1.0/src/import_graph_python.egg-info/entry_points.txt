@@ -1,0 +1,2 @@
+[console_scripts]
+import-graph-python = import_graph_python.cli:cli
