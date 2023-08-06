@@ -1,0 +1,26 @@
+[project]
+name = "pywry"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+dependencies = [
+    'websockets>=5.0.1',
+    'psutil>=5.8.0',
+]
+
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project.optional-dependencies]
+dev = [
+    "maturin==0.14.12"
+]
+
+[tool.maturin]
+python-source = "python"
+include = ['Cargo.toml', 'src/**/*']
