@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: selic-api
+Version: 0.0.5
+Summary: API para obtenção dos dados da SELIC.
+Home-page: https://github.com/marceloid/selic_api
+License: MIT
+Author: João Marcelo
+Author-email: joaomarceloav@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: beautifulsoup4 (>=4.10.0,<5.0.0)
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Project-URL: Documentation, https://github.com/marceloid/selic_api
+Project-URL: Repository, https://github.com/marceloid/selic_api
+Description-Content-Type: text/markdown
+
+# selic_api
+ API para obter a taxa SELIC acumulada para fins de cálculo da atualização monetária para os tributos da Prefeitura de Belo Horizonte.
+
