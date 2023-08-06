@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyclk
+Version: 0.0.73
+Summary: Python package to manage monorepo cli
+Home-page: UNKNOWN
+Author: Sebastian Tuyu
+Author-email: contact@sebastiantuyu.com
+License: MIT
+Description: # PyClk Python Package Manager
+        > This is the perfect tool for handling regular or monorepos for python projects. 
+        
+        ## Install
+        ```bash
+        pip install pyclk
+        ```
+        
+        
+        ## Documentation
+        After installation, you can run
+        ```bash
+        pyclk
+        ```
+        
+Keywords: monorepo cli package manger
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

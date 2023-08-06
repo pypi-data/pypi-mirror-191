@@ -1,0 +1,5 @@
+include reqs.yaml
+include version.py
+recursive-include src * 
+prune src/*/__pycache__
+recursive-exclude */__pycache__ *

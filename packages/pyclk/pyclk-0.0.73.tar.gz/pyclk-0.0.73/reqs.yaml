@@ -1,0 +1,9 @@
+project:
+  pyclk
+description:
+  Pip Package Manager for Python
+version:
+  0.0.73
+author:
+  name: Sebastian Tuyu
+  contact: dev@sebastiantuyu.com
