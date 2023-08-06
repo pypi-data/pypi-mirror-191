@@ -1,0 +1,9 @@
+obsidian_to_latex/__init__.py,sha256=p7YXKp6uTZaSB7EeRelM0TJxL74Nx1n-ecF3ILxyVyk,68
+obsidian_to_latex/document.tex,sha256=9fPJpsdsSr994TJnwwtm3VpRNYEeFURYoJdvQOjzO1I,1956
+obsidian_to_latex/obsidian_path.py,sha256=CkmP-KRoQAE3EPVI4f1Vc02_MZkMDaZgKGLWghHCnDk,435
+obsidian_to_latex/obsidian_to_latex.py,sha256=U6dgIJhuhcOymBlq9UW1JY2z5rg-Zx8tWVnx_HPElIs,2840
+obsidian_to_latex/process_markdown.py,sha256=zqtATfRVg_tt_Lw4KQdeL0XVDZNX6SvFEb1VvijxXf0,13024
+obsidian_to_latex-0.1.5.dist-info/entry_points.txt,sha256=iRJK1TVzMmi3UObtMLj7-Smz_-fC4HtDlOqsQeBp8hM,78
+obsidian_to_latex-0.1.5.dist-info/METADATA,sha256=G-yj7Ju9Ug1P1x1P_DN3I1bJ7WpqxspLQkEF61utuN4,1702
+obsidian_to_latex-0.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+obsidian_to_latex-0.1.5.dist-info/RECORD,,
