@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: exping
+Version: 1.0.0
+Summary: A simple exfiltration ping tool
+Home-page: https://github.com/renatoalmeidaoliveira/Pinger
+Author: Renato Almeida de Oliveira
+Author-email: renato.almeida.oliveira@gmail.com
