@@ -1,0 +1,5 @@
+azure-identity
+azure-storage-blob~=12.11
+numpy
+tenacity
+torch
