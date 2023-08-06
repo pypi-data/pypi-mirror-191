@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+autothread/__init__.py
+autothread/blocking.py
+autothread/common.py
+autothread/non_blocking.py
+autothread.egg-info/PKG-INFO
+autothread.egg-info/SOURCES.txt
+autothread.egg-info/dependency_links.txt
+autothread.egg-info/requires.txt
+autothread.egg-info/top_level.txt
