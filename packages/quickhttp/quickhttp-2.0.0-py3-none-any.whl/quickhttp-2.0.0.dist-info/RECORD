@@ -1,0 +1,11 @@
+quickhttp/__init__.py,sha256=jtyH8LlHdj7_MREcYbuHgm53YFu89974oGrGTDTpUAs,209
+quickhttp/__main__.py,sha256=h_5DkCBqG5F5UYsn6MtRHAZYqVN6iwwk6azWKA6kUrA,68
+quickhttp/_version.py,sha256=uxa186zLkPAF-sD5hMcgEU4QZ9_3XUGVLOLTAI8cStU,205
+quickhttp/cli.py,sha256=_yhn7AYu2i1oqemerQkxyXA32gczoUQXsk1M2xEloiY,3038
+quickhttp/exceptions.py,sha256=jIo4Pyn7V-i0lUugW-qbIESi1TWRRssa4GcdYFXyOho,236
+quickhttp/http_server.py,sha256=Rwa6uOfrSUQ0SAP6SiC1v4bel4ioYnPvNtSpfZMWza8,5473
+quickhttp-2.0.0.dist-info/METADATA,sha256=1n2Z6COrJ_G4CjQI92rlE1ISfItI-UOO-kzNbpl07Hc,5980
+quickhttp-2.0.0.dist-info/entry_points.txt,sha256=uT16HtDrS4Ege-QqUH29ATpiM91XTnJ5WioUd9ffOmE,47
+quickhttp-2.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+quickhttp-2.0.0.dist-info/LICENSE,sha256=455OdugAAgugZxvLIZIlEqlQgqYDPY3Rpet09s6vCjc,1063
+quickhttp-2.0.0.dist-info/RECORD,,
