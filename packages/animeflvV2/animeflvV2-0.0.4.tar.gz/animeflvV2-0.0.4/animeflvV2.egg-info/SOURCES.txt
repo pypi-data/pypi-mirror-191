@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+animeflvV2/__init__.py
+animeflvV2/animeflvV2.py
+animeflvV2/exception.py
+animeflvV2.egg-info/PKG-INFO
+animeflvV2.egg-info/SOURCES.txt
+animeflvV2.egg-info/dependency_links.txt
+animeflvV2.egg-info/requires.txt
+animeflvV2.egg-info/top_level.txt
