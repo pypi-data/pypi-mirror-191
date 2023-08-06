@@ -1,0 +1,6 @@
+plantuml
+typer
+astroid
+six
+requests
+jsonschema

@@ -1,0 +1,2 @@
+[console_scripts]
+bt-diagrams = src.cli_interface:main
