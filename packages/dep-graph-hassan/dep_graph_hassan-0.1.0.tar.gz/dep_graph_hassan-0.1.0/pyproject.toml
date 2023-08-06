@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dep-graph-hassan"
+version = "0.1.0"
+description = "Dependency Graph Resolution Package"
+authors = ["Muhammad Hassan Ahmed"]
+readme = "README.md"
+packages = [{include = "dep_graph"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.1"
+pre-commit = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
