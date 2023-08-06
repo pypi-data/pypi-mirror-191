@@ -1,0 +1,2 @@
+gnuhealth==4.2.0
+gnuhealth_socioeconomics==4.2.0
