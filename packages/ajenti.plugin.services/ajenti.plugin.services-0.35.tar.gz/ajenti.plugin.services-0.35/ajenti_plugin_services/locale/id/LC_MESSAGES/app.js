@@ -1,0 +1,1 @@
+{"": "", "Close": "", "Disabled": "", "Filter services": "Layanan filter", "Manager": "Manajer", "Service": "Layanan", "Static": "", "Services": "Layanan", "Manage system services": "Mengelola layanan sistem", "Service operation failed": "", "Stop service": "", "Start service": "", "Restart service": "", "Kill service": "", "Enable service": "", "Disable service": "", "Done": ""}

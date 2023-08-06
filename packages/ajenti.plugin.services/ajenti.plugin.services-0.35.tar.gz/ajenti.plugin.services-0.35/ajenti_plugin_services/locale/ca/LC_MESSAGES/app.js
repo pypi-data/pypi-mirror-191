@@ -1,0 +1,1 @@
+{"": "", "Close": "", "Disabled": "", "Filter services": "Filtre de serveis", "Manager": "Gestor", "Service": "", "Static": "", "Services": "", "Manage system services": "Gestionar els serveis del sistema", "Service operation failed": "", "Stop service": "", "Start service": "", "Restart service": "", "Kill service": "", "Enable service": "", "Disable service": "", "Done": ""}

@@ -1,0 +1,1 @@
+{"": "", "Close": "", "Disabled": "", "Filter services": "", "Manager": "", "Service": "Tsjinst", "Static": "", "Services": "Tsjinsten", "Manage system services": "", "Service operation failed": "", "Stop service": "", "Start service": "", "Restart service": "", "Kill service": "", "Enable service": "", "Disable service": "", "Done": ""}

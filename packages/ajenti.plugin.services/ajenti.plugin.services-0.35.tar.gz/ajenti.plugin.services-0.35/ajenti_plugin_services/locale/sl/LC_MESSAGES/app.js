@@ -1,0 +1,1 @@
+{"": "", "Close": "", "Disabled": "", "Filter services": "Filtriraj servise", "Manager": "", "Service": "Servis", "Static": "", "Services": "Servisi", "Manage system services": "Urejanje sistemskih servisov", "Service operation failed": "", "Stop service": "", "Start service": "", "Restart service": "", "Kill service": "", "Enable service": "", "Disable service": "", "Done": ""}
