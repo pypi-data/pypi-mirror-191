@@ -1,0 +1,10 @@
+levdict/__init__.py,sha256=wzPRH3AfOSlluZAfogYw4PQXL8xX3gq7TgpZgSYNylU,172
+levdict/levdict_base.py,sha256=nVJ3KNnJPD4V-HQnCVKMtWJ401MED6gGpFM620_Vsyw,6074
+levdict/levdict_json.py,sha256=j53pXOYdhO9jfJ8_-XhefmJd8ijFL4uqvJU9ZZlumrI,1804
+levdict/levdict_toml.py,sha256=gBeZwuRWceFahv8ujN_4LlFGRKzBcgSe_UKPRQT0y_U,1662
+levdict/levdict_yaml.py,sha256=sDx5iM46RCfqEdsvc90gQtp4_WhSSUMnLzienLzp-Sw,1750
+levdict-2023.4.dist-info/LICENSE,sha256=DxNFonLg80q3-25enYHLO7kzhkYXcaCcIWHkHmFlgZY,1081
+levdict-2023.4.dist-info/METADATA,sha256=IR8uod45TOxGcbBYQBDBWnh-up4dtushrxv69Ueiwx0,3968
+levdict-2023.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+levdict-2023.4.dist-info/top_level.txt,sha256=fx8UAk5NsfXRn4cNWkF4Jje8rD1xYFgq1BqWPYvkENg,8
+levdict-2023.4.dist-info/RECORD,,
