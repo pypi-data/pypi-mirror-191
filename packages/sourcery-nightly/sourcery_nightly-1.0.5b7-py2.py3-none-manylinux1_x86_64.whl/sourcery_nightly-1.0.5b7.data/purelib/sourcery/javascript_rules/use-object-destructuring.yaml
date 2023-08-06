@@ -1,0 +1,45 @@
+rules:
+  # These two rules together convert a series of property accesses into a single destructuring access.
+
+- id: use-object-destructuring
+  description: Prefer object destructuring when accessing and using properties.
+  explanation: |
+    Object destructuring can often remove an unnecessary temporary reference, as well as making your code more succinct.
+
+    From the [Airbnb Javascript Style Guide](https://airbnb.io/javascript/#destructuring--object)
+  language: javascript
+  tags:
+  - airbnb-javascript-style-guide
+  - airbnb
+  - default
+  pattern: |
+    const ${property} = ${object}.${property}
+  replacement: |
+    const {${property}} = ${object}
+  tests:
+  - match: |
+      const firstName = user.firstName;
+    expect: |
+      const {firstName} = user;
+
+- id: combine-object-destructure
+  description: Combine destructure assignments.
+  language: javascript
+  pattern: |
+    const {...} = ${object};
+    const {...} = ${object};
+  replacement: |
+    const {..., ...} = ${object};
+  tests:
+  - match: |
+      const {firstName} = user;
+      const {lastName} = user;
+    expect: const {firstName, lastName} = user;
+  - match: |
+      const {a, b} = alphabet;
+      const {c, d} = alphabet;
+    expect: |
+      const {a, b, c, d} = alphabet;
+  - no-match: |
+      const {firstUserName} = firstUser;
+      const {secondUserName} = secondUser;
