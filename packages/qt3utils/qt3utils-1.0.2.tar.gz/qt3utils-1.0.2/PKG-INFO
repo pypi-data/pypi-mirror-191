@@ -1,0 +1,165 @@
+Metadata-Version: 2.1
+Name: qt3utils
+Version: 1.0.2
+Summary: A package for performing experiments in the QT3 lab at UW.
+Author-email: "G. Adam Cox" <gadamc@gmail.com>
+Maintainer-email: "G. Adam Cox" <gadamc@gmail.com>, Maxwell Parsons <mfpars@uw.edu>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022, University of Washington
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://github.com/qt3uw/qt3utils
+Project-URL: Source, https://github.com/qt3uw/qt3utils
+Project-URL: Bug Tracker, https://github.com/qt3uw/qt3utils/issues
+Project-URL: Changelog, https://github.com/qt3uw/qt3utils/releases
+Keywords: qt3,confocal scan,nidaqmx,piezo,stage,control,electron spin control
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Utility Classes and Functions for the QT3 Lab
+
+This package provides a number of tools and fully-packaged programs for usage
+in the Quantum Technologies Teaching and Test-Bed (QT3) lab at the University of Washington.
+
+The QT3 lab confocal microscope utilizes the following hardware to perform
+various spin-control experiments on quantum systems, such as NV centers in diamond:
+
+ * TTL pulsers
+   * Quantum Composer Sapphire
+   * Spin Core PulseBlaster
+ * Excelitas SPCM for photon detection
+ * NI-DAQ card (PCIx 6363) for data acquisition and control
+ * Jena System's Piezo Actuator Stage Control Amplifier
+ * [Future] spectrometer
+
+The code in this package facilitates usages of these devices to perform
+experiments.
+
+# Setup
+
+### Prerequisites
+
+The utilities in this package depend on publicly available Python packages found
+on PyPI and drivers built by National Instruments for DAQmx and
+SpinCore for the PulseBlaster. These libraries must be installed separately.
+
+* [National Instruments DAQmx](https://nidaqmx-python.readthedocs.io/en/latest/)
+  * [driver downloads](http://www.ni.com/downloads/)
+* [SpinCore's PulseBlaster](https://www.spincore.com/pulseblaster.html)
+  * [spinAPI driver](http://www.spincore.com/support/spinapi/)
+
+## Installation
+
+Once the prerequisite packages have been installed, qt3utils can be installed from pip.
+
+```
+pip install qt3utils
+```
+
+The `qt3utils` package depends on a handful of other [qt3 packages](https://github.com/qt3uw) and will be installed for you by default.
+Additional information may also be [found here](https://github.com/qt3uw/qt3softwaredocs).
+
+
+
+# Usage
+
+This package provides GUI applications and a Python API for controlling the hardware and running experiments.
+
+For instructions on using the python API, 
+the simplest way to get started is to see one of the [example](examples) notebooks.
+
+## Applications
+
+### QT3 Oscilloscope
+
+The console program `qt3scope` comes with this package. It allows you to run
+a simple program from the command-line that reads the count rate on a particular
+digital input terminal on the NI DAQ.
+
+Review the available command line options for the program. Pay special attention
+to the `--signal-terminal` option, ensuring that terminal value matches the current
+hardware setup.
+
+```
+> qt3scope --help
+```
+
+If default settings are correct, then should be able to run without options
+
+```
+> qt3scope
+```
+
+### QT3 Confocal Scan
+
+The console program `qt3scan` comes with this package.  This program launches
+a GUI applications that will perform a confocal scan using the Jena system
+piezo actuator.
+
+The run-time options available are very similar to `qt3scope`.
+Review the available command line options for the program. Pay special attention
+to the `--signal-terminal` option, ensuring that terminal value matches the current
+hardware setup.
+
+```
+> qt3scan --help
+```
+
+If default settings are correct, then should be able to run without options
+
+```
+> qt3scan
+```
+
+### QT3 Piezo Controller
+
+The console program `qt3piezo` comes installed via the 'nipiezojenapy' package, and may be launched from the command line.
+
+```
+> qt3piezo
+```
+
+Similarly, this applications can be configured via command line options to match the haredware setup.
+
+
+# Debugging
+
+# LICENSE
+
+[LICENCE](LICENSE)
