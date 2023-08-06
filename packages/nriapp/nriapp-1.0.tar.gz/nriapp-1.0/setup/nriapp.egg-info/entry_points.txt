@@ -1,0 +1,2 @@
+[console_scripts]
+nriapp = chromedriver:main
