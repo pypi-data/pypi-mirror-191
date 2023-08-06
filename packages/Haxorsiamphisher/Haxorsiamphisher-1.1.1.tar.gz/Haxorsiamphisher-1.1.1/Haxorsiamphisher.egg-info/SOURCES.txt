@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+haxorsiamphisher
+setup.cfg
+setup.py
+Haxorsiamphisher.egg-info/PKG-INFO
+Haxorsiamphisher.egg-info/SOURCES.txt
+Haxorsiamphisher.egg-info/dependency_links.txt
+Haxorsiamphisher.egg-info/requires.txt
+Haxorsiamphisher.egg-info/top_level.txt
+files/email.json
+files/maxphisher.gif
+files/requirements.txt
+files/version.txt
