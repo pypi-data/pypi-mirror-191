@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: fishy
+Version: 0.5.15
+Summary: Fishing bot for Elder Scrolls Online
+Home-page: https://github.com/adsau59/fishyboteso
+Author: Adam Saudagar
+Author-email: adam_saudagar@live.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/adsau59/fishyboteso/issues/
+Project-URL: Funding, https://www.paypal.me/AdamSaudagar
+Project-URL: Say Thanks!, http://discord.definex.in
+Project-URL: Source, https://github.com/adsau59/fishyboteso
+Keywords: fishybot fishyboteso esofishingbot fishingbot esobot
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3
+Requires-Dist: winshell
+Requires-Dist: imutils
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: pypiwin32
+Requires-Dist: ttkthemes
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: whatsmyip
+Requires-Dist: pynput
+Requires-Dist: keyboard
+Requires-Dist: playsound
+Requires-Dist: event-scheduler
+Requires-Dist: mouse
+Requires-Dist: mss
+
+# Fishybot ESO 🎣
+Auto fishing bot for Elder Scrolls Online. The Bot automatically fishes until the fishing hole disappears.  It also sends notification via discord when it stops fishing. We also have a leaderboard for the amount of fishes you caught. Become the master fisher and swim in perfect roes 😉
+
+Botting does violate ESO's terms of service, so technically you could get banned. But this bot doesn't read or write memory from ESO so they won't know you are using a bot. **This software doesn't come with any Liability or Warranty, I am not responsible if you do get banned.**
+
+- Check out the [Showcase Video](https://www.youtube.com/watch?v=THQ66lG4ImU).
+- [How to Install ?](https://github.com/fishyboteso/fishyboteso/wiki/Installation)
+- Chat with us on [Discord](https://discord.gg/V6e2fpc).
+- Support us via [PayPal](https://www.paypal.me/AdamSaudagar) or [Patreon](https://www.patreon.com/AdamSaudagar).
+
+For more Info, please refer our [Wiki](https://github.com/fishyboteso/fishyboteso/wiki).
