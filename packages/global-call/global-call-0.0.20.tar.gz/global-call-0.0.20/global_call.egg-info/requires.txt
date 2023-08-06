@@ -1,0 +1,3 @@
+aiohttp
+mpld3
+colorama
