@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cronuseosdk
+Version: 0.0.1
+Author: Cronuseo
+Author-email: <cronuseo@gmail.com>
+Keywords: python,auth,cronuseo
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Cronuseo python SDK for permission checking
