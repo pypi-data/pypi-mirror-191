@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "supu"
+version = "0.1.0"
+description = "Slightly Useful Python Utility functions"
+license = "MIT"
+authors = ["Hugh Wimberly <hugh.wimberly@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/moredatarequired/supu"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+include = ["supu/**/*.py"]
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.12"
+pandas = "^1.0"
+scipy = "^1.9"
+
+
+[tool.poetry.group.dev.dependencies]
+better-exceptions = "^0.3.3"
+black = "^23.1.0"
+blacken-docs = "^1.13.0"
+ipython = "^8.10.0"
+mypy = "^1.0.0"
+pandas-stubs = "^1.5.3.230203"
+pytest = "^7.2.1"
+ruff = "^0.0.246"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+target-version = "py38"
+select = [
+    "F",
+    "E",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "UP",
+    "B",
+    "A",
+    "C4",
+    "PT",
+    "SIM",
+    "PLE",
+    "RSE",
+    "RUF",
+]
+fix = true
