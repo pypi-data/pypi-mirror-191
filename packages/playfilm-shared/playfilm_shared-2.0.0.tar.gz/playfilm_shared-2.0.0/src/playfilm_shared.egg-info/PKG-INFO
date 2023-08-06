@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: playfilm-shared
+Version: 2.0.0
+Summary: Shared components package
+Author-email: Vic Escribano <victor@playfilm.tv>
+Project-URL: Homepage, https://bitbucket.org/playfilm/playfilm-shared/src/main/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+## Exceptions and status code
+
+- MissingMetricInfoException: 541
+- InvalidAccessTokenException: 542
+- GoogleApiException: 543
+- MissingAccountIdException: 544
+- MissingActionException: 545
+- MissingChannelException: 546
+- QueryDBRequestException: 547
+- FacebookApiException: 548
+- TikTokApiException: 549
+
+## Example Import
+`from playfilm-shared.exceptions import MissingMetricInfoException`
