@@ -1,0 +1,12 @@
+boto3
+hvac
+PyYAML
+passpy
+
+[deploy]
+build
+twine
+
+[dev]
+black
+pytest
