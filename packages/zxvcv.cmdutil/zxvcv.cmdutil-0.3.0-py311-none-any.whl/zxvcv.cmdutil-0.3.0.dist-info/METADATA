@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: zxvcv.cmdutil
+Version: 0.3.0
+Summary: Toolbox for other projects
+Author: Pawel Piskorz
+Author-email: ppiskorz0@gmail.com
+License: MIT License
+Keywords: toolbox,tool
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4.0.0,>=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zxvcv.util (>=0.1.8)
+
+# zxvcv.cmdutil
+Toolbox for other projects.
+
+# Build
+```
+tox -e build310
+tox -e build311
+```
+
+# Setup aliases
+Add path <python_path>/Lib/site-packages/zxvcv/cmdutil/aliases/<right_os_folder>
+
+To use aliases provided with this package.
+
+## Dos aliases
+`clear` = cls \
+`gita` = git add -A :!a \
+`gitl` = git log --graph --oneline $* \
+`la` = dir \
+`ll` = dir \
+`ls` = dir /B \
+`venva` - support activation python venvs (see --help) \
+`venvd` - support deactivation python venvs (see --help) \
+`venvi` - support creation python venvs (see --help) \
+`venvr` - support removing python venvs (see --help) \
+`venvl` - list available python venvs (see --help)
+
+# Scripts
+
+## zxvcv.pullall
+Helps updating multiple git repositories (see --help)
+
+# Publish
+```
+tox -e publish -- -u <username> -p <password>
+```
+
+publish on testpypi
+```
+tox -e publish -- --repository testpypi -u <username> -p <password>
+```
+
+Changelog
+=========
+
+0.3.0 (2023-02-14)
+------------------
+- Add aliases for dos.
+- Update README.md.
+- rename virtual_env -> pvenv.
+- Generating whl for pythons 3.10 and 3.11.
+
+0.2.0 (2023-02-13)
+------------------
+- Add interface for managing python virtual envs.
+
+0.1.3 (2023-02-12)
+------------------
+- General package setup updates.
+
+0.1.0 (2023-02-09)
+------------------
+- Initial commit.

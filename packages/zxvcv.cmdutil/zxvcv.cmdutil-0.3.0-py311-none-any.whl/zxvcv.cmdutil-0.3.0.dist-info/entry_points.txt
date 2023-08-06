@@ -1,0 +1,2 @@
+[console_scripts]
+zxvcv.pullall = zxvcv.cmdutil.git:pull_all
