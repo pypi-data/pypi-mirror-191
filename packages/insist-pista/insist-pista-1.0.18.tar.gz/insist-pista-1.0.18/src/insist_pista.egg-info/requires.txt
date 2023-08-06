@@ -1,0 +1,7 @@
+pandas
+matplotlib
+astropy
+photutils
+numpy
+seaborn
+torch
