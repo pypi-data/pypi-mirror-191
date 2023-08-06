@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fyers-token-manager
+Version: 0.0.1
+Summary: Fyers Token Manager
+Home-page: https://github.com/krunaldodiya/fyers-token-manager
+Author: Krunal Dodiya
+Author-email: kunal.dodiya1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+## Fyers Token Generator
+
+```
+from fyers_token_manager import FyersApiBuilder
+```
+
+```
+config = {
+  "username": "<USERNAME>",
+  "password": "<PASSWORD>",
+  "pin": "<PIN>",
+  "client_id": "<CLIENT_ID>",
+  "secret_key": "<SECRET_KEY>",
+  "redirect_uri": <REDIRECT_URL>
+}
+```
+
+#### Initialization
+
+```
+from fyers_api import accessToken, fyersModel
+from fyers_api.Websocket import ws
+
+fyersApiBuilder = FyersApiBuilder(config=config, accessToken=accessToken, fyersModel=fyersModel, ws=ws)
+```
+
+#### HTTP Client
+
+- fyersApiBuilder.client.get_profile()
+- fyersApiBuilder.client.history(payload)
+
+#### WebSocket Client
+
+- fyersApiBuilder.ws_client.subscribe(payload)
+
+
