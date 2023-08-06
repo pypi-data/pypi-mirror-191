@@ -1,0 +1,12 @@
+tenkan/__init__.py,sha256=V9B-vwwzO593ZH-x9bVUYPHXXxsCkHcE8XiAp0gPXIc,46
+tenkan/cli.py,sha256=TEvrx-8MEUIxAQF6KpRTYEb5BkUqrcFn7Z52pn3oOO4,6478
+tenkan/config.py,sha256=z8yvjzwa31b_nZj7XWl2OVjcTcc78_R4duiLssw96HA,1771
+tenkan/feed.py,sha256=KnZGX5GEIcTYhNkZnqJMqe9iErhtdnJ0rU-rgR7oNaw,6923
+tenkan/feedsfile.py,sha256=u9-8-al5bAt2KYtso0ptupr-dn_P4GNy4RA3wgcHBbM,2471
+tenkan/files.py,sha256=sCbYZclTq5g0hxLMqXHjUIQxySEBJuj9UKLhQIDaGTU,4529
+tenkan/processing.py,sha256=tsO7_IqlJDMpzIBjdoGx65dF8AVRna6SK-ViGpYVVDI,3881
+tenkan/utils.py,sha256=OOXrs98rDjV-h1sHNQzs_gAQH5UR1g22mv7ZFaLzAO8,849
+tenkan-0.2.5.dist-info/METADATA,sha256=Ossn_8WlmZ1pp7GRm-X4GsxSRjXIPBgoJqrxFju4zRM,3196
+tenkan-0.2.5.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+tenkan-0.2.5.dist-info/entry_points.txt,sha256=8vPlWDKrjyPnvm9yEIz3tdoJKpyr9yyZkeXu7ySnErc,42
+tenkan-0.2.5.dist-info/RECORD,,
