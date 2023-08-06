@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+tabulate
+joblib
+ipython
+fire
+tqdm
+dill
+cryptography
+paramiko
+requests
+cycler
+setuptools
+wheel
+twine
+pytest
