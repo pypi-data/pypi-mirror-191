@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/simplegoogle_scraper_python/__init__.py
+src/simplegoogle_scraper_python/custom_exceptions.py
+src/simplegoogle_scraper_python/logger.py
+src/simplegoogle_scraper_python/scrapeGooGle_results.py
+src/simplegoogle_scraper_python.egg-info/PKG-INFO
+src/simplegoogle_scraper_python.egg-info/SOURCES.txt
+src/simplegoogle_scraper_python.egg-info/dependency_links.txt
+src/simplegoogle_scraper_python.egg-info/requires.txt
+src/simplegoogle_scraper_python.egg-info/top_level.txt
