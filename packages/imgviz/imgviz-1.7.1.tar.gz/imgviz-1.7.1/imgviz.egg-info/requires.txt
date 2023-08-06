@@ -1,0 +1,10 @@
+matplotlib
+numpy
+Pillow>=5.3.0
+PyYAML
+
+[all]
+scikit-image
+scikit-learn
+opencv-python
+pyglet
