@@ -1,0 +1,9 @@
+wagtail_f_richtext/__init__.py,sha256=3PZxXaE_fi1DucBi3By4vk_xHLPRLuqah3r1q3yUX7c,137
+wagtail_f_richtext/apps.py,sha256=QIL8uh9siBLIzzHertbrSzadZxf1vJZ9wkWDEW5B9Ss,185
+wagtail_f_richtext/parser.py,sha256=ZASm2ynaMbz1YYXHzxow6JIVFrFbaoXfjGLDNQc5ofA,4878
+wagtail_f_richtext/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_f_richtext/templatetags/frichtext_tags.py,sha256=3AcgxqTAp001CeaUm6bhXRV0dZOTsho1gwN4vQRhpbw,2183
+wagtail_f_richtext-1.0.0.dist-info/LICENSE,sha256=GCrdzz4e7im-SUiq8w4uET0Dipnv_d4B908CbKTSs30,1072
+wagtail_f_richtext-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+wagtail_f_richtext-1.0.0.dist-info/METADATA,sha256=9q9POAHVoIA3OwqhrF1VQOmNSXtPIHQ2WWkRmH-vAb4,1309
+wagtail_f_richtext-1.0.0.dist-info/RECORD,,
