@@ -1,0 +1,8 @@
+argcomplete
+paramiko<4,>=3
+pytz
+sshpubkeys
+pyyaml
+packaging
+colored
+rich
