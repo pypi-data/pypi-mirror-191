@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: SC-Engine
+Version: 1.1.0
+Summary: A rotation module
+Home-page: 
+Author: SplatCraft
+Author-email: splatcraft.5972@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+# SC ENGINE
+
+SC-Engine is a rotation engine coded by @SplatCraft
+
+It works with Oz-Engine (or other libraries)
+
+
+## SETUP
+
+In shell, type the following command :
+
+`pip install SC-Engine`
+
+In your file, write this:
+
+```python
+import SC
+```
+## USE
+
+### POINT ROTATION
+
+Let's try to rotate a point around another point !
+
+```python
+new = SC.rotate_pixel([1, 1], [3, 3], 180)
+
+# here we are rotating the point at x=1 y=1 around the point at x=3 y=3 to 180 degrees
+
+# this function returns a list of two integers [x,y]
+
+print(new)
+```
+Run the project and see what happens
+```python
+[5, 5]
+```
+And those are the new coordinates of the point !
+
+### SHAPE ROTATION
+
+```python
+sh = [
+  ["#","#","#"],
+  ["#"," "," "],
+  ["#","#","#"]
+]
+
+new = SC.rotate_shape(sh, [5,5], [4,6], 90)
+
+# sh  is the shape to rotate
+# [5,5]  are the coordinates of the bottom_right corner of the shape
+# [4,6]  are the coordinates of the point to rotate the shape around
+# 90 is the angle of rotation
+
+print(new)
+```
+
+And it returns this : 
+
+```python
+[[["#","#","#"],
+  ["#"," ","#"],
+  ["#"," ","#"]],
+ [3,6]]
+```
+
+We can see that there is the rotated shape, and the new bottom right coordinates of the shape
+
+### GET CORNER POINT
+
+With this function we want to get the coordinates of a corner of a shape
+
+```python
+new = SC.get_corner(sh, [5,5], SC.bottom_right, SC.top_right)
+
+print(new)
+```
+And here is the result :
+```python
+[5,7]
+```
+
+## COMPATIBILITY
+
+### OZ Engine
+
+Here, _new_ is the output of  **rotate_shape**
+
+```python
+
+import OzEngine as oz
+
+
+canvas = oz.Canvas(" ")
+camera = oz.Camera(canvas, [10,10], [0,0], "cam1")
+
+SC.OzEngine.add_sprites(SC.Format(new.oz_engine()))
+
+```
