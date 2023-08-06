@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: rapidocr-openvino
+Version: 1.1.26
+Summary: A cross platform OCR Library based on OpenVINO.
+Home-page: https://github.com/RapidAI/RapidOCR
+Author: SWHL
+Author-email: liekkaskono@163.com
+License: Apache-2.0
+Keywords: ocr,text_detection,text_recognition,db,onnxruntime,paddleocr,openvino,rapidocr
+Platform: Any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyclipper (>=1.2.1)
+Requires-Dist: openvino (>=2022.2.0)
+Requires-Dist: opencv-python (>=4.5.1.48)
+Requires-Dist: numpy (>=1.19.3)
+Requires-Dist: six (>=1.15.0)
+Requires-Dist: Shapely (>=1.7.1)
+Requires-Dist: PyYAML
+
+## rapidocr-openvino Package
+<p>
+    <a href=""><img src="https://img.shields.io/badge/Python->=3.7,<=3.10-aff.svg"></a>
+    <a href=""><img src="https://img.shields.io/badge/OS-Linux%2C%20Win%2C%20Mac-pink.svg"></a>
+</p>
+
+### 1. Install package by pypi.
+```shell
+$ pip install rapidocr-openvino
+```
+
+
+### 2. Use.
+```python
+import cv2
+from rapidocr_openvino import RapidOCR
+
+rapid_ocr = RapidOCR()
+
+img = cv2.imread('test_images/ch_en_num.jpg')
+
+result, elapse_list = rapid_ocr(img)
+print(result)
+print(elapse_list)
+
+# result: [[dt_boxes], txt, score]
+# 示例：[[左上, 右上, 右下, 左下], '小明', '0.99']
+
+# elapse_list: [det_elapse, cls_elapse, rec_elapse]
+# all_elapse = det_elapse + cls_elapse + rec_elapse
+```
+
+
