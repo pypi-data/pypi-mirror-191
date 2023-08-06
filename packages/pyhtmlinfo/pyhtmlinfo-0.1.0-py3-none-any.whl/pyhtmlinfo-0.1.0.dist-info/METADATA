@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyhtmlinfo
+Version: 0.1.0
+Summary: pyhtmlinfo is a python library it can be used to get html tags and description
+Home-page: https://github.com/amr2018/pyhtmlinfo
+Author: Amr Elgarhy
+Author-email: amr.ee@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+
+# pyhtmlinfo
+pyhtmlinfo is a python library it can be used to get html tags and description
+not only that you can get deprecated html tags or html elements
+by using  is_old_or_deprecated(tag) this function return True
+if the tag old or deprecated
+
+
