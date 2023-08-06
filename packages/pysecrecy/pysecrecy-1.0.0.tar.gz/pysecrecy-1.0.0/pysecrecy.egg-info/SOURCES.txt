@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pysecrecy/__init__.py
+pysecrecy/pysecrecy.py
+pysecrecy.egg-info/PKG-INFO
+pysecrecy.egg-info/SOURCES.txt
+pysecrecy.egg-info/dependency_links.txt
+pysecrecy.egg-info/top_level.txt
