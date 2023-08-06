@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+mathplusplus.egg-info/PKG-INFO
+mathplusplus.egg-info/SOURCES.txt
+mathplusplus.egg-info/dependency_links.txt
+mathplusplus.egg-info/requires.txt
+mathplusplus.egg-info/top_level.txt
