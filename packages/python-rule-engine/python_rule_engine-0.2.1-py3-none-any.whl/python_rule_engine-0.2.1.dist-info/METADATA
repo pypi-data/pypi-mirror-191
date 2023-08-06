@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-rule-engine
+Version: 0.2.1
+Summary: A rule engine where rules are written in JSON format
+Home-page: https://github.com/santalvarez/python-rule-engine
+License: MIT
+Keywords: rule-engine,rules,json,python
+Author: Santiago Alvarez
+Author-email: santiago.salvarez@mercadolibre.com
+Requires-Python: >=3.7.2,<4.0.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
