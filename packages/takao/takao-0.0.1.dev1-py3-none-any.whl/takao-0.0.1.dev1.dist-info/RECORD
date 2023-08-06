@@ -1,0 +1,12 @@
+takao/__init__.py,sha256=CB5UdilQ8svA1rx4BAGYQEZ2NRT6LASsZb9JfNupkrQ,1271
+takao/layout.html,sha256=S8SNCieDtyfR3wRtQDduqo5Y-ACgpWfXvM21zUkFcRY,1036
+takao/partials/global-toc.jinja2,sha256=qK3jhsN5-k-j3e78TmSeDLWJHegs1B17eg4MOZJQaQI,264
+takao/partials/mobile-menubar.jinja2,sha256=0L0pSn9fV1sGaxbfpyS6I0gXdcw8HumjGeqTilmMV0Q,215
+takao/partials/page-nav.jinja2,sha256=y0G1u8j05gpu3aITIHN2ih5tah88VmUU0AFjcbBeZWQ,729
+takao/partials/prev-next.jinja2,sha256=Q23Fb7Kukd-XSCwvDpwJHuy3_QFgJaxXXXHhGiTgx2o,460
+takao/partials/readthedocs-menu.jinja2,sha256=BT7_06lnB56YO5ztftyTWmWLRk1h4fgS6blbmlTNpBc,42
+takao/theme.conf,sha256=YyXCh1XvFCwXyJq-Z3bFjHXDuV07w0J1M4uPejWc0Fg,231
+takao-0.0.1.dev1.dist-info/entry_points.txt,sha256=w8a9hD7cWL5ORoonMMl21OKlb1F9WLlwB1ZlAg0JFJM,34
+takao-0.0.1.dev1.dist-info/METADATA,sha256=sgM56f_UgmmMxTnY0Khbt42RG0T1sT-2MW8fcHvWsxU,918
+takao-0.0.1.dev1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+takao-0.0.1.dev1.dist-info/RECORD,,
