@@ -1,0 +1,5 @@
+setup.py
+scorecardlib.egg-info/PKG-INFO
+scorecardlib.egg-info/SOURCES.txt
+scorecardlib.egg-info/dependency_links.txt
+scorecardlib.egg-info/top_level.txt
