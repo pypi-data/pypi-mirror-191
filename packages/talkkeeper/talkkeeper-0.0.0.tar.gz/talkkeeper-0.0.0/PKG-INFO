@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: talkkeeper
+Version: 0.0.0
+Summary: Библиотека Python talkkeeper для загрузки в хранилище / предобработки / разметки / ...
+Home-page: https://github.com/p141592
+License: MIT
+Author: Nikolay Baryshnikov
+Author-email: root@k0d.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: orjson (>=3.8.3,<4.0.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Requires-Dist: rich (>=12.6.0,<13.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/gdhorseshop/gdlib
+Description-Content-Type: text/markdown
+
+# Обработчик Media файлов
+
+- Создание meta заголовка
+- Разбивка на фреймы
+- Загрузка фреймов в очередь
+
+
