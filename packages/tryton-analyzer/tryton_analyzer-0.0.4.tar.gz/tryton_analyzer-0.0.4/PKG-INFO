@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tryton-analyzer
+Version: 0.0.4
+Summary: A language server / linter for the Tryton framework
+License: GPL-3.0-only
+Author: Jean Cavallo
+Author-email: jean.cavallo@hotmail.fr
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: libcst (>=0.4.9,<0.5.0)
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: pygls (>=1.0.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+
