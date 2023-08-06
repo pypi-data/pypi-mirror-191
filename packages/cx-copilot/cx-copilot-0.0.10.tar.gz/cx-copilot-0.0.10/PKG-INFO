@@ -1,0 +1,201 @@
+Metadata-Version: 2.1
+Name: cx-copilot
+Version: 0.0.10
+Summary: Sample Python Project for creating a new Python Module
+Author-email: "Rahul S, Tanuj Tiwari" <rahul@caesarhq.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: requests~=2.28.1
+Requires-Dist: pinecone-client==2.1.0
+Requires-Dist: redis~=4.4.1
+Requires-Dist: openai~=0.26.0
+Requires-Dist: python-helpscout-v2==2.0.0
+Requires-Dist: envyaml~=1.10.211231
+Requires-Dist: python-intercom~=3.1.0
+Requires-Dist: email_reply_parser~=0.5.12
+Requires-Dist: beautifulsoup4~=4.11.1
+Requires-Dist: zenpy~=2.0.25
+Requires-Dist: pre-commit~=2.21.0
+Requires-Dist: hikari~=2.0.0.dev115
+Requires-Dist: pyspark>=3.0.0 ; extra == "spark"
+Requires-Dist: bandit[toml]==1.7.4 ; extra == "test"
+Requires-Dist: black==22.1.0 ; extra == "test"
+Requires-Dist: check-manifest==0.48 ; extra == "test"
+Requires-Dist: flake8-bugbear==22.1.11 ; extra == "test"
+Requires-Dist: flake8-docstrings ; extra == "test"
+Requires-Dist: flake8-formatter_junit_xml ; extra == "test"
+Requires-Dist: flake8==4.0.1 ; extra == "test"
+Requires-Dist: pre-commit==2.17.0 ; extra == "test"
+Requires-Dist: pylint==2.12.2 ; extra == "test"
+Requires-Dist: pylint_junit ; extra == "test"
+Requires-Dist: pytest-cov==3.0.0 ; extra == "test"
+Requires-Dist: pytest-mock<3.7.1 ; extra == "test"
+Requires-Dist: pytest-runner ; extra == "test"
+Requires-Dist: pytest==7.1.0 ; extra == "test"
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == "test"
+Requires-Dist: shellcheck-py==0.8.0.4 ; extra == "test"
+Project-URL: Documentation, https://github.com/caesarhq
+Project-URL: Source, https://github.com/caesarhq
+Project-URL: Tracker, https://github.com/caesarhq
+Provides-Extra: spark
+Provides-Extra: test
+
+# cx-copilot
+
+🤖 Empower your CX team with open-source AI-powered response auto-drafting. 🤖
+
+## 🤔 What is cx-copilot?
+
+
+An open source project that lets you leverage LLMs and latest advancements in AI to automate customer support interactions. By connecting a Large Language Model (LLM) to your knowledge base and historical support tickets via embeddings & vector searching, you can accurately auto-draft responses to all customer requests.
+
+## 🖥 Where can it be used?
+
+You can use cx-copilot to auto-draft responses in support tools like Helpscout, Intercom, Zendesk and anywhere else you store & respond to customer requests.
+
+## ⚡️ Installation
+
+1. Go to extension directory.
+```
+$ cd ./client/chrome-extension/
+```
+
+2. Download dependencies and perform initial project setup.
+```
+$ yarn
+```
+
+3. Edit configuration inside `src/utils/config.js`.
+```
+const config = {};
+config.API_URL = 'http://localhost:9000';
+export default config;
+```
+
+4. Run the project.
+```
+$ yarn start
+```
+
+5. Load your extension on Chrome by doing the following:
+    1. Go to `chrome://extensions/`
+    2. Enable `developer mode`
+    3. Click on `load unpacked extension`
+    4. Select the `build` folder
+
+
+## 🚀 Live Demo 
+
+
+
+## 📖 How does it work?
+
+The basis of cx-copilot is embedding, vector storing and vector searching. Vector embeddings are a way to represent text as a series of numbers in such a way that you can perform mathematical operations, such as similarity comparison. By first embedding all previous historical customer request tickets using an embedding model (like [text-embedding-ada-002](https://openai.com/blog/new-and-improved-embedding-model/) from OpenAI) and storing the embeddings & the paired response from your company in a vector database, you can then perform a vector search for incoming support tickets, returning the closest-matching tickets based on cosine similarity. The final step is to prompt a Large Language Model (LLM) with your team's responses to the closest-matching historical tickets, generating an auto-drafted response which will answer your customer’s query while conforming to your tone & formatting tendencies.
+
+## 🔌 Integrations 
+
+| Integrations |  |
+|-------|---------|
+| <img src="https://style.helpscout.com/images/logo/help-scout-logo-circle-blue.svg" alt="Helpscout logo" height="50px"> | Helpscout |
+| <img src="https://www.svgrepo.com/download/303161/gmail-icon-logo.svg" alt="Gmail logo" height="50px"> | Gmail |
+| <img src="https://cdn.worldvectorlogo.com/logos/intercom-1.svg" alt="Intercom logo" height="50px"> | Intercom (coming soon) |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Zendesk_logo.svg/2560px-Zendesk_logo.svg.png" alt="Zendesk logo" height="50px"> | Zendesk (coming soon) |
+| <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="Discord logo" height="50px"> | Discord (coming soon) |
+
+## 📱 Community
+
+Join the [Discord community for cx-copilot](https://discord.gg/XhPnzxhm6y) for support & project updates.
+
+## 👩‍💻 Contributing
+### Local Installation
+To install this package, simply run the following command:
+
+```
+pip install cx_copilot
+```
+
+To install for local development use:
+
+```
+flit install [--symlink] [--python path/to/python]
+```
+
+
+### Development
+This package is built on top of abstract classes that can be implemented for different customer support ticket providers. This ensures interoperability and allows for easy development. There are examples of how to use each of these classes in the `examples` directory. The source code for the package is located in the `src` directory.
+
+Please always create base classes and implement them for specific use cases.
+
+For example:
+
+The cache class is an abstract class with the following definition:
+
+```
+class Cache:
+    def put(self, key: str, value: str):
+        pass
+
+    def get(self, key: str, default_value: Optional[str] = None) -> str:
+        pass
+```
+
+And the redis class implements that abstract class with the following definition
+
+```
+class RedisCache(Cache):
+    instance: redis.Redis = None
+
+    def __init__(self, host: str, port: int, db: int):
+        self.instance = redis.Redis(host=host, port=port, db=db)
+
+    def put(self, key: str, value: str):
+        self.instance.set(key, value)
+        pass
+
+    def get(self, key: str, default_value: Optional[str] = None) -> str:
+        result = self.instance.get(key)
+        return result or default_value
+```
+
+so our compound block can be agnostic on which provider to use. It's set during initialization.
+
+```
+ def get_ticket_response(self, ticket_id: str, use_cached=True, cache_response=True, max_tokens=2000):
+        content = self.ticket_repo.get_conversation_by_id(conversation_id=ticket_id)
+        if use_cached:
+            try:
+                value = self.cache_block.get(ticket_id)
+                if value is not None:
+                    return value
+            except Exception:
+                pass
+```
+
+Whenever introducing a new block either follow the abstract classes already defined or introduce a new one.
+
+
+### Usages
+
+The examples and client directory has some rich examples of how to use this library. For instance under the examples/client/discord_example_client.py you can see an example of a discord bot that you can deploy to answer support queries.
+
+```
+@bot.slash_command(name="autofill")
+async def autofill(ctx):
+    reply = cx.get_ticket_response(ctx.channel_id, cache_response=True, use_cached=True)
+    await ctx.respond(reply, ephemeral=True)
+```
+
+Please create a PR with your changes. Once merged, a GitHub action will bump up the minor version. For major version changes, please contact the contributors(eng@caesarhq.com).
+
+# 🚀 Deployment
+
+If you are having issues self hosting, we offer a deployed version. Please contact us at eng@caesarhq.com.
+
