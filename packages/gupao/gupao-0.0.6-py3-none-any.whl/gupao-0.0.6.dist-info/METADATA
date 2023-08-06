@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gupao
+Version: 0.0.6
+Summary: 咕泡云课堂接口
+Author-email: cquestor <jishi2206@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# gupao
+
+咕泡云课堂的一些接口。
