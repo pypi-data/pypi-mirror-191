@@ -1,0 +1,14 @@
+codercore~=1.8
+eth-hash[pycryptodome]~=0.5.1
+eth-utils~=2.1.0
+sqlalchemy[asyncio]~=1.4.44
+
+[dev]
+black~=22.10.0
+
+[test]
+pytest~=7.2.0
+pytest-asyncio~=0.20.1
+pytest-cov~=4.0.0
+pytest-mock~=3.10.0
+pytest-xdist[psutil]~=3.0.2
