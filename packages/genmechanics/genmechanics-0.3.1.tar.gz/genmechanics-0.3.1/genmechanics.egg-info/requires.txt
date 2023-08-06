@@ -1,0 +1,6 @@
+numpy
+matplotlib
+networkx
+scipy
+volmdlr>=0.5.0
+cma
