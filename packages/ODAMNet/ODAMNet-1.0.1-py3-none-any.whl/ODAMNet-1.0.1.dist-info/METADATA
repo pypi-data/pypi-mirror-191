@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: ODAMNet
+Version: 1.0.1
+Summary: Study the link between environmental factors and rare diseases
+Author: Morgane Térézol
+License: MIT License
+        
+        Copyright (c) 2022 Morgane Térézol
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/MOohTus/ODAMNet
+Project-URL: Documentation, https://odamnet.readthedocs.io/en/latest/
+Keywords: rare diseases,overlap,WikiPathways,chemicals,pathways overlap,pathways diffusion,active module identification,random walk with restart,RWR,AMI,EJP-RD
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.27.1)
+Requires-Dist: SPARQLWrapper (>=1.8.5)
+Requires-Dist: pandas (>=1.3.5)
+Requires-Dist: scipy (>=1.7.3)
+Requires-Dist: statsmodels (>=0.13.2)
+Requires-Dist: alive-progress (>=2.4.1)
+Requires-Dist: click-option-group (>=0.5.3)
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: sphinx-tabs (>=3.4.1)
+Requires-Dist: multixrank (==0.1)
+Requires-Dist: ndex2 (==3.5.0)
+Requires-Dist: networkx (==2.5)
+
+==================================================
+README
+==================================================
+
+The goal of this project is to develop computational approaches to analyse the links and overlaps between environmental factors, their molecular targets, and rare diseases pathways.
+
+The `ODAMNet documentation <https://odamnet.readthedocs.io/>`_ is available in ReadTheDocs. 
+
+Installation 
+----------------
+
+From PyPi - *It's on going*
+""""""""""""""""""""""""""""""""
+
+ODAMNet is available as python package. You can easily install it using `pip`.
+
+.. code-block:: bash
+
+   pip install odamnet
+
+From Conda - *It's on going*
+""""""""""""""""""""""""""""""
+
+You can also install it from `bioconda <https://bioconda.github.io/index.html>`_.
+
+.. code-block:: bash
+
+   conda install odamnet
+
+From Github
+"""""""""""""""""""""
+
+1. Clone the repository from Github
+
+.. code-block:: bash
+
+   git clone https://github.com/MOohTus/ODAMNet.git
+
+2. Then, install it
+
+.. code-block:: bash
+
+   pip install -e ODAMNet/
+
+Usage
+----------------
+
+Three different approaches are available to analyse your data: 
+
+- Overlap analysis
+- Active Module Identification (using DOMINO)
+- Random Walk with Restart (using multiXrank)
+
+.. code-block:: bash
+
+   odamnet [overlap|domino|multixrank|networkCreation] [ARGS]
+
+Examples
+----------------
+
+Three approaches are implemented to study the relationships between Rare Diseases (from WikiPathways (WP)) and genes targeted by chemicals factors (extracted
+from CTD database):
+
+Overlap analysis
+"""""""""""""""""""""
+
+This method computes the overlap between target genes and Rare Disease pathways. It is looking for direct associations, i.e., target genes that are part of pathways.
+
+.. code-block:: bash
+
+   odamnet overlap ----chemicalsFile FILENAME
+
+Active Module Identification
+"""""""""""""""""""""""""""""""""
+
+Target genes are defined as "active genes" to search for Active Modules (AM) on a molecular network (e.g.
+Protein-Protein Interaction network, PPI). Then, an overlap analysis is performed between AM (containing target genes + linked genes)
+and Rare Disease pathways.
+
+.. code-block:: bash
+
+   odamnet domino --chemicalsFile FILENAME --networkFile FILENAME
+
+Random Walk with Restart
+""""""""""""""""""""""""""""
+
+Network and bipartite creation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To perform a Random Walk with Restart through molecular multilayer and diseases network, you need to create a disease network
+and link it to the multilayer (i.e. with the bipartite). This network will not have connection between diseases (i.e. disconnected network).
+Diseases will be only connected with genes (in the multilayer) that are involved in disease pathways.
+
+.. code-block:: bash
+
+   odamnet networkCreation --networksPath PATH --bipartitePath PATH
+
+multiXrank
+^^^^^^^^^^^^^^^^^^
+
+The third approach mesures the proximity of every nodes (g.e. genes, diseases) to the target genes within a multilayer network.
+The walk starts from target genes and diffuses through the multilayer composed of different molecular interactions to the disease.
+
+.. code-block:: bash
+
+   odamnet multixrank --chemicalsFile FILENAME --configPath PATH --networksPath PATH --seedsFile FILENAME --sifFileName FILENAME
