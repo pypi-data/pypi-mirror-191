@@ -1,0 +1,8 @@
+astropy
+astroquery
+netcdf4
+numpy
+pandas
+toml
+tqdm
+xarray

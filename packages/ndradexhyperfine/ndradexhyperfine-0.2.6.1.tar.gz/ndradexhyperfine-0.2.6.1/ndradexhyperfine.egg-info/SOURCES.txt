@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ndradexhyperfine/__init__.py
+ndradexhyperfine/db.py
+ndradexhyperfine/grid.py
+ndradexhyperfine/radex.py
+ndradexhyperfine/utils.py
+ndradexhyperfine.egg-info/PKG-INFO
+ndradexhyperfine.egg-info/SOURCES.txt
+ndradexhyperfine.egg-info/dependency_links.txt
+ndradexhyperfine.egg-info/requires.txt
+ndradexhyperfine.egg-info/top_level.txt
+ndradexhyperfine/bin/Makefile

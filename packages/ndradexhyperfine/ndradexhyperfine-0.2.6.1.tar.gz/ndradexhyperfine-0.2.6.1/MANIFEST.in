@@ -1,0 +1,5 @@
+include ndradexhyperfine/bin/Makefile
+include ndradexhyperfine/bin/radex-uni
+include ndradexhyperfine/bin/radex-lvg
+include ndradexhyperfine/bin/radex-slab
+exclude pyproject.toml
