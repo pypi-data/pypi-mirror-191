@@ -1,0 +1,16 @@
+sheets_and_friends/.idea/.gitignore,sha256=qeVPxPCLyX2CwEvYb_N9OvhLqe9K2H_Py0ONq2Iuiqo,47
+sheets_and_friends/.idea/inspectionProfiles/Project_Default.xml,sha256=AdsPfmT1tbCneHK_PMM5fYWakya6lFwabThpA8dwwQY,1753
+sheets_and_friends/.idea/inspectionProfiles/profiles_settings.xml,sha256=YXLFmX7rPNGcnKK1uX1uKYPN0fpgskYNe7t0BV7cqkY,174
+sheets_and_friends/.idea/misc.xml,sha256=XrlUdYWiXdyRsnDnK1nkt6q_X-h61JlqffFbrAiSO9k,185
+sheets_and_friends/.idea/modules.xml,sha256=i8a6vgj38P338ER1EHhDVFcUg2CH9v2k_ydtJhR3WCA,288
+sheets_and_friends/.idea/sheets_and_friends.iml,sha256=w0TW3o9qEaYr1iYR1jwYqlUBYm3KyxgnCK1PD03XvwQ,441
+sheets_and_friends/.idea/vcs.xml,sha256=JpBk9bpzB9zTGgO1xpBpizRCwPACTBNYNhVC9J9VCa4,183
+sheets_and_friends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheets_and_friends/converters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sheets_and_friends/converters/sheet2linkml.py,sha256=XuIpLdZ6fT-AJrBpQRN-DzGtI_cryzSd2Cf-uUKfyTs,10703
+sheets_and_friends/modifications_and_validation.py,sha256=5HfXP48WCZ0eYHd2yDmqMPzZCay1iW0OkVvkwDbudxU,8187
+sheets_and_friends/shuttle.py,sha256=eutAVqzGuaw-kzUpyPyNpkFHOt7I568kmNkHwm1bdjk,9524
+sheets_and_friends-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sheets_and_friends-0.1.4.dist-info/entry_points.txt,sha256=F4-nNMdTXddux-Lv8IhyAQAVXeNEZo0NveNNu1Q_krs,174
+sheets_and_friends-0.1.4.dist-info/METADATA,sha256=V35Wj4FsRzlyNlydGhJBONPaCFtYN7LZcJBpUzERznw,822
+sheets_and_friends-0.1.4.dist-info/RECORD,,
