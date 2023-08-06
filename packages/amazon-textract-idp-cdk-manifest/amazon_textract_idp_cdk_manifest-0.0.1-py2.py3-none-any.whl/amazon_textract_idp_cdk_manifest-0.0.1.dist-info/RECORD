@@ -1,0 +1,7 @@
+textractmanifest/__init__.py,sha256=EBFHhsvfY5tLSiaM2b588jDDFvcL_Kqx0IRw1VcTSwU,320
+textractmanifest/manifest.py,sha256=JuI8SirCWCTN-DB22_g2WlOBpRWQ4c-gB39lRo5lpkI,3626
+amazon_textract_idp_cdk_manifest-0.0.1.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+amazon_textract_idp_cdk_manifest-0.0.1.dist-info/METADATA,sha256=6Q2qntr0sgg0MMC9GPBss2wFPtlCVP5sCCpWcAfpxLc,857
+amazon_textract_idp_cdk_manifest-0.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+amazon_textract_idp_cdk_manifest-0.0.1.dist-info/top_level.txt,sha256=d7mnyviqXP9JM18MTy3vvmeH6dNjO6TxD-Hs5Q2gXbg,17
+amazon_textract_idp_cdk_manifest-0.0.1.dist-info/RECORD,,
