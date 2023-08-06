@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fastapi-stack-utils
+Version: 0.8.6
+Summary: Utils to extend the FastAPI with logging and exception handlers
+License: MIT
+Author: Jonas Krüger Svensson
+Author-email: jonas-ks@hotmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asgi-correlation-id (==3.2.2)
+Requires-Dist: fastapi (==0.92.0)
+Requires-Dist: pydantic-vault (==0.7.2)
+Requires-Dist: python-json-logger (==2.0.5)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: sentry-sdk (==1.15.0)
+Requires-Dist: typer[all] (==0.7.0)
+Requires-Dist: uvicorn[standard] (==0.20.0)
+Requires-Dist: uvloop (==0.17.0) ; sys_platform != "win32"
