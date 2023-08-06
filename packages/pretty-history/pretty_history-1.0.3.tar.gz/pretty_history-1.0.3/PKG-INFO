@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pretty-history
+Version: 1.0.3
+Summary: Generate a pretty view of your browser history from a JSON export
+Home-page: https://github.com/apatel762/pretty-history
+License: AGPL-3.0-or-later
+Author: Arjun Patel
+Author-email: relay-git-1LKQ1GqLp0Nn4@aspatel.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: browserexport (>=0.2.7,<0.3.0)
+Project-URL: Repository, https://github.com/apatel762/pretty-history
+Description-Content-Type: text/markdown
+
+# pretty-history
+
