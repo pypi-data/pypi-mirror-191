@@ -1,0 +1,12 @@
+nsepython
+smartapi-python
+alphatools-jv
+mintotp
+websocket
+twine
+wheel
+websocket-client
+multipledispatch~=0.6.0
+requests
+pandas
+setuptools
