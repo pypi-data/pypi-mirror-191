@@ -1,0 +1,17 @@
+setup.py
+taxi_ops_backend/core/__init__.py
+taxi_ops_backend/core/custom_error.py
+taxi_ops_backend/core/taxi_ops_logger.py
+taxi_ops_backend/db/__init__.py
+taxi_ops_backend/db/database.py
+taxi_ops_backend/db/database_management.py
+taxi_ops_backend/db/model.py
+taxi_ops_backend/service/__init__.py
+taxi_ops_backend/service/operation_management.py
+taxi_ops_backend/service/taxi_driver_management.py
+taxi_ops_backend/service/user_management.py
+taxi_ops_backend/taxi_ops_backend.egg-info/PKG-INFO
+taxi_ops_backend/taxi_ops_backend.egg-info/SOURCES.txt
+taxi_ops_backend/taxi_ops_backend.egg-info/dependency_links.txt
+taxi_ops_backend/taxi_ops_backend.egg-info/requires.txt
+taxi_ops_backend/taxi_ops_backend.egg-info/top_level.txt

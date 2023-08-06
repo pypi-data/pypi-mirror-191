@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: taxi-ops-backend
+Version: 0.0.3
+Summary: Taxi Ops Backend for capstone project
+Home-page: https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps
+Author: Group 1 - IITM-ACSE-Feb22
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# IITM-ACSEFeb22-TaxiOps
+
+[![Pylint](https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps/actions/workflows/pylint.yml/badge.svg)](https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps/actions/workflows/pylint.yml) [![Terraform](https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps/actions/workflows/terraform.yml/badge.svg)](https://github.com/abhinavofficial/IITM-ACSEFeb22-Capstone-TaxiOps/actions/workflows/terraform.yml)
+
+
+## Design
+
+### User, Taxi and Driver Registration
+User, Taxi and Driver registration is managed by simulator by class ```TestDataGenerator```. It would use Faker to generate Users, Taxis and Drivers.
+
+### Taxi and Driver association
+Each Taxi must be associated with one driver. This is only for simplicity for this project and is a reasonable constraint to mimic real-life scenario. A taxi is only valid for taxi ops when the associated driver marks oneself ON-DUTY. Taxi Ops does not care of taxi location when driver is not ON-DUTY.
+
+### Taxi Ops Location Boundary
+The operation is decided based on city - defined by the center of the city and its box co-ordinates of operation defining the boundary. This put following design constraint.
+* User and Taxi emit their locations which must be validated to be within the defined Ops boundary. If not, that emission would be ignored or marked as "ignored"
+* The starting and end point of any trip would be limited within its defined boundary.
+
+### Taxi / User / Driver Location
+Taxi has location as its attribute. Initial location emission can be random within the defined Taxi Ops Location boundary. Subsequently, it should emit per its path (static or moving slowly in defined random destination). The location needs to be updated, so timeseries of location does not need to be maintained.
+
+Taxi Ops does not need to track user location. When he is on trip, his location is same as the taxi and when he is not on trip, the system does not care.
+
+Driver, for this project, does not emit location. It is not relevant either. He is there to accept the trip request and make taxi available (Occupied when booked for trip) when he is ON-DUTY and "Not Operational" if OFF-DUTY.
+
+Taxi should always emit location when it is not "Not Operational". The location emission would be implemented in simulator. Please see the simulator section for more detail.
+
+### User request for Trip
+When user request comes, the request can take the latest location of each "available" taxi and find the nearest three (or agreed value) and expect them (the driver, associated with them) to accept the trip request.
+
+### Notification
+
+### Input on MongoDB Dashboard
+**Sunder** to update
+
+### Non-Functional Requirements
+* Define load demands - 5 users concurrently. For the sake of simplicity, let's ensure that user receives a confirmation within 5 secs.
+* Design should clearly reflect how the system scales
+* It should explain architecture simplicity, cost and security.
+
+### The design
+Based on the functional and non-functional requirement, here is the design.
+
+#### Diagram
+![Architecture Diagram](architecture/image/architecture.png)
+
+The solution components would be deployed and executed in AWS cloud platform using AWS EC2, API Gateway & Lambda handler. The solution running in AWS will have an integration with MongoDB atlas cloud using technical user. MongoDB atlas cloud is used for storage of geolocations of taxis being operated and locations of registered users. These geolocations are also displayed on the chart (dashboard) capability offered by MongoDB atlas.
+
+There are various modules, implemented in Python and deployed in AWS EC2. User registration, taxi registration, FindNearTaxi (request to find all the nearby taxi’s of certain type, made by user) are exposed as REST services via API Gateway. 
+
+“Simulator for taxi location” is a module that simulates & emits the location of all taxi’s at 1-minute intervals. These latest locations are passed on to a LAMBDA handler which in turn updates them to MongoDB atlas. 
+
+### Data Model
+* Users
+* Taxis
+* Drivers
+* OperationBoundary
+* TripInfo
+* TripDetail (Trip tracking)
+
+### Infrastructure and Deployment
+Terraform based - WIP
+
+## Additional packages used
+
+* Package Name - Purpose of use
+To be discussed with the team
+* Use [AWS Chalice](https://github.com/aws/chalice) for writing serverless apps in python. A brief introduction to Chalice: **Chalice** is a framework for writing serverless apps in python. It allows you to quickly create and deploy applications that use AWS Lambda. It provides:
+  * A command line tool for creating, deploying, and managing your app
+  * A decorator based API for integrating with Amazon API Gateway, Amazon S3, Amazon SNS, Amazon SQS, and other AWS services.
+  * Automatic IAM policy generation
+
+  
+## How to run the application
+
+### Simulator
+
+**Pre-requisite**: The code is deployed - API gateway endpoints, Mongodb, EC2, Lambdas - all components are ready to be executed.
+
+#### Backend set up
+
+``TestDataGenerator``` is deployed in EC2. Its main method is called from EC2 terminal.
+  * All documents are dropped from database to mark the slate clean.
+  * 50 taxis and drivers are created. Drivers are OFF DUTY and taxis are Not Operational while creation.
+  * Taxis and drivers are mapped to each other
+  * Operational Boundary is set
+  * All the drivers and taxis are set to be ON-DUTY and AVAILABLE.
+  > Since there would many taxis in "available" status. In real life, each taxi is independent and hence builds up a case of parallel processing. However, for this project we will implement a simple collection data-structure, deque to support FIFO. At a fixed interval, it would put a message with its identifier and location. ``TestDataGenerator``` will keep popping message from this deque and call API gateway endpoint to send the taxi location, which will then further pass location in mongodb.
+    >> When taxi status is Available, taxi location is updated. Note: When taxi status is Occupied, trip info location is updated.
+  * "Available Taxis" Dashboard shows available taxi's location
+
+#### User demo
+* Checks if backend is all set. If so, continue.
+* Create a user
+* Once user is created, system takes input from user on its current location, destination location, max distance for nearest available taxi and limits to number of such available taxis to display.
+* If taxis found, system takes input from user if it should continue to book trip.
+* On confirmation, one of taxis are booked randomly. In real life, confirmation notifications are sent to driver for acceptable (which is a push based technology). In this simulator, one of taxis will mimic the acceptance and make confirmation API call to gateway.
+  * This would mark the taxi occupied.
+  * User gets email notification
+  * Trip would be created
+  * TripInfo would tracking location of moving taxi
+  * "Trip Info" Dashboard shows one taxi as it moves
+
+#### Advanced feature
+Analytics - WIP
+
+## Deliverables
+* Presentation including Architecture / Data Model / README.md
+* Working Demo
+* This repo which includes code and logs
+
+
