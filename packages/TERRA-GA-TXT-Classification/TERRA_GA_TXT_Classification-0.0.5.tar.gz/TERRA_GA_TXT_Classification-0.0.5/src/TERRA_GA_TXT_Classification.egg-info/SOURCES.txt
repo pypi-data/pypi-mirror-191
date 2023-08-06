@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/TERRA_GA/TXT_Classification_GA.py
+src/TERRA_GA/__init__.py
+src/TERRA_GA_TXT_Classification.egg-info/PKG-INFO
+src/TERRA_GA_TXT_Classification.egg-info/SOURCES.txt
+src/TERRA_GA_TXT_Classification.egg-info/dependency_links.txt
+src/TERRA_GA_TXT_Classification.egg-info/top_level.txt
