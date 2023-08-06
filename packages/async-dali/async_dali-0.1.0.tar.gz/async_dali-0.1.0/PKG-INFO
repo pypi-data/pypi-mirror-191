@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: async_dali
+Version: 0.1.0
+Summary: A module to discover devices and send commands to DALI enabled lights
+Home-page: https://github.com/brucejcooper/py_async_dali
+Author: Bruce Cooper
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
