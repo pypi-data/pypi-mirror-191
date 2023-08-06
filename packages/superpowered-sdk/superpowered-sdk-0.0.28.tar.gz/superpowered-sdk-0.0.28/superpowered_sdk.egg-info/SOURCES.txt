@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+superpowered/__init__.py
+superpowered/incantation.py
+superpowered/knowledge_base.py
+superpowered/main.py
+superpowered/model.py
+superpowered_sdk.egg-info/PKG-INFO
+superpowered_sdk.egg-info/SOURCES.txt
+superpowered_sdk.egg-info/dependency_links.txt
+superpowered_sdk.egg-info/top_level.txt
