@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pythonanywhere-core
+Version: 0.1.2
+Summary: API wrapper for programmatic management of PythonAnywhere services.
+License: MIT
+Keywords: pythonanywhere,api,cloud,web hosting
+Author: PythonAnywhere
+Author-email: developers@pythonanywhere.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: snakesay (>=0.10.1,<0.11.0)
+Description-Content-Type: text/x-rst
+
+API wrapper for programmatic management of PythonAnywhere services.
+
+It's an extraction and improvement of core code behind `PythonAnywhere cli tool`_.
+
+.. _PythonAnywhere cli tool: https://pypi.org/project/pythonanywhere/
+
