@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sentry_dingtalk/__init__.py
+sentry_dingtalk/plugin.py
+sentry_dingtalk_byguonh.egg-info/PKG-INFO
+sentry_dingtalk_byguonh.egg-info/SOURCES.txt
+sentry_dingtalk_byguonh.egg-info/dependency_links.txt
+sentry_dingtalk_byguonh.egg-info/entry_points.txt
+sentry_dingtalk_byguonh.egg-info/requires.txt
+sentry_dingtalk_byguonh.egg-info/top_level.txt
