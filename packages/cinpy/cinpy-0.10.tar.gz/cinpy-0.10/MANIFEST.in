@@ -1,0 +1,3 @@
+include cinpy/requirements.txt
+include cinpy/thirdparty.json
+include cinpy/README.MD
