@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+donotprint/__init__.py
+donotprint/donotprint.py
+donotprint.egg-info/PKG-INFO
+donotprint.egg-info/SOURCES.txt
+donotprint.egg-info/dependency_links.txt
+donotprint.egg-info/top_level.txt
