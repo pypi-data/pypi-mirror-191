@@ -1,0 +1,2 @@
+[console_scripts]
+pyjmap = pyjmap.__main__:main
