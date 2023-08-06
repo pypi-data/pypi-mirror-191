@@ -1,0 +1,8 @@
+ffmpeg-python
+pycountry
+pysubs2
+tqdm
+pandas
+tqdm
+gevent
+colorlog
