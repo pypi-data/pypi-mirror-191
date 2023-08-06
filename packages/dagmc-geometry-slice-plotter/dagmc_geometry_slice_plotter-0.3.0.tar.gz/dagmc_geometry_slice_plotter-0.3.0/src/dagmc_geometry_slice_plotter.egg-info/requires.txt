@@ -1,0 +1,10 @@
+matplotlib
+trimesh
+shapely
+scipy
+meshio
+h5py
+
+[tests]
+pytest
+pytest-cov

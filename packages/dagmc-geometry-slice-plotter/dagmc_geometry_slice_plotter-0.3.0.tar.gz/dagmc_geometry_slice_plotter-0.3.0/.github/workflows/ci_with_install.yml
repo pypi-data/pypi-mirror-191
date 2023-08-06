@@ -1,0 +1,60 @@
+# This CI will launch a Docker image that contains all the dependencies required
+# within that image the pytest test suite is run 
+
+name: CI with install
+
+on:
+  pull_request:
+    branches:
+      - develop
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '.gitignore'
+      - '*.md'
+      - 'CITATION.cff'
+      - 'LICENSE.txt'
+      - 'readthedocs.yml'
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: [3.8, 3.9, '3.10']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python ${{matrix.python-version}}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{matrix.python-version}}
+
+      - name: install package
+        run: |
+          pip install --upgrade pip
+          pip install .
+          python -c "import dagmc_geometry_slice_plotter"
+
+      - name: install package with test packages
+        run: |
+          pip install --upgrade pip
+          pip install .[tests]
+
+      - name: Run tests
+        run: |
+          pytest tests/ -v --cov=dagmc_geometry_slice_plotter --cov-append --cov-report term --cov-report xml
+
+      - name: Run examples
+        run: |
+          cd examples
+          python example_1_from_readme.py
+          python example_2_from_readme.py
+          python example_3_from_readme.py
+          python example_4_from_readme.py
+          python example_5_from_readme.py
+
+      - name: Upload to codecov
+        uses: codecov/codecov-action@v2
