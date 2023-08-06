@@ -1,0 +1,12 @@
+[project]
+name = "gupao"
+version = "0.0.6"
+authors = [
+    { name="cquestor", email="jishi2206@gmail.com" }
+]
+description = "咕泡云课堂接口"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests"
+]
