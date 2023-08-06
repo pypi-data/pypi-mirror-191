@@ -1,0 +1,2 @@
+[console_scripts]
+thumbnails = thumbnails.__main__:main
