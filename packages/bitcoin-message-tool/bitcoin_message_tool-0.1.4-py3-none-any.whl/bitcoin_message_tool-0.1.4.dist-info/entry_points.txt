@@ -1,0 +1,3 @@
+[console_scripts]
+bmt=bitcoin_message_tool.bmt:main
+
