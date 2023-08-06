@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+scholar_scraper/CustomScholarlyTypes.py
+scholar_scraper/ScholarScraper.py
+scholar_scraper/__init__.py
+scholar_scraper/utilities.py
+scholar_scraper.egg-info/PKG-INFO
+scholar_scraper.egg-info/SOURCES.txt
+scholar_scraper.egg-info/dependency_links.txt
+scholar_scraper.egg-info/requires.txt
+scholar_scraper.egg-info/top_level.txt
