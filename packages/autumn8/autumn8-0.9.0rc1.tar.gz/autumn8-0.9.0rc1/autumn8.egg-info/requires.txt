@@ -1,0 +1,13 @@
+appdirs
+wheel>=0.31.0
+boto3>=1.20.15
+tensorflow-cpu
+click>=8.0.1
+questionary>=1.10.0
+torch
+torchvision
+tqdm
+fastapi
+pyyaml
+jsonschema
+boto3-stubs[s3]
