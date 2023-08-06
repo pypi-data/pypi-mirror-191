@@ -1,0 +1,91 @@
+id: code
+title: VS Code
+source: https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf
+match:
+  regex_process: code
+  regex_title: .*
+
+hints:
+  Navigating UI:
+    Ctrl + 0: Focus sidebar
+    Ctrl + 1: Focus editor 1
+    Ctrl + 2: Focus editor 2
+
+  Sidebar:
+    Ctrl + B: Toggle sidebar
+    Ctrl + Shift + E: Explorer in sidebar
+    Ctrl + Shift + G: Git in sidebar
+    Ctrl + Shift + D: Debug in sidebar
+
+  Panel:
+    Ctrl + J: Toggle panel
+    Ctrl + `: Toggle terminal
+    Ctrl + Shift + M: Toggle problems
+    Ctrl + Shift + Y: Toggle debug console
+
+  Basic Editing:
+    Ctrl + L: Select current line
+    Ctrl + Backspace: Delete last word
+    Alt + Up Down: Move line up/down
+    Alt + Shift + Up Down: Duplicate cursor
+    Ctrl+ Alt + Shift + Up Down: Duplicate line
+    Shift + Alt + Left Right: Expand/shrink selection
+    Ctrl + H: Search and replace
+
+  Language Editing:
+    Ctrl + Space: Trigger IntelliSense and Hint
+    Ctrl + K I: Show hover docs
+    Ctrl + Shift + O: Search and jump to symbol
+    F12: Goto defintion
+    Alt + F12: Peek definition
+    Shift + F12: Peek usage
+    F2: Rename symbol
+    F8: Cycle through errors
+    Shift + F8: Cycle through errors backwards
+
+  Debugging:
+    F9: Toogle breakpoint
+    F5: Start/continue
+    Shift + F5: Stop
+    F11: Step into
+    Shift + F11: Step out
+    F10: Step over
+
+  File/Tab Management:
+    Ctrl + Tab: Switch between tabs
+    Ctrl + P: Quick open file
+
+  Vimium - Navigating:
+    f / F + {c}: Jump to next / previous char
+    t / T + {c}: Move until next / previous char
+    ; / ,: Go to next / previous occurance
+    "{ / }": Paragraph down / up
+    Ctrl + D / U": Half page down / up
+    gg / G: Jump to top/bottom of file
+    gd: Jump to definition
+    gf: Jump to file in import
+    "%": Jump to matching bracket
+
+  Vimium - Search:
+    \/ / ?: Search forward / backwards
+    n / N: Jump to next / previous match
+    "* / #": Search next / previous word under cursor
+
+  Vimium - Editing:
+    d: Delete / whole line
+    c: Change (delete + insert)
+    "y": Yank / whole line
+    p: Paste
+    d + 5 + j: Delete 5 lines downwards
+    d + f + ": Delete in line until "
+    d + t + ": Delete in line until before "
+    d + / + foo: Delete from cursor util foo
+    "> / <": Add / remove indentation
+    "=": Format code
+
+  Vimium - Syntax:
+    cc: Double modify whole line
+    D: Capitalize for stronger/alt
+    "{op} + a / i + {obj}": around / inner
+    c + i + w: Change inner word
+    d + a + w: Delete a word
