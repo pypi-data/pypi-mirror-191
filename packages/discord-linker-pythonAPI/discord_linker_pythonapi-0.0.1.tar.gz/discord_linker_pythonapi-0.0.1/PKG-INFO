@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: discord-linker-pythonAPI
+Version: 0.0.1
+Summary: This is the python API for a wordpress plugin that allows linking discord into your website
+Project-URL: Homepage, https://github.com/Vbrawl/discord-linker-pythonAPI
+Project-URL: Bug Tracker, https://github.com/Vbrawl/discord-linker-pythonAPI/issues
+Project-URL: Documentation, https://vbrawl.github.io/discord-linker-pythonAPI/
+Author-email: Vbrawl <konstantosjim@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
