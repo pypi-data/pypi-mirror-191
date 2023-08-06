@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: hdx-scraper-geonode
+Version: 1.4.7
+Summary: HDX Python generic geonode scraper
+Home-page: https://github.com/OCHA-DAP/hdx-scraper-geonode
+Author: Michael Rans
+Author-email: rans@email.com
+License: MIT
+Keywords: HDX,scraper,geonode
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: hdx-python-api (>=5.9.8)
+Requires-Dist: python-slugify
+
+[![Build Status](https://github.com/OCHA-DAP/hdx-scraper-geonode/workflows/build/badge.svg)](https://github.com/OCHA-DAP/hdx-scraper-geonode/actions?query=workflow%3Abuild)
+[![Coverage Status](https://codecov.io/gh/OCHA-DAP/hdx-scraper-geonode/branch/main/graph/badge.svg?token=JpWZc5js4y)](https://codecov.io/gh/OCHA-DAP/hdx-scraper-geonode)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+The HDX Scraper Geonode Library enables easy building of scrapers for extracting data 
+from [GeoNode](https://geonode.org/) servers. GeoNode is a web-based application and 
+platform for developing geospatial information systems (GIS) and for deploying spatial 
+data infrastructures (SDI). 
+
+For more information, please read the 
+[documentation](https://hdx-scraper-geonode.readthedocs.io/en/latest/). 
+
+This library is part of the [Humanitarian Data Exchange](https://data.humdata.org/) 
+(HDX) project. If you have humanitarian related data, please upload your datasets to 
+HDX.
