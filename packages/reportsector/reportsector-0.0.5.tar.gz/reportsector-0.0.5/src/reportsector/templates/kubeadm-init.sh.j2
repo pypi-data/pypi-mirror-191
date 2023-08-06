@@ -1,0 +1,23 @@
+{% if not embedded -%}
+{% include "bash.sh.j2" %}
+{% endif %}
+
+{% macro kubeadm(cache_only=False) -%}
+{%- if not cache_only -%}
+
+# https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/
+cat >kubeadm-config.yaml <<EOF
+kind: ClusterConfiguration
+apiVersion: kubeadm.k8s.io/v1beta3
+kubernetesVersion: v1.26.1
+---
+kind: KubeletConfiguration
+apiVersion: kubelet.config.k8s.io/v1beta1
+cgroupDriver: systemd
+EOF
+kubeadm config images list
+sudo kubeadm init --config kubeadm-config.yaml
+{% endif %}
+{% endmacro %}
+
+{% block content %}{{ kubeadm(cache_only) }}{% endblock %}
