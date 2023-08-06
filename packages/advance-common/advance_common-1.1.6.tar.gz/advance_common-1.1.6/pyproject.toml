@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "advance-common"
+version = "1.1.6"
+description = ""
+authors = ["Szymon-SR <srszymonsr@gmail.com>"]
+readme = "README.md"
+packages = [{include = "advance_common"}]
+
+[tool.poetry.dependencies]
+python = "^3.6.9"
+pyserial = "^3.5"
+pymavlink = "2.4.27"
+protobuf = "3.19.4"
+
+
+[tool.poetry.group.dev.dependencies]
+isort = "5.10.1"
+black = "22.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
