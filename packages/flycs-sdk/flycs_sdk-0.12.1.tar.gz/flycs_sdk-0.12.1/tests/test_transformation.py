@@ -1,0 +1,162 @@
+import pytest
+
+from flycs_sdk.custom_code import Dependency
+from flycs_sdk.query_base_schema import UnsupportedMode, UnsupportedType
+from flycs_sdk.transformations import (
+    FieldConfig,
+    SchemaUpdateOptions,
+    Transformation,
+    WriteDisposition,
+    MultiPartitioningDefinitionError,
+)
+
+transformation_name = "my_tranformation"
+transformation_query = "SELECT * FROM TABLE;"
+transformation_version = "1.0.0"
+transformation_static = False
+transformation_has_output = False
+transformation_destination_table = None
+transformation_keep_old_columns = True
+transformation_persist_backup = True
+transformation_write_disposition = WriteDisposition.APPEND
+transformation_time_partitioning = None
+transformation_range_partitioning = None
+transformation_cluster_fields = ["field1", "field2"]
+transformation_schema_update_options = [SchemaUpdateOptions.ALLOW_FIELD_ADDITION]
+transformation_dependencies = [Dependency("entity1", "staging", "deps")]
+transformation_parsing_dependencies = []
+transformation_destroy_table = False
+transformation_fields_config = [
+    FieldConfig(name="field1", decrypt=False, type="STRING", mode="NULLABLE"),
+    FieldConfig(name="field2", decrypt=True, type="DATE", mode="NULLABLE"),
+]
+transformation_force_cache_refresh = True
+transformation_keysets_used = "keyset_1"
+
+
+class TestTranformations:
+    @pytest.fixture()
+    def my_transformation(self):
+        return Transformation(
+            name=transformation_name,
+            query=transformation_query,
+            version=transformation_version,
+            static=transformation_static,
+            has_output=transformation_has_output,
+            destination_table=transformation_destination_table,
+            keep_old_columns=transformation_keep_old_columns,
+            persist_backup=transformation_persist_backup,
+            write_disposition=transformation_write_disposition,
+            time_partitioning=transformation_time_partitioning,
+            range_partitioning=transformation_range_partitioning,
+            cluster_fields=transformation_cluster_fields,
+            schema_update_options=transformation_schema_update_options,
+            dependencies=transformation_dependencies,
+            parsing_dependencies=transformation_parsing_dependencies,
+            destroy_table=transformation_destroy_table,
+            schema=transformation_fields_config,
+            force_cache_refresh=transformation_force_cache_refresh,
+            keysets_used=transformation_keysets_used,
+        )
+
+    def test_init(self, my_transformation):
+        assert my_transformation.query == transformation_query
+        assert my_transformation.version == transformation_version
+        assert my_transformation.static == transformation_static
+        assert my_transformation.has_output == transformation_has_output
+        assert my_transformation.keep_old_columns == transformation_keep_old_columns
+        assert my_transformation.persist_backup == transformation_persist_backup
+        assert my_transformation.destination_table == transformation_destination_table
+        assert my_transformation.write_disposition == transformation_write_disposition
+        assert my_transformation.time_partitioning == transformation_time_partitioning
+        assert my_transformation.range_partitioning == transformation_range_partitioning
+        assert my_transformation.cluster_fields == transformation_cluster_fields
+        assert (
+            my_transformation.schema_update_options
+            == transformation_schema_update_options
+        )
+        assert my_transformation.dependencies == transformation_dependencies
+        assert my_transformation.destroy_table == transformation_destroy_table
+        assert my_transformation.schema == transformation_fields_config
+        assert (
+            my_transformation.force_cache_refresh == transformation_force_cache_refresh
+        )
+        assert my_transformation.keysets_used == transformation_keysets_used
+
+    def test_to_dict(self, my_transformation):
+        assert my_transformation.to_dict() == {
+            "NAME": "my_tranformation",
+            "QUERY": "SELECT * FROM TABLE;",
+            "VERSION": "1.0.0",
+            "ENCRYPT": None,
+            "STATIC": False,
+            "HAS_OUTPUT": False,
+            "DESTINATION_TABLE": None,
+            "KEEP_OLD_COLUMNS": True,
+            "PERSIST_BACKUP": True,
+            "WRITE_DISPOSITION": "WRITE_APPEND",
+            "TIME_PARTITIONING": None,
+            "RANGE_PARTITIONING": None,
+            "CLUSTER_FIELDS": ["field1", "field2"],
+            "PARTITION_EXPIRATION": None,
+            "REQUIRED_PARTITION_FILTER": False,
+            "TABLE_EXPIRATION": None,
+            "SCHEMA_UPDATE_OPTIONS": ["ALLOW_FIELD_ADDITION"],
+            "DESTINATION_DATA_MART": None,
+            "DEPENDS_ON": [{"NAME": "deps", "ENTITY": "entity1", "STAGE": "staging"}],
+            "PARSING_DEPENDS_ON": [],
+            "DESTROY_TABLE": False,
+            "TABLES": None,
+            "KIND": "transformation",
+            "SCHEMA": [
+                {
+                    "NAME": "field1",
+                    "DECRYPT": False,
+                    "TYPE": "STRING",
+                    "MODE": "NULLABLE",
+                    "FIELDS": [],
+                },
+                {
+                    "NAME": "field2",
+                    "DECRYPT": True,
+                    "TYPE": "DATE",
+                    "MODE": "NULLABLE",
+                    "FIELDS": [],
+                },
+            ],
+            "RUN_BEFORE_KEYSET": False,
+            "FORCE_CACHE_REFRESH": transformation_force_cache_refresh,
+            "KEYSETS_USED": "keyset_1",
+        }
+
+    def test_from_dict(self, my_transformation):
+        loaded = Transformation.from_dict(my_transformation.to_dict())
+        assert loaded == my_transformation
+
+    def test_mul_partitioning_def_error(self):
+        with pytest.raises(MultiPartitioningDefinitionError):
+            transfo = Transformation(
+                name=transformation_name,
+                query=transformation_query,
+                version=transformation_version,
+                static=transformation_static,
+                has_output=transformation_has_output,
+                destination_table=transformation_destination_table,
+                keep_old_columns=transformation_keep_old_columns,
+                persist_backup=transformation_persist_backup,
+                write_disposition=transformation_write_disposition,
+                time_partitioning={"field": "field1", "type": "DAY"},
+                range_partitioning={
+                    "field": "field2",
+                    "start": 0,
+                    "end": 100,
+                    "interval": 10,
+                },
+                cluster_fields=transformation_cluster_fields,
+                schema_update_options=transformation_schema_update_options,
+                dependencies=transformation_dependencies,
+                parsing_dependencies=transformation_parsing_dependencies,
+                destroy_table=transformation_destroy_table,
+                schema=transformation_fields_config,
+                force_cache_refresh=transformation_force_cache_refresh,
+            )
