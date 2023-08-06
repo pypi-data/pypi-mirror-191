@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/datetimejson/__init__.py
+src/datetimejson.egg-info/PKG-INFO
+src/datetimejson.egg-info/SOURCES.txt
+src/datetimejson.egg-info/dependency_links.txt
+src/datetimejson.egg-info/top_level.txt
+tests/test_datetimejson.py
