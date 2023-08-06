@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws-excom"
+version = "0.0.19"
+dependencies = [
+    'simple-term-menu',
+    'termcolor',
+    'boto3 >= 1.26',
+]
+authors = [
+  { name="Ben Vosper", email="author@example.com" },
+]
+description = "Wrapper for AWS ECS Execute Command"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+"aws-excom" = "aws_excom.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/benvosper/aws-excom/"
+"Bug Tracker" = "https://github.com/pypa/aws-excom/issues/"

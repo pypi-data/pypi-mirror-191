@@ -1,0 +1,2 @@
+[console_scripts]
+aws-excom = aws_excom.cli:main

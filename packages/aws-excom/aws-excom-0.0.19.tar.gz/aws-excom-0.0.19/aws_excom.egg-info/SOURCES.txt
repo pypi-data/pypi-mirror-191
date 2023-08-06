@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+aws_excom/__init__.py
+aws_excom/aws.py
+aws_excom/cli.py
+aws_excom.egg-info/PKG-INFO
+aws_excom.egg-info/SOURCES.txt
+aws_excom.egg-info/dependency_links.txt
+aws_excom.egg-info/entry_points.txt
+aws_excom.egg-info/requires.txt
+aws_excom.egg-info/top_level.txt
+aws_excom/tests/__init__.py
+aws_excom/tests/test_aws.py
+aws_excom/tests/test_install.py
