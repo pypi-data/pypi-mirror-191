@@ -1,0 +1,14 @@
+crcset/__init__.py,sha256=Txq8IGRO6A3xcQZ9rG0RPfvJYvizcngXCLB8JuKLK2k,405
+crcset/crcset_wasi.py,sha256=nV5CXu0t3ROLzsfEAQbC8liUEH5OkGOoh2PxHb2PeEE,966
+crcset/crcset_wasm.py,sha256=S461v7p0FAGZAuk3gaKCwMDkduN7961ujwGxRV3Nakw,917
+crcset/wasi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crcset/wasi/_crcset_wasi.wasm,sha256=RKjyTk77XA_RcPLq5iplaaxghH9PjFBgm5Ca1EWznnA,69286
+crcset/wasi/wasi.py,sha256=9YxOcMUA-wJGGt81CdU59xVDcnW_cM_YYD9_tepqLvs,821
+crcset/wasm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crcset/wasm/_crcset_wasm.wasm,sha256=y8phBizJaozqZdTt1fg7B40j5CTQ50NoUBDrDn0VwA0,1834155
+crcset/wasm/wasm.py,sha256=2JaF4F8PIoGQEgDZmDGjmqiCnZomxALUZvxiI2x5Z1M,366
+crcset-0.0.4.dist-info/LICENSE,sha256=GrfX8eKTqGzrsgb4kGB-DLU1mhPDn3zB1MFeFaogCOE,1068
+crcset-0.0.4.dist-info/METADATA,sha256=NNp51ttTgSHAEQ8JyhbblIInd1pdU8fsEuZQBzp9V4A,314
+crcset-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+crcset-0.0.4.dist-info/top_level.txt,sha256=VLcRWDfjtq8fBKnpfl3qETHx9-kbqEIGsbi_-sWbYCc,7
+crcset-0.0.4.dist-info/RECORD,,
