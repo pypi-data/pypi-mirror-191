@@ -1,0 +1,14 @@
+cs.cmdutils>=20210404
+cs.context>=20230212
+cs.deco>=20230212
+cs.fileutils>=20221118
+cs.fs>=20220429
+cs.lex>=20230210
+cs.logutils>=20230212
+cs.pfx>=20221118
+cs.resources>=20230212
+cs.tagset>=20211212
+cs.threads>=20230212
+cs.upd>=20230212
+icontract
+typeguard
