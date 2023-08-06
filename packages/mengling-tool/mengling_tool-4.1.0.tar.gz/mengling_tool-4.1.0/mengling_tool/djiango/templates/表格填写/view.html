@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-sm-12">
+        <form id="bgtx_form" enctype="multipart/form-data" onsubmit="return false" action="#" method="post">
+            <table class="table">
+                <thead>
+                <tr id="bgtx_lie"></tr>
+                </thead>
+                <tbody id="bgtx_body" style="table-layout: fixed">
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col">
+                <button id="bgtx_add" class="btn btn-primary" type="button" onclick="addrow();">新增行</button>
+            </div>
+            <div class="col">
+                <select id="bgtx_dels"></select>
+                <button id="bgtx_del" class="btn btn-primary" style="color: red" type="button" onclick="delrow();">删除行
+                </button>
+                <button class="btn btn-primary" style="color: red" type="button" onclick="location.reload();">删除全部
+                </button>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="button"
+                        onclick="formSubmit($('#bgtx_form'),action, function (result){new Function(result)();});">
+                    提交
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

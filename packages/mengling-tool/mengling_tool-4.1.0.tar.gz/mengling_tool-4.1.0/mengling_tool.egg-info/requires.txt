@@ -1,0 +1,7 @@
+httpx
+requests
+tqdm
+opencv-python
+numpy
+pandas
+pymysql

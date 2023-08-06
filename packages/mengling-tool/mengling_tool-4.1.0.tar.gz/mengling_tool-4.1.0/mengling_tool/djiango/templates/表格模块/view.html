@@ -1,0 +1,73 @@
+<div class="widget am-cf">
+    <div class="widget-body  am-fr">
+        <div id="table_title" class="widget-title  am-cf"></div>
+        <div id="options_div" class="row" style="border:1px solid #d2cdcd;display:none;">
+            {#            模糊查找#}
+            <div class="col-sm-12" style="margin-top: 10px;">
+                模糊查询:&nbsp;&nbsp;
+                <input type="checkbox" id="mh" value="模糊查询">
+            </div>
+            {#            排序#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                排序方式：
+                <select id="okey" class="form-control" style="width: 150px;"></select>
+                <select id="ovalue" class="form-control" style="width: 100px;">
+                    <option value="up">升序</option>
+                    <option value="down">降序</option>
+                </select>
+            </div>
+            {#            查询栏1#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="fkey1" class="form-control" style="width: 120px;height: 30px;font-size: 5px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="fvalue1"/>
+            </div>
+            {#            查询栏2#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="fkey2" class="form-control" style="width: 120px;height: 30px;font-size: 5px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="fvalue2"/>
+            </div>
+            {#            查询栏3#}
+            <div class="col-sm-12" style="display: flex;margin-top: 20px;">
+                <select id="fkey3" class="form-control" style="width: 120px;height: 30px;font-size: 5px;"></select>
+                &nbsp;&nbsp;
+                <input type="text" style="width: 400px" id="fvalue3"/>
+            </div>
+            {#            查询键#}
+            <div class="col-sm-12" style="display: flex;margin-bottom: 20px;margin-top: 20px;">
+                <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"
+                        type="button" onclick="findfunc();">查询
+                </button>
+                <button class="am-btn am-btn-success tpl-table-list-field am-icon-download" style="margin-left: 80px;"
+                        id="download" type="button" onclick="findfunc(1);">下载当前数据
+                </button>
+            </div>
+        </div>
+        <form id="table_form">
+            <div class="am-u-sm-12">
+                <div id="view_div" style="display: none">
+                    <br/>
+                    <label>显示字段:</label>
+                </div>
+                <div id="table_div">
+                    <table class="am-table am-table-compact am-table-bordered am-table-radius am-table-striped tpl-table-black "
+                           id="example-r">
+                        <thead>
+                        <tr id="table_lie" style="color: #1d98dc;"></tr>
+                        </thead>
+                        <tbody id="table_body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+        <div class="am-u-lg-12 am-cf">
+            <div class="am-fr">
+                <ul class="am-pagination tpl-pagination" id="pageul">
+                    {#                        class="am-disabled" class="am-active"#}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

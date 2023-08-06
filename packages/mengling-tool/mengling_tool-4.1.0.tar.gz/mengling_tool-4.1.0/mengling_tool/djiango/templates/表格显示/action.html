@@ -1,0 +1,75 @@
+<script>
+    //表格标题
+    var title = '{{ title|safe|default:"" }}';
+    //字典组表格数据
+    var dts ={{ liedts|safe|default:'[]' }};
+    //列组
+    var lies ={{ lies|safe|default:'null' }};
+    //当前页数及最大页数
+    var page ={{ page|safe }}, maxpage ={{ maxpage|safe }};
+    //表格长高,不定高度
+    var w = '{{ table_width|safe|default:'850' }}';
+    var h = '{{ table_height|safe|default:'500' }}';
+    //列提示
+    var helpdt ={{ helpdt|safe|default:'{}' }};
+    ////<-get请求参数 page
+</script>
+
+<script>
+    $('#table_title')[0].innerHTML = title;
+    $('#table_div')[0].style = format('width:{0}px; {1} overflow:auto;', [w, h == null ? '' : ('height:' + h + 'px;')]);
+
+    //显示可选项
+    function view() {
+        var lies_txt = '', body_txt = '';
+        //默认以第一行为列组
+        if (lies == null) lies = Object.keys(dts[0]);
+        //构建列
+        for (let i in lies) {
+            let lie = lies[i];
+            if (lie in helpdt) {
+                lies_txt += format('<th>{0}<span class="help-tip"><p>{1}</p></span></th>', [lie, helpdt[lie]]);
+            } else {
+                lies_txt += format('<th>{0}</th>', [lie]);
+            }
+        }
+        //构建值组
+        for (let i in dts) {
+            let row_txt = '';
+            let dt = dts[i];
+            for (let k in lies) {
+                let lie = lies[k];
+                let value = lie in dt ? dt[lie] : '';
+                row_txt += format('<td>{0}</td>', [value]);
+            }
+            body_txt += format('<tr class="even gradeC">{0}</tr>', [row_txt]);
+        }
+        $('#table_lie')[0].innerHTML = lies_txt;
+        $('#table_body')[0].innerHTML = body_txt;
+    }
+
+    //翻页渲染
+    function createIndexs(page, maxpage) {
+        var li0 = '<li {0}><a href="{1}">{2}</a></li>', txt = '', i;
+        txt = format(li0, [page === 1 ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': 1}), '<<']);
+        if (maxpage <= 5) {
+            for (let i = 1; i <= maxpage; i++) {
+                if (i === page) txt += format(li0, ['class="am-active"', getMergeUrl(window.location.href, {'page': i}), i]);
+                else txt += format(li0, ['', getMergeUrl(window.location.href, {'page': i}), i]);
+            }
+        } else {
+            i = page - 2 >= 1 ? (page + 2 <= maxpage ? page : maxpage - 2) : 3;
+            for (let i1 = i - 2; i1 <= i + 2; i1++) {
+                if (i1 === page) txt += format(li0, ['class="am-active"', getMergeUrl(window.location.href, {'page': i1}), i1]);
+                else txt += format(li0, ['', getMergeUrl(window.location.href, {'page': i1}), i1]);
+            }
+        }
+        txt += format(li0, [page === maxpage ? 'class="am-disabled"' : '', getMergeUrl(window.location.href, {'page': maxpage}), '>>']);
+        $('#pageul')[0].innerHTML = txt;
+    }
+
+    createIndexs(page, maxpage);
+    view();
+</script>
+
+

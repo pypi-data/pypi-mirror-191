@@ -1,0 +1,124 @@
+<div class="widget am-cf">
+    <div class="widget-head am-cf">
+        <div id="table_title" class="widget-title  am-cf"></div>
+    </div>
+    <div class="widget-body  am-fr">
+        <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+            <div class="am-form-group">
+                <div class="am-btn-toolbar">
+                    <div class="am-btn-group am-btn-group-xs">
+{#                        <button type="button" class="am-btn am-btn-default am-btn-secondary"#}
+{#                                onclick="formSubmit($('#table_form'),action, function (result){new Function(result)();});">#}
+{#                            <span class="am-icon-save"> 保存</span>#}
+{#                        </button>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;border:1px solid #d2cdcd">
+            <div class="col-sm-12"><label>条件查询：</label></div>
+            &nbsp;<br/>
+            <div class="col-sm-12">
+                &nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="ifmh" value="模糊查询">
+                模糊查询<br/>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-12">
+                &nbsp;&nbsp;&nbsp;排序方式：
+                <select id="order_name"></select>
+                <select id="order">
+                    <option value="up">升序</option>
+                    <option value="down">降序</option>
+                </select>
+                {#                <button type="button" onclick="findfunc();">确定</button>#}
+                <br/>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="col-sm-12">
+                <div style="float: left;position:relative; left:-90px" class="row">
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-6 am-u-lg-3">
+                        <div class="am-form-group tpl-table-list-select">
+                            <label>
+                                <select data-am-selected="{btnSize: 'sm'}" style="display: none;"
+                                        id="find_select">
+                                    <option value="所有类别">所有类别</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-12 am-u-lg-3">
+                        <input type="text" style="width: 400px" class="am-form-field" id="find_txt"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div style="float: left;position:relative; left:-90px" class="row">
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-6 am-u-lg-3">
+                        <div class="am-form-group tpl-table-list-select">
+                            <label>
+                                <select data-am-selected="{btnSize: 'sm'}" style="display: none;"
+                                        id="find_select1">
+                                    <option value="所有类别">所有类别</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-12 am-u-lg-3">
+                        <input type="text" style="width: 400px" class="am-form-field" id="find_txt1"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div style="float: left;position:relative; left:-90px" class="row">
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-6 am-u-lg-3">
+                        <div class="am-form-group tpl-table-list-select">
+                            <label>
+                                <select data-am-selected="{btnSize: 'sm'}" style="display: none;"
+                                        id="find_select2">
+                                    <option value="所有类别">所有类别</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 am-u-sm-12 am-u-md-12 am-u-lg-3">
+                        <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
+                            <input type="text" style="width: 400px" class="am-form-field" id="find_txt2"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                &nbsp;&nbsp;&nbsp;
+                <button class="am-btn  am-btn-default am-btn-success tpl-table-list-field am-icon-search"
+                        type="button" onclick="findfunc();">查询
+                </button>
+            </div>
+            &nbsp; <br/>
+        </div>
+        <form id="table_form" action="#" method="post" enctype="multipart/form-data">
+            <div class="am-u-sm-12">
+                <div id="table_xz">
+                    <label>显示字段:</label>
+                    {#                    <input type="checkbox" value="1" checked/>记住我#}
+                </div>
+                <div><br/></div>
+                <div id="table_div">
+                    <table class="am-table am-table-compact am-table-bordered am-table-radius am-table-striped tpl-table-black "
+                           id="example-r">
+                        <thead>
+                        <tr id="table_lie" style="color: #1d98dc;"></tr>
+                        </thead>
+                        <tbody id="table_body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+        <div class="am-u-lg-12 am-cf">
+            <div class="am-fr">
+                <ul class="am-pagination tpl-pagination" id="pageul">
+                    {#                        class="am-disabled" class="am-active"#}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

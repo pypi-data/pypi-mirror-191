@@ -1,0 +1,18 @@
+<table border="1" cellpadding="4" cellspacing="0" class="table table-hover">
+    <thead>
+    <tr>
+        {% for lie in lies %}
+            <th scope="col">{{ lie }}</th>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in rows %}
+        <tr>
+            {% for value in row %}
+                <th>{{ value }}</th>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
