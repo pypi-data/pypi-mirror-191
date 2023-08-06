@@ -1,0 +1,13 @@
+python-dotenv
+boto3
+Flask==2.2.2
+SQLAlchemy==1.4.23
+psycopg2-binary
+sqlalchemy-serializer
+shapely==1.8.5
+GeoAlchemy2
+Werkzeug
+authlib
+flask-cors
+bootstrap-flask
+requests
