@@ -1,0 +1,13 @@
+wandering_in_gpt-0.0.0.data/scripts/wig,sha256=GYD4Vir2Csyku_T5aJORDDWcdfEpDaYY3zOuDChj8K4,2409
+wndrng/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wndrng/wandering.py,sha256=Y2oJCLx_eCs_KkxyIP9c9onVGeKZU3wfM2xbegBVhuw,5964
+wndrng/i18n/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wndrng/i18n/hints.py,sha256=KAyHOwd8x-x1kRV2GdzQEunNFKu3yxC9SjJZaGyPSmY,2152
+wndrng/i18n/people.py,sha256=s-Ts29M60ynwi483DalwCxf5bu3G1n6yig_961wtdN0,413
+wndrng/i18n/prompts.py,sha256=XiVKVyDtn7KEi4q8QnS1lTTGAfy7NrEEqJZTy7Hj2G8,3585
+wndrng/i18n/settings.py,sha256=FCvxX5hqJJgYGons04nOXmKZpiAa5uz19kP8X3FoQTA,314
+wandering_in_gpt-0.0.0.dist-info/LICENSE,sha256=YGkf7gu5Jw5mWMj-WNOScKp2jjPK_5_DNP7LJTxzglQ,1068
+wandering_in_gpt-0.0.0.dist-info/METADATA,sha256=uJNvRE-Xpyqf-Gd3BMd3070uYPKTvOUMHi160Uu3vdk,3937
+wandering_in_gpt-0.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+wandering_in_gpt-0.0.0.dist-info/top_level.txt,sha256=U2dT9na_KWOPdiNlIXjSOKHhffnSA38pP2qWcDcJ0lQ,7
+wandering_in_gpt-0.0.0.dist-info/RECORD,,
