@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: stqe
+Version: 0.2.0.dev0
+Summary: Python modules to manage SAN devices
+Project-URL: Repository, https://gitlab.com/rh-kernel-stqe/python-stqe
+Author: Jakub Krysl
+Author-email: Bruno Goncalves <bgoncalv@redhat.com>
+Maintainer-email: Bruno Goncalves <bgoncalv@redhat.com>, Martin Hoyer <mhoyer@redhat.com>, Filip Suba <fsuba@redhat.com>
+License-Expression: GPL-3.0-or-later
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Requires-Dist: fmf>=1.1.0
+Requires-Dist: libsan>=0.4.0
+Description-Content-Type: text/markdown
+
+# stqe
+
+Kernel-QE Storage test suite
+
+### Dependencies
+* Python >= 3.6
+* pip >= 20.3
+
+### Installation
+Using virtualenv:  
+`python3 -m pip install venv`  
+`python3 -m venv stqe-venv && source stqe-venv/bin/activate`  
+`python3 -m pip install -U pip wheel`  
+`python3 -m pip install stqe`
+
+(optional) edit /etc/san_top.conf example
+
+#### How to Uninstall
+`python3 -m pip uninstall stqe`
+
+#### Basic cli usage
+`stqe-test --help`
