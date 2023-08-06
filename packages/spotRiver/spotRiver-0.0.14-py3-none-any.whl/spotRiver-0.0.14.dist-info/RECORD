@@ -1,0 +1,17 @@
+spotRiver/data/__init__.py,sha256=T0KngH0mHk6tDa2O3PGkY365I_O5w_fJCmRMepRIoKY,413
+spotRiver/data/airline-passengers.csv,sha256=kIL7oOyP-6W_y9t84qPjABIXpVAGs9uKfVoXXWx_OSY,2182
+spotRiver/data/airline_passengers.py,sha256=W9JUloP_-kHo0mHPCrrvaqudo-bsHF-N2Zh3rZkinNI,1023
+spotRiver/data/base.py,sha256=YJg_B8Hpg3BWAx1WwbPQ6zsC2ujggGkOFDdhRUo-Izc,12012
+spotRiver/data/generic.py,sha256=BB1dKZ7ZWGzT-CRf1QjFg0dRrkZXSUM2Y-MEFKP-LYk,1337
+spotRiver/data/opm.py,sha256=FJnXCGkI5_Bsi_HTNKC2HdOa_wtc888C8IcJkwc8WAA,6121
+spotRiver/data/synth/__init__.py,sha256=bupG3O0sHD0SJveyKMzdSi8FvixVYHiifOFwIZKq11A,328
+spotRiver/data/synth/sea.py,sha256=LEbB5GHkXEtZ4OO8cW5SqoYH9swaXG1ghTnZPk0LSQg,2445
+spotRiver/evaluation/eval_oml.py,sha256=L2gjsqqWTU4y8RP7FldjkLxyvjaXzcfIU15Y4v87vtg,3950
+spotRiver/fun/hyperriver.py,sha256=M731HNBHEPqPgwSucI0_MFGUfAvCXGiWGAvhw785Sxw,21084
+spotRiver/utils/features.py,sha256=eDrWp8nnOJqOEUNj1mqDW_kwafAuRTj1NuLsgS7sc9A,641
+spotRiver/utils/selectors.py,sha256=CFV0-sQgZS6ObTCatX4ekp6x8u9ZzLXSM-VCoIu-w6o,1069
+spotRiver-0.0.14.dist-info/LICENSE,sha256=conEBIROLOxL_bD4m9wtGwD5rBv9TFb45PQ5CHfxjzU,1520
+spotRiver-0.0.14.dist-info/METADATA,sha256=Srkv80cu2nRuW228U5WOejc4B6d_RxyE0gvYKPk5KsI,3418
+spotRiver-0.0.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+spotRiver-0.0.14.dist-info/top_level.txt,sha256=M9gEeLQBR4NeRn0SuIsSsmnEr85ayUf0QlyTHnEqvfI,10
+spotRiver-0.0.14.dist-info/RECORD,,
