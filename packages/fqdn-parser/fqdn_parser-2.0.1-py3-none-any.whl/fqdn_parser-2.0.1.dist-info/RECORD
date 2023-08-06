@@ -1,0 +1,12 @@
+entropy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entropy/char_probabilities.py,sha256=ifo6_b2lmC8kfhySaeDWohuICKvRgBihgPgB2BWimMQ,6148
+entropy/domain_entropy.py,sha256=B2TRz9PUSFf3tvBVfbzIstl6qJBVUhdxYJCNKG1ZemA,3492
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/ascii_ify.py,sha256=DPnz651AYBCItMsHheJQIa33PsflrTRLSbbWwEJuK5Y,384
+utils/suffix_parser.py,sha256=SWvQB_WKs7DWEG9q7DeWYtrv3k5BWCbuiDCsfJZHKLU,6214
+utils/trie.py,sha256=2uHDwp3m3_yqDD8wiMAf0k-zETZkBHODyjcuwJuuEZM,4463
+fqdn_parser-2.0.1.dist-info/LICENSE.txt,sha256=W3Pn63iJzaQpLIfo8G642VDLNTVKBRj1UyT9EGTdjx4,1079
+fqdn_parser-2.0.1.dist-info/METADATA,sha256=Qluj-O9sZt2yOqkDXeMOoCkIyS38MRfX5egEDKA5rgk,8192
+fqdn_parser-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fqdn_parser-2.0.1.dist-info/top_level.txt,sha256=6eGY5nu4hrYnkFvyDg2eB1rXyPWcig3ehAt84GvaIuk,14
+fqdn_parser-2.0.1.dist-info/RECORD,,
