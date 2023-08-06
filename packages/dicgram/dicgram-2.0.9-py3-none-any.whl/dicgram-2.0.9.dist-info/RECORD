@@ -1,0 +1,10 @@
+dicgram/__init__.py,sha256=05PiI_tQQxBa3zUmcn52_Ig2LIHsOUtqmiThgW5njeY,233
+dicgram/cliente.py,sha256=e8JmvTS74Wr2DYBxyja_x4u2-RypdSI6OBkbfY23Rx4,13243
+dicgram/decorators.py,sha256=RvPJKOP5UzZy3eYkVq2--XCdiSOMFxkusOpP5w0rTXE,2568
+dicgram/mensagem.py,sha256=WtLtrzZRuLWqmJC7vJTiX4IUUdzSISOH6QKigav7O6w,1682
+dicgram/metodos.py,sha256=yGGiLgEDQdmT400ZCi_qFDFxKD_uy_0RLnxgLIrDulM,3235
+dicgram-2.0.9.dist-info/LICENSE,sha256=xHEA_tOjHA_A5dpkohM7pqreAssdKw-0v9-mmRGX7wA,1072
+dicgram-2.0.9.dist-info/METADATA,sha256=ytPtF8z45fIwwaI17Tz4_a2nfUVbIS3bdWD7p5xLNMc,7246
+dicgram-2.0.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dicgram-2.0.9.dist-info/top_level.txt,sha256=zAyXLFwZ8QJRQoApheNK-itAxhQVsOUGApEJrGK6sBY,8
+dicgram-2.0.9.dist-info/RECORD,,
