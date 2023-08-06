@@ -1,0 +1,60 @@
+{% macro icon(cat,name, extra_classes) -%}
+<i class="fa-{{cat}} fa-{{name}} {{extra_classes}}"></i>&nbsp
+{%- endmacro -%}
+
+{% macro btn_share(href,content,class='primary') -%}
+<div class="btn-group">
+    <a href="{{href}}" class="btn btn-{{class}} share-link">{{content}}</a>
+</div>
+{%- endmacro -%}
+
+{% macro modal(id,title,content,footer="",show=False) -%}
+
+<div class="modal fade " id="{{id}}" role="dialog" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">{{title}}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+                
+            </div>
+            <div class="modal-body">
+                {{content}}
+            </div>
+            <div class="modal-footer">
+                {{footer}}
+                <button type="button" class="btn btn-secondary close" data-dismiss="modal">{{_('close')}}</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+% if show
+<script>
+    $("#{{id}}").modal()
+</script>
+% endif
+{%- endmacro -%}
+
+
+{% macro menu_post(href,text, extra_classes) -%}
+<form method="post" action="{{href}}">
+    <button type="submit" class="nav-item {{extra_classes}}">
+        {{text}}
+    </button>
+</form>
+{%- endmacro -%}
+
+
+
+{% macro render_nav_item(endpoint, text, _badge='', _use_li=False,extra_class="") %}
+    {% set active = True if request.endpoint and request.endpoint == endpoint else False %}
+    {% if _use_li %}<li class="nav-item">{% endif %}
+    <a class="{{extra_class}} {% if not _use_li %}nav-item {% endif %}nav-link{% if active %} active" aria-current="page{% endif %}"
+       href="{{ url_for(endpoint, **kwargs) }}">
+        {{ text }} {% if _badge %}<span class="badge badge-light">{{ _badge }}</span>{% endif %}
+    </a>
+    {% if _use_li %}</li>{% endif %}
+{% endmacro %}
