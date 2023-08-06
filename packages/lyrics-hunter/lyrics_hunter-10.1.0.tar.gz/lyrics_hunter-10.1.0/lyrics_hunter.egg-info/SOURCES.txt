@@ -1,0 +1,11 @@
+README.md
+setup.py
+lyrics_hunter/__init__.py
+lyrics_hunter/hunter.py
+lyrics_hunter.egg-info/PKG-INFO
+lyrics_hunter.egg-info/SOURCES.txt
+lyrics_hunter.egg-info/dependency_links.txt
+lyrics_hunter.egg-info/requires.txt
+lyrics_hunter.egg-info/top_level.txt
+test/__init__.py
+test/test_hunter.py
