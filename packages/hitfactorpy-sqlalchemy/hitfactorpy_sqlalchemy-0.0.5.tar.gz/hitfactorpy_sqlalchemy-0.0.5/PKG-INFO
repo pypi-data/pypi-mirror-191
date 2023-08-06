@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hitfactorpy-sqlalchemy
+Version: 0.0.5
+Summary: Manage practical match reports with SQLAlchemy
+Author: Conor Heine
+Author-email: conor.heine@gmail.com
+Requires-Python: >=3.10,<3.12
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: alembic (>=1.9.2,<2.0.0)
+Requires-Dist: asyncpg (>=0.27.0,<0.28.0)
+Requires-Dist: hitfactorpy (>=0.1.1,<0.2.0)
+Requires-Dist: inflection (>=0.5.1,<0.6.0)
+Requires-Dist: psycopg2-binary (>=2.9.5,<3.0.0)
+Requires-Dist: rich (<13)
+Requires-Dist: sqlalchemy-continuum (>=1.3.14,<2.0.0)
+Requires-Dist: sqlalchemy-utils (>=0.39.0,<0.40.0)
+Requires-Dist: sqlalchemy[asyncio,mypy] (>=1.4,<2.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# hitfactorpy_sqlalchemy
+
+[![Main](https://github.com/cahna/hitfactorpy-sqlalchemy/actions/workflows/main.yaml/badge.svg)](https://github.com/cahna/hitfactorpy-sqlalchemy/actions/workflows/main.yaml)
+[![PyPI version](https://badge.fury.io/py/hitfactorpy-sqlalchemy.svg)](https://badge.fury.io/py/hitfactorpy-sqlalchemy)
+
+Manage practical match reports in a database with SQLAlchemy
+
+## Status
+
+**Work in progress...**
+
+## Documentation
+
+See `docs/index.md` via [website](https://cahna.github.io/hitfactorpy-sqlalchemy/) or [source](https://github.com/cahna/hitfactorpy-sqlalchemy/blob/main/docs/index.md).
+
