@@ -1,0 +1,11 @@
+QtFrameless/__init__.py,sha256=fCZeCkh4Vj6R2ViwdRSKKhDqXEAmMKQDUhJU9KHaLHE,103
+QtFrameless/button.py,sha256=V9l-bRP9sOP1-Yoo1Z1umRP-vwe9XENcbsk0imPyFaU,1062
+QtFrameless/qt_api.py,sha256=XZBVXbcowTS5fNZhTN_X62ZJC73UNGAETxeBVfxvmII,735
+QtFrameless/style.py,sha256=e8xm-Uqh9BJOBIhNlDbm3Zad3VmeiWSWTkZxRkw_KrM,1029
+QtFrameless/titleBar.py,sha256=jRQ5JIXrnuS-JI0ZAa7vssgLBR7eLnWPD2HWfNBogw4,2526
+QtFrameless/window.py,sha256=uBFOXJq75oI28uEYi3dE16SWRctFNjZnlExG9ZrW7GM,3559
+QtFrameless-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+QtFrameless-0.1.1.dist-info/METADATA,sha256=Qb2K1bgUse4VAPLmqRDjUlv_mcw7iepYoa0Rx0BqovM,17854
+QtFrameless-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+QtFrameless-0.1.1.dist-info/top_level.txt,sha256=nUxxvaj1206kslaF7mta_b7EckD5Ecppv3iw0WGIebA,12
+QtFrameless-0.1.1.dist-info/RECORD,,
