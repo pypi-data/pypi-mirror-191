@@ -1,0 +1,3 @@
+[console_scripts]
+netseq = rvid.netseq.command:main
+rid = rvid.seq.command:command

@@ -1,0 +1,230 @@
+Metadata-Version: 2.1
+Name: rvid.seq
+Version: 0.0.5
+Summary: Admin-friendly, fixed-length, unique-enough, fast-enough, monotonic, identifiers.
+Author-email: Arvid Müllern-Aspegren <kontakt@rvid.se>
+Project-URL: homepage, https://rvid.se/seq
+Project-URL: repository, https://hg.sr.ht/~rvid/rvid.seq
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
+# rvid.seq a.k.a RID
+
+Admin-friendly, fixed-length, unique-enough, fast-enough, monotonic,
+identifiers.
+
+Optimized for small contexts where you only very rarely need more than a few
+million unique ID:s per day and prefer those ID:s to carry a bit of meaning
+and be easy to read, remember and speak out loud.
+
+It is essentially a compact, semi-high-resolution timestamp, with a bit of
+logic for avoiding duplicates in a cross-platform manner.
+
+```
+from rvid.seq import RID
+my_id = RID.next()
+>>> '0Q1-USW-YU8'
+```
+
+## Definition
+
+A RID is an *approximation* of millisecond Unix epoch time, encoded in base-35
+with a readability-optimized character set and presented in exactly three
+groups of exactly three alphanumerics.
+
+The characters used for encoding is: `0123456789ABCDEFGH*JKLMN#PQRSTUVWXY`.
+Note that I and O are replaced with * and #.
+
+## Compatibility
+
+The code is tested OK with CPython 3.6 and 3.11, and PyPy 7.3.1.
+
+The wheel building may however have some issues on Python 3.6, since
+current versions of pip no longer support interpreters that old.
+
+## Building and installing
+
+Via PyPI: `pip install rvid.seq`
+
+For local build it is not much harder:
+
+```
+hg clone https://hg.sr.ht/~rvid/rvid.seq
+cd rvid.seq
+pip wheel . -w dist
+```
+
+The build produces a pure python wheel with no dependencies.
+
+### Troubleshooting
+
+> ⚠️ **pip can't find 'hg' command**
+
+There seems to be a bug in setuptools_scm or mercurial, which on at least some
+systems mean that you must run pip via a virtualenv where mercurial is
+pre-installed:
+
+```
+python3 -m venv venv
+venv/bin/pip install mercurial
+venv/bin/pip wheel . -w dist
+```
+
+## Usage
+
+### Command-line
+
+The command-line tool `rid` lets you get the RID for current time or do 
+translations:
+
+```
+(venv) [user@host ~]$ rid
+0Q1-X1G-HQ6
+
+(venv) [user@host ~]$ rid 0Q1-X1G-HQ6
+0Q1-X1G-HQ6 corresponds to 2023-02-14 18:23:34
+
+(venv) [user@host ~]$ rid $(date +%s)
+1676397310 corresponds to 0Q1-X2P-P00
+```
+
+### In Python code
+
+For programmatic usage, you would import the RID singleton in your software,
+and use its `.next()` method to get a value:
+
+```
+from rvid.seq import RID
+id = RID.next()
+```
+
+If you application is multi-threaded, you can use the thread-safe version. It
+works exactly the same but is slower due to locking-overhead.
+
+```
+from rvid.seq import RID_ThreadSafe as RID
+id = RID.next()
+```
+
+If your application is multi-process within a single system, have a look at
+the section called [Multi-process support](#multi-process-support).
+
+### Safe resumption
+
+```
+from rvid.seq import epoch2rid, RID
+
+[RID.next() for _ in range(2)]
+>>> ['0Q1-UX2-XYS', '0Q1-UX2-XYT']
+
+RID.adjust_top_from_rid( epoch2rid( time.time() + 1000 * 1000 ) )
+RID.next()
+>>> '0Q2-EYH-G0Q'
+```
+
+If picking up work from e.g. a saved file in a new session, you will need to
+seed the RID-generator with the max-RID from that saved file. (Or else stuff
+gets weird if your clock has moved backwards).
+
+## Scalability
+
+By the year 2525, if man is still alive, you still have 18 billion id:s left in
+the number space before wrapping over.
+
+RID is unlikely to be too slow. A Ryzen 3900X generates about 430k RID:s/second
+with CPython 3.9 and 9.5M RID:s/second with Pypy 7.3.1.
+
+## Multi-process support
+
+> ⚠️ **The multi-process functionality is not properly tested!**
+
+RID:s are not UUID:s. They cannot be assumed to be unique outside controlled
+and coordinated *local* contexts. At some point I might want a local context
+that spans multiple processes, though. As a fun experiment, I built a network
+wrapper called `netseq`.
+
+`netseq` provides a central server process that manages the issuing of RID:s,
+and a client proxy class, that transparently fetches tranches of RID:s for
+local usage. When multiple clients are connected, they get interleaved
+tranches of RID:s.
+
+Out of the box, the tranches cover three seconds into the future (with 'now'
+defined as either system time or the highest previously issued RID, which ever
+is higher) and are sized equally across all connected clients. The clients
+hand out RID:s to their local consumers from their latest tranch, until
+the values become 1.5 seconds off compared to the reference "now", and then
+fetches an updated set.
+
+Performance is surprisingly good. RID-issuance throughput is only about
+50% slower over the network than in the basic, single-process version.
+(Or about 200k RID:s per second on a half-modern desktop). Latency
+should be way beyond imperceptible for interactive usage.
+
+```
+(venv) [user@host ~]$ netseq server
+[2023-02-14 18:58:24,634] INFO [rvid.networknumbers.server]: TCP Server is running. Ctrl-C to kill it.
+[2023-02-14 18:58:24,634] INFO [rvid.networknumbers.server]: Registered handler is: <class 'rvid.netseq.server.RIDHandler'>
+[2023-02-14 18:58:42,324] INFO [rvid.netseq.server]: Making new tranches for 1 clients at ms-epoch 1676397522325
+[2023-02-14 18:58:47,320] INFO [rvid.netseq.server]: Making new tranches for 2 clients at ms-epoch 1676397527320
+[...]
+
+
+(venv) [user@host ~]$ netseq client
+Running .next() 12 times with 0.1s sleep between
+0Q1-X2U-RE6 with last fetch at 1676397530651 and 1665 ID:s remaining
+0Q1-X2U-SUR with last fetch at 1676397530651 and 762 ID:s remaining
+0Q1-X2U-SWT with last fetch at 1676397530651 and 726 ID:s remaining
+[...]
+```
+
+## Background and motivations
+
+The RID concept was designed around the needs of another (proprietary)
+software project run at Rvid AB. The needs with regard to identifiers in that
+project are:
+
+* Documents may live for many years
+* Documents will have periods of high, low and no changes happening
+* Documents will usually contain thousands of objects
+* Documents could possibly contain millions of objects
+* Documents are made up of mostly immutable structures and have
+  infinite history. No identity can ever be reused for a new object.
+* Documents **do** have a globally unique document ID, and this creates a
+  unique namespace for the local objects in the document.
+* Documents will initially be persisted as XML data, but that may change.
+* Documents will initially live mostly as regular files, but that will change.
+* Most operations will only involve spawning a handful of objects
+* Some operations may create tens of thousands of objects within a second
+* It is certain that bugs will happen, where someone will need to figure
+  out why this or that reference is dangling or pointing at the wrong object.
+
+I have found UUID:s to be annoying at times. They take up lots of screen space
+and are difficult to read. And I always end up having to read them when
+debugging one thing or another. They are not optimized for direct human 
+consumption.
+
+### On the topic of anchoring to system time
+
+I've chosen to anchor the number sequence on system time, because it adds some
+extra context information to each ID. I'm not certain that I will stick with
+that, because it also adds a bit of complication to the implementation and
+some mental overhead when parsing the ID:s.
+
+Skipping the system-time anchor would allow dropping one of the triplets and
+still get a reasonable 1.8 billion unique values.
+
+```
+from rvid.seq.common import rid2epoch_ms
+rid2epoch_ms("000-YYY-YYY")
+>>> 1838265624
+```
+
+On the other hand, decoupling time from ID would mean that you must have and
+must read a timestamp to have the slightest idea about when an object was
+created. I'm not 100% sure that it would be net gain in mental overhead.
