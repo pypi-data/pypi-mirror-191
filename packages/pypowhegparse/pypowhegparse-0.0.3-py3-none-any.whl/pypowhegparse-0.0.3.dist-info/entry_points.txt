@@ -1,0 +1,3 @@
+[console_scripts]
+pypowhegparse=pypowhegparse.pypowhegparse:main
+

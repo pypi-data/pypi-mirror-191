@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pypowhegparse
+Version: 0.0.3
+Summary: Analyse POWHEG output files for potential errors.
+Home-page: https://github.com/APN-Pucky/pypowhegparse.git
+Author: Alexander Puck Neuwirth
+Author-email: alexander@neuwirth-informatik.de
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pytopdrawer
+Requires-Dist: scipy
+Requires-Dist: smpl
+Requires-Dist: uncertainties
+Project-URL: Repository, https://github.com/APN-Pucky/pypowhegparse.git
+Description-Content-Type: text/markdown
+
+# pypowhegparse
+
+Analyse POWHEG output files for potential errors.
