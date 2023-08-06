@@ -1,0 +1,9 @@
+cellfinder>=0.4.20
+bgheatmap>=0.0.3
+opencv-python>=4.6.0.66
+plotly>=5.10.0
+fastcluster>=1.2.0
+shortuuid>=1.0.9
+jupyterlab>=3.6
+statsmodels>=0.13
+ipyvtklink>=0.2
