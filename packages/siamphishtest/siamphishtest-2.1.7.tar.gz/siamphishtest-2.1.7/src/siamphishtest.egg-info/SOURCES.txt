@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/siam/__init__.py
+src/siam/bomber.py
+src/siam/linux.py
+src/siam/win.py
+src/siam/windows.py
+src/siamphishtest.egg-info/PKG-INFO
+src/siamphishtest.egg-info/SOURCES.txt
+src/siamphishtest.egg-info/dependency_links.txt
+src/siamphishtest.egg-info/top_level.txt
