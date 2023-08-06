@@ -1,0 +1,2 @@
+[console_scripts]
+icatcher = icatcher.cli:main
