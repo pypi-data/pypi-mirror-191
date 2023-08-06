@@ -1,0 +1,11 @@
+README.md
+setup.py
+3DJCG_3Dvisual_question_answering/__init__.py
+3DJCG_3Dvisual_question_answering/app.py
+3DJCG_3Dvisual_question_answering/model.py
+3DJCG_3Dvisual_question_answering.egg-info/PKG-INFO
+3DJCG_3Dvisual_question_answering.egg-info/SOURCES.txt
+3DJCG_3Dvisual_question_answering.egg-info/dependency_links.txt
+3DJCG_3Dvisual_question_answering.egg-info/not-zip-safe
+3DJCG_3Dvisual_question_answering.egg-info/requires.txt
+3DJCG_3Dvisual_question_answering.egg-info/top_level.txt
