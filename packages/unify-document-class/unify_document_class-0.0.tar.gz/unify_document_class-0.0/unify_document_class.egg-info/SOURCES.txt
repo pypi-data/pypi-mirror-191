@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+unify_document_class/DocumentClass.py
+unify_document_class/DrawFrame.py
+unify_document_class/Paragraph.py
+unify_document_class/Table.py
+unify_document_class/TableCell.py
+unify_document_class/TableColumn.py
+unify_document_class/TableRow.py
+unify_document_class/__init__.py
+unify_document_class.egg-info/PKG-INFO
+unify_document_class.egg-info/SOURCES.txt
+unify_document_class.egg-info/dependency_links.txt
+unify_document_class.egg-info/not-zip-safe
+unify_document_class.egg-info/top_level.txt
