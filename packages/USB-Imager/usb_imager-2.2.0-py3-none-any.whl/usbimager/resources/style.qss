@@ -1,0 +1,5 @@
+QFrame#frame_targetwidget
+{
+    background-color: #444444;
+    border-radius: 10px;
+}

@@ -1,0 +1,3 @@
+[gui_scripts]
+usb-imager=usbimager.__main__:main
+
