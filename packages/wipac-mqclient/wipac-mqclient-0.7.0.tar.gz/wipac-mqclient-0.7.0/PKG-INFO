@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: wipac-mqclient
+Version: 0.7.0
+Summary: A Message Queue Client API Supporting Apache Pulsar, Google's PubSub (GCP), RabbitMQ, and NATS.io
+Home-page: https://github.com/WIPACrepo/MQClient
+Download-URL: https://pypi.org/project/wipac-mqclient/
+Author: WIPAC Developers
+Author-email: developers@icecube.wisc.edu
+License: MIT
+Project-URL: Tracker, https://github.com/WIPACrepo/MQClient/issues
+Project-URL: Source, https://github.com/WIPACrepo/MQClient
+Keywords: python,message,passing,client,API,mq,apache,pulsar,google,pubsub,gcp,rabbitmq,pika,nats,nats.io,OpenTelemetry,tracing,telemetry,WIPAC,IceCube
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <3.11,>=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: pulsar
+Provides-Extra: rabbitmq
+Provides-Extra: gcp
+Provides-Extra: nats
+Provides-Extra: telemetry
+Provides-Extra: dev
+Provides-Extra: integration
+License-File: LICENSE
+
+<!--- Top of README Badges (automated) --->
+[![PyPI](https://img.shields.io/pypi/v/wipac-mqclient)](https://pypi.org/project/wipac-mqclient/) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/WIPACrepo/MQClient?include_prereleases)](https://github.com/WIPACrepo/MQClient/) [![PyPI - License](https://img.shields.io/pypi/l/wipac-mqclient)](https://github.com/WIPACrepo/MQClient/blob/master/LICENSE) [![Lines of code](https://img.shields.io/tokei/lines/github/WIPACrepo/MQClient)](https://github.com/WIPACrepo/MQClient/) [![GitHub issues](https://img.shields.io/github/issues/WIPACrepo/MQClient)](https://github.com/WIPACrepo/MQClient/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen) [![GitHub pull requests](https://img.shields.io/github/issues-pr/WIPACrepo/MQClient)](https://github.com/WIPACrepo/MQClient/pulls?q=is%3Apr+sort%3Aupdated-desc+is%3Aopen) 
+<!--- End of README Badges (automated) --->
+# MQClient
+
+A message-queue client API supporting Apache Pulsar, Google's PubSub (GCP), RabbitMQ, and NATS.io through a common interface.
+
+### Running with WIPAC Telemetry
+See https://github.com/WIPACrepo/wipac-telemetry-prototype documentation
