@@ -1,0 +1,33 @@
+<div class="container">
+    {% for k,h2 in content.Tables.items() %}
+        <h2>{{ k }}</h2>
+        <p>{{ h2.Summary }}</p>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                {% for th in h2.TH %}
+                    <th scope="col">{{ th }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for tds in h2.TDs %}
+                <tr>
+                    {% for td in tds %}
+                        <td>
+                            {% for ele in td %}
+                                {% if loop.length>2 %}
+                                    <span class="btn btn-outline-primary btn-sm">{{ ele }}</span>
+                                {% else %}
+                                    <p>{{ ele }}</p>
+                                {% endif %}
+
+                            {% endfor %}
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% endfor %}
+</div>
