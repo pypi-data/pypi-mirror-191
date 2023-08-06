@@ -1,0 +1,11 @@
+eptlsoot2/__init__.py,sha256=UfI-l6dxu8fgrKn2Y1nD4OMJQ3G9nHlbaKTiYRsxIc0,94
+eptlsoot2/_eptlsoot2.cp39-win_amd64.pyd,sha256=2bb88JqAIRRzY1psAeCHIszMFmc3qH18Q4zPqhPfwgE,680960
+eptlsoot2/_eptlsoot2.cpp,sha256=h47dKcuacSl0yVDLTfjm7oskKU1LjwohVLn_eMilyJE,4042934
+eptlsoot2/_eptlsoot2.pyx,sha256=dqVKfmEZi4_6Kl4EEzF1VWFThL8z_8tYSp4J9Ns7ZxE,332
+eptlsoot2/cpfr.py,sha256=BJOJ8mHW8ff9_6PfouIDsZ5x4tdfpow2SGHPr-nUdNw,6084
+eptlsoot2/eptlsoot2.py,sha256=ZdsykCn_Pta8EBgKLIGROOtiPgVfeBfA3rKl75Xq1A8,563
+eptlsoot2/psr.py,sha256=svStuFVpdQdJm28CuTAOfXLSRXbDXvU7VQG0-MDsnj0,641
+eptlsoot2-0.0.1.dist-info/METADATA,sha256=OXRQnk13Fuokpt9W6yuFjAjSAmV0JBgzKYpnAdgvCGo,344
+eptlsoot2-0.0.1.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+eptlsoot2-0.0.1.dist-info/top_level.txt,sha256=04owwpPN1WRhx6SeCtrzohjfVK3VQjKtmNy46pvzyWI,10
+eptlsoot2-0.0.1.dist-info/RECORD,,
