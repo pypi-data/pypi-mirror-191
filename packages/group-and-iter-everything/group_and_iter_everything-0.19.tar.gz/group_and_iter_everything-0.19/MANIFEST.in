@@ -1,0 +1,3 @@
+include group_and_iter_everything/requirements.txt
+include group_and_iter_everything/thirdparty.json
+include group_and_iter_everything/README.MD

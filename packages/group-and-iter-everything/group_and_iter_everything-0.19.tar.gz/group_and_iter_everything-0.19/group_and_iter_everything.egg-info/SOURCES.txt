@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+group_and_iter_everything/README.MD
+group_and_iter_everything/__init__.py
+group_and_iter_everything/requirements.txt
+group_and_iter_everything/thirdparty.json
+group_and_iter_everything.egg-info/PKG-INFO
+group_and_iter_everything.egg-info/SOURCES.txt
+group_and_iter_everything.egg-info/dependency_links.txt
+group_and_iter_everything.egg-info/requires.txt
+group_and_iter_everything.egg-info/top_level.txt
