@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+oekofen_api/__init__.py
+oekofen_api/const.py
+oekofen_api/dummy_oekofen_server.py
+oekofen_api.egg-info/PKG-INFO
+oekofen_api.egg-info/SOURCES.txt
+oekofen_api.egg-info/dependency_links.txt
+oekofen_api.egg-info/requires.txt
+oekofen_api.egg-info/top_level.txt
