@@ -1,0 +1,12 @@
+CaGeo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CaGeo/algorithms/AggregateFeatures.py,sha256=7KMR1907XnaqfDufea6Ltw2o1SxYneJ-3nonrRKwP5M,4763
+CaGeo/algorithms/BasicFeatures.py,sha256=Bz4yY6miyLipt8Fr1wu-RI6Kc1zV-3L9FOiW4iEzBQ8,1646
+CaGeo/algorithms/SegmentFeatures.py,sha256=_NvNXIvRNtajbiBKqMM009pVMdRpEltt69bw8OYi6GE,1341
+CaGeo/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CaGeo/algorithms/utils.py,sha256=Uz2pl6FeRHANdH332kHGI7yw4Eb_R_knwrS1-YM347Y,5703
+CaGeo/classes/__init__.py,sha256=WWtav8PO9X6WCeR-TjOoNHmsARBy4NH0GcoftxanH5U,25
+CaGeo-0.0.4.post1.dist-info/LICENSE,sha256=6EkP2Rp31WfML6BK1oHp-6ehBxpmlIXd97PSXG477ac,1318
+CaGeo-0.0.4.post1.dist-info/METADATA,sha256=QfnVdruXLtEJX1-jW53F-Sf-ArsHCjhX6aO_l82vmSU,2945
+CaGeo-0.0.4.post1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+CaGeo-0.0.4.post1.dist-info/top_level.txt,sha256=e2oYrWOodfj0Td1qRYLXiON9g7XM0FIYMt-mOPs6Gzw,6
+CaGeo-0.0.4.post1.dist-info/RECORD,,
