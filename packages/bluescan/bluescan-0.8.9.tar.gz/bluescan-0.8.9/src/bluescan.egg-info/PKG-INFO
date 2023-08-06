@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bluescan
+Version: 0.8.9
+Summary: ...
+Home-page: https://pypi.org/project/bluescan
+Author: Cibo
+Author-email: cibo@bio-electric.com
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB) :: Wireless Controller
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Python: ==3.*
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# bluescan
+
+`bluescan` has evolved into [`bluing`](https://github.com/fO-000/bluing).
