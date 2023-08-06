@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: blab
+Version: 0.1.3
+Summary: Various Jupyter Tools
+Author-email: djekra <hopsalla@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/djekra/blab
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bpyth
+Requires-Dist: nbformat
+Requires-Dist: nbconvert
+Requires-Dist: ipytest
+Requires-Dist: matplotlib
+Requires-Dist: ipython-autotime
+
+# blab Tools for Jupyter
+Some Jupyter Tools, see `jupyter` directory
+
+## Install
+`pip install blab`
+
+## Usage
+Put this code in the first cell of your notebook:
+```
+# blab init
+try:
+    import blab
+except ImportError as e:
+    !pip install blab
+    import blab    
+startup_notebook = blab.blab_startup()
+%run $startup_notebook  
+```
+
+## Features
+* Finds a local folder named `libs` and integrates it into the Python path. Useful for your own private libraries.
+* loads `autotime` (see https://github.com/cpcloud/ipython-autotime)
+* loads `autoreload` 
+* loads `ipytest`
+* configures `%matplotlib inline`
+* Tool: `run_notebooks`: Starts all notebooks in the directory in alphabetical order
+* Tool: `search_notebooks`: Searches notebooks for occurrences of a string (wrapper for nbconvert)
+* Tool: `raise Stop`: Ends the execution of a notebook and displays the elapsed time
+* Tool: `bgc('orange')`: Sets the backbround color of a notebook cell (does not work in colab)
+
+
+
+```python
+
+```
