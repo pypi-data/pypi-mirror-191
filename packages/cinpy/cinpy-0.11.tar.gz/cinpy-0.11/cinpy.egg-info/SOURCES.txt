@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+cinpy/README.MD
+cinpy/__init__.py
+cinpy/requirements.txt
+cinpy/thirdparty.json
+cinpy.egg-info/PKG-INFO
+cinpy.egg-info/SOURCES.txt
+cinpy.egg-info/dependency_links.txt
+cinpy.egg-info/requires.txt
+cinpy.egg-info/top_level.txt
