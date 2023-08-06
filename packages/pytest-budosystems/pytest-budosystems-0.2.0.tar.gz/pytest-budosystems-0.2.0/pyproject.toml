@@ -1,0 +1,107 @@
+[build-system]
+    requires = [
+        "setuptools>=65",
+        "setuptools-scm[toml]>=6.2",
+        "wheel",
+    ]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "pytest-budosystems"
+    dynamic = ["version"]
+    description = """
+        Budo Systems is a martial arts school management system. \
+        This module is the Budo Systems Pytest Plugin."""
+    readme = "README.rst"
+    requires-python = ">=3.9"
+    license = {file = "LICENSE.txt"}
+    authors = [
+        {name = "Joël Larose", email = "joel.larose@budo.systems"}
+    ]
+    keywords = ["Budo Systems", "test", "pytest"]
+    classifiers = [
+        # "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 3 - Alpha",
+        # "Development Status :: 4 - Beta",
+        # "Development Status :: 5 - Production/Stable",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Framework :: Pytest",
+        "Topic :: Software Development :: Testing",
+        "Topic :: Software Development :: Testing :: Unit",
+        "Typing :: Typed",
+    ]
+    dependencies = [
+        "budosystems-core",
+        "pytest",
+    ]
+
+[project.urls]
+    "Repository" = "https://gitlab.com/budosystems/pytest-budosystems"
+    # "Documentation" = "https://budosystems.readthedocs.io/"
+    "Issue Tracker" = "https://gitlab.com/budosystems/pytest-budosystems/-/issues"
+
+[project.optional-dependencies]
+    test = [
+        "pytest-cov",
+    ]
+    docs = [
+        "Sphinx",
+        "sphinx-git",
+    ]
+    typecheck = [
+        "mypy",
+    ]
+    lintcheck = [
+        "pylint",
+        "pylint-venv",
+        "pylint-pytest",
+    ]
+    all = [
+        "pytest-budosystems[test,docs,typecheck,lintcheck]"
+    ]
+
+[project.entry-points.pytest11]
+    budotest_repository = "budosystems.xtra.pytest_suite.repository"
+
+[tool.setuptools]
+    zip-safe = false
+    packages = {find = {where = ["src"]}}
+
+[tool.setuptools_scm]
+    write_to = "src/budosystems/xtra/pytest_suite/_version.py"
+
+[tool.pytest.ini_options]
+    testpaths = ["tests"]
+
+[tool.coverage.run]
+    branch = true
+
+    source = ["src", "tests"]
+
+[tool.coverage.report]
+    exclude_lines = [
+        "pragma: no cover",
+        "def __repr__",
+        "if MYPY",
+        "if TYPE_CHECKING",
+        "if self.debug:",
+        "if settings.DEBUG",
+        "if 0:",
+        "if __name__ == .__main__.:",
+        "raise AssertionError",
+        "raise NotImplementedError",
+        "class .*\bProtocol\\):",
+        "@(abc\\.)?abstractmethod",
+    ]
+
+    partial_branches = [
+        "pragma: no branch",
+        "if MYPY",
+        "if TYPE_CHECKING",
+        "if self.debug:",
+        "if settings.DEBUG",
+    ]

@@ -1,0 +1,12 @@
+include LICENCE.txt mypy.ini pylintrc logo.* .gitignore
+global-include *.pyi
+global-include *.typed
+graft docs
+graft src
+graft tests
+global-exclude *.py[cod] __pycache__ *.so .*gitlab* .readthedocs.yaml
+prune .venv*
+prune venv*
+prune .gitlab
+prune docs/build
+prune public

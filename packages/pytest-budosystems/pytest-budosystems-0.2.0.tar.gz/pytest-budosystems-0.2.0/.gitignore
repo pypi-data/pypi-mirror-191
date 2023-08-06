@@ -1,0 +1,13 @@
+/venv*/
+/.venv*/
+/.idea/
+/docs/build/
+/docs/source/modules/
+/build/
+/dist/
+/**/*.egg-info/
+/coverage.xml
+/.coverage
+/codeclimate.json
+/src/budosystems/**/_version.py
+/setup.old
