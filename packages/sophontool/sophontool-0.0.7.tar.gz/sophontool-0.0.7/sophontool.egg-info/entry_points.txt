@@ -1,0 +1,2 @@
+[console_scripts]
+stool = stool.main:main
