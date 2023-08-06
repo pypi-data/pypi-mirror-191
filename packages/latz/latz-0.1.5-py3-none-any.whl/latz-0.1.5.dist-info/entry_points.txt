@@ -1,0 +1,3 @@
+[console_scripts]
+latz=latz.cli:cli
+
