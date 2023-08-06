@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: coloriran
+Version: 1.0
+Summary: A library to color your codes
+Home-page: https://github.com/mrsalari/coloriran
+Author: mohammad saeed salari
+Author-email: salari601601@gmail.com
+Keywords: color,colorama,colors,Fore,culor,colur,culor,culurs
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+    <br>
+    <b>coloriran Library for Python</b>
+    <br>
+</p>
+
+## coloriran
+
+``` python
+from coloriran import Fore
+
+print(Fore.GREEN, "Hello!")
+print(Fore.RED, "Hello!")
+print(Fore.WHITE, "Hello!")
+print(Fore.BLUE, "Hello!")
+```
+
+### Installing
+
+``` bash
+pip3 install TyroBot
+```
+
+
+© 2023 Mohammad Saeed Salari
