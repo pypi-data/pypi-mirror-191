@@ -1,0 +1,10 @@
+logze/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logze/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logze/models/log.py,sha256=HKQcxBD9srPZxxgM-NePK9V1Bjz9ms7Ymw7woLtriGw,520
+logze/recorder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logze/recorder/logger.py,sha256=MunOSmD2TWRO9AfvQYfnSy1MUOHwqVaeTAIeQHr6FoM,1637
+logze-0.1.4.dist-info/LICENSE,sha256=eQu6HQXeIbFO8BRNsA1UPtStEDrlnMcu79BgIRxsjQ8,1099
+logze-0.1.4.dist-info/METADATA,sha256=Q453Mz2gwbFbPJJ89tCY_WxCRs9MfnTj-bdlwdQejJQ,2105
+logze-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+logze-0.1.4.dist-info/top_level.txt,sha256=rhYo5Ji4fUVEyh6NY1pspTSEtzCz9EbU9ioEzSg-iOg,6
+logze-0.1.4.dist-info/RECORD,,
