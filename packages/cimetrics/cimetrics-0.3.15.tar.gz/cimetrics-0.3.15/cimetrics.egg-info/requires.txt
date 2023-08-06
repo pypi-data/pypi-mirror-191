@@ -1,0 +1,11 @@
+wheel
+pymongo
+pyyaml
+gitpython
+requests
+matplotlib
+numpy
+pandas
+adtk
+azure-storage-blob
+pyparsing<3,>=2.0.2
