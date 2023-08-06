@@ -1,0 +1,10 @@
+django_acs_email/__init__.py,sha256=_aLpo7NiSNPH6AIjM38HLCFP82Xm0UIIcoVWMP2hp28,37
+django_acs_email/backend.py,sha256=GY4LHmjI3dT-TMGv0dofzXRFJDr1GONQIS_P0-x1KTA,4341
+django_acs_email/logger.py,sha256=8gIR71XQLzqDJ7xF26jNBZIMYuCB6gpcUwqzbqMOcp4,557
+django_acs_email/mime.py,sha256=jBqx7PXn8LcADU6AteEMhao-e_1daodAAayjQaO4LoQ,1734
+django_acs_email/triple.py,sha256=3HyYfTp0H0-xsUX8hCZLO5I3G8-LsZJicbiKihKnfkU,747
+django_acs_email/utils.py,sha256=HYIO9H3RTXrj-MD1XGh95NQpPxwLCB7dQwLTNlZeX88,262
+django_acs_email-0.0.3.dist-info/METADATA,sha256=2VU1y7uhBAd_5BPNkVyfuC1Ar8ptv4eCR4Geggng6C0,689
+django_acs_email-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_acs_email-0.0.3.dist-info/top_level.txt,sha256=3oUJdfSzeKCR9F4kslMQ4mY3xggua5Wik_ZAuhSvt-g,17
+django_acs_email-0.0.3.dist-info/RECORD,,
