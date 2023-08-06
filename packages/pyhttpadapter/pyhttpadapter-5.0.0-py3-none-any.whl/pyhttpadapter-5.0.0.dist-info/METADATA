@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyhttpadapter
+Version: 5.0.0
+Summary: A HTTP Adapter to call any rest or 3rd party api.
+Home-page: UNKNOWN
+Author: supriya
+Author-email: supriya.kadam@neosoftmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: attrs (==22.2.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: exceptiongroup (==1.1.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: iniconfig (==2.0.0)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: pluggy (==1.0.0)
+Requires-Dist: requests (==2.28.2)
+
+Python module to call any 3rd party apis     compatible to perform any http request like GET,POST,PUT,PATCH,DELETE.
+
+
