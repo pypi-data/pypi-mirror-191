@@ -1,0 +1,15 @@
+task_helpers/__init__.py,sha256=BwJcsQx0xor3dpg6AKqrMgWmwOENGrY5IsNQYqhsbOE,114
+task_helpers/exceptions.py,sha256=sE5LXu2o6TfKZR4d-CL0chMB0F4pL0T0WY8ukDn8rJo,361
+task_helpers/tasks.py,sha256=nx4fbxNzt5rr1OLD2i7wV7jjXi23Tx7SK5yu6rF2gbs,1296
+task_helpers/couriers/__init__.py,sha256=VPuYLtRMY6R-0DocwZZAKiH_vh29xHHAk2CnDkwDBLg,113
+task_helpers/couriers/abstract.py,sha256=WtxxVf-3uqdUvVhxH5QNuqIc2Cf2fMo4xut3Nr3c_Oc,7610
+task_helpers/couriers/redis.py,sha256=8BS-RxYG6Y2dd61K4lN2fjzSc1c9m6U1cJH2mTwwqaM,11851
+task_helpers/workers/__init__.py,sha256=4D8kZWUsQyHJvVRpGbGlIkoEOzdyAjOXKyuSnfcFW0s,154
+task_helpers/workers/abstract.py,sha256=FJK0YV3p_OE8JVgeTCA_k8qzBNOURwZitdCiVlDXu2o,1324
+task_helpers/workers/base.py,sha256=ah5lphKXe_9ilRRNfyKyQPZZIMx3svvWqzqDW1tLKHs,4407
+task_helpers/workers/classic.py,sha256=zGX2CdlH_lemZybEmOyynV05_QDRGoWauwp3qmGB06k,1575
+task_helpers-1.2.1.dist-info/LICENSE,sha256=aTCfcWRQHQAfsein4dpIjZ1Qon96UPT1WTr-BPaaXL0,1512
+task_helpers-1.2.1.dist-info/METADATA,sha256=c2aLlT_jMjzxdH4itPSK3kad8WFkcUUjSg3VcJc5sQ4,6304
+task_helpers-1.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+task_helpers-1.2.1.dist-info/top_level.txt,sha256=oPJV6kYSCopAzNZlkXu7QuHqyBTaAvh_UkkjQUg0qLw,13
+task_helpers-1.2.1.dist-info/RECORD,,
