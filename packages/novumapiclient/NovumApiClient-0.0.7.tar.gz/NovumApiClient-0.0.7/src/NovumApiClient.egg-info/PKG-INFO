@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: NovumApiClient
+Version: 0.0.7
+Summary: This is a client API to access Novum Service Center
+Home-page: https://github.com/novum-engineering
+Author: Leonardo Biz
+Author-email: l.biz@novum-engineering.com
+License: BSD 2-clause
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
