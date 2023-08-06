@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mlsql_plugin_tool
+Version: 0.1.6
+Summary: Tool to build MLSQL Plugin
+Home-page: https://github.com/allwefantasy/mlsql-plugin-tool
+Author: WilliamZhu
+Author-email: allwefantasy@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Description-Content-Type: UNKNOWN
+Description: Tool to build MLSQL Plugin from https://github.com/allwefantasy/mlsql-plugins
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
