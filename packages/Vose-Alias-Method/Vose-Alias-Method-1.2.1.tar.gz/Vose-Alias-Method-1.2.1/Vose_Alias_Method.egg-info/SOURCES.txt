@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Vose_Alias_Method.egg-info/PKG-INFO
+Vose_Alias_Method.egg-info/SOURCES.txt
+Vose_Alias_Method.egg-info/dependency_links.txt
+Vose_Alias_Method.egg-info/entry_points.txt
+Vose_Alias_Method.egg-info/top_level.txt
+vose_sampler/__init__.py
+vose_sampler/vose_sampler.py
