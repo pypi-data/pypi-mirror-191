@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST Mr DAVIDhaker <me@davidhaker.ru>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 15:02+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Mr DAVIDhaker <me@davidhaker.ru>\n"
+"Language-Team: Mr DAVIDhaker <me@davidhaker.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps.py:8
+msgid "Single Sign-On"
+msgstr "Подсистема единого входа"
+
+#: forms.py:6
+msgid "Login/Email"
+msgstr "Логин/Почта"
+
+#: forms.py:7
+msgid "Password"
+msgstr "Пароль"
+
+#: models.py:22
+msgid "Name"
+msgstr "Имя"
+
+#: models.py:23
+msgid "Base url"
+msgstr "Базовая ссылка"
+
+#: models.py:24
+msgid "Enabled"
+msgstr "Активно"
+
+#: models.py:25 models.py:116
+msgid "Token"
+msgstr "Токен"
+
+#: models.py:105
+#, fuzzy
+#| msgid "Subordinated services"
+msgid "Subordinated service"
+msgstr "Подчинённые сервисы"
+
+#: models.py:106
+msgid "Subordinated services"
+msgstr "Подчинённые сервисы"
+
+#: models.py:114
+msgid "Service"
+msgstr "Сервис"
+
+#: models.py:115
+msgid "Created at"
+msgstr "Создан"
+
+#: models.py:117
+msgid "User identy"
+msgstr "Уникальный идентификатор пользователя"
+
+#: models.py:117
+msgid "E-Mail, login, etc."
+msgstr "E-Mail, логин и т.д."
+
+#: models.py:118
+msgid "Next url"
+msgstr "Базовая ссылка"
+
+#: models.py:118
+msgid "To go after success auth"
+msgstr "Для перехода после авторизации"
+
+#: models.py:119
+msgid "Request has been activated"
+msgstr "Запрос авторизации активирован"
+
+#: models.py:120
+msgid "Are used in external sso service"
+msgstr "Был применён во внешнем сервисе"
+
+#: models.py:123
+msgid "Authentication request"
+msgstr "Запрос авторизации"
+
+#: models.py:124
+msgid "Authentication requests"
+msgstr "Запросы авторизации"
+
+#: templates/django_sso/login.html:23 templates/django_sso/welcome.html:18
+msgid "Sign in"
+msgstr "Вход"
+
+#: templates/django_sso/login.html:26
+msgid "Log in"
+msgstr "Войти"
+
+#: templates/django_sso/welcome.html:9
+msgid "Y're welcome"
+msgstr "Добро пожаловать"
+
+#: templates/django_sso/welcome.html:13
+msgid "guest"
+msgstr "гость"
+
+#: templates/django_sso/welcome.html:22
+msgid "Sign out"
+msgstr "Выход"
+
+#: views.py:77 views.py:112 views.py:150 views.py:188
+msgid "\"token\" isn't set"
+msgstr "Поле \"token\" не заполненно"
+
+#: views.py:80
+msgid "\"next_url\" isn't set"
+msgstr "Поле \"next_url\" не заполненно"
+
+#: views.py:85 views.py:117 views.py:155
+msgid "Application token doesn't exist"
+msgstr "Токен приложения не существует"
+
+#: views.py:120 views.py:158
+msgid "Authentication request token isn't set"
+msgstr "Токен запроса авторизации не задан"
+
+#: views.py:130 views.py:168
+msgid "Authentication request token doesn't exist"
+msgstr "Токен запроса авторизации не существует"
+
+#: views.py:191
+msgid "\"user_identy\" isn't set"
+msgstr "Поле \"token\" не заполненно"
+
+msgid "Failed to communicate with subordinated service"
+msgstr "Ошибка коммуникации с подчинённым сервисом"
+
