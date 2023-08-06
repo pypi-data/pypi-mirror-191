@@ -1,0 +1,10 @@
+torch
+numpy
+transformations
+absl-py
+lxml
+dm_control
+pyyaml
+
+[test]
+pytest
