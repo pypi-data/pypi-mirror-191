@@ -1,0 +1,7 @@
+cryptography
+fastapi
+uvicorn
+paramiko
+websockets
+sqlalchemy
+jinja2
