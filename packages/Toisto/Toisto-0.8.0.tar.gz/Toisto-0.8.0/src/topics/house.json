@@ -1,0 +1,338 @@
+{
+    "apartment": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "singular": {
+            "en": "Apartment",
+            "fi": "Asunto",
+            "nl": "Het appartement"
+        },
+        "plural": {
+            "en": "Apartments",
+            "fi": "Asunnot",
+            "nl": "De appartementen"
+        }
+    },
+    "room": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Room",
+            "fi": "Huone",
+            "nl": "De kamer"
+        },
+        "plural": {
+            "en": "Rooms",
+            "fi": "Huoneet",
+            "nl": "De kamers"
+        }
+    },
+    "basement": {
+        "level": {
+            "B2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Basement",
+            "fi": "Kellari",
+            "nl": "De kelder"
+        },
+        "plural": {
+            "en": "Basements",
+            "fi": "Kellarit",
+            "nl": "De kelders"
+        }
+    },
+    "home": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Home",
+            "fi": "Koti",
+            "nl": "Het thuis"
+        },
+        "plural": {
+            "en": "Homes",
+            "fi": "Kodit"
+        }
+    },
+    "garden": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Garden",
+            "fi": "Piha",
+            "nl": "De tuin"
+        },
+        "plural": {
+            "en": "Gardens",
+            "fi": "Pihat",
+            "nl": "De tuinen"
+        }
+    },
+    "house": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "House",
+            "fi": "Talo",
+            "nl": "Het huis"
+        },
+        "plural": {
+            "en": "Houses",
+            "fi": "Talot",
+            "nl": "De huizen"
+        }
+    },
+    "veranda": {
+        "level": {
+            "C2": "OD",
+            "none": "EP"
+        },
+        "singular": {
+            "en": "Veranda",
+            "fi": "Veranta",
+            "nl": "De veranda"
+        },
+        "plural": {
+            "en": "Verandas",
+            "fi": "Verannat",
+            "nl": "De veranda's"
+        }
+    },
+    "barbecue": {
+        "level": {
+            "A2": "EP",
+            "B1": "OD"
+        },
+        "singular": {
+            "en": "Barbecue",
+            "fi": "Grilli",
+            "nl": "De barbecue"
+        },
+        "plural": {
+            "en": "Barbecues",
+            "fi": "Grillit",
+            "nl": "De barbecues"
+        }
+    },
+    "wall": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Wall",
+            "fi": "Seinä",
+            "nl": "De muur"
+        },
+        "plural": {
+            "en": "Walls",
+            "fi": "Seinät",
+            "nl": "De muren"
+        }
+    },
+    "floor": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Floor",
+            "fi": "Lattia",
+            "nl": "De vloer"
+        },
+        "plural": {
+            "en": "Floors",
+            "fi": "Lattiat",
+            "nl": "De vloeren"
+        }
+    },
+    "door": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Door",
+            "fi": "Ovi",
+            "nl": "De deur"
+        },
+        "plural": {
+            "en": "Doors",
+            "fi": "Ovet",
+            "nl": "De deuren"
+        }
+    },
+    "window": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Window",
+            "fi": "Ikkuna",
+            "nl": "Het raam"
+        },
+        "plural": {
+            "en": "Windows",
+            "fi": "Ikkunat",
+            "nl": "De ramen"
+        }
+    },
+    "stairs": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Stairs",
+            "fi": [
+                "Portaat",
+                "Rappuset"
+            ],
+            "nl": "De trap"
+        },
+        "plural": {
+            "nl": "De trappen"
+        }
+    },
+    "living room": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "en": [
+                "room",
+                "to live"
+            ],
+            "fi": "room",
+            "nl": [
+                "house",
+                "room",
+                "to live"
+            ]
+        },
+        "singular": {
+            "en": "Living room",
+            "fi": "Olohuone",
+            "nl": [
+                "De huiskamer",
+                "De woonkamer"
+            ]
+        },
+        "plural": {
+            "en": "living rooms",
+            "fi": "Olohuoneet",
+            "nl": [
+                "De huiskamers",
+                "De woonkamers"
+            ]
+        }
+    },
+    "kitchen": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Kitchen",
+            "fi": "Keittiö",
+            "nl": "De keuken"
+        },
+        "plural": {
+            "en": "Kitchens",
+            "fi": "Keittiöt",
+            "nl": "De keukens"
+        }
+    },
+    "bedroom": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "en": [
+                "room",
+                "bed"
+            ],
+            "fi": "room",
+            "nl": [
+                "room",
+                "to sleep"
+            ]
+        },
+        "singular": {
+            "en": "Bedroom",
+            "fi": "Makuuhuone",
+            "nl": "De slaapkamer"
+        },
+        "plural": {
+            "en": "Bedrooms",
+            "fi": "Makuuhuoneet",
+            "nl": "De slaapkamers"
+        }
+    },
+    "bathroom": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": "room",
+        "singular": {
+            "en": "Bathroom",
+            "fi": "Kylpyhuone",
+            "nl": "De badkamer"
+        },
+        "plural": {
+            "en": "Bathrooms",
+            "fi": "Kylpyhuoneet",
+            "nl": "De badkamers"
+        }
+    }
+}

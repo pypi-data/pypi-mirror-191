@@ -1,0 +1,128 @@
+{
+    "country": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Country",
+            "fi": "Maa",
+            "nl": "Het land"
+        },
+        "plural": {
+            "en": "Countries",
+            "fi": "Maat",
+            "nl": "De landen"
+        }
+    },
+    "finland": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "Finland",
+        "fi": "Suomi;country",
+        "nl": "Finland"
+    },
+    "estland": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "Estland",
+        "fi": "Viro;country",
+        "nl": "Estland"
+    },
+    "denmark": {
+        "en": "Denmark",
+        "fi": "Tanska;country",
+        "nl": "Denemarken"
+    },
+    "norway": {
+        "en": "Norway",
+        "fi": "Norja;country",
+        "nl": "Noorwegen"
+    },
+    "sweden": {
+        "en": "Sweden",
+        "fi": "Ruotsi;country",
+        "nl": "Zweden"
+    },
+    "russia": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "Russia",
+        "fi": "Venäjä;country",
+        "nl": "Rusland"
+    },
+    "belgium": {
+        "en": "Belgium",
+        "fi": "Belgia",
+        "nl": "België"
+    },
+    "netherlands": {
+        "roots": {
+            "fi": "country",
+            "nl": "country"
+        },
+        "en": "The Netherlands",
+        "fi": "Alankomaat",
+        "nl": "Nederland"
+    },
+    "germany": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "Germany",
+        "fi": "Saksa;country",
+        "nl": "Duitsland"
+    },
+    "france": {
+        "en": "France",
+        "fi": "Ranska;country",
+        "nl": "Frankrijk"
+    },
+    "england": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "England",
+        "fi": "Englanti;country",
+        "nl": "Engeland"
+    },
+    "iceland": {
+        "roots": {
+            "nl": "country"
+        },
+        "en": "Iceland",
+        "fi": "Islanti;country",
+        "nl": "IJsland"
+    },
+    "china": {
+        "en": "China",
+        "fi": "Kiina;country",
+        "nl": "China"
+    },
+    "hungary": {
+        "en": "Hungary",
+        "fi": "Unkari;country",
+        "nl": "Hongarije"
+    },
+    "japan": {
+        "en": "Japan",
+        "fi": "Japani;country",
+        "nl": "Japan"
+    },
+    "korea": {
+        "en": "Korea",
+        "fi": "Korea;country",
+        "nl": "Korea"
+    },
+    "spain": {
+        "en": "Spain",
+        "fi": "Espanja;country",
+        "nl": "Spanje"
+    }
+}

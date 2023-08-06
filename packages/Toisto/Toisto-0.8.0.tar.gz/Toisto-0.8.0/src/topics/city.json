@@ -1,0 +1,493 @@
+{
+    "city": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "City",
+            "fi": "Kaupunki",
+            "nl": "De stad"
+        },
+        "plural": {
+            "en": "Cities",
+            "fi": "Kaupungit",
+            "nl": "De steden"
+        }
+    },
+    "building": {
+        "level": {
+            "A1": [
+                "KK",
+                "OD"
+            ],
+            "A2": "EP"
+        },
+        "singular": {
+            "en": "Building",
+            "fi": "Rakennus",
+            "nl": "Het gebouw"
+        },
+        "plural": {
+            "en": "Buildings",
+            "fi": "Rakennukset",
+            "nl": "De gebouwen"
+        }
+    },
+    "monument": {
+        "level": {
+            "B1": "EP",
+            "B2": "OD"
+        },
+        "singular": {
+            "en": "Monument",
+            "fi": "Monumentti",
+            "nl": "Het monument"
+        },
+        "plural": {
+            "en": "Monuments",
+            "fi": "Monumentit",
+            "nl": "De monumenten"
+        }
+    },
+    "theater": {
+        "level": {
+            "B2": "OD",
+            "none": "EP"
+        },
+        "singular": {
+            "en": "Theater",
+            "fi": "Teatteri",
+            "nl": "Het theater"
+        },
+        "plural": {
+            "en": "Theaters",
+            "fi": "Teatterit",
+            "nl": "De theaters"
+        }
+    },
+    "museum": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Museum",
+            "fi": "Museo",
+            "nl": "Het museum"
+        },
+        "plural": {
+            "en": "Museums",
+            "fi": "Museot",
+            "nl": "De musea"
+        }
+    },
+    "church": {
+        "level": {
+            "A1": "KK",
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Church",
+            "fi": "Kirkko",
+            "nl": "De kerk"
+        },
+        "plural": {
+            "en": "Churches",
+            "fi": "Kirkot",
+            "nl": "De kerken"
+        }
+    },
+    "stadium": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Stadium",
+            "fi": "Stadion",
+            "nl": "Het stadion"
+        },
+        "plural": {
+            "en": "Stadiums",
+            "fi": "Stadionit",
+            "nl": "De stadions"
+        }
+    },
+    "library": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": {
+            "fi": "book"
+        },
+        "singular": {
+            "en": "Library",
+            "fi": "Kirjasto",
+            "nl": "De bibliotheek"
+        },
+        "plural": {
+            "en": "Libraries",
+            "fi": "Kirjastot",
+            "nl": "De bibliotheken"
+        }
+    },
+    "hospital": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "roots": {
+            "nl": "house"
+        },
+        "singular": {
+            "en": "Hospital",
+            "fi": "Sairaala",
+            "nl": "Het ziekenhuis"
+        },
+        "plural": {
+            "en": "Hospitals",
+            "fi": "Sairaalat",
+            "nl": "De ziekenhuizen"
+        }
+    },
+    "office": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "singular": {
+            "en": "Office",
+            "fi": "Toimisto",
+            "nl": "Het kantoor"
+        },
+        "plural": {
+            "en": "Offices",
+            "fi": "Toimistot",
+            "nl": "De kantoren"
+        }
+    },
+    "airport": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": {
+            "en": "port"
+        },
+        "singular": {
+            "en": "Airport",
+            "fi": "Lentokenttä",
+            "nl": "Het vliegveld"
+        },
+        "plural": {
+            "en": "Airports",
+            "fi": "Lentokentät",
+            "nl": "De vliegvelden"
+        }
+    },
+    "store": {
+        "level": {
+            "A1": "KK",
+            "A2": "OD",
+            "B1": "EP"
+        },
+        "singular": {
+            "en": "Store",
+            "fi": "Kauppa",
+            "nl": "De winkel"
+        },
+        "plural": {
+            "en": "Stores",
+            "fi": "Kaupat",
+            "nl": "De winkels"
+        }
+    },
+    "department store": {
+        "level": {
+            "A2": "EP",
+            "B1": "OD"
+        },
+        "roots": {
+            "en": "store",
+            "fi": "house",
+            "nl": "house"
+        },
+        "singular": {
+            "en": "Department store",
+            "fi": "Tavaratalo",
+            "nl": "Het warenhuis"
+        },
+        "plural": {
+            "en": "Department stores",
+            "fi": "Tavaratalot",
+            "nl": "De warenhuizen"
+        }
+    },
+    "park": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Park",
+            "fi": "Puisto",
+            "nl": "Het park"
+        },
+        "plural": {
+            "en": "Parks",
+            "fi": "Puistot",
+            "nl": "De parken"
+        }
+    },
+    "castle": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Castle",
+            "fi": "Linna",
+            "nl": "Het kasteel"
+        },
+        "plural": {
+            "en": "Castles",
+            "fi": "Linnat",
+            "nl": "De kastelen"
+        }
+    },
+    "hotel": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Hotel",
+            "fi": "Hotelli",
+            "nl": "Het hotel"
+        },
+        "plural": {
+            "en": "Hotels",
+            "fi": "Hotellit",
+            "nl": "De hotels"
+        }
+    },
+    "centre": {
+        "level": {
+            "A1": [
+                "KK",
+                "OD"
+            ],
+            "A2": "EP"
+        },
+        "singular": {
+            "en": "Centre",
+            "fi": "Keskusta",
+            "nl": "Het centrum"
+        },
+        "plural": {
+            "en": "Centres",
+            "fi": "Keskustat",
+            "nl": "De centra"
+        }
+    },
+    "street": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Street",
+            "fi": "Katu",
+            "nl": "De straat"
+        },
+        "plural": {
+            "en": "Streets",
+            "fi": "Kadut",
+            "nl": "De straten"
+        }
+    },
+    "square": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Square",
+            "fi": "Aukio",
+            "nl": "Het plein"
+        },
+        "plural": {
+            "en": "Squares",
+            "fi": "Aukiot",
+            "nl": "De pleinen"
+        }
+    },
+    "bridge": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Bridge",
+            "fi": "Silta",
+            "nl": "De brug"
+        },
+        "plural": {
+            "en": "Bridges",
+            "fi": "Sillat",
+            "nl": "De bruggen"
+        }
+    },
+    "port": {
+        "level": {
+            "B1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Port",
+            "fi": "Satama",
+            "nl": "De haven"
+        },
+        "plural": {
+            "en": "Ports",
+            "fi": "Satamat",
+            "nl": "De havens"
+        }
+    },
+    "mall": {
+        "level": {
+            "B1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "en": "centre",
+            "fi": [
+                "centre",
+                "store"
+            ],
+            "nl": [
+                "centre",
+                "store"
+            ]
+        },
+        "singular": {
+            "en": [
+                "Mall",
+                "Shopping center"
+            ],
+            "fi": [
+                "Kauppakeskus",
+                "Ostoskeskus"
+            ],
+            "nl": "Het winkelcentrum"
+        },
+        "plural": {
+            "en": [
+                "Malls",
+                "Shopping centers"
+            ],
+            "fi": [
+                "Kauppakeskukset",
+                "Ostoskeskukset"
+            ],
+            "nl": "De winkelcentra"
+        }
+    },
+    "capital": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": {
+            "fi": [
+                "city",
+                "head"
+            ],
+            "nl": [
+                "city",
+                "head"
+            ]
+        },
+        "singular": {
+            "en": "Capital",
+            "fi": "Pääkaupunki",
+            "nl": "De hoofdstad"
+        },
+        "plural": {
+            "en": "Capitals",
+            "fi": "Pääkaupungit",
+            "nl": "De hoofdsteden"
+        }
+    },
+    "that building is a church": {
+        "roots": [
+            "to be",
+            "building",
+            "church"
+        ],
+        "en": "That building is a church",
+        "fi": "Tuo rakennus on kirkko",
+        "nl": "Dat gebouw is een kerk"
+    },
+    "where is the library": {
+        "roots": [
+            "where",
+            "to be",
+            "library"
+        ],
+        "en": "Where is the library?",
+        "fi": "Missä on kirjasto?",
+        "nl": "Waar is de bibliotheek?"
+    },
+    "there is a christmas tree on the square": {
+        "roots": [
+            "to be",
+            "square",
+            "christmas tree"
+        ],
+        "en": "There is a Christmas tree on the square",
+        "fi": "Aukiolla on joulukuusi",
+        "nl": "Er staat een kerstboom op het plein"
+    },
+    "I am in the office": {
+        "roots": [
+            "to be",
+            "office"
+        ],
+        "en": "I am in the office|I'm in the office",
+        "fi": "Minä olen toimistolla|Olen toimistolla",
+        "nl": "Ik ben op kantoor"
+    }
+}

@@ -1,0 +1,190 @@
+{
+    "table": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Table",
+            "fi": "Pöytä",
+            "nl": "De tafel"
+        },
+        "plural": {
+            "en": "Tables",
+            "fi": "Pöydät",
+            "nl": "De tafels"
+        }
+    },
+    "bed": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Bed",
+            "fi": "Sänky",
+            "nl": "Het bed"
+        },
+        "plural": {
+            "en": "Beds",
+            "fi": "Sängyt",
+            "nl": "De bedden"
+        }
+    },
+    "sofa": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "singular": {
+            "en": "Sofa",
+            "fi": "Sohva",
+            "nl": "De sofa"
+        },
+        "plural": {
+            "en": "Sofas",
+            "fi": "Sohvat",
+            "nl": "De sofa's"
+        }
+    },
+    "pillow": {
+        "level": {
+            "A2": "EP",
+            "none": "OD"
+        },
+        "singular": {
+            "en": "Pillow",
+            "fi": "Tyyny",
+            "nl": "Het kussen"
+        },
+        "plural": {
+            "en": "Pillows",
+            "fi": "Tyynyt",
+            "nl": "De kussens"
+        }
+    },
+    "chair": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Chair",
+            "fi": "Tuoli",
+            "nl": "De stoel"
+        },
+        "plural": {
+            "en": "Chairs",
+            "fi": "Tuolit",
+            "nl": "De stoelen"
+        }
+    },
+    "desk": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": [
+                "to write",
+                "table"
+            ]
+        },
+        "singular": {
+            "en": "Desk",
+            "fi": [
+                "Työpöytä",
+                "Kirjoituspöytä"
+            ],
+            "nl": "Het bureau"
+        },
+        "plural": {
+            "en": "Desks",
+            "fi": [
+                "Työpöydät",
+                "Kirjoituspöydät"
+            ],
+            "nl": "De bureaus"
+        }
+    },
+    "lamp": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Lamp",
+            "fi": "Lamppu",
+            "nl": "De lamp"
+        },
+        "plural": {
+            "en": "Lamps",
+            "fi": "Lamput",
+            "nl": "De lampen"
+        }
+    },
+    "curtain": {
+        "level": {
+            "A2": "EP",
+            "B1": "OD"
+        },
+        "singular": {
+            "en": "Curtain",
+            "fi": "Verho",
+            "nl": "Het gordijn"
+        },
+        "plural": {
+            "en": "Curtains",
+            "fi": "Verhot",
+            "nl": "De gordijnen"
+        }
+    },
+    "carpet": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Carpet",
+            "fi": "Matto",
+            "nl": "Het tapijt"
+        },
+        "plural": {
+            "en": "Carpets",
+            "fi": "Matot",
+            "nl": "De tapijten"
+        }
+    },
+    "the door is locked": {
+        "roots": [
+            "to be",
+            "door"
+        ],
+        "en": "The door is locked",
+        "fi": "Ovi on lukossa",
+        "nl": "De deur is op slot"
+    },
+    "the cat is sleeping on the carpet": {
+        "roots": [
+            "cat",
+            "to sleep",
+            "carpet"
+        ],
+        "en": "The cat is sleeping on the carpet",
+        "fi": "Kissa nukkuu matolla",
+        "nl": "De kat slaapt op het tapijt"
+    }
+}

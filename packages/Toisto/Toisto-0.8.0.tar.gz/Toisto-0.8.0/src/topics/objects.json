@@ -1,0 +1,21 @@
+{
+    "book": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Book",
+            "fi": "Kirja",
+            "nl": "Het boek"
+        },
+        "plural": {
+            "en": "Books",
+            "fi": "Kirjat",
+            "nl": "De boeken"
+        }
+    }
+}

@@ -1,0 +1,282 @@
+{
+    "clothes": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "en": "Clothes",
+        "fi": "Vaatteet",
+        "nl": "De kleren"
+    },
+    "dress": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Dress",
+            "fi": "Mekko",
+            "nl": "De jurk"
+        },
+        "plural": {
+            "en": "Dresses",
+            "fi": "Mekot",
+            "nl": "De jurken"
+        }
+    },
+    "sock": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Sock",
+            "fi": "Sukka",
+            "nl": "De sok"
+        },
+        "plural": {
+            "en": "Socks",
+            "fi": "Sukat",
+            "nl": "De sokken"
+        }
+    },
+    "skirt": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Skirt",
+            "fi": "Hame",
+            "nl": "De rok"
+        },
+        "plural": {
+            "en": "Skirts",
+            "fi": "Hameet",
+            "nl": "De rokken"
+        }
+    },
+    "trousers": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Trousers",
+            "fi": "Housut",
+            "nl": "De broek"
+        },
+        "plural": {
+            "nl": "De broeken"
+        }
+    },
+    "coat": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Coat",
+            "fi": "Takki",
+            "nl": "De jas"
+        },
+        "plural": {
+            "en": "Coats",
+            "fi": "Takit",
+            "nl": "De jassen"
+        }
+    },
+    "underwear": {
+        "level": {
+            "B1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "clothes"
+        },
+        "en": "Underwear",
+        "fi": "Alusvaatteet",
+        "nl": "Het ondergoed"
+    },
+    "hat": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Hat",
+            "fi": "Hattu",
+            "nl": "De hoed"
+        },
+        "plural": {
+            "en": "Hats",
+            "fi": "Hatut",
+            "nl": "De hoeden"
+        }
+    },
+    "suit": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Suit",
+            "fi": "Puku",
+            "nl": "Het pak"
+        },
+        "plural": {
+            "en": "Suits",
+            "fi": "Puvut",
+            "nl": "De pakken"
+        }
+    },
+    "shoe": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Shoe",
+            "fi": "Kenkä",
+            "nl": "De schoen"
+        },
+        "plural": {
+            "en": "Shoes",
+            "fi": "Kengät",
+            "nl": "De schoenen"
+        }
+    },
+    "sweater": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": {
+            "fi": "shirt"
+        },
+        "singular": {
+            "en": "Sweater",
+            "fi": "Neulepaita",
+            "nl": "De trui"
+        },
+        "plural": {
+            "en": "Sweaters",
+            "fi": "Neulepaidat",
+            "nl": "De truien"
+        }
+    },
+    "shirt": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Shirt",
+            "fi": "Paita",
+            "nl": "Het hemd"
+        },
+        "plural": {
+            "en": "Shirts",
+            "fi": "Paidat",
+            "nl": "De hemden"
+        }
+    },
+    "to dress": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "infinitive": {
+            "en": [
+                "To dress",
+                "To get dressed"
+            ],
+            "fi": "Pukeutua",
+            "nl": "Zich aankleden"
+        },
+        "singular": {
+            "first person": {
+                "en": [
+                    "I dress",
+                    "I get dressed"
+                ],
+                "fi": "Minä pukeudun|Pukeudun",
+                "nl": "Ik kleed mij aan|Ik kleed me aan"
+            },
+            "second person": {
+                "en": [
+                    "You dress;singular",
+                    "You get dressed;singular"
+                ],
+                "fi": "Sinä pukeudut|Pukeudut",
+                "nl": "Jij kleedt je aan"
+            },
+            "third person": {
+                "female": {
+                    "en": [
+                        "She dresses",
+                        "She gets dressed"
+                    ],
+                    "fi": "Hän pukeutuu;female",
+                    "nl": "Zij kleedt zich aan|Ze kleedt zich aan"
+                },
+                "male": {
+                    "en": [
+                        "He dresses",
+                        "He gets dressed"
+                    ],
+                    "fi": "Hän pukeutuu;male",
+                    "nl": "Hij kleedt zich aan"
+                }
+            }
+        },
+        "plural": {
+            "first person": {
+                "en": [
+                    "We dress",
+                    "We get dressed"
+                ],
+                "fi": "Me pukeudumme|Pukeudumme",
+                "nl": "Wij kleden ons aan|We kleden ons aan"
+            },
+            "second person": {
+                "en": [
+                    "You dress;plural",
+                    "You get dressed;plural"
+                ],
+                "fi": "Te pukeudutte|Pukeudutte",
+                "nl": "Jullie kleden je aan"
+            },
+            "third person": {
+                "en": [
+                    "They dress",
+                    "They get dressed"
+                ],
+                "fi": "He pukeutuvat|Pukeutuvat",
+                "nl": "Zij kleden zich aan|Ze kleden zich aan"
+            }
+        }
+    }
+}
