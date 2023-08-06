@@ -1,0 +1,3 @@
+[console_scripts]
+patatools = patacrep.tools.__main__:main
+songbook = patacrep.songbook.__main__:main
