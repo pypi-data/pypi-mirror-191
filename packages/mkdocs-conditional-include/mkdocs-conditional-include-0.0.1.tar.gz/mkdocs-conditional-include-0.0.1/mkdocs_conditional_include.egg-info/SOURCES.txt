@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mkdocs_conditional_include/__init__.py
+mkdocs_conditional_include/plugin.py
+mkdocs_conditional_include.egg-info/PKG-INFO
+mkdocs_conditional_include.egg-info/SOURCES.txt
+mkdocs_conditional_include.egg-info/dependency_links.txt
+mkdocs_conditional_include.egg-info/entry_points.txt
+mkdocs_conditional_include.egg-info/requires.txt
+mkdocs_conditional_include.egg-info/top_level.txt
