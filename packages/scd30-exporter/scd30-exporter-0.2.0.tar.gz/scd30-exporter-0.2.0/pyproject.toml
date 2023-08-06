@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "scd30-exporter"
+version = "0.2.0"
+description = "Prometheus exporter for Adafruit SCD-30 - NDIR CO2 Temperature and Humidity Sensor"
+authors = ["Sergej Alikov <sergej@alikov.com>"]
+license = "MIT"
+repository = "https://github.com/node13h/scd30-exporter"
+readme = "README.md"
+packages = [
+  { include = "scd30_exporter", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+adafruit-circuitpython-scd30 = "^2.2.9"
+prometheus-client = "^0.16.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+black = "^22.10.0"
+flake8 = "^6.0.0"
+isort = "^5.10.1"
+mypy = "^0.991"
+coverage = "^6.5.0"
+
+[tool.poetry.scripts]
+scd30-exporter = 'scd30_exporter.cli:main'
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "tests"]
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+]
+
+[tool.coverage.run]
+source = ["src"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
