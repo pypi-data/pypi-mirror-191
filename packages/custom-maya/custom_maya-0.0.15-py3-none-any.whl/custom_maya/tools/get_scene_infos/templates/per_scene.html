@@ -1,0 +1,16 @@
+{% extends "base/base.html" %}
+
+{% block header %}
+    {% include 'base/base_header.html' %}
+    {% include 'per_scene_second_header.html' %}
+{% endblock %}
+
+{% block content %}
+    {% include 'summary.html' %}
+    {% include 'alerts.html' %}
+    {% include 'evaluate.html' %}
+    {% include 'table.html' %}
+
+{% endblock %}
+
+{% block footer %}Page Footer{% endblock %}
