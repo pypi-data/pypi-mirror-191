@@ -1,0 +1,3 @@
+[console_scripts]
+nodetool=libpipe.tools.nodetool:main
+

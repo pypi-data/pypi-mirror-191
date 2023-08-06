@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: libpipe
+Version: 0.2
+Summary: 
+Home-page: https://gitlab.com/flomertens/libpipe
+License: GPL-3.0-or-later
+Author: "Florent Mertens"
+Author-email: "florent.mertens@gmail.com"
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: asyncssh (>=2.0,<3.0)
+Requires-Dist: click (>=7.0,<9.0)
+Requires-Dist: importlib-metadata (>=1.0,<2.0); python_version < "3.8"
+Requires-Dist: progressbar2 (>=3.40)
+Requires-Dist: toml (>=0.10)
+Project-URL: Repository, https://gitlab.com/flomertens/libpipe
+Description-Content-Type: text/markdown
+
+Libpipe
+=======
+
+Common pipeline framework and library
+
+Installation
+------------
+
+libpipe can be installed via pip:
+
+    $ pip install libpipe
+
+and requires Python 3.6.0 or higher.
+
