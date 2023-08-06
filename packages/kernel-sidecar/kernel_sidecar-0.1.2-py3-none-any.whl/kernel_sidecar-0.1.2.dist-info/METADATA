@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: kernel-sidecar
+Version: 0.1.2
+Summary: A sidecar 
+Home-page: https://github.com/kafonek/kernel-sidecar
+License: MIT
+Author: Matt Kafonek
+Author-email: matt.kafonek@noteable.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jupyter-client (>=8.0.2,<9.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: structlog (>=22.3.0,<23.0.0)
+Project-URL: Repository, https://github.com/kafonek/kernel-sidecar
+Description-Content-Type: text/markdown
+
+<p align="center">
+Kernel Sidecar
+</p>
+
+<p align="center">
+<img alt="Pypi" src="https://img.shields.io/pypi/v/kernel-sidecar">
+<a href="https://github.com/kafonek/kernel-sidecar/actions/workflows/tests.yaml">
+    <img src="https://github.com/kafonek/kernel-sidecar/actions/workflows/tests.yaml/badge.svg" alt="Tests" />
+</a>
+<img alt="Python versions" src="https://img.shields.io/pypi/pyversions/kernel-sidecar">
+</p>
+

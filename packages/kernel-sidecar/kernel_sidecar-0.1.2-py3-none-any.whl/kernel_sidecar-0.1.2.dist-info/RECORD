@@ -1,0 +1,9 @@
+kernel_sidecar/__init__.py,sha256=u3gJzLT6E-ExYfM8Y5X6O_I_HGPm0ea06ojLEKsmh80,122
+kernel_sidecar/actions.py,sha256=7lVNvCxGvhMNBY9bb9NKHRUkQdBwZS5ihjpkXzJ8qJs,12075
+kernel_sidecar/kernel.py,sha256=Gtmj7aKVzpio4-2GJvNH7UDiHiziZfwacSsiVhknMIc,11699
+kernel_sidecar/messages.py,sha256=AGCE_LWnXCMFiosilBcM2zt4Wt3iSBPwGb-As_I8XrI,10604
+kernel_sidecar/notebook.py,sha256=Q7a01vZMO1vuqqAZzc8xwtfYCH2fv1OBR82c_k4O3Rs,2759
+kernel_sidecar-0.1.2.dist-info/LICENSE,sha256=2EA3SXQiBB9IkCFQSxdvqva_K4qcETjFJuF9zH3hhIc,1069
+kernel_sidecar-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+kernel_sidecar-0.1.2.dist-info/METADATA,sha256=lCH9YFasX8_R8e2fKv0eUScL4KpfMSYHs2U8KcK6ZiQ,1193
+kernel_sidecar-0.1.2.dist-info/RECORD,,
