@@ -1,0 +1,18 @@
+{% extends 'base.j2' %}
+{% block title %}logs{% endblock %}
+{% block content %}
+<h1>logs</h1>
+<table>
+<thead>
+    <tr>
+        <th>id</th>
+    </tr>
+</thead>
+<tbody>
+{% for log in logs %}
+    <tr>
+        <td><a href="/logs/{{ log }}.txt"><code>{{ log }}</code></a></td>
+{% endfor %}
+</tbody>
+</table>
+{% endblock %}
