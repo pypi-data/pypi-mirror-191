@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+fyers_token_manager/__init__.py
+fyers_token_manager/main.py
+fyers_token_manager.egg-info/PKG-INFO
+fyers_token_manager.egg-info/SOURCES.txt
+fyers_token_manager.egg-info/dependency_links.txt
+fyers_token_manager.egg-info/requires.txt
+fyers_token_manager.egg-info/top_level.txt
