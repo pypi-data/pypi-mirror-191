@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: zxvcv.util
+Version: 0.1.4
+Summary: Toolbox for other projects
+Author: Pawel Piskorz
+Author-email: ppiskorz0@gmail.com
+License: MIT License
+Keywords: toolbox,tool
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4.0.0,>=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zxvcv.util
+Toolbox for other projects.
+
+Changelog
+=========
+
+0.1.4 (2023-02-12)
+------------------
+- General package setup updates.
+
+0.1.3 (2023-02-12)
+------------------
+- General updates for LogManager, ArgsManages.
+- Add Executable class.
+- Add checkout, pull methods in Git class.
+
+0.1.2 (2023-02-01)
+------------------
+- Add ADict class.
+- Add Git and git.FileStatus class.
+
+0.1.1 (2022-10-02)
+------------------
+- Add context_cwd to Path submodule.
+
+0.1.0 (2022-09-22)
+------------------
+- Initial commit.
