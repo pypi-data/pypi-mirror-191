@@ -1,0 +1,1 @@
+# It's neccessary to add __init__.py, so the package will include the data, which is not a python format, in the package

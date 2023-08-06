@@ -1,0 +1,29 @@
+from setuptools import setup, find_packages
+
+# README.md must be all capital letters
+with open("README.md", "r") as f:
+    long_description = f.read()
+
+# Setting up
+setup(
+    name="template_package_name",
+    version="template_version",
+    license='MIT',    
+    author="template_author_name",
+    author_email="template_author_email",
+    url="template_url",
+    description="template_description",
+    long_description=long_description,
+    long_description_content_type="text/markdown",    
+    packages=find_packages(),
+    install_requires=template_install_requires,
+    keywords="template_keywords",
+    include_package_data=template_include_package_data,
+    package_data={"": ["*.txt", "*.rst", ".csv"]},
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='template_python_requires',
+)
