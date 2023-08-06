@@ -1,0 +1,13 @@
+
+[dev]
+pre-commit
+black==22.1.0
+flake8==3.9.2
+isort==5.10.1
+pytest
+pytest-cov
+
+[doc]
+sphinx==5.3.0
+sphinx_rtd_theme==1.2.0
+myst-parser==0.18.1
