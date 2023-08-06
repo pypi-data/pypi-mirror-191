@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: cetl
+Version: 0.0.5
+Summary: A basic data pipeline tools for data engineer to handle the CRM or loyalty data
+Home-page: UNKNOWN
+Author: Clement
+Author-email: <cheukub@gmail.com>
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,data pipeline,pipeline
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
