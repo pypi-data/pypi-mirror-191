@@ -1,0 +1,2 @@
+[console_scripts]
+btsc = btsc.app:main
