@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gitflux"
+version = "0.2.0"
+description = "A command-line utility to help you manage Git repositories."
+authors = ["HE Yaowen <he.yaowen@hotmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+packages = [{include = "gitflux", from="src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+click = "^8.1.3"
+pygithub = "^1.57"
+
+[tool.poetry.scripts]
+gitflux= "gitflux.__main__:cli"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.1"
+pytest = "^7.2.1"
+pytest-mock = "^3.10.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
