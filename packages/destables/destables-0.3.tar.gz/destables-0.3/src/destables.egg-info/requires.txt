@@ -1,0 +1,4 @@
+PySimpleGUI>=4.56.0
+tabulate>=0.8.9
+clipboard>=0.0.4
+antlr4-python3-runtime==4.9.3
