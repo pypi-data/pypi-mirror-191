@@ -1,0 +1,42 @@
+from setuptools import setup
+
+REQUIREMENTS = [
+    "attrs==22.2.0",
+    "cachetools==5.3.0",
+    "certifi==2022.12.7",
+    "charset-normalizer==3.0.1",
+    "cssselect==1.2.0",
+    "cssutils==2.6.0",
+    "exceptiongroup==1.1.0",
+    "idna==3.4",
+    "iniconfig==2.0.0",
+    "lxml==4.9.2",
+    "minio==7.1.13",
+    "numpy==1.24.1",
+    "packaging==23.0",
+    "pandas==1.5.3",
+    "pluggy==1.0.0",
+    "premailer==3.10.0",
+    "py4j==0.10.9.5",
+    "pyarrow==10.0.1",
+    "PyJWT==2.6.0",
+    "pyspark==3.3.1",
+    "pytest==7.2.1",
+    "python-dateutil==2.8.2",
+    "python-dotenv==0.21.1",
+    "pytz==2022.7.1",
+    "requests==2.28.2",
+    "six==1.16.0",
+    "slack-client==0.3.0",
+    "tomli==2.0.1",
+    "twilio==7.16.1",
+    "urllib3==1.26.14",
+    "yagmail==0.15.293",
+]
+
+setup(
+    name="longalpha_utils",
+    version="0.3",
+    long_description="Shared utilities for long alpha projects",
+    install_requires=REQUIREMENTS,
+)
