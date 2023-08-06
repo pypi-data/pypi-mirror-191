@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gtfs2series
+Version: 0.0.0
+Summary: Transform GTFS Realtime data into multivariate time series.
+Author: Fabián Abarca
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: requests
+
+Transform GTFS Realtime data into multivariate time series, filtering by selected parameters and adding as many time-indexed variables as needed.
