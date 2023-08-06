@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ezconfiguration/__init__.py
+ezconfiguration/config_manager.py
+ezconfiguration.egg-info/PKG-INFO
+ezconfiguration.egg-info/SOURCES.txt
+ezconfiguration.egg-info/dependency_links.txt
+ezconfiguration.egg-info/top_level.txt
