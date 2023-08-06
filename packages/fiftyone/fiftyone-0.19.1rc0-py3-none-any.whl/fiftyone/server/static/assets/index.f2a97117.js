@@ -1,0 +1,1 @@
+import{aj as t,z as a,r as s,R as o,N as c}from"./index.6fc90905.js";const n=({})=>{const e=t(a);return s.exports.useLayoutEffect(()=>{e(null)},[]),o.createElement(c,null,"No dataset selected")},l=n;export{l as default};
