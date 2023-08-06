@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: blindai-preview
+Version: 0.0.5
+Summary: 
+Author: Corentin Lauverjat
+Author-email: corentin.lauverjat@mithrilsecurity.io
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: torch
+Requires-Dist: cbor2 (>=5.4.3,<6.0.0)
+Requires-Dist: cryptography (>=39.0.1,<40.0.0)
+Requires-Dist: importlib-metadata (>=6.0.0,<7.0.0)
+Requires-Dist: numpy (>=1.23.5,<1.24)
+Requires-Dist: sgx-dcap-quote-verify-python (>=0.0.3,<0.0.4)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: torch (>=1.13.0,<2.0.0) ; extra == "torch"
+Description-Content-Type: text/markdown
+
+
