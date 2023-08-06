@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+conditional_include = mkdocs_conditional_include:ConditionalInclude
+
