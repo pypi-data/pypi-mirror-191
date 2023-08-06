@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: PyMolecules
+Version: 0.1.0
+Summary: A Python package for all types of linked lists and most useful methods
+Home-page: UNKNOWN
+Author: Yokesh Bollineni
+Author-email: bollineniyokesh@gmail.com
+License: MIT
+Keywords: linked lists
+Platform: UNKNOWN
+License-File: LICENCE.txt
+
+PyMolecules supports linkedlist classes and their most common methods like insertion, deletion, searching, sorting etc
+
+Change Log
+----------------
+First Release (13/02/2023)
+
+Version - 0.1.0
+
+
+
+
+

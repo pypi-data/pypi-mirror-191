@@ -1,0 +1,1 @@
+PyMolecules supports linkedlist classes and their most common methods like insertion, deletion, searching, sorting etc
