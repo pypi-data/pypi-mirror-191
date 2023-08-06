@@ -1,0 +1,3 @@
+[console_scripts]
+zennews=zennews.cli.base:cli
+
