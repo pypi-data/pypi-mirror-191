@@ -1,0 +1,10 @@
+setup.py
+MilkyWaySeeker/CoordsConversion.py
+MilkyWaySeeker/DataFileConversion.py
+MilkyWaySeeker/StellarParameterConversion.py
+MilkyWaySeeker/__init__.py
+MilkyWaySeeker/ploth.py
+MilkyWaySeeker.egg-info/PKG-INFO
+MilkyWaySeeker.egg-info/SOURCES.txt
+MilkyWaySeeker.egg-info/dependency_links.txt
+MilkyWaySeeker.egg-info/top_level.txt
