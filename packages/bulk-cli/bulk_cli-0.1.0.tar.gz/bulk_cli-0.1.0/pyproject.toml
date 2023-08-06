@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bulk-cli"
+version = "0.1.0"
+description = "Bulk helps you declare, manage and install dependencies of Python projects."
+authors = ["Oguntunde Caleb Fiyinfoluwa <oasis.mystre@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "bulk_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bulk = "bulk_cli.main:cli"

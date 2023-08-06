@@ -1,0 +1,16 @@
+Bulk (version { version })
+
+Usage:
+    command [options] [arguments]
+
+Options:
+        --dry                           add dependencies without install from pip
+        --ancestor                      Provide previous install (Default bulk) (Choice pip or bulk)
+
+
+Available commands:
+        init                            Creates a basic bulk.json file in the current directory.
+        install                         Installs the project dependencies.
+        install [...package]            Install a package or multiple packages 
+        uninstall                       Uninstall all the project dependencies
+        uninstall [...packages]         Uninstall a package or multiple packages
