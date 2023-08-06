@@ -1,0 +1,2 @@
+[console_scripts]
+multigit = multigit:main
