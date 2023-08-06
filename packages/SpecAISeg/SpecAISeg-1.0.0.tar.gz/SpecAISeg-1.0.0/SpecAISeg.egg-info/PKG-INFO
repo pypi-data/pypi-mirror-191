@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SpecAISeg
+Version: 1.0.0
+Summary: Code for doing hyperspectral image segmentation and uncertainty quantification.
+Home-page: https://github.com/lanl/SpecAISeg
+Author: Scout Cabe Jarman
+Author-email: scoutjarman@yahoo.com
+License: GPLv3
+Keywords: Hyperspectral Image Analysis Image Segmentation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+README.md
