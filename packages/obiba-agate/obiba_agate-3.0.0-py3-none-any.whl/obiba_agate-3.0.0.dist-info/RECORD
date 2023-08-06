@@ -1,0 +1,13 @@
+obiba_agate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obiba_agate/auth_management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+obiba_agate/auth_management/application.py,sha256=0amSW0d0ppFuRmimu6Hy2roduj6FjlktI797RKoNzto,2113
+obiba_agate/auth_management/group.py,sha256=Hn-OI2xvnCPRz1YSpBK4jriMt_l7u4hVnn-oZxwlQIM,1744
+obiba_agate/auth_management/user.py,sha256=SmpgCDgekX62QChX6mwYQOs3HZupuDVF_g2fqhfvI2Y,3732
+obiba_agate/console.py,sha256=KtUBFKcNyQ4vZL-Bb0oOmqzZhmngx2QOuOBRbthr_To,3403
+obiba_agate/core.py,sha256=s60aPrkrp9jFfxOHIJUuRGcqKqGVNwXhYEMt7B5turo,10450
+obiba_agate/rest.py,sha256=6h4v2ncRiSiZUvUcWXV5v7h1qwywRosnH6IfmwZ0Ib0,1603
+obiba_agate-3.0.0.dist-info/entry_points.txt,sha256=MJnzRWVn9Vxbx0GayCC93bFzpilxn9OsVFxYMe53Z0Y,49
+obiba_agate-3.0.0.dist-info/METADATA,sha256=0hTW_SdULImtjlpX36dYMN1WPcdy8OZ9eaH7N7F-g1c,2502
+obiba_agate-3.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+obiba_agate-3.0.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+obiba_agate-3.0.0.dist-info/RECORD,,
