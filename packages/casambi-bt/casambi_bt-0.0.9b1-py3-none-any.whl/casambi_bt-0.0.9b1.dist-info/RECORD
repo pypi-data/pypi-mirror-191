@@ -1,0 +1,17 @@
+CasambiBt/__init__.py,sha256=R1Jv5C9uUE-O0IWFRZ2iXwgzJCRMOFy1itNg-UIxiwo,171
+CasambiBt/_cache.py,sha256=-kgIprZAlUic1aafVZ0udHyEYOPCXcDITRdwJ_O6YdM,588
+CasambiBt/_casambi.py,sha256=miimN-gdEvauVJk_RV0N1_XDCgkYUkKpiK85iAhLjQ8,14156
+CasambiBt/_client.py,sha256=EbSFx0FUSOvmbfN0dHluYILj3Luhf2gvYVjUuWb8yfY,17213
+CasambiBt/_constants.py,sha256=6EmbmK88XEmD7lo4Vf7OL8xb7cD0DYRVPVwrVakYuWc,288
+CasambiBt/_discover.py,sha256=v11ucqWHsPOZXjMCrJIaldEsY3BmY3ekVmMnlcuQB4U,1144
+CasambiBt/_encryption.py,sha256=YjFf1J-uxteZdVNiKFfZTt3w5cG8ritzlPO-CYUKB7o,3858
+CasambiBt/_keystore.py,sha256=v38VOOI31wvXnr1Gv9dtmFi3l1lZir2vhc1HkTHXfGY,2459
+CasambiBt/_network.py,sha256=gqLEURmMOiTHY4JaHQl33W6f5qYjyxd8ok9PYaaOB88,9197
+CasambiBt/_operation.py,sha256=rShmvZmgDlqI-ex8Rh5iiQ5-0ES7cYWYTwNFVYHwwUU,589
+CasambiBt/_unit.py,sha256=BmKXbI8IngN6d1Yk7jUPKAump3DBcUcbNFflP-hZ-zo,12392
+CasambiBt/errors.py,sha256=kaMTFLv3luGOwTBd-jyTYC3anV2T59rFlhb8t3Vokvc,776
+casambi_bt-0.0.9b1.dist-info/LICENSE,sha256=TAIIitFxpxEDi6Iju7foW4TDQmWvC-IhLVLhl67jKmQ,11341
+casambi_bt-0.0.9b1.dist-info/METADATA,sha256=RjHDm5lc9ioDxsUC7JGYbdUOj69iF8K7JkKfy_t4gIs,2079
+casambi_bt-0.0.9b1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+casambi_bt-0.0.9b1.dist-info/top_level.txt,sha256=uNbqLjtecFosoFzpGAC89-5icikWODKI8rOjbi8v_sA,10
+casambi_bt-0.0.9b1.dist-info/RECORD,,
