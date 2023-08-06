@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: files-handler
+Version: 0.1.1
+Summary: Files Handler Library
+Home-page: 
+Author: Bhryan Henderson
+Author-email: bhryan.perpetuo@concert.com.br
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+
+Test
+
