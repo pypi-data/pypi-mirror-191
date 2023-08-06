@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: impmagic
+Version: 0.1.0
+Summary: Optimise l'importation de module
+Author: ZephyrOff <contact@apajak.fr>
+Platform: ALL
+License-File: license_cache.json
