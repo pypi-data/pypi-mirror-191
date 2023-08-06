@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+faker_marketdata/MarketDataProvider.py
+faker_marketdata/__init__.py
+faker_marketdata.egg-info/PKG-INFO
+faker_marketdata.egg-info/SOURCES.txt
+faker_marketdata.egg-info/dependency_links.txt
+faker_marketdata.egg-info/requires.txt
+faker_marketdata.egg-info/top_level.txt
+tests/__init__.py
+tests/test_marketdata.py
