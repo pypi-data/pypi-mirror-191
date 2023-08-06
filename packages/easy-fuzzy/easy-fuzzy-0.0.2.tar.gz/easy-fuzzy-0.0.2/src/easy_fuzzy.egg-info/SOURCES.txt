@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/easy_fuzzy.egg-info/PKG-INFO
+src/easy_fuzzy.egg-info/SOURCES.txt
+src/easy_fuzzy.egg-info/dependency_links.txt
+src/easy_fuzzy.egg-info/top_level.txt
+src/fuzzy/__init__.py
+src/fuzzy/collections.py
+src/fuzzy/_src/__init__.py
+src/fuzzy/_src/fuzzy_frozen_dict.py
+src/fuzzy/_src/fuzzy_frozen_set.py

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easy-fuzzy
+Version: 0.0.2
+Summary: Includes a collection of help fuzzy functions and classes.
+License: mit
+Project-URL: Bug Tracker, https://github.com/SimpleArt/fuzzylib/issues
+Project-URL: Repository, https://github.com/SimpleArt/fuzzylib
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fuzzylib
+ Classes and functions related to fuzzy searching.
