@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: algo-auto-ml
+Version: 0.1.5
+Summary: AutoML library for binary classification and regression tasks
+Home-page: https://github.com/lllchak/algo
+Author: Pavel Lyulchak
+Author-email: mediumchak@yandex.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+License-File: LICENSE
+
+UNKNOWN
+
