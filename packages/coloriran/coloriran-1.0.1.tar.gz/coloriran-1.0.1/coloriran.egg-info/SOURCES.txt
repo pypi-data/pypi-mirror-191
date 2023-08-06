@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+coloriran/__init__.py
+coloriran.egg-info/PKG-INFO
+coloriran.egg-info/SOURCES.txt
+coloriran.egg-info/dependency_links.txt
+coloriran.egg-info/top_level.txt

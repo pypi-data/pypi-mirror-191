@@ -1,0 +1,11 @@
+class Fore:
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    BLUE = '\033[94m'
+    YELLOW = '\033[93m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    BOLB = '\033[1m'
+    UNBERLINE = '\033[4m'
+    BLACK = '\033[30m'
