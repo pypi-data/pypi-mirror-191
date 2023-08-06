@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: sttn
+Version: 0.2.2
+Summary: Library for spatio-temporal transactional network analysis
+Home-page: https://github.com/yuribogomolov/sttn
+Author: Yuri Bogomolov
+Author-email: bogomoloviura@gmail.com
+License: GNU GPLv3
+Project-URL: Documentation, https://github.com/yuribogomolov/sttn#readme
+Project-URL: Bug Tracker, https://github.com/yuribogomolov/sttn/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: geopandas
+Requires-Dist: requests
+Requires-Dist: pyarrow
+Requires-Dist: scikit-mobility
+Requires-Dist: haversine
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+=======
+sttn
+=======
+
+
+Library for spatio-temporal transactional network analysis
+
+
+Description
+===========
+
+Multiple real-world processes can be described by a list of transactions that include temporal and spatial dimensions, while transactions themself form a network between entities.
+Examples include credit card transactions, phone calls, taxi trips, social network interactions and the list goes on and on.
+
+STTN is an attempt to combine elements of network, time and network analysis within one framework.
