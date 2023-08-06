@@ -1,0 +1,13 @@
+lotc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lotc/main.py,sha256=EuVkN-BNCDovK531ccCIp8IzhbckXMZZ3aTp5E6LLR0,1259
+lotc/utils.py,sha256=T_2fvskSzEWMds-W4Kbb0Wr0bY198Py7gCnnZrWoOWU,4519
+lotc/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lotc/commands/download.py,sha256=gR3b8fRpKHwH2sinr2sro2sq1Yby0MOjwd9ykmAbNvY,8398
+lotc/commands/merge.py,sha256=i8w2iDj0xIc_lom9iL1dvhzkQ3x8HEnTtkY52dKldsE,1089
+lotc/commands/trim.py,sha256=ztVZI2o9fNszyvLdIS0Ze3QhKRRFfFS5c_BmfunPzsk,1624
+lord_of_the_clips-0.1.5.dist-info/LICENSE,sha256=XcYx0RjcIVCLc5xP4xlXBB-WqYs7CLcxC0FYtyfuXLg,1067
+lord_of_the_clips-0.1.5.dist-info/METADATA,sha256=KTgApAbK1DmptyNLf_xqOocwfsuPR1JN9Wd_yvjBb4k,3418
+lord_of_the_clips-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lord_of_the_clips-0.1.5.dist-info/entry_points.txt,sha256=zNXQf4DH7dQ5CJrnYL8s4KKN26M5preW3QWj5qd63k0,39
+lord_of_the_clips-0.1.5.dist-info/top_level.txt,sha256=RXmW8i9KjqdQJQrKwBZ907ks40Ltxwde_DoJ6lSxs38,5
+lord_of_the_clips-0.1.5.dist-info/RECORD,,
