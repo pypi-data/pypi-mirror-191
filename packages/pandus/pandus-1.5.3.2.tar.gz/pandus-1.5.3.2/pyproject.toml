@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pandus"
+version = "1.5.3.2"
+description = "A simple wrapper around Pandas"
+authors = ["Egor Georgiev"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pandas = "^1.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
