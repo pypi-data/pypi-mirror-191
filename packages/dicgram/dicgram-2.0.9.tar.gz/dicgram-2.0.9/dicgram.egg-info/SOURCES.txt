@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+dicgram/__init__.py
+dicgram/cliente.py
+dicgram/decorators.py
+dicgram/mensagem.py
+dicgram/metodos.py
+dicgram.egg-info/PKG-INFO
+dicgram.egg-info/SOURCES.txt
+dicgram.egg-info/dependency_links.txt
+dicgram.egg-info/requires.txt
+dicgram.egg-info/top_level.txt
+tests/testes.py
