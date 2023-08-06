@@ -1,0 +1,8 @@
+scipy
+numpy
+pandas
+matplotlib
+seaborn
+scanpy
+getkey
+muon
