@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+calamanCy.egg-info/PKG-INFO
+calamanCy.egg-info/SOURCES.txt
+calamanCy.egg-info/dependency_links.txt
+calamanCy.egg-info/requires.txt
+calamanCy.egg-info/top_level.txt
+calamancy/__init__.py
