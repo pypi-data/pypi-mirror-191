@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: highlight-io
+Version: 0.1.7
+Summary: Session replay and error monitoring: stop guessing why bugs happen!
+Home-page: https://www.highlight.io
+License: Apache-2.0
+Keywords: web,framework
+Author: Vadim Korolik
+Author-email: vadim@highlight.io
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Monitoring
+Provides-Extra: azure
+Provides-Extra: flask
+Requires-Dist: azure-functions (>=1.13.2,<2.0.0) ; extra == "azure"
+Requires-Dist: blinker (>=1.5,<2.0) ; extra == "flask"
+Requires-Dist: flask (>=2.2.2,<3.0.0) ; extra == "flask"
+Requires-Dist: opentelemetry-api (>=1.15.0,<2.0.0)
+Requires-Dist: opentelemetry-distro[otlp] (>=0.36b0,<0.37)
+Requires-Dist: opentelemetry-exporter-otlp-proto-http (>=1.15.0,<2.0.0)
+Requires-Dist: opentelemetry-instrumentation (>=0.36b0,<0.37)
+Requires-Dist: opentelemetry-instrumentation-logging (>=0.36b0,<0.37)
+Requires-Dist: opentelemetry-proto (>=1.15.0,<2.0.0)
+Requires-Dist: opentelemetry-sdk (>=1.15.0,<2.0.0)
+Project-URL: Documentation, https://www.highlight.io/docs
+Project-URL: Repository, https://github.com/highlight/highlight
+Description-Content-Type: text/markdown
+
+
