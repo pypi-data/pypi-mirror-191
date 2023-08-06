@@ -1,0 +1,15 @@
+from pytest_cases import parametrize
+
+
+class APIData:
+    @parametrize(data=(
+            {"api接口测试": {"spName": 'qqqq'}},
+    ))
+    def api_test(self, data):
+        template = {
+            "spName": list(data.values())[0]["spName"],
+            "userName": list(data.values())[0]["spName"],
+            "accountName": list(data.values())[0]["spName"]
+        }
+        template.update(list(data.values())[0])
+        return template
