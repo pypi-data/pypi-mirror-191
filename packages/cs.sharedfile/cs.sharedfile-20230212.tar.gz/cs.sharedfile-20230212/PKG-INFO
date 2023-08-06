@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: cs.sharedfile
+Version: 20230212
+Summary: facilities for shared access to files
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: Cameron Simpson <cs@cskk.id.au>
+License: GNU General Public License v3 or later (GPLv3+)
+Project-URL: URL, https://bitbucket.org/cameron_simpson/css/commits/all
+Keywords: python2,python3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
+
+Facilities for shared access to files.
+
+*Latest release 20230212*:
+Remove dependency on cs.logutils.
+
+## Function `lockfile(path, ext=None, poll_interval=None, timeout=None)`
+
+A context manager which takes and holds a lock file.
+
+Parameters:
+* `path`: the base associated with the lock file.
+* `ext`:
+  the extension to the base used to construct the lock file name.
+  Default: `".lock"`
+* `timeout`: maximum time to wait before failing,
+  default None (wait forever).
+* `poll_interval`: polling frequency when timeout is not 0.
+
+## Class `SharedAppendFile`
+
+A base class to share a modifiable file between multiple users.
+
+The use case was driven from the shared CSV files used by
+`cs.nodedb.csvdb.Backend_CSVFile`, where multiple users can
+read from a common CSV file, and coordinate updates with a
+lock file.
+
+This presents the following interfaces:
+* `__iter__`: yields data chunks from the underlying file up
+  to EOF; it blocks no more than reading from the file does.
+  Note that multiple iterators share the same read pointer.
+
+* `open`: a context manager returning a writable file for writing
+  updates to the file; it blocks reads from this instance
+  (though not, of course, by other users of the file) and
+  arranges that users of `__iter__` do not receive their own
+  written data, thus arranging that `__iter__` returns only
+  foreign file updates.
+
+Subclasses would normally override `__iter__` to parse the
+received data into their natural records.
+
+*Method `SharedAppendFile.__init__(self, pathname, read_only=False, write_only=False, binary=False, newline=None, lock_ext=None, lock_timeout=None, poll_interval=None)`*:
+Initialise this SharedAppendFile.
+
+Parameters:
+* `pathname`: the pathname of the file to open.
+* `read_only`: set to true if we will not write updates.
+* `write_only`: set to true if we will not read updates.
+* `binary`: if the file is to be opened in binary mode, otherwise text mode.
+* 'newline`: passed to `open()`
+* `lock_ext`: lock file extension.
+* `lock_timeout`: maxmimum time to wait for obtaining the lock file.
+* `poll_interval`: poll time when taking a lock file,
+  default `DEFAULT_POLL_INTERVAL`
+
+## Class `SharedAppendLines(SharedAppendFile)`
+
+A line oriented subclass of `SharedAppendFile`.
+
+## Class `SharedCSVFile(SharedAppendLines, SharedAppendFile)`
+
+Shared access to a CSV file in UTF-8 encoding.
+
+## Class `SharedWriteable`
+
+Wrapper for a writable file with supported mutex based cooperation.
+
+This is mostly a proxy for the wrapped file
+exceptthat all `.write` calls are serialised
+and when used as a context manager
+other writers are blocked.
+
+This is to support shared use of an output stream
+where certain outputs should be contiguous,
+such as a standard error stream used to maintain a status line
+or multiline messages.
+
+# Release Log
+
+
+
+*Release 20230212*:
+Remove dependency on cs.logutils.
+
+*Release 20211208*:
+Update import.
+
+*Release 20201228*:
+New SharedWriteable class to manage concurrent output with a mutexed .write method and a context manager for grouping larger uses.
+
+*Release 20190102*:
+Context manager bugfix.
+
+*Release 20170608*:
+* Facilities for shared files, split out from cs.fileutils.
+* SharedAppend* classes. lockfile function.
