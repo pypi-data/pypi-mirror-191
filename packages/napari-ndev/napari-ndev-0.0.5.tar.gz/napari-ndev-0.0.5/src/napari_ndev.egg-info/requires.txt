@@ -1,0 +1,16 @@
+numpy
+magicgui
+qtpy
+aicsimageio
+napari
+apoc
+pyclesperanto_prototype
+dask
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
