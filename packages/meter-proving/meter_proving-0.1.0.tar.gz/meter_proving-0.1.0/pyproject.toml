@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "meter_proving"
+version = "0.1.0"
+description = "library to calculate random uncertanity of a measurment sequence"
+authors = ["StigHaraldGustavsen <stighg@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numba = "^0.56.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+black = "^23.1.0"
+pre-commit = "^3.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
