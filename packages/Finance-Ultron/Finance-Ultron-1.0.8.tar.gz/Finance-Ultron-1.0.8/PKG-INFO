@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: Finance-Ultron
+Version: 1.0.8
+Summary: By traders for AI.  FinUltron 1.0.8
+Home-page: https://github.com/ChaosTransaction/notebook
+Author: flaght
+Author-email: flaght@gmail.com
+License: UNKNOWN
+Description: Visit https://github.com/ChaosTransaction/notebook/ for the full example
+        
+        If you have any additional questions or comments send a mail to: flaght@gmail.com
+        
+        Realization of cross-sectional portfolio strategy and time series trend strategy of stocks and futures based on machine learning technology and convex optimization technology
+Platform: UNKNOWN
