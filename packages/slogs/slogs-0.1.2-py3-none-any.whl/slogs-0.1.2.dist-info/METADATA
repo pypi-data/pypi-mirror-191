@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: slogs
+Version: 0.1.2
+Summary: A simple python logs printer
+Home-page: https://github.com/deepcaps/
+Author: deepcaps
+Author-email: deepcaps@outlook.com
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+# BETA VERSION
+
+## Use
+```python
+from slogs import slogs, parents
+
+# initialise
+# autoprint : write logs to console
+s = slogs(autoprint=True)
+
+# logs
+s.success("started", parents.SYSTEM)
+s.success("content", "parent / title")
+```
+
+
+## Contacts
+email : deepcaps@outlook.com
+
+github : [deepcaps](https://github.com/deepcaps/)
