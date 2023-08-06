@@ -1,0 +1,12 @@
+OpenAIAuth==0.2.0
+asyncio
+httpx[socks]
+requests
+tiktoken
+
+[unofficial]
+requests
+requests
+selenium
+tls_client
+undetected_chromedriver

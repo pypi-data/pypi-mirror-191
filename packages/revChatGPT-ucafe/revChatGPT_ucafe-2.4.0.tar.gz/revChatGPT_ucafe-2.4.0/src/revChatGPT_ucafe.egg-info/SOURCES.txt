@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/revChatGPT_ucafe/Unofficial.py
+src/revChatGPT_ucafe/V1.py
+src/revChatGPT_ucafe/V2.py
+src/revChatGPT_ucafe/__init__.py
+src/revChatGPT_ucafe/client.py
+src/revChatGPT_ucafe/server.py
+src/revChatGPT_ucafe.egg-info/PKG-INFO
+src/revChatGPT_ucafe.egg-info/SOURCES.txt
+src/revChatGPT_ucafe.egg-info/dependency_links.txt
+src/revChatGPT_ucafe.egg-info/requires.txt
+src/revChatGPT_ucafe.egg-info/top_level.txt
