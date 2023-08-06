@@ -1,0 +1,2 @@
+[console_scripts]
+reportsector = reportsector.cli:run

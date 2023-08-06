@@ -1,0 +1,65 @@
+Scripts to help me iterate on installing kubernetes using kubeadm in virtualbox on macos.
+
+Following steps from https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm
+
+When I screw up, I want to be able to start from scratch in order to eliminate variables.
+
+I'm on a bad internet conection so I want to cache large files on virtualbox host and copy them to vm.
+
+First install dependency shfmt from https://github.com/mvdan/sh#sh
+
+next, on macos host:
+#+begin_example
+git clone https://github.com/TaylorMonacelli/reportsector
+cd reportsector
+#+end_example
+
+next, on macos host:
+#+begin_example
+deactivate 2>/dev/null || true
+rm -rf .venv
+python3 -mvenv .venv
+echo source $(pwd)/.venv/bin/activate
+source $(pwd)/.venv/bin/activate
+pip install --upgrade pip
+#+end_example
+
+next, on macos host:
+#+begin_example
+pip install reportsector
+reportsector
+# assert reportsector generated new cache.sh from template
+ls ./cache.sh
+#+end_example
+
+next, on macos host:
+#+begin_example
+vagrant destroy --force &&
+vagrant up &&
+source .venv/bin/activate &&
+reportsector &&
+./cache.sh &&
+tar -f archive.tar -r *.sh &&
+vagrant scp archive.tar default: &&
+vagrant ssh --command 'tar xvf archive.tar' &&
+vagrant ssh --command 'sudo ./misc.sh' &&
+vagrant ssh --command ./install.sh &&
+vagrant ssh
+#+end_example
+
+next, on the vm:
+#+begin_example
+# smoke test that runc can run a container:
+nerdctl run -it --rm alpine cat /etc/os-release
+time sudo kubeadm config images pull --v=100 # takes 5m at starbucks, 30s at home
+#+end_example
+
+next, on the vm:
+#+begin_example
+sudo ./kubeadm-init.sh
+mkdir -p $HOME/.kube
+sudo cp /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+kubectl get configmap/kubeadm-config -n kube-system -oyaml
+kubectl cluster-info
+#+end_example

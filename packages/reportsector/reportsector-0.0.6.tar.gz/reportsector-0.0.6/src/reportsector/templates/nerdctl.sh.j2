@@ -1,0 +1,29 @@
+{% if not embedded -%}
+{% include "bash.sh.j2" %}
+{% endif %}
+
+{% macro nerdctl(cache_only=False) -%}
+version=$(curl -s https://api.github.com/repos/containerd/nerdctl/releases/latest | grep tag_name | cut -d: -f2 | tr -d 'v," ')
+echo $version
+wget --quiet --timestamping https://github.com/containerd/nerdctl/releases/download/v${version}/nerdctl-full-${version}-linux-amd64.tar.gz
+{% if cache_only -%}tar -f archive.tar -r nerdctl-full-${version}-linux-amd64.tar.gz{% endif -%}
+{% if not cache_only -%}
+sudo apt-get -y install uidmap
+
+mkdir -p nerdctl-full-${version}-linux-amd64
+tar Cxzvf nerdctl-full-${version}-linux-amd64 nerdctl-full-${version}-linux-amd64.tar.gz
+sudo install --mode 0755 --group root --owner root nerdctl-full-${version}-linux-amd64/bin/nerdctl /usr/local/bin/nerdctl
+nerdctl --version
+
+sudo install --mode 0755 --group root --owner root nerdctl-full-${version}-linux-amd64/bin/containerd-rootless.sh /usr/local/bin/containerd-rootless.sh
+sudo install --mode 0755 --group root --owner root nerdctl-full-${version}-linux-amd64/bin/rootlesskit /usr/local/bin/rootlesskit
+sudo install --mode 0755 --group root --owner root nerdctl-full-${version}-linux-amd64/bin/rootlessctl /usr/local/bin/rootlessctl
+sudo install --mode 0755 --group root --owner root nerdctl-full-${version}-linux-amd64/bin/slirp4netns /usr/local/bin/slirp4netns
+
+# next line is required to run as regular user, not root:
+nerdctl-full-${version}-linux-amd64/bin/containerd-rootless-setuptool.sh install
+{% endif %}
+
+{% endmacro %}
+
+{% block content %}{{ nerdctl(cache_only) }}{% endblock %}
