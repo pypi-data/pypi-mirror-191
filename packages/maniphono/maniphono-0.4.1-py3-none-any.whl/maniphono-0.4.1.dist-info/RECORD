@@ -1,0 +1,17 @@
+maniphono/__init__.py,sha256=xEvp27DSJs7ngwANczVmmg4PJymvogPF-pDTl_fFGIE,1009
+maniphono/common.py,sha256=y8E4PdASJg6i0Rh64ScWAwWY54fcf3i-EI4XCqg6N0Q,7621
+maniphono/phonomodel.py,sha256=VWS_jduy4A0C5RFln1kkEfqP5T3JFYTIe2F1bWvV7dg,42330
+maniphono/segment.py,sha256=3rOaLdA_L5VdyH4GR2fbYPbivdWo7CTKy-tVibZErxk,4519
+maniphono/segsequence.py,sha256=-1vL3cH3K5QhtQLxYFWLdPOcdkv7XarB-Q98qjS47hg,3750
+maniphono/sound.py,sha256=CUEDxNj3cLQtjyzwDIRfi7_8wokqh33zc3VMi37moA4,13274
+maniphono/models/encoder/graphemes.tsv,sha256=CTC_bY5Sf2DyqRn6VMYYZSdIB0x00jmCVT1AEXdaK9Y,31147
+maniphono/models/mipa/model.csv,sha256=qN7qpMp6_Dwa5RRVroDqy4PO1o9PV5L4I8ULAJGtTkc,2261
+maniphono/models/mipa/sounds.csv,sha256=fFodYXy-afJZnXqn5JROCOl6TN4InPJT-tBJE_Q6F_E,12655
+maniphono/models/tresoldi/model.csv,sha256=OIemXJBQHocL86vxwk_2M0SP26BXtQAHoTmQXJ5hRQ0,1691
+maniphono/models/tresoldi/sounds.csv,sha256=ZbYD9a_-MNv2V1-L_BMSj1YgLmcNSAkX65IUMG7SBdY,134843
+maniphono-0.4.1.dist-info/AUTHORS.md,sha256=l85C_b3ycaih4dMEzf7hBlQqRq6WsZy20o2VfHD-kkE,92
+maniphono-0.4.1.dist-info/LICENSE,sha256=rqf8oTD8yc8WeK9qqo60QWzV3jV3x9ua4CKpRgYsl00,1066
+maniphono-0.4.1.dist-info/METADATA,sha256=YE7W6Z05U90uhYYZKESt1Xwjmx5VGKVaGVL3Q4glxHw,2599
+maniphono-0.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+maniphono-0.4.1.dist-info/top_level.txt,sha256=WX_bj_B90zrwvtWWkRLyV-tYxZyeE0WwHiZ_M6oKzzU,10
+maniphono-0.4.1.dist-info/RECORD,,
