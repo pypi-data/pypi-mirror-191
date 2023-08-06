@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ctfl
+Version: 1.0.1
+Summary: CTFTime Upcoming CTF Lists
+Home-page: https://github.com/thehackersbrain/ctfl
+Author: Gaurav Raj
+Author-email: techw803@gmail.com
+License: MIT
+Keywords: ctf,ctftime,thehackersbrain,gauravraj,python
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CTFL
+> CTFTime Upcoming CTF events lists
+
+## Installation
+
+```bash
+pip3 install ctfl
+```
