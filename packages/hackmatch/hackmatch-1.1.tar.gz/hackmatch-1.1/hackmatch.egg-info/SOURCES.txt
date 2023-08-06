@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+hackmatch/__main__.py
+hackmatch/ai.py
+hackmatch/config.py
+hackmatch/game.py
+hackmatch/gui.py
+hackmatch/main.py
+hackmatch/py.typed
+hackmatch/util.py
+hackmatch.egg-info/PKG-INFO
+hackmatch.egg-info/SOURCES.txt
+hackmatch.egg-info/dependency_links.txt
+hackmatch.egg-info/entry_points.txt
+hackmatch.egg-info/requires.txt
+hackmatch.egg-info/top_level.txt
