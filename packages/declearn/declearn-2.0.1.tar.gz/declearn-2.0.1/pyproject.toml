@@ -1,0 +1,115 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "pip >= 19",
+    "setuptools >= 62.0",
+    "setuptools-scm[toml] >= 6.2",
+]
+
+[project]
+name = "declearn"
+version = "2.0.1"
+description = "Declearn - a python package for private decentralized learning."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Paul Andrey", email = "paul.andrey@inria.fr"},
+    {name = "Nathan Bigaud", email = "nathan.bigaud@inria.fr"},
+]
+maintainers = [
+    {name = "Paul Andrey", email = "paul.andrey@inria.fr"},
+    {name = "Nathan Bigaud", email = "nathan.bigaud@inria.fr"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Typing :: Typed",
+]
+dependencies = [
+    "cryptography >= 35.0",
+    "grpcio >= 1.45",
+    "pandas >= 1.2",
+    "scikit-learn >= 1.0",
+    "tomli >= 2.0 ; python_version < '3.11'",
+    "typing_extensions >= 4.0",
+    "websockets ~= 10.1",
+]
+
+[project.optional-dependencies]
+all = [  # all non-tests extra dependencies
+    "functorch",
+    "grpcio >= 1.45",
+    "opacus ~= 1.1",
+    "protobuf >= 3.19",
+    "tensorflow ~= 2.5",
+    "torch ~= 1.10",
+    "websockets ~= 10.1",
+]
+dp = [
+    "opacus ~= 1.1",
+]
+grpc = [
+    "grpcio >= 1.45",
+    "protobuf >= 3.19",
+]
+tensorflow = [
+    "tensorflow ~= 2.5",
+]
+torch = [
+    "functorch",  # note: functorch is included with torch>=1.13
+    "torch ~= 1.10",
+]
+websockets = [
+    "websockets ~= 10.1",
+]
+tests = [
+    # test-specific dependencies
+    "black ~= 23.0",
+    "mypy ~= 1.0",
+    "pylint >= 2.14",
+    "pytest >= 6.1",
+    "pytest-asyncio",
+    # other extra dependencies (copy of "all")
+    "functorch",
+    "grpcio >= 1.45",
+    "opacus ~= 1.1",
+    "protobuf >= 3.19",
+    "tensorflow ~= 2.5",
+    "torch ~= 1.10",
+    "websockets ~= 10.1",
+]
+
+[project.urls]
+homepage = "https://gitlab.inria.fr/magnet/declearn/declearn2"
+repository = "https://gitlab.inria.fr/magnet/declearn/declearn2.git"
+
+[tool.black]
+line-length = 79
+extend-exclude = "(.*_pb2.*py$)"  # exclude auto-generated protobuf code files
+
+[tool.mypy]
+exclude = [".*_pb2.*.py$"]
+follow_imports = "skip"  # otherwise excluded files are checked
+
+[tool.pylint.main]
+fail-under = 10
+ignore-patterns = ["(.*_pb2.*py$)"]
+
+[tool.pylint.format]
+max-line-length = 79
+
+[tool.setuptools]
+packages = ["declearn"]
+
+[tool.setuptools.package-data]
+declearn = ["py.typed"]
