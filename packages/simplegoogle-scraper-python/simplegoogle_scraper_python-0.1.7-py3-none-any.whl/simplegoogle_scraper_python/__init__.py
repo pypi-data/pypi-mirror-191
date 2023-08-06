@@ -1,0 +1,1 @@
+from simplegoogle_scraper_python.scrapeGooGle_results import search
