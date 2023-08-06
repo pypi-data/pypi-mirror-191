@@ -1,0 +1,2 @@
+from mkdocs_iolanta.graph_provider import MkDocsIolantaGraphProvider
+from mkdocs_iolanta.iolanta_plugin import MkdocsIolanta

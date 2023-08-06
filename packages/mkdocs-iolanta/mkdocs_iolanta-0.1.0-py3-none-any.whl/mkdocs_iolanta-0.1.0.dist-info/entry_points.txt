@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+iolanta=mkdocs_iolanta.plugin:IolantaPlugin
+

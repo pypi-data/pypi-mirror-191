@@ -1,0 +1,4 @@
+"@context":
+  mkdocs: https://mkdocs.iolanta.tech/
+
+  title: mkdocs:title
