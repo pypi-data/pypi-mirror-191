@@ -1,0 +1,2 @@
+[pytest11]
+scrapli_replay = scrapli_replay.replay.pytest_scrapli_replay
