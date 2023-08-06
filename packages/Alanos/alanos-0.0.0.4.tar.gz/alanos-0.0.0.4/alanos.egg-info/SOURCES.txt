@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+alanos.egg-info/PKG-INFO
+alanos.egg-info/SOURCES.txt
+alanos.egg-info/dependency_links.txt
+alanos.egg-info/top_level.txt
