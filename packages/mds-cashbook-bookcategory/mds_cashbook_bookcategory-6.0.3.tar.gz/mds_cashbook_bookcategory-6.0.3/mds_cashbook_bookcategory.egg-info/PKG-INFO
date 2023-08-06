@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: mds-cashbook-bookcategory
+Version: 6.0.3
+Summary: Tryton module to add categories for cashbooks.
+Home-page: https://www.m-ds.de/
+Author: martin-data services
+Author-email: service@m-ds.de
+License: GPL-3
+Download-URL: https://scmdev.m-ds.de/Tryton/Extra/cashbook_bookcategory
+Description: mds-cashbook-bookcategory
+        =========================
+        Tryton module to add categories for cashbooks.
+        
+        Install
+        =======
+        
+        pip install mds-cashbook-bookcategory
+        
+        Requires
+        ========
+        - Tryton 6.0
+        
+        Changes
+        =======
+        
+        *6.0.3 - 05.02.2023*
+        
+        - updt: remove left/right fields
+        
+        *6.0.2 - 08.11.2022*
+        
+        - add: show linked cashbook on category-form
+        
+        *6.0.1 - 08.11.2022*
+        
+        - works
+        
+        *6.0.0 - 07.11.2022*
+        
+        - init
+        
+Keywords: tryton cashbook category
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Plugins
+Classifier: Framework :: Tryton
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Natural Language :: German
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
