@@ -1,0 +1,3 @@
+[console_scripts]
+pychatgptintl = pychatgptintl.__main__:main
+

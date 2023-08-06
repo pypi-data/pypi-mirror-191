@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyChatGPT_intl.egg-info/PKG-INFO
+pyChatGPT_intl.egg-info/SOURCES.txt
+pyChatGPT_intl.egg-info/dependency_links.txt
+pyChatGPT_intl.egg-info/entry_points.txt
+pyChatGPT_intl.egg-info/not-zip-safe
+pyChatGPT_intl.egg-info/requires.txt
+pyChatGPT_intl.egg-info/top_level.txt
+pychatgptintl/__init__.py
+pychatgptintl/__main_.py
+pychatgptintl/translator.py
