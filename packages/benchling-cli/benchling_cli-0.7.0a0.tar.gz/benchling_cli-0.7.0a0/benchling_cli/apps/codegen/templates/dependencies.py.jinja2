@@ -1,0 +1,291 @@
+"""Generated from {{ manifest.info.name }} {{ manifest.info.version }}.
+
+Do not edit manually.
+
+An instance `dependencies: Dependencies` can be used as follows:
+
+{% macro dependency_doc(dependency, parent="dependencies.") -%}
+{% if dependency.__class__.__name__ == "ManifestArrayConfig" %}
+for element in dependencies.{{ dependency_to_snake_case(dependency) }}:
+    element.name
+    {% for element in element_definition_from_dependency(dependency) %}{{ dependency_doc(element, parent="element.")|indent(4, True) }}{% endfor %}
+{% elif dependency.__class__.__name__ == "ManifestScalarConfig" %}
+{{ parent }}{{ dependency_to_snake_case(dependency) }}.value
+{% else %}
+{{ parent }}{{ dependency_to_snake_case(dependency) }}.id
+    {% if field_definitions_from_dependency(dependency) %}
+        {% for field in dependency.field_definitions %}
+{{ parent }}{{ dependency_to_snake_case(dependency) }}.fields.{{ dependency_to_snake_case(field) }}.name
+        {% endfor %}
+    {% elif options_from_dependency(dependency) %}
+        {% for option in dependency.options %}
+{{ parent }}{{ dependency_to_snake_case(dependency) }}.options.{{ dependency_to_snake_case(option) }}.id
+        {% endfor %}
+    {% endif %}
+{% endif %}
+{%- endmacro -%}
+```
+{% for dependency in manifest.configuration %}{{ dependency_doc(dependency) }}{% endfor %}
+```
+"""
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import date, datetime
+from typing import Iterable, Optional
+
+from benchling_api_client.v2.types import UNSET
+from benchling_sdk.apps.config.base_decryption_provider import BaseDecryptionProvider
+from benchling_sdk.apps.config.dependencies import (
+    ApiConfigItem,
+    ArrayConfigItem,
+    BaseConfigNode,
+    BaseDependencies,
+    ConfigWithLinkedResource,
+    OptionalLinkedResourceDependencyMixin,
+    OptionalScalarDependencyMixin,
+    OptionalSecureTextDependencyMixin,
+    OptionalValueMixin,
+    RequiredLinkedResourceDependencyMixin,
+    RequiredScalarDependencyMixin,
+    RequiredSecureTextDependencyMixin,
+    RequiredValueMixin,
+    ScalarConfigItem,
+    ScalarConfigReference,
+    SecureTextDependency,
+)
+from benchling_sdk.apps.config.scalars import JsonType
+from benchling_sdk.models import (
+    ArrayElementAppConfigItem,
+    BooleanAppConfigItem,
+    DateAppConfigItem,
+    DatetimeAppConfigItem,
+    EntitySchemaAppConfigItem,
+    FieldAppConfigItem,
+    FloatAppConfigItem,
+    GenericApiIdentifiedAppConfigItem,
+    IntegerAppConfigItem,
+    JsonAppConfigItem,
+    SecureTextAppConfigItem,
+    TextAppConfigItem,
+)
+
+{% macro dependency_accessor(dependency, parent_class="") -%}
+{% set expected_config_type = app_config_type_from_dependency(dependency).__name__ %}
+{% set inner_class_name = dependency_to_pascal_case(dependency) + "Dependency" %}
+{% if parent_class %}{% set inner_class_name = parent_class + "." + inner_class_name %}{% endif %}
+
+    @property
+{% if dependency.__class__.__name__ == "ManifestArrayConfig" %}
+    def {{ dependency_to_snake_case(dependency) }}(self) -> Iterable[{{ dependency_to_pascal_case(dependency) }}Dependency]:
+{% else %}
+    def {{ dependency_to_snake_case(dependency) }}(self) -> {{ dependency_to_pascal_case(dependency) }}Dependency:
+{% endif %}
+{% if dependency.__class__.__name__ == "ManifestScalarConfig" %}
+  {% if is_secure_text_dependency(dependency) %}
+   {% set config_class_name = "SecureTextConfig" %}
+  {% else %}
+   {% set config_class_name = "ScalarConfig" %}
+  {% endif %}
+        parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+        path = parent_path + {{ inner_class_name }}.path
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        config_item = context._store.config_by_path(path)
+        {% if not is_config_required(dependency) %}
+        if config_item is None:
+            {% if is_secure_text_dependency(dependency) %}
+            return {{ inner_class_name }}(self, None, None, decryption_provider=self._decryption_provider)
+            {% else %}
+            return {{ inner_class_name }}(self, None, None)
+            {% endif %}
+        {% endif %}
+        assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+        definition = context._scalar_definitions.get(config_item.type.value, context._unknown_scalar_definition) if config_item else None
+        {% if is_secure_text_dependency(dependency) %}
+        return {{ inner_class_name }}(self, config_item, definition, decryption_provider=self._decryption_provider)
+        {% else %}
+        return {{ inner_class_name }}(self, config_item, definition)
+        {% endif %}
+
+{% elif dependency.__class__.__name__ == "ManifestArrayConfig" %}
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        array_element_names = context._store.config_keys_by_path({{ inner_class_name }}.path)
+        for name in array_element_names:
+            parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+            path = parent_path + {{ inner_class_name }}.path + [name]
+            config_item = context._store.config_by_path(path)
+            assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+            yield {{ inner_class_name }}(self, config_item)
+
+{% else %}
+        parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+        path = parent_path + {{ inner_class_name }}.path
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        config_item = context._store.config_by_path(path)
+        {% if not is_config_required(dependency) %}
+        if config_item is None:
+            return {{ inner_class_name }}(self, None)
+        {% endif %}
+        assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+        return {{ inner_class_name }}(self, config_item)
+{% endif %}
+{%- endmacro -%}
+
+{% macro dependency_class(dependency, parent_class="") -%}
+{% if dependency.__class__.__name__ == "ManifestScalarConfig" %}
+    {% if is_secure_text_dependency(dependency) %}
+       {% set dependency_subclass_name = "SecureTextDependency" %}
+       {% set required_mixin_name = "RequiredSecureTextDependencyMixin" %}
+       {% set optional_mixin_name = "OptionalSecureTextDependencyMixin" %}
+    {% else %}
+       {% set dependency_subclass_name = "ScalarConfigItem" %}
+       {% set scalar_type_instance = scalar_type_from_config(dependency) %}
+       {% set scalar_type = scalar_type_name(scalar_type_instance) %}
+       {% set required_mixin_name = "RequiredScalarDependencyMixin[" + scalar_type + "]" %}
+       {% set optional_mixin_name = "OptionalScalarDependencyMixin[" + scalar_type + "]" %}
+    {% endif %}
+{% else %}
+    {% set dependency_subclass_name = "ApiConfigItem" %}
+    {% set required_mixin_name = "RequiredLinkedResourceDependencyMixin" %}
+    {% set optional_mixin_name = "OptionalLinkedResourceDependencyMixin" %}
+{% endif %}
+{% set parent_class_name = parent_class %}
+{% if parent_class_name %}{% set parent_class_name = parent_class_name + "." %}{% endif %}
+
+@dataclass
+{% if dependency.__class__.__name__ == "ManifestArrayConfig" %}
+class {{ dependency_to_pascal_case(dependency) }}Dependency(ArrayConfigItem):
+{% else %}
+class {{ dependency_to_pascal_case(dependency) }}Dependency({{ dependency_subclass_name }}, {% if is_config_required(dependency) %}{{ required_mixin_name }}{% else %}{{ optional_mixin_name }}{% endif %}):
+{% endif %}
+    path = ["{{ dependency.name }}"]
+    {% if field_definitions_from_dependency(dependency) %}
+
+    @property
+    def fields(self) -> {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyFields:
+        return {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyFields(self)
+    {% elif options_from_dependency(dependency) %}
+
+    @property
+    def options(self) -> {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOptions:
+        return {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOptions(self)
+    {% elif element_definition_from_dependency(dependency) %}
+
+    {% for element in element_definition_from_dependency(dependency) %}
+        {{ dependency_accessor(element, parent_class=dependency_to_pascal_case(dependency) + "Dependency") }}
+        {{ dependency_class(element, parent_class=dependency_to_pascal_case(dependency) + "Dependency")|indent(4, True) }}
+    {% endfor %}
+    {% endif %}
+    {% if workflow_task_schema_output_from_dependency(dependency) and field_definitions_from_dependency(dependency.output) %}
+
+    @property
+    def output(self) -> {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOutput:
+        return {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOutput(self)
+
+
+@dataclass
+class {{ dependency_to_pascal_case(dependency) }}DependencyOutput(BaseConfigNode):
+    path = ["output"]
+
+    @property
+    def fields(self) -> {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOutputFields:
+        return {{ parent_class_name + dependency_to_pascal_case(dependency) }}DependencyOutputFields(self)
+
+    {% set output_fields_class_name = dependency_to_pascal_case(dependency) + "DependencyOutputFields" %}
+
+
+@dataclass
+class {{ output_fields_class_name }}(BaseConfigNode):
+        {% for field in dependency.output.field_definitions %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_fields_class_name = dependency_to_pascal_case(field) + "Dependency" %}
+    @dataclass
+    class {{ inner_fields_class_name }}(ApiConfigItem, {% if is_config_required(field) %}RequiredLinkedResourceDependencyMixin{% else %}OptionalLinkedResourceDependencyMixin{% endif %}):
+        path = ["{{ field.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(field) }}(self) -> {{ inner_fields_class_name }}:
+        parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+        path = parent_path + {{ parent_class_name }}{{ output_fields_class_name }}.{{ inner_fields_class_name }}.path
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        config_item = context._store.config_by_path(path)
+        {% set expected_config_type = app_config_type_from_dependency(field).__name__ %}
+        {% if not is_config_required(field) %}
+        if config_item is None:
+            return {{ parent_class_name }}{{ output_fields_class_name }}.{{ inner_fields_class_name }}(self, None)
+        {% endif %}
+        assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+        return {{ parent_class_name }}{{ output_fields_class_name }}.{{ inner_fields_class_name }}(self, config_item)
+    {% endfor %}
+
+    {% endif %}
+    {% if field_definitions_from_dependency(dependency) %}
+
+        {% set fields_class_name = dependency_to_pascal_case(dependency) + "DependencyFields" %}
+@dataclass
+class {{ fields_class_name }}(BaseConfigNode):
+        {% for field in dependency.field_definitions %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_fields_class_name = dependency_to_pascal_case(field) + "Dependency" %}
+
+    @dataclass
+    class {{ inner_fields_class_name }}(ApiConfigItem, {% if is_config_required(field) %}RequiredLinkedResourceDependencyMixin{% else %}OptionalLinkedResourceDependencyMixin{% endif %}):
+        path = ["{{ field.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(field) }}(self) -> {{ inner_fields_class_name }}:
+        parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+        path = parent_path + {{ parent_class_name }}{{ fields_class_name }}.{{ inner_fields_class_name }}.path
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        config_item = context._store.config_by_path(path)
+        {% set expected_config_type = app_config_type_from_dependency(field).__name__ %}
+        {% if not is_config_required(field) %}
+        if config_item is None:
+            return {{ parent_class_name }}{{ fields_class_name }}.{{ inner_fields_class_name }}(self, None)
+        {% endif %}
+        assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+        return {{ parent_class_name }}{{ fields_class_name }}.{{ inner_fields_class_name }}(self, config_item)
+        {% endfor %}
+    {% elif options_from_dependency(dependency) %}
+
+
+        {% set options_class_name = dependency_to_pascal_case(dependency) + "DependencyOptions" %}
+@dataclass
+class {{ options_class_name }}(BaseConfigNode):
+        {% for option in dependency.options %}
+            {% if not loop.first %}
+
+            {% endif %}
+            {% set inner_option_class_name = dependency_to_pascal_case(option) + "Dependency" %}
+    @dataclass
+    class {{ inner_option_class_name }}(ApiConfigItem, {% if is_config_required(dependency) %}RequiredLinkedResourceDependencyMixin{% else %}OptionalLinkedResourceDependencyMixin{% endif %}):
+        path = ["{{ option.name }}"]
+
+    @property
+    def {{ dependency_to_snake_case(option) }}(self) -> {{ inner_option_class_name }}:
+        parent_path = self.full_path() if isinstance(self, BaseConfigNode) else []
+        path = parent_path + {{ parent_class_name }}{{ options_class_name }}.{{ inner_option_class_name }}.path
+        context = self.context() if isinstance(self, BaseConfigNode) else self
+        config_item = context._store.config_by_path(path)
+        {% set expected_config_type = app_config_type_from_dependency(option).__name__ %}
+        {% if not is_config_required(option) %}
+        if config_item is None:
+            return {{ parent_class_name }}{{ options_class_name }}.{{ inner_option_class_name }}(self, None)
+        {% endif %}
+        assert isinstance(config_item, {{ expected_config_type }}), f"Expected {config_item} to be {{ expected_config_type }}"
+        return {{ parent_class_name }}{{ options_class_name }}.{{ inner_option_class_name }}(self, config_item)
+        {% endfor %}
+    {% endif %}
+{%- endmacro -%}
+
+class Dependencies(BaseDependencies):
+{% for dependency in manifest.configuration %}
+{{ dependency_accessor(dependency) }}
+{% endfor %}
+{% for dependency in manifest.configuration %}
+{{ dependency_class(dependency) }}
+{% endfor %}
