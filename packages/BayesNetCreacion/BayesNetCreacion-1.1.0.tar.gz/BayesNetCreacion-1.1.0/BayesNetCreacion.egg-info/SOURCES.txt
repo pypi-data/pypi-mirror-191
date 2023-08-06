@@ -1,0 +1,10 @@
+README.md
+setup.py
+BayesNetCreacion/__init__.py
+BayesNetCreacion/bayesnetc.py
+BayesNetCreacion/test.py
+BayesNetCreacion/testing.py
+BayesNetCreacion.egg-info/PKG-INFO
+BayesNetCreacion.egg-info/SOURCES.txt
+BayesNetCreacion.egg-info/dependency_links.txt
+BayesNetCreacion.egg-info/top_level.txt
