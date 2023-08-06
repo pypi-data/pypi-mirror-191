@@ -1,0 +1,8 @@
+mjml_python-1.0.0.dist-info/METADATA,sha256=SUC5HF8Io1a2VDBDou0QZFYg9H1xbUiykGo5eXQ4V-M,2618
+mjml_python-1.0.0.dist-info/WHEEL,sha256=keLBtIOE7ZgLyd8Cijw37iqv72a2jhfxMdDu8Unr7zo,96
+mjml_python-1.0.0.dist-info/license_files/LICENSE,sha256=Ogx1hV6q5PLAjCw0garKjEiH7GUmFydh4DuWyd5VOs4,1095
+mjml/__init__.py,sha256=2dJmpc4qHjvXHjqcsnJ6bJgRlD9e7pB4Oqe6RoEzmLQ,99
+mjml/__init__.pyi,sha256=GWhHMpZ9RO2QHiuGtE3se15phet676GrihfNoBXC20k,82
+mjml/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mjml/mjml.cp310-win_amd64.pyd,sha256=a1fm381Ye4Gc5Qvnsk_5HME5CwnF6GBFJDslsUgv49Q,1168896
+mjml_python-1.0.0.dist-info/RECORD,,
