@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: EOtool
+Version: 0.0.2
+Summary: A small package for using some tools
+Author-email: 정준호 <01068552679j@gmail.com>
+Project-URL: Homepage, https://pypi.org/project/EOtool/0.0.2/#description
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# EsYs
+
+This is a simple ESYS package. Made in 2023, 1, 22, 8:45, KST
