@@ -1,0 +1,7 @@
+pandas
+numpy
+perlin_noise
+seaborn
+dtale
+bpyth
+blab
