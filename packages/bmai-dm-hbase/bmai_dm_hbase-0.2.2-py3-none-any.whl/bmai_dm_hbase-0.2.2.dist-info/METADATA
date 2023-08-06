@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: bmai-dm-hbase
+Version: 0.2.2
+Summary: Data mining Group hbase utils
+Home-page: http://gitlab.admin.bluemoon.com.cn/BigData-DataAlgorithm/dm-hbase.git
+Author: Shuxin Liang
+Author-email: liangshuxin1@bluemoon.com.cn
+License: MIT License        
+        Copyright 2022 Bluemoon Algorithm        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ruamel.yaml (>=0.15.0)
+Requires-Dist: thrift (>=0.15.0)
+Requires-Dist: thrift-sasl (>=0.4.2)
+Requires-Dist: thriftpy2 (>=0.4.14)
+Requires-Dist: happybase (>=1.2.0)
+Requires-Dist: pandas (>=1.3.4)
+
+# **hbase连接**
+基于happybase封装简单的hbase使用库，支持连接、创建、查询、插入功能
+
+## **项目结构**
+- hbase
+  - LICENSE.md
+  - README.md
+  - setup.py
+  - src
+    - \_\_init\_\_.py
+    - conf_reader.py
+    - hbase_client.py
+    - reconection.py
+
+## **使用方法**
+### **安装/更新**
+```
+# 安装
+pip install --index-url http://192.168.38.1:31410/bmai/pypi --trusted-host 192.168.38.1 bmai-dm-hbase
+
+# 更新
+pip install --index-url http://192.168.38.1:31410/bmai/pypi --trusted-host 192.168.38.1 bmai-dm-hbase --upgrade
+```
+
+### **配置文件模板**
+#### **hbase节点信息**
+可配可不配，不配置的话直接使用hbase_client.py内的类，自行传入相关信息即可
+```
+pro: # 正式环境ec, thrift
+  host: 192.168.xx.xx # 失效
+  port: 9090
+
+dev: # 开发环境, thrift
+  host: 192.168.xx.xx
+  host_name: xx-xx-xx
+  port: 9090
+```
+
+### **示例**
+```
+import pandas as pd
+from dm_hbase.hbase_client import HBaseClient
+
+connection = HBaseClient(
+    host='xxx.xxx.xx.xx',
+    port=9090,
+    env='test'    # 2022-11-15新增, env参数支持'test'或者'prd', 默认为'test'
+)
+connection.build_pool()
+# 查看当前库中所有表
+connection.show_tables()
+# 查表
+connection.scan_tables(
+    table_name='xxx:xxxx',
+    limit=10
+)
+# 查列族
+connection.get_families('xxx:xxxx')
+# 查分区
+connection.get_regions('xxx:xxx')
+# 插入数据
+connection.insert(
+    table_name='xxx:xxx',
+    datas={row_key: {'column_family:feature': value}}
+    batch_size=1000
+)
+# 以dataframe形式插入数据
+df = pd.read_csv('xxx.csv')
+connection.insert_df(
+    table_name='xxx:xxx',
+    df=df,
+    rowkeys_col='xxx',
+    batch_size=1000
+)
+```
+
+## **开发日志**
+2022-4-21
+1. 打包发至私有pypi
+  
+2022-4-22
+1. 修复安装后无法使用的bug
+
+2022-5-5
+1. 构造函数增加配置文件路径参数并修改相关内容
+2. 构造函数逻辑优化
+3. 增加简单测试用例
+4. 优化代码格式
+
+2022-5-13
+1. 构造函数优化，默认port为9090，新增配置文件警告
+
+2022-9-8
+1. 调整连接池默认参数，适配hbase 2.0版本连接
+
+2022-10-10
+1. 优化insert函数，新增bytes类型判断与转换
+2. 优化insert_df函数
+
+2022-11-15
+1. 优化__init__, 加入环境判断
+
+2022-11-17
+1. 调整thrift, thrift-sasl版本依赖
+
+2023-02-11
+1. 调整prd参数
+
+2023-02-13
+1. 去除thriftpy依赖
+

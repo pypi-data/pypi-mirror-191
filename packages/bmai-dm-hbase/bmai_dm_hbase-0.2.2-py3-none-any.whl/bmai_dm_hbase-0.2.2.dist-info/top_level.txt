@@ -1,0 +1,1 @@
+bmai_dm_hbase
