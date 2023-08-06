@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ailab-utils
+Version: 0.1.0
+Summary: AiLab utils
+Home-page: https://gitlab.com/gpam/services/ailab-utils
+Author: GPAM
+Author-email: gpam@gmail.com
+License: Apache-2.0
+Project-URL: Documentation, https://gitlab.com/gpam/services/ailab-utils
+Project-URL: Code, https://gitlab.com/gpam/services/ailab-utils
+Project-URL: Issue tracker, https://gitlab.com/gpam/services/ailab-utils/-/issues
+Project-URL: Changelog, https://gitlab.com/gpam/services/ailab-utils/-/releases
+Project-URL: Contribution guide, https://gitlab.com/gpam/services/ailab-utils/-/blob/master/CONTRIBUTING.md
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ailab-utils
+
+Esse repositório contém uma coleção de ferramentas para o laboratório [AILab](https://ailab.unb.br/) da Universidade de Brasília.
+
+
