@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ayanatest.egg-info/PKG-INFO
+ayanatest.egg-info/SOURCES.txt
+ayanatest.egg-info/dependency_links.txt
+ayanatest.egg-info/requires.txt
+ayanatest.egg-info/top_level.txt
+vidstream/__init__.py
+vidstream/audio.py
+vidstream/streaming.py
