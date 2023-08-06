@@ -1,0 +1,8 @@
+trigger_count/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trigger_count/daq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trigger_count/daq/base.py,sha256=-HrQg-Q1vTtynS_myIBvazqYOE0VfrjKC0qKIibGGVg,2515
+trigger_count/widefield_workaround/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trigger_count/widefield_workaround/base.py,sha256=kBmNKxwbuRxpaAcqYz3tQdknXpcLT5BkJ4Trhbl59TQ,3489
+trigger_count-0.1.4.dist-info/METADATA,sha256=I3R2wv1-LR9pg-dWO2R7Ap_CPqt35qyxxuTr7XY2RdI,468
+trigger_count-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+trigger_count-0.1.4.dist-info/RECORD,,
