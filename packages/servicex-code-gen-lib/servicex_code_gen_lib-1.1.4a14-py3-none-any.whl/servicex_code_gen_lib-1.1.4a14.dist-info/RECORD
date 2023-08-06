@@ -1,0 +1,7 @@
+servicex_codegen/__init__.py,sha256=HPBp40ep60nvesnGdvU_opHpmpjxbix0ok9vmTbqynY,2879
+servicex_codegen/code_generator.py,sha256=wq0lTyyC4AehLxN-M_GqjP7j5QDaqqWCG7A9qChI5ys,2194
+servicex_codegen/post_operation.py,sha256=qW18oDCsavG88Ju1TTAHgf83E79-8tKNGuD73JMDZUU,5157
+servicex_code_gen_lib-1.1.4a14.dist-info/LICENSE,sha256=j9PI2bHtgNDZtjxWdiaMswBpG4TX3xNWgois1PtZSnk,1520
+servicex_code_gen_lib-1.1.4a14.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+servicex_code_gen_lib-1.1.4a14.dist-info/METADATA,sha256=56fJGS8jrXsYFYdnO6eb59Aoc82OjzHmu_jmkwpdPIk,990
+servicex_code_gen_lib-1.1.4a14.dist-info/RECORD,,
