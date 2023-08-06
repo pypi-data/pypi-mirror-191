@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cortex-core
+Version: 1.9.2
+Summary: Nearly Human Cortex core functions.
+Author: Nearly Human
+Author-email: support@nearlyhuman.ai
+Requires-Python: >=3.8.10
