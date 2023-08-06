@@ -1,0 +1,7 @@
+sqlalchemy_create_table_as/__init__.py,sha256=gQHySHMYFmYnIA4mFnX-Y2vJE_ZrjvD3DMi1kDM6znA,40
+sqlalchemy_create_table_as/create_table.py,sha256=ycJk0iHJhWktwC00hV0y0KFja5GudZ14GLBdPmwThmQ,489
+sqlalchemy_create_table_as/create_table.pyi,sha256=CPuufC-zoJoYAAHWeMiU5rBq5a2vf6hNhYqN2Yexemk,229
+sqlalchemy_create_table_as-0.3.0.dist-info/METADATA,sha256=mWIBPo9hNEE_85OIWSFrAiX5_d_gOsG_mK0xW2bJUSY,2594
+sqlalchemy_create_table_as-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sqlalchemy_create_table_as-0.3.0.dist-info/LICENSE,sha256=BOgdvydI5py1ay_3G9v4uyGChbR5or1ctUSTHWpxJe0,1071
+sqlalchemy_create_table_as-0.3.0.dist-info/RECORD,,
