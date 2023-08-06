@@ -1,0 +1,12 @@
+Webtrench/AudioScrapper.py,sha256=uw8IoipNer4Cbt0sPzJtpU7JiBfBvdjqfYIrnlCz0ak,110
+Webtrench/ImageScrapper.py,sha256=hENoliqegAP79mf033Neh6sDH6tWos8dzr7pBfGrYVY,2304
+Webtrench/MetaDataScrapper.py,sha256=tETplOaH6OYvzlmT2X5H8EDAJq7eodSXjNQotis6ju4,113
+Webtrench/TextScrapper.py,sha256=uCSEGMoNAIf9L_Tyh5vAvQiuXO1QT0QQ_khktawSIXA,5792
+Webtrench/VideoScrapper.py,sha256=VMTE1Ku0gmbkJxT-9z2ILmYKdNdV13_Pltps1gX9044,110
+Webtrench/__init__.py,sha256=2sii7BwkdgTH1zXKYIJYK5pn7UtT4NCRO00LOYZBt2U,307
+Webtrench/helper.py,sha256=8DLe1Dw5TyyHE1U7EO15RICmODBJ2eI5ng2_JtULtng,336
+Webtrench-0.1.1.dist-info/LICENSE,sha256=I2DmUwKBxZpCh-1A46N_zbj1wGyJc2hsdWwpWLKbSlQ,1066
+Webtrench-0.1.1.dist-info/METADATA,sha256=zLYb822nIvOlWKVJc7S6ujqt03Uz3ovYnNJxK9Tq7v4,3824
+Webtrench-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Webtrench-0.1.1.dist-info/top_level.txt,sha256=Ok8pC4FHdykutDYJ2G7bWvofaj8LGvhI3jaxeaTzBqU,10
+Webtrench-0.1.1.dist-info/RECORD,,
