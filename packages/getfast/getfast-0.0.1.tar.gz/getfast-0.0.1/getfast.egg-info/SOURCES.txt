@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+getfast/__init__.py
+getfast/main.py
+getfast.egg-info/PKG-INFO
+getfast.egg-info/SOURCES.txt
+getfast.egg-info/dependency_links.txt
+getfast.egg-info/top_level.txt
