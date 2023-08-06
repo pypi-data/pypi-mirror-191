@@ -1,0 +1,40 @@
+[build-system]
+requires = ['setuptools>=45', 'setuptools-scm[toml]>=6.2']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'pyorbs'
+description = 'A tool for managing Python virtual environments'
+readme = 'README.rst'
+requires-python = '~= 3.8'
+license = {file = 'LICENSE.txt'}
+authors = [{name = 'Logikal GmbH', email = 'contact@logikal.io'}]
+keywords = ['development', 'virtual environment']
+classifiers = [
+  'Development Status :: 5 - Production/Stable',
+  'Environment :: Console',
+  'Intended Audience :: Developers',
+  'License :: OSI Approved :: MIT License',
+  'Operating System :: POSIX :: Linux',
+  'Programming Language :: Python :: 3',
+  'Programming Language :: Python :: 3.8',
+  'Topic :: Software Development',
+]
+dynamic = ['version']
+
+[project.scripts]
+orb = 'pyorbs.app:main'
+
+[project.urls]
+'Documentation' = 'https://docs.logikal.io/pyorbs/'
+'Release notes' = 'https://github.com/logikal-io/pyorbs/releases'
+'Issue tracker' = 'https://github.com/logikal-io/pyorbs/issues'
+'Source code' = 'https://github.com/logikal-io/pyorbs'
+
+[tool.setuptools]
+packages = ['pyorbs', 'pyorbs.templates']
+
+[tool.setuptools_scm]
+
+[tool.coverage.report]
+exclude_lines = ['\.\.\.']  # exclude abstract methods
