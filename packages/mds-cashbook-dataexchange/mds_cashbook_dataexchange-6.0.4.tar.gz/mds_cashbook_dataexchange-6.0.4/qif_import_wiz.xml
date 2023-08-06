@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="qif_imp_wiz_start_form">
+            <field name="model">cashbook_dataexchange.qif_imp_wiz.start</field>
+            <field name="type">form</field>
+            <field name="name">wiz_qifimport_start_form</field>
+        </record>
+        <record model="ir.ui.view" id="qif_imp_wiz_info_form">
+            <field name="model">cashbook_dataexchange.qif_imp_wiz.info</field>
+            <field name="type">form</field>
+            <field name="name">wiz_qifimport_info_form</field>
+        </record>
+
+        <!-- import qif file wizard -->
+        <record model="ir.action.wizard" id="act_import_qif_wizard">
+            <field name="name">Import QIF-File</field>
+            <field name="wiz_name">cashbook_dataexchange.qif_imp_wiz</field>
+        </record>
+
+        <!-- import categories -->
+        <record model="ir.action.keyword" id="act_import_qif_wizard-cat-keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">cashbook.category,-1</field>
+            <field name="action" ref="act_import_qif_wizard"/>
+        </record>
+
+        <!-- import transactions -->
+        <record model="ir.action.keyword" id="act_import_qif_wizard-book-keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">cashbook.book,-1</field>
+            <field name="action" ref="act_import_qif_wizard"/>
+        </record>
+
+        <!-- import parties -->
+        <record model="ir.action.keyword" id="act_import_qif_wizard-party-keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">party.party,-1</field>
+            <field name="action" ref="act_import_qif_wizard"/>
+        </record>
+
+    </data>
+</tryton>

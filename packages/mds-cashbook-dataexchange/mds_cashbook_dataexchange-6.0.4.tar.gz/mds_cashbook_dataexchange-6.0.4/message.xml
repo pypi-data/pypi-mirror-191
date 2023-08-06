@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.message" id="msg_wiz_categories_found">
+            <field name="text">The following categories are now imported:\n%(categories)s</field>
+        </record>
+        <record model="ir.message" id="msg_wiz_no_categories">
+            <field name="text">No categories were found in the file.</field>
+        </record>
+        <record model="ir.message" id="msg_wiz_no_bank">
+            <field name="text">No transactions were found in the file.</field>
+        </record>
+        <record model="ir.message" id="msg_wiz_parties_found">
+            <field name="text">The following %(numparties)s parties are now imported:</field>
+        </record>
+        <record model="ir.message" id="msg_wiz_transactions_found">
+            <field name="text">The following transactionen are now imported:\nCredit: %(credit)s\nDebit: %(debit)s\nBalance: %(balance)s\nNumber of transactions: %(quantity)s</field>
+        </record>
+        <record model="ir.message" id="msg_wiz_transactions_error">
+            <field name="text">When reading the QIF file, there were the following problems:</field>
+        </record>
+        <record model="ir.message" id="mds_import_book_notfound">
+            <field name="text">The cashbook '%(bookname)s' was not found.</field>
+        </record>
+        <record model="ir.message" id="mds_import_category_notfound">
+            <field name="text">The category '%(catname)s' was not found.</field>
+        </record>
+        <record model="ir.message" id="mds_import_party_notfound">
+            <field name="text">The party '%(pname)s' was not found.</field>
+        </record>
+        <record model="ir.message" id="mds_import_many_parties_found">
+            <field name="text">For the party '%(pname)s' of the import, several parties were found in the system. Use: '%(pname2)s'</field>
+        </record>
+        <record model="ir.message" id="mds_import_many_categories_found">
+            <field name="text">For the category '%(catname1)s' of the import, several categories were found in the system. Use: '%(catname2)s'</field>
+        </record>
+        <record model="ir.message" id="mds_import_many_books_found">
+            <field name="text">For the cashbook '%(bookname1)s' of the import, several cashbooks were found in the system. Use: '%(bookname2)s'</field>
+        </record>
+        <record model="ir.message" id="mds_import_checknumber">
+            <field name="text">Cheque No.</field>
+        </record>
+        <record model="ir.message" id="mds_import_address">
+            <field name="text">Address</field>
+        </record>
+        <record model="ir.message" id="mds_import_no_category">
+            <field name="text">No category has been assigned for transaction '%(trdata)s'.</field>
+        </record>
+        <record model="ir.message" id="mds_import_no_account">
+            <field name="text">No cashbook has been assigned for transaction '%(trdata)s'.</field>
+        </record>
+        <record model="ir.message" id="mds_import_category_not_match">
+            <field name="text">The category '%(catname)s' of the split booking does not match the bookingtype '%(bktype)s' (data: '%(data)s')</field>
+        </record>
+        <record model="ir.message" id="msg_ignore_null_booking">
+            <field name="text">Ignore empty booking, no category, amount zero: %(trinfo)s</field>
+        </record>
+
+
+    </data>
+</tryton>

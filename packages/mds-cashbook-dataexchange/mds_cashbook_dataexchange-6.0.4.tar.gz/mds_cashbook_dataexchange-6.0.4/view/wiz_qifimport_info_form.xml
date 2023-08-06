@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<form col="2">
+    <label name="company"/>
+    <field name="company"/>
+    <label name="book"/>
+    <field name="book"/>
+
+    <group col="1" name="info" colspan="2" string="Information" yexpand="1">
+        <field name="info"/>
+    </group>
+    <field name="allowimport"/>
+
+</form>
