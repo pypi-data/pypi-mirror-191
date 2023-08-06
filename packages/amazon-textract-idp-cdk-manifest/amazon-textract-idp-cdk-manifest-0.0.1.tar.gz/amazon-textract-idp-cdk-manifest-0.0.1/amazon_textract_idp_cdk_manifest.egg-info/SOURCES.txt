@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+amazon_textract_idp_cdk_manifest.egg-info/PKG-INFO
+amazon_textract_idp_cdk_manifest.egg-info/SOURCES.txt
+amazon_textract_idp_cdk_manifest.egg-info/dependency_links.txt
+amazon_textract_idp_cdk_manifest.egg-info/requires.txt
+amazon_textract_idp_cdk_manifest.egg-info/top_level.txt
+textractmanifest/__init__.py
+textractmanifest/manifest.py
