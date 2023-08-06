@@ -1,0 +1,31 @@
+[Project]
+name = "it_eng_python_logger_utils_dev_pypi1"
+version = "0.27.1"
+description = "A logger util helper for Azure app insights and structured logging"
+long_description = """
+A logger util helper for Azure app insights and structured logging
+"""
+author = "Dinnermonster"
+author_email = "it-engineering@github.com"
+url = "https://github.com/it-eng-packages/packages/it_eng_python_logger_utils"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.7"
+]
+
+[options]
+packages = "find_packages"
+install_requires = [
+    "opencensus-ext-requests",
+    "opencensus-ext-azure",
+    "requests"
+]
+
+[options.extras_require]
+
+[options.package_data]
+
+[options.entry_points]
