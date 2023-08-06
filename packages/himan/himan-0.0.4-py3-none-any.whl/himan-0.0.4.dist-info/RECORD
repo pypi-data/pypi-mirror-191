@@ -1,0 +1,13 @@
+himan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+himan/pandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+himan/pandas/utils.py,sha256=yZuEAwGszh1qK5eu89-eJVOATtCz6Dppq9sJ_iyZhAM,872
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_reading_csv.py,sha256=raIjtoFHDawseXYXjZ5K3qp8H_kexGAltMPEsOA56xI,770
+tests/test_reading_excel.py,sha256=9pj7LMfNq3jelSHp1PUXuvA3Xy_rCTzEj-uvqAQHPYI,610
+tests/test_utils.py,sha256=EEtolCRNQ_YiMW-OYfOtZ_K3hjIcZjX6IidZjbaWgac,317
+tests/test_writing_files.py,sha256=OSkzGfKazrpTu_c4hCwvJGcVaWR0qtibIs51-hG7nHA,1196
+himan-0.0.4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+himan-0.0.4.dist-info/METADATA,sha256=uU9yCn6zAcCp_NH7-T9k0ZnpDzxzbj8qJvcN4L5nbKY,219
+himan-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+himan-0.0.4.dist-info/top_level.txt,sha256=uWUBF4oJsu6WaX9Biy2NUOsrTJfIASA-HqoG8jwKZb4,12
+himan-0.0.4.dist-info/RECORD,,

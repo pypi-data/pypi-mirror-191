@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: himan
+Version: 0.0.4
+Summary: Python helper utilities
+Author: Kristian Marlowe Ole
+Author-email: krismar.ole@gmail.com
+License: GPLv3+
+Requires-Python: >=3.8
+License-File: LICENSE
+
