@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: doi2bibtex
+Version: 0.1.0
+Summary: Resolve DOIs and arXiv identifiers to formatted BibTeX entries
+Home-page: https://github.com/timothygebhard/doi2bibtex
+Author: Timothy Gebhard
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+Provides-Extra: develop
+License-File: LICENSE
+
+See [project homepage](https://github.com/timothygebhard/doi2bibtex) for more information.
