@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "znflow"
+version = "0.1.1"
+description = ""
+authors = ["zincwarecode <zincwarecode@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+networkx = "^3.0"
+matplotlib = "^3.6.3"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^7.2.1"
+black = "^22.10.0"
+isort = "^5.10.1"
+pylint = "^2.15.8"
+coverage = "^6.5.0"
+ruff = "^0.0.177"
+zninit = "^0.1.8"
+
+[tool.poetry.group.notebook.dependencies]
+jupyterlab = "^3.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+exclude_lines = [
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:"
+]
+ignore_errors = true
+
+[tool.black]
+line-length = 90
+preview = true
+
+[tool.isort]
+profile = 'black'
+multi_line_output = 3
+
+[tool.ruff]
+line-length = 90
+select = ["E", "F"] #, "D"] #, "N", "C", "ANN"]
+extend-ignore = [
+    "D213", "D203"
+]
