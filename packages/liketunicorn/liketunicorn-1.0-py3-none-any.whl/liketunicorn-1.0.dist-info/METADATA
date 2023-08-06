@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: liketunicorn
+Version: 1.0
+Summary: The runner for liketapi
+Project-URL: Homepage, https://github.com/liketapi/liketunicorn
+Project-URL: Bug Tracker, https://github.com/liketapi/liketunicorn/issues
+Author-email: liketapi <seryumed@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.6
+Requires-Dist: aiofiles>=23.1.0
+Requires-Dist: aiohttp>=3.8.3
+Requires-Dist: pydantic>=1.10.4
+Description-Content-Type: text/markdown
+
+# liketunicorn
