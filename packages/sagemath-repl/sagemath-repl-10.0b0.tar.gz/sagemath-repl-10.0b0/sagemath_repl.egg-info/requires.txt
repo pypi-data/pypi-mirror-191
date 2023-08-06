@@ -1,0 +1,4 @@
+sagemath-objects~=10.0b0
+sagemath-environment~=10.0b0
+ipython>=7.13.0
+ipywidgets>=7.5.1
