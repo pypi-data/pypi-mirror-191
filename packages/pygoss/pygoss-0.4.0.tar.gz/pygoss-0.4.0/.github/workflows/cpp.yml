@@ -1,0 +1,17 @@
+name: CI-cpp
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: finsberg/fenics
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build goss
+        run: |
+          cmake -B build-cpp -S cpp -DBUILD_TESTS=ON
+          cmake --build build-cpp
+      - name: Run c++ tests
+        run: cd build-cpp && ctest - V
