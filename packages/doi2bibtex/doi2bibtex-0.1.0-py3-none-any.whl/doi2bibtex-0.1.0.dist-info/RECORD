@@ -1,0 +1,16 @@
+doi2bibtex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doi2bibtex/ads.py,sha256=5jSRg-tp-T0fv-Ee6P2ACeHI4eKpK1AVGuGTpKLHyqE,1877
+doi2bibtex/bibtex.py,sha256=_Hkp2NSJdhCUkNGNCNWZ0K9NoREjAJX5Ex_acUIz8RM,1415
+doi2bibtex/cli.py,sha256=TtXG8L4IPf7tTQN5awL1kW2b1fduf9XrrC100DWpOlM,2729
+doi2bibtex/config.py,sha256=nwVFzi_DU2F8RyKW8JLACxdlbGUo2UCNO68x87bIUJU,2305
+doi2bibtex/constants.py,sha256=eZzrTyEtMww0YlauKu9wkVpO_pHOL09iI0-hfgw6Vgc,2440
+doi2bibtex/identify.py,sha256=VI8GU5PaD6qbKSlnKnp-m4qI-l6JPo4ThtauGSMf2f4,1343
+doi2bibtex/process.py,sha256=wq574UI4d3Xf18v1N3wGEY9H0C8mxs2UKAK3bl3dV8o,10447
+doi2bibtex/resolve.py,sha256=m3HvkPTF6PQBjVgTtTyRNcC3kMnxae7u23NrXNOtQKY,3723
+doi2bibtex/utils.py,sha256=YlTAd20Xc-AlKfwcmt__XwRenStYlMHBHe2OXc9NvE4,1516
+doi2bibtex-0.1.0.dist-info/LICENSE,sha256=49UNZQT4FX2I7x8T9qEE4y_t08afXDqb2QW40uFZRtU,1501
+doi2bibtex-0.1.0.dist-info/METADATA,sha256=Z80K-pOuZod3wkFq7RA5fJhLZcmCoXUt7L23FXqL6B0,1538
+doi2bibtex-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+doi2bibtex-0.1.0.dist-info/entry_points.txt,sha256=gh-vwlhL1AkrADUZ1fVl9Ph8OS_5THO6C2KwxSovz-o,44
+doi2bibtex-0.1.0.dist-info/top_level.txt,sha256=ViuMY7LlFSEuYxKW_bq8pvgzzTA3R2w-rdlWbnvz_wM,11
+doi2bibtex-0.1.0.dist-info/RECORD,,
