@@ -1,0 +1,6 @@
+[project]
+name = "gupao"
+version = "0.0.2"
+dependencies = [
+    "requests"
+]
