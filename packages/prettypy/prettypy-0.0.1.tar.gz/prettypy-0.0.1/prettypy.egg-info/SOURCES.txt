@@ -1,0 +1,6 @@
+README.md
+setup.py
+prettypy.egg-info/PKG-INFO
+prettypy.egg-info/SOURCES.txt
+prettypy.egg-info/dependency_links.txt
+prettypy.egg-info/top_level.txt
