@@ -1,0 +1,3 @@
+[sentry.plugins]
+multi_wechat_webhook = multi_wechat_webhook.plugin:WechatPlugin
+
