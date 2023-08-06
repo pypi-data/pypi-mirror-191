@@ -1,0 +1,3 @@
+[console_scripts]
+gh-env-manager=gh_env_manager.main:app
+
