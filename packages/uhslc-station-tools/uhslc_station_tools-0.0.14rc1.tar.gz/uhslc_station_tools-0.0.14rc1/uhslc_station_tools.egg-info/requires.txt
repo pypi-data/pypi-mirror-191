@@ -1,0 +1,4 @@
+numpy==1.15.0
+pandas==0.24.1
+scipy==1.4.1
+utide==0.2.5

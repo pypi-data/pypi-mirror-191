@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: uhslc-station-tools
+Version: 0.0.14rc1
+Summary: Set of tools for loading, processing and saving sea level data from tide gauges
+Home-page: https://github.com/uhsealevelcenter/station_tools
+Author: Nemanja Komar
+Author-email: komar@hawaii.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
