@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+django_appwrite/__init__.py
+django_appwrite/middleware.py
+django_appwrite.egg-info/PKG-INFO
+django_appwrite.egg-info/SOURCES.txt
+django_appwrite.egg-info/dependency_links.txt
+django_appwrite.egg-info/requires.txt
+django_appwrite.egg-info/top_level.txt
+django_appwrite/tests/__init__.py
+django_appwrite/tests/test_middleware.py
