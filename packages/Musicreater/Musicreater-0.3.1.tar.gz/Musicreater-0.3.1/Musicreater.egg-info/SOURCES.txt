@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+Musicreater/__init__.py
+Musicreater/exceptions.py
+Musicreater/instConstants.py
+Musicreater/magicmain.py
+Musicreater/main.py
+Musicreater/utils.py
+Musicreater.egg-info/PKG-INFO
+Musicreater.egg-info/SOURCES.txt
+Musicreater.egg-info/dependency_links.txt
+Musicreater.egg-info/requires.txt
+Musicreater.egg-info/top_level.txt
