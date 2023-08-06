@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+objectgmsh/__init__.py
+objectgmsh/_version.py
+objectgmsh/objects.py
+objectgmsh/utils.py
+objectgmsh.egg-info/PKG-INFO
+objectgmsh.egg-info/SOURCES.txt
+objectgmsh.egg-info/dependency_links.txt
+objectgmsh.egg-info/requires.txt
+objectgmsh.egg-info/top_level.txt
+objectgmsh/test/__init__.py
+objectgmsh/test/test_objects.py
