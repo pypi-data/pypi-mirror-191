@@ -1,0 +1,66 @@
+[tool.black]
+line-length = 99
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+exclude = '''
+/(
+    \.git|.venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+float_to_top = true
+skip_glob = ".venv"
+
+[tool.poetry]
+name = "python-modulr-client"
+version = "0.0.2"
+description = "Python client for Modulr APIs"
+repository = "https://github.com/expobrain/python-modulr-client"
+authors = ["Daniele Esposti <daniele.esposti@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "modulr_client" }]
+
+[tool.poetry.dependencies]
+python = "^3.7.2,<3.12"
+httpx = ">=0.22.0"
+attrs = ">=20.1.0"
+python-dateutil = ">=2.8.0"
+typing-extensions = { version = "^4.4.0", python = "<3.8" }
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+types-python-dateutil = "^2.8.19"
+types-certifi = "^2021.10.8"
+click = "<9"
+toml = "^0.10.2"
+types-toml = "^0.10.8"
+types-click = "^7.1.8"
+mkdocs-material = "^8.2"
+mkdocstrings-python = "^0.8.2"
+"ruamel.yaml" = "^0.17.21"
+tomli = { version = "^2.0.1", python = "<3.11" }
+pytest = "^7.0.1"
+pytest-clarity = "^1.0.1"
+pytest-testmon = "^1.4.1"
+pytest-timeout = "^2.1.0"
+freezegun = "^1.2.2"
+types-setuptools = "^67.2.0.1"
+openapi-python-client = {git = "https://github.com/expobrain/openapi-python-client.git", rev = "894262b"}
+
+[tool.mypy]
+exclude = ".venv/"
+check_untyped_defs = true
+disallow_incomplete_defs = true
+warn_unused_configs = true
+warn_unused_ignores = true
+disallow_subclassing_any = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_return_any = true
+
+[[tool.mypy.overrides]]
+module = ["dotenv", "pkg_resources"]
+ignore_missing_imports = true
