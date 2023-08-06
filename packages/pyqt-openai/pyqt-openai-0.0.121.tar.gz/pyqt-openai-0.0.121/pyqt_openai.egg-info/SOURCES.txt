@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyqt_openai/__init__.py
+pyqt_openai/chatWidget.py
+pyqt_openai/main.py
+pyqt_openai.egg-info/PKG-INFO
+pyqt_openai.egg-info/SOURCES.txt
+pyqt_openai.egg-info/dependency_links.txt
+pyqt_openai.egg-info/requires.txt
+pyqt_openai.egg-info/top_level.txt
