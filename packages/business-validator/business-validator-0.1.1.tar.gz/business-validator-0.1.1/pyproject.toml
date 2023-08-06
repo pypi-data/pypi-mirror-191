@@ -1,0 +1,30 @@
+[tool.pdm.dev-dependencies]
+dev = [
+    "ruff>=0.0.246",
+    "mypy>=1.0.0",
+    "black>=23.1.0",
+]
+
+[project]
+name = "business-validator"
+version = "0.1.1"
+authors = [
+    { name = "maksyutov vlad", email = "maksyutov.vlad@gmail.com" },
+]
+dependencies = [
+    "pydantic>=1.10.4",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://gitlab.com/1PaCHeK1/business-validator"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
