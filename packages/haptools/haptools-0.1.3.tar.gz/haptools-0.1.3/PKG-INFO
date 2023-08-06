@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: haptools
+Version: 0.1.3
+Summary: Ancestry and haplotype aware simulation of genotypes and phenotypes for complex trait analysis
+Home-page: https://github.com/cast-genomics/haptools
+License: MIT
+Author: Arya Massarat
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: docs
+Provides-Extra: files
+Provides-Extra: tests
+Requires-Dist: Pgenlib (>=0.81.3) ; extra == "files"
+Requires-Dist: Sphinx (>=4.3.2) ; extra == "docs"
+Requires-Dist: click (>=8.0.3)
+Requires-Dist: cyvcf2 (>=0.30.14)
+Requires-Dist: matplotlib (>=3.5.1)
+Requires-Dist: numpy (>=1.20.0)
+Requires-Dist: numpydoc (>=1.1.0) ; extra == "docs"
+Requires-Dist: pysam (>=0.19.0)
+Requires-Dist: sphinx-autodoc-typehints (>=1.12.0) ; extra == "docs"
+Requires-Dist: sphinx-click (>=3.0.2) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (>=1.0.0) ; extra == "docs"
+Project-URL: Documentation, https://haptools.readthedocs.io
+Project-URL: Repository, https://github.com/cast-genomics/haptools
+Description-Content-Type: text/markdown
+
+# haptools
+[![pypi version](https://img.shields.io/pypi/v/haptools)](https://pypi.org/project/haptools)
+[![image](https://anaconda.org/bioconda/haptools/badges/version.svg)](https://anaconda.org/bioconda/haptools)
+[![license](https://img.shields.io/pypi/l/haptools)](LICENSE)
+![status](https://github.com/CAST-genomics/haptools/workflows/Tests/badge.svg)
+
+Haptools is a collection of tools for simulating and analyzing genotypes and phenotypes while taking into account haplotype information. Haptools supports fast simulation of admixed genomes (with `simgenotype`), visualization of admixture tracks (with `karyogram`), simulating haplotype- and local ancestry-specific phenotype effects (with `transform` and `simphenotype`), and computing a variety of common file operations and statistics in a haplotype-aware manner.
+
+Homepage: [https://haptools.readthedocs.io/](https://haptools.readthedocs.io/)
+
+Visit our homepage for installation and usage instructions.
+
+![haptools commands](https://drive.google.com/uc?id=1c0i_Hjms7579s24zRsKp5yMs7BxNHed_)
+
