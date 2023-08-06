@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "genome_seq_finder"
+version = "0.1.0"
+description = "Generates sequence matches given FNA files and a regex expression"
+authors = ["José Cabeda <jecabeda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+genome_seq_finder = "genome_seq_finder.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biopython = "^1.80"
+fastapi = "^0.89.1"
+pytest = "^7.2.1"
+typer = {extras = ["all"], version = "^0.7.0"}
+pandas = "^1.5.3"
+duckdb = "^0.6.1"
+
+
+[tool.poetry.dev-dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
