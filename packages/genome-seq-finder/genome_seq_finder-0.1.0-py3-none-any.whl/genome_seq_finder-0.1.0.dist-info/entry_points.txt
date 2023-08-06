@@ -1,0 +1,3 @@
+[console_scripts]
+genome_seq_finder=genome_seq_finder.main:app
+
