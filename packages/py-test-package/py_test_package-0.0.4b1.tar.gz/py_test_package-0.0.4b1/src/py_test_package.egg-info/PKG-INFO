@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-test-package
+Version: 0.0.4b1
+Summary: Testing python packaging
+Author-email: "Michael J. Williams" <michaeljw1@googlemail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# python-test-package
+Repository for testing Python packaging
