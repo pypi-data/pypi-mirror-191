@@ -1,0 +1,5 @@
+setup.py
+asuna.egg-info/PKG-INFO
+asuna.egg-info/SOURCES.txt
+asuna.egg-info/dependency_links.txt
+asuna.egg-info/top_level.txt
