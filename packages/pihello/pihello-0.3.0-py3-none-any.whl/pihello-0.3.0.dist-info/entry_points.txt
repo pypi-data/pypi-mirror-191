@@ -1,0 +1,3 @@
+[console_scripts]
+pihello=pihello.cli:main
+
