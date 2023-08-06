@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dimensionality_reduction/__init__.py
+dimensionality_reduction/dimensionality_reduction.py
+dimensionality_reduction/services/__init__.py
+dimensionality_reduction/services/plot_service.py
+dimensionality_reduction_package.egg-info/PKG-INFO
+dimensionality_reduction_package.egg-info/SOURCES.txt
+dimensionality_reduction_package.egg-info/dependency_links.txt
+dimensionality_reduction_package.egg-info/requires.txt
+dimensionality_reduction_package.egg-info/top_level.txt
+tests/test_dimensionality_reduction.py
