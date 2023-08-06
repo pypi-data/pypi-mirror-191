@@ -1,0 +1,9 @@
+twilio_async/__init__.py,sha256=SImlY0eX11Pj6otVDB15G6rcJONCwnvloml3_G6vE-4,71
+twilio_async/client.py,sha256=gE-XroGrLfrj4Zb4_AZ8iIKN3462dPrfaehTulkZAC0,5485
+twilio_async/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twilio_async/models/message.py,sha256=HY6BI1MEAA20ybmkGtOVoALg7r-vQtJLFGFfVBpOCnk,1719
+twilio_async/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twilio_python_async-0.2.0.dist-info/METADATA,sha256=YP8KSDCNlL77vp-TqXZkZUJgNs0CgwJmRs0BvTYnE2w,3399
+twilio_python_async-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+twilio_python_async-0.2.0.dist-info/LICENSE,sha256=1bxKmiUpbI8QaZzraefv_fABgFUhbYK_H2K1fAnaTPQ,1069
+twilio_python_async-0.2.0.dist-info/RECORD,,
