@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Webtrench/AudioScrapper.py
+Webtrench/ImageScrapper.py
+Webtrench/MetaDataScrapper.py
+Webtrench/TextScrapper.py
+Webtrench/VideoScrapper.py
+Webtrench/__init__.py
+Webtrench/helper.py
+Webtrench.egg-info/PKG-INFO
+Webtrench.egg-info/SOURCES.txt
+Webtrench.egg-info/dependency_links.txt
+Webtrench.egg-info/requires.txt
+Webtrench.egg-info/top_level.txt
