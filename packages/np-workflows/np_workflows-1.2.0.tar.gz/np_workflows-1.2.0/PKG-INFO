@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: np-workflows
+Version: 1.2.0
+Summary: Ecephys and behavior workflows for the Mindscope Neuropixels team.
+Author: Ben Hardcastle
+Author-email: ben.hardcastle@alleninstitute.org
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: ipywidgets (>=7,<8)
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: np_datajoint
+Requires-Dist: np_probe_targets
+Requires-Dist: np_services
+Requires-Dist: pip-tools ; extra == "dev"
+Requires-Dist: poetry ; extra == "dev"
+Requires-Dist: pydantic (>=1,<2)
+Requires-Dist: pytest ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# np_workflows
