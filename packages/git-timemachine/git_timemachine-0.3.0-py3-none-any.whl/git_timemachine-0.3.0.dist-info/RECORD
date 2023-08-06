@@ -1,0 +1,12 @@
+git_timemachine/__init__.py,sha256=qWzahms0U49gPCTyJJvdTpfffDigqrmV_AooSSWF6Jo,87
+git_timemachine/__main__.py,sha256=6qNbMABzwXTdueMAnPKQjZwe060o8Ss_ijhA9-XlqCY,2266
+git_timemachine/commands.py,sha256=MDT0lDT3bQ45rro3SGhjFQK3CHQANn5oUp1ZsgvIc58,4065
+git_timemachine/config.json,sha256=JO9GvZTsBwUjbW75ebheVH6IPO2aKSPa8-NS8DW4-K4,60
+git_timemachine/repo.py,sha256=xUJhAATIdLFe2Fy9h5u1Jyob6gqIeueFffZ6Jgw5MBk,529
+git_timemachine/state.json,sha256=8qLeVTuIj5euBbpqjnBTV8FT7uCb8uW0wbWMSWx1i9w,53
+git_timemachine/utils.py,sha256=en5c1b9x-EFo_joOCSEvzijzgbIEh2fxljRYygnhKCI,461
+git_timemachine-0.3.0.dist-info/entry_points.txt,sha256=TBKLx25HuoXRFX50g3w1LeTkN-iN0jtXlCNWGArm7R8,64
+git_timemachine-0.3.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+git_timemachine-0.3.0.dist-info/METADATA,sha256=REcJzee5XiIr6mqTIb_BGY_1lSUYx8GbTvPB3gzkto8,864
+git_timemachine-0.3.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+git_timemachine-0.3.0.dist-info/RECORD,,
