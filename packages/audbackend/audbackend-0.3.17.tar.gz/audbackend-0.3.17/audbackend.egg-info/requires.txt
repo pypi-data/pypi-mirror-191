@@ -1,0 +1,2 @@
+audeer>=1.17.1
+audfactory>=1.0.10
