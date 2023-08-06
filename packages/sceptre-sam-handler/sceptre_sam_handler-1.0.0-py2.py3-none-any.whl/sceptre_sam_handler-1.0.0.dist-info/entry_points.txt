@@ -1,0 +1,2 @@
+[sceptre.template_handlers]
+sam = sam_handler.handler:SAM
