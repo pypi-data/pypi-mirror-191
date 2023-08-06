@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/speeshare/__init__.py
+src/speeshare/methods.py
+src/speeshare.egg-info/PKG-INFO
+src/speeshare.egg-info/SOURCES.txt
+src/speeshare.egg-info/dependency_links.txt
+src/speeshare.egg-info/top_level.txt
