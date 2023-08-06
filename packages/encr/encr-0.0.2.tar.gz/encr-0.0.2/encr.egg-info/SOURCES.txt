@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+encr/__init__.py
+encr/encr.py
+encr.egg-info/PKG-INFO
+encr.egg-info/SOURCES.txt
+encr.egg-info/dependency_links.txt
+encr.egg-info/requires.txt
+encr.egg-info/top_level.txt
