@@ -1,0 +1,2 @@
+pyssdb==0.4.2
+py-profiler==0.2.4

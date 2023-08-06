@@ -1,0 +1,16 @@
+# folders
+.DS_Store
+.ipynb_checkpoints
+.vscode
+.idea
+__pycache__
+ngrok.yml
+*.ipynb
+notes.txt
+.idea/
+dist
+build
+target
+*.egg-info
+*.iml
+.pypirc
