@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/chia_bech32m/__init__.py
+src/chia_bech32m/bech32m.py
+src/chia_bech32m.egg-info/PKG-INFO
+src/chia_bech32m.egg-info/SOURCES.txt
+src/chia_bech32m.egg-info/dependency_links.txt
+src/chia_bech32m.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=58.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chia_bech32m"
+version = "1.0.0"
+authors = [
+  { name="hezuoshe", email="nongyehezuoshe@gmail.com" },
+]
+description = "A BIP350 compatible Bech32m encoding/decoding library for chia."
+readme = "README.md"
+requires-python = ">=3.0"
+
+[project.urls]
+"Homepage" = "https://github.com/nongyehezuoshe/chia-bech32m"
+"Bug Tracker" = "https://github.com/nongyehezuoshe/chia-bech32m/issues"
