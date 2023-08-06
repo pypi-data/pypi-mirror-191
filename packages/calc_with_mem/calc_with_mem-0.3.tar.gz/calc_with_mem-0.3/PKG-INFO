@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: calc_with_mem
+Version: 0.3
+Summary: Package of calculator with memory 
+Author: Kestutis Gadeikis
+Author-email: kestutis.gadeikis@gmail.com
+License-File: LICENCE.txt
