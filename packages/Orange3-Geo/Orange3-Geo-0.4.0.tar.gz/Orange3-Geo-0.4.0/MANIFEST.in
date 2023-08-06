@@ -1,0 +1,4 @@
+  include *.md *.pypi *.txt *.yml .coveragerc
+ 
+  recursive-include doc *.bat *.json  *.md *.png *.py *.rst Makefile
+  recursive-include orangecontrib *.csv *.json *.sh *.svg *.txt
