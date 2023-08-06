@@ -1,0 +1,10 @@
+inflect>=6.0.2
+pydantic
+email-validator
+phonenumbers
+
+[all]
+iso3166>=2.1.1
+
+[iso3166]
+iso3166>=2.1.1
