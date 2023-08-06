@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+import_serial/__init__.py
+import_serial/__main__.py
+import_serial/import_serial.py
+import_serial.egg-info/PKG-INFO
+import_serial.egg-info/SOURCES.txt
+import_serial.egg-info/dependency_links.txt
+import_serial.egg-info/entry_points.txt
+import_serial.egg-info/not-zip-safe
+import_serial.egg-info/top_level.txt
+test/helper.py
+test/test_complete.py

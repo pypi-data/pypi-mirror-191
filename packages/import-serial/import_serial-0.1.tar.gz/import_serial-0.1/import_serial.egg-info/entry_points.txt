@@ -1,0 +1,3 @@
+[console_scripts]
+import_serial = import_serial.import_serial:run
+
