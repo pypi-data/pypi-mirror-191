@@ -1,0 +1,10 @@
+docs/build/
+
+*.py[co]
+*.ipynb_checkpoints
+
+# Packages
+__pycache__
+
+#build
+build
