@@ -1,0 +1,1 @@
+{"version":3,"file":"lib_index_js.33c36cb3e6a792a45278.js","mappings":";;;;;;;;;;AAAA,mBAAmB;AACnB,2DAA2D;;;;;;;;;;;;AAE3D,gFAA0B;AAC1B,8EAAyB","sources":["webpack://jupyterjs/./src/index.ts"],"sourcesContent":["// Copyright (c) AY\n// Distributed under the terms of the Modified BSD License.\n\nexport * from './version';\nexport * from './widget';\n"],"names":[],"sourceRoot":""}
