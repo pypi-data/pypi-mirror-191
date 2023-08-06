@@ -1,0 +1,24 @@
+pydantic
+anyio
+ruamel.yaml
+tomlkit
+rich
+structlog
+chardet
+Jinja2
+
+[:python_version < "3.9"]
+graphlib-backport
+
+[dev]
+black
+isort
+flake8
+mypy
+types-toml
+types-setuptools
+types-chardet
+
+[tests]
+pytest
+pytest-cov

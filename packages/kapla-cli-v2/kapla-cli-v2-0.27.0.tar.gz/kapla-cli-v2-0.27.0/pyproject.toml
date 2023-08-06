@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kapla-cli-v2"
+authors = [
+    { name = "Guillaume Charbonnier", email = "guillaume.charbonnier@araymond.com" },
+]
+description = "Python monorepo package manager"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["nats", "nats-server"]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dynamic = ["version"]
+dependencies = [
+    "graphlib-backport ; python_version < '3.9'",
+    "pydantic",
+    "anyio",
+    "ruamel.yaml",
+    "tomlkit",
+    "rich",
+    "structlog",
+    "chardet",
+    "Jinja2",
+]
+
+
+[project.optional-dependencies]
+tests = ["pytest", "pytest-cov"]
+dev = [
+    "black",
+    "isort",
+    "flake8",
+    "mypy",
+    "types-toml",
+    "types-setuptools",
+    "types-chardet",
+]
+
+[project.urls]
+Repository = "https://github.com/charbonnierg/kapla-cli-v2"
+Issues = "https://github.com/charbonnierg/kapla-cli-v2/issues"
+
+[project.scripts]
+k = "kapla.cli:app"
+
+[tool.setuptools.dynamic]
+version = { attr = "kapla.__version__" }
