@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyhttpadapter
+Version: 5.0.0
+Summary: A HTTP Adapter to call any rest or 3rd party api.
+Home-page: UNKNOWN
+Author: supriya
+Author-email: supriya.kadam@neosoftmail.com
+License: UNKNOWN
+Description: Python module to call any 3rd party apis     compatible to perform any http request like GET,POST,PUT,PATCH,DELETE.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
