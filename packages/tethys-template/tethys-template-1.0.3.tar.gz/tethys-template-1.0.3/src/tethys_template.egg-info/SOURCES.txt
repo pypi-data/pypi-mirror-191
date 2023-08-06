@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/tethys/__init__.py
+src/tethys/cli.py
+src/tethys/docs.py
+src/tethys/foobar.py
+src/tethys_template.egg-info/PKG-INFO
+src/tethys_template.egg-info/SOURCES.txt
+src/tethys_template.egg-info/dependency_links.txt
+src/tethys_template.egg-info/entry_points.txt
+src/tethys_template.egg-info/requires.txt
+src/tethys_template.egg-info/top_level.txt
+tests/test_docs.py
+tests/test_foo.py

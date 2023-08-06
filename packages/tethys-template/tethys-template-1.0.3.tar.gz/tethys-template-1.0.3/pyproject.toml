@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tethys-template"
+authors = [{name = "Pat Sagan", email = "pcsagan@gmail.com"}]
+description = "A python package template with tox testing environments."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["tethys-template"]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Flake8",
+    "Framework :: Pytest",
+    "Framework :: tox",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Typing :: Typed",
+]
+dependencies = ["requests"]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "tethys.__version__"}
+
+[project.urls]
+Code = "https://github.com/pcsagan/tethys"
+Issues = "https://github.com/pcsagan/tethys/issues"
+Actions = "https://github.com/pcsagan/tethys/actions"
+
+[project.scripts]
+tethys = "tethys.cli:main"
+

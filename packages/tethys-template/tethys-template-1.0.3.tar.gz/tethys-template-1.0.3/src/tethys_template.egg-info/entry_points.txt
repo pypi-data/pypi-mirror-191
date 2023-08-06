@@ -1,0 +1,2 @@
+[console_scripts]
+tethys = tethys.cli:main
