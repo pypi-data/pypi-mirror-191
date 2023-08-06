@@ -1,0 +1,3 @@
+[console_scripts]
+snypr-cli=omega.cli.main:main
+
