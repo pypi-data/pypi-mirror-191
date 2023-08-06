@@ -1,0 +1,6 @@
+msgpack_serializer/__init__.py,sha256=iSUKKruIsQy69i6fHCSl9NverxqqY3sv9NZvqvyp0kw,61
+msgpack_serializer/serializer.py,sha256=n0u4mkNNtvJ8LUiLjufokSq7dXFFG7DZ62OaeXgD0bM,3038
+django_msgpack_serializer-1.0.0.dist-info/METADATA,sha256=UkEZfUEOlMQkICfePXY66OPQmoTfvZE08T69Wslv5Og,1790
+django_msgpack_serializer-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+django_msgpack_serializer-1.0.0.dist-info/LICENSE,sha256=AyFtrvcMz8X9a8p7fCinZRm6bKPYrrdPc2Ku0JOgk1Q,1090
+django_msgpack_serializer-1.0.0.dist-info/RECORD,,
