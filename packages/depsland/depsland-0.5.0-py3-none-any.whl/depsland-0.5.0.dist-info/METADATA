@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: depsland
+Version: 0.5.0
+Summary: 
+Home-page: https://github.com/likianta/depsland
+License: MIT
+Author: Likianta
+Author-email: likianta@foxmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: argsense (>=0.5.2,<0.6.0)
+Requires-Dist: lk-logger (>=5.4.8,<6.0.0)
+Requires-Dist: lk-utils (>=2.5.2,<2.6.0)
+Requires-Dist: oss2
+Requires-Dist: pyyaml
+Requires-Dist: qmlease
+Requires-Dist: rich
+Requires-Dist: semver (>=3.0.0dev4,<4.0.0)
