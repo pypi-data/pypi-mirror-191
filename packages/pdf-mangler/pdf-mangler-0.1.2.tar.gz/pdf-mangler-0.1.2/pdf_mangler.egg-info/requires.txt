@@ -1,0 +1,8 @@
+pikepdf
+tqdm
+PyYAML
+
+[dev]
+pytest
+pre-commit
+black

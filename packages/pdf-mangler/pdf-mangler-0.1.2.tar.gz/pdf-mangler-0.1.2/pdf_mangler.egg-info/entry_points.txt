@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-mangler = pdf_mangler.mangler:main
