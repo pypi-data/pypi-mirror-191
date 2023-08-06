@@ -1,0 +1,6 @@
+GitPython
+pathvalidate
+psutil
+python-dotenv
+requests
+tqdm
