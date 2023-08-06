@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: mcfa
+Version: 0.1.3
+Summary: Mixtures of Common Factor Analyzers with missing data
+Home-page: https://github.com/maxmahlke/mcfa.git
+License: MIT
+Author: Max Mahlke
+Author-email: max.mahlke@oca.eu
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pyppca (>=0.0.4,<0.0.5)
+Requires-Dist: scikit-learn (>=1.2.1,<2.0.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Requires-Dist: tensorflow (>=2.11.0,<3.0.0)
+Requires-Dist: tensorflow-probability (>=0.16.0,<0.17.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Documentation, https://github.com/maxmahlke/mcfa.git
+Project-URL: Repository, https://github.com/maxmahlke/mcfa.git
+Description-Content-Type: text/markdown
+
+[![arXiv](https://img.shields.io/badge/arXiv-2203.11229-f9f107.svg)](https://arxiv.org/abs/2203.11229) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+<p align="center">
+  <img width="260" src="https://raw.githubusercontent.com/maxmahlke/mcfa/main/gfx/logo_mcfa.png">
+</p>
+
+This `python` package implements the Mixtures of Common Factor Analyzers model
+introduced by [Baek+ 2010](https://ieeexplore.ieee.org/document/5184847). It
+uses [tensorflow](https://www.tensorflow.org/) to implement a stochastic
+gradient descent, which allows for model training without prior imputation of
+missing data. The interface resembles the [sklearn](https://scikit-learn.org/stable/) model API.
+
+# Documentation
+
+Refer to the `docs/documentation.ipynb` for the documentation and
+`docs/4d_gaussian.ipynb` for an example application.
+
+# Install
+
+Install from PyPi using `pip`:
+
+     $ pip install mcfa
+
+The minimum required `python` version is 3.8.
+
+# Alternatives
+
+- [EMMIXmfa](https://github.com/suren-rathnayake/EMMIXmfa) in `R`
+- [Casey+ 2019](https://github.com/andycasey/mcfa) in `python`
+
+Compared to this implementation, Casey+ 2019 use an EM-algorithm instead of a
+stochastic gradient descent. This requires the imputation of the missing values
+**before** the model training. On the other hand, there are more initialization
+routines the lower space loadings and factors available in the Casey+ 2019 implementation.
+
