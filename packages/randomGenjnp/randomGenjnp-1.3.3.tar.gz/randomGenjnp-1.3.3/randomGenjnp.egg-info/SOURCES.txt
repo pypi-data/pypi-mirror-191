@@ -1,0 +1,4 @@
+randomGenjnp.egg-info/PKG-INFO
+randomGenjnp.egg-info/SOURCES.txt
+randomGenjnp.egg-info/dependency_links.txt
+randomGenjnp.egg-info/top_level.txt
