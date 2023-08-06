@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scidantic"
+description = "An extension of Pydantic providing types for NumPy-like arrays and much more."
+readme = "README.md"
+requires-python = ">=3.8,<3.12"
+license = "MIT"
+keywords = ["pydantic", "scientific", "numpy"]
+authors = [
+  { name = "Gabriel Martín", email = "gmartinbdev@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "pydantic >=1.10.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev = [
+  "black >=22.12.0",
+  "ruff >=0.0.231",
+  "mypy >=0.991",
+  "pre-commit >=3.0.0",
+  "pytest >=7.2.0",
+  "coverage[toml] >=7.0.0",
+  "numpy>=1.24.1",
+]
+
+[project.urls]
+Documentation = "https://github.com/gabrielmbmb/scidantic#readme"
+Issues = "https://github.com/gabrielmbmb/scidantic/issues"
+Source = "https://github.com/gabrielmbmb/scidantic"
+
+[tool.hatch.version]
+path = "scidantic/__init__.py"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "W", "F", "I", "C", "B"]
+ignore = ["E501", "B905"]
+
+[tool.mypy]
+strict = true
+plugins = ["pydantic.mypy"]
+
+[tool.coverage.run]
+source = ["scidantic"]
+parallel = true
+branch = true
+context = '${CONTEXT}'
