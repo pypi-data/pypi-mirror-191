@@ -1,0 +1,12 @@
+marionette_predeployed/__init__.py,sha256=Prndlz_JlnSxWF2cX5iRWu5qbqapApC2cSwbYhbsr0w,313
+marionette_predeployed/address.py,sha256=SRJCecpj1GQqHfzAqY29pkQutvWp9iYluhllfNzqOJ8,195
+marionette_predeployed/marionette_generator.py,sha256=Pb4tpUnJs04c1jntLDobnMR10mNxuRLSnVtWR0xjNrY,2876
+marionette_predeployed/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marionette_predeployed/upgradeable_marionette_generator.py,sha256=OlJEG-luEyb9DL2_TrBz2Pc9kqrxemMa7mnKCEoA-2o,477
+marionette_predeployed/artifacts/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marionette_predeployed/artifacts/Marionette.json,sha256=FNWPuMKFNbDo4iYtTp-sbbFaIyPWyBREM9QPIi7mFFo,38931
+marionette_predeployed/artifacts/Marionette.meta.json,sha256=ScKBBQc5DAsUp2zs_z4G-uC_VaF9HKiQgYTWSIEaOx4,78242
+marionette_predeployed-2.0.0a21.dist-info/METADATA,sha256=OexYfN6cy3eP8iMTkOHhKqarA0Qrd0y1OYmZMv1Rl9E,1697
+marionette_predeployed-2.0.0a21.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+marionette_predeployed-2.0.0a21.dist-info/top_level.txt,sha256=D6mUOmRPfKuhyMypq0kmwQigspVQ2oa7KOIZX0quKLQ,23
+marionette_predeployed-2.0.0a21.dist-info/RECORD,,
