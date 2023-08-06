@@ -1,0 +1,13 @@
+pyxdi/__init__.py,sha256=IYHMomXfw7ACjF5WeD62Kh6zBZoyi1PUr-xJTsm9_2w,275
+pyxdi/_api.py,sha256=-lYo8uDEGHxPvW1IcKglLdDlNVdOE0rNUIu6c3nSHt8,3859
+pyxdi/_async.py,sha256=5OqgUe-FdU5ZkR9l8gatXh1AjQE-w1jkCDH5Q40T5X8,5462
+pyxdi/_contstants.py,sha256=6ggeTyjKrh2eHOXO3-Jj-36gJZo9bUO8Sgec4IrD8WU,96
+pyxdi/_core.py,sha256=YwsRWVPAK-NvfibPZtLzA8vWX0yejWxkxkpMwNB7UhQ,12254
+pyxdi/_exceptions.py,sha256=VTIE4cGYf6SnJDMT9IZzBhmVS6yd2jxRkLzT2yl5KoU,334
+pyxdi/_types.py,sha256=CXTrBzXLJSu20Sqvtp-9X5WGewNIKNSg2AG3IyBLHhU,261
+pyxdi/_utils.py,sha256=6wrY4ihs4yog3jToUJpHtXnJr2GxDIw_TY1jQp_kiTA,663
+pyxdi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxdi-0.1.0a0.dist-info/LICENSE,sha256=V6rU8a8fv6o2jQ-7ODHs0XfDFimot8Q6Km6CylRIDTo,1069
+pyxdi-0.1.0a0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyxdi-0.1.0a0.dist-info/METADATA,sha256=NIiuYePw6qQydGmxqAEvopBfP3I5oEaAcBUaDW7gtcc,2252
+pyxdi-0.1.0a0.dist-info/RECORD,,
