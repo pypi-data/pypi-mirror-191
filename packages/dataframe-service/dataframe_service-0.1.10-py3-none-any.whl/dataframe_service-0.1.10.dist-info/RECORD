@@ -1,0 +1,12 @@
+dataframe_service-0.1.10.data/scripts/dfs_cli,sha256=hgcuGnFY5DLB5oyxPEignEmNQCVeY4Xb_ADIEr4RKpE,7718
+dataframe_service-0.1.10.data/scripts/dfs_server,sha256=OsMBTxjy-xgm720whUNBMSziWOgHLRiIWd6IfIYXJpM,1797
+dfs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dfs/df_cache.py,sha256=PgPJcCZOK2CRtmBbFgsFv7xDBOdZiLUKqAjFB89INeo,3193
+dfs/df_client.py,sha256=yJiZBjcCsVrovKaS1ROhSi5mE8ljk7WA6jUL8xUghTI,4993
+dfs/df_server.py,sha256=bAbO8AnbR49nyMlPuW8B-D3NeRPRFUYiZ9qWQYiPv6o,5664
+dfs/file_cache.py,sha256=xHLqBlvafioOH8cRb7cyrMF9RIhxJ-MClMXV5YkIOX0,8809
+dfs/helpers.py,sha256=wm-IZchfVrE4aCTDhhDyMwxe5soGspzJseC4y1HDcQI,2771
+dataframe_service-0.1.10.dist-info/METADATA,sha256=BRLva9TzdmacBfDdT2RoG6WvkddTaW84Ew0wA5os5T0,1291
+dataframe_service-0.1.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dataframe_service-0.1.10.dist-info/top_level.txt,sha256=HEOlkKPtbRw320-6jOcNLVCt_lpLUimDnx7j8k351wU,4
+dataframe_service-0.1.10.dist-info/RECORD,,
