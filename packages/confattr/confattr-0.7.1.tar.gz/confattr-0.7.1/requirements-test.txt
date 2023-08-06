@@ -1,0 +1,10 @@
+pytest
+mypy
+types-appdirs
+
+pudb
+pytest-pudb
+
+# dependencies of pudb which pip does not resolve automatically
+setuptools>=40.8.0
+wheel

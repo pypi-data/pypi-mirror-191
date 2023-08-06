@@ -1,0 +1,18 @@
+# Data types
+# ----------
+# regular expression:
+#   https://docs.python.org/3/library/re.html#regular-expression-syntax
+
+# udisksctl.mount-output-pattern
+# ------------------------------
+# a regular expression
+# a regular expression to parse the output of `udisksctl mount`. Must
+# contain a named group called "mountpath".
+set udisksctl.mount-output-pattern = '^.*?(?P<mountpath>/(\S+/)*[^/]+?)\.?$'
+
+# udisksctl.unlock-output-pattern
+# -------------------------------
+# a regular expression
+# a regular expression to parse the output of `udisksctl unlock`. Must
+# contain a named group called "unlockpath".
+set udisksctl.unlock-output-pattern = '^.*?(?P<unlockpath>/(\S+/)*[^/]+?)\.?$'

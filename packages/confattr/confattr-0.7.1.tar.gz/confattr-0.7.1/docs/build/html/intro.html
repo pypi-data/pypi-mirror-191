@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction and examples &mdash; confattr v0.7.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/sphinx_paramlinks.css" type="text/css" />
+      <link rel="stylesheet" href="_static/no-ligatures-in-code.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="confattr package" href="confattr.html" />
+    <link rel="prev" title="Welcome to confattr’s documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> confattr
+          </a>
+              <div class="version">
+                v0.7.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction and examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#config-and-configfile">Config and ConfigFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#config-file-syntax">Config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#different-values-for-different-objects">Different values for different objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#include">Include</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generating-help">Generating help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#custom-data-types">Custom data types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-new-commands-to-the-config-file-syntax">Adding new commands to the config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-custom-commands-to-the-config-file">Writing custom commands to the config file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customizing-the-config-file-syntax">Customizing the config file syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#config-without-classes">Config without classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-your-application">Testing your application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-variables">Environment variables</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="confattr.html">confattr package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.config.html">confattr.config module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.configfile.html">confattr.configfile module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.subprocess_pipe.html">confattr.subprocess_pipe module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.types.html">confattr.types module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="confattr.utils.html">confattr.utils module</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">confattr</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Introduction and examples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-and-examples">
+<h1>Introduction and examples<a class="headerlink" href="#introduction-and-examples" title="Permalink to this heading"></a></h1>
+<section id="config-and-configfile">
+<span id="exp-save"></span><span id="exp-config"></span><h2>Config and ConfigFile<a class="headerlink" href="#config-and-configfile" title="Permalink to this heading"></a></h2>
+<p><a class="reference internal" href="confattr.html#module-confattr" title="confattr"><code class="xref py py-mod docutils literal notranslate"><span class="pre">confattr</span></code></a> (config attributes) is a python library to make applications configurable.
+This library defines the <a class="reference internal" href="confattr.html#confattr.Config" title="confattr.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> class to create attributes which can be changed in a config file.
+It uses the <a class="reference external" href="https://docs.python.org/3/reference/datamodel.html#implementing-descriptors">descriptor protocol</a> to return it’s value when used as an instance attribute.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+
+	<span class="n">speed_limit</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;traffic-law.speed-limit&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;km/h&#39;</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="mi">0</span>
+
+	<span class="k">def</span> <span class="nf">accelerate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">new_speed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">+</span> <span class="n">value</span>
+		<span class="k">if</span> <span class="n">new_speed</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">:</span>
+			<span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;you are going too fast&#39;</span><span class="p">)</span>
+
+		<span class="bp">self</span><span class="o">.</span><span class="n">speed</span> <span class="o">=</span> <span class="n">new_speed</span>
+</pre></div>
+</div>
+<p>If you want to access the Config object itself you need to access it as a class attribute:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>	<span class="k">def</span> <span class="nf">print_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{key}</span><span class="s1">: </span><span class="si">{val}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">speed_limit</span><span class="o">.</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>You load a config file with a <a class="reference internal" href="confattr.html#confattr.ConfigFile" title="confattr.ConfigFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFile</span></code></a> object.
+In order to create a ConfigFile instance you need to provide a callback function which informs the user if the config file contains invalid lines.
+This callback function takes two arguments: (1) a <a class="reference internal" href="confattr.html#confattr.NotificationLevel" title="confattr.NotificationLevel"><code class="xref py py-class docutils literal notranslate"><span class="pre">NotificationLevel</span></code></a> which says whether the notification is an error or an information and (2) the message to be presented to the user, either a <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#BaseException" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseException</span></code></a>.
+When you load a config file with <a class="reference internal" href="confattr.html#confattr.ConfigFile.load" title="confattr.ConfigFile.load"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.load()</span></code></a> all <a class="reference internal" href="confattr.html#confattr.Config" title="confattr.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> objects which are set in the config file are updated automatically.</p>
+<p>It is recognized automatically that the setting <code class="docutils literal notranslate"><span class="pre">traffic-law.speed-limit</span></code> has an integer value.
+A value given in a config file is therefore automatically parsed to an integer.
+If the parsing fails the user interface callback function is called.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFile</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+
+	<span class="c1"># Print error messages which occurred while loading the config file.</span>
+	<span class="c1"># In this easy example it would have been possible to register the callback before calling load</span>
+	<span class="c1"># but in the real world the user interface will depend on the values set in the config file.</span>
+	<span class="c1"># Therefore the messages are stored until a callback is added.</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lvl</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+
+	<span class="n">c1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">()</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;speed_limit: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">c1</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Given the following config file (the location of the config file is determined by <a class="reference internal" href="confattr.html#confattr.ConfigFile.iter_config_paths" title="confattr.ConfigFile.iter_config_paths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.iter_config_paths()</span></code></a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">traffic</span><span class="o">-</span><span class="n">law</span><span class="o">.</span><span class="n">speed</span><span class="o">-</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+</div>
+<p>The script will give the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>speed_limit: 30
+</pre></div>
+</div>
+<p>You can save the current configuration with <a class="reference internal" href="confattr.html#confattr.ConfigFile.save" title="confattr.ConfigFile.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a> if you want to write it to the default location
+or with <a class="reference internal" href="confattr.html#confattr.ConfigFile.save_file" title="confattr.ConfigFile.save_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save_file()</span></code></a> if you want to specify the path yourself.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>	<span class="n">filename</span> <span class="o">=</span> <span class="n">config_file</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+	<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;configuration was written to </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">filename</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will write the following file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data types</span>
+<span class="c1"># ----------</span>
+<span class="c1"># int:</span>
+<span class="c1">#   An integer number in python 3 syntax, as decimal (e.g. 42),</span>
+<span class="c1">#   hexadecimal (e.g. 0x2a), octal (e.g. 0o52) or binary (e.g.</span>
+<span class="c1">#   0b101010). Leading zeroes are not permitted to avoid confusion</span>
+<span class="c1">#   with python 2&#39;s syntax for octal numbers. It is permissible to</span>
+<span class="c1">#   group digits with underscores for better readability, e.g.</span>
+<span class="c1">#   1_000_000.</span>
+
+<span class="c1"># traffic-law.speed-limit</span>
+<span class="c1"># -----------------------</span>
+<span class="c1"># an int in km/h</span>
+<span class="nb">set</span> <span class="n">traffic</span><span class="o">-</span><span class="n">law</span><span class="o">.</span><span class="n">speed</span><span class="o">-</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+</div>
+</section>
+<section id="config-file-syntax">
+<h2>Config file syntax<a class="headerlink" href="#config-file-syntax" title="Permalink to this heading"></a></h2>
+<p>I have looked at the config files of different applications trying to come up with a syntax as intuitive as possible.
+Two extremes which have heavily inspired me are the config files of <a class="reference external" href="https://www.vim.org/">vim</a> and <a class="reference external" href="https://ranger.github.io/">ranger</a>.
+Quoting and inline comments work like in a POSIX shell (except that there is no difference between single quotes and double quotes) as I am using <a class="reference external" href="https://docs.python.org/3/library/shlex.html#shlex.split" title="(in Python v3.11)"><code class="xref py py-func docutils literal notranslate"><span class="pre">shlex.split()</span></code></a> to split the lines.</p>
+<p>Lines starting with a <code class="docutils literal notranslate"><span class="pre">&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">#</span></code> are ignored.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">set</span></code> command has two different forms.
+I recommend to <em>not</em> mix them in order to improve readability.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">key1=val1</span> <span class="pre">[key2=val2</span> <span class="pre">...]</span></code>   (inspired by vimrc)</p>
+<p><code class="docutils literal notranslate"><span class="pre">set</span></code> takes an arbitrary number of arguments, each argument sets one setting.</p>
+<p>Has the advantage that several settings can be changed at once.
+This is useful if you want to bind a set command to a key and process that command with <a class="reference internal" href="confattr.html#confattr.ConfigFile.parse_line" title="confattr.ConfigFile.parse_line"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.parse_line()</span></code></a> if the key is pressed.</p>
+<p>If the value contains one or more spaces it must be quoted.
+<code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">greeting='hello</span> <span class="pre">world'</span></code> and <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">'greeting=hello</span> <span class="pre">world'</span></code> are equivalent.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">key</span> <span class="pre">[=]</span> <span class="pre">val</span></code>   (inspired by ranger config)</p>
+<p><code class="docutils literal notranslate"><span class="pre">set</span></code> takes two arguments, the key and the value.
+Optionally a single equals character may be added in between as third argument.</p>
+<p>Has the advantage that key and value are separated by one or more spaces which can improve the readability of a config file.</p>
+<p>If the value contains one or more spaces it must be quoted:
+<code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">greeting</span> <span class="pre">'hello</span> <span class="pre">world'</span></code> and <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">greeting</span> <span class="pre">=</span> <span class="pre">'hello</span> <span class="pre">world'</span></code> are equivalent.</p>
+</li>
+</ul>
+<p>I recommend to not use spaces in key names so that they don’t need to be wrapped in quotes.</p>
+<p>It is possible to include another config file:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">include</span> <span class="pre">filename</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">filename</span></code> is a relative path it is relative to the directory of the config file it appears in.</p>
+<p>This command is explained in more detail in <a class="reference internal" href="#exp-include"><span class="std std-ref">this example</span></a>.</p>
+</li>
+</ul>
+</section>
+<section id="different-values-for-different-objects">
+<span id="exp-multi"></span><h2>Different values for different objects<a class="headerlink" href="#different-values-for-different-objects" title="Permalink to this heading"></a></h2>
+<p>A <a class="reference internal" href="confattr.html#confattr.Config" title="confattr.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> object always returns the same value, regardless of the owning object it is an attribute of:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span>
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+	<span class="n">speed_limit</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;traffic-law.speed-limit&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;km/h&#39;</span><span class="p">)</span>
+
+<span class="n">c1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">()</span>
+<span class="n">c2</span> <span class="o">=</span> <span class="n">Car</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">)</span>
+<span class="n">c2</span><span class="o">.</span><span class="n">speed_limit</span> <span class="o">=</span> <span class="mi">30</span>  <span class="c1"># don&#39;t do this, this is misleading!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c1</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">,</span> <span class="n">c2</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>50 50
+30 30
+</pre></div>
+</div>
+<p>If you want to have different values for different objects you need to use <a class="reference internal" href="confattr.html#confattr.MultiConfig" title="confattr.MultiConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiConfig</span></code></a> instead.
+This requires the owning object to have a special attribute called <code class="xref py py-attr docutils literal notranslate"><span class="pre">config_id</span></code>.
+All objects which have the same <code class="xref py py-attr docutils literal notranslate"><span class="pre">config_id</span></code> share the same value.
+All objects which have different <code class="xref py py-attr docutils literal notranslate"><span class="pre">config_id</span></code> can have different values (but don’t need to have different values).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">enum</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">MultiConfig</span><span class="p">,</span> <span class="n">ConfigId</span><span class="p">,</span> <span class="n">ConfigFile</span>
+
+<span class="k">class</span> <span class="nc">Color</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+	<span class="n">RED</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
+	<span class="n">YELLOW</span> <span class="o">=</span> <span class="s1">&#39;yellow&#39;</span>
+	<span class="n">GREEN</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span>
+	<span class="n">BLUE</span> <span class="o">=</span> <span class="s1">&#39;blue&#39;</span>
+	<span class="n">WHITE</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span>
+	<span class="n">BLACK</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span>
+
+
+<span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+
+	<span class="n">speed_limit</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;traffic-law.speed-limit&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;km/h&#39;</span><span class="p">)</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="n">MultiConfig</span><span class="p">(</span><span class="s1">&#39;car.color&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLACK</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_id</span><span class="p">:</span> <span class="n">ConfigId</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">config_id</span> <span class="o">=</span> <span class="n">config_id</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+
+	<span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lvl</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+
+	<span class="n">cars</span> <span class="o">=</span> <span class="p">[]</span>
+	<span class="k">for</span> <span class="n">config_id</span> <span class="ow">in</span> <span class="n">MultiConfig</span><span class="o">.</span><span class="n">config_ids</span><span class="p">:</span>
+		<span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Car</span><span class="p">(</span><span class="n">config_id</span><span class="p">))</span>
+	<span class="n">cars</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Car</span><span class="p">(</span><span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;another-car&#39;</span><span class="p">)))</span>
+
+	<span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">cars</span><span class="p">:</span>
+		<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;color of </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">car</span><span class="o">.</span><span class="n">config_id</span><span class="p">,</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Given the following config file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">traffic</span><span class="o">-</span><span class="n">law</span><span class="o">.</span><span class="n">speed</span><span class="o">-</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">30</span>
+
+<span class="p">[</span><span class="n">alices</span><span class="o">-</span><span class="n">car</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">red</span>
+
+<span class="p">[</span><span class="n">bobs</span><span class="o">-</span><span class="n">car</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">blue</span>
+</pre></div>
+</div>
+<p>It creates the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>color of alices-car: Color.RED
+color of bobs-car: Color.BLUE
+color of another-car: Color.BLACK
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">another-car</span></code> gets the default color black as it is not set in the config file.
+You can change this default color in the config file by setting it before specifying a config id or after specifying the special config id <code class="docutils literal notranslate"><span class="pre">general</span></code> (<a class="reference internal" href="confattr.html#confattr.Config.default_config_id" title="confattr.Config.default_config_id"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Config.default_config_id</span></code></a>).
+Note how this adds <code class="docutils literal notranslate"><span class="pre">general</span></code> to <a class="reference internal" href="confattr.html#confattr.MultiConfig.config_ids" title="confattr.MultiConfig.config_ids"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MultiConfig.config_ids</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">traffic</span><span class="o">-</span><span class="n">law</span><span class="o">.</span><span class="n">speed</span><span class="o">-</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">set</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">white</span>
+
+<span class="p">[</span><span class="n">alices</span><span class="o">-</span><span class="n">car</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">red</span>
+
+<span class="p">[</span><span class="n">bobs</span><span class="o">-</span><span class="n">car</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">blue</span>
+</pre></div>
+</div>
+<p>Creates the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>color of general: Color.WHITE
+color of alices-car: Color.RED
+color of bobs-car: Color.BLUE
+color of another-car: Color.WHITE
+</pre></div>
+</div>
+</section>
+<section id="include">
+<span id="exp-include"></span><h2>Include<a class="headerlink" href="#include" title="Permalink to this heading"></a></h2>
+<p>Consider a backup application which synchronizes one or more directory pairs.
+The following code might be a menu for it to choose which side should be changed:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">MultiConfig</span><span class="p">,</span> <span class="n">ConfigId</span><span class="p">,</span> <span class="n">ConfigFile</span><span class="p">,</span> <span class="n">NotificationLevel</span>
+<span class="kn">import</span> <span class="nn">enum</span>
+<span class="kn">import</span> <span class="nn">urwid</span>
+
+<span class="n">CMD_QUIT</span> <span class="o">=</span> <span class="s1">&#39;quit&#39;</span>
+<span class="n">CMD_TOGGLE</span> <span class="o">=</span> <span class="s1">&#39;toggle&#39;</span>
+<span class="n">CMD_IGNORE</span> <span class="o">=</span> <span class="s1">&#39;ignore&#39;</span>
+
+<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="s1">&#39;q&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">CMD_QUIT</span>
+<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="s1">&#39; &#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">CMD_TOGGLE</span>
+<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="s1">&#39;i&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">CMD_IGNORE</span>
+
+
+<span class="k">class</span> <span class="nc">Direction</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">Enum</span><span class="p">):</span>
+	<span class="n">SRC_TO_DST</span> <span class="o">=</span> <span class="s1">&#39; &gt; &#39;</span>
+	<span class="n">DST_TO_SRC</span> <span class="o">=</span> <span class="s1">&#39; &lt; &#39;</span>
+	<span class="n">IGNORE</span> <span class="o">=</span> <span class="s1">&#39; | &#39;</span>
+	<span class="n">TWO_WAY</span> <span class="o">=</span> <span class="s1">&#39;&lt;-&gt;&#39;</span>
+
+<span class="k">class</span> <span class="nc">DirectoryPair</span><span class="p">:</span>
+
+	<span class="n">path_src</span> <span class="o">=</span> <span class="n">MultiConfig</span><span class="p">(</span><span class="s1">&#39;path.src&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+	<span class="n">path_dst</span> <span class="o">=</span> <span class="n">MultiConfig</span><span class="p">(</span><span class="s1">&#39;path.dst&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+	<span class="n">direction</span> <span class="o">=</span> <span class="n">MultiConfig</span><span class="p">(</span><span class="s1">&#39;direction&#39;</span><span class="p">,</span> <span class="n">Direction</span><span class="o">.</span><span class="n">SRC_TO_DST</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_id</span><span class="p">:</span> <span class="n">ConfigId</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">config_id</span> <span class="o">=</span> <span class="n">config_id</span>
+
+	<span class="k">def</span> <span class="nf">toggle_direction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="ow">is</span> <span class="n">Direction</span><span class="o">.</span><span class="n">SRC_TO_DST</span><span class="p">:</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">Direction</span><span class="o">.</span><span class="n">DST_TO_SRC</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">Direction</span><span class="o">.</span><span class="n">SRC_TO_DST</span>
+
+	<span class="k">def</span> <span class="nf">ignore</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">Direction</span><span class="o">.</span><span class="n">IGNORE</span>
+
+
+<span class="k">class</span> <span class="nc">DirectoryPairWidget</span><span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">WidgetWrap</span><span class="p">):</span>  <span class="c1"># type: ignore [misc]  # Class cannot subclass &quot;WidgetWrap&quot; (has type &quot;Any&quot;) because urwid is not typed yet</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dirs</span><span class="p">:</span> <span class="n">DirectoryPair</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">dirs</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">widget_src</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">dirs</span><span class="o">.</span><span class="n">path_src</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">widget_dst</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">dirs</span><span class="o">.</span><span class="n">path_dst</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">widget_direction</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">update_direction</span><span class="p">()</span>
+		<span class="n">widget</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Columns</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">widget_src</span><span class="p">,</span> <span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">PACK</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget_direction</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">widget_dst</span><span class="p">])</span>
+		<span class="n">widget</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">AttrMap</span><span class="p">(</span><span class="n">widget</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">App</span><span class="o">.</span><span class="n">ATTR_FOCUS</span><span class="p">)</span>
+		<span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">widget</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">selectable</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+		<span class="k">return</span> <span class="kc">True</span>
+
+	<span class="k">def</span> <span class="nf">keypress</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">:</span> <span class="s1">&#39;tuple[int, ...]&#39;</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;str|None&#39;</span><span class="p">:</span>
+		<span class="k">if</span> <span class="ow">not</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">keypress</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+			<span class="k">return</span> <span class="kc">None</span>
+
+		<span class="n">cmd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_command_map</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+		<span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">CMD_TOGGLE</span><span class="p">:</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">toggle_direction</span><span class="p">()</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">update_direction</span><span class="p">()</span>
+		<span class="k">elif</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">CMD_IGNORE</span><span class="p">:</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">ignore</span><span class="p">()</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">update_direction</span><span class="p">()</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="k">return</span> <span class="n">key</span>
+
+		<span class="k">return</span> <span class="kc">None</span>
+
+	<span class="k">def</span> <span class="nf">update_direction</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">widget_direction</span><span class="o">.</span><span class="n">set_text</span><span class="p">(</span><span class="s1">&#39; </span><span class="si">%s</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">direction</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">App</span><span class="p">:</span>
+
+	<span class="n">ATTR_ERROR</span> <span class="o">=</span> <span class="n">NotificationLevel</span><span class="o">.</span><span class="n">ERROR</span><span class="o">.</span><span class="n">value</span>
+	<span class="n">ATTR_INFO</span> <span class="o">=</span> <span class="n">NotificationLevel</span><span class="o">.</span><span class="n">INFO</span><span class="o">.</span><span class="n">value</span>
+	<span class="n">ATTR_FOCUS</span> <span class="o">=</span> <span class="s1">&#39;focus&#39;</span>
+
+	<span class="n">PALETTE</span> <span class="o">=</span> <span class="p">(</span>
+		<span class="p">(</span><span class="n">ATTR_ERROR</span><span class="p">,</span> <span class="s1">&#39;dark red&#39;</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">),</span>
+		<span class="p">(</span><span class="n">ATTR_INFO</span><span class="p">,</span> <span class="s1">&#39;dark blue&#39;</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">),</span>
+		<span class="p">(</span><span class="n">ATTR_FOCUS</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="s1">&#39;dark blue&#39;</span><span class="p">),</span>
+	<span class="p">)</span>
+
+	<span class="n">notification_level</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;notification-level&#39;</span><span class="p">,</span> <span class="n">NotificationLevel</span><span class="o">.</span><span class="n">ERROR</span><span class="p">,</span>
+		<span class="n">help</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="n">NotificationLevel</span><span class="o">.</span><span class="n">ERROR</span><span class="p">:</span> <span class="s1">&#39;show errors in the config file&#39;</span><span class="p">,</span>
+			<span class="n">NotificationLevel</span><span class="o">.</span><span class="n">INFO</span><span class="p">:</span> <span class="s1">&#39;additionally show all settings which are changed in the config file&#39;</span><span class="p">,</span>
+		<span class="p">}</span>
+	<span class="p">)</span>
+
+	<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">,</span> <span class="n">notification_level</span><span class="o">=</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">notification_level</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">directory_pairs</span> <span class="o">=</span> <span class="p">[</span><span class="n">DirectoryPair</span><span class="p">(</span><span class="n">config_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">config_id</span> <span class="ow">in</span> <span class="n">MultiConfig</span><span class="o">.</span><span class="n">config_ids</span><span class="p">]</span>
+
+		<span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">ListBox</span><span class="p">([</span><span class="n">DirectoryPairWidget</span><span class="p">(</span><span class="n">dirs</span><span class="p">)</span> <span class="k">for</span> <span class="n">dirs</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">directory_pairs</span><span class="p">])</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Pile</span><span class="p">([])</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">frame</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">,</span> <span class="n">footer</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">on_config_message</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">urwid</span><span class="o">.</span><span class="n">MainLoop</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">frame</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">PALETTE</span><span class="p">,</span> <span class="n">input_filter</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">input_filter</span><span class="p">,</span> <span class="n">unhandled_input</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">unhandled_input</span><span class="p">,</span> <span class="n">handle_mouse</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+
+	<span class="k">def</span> <span class="nf">on_config_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">lvl</span><span class="p">:</span> <span class="n">NotificationLevel</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="s1">&#39;str|BaseException&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">markup</span> <span class="o">=</span> <span class="p">(</span><span class="n">lvl</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+		<span class="n">widget_options_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">markup</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s1">&#39;pack&#39;</span><span class="p">))</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">widget_options_tuple</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">footer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span>
+
+	<span class="k">def</span> <span class="nf">input_filter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">,</span> <span class="n">raws</span><span class="p">:</span> <span class="s1">&#39;list[int]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;list[str]&#39;</span><span class="p">:</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">status_bar</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+		<span class="k">return</span> <span class="n">keys</span>
+
+	<span class="k">def</span> <span class="nf">unhandled_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+		<span class="n">cmd</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+		<span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="n">CMD_QUIT</span><span class="p">:</span>
+			<span class="k">raise</span> <span class="n">urwid</span><span class="o">.</span><span class="n">ExitMainLoop</span><span class="p">()</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">on_config_message</span><span class="p">(</span><span class="n">NotificationLevel</span><span class="o">.</span><span class="n">ERROR</span><span class="p">,</span> <span class="s1">&#39;undefined key: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">key</span><span class="p">)</span>
+		<span class="k">return</span> <span class="kc">True</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">app</span> <span class="o">=</span> <span class="n">App</span><span class="p">()</span>
+	<span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Let’s assume there are many more settings how to synchronize a pair of directories than just the direction.
+You might want to use the same synchronization settings for several directory pairs.
+You can write these settings to a separate config file and include it for the corresponding directory pairs:</p>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-text">main config file: config</span><a class="headerlink" href="#id14" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">documents</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="o">~/</span><span class="n">documents</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">documents</span>
+<span class="n">include</span> <span class="n">mirror</span>
+
+<span class="p">[</span><span class="n">music</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="o">~/</span><span class="n">music</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">music</span>
+<span class="n">include</span> <span class="n">mirror</span>
+
+<span class="p">[</span><span class="n">pictures</span><span class="p">]</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">src</span> <span class="o">=</span> <span class="o">~/</span><span class="n">pictures</span>
+<span class="nb">set</span> <span class="n">path</span><span class="o">.</span><span class="n">dst</span> <span class="o">=</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">pictures</span>
+<span class="n">include</span> <span class="n">two</span><span class="o">-</span><span class="n">way</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id15">
+<div class="code-block-caption"><span class="caption-text">included config file: mirror</span><a class="headerlink" href="#id15" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">src</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">dst</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id16">
+<div class="code-block-caption"><span class="caption-text">included config file: two-way</span><a class="headerlink" href="#id16" title="Permalink to this code"></a></div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">two</span><span class="o">-</span><span class="n">way</span>
+</pre></div>
+</div>
+</div>
+<p>This produces the following display:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="o">~/</span><span class="n">documents</span>              <span class="o">&gt;</span>  <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">documents</span>  
+</span><span class="o">~/</span><span class="n">music</span>                  <span class="o">&gt;</span>  <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">music</span>      
+<span class="o">~/</span><span class="n">pictures</span>              <span class="o">&lt;-&gt;</span> <span class="o">/</span><span class="n">media</span><span class="o">/</span><span class="n">usb1</span><span class="o">/</span><span class="n">pictures</span>   
+                                                   
+                                                   
+</pre></div>
+</div>
+<p>The config id of the included file starts with the value of the config id that the including file has at the moment of calling <code class="docutils literal notranslate"><span class="pre">include</span></code>.
+Otherwise the pattern shown above of reusing a config file for several config ids would not be possible.</p>
+<p>If the included file changes the config id the config id is reset to the value it had at the beginning of the include when reaching the end of the included file.
+Otherwise changing an included file might unexpectedly change the meaning of the main config file or another config file which is included later on.</p>
+<p>It is possible to change this default behavior by using <code class="docutils literal notranslate"><span class="pre">include</span> <span class="pre">--reset-config-id-before</span> <span class="pre">filename</span></code> or <code class="docutils literal notranslate"><span class="pre">include</span> <span class="pre">--no-reset-config-id-after</span> <span class="pre">filename</span></code>.</p>
+</section>
+<section id="generating-help">
+<span id="exp-generating-help"></span><h2>Generating help<a class="headerlink" href="#generating-help" title="Permalink to this heading"></a></h2>
+<p>You can generate a help with <a class="reference internal" href="confattr.html#confattr.ConfigFile.write_help" title="confattr.ConfigFile.write_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.write_help()</span></code></a> or <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_help" title="confattr.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a>.</p>
+<p><a class="reference internal" href="confattr.html#confattr.ConfigFile.get_help" title="confattr.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a> is a wrapper around <a class="reference internal" href="confattr.html#confattr.ConfigFile.write_help" title="confattr.ConfigFile.write_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.write_help()</span></code></a>.
+If you want to print the help to stdout <code class="code highlight python docutils literal highlight-python"><span class="n">config_file</span><span class="o">.</span><span class="n">write_help</span><span class="p">(</span><span class="n">HelpWriter</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span></code> would be more efficient than <code class="code highlight python docutils literal highlight-python"><span class="nb">print</span><span class="p">(</span><span class="n">config_file</span><span class="o">.</span><span class="n">get_help</span><span class="p">())</span></code>.
+If you want to display the help in a graphical user interface you can implement a custom <a class="reference internal" href="confattr.html#confattr.FormattedWriter" title="confattr.FormattedWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FormattedWriter</span></code></a> which you can pass to <a class="reference internal" href="confattr.html#confattr.ConfigFile.write_help" title="confattr.ConfigFile.write_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.write_help()</span></code></a> instead of parsing the output of <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_help" title="confattr.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFile</span><span class="p">,</span> <span class="n">Config</span><span class="p">,</span> <span class="n">DictConfig</span><span class="p">,</span> <span class="n">MultiConfig</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span><span class="p">,</span> <span class="n">auto</span>
+
+<span class="k">class</span> <span class="nc">Color</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+	<span class="n">RED</span> <span class="o">=</span> <span class="n">auto</span><span class="p">()</span>
+	<span class="n">GREEN</span> <span class="o">=</span> <span class="n">auto</span><span class="p">()</span>
+	<span class="n">BLUE</span> <span class="o">=</span> <span class="n">auto</span><span class="p">()</span>
+
+<span class="n">Config</span><span class="p">(</span><span class="s1">&#39;answer&#39;</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="n">unit</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="p">{</span>
+	<span class="mi">42</span><span class="p">:</span> <span class="s1">&#39;The answer to everything&#39;</span><span class="p">,</span>
+	<span class="mi">23</span><span class="p">:</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">		The natural number following 22</span>
+<span class="s1">		and preceding 24</span>
+<span class="s1">	&#39;&#39;&#39;</span><span class="p">,</span>
+<span class="p">})</span>
+<span class="n">DictConfig</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="n">foreground</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">RED</span><span class="p">,</span> <span class="n">background</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">))</span>
+<span class="n">MultiConfig</span><span class="p">(</span><span class="s1">&#39;greeting&#39;</span><span class="p">,</span> <span class="s1">&#39;hello world&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">	A text that may be displayed</span>
+<span class="s1">	if your computer is in a good mood.</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">config_file</span><span class="o">.</span><span class="n">get_help</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Assuming the above file was contained in a package called <code class="docutils literal notranslate"><span class="pre">exampleapp</span></code> it would output the following:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>The first existing file of the following paths is loaded:
+- /home/username/.config/exampleapp/config
+- /etc/xdg/exampleapp/config
+
+This can be influenced with the following environment variables:
+- XDG_CONFIG_HOME
+- XDG_CONFIG_DIRS
+- EXAMPLEAPP_CONFIG_PATH
+- EXAMPLEAPP_CONFIG_DIRECTORY
+- EXAMPLEAPP_CONFIG_NAME
+
+You can also use environment variables to change the values of the
+settings listed under `set` command. The corresponding environment
+variable name is the name of the setting in all upper case letters
+with dots, hypens and spaces replaced by underscores and prefixed with
+&quot;EXAMPLEAPP_&quot;.
+
+Lines in the config file which start with a `&quot;` or `#` are ignored.
+
+The config file may contain the following commands:
+
+set
+===
+usage: set key1=val1 [key2=val2 ...]
+       set key [=] val
+
+Change the value of a setting.
+
+In the first form set takes an arbitrary number of arguments, each
+argument sets one setting. This has the advantage that several
+settings can be changed at once. That is useful if you want to bind a
+set command to a key and process that command with
+ConfigFile.parse_line() if the key is pressed.
+
+In the second form set takes two arguments, the key and the value.
+Optionally a single equals character may be added in between as third
+argument. This has the advantage that key and value are separated by
+one or more spaces which can improve the readability of a config file.
+
+data types:
+
+  int:
+    An integer number in python 3 syntax, as decimal (e.g. 42),
+    hexadecimal (e.g. 0x2a), octal (e.g. 0o52) or binary (e.g.
+    0b101010). Leading zeroes are not permitted to avoid confusion
+    with python 2&#39;s syntax for octal numbers. It is permissible to
+    group digits with underscores for better readability, e.g.
+    1_000_000.
+
+  str:
+    A text. If it contains spaces it must be wrapped in single or
+    double quotes.
+
+application wide settings:
+
+  answer:
+    an int
+
+    42: The answer to everything
+    23: The natural number following 22 and preceding 24
+
+  color.background:
+    one of red, green, blue
+
+  color.foreground:
+    one of red, green, blue
+
+settings which can have different values for different objects:
+  You can specify the object that a value shall refer to by
+  inserting the line `[config-id]` above. `config-id` must be
+  replaced by the corresponding identifier for the object.
+
+  greeting:
+    a str
+
+    A text that may be displayed if your computer is in a good
+    mood.
+
+include
+=======
+usage: include [--reset-config-id-before | --no-reset-config-id-after]
+               path
+
+Load another config file.
+
+This is useful if a config file is getting so big that you want to
+split it up or if you want to have different config files for
+different use cases which all include the same standard config file to
+avoid redundancy or if you want to bind several commands to one key
+which executes one command with ConfigFile.parse_line().
+
+By default the loaded config file starts with which ever config id is
+currently active. This is useful if you want to use the same values
+for several config ids: Write the set commands without a config id to
+a separate config file and include this file for every config id where
+these settings shall apply.
+
+After the include the config id is reset to the config id which was
+active at the beginning of the include because otherwise it might lead
+to confusion if the config id is changed in the included config file.
+
+positional arguments:
+  path                  The config file to load. Slashes are replaced
+                        with the directory separator appropriate for
+                        the current operating system.
+
+options:
+  --reset-config-id-before
+                        Ignore any config id which might be active
+                        when starting the include
+  --no-reset-config-id-after
+                        Treat the included lines as if they were
+                        written in the same config file instead of the
+                        include command
+</pre></div>
+</div>
+<p>The help is formatted on two levels:</p>
+<ol class="arabic">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code> does the merging of lines, wrapping of lines and indentation. It formats the usage and all the command line arguments and options.
+Unfortunately “All the methods provided by the class are considered an implementation detail” according to it’s <a class="reference external" href="https://github.com/python/cpython/blob/main/Lib/argparse.py#L157">doc string</a>.
+The only safe way to customize this level of formatting is by handing one of the predefined standard classes to the <a class="reference internal" href="confattr.html#confattr.ConfigFile.params.formatter_class" title="confattr.ConfigFile"><code class="xref py py-paramref docutils literal notranslate"><span class="pre">formatter_class</span></code></a> parameter of the <a class="reference internal" href="confattr.html#confattr.ConfigFile" title="confattr.ConfigFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFile</span></code></a> constructor:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.HelpFormatter</span></code></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.RawDescriptionHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.RawDescriptionHelpFormatter</span></code></a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.RawTextHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.RawTextHelpFormatter</span></code></a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentDefaultsHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.ArgumentDefaultsHelpFormatter</span></code></a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.MetavarTypeHelpFormatter" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.MetavarTypeHelpFormatter</span></code></a></p></li>
+</ul>
+<p>Additionally I provide another subclass <a class="reference internal" href="confattr.utils.html#confattr.utils.HelpFormatter" title="confattr.utils.HelpFormatter"><code class="xref py py-class docutils literal notranslate"><span class="pre">confattr.utils.HelpFormatter</span></code></a> which has a few class attributes for customization which I am trying to keep backward compatible.
+So you can subclass this class and change these attributes.
+But I cannot guarantee to always support the newest python version.</p>
+<p>If you want any more customization take a look at the <a class="reference external" href="https://github.com/python/cpython/blob/main/Lib/argparse.py#L157">source code</a> but be prepared that you may need to change your code with any future python version.</p>
+</li>
+<li><p><a class="reference internal" href="confattr.html#confattr.FormattedWriter" title="confattr.FormattedWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FormattedWriter</span></code></a> is intended to do stuff like underlining sections and inserting comment characters at the beginning of lines (when writing help to a config file).
+This package defines two subclasses:
+<a class="reference internal" href="confattr.html#confattr.ConfigFileWriter" title="confattr.ConfigFileWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileWriter</span></code></a> which is used by default in <a class="reference internal" href="confattr.html#confattr.ConfigFile.save" title="confattr.ConfigFile.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a> and
+<a class="reference internal" href="confattr.html#confattr.HelpWriter" title="confattr.HelpWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">HelpWriter</span></code></a> which is used in <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_help" title="confattr.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a>.</p>
+<p>If you want to customize this level of formatting implement your own <a class="reference internal" href="confattr.html#confattr.FormattedWriter" title="confattr.FormattedWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FormattedWriter</span></code></a>
+and override <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_help" title="confattr.ConfigFile.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_help()</span></code></a> or <a class="reference internal" href="confattr.html#confattr.ConfigFile.save_to_open_file" title="confattr.ConfigFile.save_to_open_file"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save_to_open_file()</span></code></a> to use your class.</p>
+</li>
+</ol>
+</section>
+<section id="custom-data-types">
+<h2>Custom data types<a class="headerlink" href="#custom-data-types" title="Permalink to this heading"></a></h2>
+<p>It is possible to use custom data types.
+You can use that for example to avoid repeating a part of help which applies to several settings:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">ConfigFile</span>
+
+<span class="k">class</span> <span class="nc">Regex</span><span class="p">(</span><span class="nb">str</span><span class="p">):</span>
+
+	<span class="n">type_name</span> <span class="o">=</span> <span class="s1">&#39;regular expression&#39;</span>
+	<span class="n">help</span> <span class="o">=</span> <span class="s1">&#39;https://docs.python.org/3/library/re.html#regular-expression-syntax&#39;</span>
+
+<span class="k">class</span> <span class="nc">Parser</span><span class="p">:</span>
+
+	<span class="n">re_mount_output</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;udisksctl.mount-output-pattern&#39;</span><span class="p">,</span> <span class="n">Regex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^.*?(?P&lt;mountpath&gt;/(\S+/)*[^/]+?)\.?$&#39;</span><span class="p">),</span>
+		<span class="n">help</span><span class="o">=</span><span class="s1">&#39;a regular expression to parse the output of `udisksctl mount`. Must contain a named group called &quot;mountpath&quot;.&#39;</span><span class="p">)</span>
+	<span class="n">re_unlock_output</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;udisksctl.unlock-output-pattern&#39;</span><span class="p">,</span> <span class="n">Regex</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^.*?(?P&lt;unlockpath&gt;/(\S+/)*[^/]+?)\.?$&#39;</span><span class="p">),</span>
+		<span class="n">help</span><span class="o">=</span><span class="s1">&#39;a regular expression to parse the output of `udisksctl unlock`. Must contain a named group called &quot;unlockpath&quot;.&#39;</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">compile_regex</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">		This must be called every time after the config file has been loaded.</span>
+<span class="sd">		&#39;&#39;&#39;</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">reo_mount_output</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">re_mount_output</span><span class="p">)</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">reo_unlock_output</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">re_unlock_output</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This exports the following config file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data types</span>
+<span class="c1"># ----------</span>
+<span class="c1"># regular expression:</span>
+<span class="c1">#   https://docs.python.org/3/library/re.html#regular-expression-syntax</span>
+
+<span class="c1"># udisksctl.mount-output-pattern</span>
+<span class="c1"># ------------------------------</span>
+<span class="c1"># a regular expression</span>
+<span class="c1"># a regular expression to parse the output of `udisksctl mount`. Must</span>
+<span class="c1"># contain a named group called &quot;mountpath&quot;.</span>
+<span class="nb">set</span> <span class="n">udisksctl</span><span class="o">.</span><span class="n">mount</span><span class="o">-</span><span class="n">output</span><span class="o">-</span><span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;^.*?(?P&lt;mountpath&gt;/(\S+/)*[^/]+?)\.?$&#39;</span>
+
+<span class="c1"># udisksctl.unlock-output-pattern</span>
+<span class="c1"># -------------------------------</span>
+<span class="c1"># a regular expression</span>
+<span class="c1"># a regular expression to parse the output of `udisksctl unlock`. Must</span>
+<span class="c1"># contain a named group called &quot;unlockpath&quot;.</span>
+<span class="nb">set</span> <span class="n">udisksctl</span><span class="o">.</span><span class="n">unlock</span><span class="o">-</span><span class="n">output</span><span class="o">-</span><span class="n">pattern</span> <span class="o">=</span> <span class="s1">&#39;^.*?(?P&lt;unlockpath&gt;/(\S+/)*[^/]+?)\.?$&#39;</span>
+</pre></div>
+</div>
+<p><code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code> must return a string representation suitable for the config file and the constructor must create an equal object if it is passed the return value of <code class="xref py py-meth docutils literal notranslate"><span class="pre">__str__()</span></code>. This is fulfilled by inheriting from <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>.</p>
+<p><code class="xref py py-attr docutils literal notranslate"><span class="pre">type_name</span></code> is a special str attribute which specifies how the type is called in the config file. If it is missing it is derived from the class name.</p>
+<p><code class="xref py py-attr docutils literal notranslate"><span class="pre">help</span></code> is a special str attribute which contains a description which is printed to the config file. If this is missing a help must be provided via <a class="reference internal" href="confattr.html#confattr.Set.set_help_for_type" title="confattr.Set.set_help_for_type"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Set.set_help_for_type()</span></code></a>.</p>
+<p><a class="reference internal" href="confattr.types.html#module-confattr.types" title="confattr.types"><code class="xref py py-mod docutils literal notranslate"><span class="pre">confattr.types</span></code></a> defines several such types, including the above definition of <code class="xref py py-class docutils literal notranslate"><span class="pre">Regex</span></code>.</p>
+<p>For more information on the supported data types see <a class="reference internal" href="confattr.html#confattr.Config" title="confattr.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a>.</p>
+</section>
+<section id="adding-new-commands-to-the-config-file-syntax">
+<span id="exp-extend"></span><h2>Adding new commands to the config file syntax<a class="headerlink" href="#adding-new-commands-to-the-config-file-syntax" title="Permalink to this heading"></a></h2>
+<p>You can extend this library by defining new commands which can be used in the config file.
+All you need to do is subclass <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand" title="confattr.ConfigFileCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a> and implement the <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.run" title="confattr.ConfigFileCommand.run"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileCommand.run()</span></code></a> method.
+Additionally I recommend to provide a doc string explaining how to use the command in the config file. The doc string is used by <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_help()</span></code> which may be used by an in-app help.
+Optionally you can set <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.name" title="confattr.ConfigFileCommand.name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFileCommand.name</span></code></a> and <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.aliases" title="confattr.ConfigFileCommand.aliases"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFileCommand.aliases</span></code></a> and implement the <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.save" title="confattr.ConfigFileCommand.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileCommand.save()</span></code></a> method.</p>
+<p>Alternatively <a class="reference internal" href="confattr.html#confattr.ConfigFileArgparseCommand" title="confattr.ConfigFileArgparseCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand</span></code></a> can be subclassed instead, it aims to make the parsing easier and avoid redundancy in the doc string by using the <a class="reference external" href="https://docs.python.org/3/library/argparse.html#module-argparse" title="(in Python v3.11)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">argparse</span></code></a> module.
+You must implement <code class="xref py py-meth docutils literal notranslate"><span class="pre">init_parser()</span></code> and <code class="xref py py-meth docutils literal notranslate"><span class="pre">run_parsed()</span></code>.
+You should give a doc string describing what the command does.
+In contrast to <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand" title="confattr.ConfigFileCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a> <a class="reference external" href="https://docs.python.org/3/library/argparse.html#module-argparse" title="(in Python v3.11)"><code class="xref py py-mod docutils literal notranslate"><span class="pre">argparse</span></code></a> adds usage and the allowed arguments to the output of <a class="reference internal" href="confattr.html#confattr.ConfigFileArgparseCommand.get_help" title="confattr.ConfigFileArgparseCommand.get_help"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileArgparseCommand.get_help()</span></code></a> automatically.</p>
+<p>For example you may want to add a new command to bind keys to whatever kind of command.
+The following example assumes <a class="reference external" href="http://urwid.org/">urwid</a> as user interface framework.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Sequence</span>
+<span class="kn">import</span> <span class="nn">urwid</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFileArgparseCommand</span><span class="p">,</span> <span class="n">ConfigFile</span><span class="p">,</span> <span class="n">Config</span><span class="p">,</span> <span class="n">NotificationLevel</span>
+
+
+<span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">ConfigFileArgparseCommand</span><span class="p">):</span>
+
+	<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">	bind a command to a key</span>
+<span class="sd">	&#39;&#39;&#39;</span>
+
+	<span class="k">def</span> <span class="nf">init_parser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;http://urwid.org/manual/userinput.html#keyboard-input&#39;</span><span class="p">)</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;any urwid command&#39;</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">run_parsed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">Namespace</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">cmd</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="c1"># config</span>
+	<span class="n">choices</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;choices&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;vanilla&#39;</span><span class="p">,</span> <span class="s1">&#39;strawberry&#39;</span><span class="p">])</span>
+	<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="s1">&#39;enter&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;confirm&#39;</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+
+	<span class="c1"># show errors in config</span>
+	<span class="n">palette</span> <span class="o">=</span> <span class="p">[(</span><span class="n">NotificationLevel</span><span class="o">.</span><span class="n">ERROR</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="s1">&#39;dark red&#39;</span><span class="p">,</span> <span class="s1">&#39;default&#39;</span><span class="p">)]</span>
+	<span class="n">status_bar</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Pile</span><span class="p">([])</span>
+	<span class="k">def</span> <span class="nf">on_config_message</span><span class="p">(</span><span class="n">lvl</span><span class="p">:</span> <span class="n">NotificationLevel</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="s1">&#39;str|BaseException&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">markup</span> <span class="o">=</span> <span class="p">(</span><span class="n">lvl</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+		<span class="n">widget_options_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">markup</span><span class="p">),</span> <span class="n">status_bar</span><span class="o">.</span><span class="n">options</span><span class="p">(</span><span class="s1">&#39;pack&#39;</span><span class="p">))</span>
+		<span class="n">status_bar</span><span class="o">.</span><span class="n">contents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">widget_options_tuple</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="n">on_config_message</span><span class="p">)</span>
+
+	<span class="c1"># a simple example app showing check boxes and printing the user&#39;s choice to stdout</span>
+	<span class="k">def</span> <span class="nf">key_handler</span><span class="p">(</span><span class="n">key</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">cmd</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+		<span class="k">if</span> <span class="n">cmd</span> <span class="o">==</span> <span class="s1">&#39;confirm&#39;</span><span class="p">:</span>
+			<span class="k">raise</span> <span class="n">urwid</span><span class="o">.</span><span class="n">ExitMainLoop</span><span class="p">()</span>
+	<span class="n">checkboxes</span> <span class="o">=</span> <span class="p">[</span><span class="n">urwid</span><span class="o">.</span><span class="n">CheckBox</span><span class="p">(</span><span class="n">choice</span><span class="p">)</span> <span class="k">for</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">choices</span><span class="o">.</span><span class="n">value</span><span class="p">]</span>
+	<span class="n">frame</span> <span class="o">=</span> <span class="n">urwid</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">Filler</span><span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">Pile</span><span class="p">(</span><span class="n">checkboxes</span><span class="p">)),</span> <span class="n">footer</span><span class="o">=</span><span class="n">status_bar</span><span class="p">)</span>
+	<span class="n">urwid</span><span class="o">.</span><span class="n">MainLoop</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="n">palette</span><span class="p">,</span> <span class="n">unhandled_input</span><span class="o">=</span><span class="n">key_handler</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+
+	<span class="k">for</span> <span class="n">ckb</span> <span class="ow">in</span> <span class="n">checkboxes</span><span class="p">:</span>
+		<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">ckb</span><span class="o">.</span><span class="n">label</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">ckb</span><span class="o">.</span><span class="n">state</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Given the following config file it is possible to move the cursor upward and downward with <code class="docutils literal notranslate"><span class="pre">j</span></code> and <code class="docutils literal notranslate"><span class="pre">k</span></code> like in vim:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">map</span> <span class="n">j</span> <span class="s1">&#39;cursor down&#39;</span>
+<span class="nb">map</span> <span class="n">k</span> <span class="s1">&#39;cursor up&#39;</span>
+<span class="nb">map</span> <span class="n">q</span> <span class="s1">&#39;confirm&#39;</span>
+</pre></div>
+</div>
+<p>The help for the newly defined command looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">Map</span><span class="p">(</span><span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">))</span><span class="o">.</span><span class="n">get_help</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="nb">map</span> <span class="n">key</span> <span class="n">cmd</span>
+
+<span class="n">bind</span> <span class="n">a</span> <span class="n">command</span> <span class="n">to</span> <span class="n">a</span> <span class="n">key</span>
+
+<span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span>
+  <span class="n">key</span>  <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">urwid</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">manual</span><span class="o">/</span><span class="n">userinput</span><span class="o">.</span><span class="n">html</span><span class="c1">#keyboard-input</span>
+  <span class="n">cmd</span>  <span class="nb">any</span> <span class="n">urwid</span> <span class="n">command</span>
+</pre></div>
+</div>
+<p>(All subclasses of <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand" title="confattr.ConfigFileCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFileCommand</span></code></a> are saved in <code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileCommand.__init_subclass__()</span></code> and can be retrieved with <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.get_command_types" title="confattr.ConfigFileCommand.get_command_types"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileCommand.get_command_types()</span></code></a>.
+The <a class="reference internal" href="confattr.html#confattr.ConfigFile" title="confattr.ConfigFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFile</span></code></a> constructor uses that if <code class="xref py py-paramref docutils literal notranslate"><span class="pre">commands</span></code> is not given.)</p>
+</section>
+<section id="writing-custom-commands-to-the-config-file">
+<h2>Writing custom commands to the config file<a class="headerlink" href="#writing-custom-commands-to-the-config-file" title="Permalink to this heading"></a></h2>
+<p>The previous example has shown how to define new commands so that they can be used in the config file.
+Let’s continue that example so that calls to the custom command <code class="docutils literal notranslate"><span class="pre">map</span></code> are written with <a class="reference internal" href="confattr.html#confattr.ConfigFile.save" title="confattr.ConfigFile.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a>.</p>
+<p>All you need to do for that is implementing the <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.save" title="confattr.ConfigFileCommand.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFileCommand.save()</span></code></a> method.</p>
+<p><a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.should_write_heading" title="confattr.ConfigFileCommand.should_write_heading"><code class="xref py py-attr docutils literal notranslate"><span class="pre">should_write_heading</span></code></a> is True if there are several commands which implement the <a class="reference internal" href="confattr.html#confattr.ConfigFileCommand.save" title="confattr.ConfigFileCommand.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">save()</span></code></a> method.</p>
+<p>Experimental support for type checking <code class="docutils literal notranslate"><span class="pre">**kw</span></code> has been added in <a class="reference external" href="https://mypy-lang.blogspot.com/2022/09/mypy-0981-released.html">mypy 0.981</a>.
+<a class="reference internal" href="confattr.html#confattr.SaveKwargs" title="confattr.SaveKwargs"><code class="xref py py-class docutils literal notranslate"><span class="pre">SaveKwargs</span></code></a> depends on <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.TypedDict" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">typing.TypedDict</span></code></a> and therefore is not available before Python 3.8.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">typing</span>
+<span class="k">if</span> <span class="n">typing</span><span class="o">.</span><span class="n">TYPE_CHECKING</span><span class="p">:</span>
+	<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Unpack</span>  <span class="c1"># This will hopefully be replaced by the ** syntax proposed in https://peps.python.org/pep-0692/</span>
+	<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">SaveKwargs</span>
+
+<span class="kn">import</span> <span class="nn">urwid</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFileArgparseCommand</span><span class="p">,</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="n">ConfigFile</span><span class="p">,</span> <span class="n">SectionLevel</span>
+
+
+<span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">ConfigFileArgparseCommand</span><span class="p">):</span>
+
+	<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">	bind a command to a key</span>
+<span class="sd">	&#39;&#39;&#39;</span>
+
+	<span class="k">def</span> <span class="nf">init_parser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;http://urwid.org/manual/userinput.html#keyboard-input&#39;</span><span class="p">)</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;any urwid command&#39;</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">run_parsed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">Namespace</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">cmd</span>
+
+	<span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">writer</span><span class="p">:</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="s1">&#39;Unpack[SaveKwargs]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">should_write_heading</span><span class="p">:</span>
+			<span class="n">writer</span><span class="o">.</span><span class="n">write_heading</span><span class="p">(</span><span class="n">SectionLevel</span><span class="o">.</span><span class="n">SECTION</span><span class="p">,</span> <span class="s1">&#39;Key bindings&#39;</span><span class="p">)</span>
+
+		<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="o">.</span><span class="n">_command</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">key_cmd</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">key_cmd</span><span class="p">[</span><span class="mi">1</span><span class="p">])):</span>
+			<span class="n">quoted_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+			<span class="n">quoted_cmd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+			<span class="n">writer</span><span class="o">.</span><span class="n">write_command</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;map </span><span class="si">{</span><span class="n">quoted_key</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">quoted_cmd</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>However, <code class="xref py py-data docutils literal notranslate"><span class="pre">urwid.command_map</span></code> contains more commands than the example app uses so writing all of them might be confusing.
+Therefore let’s add a keyword argument to write only the specified commands:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Sequence</span>
+<span class="kn">import</span> <span class="nn">typing</span>
+
+<span class="kn">import</span> <span class="nn">urwid</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFileArgparseCommand</span><span class="p">,</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="n">ConfigFile</span><span class="p">,</span> <span class="n">SectionLevel</span>
+
+<span class="k">if</span> <span class="n">typing</span><span class="o">.</span><span class="n">TYPE_CHECKING</span><span class="p">:</span>
+	<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Unpack</span>  <span class="c1"># This will hopefully be replaced by the ** syntax proposed in https://peps.python.org/pep-0692/</span>
+	<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">SaveKwargs</span>
+
+	<span class="k">class</span> <span class="nc">MapSaveKwargs</span><span class="p">(</span><span class="n">SaveKwargs</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+		<span class="n">urwid_commands</span><span class="p">:</span> <span class="s1">&#39;Sequence[str]&#39;</span>
+
+<span class="k">class</span> <span class="nc">Map</span><span class="p">(</span><span class="n">ConfigFileArgparseCommand</span><span class="p">):</span>
+
+	<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">	bind a command to a key</span>
+<span class="sd">	&#39;&#39;&#39;</span>
+
+	<span class="k">def</span> <span class="nf">init_parser</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;http://urwid.org/manual/userinput.html#keyboard-input&#39;</span><span class="p">)</span>
+		<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;cmd&#39;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s1">&#39;any urwid command&#39;</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">run_parsed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">:</span> <span class="n">argparse</span><span class="o">.</span><span class="n">Namespace</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">args</span><span class="o">.</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">cmd</span>
+
+	<span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">writer</span><span class="p">:</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="s1">&#39;Unpack[MapSaveKwargs]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">should_write_heading</span><span class="p">:</span>
+			<span class="n">writer</span><span class="o">.</span><span class="n">write_heading</span><span class="p">(</span><span class="n">SectionLevel</span><span class="o">.</span><span class="n">SECTION</span><span class="p">,</span> <span class="s1">&#39;Key bindings&#39;</span><span class="p">)</span>
+
+		<span class="n">commands</span> <span class="o">=</span> <span class="n">kw</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;urwid_commands&#39;</span><span class="p">,</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="o">.</span><span class="n">_command</span><span class="o">.</span><span class="n">values</span><span class="p">()))</span>
+		<span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">commands</span><span class="p">:</span>
+			<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="o">.</span><span class="n">_command</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+				<span class="k">if</span> <span class="n">urwid</span><span class="o">.</span><span class="n">command_map</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">==</span> <span class="n">cmd</span><span class="p">:</span>
+					<span class="n">quoted_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+					<span class="n">quoted_cmd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config_file</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+					<span class="n">writer</span><span class="o">.</span><span class="n">write_command</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;map </span><span class="si">{</span><span class="n">quoted_key</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">quoted_cmd</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="n">urwid_commands</span> <span class="o">=</span> <span class="p">[</span><span class="n">urwid</span><span class="o">.</span><span class="n">CURSOR_UP</span><span class="p">,</span> <span class="n">urwid</span><span class="o">.</span><span class="n">CURSOR_DOWN</span><span class="p">,</span> <span class="n">urwid</span><span class="o">.</span><span class="n">ACTIVATE</span><span class="p">,</span> <span class="s1">&#39;confirm&#39;</span><span class="p">]</span>
+	<span class="n">mapkw</span><span class="p">:</span> <span class="s1">&#39;MapSaveKwargs&#39;</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">urwid_commands</span><span class="o">=</span><span class="n">urwid_commands</span><span class="p">)</span>
+	<span class="n">kw</span><span class="p">:</span> <span class="s1">&#39;SaveKwargs&#39;</span> <span class="o">=</span> <span class="n">mapkw</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This produces the following config file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># ========</span>
+<span class="c1"># Settings</span>
+<span class="c1"># ========</span>
+
+<span class="c1"># ============</span>
+<span class="c1"># Key bindings</span>
+<span class="c1"># ============</span>
+<span class="nb">map</span> <span class="n">up</span> <span class="s1">&#39;cursor up&#39;</span>
+<span class="nb">map</span> <span class="n">down</span> <span class="s1">&#39;cursor down&#39;</span>
+<span class="nb">map</span> <span class="s1">&#39; &#39;</span> <span class="n">activate</span>
+<span class="nb">map</span> <span class="n">enter</span> <span class="n">activate</span>
+</pre></div>
+</div>
+<p>If you don’t care about Python &lt; 3.8 you can import <a class="reference internal" href="confattr.html#confattr.SaveKwargs" title="confattr.SaveKwargs"><code class="xref py py-class docutils literal notranslate"><span class="pre">SaveKwargs</span></code></a> normally and save a line when calling <a class="reference internal" href="confattr.html#confattr.ConfigFile.save" title="confattr.ConfigFile.save"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.save()</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">kw</span><span class="p">:</span> <span class="n">SaveKwargs</span> <span class="o">=</span> <span class="n">MapSaveKwargs</span><span class="p">(</span><span class="n">urwid_commands</span><span class="o">=...</span><span class="p">)</span>
+<span class="n">config_file</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="o">**</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="customizing-the-config-file-syntax">
+<h2>Customizing the config file syntax<a class="headerlink" href="#customizing-the-config-file-syntax" title="Permalink to this heading"></a></h2>
+<p>If you want to make minor changes to the syntax of the config file you can subclass the corresponding command, i.e. <a class="reference internal" href="confattr.html#confattr.Set" title="confattr.Set"><code class="xref py py-class docutils literal notranslate"><span class="pre">Set</span></code></a> or <a class="reference internal" href="confattr.html#confattr.Include" title="confattr.Include"><code class="xref py py-class docutils literal notranslate"><span class="pre">Include</span></code></a>.</p>
+<p>For example if you want to use a <code class="docutils literal notranslate"><span class="pre">key:</span> <span class="pre">value</span></code> syntax you could do the following.</p>
+<p>I am setting <code class="xref py py-attr docutils literal notranslate"><span class="pre">name</span></code> to an empty string (i.e. <code class="xref py py-const docutils literal notranslate"><span class="pre">confattr.DEFAULT_COMMAND</span></code>) to make this the default command which is used if an unknown command is encountered.
+This makes it possible to use this command without writing out it’s name in the config file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Set</span><span class="p">,</span> <span class="n">ParseException</span><span class="p">,</span> <span class="n">ConfigId</span><span class="p">,</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="n">SectionLevel</span>
+
+<span class="kn">import</span> <span class="nn">typing</span>
+<span class="k">if</span> <span class="n">typing</span><span class="o">.</span><span class="n">TYPE_CHECKING</span><span class="p">:</span>
+	<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ParseSplittedLineKwargs</span><span class="p">,</span> <span class="n">SaveKwargs</span>
+	<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Unpack</span>
+	<span class="kn">from</span> <span class="nn">collections.abc</span> <span class="kn">import</span> <span class="n">Sequence</span>
+
+
+<span class="k">class</span> <span class="nc">SimpleSet</span><span class="p">(</span><span class="n">Set</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+
+	<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+
+	<span class="n">SEP</span> <span class="o">=</span> <span class="s1">&#39;:&#39;</span>
+
+	<span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">:</span> <span class="s1">&#39;Sequence[str]&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="s1">&#39;Unpack[ParseSplittedLineKwargs]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="n">ln</span> <span class="o">=</span> <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;line&#39;</span><span class="p">]</span>
+		<span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">SEP</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ln</span><span class="p">:</span>
+			<span class="k">raise</span> <span class="n">ParseException</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;missing </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">SEP</span><span class="si">}</span><span class="s1"> between key and value&#39;</span><span class="p">)</span>
+		<span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="o">=</span> <span class="n">ln</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">SEP</span><span class="p">)</span>
+		<span class="n">value</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
+		<span class="bp">self</span><span class="o">.</span><span class="n">parse_key_and_set_value</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+
+	<span class="k">def</span> <span class="nf">save_config_instance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">writer</span><span class="p">:</span> <span class="n">FormattedWriter</span><span class="p">,</span> <span class="n">instance</span><span class="p">:</span> <span class="s1">&#39;Config[object]&#39;</span><span class="p">,</span> <span class="n">config_id</span><span class="p">:</span> <span class="s1">&#39;ConfigId|None&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="s1">&#39;Unpack[SaveKwargs]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+		<span class="c1"># this is called by Set.save</span>
+		<span class="k">if</span> <span class="n">kw</span><span class="p">[</span><span class="s1">&#39;comments&#39;</span><span class="p">]:</span>
+			<span class="bp">self</span><span class="o">.</span><span class="n">write_config_help</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">instance</span><span class="p">)</span>
+		<span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">format_value</span><span class="p">(</span><span class="n">instance</span><span class="p">,</span> <span class="n">config_id</span><span class="p">)</span>
+		<span class="c1">#value = self.config_file.quote(value)  # not needed because run uses line instead of cmd</span>
+		<span class="n">writer</span><span class="o">.</span><span class="n">write_command</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">instance</span><span class="o">.</span><span class="n">key</span><span class="si">}{</span><span class="bp">self</span><span class="o">.</span><span class="n">SEP</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+	<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">ConfigFile</span>
+	<span class="n">color</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;favorite color&#39;</span><span class="p">,</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span>
+	<span class="n">subject</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;favorite subject&#39;</span><span class="p">,</span> <span class="s1">&#39;math&#39;</span><span class="p">)</span>
+	<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+	<span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lvl</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">color</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">subject</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then a config file might look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">favorite</span> <span class="n">color</span><span class="p">:</span> <span class="n">sky</span> <span class="n">blue</span>
+<span class="n">favorite</span> <span class="n">subject</span><span class="p">:</span> <span class="n">computer</span> <span class="n">science</span>
+</pre></div>
+</div>
+<p>Please note that it’s still possible to use the <code class="docutils literal notranslate"><span class="pre">include</span></code> command.
+If you want to avoid that use</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFileCommand</span><span class="p">,</span> <span class="n">Include</span>
+<span class="n">ConfigFileCommand</span><span class="o">.</span><span class="n">delete_command_type</span><span class="p">(</span><span class="n">Include</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you want to make bigger changes like using JSON you need to subclass <a class="reference internal" href="confattr.html#confattr.ConfigFile" title="confattr.ConfigFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFile</span></code></a>.</p>
+</section>
+<section id="config-without-classes">
+<h2>Config without classes<a class="headerlink" href="#config-without-classes" title="Permalink to this heading"></a></h2>
+<p>If you want to use <a class="reference internal" href="confattr.html#confattr.Config" title="confattr.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a> objects without custom classes you can access the value via the <a class="reference internal" href="confattr.html#confattr.Config.value" title="confattr.Config.value"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Config.value</span></code></a> attribute:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">ConfigFile</span>
+
+<span class="n">backend</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;urwid.backend&#39;</span><span class="p">,</span> <span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">allowed_values</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="s1">&#39;raw&#39;</span><span class="p">,</span> <span class="s1">&#39;curses&#39;</span><span class="p">))</span>
+
+<span class="n">config_file</span> <span class="o">=</span> <span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span>
+<span class="n">config_file</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="n">config_file</span><span class="o">.</span><span class="n">set_ui_callback</span><span class="p">(</span><span class="k">lambda</span> <span class="n">lvl</span><span class="p">,</span> <span class="n">msg</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">backend</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Given the following config file (the location of the config file is determined by <a class="reference internal" href="confattr.html#confattr.ConfigFile.iter_config_paths" title="confattr.ConfigFile.iter_config_paths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.iter_config_paths()</span></code></a>):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">urwid</span><span class="o">.</span><span class="n">backend</span> <span class="o">=</span> <span class="n">curses</span>
+</pre></div>
+</div>
+<p>The script will give the following output:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>curses
+</pre></div>
+</div>
+</section>
+<section id="testing-your-application">
+<span id="exp-pytest"></span><h2>Testing your application<a class="headerlink" href="#testing-your-application" title="Permalink to this heading"></a></h2>
+<p>I recommend doing static type checking with <a class="reference external" href="https://mypy-lang.org/">mypy</a>
+in <a class="reference external" href="https://mypy.readthedocs.io/en/latest/getting_started.html#strict-mode-and-configuration">strict mode</a>
+and dynamic testing with <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a>.
+<a class="reference external" href="https://tox.wiki/en/latest/">tox</a> can run both in a single command and automatically handles virtual environments for you.
+While you can configure tox to run your tests on several specific python versions you can also simply use <code class="docutils literal notranslate"><span class="pre">py3</span></code> which will use whatever python 3 version you have installed.
+For packaging and publishing your application I recommend <a class="reference external" href="https://flit.pypa.io/en/stable/">flit</a>
+over the older <a class="reference external" href="https://setuptools.pypa.io/en/latest/setuptools.html">setuptools</a>
+because flit is much more intuitive and less error prone.</p>
+<p>For dynamic testing you need to consider two things:</p>
+<ol class="arabic">
+<li><p>Your application must not load a config file from the usual paths so that the tests always have the same outcome no matter which user is running them and on which computer.
+You can achieve that by setting one of the attributes <a class="reference internal" href="confattr.html#confattr.ConfigFile.config_directory" title="confattr.ConfigFile.config_directory"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFile.config_directory</span></code></a> or <a class="reference internal" href="confattr.html#confattr.ConfigFile.config_path" title="confattr.ConfigFile.config_path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFile.config_path</span></code></a> or one of the corresponding environment variables <code class="docutils literal notranslate"><span class="pre">APPNAME_CONFIG_DIRECTORY</span></code> or <code class="docutils literal notranslate"><span class="pre">APPNAME_CONFIG_PATH</span></code> in the setup of your tests.</p>
+<p>In <a class="reference external" href="https://docs.pytest.org/en/stable/">pytest</a> you can do this with an <a class="reference external" href="https://docs.pytest.org/en/6.2.x/fixture.html#autouse-fixtures-fixtures-you-don-t-have-to-request">auto use</a> <a class="reference external" href="https://docs.pytest.org/en/6.2.x/fixture.html#what-fixtures-are">fixture</a>.
+<a class="reference external" href="https://docs.pytest.org/en/6.2.x/reference.html#tmp-path">tmp_path</a> creates an empty directory for you and <a class="reference external" href="https://docs.pytest.org/en/6.2.x/reference.html#std-fixture-monkeypatch">monkeypatch</a> cleans up for you after the test is done.
+If all of your tests are defined in a single file you can define this fixture in that file.
+Otherwise the definition goes into <a class="reference external" href="https://docs.pytest.org/en/stable/reference/fixtures.html#conftest-py-sharing-fixtures-across-multiple-files">conftest.py</a>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">import</span> <span class="nn">pathlib</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigFile</span>
+
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">reset_config</span><span class="p">(</span><span class="n">tmp_path</span><span class="p">:</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">,</span> <span class="n">monkeypatch</span><span class="p">:</span> <span class="n">pytest</span><span class="o">.</span><span class="n">MonkeyPatch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="n">monkeypatch</span><span class="o">.</span><span class="n">setattr</span><span class="p">(</span><span class="n">ConfigFile</span><span class="p">,</span> <span class="s1">&#39;config_directory&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">tmp_path</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p>Your tests need to change settings in order to test all possibilities but all settings which have been changed in a test must be reset after each test so that the tests always have the same outcome no matter whether they are executed all together or alone.</p>
+<p>Of course you could just save a config file in the setup and load it in the teardown.
+But keep in mind that you may have many settings and many tests and that they may become more in the future.
+It is more efficient to let <a class="reference external" href="https://docs.pytest.org/en/6.2.x/reference.html#std-fixture-monkeypatch">monkeypatch</a> clean up only those settings that you have changed.</p>
+<p>Let’s assume we want to test our car from the <a class="reference internal" href="#exp-config"><span class="std std-ref">first example</span></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sut</span> <span class="kn">import</span> <span class="n">Car</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="k">def</span> <span class="nf">test_car_accelerate</span><span class="p">(</span><span class="n">monkeypatch</span><span class="p">:</span> <span class="n">pytest</span><span class="o">.</span><span class="n">MonkeyPatch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="n">monkeypatch</span><span class="o">.</span><span class="n">setattr</span><span class="p">(</span><span class="n">Car</span><span class="o">.</span><span class="n">speed_limit</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+	<span class="n">c1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">()</span>
+	<span class="n">c1</span><span class="o">.</span><span class="n">accelerate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+	<span class="n">c1</span><span class="o">.</span><span class="n">accelerate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+	<span class="k">with</span> <span class="n">pytest</span><span class="o">.</span><span class="n">raises</span><span class="p">(</span><span class="ne">ValueError</span><span class="p">):</span>
+		<span class="n">c1</span><span class="o">.</span><span class="n">accelerate</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+	<span class="k">assert</span> <span class="n">c1</span><span class="o">.</span><span class="n">speed</span> <span class="o">==</span> <span class="mi">10</span>
+</pre></div>
+</div>
+<p>If we want to change the value of a <a class="reference internal" href="confattr.html#confattr.MultiConfig" title="confattr.MultiConfig"><code class="xref py py-class docutils literal notranslate"><span class="pre">MultiConfig</span></code></a> setting like in <a class="reference internal" href="#exp-multi"><span class="std std-ref">this example</span></a> for a specific object
+we would use <a class="reference external" href="https://docs.pytest.org/en/latest/reference/reference.html#pytest.MonkeyPatch.setitem" title="(in pytest v0.1.dev470+g7a829cb)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">monkeypatch.setitem()</span></code></a> to change <a class="reference internal" href="confattr.html#confattr.MultiConfig.values" title="confattr.MultiConfig.values"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MultiConfig.values</span></code></a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sut</span> <span class="kn">import</span> <span class="n">Car</span><span class="p">,</span> <span class="n">Color</span>
+<span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">ConfigId</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="k">def</span> <span class="nf">test_car_color</span><span class="p">(</span><span class="n">monkeypatch</span><span class="p">:</span> <span class="n">pytest</span><span class="o">.</span><span class="n">MonkeyPatch</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+	<span class="n">monkeypatch</span><span class="o">.</span><span class="n">setattr</span><span class="p">(</span><span class="n">Car</span><span class="o">.</span><span class="n">color</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">)</span>
+	<span class="n">monkeypatch</span><span class="o">.</span><span class="n">setitem</span><span class="p">(</span><span class="n">Car</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;alices-car&#39;</span><span class="p">),</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span><span class="p">)</span>
+	<span class="n">monkeypatch</span><span class="o">.</span><span class="n">setitem</span><span class="p">(</span><span class="n">Car</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;bobs-car&#39;</span><span class="p">),</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span><span class="p">)</span>
+
+	<span class="n">alices_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;alices-car&#39;</span><span class="p">))</span>
+	<span class="n">bobs_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;bobs-car&#39;</span><span class="p">))</span>
+	<span class="n">another_car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">ConfigId</span><span class="p">(</span><span class="s1">&#39;another-car&#39;</span><span class="p">))</span>
+
+	<span class="k">assert</span> <span class="n">alices_car</span><span class="o">.</span><span class="n">color</span> <span class="ow">is</span> <span class="n">Color</span><span class="o">.</span><span class="n">BLUE</span>
+	<span class="k">assert</span> <span class="n">bobs_car</span><span class="o">.</span><span class="n">color</span> <span class="ow">is</span> <span class="n">Color</span><span class="o">.</span><span class="n">GREEN</span>
+	<span class="k">assert</span> <span class="n">another_car</span><span class="o">.</span><span class="n">color</span> <span class="ow">is</span> <span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="environment-variables">
+<span id="exp-env"></span><h2>Environment variables<a class="headerlink" href="#environment-variables" title="Permalink to this heading"></a></h2>
+<p>Settings can be changed via environment variables, too.
+For example if you have an application called <code class="docutils literal notranslate"><span class="pre">example-app</span></code> with the following code</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">confattr</span> <span class="kn">import</span> <span class="n">Config</span><span class="p">,</span> <span class="n">ConfigFile</span>
+<span class="n">greeting</span> <span class="o">=</span> <span class="n">Config</span><span class="p">(</span><span class="s1">&#39;ui.greeting&#39;</span><span class="p">,</span> <span class="s1">&#39;hello world&#39;</span><span class="p">)</span>
+<span class="n">ConfigFile</span><span class="p">(</span><span class="n">appname</span><span class="o">=</span><span class="n">__package__</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">greeting</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and you call it like this</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">EXAMPLE_APP_UI_GREETING</span><span class="o">=</span><span class="s1">&#39;hello environment&#39;</span> example-app
+</pre></div>
+</div>
+<p>it will print</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>hello environment
+</pre></div>
+</div>
+<p>For the exact rules how the names of the environment variables are created are described in <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_env_name" title="confattr.ConfigFile.get_env_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_env_name()</span></code></a>.</p>
+<p>Environment variables which start with the name of the application but do not match a setting (and are not one those listed below) or have an invalid value are reported as <a class="reference internal" href="confattr.html#confattr.NotificationLevel.ERROR" title="confattr.NotificationLevel.ERROR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ERROR</span></code></a> to the callback registered with <a class="reference internal" href="confattr.html#confattr.ConfigFile.set_ui_callback" title="confattr.ConfigFile.set_ui_callback"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.set_ui_callback()</span></code></a>.</p>
+<p>Furthermore this library is influenced by the following environment variables:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">XDG_CONFIG_HOME</span></code> defines the base directory relative to which user-specific configuration files should be stored on Linux. <a class="footnote-reference brackets" href="#id11" id="id1">1</a> <a class="footnote-reference brackets" href="#id12" id="id2">2</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">XDG_CONFIG_DIRS</span></code> defines the preference-ordered set of base directories to search for configuration files in addition to the <code class="docutils literal notranslate"><span class="pre">XDG_CONFIG_HOME</span></code> base directory on Linux. The directories in <code class="docutils literal notranslate"><span class="pre">XDG_CONFIG_DIRS</span></code> should be separated with a colon. <a class="footnote-reference brackets" href="#id11" id="id3">1</a> <a class="footnote-reference brackets" href="#id12" id="id4">2</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">APPNAME_CONFIG_PATH</span></code> defines the value of <a class="reference internal" href="confattr.html#confattr.ConfigFile.config_path" title="confattr.ConfigFile.config_path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFile.config_path</span></code></a>. <a class="footnote-reference brackets" href="#id12" id="id5">2</a> <a class="footnote-reference brackets" href="#id13" id="id6">3</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">APPNAME_CONFIG_DIRECTORY</span></code> defines the value of <a class="reference internal" href="confattr.html#confattr.ConfigFile.config_directory" title="confattr.ConfigFile.config_directory"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFile.config_directory</span></code></a>. <a class="footnote-reference brackets" href="#id12" id="id7">2</a> <a class="footnote-reference brackets" href="#id13" id="id8">3</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">APPNAME_CONFIG_NAME</span></code>  defines the value of <a class="reference internal" href="confattr.html#confattr.ConfigFile.config_name" title="confattr.ConfigFile.config_name"><code class="xref py py-attr docutils literal notranslate"><span class="pre">ConfigFile.config_name</span></code></a>. <a class="footnote-reference brackets" href="#id12" id="id9">2</a> <a class="footnote-reference brackets" href="#id13" id="id10">3</a></p></li>
+</ul>
+<dl class="footnote brackets">
+<dt class="label" id="id11"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id3">2</a>)</span></dt>
+<dd><p>is not queried directly but outsourced to <a class="reference external" href="https://pypi.org/project/platformdirs/">platformdirs</a>, <a class="reference external" href="https://pypi.org/project/xdgappdirs/">xdgappdirs</a> or <a class="reference external" href="https://pypi.org/project/appdirs/">appdirs</a>, see <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_app_dirs" title="confattr.ConfigFile.get_app_dirs"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_app_dirs()</span></code></a>.
+See also <a class="reference external" href="https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables">https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html#variables</a>.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets">2</span><span class="fn-backref">(<a href="#id2">1</a>,<a href="#id4">2</a>,<a href="#id5">3</a>,<a href="#id7">4</a>,<a href="#id9">5</a>)</span></dt>
+<dd><p>influences <a class="reference internal" href="confattr.html#confattr.ConfigFile.iter_config_paths" title="confattr.ConfigFile.iter_config_paths"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.iter_config_paths()</span></code></a></p>
+</dd>
+<dt class="label" id="id13"><span class="brackets">3</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id8">2</a>,<a href="#id10">3</a>)</span></dt>
+<dd><p>where <code class="docutils literal notranslate"><span class="pre">APPNAME</span></code> is the value of <a class="reference internal" href="confattr.html#confattr.ConfigFile.params.appname" title="confattr.ConfigFile"><code class="xref py py-paramref docutils literal notranslate"><span class="pre">appname</span></code></a> which is passed to the constructor of <a class="reference internal" href="confattr.html#confattr.ConfigFile" title="confattr.ConfigFile"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigFile</span></code></a> but in all upper case letters and hyphens, dots and spaces replaced by underscores, see <a class="reference internal" href="confattr.html#confattr.ConfigFile.get_env_name" title="confattr.ConfigFile.get_env_name"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ConfigFile.get_env_name()</span></code></a>.</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to confattr’s documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="confattr.html" class="btn btn-neutral float-right" title="confattr package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, erzo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

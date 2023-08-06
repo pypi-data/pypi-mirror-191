@@ -1,0 +1,4 @@
+flit
+sphinx
+sphinx-paramlinks
+sphinx_rtd_theme >= 0.5.2
