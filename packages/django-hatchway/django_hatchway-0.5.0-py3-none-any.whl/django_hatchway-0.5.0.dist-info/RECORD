@@ -1,0 +1,13 @@
+hatchway/__init__.py,sha256=vUqBedl3be3yWIzeugEz9A9WF5kTeySWHvIgiLQtJHU,252
+hatchway/apps.py,sha256=pPifFBS0mHEPDYJUlF3wY8jmUUN_Fanju8rFLzZaSjY,86
+hatchway/constants.py,sha256=TgoouK1p3Nu0kWGWKbw09NH7s-L19SB9GmlE-Rqz_Ig,237
+hatchway/http.py,sha256=FT1zYJCdi4nHE0KmedpDxc9Zq_n7QtGSQFYbSVi59Ks,1292
+hatchway/schema.py,sha256=TebKiROsRRyinxo-en63_ANiQozevM_EDc6bm-hOFP8,1440
+hatchway/types.py,sha256=SWMj9CsQfVJA7dXAqw9Z_mwJ8fsrABIvsv4F7Je5LVY,4168
+hatchway/urls.py,sha256=WXfxHWVgjPhL9F1fW7RxsRf6Mi3VR2FzbxKluV_CChE,922
+hatchway/view.py,sha256=Ij6EcEJsOeUzjTCP4GVVDBEBidFSQKLypY0UfN0KZVY,12695
+django_hatchway-0.5.0.dist-info/LICENSE,sha256=fwknIqDF3kF9vpvBKmZxFuf_BCtVUGoyxMJTpj3YKAw,1458
+django_hatchway-0.5.0.dist-info/METADATA,sha256=2NP3x7tUmEKvkq_S1E-6rQMzRvzBcFl8D25pb9gjGto,8042
+django_hatchway-0.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_hatchway-0.5.0.dist-info/top_level.txt,sha256=bs7AMjcGjLXf1NptmeMvU3uERDvCjnyqw7CqxGcTBxc,9
+django_hatchway-0.5.0.dist-info/RECORD,,
