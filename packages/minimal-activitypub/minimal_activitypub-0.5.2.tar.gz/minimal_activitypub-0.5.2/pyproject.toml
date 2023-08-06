@@ -1,0 +1,144 @@
+[tool.mypy]
+mypy_path = "src"
+check_untyped_defs = true
+disallow_any_generics = true
+ignore_missing_imports = true
+no_implicit_optional = true
+show_error_codes = true
+strict_equality = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+no_implicit_reexport = true
+
+[tool.scriv]
+categories = "Breaking, Added, Changed, Deprecated, Removed, Fixed, Security"
+format = "rst"
+version = "literal: pyproject.toml: tool.poetry.version"
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = false
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-module = false
+ignore-nested-functions = false
+ignore-nested-classes = true
+ignore-setters = false
+fail-under = 95
+exclude = ["setup.py", "docs", "build"]
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
+# possible values: 0 (minimal output), 1 (-v), 2 (-vv)
+verbose = 2
+quiet = false
+whitelist-regex = []
+color = true
+omit-covered-files = false
+generate-badge = "."
+badge-format = "svg"
+
+[tool.ruff]
+select = ["ARG", "B", "C4", "C90", "D", "E", "ERA", "F", "I", "PL", "RUF", "S", "UP", "W"]
+ignore = ["D203", "D205", "D213"]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "I", "UP"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+per-file-ignores = {}
+
+# Same as Black.
+line-length = 120
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Assume Python 3.10.
+target-version = "py37"
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.ruff.pycodestyle]
+
+[tool.poetry]
+name = "minimal-activitypub"
+version = "0.5.2"
+description = "Minimal inplementation of ActivityPub Interface"
+authors = ["marvin8 <marvin8@tuta.io>"]
+license = "AGPL-3.0-or-later"
+readme = "README.rst"
+repository = "https://codeberg.org/MarvinsMastodonTools/mastodonamnesia"
+
+[tool.poetry.urls]
+"Changelog" = "https://codeberg.org/MarvinsMastodonTools/mastodonamnesia/src/branch/main/CHANGELOG.rst"
+
+[[tool.poetry.source]]
+name = "masto-tools-dev"
+url = "https://codeberg.org/api/packages/MarvinsMastodonTools/pypi"
+default = false
+secondary = false
+
+
+[[tool.poetry.source]]
+name = "masto-tools-dev-pub"
+url = "https://codeberg.org/api/packages/MarvinsMastodonTools/pypi"
+default = false
+secondary = false
+
+[tool.poetry_bumpversion.file."src/minimal_activitypub/__init__.py"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+arrow = "^1.2.1"
+aiohttp = "^3.8.1"
+aiodns = "^3.0.0"
+Brotli = "^1.0.9"
+charset-normalizer = "^2.1.1"
+
+[tool.poetry.group.dev.dependencies]
+typing-extensions = "^4.2.0"
+black = "^23.1.0"
+mypy = "^1.0.0"
+bandit = "^1.7.4"
+safety = "^2.1.1"
+pip-audit = "^2.4.3"
+interrogate = "^1.5.0"
+ruff = "^0.0.246"
+
+[tool.poetry.group.doc.dependencies]
+Sphinx = "^6.1.3"
+python-docs-theme = "^2022.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
