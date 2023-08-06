@@ -1,0 +1,3 @@
+[console_scripts]
+rapid_orientation = rapid_orientation.rapid_orientation:main
+
