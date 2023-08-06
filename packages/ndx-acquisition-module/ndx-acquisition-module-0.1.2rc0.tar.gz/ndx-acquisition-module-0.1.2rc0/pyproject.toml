@@ -1,0 +1,92 @@
+[project]
+name = 'ndx-acquisition-module'
+dynamic = ['version']
+authors = [
+    { name = "Tuan Pham", email = "tuanhpham@brown.edu" },
+]
+maintainers = [
+    { name = "Tuan Pham", email = "tuanhpham@brown.edu" },
+]
+description = 'NWB extension to add acquisition module'
+readme = 'README.md'
+license = { text = 'BSD-3' }
+keywords = [
+    'NeurodataWithoutBorders',
+    'NWB',
+    'nwb-extension',
+    'ndx-extension'
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+requires-python = ">=3.8"
+dependencies = [
+    'pynwb>=1.5.0,<3',
+    'hdmf>=3.4.7,<4',
+]
+
+[project.urls]
+Repository = "https://gitlab.com/fleischmann-lab/ndx/ndx-acquisition-module"
+Homepage = "https://gitlab.com/fleischmann-lab/ndx/ndx-acquisition-module"
+"Bug Tracker" = "https://gitlab.com/fleischmann-lab/ndx/ndx-acquisition-module/issues"
+Documentation = "https://fleischmann-lab.gitlab.io/ndx/ndx-acquisition-module"
+
+[project.optional-dependencies]
+dev = [
+    "black>=22.0",
+    "flake8>=6.0",
+    "pytest>=7.0",
+    "isort>=5.11",
+    "pytest-subtests==0.6.0",
+    "hdmf-docutils==0.4.4",
+    "codespell>=2.2",
+    "hypothesis",
+    "ipython",
+    "furo",
+    # "dunamai",
+    # "packaging",
+    # "grayskull",
+    # "myst-parser",
+    # "twine"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "build_backend"
+backend-path = ["build_utils"]
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = {file = "src/pynwb/ndx_acquisition_module/VERSION"}
+
+[tool.setuptools.package-dir]
+'' = 'src/pynwb'
+
+[tool.setuptools.packages.find]
+where = ['src/pynwb']
+exclude = ["tests", "tests.*"]
+
+[tool.setuptools.package-data]
+ndx_acquisition_module = [
+    'spec/ndx-acquisition-module.namespace.yaml',
+    'spec/ndx-acquisition-module.extensions.yaml',
+]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_gitignore = true
+
+[tool.codespell]
+skip = './.direnv/*,./docs/*,./.git/*,./**.mypy_cache/*,./.venv*/*,./.pytest_cache/*,./.eggs/*,./**__pycache__/*,./node_modules/*'
+count = ''
+summary = ''

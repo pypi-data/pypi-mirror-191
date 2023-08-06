@@ -1,0 +1,12 @@
+include LICENSE.txt
+include README.md
+include pyproject.toml
+include build_utils/build_backend.py
+
+include spec/*.yaml
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.css *.rst conf.py conf_doc_autogen.py Makefile make.bat README.md
