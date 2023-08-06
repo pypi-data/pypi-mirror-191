@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: m23
+Version: 0.0.165
+Requires-Python: >3.10.1
+Description-Content-Type: text/plain
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: astropy (==5.2.1)
+Requires-Dist: astroalign (==2.4.1)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: opencv-python (==4.7.0.68)
+
+See readme markdown from github
