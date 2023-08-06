@@ -1,0 +1,7 @@
+pytest>=6.2.0
+requests>=2.25.1
+
+[dev]
+bump2version>=1.0.1
+pytest-cov>=2.12.1
+responses>=0.13.3

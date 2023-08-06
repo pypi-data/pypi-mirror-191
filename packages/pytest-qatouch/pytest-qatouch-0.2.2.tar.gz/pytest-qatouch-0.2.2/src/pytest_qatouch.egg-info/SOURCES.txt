@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+doc/images/Thumbnail.png
+doc/images/pytest-qatouch.png
+src/pytest_qatouch/__init__.py
+src/pytest_qatouch/plugin.py
+src/pytest_qatouch/qatouch.py
+src/pytest_qatouch/utils.py
+src/pytest_qatouch.egg-info/PKG-INFO
+src/pytest_qatouch.egg-info/SOURCES.txt
+src/pytest_qatouch.egg-info/dependency_links.txt
+src/pytest_qatouch.egg-info/entry_points.txt
+src/pytest_qatouch.egg-info/requires.txt
+src/pytest_qatouch.egg-info/top_level.txt
+tests/test_basic_qatouch.py
