@@ -1,0 +1,4 @@
+exclude *.py[cod] __pycache__ *.so
+include supertelbot/bots/*.json
+include supertelbot/*.ens
+graft supertelbot
