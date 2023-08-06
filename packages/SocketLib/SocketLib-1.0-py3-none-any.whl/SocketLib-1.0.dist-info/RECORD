@@ -1,0 +1,9 @@
+SocketLib/TcpClient.py,sha256=4H4N19VDa-M-HgJq-lcLg8G3bVclz4q6Cb8oFknYFzU,2475
+SocketLib/TcpServer.py,sha256=2x4vLM6j-HJWJFgWlQ9ofTg9R2OQ3zA8LJaSSTAoPtw,2664
+SocketLib/UdpClient.py,sha256=beGk2d-wC7-LntR0BtYE2DtbyIh75rBS_9Oi_uqI3b4,1747
+SocketLib/UdpServer.py,sha256=FgRKSf3L52Zr4WMtbaSFC96ydhFx9S-b0FNxaljS7ZU,1636
+SocketLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SocketLib-1.0.dist-info/METADATA,sha256=2Vh8xVMnyGMeGJ_4s9xoXGHxv6sbgAqAZ4ZumteN8ZY,350
+SocketLib-1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SocketLib-1.0.dist-info/top_level.txt,sha256=7UaU8-6JSW0Yip52C8Z6bgB06zTVFwSR8GuAzMxasV0,10
+SocketLib-1.0.dist-info/RECORD,,
