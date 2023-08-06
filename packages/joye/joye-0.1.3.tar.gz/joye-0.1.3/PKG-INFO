@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: joye
+Version: 0.1.3
+Summary: Python SDK for Joye
+Author-email: jyfund <jingchaohu@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: oss2 == 2.16.0
+
+# Joye
+
+Joye开发SDK
+
+## 使用
+
+1. 安装joye
+    ```
+    pip install joye
+    ```
+2. 使用OSS
+
+    ```python
+    from joye import oss
+    with oss.open_data("test.data", "rb") as f:
+        print(f.read())
+    ```
+    以上代码中, `joye.oss`会自动以`OSS`为数据源获取数据, 不指定`DATA_ACCESS_KEY_ID`和`DATA_ACCESS_KEY_SECRET`时, 默认调用`mock`目录下的数据。
+
+    在`FC`中, 会在函数的执行环境变量中指定`key`和`secret`和`endpoint`从而访问到正式环境的数据
+
+
+## 开发
+
+1. 确保已安装`pipenv`和`Python>=3.10`
+2. 第一次开发需要安装环境
+    ```bash
+    pipenv install
+    ```
+3. 进入开发环境
+    ```bash
+    pipenv shell
+    ```
+
+## 测试
+
+- Windows (PowerShell) 下测试
+    ```powershell
+    $Env:PYTHONPATH="."
+    py.test
+    ```
+- Windows（CMD) 下测试
+    ```cmd
+    set PYTHONPATH=.
+    py.test
+    ```
+- Linux下测试
+    ```bash
+    export PYTHONPATH=.
+    py.test
+    ```
+
+## 发布
+
+1. 更新`joye.__init__.py`中的版本号并提交代码
+2. 构建新包
+    ```bash
+    flit build
+    ```
+3. 上传新包
+    ```bash
+    flit publish --pypirc .pypirc
+    ```

@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+oss2 = "*"
+
+[dev-packages]
+black = "*"
+pytest = "*"
+pipx = "*"
+flit = "*"
+
+[requires]
+python_version = "3.11"
