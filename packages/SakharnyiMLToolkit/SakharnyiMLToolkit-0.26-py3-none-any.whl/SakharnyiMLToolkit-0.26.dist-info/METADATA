@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SakharnyiMLToolkit
+Version: 0.26
+Summary: Combined package for feature extraction, hyperparameter tuning, and validation schema
+Home-page: UNKNOWN
+Author: Siarhei Sakharnyi
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: hyperopt
+Requires-Dist: pandas
+Requires-Dist: fuzzywuzzy
+
+A package that provides combined solutions for feature extraction, hyperparameter tuning, and validation schema, with a focus on making the process more efficient and easier.
+
+
