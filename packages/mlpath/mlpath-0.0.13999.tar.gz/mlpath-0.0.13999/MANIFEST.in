@@ -1,0 +1,2 @@
+include mlpath/mldir_cli/*.ipynb
+include mlpath/mldir_cli/*.zip
