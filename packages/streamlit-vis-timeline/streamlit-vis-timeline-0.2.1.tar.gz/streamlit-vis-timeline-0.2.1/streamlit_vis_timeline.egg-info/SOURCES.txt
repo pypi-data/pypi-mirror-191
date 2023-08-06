@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+changelog.md
+setup.py
+streamlit_timeline/__init__.py
+streamlit_timeline/styles/background.css
+streamlit_vis_timeline.egg-info/PKG-INFO
+streamlit_vis_timeline.egg-info/SOURCES.txt
+streamlit_vis_timeline.egg-info/dependency_links.txt
+streamlit_vis_timeline.egg-info/requires.txt
+streamlit_vis_timeline.egg-info/top_level.txt
