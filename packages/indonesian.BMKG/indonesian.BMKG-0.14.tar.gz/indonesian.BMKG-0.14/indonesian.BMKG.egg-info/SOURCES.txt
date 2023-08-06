@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+deteksi_gempa/__init__.py
+indonesian.BMKG.egg-info/PKG-INFO
+indonesian.BMKG.egg-info/SOURCES.txt
+indonesian.BMKG.egg-info/dependency_links.txt
+indonesian.BMKG.egg-info/requires.txt
+indonesian.BMKG.egg-info/top_level.txt
