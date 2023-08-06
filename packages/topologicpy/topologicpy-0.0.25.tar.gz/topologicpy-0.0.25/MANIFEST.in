@@ -1,0 +1,2 @@
+include src/topologicpy/bin/linux/topologic/*
+include src/topologicpy/bin/windows/topologic/*
