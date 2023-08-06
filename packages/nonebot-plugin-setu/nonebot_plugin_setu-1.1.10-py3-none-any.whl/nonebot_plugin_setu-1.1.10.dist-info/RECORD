@@ -1,0 +1,15 @@
+nonebot_plugin_setu/__init__.py,sha256=IRGWkRFmuj9J1Wv-KE-1BRT_Yoz8tO24gyyn1QhokGg,13173
+nonebot_plugin_setu/create_file.py,sha256=xW5tu6-q7uHUNY5zWfYR7c5iLhD0Adg9hHUW4CxP2kc,1637
+nonebot_plugin_setu/dao/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nonebot_plugin_setu/dao/group_dao.py,sha256=Axw0cYgkAWzvcRH6UxcgEZsKedvIHPgRD25OJmbEcdI,3278
+nonebot_plugin_setu/dao/image_dao.py,sha256=pBMH0z5FJ6Yq3kp9iBSsxZLXWFr-0S-wJtTc9FLa64U,5447
+nonebot_plugin_setu/dao/user_dao.py,sha256=JvZMtoYLh0xtngq6td1cd0lOPKGcP10x6v2iwp2i3g8,4454
+nonebot_plugin_setu/getPic.py,sha256=n0Q8UAOguEMYTwOCGmsyFLl69Gh-E20ypoUp9fvIvm0,4224
+nonebot_plugin_setu/proxies.py,sha256=YQN_q0b_k-X1PrIA_AZAXCPho0T5yuEeinQO4eATxTE,542
+nonebot_plugin_setu/setu_api.py,sha256=k1hJEGNN_g5GFrFIERvlODKJu9zeIMC_jEIFjAsEPhU,3231
+nonebot_plugin_setu/utils.py,sha256=Nv62VK7oCoRBc6GxyEqXgwF-EGUeeQ6Pd-1ScSzK5cI,1231
+nonebot_plugin_setu/withdraw.py,sha256=JsODYLCWAGgESgQm4QjGxMuVVqlnOhYUrBTlX88BvNc,665
+nonebot_plugin_setu-1.1.10.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+nonebot_plugin_setu-1.1.10.dist-info/METADATA,sha256=0GPjgR_YQtZFz3JKbqlJCHOJQSriV3NOLlV5diFEY4E,8448
+nonebot_plugin_setu-1.1.10.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+nonebot_plugin_setu-1.1.10.dist-info/RECORD,,
