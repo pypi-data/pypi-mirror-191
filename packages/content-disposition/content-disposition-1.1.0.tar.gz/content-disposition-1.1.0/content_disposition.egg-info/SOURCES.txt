@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+content_disposition/__init__.py
+content_disposition/content_disposition.py
+content_disposition.egg-info/PKG-INFO
+content_disposition.egg-info/SOURCES.txt
+content_disposition.egg-info/dependency_links.txt
+content_disposition.egg-info/top_level.txt
