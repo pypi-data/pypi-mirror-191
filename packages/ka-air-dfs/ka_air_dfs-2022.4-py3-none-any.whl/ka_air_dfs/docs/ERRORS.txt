@@ -1,0 +1,29 @@
+*** Reading local file: /root/airflow/logs/dag_id=tsk_0/run_id=manual__2022-08-09T12:02:50.131808+00:00/task_id=tg_0.test_1/attempt=1.log
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tsk_0.tg_0.test_1 manual__2022-08-09T12:02:50.131808+00:00 [queued]>
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: tsk_0.tg_0.test_1 manual__2022-08-09T12:02:50.131808+00:00 [queued]>
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): tg_0.test_1> on 2022-08-09 12:02:50.131808+00:00
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:141} INFO - Running on host: rh7-11.de.ka.com
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:142} INFO - Running: ['sudo', '-E', '-H', '-u', 'sasapp', '***', 'tasks', 'run', 'tsk_0', 'tg_0.test_1', 'manual__2022-08-09T12:02:50.131808+00:00', '--job-id', '225', '--raw', '--subdir', 'DAGS_FOLDER/make_apc_fld.py', '--cfg-path', '/tmp/tmpia0qb2av', '--error-file', '/tmp/tmpo_jkkmal']
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1 Traceback (most recent call last):
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/bin/***", line 5, in <module>
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     from ***.__main__ import main
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/usr/local/python-3.10.5/lib/python3.10/site-packages/***/__init__.py", line 35, in <module>
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     from *** import settings
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/usr/local/python-3.10.5/lib/python3.10/site-packages/***/settings.py", line 35, in <module>
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     from ***.configuration import AIRFLOW_HOME, WEBSERVER_CONFIG, conf  # NOQA F401
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/usr/local/python-3.10.5/lib/python3.10/site-packages/***/configuration.py", line 1604, in <module>
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     conf.validate()
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/usr/local/python-3.10.5/lib/python3.10/site-packages/***/configuration.py", line 314, in validate
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     self._validate_config_dependencies()
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1   File "/usr/local/python-3.10.5/lib/python3.10/site-packages/***/configuration.py", line 421, in _validate_config_dependencies
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1     raise AirflowConfigException(
+[2022-08-09, 14:02:54 UTC] {base_task_runner.py:123} INFO - Job 225: Subtask tg_0.test_1 ***.exceptions.AirflowConfigException: error: sqlite C library version too old (< 3.15.0). See https://***.apache.org/docs/apache-***/2.3.3/howto/set-up-database.html#setting-up-a-sqlite-database
+[2022-08-09, 14:02:54 UTC] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-08-09, 14:02:54 UTC] {taskinstance.py:1415} INFO - Marking task as FAILED. dag_id=tsk_0, task_id=tg_0.test_1, execution_date=20220809T120250, start_date=20220809T120254, end_date=20220809T120254
+[2022-08-09, 14:02:54 UTC] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
