@@ -1,0 +1,4 @@
+﻿#Do None
+recursive-include zibanu/locale/ *
+recursive-include zibanu/repository/locale/ *
+recursive-include zibanu/template/locale/ *
