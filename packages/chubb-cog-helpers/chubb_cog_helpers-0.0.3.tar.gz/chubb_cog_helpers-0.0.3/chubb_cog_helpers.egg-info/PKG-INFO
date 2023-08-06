@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: chubb-cog-helpers
+Version: 0.0.3
+Summary: Helper functions for Chubb COG
+Home-page: https://www.chubb.com/us-en/
+Author: Nicholas Ciesla (Chubb)
+Author-email: nicholas.ciesla@chubb.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Chubb COG Helpers
+
+## Available Helpers:
+| Module | Function | Availability |
+| ----------- | ----------- | ----------- |
+| secret_locker | SecretLocker | Y |
+| metrics | bivariate | Y |
+| metrics | cont_bivariate | N |
+| metrics | fraud_bivariates | Y |
+| metrics | fraud_cont_bivariates | N |
+| supervised | feature_importance | Y |
+| supervised | lift_chart | Y |
+| unsupervised | feature_importance | N |
+| unsupervised | lift_chart | N |
+| reason_codes | shap_xgboost | N |

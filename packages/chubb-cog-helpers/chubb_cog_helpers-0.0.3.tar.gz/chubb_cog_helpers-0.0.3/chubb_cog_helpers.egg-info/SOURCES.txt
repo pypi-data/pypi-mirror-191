@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+chubb_cog_helpers/metrics.py
+chubb_cog_helpers/secret_locker.py
+chubb_cog_helpers/supervised.py
+chubb_cog_helpers.egg-info/PKG-INFO
+chubb_cog_helpers.egg-info/SOURCES.txt
+chubb_cog_helpers.egg-info/dependency_links.txt
+chubb_cog_helpers.egg-info/top_level.txt
