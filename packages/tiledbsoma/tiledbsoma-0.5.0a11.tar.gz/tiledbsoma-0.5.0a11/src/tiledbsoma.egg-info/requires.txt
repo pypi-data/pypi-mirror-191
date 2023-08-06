@@ -1,0 +1,17 @@
+anndata
+attrs>=22.1
+matplotlib<3.7
+numpy
+pandas
+pyarrow>=9.0.0
+scanpy
+scipy
+somacore==0.0.0a13
+tiledb==0.20.*
+typing-extensions
+
+[dev]
+black
+pytest
+ruff
+typeguard
