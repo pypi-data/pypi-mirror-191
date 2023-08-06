@@ -1,0 +1,28 @@
+# Dependency constraints
+flake8~=6.0
+mypy~=0.991
+pygments~=2.13
+pytest~=7.2
+twine~=3.8
+# Installation requirements
+black~=22.12
+coverage[toml]~=6.5
+flake8-bugbear>=22.9.11
+ipython~=8.7
+pg8000~=1.29
+pipdeptree~=2.3
+pytest-cov~=4.0
+pre-commit~=3.0
+pytest-flask-ligand~=0.1
+pytest-mock~=3.10
+python-semantic-release~=7.32
+tox~=4.1
+types-Flask-Cors~=3.0
+types-mock~=5.0
+types-PyYAML~=6.0
+types-requests~=2.28
+types-setuptools~=65.6
+types-smorest~=1.1
+types-SQLAlchemy~=1.4
+types-sqlalchemy-utils~=1.0
+types-urllib3<1.27

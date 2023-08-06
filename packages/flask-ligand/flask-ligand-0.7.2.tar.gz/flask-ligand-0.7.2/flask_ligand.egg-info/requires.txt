@@ -1,0 +1,15 @@
+flask~=2.2
+PyJWT~=2.6
+sqlalchemy~=1.4
+cryptography>=36.0.2
+flask-cors~=3.0
+Flask-Migrate~=4.0
+Flask-JWT-Extended~=4.4
+flask-smorest~=0.40
+flask-sqlalchemy~=3.0
+gunicorn~=20.1
+marshmallow-sqlalchemy~=0.28
+python-dotenv~=0.21
+requests~=2.28
+sqlalchemy-utils~=0.39
+urljoin==1.0.0
