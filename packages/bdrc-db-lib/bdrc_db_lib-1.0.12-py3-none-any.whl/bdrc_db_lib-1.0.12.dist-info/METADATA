@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bdrc-db-lib
+Version: 1.0.12
+Summary: BDRC Db Library
+Home-page: UNKNOWN
+Author: jimk
+Author-email: jimk@tbrc.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.7
+Requires-Dist: pymysql
+Requires-Dist: lxml
+Requires-Dist: sqlalchemy
+Requires-Dist: sqlalchemy-get-or-create
+Requires-Dist: mysqlclient
+
+bdrc-db-lib
+===========
+
+Package which supports Uses an indirect config file for the database
+connection
+
+Development
+===========
+
+Pycharm: although this is a subfolder in the ``archive_ops`` project, it
+**must** be developed as a standalone project. Other projects in
+archive-ops use it as a client, and it **must** be imported into their
+``venv`` Open the project ``bdrc_db_lib`` in \`archive_ops/bdrc_db_lib
+
+Deployment
+==========
+
+.. code:: shell
+
+   # be in project main dir
+   python -m setup bdist_wheel
+   twine upload --verbose  -r testpypi dist/bdrc_db_lib-x.MM.mm-py3-none-any.whl   
+
+Changelog:
+==========
+
+-  v1.0.12: WIP Project Management suite
+-  v1.0.0-10: creation
+
+

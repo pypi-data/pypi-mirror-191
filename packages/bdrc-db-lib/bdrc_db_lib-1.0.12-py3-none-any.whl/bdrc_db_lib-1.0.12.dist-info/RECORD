@@ -1,0 +1,17 @@
+BdrcDbLib/DBConfig.py,sha256=h8NwK6U0s7MKGUOFu_Ku4-HrQakT2TpiCarXP5JUfps,3567
+BdrcDbLib/DbApp.py,sha256=VC-bH5q7_OxamoZpT7OHGkGVi1ch908a3eI0rEqo2Ec,7727
+BdrcDbLib/DbAppParser.py,sha256=PRl9v2vcFP2wKtz5P_MpI7mWS1MuUkICxQ-OSE5_QXU,3510
+BdrcDbLib/SprocColumnError.py,sha256=8MGk7WSNtcR0dy1y_KAEkE3NAxs2ZI39Lg2M55ES0DM,122
+BdrcDbLib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BdrcDbLib/DbOrm/DrsContextBase.py,sha256=f-FZP-3jOGPELFHP6jC3L8ZQvgYEYladbjQQEK2ORJo,8625
+BdrcDbLib/DbOrm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BdrcDbLib/DbOrm/models/DrsProjectMgmt.py,sha256=dGY79MWfQh9M1qfaIwYQRAZXopzBonASZWDpveKMHj0,7039
+BdrcDbLib/DbOrm/models/__init__.py,sha256=ZqmtluWqc-EjCSEdyjzQB3MFtZKiO2gI-fFuDNgQ_4c,16
+BdrcDbLib/DbOrm/models/drs.py,sha256=LwDtQFJqEzQBaQDN2SESkUs8jHu7siToOzduBqndwPI,8702
+Tests/DBConfigTest.py,sha256=Bh4KDTBFeJW9YWxH6nCkmyVhg_JEoXLoHwq3z9gjkBQ,2125
+Tests/__init__.py,sha256=HDZk7gcYNBGhFSCHOgAzrMyp6eqWWHnkONiQ1V_pu_A,28
+Tests/test_drs.py,sha256=oF8VfPyR3_16mTr_gxC9Hm1KJGkRgDhUcYWHsBBgjHg,1189
+bdrc_db_lib-1.0.12.dist-info/METADATA,sha256=TUnDwUbYdxDQKBHi18D6fprXtoeGHIfsq6qzt0dnpLc,1259
+bdrc_db_lib-1.0.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bdrc_db_lib-1.0.12.dist-info/top_level.txt,sha256=Q4uxh4sRk0tB_l3GWrly8xVkmMk7tZHeH-CcPWQz2v8,16
+bdrc_db_lib-1.0.12.dist-info/RECORD,,
