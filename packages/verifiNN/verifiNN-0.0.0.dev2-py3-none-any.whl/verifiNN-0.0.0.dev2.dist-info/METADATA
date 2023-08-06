@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: verifiNN
+Version: 0.0.0.dev2
+Summary: A package for optimization based neural network verification.
+Home-page: https://github.com/harshgit/verifiNN
+Author: Ayush Bharadwaj
+Author-email: ayush.bharadwaj@gmail.com
+Keywords: neural networks,verification,convex optimization,semidefinit programming
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.21.5)
+Requires-Dist: scipy (==1.7.3)
+
+# verifiNN
+
+This project intends to implement convex optimization based methods for verification of neural netrowks.
+
+## References:
+- https://scholarworks.calstate.edu/concern/theses/4t64gv41s (main)
+- https://arxiv.org/pdf/1811.01057.pdf
+- https://arxiv.org/pdf/1903.06758.pdf
+- https://arxiv.org/pdf/1903.01287.pdf

@@ -1,0 +1,12 @@
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/algorithm.py,sha256=W0Ye_hmueHYlI60THy-l1XpV8LBoAhX9ThE6_vsEUCI,1383
+utils/calculus.py,sha256=V1RZ_LQnV7hua0LYQ7ujpHwnnoBt_zAH7ZjgRQ70czE,1113
+utils/commonutils.py,sha256=K3_XTI1J46o_m-B3DmXiU35OOsSv1Em8EC2GQTMF83M,870
+utils/linear_regression.py,sha256=xll8ime8jAO_yOx_Rh3wBTGEHA-PMexjBEbnej6z9gA,947
+utils/model.py,sha256=VIndBX30CIn-GkgNduhDQ_lHR5qT50l9CI4rukvP9lY,449
+utils/network.py,sha256=qKazJY1ofi3XLCJdM0dolHzaVyWgBeKH9sI-jQr-wwk,3653
+utils/numpyutils.py,sha256=gL8ry1kf3Ku33Bkgo1Z5IsHNTKsHkMZsXuKKkM5pT7w,227
+verifiNN-0.0.0.dev2.dist-info/METADATA,sha256=ro5PoNdrS9wKC9qG0Oks8ZwyG7U3p2jPl4WDvacuLJY,961
+verifiNN-0.0.0.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+verifiNN-0.0.0.dev2.dist-info/top_level.txt,sha256=BXdhaaHBJTl5WDScj-NdcpdW6F1g7hNN3YP0CLPxk-0,6
+verifiNN-0.0.0.dev2.dist-info/RECORD,,
