@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: markertif
+Version: 1.0.0
+Summary: Marker Extraction Algorithm
+Author: yuqiu zhou
+Author-email: 20211520004@fudan.edu.cn
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: tensorflow-gpu (==2.6.0)
+Requires-Dist: scikit-image (==0.19.2)
+
+UNKNOWN
+
