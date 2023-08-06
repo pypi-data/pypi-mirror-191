@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mondossierweb
+Version: 0.1.1
+Summary: Parses grades out of mondossierweb[1;5D[1;5D[1;5D
+License: MIT
+Author: Ewen Le Bihan
+Author-email: hey@ewen.works
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: helium (>=3.0.9,<4.0.0)
+Description-Content-Type: text/markdown
+
+# mondossierweb
+
+Get grades and detect changes in your grades, on schools using mon dossier web (mdw.(school domain))
+
+## Installation
+
+```bash
+pip install mondossierweb
+```
+
+## Usage
+
+```
+Usage: mondossierweb [USERNAME] [PASSWORD_COMMAND] [GRADE_CODE] [SAVE_AS]
+       mondossierweb --help
+```
+
