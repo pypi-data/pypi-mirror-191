@@ -1,0 +1,15 @@
+layman/__main__.py,sha256=BNsarJpX1XJuf2Agh5GdH5CCyvraaWDmJxZu0V-6rWY,173
+layman/config.py,sha256=vQ0XgLh1cqm4HGOv_d3lqbbIWaFS3-KyLzfT-bVyBks,2462
+layman/config.toml,sha256=_WiLTiNyYn7T-PJ-9Hmqpy39qvxWwIrPnTPK_AI_GMU,1700
+layman/layman.py,sha256=IldrgooCP_qQyzLX_Rw94sDOJKU-gT_1lHdyW3AiGC8,13625
+layman/utils.py,sha256=K59Uk6TPXwPeOFePwo0tM76Yj-9v1_YC7kUiDdpnuYM,1682
+layman/managers/AutotilingLayoutManager.py,sha256=AUiU3ZQvfzeT5X_RvuithkeN6K1IDkURToGaElRPt74,3298
+layman/managers/GridLayoutManager.py,sha256=-QpqC3NrApntzU4ZwTheY6BRyuYjXjwsnU42r1EYkZY,3725
+layman/managers/MasterStackLayoutManager.py,sha256=G2zxW2p8XSuhvz1lKnQMsr1fKVuexciGtEWC2sL1Iqg,17735
+layman/managers/WorkspaceLayoutManager.py,sha256=aZohunesBnHxyZHrTfo3yhIZDFScfn9SY4gymjZZfFQ,3348
+layman-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+layman-0.1.0.dist-info/METADATA,sha256=PPEwdgHmSeH4e5TtH9n0BjFLFLfVvz57CNvl8hlaI5U,7306
+layman-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+layman-0.1.0.dist-info/entry_points.txt,sha256=LiiRuUvZRtLB9joPmecrOAmjCQkW2-VauVjQ1du4xMw,48
+layman-0.1.0.dist-info/top_level.txt,sha256=pztIJ-61mXYLuNtqT0ojf3AW3GOIDCfDv4TmsgFsIxU,7
+layman-0.1.0.dist-info/RECORD,,
