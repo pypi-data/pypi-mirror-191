@@ -1,0 +1,2 @@
+[console_scripts]
+instagram_locations = instagram_locations.instagram_locations:main
