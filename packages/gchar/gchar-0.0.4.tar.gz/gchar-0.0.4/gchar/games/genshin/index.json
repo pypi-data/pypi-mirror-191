@@ -1,0 +1,1671 @@
+{
+    "data": [
+        {
+            "cnname": "阿贝多",
+            "enname": "Albedo",
+            "jpnames": [
+                "アルベド"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Geo",
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Albedo_Card.png/revision/latest?cb=20210302092013"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Albedo_Full_Wish.png/revision/latest?cb=20220507161942"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Character_Albedo_Game.png/revision/latest?cb=20210918164853"
+                }
+            ]
+        },
+        {
+            "cnname": "艾尔海森",
+            "enname": "Alhaitham",
+            "jpnames": [
+                "アルハイゼン"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Dendro",
+            "weapon": "Sword",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/Character_Alhaitham_Card.png/revision/latest?cb=20221209042646"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/Character_Alhaitham_Full_Wish.png/revision/latest?cb=20230118030435"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Character_Alhaitham_Game.png/revision/latest?cb=20230131071345"
+                }
+            ]
+        },
+        {
+            "cnname": "埃洛伊",
+            "enname": "Aloy",
+            "jpnames": [
+                "アーロイ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Bow",
+            "region": null,
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cb/Character_Aloy_Card.png/revision/latest?cb=20210722184414"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/Character_Aloy_Full_Wish.png/revision/latest?cb=20220507130247"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Aloy_Game.png/revision/latest?cb=20220811101256"
+                }
+            ]
+        },
+        {
+            "cnname": "安柏",
+            "enname": "Amber",
+            "jpnames": [
+                "アンバー"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Bow",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Character_Amber_Card.png/revision/latest?cb=20220725204839"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1c/Character_Amber_Full_Wish.png/revision/latest?cb=20221209195658"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Character_Amber_Game.png/revision/latest?cb=20210610045559"
+                }
+            ]
+        },
+        {
+            "cnname": "荒泷一斗",
+            "enname": "Arataki Itto",
+            "jpnames": [
+                "荒瀧一斗",
+                "あらたきいっと"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Geo",
+            "weapon": "Claymore",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Arataki_Itto_Card.png/revision/latest?cb=20220725204845"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Arataki_Itto_Full_Wish.png/revision/latest?cb=20220507160209"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Character_Arataki_Itto_Game.png/revision/latest?cb=20211214145927"
+                }
+            ]
+        },
+        {
+            "cnname": "芭芭拉",
+            "enname": "Barbara",
+            "jpnames": [
+                "バーバラ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Catalyst",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/Character_Barbara_Card.png/revision/latest?cb=20220725204852"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/76/Character_Barbara_Full_Wish.png/revision/latest?cb=20220507160248"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Barbara_Game.png/revision/latest?cb=20220416194653"
+                }
+            ]
+        },
+        {
+            "cnname": "北斗",
+            "enname": "Beidou",
+            "jpnames": [
+                "北斗",
+                "ほくと"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Claymore",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Character_Beidou_Card.png/revision/latest?cb=20220725204858"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/ff/Character_Beidou_Full_Wish.png/revision/latest?cb=20221015114224"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Beidou_Game.png/revision/latest?cb=20210620045426"
+                }
+            ]
+        },
+        {
+            "cnname": "班尼特",
+            "enname": "Bennett",
+            "jpnames": [
+                "ベネット"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Pyro",
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Bennett_Card.png/revision/latest?cb=20220725204904"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Character_Bennett_Full_Wish.png/revision/latest?cb=20220507132108"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Character_Bennett_Game.png/revision/latest?cb=20220416195056"
+                }
+            ]
+        },
+        {
+            "cnname": "坎蒂丝",
+            "enname": "Candace",
+            "jpnames": [
+                "キャンディス"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Polearm",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Candace_Card.png/revision/latest?cb=20220822101651"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Candace_Full_Wish.png/revision/latest?cb=20221007135324"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c1/Character_Candace_Game.png/revision/latest?cb=20221001014912"
+                }
+            ]
+        },
+        {
+            "cnname": "重云",
+            "enname": "Chongyun",
+            "jpnames": [
+                "重雲",
+                "ちょううん"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Cryo",
+            "weapon": "Claymore",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/09/Character_Chongyun_Card.png/revision/latest?cb=20220725204909"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/Character_Chongyun_Full_Wish.png/revision/latest?cb=20220507161818"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/Character_Chongyun_Game.png/revision/latest?cb=20201201211448"
+                }
+            ]
+        },
+        {
+            "cnname": "柯莱",
+            "enname": "Collei",
+            "jpnames": [
+                "コレイ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Dendro",
+            "weapon": "Bow",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Collei_Card.png/revision/latest?cb=20220711041855"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Collei_Full_Wish.png/revision/latest?cb=20220824043515"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Character_Collei_Game.png/revision/latest?cb=20220831055309"
+                }
+            ]
+        },
+        {
+            "cnname": "赛诺",
+            "enname": "Cyno",
+            "jpnames": [
+                "セノ"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Electro",
+            "weapon": "Polearm",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Cyno_Card.png/revision/latest?cb=20220822101647"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/55/Character_Cyno_Full_Wish.png/revision/latest?cb=20221007135437"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/Character_Cyno_Game.png/revision/latest?cb=20221001011211"
+                }
+            ]
+        },
+        {
+            "cnname": "迪卢克",
+            "enname": "Diluc",
+            "jpnames": [
+                "ディルック"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Pyro",
+            "weapon": "Claymore",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/Character_Diluc_Card.png/revision/latest?cb=20220725204921"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Diluc_Full_Wish.png/revision/latest?cb=20220507161658"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Character_Diluc_Game.png/revision/latest?cb=20210919071001"
+                }
+            ]
+        },
+        {
+            "cnname": "迪奥娜",
+            "enname": "Diona",
+            "jpnames": [
+                "ディオナ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Bow",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Diona_Card.png/revision/latest?cb=20201107193459"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/Character_Diona_Full_Wish.png/revision/latest?cb=20220507161737"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/Character_Diona_Game.png/revision/latest?cb=20210919070109"
+                }
+            ]
+        },
+        {
+            "cnname": "多莉",
+            "enname": "Dori",
+            "jpnames": [
+                "ドリー"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Claymore",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/11/Character_Dori_Card.png/revision/latest?cb=20220711042206"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/48/Character_Dori_Full_Wish.png/revision/latest?cb=20220909114351"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Character_Dori_Game.png/revision/latest?cb=20220914105004"
+                }
+            ]
+        },
+        {
+            "cnname": "优菈",
+            "enname": "Eula",
+            "jpnames": [
+                "エウルア"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Claymore",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Character_Eula_Card.png/revision/latest?cb=20210511110453"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/Character_Eula_Full_Wish.png/revision/latest?cb=20221014023702"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Character_Eula_Game.png/revision/latest?cb=20210613004920"
+                }
+            ]
+        },
+        {
+            "cnname": "珐露珊",
+            "enname": "Faruzan",
+            "jpnames": [
+                "ファルザン"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Anemo",
+            "weapon": "Bow",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/Character_Faruzan_Card.png/revision/latest?cb=20221207033321"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Character_Faruzan_Full_Wish.png/revision/latest?cb=20221207033630"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/Character_Faruzan_Game.png/revision/latest?cb=20221209070759"
+                }
+            ]
+        },
+        {
+            "cnname": "菲谢尔",
+            "enname": "Fischl",
+            "jpnames": [
+                "フィッシュル"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Bow",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Fischl_Card.png/revision/latest?cb=20220725204926"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Fischl_Full_Wish.png/revision/latest?cb=20220507161249"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Fischl_Game.png/revision/latest?cb=20220124024529"
+                }
+            ]
+        },
+        {
+            "cnname": "甘雨",
+            "enname": "Ganyu",
+            "jpnames": [
+                "甘雨",
+                "かんう"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Bow",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Character_Ganyu_Card.png/revision/latest?cb=20210106062018"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Ganyu_Full_Wish.png/revision/latest?cb=20220713045854"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5c/Character_Ganyu_Game.png/revision/latest?cb=20210731022736"
+                }
+            ]
+        },
+        {
+            "cnname": "五郎",
+            "enname": "Gorou",
+            "jpnames": [
+                "ゴロー"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Geo",
+            "weapon": "Bow",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Gorou_Card.png/revision/latest?cb=20220725204934"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Gorou_Full_Wish.png/revision/latest?cb=20220507110256"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Gorou_Game.png/revision/latest?cb=20211127053326"
+                }
+            ]
+        },
+        {
+            "cnname": "胡桃",
+            "enname": "Hu Tao",
+            "jpnames": [
+                "胡桃",
+                "フータオ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/Character_Hu_Tao_Card.png/revision/latest?cb=20220725204937"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/59/Character_Hu_Tao_Full_Wish.png/revision/latest?cb=20220507160922"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Hu_Tao_Game.png/revision/latest?cb=20210628112434"
+                }
+            ]
+        },
+        {
+            "cnname": "琴",
+            "enname": "Jean",
+            "jpnames": [
+                "ジン"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Anemo",
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Jean_Card.png/revision/latest?cb=20220725210053"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Character_Jean_Full_Wish.png/revision/latest?cb=20221014022733"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Character_Jean_Game.png/revision/latest?cb=20210811130412"
+                }
+            ]
+        },
+        {
+            "cnname": "枫原万叶",
+            "enname": "Kaedehara Kazuha",
+            "jpnames": [
+                "楓原万葉",
+                "かえではらかずは"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Anemo",
+            "weapon": "Sword",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Kaedehara_Kazuha_Card.png/revision/latest?cb=20210607100841"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/57/Character_Kaedehara_Kazuha_Full_Wish.png/revision/latest?cb=20220507131548"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Kaedehara_Kazuha_Game.png/revision/latest?cb=20210629120851"
+                }
+            ]
+        },
+        {
+            "cnname": "凯亚",
+            "enname": "Kaeya",
+            "jpnames": [
+                "ガイア"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Cryo",
+            "weapon": "Sword",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/Character_Kaeya_Card.png/revision/latest?cb=20220725205013"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Character_Kaeya_Full_Wish.png/revision/latest?cb=20220507113154"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Character_Kaeya_Game.png/revision/latest?cb=20220804005158"
+                }
+            ]
+        },
+        {
+            "cnname": "神里绫华",
+            "enname": "Kamisato Ayaka",
+            "jpnames": [
+                "神里綾華",
+                "かみさとあやか"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Sword",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Character_Kamisato_Ayaka_Card.png/revision/latest?cb=20210607100828"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d0/Character_Kamisato_Ayaka_Full_Wish.png/revision/latest?cb=20221014024207"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/96/Character_Kamisato_Ayaka_Game.png/revision/latest?cb=20210721071626"
+                }
+            ]
+        },
+        {
+            "cnname": "神里绫人",
+            "enname": "Kamisato Ayato",
+            "jpnames": [
+                "神里綾人",
+                "かみさとあやと"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Hydro",
+            "weapon": "Sword",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/Character_Kamisato_Ayato_Card.png/revision/latest?cb=20220927195614"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Kamisato_Ayato_Full_Wish.png/revision/latest?cb=20221014023913"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/Character_Kamisato_Ayato_Game.png/revision/latest?cb=20220416164518"
+                }
+            ]
+        },
+        {
+            "cnname": "刻晴",
+            "enname": "Keqing",
+            "jpnames": [
+                "刻晴",
+                "こくせい"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Sword",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Character_Keqing_Card.png/revision/latest?cb=20220725205019"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/Character_Keqing_Full_Wish.png/revision/latest?cb=20220507113259"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Keqing_Game.png/revision/latest?cb=20220420163845"
+                }
+            ]
+        },
+        {
+            "cnname": "可莉",
+            "enname": "Klee",
+            "jpnames": [
+                "クレー"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Catalyst",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Character_Klee_Card.png/revision/latest?cb=20220725205026"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/Character_Klee_Full_Wish.png/revision/latest?cb=20220507125530"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Character_Klee_Game.png/revision/latest?cb=20210613005657"
+                }
+            ]
+        },
+        {
+            "cnname": "九条裟罗",
+            "enname": "Kujou Sara",
+            "jpnames": [
+                "九条裟羅",
+                "くじょうさら"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Bow",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/Character_Kujou_Sara_Card.png/revision/latest?cb=20220725205032"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Character_Kujou_Sara_Full_Wish.png/revision/latest?cb=20220507110137"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a9/Character_Kujou_Sara_Game.png/revision/latest?cb=20211017050006"
+                }
+            ]
+        },
+        {
+            "cnname": "久岐忍",
+            "enname": "Kuki Shinobu",
+            "jpnames": [
+                "久岐忍"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Sword",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b0/Character_Kuki_Shinobu_Card.png/revision/latest?cb=20220725205038"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Kuki_Shinobu_Full_Wish.png/revision/latest?cb=20220621105256"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Kuki_Shinobu_Game.png/revision/latest?cb=20220622000710"
+                }
+            ]
+        },
+        {
+            "cnname": "莱依拉",
+            "enname": "Layla",
+            "jpnames": [
+                "レイラ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Sword",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Layla_Card.png/revision/latest?cb=20220926101307"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Character_Layla_Full_Wish.png/revision/latest?cb=20221118140902"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Character_Layla_Game.png/revision/latest?cb=20221123025937"
+                }
+            ]
+        },
+        {
+            "cnname": "丽莎",
+            "enname": "Lisa",
+            "jpnames": [
+                "リサ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Catalyst",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Lisa_Card.png/revision/latest?cb=20220725205045"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Character_Lisa_Full_Wish.png/revision/latest?cb=20220507110102"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Character_Lisa_Game.png/revision/latest?cb=20210622000259"
+                }
+            ]
+        },
+        {
+            "cnname": "莫娜",
+            "enname": "Mona",
+            "jpnames": [
+                "モナ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Catalyst",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Character_Mona_Card.png/revision/latest?cb=20220725210059"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/Character_Mona_Full_Wish.png/revision/latest?cb=20221010205346"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Character_Mona_Game.png/revision/latest?cb=20201205034057"
+                }
+            ]
+        },
+        {
+            "cnname": "纳西妲",
+            "enname": "Nahida",
+            "jpnames": [
+                "ナヒーダ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Dendro",
+            "weapon": "Catalyst",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Character_Nahida_Card.png/revision/latest?cb=20220926101608"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/Character_Nahida_Full_Wish.png/revision/latest?cb=20221102032214"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/Character_Nahida_Game.png/revision/latest?cb=20221107033459"
+                }
+            ]
+        },
+        {
+            "cnname": "妮露",
+            "enname": "Nilou",
+            "jpnames": [
+                "ニィロウ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Sword",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/19/Character_Nilou_Card.png/revision/latest?cb=20220822101649"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/Character_Nilou_Full_Wish.png/revision/latest?cb=20221014130045"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5e/Character_Nilou_Game.png/revision/latest?cb=20221017155436"
+                }
+            ]
+        },
+        {
+            "cnname": "凝光",
+            "enname": "Ningguang",
+            "jpnames": [
+                "凝光",
+                "ぎょうこう"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Geo",
+            "weapon": "Catalyst",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Ningguang_Card.png/revision/latest?cb=20220725205113"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/Character_Ningguang_Full_Wish.png/revision/latest?cb=20220507113052"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/33/Character_Ningguang_Game.png/revision/latest?cb=20210625125214"
+                }
+            ]
+        },
+        {
+            "cnname": "诺艾尔",
+            "enname": "Noelle",
+            "jpnames": [
+                "ノエル"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Geo",
+            "weapon": "Claymore",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Character_Noelle_Card.png/revision/latest?cb=20220725205118"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/Character_Noelle_Full_Wish.png/revision/latest?cb=20220507161129"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Noelle_Game.png/revision/latest?cb=20220420164307"
+                }
+            ]
+        },
+        {
+            "cnname": "七七",
+            "enname": "Qiqi",
+            "jpnames": [
+                "七七",
+                "なな"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Sword",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Qiqi_Card.png/revision/latest?cb=20220725205124"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Character_Qiqi_Full_Wish.png/revision/latest?cb=20220507110008"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/Character_Qiqi_Game.png/revision/latest?cb=20210801125200"
+                }
+            ]
+        },
+        {
+            "cnname": "雷电将军",
+            "enname": "Raiden Shogun",
+            "jpnames": [
+                "雷電将軍",
+                "らいでんしょうぐん"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Polearm",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/Character_Raiden_Shogun_Card.png/revision/latest?cb=20220725205132"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Character_Raiden_Shogun_Full_Wish.png/revision/latest?cb=20220507154003"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6b/Character_Raiden_Shogun_Game.png/revision/latest?cb=20210901104104"
+                }
+            ]
+        },
+        {
+            "cnname": "雷泽",
+            "enname": "Razor",
+            "jpnames": [
+                "レザー"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Electro",
+            "weapon": "Claymore",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Character_Razor_Card.png/revision/latest?cb=20220725205138"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Razor_Full_Wish.png/revision/latest?cb=20220507162020"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/Character_Razor_Game.png/revision/latest?cb=20210920073907"
+                }
+            ]
+        },
+        {
+            "cnname": "罗莎莉亚",
+            "enname": "Rosaria",
+            "jpnames": [
+                "ロサリア"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Polearm",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/Character_Rosaria_Card.png/revision/latest?cb=20210330063015"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9b/Character_Rosaria_Full_Wish.png/revision/latest?cb=20220507132654"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/Character_Rosaria_Game.png/revision/latest?cb=20210613004843"
+                }
+            ]
+        },
+        {
+            "cnname": "珊瑚宫心海",
+            "enname": "Sangonomiya Kokomi",
+            "jpnames": [
+                "珊瑚宮心海",
+                "さんごのみやここみ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Catalyst",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8c/Character_Sangonomiya_Kokomi_Card.png/revision/latest?cb=20220725205145"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Character_Sangonomiya_Kokomi_Full_Wish.png/revision/latest?cb=20220507131919"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Character_Sangonomiya_Kokomi_Game.png/revision/latest?cb=20211117112622"
+                }
+            ]
+        },
+        {
+            "cnname": "早柚",
+            "enname": "Sayu",
+            "jpnames": [
+                "早柚",
+                "さゆ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Anemo",
+            "weapon": "Claymore",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Character_Sayu_Card.png/revision/latest?cb=20230121174331"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Sayu_Full_Wish.png/revision/latest?cb=20220507130546"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Sayu_Game.png/revision/latest?cb=20210810113656"
+                }
+            ]
+        },
+        {
+            "cnname": "申鹤",
+            "enname": "Shenhe",
+            "jpnames": [
+                "申鶴",
+                "しんかく"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Cryo",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/Character_Shenhe_Card.png/revision/latest?cb=20220725205152"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Shenhe_Full_Wish.png/revision/latest?cb=20221011032401"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Character_Shenhe_Game.png/revision/latest?cb=20220811103041"
+                }
+            ]
+        },
+        {
+            "cnname": "鹿野院平藏",
+            "enname": "Shikanoin Heizou",
+            "jpnames": [
+                "鹿野院平蔵",
+                "しかのいんへいぞう"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Anemo",
+            "weapon": "Catalyst",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Character_Shikanoin_Heizou_Card.png/revision/latest?cb=20220725205159"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b1/Character_Shikanoin_Heizou_Full_Wish.png/revision/latest?cb=20220713042711"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Character_Shikanoin_Heizou_Game.png/revision/latest?cb=20220714144130"
+                }
+            ]
+        },
+        {
+            "cnname": "砂糖",
+            "enname": "Sucrose",
+            "jpnames": [
+                "スクロース"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Anemo",
+            "weapon": "Catalyst",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e2/Character_Sucrose_Card.png/revision/latest?cb=20220725205205"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Sucrose_Full_Wish.png/revision/latest?cb=20220507132952"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Sucrose_Game.png/revision/latest?cb=20210621005817"
+                }
+            ]
+        },
+        {
+            "cnname": "达达利亚",
+            "enname": "Tartaglia",
+            "jpnames": [
+                "タルタリヤ"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Hydro",
+            "weapon": "Bow",
+            "region": "Snezhnaya",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Character_Tartaglia_Card.png/revision/latest?cb=20201106023840"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Character_Tartaglia_Full_Wish.png/revision/latest?cb=20220507161504"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/bb/Character_Tartaglia_Game.png/revision/latest?cb=20210923014408"
+                }
+            ]
+        },
+        {
+            "cnname": "托马",
+            "enname": "Thoma",
+            "jpnames": [
+                "トーマ"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Pyro",
+            "weapon": "Polearm",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/Character_Thoma_Card.png/revision/latest?cb=20220725205212"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8b/Character_Thoma_Full_Wish.png/revision/latest?cb=20220507130334"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/Character_Thoma_Game.png/revision/latest?cb=20211014130835"
+                }
+            ]
+        },
+        {
+            "cnname": "提纳里",
+            "enname": "Tighnari",
+            "jpnames": [
+                "ティナリ"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Dendro",
+            "weapon": "Bow",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Character_Tighnari_Card.png/revision/latest?cb=20220711041536"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/Character_Tighnari_Full_Wish.png/revision/latest?cb=20220824042927"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c1/Character_Tighnari_Game.png/revision/latest?cb=20220831030441"
+                }
+            ]
+        },
+        {
+            "cnname": "旅行者",
+            "enname": "Traveler",
+            "jpnames": [
+                "旅人",
+                "たびびと"
+            ],
+            "rarity": 5,
+            "gender": "Others",
+            "element": null,
+            "weapon": "Sword",
+            "region": null,
+            "skins": [
+                {
+                    "name": "Cards",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/Traveler_Card.png/revision/latest?cb=20220725205258"
+                },
+                {
+                    "name": "In-Game (Aether)",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Character_Traveler_Male_Game.png/revision/latest?cb=20220416175833"
+                },
+                {
+                    "name": "In-Game (Lumine)",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/Character_Traveler_Female_Game.png/revision/latest?cb=20210629112837"
+                }
+            ]
+        },
+        {
+            "cnname": "温迪",
+            "enname": "Venti",
+            "jpnames": [
+                "ウェンティ"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Anemo",
+            "weapon": "Bow",
+            "region": "Mondstadt",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/9e/Character_Venti_Card.png/revision/latest?cb=20220725205218"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/Character_Venti_Full_Wish.png/revision/latest?cb=20220507131746"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Character_Venti_Game.png/revision/latest?cb=20220419050324"
+                }
+            ]
+        },
+        {
+            "cnname": "流浪者",
+            "enname": "Wanderer",
+            "jpnames": [
+                "放浪者"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Anemo",
+            "weapon": "Catalyst",
+            "region": "Sumeru",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Character_Wanderer_Card.png/revision/latest?cb=20221207032514"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/de/Character_Wanderer_Full_Wish.png/revision/latest?cb=20221209194443"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/Character_Wanderer_Game.png/revision/latest?cb=20221211081157"
+                }
+            ]
+        },
+        {
+            "cnname": "香菱",
+            "enname": "Xiangling",
+            "jpnames": [
+                "香菱",
+                "シャンリン"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/ed/Character_Xiangling_Card.png/revision/latest?cb=20220725205223"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Character_Xiangling_Full_Wish.png/revision/latest?cb=20220507154040"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Character_Xiangling_Game.png/revision/latest?cb=20210708074224"
+                }
+            ]
+        },
+        {
+            "cnname": "魈",
+            "enname": "Xiao",
+            "jpnames": [
+                "魈",
+                "しょう"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Anemo",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Character_Xiao_Card.png/revision/latest?cb=20220725205230"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/Character_Xiao_Full_Wish.png/revision/latest?cb=20220507154523"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/Character_Xiao_Game.png/revision/latest?cb=20220831062657"
+                }
+            ]
+        },
+        {
+            "cnname": "行秋",
+            "enname": "Xingqiu",
+            "jpnames": [
+                "行秋",
+                "ゆくあき"
+            ],
+            "rarity": 4,
+            "gender": "Male",
+            "element": "Hydro",
+            "weapon": "Sword",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/Character_Xingqiu_Card.png/revision/latest?cb=20220725205235"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/Character_Xingqiu_Full_Wish.png/revision/latest?cb=20220507161206"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/Character_Xingqiu_Game.png/revision/latest?cb=20201005202811"
+                }
+            ]
+        },
+        {
+            "cnname": "辛焱",
+            "enname": "Xinyan",
+            "jpnames": [
+                "辛炎",
+                "しんえん"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Claymore",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Character_Xinyan_Card.png/revision/latest?cb=20221121172209"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/Character_Xinyan_Full_Wish.png/revision/latest?cb=20220507161424"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Character_Xinyan_Game.png/revision/latest?cb=20201201202634"
+                }
+            ]
+        },
+        {
+            "cnname": "八重神子",
+            "enname": "Yae Miko",
+            "jpnames": [
+                "八重神子",
+                "やえみこ"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Electro",
+            "weapon": "Catalyst",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/Character_Yae_Miko_Card.png/revision/latest?cb=20211231161334"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/49/Character_Yae_Miko_Full_Wish.png/revision/latest?cb=20220507110641"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/Character_Yae_Miko_Game.png/revision/latest?cb=20220218065514"
+                }
+            ]
+        },
+        {
+            "cnname": "烟绯",
+            "enname": "Yanfei",
+            "jpnames": [
+                "煙緋",
+                "えんひ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Catalyst",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/Character_Yanfei_Card.png/revision/latest?cb=20210422100113"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Character_Yanfei_Full_Wish.png/revision/latest?cb=20220507131829"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1b/Character_Yanfei_Game.png/revision/latest?cb=20210716071702"
+                }
+            ]
+        },
+        {
+            "cnname": "瑶瑶",
+            "enname": "Yaoyao",
+            "jpnames": [
+                "ヨォーヨ"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Dendro",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Character_Yaoyao_Card.png/revision/latest?cb=20221209042817"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/6/62/Character_Yaoyao_Full_Wish.png/revision/latest?cb=20230118030129"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/Character_Yaoyao_Game.png/revision/latest?cb=20230120162950"
+                }
+            ]
+        },
+        {
+            "cnname": "夜兰",
+            "enname": "Yelan",
+            "jpnames": [
+                "夜蘭",
+                "イェラン"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Hydro",
+            "weapon": "Bow",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/9/98/Character_Yelan_Card.png/revision/latest?cb=20220725205242"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Character_Yelan_Full_Wish.png/revision/latest?cb=20220531085912"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/Character_Yelan_Game.png/revision/latest?cb=20221001032904"
+                }
+            ]
+        },
+        {
+            "cnname": "宵宫",
+            "enname": "Yoimiya",
+            "jpnames": [
+                "宵宮",
+                "よいみや"
+            ],
+            "rarity": 5,
+            "gender": "Female",
+            "element": "Pyro",
+            "weapon": "Bow",
+            "region": "Inazuma",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/Character_Yoimiya_Card.png/revision/latest?cb=20210607100839"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Character_Yoimiya_Full_Wish.png/revision/latest?cb=20220507125627"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Character_Yoimiya_Game.png/revision/latest?cb=20210805135125"
+                }
+            ]
+        },
+        {
+            "cnname": "云堇",
+            "enname": "Yun Jin",
+            "jpnames": [
+                "雲菫",
+                "うんきん"
+            ],
+            "rarity": 4,
+            "gender": "Female",
+            "element": "Geo",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/Character_Yun_Jin_Card.png/revision/latest?cb=20220725205249"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/Character_Yun_Jin_Full_Wish.png/revision/latest?cb=20220507110218"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Character_Yun_Jin_Game.png/revision/latest?cb=20220106145056"
+                }
+            ]
+        },
+        {
+            "cnname": "钟离",
+            "enname": "Zhongli",
+            "jpnames": [
+                "鍾離",
+                "しょうり"
+            ],
+            "rarity": 5,
+            "gender": "Male",
+            "element": "Geo",
+            "weapon": "Polearm",
+            "region": "Liyue",
+            "skins": [
+                {
+                    "name": "Card",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Character_Zhongli_Card.png/revision/latest?cb=20201217052506"
+                },
+                {
+                    "name": "Wish",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/Character_Zhongli_Full_Wish.png/revision/latest?cb=20220507161902"
+                },
+                {
+                    "name": "In-Game",
+                    "url": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/Character_Zhongli_Game.png/revision/latest?cb=20210625145848"
+                }
+            ]
+        }
+    ],
+    "last_updated": 1676049086.9415052
+}
