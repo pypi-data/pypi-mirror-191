@@ -1,0 +1,15 @@
+wsidicomizer/__init__.py,sha256=NbzVKvS3_LHUJyXiKPcbe8cn28PAnKWVhChhGhEbk3A,992
+wsidicomizer/base_dicomizer.py,sha256=3hhFaNkBzFrC3TmQ3vLL8EAFrQbRyd2sYjTlJNMKk1U,7702
+wsidicomizer/cli.py,sha256=R3lI1epx_6tB_-zeEvXMhfxx22xE5e_PP41fDfJM0ss,4844
+wsidicomizer/config.py,sha256=MumGkhlPv2kEbUC9WyHqf9oVRCy3jl0alSI21EZU4hY,1175
+wsidicomizer/czi.py,sha256=R3fNjcCg-J51YMF1Eoiam1le9PCC2JgNcsBjwBTKZbs,22617
+wsidicomizer/dataset.py,sha256=2Tg7v_-X8ePSPlL1q2nXYuoTjYekln4bAh0kvl6vT5A,24296
+wsidicomizer/encoding.py,sha256=fDsdAzjDB_1eoIzQbja3kxnWKQgxbmy230DZUTFZ8SQ,6210
+wsidicomizer/image_data.py,sha256=TMBVtHYYQBouUlElYs5DQW3AbHcg3iSPm9khch_2xSo,1925
+wsidicomizer/openslide.py,sha256=2pXb-qdbbncgVhYYw_NSqqv3xJy0djhB07s763pPKJo,21022
+wsidicomizer/opentile.py,sha256=R5UmYDDHn_Nq4Qo6t4s6xRbERm1fnfIWhDrBulAJA_c,10455
+wsidicomizer/wsidicomizer.py,sha256=EIM_YHl3wQ9sJ_h06VUgZmek6285CMGEiUfQdJtxDzw,8659
+wsidicomizer-0.7.0.dist-info/entry_points.txt,sha256=0L1z7FlpODHcRcPJ6V8KkRy7MH3X_u99fgGfUnml6Nk,54
+wsidicomizer-0.7.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+wsidicomizer-0.7.0.dist-info/METADATA,sha256=hETRvqgOViqzHntLQGBYBb7rlP7G5kSWyAGCPtS4okg,7141
+wsidicomizer-0.7.0.dist-info/RECORD,,
