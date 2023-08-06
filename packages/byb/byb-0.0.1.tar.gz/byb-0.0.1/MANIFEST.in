@@ -1,0 +1,5 @@
+recursive-include byb *.py
+include byb/bots/assets/*
+include README.md
+include requirements.txt
+include .env.sample
