@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "hubitatcontrol"
+version = "1.0.10"
+description = "Hubitat Maker API Interface"
+authors = ["Jesse Schoepfer <jelloeater@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+homepage = "https://github.com/Jelloeater/hubitatcontrol"
+keywords = ["hubitat", "makerapi","requests"]
+classifiers = ["Development Status :: 5 - Production/Stable",
+ "Environment :: No Input/Output (Daemon)",
+ "Topic :: Home Automation",
+ "Intended Audience :: Developers",
+ "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "*"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = "test/"
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "[%(asctime)s] [%(levelname)8s] --- %(message)s (%(filename)s:%(funcName)s():%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+exclude =['./tests']
+max-line-length = 120
+count = false
+statistics = true
+diff = true
+format = "pylint"
+
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = "True"
+force_grid_wrap = 0
+use_parentheses = "True"
+line_length = 120
+profile = "black"
+
+[tool.poetry.group.test.dependencies]
+setuptools = "*"
+pytest = "*"
+pytest-cov = "*"
+python-dotenv = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest-pycharm = "*"
+pre-commit = "*"
+vulture = "*"
+isort = "*"
+radon = "*"
+xenon = "*"
+black = "*"
+typing_extensions ="*"
+#typeguard ="*" # Typing
+#mypy = "*" # Typing
+pdoc3 = "*"
+pylint = "*"
+bandit = "*"
+whispers = "*"
+mdformat-gfm ="*"
+mdformat-frontmatter ="*"
+flake8 = "*"
+Flake8-pyproject="*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
