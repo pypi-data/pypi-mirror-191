@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: seidr
+Version: 0.0.3
+Summary: Tools to facilitate parameterizing generative art projects
+Home-page: https://github.com/dmarx/seidr/
+Download-URL: https://github.com/dmarx/seidr/
+Author: David Marx
+Author-email: david.marx84@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Editors
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: keyframed
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+# Seiðr
+
+**Seiðr** *(SAY-thur)*: an ancient Norse shamanic divination practice that included influencing the future via symbolically "weaving" new events into being.
+
+## What is this
+
+Tools to facilitate parameterizing generative art projects, largely built on top of https://github.com/dmarx/keyframed. 
