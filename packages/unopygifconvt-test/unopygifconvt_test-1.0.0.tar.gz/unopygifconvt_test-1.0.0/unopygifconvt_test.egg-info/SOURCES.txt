@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+unopygifconvt_test/__init__.py
+unopygifconvt_test/converter.py
+unopygifconvt_test.egg-info/PKG-INFO
+unopygifconvt_test.egg-info/SOURCES.txt
+unopygifconvt_test.egg-info/dependency_links.txt
+unopygifconvt_test.egg-info/not-zip-safe
+unopygifconvt_test.egg-info/requires.txt
+unopygifconvt_test.egg-info/top_level.txt
