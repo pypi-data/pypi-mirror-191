@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lnschema_core
+Version: 0.26.1
+Summary: Data lineage (`yvzi`).
+Author-email: Lamin Labs <laminlabs@gmail.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: nbproject
+Requires-Dist: sqlmodel
+Requires-Dist: pydantic<2.0.0
+Requires-Dist: anndata
+Requires-Dist: typeguard
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: lndb>=0.32.3 ; extra == "test"
+Requires-Dist: pytest_alembic ; extra == "test"
+Project-URL: Home, https://github.com/laminlabs/lnschema-core
+Provides-Extra: dev
+Provides-Extra: test
+
+[![pypi](https://img.shields.io/pypi/v/lnschema_core?color=%2334D058&label=pypi%20package)](https://pypi.org/project/lnschema_core)
+
+# lnschema-core: Data lineage (`yvzi`)
+
+Read the [docs](https://lamin.ai/docs/lnschema-core).
+
