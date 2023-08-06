@@ -1,0 +1,9 @@
+xia_agent/__init__.py,sha256=KFy45nOLpbHcbUz64wZ5gKejEOOpFu8vrVV2_YokjTU,197
+xia_agent/puller.cp39-win_amd64.pyd,sha256=hgPaF1CiNMOdMetZ4oVumqgg8yL3DPk0rfn6UnI2YPk,251904
+xia_agent/pusher.cp39-win_amd64.pyd,sha256=YYbmfaS1-ZIurd9pbYEDIom2awDXckuAgLc-j6NExDE,258560
+xia_agent/synchronizer.cp39-win_amd64.pyd,sha256=cMM9uJIOzQpkIfNK6RZgzYKNM0y_aXyNW_L3MA3f0Dk,249856
+xia_agent-0.0.1.dist-info/LICENSE.txt,sha256=ya9ullmRKUoJ8dO9_fHVUFPeoVKHdFZYvmLkh7VFEgg,155
+xia_agent-0.0.1.dist-info/METADATA,sha256=s4-AXTFrGBzZwdl4lQvzJgDtJrUW-cphXNDFp1hCPTw,685
+xia_agent-0.0.1.dist-info/WHEEL,sha256=T8VPDjot1YI5-NaRzS6kIMlJNVl0SSGa_dm-8Fprszg,99
+xia_agent-0.0.1.dist-info/top_level.txt,sha256=uiK8HE2yj2wekdrxVgGRL0zCqajqbV6xrgTp7HlCXYU,10
+xia_agent-0.0.1.dist-info/RECORD,,
