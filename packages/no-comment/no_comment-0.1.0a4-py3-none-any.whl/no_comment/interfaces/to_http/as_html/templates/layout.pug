@@ -1,0 +1,45 @@
+//- No Comment --- Comment any resource on the web!
+//- Copyright © 2023 Bioneland
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+include mixins/flash_messages
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title
+      block title
+        | No Comment
+
+    block links
+    link(rel="stylesheet" href="#{url_for('static', filename='css/no-comment.css')}")
+    link(rel="stylesheet" href="#{url_for('static', filename='bundle/no-comment.css')}")
+    link(rel="alternate" type="application/rss+xml" title="RSS feed" href="#{url_for('comments.index', stream_id=stream_id, format='rss')}")
+    link(rel="alternate" type="application/atom+xml" title="ATOM feed" href="#{url_for('comments.index', stream_id=stream_id, format='atom')}")
+
+    script(defer src="#{url_for('static', filename='bundle/no-comment.js')}")
+  body(
+    data-stream-api-url="#{url_for('api_comments.index', stream_id=stream_id)}"
+    data-feed-url="#{url_for('comments.index', stream_id=stream_id, format='atom')}"
+    data-feed-icon-url="#{url_for('static', filename='img/feed.svg')}"
+  )
+    noscript
+      .page
+        - var messages = get_flashed_messages(with_categories=true)
+        +flash_messages(messages)
+
+        block content
