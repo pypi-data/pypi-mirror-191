@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cras7h
+Version: 1.0
+Summary: Package From Cras7h
+Author: Cras7h
+Author-email: <x@cras7h.de>
+Keywords: python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: vardxg
+
