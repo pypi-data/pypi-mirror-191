@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-deco"
+version = "0.3.10"
+description = ""
+authors = ["adrian <tamkayeung.adrian@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "pyDeco" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+PyYAML = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

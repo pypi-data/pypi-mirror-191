@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: python-deco
+Version: 0.3.10
+Summary: 
+Author: adrian
+Author-email: tamkayeung.adrian@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: pytest (>=7.2.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# py_decorators
+
+An OSS that has something to do with decorators in python
+
+# credits
+
+https://bytepawn.com/python-decorators-for-data-scientists.html
+
