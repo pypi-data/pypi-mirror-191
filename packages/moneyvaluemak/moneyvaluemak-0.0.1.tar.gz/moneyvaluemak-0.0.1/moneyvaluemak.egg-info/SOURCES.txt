@@ -1,0 +1,7 @@
+setup.py
+libname/__init__.py
+libname/money_calculator.py
+moneyvaluemak.egg-info/PKG-INFO
+moneyvaluemak.egg-info/SOURCES.txt
+moneyvaluemak.egg-info/dependency_links.txt
+moneyvaluemak.egg-info/top_level.txt
