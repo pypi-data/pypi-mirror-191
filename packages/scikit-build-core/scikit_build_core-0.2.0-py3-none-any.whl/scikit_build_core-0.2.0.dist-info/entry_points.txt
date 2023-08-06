@@ -1,0 +1,3 @@
+[distutils.setup_keywords]
+cmake_extensions = scikit_build_core.setuptools.extension:cmake_extensions
+cmake_source_dir = scikit_build_core.setuptools.extension:cmake_source_dir
