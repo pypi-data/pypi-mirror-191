@@ -1,0 +1,3 @@
+7.3.0-7.3.0-11.1.105
+            VER0.5.1MD50da22cba1e2d693b32473b2eaf7c29d2URLhttps://gitee.com/mirrors/ProjectQ/repository/archive/v0.5.1.tar.gzONLY_COPY_DIRSprojectq/backends/_sim/_cppkernelsPATCHES<source-dir>/third_party/projectq/patch/001-projectq.patch<source-dir>/third_party/projectq/patch/002-better-aligned-allocator.patch<source-dir>/third_party/projectq/patch/003-projectq-namespace.patch<source-dir>/third_party/projectq/patch/004-threshold-omp.patchFORCE_LOCAL_PKGTARGET_ALIASmindquantum::projectqprojectq::projectq - - ,6b7abe5724cd1333e89bd97e27ca8305,b1ccade3b16d5ee2a56c0d7546a7ec55,7b573e23a358bb66b2c1d5be65c227ce,45512e59a7cb9a8f8d7bad067e9359a2
+            ----
