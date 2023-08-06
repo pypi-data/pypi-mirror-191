@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cdj_minecraft/__init__.py
+cdj_minecraft/minecraft.py
+cdj_minecraft/translations.py
+cdj_minecraft.egg-info/PKG-INFO
+cdj_minecraft.egg-info/SOURCES.txt
+cdj_minecraft.egg-info/dependency_links.txt
+cdj_minecraft.egg-info/requires.txt
+cdj_minecraft.egg-info/top_level.txt
