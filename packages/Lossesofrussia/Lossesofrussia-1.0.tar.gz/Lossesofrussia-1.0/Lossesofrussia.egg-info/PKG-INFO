@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Lossesofrussia
+Version: 1.0
+Summary: The lossesofrussia library returns information about russia losses in the war with Ukraine
+Author: nazar.rudenok
+Author-email: nazarrudenok1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This module provides information about russia losses in the war from Ukraine.
+
+Usage information - https://losses-of-russia.space
