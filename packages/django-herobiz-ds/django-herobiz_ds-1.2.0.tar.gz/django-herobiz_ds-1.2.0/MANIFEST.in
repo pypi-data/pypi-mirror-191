@@ -1,0 +1,9 @@
+include LICENSE
+include README.md
+recursive-include herobiz/static *
+recursive-include herobiz/templates *
+recursive-exclude herobiz/migrations *
+recursive-exclude staticfiles *
+recursive-exclude mytester *
+recursive-exclude _data *
+recursive-exclude _static *
