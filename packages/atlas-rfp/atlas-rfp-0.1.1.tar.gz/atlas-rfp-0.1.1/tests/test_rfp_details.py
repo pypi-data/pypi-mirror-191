@@ -1,0 +1,1 @@
+# ENSURE that we also test the Mailing Instructions path
