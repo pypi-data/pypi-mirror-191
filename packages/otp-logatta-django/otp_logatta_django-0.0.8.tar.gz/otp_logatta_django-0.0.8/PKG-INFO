@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: otp_logatta_django
+Version: 0.0.8
+Summary: A small example package
+Author-email: Ashrf <ash2881997@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# otp_logatta_django
+
+## Description
+
+this package uses the relenes api to send otp to the user and verify it 
+
+
+
+## to use this app 
+
+1- In your project's settings.py file, add your app to the list of INSTALLED_APPS:
+
+```python
+
+    INSTALLED_APPS=[
+        ...
+       'otp_logatta_django',
+    ]
+```
+
+2- define a varibale in the `settings.py` file for the api key 
+
+```
+    RELENES_API_KEY= 'your api key'
+    RELENES_SENDER_ID= 'your sender id'
+```
+
+3- In your project's urls.py file, add the following line:
+
+```python
+
+    path('otp/', include('Django_otp.urls')),
+```
+
+
+4- now you have access to the following urls 
+
+```python
+    /otp/send/ 
+    /otp/verify/
+```
+
+
+

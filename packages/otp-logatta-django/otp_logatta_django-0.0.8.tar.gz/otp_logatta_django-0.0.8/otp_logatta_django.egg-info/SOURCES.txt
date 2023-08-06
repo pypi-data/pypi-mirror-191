@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+otp_logatta_django/__init__.py
+otp_logatta_django/apps.py
+otp_logatta_django/setup.py
+otp_logatta_django/urls.py
+otp_logatta_django/utils.py
+otp_logatta_django/views.py
+otp_logatta_django.egg-info/PKG-INFO
+otp_logatta_django.egg-info/SOURCES.txt
+otp_logatta_django.egg-info/dependency_links.txt
+otp_logatta_django.egg-info/top_level.txt
