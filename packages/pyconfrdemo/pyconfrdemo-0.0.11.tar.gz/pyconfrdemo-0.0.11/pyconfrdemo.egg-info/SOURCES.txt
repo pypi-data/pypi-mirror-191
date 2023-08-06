@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pyconfrdemo.egg-info/PKG-INFO
+pyconfrdemo.egg-info/SOURCES.txt
+pyconfrdemo.egg-info/dependency_links.txt
+pyconfrdemo.egg-info/top_level.txt
+template/__init__.py
+template/version.py
