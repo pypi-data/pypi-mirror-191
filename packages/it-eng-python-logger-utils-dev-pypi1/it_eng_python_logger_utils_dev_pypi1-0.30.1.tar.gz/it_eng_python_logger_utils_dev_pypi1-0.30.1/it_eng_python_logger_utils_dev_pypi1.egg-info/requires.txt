@@ -1,0 +1,4 @@
+opencensus-ext-requests
+opencensus-ext-azure
+requests
+it_eng_python_logger_utils_dev_pypi1
