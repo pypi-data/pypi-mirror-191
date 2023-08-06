@@ -1,0 +1,12 @@
+numpy
+scipy
+h5py
+brighteyes-ism
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
