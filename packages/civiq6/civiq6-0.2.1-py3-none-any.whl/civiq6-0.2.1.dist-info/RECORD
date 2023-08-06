@@ -1,0 +1,12 @@
+civiq6/__init__.py,sha256=-r7l8y7dUv48Fl7CNsy4HE18gOaorE_yiT0dXc4mVlg,566
+civiq6/camera.py,sha256=kJpXNTelJAB-RUiSxXJ1ZrtqyGec4z-h5z3NeViU37o,6020
+civiq6/capture.py,sha256=e4FtXqA6a68zV1cfaYPD9drV-ZPv4DeCtRrSoWrCdLs,4591
+civiq6/devices.py,sha256=UJ9HPbwo2JBr3RvpJZAClT_wb0rRKcPPZPc_I_KOOhM,9602
+civiq6/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+civiq6/qt_compat.py,sha256=9XASr6fD5vkxIM5YfNhgTAMi26t_Z2tv9orGuyqxST0,4416
+civiq6/version.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+civiq6-0.2.1.dist-info/LICENSE,sha256=iyHLGgtVLN1kfq2oc1A9Fv868elNf9loQUU2gYmAGpw,1140
+civiq6-0.2.1.dist-info/METADATA,sha256=3KdTMbFKm8lAP8j40Px04ZI6p6HVi2tnDJrx-7VizAY,5941
+civiq6-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+civiq6-0.2.1.dist-info/top_level.txt,sha256=Ep9GBbRRKoDMOrZ3yOP0tUPlukNAor7yv7SD6kn6-7s,7
+civiq6-0.2.1.dist-info/RECORD,,
