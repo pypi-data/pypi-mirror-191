@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+pippi/__init__.py
+pippi/text_cleaning.py
+pippi/text_transformation.py
+pippi/utils.py
+pippi_lang.egg-info/PKG-INFO
+pippi_lang.egg-info/SOURCES.txt
+pippi_lang.egg-info/dependency_links.txt
+pippi_lang.egg-info/requires.txt
+pippi_lang.egg-info/top_level.txt
+tests/test_text_cleaning.py

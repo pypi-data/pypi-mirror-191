@@ -1,0 +1,6 @@
+scikit-learn
+nltk
+pandas
+coloredlogs
+beautifulsoup4
+lxml
