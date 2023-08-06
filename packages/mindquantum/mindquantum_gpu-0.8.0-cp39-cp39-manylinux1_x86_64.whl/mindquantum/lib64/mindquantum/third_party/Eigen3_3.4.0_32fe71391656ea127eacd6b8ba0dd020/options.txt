@@ -1,0 +1,3 @@
+7.3.0-7.3.0-11.1.105
+            VER3.4.0URLhttps://gitee.com/paddle-mirror/eigen/repository/archive/3.4.0.tar.gzMD54c527a9171d71a72a9d4186e65bea559CMAKE_OPTION-DBUILD_TESTING=OFF-DEIGEN_BUILD_DOC=OFFTARGET_ALIASmindquantum::eigenEigen3::Eigen - - 
+            ----

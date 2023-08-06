@@ -1,0 +1,3 @@
+7.3.0-7.3.0-11.1.105
+            VER9.1.0URLhttps://gitee.com/mirrors_trending/fmt/repository/archive/9.1.0.tar.gzMD521fac48cae8f3b4a5783ae06b443973aCMAKE_PKG_NO_COMPONENTSCMAKE_OPTION-DFMT_TEST=OFF-DFMT_DOC=OFF-DFMT_SYSTEM_HEADERS=OFF-DCMAKE_POSITION_INDEPENDENT_CODE=ONTARGET_ALIAS3mindquantum::fmtfmt::fmt-header-onlyfmt::fmt - - 
+            ----
