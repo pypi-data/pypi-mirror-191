@@ -1,0 +1,6 @@
+jupyterlab
+jupyter-dash
+dash
+dash-bootstrap-components
+pandas
+networkx
