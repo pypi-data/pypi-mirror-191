@@ -1,0 +1,34 @@
+{% extends "blogorama/base.html" %}
+
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load markdownify %}
+
+{% block title %}
+    - Blog Create a Post
+{% endblock title %}
+
+{% block extra_css %}
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css">
+{% endblock extra_css %}
+
+{% block extra_head_js %}
+    <script src="https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js"></script>
+{% endblock extra_head_js %}
+
+{% block content %}
+    <h1>Create your Blog Post</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-primary" type="submit" value="Save">
+        <a class="btn btn-outline-secondary"
+           href="{% url 'blogorama_post-list' %}">Cancel</a>
+    </form>
+{% endblock content %}
+
+{% block extra_js %}
+    <script>const easyMDE = new EasyMDE();</script>
+{% endblock extra_js %}

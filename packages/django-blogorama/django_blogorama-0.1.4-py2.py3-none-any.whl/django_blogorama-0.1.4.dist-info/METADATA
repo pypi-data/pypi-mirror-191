@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: django-blogorama
+Version: 0.1.4
+Summary: Blogging App to add to any project
+Author-email: Grant Viklund <renderbox@gmail.com>
+Project-URL: Homepage, https://github.com/renderbox/django-blogorama/
+Project-URL: Bug Tracker, https://github.com/renderbox/django-blogorama//issues
+Keywords: django,app
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Django (<4.2,>=3.0)
+Requires-Dist: djangorestframework
+Requires-Dist: Pillow
+Provides-Extra: dev
+Requires-Dist: django-crispy-forms ; extra == 'dev'
+Requires-Dist: crispy-bootstrap5 ; extra == 'dev'
+Requires-Dist: django-allauth ; extra == 'dev'
+Requires-Dist: django-extensions ; extra == 'dev'
+Requires-Dist: django-markdownify ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Requires-Dist: djlint ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: django-extensions ; extra == 'docs'
+Requires-Dist: coverage ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+![Blogorama CI](https://github.com/renderbox/django-blogorama/workflows/Blogorama%20CI/badge.svg)
+
+![Blogorama CI](https://github.com/renderbox/django-blogorama/workflows/Blogorama%20Develop/badge.svg)
+
+# Blogorama
+
+Blogging App to add to any project
