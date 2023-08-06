@@ -1,0 +1,9 @@
+botocore/data/s3control/2018-08-20/endpoint-rule-set-1.json,sha256=yBg10YvSzDozwShgKLkn9-4p-IyJ1Nd45g_uOfn0axE,330566
+botocore/data/s3control/2018-08-20/examples-1.json,sha256=K3b6mgYkitvcecSlJT-iV_EQATmvOySs66iKJI5qx0g,44
+botocore/data/s3control/2018-08-20/paginators-1.json,sha256=mQbakYLFsRf-PwUykRHaPqhJ5lmg7TydWKz85l_Wv0g,225
+botocore/data/s3control/2018-08-20/service-2.json,sha256=whK_Lcv4lrzyroSIW2HOpViR2gBKUWLxeNlPqRszoEQ,309034
+botocore_a_la_carte_s3control-1.29.70.dist-info/LICENSE.txt,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+botocore_a_la_carte_s3control-1.29.70.dist-info/METADATA,sha256=p1n3ZlavTJfJI7rlwONBoRmxcjAmXMnq2pwsQJ7pgX0,962
+botocore_a_la_carte_s3control-1.29.70.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+botocore_a_la_carte_s3control-1.29.70.dist-info/top_level.txt,sha256=IdlNr9dnwi3lQt66dKnShE5HBUhIqBFqJmVhm11aijk,9
+botocore_a_la_carte_s3control-1.29.70.dist-info/RECORD,,
