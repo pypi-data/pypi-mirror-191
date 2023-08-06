@@ -1,0 +1,41 @@
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = ["tests"]
+pythonpath = "."
+
+
+[tool.black]
+line-length = 88
+
+[tool.poetry]
+name = "trie-again"
+version = "0.2.0"
+description = "Trie data structure for prefix search and text completion"
+authors = ["Egor Blagov <e.m.blagov@gmail.com>"]
+license = "ISC"
+readme = "README.md"
+build = 'build.py'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+cython = "^0.29.33"
+pytest = "^7.2.1"
+pytest-benchmark = "^4.0.0"
+flake8 = "^6.0.0"
+flake8-bugbear = "^23.1.20"
+pre-commit = "^3.0.4"
+coverage = {extras = ["toml"], version = "^7.1.0"}
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core", "Cython", "setuptools"]
+
+[tool.coverage.run]
+omit = [".*", "*/site-packages/*", "*/tests/*"]
+
+[tool.coverage.report]
+fail_under = 100
