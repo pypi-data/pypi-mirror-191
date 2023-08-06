@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: line-sticker-for-whatsapp
+Version: 0.0.1
+Summary: Download and convert LINE sticker pack into WhatsApp compatible format.
+Project-URL: Documentation, https://github.com/Shivelight/line-sticker-for-whatsapp
+Project-URL: Issues, https://github.com/Shivelight/line-sticker-for-whatsapp/issues
+Project-URL: Source, https://github.com/Shivelight/line-sticker-for-whatsapp
+Author-email: Shivelight <shivelight@tuta.io>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: click
+Description-Content-Type: text/markdown
+
+# LINE Sticker for WhatsApp
+
+[![PyPI - Version](https://img.shields.io/pypi/v/line-sticker-for-whatsapp.svg)](https://pypi.org/project/line-sticker-for-whatsapp)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/line-sticker-for-whatsapp.svg)](https://pypi.org/project/line-sticker-for-whatsapp)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install line-sticker-for-whatsapp
+```
+
+## License
+
+`line-sticker-for-whatsapp` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

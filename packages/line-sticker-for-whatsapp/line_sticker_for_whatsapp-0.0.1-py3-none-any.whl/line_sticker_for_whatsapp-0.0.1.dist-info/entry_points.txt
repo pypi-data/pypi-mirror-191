@@ -1,0 +1,2 @@
+[console_scripts]
+line-sticker-for-whatsapp = line_sticker_for_whatsapp.cli:line_sticker_for_whatsapp
