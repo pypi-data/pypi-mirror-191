@@ -1,0 +1,2 @@
+[gui_scripts]
+balistica = balistica:app_start
