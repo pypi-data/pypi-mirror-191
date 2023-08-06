@@ -1,0 +1,3 @@
+[console_scripts]
+vose-sampler = vose_sampler.vose_sampler:main
+
