@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# name of the package
+name="pyvstress"
+
+# version
+version="0.0.1"
+
+# small description about the module
+description="A minimal code to compute vertical stresses in soil."
+
+keywords = ["Soil Mechanics", "Geotechnical Engineering", "Vertical Stresses in Soil"]
+
+# author name and email
+authors = [
+    {name = "A. Sharma", email = "confusionaananda@gmail.com"},
+]
+
+license = {text = "GPLV3"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["numpy==1.23.5"]
+
+[project.urls]
+homepage = "https://gitlab.com/geosharma/pvstress"
+documentation = "https://pyvstress.readthedocs.io/index.html"
+repository = "https://gitlab.com/geosharma/pvstress"
+
+[tool.setuptools.packages]
+# Scan the project directory with the default parameters
+find = {}  

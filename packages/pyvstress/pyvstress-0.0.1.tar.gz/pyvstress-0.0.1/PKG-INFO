@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyvstress
+Version: 0.0.1
+Summary: A minimal code to compute vertical stresses in soil.
+Author-email: "A. Sharma" <confusionaananda@gmail.com>
+License: GPLV3
+Project-URL: homepage, https://gitlab.com/geosharma/pvstress
+Project-URL: documentation, https://pyvstress.readthedocs.io/index.html
+Project-URL: repository, https://gitlab.com/geosharma/pvstress
+Keywords: Soil Mechanics,Geotechnical Engineering,Vertical Stresses in Soil
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.md
