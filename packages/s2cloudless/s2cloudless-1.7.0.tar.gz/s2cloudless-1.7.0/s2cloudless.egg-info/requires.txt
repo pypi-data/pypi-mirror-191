@@ -1,0 +1,15 @@
+lightgbm>=2.0.11
+numpy>=1.13.3
+scikit-image>=0.13.0
+scipy>=0.19.1
+sentinelhub>=3.8.0
+typing_extensions
+
+[DEV]
+codecov
+mypy
+pre-commit
+pylint>=2.14.0
+pytest-cov
+pytest>=3.0.0
+twine
