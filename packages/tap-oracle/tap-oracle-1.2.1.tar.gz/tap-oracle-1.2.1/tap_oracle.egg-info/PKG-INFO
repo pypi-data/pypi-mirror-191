@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: tap-oracle
+Version: 1.2.1
+Summary: Singer.io tap for extracting data from Oracle
+Home-page: https://singer.io
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
