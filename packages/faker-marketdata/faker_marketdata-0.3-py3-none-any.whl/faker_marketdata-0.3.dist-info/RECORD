@@ -1,0 +1,9 @@
+faker_marketdata/MarketDataProvider.py,sha256=vSOMlcQi3oLyIpza4Fa328L_DWoMOLde8ntsMarcQNE,4211
+faker_marketdata/__init__.py,sha256=5ckoXzyrjfvgpczEFi7QVMYQLASlAZOfF_lluc7OMU8,51
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_marketdata.py,sha256=DLGtC22wlDd4qyk9jtpyK0yd313deCxVabvbzgEWQMI,2105
+faker_marketdata-0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+faker_marketdata-0.3.dist-info/METADATA,sha256=5BlrkwS7ofaMtJcvKYnNotrWvX1WvUUpd3WJmuJ20sY,1495
+faker_marketdata-0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+faker_marketdata-0.3.dist-info/top_level.txt,sha256=xbGNUpsqTgTBnUDNJyfWr1rB8NDewV6M5N_cWTWWAoo,23
+faker_marketdata-0.3.dist-info/RECORD,,
