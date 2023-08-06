@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: feeluown-bilibili
+Version: 0.1.4
+Summary: Bilibili provider for FeelUOwn player.
+Home-page: https://github.com/BruceZhang1993/feeluown-bilibili
+License: GPL-3.0
+Author: Bruce Zhang
+Author-email: zttt183525594@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: beautifulsoup4
+Requires-Dist: cachetools
+Requires-Dist: feeluown (>=3.8.7)
+Requires-Dist: pycryptodomex
+Description-Content-Type: text/markdown
+
+# Yet another bilibili plugin for FeelUOwn player
+
+## Prerequisite
+
+You must have [FeelUOwn](https://github.com/feeluown/FeelUOwn) first
+
+- Python >= 3.10  
+- FeelUOwn >= 3.8.7
+
+## Installation
+
+### PyPI
+
+https://pypi.org/project/feeluown-bilibili/
+
+```shell
+pip install feeluown-bilibili
+```
+
+### Arch Linux
+
+https://aur.archlinux.org/packages/feeluown-bilibili
+
+```shell
+yay -S feeluown-bilibili
+```
+
+## Development
+
+```shell
+poetry install
+```
+
+## License
+
+[GPL-3.0](https://github.com/BruceZhang1993/feeluown-bilibili/blob/master/LICENSE.txt)
+
+## Special notes
+
+- Proudly use [danmaku2ass](https://github.com/m13253/danmaku2ass) to transform danmaku format
+- Proudly use [poetry](https://python-poetry.org/) as dependency manager tool
+
