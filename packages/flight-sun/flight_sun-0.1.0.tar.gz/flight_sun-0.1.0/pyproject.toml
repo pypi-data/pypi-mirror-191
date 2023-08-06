@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flight_sun"
+version = "0.1.0"
+description = "Calculate the sun position during a flight"
+license = { file = "LICENSE" }
+authors = [
+    { name = "James Baird", email = "j.baird94@gmail.com" }
+]
+readme = "README.md"
+dependencies = [
+    "airportsdata",
+    "skyfield"
+]
+
+[project.urls]
+repository = "https://github.com/bairdj/flight_sun"
