@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: cosl
+Version: 0.0.1
+Summary: Utils for COS Lite charms
+Project-URL: Homepage, https://github.com/canonical/observability-libs/
+Project-URL: Bug Tracker, https://github.com/canonical/observability-libs/issues
+Author-email: sed-i <82407168+sed-i@users.noreply.github.com>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# cosl
+Utils for COS Lite charms.
