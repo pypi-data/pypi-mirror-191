@@ -1,0 +1,12 @@
+ververser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ververser/asset_manager.py,sha256=JnJpe3JTMBX4Sb8Q4HHC6cfW7k18FgL6xQpy3l5A1dE,2378
+ververser/example/__main__.py,sha256=gQw0u-h_1MzAT3_gpXEybN76S5i1JxGQtilnPt4yoKs,271
+ververser/example/content/main.py,sha256=P_fzeGcdGJt9MgsE604bfJVK-zwKL9P4yWIlOBw_DeI,700
+ververser/file_watcher.py,sha256=KISHDi-3sEwDsJ9IeEmcajAm4SvSfldXwydr4VaLt8I,708
+ververser/fps_counter.py,sha256=7yMhKOvstZddEDbCZ2cgi48l3U8njPuEa41cTa2cqKQ,800
+ververser/game_window.py,sha256=J86G9qmx5NoG8xXgPxuIqPvnmxGS9tx7goA0cjffVrM,3313
+ververser/reloading_asset.py,sha256=d3ANYfYYCadUS6Wgd3dDyGNXyfVf64nbP1W9SuzpwYg,1079
+ververser/script.py,sha256=KBbzRA4XtgaIPX7ekDlf1Gj2XN4KKvobU69Y2Ar6ENs,871
+ververser-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+ververser-0.1.0.dist-info/METADATA,sha256=AzeCJPXTvr4_uo7rh-fWOj73ffi5GNhiXzGh7ayoT4Y,335
+ververser-0.1.0.dist-info/RECORD,,
