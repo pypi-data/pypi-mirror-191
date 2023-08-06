@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: BT-diagrams
+Version: 0.0.2
+Summary: Thesis project
+Home-page: https://github.com/Perlten/Master-thesis-rename
+Author: Nikolai Perlt
+Author-email: npe@itu.dk
+Classifier: Programming Language :: Python :: 3.10
