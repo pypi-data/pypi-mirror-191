@@ -1,0 +1,5 @@
+[console_scripts]
+midgy = midgy.__main__:main
+
+[importnb]
+md = midgy.loader:Markdown
