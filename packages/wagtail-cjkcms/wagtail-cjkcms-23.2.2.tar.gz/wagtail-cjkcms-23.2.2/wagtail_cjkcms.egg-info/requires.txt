@@ -1,0 +1,4 @@
+wagtail>=4.0.1
+django-bootstrap5>=22.1
+wagtail-cache>=2.2.0
+wagtail-seo>=2.3.0
