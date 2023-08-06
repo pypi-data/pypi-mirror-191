@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+src/OasysGeotech/OASYS_Alp.py
+src/OasysGeotech/OASYS_PDisp.py
+src/OasysGeotech/OASYS_Slope.py
+src/OasysGeotech/__init__.py
+src/OasysGeotech.egg-info/PKG-INFO
+src/OasysGeotech.egg-info/SOURCES.txt
+src/OasysGeotech.egg-info/dependency_links.txt
+src/OasysGeotech.egg-info/top_level.txt
