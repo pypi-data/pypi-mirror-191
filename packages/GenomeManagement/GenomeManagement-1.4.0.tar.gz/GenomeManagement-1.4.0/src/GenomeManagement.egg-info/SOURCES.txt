@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/seq_manage.py
+src/GenomeManagement.egg-info/PKG-INFO
+src/GenomeManagement.egg-info/SOURCES.txt
+src/GenomeManagement.egg-info/dependency_links.txt
+src/GenomeManagement.egg-info/top_level.txt
