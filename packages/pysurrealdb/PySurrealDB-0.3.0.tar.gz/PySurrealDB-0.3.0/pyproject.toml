@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "PySurrealDB"
+version = "0.3.0"
+description = "A library to connect to SurrealDB."
+readme = "README.md"
+authors = ["Aurelion314"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "*"
