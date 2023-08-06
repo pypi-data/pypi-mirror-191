@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: python-preflight
+Version: 0.1
+Summary: preflight
+Author-email: Jonathan Dobson <jon@dobson.land>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/jomido/preflight
