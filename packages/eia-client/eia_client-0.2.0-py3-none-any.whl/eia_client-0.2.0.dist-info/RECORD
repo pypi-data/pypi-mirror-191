@@ -1,0 +1,11 @@
+eia_client/__init__.py,sha256=YmWlM_GlsOSF5HQMGEDf3uvNkTdbQEcWgajw_9kLD3E,258
+eia_client/api_key.py,sha256=waRSDD8Iz0OWcISw5D2dhk3Vb40S5MqzANNPH1Gax6E,3033
+eia_client/cli.py,sha256=VjgVmQ5dmuqWgKDx-3W9Js9hKLhfiF8CqqlDjMz4kMI,2855
+eia_client/client.py,sha256=5pDEKv3lNl-H2pcHbCwXknZ5FHMs_OhNaiznN1wmKSE,413
+eia_client/endpoint.py,sha256=UCLHHmtB-f7EkckeUe4IO8_coe8mO-CCM0uAen-7nOM,2232
+eia_client/parse.py,sha256=uuHmifouqdIBjDgRmxALBPtJWLwjPGct88JRrm2yjRA,767
+eia_client-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+eia_client-0.2.0.dist-info/METADATA,sha256=w8mY2qC3scU5IAKzHewli9vQEHsNgAv9_3stxxxgvUU,3216
+eia_client-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+eia_client-0.2.0.dist-info/top_level.txt,sha256=zWY24Eqx5g34k3deBaUUHdATekOguWX5_4XnF3y_iuM,11
+eia_client-0.2.0.dist-info/RECORD,,
