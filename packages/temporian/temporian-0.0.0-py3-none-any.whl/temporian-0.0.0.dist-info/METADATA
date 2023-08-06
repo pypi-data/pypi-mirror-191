@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: temporian
+Version: 0.0.0
+Summary: Temporian is a library to pre-process temporal signals before their use as input features with off-the-shelf tabular machine learning libraries (e.g., TensorFlow Decision Forests).
+Home-page: https://github.com/google/temporian
+Author: Mathieu Guillame-Bert, Ian Spektor, Guillermo Etchebarne, Diego Marvid, Richard Stotz
+Author-email: gbm@google.com, ispektor@tryolabs.com, getchebarne@tryolabs.com, dmarvid@tryolabs.com, richardstotz@google.com
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/google/temporian/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+License-File: LICENSE
+
