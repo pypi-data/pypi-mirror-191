@@ -1,0 +1,17 @@
+gmailconnector/__init__.py,sha256=iVa_Xwyr23zh1fSeJ3I0F1N7S4PGXB-VRvl3J9oCdok,311
+gmailconnector/options.py,sha256=oBsll9u990xjKptiYC33kylTl3Wilyqc9YbxpyRhpXc,1467
+gmailconnector/read_email.py,sha256=2yS90ioOcOuwcH5yHlpOKVkMUxZQHryQbXkyYaMG5BM,7469
+gmailconnector/responder.py,sha256=M_BoXHc7FVOJC3qaXaYBc8aQdKltC5kvUlOBcnxtzO4,2454
+gmailconnector/send_email.py,sha256=vv1xj6kaIzy_bEWhykJfOaLYimBX6h9c6zDBONF38sY,9282
+gmailconnector/send_sms.py,sha256=aLHovpgF_yr4lBhxE5wE5nwHtEDRcyfCEwsOvmaefv4,7602
+gmailconnector/sms_deleter.py,sha256=DJkD_b0cFSleg6Lux3wGrWNRNY1u3TmwX3LWa4KGSOw,2933
+gmailconnector/validator/__init__.py,sha256=PVxUb721uh20jkcUJmUt9vZ0Dr-mf3Qmd0IVL7LFWfA,56
+gmailconnector/validator/address.py,sha256=Qlk9ROe_xyG8wSbVFsaRYmrVeORec-W5p9WS2uRZeQA,1299
+gmailconnector/validator/domain.py,sha256=SiEEF0Gm6nEChgoFCSpQv3UWBmEMrmGwLomhjfyr9qU,1750
+gmailconnector/validator/exceptions.py,sha256=F1ZJl3lcPRDv7u4jU-HI-FxVVSQr-kdT5BYMrUwLDZY,388
+gmailconnector/validator/validate_email.py,sha256=oy7m_rVRG2nfK512b91RoXqzXjyNIwc7DZrVPB2Zzpc,4188
+gmail_connector-0.6.8.dist-info/LICENSE,sha256=khwb-_X88C6Va_FZB_sJgB-xukCrEvkq8C3P_IGzysE,1078
+gmail_connector-0.6.8.dist-info/METADATA,sha256=aEkPFt3m8X1idvG5XxKLw9oJcULDfdYpbg-2r1NR-KE,11514
+gmail_connector-0.6.8.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gmail_connector-0.6.8.dist-info/top_level.txt,sha256=ynqP0P1TpwMeBhYpBGK8jkEhjpa4AQylvdQiTZgPL2w,15
+gmail_connector-0.6.8.dist-info/RECORD,,
