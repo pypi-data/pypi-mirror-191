@@ -1,0 +1,106 @@
+{% extends 'ocp_project_plugin/ocp_project/base.html' %}
+{% load helpers %}
+{% load render_table from django_tables2 %}
+{% load settings %}
+
+{% block content %}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header">OCP Project</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Name</th>
+                        <td>{{ object.name }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Description</th>
+                        <td>{{ object.description }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Display Name</th>
+                        <td>{{ object.display_name }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Project Owner</th>
+                        <td>{{ object.project_owner|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Contact E-Mail</th>
+                        <td>{{ object.project_owner.email|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Customer</th>
+                        <td>{{ object.customer|linkify|placeholder }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">URL</th>
+                        <td><a href="{{ object.docu_url }}">{{ object.docu_url }}</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Workload</th>
+                        <td>{{ object.workload }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Request</th>
+                        <td><a href="{% jira_browse_url object.request %}">{{ object.request }}</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card">
+            <h5 class="card-header">Total Resources / Prices</h5>
+            <div class="card-body">
+                <table class="table table-hover attr-table">
+                    <tr>
+                        <th scope="row">Total CPUs</th>
+                        <td>{{ total_cpu }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Memorys</th>
+                        <td>{{ total_memory }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Storage (GB)</th>
+                        <td>{{ total_storage }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total CPU Cost</th>
+                        <td>{{ total_cpu_cost }} CHF</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Memory Cost</th>
+                        <td>{{ total_memory_cost }} CHF</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Storage Cost</th>
+                        <td>{{ total_storage_cost }} CHF</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Total Cost</th>
+                        <td>{{ total_cost }} CHF</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-md-12">
+        <div class="card">
+            <h5 class="card-header">App Environments ({% count_app_environments object.pk %})</h5>
+            <div class="card-body table-responsive">
+                {% render_table assignments_table 'inc/table.html' %}
+                {% include 'inc/paginator.html' with paginator=assignments_table.paginator page=assignments_table.page %}
+            </div>
+                <div class="card-footer text-end noprint">
+                    <a href="{% url 'plugins:ocp_project_plugin:appenvironment_add' %}?ocp_project={{ object.pk }}" class="btn btn-sm btn-primary">
+                        <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add App Environment
+                    </a>
+                </div>
+        </div>
+    </div>
+{% endblock %}
+</div>
