@@ -1,0 +1,27 @@
+## t5html
+@@ stdlib.t5i
+
+_SCREEN-500 := "screen AND (max-width:500px)"
+
+
+!! HTML5
+html
+   head > UTF8 | AUTHOR_splendor | DESC_"An Example page for the T5HTML-system" 
+      title > "Example Three 
+      FAVICON
+      MEDIA__SCREEN-500 > !! a { background: white }
+      CSS_css/main.css
+      REFRESH_5
+   body
+      header
+         nav.home > button 
+      main
+      aside
+      footer
+      template
+         div single-attribute other-attribute
+            A_assets/images/home.png > img src=images/home.png
+
+
+
+## vi: set et sw=3 ts=3 ai ft=t5html :

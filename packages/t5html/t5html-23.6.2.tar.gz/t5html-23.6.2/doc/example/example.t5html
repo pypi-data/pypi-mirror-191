@@ -1,0 +1,42 @@
+## t5html
+
+## definitions / macros
+##
+DCT := <!DOCTYPE html>
+CHARSET := meta charset=utf-8
+VIEWPORT := meta name=viewport
+DESC := meta name=description content="A simple HTML5 Template"
+AUTHOR := meta name=author content=splendor
+OG_PROPERTY := meta property=og:title content=HTML5-Template |
+            .. meta property=og:type content=website |
+            .. meta property=og.url content=www.example.org |
+            .. meta property=og.description content="Example for t5html" |
+            .. meta property=og.image content=noneatm
+FAVICON := link rel=icon href=/favicon.ico |
+        .. link rel=icon href=/favicon.svg type=image/svg+xml |
+        .. link rel=apple-touch-icon href=/apple-touch-icon.png
+CSS_ := link rel=stylesheet 
+JS_  := script src=
+
+## DOCUMENT-TREE
+#
+!DCT
+html > head
+      # not more then one multiline macro per line
+      CHARSET | DESC | AUTHOR | FAVICON
+      OG_PROPERTY
+      CSS_ href=css/styles.css?v=23.1
+      JS_ js/script.js
+   body
+      main
+         article#example
+            h1 > "This is an t5html-example
+            p class=p-normal
+               " A human readable, strucured file
+               .. written in a specific format called the
+               .. Trivial Text-Tree To Trivial HTML (ttttthtml or t5html)
+               .. format, allows for easy prototyping of web-pages.
+
+
+
+# vi: set et sw=3 ts=3 :

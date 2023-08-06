@@ -1,0 +1,25 @@
+## t5html
+
+## definitions / macros
+@@ example2.t5hi from .
+
+#
+## DOCUMENT-TREE
+#
+!DOCTYPE
+html > head
+      # not more then one multiline macro per line
+      CHARSET | DESC | AUTHOR | FAVICON
+      OG_PROPERTY
+      CSS_ href=css/styles.css?v=23.1
+      JS_ js/script.js
+   body
+      main
+         article#example
+            h1 > "This is an t5html-example
+            p class=p-normal
+               " A human readable, strucured file
+               .. written in a specific format called the
+               .. Trivial Text-Tree To Trivial HTML (ttttthtml or t5html)
+               .. format, allows for easy prototyping of web-pages.
+# vi: set et sw=3 ts=3 :

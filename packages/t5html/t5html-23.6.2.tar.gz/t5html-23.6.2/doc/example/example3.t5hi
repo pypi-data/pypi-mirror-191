@@ -1,0 +1,23 @@
+## t5html
+
+## definitions / macros
+##
+HTML5 := <!DOCTPYE html>
+UTF8 := meta charset=utf-8
+AUTHOR_ := meta name=author content=
+
+VIEWPORT := meta name=viewport
+DESC := meta name=description content="A simple HTML5 Template"
+OG_PROPERTY := meta property=og:title content=HTML5-Template |
+            .. meta property=og:type content=website |
+            .. meta property=og.url content=www.example.org |
+            .. meta property=og.description content="Example for t5html" |
+            .. meta property=og.image content=noneatm
+FAVICON := link rel=icon href=/favicon.ico |
+        .. link rel=icon href=/favicon.svg type=image/svg+xml |
+        .. link rel=apple-touch-icon href=/apple-touch-icon.png
+CSS_ := link rel=stylesheet 
+JS_  := script src=
+
+
+# vi: set et sw=3 ts=3 :

@@ -1,0 +1,101 @@
+
+.\" ManPage for t5html
+.\" date: 02/09/23
+.TH man 1 "10 February 2023" "t5html man page"
+
+
+.SH NAME
+.\" ====
+t5html \- creates a HTML-document from a text-file in t5html-form.
+
+
+.SH SYNOPSIS
+.\" ========
+t5html [text-file]
+
+
+.SH DESCRIPTION
+.\" ===========
+T5HTML allows fast html-prototyping by using an abbreviated pseudo-html syntax.
+.SS T5HTML-Syntax
+A T5HTML file consists normally of an import, macro and tree-definition part.
+.PP
+Each Line is parsed separately, but there are special symbols, which allow the
+continuation ("..") or breaking up ("|", "<", ">") of a line.
+.PP
+The indentation in the tree part defines the nesting-level and parent-child
+relationship.
+.PP
+.SS Comment
+Lines beginning with '##' are comments.
+.SS Verbatim
+Lines beginning with '!!' will be unchanged in the translation.
+.SS Imports
+@@ filename from path
+.IP
+imports a file named "filename" from the directory specified by "path".
+.PP
+At the moment only macro-definitions are imported.
+.SS Macros
+Macros are defined by an assignment operator ":=". Left hand side is the
+macroname, which must be all uppercase. On the right hand of the assignment
+operator is the replacement text, to which every occurrence of MACRONAME will
+be expanded. 
+.IP
+MACRONAME := Left hand is expanded to right side.
+Macros will not be expanded recursively.
+
+
+.\" --
+.SH OPTIONS
+.\" =======
+At the moment there are no command line options, except the filename of the to
+be translated file.
+
+
+.SH EXAMPLES
+.\" ========
+.SS A Typical T5HTML file
+.nf
+## t5html
+@@ stdlib.t5i
+
+_SCREEN-500 := "screen AND (max-width:500px)"
+
+!! HTML5
+html
+   head > UTF8 | AUTHOR_splendor | DESC_"A T5HTML example-page" 
+      title > "Example Page 
+      FAVICON
+      MEDIA__SCREEN-500 > !! a { background: white }
+      CSS_css/main.css
+      REFRESH_5
+   body
+      header
+         nav.home > button 
+      main
+      aside
+      footer
+      template
+         div single-attribute other-attribute
+            A_assets/images/home.png > img src=images/home.png
+
+.fi
+.PP
+For more examples see the github-page or the provided examples under
+doc/examples.
+
+
+.SH BUGS
+.\" ====
+.nf
+As of current, 10. Feb 2023, no major bug is known.
+.PP
+Bugs may be reported over github:
+.UR https://github.com/Exsplendor/t5html
+.UE
+.PP
+or eMail:
+Splendor <oi.atut@rodnelps> (eMail reversed)
+.fi
+.\" vi: set ft=groff et sw=4 ts=4 spell spelllang=en cc=80:

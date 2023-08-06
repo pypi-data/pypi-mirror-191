@@ -1,0 +1,250 @@
+Metadata-Version: 2.1
+Name: t5html
+Version: 23.6.2
+Summary: Converts text to html. Text muste be in t5html form.
+Project-URL: Homepage, https://github.com/Exsplendor/t5html
+Project-URL: Bug Tracker, https://github.com/Exsplendor/t5html/issues
+Author-email: splendor <splendor@tuta.io>
+Keywords: html,html5,template,templating,web
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+T5HTML
+======
+
+Converts a text file into HTML. 
+
+The text must be formatted according to the rules of a Trivial Text Tree To
+Trivial HTML (T5HTML) file.
+
+---
+
+- [Example](#example)
+- [Syntax Overview](#t5html-syntax)
+- [Developers](#for-developers)
+
+---
+
+## Example
+
+```t5html
+## t5html
+
+## definitions / macros
+##
+DCT := <!DOCTYPE html>
+CHARSET := meta charset=utf-8
+VIEWPORT := meta name=viewport
+DESC := meta name=description content="A simple HTML5 Template"
+AUTHOR := meta name=author content=splendor
+OG_PROPERTY := meta property=og:title content=HTML5-Template |
+            .. meta property=og:type content=website |
+            .. meta property=og.url content=www.example.org |
+            .. meta property=og.description content="Example for t5html" |
+            .. meta property=og.image content=noneatm
+FAVICON := link rel=icon href=/favicon.ico |
+        .. link rel=icon href=/favicon.svg type=image/svg+xml |
+        .. link rel=apple-touch-icon href=/apple-touch-icon.png
+CSS_ := link rel=stylesheet 
+JS_  := script src=
+
+## DOCUMENT-TREE
+#
+!DCT
+html > head
+      # not more then one multiline macro per line
+      CHARSET | DESC | AUTHOR | FAVICON
+      OG_PROPERTY
+      CSS_ href=css/styles.css?v=23.1
+      JS_ js/script.js
+   body
+      main
+         article#example
+            h1 > "This is an t5html-example
+            p class=p-normal
+               " A human readable, strucured file
+               .. written in a specific format called the
+               .. Trivial Text-Tree To Trivial HTML (ttttthtml or t5html)
+               .. format, allows for easy prototyping of web-pages.
+
+
+
+# vi: set et sw=3 ts=3 :
+```
+
+translates into:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="A simple HTML5 Template"/>
+    <meta name="author" content="splendor"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <meta property="og:title" content="HTML5-Template"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og.url" content="www.example.org"/>
+    <meta property="og.description" content="Example for t5html"/>
+    <meta property="og.image" content="noneatm"/>
+    <link rel="stylesheet" href="css/styles.css?v=23.1"/>
+    <script src="js/script.js"/>
+  </head>
+  <body>
+    <main>
+      <article id="example">
+        <h1>
+          This is an t5html-example
+        </h1>
+        <p class="p-normal">
+           A human readable, strucured file written in a specific format called the Trivial Text-Tree To Trivial HTML (ttttthtml or t5html) format, allows for easy prototyping of web-pages.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
+```
+
+
+## t5html-Syntax
+
+1. Every line stand on its own as a syntactic element, except ...
+
+2. .. if a line is the continuation of a previous one, signified by a
+   leading `..`
+
+3. Spaces are important! They delimit words as syntactic elements.
+
+4. Indentation matters! Every indentation marks a hierarchical step down!
+
+5. There are six types of lines: blank, verbatim, elements, comments, macros
+   text-nodes.
+
+6. Every line-type starts with a special symbol, except: blanks, elements and
+   macros (!!, ##, "").
+
+7. Macros have a macroname followed by an assignment operator `:=` and after a
+   white-space the macro-value.
+
+8. The first word of an element-line is the element's name.
+
+9. Indentation are **3 whitespaces**! Do **not** use **tabs**!
+
+10. There is a special syntax for `id` and `class` attributes: `div#id.class` !
+
+11. `>` means an hierarchical step down, `<` up and `|` same hierarchical level
+    if uses in the same line. They substitute indentation if used in the same
+    line, e.g.: `div > p > "Paragraph text`.
+
+12. A leading `"` double-quote marks a text-node.
+
+
+## Feature-Matrix
+
+| Feature                       |  23.6.1  | 23.1b28 |         | Explanation/Example       | 
+| ----------------------------- | :------: | :-----: | :-----: | ------------------------- |
+| Line Continuation ('..')      |     +    |    +    |         | `.. continue previous    `|
+| Comments ('`#`')              |     +    |    +    |         | `# im a comment          `|
+| Inline Indentation ('`><\|`') |     +    |    +    |         | `div > h1 > div > p      `|
+| untouched literal lines ('!') |     +    |    +    |         | `! <-- html comment -->  `|
+| first word as element-name    |     +    |    +    |         | `first word is the tag   `|
+| id attribute ('`tag#id`')     |     +    |    +    |         | `tag#id -> tag id="id"   `|
+| class attribute ('`tag.id`')  |     +    |    +    |         | `tag.cls -> tag class="" `|
+| text-nodes (`' " '`)          |     +    |    +    |         | `p > "text -> <p>text</p>`|
+| Macro Expansion (' := ')      |     +    |    +    |         | `MACRONAME := expansion  `|
+| non recursive macro expansion |     +    |         |         |`macroname expanded only once per line`|
+| Macro Imports ('@ . from .')  |     +    |         |         | `@ filename from ./dir   `|
+ 
+ 
+## For Developers
+
+Start with `Read.4dev` in the `doc` directory.
+
+
+## Disclaimers
+
+This **Read.Me** is a link to doc/Read.us!
+The **License** is in meta/license.
+
+
+## Additional Examples
+
+```t5html
+## t5html
+@@ stdlib.t5i
+
+_SCREEN-500 := "screen AND (max-width:500px)"
+
+
+!! HTML5
+html
+   head > UTF8 | AUTHOR_splendor | DESC_"An Example page for the T5HTML-system" 
+      title > "Example Three 
+      FAVICON
+      MEDIA__SCREEN-500 > !! a { background: white }
+      CSS_css/main.css
+      REFRESH_5
+   body
+      header
+         nav.home > button 
+      main
+      aside
+      footer
+      template
+         div single-attribute other-attribute
+            A_assets/images/home.png > img src=images/home.png
+
+## vi: set et sw=3 ts=3 ai ft=t5html :
+```
+
+will be translated into the following, if the stdlib macros are in
+`$HOME/.local/share/t5html` :
+
+```html
+<!DOCTPYE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="splendor"/>
+    <meta name="description" content="An Example page for the T5HTML-system"/>
+    <title>
+      Example Three
+    </title>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <style type="text/css" media="screen AND (max-width:500px)">
+       a { background: white }
+    </style>
+    <link rel="stylesheet" href="css/main.css"/>
+    <meta http-equiv="refresh" content="5"/>
+  </head>
+  <body>
+    <header>
+      <nav class="home">
+        <button/>
+      </nav>
+    </header>
+    <main/>
+    <aside/>
+    <footer/>
+    <template>
+      <div single-attribute other-attribute>
+        <a href="assets/images/home.png">
+          <img src="images/home.png">
+        </a>
+      </div>
+    </template>
+  </body>
+</html>
+```
+
+
+[//]: # ( vi: set et ts=4 sw=4 ai ft=markdown tw=80 cc=+0 spl=en: )
