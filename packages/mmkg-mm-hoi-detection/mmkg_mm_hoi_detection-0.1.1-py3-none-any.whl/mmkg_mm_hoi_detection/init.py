@@ -1,0 +1,1 @@
+from .hoi_models import MMHOIDetection

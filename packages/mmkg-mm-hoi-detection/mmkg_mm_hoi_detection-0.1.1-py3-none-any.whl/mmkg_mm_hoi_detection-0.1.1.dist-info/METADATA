@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: mmkg-mm-hoi-detection
+Version: 0.1.1
+Summary: MMKG Models
+Author: Zhipin Wang
+Author-email: zpwang99@foxmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: cython
+Requires-Dist: pycocotools
+Requires-Dist: aiofiles
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: scipy
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: tqdm
+
+# 人-物交互关系检测使用说明
+
+## 1. 算法描述
+该算法用于人-物交互关系检测，检测图像内部细粒度人-物三元组列表。该算法基于PyTorch框架开发，输入文本与图像，输出人-物三元组关系列表及概率。
+
+## 2. 依赖及安装
+
+CUDA版本: 11.3
+其他依赖库的安装命令如下：
+
+```bash
+conda install pytorch==1.9.0 torchvision==0.10.0 cudatoolkit=11.3
+```
+
+可使用如下命令下载安装算法包：
+```bash
+pip install -U mmkg-mm-hoi-detection
+```
+
+## 3. 使用示例及运行参数说明
+
+```python
+from mmkg_mm_hoi_detection import MMHOIDetection
+
+model = MMHOIDetection()
+img_path = '*.jpg'
+res = model.inference(img_path)
+```
+## 4. 论文
+```
+@article{liao2022gen,
+  title={GEN-VLKT: Simplify Association and Enhance Interaction Understanding for HOI Detection},
+  author={Liao, Yue and Zhang, Aixi and Lu, Miao and Wang, Yongliang and Li, Xiaobo and Liu, Si},
+  journal={arXiv preprint arXiv:2203.13954},
+  year={2022}
+}
+```
