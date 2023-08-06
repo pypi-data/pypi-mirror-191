@@ -1,0 +1,50 @@
+[tool.pyright]
+pythonVersion = "3.10"
+venvPath = "."
+venv = ".venv"
+
+[tool.yapfignore]
+ignore_patterns = [
+    ".venv/*"
+]
+
+[tool.yapf]
+based_on_style = "google"
+spaces_before_comment = 2
+indent_width = 2
+
+[tool.poetry]
+name = "declafe"
+version = "0.1.0"
+description = ""
+authors = ["kazuki <pharcydetip@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "*"
+numpy = "*"
+ta-lib = "*"
+numba = "*"
+tqdm = "^4.64.1"
+scipy = "^1.9.3"
+polars = {extras = ["numpy", "pandas"], version = "^0.16.1"}
+
+
+[tool.poetry.dev-dependencies]
+typing-extensions = "*"
+yapf = "*"
+toml = "*"
+pytest = "*"
+jupyter = "*"
+pytest-watch = "*"
+pyright = "*"
+pytest-parallel = "*"
+
+[tool.poetry.group.dev.dependencies]
+twine = "^4.0.1"
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
