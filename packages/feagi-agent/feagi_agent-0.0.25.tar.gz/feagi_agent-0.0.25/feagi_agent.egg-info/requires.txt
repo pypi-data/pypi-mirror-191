@@ -1,0 +1,5 @@
+requests~=2.27.1
+numpy==1.22.0
+
+[:python_version < "3.8"]
+zmq==0.0.0
