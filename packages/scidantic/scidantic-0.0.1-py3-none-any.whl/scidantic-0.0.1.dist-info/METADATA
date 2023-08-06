@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: scidantic
+Version: 0.0.1
+Summary: An extension of Pydantic providing types for NumPy-like arrays and much more.
+Project-URL: Documentation, https://github.com/gabrielmbmb/scidantic#readme
+Project-URL: Issues, https://github.com/gabrielmbmb/scidantic/issues
+Project-URL: Source, https://github.com/gabrielmbmb/scidantic
+Author-email: Gabriel Martín <gmartinbdev@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: numpy,pydantic,scientific
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: <3.12,>=3.8
+Requires-Dist: pydantic>=1.10.0
+Provides-Extra: dev
+Requires-Dist: black>=22.12.0; extra == 'dev'
+Requires-Dist: coverage[toml]>=7.0.0; extra == 'dev'
+Requires-Dist: mypy>=0.991; extra == 'dev'
+Requires-Dist: numpy>=1.24.1; extra == 'dev'
+Requires-Dist: pre-commit>=3.0.0; extra == 'dev'
+Requires-Dist: pytest>=7.2.0; extra == 'dev'
+Requires-Dist: ruff>=0.0.231; extra == 'dev'
+Description-Content-Type: text/markdown
+
+<div align="center">
+    <h1>scidantic</h1>
+    <p>
+        <em>
+            An extension of <a href="https://github.com/pydantic/pydantic">pydantic</a> providing types for NumPy-like arrays and much more.
+        </em>
+    </p>
+    <a href="https://github.com/gabrielmbmb/scidantic/actions/workflows/test.yaml">
+        <img src="https://github.com/gabrielmbmb/flowtastic/actions/workflows/test.yaml/badge.svg" alt="Test Workflow">>
+    </a>
+    <a href="https://pypi.org/project/scidantic">
+        <img src="https://img.shields.io/pypi/v/scidantic" alt="Python package version">
+    </a>
+    <a href="https://pypi.org/project/scidantic">
+        <img src="https://img.shields.io/pypi/pyversions/scidantic" alt="Supported Python versions">
+    </a>
+</div>
+
+## Installation
+
+```shell
+pip install scidantic
+```

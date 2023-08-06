@@ -1,0 +1,8 @@
+scidantic/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+scidantic/array/__init__.py,sha256=AlRgSADRfhjkqzEP3hSEeTH8M8ngacp_AERCSWLoE8o,621
+scidantic/array/_base.py,sha256=oSxTAr2C-CdPw44T_-oDCOlKb3PrdongH3kt3XvWL3o,3980
+scidantic/array/_numpy.py,sha256=lbJ3hZSjjr4EM7ts5kXGXjvfwwtZpTMs69vV4Wdgysg,2991
+scidantic-0.0.1.dist-info/METADATA,sha256=2JvxQBXCTuYgoBdtgtsQhIwPp0VuGSqLH-i1vEk-vZw,2171
+scidantic-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+scidantic-0.0.1.dist-info/licenses/LICENSE,sha256=J5WEalu5upDWOGkJKZ44zlpNnG-T0zraLHqDXMVQd7M,1071
+scidantic-0.0.1.dist-info/RECORD,,
