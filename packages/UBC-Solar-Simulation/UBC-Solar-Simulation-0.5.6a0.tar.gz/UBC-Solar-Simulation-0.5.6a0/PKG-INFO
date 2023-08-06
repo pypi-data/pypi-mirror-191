@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: UBC-Solar-Simulation
+Version: 0.5.6a0
+Summary: UBC Solar's simulation environment
+Home-page: https://github.com/UBC-Solar/Simulation
+Author: Fisher Xue, Mihir Nimgade, Chris Chang, David Widjaja, Justin Hua, Ilya Veksler, Renu Rajamagmesh, Joshua Riefman, Ritchie Xia, Erik Langille, Chris Aung, Ishaan Trivedi, Jason Liang
+Author-email: software@ubcsolar.com
+License: MIT
+Keywords: car,simulation,solar
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: mpi
+License-File: LICENSE
+
+
+CI Link
+Documentation Link
+Install inside Simulation/ with `pip3 install -e .`
+
+
