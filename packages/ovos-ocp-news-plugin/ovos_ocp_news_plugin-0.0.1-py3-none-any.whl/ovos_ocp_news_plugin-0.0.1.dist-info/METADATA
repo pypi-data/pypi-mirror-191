@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ovos-ocp-news-plugin
+Version: 0.0.1
+Summary: OCP news feed stream extractor plugin
+Home-page: https://github.com/OpenVoiceOS/ovos-ocp-news-plugin
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Keywords: ovos ocp plugin
+Platform: UNKNOWN
+Requires-Dist: ovos-plugin-common-play
+Requires-Dist: ovos-ocp-rss-plugin (>=0.0.2)
+Requires-Dist: pytz
+
+UNKNOWN
+
+
