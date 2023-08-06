@@ -1,0 +1,35 @@
+[build-system]
+requires=['setuptools>=61.0']
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdbinf"
+version = "0.0.3"
+authors=[
+    {name="Richard J Gowers", email="richardjgowers@gmail.com"},
+]
+dependencies = [
+  'rdkit',
+  'gemmi',
+  'numpy',
+]
+description="Load PDB files into rdkit with nonstandard residues"
+readme="README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    "pooch",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/OpenFreeEnergy/pdbinf"
+"Bug Tracker" = "https://github.com/OpenFreeEnergy/pdbinf/issues"

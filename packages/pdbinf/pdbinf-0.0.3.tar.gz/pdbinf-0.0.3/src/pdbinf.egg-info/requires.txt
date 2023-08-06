@@ -1,0 +1,9 @@
+rdkit
+gemmi
+numpy
+
+[tests]
+pytest
+pytest-cov
+coverage
+pooch
