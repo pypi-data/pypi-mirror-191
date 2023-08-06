@@ -1,0 +1,6 @@
+sortedcontainers
+omegaconf
+
+[dev]
+pytest
+loguru
