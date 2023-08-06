@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: libp2p-go
+Version: 0.1.3
+License: MIT
+Author-email: songwei <github@songwei.io>
+Requires-Python: >=3.11
+Requires-Dist: msgpack>=1.0.4
+Requires-Dist: multiaddr>=0.0.9
+Provides-Extra: build
+Requires-Dist: auditwheel>=5.3.0; extra == "build"
+Provides-Extra: test
+Requires-Dist: coverage>=6.3.2; extra == "test"
+Requires-Dist: pytest>=7.1.0; extra == "test"
+Requires-Dist: pytest-asyncio>=0.20.3; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Description-Content-Type: text/markdown
+
+# libp2p-go
+
+使用Go版本的 [libp2p](https://github.com/libp2p/go-libp2p) 接口完成的python实现。
+
+安装二进制版本：
+```bash
+pip install libp2p-go
+```
+
+## examples
+
+示例脚本可以在根目录执行，比如:
+```bash
+pdm run python -m examples.echo
+```
+
+### 手动编译安装、开发
+
+执行cgo编译脚本：
+
+```bash
+pdm cgo
+```
+
+构建wheel（包含了cgo编译脚本）：
+
+```bash
+pdm install -G build
+pdm build
+```
+
