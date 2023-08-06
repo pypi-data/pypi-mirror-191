@@ -1,0 +1,26 @@
+diffusers[torch]~=0.11
+transformers
+accelerate
+click>=8.1
+rich
+eventlet
+flask~=2.2.2
+flask-socketio~=5.3.2
+torch>=1.13.1
+realesrgan
+gfpgan
+tqdm
+
+[:sys_platform == "darwin"]
+coremltools
+
+[dev]
+black
+
+[xformers]
+
+[xformers:sys_platform != "darwin"]
+xformers~=0.0.16
+
+[xformers:sys_platform == "linux"]
+triton
