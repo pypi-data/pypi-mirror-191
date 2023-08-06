@@ -1,0 +1,12 @@
+wagtail_honeypot/__init__.py,sha256=LBz4TfPmVz9DXfmREebw4b5PK4ptlrQJVxOdt7PEyPU,62
+wagtail_honeypot/apps.py,sha256=nXbFFphg8lqarDhKvYj73rRikYjpJfzZ49Cw7aD3W60,178
+wagtail_honeypot/models.py,sha256=QXRH2RCbUxduDv7UG02ONH9XKSnwMmc_ZNbaPOXvK3Q,1633
+wagtail_honeypot/static/css/honeypot.css,sha256=7fQbp_OBNwdVH9DJD6KXM6PYmf3rFW0MCrFTgHOaaDc,97
+wagtail_honeypot/static/js/honeypot.js,sha256=6BxRgQGTo7nkrHmcUV8JU8CiOGVa4DXaA1VWjaq4AIY,261
+wagtail_honeypot/templates/tags/honeypot_fields.html,sha256=tJ3eRKW8zxHgDQ5oTqoZLlbRbO7QX_1R-sMtkzxadSU,346
+wagtail_honeypot/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_honeypot/templatetags/honeypot_tags.py,sha256=u4G3a0ayNDzvV2uIPWO9AY0bK6p6zxlYZa50aQUCp6s,555
+wagtail_honeypot-1.1.0.dist-info/LICENSE,sha256=GCrdzz4e7im-SUiq8w4uET0Dipnv_d4B908CbKTSs30,1072
+wagtail_honeypot-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+wagtail_honeypot-1.1.0.dist-info/METADATA,sha256=Lbs6vFbrk4wkUa3fKDTvhDl25XB8VvuqiwKeoBt1-fQ,1232
+wagtail_honeypot-1.1.0.dist-info/RECORD,,
