@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: vlogging
+Version: 0.0.2
+Summary: Easy to use logger.
+Author-email: Yuya Honda <yuyahnd.info@gmail.com>
+Maintainer-email: Yuya Honda <yuyahnd.info@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/yuyahnd/vlogging
+Project-URL: Bug Tracker, https://github.com/yuyahnd/vlogging/issues
+Project-URL: Repository, https://github.com/yuyahnd/vlogging.git
+Keywords: vlogging,logging,logger,log
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# vlogging
+Easy to use logger.
+
+## Installation
+```
+$ pip install vlogging
+```
+
+Install from github:
+```
+$ pip install git+https://github.com/yuyahnd/vlogging.git
+```
+
+To develop:
+```
+$ git clone https://github.com/yuyahnd/vlogging.git
+$ pip install -e ./vlogging[dev]
+```
+
+## Usage
+
+```bash
+>>> import vlogging
+>>> vlogging.info("Hello vlogging!")
+2023-02-10 15:24:31.358 INFO     Hello vlogging!
+```
+
+```python
+import vlogging
+logger = vlogging.getLogger(__name__)
+logger.info("Hello vlogging!")
+# 2023-02-10 15:24:31.358 INFO     Hello vlogging!
+```
+
+
+## License
+This repository is licensed under the MIT license. See LICENSE for details.
+
+&copy; 2023 Yuya Honda
