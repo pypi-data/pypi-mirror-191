@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+telebot.egg-info/PKG-INFO
+telebot.egg-info/SOURCES.txt
+telebot.egg-info/dependency_links.txt
+telebot.egg-info/requires.txt
+telebot.egg-info/top_level.txt
+telebot_router/__init__.py
