@@ -1,0 +1,4 @@
+pandas
+filetype
+streamlit_molstar
+streamlit>=0.63
