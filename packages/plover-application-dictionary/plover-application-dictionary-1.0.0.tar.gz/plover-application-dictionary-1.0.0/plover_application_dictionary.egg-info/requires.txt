@@ -1,0 +1,2 @@
+plover>=4.0.0dev12
+PyWinCtl~=0.0.42
