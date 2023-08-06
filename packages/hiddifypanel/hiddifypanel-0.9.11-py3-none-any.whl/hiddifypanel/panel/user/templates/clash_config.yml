@@ -1,0 +1,167 @@
+% set OnProxyIssue='REJECT' if mode =="all" else 'DIRECT'
+% set OnIranSites='PROXY' if mode =="all" else 'DIRECT'
+% set OnNotFilteredSites='DIRECT' if mode =="lite" else 'PROXY'
+
+mixed-port: 7890
+allow-lan: false
+log-level: info
+secret: 
+external-controller: 127.0.0.1:9090
+# ipv6: false
+ipv6: true
+mode: rule
+dns:
+  enable: true
+  use-hosts: true
+  # ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 127.0.0.1:6868
+  % if meta_or_normal=='meta'
+  prefer-h3: true #Enable DoH support for HTTP/3,
+  % endif
+  fake-ip-filter:
+     - '{{domain}}'
+     - '{{hconfigs[ConfigEnum.telegram_fakedomain]}}'
+  default-nameserver:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 1.0.0.1
+  nameserver:
+#    - https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/dns/dns-query
+% if meta_or_normal=='meta'
+    - https://8.8.8.8/dns-query#h3=true
+    - https://1.1.1.1/dns-query#PROXY
+    - https://8.8.8.8/dns-query#PROXY
+    - https://1.0.0.1/dns-query#PROXY
+    #- https://8.8.8.8/dns-query#PROXY&h3=true
+    
+% endif
+    - 8.8.8.8
+    - 1.1.1.1
+profile:
+  # Storing select records
+  store-selected: false
+
+proxy-groups:
+  # - name: "tuic+vless"
+  #   type: relay
+  #   proxies:
+  #     - vless
+  #     - tuic
+
+  - name: PROXY
+    proxies:
+      - auto_fallback
+    use:
+      - all_proxies
+    type: select
+
+
+  
+
+  
+
+
+  # - name: OnIranSites_{{mode}}
+  #   proxies:
+  #   % if mode=="all"
+  #     - PROXY
+  #     - DIRECT
+  #   % else:
+  #     - DIRECT
+  #     - PROXY
+  #   % endif
+  #   type: select
+
+  # - name: OnNotFilteredSites_{{mode}}
+  #   proxies:
+  #   % if mode =="lite"
+  #     - DIRECT
+  #     - PROXY
+  #   % else:
+  #     - PROXY
+  #     - DIRECT
+  #   % endif
+  #   type: select  
+
+  # - name: OnProxyIssue_{{mode}}
+  #   proxies:
+  #   % if mode =="all"
+  #     - REJECT
+  #     - DIRECT
+  #   % else:
+  #     - DIRECT
+  #     - REJECT
+  #   % endif
+    # type: select
+
+  - name: auto
+    use:
+      - all_proxies
+    type: url-test
+    url: http://cp.cloudflare.com
+    interval: 300
+
+  - name: auto_fallback
+    type: fallback
+    url: 'http://cp.cloudflare.com'
+    interval: 300
+    proxies:
+        - auto
+        - {{OnProxyIssue}}
+{{link_maker.get_all_clash_configs(meta_or_normal)}}
+proxy-providers:
+  all_proxies:
+    type: http
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/{{(user.uuid)}}/clash/{{meta_or_normal}}/proxies.yml?{{hash}}"
+    path: {{domain}}/{{(user.uuid)}}-{{meta_or_normal}}-proxies{{hash}}.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204    
+
+  
+rule-providers:
+
+  blocked:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/blocked-sites.yml"
+    path: ./ruleset/blocked.yaml
+    interval: 432000
+
+  tmpblocked:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/tmp-blocked-sites.yml"
+    path: ./ruleset/tmpblocked.yaml
+    interval: 432000
+
+  open:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/open-sites.yml"
+    path: ./ruleset/open.yaml
+    interval: 432000    
+
+  ads:
+    type: http
+    behavior: classical
+    url: "https://{{domain}}/{{hconfigs[ConfigEnum.proxy_path]}}/clash/rules/ads-sites.yml"
+    path: ./ruleset/ads.yaml
+    interval: 432000   
+
+rules:
+  - DOMAIN,{{hconfigs[ConfigEnum.telegram_fakedomain]}},DIRECT
+  # - DOMAIN,{{domain}},DIRECT
+  # - DOMAIN,{{direct_host}},DIRECT
+  # - IP-CIDR,{{external_ip}}/32,DIRECT
+  - IP-CIDR,10.10.34.0/24,PROXY
+  - RULE-SET,tmpblocked,PROXY
+  - RULE-SET,blocked,PROXY
+  - GEOIP,IR,{{OnIranSites}}
+  - DOMAIN-SUFFIX,.ir,{{OnIranSites}}
+  - RULE-SET,open,{{OnIranSites}}
+  - RULE-SET,ads,REJECT
+  - MATCH,{{OnNotFilteredSites}}
