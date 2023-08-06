@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rubylang"
+version = "0.0.1"
+description = "Ruby like objects in Python"
+authors = ["Sumanth <sumanthreddystar@gmail.com>"]
+readme = "README.md"
+
+
+keywords = [
+"ruby", 
+"Array",
+"Hash",
+"String"
+]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
