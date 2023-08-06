@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyqt5 = "~=5.15.7"
+pyqt5-stubs = "~=5.15.6"
+pyaudio = "~=0.2.12"
+pyserial = "~=3.5"
+
+[dev-packages]
+sphinx = "*"
+
+[requires]
+python_version = "3.10"

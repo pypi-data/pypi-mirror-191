@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tudelft_pycar"
+version = "0.0.2.dev"
+authors = [
+  { name="Anne Stijns", email="anstijns@gmail.com" },
+]
+description = "Support library for the 'EPO-4: \"KITT\" autonomous driving challenge' at Delft University of Technology"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/dstijns/epo4-python/"
+"Bug Tracker" = "https://gitlab.com/dstijns/epo4-python/-/issues"

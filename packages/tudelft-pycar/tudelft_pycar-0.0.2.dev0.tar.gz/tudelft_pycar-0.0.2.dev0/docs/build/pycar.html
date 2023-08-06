@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>pycar package &#8212; EPO4 Python 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pycar.gui package" href="pycar.gui.html" />
+    <link rel="prev" title="pycar" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="pycar-package">
+<h1>pycar package<a class="headerlink" href="#pycar-package" title="Permalink to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pycar.gui.html">pycar.gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pycar.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pycar.gui.html#module-pycar.gui.car_controls">pycar.gui.car_controls module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.AbstractControlButton"><code class="docutils literal notranslate"><span class="pre">AbstractControlButton</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.BackwardControlButton"><code class="docutils literal notranslate"><span class="pre">BackwardControlButton</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.CarControlWidget"><code class="docutils literal notranslate"><span class="pre">CarControlWidget</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.ForwardControlButton"><code class="docutils literal notranslate"><span class="pre">ForwardControlButton</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.LeftControlButton"><code class="docutils literal notranslate"><span class="pre">LeftControlButton</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.car_controls.RightControlButton"><code class="docutils literal notranslate"><span class="pre">RightControlButton</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pycar.gui.html#module-pycar.gui.serial_select_widget">pycar.gui.serial_select_widget module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pycar.gui.html#pycar.gui.serial_select_widget.SerialSelectWidget"><code class="docutils literal notranslate"><span class="pre">SerialSelectWidget</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pycar.gui.html#pycar.gui.serial_select_widget.SerialSelectWidget.current_selection"><code class="docutils literal notranslate"><span class="pre">SerialSelectWidget.current_selection</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pycar.gui.html#module-pycar.gui">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading">¶</a></h2>
+</section>
+<section id="module-pycar.audio">
+<span id="pycar-audio-module"></span><h2>pycar.audio module<a class="headerlink" href="#module-pycar.audio" title="Permalink to this heading">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.audio.get_devices">
+<span class="sig-prename descclassname"><span class="pre">pycar.audio.</span></span><span class="sig-name descname"><span class="pre">get_devices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycar.audio.get_devices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the available audio devices.</p>
+<p>Returns a tuple of the device index and its info.</p>
+<p>This function is a generator, so you can use it like
+<a href="#id1"><span class="problematic" id="id2">``</span></a>`
+for _,dev in get_devices():</p>
+<blockquote>
+<div><p>print(dev.name)</p>
+</div></blockquote>
+<p><a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.audio.init">
+<span class="sig-prename descclassname"><span class="pre">pycar.audio.</span></span><span class="sig-name descname"><span class="pre">init</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycar.audio.init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes PyAudio, but only if it hasn’t been initialized yet.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.audio.main">
+<span class="sig-prename descclassname"><span class="pre">pycar.audio.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pycar.audio.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example: listing audio devices and plotting one channel</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.audio.open">
+<span class="sig-prename descclassname"><span class="pre">pycar.audio.</span></span><span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dev</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.audio.open" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens an audio device as input.</p>
+<p><cite>dev</cite> should be the device index.
+Returns a PyAudio <cite>Stream</cite> object.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.audio.update">
+<span class="sig-prename descclassname"><span class="pre">pycar.audio.</span></span><span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.audio.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pycar.car">
+<span id="pycar-car-module"></span><h2>pycar.car module<a class="headerlink" href="#module-pycar.car" title="Permalink to this heading">¶</a></h2>
+<p>Python abstraction of the KTY kit car</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Author:</dt><dd><p>Petar V Peshev &#64; <a class="reference external" href="mailto:p&#46;v&#46;peshev&#37;&#52;&#48;student&#46;tudelft&#46;nl">p<span>&#46;</span>v<span>&#46;</span>peshev<span>&#64;</span>student<span>&#46;</span>tudelft<span>&#46;</span>nl</a></p>
+</dd>
+<dt>Further discussions:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Whether after sending command, the status should be updated by reading the status of the car or by updating</dt><dd><p>the status field in the CarStatus object (current solution); if it is done by reading the status, then
+possibly the attributes of CarStatus should be protected and the update should be done through update_fields
+method</p>
+</dd>
+</dl>
+</li>
+<li><p>Whether the CarStatus object should be a dataclass</p></li>
+</ul>
+</dd>
+</dl>
+<p>Issue: The abstraction does not contain a car simulation
+Solution: Implement a car simulation, and add a parameter to the car abstraction constructor to specify if physical</p>
+<blockquote>
+<div><p>car or simulation is used</p>
+</div></blockquote>
+<p>TODO: extend the car abstraction object with car simulation</p>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car.Car">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car.</span></span><span class="sig-name descname"><span class="pre">Car</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serial_handle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pycar.serial_handle.SerialHandle" title="pycar.serial_handle.SerialHandle"><span class="pre">SerialHandle</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car.Car" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Car abstraction object</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>_serial_handle: SerialHandle</dt><dd><p>Serial handle object for car communication [protected]</p>
+</dd>
+<dt>_car_status: CarStatus</dt><dd><p>Car status dataclass instance [protected]</p>
+</dd>
+</dl>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>_send_command(command: AbstractCommand): Optional[bytes]</dt><dd><p>Sends a command to the car [protected]</p>
+</dd>
+<dt>enable_audio: None</dt><dd><p>Enables the audio beacon [public]</p>
+</dd>
+<dt>disable_audio: None</dt><dd><p>Disables the audio beacon [public]</p>
+</dd>
+<dt>set_bit_frequency(bit_frequency: int): None</dt><dd><p>Sets the bit frequency [public]</p>
+</dd>
+<dt>set_audio_code(audio_code: int): None</dt><dd><p>Sets the audio code [public]</p>
+</dd>
+<dt>set_direction(direction: int): None</dt><dd><p>Sets direction PWM setting [public]</p>
+</dd>
+<dt>set_carrier_frequency(carrier_frequency: int): None</dt><dd><p>Sets the carrier frequency [public]</p>
+</dd>
+<dt>set_motor_pwm(motor_pwm: int): None</dt><dd><p>Sets motor PWM setting [public]</p>
+</dd>
+<dt>set_repetition_counter(repetitions: int): None</dt><dd><p>Sets the repetition counter [public]</p>
+</dd>
+<dt>get_status(status_setting: str): bytes</dt><dd><p>Gets the car status and returns it in bytes; updates the car status attribute [public]</p>
+</dd>
+<dt>get_version: bytes</dt><dd><p>Gets the car firmware version and returns it in bytes; updates the car status attribute [public]</p>
+</dd>
+<dt>update_status: None</dt><dd><p>Updates the car status attribute with status and firmware version [public]</p>
+</dd>
+</dl>
+</dd>
+<dt>Property:</dt><dd><dl class="simple">
+<dt>status: CarStatus</dt><dd><p>Returns the car status attribute</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.disable_audio">
+<span class="sig-name descname"><span class="pre">disable_audio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.disable_audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disables the audio beacon</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.enable_audio">
+<span class="sig-name descname"><span class="pre">enable_audio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.enable_audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the audio beacon</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.get_status">
+<span class="sig-name descname"><span class="pre">get_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status_setting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#pycar.car.Car.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the car status; updates the car status attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>status_setting</strong> (<em>str</em>) – Car status setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Car status in bytes</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.get_version">
+<span class="sig-name descname"><span class="pre">get_version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#pycar.car.Car.get_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the car firmware version; updates the car status attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The car firmware version in bytes</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_audio_code">
+<span class="sig-name descname"><span class="pre">set_audio_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">audio_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_audio_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the audio code</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>audio_code</strong> (<em>int</em>) – Audio code setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_bit_frequency">
+<span class="sig-name descname"><span class="pre">set_bit_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bit_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_bit_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the bit frequency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bit_frequency</strong> (<em>int</em>) – Bit frequency setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_carrier_frequency">
+<span class="sig-name descname"><span class="pre">set_carrier_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">carrier_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_carrier_frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the carrier frequency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>carrier_frequency</strong> (<em>int</em>) – Carrier frequency setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_direction_pwm">
+<span class="sig-name descname"><span class="pre">set_direction_pwm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction_pwm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_direction_pwm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets direction PWM setting</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>direction_pwm</strong> (<em>int</em>) – Direction setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_motor_pwm">
+<span class="sig-name descname"><span class="pre">set_motor_pwm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">motor_pwm</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_motor_pwm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets motor PWM setting</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>motor_pwm</strong> (<em>int</em>) – Motor speed setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.set_repetition_counter">
+<span class="sig-name descname"><span class="pre">set_repetition_counter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repetitions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.set_repetition_counter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the repetition counter</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>repetitions</strong> (<em>int</em>) – Repetition counter setting</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pycar.car.Car.status">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#pycar.car.CarStatus" title="pycar.car.CarStatus"><span class="pre">CarStatus</span></a></em><a class="headerlink" href="#pycar.car.Car.status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the car status attribute</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Car status attribute</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#pycar.car.CarStatus" title="pycar.car.CarStatus">CarStatus</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.Car.update_status">
+<span class="sig-name descname"><span class="pre">update_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.Car.update_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the car status attribute with status and firmware version</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car.CarStatus">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car.</span></span><span class="sig-name descname"><span class="pre">CarStatus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car.CarStatus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Dataclass containing status parameters of the car; the dataclass needs an initial car status in bytes to be
+constructed</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>motor_pwm: int</dt><dd><p>Contains the motor PWM setting</p>
+</dd>
+<dt>direction_pwm: int</dt><dd><p>Contains the direction PWM setting</p>
+</dd>
+<dt>audio_beacon: bool</dt><dd><p>Specifies if the audio beacon is enabled or not</p>
+</dd>
+<dt>audio_code: int</dt><dd><p>Contains the audio code</p>
+</dd>
+<dt>carrier_frequency: int</dt><dd><p>Contains the carrier frequency</p>
+</dd>
+<dt>bit_frequency: int</dt><dd><p>Contains the bit frequency</p>
+</dd>
+<dt>repetitions_counter: int</dt><dd><p>Contains the repetition counter</p>
+</dd>
+<dt>distance_usl: int</dt><dd><p>Contains the status of the left distance sensor</p>
+</dd>
+<dt>distance_usr: int</dt><dd><p>Contains the status of the right distance sensor</p>
+</dd>
+<dt>battery: float</dt><dd><p>Contains the status of the battery</p>
+</dd>
+<dt>version: bytes</dt><dd><p>Contains the car firmware version</p>
+</dd>
+</dl>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>update_fields(status: bytes, <a href="#id7"><span class="problematic" id="id8">*</span></a>, version: Optional[bytes] = None): None</dt><dd><p>Updates the status fields [public]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.audio_beacon">
+<span class="sig-name descname"><span class="pre">audio_beacon</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#pycar.car.CarStatus.audio_beacon" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.audio_code">
+<span class="sig-name descname"><span class="pre">audio_code</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.audio_code" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.battery">
+<span class="sig-name descname"><span class="pre">battery</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#pycar.car.CarStatus.battery" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.bit_frequency">
+<span class="sig-name descname"><span class="pre">bit_frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.bit_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.carrier_frequency">
+<span class="sig-name descname"><span class="pre">carrier_frequency</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.carrier_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.direction_pwm">
+<span class="sig-name descname"><span class="pre">direction_pwm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.direction_pwm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.distance_usl">
+<span class="sig-name descname"><span class="pre">distance_usl</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.distance_usl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.distance_usr">
+<span class="sig-name descname"><span class="pre">distance_usr</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.distance_usr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.motor_pwm">
+<span class="sig-name descname"><span class="pre">motor_pwm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.motor_pwm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.repetitions_counter">
+<span class="sig-name descname"><span class="pre">repetitions_counter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#pycar.car.CarStatus.repetitions_counter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.update_fields">
+<span class="sig-name descname"><span class="pre">update_fields</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car.CarStatus.update_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the status fields</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status</strong> (<em>bytes</em>) – Car status in bytes</p></li>
+<li><p><strong>version</strong> (<em>Optional</em><em>[</em><em>bytes</em><em>]</em>) – Car firmware version; updated only if parsed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.car.CarStatus.version">
+<span class="sig-name descname"><span class="pre">version</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#pycar.car.CarStatus.version" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pycar.car_commands">
+<span id="pycar-car-commands-module"></span><h2>pycar.car_commands module<a class="headerlink" href="#module-pycar.car_commands" title="Permalink to this heading">¶</a></h2>
+<p>Abstract command and command objects for car communication</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Author:</dt><dd><p>Petar V Peshev &#64; <a class="reference external" href="mailto:p&#46;v&#46;peshev&#37;&#52;&#48;student&#46;tudelft&#46;nl">p<span>&#46;</span>v<span>&#46;</span>peshev<span>&#64;</span>student<span>&#46;</span>tudelft<span>&#46;</span>nl</a></p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.AbstractCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">AbstractCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wait_for_response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_bytes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.AbstractCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Abstract command object, which contains main functionality needed for car communication.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>_wait_for_response: bool</dt><dd><p>Specifies if the car sends a response to the command [protected]</p>
+</dd>
+<dt>_command_type: str</dt><dd><p>Specifies the car command [protected]</p>
+</dd>
+<dt>_command_data: Optional[bytes]</dt><dd><p>Specifies appended data to the command [protected]</p>
+</dd>
+</dl>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>get_command_bytes: bytes</dt><dd><p>Returns the command in bytes [public]</p>
+</dd>
+</dl>
+</dd>
+<dt>Property:</dt><dd><dl class="simple">
+<dt>wait_for_response: bool</dt><dd><p>Returns if the car sends a response to the command</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car_commands.AbstractCommand.get_command_bytes">
+<span class="sig-name descname"><span class="pre">get_command_bytes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#pycar.car_commands.AbstractCommand.get_command_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the command in bytes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The command in bytes</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bytes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pycar.car_commands.AbstractCommand.wait_for_response">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">wait_for_response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#pycar.car_commands.AbstractCommand.wait_for_response" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns if the car sends a response to the command or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If the car sends a response to the command or not</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.AudioCodeCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">AudioCodeCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">audio_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.AudioCodeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing the audio code</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.BitFrequencyCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">BitFrequencyCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bit_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.BitFrequencyCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing the bit frequency</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.CarrierFrequencyCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">CarrierFrequencyCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">carrier_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">15000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.CarrierFrequencyCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing the carrier frequency</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.DirectionCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">DirectionCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">steering_pos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.DirectionCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing direction PWM setting</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.EnableAudioCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">EnableAudioCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enable_audio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.EnableAudioCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for enabling audio beacon</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.MotorCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">MotorCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">motor_speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.MotorCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing the motor PWM setting</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.RepetitionCounterCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">RepetitionCounterCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repetitions</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">32</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.RepetitionCounterCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for changing repetition counter</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.StatusCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">StatusCommand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">setting</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.car_commands.StatusCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for retrieving status</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_commands.VersionCommand">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_commands.</span></span><span class="sig-name descname"><span class="pre">VersionCommand</span></span><a class="headerlink" href="#pycar.car_commands.VersionCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pycar.car_commands.AbstractCommand" title="pycar.car_commands.AbstractCommand"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbstractCommand</span></code></a></p>
+<p>Command for retrieving firmware version</p>
+</dd></dl>
+
+</section>
+<section id="module-pycar.car_run">
+<span id="pycar-car-run-module"></span><h2>pycar.car_run module<a class="headerlink" href="#module-pycar.car_run" title="Permalink to this heading">¶</a></h2>
+<p>Contains run class and method for executing the project</p>
+<blockquote>
+<div><dl>
+<dt>Author:</dt><dd><p>Petar V Peshev &#64; <a class="reference external" href="mailto:p&#46;v&#46;peshev&#37;&#52;&#48;student&#46;tudelft&#46;nl">p<span>&#46;</span>v<span>&#46;</span>peshev<span>&#64;</span>student<span>&#46;</span>tudelft<span>&#46;</span>nl</a></p>
+</dd>
+<dt>Idea: The students should not do anything related to creating instances for the car, serial handle, or similar</dt><dd><p>objects; they should implement only a child class to CarRun, which implements only pre_processing,
+signal_processing, and post_processing. However, they have to implement a structured code that they can use in
+these functions, e.g. classes and methods implementing algorithms that can be called in the aforementioned
+methods of CarRun. The students perform a test by executing:
+if __name__ == ‘__main__’:</p>
+<blockquote>
+<div><p>run_car_test(ImplementedByStudentsCarTestRunChildClass)</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>TODO: implement methods, which are not defined as student implementations</p>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.car_run.CarTestRun">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.car_run.</span></span><span class="sig-name descname"><span class="pre">CarTestRun</span></span><a class="headerlink" href="#pycar.car_run.CarTestRun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Car test run abstract base class; the students should be able to run a test by implementing only the pre-processing,
+signal processing, and post-processing methods. The students should be isolated from creating instances for the car
+and serial handle objects.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>_serial_handle: SerialHandle</dt><dd><p>Instance of the serial handle [protected]</p>
+</dd>
+<dt>_car: Car</dt><dd><p>Instance of the car object [protected]</p>
+</dd>
+</dl>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>pre_processing: None</dt><dd><p>Processing executed before the test; should be implemented by students [public]</p>
+</dd>
+<dt>signal_processing: None</dt><dd><p>Processing executed during the test; should be implemented by students [public]</p>
+</dd>
+<dt>post_processing: None</dt><dd><p>Processing executed after the test; should be implemented by students [public]</p>
+</dd>
+<dt>save_data: None</dt><dd><p>Saves the test data [public]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car_run.CarTestRun.post_processing">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">post_processing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car_run.CarTestRun.post_processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processing executed after the test; should be implemented by students</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car_run.CarTestRun.pre_processing">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pre_processing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car_run.CarTestRun.pre_processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processing executed before the test; should be implemented by students</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car_run.CarTestRun.save_data">
+<span class="sig-name descname"><span class="pre">save_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car_run.CarTestRun.save_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the test data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.car_run.CarTestRun.signal_processing">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">signal_processing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car_run.CarTestRun.signal_processing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processing executed during the test; should be implemented by students</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pycar.car_run.run_car_test">
+<span class="sig-prename descclassname"><span class="pre">pycar.car_run.</span></span><span class="sig-name descname"><span class="pre">run_car_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">car_run_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pycar.car_run.CarTestRun" title="pycar.car_run.CarTestRun"><span class="pre">CarTestRun</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.car_run.run_car_test" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function executes the actions needed for performing tests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>car_run_class</strong> (<em>Type</em><em>[</em><a class="reference internal" href="#pycar.car_run.CarTestRun" title="pycar.car_run.CarTestRun"><em>CarTestRun</em></a><em>]</em>) – CarTestRun child object with updated signal processing methods</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pycar.serial_handle">
+<span id="pycar-serial-handle-module"></span><h2>pycar.serial_handle module<a class="headerlink" href="#module-pycar.serial_handle" title="Permalink to this heading">¶</a></h2>
+<p>Handle and settings for serial communication based on PySerial</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Author:</dt><dd><p>Petar V Peshev &#64; <a class="reference external" href="mailto:p&#46;v&#46;peshev&#37;&#52;&#48;student&#46;tudelft&#46;nl">p<span>&#46;</span>v<span>&#46;</span>peshev<span>&#64;</span>student<span>&#46;</span>tudelft<span>&#46;</span>nl</a></p>
+</dd>
+<dt>Issue: serial.tools.list_ports.comports() does not recognize pseudo terminals (PTY); serial.Serial() is able to</dt><dd><p>write and read to PTY</p>
+</dd>
+</dl>
+<p>Solution: a wrapper for serial.tools.list_ports.comports() must be implemented to discover PTY ports
+TODO: implement a comport wrapper to discover PTY ports</p>
+</div></blockquote>
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.serial_handle.</span></span><span class="sig-name descname"><span class="pre">SerialHandle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pty_port</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pycar.serial_handle.SerialHandle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Serial communication handle</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>_pty_port: bool</dt><dd><p>Specifies if the object is used for communication with pseudo terminal (PTY) [protected]</p>
+</dd>
+<dt>_connected: bool</dt><dd><p>Specifies if the object has established a connection with a port [protected]</p>
+</dd>
+<dt>_serial_ports: List[ListPortInfo]</dt><dd><p>Holds available serial ports [protected]</p>
+</dd>
+<dt>_device: Optional[Serial]</dt><dd><p>Serial object [protected]</p>
+</dd>
+</dl>
+</dd>
+<dt>Methods:</dt><dd><dl class="simple">
+<dt>list_serial_devices: List[str]</dt><dd><p>Updates the serial ports attribute, and returns a list of the available serial devices’ names [public]</p>
+</dd>
+<dt>connect_to_device: None</dt><dd><p>Connects to a serial port device; creates a Serial object instance and updates the connected attribute.
+Raises value exception if the requested device is not within the serial port list attribute [public]</p>
+</dd>
+<dt>disconnect_from_device: None</dt><dd><p>Disconnects from the serial device; closes the serial connection, deletes the Serial object, and updates
+the connected attribute to not connected [public]</p>
+</dd>
+<dt>is_connected: bool</dt><dd><p>Specifies if a serial connection is established or not [public]</p>
+</dd>
+<dt>write_to_device: None</dt><dd><p>Write to a serial device [public]</p>
+</dd>
+<dt>write_and_read_to_device: bytes</dt><dd><p>Write to a serial device and wait for a response [public]</p>
+</dd>
+</dl>
+</dd>
+<dt>Property:</dt><dd><dl class="simple">
+<dt>device: Optional[Serial]</dt><dd><p>Returns the serial device to which connection is established. If no serial connection is established, the
+device has a None value</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.connect_to_device">
+<span class="sig-name descname"><span class="pre">connect_to_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serial_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#pycar.serial_handle.SerialOptions" title="pycar.serial_handle.SerialOptions"><span class="pre">SerialOptions</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">SerialOptions()</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.connect_to_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to a serial port device; creates a Serial object instance and updates the connected attribute. Raises
+value exception if the requested device is not within the serial port list attribute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>device</strong> (<em>str</em>) – Device to be connected to</p></li>
+<li><p><strong>serial_settings</strong> (<a class="reference internal" href="#pycar.serial_handle.SerialOptions" title="pycar.serial_handle.SerialOptions"><em>SerialOptions</em></a>) – Serial connection settings</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – if the requested device is not within the serial port list attribute</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.device">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Serial</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pycar.serial_handle.SerialHandle.device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the serial device to which connection is established. If no serial connection is established, the device
+has a None value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Serial device to which a serial connection is established</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Optional[Serial]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.disconnect_from_device">
+<span class="sig-name descname"><span class="pre">disconnect_from_device</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.disconnect_from_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disconnects from the serial device; closes the serial connection, deletes the Serial object, and updates the
+connected attribute to not connected.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.is_connected">
+<span class="sig-name descname"><span class="pre">is_connected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.is_connected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies if a serial connection is established or not.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether a serial connection is established or not</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.list_serial_devices">
+<span class="sig-name descname"><span class="pre">list_serial_devices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.list_serial_devices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the serial ports attribute, and returns a list of the available serial devices’ names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List of available serial devices</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.write_and_read_to_device">
+<span class="sig-name descname"><span class="pre">write_and_read_to_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">bytearray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.write_and_read_to_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write to a serial device and wait for a response.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>message</strong> (<em>Union</em><em>[</em><em>bytes</em><em>, </em><em>bytearray</em><em>]</em>) – Message to be written to the serial device as bytes or bytearray</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Response in bytes</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bytes</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>AttributeError</strong> – if a serial device is not connected</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialHandle.write_to_device">
+<span class="sig-name descname"><span class="pre">write_to_device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">bytearray</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#pycar.serial_handle.SerialHandle.write_to_device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write to a serial device.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>message</strong> (<em>Union</em><em>[</em><em>bytes</em><em>, </em><em>bytearray</em><em>]</em>) – Message to be written to the serial device as bytes or bytearray</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>AttributeError</strong> – if a serial device is not connected</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pycar.serial_handle.</span></span><span class="sig-name descname"><span class="pre">SerialOptions</span></span><a class="headerlink" href="#pycar.serial_handle.SerialOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A dataclass structure containing serial settings. The structure is frozen and values can not be changed at runtime;
+default values are set to the required for the KTY kit.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><dl class="simple">
+<dt>baud_rate: int</dt><dd><p>Bits per second; default: 115200</p>
+</dd>
+<dt>byte_size: int</dt><dd><p>Size of a byte; default: 8</p>
+</dd>
+<dt>stop_bits: int</dt><dd><p>Number of stop bits; default: 1</p>
+</dd>
+<dt>parity: str</dt><dd><p>Enable parity bit (options: ‘Y’ and ‘N’); default: ‘N’</p>
+</dd>
+<dt>enable_rts: bool</dt><dd><p>Enable request to transmit; default: True</p>
+</dd>
+<dt>enable_dsr: bool</dt><dd><p>Enable data set ready; default: False</p>
+</dd>
+<dt>enable_x: bool</dt><dd><p>Enable software control flow; default: False</p>
+</dd>
+<dt>timeout: Optional[float]</dt><dd><p>Set a read timeout value in seconds; default: None</p>
+</dd>
+<dt>write_timeout: Optional[float]</dt><dd><p>Set a write timeout value in seconds; default: None</p>
+</dd>
+<dt>inter_byte_timeout: Optional[float]</dt><dd><p>Set inter character timeout; default: None</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.baud_rate">
+<span class="sig-name descname"><span class="pre">baud_rate</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">115200</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.baud_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.byte_size">
+<span class="sig-name descname"><span class="pre">byte_size</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">8</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.byte_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.enable_dsr">
+<span class="sig-name descname"><span class="pre">enable_dsr</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.enable_dsr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.enable_rts">
+<span class="sig-name descname"><span class="pre">enable_rts</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.enable_rts" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.enable_x">
+<span class="sig-name descname"><span class="pre">enable_x</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.enable_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.inter_byte_timeout">
+<span class="sig-name descname"><span class="pre">inter_byte_timeout</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.inter_byte_timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.parity">
+<span class="sig-name descname"><span class="pre">parity</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'N'</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.parity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.stop_bits">
+<span class="sig-name descname"><span class="pre">stop_bits</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.stop_bits" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.timeout">
+<span class="sig-name descname"><span class="pre">timeout</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pycar.serial_handle.SerialOptions.write_timeout">
+<span class="sig-name descname"><span class="pre">write_timeout</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#pycar.serial_handle.SerialOptions.write_timeout" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pycar">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pycar" title="Permalink to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">EPO4 Python</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pycar</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">pycar package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">pycar</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">pycar</a></li>
+      <li>Next: <a href="pycar.gui.html" title="next chapter">pycar.gui package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Anne Stijns, Petar V Peshev.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/pycar.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

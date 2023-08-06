@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: tudelft_pycar
+Version: 0.0.2.dev0
+Summary: Support library for the 'EPO-4: "KITT" autonomous driving challenge' at Delft University of Technology
+Project-URL: Homepage, https://gitlab.com/dstijns/epo4-python/
+Project-URL: Bug Tracker, https://gitlab.com/dstijns/epo4-python/-/issues
+Author-email: Anne Stijns <anstijns@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# EPO4 Python
+
+This repository contains Python abstractions, serial, and audio handlers for EPO4.
+
+## Documentation
+
+The `pycar` documentation is generated using Sphinx v6.1.3. To open the documentation navigate to **docs/build** and
+open **index.html**; **index.html** is the documentation's start page.
+
+## Python Environment
+
+Python environments / virtual environments are used for project isolation and dependency management.
+They can be set up as to specify a specific Python version to the project, and install packages locally to the virtual
+environment directory. Consequently, the dependencies (or packages) are isolated from the global environment, avoiding 
+conflicts between dependency requirements of different project and allowing for the installation of a specific 
+dependency's version.
+
+There exist several Python tools performing all or part of these function, most notably `virtualenv`, `pyenv`, and 
+`pipenv`; `virtualenv` allows of packages in a virtual environment, `pyenv` allows for several Python versions to be 
+installed and run, `pipenv` is a merge between the preceding two tools. More introductory information is found on 
+*Flimm's* thread titled [What is the difference between venv, pyvenv, pyenv, virtualenv, virtualenvwrapper, pipenv, 
+etc?](https://stackoverflow.com/questions/41573587/what-is-the-difference-between-venv-pyvenv-pyenv-virtualenv-virtualenvwrappe). 
+It is highly recommended becoming familiar with some of these tools as they are highly used in academic and private settings.
+
+In the EPO4 project, the `pipenv` tool is used. When an environment is created, two files named `Pipfile` and 
+`Pipfile.lock` are also created in the project's directory. A third file named `requirements.txt` can be used to create 
+an environment, however, `Pipfile` always precedes the requirements file and will be used in the creation of an 
+environment if available in the target directory. `Pipfile` has a `[[source]]` section specifying the repository 
+containing the Python packages, a `[packages]` section specifying the packages and their respective version requirements,
+, a `[dev-packages]` section specifying packages for development (not installed on the machines of package users), and 
+a `[requires]` section specifying Python's version. `Pipfile.lock` contains information regarding the installed packages
+and package dependencies. The environment is created in a directory outside the project. For more information on `pipenv` 
+read [Pipenv: Python Dev Workflow for Humans](https://pipenv.pypa.io/en/latest/) and 
+[Basic Usage of Pipenv](https://pipenv.pypa.io/en/latest/basics/).
+
+### Pipenv Setup (Windows)
+First, open a command prompt and make sure `pip` is installed.
+```
+>pip --version
+```
+Note that if `pip` is not recognized, it is possible that `pip3` is installed (with Python 3); run the same command but 
+use `pip3` instead. In case `pip3` is also not recognized then install it.
+
+Next, install `pipenv` (note that if `pip3` is installed it should be used instead of `pip`).
+```
+>pip install --user pipenv
+```
+
+Navigate to the repository's directory and install environment.
+```
+>pipenv install
+```
+
+After completing these steps, the project's python environment should be installed with the specified Python version
+and required packages.
+
+To use the environment (run scripts / install additional packages), it should be first activated using the `pipenv` 
+shell command.
+```
+>pipenv shell
+```
+A string containing `(epo4-python-'hash')` is appended before the directory. Scripts should be run from inside the 
+environment.
+
+### Pipenv Setup (MacOS)
+TODO: Write instructions for MacOS.
+
+### Pipenv Setup (Linux)
+TODO: Write instructions for Linux.
+
+### PyCharm Setup
+To run scripts directly from PyCharm (and for additional functionality). The environment's interpreter can be chosen as
+the default interpreter for the project. Open a command prompt and navigate to the project's directory. Use the `pipenv` 
+command to get the installation directory of the environment.
+```
+>pipenv --venv
+```
+Copy the directory's location, and in PyCharm go to **File - Settings - Project: epo4-python - Python Interpreter**; 
+then go to the drop-down menu, **Show All**, go to the plus sign, **Pipenv Environment**, at the **Base Interpreter** 
+select the navigation option, go to the directory you copied earlier, enter **Scripts**, select **python.exe**, click 
+**OK**, and deselect **Install packages from Pipfile**; save the settings.
+
+### Package Dependencies
+The EPO4 project uses Python 3.10; the following packages are specified in the `Pipfile`.
+
+| Package     | Version |
+|-------------|---------|
+| pyqt5       | 5.15.7  |
+| pyqt5-stubs | 5.15.6  |
+| matplotlib  |         |
+| numpy       |         |
+| pyaudio     | 0.2.12  |
+| pyserial    | 3.5     |
+ | sphinx      |         |
+
+# EPO4 Python Abstractions
+
+## Serial Port Testing
+```
+$ socat -d -d pty,raw,echo=0,b115200 pty,raw,echo=0,b115200
+$ cat /dev/pts/3
+```
+Use `SerialHandle` to write to `/dev/pts/2`, the data should be written in `/dev/pts/3`.
+In case of a permission error, give permission to all users.
+```
+$ sudo chmod 666 /dev/pts/2
+```
+
+
+```
+$ sudo apt install libxcb-xinerama0
+```
+
+TODO: implement full test with command interactions
