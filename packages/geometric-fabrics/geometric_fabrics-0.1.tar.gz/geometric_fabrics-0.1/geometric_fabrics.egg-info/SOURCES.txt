@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+geometric_fabrics.egg-info/PKG-INFO
+geometric_fabrics.egg-info/SOURCES.txt
+geometric_fabrics.egg-info/dependency_links.txt
+geometric_fabrics.egg-info/requires.txt
+geometric_fabrics.egg-info/top_level.txt
