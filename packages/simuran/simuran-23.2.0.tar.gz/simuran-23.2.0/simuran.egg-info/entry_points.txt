@@ -1,0 +1,2 @@
+[console_scripts]
+simuran = simuran.ui.simuran_ui:cli_entry
