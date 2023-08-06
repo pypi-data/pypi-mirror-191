@@ -1,0 +1,2 @@
+[console_scripts]
+reddit_post_scraping_tool = reddit_post_scraping_tool.main:main
