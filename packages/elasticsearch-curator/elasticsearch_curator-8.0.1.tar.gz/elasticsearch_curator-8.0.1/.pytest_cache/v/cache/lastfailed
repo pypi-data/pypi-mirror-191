@@ -1,0 +1,9 @@
+{
+  "tests/unit/test_utils.py::TestSnapshotInProgress": true,
+  "tests/unit/test_utils.py::TestSnapshotInProgress::test_all_snapshots_for_in_progress": true,
+  "tests/unit/test_utils.py::TestSnapshotInProgress::test_all_snapshots_for_in_progress_negative": true,
+  "tests/unit/test_utils.py::TestSnapshotInProgress::test_for_multiple_in_progress": true,
+  "tests/unit/test_utils.py::TestSnapshotInProgress::test_specified_snapshot_in_progress": true,
+  "tests/unit/test_utils.py::TestSnapshotInProgress::test_specified_snapshot_in_progress_negative": true,
+  "tests/unit/test_utils.py::TestSnapshotRunning": true
+}
