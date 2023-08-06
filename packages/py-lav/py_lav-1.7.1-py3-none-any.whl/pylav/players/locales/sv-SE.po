@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: pylav\n"
+"POT-Creation-Date: 2023-02-12 23:00+0000\n"
+"PO-Revision-Date: 2023-02-12 23:01\n"
+"Last-Translator: \n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: pylav\n"
+"X-Crowdin-Project-ID: 535244\n"
+"X-Crowdin-Language: sv-SE\n"
+"X-Crowdin-File: /lib/pylav/players/locales/messages.pot\n"
+"X-Crowdin-File-ID: 3701\n"
+"Language: sv_SE\n"
+
+#: pylav/players/manager.py:259
+msgid "There are no nodes available currently."
+msgstr "Det finns inga noder tillgängliga för närvarande."
+
+#: pylav/players/manager.py:349
+msgid "Music in {number_of_servers_variable_do_not_translate} servers"
+msgstr "Musik i {number_of_servers_variable_do_not_translate} Servrar"
+
+#: pylav/players/player.py:1130
+msgid "There are no tracks currently in the player history."
+msgstr "Det finns inga spår för närvarande i spelarhistoriken."
+
+#: pylav/players/player.py:1778
+msgid "Current node has the volume filter feature disabled."
+msgstr "Den aktuella noden har volymfilterfunktionen inaktiverad."
+
+#: pylav/players/player.py:1800 pylav/players/player.py:1976
+#: pylav/players/player.py:2031
+msgid "Current node has the equalizer feature disabled."
+msgstr "Den aktuella noden har equalizer-funktionen inaktiverad."
+
+#: pylav/players/player.py:1820
+msgid "Current node has the karaoke feature disabled"
+msgstr "Aktuell nod har karaokefunktionen inaktiverad"
+
+#: pylav/players/player.py:1840 pylav/players/player.py:1978
+#: pylav/players/player.py:2033
+msgid "Current node has the timescale feature disabled."
+msgstr "Den aktuella noden har tidsskalefunktionen inaktiverad."
+
+#: pylav/players/player.py:1860
+msgid "Current node has the tremolo feature disabled."
+msgstr "Aktuell nod har tremolo-funktionen inaktiverad."
+
+#: pylav/players/player.py:1880
+msgid "Current node has the vibrato feature disabled."
+msgstr "Aktuell nod har vibratofunktionen inaktiverad."
+
+#: pylav/players/player.py:1900
+msgid "Current node has the rotation feature disabled."
+msgstr "Den aktuella noden har rotationsfunktionen inaktiverad."
+
+#: pylav/players/player.py:1920
+msgid "Current node has the distortion feature disabled."
+msgstr "Den aktuella noden har distorsionsfunktionen inaktiverad."
+
+#: pylav/players/player.py:1940
+msgid "Current node has the low-pass feature disabled."
+msgstr "Den aktuella noden har funktionen för lågt pass inaktiverad."
+
+#: pylav/players/player.py:1960
+msgid "Current node has the echo feature disabled."
+msgstr "Aktuell nod har ekofunktionen inaktiverad."
+
+#: pylav/players/player.py:2090
+msgid "Current node has the channel-mix feature disabled."
+msgstr "Den aktuella noden har funktionen kanalmix inaktiverad."
+
+#: pylav/players/player.py:2358 pylav/players/player.py:2414
+#: pylav/players/player.py:2429
+msgid "LIVE"
+msgstr "LEVA"
+
+#: pylav/players/player.py:2371
+msgid "Now Playing in {server_name_variable_do_not_translate}"
+msgstr "Spelar nu in {server_name_variable_do_not_translate}"
+
+#: pylav/players/player.py:2393 pylav/players/player.py:2560
+msgid "Currently livestreaming"
+msgstr "För närvarande livestreaming"
+
+#: pylav/players/player.py:2395
+msgid "Playing: "
+msgstr "Spelar: "
+
+#: pylav/players/player.py:2398 pylav/players/player.py:2421
+#: pylav/players/player.py:2436 pylav/players/player.py:2566
+msgid "Requester"
+msgstr "Begär"
+
+#: pylav/players/player.py:2404
+msgid "Duration: {track_duration_variable_do_not_translate}"
+msgstr "Varaktighet: {track_duration_variable_do_not_translate}"
+
+#: pylav/players/player.py:2417 pylav/players/player.py:2432
+msgid "Duration"
+msgstr "Varaktighet"
+
+#: pylav/players/player.py:2423
+msgid "Previous Track"
+msgstr "Föregående spår"
+
+#: pylav/players/player.py:2438
+msgid "Next Track"
+msgstr "Nästa spår"
+
+#: pylav/players/player.py:2447
+msgid "1 track, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "1 spår, {queue_total_duration_variable_do_not_translate} resterande\n"
+
+#: pylav/players/player.py:2451
+msgid "0 tracks, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "0 spår, {queue_total_duration_variable_do_not_translate} resterande\n"
+
+#: pylav/players/player.py:2455
+msgid "{track_count_variable_do_not_translate} tracks, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "{track_count_variable_do_not_translate} Spår {queue_total_duration_variable_do_not_translate} resterande\n"
+
+#: pylav/players/player.py:2462 pylav/players/player.py:2607
+msgid "Repeating"
+msgstr "Upprepning"
+
+#: pylav/players/player.py:2464 pylav/players/player.py:2609
+msgid "Auto Play"
+msgstr "Spela automatiskt"
+
+#: pylav/players/player.py:2468 pylav/players/player.py:2613
+msgid "{volume_variable_do_not_translate}%"
+msgstr "{volume_variable_do_not_translate}%"
+
+#: pylav/players/player.py:2469 pylav/players/player.py:2614
+msgid "Volume"
+msgstr "Volym"
+
+#: pylav/players/player.py:2472
+msgid "\n\n"
+"You can search specific services by using the following prefixes:\n"
+"{deezer_service_variable_do_not_translate}  - Deezer\n"
+"{spotify_service_variable_do_not_translate}  - Spotify\n"
+"{apple_music_service_variable_do_not_translate}  - Apple Music\n"
+"{youtube_music_service_variable_do_not_translate} - YouTube Music\n"
+"{youtube_service_variable_do_not_translate}  - YouTube\n"
+"{soundcloud_service_variable_do_not_translate}  - SoundCloud\n"
+"{yandex_music_service_variable_do_not_translate}  - Yandex Music\n"
+"Example: {example_variable_do_not_translate}.\n\n"
+"If no prefix is used I will default to {fallback_service_variable_do_not_translate}\n"
+msgstr "\n\n"
+"Du kan söka efter specifika tjänster med hjälp av följande prefix:\n"
+"{deezer_service_variable_do_not_translate}  - Deezer\n"
+"{spotify_service_variable_do_not_translate}  - Spotify\n"
+"{apple_music_service_variable_do_not_translate}  - Apple Music\n"
+"{youtube_music_service_variable_do_not_translate} - YouTube Musik\n"
+"{youtube_service_variable_do_not_translate}  - Youtube\n"
+"{soundcloud_service_variable_do_not_translate}  - SoundCloud\n"
+"{yandex_music_service_variable_do_not_translate}  - Yandex Musik\n"
+"Exempel: {example_variable_do_not_translate}.\n\n"
+"Om inget prefix används kommer jag som standard att {fallback_service_variable_do_not_translate}\n"
+
+#: pylav/players/player.py:2532
+msgid "Recently Played for {server_name_variable_do_not_translate}"
+msgstr "Nyligen spelat för {server_name_variable_do_not_translate}"
+
+#: pylav/players/player.py:2538
+msgid "Queue for {server_name_variable_do_not_translate}"
+msgstr "Kö till {server_name_variable_do_not_translate}"
+
+#: pylav/players/player.py:2563
+msgid "Playing"
+msgstr "Spelar"
+
+#: pylav/players/player.py:2579
+msgid "Queue order will change every time a track is added due to auto shuffle being enabled."
+msgstr "Köordningen ändras varje gång ett spår läggs till på grund av att automatisk blandning är aktiverad."
+
+#: pylav/players/player.py:2589
+msgid "Page 1 / 1 | 1 track, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "Sida 1/1 | 1 spår, {queue_total_duration_variable_do_not_translate} resterande\n"
+
+#: pylav/players/player.py:2593
+msgid "Page 1 / 1 | 0 tracks, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "Sida 1/1 | 0 spår, {queue_total_duration_variable_do_not_translate} resterande\n"
+
+#: pylav/players/player.py:2597
+msgid "Page {current_page_variable_do_not_translate} / {total_pages_variable_do_not_translate} | {track_number_variable_do_not_translate} tracks, {queue_total_duration_variable_do_not_translate} remaining\n"
+msgstr "Sida {current_page_variable_do_not_translate} / {total_pages_variable_do_not_translate} | {track_number_variable_do_not_translate} Spår {queue_total_duration_variable_do_not_translate} resterande\n"
+
