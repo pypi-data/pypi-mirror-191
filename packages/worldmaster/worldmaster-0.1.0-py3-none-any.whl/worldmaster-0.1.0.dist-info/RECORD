@@ -1,0 +1,15 @@
+worldmaster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldmaster/admin.py,sha256=2WGwHDAbzSlNWKj_pjBT4hmhPdNUmob8cI-rpjNVexw,144
+worldmaster/apps.py,sha256=L3lZpJnu2LndTw_MeY4tvG3ZQEGYAxcRmjKjBlc_7Sg,155
+worldmaster/asgi.py,sha256=aHFqQIsE47Xx7rI9WK7e4eQku4xounwP8yTJ7koDjwQ,399
+worldmaster/models.py,sha256=e_z335FnJBPhjX-L57bShMdtPoVng_5CRmC8qnDSM1k,88
+worldmaster/urls.py,sha256=_pfUPhggSD2dPEuKh04bl5fP_5ZIXCvOrnoC5m270C4,849
+worldmaster/validators.py,sha256=TdnlfFRH5kEs4GgihCfXXXBxrx1_BC9L6nbD7TsJUCU,277
+worldmaster/wsgi.py,sha256=3Ax560xEsw4OA2nuA_INhlXonhwWsfA97r_8uEROlG0,399
+worldmaster/migrations/0001_initial.py,sha256=WtQFEFhZRhOCSZNcscoLUzIzGt5YyzJxLOYGy6kSvOU,2873
+worldmaster/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldmaster/settings/__init__.py,sha256=Dkz21igVM9-c1IsW-cxSN4HsXjm3GR4-DNtLeZVNWeQ,2910
+worldmaster/settings/development.py,sha256=a3VDH0fR99ygaiYWtliUdIdwZW3qk3BVsDOBxzPDyHY,409
+worldmaster-0.1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+worldmaster-0.1.0.dist-info/METADATA,sha256=WtUQB1Xg760Wn9qVFfIoT4uEVynNSlxufUtqvHEiL9g,1161
+worldmaster-0.1.0.dist-info/RECORD,,

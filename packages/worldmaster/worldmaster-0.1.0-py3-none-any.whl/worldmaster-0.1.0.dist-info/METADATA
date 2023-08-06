@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: worldmaster
+Version: 0.1.0
+Summary: The WorldMaster tabletop RPG Wiki and game manager
+Keywords: rpg,games,wiki
+Author-email: "Taylor C. Richberger" <taywee@gmx.com>, Brandon Phillips <btp@brandont.dev>
+Maintainer-email: "Taylor C. Richberger" <taywee@gmx.com>, Brandon Phillips <btp@brandont.dev>
+Requires-Python: >= 3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Requires-Dist: Django >= 4.1.5, < 4.2.0
+Requires-Dist: django-stubs >= 1.13.1, < 1.14.0
+Requires-Dist: django_extensions >= 3.2.1, < 4.0.0
+Requires-Dist: ptpython >= 3.0.22
+Requires-Dist: Werkzeug >= 2.2.2, < 3.0.0
+Project-URL: repository, https://gitlab.com/worldmaster-ttrpg/worldmaster
+
+# WorldMaster
+
+WorldMaster is a platform for managing, running, sharing, and recording online TTRPG games. 
+
