@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vbelt
+Version: 0.1.6
+Summary: The VASP user tool belt.
+Author: Théo Cavignac
+Author-email: theo.cavignac@gmail.com
+License: GPL License
+Description-Content-Type: text/markdown
+Provides-Extra: gencalc
+
+# vbelt
+
+## About
+
+vbelt is a library and a collection of scripts to manipulate VASP output files.

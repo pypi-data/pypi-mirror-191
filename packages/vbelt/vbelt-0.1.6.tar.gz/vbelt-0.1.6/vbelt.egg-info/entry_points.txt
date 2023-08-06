@@ -1,0 +1,9 @@
+[console_scripts]
+chgsum = vbelt.wrapper:charge_combine
+chgx = vbelt.wrapper:charge_extract
+ckconv = vbelt.wrapper:check_conv
+ckend = vbelt.wrapper:check_end
+ckforces = vbelt.wrapper:check_forces
+jobtool = vbelt.jobtool:jobtool
+poscartool = vbelt.poscartool:poscartool
+termdos = vbelt.wrapper:termdos
