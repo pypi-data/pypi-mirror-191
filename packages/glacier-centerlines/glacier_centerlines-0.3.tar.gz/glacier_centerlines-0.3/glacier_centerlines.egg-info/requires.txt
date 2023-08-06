@@ -1,0 +1,11 @@
+numpy==1.22.0
+scipy==1.7.3
+salem
+shapely==1.8.0
+os
+rioxarray==0.9.1
+geopandas==0.10.2
+skimage
+oggm==1.5.3
+osgeo
+functools
