@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+[tool]
+
+[tool.poetry]
+name = "hito_tools"
+version = "23.02dev1"
+description = "Modules for interacting with Hito and NSIP"
+readme = "README.md"
+authors = [ "Michel Jouvin <michel.jouvin@ijclab.in2p3.fr>" ]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5"
+requests = "^2.28"
+
+[project.license]
+text = "BSD 3-Clause License"
+
+[project.urls]
+Homepage = "https://gitlab.in2p3.fr/hito/hito_tools"
+"Bug Tracker" = "https://gitlab.in2p3.fr/hito/hito_tools/-/issues"
