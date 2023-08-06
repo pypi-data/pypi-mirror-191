@@ -1,0 +1,6 @@
+statsmodels==0.13.1
+geopandas==0.10.2
+geobootstrap==0.12
+dask_geopandas==0.2.0
+tobler==0.8.2
+astropy
