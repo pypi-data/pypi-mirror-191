@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dgllife
+Version: 0.3.2
+Summary: DGL-based package for Life Science
+Home-page: https://github.com/awslabs/dgl-lifesci
+Maintainer: DGL Team
+License: APACHE
+Keywords: pytorch,dgl,graph-neural-networks,life-science,drug-discovery
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
