@@ -1,0 +1,14 @@
+ortega/STPoint.py,sha256=kaEBgfWdK1lgGgC8-XpkN2J1dpSDboEWNySHLCIIy5M,2460
+ortega/__init__.py,sha256=x9otKWs-BjpENDWe1X4Yj5zWS6lJ3sHb-SM2ie_qga0,119
+ortega/common.py,sha256=_b88hr51RCKPDOPBUdNIYJ1axATRRODMIYbEg18UosM,341
+ortega/ellipses.py,sha256=xQQn0Sfp9uDNlYfp5e_hEuVyz79SQQg1ZHqiyOOOKZc,5842
+ortega/ortega.py,sha256=gJEjbifrFC75ky7HbWu-Bc3mFQ5HIu8cN3Ma_qknKtk,17692
+ortega/output.py,sha256=W4rxssRU5uihm3uXk1wVDrZt3S8AuJ8cXZMPTLaV4MI,5172
+ortega/proximity.py,sha256=1879KJOqGr1sUYaKHPnC_VlAVlvLKNpKcmCUadzhdXE,4124
+ortega/traj.py,sha256=rsGObD2kRTI7OWxZhEQs29dAQjqFurd3ItWYTr5GE2Y,2003
+ortega/visualization.py,sha256=NGwPZW2UtxDxmN-fZDfBPJYXZTwqKB8J63mftxf4Cd0,12121
+ortega-0.0.27.dist-info/LICENSE,sha256=0ibmkwnYDly_LWKKYh-wxYqydlOWCmUpZjv6ha-wQQc,1069
+ortega-0.0.27.dist-info/METADATA,sha256=Gq8X7_tOlXITZihJUDoQSiJEfMJJ1FMGhytD2CDNM_4,429
+ortega-0.0.27.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ortega-0.0.27.dist-info/top_level.txt,sha256=gkIkwbWl9yfofKm0tMpL0C0hd3RvhOQBleCsnRysmFE,7
+ortega-0.0.27.dist-info/RECORD,,
