@@ -1,0 +1,10 @@
+haxballgym_tools/examples/sb3_multi_example.py,sha256=7b0UAN9rXVCjsq6snemnX1_EZXOUsMU0FhO37BaOI9Q,3486
+haxballgym_tools/examples/sb3_single_example.py,sha256=oX0H_UDC2zR5ejrMsUXwlbk2KJ0FsU-QfuK22do7Ohs,3416
+haxballgym_tools/model_testing/play_model_1s.py,sha256=ciyqBvS0vFCBXvf4qm5bCUEceiyt-6O6OO3vGaTpHfI,3415
+haxballgym_tools/model_testing/test_reward.py,sha256=WGQt7eloOAkuIgt-0-bJg7aa4bo-tYgUdM3pcTSjeO8,2329
+haxballgym_tools/sb3_utils/__init__.py,sha256=Nay-akWlT7c1dop1bOm5XHtj3EWIBJIqo_tp3fNwIHw,120
+haxballgym_tools/sb3_utils/sb3_hax_multiple_instance.py,sha256=1w2nZmDuSgTdEhZ_GumpSdPlNCs8ae47dvbunLCodPg,6137
+haxballgym_tools/sb3_utils/sb3_hax_single_instance.py,sha256=XJWQVlKfgDo0q9G_vef4dyyLCl7zsUeGWFy3rLNBVsY,3080
+haxballgym_tools-1.1.0.dist-info/METADATA,sha256=8LVQJA6hYmPIKhSUDp9rUCoBoygvripgRJjPbA7_Kc0,705
+haxballgym_tools-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+haxballgym_tools-1.1.0.dist-info/RECORD,,
