@@ -1,0 +1,10 @@
+rapid_layout/__init__.py,sha256=M0auEvL0apKosbGCvsosHZ2DzYhLgli-CD3wdKgZI9g,646
+rapid_layout/config.yaml,sha256=BIH64GmwbAzYsK3dLwIFqMhcc58tp8Ii91NDDW9JoAo,516
+rapid_layout/rapid_layout.py,sha256=Rj_K7Z4ScoTc8GNcWrA076c6a5RlE6dXGvH_aGjixP0,3231
+rapid_layout/utils.py,sha256=h9NtiXR00AWvhUzTecsxOZpC1cmZEVQupw4maDyNVhY,16280
+rapid_layout/models/layout_cdla.onnx,sha256=JbHyfsVqqTKkjzDL1ik8NYoVYoD0sgsKlzurIQw59iw,7423528
+rapid_layout-0.0.15.dist-info/METADATA,sha256=h-XKcrCcqOUIwAmtMDsd3ykh8FBg_8j0sfRs2AnwxJs,2900
+rapid_layout-0.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+rapid_layout-0.0.15.dist-info/entry_points.txt,sha256=hbfCKz-EQp8A82yQyu2R6zVniTN51iHAf2k_YxEdVQs,64
+rapid_layout-0.0.15.dist-info/top_level.txt,sha256=4wxiKcIjX4q2wUuy6oflHOGpcQg10f5BczEvhnBjkqI,13
+rapid_layout-0.0.15.dist-info/RECORD,,
