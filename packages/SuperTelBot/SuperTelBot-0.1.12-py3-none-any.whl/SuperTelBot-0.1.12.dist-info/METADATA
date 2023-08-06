@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: SuperTelBot
+Version: 0.1.12
+Summary: Easier way to create Telegram Bots
+Author: Connor & Lil Homer
+License: MIT
+Requires-Dist: python-decouple
+Requires-Dist: pytelegrambotapi
+Requires-Dist: python-nmap
+Requires-Dist: beautifulsoup4
+Requires-Dist: pykeepass
+Requires-Dist: openai
+Requires-Dist: cryptography
+
