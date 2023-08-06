@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: aiodeu
+Version: 0.1.28
+Summary: aio data engineering utils
+Home-page: https://github.com/s-block/aiodeu
+Author: Josh Rowe
+Author-email: s-block@users.noreply.github.com
+Requires-Python: >=3.8.1,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: aws
+Provides-Extra: faust
+Requires-Dist: boto3 (>=1.26.20,<2.0.0) ; extra == "aws"
+Requires-Dist: faust-streaming[cython,fast] (>=0.10.3,<0.11.0) ; extra == "faust"
+Requires-Dist: python-schema-registry-client (>=2.4.1,<3.0.0) ; extra == "faust"
