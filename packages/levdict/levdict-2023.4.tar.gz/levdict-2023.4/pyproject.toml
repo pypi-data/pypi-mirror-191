@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "levdict"
+version = "2023.4"
+description = "Allows to manage dictionaries and config files as class attributes"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent"
+]
+dependencies = [
+    "toml",
+    "pyyaml"
+]
+
+[[project.authors]]
+name = "Fernando Levin"
+email = "flevin58@gmail.com"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Source = "https://github.com/flevin58/levdict"
+Documentation = "https://github.com/flevin58/levdict"

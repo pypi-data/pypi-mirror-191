@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: levdict
+Version: 2023.4
+Summary: Allows to manage dictionaries and config files as class attributes
+Author-email: Fernando Levin <flevin58@gmail.com>
+License: The MIT License (MIT)
+        
+        Copyright (c) 2023 Fernando Levin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in
+        all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+        THE SOFTWARE.
+        
+Project-URL: Source, https://github.com/flevin58/levdict
+Project-URL: Documentation, https://github.com/flevin58/levdict
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# levdict
+
+This module allows to handle dictionaries keys as attributes.
+It has four classes:
+
+- ***LevDict***: The base class, it acts as a dictionary but with the added feature of treating
+consists of a main class LevDict, which allows to treat dictionaries as attributes.
+- ***LevDictJson***: Derived from LevDict, reads and writes ***json*** files
+- ***LevDictToml***: Derived from LevDict, reads and writes ***toml*** files (depends on toml)
+- ***LevDictYaml***: Derived from LevDict, reads and writes ***yaml*** files (depends on pyyaml)
+
+and three derived classes that allow using respectively toml, json and yaml for configuration purposes.
+
+## Installation
+
+The module is currently in production.
+
+    python -m pip install levdict
+
+## LevDict basic usage
+
+    d = LevDict(name="John", surname="Doe")
+    surname = d.surname
+    surname = d["surname"]
+    d.name = "Peter"
+    d.update(name="Albert")
+    d.surname="Hall"
+
+More in the examples folder.
+
+## Project Tree Structure
+
+        .
+    ├── LICENSE
+    ├── Makefile
+    ├── Pipfile
+    ├── Pipfile.lock
+    ├── README.md
+    ├── examples
+    │   ├── example1.py
+    │   ├── example2.ini
+    │   ├── example2.py
+    │   ├── example3.py
+    │   ├── example3.toml
+    │   ├── example3_mod.toml
+    │   ├── example4.json
+    │   └── example4.py
+    ├── pyproject.toml
+    ├── scripts
+    │   └── levmake.py
+    ├── src
+    │   └── levdict
+    │       ├── __init__.py
+    │       ├── levdict_base.py
+    │       ├── levdict_json.py
+    │       ├── levdict_toml.py
+    │       └── levdict_yaml.py
+    └── tests
+        ├── __init__.py
+        ├── examples
+        │   ├── example.toml
+        │   ├── example1.json
+        │   ├── example1.toml
+        │   ├── example1.yaml
+        │   └── example1_mod.toml
+        ├── test_basic.py
+        └── test_levdict.py
+
+    7 directories, 28 files

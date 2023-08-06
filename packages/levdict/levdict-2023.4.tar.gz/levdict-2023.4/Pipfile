@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+build = "*"
+black = "*"
+twine = "*"
+typer = "*"
+toml = "*"
+pyyaml = "*"
+
+[requires]
+python_version = "3.11"
+
+[scripts]
+build = "python scripts/levmake.py build"
+upload = "python scripts/levmake.py upload"
+install = "python scripts/levmake.py install"
+tests = "python scripts/levmake.py test"
+format = "python scripts/levmake.py format"
