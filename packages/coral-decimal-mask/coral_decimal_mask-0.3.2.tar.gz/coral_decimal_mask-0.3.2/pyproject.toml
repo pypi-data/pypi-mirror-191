@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "coral-decimal-mask"
+version = "0.3.2"
+description = "Django mask decimal fields"
+authors = ["Coral Sistemas"]
+license = "MIT"
+readme = "README.md"
+classifiers = [
+    'Environment :: Web Environment',
+    'Framework :: Django',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+]
+packages = [
+    {include = "decimal_mask"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.0.4"
+
+[tool.poetry.dev-dependencies]
+black = "^22.12.0"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+pytest = "^7.2.0"
+pytest-django = "^4.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "tests",
+]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+python_files = [
+    "tests.py",
+    "test_*.py",
+]
+
+[tool.black]
+line-length = 80
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | migrations
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+skip = "migrations"
