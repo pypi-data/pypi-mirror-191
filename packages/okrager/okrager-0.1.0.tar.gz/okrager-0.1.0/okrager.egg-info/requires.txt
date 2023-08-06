@@ -1,0 +1,2 @@
+mymcplus==3.0.5
+pypsu==0.1.2
