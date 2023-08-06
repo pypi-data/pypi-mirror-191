@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "update_chromedriver_package"
+version = "1"
+authors = [
+    { name="Mario x"},
+]
+description = "Comprueba la versión actual del Google Chrome y descarga o actualiza el chromedriver."
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Pistatxos/update_chromedriver_package"
