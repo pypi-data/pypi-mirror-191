@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: hcost
+Version: 0.1.0
+Summary: A simple program to calculate the heating costs based on (semi-) yearly oil deliveries.
+Home-page: https://github.com/4thel00z/hcost
+License: GPL-3
+Author: 4thel00z
+Author-email: 4thel00z@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: python-dateutil (>=2.8.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# hcost
+
+## Motivation
+
+A package which calculates the proportional heating costs, based on different heating deliveries.
+
+## Installation
+
+```
+pip install hcost
+```
+
+## License
+
+This project is licensed under the GPL-3 license.
+
