@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: easy-wrap
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/bridgeL/easy_wrap
+Author: Su
+Author-email: wxlxy316@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pillow (>=9.4.0,<10.0.0)
+Project-URL: Repository, https://github.com/bridgeL/easy_wrap
+Description-Content-Type: text/markdown
+
+## 基于pillow的简单文本转图片渲染工具
+
+示例代码：
+
+```py
+from easy_wrap import Drawer
+
+text = "... the text you want to render ....测试自动换行"
+
+font_path = "msyh.ttc"
+font_size = 30
+drawer = Drawer(font_path, font_size)
+
+image_width = 180
+canvas = drawer.draw_text(text, image_width)
+
+# save the image
+canvas.save(open("test.png", "wb")) 
+```
+
+特性：
+
+- 快速，800字平均渲染时长为0.03s（i7 cpu 2.7GHz）
+- 遵循如下换行规则（与css word-break: normal 稍有差异）
+  - 纯中文：自动换行，一个汉字看做一个单词；
+  - 纯英文：看做一个单词，不换行；
+  - 遇到英文空格或者换行符：会换行；
+
