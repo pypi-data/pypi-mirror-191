@@ -1,0 +1,13 @@
+humanreadable/__init__.py,sha256=h1yhxYLNSAk5F8U0NZkiJgQW9lDPxUSA40Hz1_fD3h0,199
+humanreadable/__version__.py,sha256=tHye7l7SwAiBk0_cTG9CULgT9HeftDcV7ALNaqRmWJY,201
+humanreadable/_base.py,sha256=V8aLQcNff_Rq0VrDQmkBgwstFdYG4IQNF_DRD3eMnx0,3816
+humanreadable/_persec.py,sha256=zgGE0X8Ck1Rp98njMU0HxwyDMy2DWz98S9LL-417Irs,7899
+humanreadable/_time.py,sha256=0FslvkBtZV572oRIUWHTar8gcLdt9N0Us2dxUwYnitI,6854
+humanreadable/_typing.py,sha256=HRJjzKYxa8rxk0DOurr5LPTs57flr7aQKiKjBtkR4is,109604
+humanreadable/error.py,sha256=I1tIbf-_gzf-uoWQJ9PYYH8Bj6CKLGNnPQREgCEZ0xE,1416
+humanreadable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humanreadable-0.2.0.dist-info/LICENSE,sha256=6R-rqWagXHXSlNwwxRJXP02yOuZE1EODDIshI-Qt9_w,1074
+humanreadable-0.2.0.dist-info/METADATA,sha256=-6QXKygJ3dTWeMLtJ5VCWru948uRCwtuGm2kPQxkNWk,7055
+humanreadable-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+humanreadable-0.2.0.dist-info/top_level.txt,sha256=7T4O8-yrJKRy8Pno8FXwY2MJUd5czOhCG8fHB4RgHWk,14
+humanreadable-0.2.0.dist-info/RECORD,,
