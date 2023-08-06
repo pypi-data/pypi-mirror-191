@@ -1,0 +1,20 @@
+---
+
+classes:
+  SubsystemBase:
+    shared_ptr: true
+    ignored_bases:
+    - wpi::SendableHelper<SubsystemBase>
+    methods:
+      InitSendable:
+        virtual_xform: |
+          [&](py::function fn) {
+            auto builderHandle = py::cast(builder, py::return_value_policy::reference);
+            fn(builderHandle);
+          }
+      GetName:
+      SetName:
+      GetSubsystem:
+      SetSubsystem:
+      AddChild:
+      SubsystemBase:
