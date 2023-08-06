@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask-queue-sse
+Version: 0.1.1
+Summary: A simple implementation of Server-Sent Events for Flask that doesn't require Redis pub/sub.
+Author: Vasanth Developer
+Author-email: vsnthdev@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: flask (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+## Flask Server Sent Events
