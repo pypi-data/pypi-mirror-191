@@ -1,0 +1,181 @@
+syntax = "proto3";
+
+message Position {
+  float latitude = 1;
+  float longitude = 2;
+  float altitude = 3;
+}
+
+message Position2D {
+  // used if there is no need for alt
+  float latitude = 1;
+  float longitude = 2;
+}
+
+message MarkerGroup {
+  Position2D position = 1;
+  uint32 rgb = 3;
+  uint32 num_of_markers = 4;
+}
+
+message MarkerGroupDetection { repeated MarkerGroup groups = 1; }
+
+message MarkerDetection {
+  // TODO: ask SAE about the possible colors
+
+  Position position = 1;
+  float confidence = 2;
+  uint32 r = 3;
+  uint32 g = 4;
+  uint32 b = 5;
+}
+
+message JetsonHeartBeat {
+  uint32 markers_detected = 1;
+  float images_per_sec = 2;
+  float telemetry_per_sec = 3;
+  float ram_memory_used_mb = 4;
+  float cpu_load = 5;
+  float temperature = 6;
+  float input_voltage = 7;
+}
+
+message SwitchMode {
+  enum ModeJetson {
+    DISABLE = 0;
+    SEARCH = 1;
+    DETECTION = 2;
+  }
+
+  ModeJetson mode = 1;
+  uint32 r = 2;
+  uint32 g = 3;
+  uint32 b = 4;
+  bool wind = 5;
+}
+
+enum Aircraft {
+  DO_NOT_USE = 0;
+  PRIMARY_AIRCRAFT = 1;
+  POWERED_AUTONOMOUS_DELIVERY_AIRCRAFT = 2;
+}
+
+/*
+  Sent regularly by both aircrafts
+ */
+message ModeMessage {
+  enum Mode {
+    INVALID = 0;
+    CONNECTION_CHECK = 1;
+    DEFAULT_MISSION_UPLOAD = 2;
+    WAIT_TARGET_COLOR = 3;
+    IDLE = 4;
+    SEARCH = 5;
+    UPLOAD_MISSION = 6;
+    RELEASE = 7;
+    DONE = 8;
+  }
+
+  Mode mode = 1;
+}
+
+/*
+  Note: this message is not created on the aircraft!
+
+  Instead, it's produced on the ground station when it parses
+  Mavlink's GPS_RAW_INT messages. I want to keep all the
+  telemetry as Protobuf, hence this "adapter" message.
+*/
+message PositionUpdate {
+  Position position = 1;
+  float heading = 2;
+}
+
+message JetsonAdvanceRequest {
+  enum DockerRequest {
+    DO_NOTHING = 0;
+    DOCKER_RESTART = 1;
+    JETSON_POWEROFF = 2;
+    RFKILL_BLOCK = 3;
+    RFKILL_UNBLOCK = 4;
+  }
+  DockerRequest request = 1;
+}
+
+enum FixType {
+  NO_GPS = 0;
+  NO_FIX = 1;
+  FIX_2D = 2;
+  FIX_3D = 3;
+  DGPS = 4;
+  RTK_FLOAT = 5;
+  RTK_FIXED = 6;
+  STATIC = 7;
+  PPP = 8;
+}
+
+message GpsFix {
+  FixType fix_type = 1;
+  int32 sat = 2;
+}
+
+message ReleaseToDetection {
+  // empty, information that PADA can be sent to detected/calculated location
+  // possible to add fields in future
+}
+
+enum ArdupilotMode {
+  // for use only between telemetry server and frontend, within one device
+  Manual = 0;
+  CIRCLE = 1;
+  STABILIZE = 2;
+  TRAINING = 3;
+  ACRO = 4;
+  FBWA = 5;
+  FBWB = 6;
+  CRUISE = 7;
+  AUTOTUNE = 8;
+  Auto = 10;
+  RTL = 11;
+  Loiter = 12;
+  TAKEOFF = 13;
+  AVOID_ADSB = 14;
+  Guided = 15;
+  INITIALISING = 16;
+  QSTABILIZE = 17;
+  QHOVER = 18;
+  QLOITER = 19;
+  QLAND = 20;
+  QRTL = 21;
+  QAUTOTUNE = 22;
+  QACRO = 23;
+}
+
+message BatteryStatus {
+  // for use only between telemetry server and frontend, within one device
+  uint32 battery_id = 1;
+  float voltage = 2;
+}
+
+message SaeTelemetry {
+  Aircraft aircraft = 1;
+  oneof message {
+    ModeMessage mode_status = 2;
+    ModeMessage change_mode_request = 3;
+    MarkerDetection marker_detection = 4;
+    PositionUpdate position_update = 5;
+    Position pada_release = 6;
+    Position debug_waypoint = 7;
+    Position waypoint = 8;
+    Position land_point = 9;
+    SwitchMode switch_mode = 10;
+    ReleaseToDetection release_to_detection = 11;
+    MarkerGroupDetection markers_group = 12;
+    JetsonHeartBeat jetson_hearthbeat = 13;
+    JetsonAdvanceRequest jetson_adv_request = 14;
+    ArdupilotMode pa_mode = 15;
+    ArdupilotMode pada_mode = 16;
+    GpsFix gps_fix = 17;
+    BatteryStatus battery_status = 18;
+  }
+}

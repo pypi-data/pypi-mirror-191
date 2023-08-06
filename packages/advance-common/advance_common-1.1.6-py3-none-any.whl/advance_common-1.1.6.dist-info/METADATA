@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: advance-common
+Version: 1.1.6
+Summary: 
+Author: Szymon-SR
+Author-email: srszymonsr@gmail.com
+Requires-Python: >=3.6.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: protobuf (==3.19.4)
+Requires-Dist: pymavlink (==2.4.27)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Description-Content-Type: text/markdown
+
+# Protobuf messages in messages_pb2 are tracked by git, so when importing this repo as submodule # there is no need to compile protobuf.
+
+If you are reading this outside of PyPi, this project is published:
+```pip install advance-common```
