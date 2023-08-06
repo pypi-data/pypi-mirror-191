@@ -1,0 +1,9 @@
+resoto_plugin_vsphere/__init__.py,sha256=jMu1FJKmJ21X32NM0FuvmNtKh1bD2fPkL7ivRgBB6So,3930
+resoto_plugin_vsphere/config.py,sha256=ty16ut00WkQL4sH9g_PPH_-kZsdK71HSJcc4sg803Z8,624
+resoto_plugin_vsphere/resources.py,sha256=w31rQ4Jq-sdvEtNQc7qYTI--v6-96XpJyaDnQDjvVlI,2256
+resoto_plugin_vsphere/vsphere_client.py,sha256=Lg-wfQXS31w4jQpMEzNQkewyyNJS7Jbqs5EFbj99lbU,4291
+resoto_plugin_vsphere-3.2.0.dist-info/METADATA,sha256=3eC9WMWT6eQg6YsfNj_H3GYqUrncEau_KdWh_NZAi-w,905
+resoto_plugin_vsphere-3.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+resoto_plugin_vsphere-3.2.0.dist-info/entry_points.txt,sha256=psK2Nha8KhN-Nc7hQvO21qYNraY1mROWcvZpI8IQsNg,72
+resoto_plugin_vsphere-3.2.0.dist-info/top_level.txt,sha256=vgzcovM6nK08qzB4V6yYXr5l44N2qdpmmAA5pRMi_J0,22
+resoto_plugin_vsphere-3.2.0.dist-info/RECORD,,
