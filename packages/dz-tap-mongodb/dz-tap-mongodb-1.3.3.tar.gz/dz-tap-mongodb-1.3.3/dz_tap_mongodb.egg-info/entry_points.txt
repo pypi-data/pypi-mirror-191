@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          dz-tap-mongodb=tap_mongodb:main
+      
