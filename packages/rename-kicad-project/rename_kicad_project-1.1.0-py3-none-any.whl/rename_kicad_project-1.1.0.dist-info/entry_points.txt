@@ -1,0 +1,3 @@
+[console_scripts]
+rename-kicad-project=rename_kicad_project.cli:app
+

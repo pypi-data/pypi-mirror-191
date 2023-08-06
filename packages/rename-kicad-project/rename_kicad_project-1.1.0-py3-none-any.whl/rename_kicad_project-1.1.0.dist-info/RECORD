@@ -1,0 +1,10 @@
+rename_kicad_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rename_kicad_project/__main__.py,sha256=3QYhq5n7vr_-rXJSdBZ9s7JesNk46NyXvqEV5ilLKM0,79
+rename_kicad_project/cli.py,sha256=L-pfLVuzCBdADVDMy4-cly6zlAAeuqghKOCoU4zNC7M,2639
+rename_kicad_project/logger.py,sha256=PWGt6Z4iG-CBNcmipIzvhqJl6tPdFDDfjNQ41yIMrvY,363
+rename_kicad_project/manipulator.py,sha256=d7-A3CgAKZt2Wa_xny0yE7BgH_Dtg4ZeWHJjDRt4QHg,3207
+rename_kicad_project-1.1.0.dist-info/METADATA,sha256=Uq4YQLSVUvB9FyFqFdVHhxXNPngxLCvew8sfi8MK_-c,3896
+rename_kicad_project-1.1.0.dist-info/entry_points.txt,sha256=vwNZm5zbuu4szR2VnfJ0l9Pz6LhTZc6k6SB3qc8UHak,69
+rename_kicad_project-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+rename_kicad_project-1.1.0.dist-info/LICENSE,sha256=D97E5a2oyM0mD9RR454UOx6WohWP9rf4bBJWeWAAL00,1066
+rename_kicad_project-1.1.0.dist-info/RECORD,,
