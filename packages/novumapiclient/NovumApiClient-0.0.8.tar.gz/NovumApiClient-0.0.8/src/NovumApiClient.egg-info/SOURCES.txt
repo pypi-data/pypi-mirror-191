@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/NovumApiClient/__init__.py
+src/NovumApiClient/apiClientBase.py
+src/NovumApiClient/apiClientPublic.py
+src/NovumApiClient.egg-info/PKG-INFO
+src/NovumApiClient.egg-info/SOURCES.txt
+src/NovumApiClient.egg-info/dependency_links.txt
+src/NovumApiClient.egg-info/top_level.txt
