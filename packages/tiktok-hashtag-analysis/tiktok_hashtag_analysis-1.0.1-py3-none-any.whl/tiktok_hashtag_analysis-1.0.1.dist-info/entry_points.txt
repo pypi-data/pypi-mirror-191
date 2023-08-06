@@ -1,0 +1,2 @@
+[console_scripts]
+tiktok_hashtag_analysis = tiktok_hashtag_analysis.__main__:main
