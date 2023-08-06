@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: word-search-solver
+Version: 0.0.0
+Summary: The amazing Word Search Solver
+Home-page: https://github.com/maximiliantiao/word_search_solver
+Author: Maximilian Tiao
+Author-email: maximilian.tiao@gmail.com
+License: MIT
+Project-URL: Bug Tracking, https://github.com/maximiliantiao/word_search_solver/issues
+Project-URL: Source, https://github.com/maximiliantiao/word_search_solver
+Keywords: puzzle,games
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Word Search Solver
+
+# Usage
+
+# Sources
+
+https://towardsdatascience.com/how-to-upload-your-python-package-to-pypi-de1b363a1b3

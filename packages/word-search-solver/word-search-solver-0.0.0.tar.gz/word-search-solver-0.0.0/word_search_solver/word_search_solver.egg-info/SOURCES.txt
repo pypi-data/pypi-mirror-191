@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tests/test_solver.py
+word_search_solver/word_search_solver.egg-info/PKG-INFO
+word_search_solver/word_search_solver.egg-info/SOURCES.txt
+word_search_solver/word_search_solver.egg-info/dependency_links.txt
+word_search_solver/word_search_solver.egg-info/top_level.txt
