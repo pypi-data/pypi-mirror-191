@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mashup_yt/__init__.py
+mashup_yt/__main__.py
+mashup_yt.egg-info/PKG-INFO
+mashup_yt.egg-info/SOURCES.txt
+mashup_yt.egg-info/dependency_links.txt
+mashup_yt.egg-info/entry_points.txt
+mashup_yt.egg-info/requires.txt
+mashup_yt.egg-info/top_level.txt
