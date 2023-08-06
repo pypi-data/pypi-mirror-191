@@ -1,0 +1,7 @@
+numpy
+pandas
+shapely
+attrs
+matplotlib
+statistics
+typing_extensions
