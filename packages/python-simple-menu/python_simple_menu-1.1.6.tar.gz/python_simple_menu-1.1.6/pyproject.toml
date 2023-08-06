@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "python-simple-menu"
+version = "1.1.6"
+description = "Yet another simple console menu"
+authors = ["Chris Vann <chrisvann01@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{include = "python_simple_menu"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
