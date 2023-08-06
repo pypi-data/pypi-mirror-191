@@ -1,0 +1,3 @@
+[console_scripts]
+amr-machine = transition_amr_parser.amr_machine:main
+amr-parse = transition_amr_parser.parse:main
