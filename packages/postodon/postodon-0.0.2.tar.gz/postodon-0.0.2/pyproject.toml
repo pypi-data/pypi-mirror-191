@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "postodon"
+version = "0.0.2"
+authors = [
+  { name="msleigh", email="msleigh@users.noreply.github.com" },
+]
+description = "Post to Mastodon"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+]
+docs = [
+  "sphinx",
+]
+tests = [
+  "pytest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/msleigh/postodon"
+"Bug Tracker" = "https://github.com/msleigh/postodon/issues"
+"CI" = "https://github.com/msleigh/postodon/actions"
+"Changelog" = "https://github.com/msleigh/postodon/releases"
+
+[project.scripts]
+postodon = "postodon:main"

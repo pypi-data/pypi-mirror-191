@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+postodon/__init__.py
+postodon/append_post.py
+postodon/select_post.py
+postodon/submit_post.py
+postodon/utils.py
+postodon.egg-info/PKG-INFO
+postodon.egg-info/SOURCES.txt
+postodon.egg-info/dependency_links.txt
+postodon.egg-info/entry_points.txt
+postodon.egg-info/requires.txt
+postodon.egg-info/top_level.txt
+tests/test_postodon.py
