@@ -1,0 +1,11 @@
+lagrange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/client.py,sha256=JotTzPMslUOPMPpYL1cqwfi50VS8dgRdz-J-hVOFw10,483
+lagrange/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange/docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagrange_python_client-0.1.1.dist-info/LICENCE,sha256=bo3mnHLYWtCr4OUL5XF4wOogvcTcrzLGYpXpMfSrVY4,1070
+lagrange_python_client-0.1.1.dist-info/METADATA,sha256=II42Kiuvx7_C3cBJOc3TTsPGa58lQl0VvdQW2t8uFtg,655
+lagrange_python_client-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+lagrange_python_client-0.1.1.dist-info/top_level.txt,sha256=GcGmQcuo6E8Kjix93KPeLRJweiuwNT71yOJODH4g3Vo,9
+lagrange_python_client-0.1.1.dist-info/RECORD,,
