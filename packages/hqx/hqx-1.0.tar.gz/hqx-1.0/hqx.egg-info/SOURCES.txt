@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+hqx/__init__.py
+hqx/__main__.py
+hqx/algor_hq2x.py
+hqx/algor_hq3x.py
+hqx/algor_hq4x.py
+hqx/constants.py
+hqx/interpolate.py
+hqx/rgb_yuv.py
+hqx.egg-info/PKG-INFO
+hqx.egg-info/SOURCES.txt
+hqx.egg-info/dependency_links.txt
+hqx.egg-info/requires.txt
+hqx.egg-info/top_level.txt
