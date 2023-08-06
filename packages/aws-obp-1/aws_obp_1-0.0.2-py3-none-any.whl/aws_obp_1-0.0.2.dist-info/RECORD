@@ -1,0 +1,12 @@
+aws_obp_1/__init__.py,sha256=9LoeNxdzwzqVrd45iREtNlmeNXxmDNwewNb_ZfnHJVo,5907
+aws_obp_1/auto_scaling.py,sha256=22JmbdvLWi7cnd4SfbCA2ZvlUZYE1qSZ7TICevawMZM,6203
+aws_obp_1/ec2.py,sha256=JJWjX_1WhLAv-lP42riS1-a6E5oJpVCJ7EfgFaOqCbA,5991
+aws_obp_1/lambda_fn.py,sha256=O3cp11heoYlV8XUiNlMx55XrcUgt-bUebcfGA8GRgrc,2478
+aws_obp_1/lb.py,sha256=tEXuzr1_LTujAOXmsFYusnVRFPUMlKKIwrycMMrf8wo,13805
+aws_obp_1/rds.py,sha256=MGPkGSNirkggJVgaVvpIdOzvQp4WwqhYNNTUdN92gpc,1831
+aws_obp_1/s3.py,sha256=BOWDZgEl9OANlisWScPr9e5cIjleW5du5PKHMfIqbHI,4461
+aws_obp_1/utils.py,sha256=m2CYoWYS2S6GRuyTQiJDvHwGoGase9sjhhtNEgsGqes,8969
+aws_obp_1-0.0.2.dist-info/METADATA,sha256=y3CakxhLnEnLAdUgJ1uui2wfSkZjIK2j29fVSirc6Gk,370
+aws_obp_1-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_obp_1-0.0.2.dist-info/top_level.txt,sha256=p9MESwsmRVTjg6xt47QoafA0Zv9ODlZWOmn9v5VZy-4,10
+aws_obp_1-0.0.2.dist-info/RECORD,,
