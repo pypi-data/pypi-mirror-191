@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "variable_lib_drturtle"
+version = "0.3.4"
+authors = [
+  { name="Chris A", email="1drturtle@example.com" },
+]
+description = "Simple library designed to help with variables and graphing."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "matplotlib",
+  "numpy",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
