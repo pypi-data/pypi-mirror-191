@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Mashup-Anureet-102003146
+Version: 0.0.2
+Summary: Mashup in Python.
+Author: Anureet Kaur
+Author-email: akaur7_be20@thapar.edu
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mashup-Python
+
+**Assignment-2**
+
+
+Submitted By: **Anureet Kaur 102003146**
+
+***
+
+## Description
+Video to Audio Conversion
+
+## In Command Prompt
+```
+pip install Mashup-Anureet-102003146
+```
+
+```
+python 102003146.py "Amrinder Gill" 15 20 102003146-output.mp3
+```
