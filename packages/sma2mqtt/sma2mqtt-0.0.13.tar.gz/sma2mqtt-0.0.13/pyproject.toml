@@ -1,0 +1,23 @@
+[metadata]
+name = "sma2mqtt"
+version = "0.0.1"
+author = "Thomas Schüßler"
+license = "MIT"
+description = "Command line tool that listens to the multicast Speedwire of a SMA Energy Meter/Home Manger 2.0 and writes the values to a MQTT server."
+keywords = "sma, mqtt"
+url = "https://github.com/vindolin/sma2mqtt"
+long_description = "file: README.md"
+long_description_content_type = "text/markdown"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.0",
+]
+
+[options]
+packages = "sma2mqtt"
+install_requires = "paho-mqtt==1.6.1"
+scripts = "scripts/sma2mqtt"
+
+[options.entry_points]
+console_scripts = "sma2mqtt=sma2mqtt.main:main"
