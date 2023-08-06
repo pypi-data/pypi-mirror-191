@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: splashlab
+Version: 0.0.1
+Summary: A package for fluid mechanic experimentalists
+Author-email: Spencer Truman <trumans24@gmail.com>
+Project-URL: Homepage, https://github.com/FluidsLab/SplashLab
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SplashLab
+Python packages intended to assist with experimental research in the field of fluid dynamics.
