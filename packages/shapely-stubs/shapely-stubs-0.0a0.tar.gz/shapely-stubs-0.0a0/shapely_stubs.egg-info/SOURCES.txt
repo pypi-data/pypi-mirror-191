@@ -1,0 +1,5 @@
+setup.py
+shapely_stubs.egg-info/PKG-INFO
+shapely_stubs.egg-info/SOURCES.txt
+shapely_stubs.egg-info/dependency_links.txt
+shapely_stubs.egg-info/top_level.txt
