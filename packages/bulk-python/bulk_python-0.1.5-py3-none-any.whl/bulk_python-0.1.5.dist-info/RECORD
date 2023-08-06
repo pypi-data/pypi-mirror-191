@@ -1,0 +1,15 @@
+bulk_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_python/command.py,sha256=Gldrmtv4DhWyp5R6CynyTgElIBD73kIrTb-YgFQRU88,1367
+bulk_python/configs/default.json,sha256=3RJvNkWhD23GSVOfTqRnJjUd0tp8wduqJoj0ty2cEBs,86
+bulk_python/configs/help.txt,sha256=dhuJopgcfLiFHQ6WcCKUZz093ivNk4ddveinBAaGEyE,710
+bulk_python/help.py,sha256=hGf9HrecmJS-gYzTLRWj3x8wRCtAbtChdnycpXo-qSU,464
+bulk_python/init.py,sha256=-qBvIYBeUGlk9cxyUSRVouZrsPkMb26yT3L6947TzmA,400
+bulk_python/install.py,sha256=y5R_UHibKgGCCKPp3SHAAmCC2VHmQghYWlHHK5wwjX8,2843
+bulk_python/main.py,sha256=-3lhV4GU-JR0mO6LNZv8DdGZAWlqs4uf7_tDcy9KcMg,1382
+bulk_python/run.py,sha256=fEn719abE6VykvaB48fUWjdlY24sfb7jg4XM_2d04fg,737
+bulk_python/uninstall.py,sha256=U8OgP1jgl8JbqL8O8QAOYnYTK4OUptHnjlI8BZTNq6E,683
+bulk_python-0.1.5.dist-info/entry_points.txt,sha256=y3vkS0pm1sgrsYvZkb27T0rB8kOkXZHSMti4Y_atDPI,45
+bulk_python-0.1.5.dist-info/LICENSE,sha256=fpFDg7rBeiwXkovCK6WneUmUNFv4kFaACNdDlh1iw7I,1095
+bulk_python-0.1.5.dist-info/METADATA,sha256=E4ojauxG4OojAbuXtbLF-cjfP4t79BAH9-9Jn0wH7F4,1831
+bulk_python-0.1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+bulk_python-0.1.5.dist-info/RECORD,,
