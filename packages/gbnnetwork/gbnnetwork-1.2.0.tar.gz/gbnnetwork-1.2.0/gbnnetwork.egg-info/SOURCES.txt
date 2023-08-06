@@ -1,0 +1,9 @@
+README.md
+setup.py
+gbnnetwork/BNetwork.py
+gbnnetwork/__init__.py
+gbnnetwork/test_network.py
+gbnnetwork.egg-info/PKG-INFO
+gbnnetwork.egg-info/SOURCES.txt
+gbnnetwork.egg-info/dependency_links.txt
+gbnnetwork.egg-info/top_level.txt
