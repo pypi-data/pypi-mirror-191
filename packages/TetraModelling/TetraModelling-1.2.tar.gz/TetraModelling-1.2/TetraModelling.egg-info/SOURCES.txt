@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+TetraModelling/__init__.py
+TetraModelling/main.py
+TetraModelling.egg-info/PKG-INFO
+TetraModelling.egg-info/SOURCES.txt
+TetraModelling.egg-info/dependency_links.txt
+TetraModelling.egg-info/requires.txt
+TetraModelling.egg-info/top_level.txt
