@@ -1,0 +1,13 @@
+mace/__init__.py,sha256=-SFzrgHsSdKTXs94OINrMty6pdD_wv5UPBgcUBXvz9E,504
+mace/complex_init_files.py,sha256=bDxzrGNFcDsqxY4_Y6-L90_Ol_JDkt7CEN6dDUZISOw,9305
+mace/complex_init_mols.py,sha256=05ldU-7HtZ0qeAdkoAAXW2tpVRZrH01EFEl7bPuqtIs,4119
+mace/complex_object.py,sha256=rp8zDfW3pKaNQKwCgxUDrSxm-D8ooXOjMzIwWLSHsnw,45989
+mace/parameters.py,sha256=XxHOAoSTAKp2O8BJ_FMsgZHTdeDDyNgTtzs8o5DuPIk,8345
+mace/smiles_parsing.py,sha256=Pza8fZXqqkGhnp5AVshqemGdKx00XAwYo7IFiGWZpU0,7312
+mace/substituents.py,sha256=qDoMh8DhvH7gd1tVE1bNGDbUGvsqfNVjsbgGYlCEdT4,4416
+mace/supporting_functions.py,sha256=SZ2NrQLuexcdZCj7egQFdC90BXSSBBTfcxPzxMSlrZQ,967
+epic_mace-0.4.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+epic_mace-0.4.1.dist-info/METADATA,sha256=BJfa_nTzE7c9ipgtqHjmRztg4C9BsbstTf-2PR-SteY,2972
+epic_mace-0.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+epic_mace-0.4.1.dist-info/top_level.txt,sha256=hvtU6ykCig58UlTIG6mfsuY4m5QiWZbA2821HKvlIzU,5
+epic_mace-0.4.1.dist-info/RECORD,,
