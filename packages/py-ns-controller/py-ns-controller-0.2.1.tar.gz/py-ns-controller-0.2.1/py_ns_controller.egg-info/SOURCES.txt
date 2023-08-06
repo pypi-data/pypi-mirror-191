@@ -1,0 +1,7 @@
+README.md
+setup.py
+py_ns_controller.egg-info/PKG-INFO
+py_ns_controller.egg-info/SOURCES.txt
+py_ns_controller.egg-info/dependency_links.txt
+py_ns_controller.egg-info/top_level.txt
+pynscontroller/__init__.py
