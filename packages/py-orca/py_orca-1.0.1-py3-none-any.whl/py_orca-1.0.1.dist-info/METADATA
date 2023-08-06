@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: py-orca
+Version: 1.0.1
+Summary: Python package for connecting services and building data pipelines
+Home-page: https://github.com/Sage-Bionetworks-Workflows/py-orca
+Author: Bruno Grande
+Author-email: bruno.grande@sagebase.org
+License: Apache-2.0
+Project-URL: Source, https://github.com/Sage-Bionetworks-Workflows/py-orca
+Project-URL: Tracker, https://github.com/Sage-Bionetworks-Workflows/py-orca/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Framework :: Apache Airflow
+Classifier: Framework :: Apache Airflow :: Provider
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+License-File: LICENSE.txt
+Requires-Dist: apache-airflow (~=2.4)
+Requires-Dist: pydantic (~=1.10)
+Requires-Dist: sqlalchemy (<2.0)
+Provides-Extra: all
+Requires-Dist: sevenbridges-python (~=2.9) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pre-commit (~=2.0) ; extra == 'dev'
+Requires-Dist: tox (~=3.0) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (~=1.0) ; extra == 'dev'
+Requires-Dist: black (~=22.0) ; extra == 'dev'
+Requires-Dist: flake8 (~=5.0) ; extra == 'dev'
+Requires-Dist: isort (~=5.0) ; extra == 'dev'
+Requires-Dist: mypy (~=0.9) ; extra == 'dev'
+Requires-Dist: flake8-pyproject (~=1.0) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints (~=1.21) ; extra == 'dev'
+Requires-Dist: interrogate (~=1.5) ; extra == 'dev'
+Requires-Dist: jupyterlab (~=3.6) ; extra == 'dev'
+Requires-Dist: vulture (~=2.7) ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: setuptools (~=65.0) ; extra == 'testing'
+Requires-Dist: pytest (~=7.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (~=4.0) ; extra == 'testing'
+Requires-Dist: pytest-mock (~=3.0) ; extra == 'testing'
+Requires-Dist: pytest-dotenv (~=0.5.2) ; extra == 'testing'
+
+# py-orca
+
+<!--
+[![ReadTheDocs](https://readthedocs.org/projects/orca/badge/?version=latest)](https://sage-bionetworks-workflows.github.io/orca/)
+[![PyPI-Server](https://img.shields.io/pypi/v/orca.svg)](https://pypi.org/project/orca/)
+[![codecov](https://codecov.io/gh/Sage-Bionetworks-Workflows/py-orca/branch/main/graph/badge.svg?token=OCC4MOUG5P)](https://codecov.io/gh/Sage-Bionetworks-Workflows/py-orca)
+[![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](#pyscaffold)
+-->
+
+> Python package for connecting services and building data pipelines
+
+This Python package provides the components to connect various third-party services such as Synapse, Nextflow Tower, and SevenBridges to build data pipelines using a workflow management system like Airflow.
+
+# PyScaffold
+
+This project has been set up using PyScaffold 4.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+```console
+putup --name orca --markdown --github-actions --pre-commit --license Apache-2.0 py-orca
+```
