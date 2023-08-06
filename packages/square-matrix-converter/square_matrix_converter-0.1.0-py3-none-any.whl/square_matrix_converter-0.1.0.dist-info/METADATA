@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: square-matrix-converter
+Version: 0.1.0
+Summary: A package for converting square matrices.
+Home-page: https://github.com/Vasyl-Poremchuk/square_matrix_converter_package
+Author: Vasyl Poremchuk
+Author-email: nleveryone@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: pytest
+

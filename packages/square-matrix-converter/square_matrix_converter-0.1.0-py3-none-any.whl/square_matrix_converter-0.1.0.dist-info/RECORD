@@ -1,0 +1,13 @@
+square_matrix_converter/__init__.py,sha256=63pznKI1JNB563ByTNzNuqUnDzi1mxex6IVc9T60TLM,211
+square_matrix_converter/convert_matrix.py,sha256=pTTS-4v56VIQFxDjTlOX_IiV1fb9C0QWx11qxlnje0w,588
+square_matrix_converter/convert_square_matrix.py,sha256=INQ7gIYelzGohvdUX-gU6jUmxCqbQsasWbBCKraR6Wg,1206
+square_matrix_converter/parse_matrix.py,sha256=uFZl82TDYNqB1BQQgan0sJKS__lg4PkB-yd2mDH7fmU,1726
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_convert_matrix.py,sha256=wzTH6ZXfvVP_KqzLcSR3ZF3MNW0_lhHgnZ4xWcpFyxA,3103
+tests/test_convert_square_matrix.py,sha256=7BYEfHawt-RrseM5kP0wIgUxy0ab280KEeEW03ndNRw,2464
+tests/test_parse_matrix.py,sha256=8PzIX4AkdvKcVSNtA-adEIeSFhvUi11OE_jseeBsv_0,549
+square_matrix_converter-0.1.0.dist-info/LICENSE,sha256=q6t8VjsKEMiS372xFfqQgJNW41HvJIP2v7HMB4C4Wa8,1093
+square_matrix_converter-0.1.0.dist-info/METADATA,sha256=uN-Izt27cUB9js0PLjIGulyy29QKeWRYHodlKGQRSI4,507
+square_matrix_converter-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+square_matrix_converter-0.1.0.dist-info/top_level.txt,sha256=x_VAUXBOf7SjMjJ0Etby9S3JuzRdnB1i5nU6t38tDDs,30
+square_matrix_converter-0.1.0.dist-info/RECORD,,
