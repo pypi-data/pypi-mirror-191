@@ -1,0 +1,3 @@
+from beautifullogger.beautifullogger import setup, setDisplayLevel
+from beautifullogger.beautifullogger import test
+from beautifullogger.beautifullogger import getStderrHandler, getLogHandler
