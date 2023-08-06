@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: solidipes
+Version: 0.0.1
+Summary: Python modules for DCSM
+Home-page: https://gitlab.com/groups/dcsm
+Author: Son Pham-Ba
+Author-email: son.phamba@epfl.ch
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: meshio[all] (>=5.3.4,<6.0.0)
+Requires-Dist: pyvista (>=0.38.1,<0.39.0)
+Project-URL: Documentation, https://solidipes.readthedocs.io/en/latest/
+Project-URL: Repository, https://gitlab.com/dcsm/modules
+Description-Content-Type: text/markdown
+
+# Solidipes
+
+_Python modules for DCSM_
+
+See the package's documentation on [Read the Docs](http://solidipes.readthedocs.io/).
+
+
+# Installation
+
+```
+pip install --index-url https://test.pypi.org/simple solidipes
+```
+
+
+# Development
+
+## Depedencies
+
+- Python 3.10
+- make
+- [Poetry](https://python-poetry.org/docs/#installation)
+
+
+## Environment setup
+
+```
+make install
+```
+
