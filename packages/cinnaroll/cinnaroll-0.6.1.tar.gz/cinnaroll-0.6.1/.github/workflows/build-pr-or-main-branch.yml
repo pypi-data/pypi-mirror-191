@@ -1,0 +1,82 @@
+name: Build PR or main branch
+
+concurrency:
+  # See https://docs.github.com/en/actions/using-jobs/using-concurrency#example-using-a-fallback-value for this trick
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+defaults:
+  run:
+    shell: bash -e -o pipefail -u -x {0}
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install --global remark-cli remark-lint-no-dead-urls remark-validate-links
+      - name: Perform general checks
+        run: ci/checks/run-all-checks.sh
+
+  tox:
+    needs: checks
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Note that there is no particular reason for the below assignment of PEP8/coverage/docs checks to Python version.
+        # Each of these needs to be run against just one Python version
+        # (since there's very little chance that they pass under one version but fail under another),
+        # so let's spread these checks evenly across versions to reduce CI latency
+        # (when compared to the scenario where all checks are executed under the same Python version).
+        include:
+          # Python versions must be quoted so as not to be interpreted as floats :/
+          - python-version: '3.7'
+            tox-envs: py37,mypy-py37
+          - python-version: '3.8'
+            tox-envs: py38,mypy-py38,pep8
+          - python-version: '3.9'
+            tox-envs: py39,mypy-py39,coverage
+          - python-version: '3.10'
+            tox-envs: py310,mypy-py310,docs
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install tox
+      - name: Test with tox
+        env:
+          TOXENV: ${{ matrix.tox-envs }}
+        run: if command -v tox; then tox; else ~/.local/bin/tox; fi
+  e2e:
+    needs: checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.testenv.txt
+      - name: Run deps finder tests
+        env:
+          CINNAROLL_API_KEY: ${{ secrets.E2E_API_KEY }}
+          CINNAROLL_SKIP_VERSION_CHECK: True
+          PROJECT_ID: ${{ secrets.E2E_PROJECT_ID }}
+        run: .github/workflows/run-e2e-and-deps-finder-tests.sh

@@ -1,0 +1,29 @@
+# custom additions
+tests/server
+
+# produced by model upload procedure @ rollout
+artifact.tar.gz
+
+# Editors
+.idea/
+*.swp
+
+# Python
+AUTHORS
+ChangeLog
+build/
+.coverage
+coverage.xml
+dist/
+docs/html/
+*.egg-info/
+.eggs/
+htmlcov/
+*.pyc
+.python-version
+test-results/
+.tox/
+venv/
+
+# MacOS
+.DS_Store
