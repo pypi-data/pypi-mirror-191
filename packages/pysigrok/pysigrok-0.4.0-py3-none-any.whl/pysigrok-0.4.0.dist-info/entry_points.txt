@@ -1,0 +1,11 @@
+[console_scripts]
+pysigrok-cli=sigrokdecode.cli:main
+pysigrok-runtc=sigrokdecode.runtc:main
+
+[pysigrok.input_format]
+srzip=sigrokdecode.srzip:SrZipInput
+
+[pysigrok.output_format]
+bits=sigrokdecode.bits:BitsOutput
+srzip=sigrokdecode.srzip:SrZipOutput
+
