@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: WesamCul
+Version: 0.1
+Summary: simple library in python for test
+Author: Wesam-Saeed
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+License-File: LICENSE.txt
