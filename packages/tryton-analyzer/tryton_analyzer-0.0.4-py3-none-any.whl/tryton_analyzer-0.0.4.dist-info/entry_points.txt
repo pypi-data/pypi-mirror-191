@@ -1,0 +1,4 @@
+[console_scripts]
+tryton-lint=tryton_analyzer.tryton_lint:run
+tryton-ls=tryton_analyzer.tryton_ls:run
+
