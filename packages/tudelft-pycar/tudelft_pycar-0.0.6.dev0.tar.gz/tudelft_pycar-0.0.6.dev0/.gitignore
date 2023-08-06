@@ -1,0 +1,10 @@
+# PyCharm environment setup
+.idea
+*pyc
+
+# Sphinx generated files during build
+html
+docs/build/.doctrees
+docs/build/_sources
+docs/build/.buildinfo
+docs/build/objects.inv
