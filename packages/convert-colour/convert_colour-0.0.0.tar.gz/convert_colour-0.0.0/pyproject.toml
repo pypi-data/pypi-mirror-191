@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "convert-colour"
+version = "0.0.0"
+description = "A simple Python colour converter!"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name="thatgaypigeon", email="rapidpigeon43@gmail.com"},
+]
+keywords = ["color", "colour", "convert", "converter", "colour converter", "color converter", "hex", "RGB", "RYB"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: MIT License",
+    'Intended Audience :: Developers',
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Utilities",
+    "Typing :: Typed"
+]
+
+[project.urls]
+"Documentation" = "http://convert-colour.rtfd.io/"
+"Homepage" = "https://github.com/Pigeon43/convert-colour"
+"Issues / Bugs" = "https://github.com/Pigeon43/convert-colour/issues"
+"PyPI" = "https://pypi.org/project/convert-colour/"
+"Support Server" = "https://discord.gg/MyPTZBH4Q8"
