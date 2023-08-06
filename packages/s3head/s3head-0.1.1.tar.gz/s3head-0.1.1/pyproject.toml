@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "s3head"
+version = "0.1.1"
+description = "head command for AWS S3 objects"
+authors = ["Kenta Shinzato <hoppiece@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/hoppiece/s3head"
+repository = "https://github.com/hoppiece/s3head"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+smart-open = "^6.3.0"
+boto3 = "^1.26.69"
+click = "^8.1.3"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.scripts]
+s3head = "s3head.main:main"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+mypy = "^1.0.0"
+pytest = "^7.2.1"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.black]
+line-length = 99
+[tool.isort]
+profile = "black"
+line_length = 99
+[tool.mypy]
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "pep440"

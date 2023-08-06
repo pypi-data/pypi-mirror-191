@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: s3head
+Version: 0.1.1
+Summary: head command for AWS S3 objects
+Home-page: https://github.com/hoppiece/s3head
+License: Apache-2.0
+Author: Kenta Shinzato
+Author-email: hoppiece@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.69,<2.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: smart-open (>=6.3.0,<7.0.0)
+Project-URL: Repository, https://github.com/hoppiece/s3head
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/s3head.svg)](https://badge.fury.io/py/s3head)
+[![Python Versions](https://img.shields.io/pypi/pyversions/s3head.svg)](https://pypi.org/project/s3head/)
+# s3head
+
+`s3head` is the `head` command for AWS S3.
+
+## Install
+```
+pip install s3head
+```
+If you use pipx, it's nice to install by it.
+
+```
+pipx iinstall s3head
+```
+## Usage
+Before using, create `.s3cfg` file by `s3cmd --configure`. See [s3cmd](https://github.com/s3tools/s3cmd)
+```
+Usage: s3head [OPTIONS] URI
+
+Options:
+  -n, --num-lines INTEGER   lines
+  -c, --count-byte INTEGER  bytes
+  --config TEXT             Path to the `.s3cfg`
+  --help                    Show this message and exit.
+```
+
+For example,
+```
+s3head -n 100 s3://your_bucket/your_file.txt
+```
