@@ -1,0 +1,28 @@
+[project]
+name = "find_phishing_URL"
+
+version = "1.0.0"
+
+description = "An sample project which check whether the URL is phishing URL or not"
+
+readme = "README.md"
+
+requires-python = ">=3.7"
+
+keywords = ["phishing","find_phishing_URL"]
+
+authors = [
+{name = "Crest Data Systems", email="abc@crestdatasys.com"}
+]
+
+license = {file = "LICENSE.txt"}
+
+[project.urls] 
+"phishingURL" = "https://checkurl.phishtank.com/checkurl/index.php"
+
+[project.scripts]
+sample = "src:package"
+
+[build-system]
+requires = ["setuptools>=50.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
