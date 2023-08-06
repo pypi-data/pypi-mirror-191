@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+waterpointsmap/__init__.py
+waterpointsmap/waterpointsmap.py
+waterpointsmap.egg-info/PKG-INFO
+waterpointsmap.egg-info/SOURCES.txt
+waterpointsmap.egg-info/dependency_links.txt
+waterpointsmap.egg-info/not-zip-safe
+waterpointsmap.egg-info/top_level.txt
