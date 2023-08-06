@@ -1,0 +1,10 @@
+quadbin/__init__.py,sha256=ZDwBgYdTfBCoRdLdFeENE17Vv9YTFfqNc1gw1AvUB9I,836
+quadbin/_version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+quadbin/main.py,sha256=2kw7gcE5l1IOryAEGcbdWRqdbn4i9RdseD3w7vTBvRw,10551
+quadbin/tilecover.py,sha256=zjyihVRa-YLId0mqzEXFk4Zv1Q3VXcZHndKjAln76h4,6498
+quadbin/utils.py,sha256=0ax68oFgPs7QakU4a09me5BYDfEUIH9Y4TCYuFZdSzk,6461
+quadbin-0.2.0.dist-info/LICENSE,sha256=Y-wdV_jbSysRN4LinKrCozL08kFlSL12kVjemDzI1Tw,1512
+quadbin-0.2.0.dist-info/METADATA,sha256=mHVYHpXvvIMR-QQBKmLxvRWpvF2E5iRmWF27mKvz5lI,2760
+quadbin-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quadbin-0.2.0.dist-info/top_level.txt,sha256=XzAdBQAKicxoD2bqt4hjLKai-AUrX17didjjZADikYg,8
+quadbin-0.2.0.dist-info/RECORD,,
