@@ -1,0 +1,5 @@
+large-image>=1.19.4.dev47
+wsidicom
+
+[girder]
+girder-large-image>=1.19.4.dev47
