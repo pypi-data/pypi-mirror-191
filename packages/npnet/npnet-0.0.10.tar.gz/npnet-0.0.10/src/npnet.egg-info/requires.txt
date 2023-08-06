@@ -1,0 +1,16 @@
+
+[:python_version < "3.8"]
+numpy>=1.19.5
+
+[:python_version >= "3.8"]
+numpy>=1.22.3
+
+[build]
+tox==3.24.3
+build
+twine
+pylint
+
+[test]
+tox-conda
+matplotlib>=3.3.4
