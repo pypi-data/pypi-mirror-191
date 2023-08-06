@@ -1,0 +1,13 @@
+krazy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+krazy/calculation_utilities.py,sha256=otFNHR5WEiBB-s0gxS065Qmrcw4_XzBuz5mAWTC3Qpc,7884
+krazy/data_science.py,sha256=0IsOppSZY7q_kswVwVBmj18H6pccT7-xuxd66Xh8GDc,6029
+krazy/frontend_tkinter_ready.py,sha256=1NEGJaTsU5eCEDQB_McIQUTVPgfoc4DA3e7H4-wewf8,10182
+krazy/gsheet_initialize.py,sha256=NExOuM2Viy9o-k5fZEAnaJyMEnh2GSlEpgYbXL6d5ak,3382
+krazy/sql_utilities.py,sha256=3YKyoe01RaTgZbFNm4qKqBZobsLZBF94MkCV5B-GzhA,6708
+krazy/sqlite_utilities.py,sha256=Vb9jd1PSrpQYHlaT0qC0QBKa_C8BMUCjhIuH2PDvvQo,2237
+krazy/utility_functions.py,sha256=rKFpp1SIRelDQ81mWsSgP-sAtW63yO2o9lfO3fzVDGo,29144
+krazy-0.21.10.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+krazy-0.21.10.dist-info/METADATA,sha256=RF3H_BssoQJsoroWuDCZuUfICpb0_cyfmFaXmMN52ZQ,2187
+krazy-0.21.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+krazy-0.21.10.dist-info/top_level.txt,sha256=1A4tuHV-s2cR5OMtOwlmxOWhHdlWK9sjJkkKwbcOn9g,6
+krazy-0.21.10.dist-info/RECORD,,
