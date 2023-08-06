@@ -1,0 +1,5 @@
+requests
+bibtexparser
+urwid
+pyperclip
+pymupdf
