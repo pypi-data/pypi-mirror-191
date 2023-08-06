@@ -1,0 +1,10 @@
+README.md
+setup.py
+Serverside_tables_django_framework.egg-info/PKG-INFO
+Serverside_tables_django_framework.egg-info/SOURCES.txt
+Serverside_tables_django_framework.egg-info/dependency_links.txt
+Serverside_tables_django_framework.egg-info/requires.txt
+Serverside_tables_django_framework.egg-info/top_level.txt
+django_serverside_datatable_post/__init__.py
+django_serverside_datatable_post/datatable.py
+django_serverside_datatable_post/views.py
