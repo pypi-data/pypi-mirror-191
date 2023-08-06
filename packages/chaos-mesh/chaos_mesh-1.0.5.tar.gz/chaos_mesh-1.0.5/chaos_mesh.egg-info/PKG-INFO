@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: chaos-mesh
+Version: 1.0.5
+Summary: A client to create experiments in ChaosMesh
+Home-page: https://github.com/vishrantgupta/chaos-mesh
+Author: Vishrant Gupta
+Author-email: gvishrant@vmware.com
