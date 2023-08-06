@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/executor_s3/__init__.py
+src/executor_s3/_config.py
+src/executor_s3/_impl.py
+src/executor_s3/hash-tar.sh
+src/executor_s3.egg-info/PKG-INFO
+src/executor_s3.egg-info/SOURCES.txt
+src/executor_s3.egg-info/dependency_links.txt
+src/executor_s3.egg-info/requires.txt
+src/executor_s3.egg-info/top_level.txt
