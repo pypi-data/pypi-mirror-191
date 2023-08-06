@@ -1,0 +1,20 @@
+[project]
+name = "hkpkg"
+version = "0.0.1"
+authors = [
+  { name="Hriday Keswani", email="hridaykeswnai@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/hridayK/demo_pkg"
+"Bug Tracker" = "https://github.com/hridayK/demo_pkg/issues"
+[build-system]
+requires = ["hatchling","selenium"]
+build-backend = "hatchling.build"

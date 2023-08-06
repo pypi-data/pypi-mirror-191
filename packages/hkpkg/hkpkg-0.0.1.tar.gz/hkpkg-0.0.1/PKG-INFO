@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: hkpkg
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/hridayK/demo_pkg
+Project-URL: Bug Tracker, https://github.com/hridayK/demo_pkg/issues
+Author-email: Hriday Keswani <hridaykeswnai@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# demo_pkg
+A reference for making python packages and uploading them on PyPI
+
+## Follow the above directory structure and enter the commands:
+
+### For Windows:
+```batch
+py -m pip install --upgrade build
+py -m build
+```
+
+### For Unix/MacOS:
+```shell
+python3 -m pip install --upgrade build
+python3 -m build
+```
+
+## How to upload package on PyPI?
+
+### For Windows:
+```batch
+py -m pip install --upgrade twine
+py -m twine upload --repository testpypi dist/*
+```
+
+### For Unix/MacOS:
+```shell
+python3 -m pip install --upgrade twine
+python3 -m twine upload --repository testpypi dist/*
+```
