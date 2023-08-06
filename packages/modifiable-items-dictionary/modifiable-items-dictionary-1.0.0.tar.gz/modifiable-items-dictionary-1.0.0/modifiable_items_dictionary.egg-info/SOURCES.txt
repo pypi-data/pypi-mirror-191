@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+modifiable_items_dict/__init__.py
+modifiable_items_dict/modifiable_items_dict.py
+modifiable_items_dictionary.egg-info/PKG-INFO
+modifiable_items_dictionary.egg-info/SOURCES.txt
+modifiable_items_dictionary.egg-info/dependency_links.txt
+modifiable_items_dictionary.egg-info/top_level.txt
+tests/test_modifiable_items_dict.py
