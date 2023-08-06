@@ -1,0 +1,8 @@
+myfr24/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myfr24/exceptions.py,sha256=FuPYk73g0tETVUB-U36Do9dhGt59URyYm9CuwYN-zyY,67
+myfr24/myfr24.py,sha256=B2b6vkplxqroJGBGsT3XWFIq3Z9IMhnxJ9ooySBqKIE,498
+myfr24/network.py,sha256=_72L5vZ-7ThlGV63p5zBzTH_XIDKi5CwoGENmRMat2w,313
+myfr24/scraper.py,sha256=VbMrLjnLx6QcP1zzf8k9N0NfXK1nZVVWUUIwh057nmk,968
+myfr24-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+myfr24-0.1.0.dist-info/METADATA,sha256=pHyycqhZBDXyUl2xvPqD85eo5zgpUQDEdMYpYMQPVnY,540
+myfr24-0.1.0.dist-info/RECORD,,
