@@ -1,0 +1,3 @@
+[console_scripts]
+ic=ic_toolkit_edd.main:app
+
