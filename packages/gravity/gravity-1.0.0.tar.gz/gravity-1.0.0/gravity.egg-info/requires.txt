@@ -1,0 +1,8 @@
+Click
+supervisor
+pyyaml
+packaging
+pydantic
+jsonref
+requests
+requests-unixsocket
