@@ -1,0 +1,4 @@
+pennylane>=0.15
+numpy
+scipy
+pyqrack>=0.12.1
