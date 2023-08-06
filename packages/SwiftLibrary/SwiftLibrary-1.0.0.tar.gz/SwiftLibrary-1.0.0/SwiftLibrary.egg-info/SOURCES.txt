@@ -1,0 +1,12 @@
+LICENCE
+README.rst
+setup.py
+SwiftLibrary/GetAdress.py
+SwiftLibrary/Method.py
+SwiftLibrary/SendData.py
+SwiftLibrary/__init__.py
+SwiftLibrary.egg-info/PKG-INFO
+SwiftLibrary.egg-info/SOURCES.txt
+SwiftLibrary.egg-info/dependency_links.txt
+SwiftLibrary.egg-info/requires.txt
+SwiftLibrary.egg-info/top_level.txt
