@@ -1,0 +1,11 @@
+task_assembly/__init__.py,sha256=Io_Dt7reggux-FjVwOpfPuguEUslntnGpI938CYX62Q,35
+task_assembly/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+task_assembly/cli.py,sha256=wYjoatvfJj2Tq7HmyK0sABo_1NW1Sgr2Va-FPqZT9wI,20703
+task_assembly/client.py,sha256=5onCfDWd04maF7RZzQPhjOK5vmocJKX1xB1lQgSIGss,12408
+task_assembly/handlers.py,sha256=FkBBRoAVBvx7zmLjIk5PI-l6c0NB-PJPlVUg0DHwvOA,1341
+task_assembly/utils.py,sha256=FkTlTKLstoy_VwD955fHPqofciLCVq0aZQXhOeZwGPs,3012
+task_assembly-0.1.9.dist-info/entry_points.txt,sha256=ZjwiKTOf-Lwh_MrjoENYqAj7WdYXVP7CV4Ri6QeRI-k,56
+task_assembly-0.1.9.dist-info/LICENSE,sha256=YN-3pDaMuQ22TDX2yUanmonp9fKIxz4h-GT216ik8Ds,1091
+task_assembly-0.1.9.dist-info/METADATA,sha256=xknCPDqebW-8FItjad60nkXW5sJPmLzqoFla6aJ9OGw,881
+task_assembly-0.1.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+task_assembly-0.1.9.dist-info/RECORD,,
