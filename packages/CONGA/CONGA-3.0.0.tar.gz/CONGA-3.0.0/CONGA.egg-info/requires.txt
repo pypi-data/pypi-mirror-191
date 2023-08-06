@@ -1,0 +1,6 @@
+pyteomics
+pandas
+numpy
+scipy
+tdqm
+matplotlib
