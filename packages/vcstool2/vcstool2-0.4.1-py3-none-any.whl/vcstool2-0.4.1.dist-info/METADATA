@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vcstool2
+Version: 0.4.1
+Summary: vcstool provides a command line tool to invoke git commands on multiple repositories.
+Home-page: https://github.com/MaxandreOgeret/vcstool2
+Author: Dirk Thomas
+Author-email: web@dirk-thomas.net
+Maintainer: Maxandre Ogeret
+Maintainer-email: MaxandreOgeret@users.noreply.github.com
+License: Apache License, Version 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: PyYAML
+Requires-Dist: setuptools
+
+vcstool2 enables batch commands on multiple different git repositories. It is a fork of Dirk Thomas' vcstool
