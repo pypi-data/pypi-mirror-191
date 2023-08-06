@@ -1,0 +1,27 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:cache="http://namespaces.zope.org/cache"
+    xmlns:plone="http://namespaces.plone.org/plone">
+
+  <plone:service
+    method="GET"
+    for="zope.interface.Interface"
+    factory=".get.SitemapSettingsGet"
+    name="@sitemap-settings"
+    permission="zope2.View"
+    />
+
+  <cache:ruleset ruleset="plone.content.dynamic" for=".get.SitemapSettingsGet" />
+
+  <plone:service
+    method="GET"
+    for="zope.interface.Interface"
+    factory=".get.SitemapGet"
+    name="@sitemap"
+    permission="zope2.View"
+    />
+
+  <cache:ruleset ruleset="plone.content.dynamic" for=".get.SitemapGet" />
+
+</configure>
