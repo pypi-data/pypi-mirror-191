@@ -1,0 +1,10 @@
+chipys_5e_companion/__about__.py,sha256=zUMq6BFyyNx4AUfO89JeAMscUL4WxGs0Yw3yJBTHHFw,127
+chipys_5e_companion/__init__.py,sha256=DVXntzVxoFuNcxH-kElW4SVh6ZYfwSUAM8CC3JKsc8A,113
+chipys_5e_companion/dice.py,sha256=sd69U2WMtAOp2WxGq6JoXAbzYFUIjw_LiRRHmEOIHYs,2764
+chipys_5e_companion/main.py,sha256=jjIhVvxSc5G5vztEROBEvpUM8RdmQ3xkbMraYyvFNbo,311
+chipys_5e_companion/QT/gui.py,sha256=IRFOAwkNCMK1of-1ma6OHTryuHCdw7dKRD7aT5F5V9E,6483
+chipys_5e_companion/QT/gui.ui,sha256=n0fTGBcVPg_JyBc5npc0pOb3MDnYVv4-N1wo5zaGA7E,5744
+chipys_5e_companion-0.0.5.dist-info/METADATA,sha256=zEu6sNWYwQ7zP73fUCol53uMBug2lUcM1F7nrIf_ewM,1477
+chipys_5e_companion-0.0.5.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+chipys_5e_companion-0.0.5.dist-info/licenses/LICENSE.txt,sha256=5LzL_VR3Ti6trbQjnifnuVTBytOqk39aTDGrSGMt-IY,1100
+chipys_5e_companion-0.0.5.dist-info/RECORD,,
