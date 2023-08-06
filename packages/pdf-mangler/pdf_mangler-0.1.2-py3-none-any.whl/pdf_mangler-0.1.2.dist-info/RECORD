@@ -1,0 +1,16 @@
+pdf_mangler/__init__.py,sha256=vU7QiGSy_AJuJFmClUocqIJ-Ltku_8C24ZU8L6fLJR0,53
+pdf_mangler/defaults.yaml,sha256=IQt5Y0OtPlCRdk2v_2sx6AbIiLl7I32ldvk3Vx-eg3E,1468
+pdf_mangler/mangler.py,sha256=Ff1kBx8AkIIS_qA-UhdfOXy0JsdeDaa1uIMfToyZacY,23509
+pdf_mangler/text_utils.py,sha256=TLoYXMejCJ_8stvTejamlKECc-uPm2GYvF4i1PYiEJI,4999
+pdf_mangler/fonts/adobe-latin-1.txt,sha256=NZTJhh0vViEu5HRkk0Z1QAum7NoHreZnyFGU-y-8y2A,10082
+pdf_mangler/fonts/adobe-latin-2.txt,sha256=QsfDl1iyMZsK95K34YCzVv3i9MK3Fmlv-4wNk228p0E,11033
+pdf_mangler/fonts/adobe-latin-3.txt,sha256=ddDmBkH-GsjUYucZp8qwoYg9sY6ysVNAb5g9pU3sWJw,16005
+pdf_mangler/fonts/adobe-latin-4-precomposed.txt,sha256=FHB5ivjQeIGR_57qkguqePsNC4HFzNbbZEgKSOFcp4E,33658
+pdf_mangler/fonts/adobe-latin-5-precomposed.txt,sha256=Avc9GN4XBxsvxN0SQPuyxADBu6EGs89_te1CMutLjUA,74270
+pdf_mangler/fonts/glyphlist.txt,sha256=e8o-JDF1PYXmxmF3B77CE5avcRAZnnRqO3XgHwrOI0Y,78059
+pdf_mangler-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+pdf_mangler-0.1.2.dist-info/METADATA,sha256=DOhf4s91WzjINkreE4IjpCOIi_cbx7y_8iBzPRwEv_U,21011
+pdf_mangler-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pdf_mangler-0.1.2.dist-info/entry_points.txt,sha256=R0dpKA9tOweCo3v2c6v35Db4Gnpw61uRtFBlZ1pE658,57
+pdf_mangler-0.1.2.dist-info/top_level.txt,sha256=EDxmpx_KXq0sRj31Ra_iqRoY58mQESi16IgDW34e7aU,12
+pdf_mangler-0.1.2.dist-info/RECORD,,
