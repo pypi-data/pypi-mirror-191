@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/reservoirs_wflow/__init__.py
+src/reservoirs_wflow/reservoirs.py
+src/reservoirs_wflow/rules.py
+src/reservoirs_wflow.egg-info/PKG-INFO
+src/reservoirs_wflow.egg-info/SOURCES.txt
+src/reservoirs_wflow.egg-info/dependency_links.txt
+src/reservoirs_wflow.egg-info/entry_points.txt
+src/reservoirs_wflow.egg-info/requires.txt
+src/reservoirs_wflow.egg-info/top_level.txt
