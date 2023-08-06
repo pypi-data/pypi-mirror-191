@@ -1,0 +1,6 @@
+Click
+humanize
+psutil
+pydbus
+pygi
+pyyaml
