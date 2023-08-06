@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bin/lrplot
+doc/images/20180416_1422_EWolf_9948_susscrofa-albacore-2.2.5-FLO-PRO001-SQK-LSK109.fastq-lrplots.png
+lrplots.egg-info/PKG-INFO
+lrplots.egg-info/SOURCES.txt
+lrplots.egg-info/dependency_links.txt
+lrplots.egg-info/requires.txt
+lrplots.egg-info/top_level.txt
