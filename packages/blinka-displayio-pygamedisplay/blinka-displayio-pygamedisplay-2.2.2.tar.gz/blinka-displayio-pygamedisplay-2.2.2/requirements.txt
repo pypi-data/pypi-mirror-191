@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2017 Scott Shawcroft, written for Adafruit Industries
+# SPDX-FileCopyrightText: Copyright (c) 2020 Tim C for foamyguy
+#
+# SPDX-License-Identifier: MIT
+
+adafruit-blinka-displayio
+pygame>=2.1.3dev8
