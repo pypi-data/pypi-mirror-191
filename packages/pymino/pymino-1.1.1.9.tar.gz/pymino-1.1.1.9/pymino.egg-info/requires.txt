@@ -1,0 +1,4 @@
+requests
+colorama==0.4.6
+httplib2==0.21.0
+websocket-client==1.4.1
