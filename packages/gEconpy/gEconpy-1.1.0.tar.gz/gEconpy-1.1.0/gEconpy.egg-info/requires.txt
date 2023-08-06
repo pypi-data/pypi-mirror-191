@@ -1,0 +1,9 @@
+emcee
+arviz
+matplotlib
+numba
+numpy
+pyparsing
+scipy
+statsmodels
+sympy
