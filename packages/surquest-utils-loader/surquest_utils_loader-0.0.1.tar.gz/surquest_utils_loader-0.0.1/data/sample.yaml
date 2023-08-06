@@ -1,0 +1,8 @@
+---
+family:
+  name: Smith
+  members:
+  - name: John # father
+    age: 40
+  - name: Jane # mother
+    age: 38

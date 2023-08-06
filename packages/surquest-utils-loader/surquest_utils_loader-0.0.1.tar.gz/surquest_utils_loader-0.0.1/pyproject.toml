@@ -1,0 +1,34 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "surquest-utils-loader"
+version = "0.0.1"
+description = "Standalone Loader class for simplification of loading configurations from YAML, JSON, SQL or TXT files."
+authors = [
+    {name= "Michal Švarc", email= "michal.svarc@surquest.com"}
+]
+readme = "README.md"
+dependencies = [
+    "PyYAML >=6.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==7.2.1",
+    "pytest-cov==4.0.0",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/surquest/python-utils-loader"
+"Bug Tracker" = "https://github.com/surquest/python-utils-loader/issues"
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+"scripts" = "surquest"
+
+[tool.hatch.build.targets.sdist.sources]
+"src" = ""
+"scripts" = "surquest"
