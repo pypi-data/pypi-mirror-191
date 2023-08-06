@@ -1,0 +1,2 @@
+[console_scripts]
+policyserver = policyserver.cli:main
