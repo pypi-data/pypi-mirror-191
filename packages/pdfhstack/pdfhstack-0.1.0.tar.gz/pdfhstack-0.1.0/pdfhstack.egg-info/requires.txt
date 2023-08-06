@@ -1,0 +1,6 @@
+pypdf
+
+[dev]
+black
+isort
+pylint

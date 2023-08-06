@@ -1,0 +1,10 @@
+pdfhstack.py
+pyproject.toml
+readme.md
+setup.cfg
+pdfhstack.egg-info/PKG-INFO
+pdfhstack.egg-info/SOURCES.txt
+pdfhstack.egg-info/dependency_links.txt
+pdfhstack.egg-info/entry_points.txt
+pdfhstack.egg-info/requires.txt
+pdfhstack.egg-info/top_level.txt

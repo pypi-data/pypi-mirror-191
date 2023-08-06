@@ -1,0 +1,2 @@
+[console_scripts]
+pdfhstack = pdfhstack:main

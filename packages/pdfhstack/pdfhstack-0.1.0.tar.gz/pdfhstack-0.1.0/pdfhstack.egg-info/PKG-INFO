@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pdfhstack
+Version: 0.1.0
+Summary: Merge pages of pdf documents horizontally
+Author: Vladimir Abdrakhmanov
+Author-email: vlabdrake@protonmail.com
+Requires-Python: <4,>=3.7
+Provides-Extra: dev
+
+# pdfhstack
