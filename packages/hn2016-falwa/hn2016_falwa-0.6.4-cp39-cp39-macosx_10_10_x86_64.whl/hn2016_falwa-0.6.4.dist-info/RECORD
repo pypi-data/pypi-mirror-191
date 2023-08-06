@@ -1,0 +1,16 @@
+compute_flux_dirinv.cpython-39-darwin.so,sha256=Pwh09B-_jSiJ4aAfoCi-7-taQWJ2ZCTOxnSHRLD3rP8,72640
+compute_lwa_and_barotropic_fluxes.cpython-39-darwin.so,sha256=o3E__jnccwhckZXm09f1Q1z-qSjmkld1ktOX1s8o708,72832
+compute_qref_and_fawa_first.cpython-39-darwin.so,sha256=ysmLZjXZWJdPCXx_Yv2rhgC6gHbd9nUYoiXBlK5ZKr4,89208
+compute_reference_states.cpython-39-darwin.so,sha256=IbSr5xTdG6uNNMBq9HBy5VIP-qKxS0oeo7H3YH2x-b4,89512
+interpolate_fields.cpython-39-darwin.so,sha256=5iaJctharDA8S--HZeWcnFd3gASU3PDw8lS5mhh9fgY,72760
+interpolate_fields_direct_inv.cpython-39-darwin.so,sha256=XKhSWkR6ge24fQQuLeV4bCAuICGmEpVztyCnyV-CX9s,73232
+matrix_after_inversion.cpython-39-darwin.so,sha256=WwPaEAPFONNw9FggyftBfMqP6YwmxteHkB8rxLRb75I,55960
+matrix_b4_inversion.cpython-39-darwin.so,sha256=g07sbIFxsWY5bZ7JHq4wDZN9ReK4ac7wxunp5TS491A,56256
+upward_sweep.cpython-39-darwin.so,sha256=3mxYvxgfrQZZXLtVmelrS8gqjK-dwRnrcCoySBIYfFM,72528
+legacy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+legacy/beta_version.py,sha256=a7moY__WzoKznQ9dKRexXHVOWC80IoyC-kH--l9Wve8,20729
+hn2016_falwa-0.6.4.dist-info/LICENSE.txt,sha256=An3Vk6-KpPBy2zBRLgya7Kua-nrrmT4mpUVofBd3Y-I,1065
+hn2016_falwa-0.6.4.dist-info/METADATA,sha256=E1TU0TO6qLFAwdtmrzWFR_wzo-EoiQMsft_t0wcTU54,1167
+hn2016_falwa-0.6.4.dist-info/WHEEL,sha256=NLPDOcqT8cnSvk2ZrmDkioUDCNjOpLgDyFU8ntt7Spc,110
+hn2016_falwa-0.6.4.dist-info/top_level.txt,sha256=HMYnXQT4uUZVM2NFtQWDW1mgShJliv1sosesiwRTROM,219
+hn2016_falwa-0.6.4.dist-info/RECORD,,
