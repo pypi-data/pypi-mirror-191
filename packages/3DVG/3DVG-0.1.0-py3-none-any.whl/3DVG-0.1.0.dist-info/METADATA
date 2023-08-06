@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: 3DVG
+Version: 0.1.0
+Summary: Visual Ground
+Home-page: https://github.com/yjzhao19981027/3DVG
+Download-URL: https://github.com/yjzhao19981027/3DVG/tags
+Author: Yinjie Zhao
+Author-email: 630877986@qq.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: aiofiles
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: python-multipart
+Requires-Dist: ftfy
+Requires-Dist: regex
+Requires-Dist: tqdm
+
+# 视觉-文本实体链接使用说明
+
+## 1. 环境依赖
+
+CUDA版本: 11.7
+其他依赖库的安装命令如下：
+
+```bash
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
+## 2. 下载安装
+
+可使用如下命令下载安装算法包：
+```bash
+pip install -U mmkg-mm-entity-linking
+```
+
+## 3. 使用示例及运行参数说明
+
+```python
+from PIL import Image
+from mmkg_mm_entity_linking import MMEntityLinking
+
+image = Image.open("path/to/image")
+probs = MMEntityLinking().inference(image, ["a dog", "a cat"])
+```
