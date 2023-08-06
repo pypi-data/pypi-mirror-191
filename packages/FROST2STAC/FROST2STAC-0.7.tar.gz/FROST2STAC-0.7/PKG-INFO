@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: FROST2STAC
+Version: 0.7
+Summary: A package to create STAC metada catalog using The Fraunhofer Open-source SensorThings Server (Frost Server)
+Home-page: https://codebase.helmholtz.cloud/CAT4KIT/frost2stac
+Author: Mostafa Hadizadeh
+Author-email: mostafa.hadizadeh@kit.edu
+License: EUPL-1.2
+Project-URL: Documentation, https://frost2stac.readthedocs.io
+Project-URL: Source, https://codebase.helmholtz.cloud/CAT4KIT/frost2stac
+Project-URL: Tracker, https://codebase.helmholtz.cloud/CAT4KIT/frost2stac/issues/
+Keywords: CAT4KIT,KIT,EXU-Vorhaben-Research-Data-Management,helmholtz
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: testsite
+Provides-Extra: dev
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==========
+FROST2STAC
+==========
+
+
+.. image:: https://codebase.helmholtz.cloud/cat4kit/frost2stac/-/raw/main/frost2stac.png
+
+
+
+
+
+=============================
+
+.. image:: https://img.shields.io/pypi/v/frost2stac.svg
+        :target: https://pypi.python.org/pypi/frost2stac
+
+
+.. image:: https://readthedocs.org/projects/frost2stac/badge/?version=latest
+        :target: https://frost2stac.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+A package to create STAC metadata catalog using The Fraunhofer Open-source SensorThings Server (Frost Server)
+
+
+* Free software: EUPL-1.2
+* Documentation: https://frost2stac.readthedocs.io.
+
+
+Features
+--------
+Use case:
+
+
+.. code:: python
+
+        from frost2stac import frost2stac
+
+        frost2stac.Converter(
+                "https://sensorthings.imk-ifu.kit.edu/",
+                stac=True,
+                stac_id="an ID for the main STAC catalog",
+                stac_dir="/path/to/save/stac/catalogs/",
+                stac_description="Description for the main STAC catalog",
+        )       
+
+        output:
+
+        Things ID:  65  - FeatureOfInterest ID: 27
+        Things ID:  66  - FeatureOfInterest ID: 28
+        Things ID:  67  - FeatureOfInterest ID: 30
+        Things ID:  68  - FeatureOfInterest ID: 29
+        Things ID:  69  - FeatureOfInterest ID: 33
+        Things ID:  70  - FeatureOfInterest ID: 34
+        Things ID:  71  - FeatureOfInterest ID: 35
+        Things ID:  111  - FeatureOfInterest ID: 36
+        Things ID:  112  - FeatureOfInterest ID: ❌
+        [[65, 27], [66, 28], [67, 30], [68, 29], [69, 33], [70, 34], [71, 35], [111, 36]] 
+
+Copyright
+---------
+Copyright © 2023 Karlsruher Institut für Technologie
+
+Licensed under the EUPL-1.2-or-later
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the EUPL-1.2 license for more details.
+
+You should have received a copy of the EUPL-1.2 license along with this
+program. If not, see https://www.eupl.eu/.
+
+
