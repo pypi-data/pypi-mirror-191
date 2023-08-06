@@ -1,0 +1,14 @@
+hackmatch/__main__.py,sha256=q4a201kyk5dXFcdpSjYOyyuxBM0m14CFwN-a1A4hN3w,337
+hackmatch/ai.py,sha256=W0vzwyv0tNfd0KGeSKf1-1VMaDJ5osumzVV1nrjmvt0,12572
+hackmatch/config.py,sha256=_9VbujltxcY1_eECmD6GbhwcITDaQsitX4mVDxuGm8E,3266
+hackmatch/game.py,sha256=tkH24neaVyAO8qpM24TYUmP2Amv_1wcti6N6sXeNMYU,2180
+hackmatch/gui.py,sha256=UVHMh3TvqKRdAo7ey0neYeW_HdqRKsykLAiPYo49ZO8,19872
+hackmatch/main.py,sha256=ez-Y-jOQMXmvdpB8KwkOQ41YNEcAvnAQFQRbZK_yB3o,5436
+hackmatch/py.typed,sha256=Av8SfagGGBUxhwHwXboR6FoCw3EANnZbezblrf7gleE,99
+hackmatch/util.py,sha256=TW_T0di0u11yFbYluJ_wRKWhnrNppCE-ABAXLrT6krA,5720
+hackmatch-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hackmatch-1.0.1.dist-info/METADATA,sha256=IAdzNvtKavUtCdVJwOyPXyY_YK3byh8GxUoeJLjnjcY,6715
+hackmatch-1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hackmatch-1.0.1.dist-info/entry_points.txt,sha256=dsaDDWmb0iZ56YG7YG49lXagBodFNV5rBzB2Syi7-Es,53
+hackmatch-1.0.1.dist-info/top_level.txt,sha256=5ttLKZVHVT4Mp1FzfpPbTD3OU9_ikC-cP3H4WjFv6TQ,10
+hackmatch-1.0.1.dist-info/RECORD,,
