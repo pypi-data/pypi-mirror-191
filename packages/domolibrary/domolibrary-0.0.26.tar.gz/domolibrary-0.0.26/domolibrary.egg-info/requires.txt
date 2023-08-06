@@ -1,0 +1,13 @@
+nbdev
+fastcore
+pandas
+aiohttp
+requests
+twine
+orjson
+httpx
+python-dotenv
+sqlparse
+sql_metadata
+
+[dev]
