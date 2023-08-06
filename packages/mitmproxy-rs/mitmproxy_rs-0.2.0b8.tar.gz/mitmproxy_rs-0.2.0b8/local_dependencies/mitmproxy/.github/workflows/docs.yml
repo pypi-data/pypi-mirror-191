@@ -1,0 +1,66 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+# security: restrict permissions for CI jobs.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Build the documentation and upload the static HTML files as an artifact.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install maturin[zig] from PyPI
+        uses: install-pinned/maturin-with-zig@39e7f65d43a471e5acd36deeafbd31de3fe167fb
+      - name: Install mypy from PyPI
+        uses: install-pinned/mypy@1ad1914d18ad1479bb0f9f5dd4ab1acda49b5d73
+      - name: Install pdoc from PyPI
+        uses: install-pinned/pdoc@1d14345ed3c020d3d3c8d4428cbed20f2c3d6222
+
+      - run: maturin build
+        working-directory: ./ffi
+      - run: pip install --no-index --find-links target/wheels/ mitmproxy_rs
+
+      - run: stubtest --allowlist ffi/stubtest-allowlist.txt mitmproxy_rs
+
+      - run: pdoc -o docs/ mitmproxy_rs
+
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/
+
+  # Deploy the artifact to GitHub pages.
+  # This is a separate job so that only actions/deploy-pages has the necessary permissions.
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v1
