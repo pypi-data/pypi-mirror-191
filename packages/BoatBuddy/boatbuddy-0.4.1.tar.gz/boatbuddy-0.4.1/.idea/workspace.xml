@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a202d404-8e3f-4020-9f84-36867d64a194" name="Changes" comment="Added email notification feature&#10;Added 'email-address' and 'email-password' command line options&#10;Changed 'log' to 'log-level' in the list of command line options&#10;Version bump to 0.4.0">
+      <change beforePath="$PROJECT_DIR$/BoatBuddy/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/BoatBuddy/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Joe Zeitouny &lt;joezeitouny@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2L2Vjy8rc77EII68Ykrq8jfqQpU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/BoatBuddy" />
+      <recent name="$PROJECT_DIR$/src/BoatBuddy/app" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="__main__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="BoatBuddy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="SDK_NAME" value="Python 3.11 (BoatBuddy)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BoatBuddy" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BoatBuddy/__main__.py" />
+      <option name="PARAMETERS" value="$USER_HOME$/Desktop/Logs --excel --csv --gpx --summary -v --victron-server-ip=192.168.1.194 --nmea-server-ip=192.168.1.244 --log-level=INFO --disk-write-interval=15 --run-mode=auto-victron --gps-serial-port=/dev/cu.usbmodem112101 --show-log-in-console --email-address=joezeitouny@gmail.com --email-password=imlsseomdlvuczvq" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a202d404-8e3f-4020-9f84-36867d64a194" name="Changes" comment="" />
+      <created>1675069303443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675069303443</updated>
+    </task>
+    <task id="LOCAL-00033" summary="- Added Tank 1 and Tank 2 types are their corresponding levels metrics to log entries and to the summary sheet">
+      <created>1675598928950</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1675598928950</updated>
+    </task>
+    <task id="LOCAL-00034" summary="- Fixed some incorrectly reported metrics such as battery current and battery power which occurred when the values were negative ones">
+      <created>1675600531385</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1675600531385</updated>
+    </task>
+    <task id="LOCAL-00035" summary="- Version bump to 0.0.9">
+      <created>1675620808001</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1675620808001</updated>
+    </task>
+    <task id="LOCAL-00036" summary="- Updated toml file to include newly added dependency">
+      <created>1675620930959</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1675620930959</updated>
+    </task>
+    <task id="LOCAL-00037" summary="- Created PluginManager class and moved the bulk of the code in the main file to that class">
+      <created>1675623282665</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1675623282665</updated>
+    </task>
+    <task id="LOCAL-00038" summary="- Added the ConsoleManager class&#10;- Added a rich console experience to the application">
+      <created>1675708917035</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1675708917035</updated>
+    </task>
+    <task id="LOCAL-00039" summary="- Minor adjustments to the header used in the rich console layout">
+      <created>1675709170331</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1675709170331</updated>
+    </task>
+    <task id="LOCAL-00040" summary="- Updated the TOML file to include the newly introduced &quot;rich&quot; dependency">
+      <created>1675709262034</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1675709262034</updated>
+    </task>
+    <task id="LOCAL-00041" summary="- Added the feature to filter the list of key value pairs that are presented in the rich console&#10;- Divided the summary layout in the rich console into two sections, header and body">
+      <created>1675758445100</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1675758445100</updated>
+    </task>
+    <task id="LOCAL-00042" summary="- Added colour styles to the log layout depending on the log type">
+      <created>1675760178018</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1675760178018</updated>
+    </task>
+    <task id="LOCAL-00043" summary="- Version bump to 0.0.10">
+      <created>1675760275475</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675760275475</updated>
+    </task>
+    <task id="LOCAL-00044" summary="- Introduced the run mode option to replace the limited-mode function">
+      <created>1675784258597</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1675784258597</updated>
+    </task>
+    <task id="LOCAL-00045" summary="- Set the default run mode to 'Continuous'&#10;- Optimized the code in the console manager to remove redundant lines of code&#10;- Fixed the get_last_log_entries function in the config module to return the entries in the correct order&#10;- Improved the code in the victron plugin module to handle server connection problems">
+      <created>1675791890993</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1675791890993</updated>
+    </task>
+    <task id="LOCAL-00046" summary="- Version bump to 0.1.0">
+      <created>1675792013598</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1675792013598</updated>
+    </task>
+    <task id="LOCAL-00047" summary="- Consolidated application name and application version fields to be in the project TOML file only">
+      <created>1675844893260</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1675844893260</updated>
+    </task>
+    <task id="LOCAL-00048" summary="- In the rich console: Renamed Victron Metrics to Victron Plugin and NMEA Metrics to NMEA Plugin">
+      <created>1675845014620</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1675845014620</updated>
+    </task>
+    <task id="LOCAL-00049" summary="- Introduced the plugin status feature (any plugin can be queried for its status at any point in time)&#10;- Added the plugin status information to the rich console&#10;- Rewrote the victron plugin module to make use of timer for data retrieval&#10;- Added failsafe int and float parsing functions and refactored the victron plugin to make use of those">
+      <created>1675852364155</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1675852364155</updated>
+    </task>
+    <task id="LOCAL-00050" summary="- Improved the Help message for the run-mode option&#10;- Renamed the constants for the session run mode to include &quot;session&quot; in their wording&#10;- Switched from using threads to using a timer for the main loop in the NMEA plugin&#10;- Added failsafe constructs to the summary method inside the NMEA plugin&#10;- Refactored the code of the plugin manager to remove redundant methods such as initialize and prepare_for_shutdown&#10;- Improved the error handling inside the Victron plugin main loop">
+      <created>1675864312365</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1675864312366</updated>
+    </task>
+    <task id="LOCAL-00051" summary="- Introduced the auto-victron and auto-nmea session run modes&#10;- Added events implementation to the Victron plugin">
+      <created>1675865637633</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1675865637633</updated>
+    </task>
+    <task id="LOCAL-00052" summary="- Added the run mode interval feature which keeps the system in session mode and splits the sessions based on the chosen interval">
+      <created>1675867995886</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1675867995886</updated>
+    </task>
+    <task id="LOCAL-00053" summary="- Version bump to 0.2.0">
+      <created>1675868061641</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868061641</updated>
+    </task>
+    <task id="LOCAL-00054" summary="- Included missing dependencies in the project TOML file">
+      <created>1675868406074</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1675868406074</updated>
+    </task>
+    <task id="LOCAL-00055" summary="- Reverted back the code around retrieving the application name and version&#10;- Version bump to 0.2.2">
+      <created>1675869118537</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1675869118537</updated>
+    </task>
+    <task id="LOCAL-00056" summary="- Updated Readme file">
+      <created>1675883645142</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1675883645143</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added Changelog">
+      <created>1675884325000</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1675884325000</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Fixed an issue where the Victron plugin keeps on creating new sessions when running the session in auto-victron mode&#10;Ported the fix above to the NMEA plugin">
+      <created>1675936599760</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1675936599761</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Version bump to 0.2.3">
+      <created>1675936936249</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1675936936249</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Updated the CHANGELOG file">
+      <created>1675937040514</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1675937040514</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Removed unused import statement in the console manager&#10;Version bump to 0.2.4">
+      <created>1675937572000</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1675937572001</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Cleaned up the code in the plugin manager file&#10;Improved the implementation of the state machine inside the Victron and NMEA plugins&#10;Cleaned up the import statements in the modules&#10;Version bump to 0.2.5">
+      <created>1675938795874</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1675938795874</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Changed the names used in the clock plugin fields from Timestamp to Time&#10;Added the ability to colour metrics values differently based configured ranges&#10;Version bump to 0.2.6">
+      <created>1675942529407</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1675942529407</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Changed the names used in the clock plugin fields from Timestamp to Time&#10;Added the ability to colour metrics values differently based configured ranges&#10;Version bump to 0.2.6">
+      <created>1675944739095</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1675944739095</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Added sound notifications for when the application starts and when a session starts or ends">
+      <created>1676022365860</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1676022365860</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added --no-sound command line option to suppress application sounds&#10;Moved the playsound function to the utils file and created an async version of it&#10;Moved the constant lists out of the plugin files to the config file">
+      <created>1676027567608</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1676027567608</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Improved the colouring of the rows in the rich console">
+      <created>1676027773112</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1676027773112</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Version bump to 0.2.8">
+      <created>1676028027640</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1676028027640</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Fixed the filenames used to play sounds from the resources folder&#10;Version bump to 0.2.9">
+      <created>1676045771673</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1676045771673</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Fixed the sound not playing when running inside a package&#10;Version bump to 0.2.10">
+      <created>1676047419522</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1676047419522</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Introduced a notification manager class to handle sound notifications according to configurable user &#10;Improved the handling of connection state in the NMEA plugin to tackle false positive situations&#10;Create a sound buffer to tackle playback of multiple sounds sequentially&#10;Version bump to 0.2.11">
+      <created>1676118025535</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1676118025535</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Moved the code logic for sound playback from the utils file into its own dedicated SoundManager class&#10;Introduced notification type 'SOUND' in the notification manager&#10;Version bump to 0.2.12">
+      <created>1676121212630</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1676121212630</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Introduced the gps command line option and updated the run-mode option to support 'auto-gps' mode&#10;Moved the log_entries instance variable used in plugins to the GenericPlugin class&#10;Moved the reset_entries function to the GenericPlugin class and renamed it to clear_entries&#10;Improved the layout of the rich console to be more readable on small screens&#10;Added the GPSPlugin feature (though not thoroughly tested yet)&#10;Added exception handlers around parts of the code where exceptions might arise&#10;After a connection to the module is re-established the instance variables holding the metrics values are reset&#10;Refactored and simplified the code of the NotificationsManager class&#10;Cleaned up the code in the utils file&#10;Tank 1 and Tank 2 levels are now integer values instead of float&#10;Version bump to 0.2.13">
+      <created>1676296666807</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1676296666809</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Added pyserial dependency to the TOML file">
+      <created>1676296807904</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1676296807904</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Removed the pyobjc dependency from the TOML file&#10;Version bump to 0.2.14">
+      <created>1676297230615</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297230615</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Version bump to 0.2.14">
+      <created>1676297314581</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1676297314582</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Added the GPS plugin layout to the rich console&#10;Renamed the private methods in the ConsoleManager class&#10;Increased the vertical size of the summary header section&#10;Reduced the code complexity around creating the sub layouts in the body section&#10;Broadened the scope of the exceptions captured in the GPS plugin&#10;Reintroduced the pyobjc dependency for darwin platforms only&#10;Version bump to 0.2.15">
+      <created>1676314433616</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1676314433617</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Cleaned up the ConsoleManager class&#10;The whole top bar turns red now when a session is active&#10;Version bump to 0.2.16">
+      <created>1676315607614</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1676315607614</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Renamed 'interval' command line option to 'disk-write-interval'&#10;Introduced session run mode 'manual'&#10;Renamed 'gps' commmand line option to 'gps-serial-port'&#10;Introduced 'show-log-in-console' command line option&#10;Changed the default session run mode to 'manual'&#10;Renamed 'Starter Batt...' fields to 'Strt. Batt...'&#10;Introduced the option to show or hide log section in the footer of the rich console based on the 'show-log-in-console' command line option value&#10;Changed defaults of instance metrics in the NMEA plugin to be empty strings&#10;Improved on the logic to compute starting and ending GPS locations and their respective coordinates in the GPS and NMEA plugins&#10;Improved the logic that detects when a GPS fix is captured&#10;Version bump to 0.3.0">
+      <created>1676372199004</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1676372199004</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Added the missing GPS module summary metrics in the summary section&#10;Version bump to 0.3.1">
+      <created>1676374347474</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1676374347474</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Added email notification feature&#10;Added 'email-address' and 'email-password' command line options&#10;Changed 'log' to 'log-level' in the list of command line options&#10;Version bump to 0.4.0">
+      <created>1676379678770</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1676379678770</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Updated Readme file" />
+    <MESSAGE value="Added Changelog" />
+    <MESSAGE value="Fixed an issue where the Victron plugin keeps on creating new sessions when running the session in auto-victron mode&#10;Ported the fix above to the NMEA plugin" />
+    <MESSAGE value="Version bump to 0.2.3" />
+    <MESSAGE value="Updated the CHANGELOG file" />
+    <MESSAGE value="Removed unused import statement in the console manager&#10;Version bump to 0.2.4" />
+    <MESSAGE value="Cleaned up the code in the plugin manager file&#10;Improved the implementation of the state machine inside the Victron and NMEA plugins&#10;Cleaned up the import statements in the modules&#10;Version bump to 0.2.5" />
+    <MESSAGE value="Changed the names used in the clock plugin fields from Timestamp to Time&#10;Added the ability to colour metrics values differently based configured ranges&#10;Version bump to 0.2.6" />
+    <MESSAGE value="Added sound notifications for when the application starts and when a session starts or ends" />
+    <MESSAGE value="Added --no-sound command line option to suppress application sounds&#10;Moved the playsound function to the utils file and created an async version of it&#10;Moved the constant lists out of the plugin files to the config file" />
+    <MESSAGE value="Improved the colouring of the rows in the rich console" />
+    <MESSAGE value="Version bump to 0.2.8" />
+    <MESSAGE value="Fixed the filenames used to play sounds from the resources folder&#10;Version bump to 0.2.9" />
+    <MESSAGE value="Fixed the sound not playing when running inside a package&#10;Version bump to 0.2.10" />
+    <MESSAGE value="Introduced a notification manager class to handle sound notifications according to configurable user &#10;Improved the handling of connection state in the NMEA plugin to tackle false positive situations&#10;Create a sound buffer to tackle playback of multiple sounds sequentially&#10;Version bump to 0.2.11" />
+    <MESSAGE value="Moved the code logic for sound playback from the utils file into its own dedicated SoundManager class&#10;Introduced notification type 'SOUND' in the notification manager&#10;Version bump to 0.2.12" />
+    <MESSAGE value="Introduced the gps command line option and updated the run-mode option to support 'auto-gps' mode&#10;Moved the log_entries instance variable used in plugins to the GenericPlugin class&#10;Moved the reset_entries function to the GenericPlugin class and renamed it to clear_entries&#10;Improved the layout of the rich console to be more readable on small screens&#10;Added the GPSPlugin feature (though not thoroughly tested yet)&#10;Added exception handlers around parts of the code where exceptions might arise&#10;After a connection to the module is re-established the instance variables holding the metrics values are reset&#10;Refactored and simplified the code of the NotificationsManager class&#10;Cleaned up the code in the utils file&#10;Tank 1 and Tank 2 levels are now integer values instead of float&#10;Version bump to 0.2.13" />
+    <MESSAGE value="Added pyserial dependency to the TOML file" />
+    <MESSAGE value="Removed the pyobjc dependency from the TOML file&#10;Version bump to 0.2.14" />
+    <MESSAGE value="Version bump to 0.2.14" />
+    <MESSAGE value="Added the GPS plugin layout to the rich console&#10;Renamed the private methods in the ConsoleManager class&#10;Increased the vertical size of the summary header section&#10;Reduced the code complexity around creating the sub layouts in the body section&#10;Broadened the scope of the exceptions captured in the GPS plugin&#10;Reintroduced the pyobjc dependency for darwin platforms only&#10;Version bump to 0.2.15" />
+    <MESSAGE value="Cleaned up the ConsoleManager class&#10;The whole top bar turns red now when a session is active&#10;Version bump to 0.2.16" />
+    <MESSAGE value="Renamed 'interval' command line option to 'disk-write-interval'&#10;Introduced session run mode 'manual'&#10;Renamed 'gps' commmand line option to 'gps-serial-port'&#10;Introduced 'show-log-in-console' command line option&#10;Changed the default session run mode to 'manual'&#10;Renamed 'Starter Batt...' fields to 'Strt. Batt...'&#10;Introduced the option to show or hide log section in the footer of the rich console based on the 'show-log-in-console' command line option value&#10;Changed defaults of instance metrics in the NMEA plugin to be empty strings&#10;Improved on the logic to compute starting and ending GPS locations and their respective coordinates in the GPS and NMEA plugins&#10;Improved the logic that detects when a GPS fix is captured&#10;Version bump to 0.3.0" />
+    <MESSAGE value="Added the missing GPS module summary metrics in the summary section&#10;Version bump to 0.3.1" />
+    <MESSAGE value="Added email notification feature&#10;Added 'email-address' and 'email-password' command line options&#10;Changed 'log' to 'log-level' in the list of command line options&#10;Version bump to 0.4.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added email notification feature&#10;Added 'email-address' and 'email-password' command line options&#10;Changed 'log' to 'log-level' in the list of command line options&#10;Version bump to 0.4.0" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>
