@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: bpyth
+Version: 0.1.5
+Summary: Various Python Tools
+Author-email: djekra <hopsalla@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/djekra/bpyth
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bpyth
+Some boring Python Tools, see `jupyter` directory.<br>
+You can try the notebooks there online via Colab.
+
+## Install
+`pip install bpyth`
+
+## Files Tools
+* `dump_pickle`: open, dump, close
+* `load_pickle`: open, load, close
+* `StreamFiles`: Iterable, returns all filenames of a parent directory
+* `StreamLines`: Iterable, returns all lines of a text file
+
+## Human Tools
+* `human_readable_number`: Rounds a number to a fixed number of significant digits.
+* `human_readable_seconds`: Converts seconds to human readable time
+* `human_readable_bytes`:   Converts Bytes to human readable size
+
+## Iterable Tools
+* `minivenn`: Compare two sets
+* `flatten`: Yield all items from any nested iterable
+* `remove_dups`: Remove dups from a list whilst-preserving-order
+* `sort_by_priority_list`: Sort a list by a list or tuple of prioritized objects
+* `cut_counter`: Truncates rare values of a counter
+* `ranking_from_counter`: Converts a counter into a ranking
+
+## Object Analysis Tools
+* `rtype`: Recursive type. Parses an n-dimensional object and returns a tuple of stype for the scalar in the top left corner.
+* `shape`: Recursive len. Parses an n-dimensional object and returns a tuple of sizes.
+* `has_shape`: Does an object have additional dimensions? (Skalars: No, Strings: No, Empty Iterables: No,
+    Other Iterables: Yes)
+* `memory_consumption`: Returns the memory consumption of Python objects.    
+    
+## String Tools
+* `superstrip`     : Removes Unicode whitespaces
+* `remove_words`   : Removes stopwords 
+* `remove_dupwords`: Removes dup words from a string whilst-preserving-order
+* `longest_substr` : Finds the longest common substring in a list of strings
+* `random_str`     : Returns a random string 
+
+
+```python
+
+```
