@@ -1,0 +1,38 @@
+
+# debug
+
+Documentation for app: `debug`
+
+## Documentation
+
+No readme
+
+
+## Variables
+
+``` yaml title="vars.yml"
+No var file
+```
+
+## Docker compose files
+
+
+
+
+
+### main
+
+
+``` yaml title="docker-compose.yml"
+version: "3.6"
+services:
+  tcpdump:
+    image: nicolaka/netshoot
+    command: tail -f /dev/null
+      #command: tcpdump -i eth0 -w /data/nginx.pcap
+    volumes:
+      - $app_dir_debug:/data
+
+```
+
+
