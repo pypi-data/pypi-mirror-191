@@ -1,0 +1,11 @@
+README.md
+setup.py
+FE_3DGQA/__init__.py
+FE_3DGQA/app.py
+FE_3DGQA/model.py
+FE_3DGQA.egg-info/PKG-INFO
+FE_3DGQA.egg-info/SOURCES.txt
+FE_3DGQA.egg-info/dependency_links.txt
+FE_3DGQA.egg-info/not-zip-safe
+FE_3DGQA.egg-info/requires.txt
+FE_3DGQA.egg-info/top_level.txt
