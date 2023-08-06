@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: jsonmathpy
+Version: 0.3
+Summary: A package used to parse strings into math json objects.
+Author: Ashley Cottrell
+Author-email: cottrellashley@gmail.com
+License-File: LICENSE
