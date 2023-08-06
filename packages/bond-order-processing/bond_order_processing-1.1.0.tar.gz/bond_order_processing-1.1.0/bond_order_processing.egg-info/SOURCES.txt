@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+bond_order_processing/__init__.py
+bond_order_processing/calculations.py
+bond_order_processing/calculations_for_atoms_lists.py
+bond_order_processing/input_data.py
+bond_order_processing.egg-info/PKG-INFO
+bond_order_processing.egg-info/SOURCES.txt
+bond_order_processing.egg-info/dependency_links.txt
+bond_order_processing.egg-info/requires.txt
+bond_order_processing.egg-info/top_level.txt

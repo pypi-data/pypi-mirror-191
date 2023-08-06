@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: bond-order-processing
+Version: 1.1.0
+Summary: Process Mayer bond orders from ab inito calculations.
+Author-email: Paweł Goj <pawel.goj5@gmail.com>
+Keywords: packaging,dependency,infer,pyproject.toml
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+![Logo](https://pawelgoj.github.io/pyMayCoor/Logo-pyMayCoor.png)
+
+## The current library allows you to process Mayer bond orders from the CPMD output file
+
+Library version: 1.1.0
+
+<!-- Pytest Coverage Comment:Begin -->
+<a href="https://github.com/pawelgoj/pyMayCoor/blob/main/README.md"><img alt="Coverage" src="https://img.shields.io/badge/Coverage-93%25-brightgreen.svg" /></a><details><summary>Coverage Report </summary><table><tr><th>File</th><th>Stmts</th><th>Miss</th><th>Cover</th><th>Missing</th></tr><tbody><tr><td colspan="5"><b>main/BondOrderProcessing/bond_order_processing</b></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py">calculations.py</a></td><td>352</td><td>9</td><td>97%</td><td><a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L40">40</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L44">44</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L51">51</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L171">171</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L324">324</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L505">505</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L660">660</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations.py#L662-L663">662&ndash;663</a></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations_for_atoms_lists.py">calculations_for_atoms_lists.py</a></td><td>166</td><td>3</td><td>98%</td><td><a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/calculations_for_atoms_lists.py#L84-L87">84&ndash;87</a></td></tr><tr><td>&nbsp; &nbsp;<a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py">input_data.py</a></td><td>422</td><td>53</td><td>87%</td><td><a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L88-L100">88&ndash;100</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L122-L155">122&ndash;155</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L185-L189">185&ndash;189</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L225">225</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L234-L238">234&ndash;238</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L306">306</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L319-L320">319&ndash;320</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L379-L383">379&ndash;383</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L430-L441">430&ndash;441</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L478-L479">478&ndash;479</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L485">485</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L500">500</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L507">507</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L664">664</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L671">671</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L709">709</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L738">738</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L742">742</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L765">765</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L772">772</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L818">818</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L826">826</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L872">872</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L878">878</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L892">892</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L943">943</a>, <a href="https://github.com/pawelgoj/pyMayCoor/blob/main/main/BondOrderProcessing/bond_order_processing/input_data.py#L955">955</a></td></tr><tr><td><b>TOTAL</b></td><td><b>941</b></td><td><b>65</b></td><td><b>93%</b></td><td>&nbsp;</td></tr></tbody></table></details>
+<!-- Pytest Coverage Comment:End -->
+
+### Links
+
+- [Documentation page](https://pawelgoj.github.io/pyMayCoor/bond_order_processing)
+- [Git repository](https://github.com/pawelgoj/pyMayCoor/tree/pypi/main/BondOrderProcessing)
+- More information about CPMD - <https://github.com/CPMD-code>
+
+### You can calculate from Mayer bond orders
+
+- coordinations numbers,
+- Qi units,
+- Connections between atoms,
+- Relation between bond order and length
