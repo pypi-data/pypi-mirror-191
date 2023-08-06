@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: destables
+Version: 0.2
+Summary: Helper tool to create SW design tables
+Home-page: https://github.com/cimplart/destables
+Author-email: schwart@o2.pl
+License: GPL 3 License
+Keywords: SW design,.rst tables
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# destables
+Helper tool for building design tables for restuml2code
+
+

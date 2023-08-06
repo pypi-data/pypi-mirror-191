@@ -1,0 +1,5 @@
+    1. insert blank line after .. code-block:: -> done
+    2. check return type against syntax -> done
+    3. fix table glitches -> done
+    4. strip whitespace from params in table -> done
+    5. pre-fill param table with params from syntax -> requires rework of nested table

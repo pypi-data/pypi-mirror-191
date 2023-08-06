@@ -1,0 +1,3 @@
+[console_scripts]
+destables = destables.main:main
+
