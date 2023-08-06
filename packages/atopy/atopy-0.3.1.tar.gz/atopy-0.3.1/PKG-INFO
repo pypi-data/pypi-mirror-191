@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: atopy
+Version: 0.3.1
+Summary: Python Common Library
+Author-email: Tom <nanticj@users.noreply.github.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: loguru >=0.6,<0.7
+Requires-Dist: pydantic >=1.10,<1.11
+Requires-Dist: python-dotenv >=0.21,<0.22
+Requires-Dist: pytz >=2022.7,<2022.8
+Requires-Dist: typer >=0.7,<0.8
+Requires-Dist: black >=23.1,<23.2 ; extra == "develop"
+Requires-Dist: isort >=5.12,<5.13 ; extra == "develop"
+Requires-Dist: mypy >=1.0,<=1.1 ; extra == "develop"
+Requires-Dist: pylint >=2.16,<2.17 ; extra == "develop"
+Requires-Dist: pytest >=7.2,<7.3 ; extra == "develop"
+Requires-Dist: types-pytz >=2022.7,<2022.8 ; extra == "develop"
+Project-URL: Home, https://github.com/nanticj/atopy
+Provides-Extra: develop
+
+# atopy
+Python Common Library
+
+# Install
+## conda
+```
+conda create -n atopy python=3.11
+conda activate atopy
+pip install flit
+```
+
+## code
+```
+cd PATH_TO_CODE
+flit install
+```
+
+## run
+```
+cd PATH_TO_RUN
+conda activate atopy
+```
+
