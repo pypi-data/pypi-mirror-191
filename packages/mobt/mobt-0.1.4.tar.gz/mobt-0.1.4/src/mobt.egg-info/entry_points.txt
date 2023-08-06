@@ -1,0 +1,2 @@
+[console_scripts]
+mob = mob.Controllers:cli
