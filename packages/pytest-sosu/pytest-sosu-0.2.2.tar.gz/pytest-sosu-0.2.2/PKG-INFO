@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pytest-sosu
+Version: 0.2.2
+Summary: Unofficial PyTest plugin for Sauce Labs
+Home-page: https://github.com/apragacz/pytest-sosu
+Author: Andrzej Pragacz
+Author-email: apragacz@o2.pl
+License: MIT
+Project-URL: Bug Tracker, https://github.com/apragacz/pytest-sosu/issues
+Project-URL: Documentation, https://github.com/apragacz/pytest-sosu/blob/master/README.md
+Project-URL: Source Code, https://github.com/apragacz/pytest-sosu
+Description: # Pytest-Sosu
+        
+        Pytest-Sosu (pronounced Sōsu, ソース) is an unofficial Pytest plugin for running tests
+        on Sauce Labs platforms.
+        
+        ## Installation
+        
+        You can install pytest-sosu latest version via pip:
+        
+            pip install pytest-sosu
+        
+        ## Basic Usage
+        
+        Assuming you have `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY` environment variables set
+        (credentials can be obtained [here](https://app.saucelabs.com/user-settings)),
+        you can write a simple test:
+        
+        ```python
+        def test_visit(sosu_webdriver):
+            driver = sosu_webdriver
+            driver.get("http://example.com/")
+            assert driver.title == "Example Domain"
+        ```
+        
+        ## Examples
+        
+        ```python
+        from pytest_sosu.webdriver import CapabilitiesMatrix, Browser
+        
+        
+        # running given test on multiple browsers
+        @pytest.mark.sosu(
+            capabilities_matrix=CapabilitiesMatrix(
+                browsers=[Browser("chrome"), Browser("firefox")],
+            ),
+        )
+        def test_visit_many_browsers(driver):
+            driver.get("http://example.com/")
+            assert driver.title == "Example Domain"
+        
+        # when build basename is set, tests running in given pytest session
+        # have a build assigned
+        @pytest.fixture(scope="session")
+        def sosu_build_basename():
+            return 'my-project-name'
+        
+        
+        # alias for sosu_webdriver
+        @pytest.fixture
+        def driver(sosu_webdriver):
+            yield sosu_webdriver
+        ```
+        
+Keywords: pytest,selenium,webdriver,saucelabs,sauce,sosu
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Customer Service
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
