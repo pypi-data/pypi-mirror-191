@@ -1,0 +1,11 @@
+chatbot_webraft/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatbot_webraft/chatbot.py,sha256=mmQhMIRAkwpUR2xFCzyWC7sPkq96zMH6v2OYdE-rc60,18133
+chatbot_webraft/modeltype_load.py,sha256=b-sWgM90D_OUy285LRjAXYsbtIfRwciL8AHfjXVzZ90,956
+chatbot_webraft/sample.wrmodel,sha256=bFIqimsQCVJYFBmazfUIa6uOxAYLIdgmy3aN1wY5TYA,262
+chatbot_webraft/sample2.csv,sha256=d3f6nyR5jDaj9qlDs-kEYnmU9UWAETvu5MhgC0SHIY8,44
+chatbot_webraft/test.model,sha256=1sCYFcN_ntnTpGbBh8mB3X5W7bRuHgcMB8AtVQbeGRM,532
+chatbot_webraft/test.py,sha256=pGNhd9QnKbzy-jnDQtAlGwSLe4VtaGkQXt8pyMzxi-A,381
+chatbot_webraft-0.1.3.dist-info/METADATA,sha256=imsO5QGLX1wZKs5jimzji-iMg-g0WGyKzuL-DkzamBQ,7250
+chatbot_webraft-0.1.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+chatbot_webraft-0.1.3.dist-info/licenses/LICENSE,sha256=nZww37ZSF2i6O5FrOZsEXUBeK3ZC_o_uEDf054pGCig,1091
+chatbot_webraft-0.1.3.dist-info/RECORD,,
