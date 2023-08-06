@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Webtrench
+Version: 0.1.0
+Summary: A powerful and easy-to-use web scrapper for collecting data from the web. Supports scraping of images, text, videos, meta data, and more. Ideal for machine learning and deep learning engineers. Download and extract data with just one line of code
+Home-page: https://github.com/nuhmanpk/Webtrench
+Author: Nuhman Pk
+Author-email: nuhmanpk7@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: requests
+
+## Webtrench
