@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: thermoextrap
+Version: 0.1.7
+Summary: Thermodynamic extrapolation
+Home-page: https://github.com/usnistgov/thermo-extrap
+Author: Jacob Monroe, William Krekelberg
+Author-email: jacob.monroe@nist.gov
+License: "NIST license https://www.nist.gov/director/licensing"
+Keywords: thermoextrap
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: xarray (>=0.16)
+Requires-Dist: sympy
+Requires-Dist: scipy
+Requires-Dist: cmomy (>=0.1.7)
+Requires-Dist: custom-inherit
+Requires-Dist: attrs
+Provides-Extra: accel
+Requires-Dist: bottleneck ; extra == 'accel'
+Provides-Extra: all
+Requires-Dist: pymbar (<4.0) ; extra == 'all'
+Requires-Dist: tensorflow ; extra == 'all'
+Requires-Dist: tensorflow-probability ; extra == 'all'
+Requires-Dist: gpflow ; extra == 'all'
+Requires-Dist: bottleneck ; extra == 'all'
+Requires-Dist: dask[complete] ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Provides-Extra: gpr
+Requires-Dist: tensorflow ; extra == 'gpr'
+Requires-Dist: tensorflow-probability ; extra == 'gpr'
+Requires-Dist: gpflow ; extra == 'gpr'
+Provides-Extra: mbar
+Requires-Dist: pymbar (<4.0) ; extra == 'mbar'
+Provides-Extra: openmm
+Requires-Dist: openmm ; extra == 'openmm'
+Provides-Extra: parallel
+Requires-Dist: dask[complete] ; extra == 'parallel'
+Provides-Extra: viz
+Requires-Dist: matplotlib ; extra == 'viz'
+
+``thermoextrap``: Thermodynamic Extrapolation/Interpolation Library
+===================================================================
+
+This repository contains code used and described in:
+
+Monroe, J. I.; Hatch, H. W.; Mahynski, N. A.; Shell, M. S.; Shen, V. K.
+Extrapolation and Interpolation Strategies for Efficiently Estimating
+Structural Observables as a Function of Temperature and Density. J.
+Chem. Phys. 2020, 153 (14), 144101. https://doi.org/10.1063/5.0014282.
+
+Monroe, J. I.; Krekelberg, W. P.; McDannald, A.; Shen, V. K. Leveraging Uncertainty Estiamtes and Derivative Information in Gaussian Process Regression for Expediated Data Collection in Molecular Simulations. In preparation.
+
+If you find this code useful in producing published works, please provide an appropriate citation.
+Note that the second citation is focused on adding features that make use of GPR models based on derivative information produced by the core code base.
+For now, the GPR code, along with more information, may be found under docs/notebooks/gpr.
+In a future release, we expect this to be fully integrated into the code base rather than a standalone module.
+
+Code included here can be used to perform thermodynamic extrapolation
+and interpolation of observables calculated from molecular simulations.
+This allows for more efficient use of simulation data for calculating
+how observables change with simulation conditions, including
+temperature, density, pressure, chemical potential, or force field
+parameters. Users are highly encourage to work through the Jupyter
+Notebook tutorial (Ideal_Gas_Example.ipynb) presenting examples for a
+variety of different observable functional forms. We only guarantee that
+this code is functional for the test cases we present here or for which
+it has previously been applied Additionally, the code may be in
+continuous development at any time. Use at your own risk and always
+check to make sure the produced results make sense. If bugs are found,
+please report them. If specific features would be helpful just let us
+know and we will be happy to work with you to come up with a solution.
+
+Status
+======
+
+This package is actively used by the author. Please feel free to create
+a pull request for wanted features and suggestions!
+
+Installation
+============
+
+``thermoextrap`` may be installed with either (recommended)
+
+.. code:: bash
+
+   conda install -c wpk-nist thermoextrap
+
+or
+
+.. code:: bash
+
+   pip install thermoextrap
+
+If you use pip, then you can include additional dependencies using
+
+.. code:: bash
+
+   pip install thermoextrap[all]
+
+If you install ``thermoextrap`` with conda, there are additional
+optional dependencies that take some care for installation. We recommend
+installing the following via ``pip``, as the verisons on the
+conda/conda-forge channels are often a bit old.
+
+.. code:: bash
+
+   pip install tensorflow tensorflow-probability gpflow
+
+Documentation
+=============
+
+Documentation can be found at For a deeper dive, look at the
+`documentation <https://pages.nist.gov/thermo-extrap/>`__
+
+License
+-------
+
+This is free software. See `LICENSE <LICENSE>`__.
+
+Related work
+------------
+
+This package extensively uses the ``cmomy`` package to handle central
+comoments. See `here <https://github.com/usnistgov/cmomy>`__.
+
+Contact
+-------
+
+The authors can be reached at wpk@nist.gov.
+
+Credits
+-------
+
+This package was created with
+`Cookiecutter <https://github.com/audreyr/cookiecutter>`__ and the
+`wpk-nist-gov/cookiecutter-pypackage <https://github.com/wpk-nist-gov/cookiecutter-pypackage>`__
+Project template forked from
+`audreyr/cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`__.
+
+=======
+History
+=======
+
+0.0.1 (2021-01-04)
+------------------
+
+* First release on PyPI.
+
+This software was developed by employees of the National Institute of Standards and Technology (NIST), an agency of the Federal Government and is being made available as a public service. Pursuant to title 17 United States Code Section 105, works of NIST employees are not subject to copyright protection in the United States.  This software may be subject to foreign copyright.  Permission in the United States and in foreign countries, to the extent that NIST may hold copyright, to use, copy, modify, create derivative works, and distribute this software and its documentation without fee is hereby granted on a non-exclusive basis, provided that this notice and disclaimer of warranty appears in all copies.
+
+THE SOFTWARE IS PROVIDED 'AS IS' WITHOUT ANY WARRANTY OF ANY KIND, EITHER EXPRESSED, IMPLIED, OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY THAT THE SOFTWARE WILL CONFORM TO SPECIFICATIONS, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND FREEDOM FROM INFRINGEMENT, AND ANY WARRANTY THAT THE DOCUMENTATION WILL CONFORM TO THE SOFTWARE, OR ANY WARRANTY THAT THE SOFTWARE WILL BE ERROR FREE.  IN NO EVENT SHALL NIST BE LIABLE FOR ANY DAMAGES, INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, ARISING OUT OF, RESULTING FROM, OR IN ANY WAY CONNECTED WITH THIS SOFTWARE, WHETHER OR NOT BASED UPON WARRANTY, CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
