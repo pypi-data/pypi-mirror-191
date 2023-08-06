@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+scorecardlib/__init__.py
+scorecardlib/game.py
+scorecardlib/scoreboard.py
+scorecardlib.egg-info/PKG-INFO
+scorecardlib.egg-info/SOURCES.txt
+scorecardlib.egg-info/dependency_links.txt
+scorecardlib.egg-info/top_level.txt
+tests/Test_GameClass.py
+tests/Test_scoreboard_class.py
