@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: format-oc
+Version: 1.6.1
+Summary: Format-OC is a system designed in several languages that uses JSON files to define documents and their allowed parameters to such a fine degree that almost no knowledge of databases is required to get a fully functional back-end, with admin functions, up and running.
+Home-page: https://ouroboroscoding.com/format-oc
+Author: Chris Nasr - Ouroboros Coding Inc.
+Author-email: chris@ouroboroscoding.com
+License: Apache-2.0
+Project-URL: Source, https://github.com/ouroboroscoding/format-oc-python
+Project-URL: Tracker, https://github.com/ouroboroscoding/format-oc-python/issues
+Keywords: data,format,database,db,sql,nosql
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# FormatOC (python)
+A system for manipulating and storing data regardless of data store. Now works in Python3 and Python2
+
+# Install
+```
+pip install format-oc
+```
+
+# Documentation
+[http://ouroboroscoding.com/format-oc/](http://ouroboroscoding.com/format-oc/)
+
+
