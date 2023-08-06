@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bayesiannetworkx
+Version: 0.0.4
+Summary: 
+Author: javim7
+Author-email: 61723252+javim7@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-semantic-release (>=7.33.1,<8.0.0)
+Requires-Dist: semver (>=2.13.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Inteligencia Artificial: Laboratorio 2 - Inferencia Probabilistica
