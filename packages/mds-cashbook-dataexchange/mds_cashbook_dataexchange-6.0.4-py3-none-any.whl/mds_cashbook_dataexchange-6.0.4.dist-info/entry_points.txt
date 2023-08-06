@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    cashbook_dataexchange = trytond.modules.cashbook_dataexchange
+    

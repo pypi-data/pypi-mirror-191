@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.message,text:msg_wiz_categories_found"
+msgid "The following categories are now imported:\n%(categories)s"
+msgstr "The following categories are now imported:\n%(categories)s"
+
+msgctxt "model:ir.message,text:msg_wiz_transactions_found"
+msgid "The following transactionen are now imported:\nCredit: %(credit)s\nDebit: %(debit)s\nBalance: %(balance)s\nNumber of transactions: %(quantity)s"
+msgstr "The following transactionen are now imported:\nCredit: %(credit)s\nDebit: %(debit)s\nBalance: %(balance)s\nNumber of transactions: %(quantity)s"
+
+msgctxt "model:ir.message,text:msg_wiz_parties_found"
+msgid "The following %(numparties)s parties are now imported:"
+msgstr "The following %(numparties)s parties are now imported:"
+
+msgctxt "model:ir.message,text:msg_wiz_no_categories"
+msgid "No categories were found in the file."
+msgstr "No categories were found in the file."
+
+msgctxt "model:ir.message,text:msg_wiz_no_bank"
+msgid "No transactions were found in the file."
+msgstr "No transactions were found in the file."
+
+msgctxt "model:ir.message,text:mds_import_category_notfound"
+msgid "The category '%(catname)s' was not found."
+msgstr "The category '%(catname)s' was not found."
+
+msgctxt "model:ir.message,text:mds_import_party_notfound"
+msgid "The party '%(pname)s' was not found."
+msgstr "The party '%(pname)s' was not found."
+
+msgctxt "model:ir.message,text:mds_import_many_parties_found"
+msgid "For the party '%(pname)s' of the import, several parties were found in the system. Use: '%(pname2)s'"
+msgstr "For the party '%(pname)s' of the import, several parties were found in the system. Use: '%(pname2)s'"
+
+msgctxt "model:ir.message,text:mds_import_many_categories_found"
+msgid "For the category '%(catname1)s' of the import, several categories were found in the system. Use: '%(catname2)s'"
+msgstr "For the category '%(catname1)s' of the import, several categories were found in the system. Use: '%(catname2)s'"
+
+msgctxt "model:ir.message,text:mds_import_many_books_found"
+msgid "For the cashbook '%(bookname1)s' of the import, several cashbooks were found in the system. Use: '%(bookname2)s'"
+msgstr "For the cashbook '%(bookname1)s' of the import, several cashbooks were found in the system. Use: '%(bookname2)s'"
+
+msgctxt "model:ir.message,text:mds_import_checknumber"
+msgid "Cheque No."
+msgstr "Cheque No."
+
+msgctxt "model:ir.message,text:mds_import_address"
+msgid "Address"
+msgstr "Address"
+
+msgctxt "model:ir.message,text:msg_wiz_transactions_error"
+msgid "When reading the QIF file, there were the following problems:"
+msgstr "When reading the QIF file, there were the following problems:"
+
+msgctxt "model:ir.message,text:mds_import_no_category"
+msgid "No category has been assigned for transaction '%(trdata)s'."
+msgstr "No category has been assigned for transaction '%(trdata)s'."
+
+msgctxt "model:ir.message,text:mds_import_no_account"
+msgid "No cashbook has been assigned for transaction '%(trdata)s'."
+msgstr "No cashbook has been assigned for transaction '%(trdata)s'."
+
+msgctxt "model:ir.message,text:mds_import_book_notfound"
+msgid "The cashbook '%(bookname)s' was not found."
+msgstr "The cashbook '%(bookname)s' was not found."
+
+msgctxt "model:ir.action,name:act_import_qif_wizard"
+msgid "Import QIF-File"
+msgstr "Import QIF-File"
+
+msgctxt "model:ir.action,name:qif_category_report"
+msgid "Export QIF-File"
+msgstr "Export QIF-File"
+
+msgctxt "model:ir.action,name:qif_transaction_report"
+msgid "Export QIF-File"
+msgstr "Export QIF-File"
+
+msgctxt "model:cashbook_dataexchange.qif_imp_wiz,name:"
+msgid "Import QIF-File"
+msgstr "Import QIF-File"
+
+msgctxt "wizard_button:cashbook_dataexchange.qif_imp_wiz,start,end:"
+msgid "Cancel"
+msgstr "Cancel"
+
+msgctxt "wizard_button:cashbook_dataexchange.qif_imp_wiz,start,readf:"
+msgid "Read File"
+msgstr "Read File"
+
+msgctxt "wizard_button:cashbook_dataexchange.qif_imp_wiz,showinfo,end:"
+msgid "Cancel"
+msgstr "Cancel"
+
+msgctxt "wizard_button:cashbook_dataexchange.qif_imp_wiz,showinfo,importf:"
+msgid "Import Data"
+msgstr "Import Data"
+
+msgctxt "model:cashbook_dataexchange.qif_imp_wiz.start,name:"
+msgid "Import QIF-File"
+msgstr "Import QIF-File"
+
+msgctxt "field:cashbook_dataexchange.qif_imp_wiz.start,company:"
+msgid "Company"
+msgstr "Company"
+
+msgctxt "field:cashbook_dataexchange.qif_imp_wiz.start,book:"
+msgid "Cashbook"
+msgstr "Cashbook"
+
+msgctxt "field:cashbook_dataexchange.qif_imp_wiz.start,file_:"
+msgid "QIF-File"
+msgstr "QIF-File"
+
+msgctxt "help:cashbook_dataexchange.qif_imp_wiz.start,file_:"
+msgid "Quicken Interchange Format"
+msgstr "Quicken Interchange Format"
+
+msgctxt "model:cashbook_dataexchange.qif_imp_wiz.info,name:"
+msgid "Import QIF-File"
+msgstr "Import QIF-File"
+
+msgctxt "view:cashbook_dataexchange.qif_imp_wiz.info:"
+msgid "Information"
+msgstr "Information"
+
+msgctxt "field:cashbook_dataexchange.qif_imp_wiz.info,book:"
+msgid "Cashbook"
+msgstr "Cashbook"
+
+msgctxt "field:cashbook_dataexchange.qif_imp_wiz.info,company:"
+msgid "Company"
+msgstr "Company"
+
