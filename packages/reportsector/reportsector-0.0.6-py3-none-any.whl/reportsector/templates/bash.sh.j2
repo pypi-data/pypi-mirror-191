@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+exec &> >(tee -a $0.log)
+
+set -x
+set -e
+set -u
+
+{% block content %}{% endblock %}

@@ -1,0 +1,19 @@
+{% include "bash.sh.j2" %}
+
+{% macro buildkit(cache_only=False) -%}
+version=$(curl -s https://api.github.com/repos/moby/buildkit/releases/latest | grep tag_name | cut -d: -f2 | tr -d 'v," ')
+echo $version
+wget --quiet --timestamping https://github.com/moby/buildkit/releases/download/v${version}/buildkit-v${version}.linux-amd64.tar.gz
+{% if cache_only -%}tar -f archive.tar -r buildkit-v${version}.linux-amd64.tar.gz{% endif -%}
+{% if not cache_only -%}
+mkdir -p buildkit-v${version}.linux-amd64
+tar Cxzf buildkit-v${version}.linux-amd64 buildkit-v${version}.linux-amd64.tar.gz
+sudo install --mode 0755 --group root --owner root buildkit-v${version}.linux-amd64/bin/buildctl /usr/local/bin/buildctl
+sudo install --mode 0755 --group root --owner root buildkit-v${version}.linux-amd64/bin/buildkitd /usr/local/bin/buildkitd
+sudo install --mode 0755 --group root --owner root buildkit-v${version}.linux-amd64/bin/buildkitd /usr/local/bin/buildkit-runc
+buildkitd --version
+buildctl --version
+{% endif %}
+{% endmacro %}
+
+{% block content %}{{ buildkit(cache_only) }}{% endblock %}
