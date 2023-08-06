@@ -1,0 +1,52 @@
+** $Id: calcimag.new 1.2 1997/09/18 17:33:54 LEM release $
+**
+** SOIL DATA FILE for use with WOFOST Version 5.0, June 1990
+**
+** Calcimagnesic soil
+
+SOLNAM='Calcimagnesic soil'
+
+** physical soil characteristics
+
+** soil water retention
+SMTAB    =  -1.000,   0.450,    ! vol. soil moisture content
+             1.000,   0.433,    ! as function of pF [log (cm); cm3 cm-3]
+             1.300,   0.425,
+             1.491,   0.415,
+             2.000,   0.395,
+             2.400,   0.370,
+             2.700,   0.350,
+             3.400,   0.280,
+             4.204,   0.230,
+             6.000,   0.200
+SMW      =   0.200  !  soil moisture content at wilting point [cm3/cm3]
+SMFCF    =   0.300  !  soil moisture content at field capacity [cm3/cm3]
+SM0      =   0.450  !  soil moisture content at saturation [cm3/cm3]
+CRAIRC   =   0.100  ! critical soil air content for aeration [cm3/cm3]
+
+** hydraulic conductivity
+CONTAB   =   0.000,   1.000,    ! 10-log hydraulic conductivity
+             1.000,  -0.550,    ! as function of pF [log (cm); log (cm/day)]
+             1.300,  -1.039,
+             1.491,  -1.322,
+             1.700,  -1.506,
+             2.000,  -1.915,
+             2.400,  -2.470,
+             2.700,  -2.853,
+             3.000,  -3.232,
+             3.400,  -3.713,
+             3.700,  -4.072,
+             4.000,  -4.417,
+             4.204,  -4.685
+
+RDMSOL = 140.       ! soil maximum rootable depth
+K0       =  8.000  ! hydraulic conductivity of saturated soil [cm day-1]
+SOPE     =   0.50   ! maximum percolation rate root zone[cm day-1]
+KSUB     =   0.35   ! maximum percolation rate subsoil [cm day-1]
+
+** soil workability parameters
+SPADS    =   0.050  !  1st topsoil seepage parameter deep seedbed
+SPODS    =   0.025  !  2nd topsoil seepage parameter deep seedbed
+SPASS    =   0.100  !  1st topsoil seepage parameter shallow seedbed
+SPOSS    =   0.040  !  2nd topsoil seepage parameter shallow seedbed
+DEFLIM   =  -0.300  !  required moisture deficit deep seedbed

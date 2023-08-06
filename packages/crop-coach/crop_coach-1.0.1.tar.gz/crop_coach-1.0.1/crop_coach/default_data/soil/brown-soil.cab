@@ -1,0 +1,49 @@
+** SOIL DATA FILE for use with WOFOST Version 5.0, June 1990
+** Brown soil
+
+SOLNAM='Brown soil'
+
+** physical soil characteristics
+
+** soil water retention
+SMTAB    =  -1.000,   0.450,    ! vol. soil moisture content
+             1.000,   0.420,    ! as function of pF [log (cm); cm3 cm-3]
+             1.300,   0.400,
+             1.491,   0.380,
+             2.000,   0.340,
+             2.400,   0.310,
+             2.700,   0.290,
+             3.400,   0.240,
+             4.204,   0.210,
+             6.000,   0.180
+SMW      =   0.200  !  soil moisture content at wilting point [cm3/cm3]
+SMFCF    =   0.300  !  soil moisture content at field capacity [cm3/cm3]
+SM0      =   0.450  !  soil moisture content at saturation [cm3/cm3]
+CRAIRC   =   0.050  ! critical soil air content for aeration [cm3/cm3]
+
+** hydraulic conductivity
+CONTAB   =   0.000,   1.412,    ! 10-log hydraulic conductivity
+             1.000,  -0.350,    ! as function of pF [log (cm); log (cm/day)]
+             1.300,  -0.646,
+             1.491,  -0.834,
+             1.700,  -1.007,
+             2.000,  -1.352,
+             2.400,  -1.756,
+             2.700,  -2.047,
+             3.000,  -2.338,
+             3.400,  -2.742,
+             3.700,  -3.018,
+             4.000,  -3.280,
+             4.204,  -3.484
+
+RDMSOL = 120.       ! soil maximum rootable depth
+K0       =  16.667  ! hydraulic conductivity of saturated soil [cm day-1]
+SOPE     =   1.00   ! maximum percolation rate root zone[cm day-1]
+KSUB     =   1.00   ! maximum percolation rate subsoil [cm day-1]
+
+** soil workability parameters
+SPADS    =   0.050  !  1st topsoil seepage parameter deep seedbed
+SPODS    =   0.025  !  2nd topsoil seepage parameter deep seedbed
+SPASS    =   0.100  !  1st topsoil seepage parameter shallow seedbed
+SPOSS    =   0.040  !  2nd topsoil seepage parameter shallow seedbed
+DEFLIM   =  -0.300  !  required moisture deficit deep seedbed
