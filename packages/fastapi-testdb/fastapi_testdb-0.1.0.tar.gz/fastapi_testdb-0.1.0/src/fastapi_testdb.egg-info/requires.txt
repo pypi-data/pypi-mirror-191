@@ -1,0 +1,9 @@
+fastapi>=0.91.0
+SQLAlchemy>=2.0.3
+
+[dev]
+pytest
+httpx
+pylint
+build
+twine
