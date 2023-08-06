@@ -1,0 +1,11 @@
+sw_product_lib/__init__.py,sha256=u0iklMaOU6vgW3v-lOQUxThfgJ3xAT_EBzzhIEMDmVY,87
+sw_product_lib/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sw_product_lib/client/backend.py,sha256=8CQcuL2neUsKc2BBtKDFM1pXPrHgrCtP_YkzLYQXXDU,10073
+sw_product_lib/client/billing.py,sha256=2Os-gucPF_LPV5KSCply7BR-uQwlUSDO711TfGy3Vag,3885
+sw_product_lib/client/job.py,sha256=nHpNA83cdwRPQgFJUPvj_bhYUM022GXuvZyBtpgIi5g,17663
+sw_product_lib/client/resource.py,sha256=vQ85Uc83GVLVKs8WlD9zv1J0zUe7zPtJuZjqfY-HDeY,8702
+sw_product_lib/platform/gql.py,sha256=CJio8QpjlCBSTrFn0Dx0kO-GzzGItQ9q-5PFzCPWQf8,331
+sw_product_lib/service.py,sha256=Ob6R6jLqaxrNb28SfyD84BfG31-fBUh4pDTLB17iiZY,16130
+sw_product_lib-0.5.0rc2.dist-info/METADATA,sha256=tHDNAU4wXautd3vcKlpr8DWf_FnTV0r2x00GTbY88XE,886
+sw_product_lib-0.5.0rc2.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+sw_product_lib-0.5.0rc2.dist-info/RECORD,,
