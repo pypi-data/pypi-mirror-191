@@ -1,0 +1,2 @@
+[console_scripts]
+3b-bot = best_buy_bullet_bot.__main__:main

@@ -1,0 +1,6 @@
+include README.md
+include requirements.txt
+include setup.py
+include pyproject.toml
+
+recursive-include best_buy_bullet_bot *
