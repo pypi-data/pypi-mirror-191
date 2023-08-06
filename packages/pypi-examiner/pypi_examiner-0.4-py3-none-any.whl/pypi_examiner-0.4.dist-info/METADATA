@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pypi-examiner
+Version: 0.4
+Summary: A simple client to fetch the few things PyPI does not expose via API
+Home-page: https://chris.partridge.tech/
+Author: Chris Partridge
+Author-email: tweedge-public@partridge.tech
+License: Apache License 2.0
+Project-URL: Source, https://github.com/tweedge/pypi-examiner
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# pypi-examiner
+
+[![License](https://img.shields.io/github/license/tweedge/pypi-examiner)](https://github.com/tweedge/pypi-examiner)
+[![Downloads](https://img.shields.io/pypi/dm/pypi-examiner)](https://pypi.org/project/pypi-examiner/)
+[![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/psf/black)
+
+PyPI Examiner scrapes PyPI for a few things the JSON API doesn't provide. Currently, this supports:
+
+* Finding the current maintainers' usernames for any package
+* Finding all packages that a given user maintains
+
+This package should not be considered especially stable at this time, and may cease to function or may be heavily revised without notice.
+
+### Usage
+
+```
+from pypi_examiner import examiner
+
+pypi = examiner()
+who = pypi.who_maintains("unishox2_py3")
+# who is: ["tweedge"]
+
+maint = pypi.maintained_by("tweedge")
+# maint is: ["unishox2-py3", "pypi-examiner", "dns-mollusc"]
+```
+
+If the package does not exist, the maintainer owns no packages, or another error has arose: expect the result to be `[]`
