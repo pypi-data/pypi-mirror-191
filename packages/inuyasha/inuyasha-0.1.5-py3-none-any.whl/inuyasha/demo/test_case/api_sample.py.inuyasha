@@ -1,0 +1,14 @@
+from pytest_cases import parametrize_with_cases
+
+from inuyasha import TestCase
+from test_data.api_sample import APIData
+
+
+class TestSample(TestCase):
+
+    @parametrize_with_cases('param', cases=APIData, prefix="api_")
+    def test_api_case(self, param):
+        print(param)
+        response = self.requests.get("https://httpbin.org/get")
+        print(response.text)
+        print(response.request.body)
