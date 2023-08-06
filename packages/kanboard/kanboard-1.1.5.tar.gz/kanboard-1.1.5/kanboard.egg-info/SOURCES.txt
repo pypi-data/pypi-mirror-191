@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+kanboard.py
+setup.py
+kanboard.egg-info/PKG-INFO
+kanboard.egg-info/SOURCES.txt
+kanboard.egg-info/dependency_links.txt
+kanboard.egg-info/top_level.txt
