@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        lcdc=rpithingamajigs.lcdd.client.cli_lcdd_client:lcdd_client
+        lcdd=rpithingamajigs.lcdd.service.cli_lcdd_service:lcdd
+        chardisplay_sysinfo=rpithingamajigs.chardisplay_sysinfo.cli_chardisplay_sysinfo:chardisplay_sysinfo
+    
