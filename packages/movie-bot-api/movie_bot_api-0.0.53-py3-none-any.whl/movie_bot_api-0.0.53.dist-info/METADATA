@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: movie-bot-api
+Version: 0.0.53
+Summary: 智能影音机器人MovieBot的接口SDK
+Home-page: https://github.com/pofey/movie-bot-api
+Author: yee
+Author-email: yipengfei329@gmail.com
+License: MIT
+Keywords: movie bot,movie robot
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: pyrate-limiter
+Requires-Dist: tenacity
+Requires-Dist: cn2an
+Requires-Dist: click
+Requires-Dist: PyYAML
+
+MovieBot Python API
+====================
+
+.. image:: https://img.shields.io/pypi/v/movie-bot-api.svg
+   :target: https://img.shields.io/pypi/v/movie-bot-api.svg
+   :alt: PyPI version info
+.. image:: https://img.shields.io/pypi/pyversions/movie-bot-api.svg
+   :target: https://pypi.python.org/pypi/movie-bot-api
+   :alt: PyPI supported Python versions
+
+易于使用的，灵活的，可扩展的，Movie Bot智能影音机器人官方Python API包装器
+
+安装
+-------------
+使用pip安装:
+
+.. code:: sh
+
+    # Linux/macOS
+    python3 -m pip install -U movie-bot-api
+
+    # Windows
+    py -3 -m pip install -U movie-bot-api
+
