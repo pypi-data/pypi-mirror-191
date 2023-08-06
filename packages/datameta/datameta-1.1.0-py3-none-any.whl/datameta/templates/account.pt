@@ -1,0 +1,125 @@
+<div metal:use-macro="load: layout.pt">
+
+    <style metal:fill-slot="head">
+        .form-small {
+            width: 100%;
+            max-width: 450px;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+    <div metal:fill-slot="content">
+            
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a id="change_password_tab" class="nav-link active" aria-current="true" href="#" data-bs-toggle="tab" data-bs-target="#nav-change-pw">Change Password</a>
+                </li>
+                <li class="nav-item">
+                    <a id="api_keys_tab" class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#nav-api-keys">Manage API Keys</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="tab-content">
+            <div class="card-body tab-pane fade show active" id="nav-change-pw" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="position-absolute form-small">    
+                    <h5 class="card-title mb-4">Change Password</h5>
+
+                    <div id="alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                    </div>
+
+                    <div id="success" class="alert alert-success collapse alert-dismissible fade" role="alert">
+                        The new password has been set successfully!
+                        <button type="button" class="btn-close" onclick="DataMeta.account.clear_alerts()" id="dismiss_success"></button>
+                    </div>
+
+                    <form action="#" id="change_password_form">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" id="desc_input_old_password">
+                                <i class="bi bi-key"></i>
+                            </span>                   
+                            <input type="password" class="form-control" name="old_password" id="old_password" placeholder="Old Password">
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" id="desc_input_password">
+                                <i class="bi bi-key"></i>
+                            </span>
+                            <input type="password" class="form-control" name="new_password" id="new_password" placeholder="New Password">
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" id="desc_input_password_repeat">
+                                <i class="bi bi-key"></i>
+                            </span>
+                            <input type="password" class="form-control" name="new_password_repeat" id="new_password_repeat" placeholder="Repeat new Password">
+                            <div class="invalid-feedback">
+                                The two passwords do not match.
+                            </div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <button class="btn btn-outline-success" type="submit" id="submit_password">Submit Changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card-body tab-pane fade" id="nav-api-keys" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h5 class="card-title mb-4">Manage API Keys</h5>
+                    <div id="api_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                    </div>
+
+                    <div id="api_success" class="alert alert-success collapse alert-dismissible fade" role="alert">
+                    </div>
+                <div class="form-small ms-0">
+                    
+                    <form action="#" id="add_api_key_form">
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" id="desc_input_old_password">
+                                <i class="bi bi-textarea-t"></i>
+                            </span>                   
+                            <input type="text" class="form-control" name="label" id="label" placeholder="Label">
+                            <div class="invalid-feedback">
+                                Please specify a label.
+                            </div>
+                        </div>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" id="desc_input_old_password">
+                                <i class="bi bi-calendar-date"></i>
+                            </span>                   
+                            <input type="date" class="form-control" name="expires" id="expires">
+                            <div class="invalid-feedback">
+                                Please specify a valid expiration date.
+                            </div>
+                        </div>
+                        <div class="input-group mb-4">
+                            <button id="generate_api_key_button" type="submit" class="btn btn-outline-success">Generate new API key</button>
+                        </div>
+                    </form>
+                </div>
+            
+                <p class="card-text">You are currently using the following API Keys:</p>
+                <div class="card col-9">
+                    <div class="card-body">
+                        <table id="table_apikeys" class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Label</th>
+                                    <th scope="col">Expires</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody_apikeys">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="${request.static_url('datameta:static/js/account.js')}"></script>
+    </div>
+</div>

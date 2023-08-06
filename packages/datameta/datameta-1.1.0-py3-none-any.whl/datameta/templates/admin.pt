@@ -1,0 +1,163 @@
+<div metal:use-macro="load: layout.pt">
+    <div metal:fill-slot="content" class="row">
+    <script>DataMeta.uilocal['showreq'] = '${showreq}';</script>
+        <div class="col-12 ">
+            <div id="admintabs" class="card">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li id="nav-users-tab-li" class="nav-item">
+                            <a id="nav-users-tab" class="nav-link active" href="#" data-bs-toggle="tab" data-bs-target="#nav-users">Users</a>
+                        </li>
+                        <li id="nav-groups-tab-li" class="nav-item" style="display: none">
+                            <a id="nav-groups-tab" class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#nav-groups">Groups</a>
+                        </li>
+                        <li id="nav-requests-tab-li" class="nav-item">
+                            <a id="nav-requests-tab" class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#nav-requests">Account Requests</a>
+                        </li>
+                        <li id="nav-metadata-tab-li" class="nav-item" style="display: none">
+                            <a id="nav-metadata-tab" class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#nav-metadata">Metadata</a>
+                        </li>
+                        <li id="nav-site-tab-li" class="nav-item" style="display: none">
+                            <a id="nav-site-tab" class="nav-link" aria-current="true" href="#" data-bs-toggle="tab" data-bs-target="#nav-site">Site</a>
+                        </li>
+                        <li id="nav-services-tab-li" class="nav-item" style="display: none">
+                            <a id="nav-services-tab" class="nav-link" aria-current="true" href="#" data-bs-toggle="tab" data-bs-target="#nav-services">Services</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="card-body tab-pane fade" id="nav-site" role="tabpanel" aria-labelledby="nav-home-tab" display="none">
+                        <h5 class="card-title">Site Settings</h5>
+                        <div id="site_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <table id="table_site" class="table table-sm table-hover" style="width:100%">
+                        </table>
+                    </div>
+                    <div class="card-body tab-pane fade" id="nav-metadata" role="tabpanel" aria-labelledby="nav-home-tab" display="none">
+                        <h5 class="card-title">Metadata</h5>
+                        <div id="metadata_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <table id="table_metadata" class="table table-sm table-hover" style="width:100%">
+                        </table>
+                        <div>
+                            <button class="btn btn-outline-success enabled" type="button" onclick="DataMeta.admin.newMetaDatumRow()">Create new metadatum</button>
+                        </div>
+                    </div>
+                        <div class="card-body tab-pane fade" id="nav-services" role="tabpanel" aria-labelledby="nav-home-tab" display="none">
+                        <h5 class="card-title">Services</h5>
+                        <div id="services_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <table id="table_services" class="table table-sm table-hover" style="width:100%">
+                        </table>
+                        <div class="card col-12">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <input type="text" name="label" id="service_label" placeholder="Enter Service Name" class="w-100 mb-2">                            
+                                        <button class="btn btn-outline-success enabled w-100 " type="button" onclick="DataMeta.admin.newService()">Create new Service</button>
+                                    </div>
+                                    <div class="col-9">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body tab-pane fade active show" id="nav-users" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <h5 class="card-title">User Management</h5>
+                        <div id="users_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <table id="table_users" class="table table-sm table-hover" style="width:100%">
+                        </table>
+                    </div>
+                    <div class="card-body tab-pane fade" id="nav-groups" role="tabpanel" aria-labelledby="nav-home-tab" display="none">
+                        <h5 class="card-title">Group Management</h5>
+                        <div id="groups_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <table id="table_groups" class="table table-sm table-hover" style="width:100%">
+                        </table>
+                    </div>
+                    <div class="card-body tab-pane fade show" id="nav-requests" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <h5 id="req_title" class="card-title"></h5>
+                        <div id="requests_alert" class="alert alert-danger collapse alert-dismissible fade" role="alert">
+                        </div>
+                        <div class="accordion" id="requests">
+                            <template id="template_request">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button id="acc_toggle" class="req_head accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#changeme" aria-expanded="false" aria-controls="changeme">
+                                        </button>
+                                    </h2>
+                                    <div id="acc_collapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#requests">
+                                        <div class="accordion-body">
+                                            <form>
+                                                <input type="hidden" name="id" class="input_id"/>
+                                                <div class="input-group">
+                                                    <span class="input-group-text">
+                                                        @
+                                                    </span>
+                                                    <input type="text" aria-label="First name" class="input_email form-control" disabled>
+                                                </div>
+                                                <div class="mt-3 input-group">
+                                                    <span class="input-group-text">
+                                                        <i class="bi bi-person-circle"></i>
+                                                    </span>
+                                                    <input name="fullname" type="text" aria-label="Full name" class="input_fullname form-control">
+                                                </div>
+                                                <div class="mt-3 input-group">
+                                                    <div class="input-group-text">
+                                                        <input class="radio_new_org form-check-input mt-0" type="radio" name="new_org" value="0" aria-label="Radio button for new organization">
+                                                    </div>
+                                                    <div class="input-group-text">
+                                                        <i class="bi bi-building"></i>
+                                                    </div>
+                                                    <input name="group_newname" type="text" placeholder="New Organization..." name="new_org" class="input_new_org form-control" aria-label="New Organization">
+                                                </div>
+                                                <div class="mt-3 input-group">
+                                                    <div class="input-group-text">
+                                                        <input class="radio_existing_org form-check-input mt-0" type="radio" name="new_org" value="1" aria-label="Radio button for existing organization">
+                                                    </div>
+                                                    <div class="input-group-text">
+                                                        <i class="bi bi-building"></i>
+                                                    </div>
+                                                    <select name="group_id" class="select_org form-control form-select" aria-label="Organization">
+                                                        <option value="-1" selected>Please select an organization...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-check form-switch mt-3">
+                                                    <input name="group_admin" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                                    <label class="form-check-label" for="flexSwitchCheckDefault">Organization Administrator</label>
+                                                </div>
+                                            </form>
+                                            <div class="container p-0 mt-3">
+                                                <div class="row align-items-start">
+                                                    <div class="col">
+                                                        <button type="button" class="req_accept w-100 btn btn-success">Save and Accept</button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" class="req_reject w-100 btn btn-danger">Reject</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <metal:block fill-slot="head">
+    <link href="${request.static_url('datameta:static/css/dataTables.bootstrap5.css')}" rel="stylesheet">
+    </metal:block>
+
+    <metal:block fill-slot="body">
+        <script type="text/javascript" charset="utf8" src="${request.static_url('datameta:static/node_modules/jquery/dist/jquery.js')}"></script>
+        <script type="text/javascript" charset="utf8" src="${request.static_url('datameta:static/js/jquery.dataTables.min.js')}"></script>
+        <script type="text/javascript" charset="utf8" src="${request.static_url('datameta:static/js/dataTables.bootstrap5.min.js')}"></script>
+        <script type="text/javascript" charset="utf8" src="${request.static_url('datameta:static/js/admin.js')}"></script>
+    </metal:block>
+
+</div>

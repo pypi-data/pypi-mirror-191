@@ -1,0 +1,139 @@
+<metal:block use-macro="load: layout-minimal.pt">
+<style metal:fill-slot="head">
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+				font-size: 3.5rem;
+			}
+		}
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			display: flex;
+			align-items: center;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			background-color: #f5f5f5;
+		}
+		.form-signin {
+			width: 100%;
+			max-width: 450px;
+			padding: 15px;
+			margin: auto;
+		}
+		.form-signin .checkbox {
+			font-weight: 400;
+		}
+		.form-signin .form-control {
+			position: relative;
+			box-sizing: border-box;
+			height: auto;
+			padding: 10px;
+			font-size: 16px;
+		}
+		.form-signin .form-control:focus {
+			z-index: 2;
+		}
+		.form-signin input[type="email"] {
+			margin-bottom: -1px;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		.form-signin input[type="password"] {
+			margin-bottom: 10px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
+</style>
+<main metal:fill-slot="content" class="form-signin">
+        <div tal:replace="structure renderer_logo_html"></div>
+	<div id="alert" class="alert alert-danger mt-2 alert-dismissible" role="alert" style="display:none">
+	</div>
+	<div id="success" class="alert alert-success mt-2" role="alert" style="display:none">
+		Thank you for your registration! You will be contacted shortly.
+	</div>
+	<form action="#" id="regform" class="mt-2">
+            <fieldset id="regfieldset">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="desc_input_name">
+                        <i class="bi bi-person-circle"></i>
+                    </span>
+                    <input id="name" name="name" type="text" class="form-control" placeholder="Full name" aria-label="Full name" aria-describedby="desc_input_name">
+                    <div class="invalid-feedback">
+                        Please provide a name!
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="desc_input_email">
+                        <i class="bi bi-at"></i>
+                    </span>
+                    <input id="email" name="email" type="text" class="form-control" placeholder="Email" type="email" aria-label="Email" aria-describedby="desc_input_email">
+                    <div class="invalid-feedback">
+                        Please provide a valid email address!
+                    </div>
+                </div>
+                <div id="org_select_div">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <select id="org_select" name="org_select" class="form-control form-select" aria-label="Organization">
+                            <option value="-1" selected>Please select your organization...</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid organization!
+                        </div>
+                    </div>
+                </div>
+                <div id="org_new" style="display:none">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="desc_input_neworg">
+                            <i class="bi bi-building"></i>
+                        </span>
+                        <input id="org_new_name" name="org_new_name" type="text" class="form-control" placeholder="Organization" aria-label="Organization" aria-describedby="desc_input_neworg">
+                    </div>
+                </div>
+                <div class="mb-3" style="text-align:left">
+                    <div class="form-check form-switch">
+                        <input name="org_create" class="form-check-input" type="checkbox" id="toggle_new_org" value="1">
+                        <label class="form-check-label" for="toggle_new_org">Create a new organization</label>
+                    </div>
+                </div>
+
+				<div id="user_agreement_container" style="display:none; text-align:left">
+					<div class="mb-3">
+						<label class="form-control-label mb-2" for="user_agreement">
+							Terms and Conditions:
+						</label>
+						<div class="form-control overflow-auto mb-3" id="user_agreement" style="resize: none; height: 250px" disabled></div>
+						<div class="form-check">
+							<input class="form-check-input me-1" type="checkbox" id="check_user_agreement" name="check_user_agreement">
+							<label class="form-check-label" for="check_user_agreement">
+								I agree to the Terms and Conditions
+							</label>
+							<div class="invalid-feedback">
+							You have to accept the Terms and Conditions in order to register!
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="input-group mb-3">
+                    <button class="w-100 btn  btn-warning" type="submit" name="form.submitted">Register</button>
+                </div>
+            </fieldset>
+	</form>
+	<p class="mt-2">
+	<span tal:replace="structure renderer_legal_notice"></span>
+	</p>
+	<script type="text/javascript" charset="utf8" src="${request.static_url('datameta:static/js/register.js')}"></script>
+</main>
+</metal:block>
