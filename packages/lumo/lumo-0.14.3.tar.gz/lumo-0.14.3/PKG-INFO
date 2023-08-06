@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lumo
+Version: 0.14.3
+Summary: library to manage your pytorch experiments.
+Home-page: https://github.com/pytorch-lumo/lumo
+Author: sailist
+Author-email: sailist@outlook.com
+Keywords: lumo
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
