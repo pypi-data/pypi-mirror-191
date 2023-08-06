@@ -1,0 +1,6 @@
+scikit-learn
+transformers[tokenizers,torch]
+tqdm
+pandas
+numpy
+datasets

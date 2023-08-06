@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dreamy
+Version: 0.0.9
+Summary: DReAMy
+Home-page: https://github.com/lorenzoscottb/DReAMy
+Author: lorenzoscottb (Lorenzo Bertolini)
+Author-email: <lorenzoscottb@gmail.com>
+License: Apache-2.0
+Keywords: dream,NLP,LLMs
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
