@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+ndimensional/__init__.py
+ndimensional/add.py
+ndimensional/sub.py
+ndimensional.egg-info/PKG-INFO
+ndimensional.egg-info/SOURCES.txt
+ndimensional.egg-info/dependency_links.txt
+ndimensional.egg-info/top_level.txt
