@@ -1,0 +1,8 @@
+README.md
+setup.py
+hello_world_pkg_wesley_wang/__init__.py
+hello_world_pkg_wesley_wang.egg-info/PKG-INFO
+hello_world_pkg_wesley_wang.egg-info/SOURCES.txt
+hello_world_pkg_wesley_wang.egg-info/dependency_links.txt
+hello_world_pkg_wesley_wang.egg-info/requires.txt
+hello_world_pkg_wesley_wang.egg-info/top_level.txt
