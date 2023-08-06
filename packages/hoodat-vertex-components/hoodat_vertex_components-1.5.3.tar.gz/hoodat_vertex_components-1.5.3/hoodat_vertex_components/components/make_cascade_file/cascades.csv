@@ -1,0 +1,8 @@
+id,name,file
+0,frontalface_default,haarcascade_frontalface_default.xml
+1,frontalface_alt,haarcascade_frontalface_alt.xml
+2,frontalface_alt2,haarcascade_frontalface_alt2.xml
+3,fullbody,haarcascade_fullbody.xml
+4,upperbody,haarcascade_upperbody.xml
+5,lowerbody,haarcascade_lowerbody.xml
+6,profileface,haarcascade_profileface.xml

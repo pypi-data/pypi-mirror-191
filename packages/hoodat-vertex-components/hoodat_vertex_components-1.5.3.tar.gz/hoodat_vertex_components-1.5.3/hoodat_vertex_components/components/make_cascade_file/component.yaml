@@ -1,0 +1,30 @@
+name: Make Cascade File
+description: Filters cascades down to specified rows
+
+inputs:
+  - name: output_path
+    description: 'The file to save the file to'
+    type: String
+    default: "cascades.csv"
+  - name: cascade_ids
+    type: String
+    description: "IDs of cascades to include"
+    default: "0,1,2,6"
+
+outputs:
+  - name: cascade_dataframe
+    description: The dataframe of cascades to use
+    type: Data
+
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/make_cascade_file
+    command:
+    - sh
+    - -c
+    - |
+      python make_cascade_file.py --output_path "$0" --cascade_ids "$1" --cascade_dataframe "$2"
+    args:
+      - {inputValue: output_path}
+      - {inputValue: cascade_ids}
+      - {outputPath: cascade_dataframe}
