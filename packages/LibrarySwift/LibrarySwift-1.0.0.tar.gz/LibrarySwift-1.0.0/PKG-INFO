@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: LibrarySwift
+Version: 1.0.0
+Summary: Swift Rubika is a simple and fast Rubika Messenger library built for you
+Home-page: https://github.com/mester-root/rubx
+Author: Mohamad_Dark
+Author-email: mr.mohamad.dark@gmail.com
+License: MIT
+Keywords: Swiftlibrary,messenger,python2,python,python3,api,self,Rubx,Rubika,SwiftRubika,rubix,rubikax,rubika,bot,robot,library,rubikalib,rubikalibrary,rubika.ir,librarySwiftRubika,m.rubika.ir
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENCE
+
+.. image:: https://s2.uupload.ir/files/images_(1)_9ax.png
+    :target: https://rubika.ir/SwiftScript
+    :alt: Logo Rubika
+
+
+OWNER INFO
+=============
+
+Rubika Info:
+
+* `Source Channel Rubika <https://rubika.ir/SwiftRubika>`_
+* `Library Channel Rubika <https://rubika.ir/SwiftScript>`_
+
+Subscribe to the channels to know about the library and sources updates.
+
+Installing SwiftRubika from PyPI
+=================================
+
+
+.. code-block:: shell
+
+    pip install SwiftRubika
+
+If you have a problem with the installation, subscribe to the channel.
+
+Example for sending a message
+=============================
+
+.. code-block:: python3
+
+    from SwiftRubika import Client
+
+    app = Client(Auth)
+
+    chat_id = guid
+
+    app.send_message(chat_id,text)
+
+Documentation
+=============
+
+Coming Soon...
