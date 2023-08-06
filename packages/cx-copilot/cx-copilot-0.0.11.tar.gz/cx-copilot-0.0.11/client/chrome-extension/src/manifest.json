@@ -1,0 +1,69 @@
+{
+  "manifest_version": 3,
+  "name": "CX Copilot",
+  "description": "CX Copilot",
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.bundle.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-128.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ],
+      "css": [
+        "content.styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "devtools_page": "devtools.html",
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content.styles.css",
+        "logo.svg"
+      ],
+      "matches": []
+    }
+  ],
+ "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R",
+        "mac": "Command+Shift+Y"
+      }
+    },
+   "next_command": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+N",
+        "mac": "Command+Shift+Right"
+      },
+      "description": "Run \"foo\" on the current page."
+    },
+   "previous_command": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+N",
+        "mac": "Command+Shift+Left"
+      },
+      "description": "Run \"foo\" on the current page."
+    }
+ }
+}
