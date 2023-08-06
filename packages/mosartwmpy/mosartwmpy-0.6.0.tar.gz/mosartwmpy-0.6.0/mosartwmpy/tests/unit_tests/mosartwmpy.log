@@ -1,0 +1,343 @@
+09/14/2022 04:34:30 PM - mosartwmpy: Initalizing model...
+09/14/2022 04:34:40 PM - mosartwmpy: Done.
+09/14/2022 04:34:42 PM - mosartwmpy: Converted units dataframe for year 1981
+09/14/2022 04:34:47 PM - mosartwmpy: Initalizing model...
+09/14/2022 04:34:48 PM - mosartwmpy: Done.
+09/15/2022 11:57:28 AM - mosartwmpy: Initalizing model...
+09/15/2022 11:57:39 AM - mosartwmpy: Done.
+09/15/2022 11:57:41 AM - mosartwmpy: Converted units dataframe for year 1981
+09/15/2022 11:57:46 AM - mosartwmpy: Initalizing model...
+09/15/2022 11:57:47 AM - mosartwmpy: Done.
+09/15/2022 12:20:31 PM - mosartwmpy: Initalizing model...
+09/15/2022 12:20:43 PM - mosartwmpy: Done.
+09/15/2022 12:20:46 PM - mosartwmpy: Converted units dataframe for year 1981
+09/15/2022 12:20:51 PM - mosartwmpy: Initalizing model...
+09/15/2022 12:20:52 PM - mosartwmpy: Done.
+09/15/2022 12:37:32 PM - mosartwmpy: Initalizing model...
+09/15/2022 12:37:33 PM - mosartwmpy: Done.
+09/15/2022 12:38:07 PM - mosartwmpy: Initalizing model...
+09/15/2022 12:38:07 PM - mosartwmpy: Done.
+09/15/2022 12:38:09 PM - mosartwmpy: Converted units dataframe for year 1981
+09/15/2022 12:38:14 PM - mosartwmpy: Initalizing model...
+09/15/2022 12:38:15 PM - mosartwmpy: Done.
+09/19/2022 02:08:11 PM - mosartwmpy: Initalizing model...
+09/19/2022 02:08:11 PM - mosartwmpy: Done.
+09/19/2022 02:08:13 PM - mosartwmpy: Converted units dataframe for year 1981
+09/19/2022 02:08:18 PM - mosartwmpy: Initalizing model...
+09/19/2022 02:08:19 PM - mosartwmpy: Done.
+09/23/2022 03:59:36 PM - mosartwmpy: Initalizing model...
+09/23/2022 03:59:36 PM - mosartwmpy: Done.
+09/23/2022 03:59:39 PM - mosartwmpy: Converted units dataframe for year 1981
+09/23/2022 03:59:44 PM - mosartwmpy: Initalizing model...
+09/23/2022 03:59:45 PM - mosartwmpy: Done.
+09/23/2022 04:36:24 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:36:25 PM - mosartwmpy: Done.
+09/23/2022 04:36:27 PM - mosartwmpy: Converted units dataframe for year 1981
+09/23/2022 04:36:32 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:36:32 PM - mosartwmpy: Done.
+09/23/2022 04:48:01 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:48:01 PM - mosartwmpy: Done.
+09/23/2022 04:48:06 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:48:07 PM - mosartwmpy: Done.
+09/23/2022 04:48:29 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:48:30 PM - mosartwmpy: Done.
+09/23/2022 04:48:32 PM - mosartwmpy: Converted units dataframe for year 1981
+09/23/2022 04:48:36 PM - mosartwmpy: Initalizing model...
+09/23/2022 04:48:37 PM - mosartwmpy: Done.
+09/23/2022 05:01:36 PM - mosartwmpy: Initalizing model...
+09/23/2022 05:01:37 PM - mosartwmpy: Done.
+09/23/2022 05:04:19 PM - mosartwmpy: Initalizing model...
+09/23/2022 05:04:19 PM - mosartwmpy: Done.
+09/23/2022 05:04:21 PM - mosartwmpy: Converted units dataframe for year 1981
+09/23/2022 05:04:26 PM - mosartwmpy: Initalizing model...
+09/23/2022 05:04:27 PM - mosartwmpy: Done.
+12/14/2022 02:31:43 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:31:44 PM - mosartwmpy: Done.
+12/14/2022 02:31:46 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 02:31:50 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:31:51 PM - mosartwmpy: Done.
+12/14/2022 02:31:51 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, config, parameters, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 66, in regulation_release
+    k * grid.reservoir_prerelease_schedule.sel({'month': current_time.month}).values,
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:31:51 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, config, parameters, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 66, in regulation_release
+    k * grid.reservoir_prerelease_schedule.sel({'month': current_time.month}).values,
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:45:32 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:45:33 PM - mosartwmpy: Done.
+12/14/2022 02:45:36 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 02:45:39 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:45:40 PM - mosartwmpy: Done.
+12/14/2022 02:45:40 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, parameters, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 67, in regulation_release
+    k * factor * grid.reservoir_prerelease_schedule.sel({
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:45:40 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, parameters, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 67, in regulation_release
+    k * factor * grid.reservoir_prerelease_schedule.sel({
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:54:01 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:54:02 PM - mosartwmpy: Done.
+12/14/2022 02:54:04 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 02:54:08 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:54:08 PM - mosartwmpy: Done.
+12/14/2022 02:54:08 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, parameters, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 73, in regulation_release
+    k * grid.reservoir_streamflow_schedule.mean(dim='month').values,
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:54:09 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 33, in reservoir_release
+    regulation_release(state, grid, parameters, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 73, in regulation_release
+    k * grid.reservoir_streamflow_schedule.mean(dim='month').values,
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 02:54:47 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:54:48 PM - mosartwmpy: Done.
+12/14/2022 02:54:50 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 02:54:54 PM - mosartwmpy: Initalizing model...
+12/14/2022 02:54:54 PM - mosartwmpy: Done.
+12/14/2022 02:54:54 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 34, in reservoir_release
+    storage_targets(state, grid, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 95, in storage_targets
+    flood_control_condition = (grid.reservoir_use_flood_control > 0) & (state.reservoir_month_flood_control_start > 0)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+12/14/2022 02:54:54 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 34, in reservoir_release
+    storage_targets(state, grid, current_time, mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 95, in storage_targets
+    flood_control_condition = (grid.reservoir_use_flood_control > 0) & (state.reservoir_month_flood_control_start > 0)
+TypeError: '>' not supported between instances of 'NoneType' and 'int'
+12/14/2022 03:02:20 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:02:21 PM - mosartwmpy: Done.
+12/14/2022 03:02:23 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 03:02:27 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:02:27 PM - mosartwmpy: Done.
+12/14/2022 03:02:27 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 55, in istarf_release
+    grid.reservoir_behavior.char.lower() != 'generic',
+AttributeError: 'numpy.ndarray' object has no attribute 'char'
+12/14/2022 03:02:28 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 55, in istarf_release
+    grid.reservoir_behavior.char.lower() != 'generic',
+AttributeError: 'numpy.ndarray' object has no attribute 'char'
+12/14/2022 03:09:57 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:09:58 PM - mosartwmpy: Done.
+12/14/2022 03:10:00 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 03:10:03 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:10:04 PM - mosartwmpy: Done.
+12/14/2022 03:10:04 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 56, in istarf_release
+    np.array([x if pd.notna(x) else '' for x in grid.reservoir_behavior]).char.lower() != 'generic',
+AttributeError: 'numpy.ndarray' object has no attribute 'char'
+12/14/2022 03:10:05 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 56, in istarf_release
+    np.array([x if pd.notna(x) else '' for x in grid.reservoir_behavior]).char.lower() != 'generic',
+AttributeError: 'numpy.ndarray' object has no attribute 'char'
+12/14/2022 03:12:07 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:12:08 PM - mosartwmpy: Done.
+12/14/2022 03:12:10 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 03:12:14 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:12:15 PM - mosartwmpy: Done.
+12/14/2022 03:16:15 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:16:16 PM - mosartwmpy: Done.
+12/14/2022 03:16:18 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 03:16:22 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:16:22 PM - mosartwmpy: Done.
+12/14/2022 03:16:22 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 55, in istarf_release
+    state.reservoir_release = np.where(
+  File "<__array_function__ internals>", line 180, in where
+ValueError: operands could not be broadcast together with shapes (0,) (80053,) (80053,) 
+12/14/2022 03:16:23 PM - mosartwmpy: Failed to complete timestep; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 200, in update
+    reservoir_release(self.state, self.grid, self.config, self.parameters, self.current_time, self.mask)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/release.py", line 41, in reservoir_release
+    istarf_release(state, grid, current_time)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/istarf.py", line 55, in istarf_release
+    state.reservoir_release = np.where(
+  File "<__array_function__ internals>", line 180, in where
+ValueError: operands could not be broadcast together with shapes (0,) (80053,) (80053,) 
+12/14/2022 03:34:53 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:34:54 PM - mosartwmpy: Failed to initialize model; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 142, in initialize
+    self.state = State(grid=self.grid, config=self.config, parameters=self.parameters, grid_size=self.get_grid_size())
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/state/state.py", line 249, in __init__
+    initialize_reservoir_state(self, grid, config, parameters)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/state.py", line 24, in initialize_reservoir_state
+    initialize_reservoir_start_of_operation_year(self, grid, config, parameters)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/state.py", line 186, in initialize_reservoir_start_of_operation_year
+    flood_control_condition = np.logical_and(grid.reservoir_use_flood_control, month_flood_control_start == 0)
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 03:34:57 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:34:58 PM - mosartwmpy: Failed to initialize model; see below for stacktrace.
+Traceback (most recent call last):
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/model.py", line 142, in initialize
+    self.state = State(grid=self.grid, config=self.config, parameters=self.parameters, grid_size=self.get_grid_size())
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/state/state.py", line 249, in __init__
+    initialize_reservoir_state(self, grid, config, parameters)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/state.py", line 24, in initialize_reservoir_state
+    initialize_reservoir_start_of_operation_year(self, grid, config, parameters)
+  File "/Users/thur961/im3/mosartwmpy/mosartwmpy/reservoirs/state.py", line 186, in initialize_reservoir_start_of_operation_year
+    flood_control_condition = np.logical_and(grid.reservoir_use_flood_control, month_flood_control_start == 0)
+ValueError: operands could not be broadcast together with shapes (80053,) (103936,) 
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/e2c16318-9eae-4297-a340-b0ee117770ad/e2c16318-9eae-4297-a340-b0ee117770ad.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/e2d95319-332e-4a9f-842a-f15893795066/e2d95319-332e-4a9f-842a-f15893795066.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/3668f69f-860d-4ba3-9d07-220119d1d6e7/3668f69f-860d-4ba3-9d07-220119d1d6e7.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/94e5a173-a518-4f77-97b8-770afa23abaa/94e5a173-a518-4f77-97b8-770afa23abaa.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/b81eb6a9-94c9-4b0c-89ef-805b3bda5118/b81eb6a9-94c9-4b0c-89ef-805b3bda5118.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/e43affe6-73a0-4c74-8eac-6a8ddaa0f9b6/e43affe6-73a0-4c74-8eac-6a8ddaa0f9b6.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/a948a175-f782-4d44-bf27-e75051d14595/a948a175-f782-4d44-bf27-e75051d14595.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/b85466ca-c9ed-4655-a92f-a9e36fc8012d/b85466ca-c9ed-4655-a92f-a9e36fc8012d.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/0293ec27-6b8c-44a3-8dbc-076074dbd6bf/0293ec27-6b8c-44a3-8dbc-076074dbd6bf.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/099d0b74-b36d-4369-a602-164d9304ccc7/099d0b74-b36d-4369-a602-164d9304ccc7.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/b80c5c6a-88b5-4f4e-9542-21ccda04b646/b80c5c6a-88b5-4f4e-9542-21ccda04b646.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/52bb39df-ab86-40b5-9da4-9d37f3092633/52bb39df-ab86-40b5-9da4-9d37f3092633.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/ccc08bc1-96c3-4057-8926-24f15cbfc9e9/ccc08bc1-96c3-4057-8926-24f15cbfc9e9.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/ced4192f-aa65-4e79-9b14-76af251802d1/ced4192f-aa65-4e79-9b14-76af251802d1.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/a83d7071-4168-4123-b533-d42f34dcaed5/a83d7071-4168-4123-b533-d42f34dcaed5.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/2ac3380a-73a6-43bc-b949-0bc33e2c033d/2ac3380a-73a6-43bc-b949-0bc33e2c033d.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/47d6f6fe-a730-445b-a5d8-cc53aafc1904/47d6f6fe-a730-445b-a5d8-cc53aafc1904.tif' not recognized as a supported file format."
+12/14/2022 03:34:58 PM - mosartwmpy: GDAL signalled an error: err_no=4, msg="`/vsimem/278fdea0-5742-40c9-bae8-347289400e21/278fdea0-5742-40c9-bae8-347289400e21.tif' not recognized as a supported file format."
+12/14/2022 03:40:46 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:40:46 PM - mosartwmpy: Done.
+12/14/2022 03:40:49 PM - mosartwmpy: Converted units dataframe for year 1981
+12/14/2022 03:40:52 PM - mosartwmpy: Initalizing model...
+12/14/2022 03:40:53 PM - mosartwmpy: Done.
+12/20/2022 08:23:24 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:23:25 AM - mosartwmpy: Done.
+12/20/2022 08:23:27 AM - mosartwmpy: Converted units dataframe for year 1981
+12/20/2022 08:23:31 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:23:31 AM - mosartwmpy: Done.
+12/20/2022 08:24:55 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:24:56 AM - mosartwmpy: Done.
+12/20/2022 08:24:57 AM - mosartwmpy: Converted units dataframe for year 1981
+12/20/2022 08:25:01 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:25:02 AM - mosartwmpy: Done.
+12/20/2022 08:25:43 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:25:44 AM - mosartwmpy: Done.
+12/20/2022 08:25:45 AM - mosartwmpy: Converted units dataframe for year 1981
+12/20/2022 08:25:49 AM - mosartwmpy: Initalizing model...
+12/20/2022 08:25:50 AM - mosartwmpy: Done.
+12/29/2022 08:23:35 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:23:35 AM - mosartwmpy: Done.
+12/29/2022 08:23:38 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:23:41 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:23:42 AM - mosartwmpy: Done.
+12/29/2022 08:25:32 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:25:32 AM - mosartwmpy: Done.
+12/29/2022 08:25:34 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:25:38 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:25:39 AM - mosartwmpy: Done.
+12/29/2022 08:29:00 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:29:01 AM - mosartwmpy: Done.
+12/29/2022 08:29:03 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:29:06 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:29:07 AM - mosartwmpy: Done.
+12/29/2022 08:30:06 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:30:07 AM - mosartwmpy: Done.
+12/29/2022 08:30:09 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:30:12 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:30:13 AM - mosartwmpy: Done.
+12/29/2022 08:30:29 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:30:30 AM - mosartwmpy: Done.
+12/29/2022 08:30:32 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:30:36 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:30:36 AM - mosartwmpy: Done.
+12/29/2022 08:30:56 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:30:57 AM - mosartwmpy: Done.
+12/29/2022 08:30:59 AM - mosartwmpy: Converted units dataframe for year 1981
+12/29/2022 08:31:02 AM - mosartwmpy: Initalizing model...
+12/29/2022 08:31:03 AM - mosartwmpy: Done.
+01/03/2023 08:22:55 AM - mosartwmpy: Initalizing model...
+01/03/2023 08:22:56 AM - mosartwmpy: Done.
+01/03/2023 08:22:58 AM - mosartwmpy: Converted units dataframe for year 1981
+01/03/2023 08:23:02 AM - mosartwmpy: Initalizing model...
+01/03/2023 08:23:02 AM - mosartwmpy: Done.
+01/10/2023 09:31:49 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:31:50 AM - mosartwmpy: Done.
+01/10/2023 09:31:52 AM - mosartwmpy: Converted units dataframe for year 1981
+01/10/2023 09:31:56 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:31:57 AM - mosartwmpy: Done.
+01/10/2023 09:33:04 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:33:04 AM - mosartwmpy: Done.
+01/10/2023 09:33:06 AM - mosartwmpy: Converted units dataframe for year 1981
+01/10/2023 09:33:10 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:33:11 AM - mosartwmpy: Done.
+01/10/2023 09:36:20 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:36:21 AM - mosartwmpy: Done.
+01/10/2023 09:36:23 AM - mosartwmpy: Converted units dataframe for year 1981
+01/10/2023 09:36:26 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:36:27 AM - mosartwmpy: Done.
+01/10/2023 09:37:23 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:37:24 AM - mosartwmpy: Done.
+01/10/2023 09:37:26 AM - mosartwmpy: Converted units dataframe for year 1981
+01/10/2023 09:37:29 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:37:30 AM - mosartwmpy: Done.
+01/10/2023 09:45:27 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:45:28 AM - mosartwmpy: Done.
+01/10/2023 09:45:32 AM - mosartwmpy: Converted units dataframe for year 1981
+01/10/2023 09:45:37 AM - mosartwmpy: Initalizing model...
+01/10/2023 09:45:37 AM - mosartwmpy: Done.
