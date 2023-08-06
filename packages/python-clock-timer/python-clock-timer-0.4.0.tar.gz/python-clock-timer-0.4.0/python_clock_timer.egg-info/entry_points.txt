@@ -1,0 +1,2 @@
+[console_scripts]
+clock_timer = clock_timer.__main__:main
