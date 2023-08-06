@@ -1,0 +1,6 @@
+pandas
+python-pptx==0.6.18
+com.castsoftware.uc.python.common>=0.1.6
+IPython
+requests
+Jinja2
