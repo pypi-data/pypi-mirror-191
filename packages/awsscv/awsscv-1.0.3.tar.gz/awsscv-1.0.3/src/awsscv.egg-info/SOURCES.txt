@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+data/data_file
+src/awsscv.egg-info/PKG-INFO
+src/awsscv.egg-info/SOURCES.txt
+src/awsscv.egg-info/dependency_links.txt
+src/awsscv.egg-info/entry_points.txt
+src/awsscv.egg-info/requires.txt
+src/awsscv.egg-info/top_level.txt
