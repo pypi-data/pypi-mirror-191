@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: calculator_terminal
+Version: 1.0.1
+Summary: A small example package
+Home-page: https://github.com/Developer-Anony/calculator
+Author: Developer Anonymous#8593
+Author-email: Developer Anonymous <developeranonymous_buss@hotmail.com>
+Project-URL: Homepage, https://github.com/Developer-Anony/calc-in-terminal
+Project-URL: Bug Tracker, https://github.com/Developer-Anony/calc-in-terminal/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Calculadora interactiva
+
+> La herramienta jamás vista en tus manos
+
+## ¿Qué puede hacer esta calculadora?
+
+- Ejecutar operaciones simples y avanzadas
+- Reemplazo de carácteres automáticamente y errores que te ayudan a entender.
+- Sintaxis fácil de entender `x` para multiplicar `/` para dividir
+
+## ¿Cómo realizo una operación?
+
+¡Para realizar una operación importa el paquete y ya está!
+
+> Siempre necesitarás importar la carpeta `./extensions/operaciones` si quieres crear tu archivo de depuración personalizado.
+
+Una vez depurado en la consola te saltará un mensaje, escribes tu operación y te acabará dando el resultado
+
+![Ejemplo operación](/images/operacion1.png)
+
+## Tengo errores, ¿qué hago?
+
+Para reportar errores simplemente pinche [aquí](https://github.com/Developer-Anony/calc-in-terminal/issues "Centro de reporte de errores")

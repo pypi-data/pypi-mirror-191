@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+calculator_terminal.egg-info/PKG-INFO
+calculator_terminal.egg-info/SOURCES.txt
+calculator_terminal.egg-info/dependency_links.txt
+calculator_terminal.egg-info/top_level.txt
