@@ -1,0 +1,15 @@
+osw/__init__.py,sha256=s0ejhZmdM1W1ZfyIECoxt2qx2aP9E1_VRsnFPcUINnE,349
+osw/core.py,sha256=cckvD7bHWvKxXHZDtxbJ7VfO-XWClryEszefkVZygE0,16770
+osw/sparql_client_smw.py,sha256=ksHBARtVIRo_ut2gd5m7fAnApO0HXjniI2xmQxiC6uY,8106
+osw/wiki_tools.py,sha256=LJGetKVGI8Xat3upUvogwXyn0x0QQrAJ05SGIDx2d5I,34698
+osw/wtsite.py,sha256=mLASuaICfpeLOwm8UDBJnBbYFwhev7hF_tclE_ICX9g,13760
+osw/controller/__init__.py,sha256=vJ9gQSdRxPhsYhV6ziDic71YU3lFawswxvffBQElQ2k,90
+osw/controller/entity.py,sha256=I1yiyEzqhXhXGbD86QUjD87KTjdRzeCBjz7u1QJYwf8,452
+osw/model/__init__.py,sha256=vJ9gQSdRxPhsYhV6ziDic71YU3lFawswxvffBQElQ2k,90
+osw/model/entity.py,sha256=jJc4qEePfd0ifXcRE5rnX20Y4rTuYmZzLXRlcaWqiC4,2723
+osw/model/page_package.py,sha256=BnWPiTVWGHKUoh_chw9IjzSTecw_cF6IqULIQ2ZR-t0,2177
+osw-0.2.1.dist-info/LICENSE.txt,sha256=zj-4LZ7oChyw5Uj5sFYOrVI3juK06Cb9lFm0rPcHXYk,32387
+osw-0.2.1.dist-info/METADATA,sha256=0la8ZA-CbSi7Nc-PKDWSyWJ7L6j80B7vkKzrzI6347I,2704
+osw-0.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+osw-0.2.1.dist-info/top_level.txt,sha256=L80X1INnTawKIwgHwIvWuICwRu3sWozr9wx-nJF_p-g,4
+osw-0.2.1.dist-info/RECORD,,
