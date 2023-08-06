@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: lender
+Version: 1.0.1
+Summary: building your blog including file server and database
+Home-page: https://www.hohohaha.cn
+Author: xiabo
+Author-email: blcuxiabo@126.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://gitee.com/xiabo0816/lender/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, https://gitee.com/xiabo0816/lender/
+Project-URL: Source, https://gitee.com/xiabo0816/lender/
+Keywords: lender,setuptools,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: peppercorn
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# Lender - memo in everywhere
+
+```bash
+# 提交到pypi
+python -m twine upload dist/*
+```
+
+# TODO
+
+- [ ] 首页调整为：hello、置顶、搜索、正文
+
+- [ ] 过长时展开收起
+
+- [ ] 添加笔记详情页
+
+- [ ] 导出笔记
+
+- [ ] 标签过滤
+
+- [ ] 全文搜索
+
+- [ ] 每条笔记可以置顶，可以选择置顶和管理置顶
+
+- [ ] 回到上次编辑
+
+- [ ] 配置项：行距、行号
+
+- [ ] 从知乎复制公式
+
+- [ ] 双模式的编辑器自动切换，焦点离开就进入显示模式，焦点激活就进入编辑模式
+
+- [x] 光标在每行的最前面的时候就看不见了`d@2023/02/12`
+
+- [x] 当前的笔记新建的时候时间也是“凌晨12:00”`d@2023/02/12`
+
+# 参考资料
+
+[tornado](https://www.w3cschool.cn/uqmpir/9r3ewozt.html)
+
