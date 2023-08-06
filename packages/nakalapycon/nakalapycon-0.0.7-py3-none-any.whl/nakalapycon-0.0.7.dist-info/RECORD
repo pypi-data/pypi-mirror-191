@@ -1,0 +1,17 @@
+NklResponse.py,sha256=3_Trv01DJ23Eb1nZGzeDrVyER4krHck6-36TD5MuOmc,1790
+NklTarget.py,sha256=ie56Ib227OWX1sADE3qo0wOCqO51MF--rzPDpsswjiI,1601
+constantes.py,sha256=6ArOoxxiJAoow9bQKwKd9FFH4lze3kUKdZcE99zgtGI,4540
+nakalapycon.py,sha256=WgZ0loW-cJQkmF9D46vurOIySIPzGJE4y8TA4kSIYjs,612
+nklAPI_Collections.py,sha256=GYNuPzcqkJvIAug6eDxgn0cw2NygyMCAv9sCiq0edt8,14686
+nklAPI_Datas.py,sha256=qyCAxy6FiBDizezL7oQhr9B30mZLuU0FGGU3Yff0XoY,56518
+nklAPI_Groups.py,sha256=lD8s2yhGPv118M7e7Vkgbozytjy1UVRnhP4qhjx5lzc,12963
+nklAPI_Search.py,sha256=xpjAbq2Drr-2Iy1mlN_bCLD4ExlaFdN9JYdFPzGLyMI,7218
+nklAPI_Users.py,sha256=_CpbCjcuYyIxlYLvhFnBjOhBYXi4vNKFFB-7U7e6DU8,2488
+nklAPI_Vocabularies.py,sha256=DvDWtiKUAR1cZL6_brc7FQRSuwNOPSFW8wQDEajfqHs,11488
+nklPullCorpus.py,sha256=FGpI0Z2RNQVlpZbVqVRAdhMzVwqu5wPZ8CyFimaMiNw,10469
+nklUtils.py,sha256=HRNpfRWfk-krdT3kLx8sSyOGbimHuPA3Rw0lxj15w0Y,9012
+nakalapycon-0.0.7.dist-info/LICENSE,sha256=PCM5uR8_XuIsflQwvCllfR9vdKy9RPfhR0HxXGsPYr4,35780
+nakalapycon-0.0.7.dist-info/METADATA,sha256=vToD5ILWqGcKFxzH5N2mOxumdZ5At0ncwMpJMyYuBd8,6884
+nakalapycon-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+nakalapycon-0.0.7.dist-info/top_level.txt,sha256=lC5CJq-alRPB946HgagL0dAkzeG1lHQxVzaZZQ-IFug,161
+nakalapycon-0.0.7.dist-info/RECORD,,
