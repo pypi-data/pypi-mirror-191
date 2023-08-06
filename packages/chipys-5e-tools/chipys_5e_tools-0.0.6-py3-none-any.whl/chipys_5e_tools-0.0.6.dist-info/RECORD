@@ -1,0 +1,11 @@
+chipys_5e_tools/__about__.py,sha256=wmgo_bxo9iMz2VykbbkXSkqMTUPPjx7kUXrVDkwIwnU,181
+chipys_5e_tools/__init__.py,sha256=KU4TM_kme_YdFur-OB8yWnP__12naC0Rf4O45V_F_7g,100
+chipys_5e_tools/dice.py,sha256=YDvztd4UcQc3TBFiH2baKQems3RJCG_36KxGfsyrft8,4597
+chipys_5e_tools/main.py,sha256=me04HZ2W1FMAFyniKqwpr3bfWN2zcChZycIdP91ogpI,4026
+chipys_5e_tools/QT/build_gui.bat,sha256=GDmrZ3X83ca-08vFg3zdRVZGO6M4EcRprj3-rP2sVPM,26
+chipys_5e_tools/QT/gui.py,sha256=EfTXRkoXBhB4e5AJfW6DLzxZNZX1RMmlFyCXCcRWCkg,9312
+chipys_5e_tools/QT/gui.ui,sha256=0tP1yysw-Muihqy1NV4YaZ8FJEqd4pxWZcLgfNyGUtg,9101
+chipys_5e_tools-0.0.6.dist-info/METADATA,sha256=465Y776NOYiSRkbqerZUOIPk82LlPqnX01N5C9vfs8k,1462
+chipys_5e_tools-0.0.6.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+chipys_5e_tools-0.0.6.dist-info/licenses/LICENSE.txt,sha256=5LzL_VR3Ti6trbQjnifnuVTBytOqk39aTDGrSGMt-IY,1100
+chipys_5e_tools-0.0.6.dist-info/RECORD,,
