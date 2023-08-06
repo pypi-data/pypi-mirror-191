@@ -1,0 +1,247 @@
+#!python
+"""
+Usage:
+  tabrec-analyse [options] <field> [<filename>...]
+
+Options:
+  -f --filewise          Handle each input file separately (default: concatenate them)
+  -d, --delimiter DELIM  Set the delimiter (default: tab)
+  -m, --maxlen MAXLEN    The maximum length of elements to be output (default: 12)
+  -n, --nelem NELEM      The maximum number of elements to be output (default: 20)
+  -r, --rtype TYPE       The type of the records
+  -t, --rtypecol COL     The column containing the record type (default: 1)
+  -h --help              Show this screen.
+  -V --version           Show version.
+
+Arguments:
+  <field>             number of field to analyze (1-based); if 0, analyze all fields
+  <filename>...       file(s) to analyze; if not given, the standard input
+                      is used if the input is a pipe, otherwise all tsv files
+                      in the current directory are used
+"""
+
+import csv
+import sys
+import statistics
+import docopt
+import re
+import glob
+
+def sstr(string, length):
+  if len(string) > length:
+    string = string[:length-3] + '...'
+  return string
+
+def output(stats, maxlen, nelem, indent):
+  indent_str = ' ' * indent
+  if stats['data_type'] == '(no data)':
+    print("{}(no data)".format(indent_str))
+  elif stats['data_type'] == 'string':
+    print("{}data type: string of {}".format(
+      indent_str, stats['character_set']))
+  else:
+    print("{}data type: {}".format(indent_str, stats['data_type']))
+  if stats['n_values'] > 0:
+    if stats['n_different_values'] == stats['n_values']:
+      print("{}n values: {} (all different)".format(indent_str, stats['n_values']))
+      different = ", ".join([sstr(val, maxlen) for val in
+        stats['different_values'][:nelem]])
+      if stats['n_different_values'] > nelem:
+        different += ", ... (other {} values)".format(stats['n_different_values'] - nelem)
+      print("{}values: {}".format(indent_str, different))
+    else:
+      print("{}n values: {} (n. different: {}, n. duplicated: {})".format(
+        indent_str, stats['n_values'], stats['n_different_values'],
+        stats['n_duplicates']))
+      different = ", ".join([sstr(val, maxlen) for val in
+        stats['different_values'][:nelem]])
+      if stats['n_different_values'] > nelem:
+        different += ", ... (other {} values)".format(stats['n_different_values'] - nelem)
+      print("{}different values: {}".format(indent_str, different))
+      duplicates = ", ".join(["{}: {}".format(sstr(val, maxlen), count) for val,
+          count in stats['duplicates'].most_common(nelem)])
+      if stats['n_duplicates'] > nelem:
+        duplicates += ", ... (other {} values)".format(stats['n_duplicates'] - nelem)
+      print("{}duplicates: {}".format(indent_str, duplicates))
+    if stats['data_type'] == 'string':
+      if stats['min_length'] == stats['max_length']:
+        print("{}all values have length {}".format(indent_str, stats['min_length']))
+      else:
+        print("{}length range: {}..{} (mean: {:.2f}, stdev:{:.2f})".format(
+          indent_str, stats['min_length'], stats['max_length'],
+          stats['average_length'], stats['standard_deviation_length']))
+    else:
+      if stats['min'] == stats['max']:
+        print("{}all values are {}".format(indent_str, stats['min']))
+      else:
+        print("{}range: {}..{} (mean: {:.2f}, stdev:{:.2f})".format(
+          indent_str, stats['min'], stats['max'],
+          stats['average'], stats['standard_deviation']))
+
+def output_fileinfo(stats, indent, record_type):
+  indent_str = ' ' * indent
+  print("{}n rows in file: {}".format(indent_str, stats['n_rows']))
+  if record_type:
+    print("{}n {} records: {}".format(indent_str, record_type, stats['n_records']))
+
+def analyze_column(data, maxlen, nelem, indent):
+    stats = {}
+
+    if len(data) == 0:
+      stats['data_type'] = '(no data)'
+      stats['n_values'] = 0
+    else:
+      if all(val.isdigit() for val in data):
+          if any(val.startswith('-') or val.startswith('+') for val in data):
+              stats['data_type'] = 'signed integer'
+          else:
+              stats['data_type'] = 'unsigned integer'
+          data = [int(val) for val in data]
+      elif all(map(lambda val:
+        bool(re.match(r"^[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?$", val)), data)):
+          stats['data_type'] = 'float'
+          data = [float(val) for val in data]
+      else:
+          stats['data_type'] = 'string'
+          stats['n_empty'] = data.count('')
+          # check the presence of diffent character classes
+          joined = ''.join(data)
+          has_upper = any(val.isupper() for val in joined)
+          has_lower = any(val.islower() for val in joined)
+          has_digit = any(val.isdigit() for val in joined)
+          has_space = any(val.isspace() for val in joined)
+          # list all chars which are not upper, lower or digit and not space
+          joined = re.sub(r'[a-zA-Z0-9\s]', '', joined)
+          other_chars = set(joined)
+          stats['character_set'] = []
+          if has_upper and has_lower:
+            stats["character_set"].append("upper and lower case letters")
+          elif has_upper:
+            stats["character_set"].append("upper case letters")
+          elif has_lower:
+            stats["character_set"].append("lower case letters")
+          if has_digit:
+            stats["character_set"].append("digits")
+          if has_space:
+            stats["character_set"].append("whitespace")
+          if other_chars:
+            stats["character_set"].append("other characters: '{}'".format(''.join(other_chars)))
+          stats["character_set"] = ', '.join(stats["character_set"])
+
+      different_values = set(data)
+      # remove from counter values which have a count of 1
+      duplicates = statistics.Counter(data)
+      to_rm = []
+      for val in duplicates:
+        if duplicates[val] == 1:
+          to_rm.append(val)
+      for val in to_rm:
+        del duplicates[val]
+
+      stats['n_values'] = len(data)
+      if len(data) > 0:
+        stats['values'] = data[:nelem]
+        stats['n_different_values'] = len(different_values)
+        stats['different_values'] = list(different_values)
+        stats['n_duplicates'] = len(duplicates)
+        stats['duplicates'] = duplicates
+        if stats['data_type'] == 'string':
+          lengths = [len(val) for val in data]
+          stats['min_length'] = min(lengths)
+          stats['max_length'] = max(lengths)
+          stats['average_length'] = sum(lengths)/len(lengths)
+          if len(lengths) > 1:
+            stats['standard_deviation_length'] = statistics.stdev(lengths)
+          sorted_data = sorted(data)
+          stats['min'] = sorted_data[0]
+          stats['max'] = sorted_data[-1]
+        else:
+          stats['min'] = min(data)
+          stats['max'] = max(data)
+          stats['average'] = sum(data)/len(data)
+          if len(data) > 1:
+            stats['standard_deviation'] = statistics.stdev(data)
+    output(stats, maxlen, nelem, indent)
+
+def process_table(filenames, column_index, maxlen, nelem, record_type,
+                  record_type_column, indent, delimiter):
+  file_stats = {'n_rows': 0, 'n_records': 0, 'n_columns': 0}
+  data = []
+  for filename in filenames:
+    with open(filename, 'r') as file:
+      reader = csv.reader(file, delimiter=delimiter)
+      for row in reader:
+        file_stats['n_rows'] += 1
+        if not record_type or row[record_type_column] == record_type:
+          file_stats['n_records'] += 1
+          if len(row) > file_stats['n_columns']:
+            file_stats['n_columns'] = len(row)
+          if column_index == -1:
+            for colnum, cell in enumerate(row):
+              if len(data) <= colnum:
+                data.extend([[] for _ in range(colnum - len(data) + 1)])
+              data[colnum].append(cell)
+          else:
+            if len(row) > column_index:
+              data.append(row[column_index])
+  output_fileinfo(file_stats, indent, record_type)
+  if column_index == -1:
+    for colnum, col in enumerate(data):
+      indent_str = ' ' * (indent)
+      print("{}Column {}: ".format(indent_str, colnum + 1))
+      analyze_column(col, maxlen, nelem, indent+2)
+  else:
+    analyze_column(data, maxlen, nelem, indent)
+
+def main():
+  args = docopt.docopt(__doc__, version='1.0')
+  if not all(val.isdigit() for val in args['<field>']) or \
+      int(args['<field>']) < 0:
+    print("Error: field number must be an integer >= 0")
+    exit(1)
+  column_index = int(args['<field>']) - 1
+  filewise = args['--filewise']
+  if args['--maxlen']:
+    maxlen = int(args['--maxlen'])
+  else:
+    maxlen = 20
+  if args['--nelem']:
+    nelem = int(args['--nelem'])
+  else:
+    nelem = 12
+  if args['--rtype']:
+    record_type = args['--rtype']
+  else:
+    record_type = False
+  if args['--rtypecol']:
+    if not all(val.isdigit() for val in args['--rtypecol']) or \
+        int(args['--rtypecol']) < 1:
+      print("Error: record type column number must be an integer > 0")
+      exit(1)
+    record_type_column = int(args['--rtypecol']) - 1
+  else:
+    record_type_column = 0
+  if args['<filename>']:
+    filenames = args['<filename>']
+  else:
+    # check if there is an incoming pipe
+    if not sys.stdin.isatty():
+      filenames = [sys.stdin]
+    else:
+      # all tsv files in the directory
+      filenames = glob.glob('*.tsv')
+  if args['--delimiter']:
+    delimiter = args['--delimiter']
+  else:
+    delimiter = '\t'
+  if filewise:
+    for filename in filenames:
+      print("File: {}".format(filename))
+      process_table([filename], column_index, maxlen, nelem, record_type,
+                  record_type_column, 2, delimiter)
+  else:
+    process_table(filenames, column_index, maxlen, nelem, record_type,
+                record_type_column, 0, delimiter)
+
+if __name__ == '__main__':
+  main()

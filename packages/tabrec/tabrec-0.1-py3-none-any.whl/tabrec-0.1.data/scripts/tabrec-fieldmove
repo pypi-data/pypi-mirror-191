@@ -1,0 +1,54 @@
+#!python
+
+"""Usage:
+    tabrec-fieldmove [options] <input_file> <col_to_move> <movement> [<record_type>]
+
+Move one column to another position for a given record type in a TSV file.
+
+Arguments:
+    <input_file>      Input TSV file.
+    <col_to_move>     1-based column number of column to move
+    <movement>        number of positions to move
+    <record_type>     swap columns in records of this type [default: all records]
+
+Options:
+    -l, --left                move column to the left (default: right)
+    -r, --rtypecol=<col_num>  1-based column number of the record type column [default: 1].
+    -h, --help                Show this screen.
+    -v, --version             Show version.
+    -d, --delimiter=<delim>   Delimiter character [default: \t]
+"""
+
+import csv
+from docopt import docopt
+
+
+def move_columns(input_file, delimiter, col_to_move, movement,
+                 rtype_col, record_type):
+    with open(input_file, 'r') as f:
+        reader = csv.reader(f, delimiter=delimiter)
+        for row in reader:
+            if not record_type or row[rtype_col] == record_type:
+                col_value = row.pop(col_to_move)
+                new_col_index = col_to_move+movement
+                row.insert(new_col_index, col_value)
+            print(delimiter.join(row))
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+    input_file = args['<input_file>']
+    if args['--rtypecol']:
+        rtype_col = int(args['--rtypecol']) - 1
+    else:
+        rtype_col = 0
+    col_to_move = int(args['<col_to_move>'])-1
+    movement = int(args['<movement>'])
+    if args['--left']:
+        movement = -movement
+    record_type = args['<record_type>']
+    delimiter = args['--delimiter']
+    if not delimiter:
+        delimiter = '\t'
+    move_columns(input_file, delimiter, col_to_move, movement,
+                 rtype_col, record_type)

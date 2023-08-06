@@ -1,0 +1,117 @@
+#!/bin/bash
+
+args=()
+uniq=false
+count=false
+sort=false
+dup=false
+filewise=false
+
+for arg in "$@"; do
+  if [ "$arg" == "-u" ] || [ "$arg" == "--uniq" ]; then
+    uniq=true
+    continue
+  elif [ "$arg" == "-c" ] || [ "$arg" == "--count" ]; then
+    count=true
+    continue
+  elif [ "$arg" == "-s" ] || [ "$arg" == "--sort" ]; then
+    sort=true
+    continue
+  elif [ "$arg" == "-d" ] || [ "$arg" == "--dup" ]; then
+    dup=true
+    continue
+  elif [ "$arg" == "-f" ] || [ "$arg" == "--filewise" ]; then
+    filewise=true
+    continue
+  fi
+  args+=("$arg")
+done
+
+print_usage() {
+  echo ""
+  echo "Usage: $0 [options] record_type field_number [file_name]"
+  echo ""
+  echo "Options:"
+  echo "  -u, --uniq      Print only unique values"
+  echo "  -c, --count     Print number of records"
+  echo "  -s, --sort      Sort output"
+  echo "  -d, --dup       Print duplicate values"
+  echo "  -f, --filewise  Consider each file separately"
+  echo ""
+}
+
+# check the number of arguments in the args array
+if [[ "${#args[@]}" -lt 2 || "${#args[@]}" -gt 3 ]]; then
+  echo "Error: 2 or 3 arguments are required"
+  print_usage
+  exit 1
+fi
+
+# assign the first and second arguments to separate variables
+record_type="${args[0]}"
+field_number="${args[1]}"
+if [ "${#args[@]}" -eq 3 ]; then
+  file_name="${args[2]}"
+else
+  file_name="*.tsv"
+fi
+
+if ! [[ "$record_type" =~ ^[A-Z0-9a-z_]+$ ]]; then
+  echo "Error: Record type may contain only letters, numbers and underscores"
+  print_usage
+  exit 1
+fi
+
+if ! [[ "$field_number" =~ ^[0-9]+$ ]]; then
+  echo "Error: Field number must be an integer"
+  print_usage
+  exit 1
+fi
+
+if [ "$field_number" -lt 1 ]; then
+  echo "Error: Field number must be equal to or larger than 1"
+  print_usage
+  exit 1
+fi
+
+if [[ $uniq == true ]]; then
+  awk_script="!seen[\$0]++"
+else
+  awk_script="{print}"
+fi
+
+if [[ $count == true ]]; then
+  cmd="wc -l"
+else
+  cmd="cat"
+fi
+
+if [[ $sort == true ]]; then
+  sort_cmd="sort"
+else
+  sort_cmd="cat"
+fi
+
+if [[ $dup == true ]]; then
+  awk_script_dup="seen[\$0]++"
+else
+  awk_script_dup="{print}"
+fi
+
+function run_pipe {
+  grep -h -P "^${record_type}\t" $1 | cut -d'	' -f$field_number | \
+     eval $sort_cmd | awk ${awk_script_dup} | awk ${awk_script} | eval $cmd | \
+     tr '\n' "," | sed 's/,$//'
+}
+
+if [[ $filewise == true ]]; then
+  for file in ${file_name}; do
+    echo -n "${file}: "
+    run_pipe $file
+    echo ""
+  done
+else
+  run_pipe "${file_name}"
+fi
+
+

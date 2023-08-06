@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tabrec
+Version: 0.1
+Summary: Tabular Records Tools
+Home-page: https://github.com/ggonnella/tabrec
+Author: Giorgio Gonnella
+Author-email: gonnella@zbh.uni-hamburg.de
+License: ISC
+Keywords: file format tabular records
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+Requires-Dist: docopt
+
+TabRec is a collection of scripts for working with "multiple record-type tabular files",
+i.e. files where a record type is given in a column (the first by default) and the
+rest of the columns have a format depending on the record type (in terms of number
+of fields, format and semantics of the fields).
+
+
+

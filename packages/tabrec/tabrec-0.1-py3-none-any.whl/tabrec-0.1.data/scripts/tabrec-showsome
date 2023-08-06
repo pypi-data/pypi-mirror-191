@@ -1,0 +1,38 @@
+#!/bin/bash
+
+if [ $# -lt 1 -o $# -gt 3 ]; then
+  echo "Show some records of a given type from the files"
+  echo "Error: 1 to 3 arguments are required"
+  echo "Usage: $0 record_type [number_of_records [file_name]]"
+  exit 1
+fi
+
+record_type="$1"
+number_of_records=10
+file_name="*.tsv"
+if [ $# -gt 1 ]; then
+  number_of_records="$2"
+  if [ "$#" -eq 3 ]; then
+    file_name="$3"
+  fi
+fi
+
+if ! [[ "$record_type" =~ ^[A-Z0-9a-z_]+$ ]]; then
+  echo "Error: Record type may contain only letters, numbers and underscores"
+  echo "Usage: $0 record_type field_number"
+  exit 1
+fi
+
+if ! [[ "$number_of_records" =~ ^[0-9]+$ ]]; then
+  echo "Error: Number of records must be a number"
+  echo "Usage: $0 record_type field_number"
+  exit 1
+fi
+
+if ! [[ "$number_of_records" -gt 0 ]]; then
+  echo "Error: Number of records must be greater than 0"
+  echo "Usage: $0 record_type field_number"
+  exit 1
+fi
+
+grep -h -P "^${record_type}\t" ${file_name} | shuf -n "$number_of_records"

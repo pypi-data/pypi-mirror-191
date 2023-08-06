@@ -1,0 +1,13 @@
+tabrec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tabrec-0.1.data/scripts/tabrec-analyse,sha256=LJ9xHXHzrm6M9_SX4T25PardqrTy-dNaxR0wqalGR_U,9769
+tabrec-0.1.data/scripts/tabrec-count,sha256=YQTwFZ9ueEYIcA4a0E8OZNP9Z4Nd-eohnGvBH9Q3GB0,38
+tabrec-0.1.data/scripts/tabrec-fieldmove,sha256=QFMtMrvPcmS5ZwjiqOJqRGbQTS64sIRxRCg2NFYjISU,1844
+tabrec-0.1.data/scripts/tabrec-fieldswap,sha256=JC-TYTtQ_M-ZCSdPeTpXnvYrUQTyCPWlsJpbAOS9ZF4,1659
+tabrec-0.1.data/scripts/tabrec-fieldvalues,sha256=buAQf2M8HG_uE2QloawtCwigjS0b7YPsR5ZB487r7Uk,2411
+tabrec-0.1.data/scripts/tabrec-showsome,sha256=S6S5GvCiolIoJC0cfXWhqJyhXpnXLMPfKcSWHg4th1o,961
+tabrec-0.1.dist-info/AUTHORS.txt,sha256=urRjLSLuCBBkayJLD6_F_ZSX7XiSBHGcrgYBMdCNT_M,190
+tabrec-0.1.dist-info/LICENSE.txt,sha256=3r0lue50TKQwxg7sJPzJJpxXMly4HrOtQIAUMhmfMQk,1026
+tabrec-0.1.dist-info/METADATA,sha256=sHQynZTSnXxAQp4hyH5RfMERjUyWD79CugNUgxQSJGo,1184
+tabrec-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tabrec-0.1.dist-info/top_level.txt,sha256=yJw1yfWbQ_A9eWMCbaXTabMa6K3y78DuIdDWFKyY2Qk,7
+tabrec-0.1.dist-info/RECORD,,

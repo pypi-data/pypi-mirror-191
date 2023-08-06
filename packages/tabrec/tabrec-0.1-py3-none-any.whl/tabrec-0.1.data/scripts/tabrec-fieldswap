@@ -1,0 +1,49 @@
+#!python
+
+"""Usage:
+    tabrec-fieldswap [options] <input_file> <swap_col1> <swap_col2> [<record_type>]
+
+Swap two columns of rows for a given record type in a TSV file.
+
+Arguments:
+    <input_file>      Input TSV file.
+    <swap_col1>       1-based column number of first column to swap.
+    <swap_col2>       1-based column number of second column to swap.
+    <record_type>     swap columns in records of this type [default: all records]
+
+Options:
+    -r, --rtypecol=<col_num>  1-based column number of the record type column [default: 1].
+    -h, --help                Show this screen.
+    -v, --version             Show version.
+    -d, --delimiter=<delim>   Delimiter character [default: \t]
+"""
+
+import csv
+from docopt import docopt
+
+
+def swap_columns(input_file, delimiter, swap_col1, swap_col2,
+                 rtype_col, record_type):
+    with open(input_file, 'r') as f:
+        reader = csv.reader(f, delimiter=delimiter)
+        for row in reader:
+            if not record_type or row[rtype_col] == record_type:
+                row[swap_col1], row[swap_col2] = row[swap_col2], row[swap_col1]
+            print(delimiter.join(row))
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+    input_file = args['<input_file>']
+    if args['--rtypecol']:
+        rtype_col = int(args['--rtypecol']) - 1
+    else:
+        rtype_col = 0
+    swap_col1 = int(args['<swap_col1>'])-1
+    swap_col2 = int(args['<swap_col2>'])-1
+    record_type = args['<record_type>']
+    delimiter = args['--delimiter']
+    if not delimiter:
+        delimiter = '\t'
+    swap_columns(input_file, delimiter, swap_col1, swap_col2,
+                 rtype_col, record_type)
