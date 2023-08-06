@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: calitp-data
+Version: 2023.2.13.1
+Summary: Shared code for the Cal-ITP data codebases
+License: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+Author: Andrew Vaccaro
+Author-email: andrew.v@jarv.us
+Requires-Python: >=3.8,<3.10
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fsspec (==2022.5.0)
+Requires-Dist: gcsfs (==2022.5.0)
