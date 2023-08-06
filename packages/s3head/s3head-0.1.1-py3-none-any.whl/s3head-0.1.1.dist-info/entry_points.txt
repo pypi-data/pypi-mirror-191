@@ -1,0 +1,3 @@
+[console_scripts]
+s3head=s3head.main:main
+
