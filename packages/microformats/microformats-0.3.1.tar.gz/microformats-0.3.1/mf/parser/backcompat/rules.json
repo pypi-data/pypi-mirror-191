@@ -1,0 +1,480 @@
+{
+    "adr": {
+        "type": [
+            "h-adr"
+        ], 
+        "properties": {
+            "locality": [
+                "p-locality"
+            ], 
+            "region": [
+                "p-region"
+            ], 
+            "extended-address": [
+                "p-extended-address"
+            ], 
+            "post-office-box": [
+                "p-post-office-box"
+            ], 
+            "street-address": [
+                "p-street-address"
+            ], 
+            "postal-code": [
+                "p-postal-code"
+            ], 
+            "country-name": [
+                "p-country-name"
+            ]
+        }
+    },
+    "geo": {
+        "type": [
+            "h-geo"
+        ], 
+        "properties": {
+            "latitude": [
+                "p-latitude"
+            ], 
+            "longitude": [
+                "p-longitude"
+            ]
+        }
+    },
+    "hentry": {
+        "type": [
+            "h-entry"
+        ], 
+        "properties": {
+            "category": [
+                "p-category"
+            ], 
+            "entry-title": [
+                "p-name"
+            ], 
+            "published": [
+                "dt-published"
+            ],
+            "entry-content": [
+                "e-content"
+            ], 
+            "entry-summary": [
+                "p-summary"
+            ], 
+            "author": [
+                "p-author", 
+                "h-card"
+            ], 
+            "geo": [
+                "p-geo", 
+                "h-geo"
+            ], 
+            "updated": [
+                "dt-updated"
+            ]
+        },
+        "rels": {
+            "bookmark": [
+                "u-url"
+            ],
+            "tag": [
+                "p-category"
+            ]
+        }
+    },
+    "hfeed": {
+        "type": [
+            "h-feed"
+        ], 
+        "properties": {
+            "category": [
+                "p-category"
+            ], 
+            "site-description": [
+                "p-summary"
+            ], 
+            "description": [
+                "p-summary"
+            ], 
+            "site-title": [
+                "p-name"
+            ], 
+            "title": [
+                "p-name"
+            ]
+        },
+        "rels": {
+            "tag": [
+                "p-category"
+            ]
+        }
+    },
+    "hproduct": {
+        "type": [
+            "h-product"
+        ], 
+        "properties": {
+            "category": [
+                "p-category"
+            ], 
+            "price": [
+                "p-price"
+            ], 
+            "description": [
+                "p-description"
+            ], 
+            "url": [
+                "u-url"
+            ], 
+            "photo": [
+                "u-photo"
+            ], 
+            "brand": [
+                "p-brand"
+            ], 
+            "identifier": [
+                "u-identifier"
+            ], 
+            "review": [
+                "p-review", 
+                "h-review" 
+            ], 
+            "fn": [
+                "p-name"
+            ]
+        }
+    },
+    "hrecipe": {
+        "type": [
+            "h-recipe"
+        ], 
+        "properties": {
+            "nutrition": [
+                "p-nutrition"
+            ], 
+            "yield": [
+                "p-yield"
+            ], 
+            "author": [
+                "p-author", 
+                "h-card"
+            ], 
+            "duration": [
+                "dt-duration"
+            ], 
+            "photo": [
+                "u-photo"
+            ], 
+            "instructions": [
+                "e-instructions"
+            ], 
+            "summary": [
+                "p-summary"
+            ], 
+            "fn": [
+                "p-name"
+            ], 
+            "ingredient": [
+                "p-ingredient"
+            ],
+            "category": [
+                "p-category"
+            ]
+        },
+        "rels": {
+            "tag": [
+                "p-category"
+            ]
+        }
+    },
+    "hresume": {
+        "type": [
+            "h-resume"
+        ], 
+        "properties": {
+            "experience": [
+                "h-event", 
+                "p-experience"
+            ], 
+            "summary": [
+                "p-summary"
+            ], 
+            "affiliation": [
+                "p-affiliation", 
+                "h-card"
+            ], 
+            "contact": [
+                "h-card", 
+                "p-contact"
+            ], 
+            "skill": [
+                "p-skill"
+            ], 
+            "education": [
+                "h-event", 
+                "p-education"
+            ]
+        }
+    },
+    "hreview-aggregate": {
+        "type": [
+            "h-review-aggregate"
+        ], 
+        "properties": {
+            "rating": [
+                "p-rating"
+            ], 
+            "description": [
+                "p-description"
+            ], 
+            "photo": [
+                "u-photo"
+            ], 
+            "worst": [
+                "p-worst"
+            ], 
+            "reviewer": [
+                "p-reviewer", 
+                "p-author", 
+                "h-card"
+            ], 
+            "best": [
+                "p-best"
+            ], 
+            "count": [
+                "p-count"
+            ], 
+            "votes": [
+                "p-votes"
+            ], 
+            "dtreviewed": [
+                "dt-reviewed"
+            ], 
+            "url": [
+                "u-url"
+            ], 
+            "summary": [
+                "p-name"
+            ], 
+            "fn": [
+                "p-item", 
+                "h-item", 
+                "p-name"
+            ]
+        }
+    },
+    "hreview": {
+        "type": [
+            "h-review"
+        ], 
+        "properties": {
+            "rating": [
+                "p-rating"
+            ], 
+            "worst": [
+                "p-worst"
+            ], 
+            "dtreviewed": [
+                "dt-reviewed"
+            ], 
+            "reviewer": [
+                "p-author", 
+                "h-card"
+            ], 
+            "url": [
+                "p-item", 
+                "h-item", 
+                "u-url"
+            ], 
+            "photo": [
+                "p-item", 
+                "h-item", 
+                "u-photo"
+            ], 
+            "best": [
+                "p-best"
+            ], 
+            "description": [
+                "p-description"
+            ], 
+            "fn": [
+                "p-item", 
+                "h-item", 
+                "p-name"
+            ], 
+            "summary": [
+                "p-name"
+            ],
+            "item vcard": [
+                "p-item",
+                "vcard"
+            ],
+            "item vevent": [
+                "p-item",
+                "vevent"
+            ],
+            "item hproduct": [
+                "p-item",
+                "hproduct"
+            ]
+        },
+        "rels": {
+            "self bookmark": [
+                "u-url"
+            ],
+            "tag": [
+                "p-category"
+            ]
+        }
+    },
+    "vcard": {
+        "type": [
+            "h-card"
+        ], 
+        "properties": {
+            "tel": [
+                "p-tel"
+            ], 
+            "honorific-suffix": [
+                "p-honorific-suffix"
+            ], 
+            "family-name": [
+                "p-family-name"
+            ], 
+            "photo": [
+                "u-photo"
+            ], 
+            "logo": [
+                "u-logo"
+            ], 
+            "postal-code": [
+                "p-postal-code"
+            ], 
+            "country-name": [
+                "p-country-name"
+            ], 
+            "uid": [
+                "u-uid"
+            ], 
+            "category": [
+                "p-category"
+            ], 
+            "adr": [
+                "p-adr", 
+                "h-adr"
+            ], 
+            "locality": [
+                "p-locality"
+            ], 
+            "nickname": [
+                "p-nickname"
+            ], 
+            "label": [
+                "p-label"
+            ], 
+            "note": [
+                "p-note"
+            ], 
+            "street-address": [
+                "p-street-address"
+            ], 
+            "latitude": [
+                "p-latitude"
+            ], 
+            "email": [
+                "u-email"
+            ], 
+            "bday": [
+                "dt-bday"
+            ], 
+            "extended-address": [
+                "p-extended-address"
+            ], 
+            "additional-name": [
+                "p-additional-name"
+            ], 
+            "organization-unit": [
+                "p-organization-unit"
+            ], 
+            "given-name": [
+                "p-given-name"
+            ], 
+            "key": [
+                "u-key"
+            ], 
+            "org": [
+                "p-org"
+            ], 
+            "honorific-prefix": [
+                "p-honorific-prefix"
+            ], 
+            "geo": [
+                "p-geo", 
+                "h-geo"
+            ], 
+            "fn": [
+                "p-name"
+            ], 
+            "url": [
+                "u-url"
+            ], 
+            "region": [
+                "p-region"
+            ], 
+            "longitude": [
+                "p-longitude"
+            ], 
+            "organization-name": [
+                "p-organization-name"
+            ],
+            "title": [
+                "p-job-title"
+            ],
+            "role": [
+                "p-role"
+            ]
+        }
+    },
+    "vevent": {
+        "type": [
+            "h-event"
+        ], 
+        "properties": {
+            "attendee": [
+                "p-attendee"
+            ], 
+            "description": [
+                "p-description"
+            ], 
+            "duration": [
+                "dt-duration"
+            ], 
+            "dtend": [
+                "dt-end"
+            ], 
+            "dtstart": [
+                "dt-start"
+            ], 
+            "geo": [
+                "p-location h-geo"
+            ], 
+            "organizer": [
+                "p-organizer"
+            ], 
+            "category": [
+                "p-category"
+            ], 
+            "url": [
+                "u-url"
+            ], 
+            "summary": [
+                "p-name"
+            ], 
+            "contact": [
+                "p-contact"
+            ], 
+            "location": [
+                "p-location"
+            ]
+        }
+    }
+}
