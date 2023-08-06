@@ -1,0 +1,8 @@
+lyrics_hunter/__init__.py,sha256=fTASy9yaKxyKBE5sICiVpII4FBFQQh0O3YSy4AHjfPM,91
+lyrics_hunter/hunter.py,sha256=tFx1P64cDjkz_z3Wde06xNcA89pSgWltu4wsVMCOyI4,3010
+test/__init__.py,sha256=Q1wl8URRPKcWfkKVyQietDRux4eMJgD0C2bpZrla_vk,90
+test/test_hunter.py,sha256=zFFCLqmv9u7RktXW4_RART2xw7M6NdJzQrR8SueqPtw,2302
+lyrics_hunter-10.1.0.dist-info/METADATA,sha256=rKZ5JoFiZ52ifjUfuMB0qe8i4rQAoYMgYCLZHdeTy-g,263
+lyrics_hunter-10.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+lyrics_hunter-10.1.0.dist-info/top_level.txt,sha256=wNSeBK8AGYqclSBiA8UltGItQ2frPatrLN1xSWdImow,19
+lyrics_hunter-10.1.0.dist-info/RECORD,,
