@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: mkpyp
+Version: 0.1.0
+Summary: make python projects idiomatically
+Project-URL: Homepage, https://github.com/liamvdv/mkpyp
+Project-URL: Documentation, https://github.com/liamvdv/mkpyp
+Project-URL: Source, https://github.com/liamvdv/mkpyp
+Project-URL: Changelog, https://github.com/liamvdv/mkpyp
+Author-email: Liam van der Viven <liam@vanderviven.com>
+License: MIT License
+        
+        Copyright (c) 2023 Liam van der Viven and other contributors
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: fire==0.5.0
+Requires-Dist: inquirerpy==0.3.4
+Requires-Dist: pydantic==1.10.4
+Description-Content-Type: text/markdown
+
+# mkpyp
+make python projects idiomatically
+```
+Generates a new idiomatic Python project for linux/macos:
+project structure - .gitignore, LICENSE
+format - black, isort
+lint - ruff, mypy, black
+test - pytest, coverage
+other - pre-commit, Makefile, version.py, requirements
+```
+
+## Installation
+Install with `pip3 install mypyp`. Run with `mypyp`.
+
+## Developer Installation
+After cloning this repo or initializing a new git repository with `git init`, complete the following steps in root directory.
+```shell
+# create a new virtual environment (e. g. venv)
+python3 -m venv .venv
+
+# activate the virtual environment
+source .venv/bin/activate
+
+# install pip-compile for auto-generating requirement files
+pip install pip-tools hatch
+
+# generate requirement files
+make refresh-requirements
+
+# install the requirements and install 'mkpyp' as editable package
+make install
+```
+
+## Dependency Management
+The location of where dependencies are declared depends on their scope. 
+
+- Package dependencies must be put into `pyproject.toml [project] .dependencies`.
+- Opt-in dependencies must be put into `pyproject.toml [project] .optional-dependencies`.
+- Testing dependencies must be put into `requirements/testing.in`.
+- Linting dependencies must be put into `requirements/linting.in`.
+
+We generate the requirements files with `make refresh-requirements`. Reinstall with `make install`.
+
+## Publish
+Build the project with `hatch build`. Now run `hatch publish --repo test` to upload the package to `test.pypi.org`. Use `hatch publish --repo main` to upload to the production PyPI. Define custom targets as per definied [here](https://hatch.pypa.io/latest/publish/#repository).  
