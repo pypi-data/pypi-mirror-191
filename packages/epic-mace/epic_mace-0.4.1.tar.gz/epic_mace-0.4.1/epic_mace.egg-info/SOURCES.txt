@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+README_pip.md
+setup.py
+epic_mace.egg-info/PKG-INFO
+epic_mace.egg-info/SOURCES.txt
+epic_mace.egg-info/dependency_links.txt
+epic_mace.egg-info/top_level.txt
+mace/__init__.py
+mace/complex_init_files.py
+mace/complex_init_mols.py
+mace/complex_object.py
+mace/parameters.py
+mace/smiles_parsing.py
+mace/substituents.py
+mace/supporting_functions.py
