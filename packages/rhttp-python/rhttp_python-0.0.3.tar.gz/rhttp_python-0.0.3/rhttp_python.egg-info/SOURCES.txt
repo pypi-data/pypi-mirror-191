@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rhttp_python/RHTTPServer.py
+rhttp_python/__init__.py
+rhttp_python.egg-info/PKG-INFO
+rhttp_python.egg-info/SOURCES.txt
+rhttp_python.egg-info/dependency_links.txt
+rhttp_python.egg-info/requires.txt
+rhttp_python.egg-info/top_level.txt

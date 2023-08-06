@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: rhttp_python
+Version: 0.0.3
+Summary: RHTTP python interface
+Home-page: https://github.com/pedramcode/RHTTP-python
+Author: Pedram Dehghanpour
+Author-email: dev.dehghanpour@gmail.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# RHTTP-python
+Python interface for RHTTP server
+
+## Installation
+Install the latest version of `rhttp-python` with running installation command:
+```shell
+pip install rhttp-python
+```
+
+## Usage
+First you need to import required packages:
+```python
+# RHTTP server
+from rhttp_python import RHTTPServer
+# Asyncio library for running server
+import asyncio
+```
+
+First you need to create server by passing redis host and port:
+
+```python
+server = RHTTPServer("127.0.0.1", 6379)
+```
+
+Then you can define endpoints using `route` decorator
+
+```python
+@server.route("/", "GET")
+def home(req, res):
+    print(req)
+    return res.status(200).content_type("text/html").send("<h1>test</h1>")
+```
+
+First parameter of decorator is "path" of endpoint and second is http method
+
+At the end you need run server:
+```python
+asyncio.run(server.listen())
+```
+
+
+
+## License
+This project is licensed under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
