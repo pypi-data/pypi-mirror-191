@@ -1,0 +1,7 @@
+scrapy
+selenium>=4.0
+crochet
+pynput
+keepvariable
+selenium-wire
+psutil
