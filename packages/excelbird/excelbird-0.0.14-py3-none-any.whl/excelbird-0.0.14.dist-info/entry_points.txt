@@ -1,0 +1,6 @@
+[console_scripts]
+xbird = excelbird._cli:main
+
+[pygments.styles]
+dark = excelbird._pygments:DarkStyle
+light = excelbird._pygments:LightStyle
