@@ -1,0 +1,11 @@
+requests
+pyjwt
+asyncio
+flask
+httpx
+bs4
+Flask-API
+click
+certifi
+websockets
+aiohttp
