@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: trclab
+Version: 0.0.1
+Summary: STUST TRCLab Package
+Author: STUST-TRCLab
+Author-email: mb1g0110@stust.edu.tw
+Keywords: trclab,stust
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
