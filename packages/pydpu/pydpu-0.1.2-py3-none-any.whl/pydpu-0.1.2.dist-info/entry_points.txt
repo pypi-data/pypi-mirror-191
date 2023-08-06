@@ -1,0 +1,3 @@
+[console_scripts]
+dpu=pydpu.cli:main
+
