@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+app/gui.py
+app/main.py
+app/__pycache__/gui.cpython-39.pyc
+clipboard_files.egg-info/PKG-INFO
+clipboard_files.egg-info/SOURCES.txt
+clipboard_files.egg-info/dependency_links.txt
+clipboard_files.egg-info/entry_points.txt
+clipboard_files.egg-info/requires.txt
+clipboard_files.egg-info/top_level.txt
