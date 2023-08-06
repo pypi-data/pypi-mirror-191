@@ -1,0 +1,11 @@
+include thinks_dash_alert/thinks_dash_alert.min.js
+include thinks_dash_alert/thinks_dash_alert.min.js.map
+include thinks_dash_alert/async-*.js
+include thinks_dash_alert/async-*.js.map
+include thinks_dash_alert/*-shared.js
+include thinks_dash_alert/*-shared.js.map
+include thinks_dash_alert/metadata.json
+include thinks_dash_alert/package-info.json
+include README.md
+include LICENSE
+include package.json
