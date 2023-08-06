@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: oarepo-runtime
+Version: 1.0.4
+Summary: A set of runtime extensions of Invenio repository
+Description-Content-Type: text/markdown
+Provides-Extra: devs
+Provides-Extra: tests
+License-File: LICENSE
+
+# OARepo runtime
