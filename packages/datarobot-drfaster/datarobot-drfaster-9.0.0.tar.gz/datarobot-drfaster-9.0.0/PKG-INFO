@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: datarobot-drfaster
+Version: 9.0.0
+Summary: python library to make performance improvements to the DataRobot repo
+Author: DataRobot
+Author-email: info@datarobot.com
+License: MIT
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# datarobot-drfaster (Python)
+## Usage
+Optimizations to the predictions process and mainly used as a dependency for other Datarobot libraries such as [datarobot-mlops-stats-aggregator](https://pypi.org/project/datarobot-mlops-stats-aggregator/)

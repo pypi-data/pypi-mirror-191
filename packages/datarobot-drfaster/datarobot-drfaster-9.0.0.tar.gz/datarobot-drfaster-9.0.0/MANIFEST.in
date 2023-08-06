@@ -1,0 +1,2 @@
+global-include *.hpp *.h *.pyx *.pxd
+include COPYRIGHT
