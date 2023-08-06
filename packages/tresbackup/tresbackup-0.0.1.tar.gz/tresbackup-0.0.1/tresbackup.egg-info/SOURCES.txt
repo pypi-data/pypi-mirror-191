@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tresbackup/__init__.py
+tresbackup/__main__.py
+tresbackup/backup.py
+tresbackup.egg-info/PKG-INFO
+tresbackup.egg-info/SOURCES.txt
+tresbackup.egg-info/dependency_links.txt
+tresbackup.egg-info/entry_points.txt
+tresbackup.egg-info/requires.txt
+tresbackup.egg-info/top_level.txt

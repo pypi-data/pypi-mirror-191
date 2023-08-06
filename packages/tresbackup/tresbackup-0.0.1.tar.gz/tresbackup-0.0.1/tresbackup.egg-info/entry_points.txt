@@ -1,0 +1,2 @@
+[console_scripts]
+tresbackup = tresbackup.__main__:main
