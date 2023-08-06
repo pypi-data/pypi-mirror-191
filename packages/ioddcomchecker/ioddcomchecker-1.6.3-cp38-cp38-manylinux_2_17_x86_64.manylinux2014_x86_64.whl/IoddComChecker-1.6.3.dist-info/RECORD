@@ -1,0 +1,9 @@
+siogeen/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+siogeen/tools/__init__.py,sha256=CCpWoKGerJjGcTDaC48F6skWG4rDZuBzIKxBIZqL74w,462
+siogeen/tools/IoddComChecker.cpython-38-x86_64-linux-gnu.so,sha256=Y5155HIeyjcgRO8j-1RwyUlS_gEYrLsGUenLTbJ1Ick,186208
+siogeen/tools/cli/IoddComChecker.py,sha256=055FuCrKYio4xKOlE-uncCtc95w7P_7jqZbGEmgSncY,1188
+IoddComChecker-1.6.3.dist-info/RECORD,,
+IoddComChecker-1.6.3.dist-info/LICENSE.txt,sha256=mjUk_O3YPxAZeoS61zCys2pyShGDxR4ghwb55ItZ0lg,732
+IoddComChecker-1.6.3.dist-info/WHEEL,sha256=82Wkr2Lag2dORBGM375Z9_JVKxb2Fhvp7wOacHsh7mU,148
+IoddComChecker-1.6.3.dist-info/METADATA,sha256=YM7OcE_Gi8evSsSmsNAVr__lAu_T3YEwbJRkzczrxR8,5510
+IoddComChecker-1.6.3.dist-info/top_level.txt,sha256=vIFg0bLkihbkHyuCZUdHmA-50LP8LvTwDknGWir0T5o,8
