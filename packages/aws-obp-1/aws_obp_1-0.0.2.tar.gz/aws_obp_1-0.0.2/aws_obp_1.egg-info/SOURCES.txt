@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+aws_obp_1/__init__.py
+aws_obp_1/auto_scaling.py
+aws_obp_1/ec2.py
+aws_obp_1/lambda_fn.py
+aws_obp_1/lb.py
+aws_obp_1/rds.py
+aws_obp_1/s3.py
+aws_obp_1/utils.py
+aws_obp_1.egg-info/PKG-INFO
+aws_obp_1.egg-info/SOURCES.txt
+aws_obp_1.egg-info/dependency_links.txt
+aws_obp_1.egg-info/top_level.txt
