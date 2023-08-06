@@ -1,0 +1,16 @@
+stemplate/__init__.py,sha256=A-I3dujwEpiOwAiNntb-FllEqKKmZyP4TviJyoD9xU8,111
+stemplate/__main__.py,sha256=xDGkd821_y4C8NrhDPgrUtSiEiiDbxU0oUwUn-li9h0,1375
+stemplate/_version.py,sha256=pD_TqqDQ0UGt1ulyGFfFTlhhcmh-juWHDERpukVH2wA,163
+stemplate/core/__init__.py,sha256=-JIF7sSrHlr4Ed4WhTuqmzv1kZDAw6nWtAWzyZ8HuD4,97
+stemplate/core/configuration.py,sha256=8Xu2n4Hl8Jh14TzjbUBqD9tPV1hjIRN00GNjqzFc4I8,509
+stemplate/core/default.conf,sha256=cYZe5zykCmPJnJlQpFzqGzbKNYnRkQYy5YOZFtGyFeo,135
+stemplate/core/feature.py,sha256=1clk08jCHedaMDjgzGjf5gDIo1Wn62q2LvYcDeorfCc,523
+stemplate/main/__init__.py,sha256=TRT8weEznh_lGK1qsQvu8lc8r0EP7XZ5NhQe1gOc8EM,98
+stemplate/main/command1.py,sha256=OzeulhMAkQLJmwbLGAnuIUfpRxOFWeWQZ84JH2hvVJk,907
+stemplate/main/command2.py,sha256=bSwUquzUNri_zO09XcUERvFOx_Tt3gRVqzAoanPixEc,459
+stemplate-1.0.0rc0.dist-info/LICENSE.txt,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+stemplate-1.0.0rc0.dist-info/METADATA,sha256=rkNxHDTVH7hhMCVwP0bow5nFl5AWLxgPcikRW-Ne7I4,4786
+stemplate-1.0.0rc0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stemplate-1.0.0rc0.dist-info/entry_points.txt,sha256=0Dwb7mGgyV3gh5JtUEnzfahjKJbtLwLo-51PHuWu11U,54
+stemplate-1.0.0rc0.dist-info/top_level.txt,sha256=qMd7dId9r6ofrdGTh0NEB4MCIVa6Gdjj3rSRTj0BDXc,10
+stemplate-1.0.0rc0.dist-info/RECORD,,
