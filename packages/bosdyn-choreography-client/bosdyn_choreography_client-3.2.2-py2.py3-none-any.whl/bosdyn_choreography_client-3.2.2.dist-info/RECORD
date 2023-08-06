@@ -1,0 +1,12 @@
+bosdyn/__init__.py,sha256=b1r4kW1ychwGnIX1yJJwTQGUy65mcdLWgOVKLE2Fgq0,330
+bosdyn/choreography/__init__.py,sha256=b1r4kW1ychwGnIX1yJJwTQGUy65mcdLWgOVKLE2Fgq0,330
+bosdyn/choreography/client/__init__.py,sha256=b1r4kW1ychwGnIX1yJJwTQGUy65mcdLWgOVKLE2Fgq0,330
+bosdyn/choreography/client/animation_file_conversion_helpers.py,sha256=bXoyYMWDfhVrvoaUaDgRr7ghfkDpI3uKqUgAtmRoWeE,18020
+bosdyn/choreography/client/animation_file_to_proto.py,sha256=keV7M18cai8AgZE_OsGA6zlPp0lKbMW24HD3Bt1xqwI,25360
+bosdyn/choreography/client/choreography.py,sha256=YhDfvOA_dBPF2UEC_8ZPYBLcoJ-XCtVyk_ZO-CRP2a8,36272
+bosdyn_choreography_client-3.2.2.dist-info/DESCRIPTION.rst,sha256=Tt4FL9dMI90thotS61wdMcFhgqQT0UEPEONY54JltFI,719
+bosdyn_choreography_client-3.2.2.dist-info/METADATA,sha256=yU1L2z2k9C-Y7heIY7efmnNGZ1Z2Nc4i01jhEqKMOBE,1482
+bosdyn_choreography_client-3.2.2.dist-info/RECORD,,
+bosdyn_choreography_client-3.2.2.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+bosdyn_choreography_client-3.2.2.dist-info/metadata.json,sha256=tYODpAiJLTOA84wtTYTxvNCALrhbhbDfsqn2nyXS8mQ,861
+bosdyn_choreography_client-3.2.2.dist-info/top_level.txt,sha256=an2OWgx1ej2jFjmBjPWNQ68ZglvUfKhmXWW-WhTtDmA,7
