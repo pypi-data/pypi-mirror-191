@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/bpyth/__init__.py
+src/bpyth/__main__.py
+src/bpyth/bpyth_files.py
+src/bpyth/bpyth_human.py
+src/bpyth/bpyth_iterable.py
+src/bpyth/bpyth_object_analysis.py
+src/bpyth/bpyth_string.py
+src/bpyth/bpyth_tools.py
+src/bpyth.egg-info/PKG-INFO
+src/bpyth.egg-info/SOURCES.txt
+src/bpyth.egg-info/dependency_links.txt
+src/bpyth.egg-info/entry_points.txt
+src/bpyth.egg-info/top_level.txt
