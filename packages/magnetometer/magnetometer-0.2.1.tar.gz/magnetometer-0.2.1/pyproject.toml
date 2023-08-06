@@ -1,0 +1,82 @@
+[build-system]
+requires = ["poetry>=1.2.0", "poetry-dynamic-versioning-plugin"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.poetry]
+name = "magnetometer"
+version = "0.2.1"  # Do not change, let poetry-dynamic-versioning handle it.
+homepage = "https://github.com/BrianPugh/magnetometer"
+repository = "https://github.com/BrianPugh/magnetometer"
+license = "Apache-2.0"
+description = ""
+authors = ["Brian Pugh"]
+readme = "README.md"
+packages = [{include = "magnetometer"}]
+
+[tool.poetry.scripts]
+magnetometer = "magnetometer.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+belay = "^0.17.0"
+textual = "^0.1.18"
+typer = {extras = ["all"], version = "^0.6"}
+autoregistry = "^0.8"
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "^5.1"}
+flake8 = "^4.0.1"
+ipdb = "^0.13.9"
+poetry-dynamic-versioning = "^0.16.0"
+pre_commit = "^2.16.0"
+pytest = "^7.2.0"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "tests/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    "pragma: no cover",
+
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self.debug:",
+    "if debug:",
+    "if DEBUG:",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if False:",
+    "if __name__ == .__main__.:",
+]
+
+[tool.bandit]
+exclude_dirs = [
+    "tests",
+]
+
+[tool.belay]
+dependencies_path = "magnetometer/dependencies"
+
+[tool.belay.dependencies]
+adafruit_bus_device = "https://github.com/adafruit/Adafruit_CircuitPython_BusDevice/tree/main/adafruit_bus_device"
+adafruit_lis2mdl = "https://github.com/adafruit/Adafruit_CircuitPython_LIS2MDL/blob/main/adafruit_lis2mdl.py"
+adafruit_lis3mdl = "https://github.com/adafruit/Adafruit_CircuitPython_LIS3MDL/blob/main/adafruit_lis3mdl.py"
+adafruit_mmc56x3 = "https://github.com/adafruit/Adafruit_CircuitPython_MMC56x3/blob/main/adafruit_mmc56x3.py"
+adafruit_register = "https://github.com/adafruit/Adafruit_CircuitPython_Register/tree/main/adafruit_register"
+adafruit_tlv493d = "https://github.com/adafruit/Adafruit_CircuitPython_TLV493D/blob/main/adafruit_tlv493d.py"
