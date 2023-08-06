@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: nemo2riva
+Version: 2.9.0
+Summary: NeMo Model => Riva Deployment Converter
+Home-page: UNKNOWN
+Author: NVIDIA Riva
+Author-email: nvidia-riva@nvidia.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7.0
+Requires-Dist: nemo-toolkit (>=1.13)
+Requires-Dist: nvidia-eff (<=0.6.2,>=0.5.3)
+Requires-Dist: onnx-graphsurgeon
+Requires-Dist: onnxruntime-gpu (>=1.13.1)
+
+UNKNOWN
+
+
