@@ -1,0 +1,7 @@
+/.DS_Store
+/env
+/.vscode
+/dist
+/build
+/src/pypeek/bin
+__pycache__
