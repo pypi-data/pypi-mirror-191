@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "schemaorg_types"
+version = "0.4.0"
+description = "Pydantic classes for Schema.org."
+authors = [
+    "Adam Ulring <adam.ulring1@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+
+#homepage = "https://github.com/lexiq-legal/pydantic_schemaorg"
+#repository = "https://github.com/lexiq-legal/pydantic_schemaorg"
+#documentation = "https://github.com/lexiq-legal/pydantic_schemaorg"
+
+keywords = ["schema.org", "pydantic", "schemaorg"]
+
+[tool.poetry.dependencies]
+pydantic = "^1.8.2"
+
+[tool.poetry.dev-dependencies]
+black = { version = "^21.11b1", python = "^3.8" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

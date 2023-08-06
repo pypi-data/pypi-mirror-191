@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: schemaorg-types
+Version: 0.4.0
+Summary: Pydantic classes for Schema.org.
+License: MIT
+Keywords: schema.org,pydantic,schemaorg
+Author: Adam Ulring
+Author-email: adam.ulring1@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pydantic (>=1.8.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# schemaorg_types
+ [![](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/) ![t](https://img.shields.io/badge/status-stable-green.svg) 
+
+An implementation of [Schema.org](https://schema.org) types in [pydantic](https://pydantic-docs.helpmanual.io/)! <br> <br>
+
+## TODO 
+I'll update this soon
+
+- docs build
+- release pipeline
+- commit hooks
+- tox, black, pyest, coverage, isort configs
+- testing against schema.org
