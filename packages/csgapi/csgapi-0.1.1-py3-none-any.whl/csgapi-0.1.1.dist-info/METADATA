@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: csgapi
+Version: 0.1.1
+Summary: API for interacting with the Computer Systems Genome database.
+Home-page: https://csgenome.org/
+Author: Ani Ramadoss
+Author-email: aniramadoss2002@vt.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: requests
+
+## Incomplete README
+## Write this up later
+
