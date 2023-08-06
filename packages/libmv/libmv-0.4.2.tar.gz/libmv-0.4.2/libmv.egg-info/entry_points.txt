@@ -1,0 +1,2 @@
+[console_scripts]
+libmv = libmv.__main__:cli
