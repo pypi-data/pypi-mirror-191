@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/lightweight_versioned_gitlab_pages/__init__.py
+src/lightweight_versioned_gitlab_pages/generate.py
+src/lightweight_versioned_gitlab_pages/version.py
+src/lightweight_versioned_gitlab_pages.egg-info/PKG-INFO
+src/lightweight_versioned_gitlab_pages.egg-info/SOURCES.txt
+src/lightweight_versioned_gitlab_pages.egg-info/dependency_links.txt
+src/lightweight_versioned_gitlab_pages.egg-info/entry_points.txt
+src/lightweight_versioned_gitlab_pages.egg-info/requires.txt
+src/lightweight_versioned_gitlab_pages.egg-info/top_level.txt
+src/lightweight_versioned_gitlab_pages/templates/index.html
+tests/test_entry_points.py
+tests/test_generate.py
