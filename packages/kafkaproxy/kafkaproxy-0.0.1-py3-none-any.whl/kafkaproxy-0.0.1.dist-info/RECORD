@@ -1,0 +1,10 @@
+kafkaproxy/__init__.py,sha256=4ISZI3TamCjio9ja_kJu5_IHzwlzeBfVHHU72jtPvrE,1088
+kafkaproxy/consumer.py,sha256=B7K5QxASSGBM-ct_bl9K9YDhOsvka-nGFVJ5LgdKJvo,8640
+kafkaproxy/models.py,sha256=tKKfR3Q42_THGqK66ImBd6u5Oj09sNJkv7DnKVuLgJE,1144
+kafkaproxy/producer.py,sha256=ucymTzmOPJHKY9yaOHI9jb5Uf0PCcBHs2j-I4VIR0Yc,8607
+kafkaproxy/protocols.py,sha256=YBKaDM1X_Jc4A8NqtzY0-Sk4nI39F5I_AVWNNxwCihA,4423
+kafkaproxy-0.0.1.dist-info/LICENSE,sha256=fxSrT7o82jH-c0Fe7EkJ6-W5-jcUJ0Qt6exAVhe1Z0E,1069
+kafkaproxy-0.0.1.dist-info/METADATA,sha256=JfiAq9-hXjnbQnYKwzhbt_zEJZgajz5e3gAEYDi4PGg,5777
+kafkaproxy-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+kafkaproxy-0.0.1.dist-info/top_level.txt,sha256=quekXIUXk7cetEkXsltyUwr2A6DzTbEtf5ixRg_D0wA,11
+kafkaproxy-0.0.1.dist-info/RECORD,,
