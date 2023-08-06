@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+tqdm
+typeguard
+typing
+matplotlib
+scikit-image
+umap-learn
+dill
+pynwb
