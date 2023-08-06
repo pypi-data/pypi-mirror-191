@@ -1,0 +1,3 @@
+[console_scripts]
+harmony-gui = harmony_gui.gui:main
+

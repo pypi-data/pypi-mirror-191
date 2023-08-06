@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: harmony-gui
+Version: 1.0.4
+Summary: Harmony Programming Language GUI
+Home-page: https://harmonylang.dev
+Author: Renyu (Robin) Li
+Author-email: rl626@cornell.edu
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.7, <3.10
+Requires-Dist: Pillow
+Requires-Dist: PyQt5
+Requires-Dist: numpy
+Requires-Dist: harmony
+
+UNKNOWN
+
+
