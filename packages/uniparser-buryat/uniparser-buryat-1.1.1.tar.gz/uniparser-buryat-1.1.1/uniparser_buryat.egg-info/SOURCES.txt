@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+uniparser_buryat/__init__.py
+uniparser_buryat.egg-info/PKG-INFO
+uniparser_buryat.egg-info/SOURCES.txt
+uniparser_buryat.egg-info/dependency_links.txt
+uniparser_buryat.egg-info/requires.txt
+uniparser_buryat.egg-info/top_level.txt
+uniparser_buryat/data_nodiacritics/__init__.py
+uniparser_buryat/data_strict/__init__.py
