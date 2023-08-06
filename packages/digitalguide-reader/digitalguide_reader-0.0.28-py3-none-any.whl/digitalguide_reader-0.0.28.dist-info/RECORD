@@ -1,0 +1,13 @@
+digitalguide_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digitalguide_reader/gsheet2actions.py,sha256=pT3M6lleSZTYjj8318xZb1oB2rfFPtj6ESSqkiYoSDo,3521
+digitalguide_reader/standardinteraktion/Action.py,sha256=0mdP-9_KwGWTBCDqIPqp6Vt3dPUOc5c4C2-dnKDm0sE,12390
+digitalguide_reader/standardinteraktion/Interaktion.py,sha256=mLIKzrO3kmdaQzj-YQ30nArQ4xzcZg2Qsv_1Qc4JRkU,19068
+digitalguide_reader/standardinteraktion/Route.py,sha256=ZY03BwptaYzLVYyOQxlaLBh9ayUZHtWdJbFCLAylHJQ,1823
+digitalguide_reader/standardinteraktion/Trigger.py,sha256=rJJHsFEZdUTok2fyZBZEkOGaAsEQESne5Lp7kG5IEUo,2261
+digitalguide_reader/standardinteraktion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digitalguide_reader/standardinteraktion/wegInteraktion.py,sha256=5rf7plxqYGy9yWK2eMGZTFu7vNI9j7FO8oLuuL3D8sI,3582
+digitalguide_reader-0.0.28.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+digitalguide_reader-0.0.28.dist-info/METADATA,sha256=yvZTlUk0FqeoU1MDn36mrJvkg9DwlRbiMzLVKTwhB68,535
+digitalguide_reader-0.0.28.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+digitalguide_reader-0.0.28.dist-info/top_level.txt,sha256=yZRQqHDPcDRjijz3S9a1tSZRRw3Iy9JZbixumCP0YgE,20
+digitalguide_reader-0.0.28.dist-info/RECORD,,
