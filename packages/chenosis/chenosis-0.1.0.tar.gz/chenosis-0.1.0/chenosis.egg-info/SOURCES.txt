@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+chenosis/__init__.py
+chenosis/client.py
+chenosis/exceptions.py
+chenosis.egg-info/PKG-INFO
+chenosis.egg-info/SOURCES.txt
+chenosis.egg-info/dependency_links.txt
+chenosis.egg-info/not-zip-safe
+chenosis.egg-info/requires.txt
+chenosis.egg-info/top_level.txt
+tests/test_client.py
