@@ -1,0 +1,8 @@
+README.md
+bandas.py
+pyproject.toml
+bandas.egg-info/PKG-INFO
+bandas.egg-info/SOURCES.txt
+bandas.egg-info/dependency_links.txt
+bandas.egg-info/requires.txt
+bandas.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+[project]
+name = "bandas"
+version = "0.1"
+authors = [
+  { name="Marcio F. Santos", email="marciofs600@gmail.com" },
+]
+description = "Códido para extrair estrutura de bandas a partir de um cálculo nscf, do pacote Quantum-Espresso v>6.4."
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+  "numpy>=1.20.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
