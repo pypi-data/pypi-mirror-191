@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fed3live
+Version: 0.0.2
+Summary: Package to analyze fed3 files.
+Author-email: Alex Legaria <leg.alex96@gmail.com>
+Project-URL: Home, https://github.com/AlexLM96/ephys_analysis
+Keywords: neuroscience,behavior,research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: statsmodels
+
