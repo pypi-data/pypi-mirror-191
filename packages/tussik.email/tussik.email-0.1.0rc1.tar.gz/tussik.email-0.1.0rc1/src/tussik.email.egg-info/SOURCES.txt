@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+examples/basic.py
+src/tussik.email.egg-info/PKG-INFO
+src/tussik.email.egg-info/SOURCES.txt
+src/tussik.email.egg-info/dependency_links.txt
+src/tussik.email.egg-info/requires.txt
+src/tussik.email.egg-info/top_level.txt
+src/tussik.email.egg-info/zip-safe
+src/tussik/email/Emailer.py
+src/tussik/email/__init__.py
