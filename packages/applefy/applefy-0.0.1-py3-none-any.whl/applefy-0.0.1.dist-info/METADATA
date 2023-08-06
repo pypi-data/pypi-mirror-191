@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: applefy
+Version: 0.0.1
+Summary: applefy: A library to compute detection limits for high contrast imaging of exoplanets
+Home-page: https://github.com/markusbonse/applefy.git
+Author: Markus Bonse, Timothy Gebhard
+Author-email: mbonse@phys.ethz.ch
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: photutils
+Requires-Dist: numba
+Requires-Dist: scikit-learn
+Requires-Dist: scipy (>=1.7)
+Requires-Dist: tqdm
+Requires-Dist: h5py
+Requires-Dist: ipywidgets
+Provides-Extra: dev
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: sphinx (>=2.1) ; extra == 'dev'
+Requires-Dist: myst-parser ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-gallery (<=0.10) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: IPython ; extra == 'dev'
+Requires-Dist: jupyter-contrib-nbextensions ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Provides-Extra: fast_sort
+Requires-Dist: parallel-sort (==0.0.3) ; extra == 'fast_sort'
+Provides-Extra: plotting
+Requires-Dist: seaborn ; extra == 'plotting'
+Requires-Dist: matplotlib ; extra == 'plotting'
+Requires-Dist: bokeh (>=3.0.3) ; extra == 'plotting'
+
+# Welcome to applefy
+
+This is the documentation of ``applefy``, a Python package for calculating 
+detection limits for exoplanet high contrast imaging (HCI) datasets. 
+
+Please cite: ...
