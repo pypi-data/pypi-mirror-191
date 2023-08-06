@@ -1,0 +1,29 @@
+{
+	"7e701bf2-91ef-4729-91f7-cb039e49b085": {
+		"gender": [
+			"male",
+			"female"
+		],
+		"style": "cloth",
+		"supported_position": [
+			"nose",
+			"mouth",
+			"chin"
+		]
+	},
+	"e5e4d737-a9dd-4a1c-bf8c-9f4ad0e5d977": {
+		"brand": "general",
+		"gender": [
+			"male",
+			"female"
+		],
+		"kind": "mask",
+		"model": "general",
+		"style": "cloth_filter",
+		"supported_position": [
+			"nose",
+			"mouth",
+			"chin"
+		]
+	}
+}
