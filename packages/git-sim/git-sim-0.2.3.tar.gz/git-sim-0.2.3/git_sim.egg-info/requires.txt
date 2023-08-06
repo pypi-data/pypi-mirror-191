@@ -1,0 +1,5 @@
+gitpython
+manim
+opencv-python-headless
+typer
+pydantic
