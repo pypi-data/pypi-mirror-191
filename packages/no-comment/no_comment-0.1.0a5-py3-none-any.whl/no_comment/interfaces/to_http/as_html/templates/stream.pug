@@ -1,0 +1,58 @@
+//- No Comment --- Comment any resource on the web!
+//- Copyright © 2023 Bioneland
+//-
+//- This program is free software: you can redistribute it and/or modify
+//- it under the terms of the GNU Affero General Public License as
+//- published by the Free Software Foundation, either version 3 of the
+//- License, or (at your option) any later version.
+//-
+//- This program is distributed in the hope that it will be useful,
+//- but WITHOUT ANY WARRANTY; without even the implied warranty of
+//- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//- GNU Affero General Public License for more details.
+//-
+//- You should have received a copy of the GNU Affero General Public License
+//- along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+extends layout
+
+block content
+  section.section
+    .container
+      h1.title.is-1 A stream
+
+  section.section
+    .container
+      figure.image.is-32x32.is-pulled-right
+        a(href="#{url_for('comments.index', stream_id=stream_id, format='atom')}")
+          img(width="32" src="#{url_for('static', filename='img/feed.svg')}" alt="Feed")
+
+      h2.title.is-2 Add a comment on…
+      form(method="POST")
+        .field
+          label.label(for="url") URL
+          .control
+            input.input(
+              type="url"
+              id="url"
+              name="url"
+              value="#{url}"
+              placeholder="The URL of the resource to comment"
+            )
+        .field
+          label.label(for="text") Text
+          .control
+            textarea.textarea(type="text" id="text" name="text" value="")
+        .field.is-grouped
+          .control
+            button.button.is-link Comment
+
+  section.section
+    .container
+      h2.title.is-2 Comments
+      .comments
+        each comment in comments
+          .comment
+            pre.text= comment.text
+            p
+              a.url(href="#{comment.url}")= comment.url

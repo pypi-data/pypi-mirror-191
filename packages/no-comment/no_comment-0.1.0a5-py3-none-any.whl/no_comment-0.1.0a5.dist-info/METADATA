@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: no-comment
+Version: 0.1.0a5
+Summary: Comment any resource on the web!
+License: AGPL-3.0-or-later
+Author: Tanguy Le Carrour
+Author-email: tanguy@bioneland.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=2.2.2,<3.0.0)
+Requires-Dist: bl3d (>=0.3.0,<0.4.0)
+Requires-Dist: pypugjs (>=5.9.12,<6.0.0)
+Description-Content-Type: text/markdown
+
+# No Comment
+
+Comment any resource on the web!
+
