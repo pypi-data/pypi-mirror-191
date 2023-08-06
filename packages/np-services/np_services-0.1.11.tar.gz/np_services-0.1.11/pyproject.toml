@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "np-services"
+version = "0.1.11"
+description = "Tools for interfacing with devices and services used in Mindscope Neuropixels experiments at the Allen Institute."
+authors = ["bjhardcastle <ben.hardcastle@alleninstitute.org>"]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+packages = [{include = "np_services", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2"
+np_session = ">=0.2"
+backoff = "*"
+pyzmq = "*"
+fabric = "^2.7"
+pydantic = "^1.10"
+
+[tool.poetry.group.dev.dependencies]
+pip-tools = "*"
+isort = "*"
+mypy = "*"
+black = "*"
+pytest = "*"
+coverage = {extras = ["toml"], version = "^7.1.0"}
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--doctest-modules",
+    # "--pdb",
+    # "--pdbcls=IPython.terminal.debugger:TerminalPdb",
+]
+
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE",
+    "IGNORE_EXCEPTION_DETAIL",
+    "ELLIPSIS",
+]
+
+testpaths = [
+    "tests",
+    # "src", # lots of functions called `test`
+]
+
+# [tool.coverage.paths]
+# source = ["src"]
+
+# [tool.coverage.run]
+# branch = true
+# source = ["np_services"]
+
+# [tool.coverage.report]
+# show_missing = true
