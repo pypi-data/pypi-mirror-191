@@ -1,0 +1,9 @@
+lingua/__init__.py,sha256=jy_Gt_hNcZxrQrD3lRxJcwMRX8DO6k_VQCkf8Fbx3Bg,169
+lingua/hooks.py,sha256=60Lq6B3zwsRWJCP-IjY8X977auIoFrcD-IyEor5wuOg,512
+lingua/lingua_sdk.py,sha256=HXCljnTpi6O8_U4HC71uPg8PoJSTcf_iHxkJX5q00HM,7776
+lingua/utils.py,sha256=9mlJWUk-bDsJwxcRreO_kZTgHbLIA6vRl4ije7ZdyXo,1586
+pylingua-0.2.0.dist-info/LICENSE,sha256=kvvIEd7hQhspaBMvRwzKn5xaIhcqAoNVgFY-qR-JMj8,1073
+pylingua-0.2.0.dist-info/METADATA,sha256=dzftnd8jY18BUUAgJHfDhIH2IGdA0CT6VUC9oqr0gac,4994
+pylingua-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylingua-0.2.0.dist-info/top_level.txt,sha256=nq021X-aLl5Zt509kATCLRDEK6rdXRrUtvgC5ZIqQro,7
+pylingua-0.2.0.dist-info/RECORD,,
