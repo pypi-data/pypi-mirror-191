@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helloworld/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+helloworld/greeter.py,sha256=1dbQlSQF8FN6ZaTUMKWfv15a9I04uRSBt_xN9AS_9K4,224
+jeremydimond.python_hello_world-0.0.2.dist-info/LICENSE,sha256=Cd7XpHKClQfuNuSAdzv8f1b-coXDY6LX8_oohDYeS1U,1068
+jeremydimond.python_hello_world-0.0.2.dist-info/METADATA,sha256=NI_Qt1_vvF_Vk22arsM-mfUJy_y1mjFinRVT0nhFj7E,1999
+jeremydimond.python_hello_world-0.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jeremydimond.python_hello_world-0.0.2.dist-info/entry_points.txt,sha256=z-zI-X6lON5F0cVl1q51jZKoUbvQ2zEHb_LfGtLMK9g,58
+jeremydimond.python_hello_world-0.0.2.dist-info/top_level.txt,sha256=xEkFTtarL6zrUwyHy2ijF4afW-dorkXbrb1jbKcTy6E,20
+jeremydimond.python_hello_world-0.0.2.dist-info/RECORD,,
