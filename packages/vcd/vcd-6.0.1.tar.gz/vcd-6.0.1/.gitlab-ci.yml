@@ -1,0 +1,363 @@
+include:
+  - local: '.ci/pre-commit-autofix.yml'
+  - template: Code-Quality.gitlab-ci.yml
+
+stages:
+  - .pre
+  - .docker
+  - test
+  - build
+  - deploy
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+# Template for parallel python execution
+.dind:
+  tags:
+    - gitlab-org-docker
+  image: docker:20.10.12
+  services:
+    - name: 'docker:20.10.12-dind'
+      command: ['--tls=false', '--host=tcp://0.0.0.0:2375']
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_TLS_CERTDIR: ""
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+  before_script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin
+
+.parallel_python:
+  parallel:
+    matrix:
+    - PYTHON_VERSION: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+
+# Scheduled Job to Build Required Docker images
+build_test_dockers:
+  stage: .docker
+  extends: [.dind, .parallel_python]
+  needs: []
+  script:
+    - echo "Building image with Python version $PYTHON_VERSION"
+    - docker build --build-arg PYTHON_VERSION=$PYTHON_VERSION -f .ci/docker/dockerfile -t $CI_REGISTRY_IMAGE/vcd_ci:py_$PYTHON_VERSION .
+    - docker push $CI_REGISTRY_IMAGE/vcd_ci:py_$PYTHON_VERSION
+
+build_pre_commit_docker:
+  stage: .docker
+  extends: .dind
+  needs: []
+  script:
+    - echo "Building image with Python version $PYTHON_VERSION"
+    - docker build -f .ci/docker/dockerfile_precommit -t $CI_REGISTRY_IMAGE/vcd_pre_commit .
+    - docker push $CI_REGISTRY_IMAGE/vcd_pre_commit
+
+# Style checks using pre-commit tool
+pre-commit:
+  extends: .pre-commit
+  tags:
+    - saas-linux-medium-amd64
+  image: $CI_REGISTRY_IMAGE/vcd_pre_commit
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    - key: pre-commit-cache
+      paths:
+        - ${PRE_COMMIT_HOME}
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - !reference [.pre-commit, rules]
+  interruptible: true
+
+# Check code quality using GitLab builtin tools
+code_quality:
+  tags:
+    - gitlab-org-docker
+  variables:
+    SOURCE_CODE: "vcd/"
+  stage: test
+  rules:
+    - if: $CODE_QUALITY_DISABLED
+      when: never
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS && $CI_PIPELINE_SOURCE == "push"
+      when: never
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" # Run code quality job in merge request pipelines
+    - if: $CI_COMMIT_BRANCH
+    - if: $CI_COMMIT_TAG                               # Run code quality job in pipelines for tags
+  interruptible: true
+
+# Default Job Configuration
+.default:
+  image: $CI_REGISTRY_IMAGE/vcd_ci:py_3.9
+  tags:
+    - saas-linux-medium-amd64
+  # Pip's cache doesn't store the python packages
+  # https://pip.pypa.io/en/stable/topics/caching/
+  #
+  # If you want to also cache the installed packages, you have to install
+  # them in a virtualenv and cache it as well.
+  cache:
+    - key:
+      paths:
+        - .cache/pip
+        - venv/
+  before_script:
+    - virtualenv venv
+    - source venv/bin/activate
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - !reference [workflow, rules]
+
+# Run tests in different versions of Python
+tests:
+  tags:
+    - saas-linux-large-amd64
+  stage: test
+  extends: [.default, .parallel_python]
+  image: registry.gitlab.com/vicomtech/v4/libraries/vcd/vcd-python/vcd_ci:py_$PYTHON_VERSION
+  variables:
+    PYTHONPATH: "$CI_PROJECT_DIR"
+  script:
+    - pip install tox
+    - tox -e py${PYTHON_VERSION//./} -- --cov-report=xml --junitxml=tests_report.xml
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  cache:
+    - key:
+      paths:
+        - .cache/pip
+        - venv/
+    - key: tests-cache-$PYTHON_VERSION
+      paths:
+        - .tox/
+        - .coverage
+  artifacts:
+    when: always
+    paths:
+      - tests_report.xml
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+      junit: tests_report.xml
+  needs:
+    - job: pre-commit
+      artifacts: false
+      optional: true
+  interruptible: true
+
+# Build Jobs
+build_pkg:
+  stage: build
+  extends: .default
+  script:
+    - pip install build setuptools_scm
+    - git status
+    - python -m build -w -s
+    - pip install dist/*.whl
+    - "cp dist/*.whl $CI_PROJECT_DIR 2>/dev/null || :"
+    - "cp dist/*.tar.gz $CI_PROJECT_DIR 2>/dev/null || :"
+    - |
+      if ! [ -z "${CI_COMMIT_TAG}" ]; then
+        PKG_VERSION=$(python -m setuptools_scm)
+        TAG_PARSED=$(python -c "import setuptools_scm; print(setuptools_scm.version.tag_to_version('$CI_COMMIT_TAG').public)")
+        if [[ "${PKG_VERSION//[-_]/.}" != "${TAG_PARSED//[-_]/.}" ]]; then
+        echo "Error: Package Version ($PKG_VERSION) and Git Tag Version ($CI_COMMIT_TAG)"
+          exit 1
+        else
+          echo "Success: Compatible Package Version ($PKG_VERSION) and Git Tag Version ($CI_COMMIT_TAG)"
+        fi
+        # Get Change Notes from changelog for this specific version if exist
+        VERSION_RELEASE_NOTES=$(sed -n '/Version \['"$PKG_VERSION"'\]/,/Version/{/Version \['"$PKG_VERSION"'\]/b;/Version/b;p}' CHANGELOG.md | sed -e :a -e '/./,$!d;/^\n*$/{$d;N;};/\n$/ba')
+        echo VERSION_RELEASE_NOTES=$VERSION_RELEASE_NOTES >> pkg_env.env
+        echo "--- Version ${PKG_VERSION} Release Notes"
+        echo "--- Release Notes: ${VERSION_RELEASE_NOTES}"
+      fi
+  artifacts:
+    name: 'vcd-pkg'
+    paths:
+      - "*.whl"
+      - "*.tar.gz"
+    reports:
+      dotenv: pkg_env.env
+  needs:
+    - job: pre-commit
+      artifacts: false
+      optional: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+  interruptible: true
+
+# Deploy Jobs
+.deploy:
+  extends: .default
+  rules:
+    - if: $CI_COMMIT_TAG
+  before_script:
+    - virtualenv venv
+    - source venv/bin/activate
+  needs:
+    - job: tests
+      artifacts: false
+    - job: test_pages
+      artifacts: false
+    - job: build_pkg
+      artifacts: true
+
+generate_docs:
+  stage: deploy
+  extends: .deploy
+  script:
+    - pip install pdoc3
+    - pdoc --html --template-dir ./docs/pdoc_templates --output-dir ./docs/pdoc ./vcd --force
+    # Add version string to Documentation
+    - sed -i 's/<h1>Index<\/h1>/<version\ id=\"version\"><p>VCD\ '"$CI_COMMIT_TAG"'<\/p><\/version><h1>Index<\/h1>/g' ./docs/pdoc/vcd/*
+    - mkdir -p public
+    # Download previously stored documentation
+    - aws s3 sync s3://vcd-documentation/ ./public/
+    # Copy newly generated docs to public folder
+    - mkdir -p public/$CI_COMMIT_TAG
+    - cp ./docs/pdoc/* ./public/$CI_COMMIT_TAG -R
+    # Upload newly generated documentation to AWS store location
+    - aws s3 sync ./public/$CI_COMMIT_TAG s3://vcd-documentation/$CI_COMMIT_TAG
+    # Add redirects file
+    - cp ./docs/_redirects ./public
+    # Generate the latest folder
+    - mkdir -p public/latest
+    - cp ./docs/pdoc/* ./public/latest -R
+    # To generate an index file for different versions
+    - tree -d -H '.' -L 1 --noreport --charset utf-8 -- public| sed -e '/<hr>/,+6d' | sed -e '4,6d' | sed -e 's/Directory Tree/VCD-Python Docs/' > public/index.html
+    # Add documentation images to be available publicly in README
+    - mkdir -p public/resources
+    - cp ./docs/logo/* ./public/resources -R
+  needs:
+    - job: pre-commit
+      artifacts: false
+      optional: true
+  artifacts:
+    paths:
+      - public
+  interruptible: true
+
+pages:
+  stage: deploy
+  script:
+    - echo "Upload documentation to Gitlab Pages"
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_TAG
+  needs:
+    - job: generate_docs
+      artifacts: true
+
+test_pages:
+  stage: deploy
+  tags:
+    - saas-linux-medium-amd64
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - echo $CI_PAGES_URL/$CI_COMMIT_TAG/vcd
+    - curl -If $CI_PAGES_URL/$CI_COMMIT_TAG/vcd
+  needs:
+    - job: pages
+      artifacts: false
+
+deploy_pkg_in_gitlab:
+  stage: deploy
+  extends: .deploy
+  variables:
+    TWINE_PASSWORD: ${CI_JOB_TOKEN}
+    TWINE_USERNAME: gitlab-ci-token
+  script:
+    - pip install twine
+    - echo "Deploying package in GitLab Internal PyPi package registry"
+    - python -m twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi *.whl *.tar.gz
+    - WHEELNAME=$(basename *.whl)
+    - TARNAME=$(basename *.tar.gz)
+    - echo WHEELNAME=$WHEELNAME >> pkg_names.env
+    - echo TARNAME=$TARNAME >> pkg_names.env
+    - echo WHEELSHA256=$(sh -c 'sha256sum < "$1" | cut -d" " -f1' -- $WHEELNAME) >> pkg_names.env
+    - echo TARSHA256=$(sh -c 'sha256sum < "$1" | cut -d" " -f1' -- $TARNAME) >> pkg_names.env
+    - echo VERSION_RELEASE_NOTES=$VERSION_RELEASE_NOTES >> pkg_names.env
+  artifacts:
+    reports:
+      dotenv: pkg_names.env
+
+# deploy_pkg_in_test_pypi:
+#   stage: deploy
+#   extends: .deploy
+#   variables:
+#     TWINE_PASSWORD: ${TEST_PYPI_TOKEN}
+#     TWINE_USERNAME: __token__
+#   script:
+#     - pip install twine
+#     - echo "Deploying package in Test PyPi Repository"
+#     - python -m twine upload --repository testpypi *.whl *.tar.gz
+#   when: manual
+
+deploy_pkg_pypi:
+  stage: deploy
+  extends: .deploy
+  variables:
+    TWINE_PASSWORD: ${PYPI_TOKEN}
+    TWINE_USERNAME: __token__
+  script:
+    - pip install twine
+    - echo "Deploying package in PyPi Repository"
+    - python -m twine upload *.whl *.tar.gz
+  # when: manual
+  # allow_failure: false
+
+create_release:
+  stage: deploy
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  extends: .deploy
+  before_script: []
+  cache: []
+  script:
+    - echo "Automatic Release $CI_COMMIT_TAG"
+    - echo "Commit Branch $CI_COMMIT_BRANCH "
+  release:
+    tag_name: $CI_COMMIT_TAG
+    name: '$CI_COMMIT_TAG'
+    description: '$VERSION_RELEASE_NOTES'
+    assets:
+      links:
+      - name: 'documentation'
+        url: '$CI_PAGES_URL/$CI_COMMIT_TAG/vcd'
+      - name: '$WHEELNAME'
+        url: '${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi/files/$WHEELSHA256/$WHEELNAME#sha256=$WHEELSHA256'
+      - name: '$TARNAME'
+        url: '${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi/files/$TARSHA256/$TARNAME#sha256=$TARSHA256'
+  needs:
+    - job: test_pages
+      artifacts: false
+    - job: deploy_pkg_in_gitlab
+      artifacts: true
+    - job: deploy_pkg_pypi
+      artifacts: false
