@@ -1,0 +1,9 @@
+fortressofsolitude/__init__.py,sha256=Tv31z-8J6Eb7XkUWLH4HHR27vycETcTIWrLHjua91B4,301
+fortressofsolitude/__main__.py,sha256=sZxaOWXi7fCRl1CAaQ2CuLC2Axpy2VueKQeW-jwRXTE,407
+fortressofsolitude/comic.py,sha256=-zCeF2TRE383XNEd6y3HsaZrfZgil2dh9WhUC4qOfGw,314
+fortressofsolitude/comic_release_url_builder.py,sha256=Y3N7R2Ti6lY3JFyzlcCCNvPP00VxNVfWy7k89FYUGDE,1678
+fortressofsolitude/date.py,sha256=W754g7ifNjvQjGaZnDjbxNk3FlvaxEurblZvEiOBK3g,561
+fortressofsolitude/web_scraper.py,sha256=fA2iYZX9fq2eP90I9zVJ0o0q2zw4fwSEIbSDxVqSNXM,865
+fortressofsolitude-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fortressofsolitude-0.1.0.dist-info/METADATA,sha256=opU0hsWJXouL6811kiRy5JDLhmx4Aaa7tQYOUiiwCdg,3086
+fortressofsolitude-0.1.0.dist-info/RECORD,,
