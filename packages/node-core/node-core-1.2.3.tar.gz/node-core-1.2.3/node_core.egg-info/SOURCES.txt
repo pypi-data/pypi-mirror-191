@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+node/__init__.py
+node/core/__init__.py
+node/core/main.py
+node/core/node.py
+node_core.egg-info/PKG-INFO
+node_core.egg-info/SOURCES.txt
+node_core.egg-info/dependency_links.txt
+node_core.egg-info/top_level.txt
