@@ -1,0 +1,9 @@
+setup.py
+hisql/__init__.py
+hisql/himodule.py
+hisql.egg-info/PKG-INFO
+hisql.egg-info/SOURCES.txt
+hisql.egg-info/dependency_links.txt
+hisql.egg-info/not-zip-safe
+hisql.egg-info/requires.txt
+hisql.egg-info/top_level.txt
