@@ -1,0 +1,66 @@
+terraform {
+  required_version = ">= 1.1.2"
+  backend "s3" {
+    bucket  = "%(state_backend_s3_bucket)s"
+    key     = "%(state_backend_s3_key_prefix)s/%(cluster_name)s/task-def/%(service_name)s/terraform.tfstate"
+    region  = "%(state_backend_s3_region)s"
+    encrypt = true
+    acl     = "bucket-owner-full-control"
+  }
+}
+
+provider "aws" {
+  region  = "%(terraform_region)s"
+}
+
+variable "template_version" {
+  default = "%(template_version)s"
+}
+
+variable "cluster_name" {
+  default = "%(cluster_name)s"
+}
+
+# variables -----------------------------------------------
+variable "awslog_region" {
+  default = "%(awslog_region)s"
+}
+
+variable "stages" {
+  default = %(stages)s
+}
+
+variable "service_auto_scaling" {
+  default = %(service_auto_scaling)s
+}
+
+variable "exposed_container" {
+  default = %(load_balancer)s
+}
+
+variable "target_group" {
+  default = {
+    protocol = "%(target_group_protocol)s"
+    healthcheck = %(target_group_healthcheck)s
+  }
+}
+
+variable "loggings" {
+  default = %(loggings)s
+}
+
+variable "loadbalancing_pathes" {
+  default = %(loadbalancing_pathes)s
+}
+
+variable "requires_compatibilities" {
+  default = %(requires_compatibilities)s
+}
+
+variable "service_resources" {
+  default = %(service_resources)s
+}
+
+variable "vpc_name" {
+  default = %(vpc_name)s
+}
