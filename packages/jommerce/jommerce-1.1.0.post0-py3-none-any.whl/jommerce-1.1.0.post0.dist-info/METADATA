@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: jommerce
+Version: 1.1.0.post0
+Summary: django ready apps
+Home-page: https://github.com/githashem/djplus
+License: MIT
+Keywords: djplus
+Author: githashem
+Author-email: PersonalHashem@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: argon2
+Provides-Extra: bcrypt
+Requires-Dist: Django (>=4.0.3,<5.0.0)
+Requires-Dist: argon2-cffi (>=21.3.0,<22.0.0) ; extra == "argon2"
+Requires-Dist: bcrypt (>=3.2.2,<4.0.0) ; extra == "bcrypt"
+Project-URL: Repository, https://github.com/githashem/djplus
+Description-Content-Type: text/markdown
+
+<br /> 
+<div align="center">
+  <a href="https://github.com/githashem/djplus">
+    <img src="https://raw.githubusercontent.com/githashem/djplus/main/logo.svg" alt="Djplus Logo" width="80" height="80">
+  </a>
+<h2 align="center">A package of ready-made apps</h2>
+</div>
+
+![djplus version](https://img.shields.io/pypi/v/djplus?style=flat-square)
+
