@@ -1,0 +1,9 @@
+LICENSE.text
+README.md
+pyproject.toml
+src/Mammal.egg-info/PKG-INFO
+src/Mammal.egg-info/SOURCES.txt
+src/Mammal.egg-info/dependency_links.txt
+src/Mammal.egg-info/top_level.txt
+src/neurone/Debug.py
+src/neurone/__init__.py
