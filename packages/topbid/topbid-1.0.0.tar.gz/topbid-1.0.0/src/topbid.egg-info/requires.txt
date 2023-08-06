@@ -1,0 +1,10 @@
+request-boost==0.6
+requests==2.28.2
+
+[dev]
+black==22.12.0
+build==0.10.0
+pylint==2.15.10
+pytest==7.2.1
+responses==0.22.0
+twine==4.0.2
