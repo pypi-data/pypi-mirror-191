@@ -1,0 +1,13 @@
+COPYING
+README.md
+setup.py
+Telethroid/__init__.py
+Telethroid/generate_string_session.py
+Telethroid/users.py
+Telethroid.egg-info/PKG-INFO
+Telethroid.egg-info/SOURCES.txt
+Telethroid.egg-info/dependency_links.txt
+Telethroid.egg-info/requires.txt
+Telethroid.egg-info/top_level.txt
+Telethroid/design/__init__.py
+Telethroid/design/design_1.py
