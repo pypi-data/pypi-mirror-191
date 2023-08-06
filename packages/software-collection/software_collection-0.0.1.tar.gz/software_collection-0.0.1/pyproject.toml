@@ -1,0 +1,20 @@
+[project]
+name = "software_collection"
+version = "0.0.1"
+authors = [{ name="uuiouuio" }]
+description = "Manage a collection of git repositories"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+dependencies = [
+    "GitPython"
+]
+
+[project.scripts]
+sc = "software_collection.cli:run"
+
+[build-system]
+requires = ["setuptools >= 52.0.0"]
+build-backend = "setuptools.build_meta"

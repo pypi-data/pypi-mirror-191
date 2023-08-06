@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+software_collection/__init__.py
+software_collection/cli.py
+software_collection/collection.py
+software_collection.egg-info/PKG-INFO
+software_collection.egg-info/SOURCES.txt
+software_collection.egg-info/dependency_links.txt
+software_collection.egg-info/entry_points.txt
+software_collection.egg-info/requires.txt
+software_collection.egg-info/top_level.txt
