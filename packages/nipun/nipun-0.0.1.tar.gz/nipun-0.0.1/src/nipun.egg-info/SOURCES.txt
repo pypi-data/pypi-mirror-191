@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mashup/__init__.py
+src/mashup/main.py
+src/nipun.egg-info/PKG-INFO
+src/nipun.egg-info/SOURCES.txt
+src/nipun.egg-info/dependency_links.txt
+src/nipun.egg-info/top_level.txt
