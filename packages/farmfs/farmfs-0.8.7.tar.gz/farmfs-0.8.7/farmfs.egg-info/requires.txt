@@ -1,0 +1,7 @@
+docopt
+delnone
+future
+safeoutput>=2.0
+filetype==1.0.6
+S3Lib>=1.6.1
+tqdm
