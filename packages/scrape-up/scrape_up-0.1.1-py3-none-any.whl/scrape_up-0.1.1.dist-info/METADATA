@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: scrape-up
+Version: 0.1.1
+Summary: A web-scraping-based python package that enables you to scrape data from various platforms.
+Home-page: https://github.com/Clueless-Community/scrape-up
+Author: Clueless Community
+Author-email: official.cluelesscommunity@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: requests
+
+# How to use this package? 👀
++ Install the package from `pip`
+```powershell
+pip install scrape-up
+```
+
++ Scrape the required information, for example one want to extract number of followers of a user.
+```python
+# Import the required module
+from scrape_up import github
+
+# Instantiate an object with username provided.
+user = github.User(username="nikhil25803")
+
+# Cal the followers function
+print(user.followers())
+
+# Output - '59'
+```
+
+---
+
+# The platforms and methods we cover 💫
+
+## GitHub
+```python
+from scrape_up import github
+```
+
+### Scrape User details
+
+First create an object of class `User`
+```python
+user = github.Users(username="nikhil25803")
+```
+
+| Methods |  Details |
+|---|---|
+|  `.followers()` | Returns the number of followers of a user. |
+|  `.get_avatar()` | Returns the avatar url of a user. |
