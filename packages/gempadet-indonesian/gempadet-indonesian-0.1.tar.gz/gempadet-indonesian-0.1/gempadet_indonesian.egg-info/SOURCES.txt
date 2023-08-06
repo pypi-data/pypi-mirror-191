@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+gempadet/__init__.py
+gempadet_indonesian.egg-info/PKG-INFO
+gempadet_indonesian.egg-info/SOURCES.txt
+gempadet_indonesian.egg-info/dependency_links.txt
+gempadet_indonesian.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gempadet-indonesian
+Version: 0.1
+Summary: this is an package of latest indonesian earthquake
+Author: Muhammad Afrizal
+Author-email: muhamadafrizal5@gmail.com
+Keywords: python,video,stream,video stream,scream
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# gempadet-indonesia
+this is an package of latest indonesian earthquake
+
+# how it works?
+
+This package uses beautifulsoup4 and request, the result of this package is the latest earthquake update information in the Indonesian region
+
+## Author
+muhammad afrizal, pakis magelang
