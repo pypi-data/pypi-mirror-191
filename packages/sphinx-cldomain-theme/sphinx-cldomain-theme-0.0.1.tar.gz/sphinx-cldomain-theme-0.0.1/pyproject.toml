@@ -1,0 +1,40 @@
+[project]
+name = "sphinx-cldomain-theme"
+version = "0.0.1"
+description = "Sphinx Common Lisp Domain Theme"
+
+authors = [
+  { name = "Russell Sim", email = "rsl@simopolis.xyz" }
+]
+
+readme = "README.rst"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+
+classifiers = [
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Topic :: Internet',
+    'Topic :: Software Development :: Documentation',
+]
+dependencies = [
+    'sphinx',
+]
+
+[project.urls]
+"Homepage" = "https://sr.ht/~rsl/sphinxcontrib-cldomain/"
+"Bug Reports" = "https://todo.sr.ht/~rsl/sphinxcontrib-cldomain"
+"Source" = "https://git.sr.ht/~rsl/sphinx-cldomain-theme"
+
+[project.entry-points.sphinx_themes]
+path = "sphinx_cldomain_theme:get_html_theme_path"
+
+[build-system]
+requires = ["setuptools>=43.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tools.setuptools]
+zip-safe = false
