@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Flask_Mercadopago.egg-info/PKG-INFO
+Flask_Mercadopago.egg-info/SOURCES.txt
+Flask_Mercadopago.egg-info/dependency_links.txt
+Flask_Mercadopago.egg-info/requires.txt
+Flask_Mercadopago.egg-info/top_level.txt
+flask_mercadopago/__init__.py
+flask_mercadopago/core.py
+flask_mercadopago/utils.py
+flask_mercadopago/static/js/mercadopago/v2.js

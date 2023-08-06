@@ -1,0 +1,18 @@
+include LICENSE
+include README.md
+include CHANGELOG.rst
+recursive-include flask_mercadopago *.py
+recursive-include flask_mercadopago *.js
+
+exclude tox.ini
+exclude .docstr.yaml
+exclude .readthedocs.yaml
+exclude pyproject.toml
+exclude *.model
+recursive-exclude tests *
+recursive-exclude .github *
+recursive-exclude sample_app *
+recursive-exclude requirements *
+recursive-exclude docs *
+recursive-exclude res *
+.pypirc
