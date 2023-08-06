@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ArithematicCalc
+Version: 0.1
+Summary: A small example package
+Author: Shubham Verma
+Author-email: Shubham Verma <shubhamverma@ineuron.ai>
+Project-URL: Homepage, https://github.com/Shubham3023/arithematiccalc
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# ArithematicCalc: A Basic Arithematic Calculator
+-------------------
+## What is it?
+
+**ArithematicCalc** is a Python package that provides basic arithematic calculation 
+of two numbers such as addition, substraction, multiplication and division.
+
+## Functions
+ArithematicCalc
+
+This module contains basic calculator functions for addition, subtraction, multiplication, and division.
+
+Functions:
+
+    add(a, b)
+        Returns the sum of two numbers.
+
+    subtract(a, b)
+        Returns the difference of two numbers.
+
+    multiply(a, b)
+        Returns the product of two numbers.
+
+    divide(a, b)
+        Returns the division of two numbers.
+
+## Where to get it
+The source code is currently hosted on GitHub at:
+https://github.com/Shubham3023/arithematiccalc
+
+Binary installers for the latest released version are available at the [Python
+Package Index (PyPI)](https://pypi.org/project/ArithematicCalc).
+
+
+```sh
+# or PyPI
+pip install ArithematicCalc
+```
+
+
+## License
+[MIT](LICENSE)
