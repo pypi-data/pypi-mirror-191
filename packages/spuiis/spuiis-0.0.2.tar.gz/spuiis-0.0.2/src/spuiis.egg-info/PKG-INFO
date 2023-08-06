@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: spuiis
+Version: 0.0.2
+Summary: SPUIIS Python Client
+Home-page: https://github.com/grupodyd/spuiis
+Author: Juan F. Duque
+Author-email: jfelipe@grupodyd.com
+License: MIT
+Keywords: spuiis
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# spuiis
+Módulo para interactuar con el Sistema Público Único Integrado de Información en Salud de Colombia
