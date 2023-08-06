@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: taiga-contrib-ldap-auth-ext
+Version: 0.5
+Summary: The (extended) Taiga plugin for ldap authentication
+Home-page: https://github.com/Monogramm/taiga-contrib-ldap-auth-ext
+Download-URL: https://github.com/Monogramm/taiga-contrib-ldap-auth-ext/archive/v0.5.0.tar.gz
+Author: Monogramm
+Author-email: opensource@monogramm.io
+License: AGPL
+Keywords: taiga,ldap,auth,plugin
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+License-File: LICENSE.txt
+License-File: AUTHORS.md
+
+Extended Taiga.io plugin for LDAP authentication. This is a fork of ensky/taiga-contrib-ldap-auth which also retrieves the various contributions and other forks into one.
