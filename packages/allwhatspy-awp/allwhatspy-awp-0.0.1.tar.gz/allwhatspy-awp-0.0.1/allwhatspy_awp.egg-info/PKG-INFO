@@ -1,0 +1,477 @@
+Metadata-Version: 2.1
+Name: allwhatspy-awp
+Version: 0.0.1
+Summary: Whatsapp API - Envio de Mensagem Automática - PT-BR. 
+Author: Lucas Lourenço
+Author-email: dev.lucaslourenco@gmail.com
+License: MIT License
+Keywords: whatsapp api bot mensagem automática analise de mensagem
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Por que AllWhatsPy?
+Como jÃ¡ sabemos, o Whatsapp Ã© uma ferramenta que nÃ£o podemos mais viver sem.
+Seja para cunho profissional ou pessoal, Ã© necessÃ¡rio o manuseio completo desta aplicaÃ§Ã£o.
+
+EntÃ£o... por que nÃ£o tornÃ¡-lo ainda mais eficiente?
+
+Depois de ter pensado nisso, comecei a pesquisar sobre Bots e APIs do Whatsapp, me inspirei em cÃ³digos como o do PyWhatsapp e PyWhatKit para a realizaÃ§Ã£o deste.
+
+ApÃ³s passar um tempo estudando e alternando entre o trabalho e o software, botei a mÃ£o na massa e comecei a minha jornada indo atrÃ¡s da melhoria e da qualidade de Software. Continuo atualizando e desenvolvendo, fazendo isso  Ãºnico e exclusivamente sozinho.
+
+Foram usadas mais de 11 mil linhas de logs para o total funcionamento do cÃ³digo.
+
+Com o AllWhatsPy, vocÃª consegue fazer o que quiser!
+
+
+  
+## O que vocÃª pode fazer com AllWhatsPy
+
+
+##  Conectar
+
+python
+import AllWhatsPy as awp
+awp.conexao()
+
+
+
+## Desconectar
+  
+ 
+import AllWhatsPy as awp
+awp.conexao()
+awp.desconetar()
+
+
+## Trabalhando com Chats/Contatos/UsuÃ¡rios
+
+  ### encontrar_contato(contato)
+ 
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+   
+  awp.desconectar()
+  
+
+  ### encontrar_usuario(numero)
+
+  
+    
+    
+
+  
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_usuario('21900000000')
+   
+  awp.desconectar()
+ 
+
+  
+ 
+  ### encontrar_primeira_conversa(ignorar_fixado = True)    
+
+  
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_primeira_conversa()
+   
+  awp.desconectar()
+ 
+
+  
+ 
+  
+  ### descer_conversa_origem_atual(quantidade: int = 1)
+
+  
+    
+    
+
+  
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.descer_conversa_origem_atual()
+   
+  awp.desconectar()
+  
+  
+  
+  ### subir_conversa_origem_atual(quantidade: int = 1)
+
+  
+    
+    
+
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.subir_conversa_origem_atual()
+   
+  awp.desconectar()
+ 
+
+
+
+  ### descer_chat_quantidade(quantidade: int)
+
+  
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.descer_chat_quantidade()
+   
+  awp.desconectar()
+ 
+
+
+
+  ### sair_da_conversa()
+
+  
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_usuario(21900000000)
+  awp.enviar_mensagem()
+  awp.sair_da_conversa()
+  
+ 
+
+
+
+  ### aplicar_filtro()
+
+  
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.aplicar_filtro()
+   
+  awp.desconectar()
+ 
+
+
+  ### pegar_dados_contato()
+
+  
+    
+
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  dados = awp.pegar_dados_contato()
+  
+
+
+
+  ### apagar_conversa()
+
+  
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.apagar_conversa()
+  
+  awp.desconectar()
+  
+
+  
+  
+  ### arquivar_conversa()
+
+  
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.arquivar_conversa()
+  
+  awp.desconectar()
+  
+
+  
+  
+  ### marcar_como_nao_lida()
+
+    
+  import AllWhatsPy as awp
+    
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.marcar_como_nao_lida()
+  
+  awp.desconectar()
+  
+
+  
+## Enviando Mensagens
+
+  ### enviar_mensagem(mensagem)
+
+  
+  
+  import AllWhatsPy as awp
+
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.enviar_mensagem('Hello World!')
+
+  awp.desconectar()
+  
+
+
+
+  ### enviar_mensagem_paragrafada(mensagem)
+
+
+  import AllWhatsPy as awp
+
+  awp.conexao()
+  awp.encontrar_contato('Lucas LourenÃ§o')
+  awp.enviar_mensagem_paragrafada(
+  '''
+  OlÃ¡!
+  Meu nome Ã© Lucas Lourenco.
+  Sou o Criador do AWP.
+  '''
+  )
+
+  awp.desconectar()
+
+
+
+  ### enviar_mensagem_por_link(numero, mensagem)
+    
+  import AllWhatsPy as awp
+
+  awp.conexao()
+  awp.enviar_mensagem_por_link(21900000000 ,'E ai, tudo bem?')
+
+  awp.desconectar()
+
+   
+
+   
+
+   ### enviar_mensagem_direta(contato, mensagem, selecionar_funcao, salvo):  
+  
+  Para nÃºmero salvo:
+  
+      
+  import AllWhatsPy as awp
+
+  awp.conexao()
+  awp.enviar_mensagem_direta('Lucas Lourenco','OlÃ¡! Tudo bem?',1 ,True)
+
+  awp.desconectar()
+   
+
+ 
+    
+  Para nÃºmero nÃ£o salvo:
+  
+  
+
+  import AllWhatsPy as awp
+
+  awp.conexao()
+  awp.enviar_mensagem_direta(21900000000,'OlÃ¡! Tudo bem?',1 ,False)
+
+  awp.desconectar()
+
+  
+  
+  
+## Voltar ao Ãºltimo contato que parou
+
+  
+  
+
+import AllWhatsPy as awp
+  
+awp.conexao()
+awp.contato_registrar()
+  
+awp.desconectar()
+```
+ 
+  
+ 
+
+import AllWhatsPy as awp
+  
+awp.conexao()
+awp.contato_abrir_registrado(2)
+  
+awp.desconectar()
+```
+
+
+
+## Agendamento
+
+
+import AllWhatsPy as awp
+  
+awp.conexao()
+awp.agendamento('20', '08', '30')
+awp.encontrar_contato('Lucas LourenÃ§o')
+awp.enviar_mensagem('Hello World')
+  
+awp.desconectar()
+
+## Enviando Arquivos, VÃ­deos e Imagens
+
+  ### enviar_imagem(nome_imagem)
+  
+
+    
+
+
+    
+    import AllWhatsPy as awp
+
+    awp.conexao()
+    awp.encontrar_contato('Lucas LourenÃ§o')
+    awp.enviar_imagem('AlgumaImagem.png')
+
+    awp.desconectar()
+   
+
+   
+
+
+  ### enviar_video(nome_video)
+  
+
+    
+    
+    
+
+    
+    import AllWhatsPy as awp
+
+    awp.conexao()
+    awp.encontrar_contato('Lucas LourenÃ§o')
+    awp.enviar_video('nome_video.mp4')
+
+    awp.desconectar()
+   
+
+   
+
+
+  ### enviar_arquivo(nome_arquivo)
+  
+
+    
+    
+
+    
+    import AllWhatsPy as awp
+
+    awp.conexao()
+    awp.encontrar_contato('Lucas LourenÃ§o')
+    awp.enviar_arquivo('nome_arquivo.ext')
+
+    awp.desconectar()
+   
+
+   
+
+## Listando as Ultimas Mensagens e Contatos Aparentes
+  
+  ### lista_ultimas_mensagens_recebidas_de_contatos(quantidade: int = 1)
+   
+    
+    import AllWhatsPy as awp
+
+    awp.conexao()
+    dados = awp.lista_ultimas_mensagens_recebidas_de_contatos()
+
+   
+    
+   
+
+
+## Mensagens de Conversas
+  
+  ### ultimas_mensagens_conversa()
+  
+    
+                                                                                                                                                                                                                                                                                                                    
+     Em seu inÃ­cio, ela subirÃ¡ para ser possÃ­vel de captar mais inforamÃ§Ãµes e, logo apÃ³s, irÃ¡ retornar tudo em um dicionÃ¡rio separado por Ã­ndices. E os valores desses      Ã­ndices serÃ£o mais um dicionÃ¡rio contendo todas as informaÃ§Ãµes daquela conversa.
+    
+    
+    import AllWhatsPy as awp
+
+    awp.conexao()
+    awp.encontrar_contato('Lucas LourenÃ§o')
+    dados = awp.ultimas_mensagens_conversa()
+   
+     
+    `output:`
+    
+    
+   
+    Como Ã© possÃ­vel reparar, serÃ¡ trazido informaÃ§Ãµes com o Ã­ndice. Os `values` deles serÃ£o outra dicionÃ¡rio onde vocÃª pode estar trabalhando. 
+    
+   
+
+
+## Acesso ao CÃ³digo
+Se quiser ter acesso ao cÃ³digo, basta [Clicar Aqui](https://github.com/devlucaslourenco/AllWhatsPy)
+
+
+
+## Notas do Criador
+
+Para a criaÃ§Ã£o deste cÃ³digo, foram usadas mais de 11 mil linhas de log
+
+
+
+
+## Autor
+
+
+http://linkedin.com/in/lucas-lourenco0312
+
+
+
+
+https://www.instagram.com/lucaslourencoo__/
+
+
+
+Email: dev.lucaslourenco@gmail.com
+
+
+
+## Problemas com o AllWhatsPy
+Ainda nÃ£o foi encontrado problemas no cÃ³digo. 
+
+Caso vocÃª tenha percebido algo, sinta-se Ã  vontade para descrevÃª-lo na aba `Issues`!
+
+E tambÃ©m para vocÃª que estÃ¡ tendo dificuldades em trabalhar com esta lib, basta descrevÃª-la que irei ajudÃ¡-lo!
+
+
+## ContribuiÃ§Ã£o
+
+Pull Requests sÃ£o muito bem vindas!
+
+Caso seja uma grande mudanÃ§a, por favor, abra uma discussÃ£o na aba `Issues` para maior compreensÃ£o do seu caso.

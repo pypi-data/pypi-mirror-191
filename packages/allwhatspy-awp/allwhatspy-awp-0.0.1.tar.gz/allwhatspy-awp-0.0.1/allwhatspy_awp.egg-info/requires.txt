@@ -1,0 +1,4 @@
+selenium-webdriver
+selenium
+PIL
+urllib
