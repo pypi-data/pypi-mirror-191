@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: niobuild
+Version: 1.1.0
+Requires-Dist: fbtftp
+Requires-Dist: psutil
+Requires-Dist: pyserial
+
