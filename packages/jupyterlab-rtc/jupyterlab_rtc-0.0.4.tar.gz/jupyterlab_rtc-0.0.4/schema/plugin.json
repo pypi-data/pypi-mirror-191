@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "@datalayer/jupyterlab-rtc",
+  "description": "@datalayer/jupyterlab-rtc settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
