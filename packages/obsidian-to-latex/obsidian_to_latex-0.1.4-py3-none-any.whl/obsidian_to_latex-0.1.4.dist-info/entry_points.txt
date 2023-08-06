@@ -1,0 +1,3 @@
+[console_scripts]
+obsidian_to_latex=obsidian_to_latex.obsidian_to_latex:main
+
