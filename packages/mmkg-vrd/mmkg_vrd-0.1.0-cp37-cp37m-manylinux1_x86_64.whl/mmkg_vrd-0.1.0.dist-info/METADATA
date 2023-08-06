@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: mmkg-vrd
+Version: 0.1.0
+Summary: MMKG Models
+Author: Zeren Chen
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: easydict
+Requires-Dist: yacs
+Requires-Dist: opencv-python
+Requires-Dist: scipy
+Requires-Dist: pycocotools
+Requires-Dist: cityscapesscripts
+
+# 视觉关系检测使用说明
+
+## 1. 算法描述
+该算法用于图像中的视觉关系检测(VRD)。该算法基于PyTorch框架开发，输入一张图片，算法会检测图片中的视觉关系对。
+
+## 2. 依赖及安装
+
+CUDA版本: 11.3
+其他依赖库的安装命令如下：
+
+```bash
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+```
+
+可使用如下命令下载安装算法包：
+```bash
+pip install -U mmkg-vrd
+```
+
+## 3. 使用示例及运行参数说明
+
+```python
+from mmkg_vrd import VRD
+image_path = 'test.jpg'
+meta = {'image_size': (224, 224)}
+output = VRD().inference(image_path, meta)
+```
