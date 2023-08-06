@@ -1,0 +1,40 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "model:ir.message,text:msg_file_too_big"
+msgid "The file size of the record '%(recname)s' exceeded the maximum value of 5MB."
+msgstr "The file size of the record '%(recname)s' exceeded the maximum value of 5MB."
+
+msgctxt "model:ir.message,text:msg_file_invalid_mime"
+msgid "The file type '%(fmime)s' of the record '%(recname)s' is not allowed. (allowed: PNG, JPG, PDF)"
+msgstr "The file type '%(fmime)s' of the record '%(recname)s' is not allowed. (allowed: PNG, JPG, PDF)"
+
+msgctxt "model:ir.message,text:msg_file_unknown_type"
+msgid "cannot identify image file"
+msgstr "cannot identify image file"
+
+msgctxt "view:cashbook.line:"
+msgid "Image/PDF"
+msgstr "Image/PDF"
+
+msgctxt "field:cashbook.line,media:"
+msgid "Image of PDF"
+msgstr "Image of PDF"
+
+msgctxt "field:cashbook.line,media_name:"
+msgid "File name"
+msgstr "File name"
+
+msgctxt "field:cashbook.line,media_id:"
+msgid "File ID"
+msgstr "File ID"
+
+msgctxt "field:cashbook.line,media_mime:"
+msgid "MIME"
+msgstr "MIME"
+
+msgctxt "field:cashbook.line,media_size:"
+msgid "File size"
+msgstr "File size"
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<data>
+
+    <xpath expr="/form/notebook/page[@name='references']" position="after">
+
+        <page name="media" col="4" string="Image/PDF">
+            <label name="media"/>
+            <field name="media"/>
+            <newline/>
+
+            <label name="media_name"/>
+            <field name="media_name"/>
+            <label name="media_mime"/>
+            <field name="media_mime"/>
+
+            <field name="media_image" readonly="1" colspan="4" widget="image" xexpand="1" yexpand="1"/>
+        </page>
+
+    </xpath>
+
+</data>

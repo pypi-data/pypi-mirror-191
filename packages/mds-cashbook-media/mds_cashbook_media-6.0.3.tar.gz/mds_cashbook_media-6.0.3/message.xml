@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- This file is part of the cashbook-module from m-ds for Tryton.
+The COPYRIGHT file at the top level of this repository contains the
+full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.message" id="msg_file_too_big">
+            <field name="text">The file size of the record '%(recname)s' exceeded the maximum value of 5MB.</field>
+        </record>
+        <record model="ir.message" id="msg_file_invalid_mime">
+            <field name="text">The file type '%(fmime)s' of the record '%(recname)s' is not allowed. (allowed: PNG, JPG, PDF)</field>
+        </record>
+        <record model="ir.message" id="msg_file_unknown_type">
+            <field name="text">cannot identify image file</field>
+        </record>
+
+    </data>
+</tryton>
