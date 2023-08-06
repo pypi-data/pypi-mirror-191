@@ -1,0 +1,25 @@
+h5py
+h5writer
+mpi4py
+numpy
+pexpect
+Pint
+PyQt5
+pyqtgraph
+pytz
+pyzmq
+scipy
+tornado
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[euxfel]
+karabo-bridge
+
+[test]
+pytest
+
+[test:python_version < "3.0"]
+subprocess32
