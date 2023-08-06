@@ -1,0 +1,106 @@
+[build-system]
+requires = ["poetry>=1.2.0", "poetry-dynamic-versioning-plugin"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
+[tool.poetry]
+name = "belay"
+version = "0.18.2"  # Do not change, let poetry-dynamic-versioning handle it.
+homepage = "https://github.com/BrianPugh/belay"
+repository = "https://github.com/BrianPugh/belay"
+license = "Apache-2.0"
+description = ""
+authors = ["Brian Pugh"]
+readme = "README.rst"
+packages = [{include = "belay"}]
+
+[tool.poetry.scripts]
+belay = "belay.cli.main:run_app"
+
+[tool.poetry.dependencies]
+# Be as loose as possible if writing a library.
+python = "^3.8"
+pyserial = "^3.1"
+typer = {extras = ["all"], version = "^0.6"}
+pathspec = "*"
+tomli = "^2.0.1"
+autoregistry = "^0.8.2"
+fsspec = "^2022.11.0"
+requests = "^2.28.1"
+aiohttp = "^3.8.3"
+gitpython = "^3.1.30"
+pydantic = "^1.10.4"
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "~4.5.0"
+sphinx_rtd_theme = "~1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "^5.1"}
+flake8 = "^4.0.1"
+poetry-dynamic-versioning = "^0.16.0"
+pre_commit = "^2.16.0"
+pytest = "^7.2.0"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+pytest-timeout = "^2.1.0"
+flaky = "^3.7.0"
+
+[tool.poetry.group.debug]
+optional = true
+
+[tool.poetry.group.debug.dependencies]
+ipdb = "^0.13.9"
+line_profiler = "^3.5.1"
+
+[tool.coverage.run]
+branch = true
+omit = [
+    "tests/*",
+    "belay/pyboard.py",  # Mostly comes from the MicroPython mpremote project.
+    "belay/snippets/*",  # Ignore on-device code-snippets
+    "belay/webrepl.py",  # Cannot really be tested, copied from micropython
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    "pragma: no cover",
+
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self.debug:",
+    "if debug:",
+    "if DEBUG:",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if 0:",
+    "if False:",
+    "if __name__ == .__main__.:",
+
+    # Don't run stuff decorated by belay decorators.
+    "@self.task",
+    "@device.task",
+    "@self.thread",
+    "@device.thread",
+]
+
+[tool.bandit]
+exclude_dirs = [
+    "tests",
+]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+norecursedirs = "integration"
+markers = [
+    "network: mark a test that requires network access.",
+]
