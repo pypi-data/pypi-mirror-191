@@ -1,0 +1,29 @@
+name: Test
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    name: TEST
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+
+    steps:
+
+    - name: CHECKOUT
+      uses: actions/checkout@v3
+
+    - name: SET UP PYTHON ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: "x64"
+
+    - name: INSTALL DEPENDENCIES
+      run: |
+        pip install
