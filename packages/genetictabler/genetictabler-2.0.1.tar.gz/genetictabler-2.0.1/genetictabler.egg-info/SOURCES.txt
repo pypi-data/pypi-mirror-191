@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+genetictabler/__init__.py
+genetictabler.egg-info/PKG-INFO
+genetictabler.egg-info/SOURCES.txt
+genetictabler.egg-info/dependency_links.txt
+genetictabler.egg-info/top_level.txt
