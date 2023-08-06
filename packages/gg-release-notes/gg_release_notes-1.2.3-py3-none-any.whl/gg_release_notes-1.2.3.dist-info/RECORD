@@ -1,0 +1,16 @@
+gg_release_notes/__init__.py,sha256=TJ8zbWjjE6DkkbTjlTNH8Zlu06vDWG4MNNNVL--Esf4,21
+gg_release_notes/generate_release_notes.py,sha256=1fat4xp_wqWhjsh_x4LpS-dnKnNUqSuARCGk7LIctUE,4516
+gg_release_notes/pull_request.py,sha256=oazsMGq9Lh2nP36VltpFY9zqpLx0nG6KXHKg4eDlUMQ,3810
+gg_release_notes/upload.py,sha256=2SiJhyhuUHt12-Bc-lNfSwgo8YnWvJV0HvUgPZ7EqI4,4678
+gg_release_notes/version.py,sha256=3MtwZXJu-Gs_MWZREL5HSMNJTwGflqCpZJJj7PyEkXw,2146
+gg_release_notes/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gg_release_notes/config/env_config.py,sha256=fePLMYGqjG1zcL1c_uzDmdIChHH-aYGlmY5sUoZgcxk,306
+gg_release_notes/config/github_config.py,sha256=pNTQWfzIRZcNyUMf8V02U2KhX5wWw_FNSiDlrVAUsM0,549
+gg_release_notes/config/prompt_config.py,sha256=UR66jazUGEJ2mRm6QU1I-dFG-VEgcoccNpFS2z6oh3M,1444
+gg_release_notes/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gg_release_notes/utils/encode_bs64.py,sha256=49q_T5rgI2521-8Uu28x3z32mNjOmR81_4_XpUBSZGM,422
+gg_release_notes-1.2.3.dist-info/LICENSE,sha256=6s7lZbjUjntzF7mVanm7J7p82tlWO3NDTDHXatSRzUw,1066
+gg_release_notes-1.2.3.dist-info/METADATA,sha256=VmxKrIPD7vLiuARKYd9bjYgUnyic73cV0OiuDPZvJZA,3386
+gg_release_notes-1.2.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gg_release_notes-1.2.3.dist-info/top_level.txt,sha256=jI5G2K6bO9NtofvF82VK40eI2hZKs0sjBSLMSJiMjsw,17
+gg_release_notes-1.2.3.dist-info/RECORD,,
