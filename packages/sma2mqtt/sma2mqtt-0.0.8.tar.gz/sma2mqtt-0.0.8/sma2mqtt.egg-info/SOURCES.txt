@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+scripts/sma2mqtt
+sma2mqtt.egg-info/PKG-INFO
+sma2mqtt.egg-info/SOURCES.txt
+sma2mqtt.egg-info/dependency_links.txt
+sma2mqtt.egg-info/requires.txt
+sma2mqtt.egg-info/top_level.txt
