@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.9.6
+------
+
+* chore(deps): update dependency cliff to v4.2.0 (#352)
