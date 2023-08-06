@@ -1,0 +1,16 @@
+name: Sum
+description: Add two integers together
+
+inputs:
+- {name: a, type: Integer, default: "3", description: "First element of sum"}
+- {name: b, type: Integer, default: "2", description: "Second element of sum"}
+
+outputs:
+- {name: c, type: Integer, description: "Sum of a and b"}
+
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/add_py
+    command: [
+      python, add.py, --a, {inputValue: a}, --b, {inputValue: b}
+    ]

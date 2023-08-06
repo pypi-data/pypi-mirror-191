@@ -1,0 +1,59 @@
+name: Stitch videos
+inputs:
+- {name: input_videos, type: Artifact}
+- {name: output_video_path, type: String}
+outputs:
+- {name: output_video, type: Artifact}
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/stitch_videos
+    command:
+    - sh
+    - -c
+    - |2
+
+      if ! [ -x "$(command -v pip)" ]; then
+          python3 -m ensurepip || python3 -m ensurepip --user || apt-get install python3-pip
+      fi
+
+      PIP_DISABLE_PIP_VERSION_CHECK=1 python3 -m pip install --quiet     --no-warn-script-location 'kfp==1.8.13' && "$0" "$@"
+    - sh
+    - -ec
+    - |
+      program_path=$(mktemp -d)
+      printf "%s" "$0" > "$program_path/ephemeral_component.py"
+      python3 -m kfp.v2.components.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+    - |2+
+
+      import kfp
+      from kfp.v2 import dsl
+      from kfp.v2.dsl import *
+      from typing import *
+
+      def stitch_videos(
+          input_videos: Input[Artifact],
+          output_video: Output[Artifact],
+          output_video_path: str,
+      ):
+          import os
+          import ffmpeg
+          from loguru import logger
+
+          def concat_videos(input_videos_dir_path, output_path):
+              videos = os.listdir(input_videos_dir_path)
+              logger.info(f"videos: {videos}")
+              ffmpeg_inputs = [
+                  ffmpeg.input(os.path.join(input_videos_dir_path, video)) for video in videos
+              ]
+              ffmpeg.concat(*ffmpeg_inputs).output(output_path).run()
+
+          os.makedirs(os.path.dirname(output_video_path), exist_ok=True)
+          output_video.uri = output_video_path
+
+          concat_videos(input_videos_dir_path=input_videos.path, output_path=output_video.uri)
+
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - stitch_videos
