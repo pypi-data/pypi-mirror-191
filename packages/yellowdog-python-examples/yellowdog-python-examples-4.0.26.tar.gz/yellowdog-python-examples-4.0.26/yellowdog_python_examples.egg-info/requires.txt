@@ -1,0 +1,6 @@
+yellowdog-sdk>=4.0.18
+toml
+tabulate
+
+[jsonnet]
+jsonnet
