@@ -1,0 +1,4 @@
+pymongo==4.3.3
+dataclasses==0.6
+dataclasses_json==0.5.7
+geojson~=3.0.0
