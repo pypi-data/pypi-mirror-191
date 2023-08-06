@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pydeequ-module
+Version: 0.0.1
+Summary: data assertion pydeequ module
+Home-page: UNKNOWN
+Author: IIG
+Author-email: 
+License: MIT
+Keywords: pydeequ-data-assertion
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+Pydeequ data assertion module 
+
+1. Compliance
+2. Completeness
+3. Mean
+4. ApproxCountDistinct
+
+NOTE: 
+Mean Metric Should Contain numeric type column from input source
+For Compliance need to provide condition:Required
+At Default Information Threshold > Warning Threshold > Error Threshold
+Metric_Value > Information Threshold > Warning Threshold > Error Threshold- Returns Null
+Information Threshold > Metric_Value > Warning Threshold > Error Threshold- Returns Information
+Information Threshold > Warning Threshold > Metric_Value > Error Threshold- Returns Warning
+Metric_Value > Information Threshold > Warning Threshold > Error Threshold> Metric_Value - Returns Error
+
+Change Log:
+============
+
+0.0.1(13/02/2023)
+--------------------
+-First Release
+
