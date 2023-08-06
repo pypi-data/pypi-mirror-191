@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+babyyodo.egg-info/PKG-INFO
+babyyodo.egg-info/SOURCES.txt
+babyyodo.egg-info/dependency_links.txt
+babyyodo.egg-info/top_level.txt
