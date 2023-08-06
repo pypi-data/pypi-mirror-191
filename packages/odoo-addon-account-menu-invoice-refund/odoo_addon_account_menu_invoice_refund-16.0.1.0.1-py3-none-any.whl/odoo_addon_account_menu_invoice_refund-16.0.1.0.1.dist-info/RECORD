@@ -1,0 +1,17 @@
+odoo/addons/account_menu_invoice_refund/README.rst,sha256=2CvcXPx51aNtkeBAg7JiJ0-pB-hNoF002K6eGXj-k5E,3130
+odoo/addons/account_menu_invoice_refund/__init__.py,sha256=tqRclV6N1uZmuptRsAhmgugIVafUDJBdzHC-JaNVguc,127
+odoo/addons/account_menu_invoice_refund/__manifest__.py,sha256=kWi-6JH3q5zYW-EaMuLiiCTWDf9OVKTaL-h46ZNsqMw,629
+odoo/addons/account_menu_invoice_refund/i18n/account_menu_invoice_refund.pot,sha256=SxEmLCapjwJSPJoCJH4l3ATntfQtZZQOxtnzrcnCTU0,1717
+odoo/addons/account_menu_invoice_refund/i18n/de.po,sha256=OR7rye325XyZqa-ESdqjo9ui4FoGv2xjqVPORr0rg1s,1774
+odoo/addons/account_menu_invoice_refund/i18n/es.po,sha256=I4rh0098_VksdPQzwr2l2wOntPjUIc6qD6GID34nlg0,2178
+odoo/addons/account_menu_invoice_refund/i18n/hr.po,sha256=UFUQaFX2EVLywCBvSeTrlwBgnbnQg-etWFj0hjyluwo,1989
+odoo/addons/account_menu_invoice_refund/i18n/pt.po,sha256=JT1bgvzI0-G0PJRdkFysv1sXK7sB0ufh6aQpPmkelmw,2514
+odoo/addons/account_menu_invoice_refund/readme/CONTRIBUTORS.rst,sha256=TiI02iy7_eE-Q3UdQsFGVS9sgfCJgmjmWa7BOFHU3IM,49
+odoo/addons/account_menu_invoice_refund/readme/DESCRIPTION.rst,sha256=aWk7JIzMaMPbWRLKkBUZW5iOP8e5m-32z9SzrUOTuug,193
+odoo/addons/account_menu_invoice_refund/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_menu_invoice_refund/static/description/index.html,sha256=sH6fob5V0-5uazdMAUu9kK4TNb8qc3uULzWq9bqDvnc,12338
+odoo/addons/account_menu_invoice_refund/views/account_invoice_view.xml,sha256=-F8TOzC5SNeuw1xW0AaATlpLGriMQS1JVy6uDLg5YvU,3476
+odoo_addon_account_menu_invoice_refund-16.0.1.0.1.dist-info/METADATA,sha256=m9K2YSXg-quqpKBfUpBN8vOZep6aEJQsrkxNZNPtlzI,3750
+odoo_addon_account_menu_invoice_refund-16.0.1.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo_addon_account_menu_invoice_refund-16.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_account_menu_invoice_refund-16.0.1.0.1.dist-info/RECORD,,
