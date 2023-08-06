@@ -1,0 +1,9 @@
+nautilus/__init__.py,sha256=NHYgy-Bo80yp0WtVq3EhMRwZxdjxic5uGDo4hQOLn7o,218
+nautilus/bounds.py,sha256=KJIyw4aMNP6qtBnd-Dv8J14oqXgK0SvUMO9zCc3MO3Q,38970
+nautilus/neural.py,sha256=4x9Y3MHTvyUFEcK_4zbJnJB12cpqL1zppftPDSyCWE8,4191
+nautilus/prior.py,sha256=z4NwSe43gRp5hNfqEcrOXOEvSIIbJjY1BjWMq-Ogu2s,5967
+nautilus/sampler.py,sha256=ZKy7WwCK6Xg7Ra2z8En_qlRHo3KQV72a-8YmeS17Hu8,43821
+nautilus_sampler-0.4.0.dist-info/LICENSE,sha256=hEFj7Z978GGhCcScVL2Lqvg0GGLjymlQB8zmfqKfGxU,1074
+nautilus_sampler-0.4.0.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+nautilus_sampler-0.4.0.dist-info/METADATA,sha256=AZAA-MskLjc6SmVgNUlQJ8N-Yk3uhZ-1mVgvUL4PvZU,2794
+nautilus_sampler-0.4.0.dist-info/RECORD,,
