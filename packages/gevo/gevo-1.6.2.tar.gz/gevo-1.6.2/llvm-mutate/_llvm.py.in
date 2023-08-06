@@ -1,0 +1,2 @@
+__llvm_version__ = "@LLVM_VERSION_STRING@"
+__llvm_bin_folder__ = "@LLVM_BIN_FOLDER_STRING@"

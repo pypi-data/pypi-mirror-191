@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gevo
+Version: 1.6.2
+Summary: Optimize CUDA kernel code using Evolutionary Computation
+Home-page: https://github.com/lioujheyu/gevo
+Author: Jhe-Yu Liou
+Author-email: lioujheyu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Requires-Python: >=3.6.1
+License-File: LICENSE
+
+UNKNOWN
+
