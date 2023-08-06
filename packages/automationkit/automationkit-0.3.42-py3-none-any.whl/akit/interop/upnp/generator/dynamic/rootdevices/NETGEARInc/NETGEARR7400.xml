@@ -1,0 +1,27 @@
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <deviceType>urn:schemas-wifialliance-org:device:WFADevice:1</deviceType>
+        <friendlyName>R7400 (Wireless AP)</friendlyName>
+        <manufacturer>NETGEAR, Inc.</manufacturer>
+        <manufacturerURL>http://www.netgear.com</manufacturerURL>
+        <modelDescription>NETGEAR Wireless Access Point</modelDescription>
+        <modelName>NETGEAR R7400</modelName>
+        <modelNumber>R7400</modelNumber>
+        <modelURL>http://www.netgear.com/products</modelURL>
+        <serialNumber>87654321</serialNumber>
+        <UDN>uuid:38833092-3092-1883-a61f-bca51102b818</UDN>
+        <serviceList>
+            <service>
+                <serviceType>urn:schemas-wifialliance-org:service:WFAWLANConfig:1</serviceType>
+                <serviceId>urn:wifialliance-org:serviceId:WFAWLANConfig1</serviceId>
+                <SCPDURL>WFAWLANConfigSCPD.xml</SCPDURL>
+                <controlURL>control</controlURL>
+                <eventSubURL>event</eventSubURL>
+            </service>
+        </serviceList>
+    </device>
+</root>
