@@ -1,0 +1,3 @@
+[glue.plugins]
+vispy_scatter = glue_vispy_viewers.scatter:setup
+vispy_volume = glue_vispy_viewers.volume:setup
