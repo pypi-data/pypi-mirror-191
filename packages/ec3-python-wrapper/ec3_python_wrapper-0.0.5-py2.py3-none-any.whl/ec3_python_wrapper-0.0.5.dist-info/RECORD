@@ -1,0 +1,12 @@
+ec3/__init__.py,sha256=l9PgzDh2S2TbKS05BZgESLnvwHNWrqtQZc-NS0IN7fI,167
+ec3/ec3_api.py,sha256=g6t7aJqPZKXey86HvOxBbrNtUN0t4iVOEaa64PgR80s,5388
+ec3/ec3_epds.py,sha256=fqCxapvWEBkB5AmNBcCWT5WKDT0k8E2nd07rC71gv2Q,2336
+ec3/ec3_materials.py,sha256=h7-94akpdn3cfK_FXnJ0sbEF-8PgutyBQY5E0tHrd5w,2412
+ec3/ec3_projects.py,sha256=WDC1mBzSdbEI70YCEd_2wLmuQh4tvXPTDMnwtum2xug,2502
+ec3/ec3_urls.py,sha256=pLI4fdDdKBGStNZG3E4oMai9CKKWrSYYqmUOYiSP6R8,3413
+ec3/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ec3_python_wrapper-0.0.5.dist-info/LICENSE,sha256=i8jbIlYNEU3fdbIMkbmDp9k1h3vIu4xs1PulEyNVAHA,1090
+ec3_python_wrapper-0.0.5.dist-info/METADATA,sha256=akIBnWEsgJmOBkrfx3zHekSfvyEZl0o_86LHmJ3FEhg,1893
+ec3_python_wrapper-0.0.5.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+ec3_python_wrapper-0.0.5.dist-info/top_level.txt,sha256=1LUbEVwZIqSfrLjxp8c-8XQj3V6wEJtA7vuzkbHQ5o0,4
+ec3_python_wrapper-0.0.5.dist-info/RECORD,,
