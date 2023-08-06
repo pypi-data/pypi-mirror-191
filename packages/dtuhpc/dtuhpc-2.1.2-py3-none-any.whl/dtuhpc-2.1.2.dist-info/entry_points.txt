@@ -1,0 +1,3 @@
+[console_scripts]
+dtuhpc=dtuhpc.cli.cli:main
+
