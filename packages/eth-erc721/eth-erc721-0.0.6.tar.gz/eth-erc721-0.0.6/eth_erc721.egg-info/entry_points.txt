@@ -1,0 +1,4 @@
+[console_scripts]
+erc721-transfer = eth_erc721.runnable.transfer:main
+eth-badge-deploy = eth_badgetoken.runnable.deploy:main
+eth-badge-mint = eth_badgetoken.runnable.mint:main

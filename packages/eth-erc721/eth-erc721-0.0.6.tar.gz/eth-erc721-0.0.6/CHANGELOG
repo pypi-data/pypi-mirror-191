@@ -1,0 +1,10 @@
+- 0.0.4
+	* Change license to AGPL3 and copyright waived to public domain
+- 0.0.3
+	* Upgrade dependencies
+- 0.0.2
+	* Move to chainlib-eth
+- 0.0.1
+	* Add erc721 interface
+	* Add BadgeToken contract
+	* Add Minter functions to python interface

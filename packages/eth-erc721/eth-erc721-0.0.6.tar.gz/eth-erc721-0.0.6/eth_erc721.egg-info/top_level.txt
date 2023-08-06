@@ -1,0 +1,2 @@
+eth_badgetoken
+eth_erc721
