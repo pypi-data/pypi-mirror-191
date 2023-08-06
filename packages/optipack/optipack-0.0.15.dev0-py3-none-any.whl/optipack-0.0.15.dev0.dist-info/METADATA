@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: optipack
+Version: 0.0.15.dev0
+Summary: The optimal package for ML at OM
+Author: indigoYoshimaru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Pillow (==9.4.0)
+Requires-Dist: pyyaml (==6.0)
+Requires-Dist: rich (==13.3.1)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+![optipack](asset/image/logo.png)
+
+# What optipack do: 
+- Create base folder structure follow the project and environment
+- Generate rough hyperparam.yml template
