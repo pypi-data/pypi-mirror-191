@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "sync2folders"
+version = "1.0.1"
+description = "Synchronizes source and replica folders"
+authors = ["ivanSantos16 <ivan.rafa.16@gmail.com>"]
+maintainers = ["ivanSantos16 <ivan.rafa.16@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/ivanSantos16/sync2folders"
+repository = "https://github.com/ivanSantos16/sync2folders"
+keywords = ["sync", "folders", "synchronize"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+packages = [{ include = "sync2folders" }]
+include = ["README.md", "LICENSE"]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+markdown = ">=3.3.4"
+
+[tool.poetry.scripts]
+sync2folders = 'sync2folders.__main__:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
