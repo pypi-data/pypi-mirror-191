@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pydeconz
+Version: 107
+Summary: A Python library for communicating with deCONZ REST-API from Dresden Elektronik
+Home-page: https://github.com/Kane610/deconz
+Download-URL: https://github.com/Kane610/deconz/archive/v107.tar.gz
+Author: Robert Svensson
+Author-email: Kane610@users.noreply.github.com
+License: MIT
+Keywords: deconz,zigbee,homeassistant
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: async-timeout
+Requires-Dist: orjson
+
