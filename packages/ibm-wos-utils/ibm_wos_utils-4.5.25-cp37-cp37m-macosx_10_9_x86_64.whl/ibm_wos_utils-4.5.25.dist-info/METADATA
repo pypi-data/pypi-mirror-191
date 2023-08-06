@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: ibm-wos-utils
+Version: 4.5.25
+Summary: IBM Watson OpenScale API client utility module
+Home-page: https://dataplatform.cloud.ibm.com/docs/content/wsj/model/getting-started.html?audience=wdp
+Author: IBM
+Author-email: pvemulam@in.ibm.com, venkataramana.m@in.ibm.com
+License: Apache 2.0
+Keywords: OpenScale,Watson,IBM,IBM Cloud,CPD,IBM Cloud Pak for Data
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Internet
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn (==1.0.2)
+Requires-Dist: scikit-image
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: jenkspy (==0.2.0)
+Requires-Dist: nltk
+Requires-Dist: more-itertools (>=8.6.0)
+Requires-Dist: retrying (==1.3.3)
+Requires-Dist: ibm-db
+
+******************************************
+# IBM Watson OpenScale Utilities
+******************************************
+
+`ibm-wos-utils` is a utility library used to create multiple artifacts required by IBM Watson OpenScale.
+
+## Important Notice:
+
+* If you are using **IBM Watson OpenScale on Cloud Pak for Data 3.0.x or 3.5.x**, please install [ibm-wos-utils v2.1.1](https://pypi.org/project/ibm-wos-utils/2.1.1/). Drift Archive generation requires [scikit-learn v0.20.2](https://pypi.org/project/scikit-learn/0.20.2/) for these releases.
+
+* If you are using **IBM Watson OpenScale on Cloud Pak for Data 3.5.10 or later**, please install [ibm-wos-utils v2.1.5](https://pypi.org/project/ibm-wos-utils/2.1.5/). Drift Archive generation requires [scikit-learn v0.24.2](https://pypi.org/project/scikit-learn/0.24.2/) for these releases.
+
+* If you are using **IBM Watson OpenScale on Cloud Pak for Data 4.0.0, 4.0.1, 4.0.2, 4.0.3, 4.0.4, 4.0.5, 4.0.6, 4.0.7**, please install the [ibm-wos-utils v4.0.34](https://pypi.org/project/ibm-wos-utils/4.0.34/). Drift Archive generation requires [scikit-learn v0.24.2](https://pypi.org/project/scikit-learn/0.24.2/) for these releases.
+
+* If you are using **IBM Watson OpenScale on Cloud Pak for Data 4.0.8 or 4.0.9**, please install the [ibm-wos-utils version 4.1.x](https://pypi.org/project/ibm-wos-utils/). Drift Archive generation requires [scikit-learn v1.0.2](https://pypi.org/project/scikit-learn/1.0.2/) for these releases.
+
+* If you are using **IBM Watson OpenScale on Cloud Pak for Data 4.5.0 or later** or **IBM Watson OpenScale on Cloud**, please install the [latest ibm-wos-utils version 4.5.x](https://pypi.org/project/ibm-wos-utils/). Drift Archive generation requires [scikit-learn v1.0.2](https://pypi.org/project/scikit-learn/1.0.2/) for Cloud.
+
+
+
