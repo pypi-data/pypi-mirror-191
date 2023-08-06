@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+jpapi/__init__.py
+jpapi.egg-info/PKG-INFO
+jpapi.egg-info/SOURCES.txt
+jpapi.egg-info/dependency_links.txt
+jpapi.egg-info/top_level.txt

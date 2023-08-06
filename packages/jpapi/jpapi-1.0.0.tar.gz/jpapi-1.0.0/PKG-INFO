@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jpapi
+Version: 1.0.0
+Summary: A simple JSON API system for python
+Home-page: https://github.com/eb3095/jpapi
+Author: eb3095
+Author-email: ebennerit@gmail.com
+License: LGPLv3
+Keywords: api,jpapi,python
+License-File: LICENSE.txt
