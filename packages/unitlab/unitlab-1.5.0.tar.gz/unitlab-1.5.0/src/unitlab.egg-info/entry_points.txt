@@ -1,0 +1,2 @@
+[console_scripts]
+ulab = unitlab.run:main
