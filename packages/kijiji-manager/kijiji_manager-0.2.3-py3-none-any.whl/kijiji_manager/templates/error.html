@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<h2>Error</h2>
+{% if message %}
+
+{% if message|islist == true %}
+<div>
+    <ul>
+        {% for item in message %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% else %}
+<div>{{ message }}</div>
+{% endif -%}
+
+{% else %}
+<div>No message given</div>
+{% endif %}
+{% endblock %}
