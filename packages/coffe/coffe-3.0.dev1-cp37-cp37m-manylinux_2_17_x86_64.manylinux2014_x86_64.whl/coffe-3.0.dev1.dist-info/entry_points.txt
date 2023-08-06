@@ -1,0 +1,2 @@
+[console_scripts]
+coffe-cli = coffe.__main__:main
