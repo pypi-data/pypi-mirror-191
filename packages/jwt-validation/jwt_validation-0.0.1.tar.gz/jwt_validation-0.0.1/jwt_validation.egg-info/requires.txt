@@ -1,0 +1,2 @@
+pyjwt==2.6.0
+cryptography==39.0.0

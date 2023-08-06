@@ -1,0 +1,8 @@
+setup.py
+jwt_validation/__init__.py
+jwt_validation/validate.py
+jwt_validation.egg-info/PKG-INFO
+jwt_validation.egg-info/SOURCES.txt
+jwt_validation.egg-info/dependency_links.txt
+jwt_validation.egg-info/requires.txt
+jwt_validation.egg-info/top_level.txt
