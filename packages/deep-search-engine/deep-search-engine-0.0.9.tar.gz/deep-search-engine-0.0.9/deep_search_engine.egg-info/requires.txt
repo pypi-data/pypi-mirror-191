@@ -1,0 +1,10 @@
+annoy
+keras
+Keras-Preprocessing
+numpy
+pandas
+Pillow
+tqdm
+tensorflow
+typing-extensions
+Click
