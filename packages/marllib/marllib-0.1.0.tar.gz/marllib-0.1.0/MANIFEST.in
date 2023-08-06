@@ -1,0 +1,6 @@
+include VERSION.txt
+include README.md
+include LICENSE
+include requirements_dev.txt
+include api_example.py
+include main.py
