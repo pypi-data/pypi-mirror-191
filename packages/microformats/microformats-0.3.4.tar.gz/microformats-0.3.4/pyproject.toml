@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "microformats"
+version = "0.3.4"
+description = "tools for microformats production, consumption and analysis"
+readme = "README.md"
+keywords = ["IndieWeb", "microformats"]
+homepage = "https://ragt.ag/code/python-microformats"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "BSD-3-Clause"
+packages = [{include="mf"}]
+
+[tool.poetry.scripts]
+mf = "mf:main"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.2"
+html5lib = "^1.1"
+easyuri = ">=0.1.2"
+txtint = ">=0.1.2"
+
+[tool.poetry.group.dev.dependencies]
+lxml = "^4.9.2"
+gmpg = ">=0.1.3"
+# gmpg = {path="../gmpg", develop=true}
+# easyuri = {path="../easyuri", develop=true}
+
+# [[tool.poetry.source]]
+# name = "main"
+# url = "https://ragt.ag/code/pypi"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
