@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: farialimer
+Version: 0.0.1a0
+Summary: Parser for Brazilian Finance Documents. Ex: IMBARQ, CNAB
+Author-email: Leandro Meili <leandro.meili@gmail.com>
+License: MIT
+Keywords: parser,imbarq,cnab
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# farialimer
+Parser for Brazilian Finance Documents
