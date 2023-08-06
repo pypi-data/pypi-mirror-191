@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: signhost-api-python-client
+Version: 0.1.4
+Summary: Signhost Api Python Client
+Home-page: https://github.com/foarsitter/signhost-api-python-client
+License: MIT
+Author: Jelmer Draaijer
+Author-email: info@jelmert.nl
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: attrs (>=22.2.0,<23.0.0)
+Requires-Dist: click (>=8.0.1)
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: pyupgrade (==3.3.1)
+Project-URL: Changelog, https://github.com/foarsitter/signhost-api-python-client/releases
+Project-URL: Documentation, https://signhost-api-python-client.readthedocs.io
+Project-URL: Repository, https://github.com/foarsitter/signhost-api-python-client
+Description-Content-Type: text/markdown
+
+# Signhost Api Python Client
+
+[![PyPI](https://img.shields.io/pypi/v/signhost-api-python-client.svg)][pypi_]
+[![Status](https://img.shields.io/pypi/status/signhost-api-python-client.svg)][status]
+[![Python Version](https://img.shields.io/pypi/pyversions/signhost-api-python-client)][python version]
+[![License](https://img.shields.io/pypi/l/signhost-api-python-client)][license]
+
+[![Read the documentation at https://signhost-api-python-client.readthedocs.io/](https://img.shields.io/readthedocs/signhost-api-python-client/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/foarsitter/signhost-api-python-client/workflows/Tests/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/foarsitter/signhost-api-python-client/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi_]: https://pypi.org/project/signhost-api-python-client/
+[status]: https://pypi.org/project/signhost-api-python-client/
+[python version]: https://pypi.org/project/signhost-api-python-client
+[read the docs]: https://signhost-api-python-client.readthedocs.io/
+[tests]: https://github.com/foarsitter/signhost-api-python-client/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/foarsitter/signhost-api-python-client
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Features
+
+- 100% test coverage
+
+## Requirements
+
+- httpx
+- pydantic
+- attr
+- click
+
+## Installation
+
+You can install _Signhost Api Python Client_ via [pip] from [PyPI]:
+
+```console
+$ pip install signhost-api-python-client
+```
+
+## Usage
+
+```python
+import io
+from signhost import models
+from signhost.client import DefaultClient
+
+signhost = DefaultClient(api_key="str", app_key="str")
+transaction = models.Transaction(signers=[models.Signer(email="str")])
+
+transaction = signhost.transaction_init(transaction=transaction)
+signhost.transaction_file_put(
+    transaction.Id,
+    "file.pdf",
+    io.BytesIO(b"test"),
+)
+transaction = signhost.transaction_start(transaction.Id)
+
+print("Sign the contract over here", transaction.Signers[0].SignUrl)
+
+signhost.transaction_get(transaction.Id)
+signhost.transaction_file_get(transaction.Id, "file.pdf")
+signhost.receipt_get(transaction.Id)
+```
+
+Please see the [Command-line Reference] for details.
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide].
+
+## License
+
+Distributed under the terms of the [MIT license][license],
+_Signhost Api Python Client_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue] along with a detailed description.
+
+## Credits
+
+This project was generated from [@cjolowicz]'s [Hypermodern Python Cookiecutter] template.
+
+[@cjolowicz]: https://github.com/cjolowicz
+[pypi]: https://pypi.org/
+[hypermodern python cookiecutter]: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+[file an issue]: https://github.com/foarsitter/signhost-api-python-client/issues
+[pip]: https://pip.pypa.io/
+
+<!-- github-only -->
+
+[license]: https://github.com/foarsitter/signhost-api-python-client/blob/main/LICENSE
+[contributor guide]: https://github.com/foarsitter/signhost-api-python-client/blob/main/CONTRIBUTING.md
+[command-line reference]: https://signhost-api-python-client.readthedocs.io/en/latest/usage.html
+
