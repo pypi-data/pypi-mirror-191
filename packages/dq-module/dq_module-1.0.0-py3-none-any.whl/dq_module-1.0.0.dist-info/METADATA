@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dq-module
+Version: 1.0.0
+Summary: data profiling and basic data quality rules check
+Author: Sweta
+Author-email: sweta.swami@decisionpoint.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: polars
+
