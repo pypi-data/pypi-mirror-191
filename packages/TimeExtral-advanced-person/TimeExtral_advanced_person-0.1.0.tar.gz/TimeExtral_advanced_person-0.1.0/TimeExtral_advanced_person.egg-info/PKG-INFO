@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: TimeExtral-advanced-person
+Version: 0.1.0
+Summary: Time but better
+Home-page: https://github.com/huangyingw/borisbabic-browser_cookie3
+Author: Paul
+Author-email: PW668878@outlook.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# TimeExtral_advanced
+
+### Purpose
+The purpose of this module is to provide users with convenient commands and more precise time measurements, as well as the ability to set specific values for variables such as x and y. Some examples of these commands include waitms, waitns, sleep, calctime, set-x, and set-y.
+
+
+## How To Install
+
+You can install the module TimeExtral_advanced by typing `pip install TimeExtral_advanced` or if you're using pip3: `pip3 install yourmodulenamehere`
+
+## Examples
+```py
+import TimeExtral_advanced
+import requests
+
+print("The Word 'Hi' will appear in 5 seconds.")
+TimeExtral_advanced.waitms(5000)
+print("Hi!")
+TimeExtral_advanced.sleep(5)
+HTML = requests.post("https://youtube.com/").text
+print("The html code of youtube.com at this moment is:\n\n\n" + HTML)
+```
