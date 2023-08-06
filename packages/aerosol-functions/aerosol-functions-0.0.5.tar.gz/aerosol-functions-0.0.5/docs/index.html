@@ -1,0 +1,2673 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>aerosol_functions API documentation</title>
+<meta name="description" content="Collection of functions to analyze atmospheric aerosol data" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>aerosol_functions</code></h1>
+</header>
+<section id="section-intro">
+<p>Collection of functions to analyze atmospheric aerosol data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">&#34;&#34;&#34;
+Collection of functions to analyze atmospheric aerosol data
+
+&#34;&#34;&#34;
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.dates as dts
+from matplotlib.ticker import LogLocator
+from matplotlib import colors
+from datetime import datetime, timedelta, timezone
+from scipy.optimize import minimize
+from scipy.integrate import trapezoid
+
+def datenum2datetime(datenum,tz=None):
+    &#34;&#34;&#34;
+    Convert from matlab datenum to python datetime 
+
+    Parameters
+    ----------
+
+    datenum : float
+        A serial date number representing the whole and 
+        fractional number of days from 1-Jan-0000 to a 
+        specific date (MATLAB datenum)
+  
+    tz : int or `None`
+        Timezone offset in minutes from UTC
+        `None` implies timezone unaware
+
+    Returns
+    -------
+
+    pandas.Timestamp
+
+    &#34;&#34;&#34;
+    dt = (datetime.fromordinal(int(datenum)) + timedelta(days=datenum%1) - timedelta(days = 366))
+    if tz is not None:
+        tz_offset = timezone(timedelta(minutes=tz))
+        dt = dt.replace(tzinfo=tz_offset)
+
+    return pd.to_datetime(dt.isoformat())
+
+def datetime2datenum(dt):
+    &#34;&#34;&#34; 
+    Convert from python datetime to matlab datenum 
+
+    Parameters
+    ----------
+
+    dt : datetime object
+
+    Returns
+    -------
+
+    float
+        A serial date number representing the whole and 
+        fractional number of days from 1-Jan-0000 to a 
+        specific date (MATLAB datenum)
+
+    &#34;&#34;&#34;
+
+    ord = dt.toordinal()
+    mdn = dt + timedelta(days = 366)
+    frac = (dt-datetime(dt.year,dt.month,dt.day,0,0,0)).seconds / (24.0 * 60.0 * 60.0)
+    return mdn.toordinal() + frac
+
+def bin_df(df, t_min, t_max, reso, q=0.5):
+    &#34;&#34;&#34; Utility function for binning timeseries data
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number size distribution
+
+        `df.index` time  
+        `df.columns` particle diameter (m)
+        `df.values` normalized concentrations (dN/dlogDp) 
+
+    t_min : datetime or str
+        first bin lower limit
+
+    t_max : datetime or str
+        last bin upper limit
+
+    reso : int or str
+        desired time resolution in minutes
+        or pandas time offset alias 
+
+    q : float
+        quintile of data calculated per bin
+
+        default is the median (0.5)
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Binned aerosol number size distribution
+
+        All bins have constant width determined by reso and they
+        share edges. If a bin has no values it is given a value of `NaN`
+
+    &#34;&#34;&#34;
+    if isinstance(reso,int):
+        reso = pd.Timedelta(minutes=reso)
+    if isinstance(reso,str):
+        pass
+
+    ix = pd.date_range(t_min,t_max,freq=reso)
+    half_step = (ix[1] - ix[0])/2.
+   
+    data = []
+    index = []
+
+    for i in range(len(ix)-1):
+        df_block = df.iloc[((df.index&gt;=ix[i]) &amp; (df.index&lt;ix[i+1])),:].median().values.flatten()
+        if len(df_block)==0:
+            df_block = np.nan*np.ones(len(df.columns))
+        data.append(df_block)
+        index.append(ix[i] + half_step)
+
+    return pd.DataFrame(index = index, data = data, columns = df.columns)
+
+def generate_log_ticks(min_exp,max_exp):
+    &#34;&#34;&#34;
+    Generate ticks and ticklabels for log axis
+
+    Parameters:
+    -----------
+    
+    min_exp : int
+        The exponent in the smallest power of ten
+
+    max_exp : int
+        The exponent in the largest power of ten
+
+    Returns:
+    --------
+
+    numpy.array
+        tick values
+
+    list of str
+        tick labels for each power of ten
+
+    &#34;&#34;&#34;
+    x=np.arange(1,10)
+    y=np.arange(min_exp,max_exp).astype(float)
+    log_ticks=[]
+    log_tick_labels=[]
+    for j in y:
+        for i in x:
+            log_ticks.append(np.log10(np.round(i*10**j,int(np.abs(j)))))
+            if i==1:
+                log_tick_labels.append(&#34;10$^{%d}$&#34;%j)
+            else:
+                log_tick_labels.append(&#39;&#39;)
+
+    log_ticks=np.array(log_ticks)
+    return log_ticks,log_tick_labels
+
+def plot_sumfile(
+    v,
+    ax=None,
+    vmin=10,
+    vmax=100000,
+    time_reso=2,
+    time_formatter=&#34;%H:%M&#34;):    
+    &#34;&#34;&#34; 
+    Plot aerosol particle number-size distribution surface plot
+
+    Parameters
+    ----------
+
+    v : pandas.DataFrame
+        Aerosol number size distribution
+
+        time (index) should be have constant resolution, 
+        otherwise the time axis will not be correct
+
+    ax : axes object
+        axis on which to plot the data
+        if `None` the axis are created
+
+    vmin : float or int
+        color scale lower limit
+
+    vmax : float or int
+        color scale upper limit
+
+    time_reso : `int`
+        Time resolution of ticks given in hours
+
+    time_formatter : `str`
+        Define the format of time ticklabels
+        
+    &#34;&#34;&#34;
+
+    if ax is None:
+        fig,handle = plt.subplots(figsize=(10,4))
+    else:
+        handle=ax
+
+    dp = v.columns.values.astype(float)
+    dndlogdp = v.values.astype(float)
+
+    log_ticks,log_tick_labels = generate_log_ticks(-10,-4)
+
+    norm = colors.LogNorm(vmin=vmin,vmax=vmax)
+    color_ticks = LogLocator(subs=range(10))
+
+    handle.set_yticks(log_ticks)
+    handle.set_yticklabels(log_tick_labels)
+
+    if v.index[0].utcoffset() is None:
+        t1=dts.date2num(v.index[0])+v.index[0].second/(60.*60.*24.)
+        t2=dts.date2num(v.index[-1])+v.index[-1].second/(60.*60.*24.)
+    else:
+        t1=dts.date2num(v.index[0])+v.index[0].utcoffset().seconds/(60.*60.*24.)
+        t2=dts.date2num(v.index[-1])+v.index[-1].utcoffset().seconds/(60.*60.*24.)
+
+    dp1=np.log10(dp.min())
+    dp2=np.log10(dp.max())
+
+    img = handle.imshow(
+        np.flipud(dndlogdp.T),
+        origin=&#34;upper&#34;,
+        aspect=&#34;auto&#34;,
+        cmap=&#34;turbo&#34;,
+        norm=norm,
+        extent=(t1,t2,dp1,dp2)
+    )
+
+    handle.xaxis.set_major_locator(dts.HourLocator(interval=time_reso))
+    handle.xaxis.set_major_formatter(dts.DateFormatter(time_formatter))
+    plt.setp(handle.get_xticklabels(),rotation=80)
+
+    box = handle.get_position()
+    c_handle = plt.axes([box.x0*1.025 + box.width * 1.025, box.y0, 0.01, box.height])
+    cbar = plt.colorbar(img,cax=c_handle,ticks=color_ticks)
+
+    handle.set_ylabel(&#39;Dp, [m]&#39;)
+    handle.set_xlabel(&#39;Time&#39;)
+    cbar.set_label(&#39;dN/dlogDp, [cm-3]&#39;)
+
+    if ax is None:
+        plt.show()
+
+def dndlogdp2dn(df):
+    &#34;&#34;&#34;    
+    Convert from normalized number concentrations to
+    unnormalized number concentrations assuming that 
+    the size channels have common edges.
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number-size distribution (dN/dlogDp)
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Aerosol number size distribution (dN)
+
+    &#34;&#34;&#34;
+    
+    logdp_mid = np.log10(df.columns.values.astype(float))
+    logdp = (logdp_mid[:-1]+logdp_mid[1:])/2.0
+    logdp = np.append(logdp,logdp_mid.max()+(logdp_mid.max()-logdp.max()))
+    logdp = np.insert(logdp,0,logdp_mid.min()-(logdp.min()-logdp_mid.min()))
+    dlogdp = np.diff(logdp)
+
+    return df*dlogdp
+
+def air_viscosity(temp):
+    &#34;&#34;&#34; 
+    Calculate air viscosity
+    using Enskog-Chapman theory
+
+    Parameters
+    ----------
+
+    temp : float or numpy.array
+        air temperature, unit: K  
+
+    Returns
+    -------
+
+    float or numpy.array
+        viscosity of air, unit: m2 s-1  
+
+    &#34;&#34;&#34;
+
+    nyy_ref=18.203e-6
+    S=110.4
+    temp_ref=293.15
+    return nyy_ref*((temp_ref+S)/(temp+S))*((temp/temp_ref)**(3./2.))
+
+def mean_free_path(temp,pres):
+    &#34;&#34;&#34; 
+    Calculate mean free path in air
+
+    Parameters
+    ----------
+
+    temp : float, array or dataframe
+        air temperature, unit: K  
+
+    pres : float, array or dataframe
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float, array or dataframe
+        mean free path in air, unit: m
+
+    &#34;&#34;&#34;
+
+    R=8.3143
+    Mair=0.02897
+    mu=air_viscosity(temp)
+    return (mu/pres)*((np.pi*R*temp)/(2.*Mair))**0.5
+
+def slipcorr(dp,temp,pres):
+    &#34;&#34;&#34;
+    Slip correction factor in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy array (m,)
+        particle diameter, unit m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Cunningham slip correction factor for each particle diameter,
+        if temperature and pressure and arrays then for each particle 
+        diameter at different pressure/temperature values.
+        unit dimensionless        
+
+    &#34;&#34;&#34;
+   
+    l = mean_free_path(temp,pres)
+    return 1.+((2.*l)/dp)*(1.257+0.4*np.exp(-(1.1*dp)/(2.*l)))
+
+def particle_diffusivity(dp,temp,pres):
+    &#34;&#34;&#34; 
+    Particle brownian diffusivity in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,) 
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Brownian diffusivity in air for particles of size dp,
+        and at each temperature/pressure value
+        unit m2 s-1
+
+    &#34;&#34;&#34;
+
+    k=1.381e-23
+    cc=slipcorr(dp,temp,pres)
+    mu=air_viscosity(temp)
+
+    return (k*temp*cc)/(3.*np.pi*mu*dp)
+
+def particle_thermal_speed(dp,temp):
+    &#34;&#34;&#34;
+    Particle thermal speed 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Particle thermal speed for each dp at each temperature 
+        point, unit: m s-1
+
+    &#34;&#34;&#34;
+
+    k=1.381e-23
+    rho_p=1000.0
+    mp=rho_p*(1./6.)*np.pi*dp**3.
+    
+    return ((8.*k*temp)/(np.pi*mp))**(1./2.)
+
+def particle_mean_free_path(dp,temp,pres):
+    &#34;&#34;&#34; 
+    Particle mean free path in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Particle mean free path for each dp, unit: m
+
+    &#34;&#34;&#34;
+
+    D=particle_diffusivity(dp,temp,pres)
+    c=particle_thermal_speed(dp,temp)
+
+    return (8.*D)/(np.pi*c)
+
+def coagulation_coef(dp1,dp2,temp,pres):
+    &#34;&#34;&#34; 
+    Calculate Brownian coagulation coefficient (Fuchs)
+
+    Parameters
+    ----------
+
+    dp1 : float or numpy.array (m,)
+        first particle diameter, unit: m 
+
+    dp2 : float or numpy.array (m,)
+        second particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array
+        Brownian coagulation coefficient (Fuchs), 
+        
+        for example if all parameters are arrays
+        the function returns a 2d array where 
+        the entry at i,j correspoinds to the 
+        coagulation coefficient for particle sizes
+        dp1[i] and dp2[i] at temp[j] and pres[j].
+
+        unit m3 s-1
+
+    &#34;&#34;&#34;
+
+    def particle_g(dp,temp,pres):
+        l = particle_mean_free_path(dp,temp,pres)    
+        return 1./(3.*dp*l)*((dp+l)**3.-(dp**2.+l**2.)**(3./2.))-dp
+
+    D1 = particle_diffusivity(dp1,temp,pres)
+    D2 = particle_diffusivity(dp2,temp,pres)
+    g1 = particle_g(dp1,temp,pres)
+    g2 = particle_g(dp2,temp,pres)
+    c1 = particle_thermal_speed(dp1,temp)
+    c2 = particle_thermal_speed(dp2,temp)
+    
+    return 2.*np.pi*(D1+D2)*(dp1+dp2) \
+           * ( (dp1+dp2)/(dp1+dp2+2.*(g1**2.+g2**2.)**0.5) + \
+           +   (8.*(D1+D2))/((c1**2.+c2**2.)**0.5*(dp1+dp2)) )
+
+def calc_coags(df,dp,temp,pres):
+    &#34;&#34;&#34; 
+    Calculate coagulation sink
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091 
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number size distribution
+
+    dp : float or array
+        Particle diameter(s) for which you want to calculate the CoagS, 
+        unit: m
+
+    temp : pandas.DataFrame or float
+        Ambient temperature corresponding to the data, unit: K
+        If single value given it is used for all data
+
+    pres : pandas.DataFrame or float
+        Ambient pressure corresponding to the data, unit: Pa
+        If single value given it is used for all data
+
+    Returns
+    -------
+    
+    pandas.DataFrame
+        Coagulation sink for the given diamater(s),
+        unit: s-1
+
+    &#34;&#34;&#34;
+
+    if isinstance(temp,float):
+        temp = pd.DataFrame(index = df.index, columns=[&#34;Temperature&#34;], data=temp)
+    else:
+        temp = temp.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(pres,float):
+        pres = pd.DataFrame(index = df.index, columns=[&#34;Pressure&#34;], data=pres)
+    else:
+        pres = pres.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(dp,float):
+        dp = [dp]
+    
+    coags = pd.DataFrame(index = df.index)
+    i=0
+    for dpi in dp:
+        df = df.loc[:,df.columns.values.astype(float)&gt;=dpi]
+        a = dndlogdp2dn(df)
+        b = 1e6*coagulation_coef(dpi,df.columns.values.astype(float),temp.values,pres.values)
+        coags.insert(i,dpi,(a*b).sum(axis=1,min_count=1))
+        i+=1
+
+    return coags
+   
+def diam2mob(dp,temp,pres,ne):
+    &#34;&#34;&#34; 
+    Convert electrical mobility diameter to electrical mobility in air
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter(s),
+        unit : m
+
+    temp : float or numpy.array (n,1)
+        ambient temperature, 
+        unit: K
+
+    pres : float or numpy.array (n,1)
+        ambient pressure, 
+        unit: Pa
+
+    ne : int
+        number of charges on the aerosol particle
+
+    Returns
+    -------
+
+    float or numpy.array
+        particle electrical mobility or mobilities, 
+        unit: m2 s-1 V-1
+
+    &#34;&#34;&#34;
+
+    e = 1.60217662e-19
+    cc = slipcorr(dp,temp,pres)
+    mu = air_viscosity(temp)
+
+    Zp = (ne*e*cc)/(3.*np.pi*mu*dp)
+
+    return Zp
+
+def mob2diam(Zp,temp,pres,ne):
+    &#34;&#34;&#34;
+    Convert electrical mobility to electrical mobility diameter in air
+
+    Parameters
+    ----------
+
+    Zp : float
+        particle electrical mobility or mobilities, 
+        unit: m2 s-1 V-1
+
+    temp : float
+        ambient temperature, 
+        unit: K
+
+    pres : float
+        ambient pressure, 
+        unit: Pa
+
+    ne : integer
+        number of charges on the aerosol particle
+
+    Returns
+    -------
+
+    float
+        particle diameter, unit: m
+    
+    &#34;&#34;&#34;
+
+    def minimize_this(dp,Z):
+        return np.abs(diam2mob(dp,temp,pres,ne)-Z)
+
+    dp0 = 0.0001
+
+    result = minimize(minimize_this, dp0, args=(Zp,), tol=1e-20, method=&#39;Nelder-Mead&#39;).x[0]    
+
+    return result
+
+def binary_diffusivity(temp,pres,Ma,Mb,Va,Vb):
+    &#34;&#34;&#34; 
+    Binary diffusivity in a mixture of gases a and b
+
+    Fuller et al. (1966): https://doi.org/10.1021/ie50677a007 
+
+    Parameters
+    ----------
+
+    temp : float or numpy.array
+        temperature, 
+        unit: K
+
+    pres : float or numpy.array
+        pressure, 
+        unit: Pa
+
+    Ma : float
+        relative molecular mass of gas a, 
+        unit: dimensionless
+
+    Mb : float
+        relative molecular mass of gas b, 
+        unit: dimensionless
+
+    Va : float
+        diffusion volume of gas a, 
+        unit: dimensionless
+
+    Vb : float
+        diffusion volume of gas b, 
+        unit: dimensionless
+
+    Returns
+    -------
+
+    float or numpy.array
+        binary diffusivity, 
+        unit: m2 s-1
+
+    &#34;&#34;&#34;
+    
+    diffusivity = (1.013e-2*(temp**1.75)*np.sqrt((1./Ma)+(1./Mb)))/(pres*(Va**(1./3.)+Vb**(1./3.))**2)
+    return diffusivity
+
+
+def beta(dp,temp,pres,diffusivity,molar_mass):
+    &#34;&#34;&#34; 
+    Calculate Fuchs Sutugin correction factor 
+
+    Sutugin et al. (1971): https://doi.org/10.1016/0021-8502(71)90061-9
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        aerosol particle diameter(s), 
+        unit: m
+
+    temp : float or numpy.array (n,1)
+        temperature, 
+        unit: K
+
+    pres : float or numpy.array (n,1)
+        pressure,
+        unit: Pa
+
+    diffusivity : float or numpy.array (n,1)
+        diffusivity of the gas that is condensing, 
+        unit: m2/s
+
+    molar_mass : float
+        molar mass of the condensing gas, 
+        unit: g/mol
+
+    Returns
+    -------
+
+    float or numpy.array
+        Fuchs Sutugin correction factor for each particle diameter and 
+        temperature/pressure 
+        unit: m2/s
+
+    &#34;&#34;&#34;
+
+    R = 8.314 
+    l = 3.*diffusivity/((8.*R*temp)/(np.pi*molar_mass*0.001))**0.5
+    knud = 2.*l/dp
+    
+    return (1. + knud)/(1. + 1.677*knud + 1.333*knud**2)
+
+def calc_cs(df,temp,pres):
+    &#34;&#34;&#34;
+    Calculate condensation sink, assuming that the condensing gas is sulfuric acid in air
+    with aerosol particles.
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091 
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        aerosol number size distribution (dN/dlogDp)
+
+    temp : pandas.DataFrame or float
+        Ambient temperature corresponding to the data, unit: K
+        If single value given it is used for all data
+
+    pres : pandas.DataFrame or float
+        Ambient pressure corresponding to the data, unit: Pa
+        If single value given it is used for all data
+
+    Returns
+    -------
+    
+    pandas.Series
+        condensation sink time series, unit: s-1
+
+    &#34;&#34;&#34;
+    
+    if isinstance(temp,float):
+        temp = pd.DataFrame(index = df.index, columns=[&#34;Temperature&#34;], data=temp)
+    else:
+        temp = temp.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(pres,float):
+        pres = pd.DataFrame(index = df.index, columns=[&#34;Pressure&#34;], data=pres)
+    else:
+        pres = pres.reindex(df.index, method=&#34;nearest&#34;)
+
+    M_h2so4 = 98.08   
+    M_air = 28.965    
+    V_air = 19.7      
+    V_h2so4 = 51.96  
+
+    dn = dndlogdp2dn(df)
+
+    dp = df.columns.values.astype(float)
+
+    diffu = binary_diffusivity(temp.values,pres.values,M_h2so4,M_air,V_h2so4,V_air)
+
+    b = beta(dp,temp.values,pres.values,diffu,M_h2so4)
+
+    df2 = (1e6*dn*(b*dp)).sum(axis=1,min_count=1)
+
+    cs = (4.*np.pi*diffu.flatten())*df2.values
+
+    return pd.Series(index=df.index,data=cs)
+
+def calc_conc(df,dmin,dmax):
+    &#34;&#34;&#34;
+    Calculate particle number concentration from aerosol 
+    number-size distribution
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number-size distribution
+
+    dmin : float or array
+        Size range lower diameter(s), unit: m
+
+    dmax : float or array
+        Size range upper diameter(s), unit: m
+
+    Returns
+    -------
+    
+    pandas.DataFrame
+        Number concentration in the given size range(s), unit: cm-3
+
+    &#34;&#34;&#34;
+
+    if isinstance(dmin,float):
+        dmin = [dmin]
+    if isinstance(dmax,float):
+        dmax = [dmax]
+
+    dp = df.columns.values.astype(float)
+    conc_df = pd.DataFrame(index = df.index)
+
+    for i in range(len(dmin)):
+        dp1 = dmin[i]
+        dp2 = dmax[i]
+        findex = np.argwhere((dp&lt;=dp2)&amp;(dp&gt;=dp1)).flatten()
+        if len(findex)==0:
+            conc = np.nan*np.ones(df.shape[0])
+        else:
+            dp_subset=dp[findex]
+            conc=df.iloc[:,findex]
+            logdp_mid=np.log10(dp_subset)
+            logdp=(logdp_mid[:-1]+logdp_mid[1:])/2.0
+            logdp=np.append(logdp,logdp_mid.max()+(logdp_mid.max()-logdp.max()))
+            logdp=np.insert(logdp,0,logdp_mid.min()-(logdp.min()-logdp_mid.min()))
+            dlogdp=np.diff(logdp)
+            conc=np.nansum(conc*dlogdp,axis=1)
+
+        conc_df.insert(i,&#34;%.2e_%.2e&#34; % (dp1,dp2),conc)
+
+    return conc_df
+
+def calc_formation_rate(
+    dp1,
+    dp2,
+    conc,
+    coags,
+    gr):
+    &#34;&#34;&#34;
+    Calculate particle formation rate
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091
+
+    Parameters
+    ----------
+    
+    dp1 : float or array
+        Lower diameter of the size range(s), unit: m
+
+    dp2 : float or array
+        Upper diameter of the size range(s), unit m
+
+    conc : pandas.DataFrame
+        particle number concentration timeseries
+        in the size range(s), unit cm-3
+
+    coags : pandas.DataFrame
+        Coagulation sink timeseries for particles 
+        in the size range(s). unit s-1 
+
+        Usually approximated as coagulation sink for particle size
+        in the lower limit of the size range, 
+        unit s-1
+
+    gr : float or array
+        Growth rate for particles out of the size range(s), 
+        unit nm h-1
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        particle formation rate for diameter(s), unit: cm3 s-1
+
+    &#34;&#34;&#34;
+
+    # Fit the coags to the conc index
+    coags = coags.reindex(conc.index,method=&#34;nearest&#34;)
+
+    # Construct the dt frame
+    dt = conc.index.to_frame().diff().astype(&#34;timedelta64[s]&#34;).astype(float)
+
+    conc_term = conc.diff().values/dt.values
+    sink_term = coags.values * conc.values
+    gr_term = (2.778e-13*gr)/(dp2-dp1) * conc.values
+    formation_rate = conc_term + sink_term + gr_term
+    
+    J = pd.DataFrame(data = formation_rate, index = conc.index, columns=coags.columns)
+
+    return J
+
+def calc_ion_formation_rate(
+    dp1,
+    dp2,
+    conc_pos,
+    conc_neg,
+    conc_pos_small,
+    conc_neg_small,
+    conc,
+    coags,
+    gr):
+    &#34;&#34;&#34; 
+    Calculate ion formation rate
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091
+
+    Parameters
+    ----------
+
+    dp1 : float or array
+        Lower diameter of the size range(s), unit: m
+
+    dp2 : float or array
+        Upper diameter of the size range(s), unit: m
+
+    conc_pos : pandas.DataFrame
+        Positive ion number concentration in the size range(s), unit: cm-3. 
+        Each size range corresponds to a column in the dataframe
+
+    conc_neg : pandas.DataFrame
+        Negative ion number concentration in the size range(s), unit: cm-3
+
+    conc_pos_small : pandas.DataFrame
+        Positive ion number concentration for ions smaller than size range(s), unit: cm-3
+
+    conc_neg_small : pandas.DataFrame
+        Negative ion number concentration for ions smaller than size range(s), unit: cm-3
+
+    conc : pandas.DataFrame
+        Particle number concentration in the size range(s), unit: cm-3
+
+    coags : pandas.DataFrame
+        Coagulation sink for particles in the size range(s).
+        unit: s-1
+
+    gr : float or array
+        Growth rate for particles out of the size range(s), unit: nm h-1
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Negative ion formation rate(s), unit : cm3 s-1
+
+    pandas.DataFrame    
+        Positive ion formation rate(s), unit: cm3 s-1
+
+    &#34;&#34;&#34;
+
+    # Reindex everything to conc_neg
+    coags = coags.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_pos = conc_pos.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc = conc.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_neg_small = conc_neg_small.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_pos_small = conc_pos_small.reindex(conc_neg.index,method=&#34;nearest&#34;)
+
+    # Constants
+    alpha = 1.6e-6 # cm3 s-1
+    Xi = 0.01e-6 # cm3 s-1
+
+    # Construct the dt frame
+    dt = conc_neg.index.to_frame().diff().astype(&#34;timedelta64[s]&#34;).astype(float)
+
+    # Calculate the terms
+    pos_conc_term = conc_pos.diff().values/dt.values
+    pos_sink_term = coags.values * conc_pos.values
+    pos_gr_term = (2.778e-13*gr)/(dp2-dp1) * conc_pos.values
+    pos_recombination_term = alpha * conc_pos.values * conc_neg_small.values
+    pos_charging_term = Xi * conc.values * conc_pos_small.values
+    pos_formation_rate = pos_conc_term + pos_sink_term + pos_gr_term + pos_recombination_term - pos_charging_term
+
+    J_pos = pd.DataFrame(data=pos_formation_rate,columns=coags.columns,index=conc_neg.index)
+
+    neg_conc_term = conc_neg.diff().values/dt.values
+    neg_sink_term = coags.values * conc_neg.values
+    neg_gr_term = (2.778e-13*gr)/(dp2-dp1) * conc_neg.values
+    neg_recombination_term = alpha * conc_neg.values * conc_pos_small.values
+    neg_charging_term = Xi * conc.values * conc_neg_small.values
+    neg_formation_rate = neg_conc_term + neg_sink_term + neg_gr_term + neg_recombination_term - neg_charging_term
+
+    J_neg = pd.DataFrame(data=neg_formation_rate,columns=coags.columns,index=conc_neg.index)
+
+    return J_neg, J_pos</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="aerosol_functions.air_viscosity"><code class="name flex">
+<span>def <span class="ident">air_viscosity</span></span>(<span>temp)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate air viscosity
+using Enskog-Chapman theory</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array</code></dt>
+<dd>air temperature, unit: K</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array</code></dt>
+<dd>viscosity of air, unit: m2 s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def air_viscosity(temp):
+    &#34;&#34;&#34; 
+    Calculate air viscosity
+    using Enskog-Chapman theory
+
+    Parameters
+    ----------
+
+    temp : float or numpy.array
+        air temperature, unit: K  
+
+    Returns
+    -------
+
+    float or numpy.array
+        viscosity of air, unit: m2 s-1  
+
+    &#34;&#34;&#34;
+
+    nyy_ref=18.203e-6
+    S=110.4
+    temp_ref=293.15
+    return nyy_ref*((temp_ref+S)/(temp+S))*((temp/temp_ref)**(3./2.))</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.beta"><code class="name flex">
+<span>def <span class="ident">beta</span></span>(<span>dp, temp, pres, diffusivity, molar_mass)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate Fuchs Sutugin correction factor </p>
+<p>Sutugin et al. (1971): <a href="https://doi.org/10.1016/0021-8502(71)90061-9">https://doi.org/10.1016/0021-8502(71)90061-9</a></p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>aerosol particle diameter(s),
+unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>temperature,
+unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>pressure,
+unit: Pa</dd>
+<dt><strong><code>diffusivity</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>diffusivity of the gas that is condensing,
+unit: m2/s</dd>
+<dt><strong><code>molar_mass</code></strong> :&ensp;<code>float</code></dt>
+<dd>molar mass of the condensing gas,
+unit: g/mol</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array</code></dt>
+<dd>Fuchs Sutugin correction factor for each particle diameter and
+temperature/pressure
+unit: m2/s</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def beta(dp,temp,pres,diffusivity,molar_mass):
+    &#34;&#34;&#34; 
+    Calculate Fuchs Sutugin correction factor 
+
+    Sutugin et al. (1971): https://doi.org/10.1016/0021-8502(71)90061-9
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        aerosol particle diameter(s), 
+        unit: m
+
+    temp : float or numpy.array (n,1)
+        temperature, 
+        unit: K
+
+    pres : float or numpy.array (n,1)
+        pressure,
+        unit: Pa
+
+    diffusivity : float or numpy.array (n,1)
+        diffusivity of the gas that is condensing, 
+        unit: m2/s
+
+    molar_mass : float
+        molar mass of the condensing gas, 
+        unit: g/mol
+
+    Returns
+    -------
+
+    float or numpy.array
+        Fuchs Sutugin correction factor for each particle diameter and 
+        temperature/pressure 
+        unit: m2/s
+
+    &#34;&#34;&#34;
+
+    R = 8.314 
+    l = 3.*diffusivity/((8.*R*temp)/(np.pi*molar_mass*0.001))**0.5
+    knud = 2.*l/dp
+    
+    return (1. + knud)/(1. + 1.677*knud + 1.333*knud**2)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.bin_df"><code class="name flex">
+<span>def <span class="ident">bin_df</span></span>(<span>df, t_min, t_max, reso, q=0.5)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Utility function for binning timeseries data</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>
+<p>Aerosol number size distribution</p>
+<p><code>df.index</code> time<br>
+<code>df.columns</code> particle diameter (m)
+<code>df.values</code> normalized concentrations (dN/dlogDp)</p>
+</dd>
+<dt><strong><code>t_min</code></strong> :&ensp;<code>datetime</code> or <code>str</code></dt>
+<dd>first bin lower limit</dd>
+<dt><strong><code>t_max</code></strong> :&ensp;<code>datetime</code> or <code>str</code></dt>
+<dd>last bin upper limit</dd>
+<dt><strong><code>reso</code></strong> :&ensp;<code>int</code> or <code>str</code></dt>
+<dd>desired time resolution in minutes
+or pandas time offset alias</dd>
+<dt><strong><code>q</code></strong> :&ensp;<code>float</code></dt>
+<dd>
+<p>quintile of data calculated per bin</p>
+<p>default is the median (0.5)</p>
+</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>
+<p>Binned aerosol number size distribution</p>
+<p>All bins have constant width determined by reso and they
+share edges. If a bin has no values it is given a value of <code>NaN</code></p>
+</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def bin_df(df, t_min, t_max, reso, q=0.5):
+    &#34;&#34;&#34; Utility function for binning timeseries data
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number size distribution
+
+        `df.index` time  
+        `df.columns` particle diameter (m)
+        `df.values` normalized concentrations (dN/dlogDp) 
+
+    t_min : datetime or str
+        first bin lower limit
+
+    t_max : datetime or str
+        last bin upper limit
+
+    reso : int or str
+        desired time resolution in minutes
+        or pandas time offset alias 
+
+    q : float
+        quintile of data calculated per bin
+
+        default is the median (0.5)
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Binned aerosol number size distribution
+
+        All bins have constant width determined by reso and they
+        share edges. If a bin has no values it is given a value of `NaN`
+
+    &#34;&#34;&#34;
+    if isinstance(reso,int):
+        reso = pd.Timedelta(minutes=reso)
+    if isinstance(reso,str):
+        pass
+
+    ix = pd.date_range(t_min,t_max,freq=reso)
+    half_step = (ix[1] - ix[0])/2.
+   
+    data = []
+    index = []
+
+    for i in range(len(ix)-1):
+        df_block = df.iloc[((df.index&gt;=ix[i]) &amp; (df.index&lt;ix[i+1])),:].median().values.flatten()
+        if len(df_block)==0:
+            df_block = np.nan*np.ones(len(df.columns))
+        data.append(df_block)
+        index.append(ix[i] + half_step)
+
+    return pd.DataFrame(index = index, data = data, columns = df.columns)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.binary_diffusivity"><code class="name flex">
+<span>def <span class="ident">binary_diffusivity</span></span>(<span>temp, pres, Ma, Mb, Va, Vb)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Binary diffusivity in a mixture of gases a and b</p>
+<p>Fuller et al. (1966): <a href="https://doi.org/10.1021/ie50677a007">https://doi.org/10.1021/ie50677a007</a> </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array</code></dt>
+<dd>temperature,
+unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array</code></dt>
+<dd>pressure,
+unit: Pa</dd>
+<dt><strong><code>Ma</code></strong> :&ensp;<code>float</code></dt>
+<dd>relative molecular mass of gas a,
+unit: dimensionless</dd>
+<dt><strong><code>Mb</code></strong> :&ensp;<code>float</code></dt>
+<dd>relative molecular mass of gas b,
+unit: dimensionless</dd>
+<dt><strong><code>Va</code></strong> :&ensp;<code>float</code></dt>
+<dd>diffusion volume of gas a,
+unit: dimensionless</dd>
+<dt><strong><code>Vb</code></strong> :&ensp;<code>float</code></dt>
+<dd>diffusion volume of gas b,
+unit: dimensionless</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array</code></dt>
+<dd>binary diffusivity,
+unit: m2 s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def binary_diffusivity(temp,pres,Ma,Mb,Va,Vb):
+    &#34;&#34;&#34; 
+    Binary diffusivity in a mixture of gases a and b
+
+    Fuller et al. (1966): https://doi.org/10.1021/ie50677a007 
+
+    Parameters
+    ----------
+
+    temp : float or numpy.array
+        temperature, 
+        unit: K
+
+    pres : float or numpy.array
+        pressure, 
+        unit: Pa
+
+    Ma : float
+        relative molecular mass of gas a, 
+        unit: dimensionless
+
+    Mb : float
+        relative molecular mass of gas b, 
+        unit: dimensionless
+
+    Va : float
+        diffusion volume of gas a, 
+        unit: dimensionless
+
+    Vb : float
+        diffusion volume of gas b, 
+        unit: dimensionless
+
+    Returns
+    -------
+
+    float or numpy.array
+        binary diffusivity, 
+        unit: m2 s-1
+
+    &#34;&#34;&#34;
+    
+    diffusivity = (1.013e-2*(temp**1.75)*np.sqrt((1./Ma)+(1./Mb)))/(pres*(Va**(1./3.)+Vb**(1./3.))**2)
+    return diffusivity</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.calc_coags"><code class="name flex">
+<span>def <span class="ident">calc_coags</span></span>(<span>df, dp, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate coagulation sink</p>
+<p>Kulmala et al (2012): doi:10.1038/nprot.2012.091 </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Aerosol number size distribution</dd>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Particle diameter(s) for which you want to calculate the CoagS,
+unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>pandas.DataFrame</code> or <code>float</code></dt>
+<dd>Ambient temperature corresponding to the data, unit: K
+If single value given it is used for all data</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>pandas.DataFrame</code> or <code>float</code></dt>
+<dd>Ambient pressure corresponding to the data, unit: Pa
+If single value given it is used for all data</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Coagulation sink for the given diamater(s),
+unit: s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calc_coags(df,dp,temp,pres):
+    &#34;&#34;&#34; 
+    Calculate coagulation sink
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091 
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number size distribution
+
+    dp : float or array
+        Particle diameter(s) for which you want to calculate the CoagS, 
+        unit: m
+
+    temp : pandas.DataFrame or float
+        Ambient temperature corresponding to the data, unit: K
+        If single value given it is used for all data
+
+    pres : pandas.DataFrame or float
+        Ambient pressure corresponding to the data, unit: Pa
+        If single value given it is used for all data
+
+    Returns
+    -------
+    
+    pandas.DataFrame
+        Coagulation sink for the given diamater(s),
+        unit: s-1
+
+    &#34;&#34;&#34;
+
+    if isinstance(temp,float):
+        temp = pd.DataFrame(index = df.index, columns=[&#34;Temperature&#34;], data=temp)
+    else:
+        temp = temp.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(pres,float):
+        pres = pd.DataFrame(index = df.index, columns=[&#34;Pressure&#34;], data=pres)
+    else:
+        pres = pres.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(dp,float):
+        dp = [dp]
+    
+    coags = pd.DataFrame(index = df.index)
+    i=0
+    for dpi in dp:
+        df = df.loc[:,df.columns.values.astype(float)&gt;=dpi]
+        a = dndlogdp2dn(df)
+        b = 1e6*coagulation_coef(dpi,df.columns.values.astype(float),temp.values,pres.values)
+        coags.insert(i,dpi,(a*b).sum(axis=1,min_count=1))
+        i+=1
+
+    return coags</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.calc_conc"><code class="name flex">
+<span>def <span class="ident">calc_conc</span></span>(<span>df, dmin, dmax)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate particle number concentration from aerosol
+number-size distribution</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Aerosol number-size distribution</dd>
+<dt><strong><code>dmin</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Size range lower diameter(s), unit: m</dd>
+<dt><strong><code>dmax</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Size range upper diameter(s), unit: m</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Number concentration in the given size range(s), unit: cm-3</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calc_conc(df,dmin,dmax):
+    &#34;&#34;&#34;
+    Calculate particle number concentration from aerosol 
+    number-size distribution
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number-size distribution
+
+    dmin : float or array
+        Size range lower diameter(s), unit: m
+
+    dmax : float or array
+        Size range upper diameter(s), unit: m
+
+    Returns
+    -------
+    
+    pandas.DataFrame
+        Number concentration in the given size range(s), unit: cm-3
+
+    &#34;&#34;&#34;
+
+    if isinstance(dmin,float):
+        dmin = [dmin]
+    if isinstance(dmax,float):
+        dmax = [dmax]
+
+    dp = df.columns.values.astype(float)
+    conc_df = pd.DataFrame(index = df.index)
+
+    for i in range(len(dmin)):
+        dp1 = dmin[i]
+        dp2 = dmax[i]
+        findex = np.argwhere((dp&lt;=dp2)&amp;(dp&gt;=dp1)).flatten()
+        if len(findex)==0:
+            conc = np.nan*np.ones(df.shape[0])
+        else:
+            dp_subset=dp[findex]
+            conc=df.iloc[:,findex]
+            logdp_mid=np.log10(dp_subset)
+            logdp=(logdp_mid[:-1]+logdp_mid[1:])/2.0
+            logdp=np.append(logdp,logdp_mid.max()+(logdp_mid.max()-logdp.max()))
+            logdp=np.insert(logdp,0,logdp_mid.min()-(logdp.min()-logdp_mid.min()))
+            dlogdp=np.diff(logdp)
+            conc=np.nansum(conc*dlogdp,axis=1)
+
+        conc_df.insert(i,&#34;%.2e_%.2e&#34; % (dp1,dp2),conc)
+
+    return conc_df</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.calc_cs"><code class="name flex">
+<span>def <span class="ident">calc_cs</span></span>(<span>df, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate condensation sink, assuming that the condensing gas is sulfuric acid in air
+with aerosol particles.</p>
+<p>Kulmala et al (2012): doi:10.1038/nprot.2012.091 </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>aerosol number size distribution (dN/dlogDp)</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>pandas.DataFrame</code> or <code>float</code></dt>
+<dd>Ambient temperature corresponding to the data, unit: K
+If single value given it is used for all data</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>pandas.DataFrame</code> or <code>float</code></dt>
+<dd>Ambient pressure corresponding to the data, unit: Pa
+If single value given it is used for all data</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.Series</code></dt>
+<dd>condensation sink time series, unit: s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calc_cs(df,temp,pres):
+    &#34;&#34;&#34;
+    Calculate condensation sink, assuming that the condensing gas is sulfuric acid in air
+    with aerosol particles.
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091 
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        aerosol number size distribution (dN/dlogDp)
+
+    temp : pandas.DataFrame or float
+        Ambient temperature corresponding to the data, unit: K
+        If single value given it is used for all data
+
+    pres : pandas.DataFrame or float
+        Ambient pressure corresponding to the data, unit: Pa
+        If single value given it is used for all data
+
+    Returns
+    -------
+    
+    pandas.Series
+        condensation sink time series, unit: s-1
+
+    &#34;&#34;&#34;
+    
+    if isinstance(temp,float):
+        temp = pd.DataFrame(index = df.index, columns=[&#34;Temperature&#34;], data=temp)
+    else:
+        temp = temp.reindex(df.index, method=&#34;nearest&#34;)
+
+    if isinstance(pres,float):
+        pres = pd.DataFrame(index = df.index, columns=[&#34;Pressure&#34;], data=pres)
+    else:
+        pres = pres.reindex(df.index, method=&#34;nearest&#34;)
+
+    M_h2so4 = 98.08   
+    M_air = 28.965    
+    V_air = 19.7      
+    V_h2so4 = 51.96  
+
+    dn = dndlogdp2dn(df)
+
+    dp = df.columns.values.astype(float)
+
+    diffu = binary_diffusivity(temp.values,pres.values,M_h2so4,M_air,V_h2so4,V_air)
+
+    b = beta(dp,temp.values,pres.values,diffu,M_h2so4)
+
+    df2 = (1e6*dn*(b*dp)).sum(axis=1,min_count=1)
+
+    cs = (4.*np.pi*diffu.flatten())*df2.values
+
+    return pd.Series(index=df.index,data=cs)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.calc_formation_rate"><code class="name flex">
+<span>def <span class="ident">calc_formation_rate</span></span>(<span>dp1, dp2, conc, coags, gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate particle formation rate</p>
+<p>Kulmala et al (2012): doi:10.1038/nprot.2012.091</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp1</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Lower diameter of the size range(s), unit: m</dd>
+<dt><strong><code>dp2</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Upper diameter of the size range(s), unit m</dd>
+<dt><strong><code>conc</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>particle number concentration timeseries
+in the size range(s), unit cm-3</dd>
+<dt><strong><code>coags</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>
+<p>Coagulation sink timeseries for particles
+in the size range(s). unit s-1 </p>
+<p>Usually approximated as coagulation sink for particle size
+in the lower limit of the size range,
+unit s-1</p>
+</dd>
+<dt><strong><code>gr</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Growth rate for particles out of the size range(s),
+unit nm h-1</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>particle formation rate for diameter(s), unit: cm3 s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calc_formation_rate(
+    dp1,
+    dp2,
+    conc,
+    coags,
+    gr):
+    &#34;&#34;&#34;
+    Calculate particle formation rate
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091
+
+    Parameters
+    ----------
+    
+    dp1 : float or array
+        Lower diameter of the size range(s), unit: m
+
+    dp2 : float or array
+        Upper diameter of the size range(s), unit m
+
+    conc : pandas.DataFrame
+        particle number concentration timeseries
+        in the size range(s), unit cm-3
+
+    coags : pandas.DataFrame
+        Coagulation sink timeseries for particles 
+        in the size range(s). unit s-1 
+
+        Usually approximated as coagulation sink for particle size
+        in the lower limit of the size range, 
+        unit s-1
+
+    gr : float or array
+        Growth rate for particles out of the size range(s), 
+        unit nm h-1
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        particle formation rate for diameter(s), unit: cm3 s-1
+
+    &#34;&#34;&#34;
+
+    # Fit the coags to the conc index
+    coags = coags.reindex(conc.index,method=&#34;nearest&#34;)
+
+    # Construct the dt frame
+    dt = conc.index.to_frame().diff().astype(&#34;timedelta64[s]&#34;).astype(float)
+
+    conc_term = conc.diff().values/dt.values
+    sink_term = coags.values * conc.values
+    gr_term = (2.778e-13*gr)/(dp2-dp1) * conc.values
+    formation_rate = conc_term + sink_term + gr_term
+    
+    J = pd.DataFrame(data = formation_rate, index = conc.index, columns=coags.columns)
+
+    return J</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.calc_ion_formation_rate"><code class="name flex">
+<span>def <span class="ident">calc_ion_formation_rate</span></span>(<span>dp1, dp2, conc_pos, conc_neg, conc_pos_small, conc_neg_small, conc, coags, gr)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate ion formation rate</p>
+<p>Kulmala et al (2012): doi:10.1038/nprot.2012.091</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp1</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Lower diameter of the size range(s), unit: m</dd>
+<dt><strong><code>dp2</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Upper diameter of the size range(s), unit: m</dd>
+<dt><strong><code>conc_pos</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Positive ion number concentration in the size range(s), unit: cm-3.
+Each size range corresponds to a column in the dataframe</dd>
+<dt><strong><code>conc_neg</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Negative ion number concentration in the size range(s), unit: cm-3</dd>
+<dt><strong><code>conc_pos_small</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Positive ion number concentration for ions smaller than size range(s), unit: cm-3</dd>
+<dt><strong><code>conc_neg_small</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Negative ion number concentration for ions smaller than size range(s), unit: cm-3</dd>
+<dt><strong><code>conc</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Particle number concentration in the size range(s), unit: cm-3</dd>
+<dt><strong><code>coags</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Coagulation sink for particles in the size range(s).
+unit: s-1</dd>
+<dt><strong><code>gr</code></strong> :&ensp;<code>float</code> or <code>array</code></dt>
+<dd>Growth rate for particles out of the size range(s), unit: nm h-1</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Negative ion formation rate(s), unit : cm3 s-1</dd>
+<dt><code>pandas.DataFrame
+</code></dt>
+<dd>Positive ion formation rate(s), unit: cm3 s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def calc_ion_formation_rate(
+    dp1,
+    dp2,
+    conc_pos,
+    conc_neg,
+    conc_pos_small,
+    conc_neg_small,
+    conc,
+    coags,
+    gr):
+    &#34;&#34;&#34; 
+    Calculate ion formation rate
+
+    Kulmala et al (2012): doi:10.1038/nprot.2012.091
+
+    Parameters
+    ----------
+
+    dp1 : float or array
+        Lower diameter of the size range(s), unit: m
+
+    dp2 : float or array
+        Upper diameter of the size range(s), unit: m
+
+    conc_pos : pandas.DataFrame
+        Positive ion number concentration in the size range(s), unit: cm-3. 
+        Each size range corresponds to a column in the dataframe
+
+    conc_neg : pandas.DataFrame
+        Negative ion number concentration in the size range(s), unit: cm-3
+
+    conc_pos_small : pandas.DataFrame
+        Positive ion number concentration for ions smaller than size range(s), unit: cm-3
+
+    conc_neg_small : pandas.DataFrame
+        Negative ion number concentration for ions smaller than size range(s), unit: cm-3
+
+    conc : pandas.DataFrame
+        Particle number concentration in the size range(s), unit: cm-3
+
+    coags : pandas.DataFrame
+        Coagulation sink for particles in the size range(s).
+        unit: s-1
+
+    gr : float or array
+        Growth rate for particles out of the size range(s), unit: nm h-1
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Negative ion formation rate(s), unit : cm3 s-1
+
+    pandas.DataFrame    
+        Positive ion formation rate(s), unit: cm3 s-1
+
+    &#34;&#34;&#34;
+
+    # Reindex everything to conc_neg
+    coags = coags.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_pos = conc_pos.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc = conc.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_neg_small = conc_neg_small.reindex(conc_neg.index,method=&#34;nearest&#34;)
+    conc_pos_small = conc_pos_small.reindex(conc_neg.index,method=&#34;nearest&#34;)
+
+    # Constants
+    alpha = 1.6e-6 # cm3 s-1
+    Xi = 0.01e-6 # cm3 s-1
+
+    # Construct the dt frame
+    dt = conc_neg.index.to_frame().diff().astype(&#34;timedelta64[s]&#34;).astype(float)
+
+    # Calculate the terms
+    pos_conc_term = conc_pos.diff().values/dt.values
+    pos_sink_term = coags.values * conc_pos.values
+    pos_gr_term = (2.778e-13*gr)/(dp2-dp1) * conc_pos.values
+    pos_recombination_term = alpha * conc_pos.values * conc_neg_small.values
+    pos_charging_term = Xi * conc.values * conc_pos_small.values
+    pos_formation_rate = pos_conc_term + pos_sink_term + pos_gr_term + pos_recombination_term - pos_charging_term
+
+    J_pos = pd.DataFrame(data=pos_formation_rate,columns=coags.columns,index=conc_neg.index)
+
+    neg_conc_term = conc_neg.diff().values/dt.values
+    neg_sink_term = coags.values * conc_neg.values
+    neg_gr_term = (2.778e-13*gr)/(dp2-dp1) * conc_neg.values
+    neg_recombination_term = alpha * conc_neg.values * conc_pos_small.values
+    neg_charging_term = Xi * conc.values * conc_neg_small.values
+    neg_formation_rate = neg_conc_term + neg_sink_term + neg_gr_term + neg_recombination_term - neg_charging_term
+
+    J_neg = pd.DataFrame(data=neg_formation_rate,columns=coags.columns,index=conc_neg.index)
+
+    return J_neg, J_pos</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.coagulation_coef"><code class="name flex">
+<span>def <span class="ident">coagulation_coef</span></span>(<span>dp1, dp2, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate Brownian coagulation coefficient (Fuchs)</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp1</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>first particle diameter, unit: m</dd>
+<dt><strong><code>dp2</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>second particle diameter, unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air temperature, unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air pressure, unit: Pa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array</code></dt>
+<dd>
+<p>Brownian coagulation coefficient (Fuchs), </p>
+<p>for example if all parameters are arrays
+the function returns a 2d array where
+the entry at i,j correspoinds to the
+coagulation coefficient for particle sizes
+dp1[i] and dp2[i] at temp[j] and pres[j].</p>
+<p>unit m3 s-1</p>
+</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def coagulation_coef(dp1,dp2,temp,pres):
+    &#34;&#34;&#34; 
+    Calculate Brownian coagulation coefficient (Fuchs)
+
+    Parameters
+    ----------
+
+    dp1 : float or numpy.array (m,)
+        first particle diameter, unit: m 
+
+    dp2 : float or numpy.array (m,)
+        second particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array
+        Brownian coagulation coefficient (Fuchs), 
+        
+        for example if all parameters are arrays
+        the function returns a 2d array where 
+        the entry at i,j correspoinds to the 
+        coagulation coefficient for particle sizes
+        dp1[i] and dp2[i] at temp[j] and pres[j].
+
+        unit m3 s-1
+
+    &#34;&#34;&#34;
+
+    def particle_g(dp,temp,pres):
+        l = particle_mean_free_path(dp,temp,pres)    
+        return 1./(3.*dp*l)*((dp+l)**3.-(dp**2.+l**2.)**(3./2.))-dp
+
+    D1 = particle_diffusivity(dp1,temp,pres)
+    D2 = particle_diffusivity(dp2,temp,pres)
+    g1 = particle_g(dp1,temp,pres)
+    g2 = particle_g(dp2,temp,pres)
+    c1 = particle_thermal_speed(dp1,temp)
+    c2 = particle_thermal_speed(dp2,temp)
+    
+    return 2.*np.pi*(D1+D2)*(dp1+dp2) \
+           * ( (dp1+dp2)/(dp1+dp2+2.*(g1**2.+g2**2.)**0.5) + \
+           +   (8.*(D1+D2))/((c1**2.+c2**2.)**0.5*(dp1+dp2)) )</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.datenum2datetime"><code class="name flex">
+<span>def <span class="ident">datenum2datetime</span></span>(<span>datenum, tz=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert from matlab datenum to python datetime </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>datenum</code></strong> :&ensp;<code>float</code></dt>
+<dd>A serial date number representing the whole and
+fractional number of days from 1-Jan-0000 to a
+specific date (MATLAB datenum)</dd>
+<dt><strong><code>tz</code></strong> :&ensp;<code>int</code> or <code>None</code></dt>
+<dd>Timezone offset in minutes from UTC
+<code>None</code> implies timezone unaware</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.Timestamp</code></dt>
+<dd>&nbsp;</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def datenum2datetime(datenum,tz=None):
+    &#34;&#34;&#34;
+    Convert from matlab datenum to python datetime 
+
+    Parameters
+    ----------
+
+    datenum : float
+        A serial date number representing the whole and 
+        fractional number of days from 1-Jan-0000 to a 
+        specific date (MATLAB datenum)
+  
+    tz : int or `None`
+        Timezone offset in minutes from UTC
+        `None` implies timezone unaware
+
+    Returns
+    -------
+
+    pandas.Timestamp
+
+    &#34;&#34;&#34;
+    dt = (datetime.fromordinal(int(datenum)) + timedelta(days=datenum%1) - timedelta(days = 366))
+    if tz is not None:
+        tz_offset = timezone(timedelta(minutes=tz))
+        dt = dt.replace(tzinfo=tz_offset)
+
+    return pd.to_datetime(dt.isoformat())</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.datetime2datenum"><code class="name flex">
+<span>def <span class="ident">datetime2datenum</span></span>(<span>dt)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert from python datetime to matlab datenum </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dt</code></strong> :&ensp;<code>datetime object</code></dt>
+<dd>&nbsp;</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code></dt>
+<dd>A serial date number representing the whole and
+fractional number of days from 1-Jan-0000 to a
+specific date (MATLAB datenum)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def datetime2datenum(dt):
+    &#34;&#34;&#34; 
+    Convert from python datetime to matlab datenum 
+
+    Parameters
+    ----------
+
+    dt : datetime object
+
+    Returns
+    -------
+
+    float
+        A serial date number representing the whole and 
+        fractional number of days from 1-Jan-0000 to a 
+        specific date (MATLAB datenum)
+
+    &#34;&#34;&#34;
+
+    ord = dt.toordinal()
+    mdn = dt + timedelta(days = 366)
+    frac = (dt-datetime(dt.year,dt.month,dt.day,0,0,0)).seconds / (24.0 * 60.0 * 60.0)
+    return mdn.toordinal() + frac</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.diam2mob"><code class="name flex">
+<span>def <span class="ident">diam2mob</span></span>(<span>dp, temp, pres, ne)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert electrical mobility diameter to electrical mobility in air</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>particle diameter(s),
+unit : m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>ambient temperature,
+unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>ambient pressure,
+unit: Pa</dd>
+<dt><strong><code>ne</code></strong> :&ensp;<code>int</code></dt>
+<dd>number of charges on the aerosol particle</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array</code></dt>
+<dd>particle electrical mobility or mobilities,
+unit: m2 s-1 V-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def diam2mob(dp,temp,pres,ne):
+    &#34;&#34;&#34; 
+    Convert electrical mobility diameter to electrical mobility in air
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter(s),
+        unit : m
+
+    temp : float or numpy.array (n,1)
+        ambient temperature, 
+        unit: K
+
+    pres : float or numpy.array (n,1)
+        ambient pressure, 
+        unit: Pa
+
+    ne : int
+        number of charges on the aerosol particle
+
+    Returns
+    -------
+
+    float or numpy.array
+        particle electrical mobility or mobilities, 
+        unit: m2 s-1 V-1
+
+    &#34;&#34;&#34;
+
+    e = 1.60217662e-19
+    cc = slipcorr(dp,temp,pres)
+    mu = air_viscosity(temp)
+
+    Zp = (ne*e*cc)/(3.*np.pi*mu*dp)
+
+    return Zp</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.dndlogdp2dn"><code class="name flex">
+<span>def <span class="ident">dndlogdp2dn</span></span>(<span>df)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert from normalized number concentrations to
+unnormalized number concentrations assuming that
+the size channels have common edges.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>df</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>Aerosol number-size distribution (dN/dlogDp)</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Aerosol number size distribution (dN)</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def dndlogdp2dn(df):
+    &#34;&#34;&#34;    
+    Convert from normalized number concentrations to
+    unnormalized number concentrations assuming that 
+    the size channels have common edges.
+
+    Parameters
+    ----------
+
+    df : pandas.DataFrame
+        Aerosol number-size distribution (dN/dlogDp)
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Aerosol number size distribution (dN)
+
+    &#34;&#34;&#34;
+    
+    logdp_mid = np.log10(df.columns.values.astype(float))
+    logdp = (logdp_mid[:-1]+logdp_mid[1:])/2.0
+    logdp = np.append(logdp,logdp_mid.max()+(logdp_mid.max()-logdp.max()))
+    logdp = np.insert(logdp,0,logdp_mid.min()-(logdp.min()-logdp_mid.min()))
+    dlogdp = np.diff(logdp)
+
+    return df*dlogdp</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.generate_log_ticks"><code class="name flex">
+<span>def <span class="ident">generate_log_ticks</span></span>(<span>min_exp, max_exp)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Generate ticks and ticklabels for log axis</p>
+<h2 id="parameters">Parameters:</h2>
+<p>min_exp : int
+The exponent in the smallest power of ten</p>
+<p>max_exp : int
+The exponent in the largest power of ten</p>
+<h2 id="returns">Returns:</h2>
+<p>numpy.array
+tick values</p>
+<p>list of str
+tick labels for each power of ten</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_log_ticks(min_exp,max_exp):
+    &#34;&#34;&#34;
+    Generate ticks and ticklabels for log axis
+
+    Parameters:
+    -----------
+    
+    min_exp : int
+        The exponent in the smallest power of ten
+
+    max_exp : int
+        The exponent in the largest power of ten
+
+    Returns:
+    --------
+
+    numpy.array
+        tick values
+
+    list of str
+        tick labels for each power of ten
+
+    &#34;&#34;&#34;
+    x=np.arange(1,10)
+    y=np.arange(min_exp,max_exp).astype(float)
+    log_ticks=[]
+    log_tick_labels=[]
+    for j in y:
+        for i in x:
+            log_ticks.append(np.log10(np.round(i*10**j,int(np.abs(j)))))
+            if i==1:
+                log_tick_labels.append(&#34;10$^{%d}$&#34;%j)
+            else:
+                log_tick_labels.append(&#39;&#39;)
+
+    log_ticks=np.array(log_ticks)
+    return log_ticks,log_tick_labels</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.mean_free_path"><code class="name flex">
+<span>def <span class="ident">mean_free_path</span></span>(<span>temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calculate mean free path in air</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float, array</code> or <code>dataframe</code></dt>
+<dd>air temperature, unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float, array</code> or <code>dataframe</code></dt>
+<dd>air pressure, unit: Pa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float, array</code> or <code>dataframe</code></dt>
+<dd>mean free path in air, unit: m</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mean_free_path(temp,pres):
+    &#34;&#34;&#34; 
+    Calculate mean free path in air
+
+    Parameters
+    ----------
+
+    temp : float, array or dataframe
+        air temperature, unit: K  
+
+    pres : float, array or dataframe
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float, array or dataframe
+        mean free path in air, unit: m
+
+    &#34;&#34;&#34;
+
+    R=8.3143
+    Mair=0.02897
+    mu=air_viscosity(temp)
+    return (mu/pres)*((np.pi*R*temp)/(2.*Mair))**0.5</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.mob2diam"><code class="name flex">
+<span>def <span class="ident">mob2diam</span></span>(<span>Zp, temp, pres, ne)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Convert electrical mobility to electrical mobility diameter in air</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>Zp</code></strong> :&ensp;<code>float</code></dt>
+<dd>particle electrical mobility or mobilities,
+unit: m2 s-1 V-1</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code></dt>
+<dd>ambient temperature,
+unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code></dt>
+<dd>ambient pressure,
+unit: Pa</dd>
+<dt><strong><code>ne</code></strong> :&ensp;<code>integer</code></dt>
+<dd>number of charges on the aerosol particle</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code></dt>
+<dd>particle diameter, unit: m</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mob2diam(Zp,temp,pres,ne):
+    &#34;&#34;&#34;
+    Convert electrical mobility to electrical mobility diameter in air
+
+    Parameters
+    ----------
+
+    Zp : float
+        particle electrical mobility or mobilities, 
+        unit: m2 s-1 V-1
+
+    temp : float
+        ambient temperature, 
+        unit: K
+
+    pres : float
+        ambient pressure, 
+        unit: Pa
+
+    ne : integer
+        number of charges on the aerosol particle
+
+    Returns
+    -------
+
+    float
+        particle diameter, unit: m
+    
+    &#34;&#34;&#34;
+
+    def minimize_this(dp,Z):
+        return np.abs(diam2mob(dp,temp,pres,ne)-Z)
+
+    dp0 = 0.0001
+
+    result = minimize(minimize_this, dp0, args=(Zp,), tol=1e-20, method=&#39;Nelder-Mead&#39;).x[0]    
+
+    return result</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.particle_diffusivity"><code class="name flex">
+<span>def <span class="ident">particle_diffusivity</span></span>(<span>dp, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Particle brownian diffusivity in air </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,) </code></dt>
+<dd>particle diameter, unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air temperature, unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air pressure, unit: Pa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array (m,)</code> or <code>(n,m)</code></dt>
+<dd>Brownian diffusivity in air for particles of size dp,
+and at each temperature/pressure value
+unit m2 s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def particle_diffusivity(dp,temp,pres):
+    &#34;&#34;&#34; 
+    Particle brownian diffusivity in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,) 
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Brownian diffusivity in air for particles of size dp,
+        and at each temperature/pressure value
+        unit m2 s-1
+
+    &#34;&#34;&#34;
+
+    k=1.381e-23
+    cc=slipcorr(dp,temp,pres)
+    mu=air_viscosity(temp)
+
+    return (k*temp*cc)/(3.*np.pi*mu*dp)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.particle_mean_free_path"><code class="name flex">
+<span>def <span class="ident">particle_mean_free_path</span></span>(<span>dp, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Particle mean free path in air </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>particle diameter, unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air temperature, unit: K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air pressure, unit: Pa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array (m,)</code> or <code>(n,m)</code></dt>
+<dd>Particle mean free path for each dp, unit: m</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def particle_mean_free_path(dp,temp,pres):
+    &#34;&#34;&#34; 
+    Particle mean free path in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit: Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Particle mean free path for each dp, unit: m
+
+    &#34;&#34;&#34;
+
+    D=particle_diffusivity(dp,temp,pres)
+    c=particle_thermal_speed(dp,temp)
+
+    return (8.*D)/(np.pi*c)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.particle_thermal_speed"><code class="name flex">
+<span>def <span class="ident">particle_thermal_speed</span></span>(<span>dp, temp)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Particle thermal speed </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (m,)</code></dt>
+<dd>particle diameter, unit: m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air temperature, unit: K</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array (m,)</code> or <code>(n,m)</code></dt>
+<dd>Particle thermal speed for each dp at each temperature
+point, unit: m s-1</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def particle_thermal_speed(dp,temp):
+    &#34;&#34;&#34;
+    Particle thermal speed 
+
+    Parameters
+    ----------
+
+    dp : float or numpy.array (m,)
+        particle diameter, unit: m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit: K 
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Particle thermal speed for each dp at each temperature 
+        point, unit: m s-1
+
+    &#34;&#34;&#34;
+
+    k=1.381e-23
+    rho_p=1000.0
+    mp=rho_p*(1./6.)*np.pi*dp**3.
+    
+    return ((8.*k*temp)/(np.pi*mp))**(1./2.)</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.plot_sumfile"><code class="name flex">
+<span>def <span class="ident">plot_sumfile</span></span>(<span>v, ax=None, vmin=10, vmax=100000, time_reso=2, time_formatter='%H:%M')</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Plot aerosol particle number-size distribution surface plot</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>v</code></strong> :&ensp;<code>pandas.DataFrame</code></dt>
+<dd>
+<p>Aerosol number size distribution</p>
+<p>time (index) should be have constant resolution,
+otherwise the time axis will not be correct</p>
+</dd>
+<dt><strong><code>ax</code></strong> :&ensp;<code>axes object</code></dt>
+<dd>axis on which to plot the data
+if <code>None</code> the axis are created</dd>
+<dt><strong><code>vmin</code></strong> :&ensp;<code>float</code> or <code>int</code></dt>
+<dd>color scale lower limit</dd>
+<dt><strong><code>vmax</code></strong> :&ensp;<code>float</code> or <code>int</code></dt>
+<dd>color scale upper limit</dd>
+<dt><strong><code>time_reso</code></strong> :&ensp;<code>int</code></dt>
+<dd>Time resolution of ticks given in hours</dd>
+<dt><strong><code>time_formatter</code></strong> :&ensp;<code>str</code></dt>
+<dd>Define the format of time ticklabels</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def plot_sumfile(
+    v,
+    ax=None,
+    vmin=10,
+    vmax=100000,
+    time_reso=2,
+    time_formatter=&#34;%H:%M&#34;):    
+    &#34;&#34;&#34; 
+    Plot aerosol particle number-size distribution surface plot
+
+    Parameters
+    ----------
+
+    v : pandas.DataFrame
+        Aerosol number size distribution
+
+        time (index) should be have constant resolution, 
+        otherwise the time axis will not be correct
+
+    ax : axes object
+        axis on which to plot the data
+        if `None` the axis are created
+
+    vmin : float or int
+        color scale lower limit
+
+    vmax : float or int
+        color scale upper limit
+
+    time_reso : `int`
+        Time resolution of ticks given in hours
+
+    time_formatter : `str`
+        Define the format of time ticklabels
+        
+    &#34;&#34;&#34;
+
+    if ax is None:
+        fig,handle = plt.subplots(figsize=(10,4))
+    else:
+        handle=ax
+
+    dp = v.columns.values.astype(float)
+    dndlogdp = v.values.astype(float)
+
+    log_ticks,log_tick_labels = generate_log_ticks(-10,-4)
+
+    norm = colors.LogNorm(vmin=vmin,vmax=vmax)
+    color_ticks = LogLocator(subs=range(10))
+
+    handle.set_yticks(log_ticks)
+    handle.set_yticklabels(log_tick_labels)
+
+    if v.index[0].utcoffset() is None:
+        t1=dts.date2num(v.index[0])+v.index[0].second/(60.*60.*24.)
+        t2=dts.date2num(v.index[-1])+v.index[-1].second/(60.*60.*24.)
+    else:
+        t1=dts.date2num(v.index[0])+v.index[0].utcoffset().seconds/(60.*60.*24.)
+        t2=dts.date2num(v.index[-1])+v.index[-1].utcoffset().seconds/(60.*60.*24.)
+
+    dp1=np.log10(dp.min())
+    dp2=np.log10(dp.max())
+
+    img = handle.imshow(
+        np.flipud(dndlogdp.T),
+        origin=&#34;upper&#34;,
+        aspect=&#34;auto&#34;,
+        cmap=&#34;turbo&#34;,
+        norm=norm,
+        extent=(t1,t2,dp1,dp2)
+    )
+
+    handle.xaxis.set_major_locator(dts.HourLocator(interval=time_reso))
+    handle.xaxis.set_major_formatter(dts.DateFormatter(time_formatter))
+    plt.setp(handle.get_xticklabels(),rotation=80)
+
+    box = handle.get_position()
+    c_handle = plt.axes([box.x0*1.025 + box.width * 1.025, box.y0, 0.01, box.height])
+    cbar = plt.colorbar(img,cax=c_handle,ticks=color_ticks)
+
+    handle.set_ylabel(&#39;Dp, [m]&#39;)
+    handle.set_xlabel(&#39;Time&#39;)
+    cbar.set_label(&#39;dN/dlogDp, [cm-3]&#39;)
+
+    if ax is None:
+        plt.show()</code></pre>
+</details>
+</dd>
+<dt id="aerosol_functions.slipcorr"><code class="name flex">
+<span>def <span class="ident">slipcorr</span></span>(<span>dp, temp, pres)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Slip correction factor in air </p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>dp</code></strong> :&ensp;<code>float</code> or <code>numpy array (m,)</code></dt>
+<dd>particle diameter, unit m</dd>
+<dt><strong><code>temp</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air temperature, unit K</dd>
+<dt><strong><code>pres</code></strong> :&ensp;<code>float</code> or <code>numpy.array (n,1)</code></dt>
+<dd>air pressure, unit Pa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>float</code> or <code>numpy.array (m,)</code> or <code>(n,m)</code></dt>
+<dd>Cunningham slip correction factor for each particle diameter,
+if temperature and pressure and arrays then for each particle
+diameter at different pressure/temperature values.
+unit dimensionless</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def slipcorr(dp,temp,pres):
+    &#34;&#34;&#34;
+    Slip correction factor in air 
+
+    Parameters
+    ----------
+
+    dp : float or numpy array (m,)
+        particle diameter, unit m 
+
+    temp : float or numpy.array (n,1)
+        air temperature, unit K 
+
+    pres : float or numpy.array (n,1)
+        air pressure, unit Pa
+
+    Returns
+    -------
+
+    float or numpy.array (m,) or (n,m)
+        Cunningham slip correction factor for each particle diameter,
+        if temperature and pressure and arrays then for each particle 
+        diameter at different pressure/temperature values.
+        unit dimensionless        
+
+    &#34;&#34;&#34;
+   
+    l = mean_free_path(temp,pres)
+    return 1.+((2.*l)/dp)*(1.257+0.4*np.exp(-(1.1*dp)/(2.*l)))</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="aerosol_functions.air_viscosity" href="#aerosol_functions.air_viscosity">air_viscosity</a></code></li>
+<li><code><a title="aerosol_functions.beta" href="#aerosol_functions.beta">beta</a></code></li>
+<li><code><a title="aerosol_functions.bin_df" href="#aerosol_functions.bin_df">bin_df</a></code></li>
+<li><code><a title="aerosol_functions.binary_diffusivity" href="#aerosol_functions.binary_diffusivity">binary_diffusivity</a></code></li>
+<li><code><a title="aerosol_functions.calc_coags" href="#aerosol_functions.calc_coags">calc_coags</a></code></li>
+<li><code><a title="aerosol_functions.calc_conc" href="#aerosol_functions.calc_conc">calc_conc</a></code></li>
+<li><code><a title="aerosol_functions.calc_cs" href="#aerosol_functions.calc_cs">calc_cs</a></code></li>
+<li><code><a title="aerosol_functions.calc_formation_rate" href="#aerosol_functions.calc_formation_rate">calc_formation_rate</a></code></li>
+<li><code><a title="aerosol_functions.calc_ion_formation_rate" href="#aerosol_functions.calc_ion_formation_rate">calc_ion_formation_rate</a></code></li>
+<li><code><a title="aerosol_functions.coagulation_coef" href="#aerosol_functions.coagulation_coef">coagulation_coef</a></code></li>
+<li><code><a title="aerosol_functions.datenum2datetime" href="#aerosol_functions.datenum2datetime">datenum2datetime</a></code></li>
+<li><code><a title="aerosol_functions.datetime2datenum" href="#aerosol_functions.datetime2datenum">datetime2datenum</a></code></li>
+<li><code><a title="aerosol_functions.diam2mob" href="#aerosol_functions.diam2mob">diam2mob</a></code></li>
+<li><code><a title="aerosol_functions.dndlogdp2dn" href="#aerosol_functions.dndlogdp2dn">dndlogdp2dn</a></code></li>
+<li><code><a title="aerosol_functions.generate_log_ticks" href="#aerosol_functions.generate_log_ticks">generate_log_ticks</a></code></li>
+<li><code><a title="aerosol_functions.mean_free_path" href="#aerosol_functions.mean_free_path">mean_free_path</a></code></li>
+<li><code><a title="aerosol_functions.mob2diam" href="#aerosol_functions.mob2diam">mob2diam</a></code></li>
+<li><code><a title="aerosol_functions.particle_diffusivity" href="#aerosol_functions.particle_diffusivity">particle_diffusivity</a></code></li>
+<li><code><a title="aerosol_functions.particle_mean_free_path" href="#aerosol_functions.particle_mean_free_path">particle_mean_free_path</a></code></li>
+<li><code><a title="aerosol_functions.particle_thermal_speed" href="#aerosol_functions.particle_thermal_speed">particle_thermal_speed</a></code></li>
+<li><code><a title="aerosol_functions.plot_sumfile" href="#aerosol_functions.plot_sumfile">plot_sumfile</a></code></li>
+<li><code><a title="aerosol_functions.slipcorr" href="#aerosol_functions.slipcorr">slipcorr</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
