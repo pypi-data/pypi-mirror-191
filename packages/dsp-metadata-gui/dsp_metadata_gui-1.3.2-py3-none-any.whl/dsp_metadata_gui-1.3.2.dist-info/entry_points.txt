@@ -1,0 +1,3 @@
+[console_scripts]
+dsp-metadata = dspMetadataGUI.collectMetadata:collectMetadata
+dsp-metadata-convert = dspMetadataGUI.util.rdfConverter:cli

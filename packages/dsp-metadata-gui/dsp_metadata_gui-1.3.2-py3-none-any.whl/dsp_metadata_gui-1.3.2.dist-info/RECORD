@@ -1,0 +1,16 @@
+dspMetadataGUI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dspMetadataGUI/collectMetadata.py,sha256=xoXoHB4B717_yg8vSUqpMCD8JR0pyIra9kxsOtPgAFo,71055
+dspMetadataGUI/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dspMetadataGUI/util/converter.py,sha256=S1LasfVvU89-U5zSKXtXUGKxKW7PbN684UFZU9GTY2E,24744
+dspMetadataGUI/util/dataHandling.py,sha256=gQCzXnNvYc_I1Ic300i-s6GSo0RKSbV9EajbMaS4SoQ,9154
+dspMetadataGUI/util/metaDataSet.py,sha256=w_y0XIJbCnkrsc9EZZVcK4mbwqwS-AVy2_IfhQocG88,52031
+dspMetadataGUI/util/rdfConverter.py,sha256=UbLiaEsGxdRe93NhPreV8Hrx0HFVo9rbyYoEx6bQR1k,16504
+dspMetadataGUI/util/utils.py,sha256=3LulIvOXKis_T56sQsll8D0naFyB8SbnQhFMcqPTT5I,10427
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_utils.py,sha256=SJEJdA6uXdWHQwnmQ7Vv-eGG7aCuYYqGSDJAukmkpPk,392
+dsp_metadata_gui-1.3.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dsp_metadata_gui-1.3.2.dist-info/METADATA,sha256=CZuH8hgpfVJ_k903NKpCfLSISoYFHYOrbx8bpSuE4yo,7963
+dsp_metadata_gui-1.3.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dsp_metadata_gui-1.3.2.dist-info/entry_points.txt,sha256=RF3_SmmVjhVIoIRENbWDlQHIFaI-6zZj8FmD2up44iE,140
+dsp_metadata_gui-1.3.2.dist-info/top_level.txt,sha256=5-UhJ6meBurSC-DEK9kgEF3WdJUpY8n6F-lETT0C-r0,20
+dsp_metadata_gui-1.3.2.dist-info/RECORD,,
