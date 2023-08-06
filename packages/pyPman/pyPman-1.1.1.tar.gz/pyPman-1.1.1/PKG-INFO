@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pyPman
+Version: 1.1.1
+Summary: Python project manager
+Home-page: https://github.com/sunilk-n/TraVersion
+Author: Sunil Kumar Nerella
+Author-email: sunil.nerella39@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyProjectManager
+Python project manager smooths workflow to create, install and maintain python projects
+
+Requirements
+------------
+The package is tested and working with Click 7.1.1. Other required packages are specified in setup files.
+
+Method of installation
+----------------------
+
+To install Python Project manager from PyPi run this command in terminal
+
+```
+pip install pyPman
+```
+
+Or
+
+To clone it from github : 
+
+```
+git clone https://github.com/sunilk-n/PyProjectManager.git
+```
+Then use python directly in the main folder
+```
+python setup.py sdist
+```
+To get the ".gz" file
+
+Complete help information about `init`:
+---------------------------------------
+
+* pyPman init : Starts project initialization
+* `pyPman init [-p <projectName>]` : Starts project initialization setting projectName as provided
+* `pyPman init [-p <projectName> -d <dependancy>]` : Adds 3rd party dependancy modules to the project
+        Usage: `pyPman init -p <projectName> -d <moduleName>[==<module_version>]`....
+                Mentioning no version will take the latest version of specified dependency
+            * Ex: `pyPman init -p PyProjectManager -d click` (or)
+            * Ex: `pyPman init -p PyProjectManager -d click==7.1.1`
+            * Ex: `pyPman init -p PyProjectManager -d click==7.1.1 -d traVer`...(For multiple dependencies
+* `pyPman init [-p <projectName> -m <module> -m <module>...]` : Adds user defined module package to the project
+    - Usage: `pyPman init -p <projectName> -m <moduleName>`
+        * Ex: `pyPman init -p PyProjectManager -m testModule -m testModule2`
+
+
+Complete help information about `install`:
+------------------------------------------
+* `pyPman install [-p <projectName>]` : Starts installing project to the current directory
+    - Usage: `pyPman install -p <projectName>`
+        * Ex: `pyPman install -p PyProjectManager`
