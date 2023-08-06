@@ -1,0 +1,18 @@
+# ray/rllib config
+
+local_mode: False
+share_policy: "group" #  individual / group / all
+evaluation_interval: 10
+framework: "torch"
+num_workers: 1
+num_gpus: 1
+num_cpus_per_worker: 1
+num_gpus_per_worker: 0
+checkpoint_freq: 100
+checkpoint_end: True
+restore_path: ''
+# restore_path: 'marl/render/some_env/mappo_2AgentAnt_checkpoint_000015/checkpoint-15'
+stop_iters: 9999999
+stop_timesteps: 2000000
+stop_reward: 999999
+seed: 321 # ray seed
