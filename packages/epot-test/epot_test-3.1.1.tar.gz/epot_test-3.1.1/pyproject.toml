@@ -1,0 +1,37 @@
+[project]
+name = "epot_test"
+description = "Experimental project to test `etils-actions/pypi-auto-publish@v1`"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [{name = "Conchylicultor", email="etils@google.com"}]
+
+# This is set automatically by flit using `etils.__version__`
+dynamic = ["version"]
+
+# classifiers = [
+#     "Programming Language :: Python :: 3",
+#     "Programming Language :: Python :: 3 :: Only",
+#     "License :: OSI Approved :: Apache Software License",
+# ]
+# No default dependencies (submodules deps are optional and should be
+# installed individually)
+dependencies = [
+    "epot-test-deps==3.1.1",
+]
+
+[project.urls]
+homepage = "https://github.com/marketplace/actions/pypi-github-auto-release"
+
+[project.optional-dependencies]
+# Development deps (unittest, linting, formating,...)
+# Installed through `pip install .[dev]`
+dev = [
+    "pytest",
+    "pytest-xdist",
+    "pylint>=2.6.0",
+    "pyink",
+]
+
+[build-system]
+requires = ["flit_core >=3.5,<4"]
+build-backend = "flit_core.buildapi"

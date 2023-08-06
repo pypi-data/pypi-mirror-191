@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: epot_test
+Version: 3.1.1
+Summary: Experimental project to test `etils-actions/pypi-auto-publish@v1`
+Author-email: Conchylicultor <etils@google.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: epot-test-deps==3.1.1
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: pytest-xdist ; extra == "dev"
+Requires-Dist: pylint>=2.6.0 ; extra == "dev"
+Requires-Dist: pyink ; extra == "dev"
+Project-URL: homepage, https://github.com/marketplace/actions/pypi-github-auto-release
+Provides-Extra: dev
+
+# epot-test
