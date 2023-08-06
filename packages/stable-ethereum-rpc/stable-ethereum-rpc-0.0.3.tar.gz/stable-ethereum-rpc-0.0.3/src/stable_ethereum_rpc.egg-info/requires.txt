@@ -1,0 +1,4 @@
+web3==5.31.3
+timerit==1.0.1
+APScheduler==3.8.1
+tzlocal==4.1
