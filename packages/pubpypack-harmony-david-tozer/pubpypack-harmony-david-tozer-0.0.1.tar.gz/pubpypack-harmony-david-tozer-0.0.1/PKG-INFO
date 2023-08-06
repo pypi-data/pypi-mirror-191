@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pubpypack-harmony-david-tozer
+Version: 0.0.1
+Summary: This package does amazing things.
+Home-page: https://github.com/freelance-dave/publishing-python-packages.git
+Author: David Tozer
+Author-email: "David Tozer" <cpp.sage@gmail.com>
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# first-python-package
+
+This package does amazing things.
+
+## Installation
+
+```shell
+$ python -m pip install first-python-package
+```
