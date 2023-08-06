@@ -1,0 +1,3 @@
+[console_scripts]
+gen=rest_framework_mixins.generate:main
+
