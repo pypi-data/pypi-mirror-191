@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/getwebshare/__init__.py
+src/getwebshare.egg-info/PKG-INFO
+src/getwebshare.egg-info/SOURCES.txt
+src/getwebshare.egg-info/dependency_links.txt
+src/getwebshare.egg-info/top_level.txt
