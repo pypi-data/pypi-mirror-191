@@ -1,0 +1,10 @@
+dreader/__init__.py,sha256=FfzH4Rc2YueU-FblN4tt0Qx-5yso16gOC234SpgX2wg,157
+dreader/config_params/__init__.py,sha256=QeAiMH62Z88MXu1GThON7_o_OHzZbplSia6R-VN4WfA,208
+dreader/config_params/params.py,sha256=_F1Xo49uA95XXacwtuF_v3Sn_GN73YE-p1P6F5yHgpo,1478
+dreader/meta.py,sha256=mobO_eL2O6Q6cJ7S94oQvjq5vrg0jErUbOej7U0OShQ,103
+dreader/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dreader/summary/__init__.py,sha256=kN4mBIzc0uVfgmN-G0aFGDgt2wpVpIDhvTkT5kyBy9U,80
+dreader/summary/csv_read.py,sha256=QTcmFoPhWgsHyZm9FufFmqvZ7ZfT3tBm_ONZYPQFfyM,1882
+dreader-0.0.3.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+dreader-0.0.3.dist-info/METADATA,sha256=GUYmcdX_W6MJzvx48ISTpLguRxXURImITFgOsNCoBXs,1770
+dreader-0.0.3.dist-info/RECORD,,
