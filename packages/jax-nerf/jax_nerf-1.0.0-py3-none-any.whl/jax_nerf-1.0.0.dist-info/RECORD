@@ -1,0 +1,11 @@
+nerf/__init__.py,sha256=rqG4sOpjvaOFTnd1Ww9qZ42D6FanS4k6vVvHMFHraic,108
+nerf/dataloading.py,sha256=Kl9U6pkAT6bbLmlZMP53FA1MJL-juopeOtUvrv6OHeE,305
+nerf/model.py,sha256=OntfUBZt9L5PiuWd-vCXJ8XFsy2Sl3AvE_W6iQ8GhKU,1040
+nerf/ray_helpers.py,sha256=7fSd_29s3Eja2lh20ESwNplTSh_DkCZvgVwzPd-Xnis,3111
+nerf/rendering.py,sha256=aQ7pxB-YKNLRGAc0ez2LeeDVfNR1mk0kWZ0SwjXEyMQ,945
+nerf/train.py,sha256=xVZE-5IS_5UzmrCccQpisJv4Sv4yLWV2b3GrGdVZDj4,5460
+jax_nerf-1.0.0.dist-info/LICENSE,sha256=y1zJYpMo5SLZkRzFHuhFh7mG8DztQDxx0bUznKxXOuw,1069
+jax_nerf-1.0.0.dist-info/METADATA,sha256=SKpVF8clH2DXRmGtkbqWsF3jhZ457Q2qs8y-TA4wsDI,2178
+jax_nerf-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jax_nerf-1.0.0.dist-info/top_level.txt,sha256=xQl9DUiHFuNjTXvr52opR92wblZ5AUJg7cUhY1doUsw,5
+jax_nerf-1.0.0.dist-info/RECORD,,
