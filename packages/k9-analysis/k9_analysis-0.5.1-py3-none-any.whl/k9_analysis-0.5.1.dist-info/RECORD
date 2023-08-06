@@ -1,0 +1,9 @@
+k9_analysis/ReportingEffort.py,sha256=talw6KfJDi2TwiBkU8dGd0xh1rRpOWLSCUlPYgFze8g,494
+k9_analysis/__init__.py,sha256=WFRhZJoYdldK1PefU3K20IVCCSS__FxjZX3ZNdjc95A,245
+k9_analysis/count_burrows_detection.py,sha256=JN7DPfgQvsOsDmY0Mjmw0iKwHMDrNMcpQldeiQafxxc,1641
+k9_analysis/group_effort_and_distance.py,sha256=fzBXeqqy7_B7SYv_ku-yKwFs-rkU0_OvSoI7WfsirHI,1001
+k9_analysis/write_maya_nests_table.py,sha256=NX76aug7MmOgEYWwunRTbsMurv3-BLEaRZde7PMgXd4,1515
+k9_analysis-0.5.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+k9_analysis-0.5.1.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+k9_analysis-0.5.1.dist-info/METADATA,sha256=kEdMZpz-SwkOjvk3fS2S14SZGJ1XxSYCCq42au-meqQ,533
+k9_analysis-0.5.1.dist-info/RECORD,,
