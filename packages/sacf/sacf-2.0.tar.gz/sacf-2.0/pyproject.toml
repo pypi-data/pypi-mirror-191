@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sacf"
+version = "2.0"
+authors = [
+  { name="Joshua T. Briegal", email="jtb34@cam.ac.uk" },
+]
+description = "A selective estimator of the autocorrelation function for non-uniformly sampled timeseries data"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/joshbriegal/sacf"
+"Bug Tracker" = "https://github.com/joshbriegal/sacf/issues"
