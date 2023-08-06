@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bemle-pipelines
+Version: 0.1
+Summary: Automation for Machine Learning Tasks
+Home-page: https://github.com/IamVicky90/bemle-pipelines
+Download-URL: https://github.com/IamVicky90/bemle-pipelines/archive/v_01.tar.gz
+Author: Vicky
+Author-email: waqasbilal02@gmail.com
+License: MIT
+Keywords: automation,automl,bemle,mlpipelines
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.23.1)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: scikit-learn (==1.1.2)
+
+# bemle_pipelines
