@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pyecl/__init__.py
+pyecl.egg-info/PKG-INFO
+pyecl.egg-info/SOURCES.txt
+pyecl.egg-info/dependency_links.txt
+pyecl.egg-info/not-zip-safe
+pyecl.egg-info/top_level.txt
