@@ -1,0 +1,18 @@
+def get_similar_word2(input_word, words_list):
+    match = difflib.get_close_matches(input_word, words_list, n=1, cutoff=0.6)
+    if match:
+       return match[0]
+    else:
+    return None
+
+def get_answer(input_word, words_list1, words_list2):
+   similar_word = get_similar_word2(input_word, words_list1)
+   if similar_word:
+      index = words_list1.index(similar_word)
+      return words_list2[index]
+   else:
+      return "No output in dataset for this input"
+
+
+
+return get_answer(word, wordslist1, wordslist2)
