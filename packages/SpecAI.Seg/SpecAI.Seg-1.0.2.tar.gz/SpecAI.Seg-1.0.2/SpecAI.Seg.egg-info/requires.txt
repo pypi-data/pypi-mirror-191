@@ -1,0 +1,9 @@
+numpy
+pandas
+torch
+scikit-image
+scipy
+scikit-learn
+tqdm
+spectral
+matplotlib
