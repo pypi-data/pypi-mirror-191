@@ -1,0 +1,10 @@
+pitchmark/__init__.py,sha256=QO_6S39MZZ6zforp7B_0b4sSHypCdStCZI4CjkkHEnw,263
+pitchmark/course.py,sha256=36kwdHyPTfXZfdlpam7C8rNgIPKRhpKLkcht3abzESg,2237
+pitchmark/geom.py,sha256=xrGrBvCxeTBbt5l1KCJuJxBpntWZG7NKy05malgnQZg,325
+pitchmark/hole.py,sha256=3vU2fwRoNJZQBI5xQCNPLb147O2TAgocdlXQdV4yFJQ,202
+pitchmark/osm/__init__.py,sha256=iLom2gzpwXPsrEbVOFzlmleo9qzHdDOLPx8XQN5A5Y4,220
+pitchmark/osm/osm.py,sha256=YL1O3l8TV6yMTKaqZgv5-iayh74MwOZELYlNaMab67g,1774
+pitchmark-0.1.0.dist-info/METADATA,sha256=9bayOKkW1o4RjGE8hlp61DHUfxrqAUfk9I4a2Wl4b0w,1165
+pitchmark-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+pitchmark-0.1.0.dist-info/LICENSE,sha256=XouKlQZ5_LljtTtrTZT1aE0xFcM1e6R9wlWuyYylkKI,1072
+pitchmark-0.1.0.dist-info/RECORD,,
