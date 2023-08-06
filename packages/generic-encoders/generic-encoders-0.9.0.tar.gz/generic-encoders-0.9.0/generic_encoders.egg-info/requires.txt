@@ -1,0 +1,14 @@
+six>=1.9.0
+lz4~=1.0.0
+dill>=0.3.6
+msgpack~=0.6.0
+simplejson>=3.8.0
+
+[all]
+python-snappy~=0.5.3
+
+[dev]
+python-snappy~=0.5.3
+
+[snappy]
+python-snappy~=0.5.3
