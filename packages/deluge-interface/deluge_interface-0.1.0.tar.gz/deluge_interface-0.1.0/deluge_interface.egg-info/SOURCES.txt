@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+requirements.txt
+deluge_interface.egg-info/PKG-INFO
+deluge_interface.egg-info/SOURCES.txt
+deluge_interface.egg-info/dependency_links.txt
+deluge_interface.egg-info/requires.txt
+deluge_interface.egg-info/top_level.txt

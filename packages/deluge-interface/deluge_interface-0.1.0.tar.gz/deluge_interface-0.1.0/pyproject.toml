@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+
+[project]
+name = "deluge_interface"
+version = "0.1.0"
+authors = [{name="iTecAI", email="matteovh@gmail.com"},]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://github.com/iTecAI/deluge-interface"
