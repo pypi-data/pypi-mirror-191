@@ -1,0 +1,10 @@
+Flask-SQLAlchemy<3.0,>=2.1
+psycopg2-binary<3.0.0,>=2.6.2
+flask-cors<4.0.0,>=3.0.2
+flask_jsonpify
+XlsxWriter
+backports.cached-property
+
+[develop]
+pylama
+tox
