@@ -1,0 +1,16 @@
+twitchAPI/__init__.py,sha256=D7E4ceaWybln8W9VtO3vHLxcW0-R-Gx0haB8Z-PdvM0,198
+twitchAPI/chat.py,sha256=ufrSla54IYxld27ayeb-FYjKnzp4YgY5WBxDHV7WUy4,51218
+twitchAPI/eventsub.py,sha256=IsAIArU_YtAvo--VNcw6m3Y19OwQQj2q89dYr678j9E,75429
+twitchAPI/helper.py,sha256=HYxwm7QJnhVc9ACPd_ik4tDo5ZYZv7qZN2t_qz6zSyY,9245
+twitchAPI/oauth.py,sha256=rjwz1WxxZEoLXTbf5G3lJFVfvgJ3_SeP5m761bDIga4,15098
+twitchAPI/object.py,sha256=thmYUdPbPF7Bxjfs9zaQym7V-MXypQs6RrYJ6sDlkyc,22831
+twitchAPI/pubsub.py,sha256=vL06KyJ8gAb6f33z1MtvVmV5suxcn7wXujb7wkd15iI,30695
+twitchAPI/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twitchAPI/twitch.py,sha256=gXN3_JHiZs1HQIYQ4fLgD7XB1nVFnDomDo-s8M7SpqA,247416
+twitchAPI/types.py,sha256=slUtIpitcAdcdzmt9-m8_FjvgHHltKmPN_lLIYrzjNY,11155
+twitchAPI-3.8.0.dist-info/LICENSE.txt,sha256=2hiI4oGoiuzIVjxv3emRyr55Tua7njBXkZ7dkMLzmQo,1097
+twitchAPI-3.8.0.dist-info/METADATA,sha256=R15pEVHA6H46ZvNmIl4OcIC6rEHnynBEltcAI2h7pWE,12600
+twitchAPI-3.8.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+twitchAPI-3.8.0.dist-info/top_level.txt,sha256=mrPBTv97WpNWjkznQybWdwJZ9Pe9jehKUC93bqziERw,10
+twitchAPI-3.8.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+twitchAPI-3.8.0.dist-info/RECORD,,
