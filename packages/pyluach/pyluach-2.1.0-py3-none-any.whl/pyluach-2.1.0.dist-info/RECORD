@@ -1,0 +1,9 @@
+pyluach/__init__.py,sha256=iE7lGCgxJbah7k9bul1RsFWP90214jZn-C09i4pP9EQ,97
+pyluach/dates.py,sha256=il2fOv3hw2rSQBi-u5bnJTEx3H1RUSLGsKggeXuyq9E,34173
+pyluach/gematria.py,sha256=2hbyVnRl28NmtWqQOFy_wz61OiWFn7XTPNFOBH1mTVQ,1808
+pyluach/hebrewcal.py,sha256=ru-ULy0n2FZUhSZ_1Jg8QedJDVl3CdvABGFXqZXlCtE,39308
+pyluach/parshios.py,sha256=-mUqb-9fU7-AYiPWvF6SvNKmefD5P9sE1kvUbTJ51qg,7403
+pyluach/utils.py,sha256=abD98nx2tBD07GmQaTVD_XqhrApaGvCz0d5gu9-RM9s,9350
+pyluach-2.1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+pyluach-2.1.0.dist-info/METADATA,sha256=nsNamJsbAG6qYruh4l4T4EADcwkYm17VkiEcy4q9Ebg,4287
+pyluach-2.1.0.dist-info/RECORD,,
