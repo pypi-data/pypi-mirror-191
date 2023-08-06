@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: scperturb
+Version: 0.0.3
+Summary: Python package with E-distance tools for single-cell perturbation data analysis.
+Home-page: https://github.com/sanderlab/scPerturb
+Author: Stefan Peidli
+Author-email: stefanpeidli@gmail.com
+Project-URL: Bug Tracker, https://github.com/sanderlab/scPerturb/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# scperturb
+A python package to compute E-distances in single-cell perturbation data and
+perform E-tests.
+
+# Install
+Just install via pip:
+
+```
+pip install scperturb
+```
+
+# Usage example
+
+```
+# E-distances
+estats = edist(adata, obs_key='perturbation')
+# E-distances to a specific group (e.g. 'control')
+estats_control = estats.loc['control']
+# E-test for difference to control
+df = etest(adata, obs_key='perturbation', obsm_key='X_pca', dist='sqeuclidean', control='control', alpha=0.05, runs=100)
+```
+
+Check out notebooks --> e-distance for tutorial.
