@@ -1,0 +1,2 @@
+[console_scripts]
+exaspim_pipeline = exaspim_pipeline_utils:main
