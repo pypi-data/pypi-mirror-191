@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ntopng
+Version: 5.7.230213
+Summary: ntopng Python package
+Home-page: https://github.com/ntop/ntopng
+Author: ntop
+Author-email: packager@ntop.org
+License: GPL
+Requires-Dist: requests
+Requires-Dist: simplejson
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: kaleido
+Requires-Dist: fpdf
+Requires-Dist: plotly
+Requires-Dist: redmail
+
