@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: binobj
+Version: 0.11.0
+Summary: A Python library for reading and writing structured binary data.
+License: BSD-3
+Author: Diego Argueta
+Author-email: 620513-dargueta@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Dist: more-itertools (>=4.0)
+Requires-Dist: typing-inspect (>=0.4.0) ; python_version < "3.8"
+Project-URL: Bug Tracker, https://github.com/dargueta/binobj/issues
+Project-URL: documentation, https://dargueta.github.io/binobj
+Project-URL: homepage, https://dargueta.github.io/binobj
+Project-URL: repository, https://github.com/dargueta/binobj
