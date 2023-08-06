@@ -1,0 +1,12 @@
+budosystems/xtra/pytest_suite/__init__.py,sha256=dcX5jJb4aTAWKmJi7XSp1qXTK9v8m8IO9sla6NTWIDY,594
+budosystems/xtra/pytest_suite/_version.py,sha256=dQUHa1PGpJsNE2x_SQFxtOX-jousEqplwH1bdsk6mnE,160
+budosystems/xtra/pytest_suite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+budosystems/xtra/pytest_suite/repository/__init__.py,sha256=4ko0ftCxqe94Sb22UB3oxIjinGp1L5qg0yXl_Gpw-P8,700
+budosystems/xtra/pytest_suite/repository/abstract_test_repository.py,sha256=DWS2we8eHa_PLIp2N__FlQFRLVB63iQgsmw1grq8s0A,15518
+budosystems/xtra/pytest_suite/repository/conftest.py,sha256=hwHS0i4pWic6SULWFGk7OccZl0CDM4hGxWSq7et6NJg,3228
+pytest_budosystems-0.2.0.dist-info/LICENCE.txt,sha256=OGL92zZ6jBrqD4Pr93rWeyWtspk0zuVXcY6KC4SUdHM,11347
+pytest_budosystems-0.2.0.dist-info/METADATA,sha256=bTY5GgS2h9UyiF2Ti_5-0yZgzJ-CFvScYthPx_DnWWY,6602
+pytest_budosystems-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pytest_budosystems-0.2.0.dist-info/entry_points.txt,sha256=MEzeVMWKUW9jN0TzwULlWl9pkqjI8MZjzgUx_YgvpJo,74
+pytest_budosystems-0.2.0.dist-info/top_level.txt,sha256=2FtZTLd7wSzcvD2jO6g6zr8yAxs0l6_Uqihf56P0Q1Y,12
+pytest_budosystems-0.2.0.dist-info/RECORD,,
