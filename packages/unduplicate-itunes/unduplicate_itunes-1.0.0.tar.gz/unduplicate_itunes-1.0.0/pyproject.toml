@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "unduplicate-itunes"
+version = "1.0.0"
+description = "Remove duplicated iTunes song files from your computer"
+authors = ["Ariff Jeff <ariffjeff@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "unduplicate_itunes"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tinytag = "^1.8.1"
+send2trash = "^1.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
