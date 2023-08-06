@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "jommerce"
+version = "2.1.0"
+description = "More than a reusable app"
+license = "MIT"
+authors = ["githashem <PersonalHashem@gmail.com>"]
+readme = "README.md"
+keywords = ["djplus"]
+packages = [
+    {include = "djplus"},
+]
+
+repository = "https://github.com/githashem/djplus"
+
+include = [
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "djplus/project_template/*",
+    "djplus/djplus.toml",
+]
+
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.3"
+
+[tool.poetry.extras]
+
+[tool.poetry.group.dev.dependencies]
+django-debug-toolbar = "^3.2.4"
+ipython = "^8.2.0"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^5.0.1"
+sphinx-rtd-theme = "^1.0.0"
+
+[tool.poetry.scripts]
+djplus = "djplus.__main__:main"
+djplusconfig = "djplus.__main__:generate_config_file"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
