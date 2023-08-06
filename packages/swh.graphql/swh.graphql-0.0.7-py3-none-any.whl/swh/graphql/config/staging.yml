@@ -1,0 +1,15 @@
+storage:
+  cls: remote
+  url: http://webapp.internal.staging.swh.network:5002
+
+search:
+  cls: remote
+  url: http://webapp.internal.staging.swh.network:5010
+
+debug: no
+
+introspection: yes
+
+max_query_cost:
+  anonymous: 500
+
