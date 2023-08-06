@@ -1,0 +1,2 @@
+[console_scripts]
+maze-gen = codestare.mazes.main:main [cli]

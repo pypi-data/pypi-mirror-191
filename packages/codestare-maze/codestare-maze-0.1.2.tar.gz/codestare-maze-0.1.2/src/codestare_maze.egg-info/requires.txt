@@ -1,0 +1,6 @@
+
+[dev]
+setuptools-changelog==1.0.0
+
+[test]
+pytest==7.1.2
