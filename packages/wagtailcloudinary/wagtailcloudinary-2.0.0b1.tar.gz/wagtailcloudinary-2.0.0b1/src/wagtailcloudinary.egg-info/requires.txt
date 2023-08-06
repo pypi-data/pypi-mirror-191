@@ -1,0 +1,8 @@
+cloudinary<1.29.0,>=1.28.1
+python-dateutil>=2.7
+wagtail<4.2,>=3.0
+
+[development]
+flake8>=3.3.0
+tox>=2.7.0
+ipdb
