@@ -1,0 +1,3 @@
+[console_scripts]
+evalairr = evalAIRR.main:run
+
