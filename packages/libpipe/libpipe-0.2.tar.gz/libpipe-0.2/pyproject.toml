@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "libpipe"
+version = "0.2"
+description = ""
+authors = ["\"Florent Mertens\" <\"florent.mertens@gmail.com\">"]
+license = "GPL-3.0-or-later"
+readme = 'README.md'
+repository = "https://gitlab.com/flomertens/libpipe"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+asyncssh = "^2.0"
+progressbar2 = ">=3.40"
+toml = ">=0.10"
+click = "^7.0 | ^8.0"
+importlib-metadata = {version = "^1.0", python = "<3.8"}
+
+[tool.poetry.dev-dependencies]
+pytest = ">=5.2"
+pytest-cov = "^2.8.1"
+
+[tool.poetry.scripts]
+nodetool = "libpipe.tools.nodetool:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
