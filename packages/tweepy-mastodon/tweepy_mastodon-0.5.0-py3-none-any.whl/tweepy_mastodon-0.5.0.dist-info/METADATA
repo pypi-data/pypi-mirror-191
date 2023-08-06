@@ -1,0 +1,185 @@
+Metadata-Version: 2.1
+Name: tweepy-mastodon
+Version: 0.5.0
+Summary: Mastodon library with Tweepy interface for Python
+Home-page: https://github.com/shuuji3/tweepy-mastodon
+Download-URL: https://pypi.org/project/tweepy-mastodon/
+Author: TAKAHASHI Shuuji
+Author-email: shuuji3@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/shuuji3/tweepy-mastodon
+Project-URL: Issue Tracker, https://github.com/shuuji3/tweepy-mastodon/issues
+Project-URL: Source Code, https://github.com/shuuji3/tweepy-mastodon
+Keywords: mastodon library
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Mastodon.py (<2,>=1.8.0)
+Requires-Dist: tweepy (<5,>=4.12.1)
+Provides-Extra: async
+Requires-Dist: aiohttp (<4,>=3.7.3) ; extra == 'async'
+Requires-Dist: async-lru (<2,>=1.0.3) ; extra == 'async'
+Provides-Extra: dev
+Requires-Dist: coverage (>=4.4.2) ; extra == 'dev'
+Requires-Dist: coveralls (>=2.1.0) ; extra == 'dev'
+Requires-Dist: tox (>=3.21.0) ; extra == 'dev'
+Requires-Dist: pytest (>=7.2.1) ; extra == 'dev'
+Requires-Dist: pytest-mock (>=3.10.0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: myst-parser (==0.15.2) ; extra == 'docs'
+Requires-Dist: readthedocs-sphinx-search (==0.1.1) ; extra == 'docs'
+Requires-Dist: sphinx (==4.2.0) ; extra == 'docs'
+Requires-Dist: sphinx-hoverxref (==0.7b1) ; extra == 'docs'
+Requires-Dist: sphinx-tabs (==3.2.0) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (==1.0.0) ; extra == 'docs'
+Provides-Extra: socks
+Requires-Dist: requests[socks] (<3,>=2.27.0) ; extra == 'socks'
+Provides-Extra: test
+Requires-Dist: vcrpy (>=1.10.3) ; extra == 'test'
+
+# 🐘 tweepy-mastodon: Mastodon API library with Tweepy interface for Python
+
+[![PyPI Version](https://img.shields.io/pypi/v/tweepy-mastodon?label=PyPI)](https://pypi.org/project/tweepy-mastodon/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/tweepy?label=Python)](https://pypi.org/project/tweepy/)
+ [![Twitter API v1.1](https://img.shields.io/endpoint?url=https%3A%2F%2Ftwbadges.glitch.me%2Fbadges%2Fstandard)](https://developer.twitter.com/en/docs/twitter-api/v1)<!-- [![Twitter API v2](https://img.shields.io/endpoint?url=https%3A%2F%2Ftwbadges.glitch.me%2Fbadges%2Fv2)](https://developer.twitter.com/en/docs/twitter-api) -->
+[![Documentation Status](https://readthedocs.org/projects/tweepy-mastodon/badge/?version=latest)](https://tweepy-mastodon.readthedocs.io/en/latest/)
+[![Test Status](https://github.com/shuuji3/tweepy-mastodon/workflows/Test/badge.svg)](https://github.com/shuuji3/tweepy-mastodon/actions?query=workflow%3ATest)
+[![Coverage Status](https://img.shields.io/coveralls/shuuji3/tweepy-mastodon/mastodon.svg?style=flat)](https://coveralls.io/github/shuuji3/tweepy-mastodon?branch=mastodon)
+
+![cherry blossom photo](https://files.mastodon.social/accounts/headers/000/936/436/original/4d6989a698953e80.jpg)
+
+> ⚠ This library is under development! Only partial features are implemented.
+
+An attempt to provide Mastodon API library with Tweepy-like interface, to help developers to migrate their good bot/service built with Tweepy to Mastodon easily.
+
+## Implemented API
+
+| API | Implemented? | Note |
+| --- | -- | -- |
+| `tweepy.OAuth1UserHandler` <br> (previously `tweepy.OAuthHandler` ) | ✅ |  |
+| `api.verify_credentials()` | ✅ |  |
+| `api.update_status()` | ✅ | partially implemented |
+| `api.destroy_status()` | 📝 TODO |  |
+| `api.home_timeline()` | ✅ | partially implemented |
+| `api.get_user()` | ✅ | partially implemented |
+| `api.user_timeline()` | ✅ | partially implemented |
+| `api.get_status()` | ✅ | partially implemented |
+| `api.create_favorite()` | ✅ | partially implemented |
+| `api.destroy_favorite()` | ✅ | partially implemented |
+| `api.retweet()` | ✅ | partially implemented |
+| `api.unretweet()` | ✅ | partially implemented |
+| `api.create_friendship()` <br> (a.k.a. follow) | ✅ |  |
+| `api.destroy_friendship()` <br> (a.k.a. unfollow) | ✅ |  |
+| `api.create_mute()` | ✅ |  |
+| `api.destroy_mute()` | ✅ |  |
+| `api.create_block()` | ✅ | partially implemented |
+| `api.destroy_block()` | ✅ | partially implemented |
+| `api.create_list()` | 📝 TODO |  |
+| `api.destroy_list()` | 📝 TODO |  |
+| `api.update_status_with_media()` | 📝 TODO |  |
+| ... | 📝 TODO |  |
+| `api.mastodon` | ✅ | Bonus: You can use any Mastodon.py API ✨ |
+
+## Example usage
+
+Please prepare your Mastodon API credentials from the developer settings page (example URL: https://mastodon.social/settings/applications).
+
+```py
+import datetime
+
+import tweepy_mastodon as tweepy
+
+api_base_url = 'mastodon.social'
+mastodon_client_id = 'xxxxxxx'
+mastodon_client_secret = 'xxxxxxx'
+mastodon_access_token = 'xxxxxxx'
+
+auth = tweepy.OAuth1UserHandler(
+    consumer_key=mastodon_client_id,
+    consumer_secret=mastodon_client_secret,
+    api_base_url=api_base_url
+)
+auth.set_access_token(mastodon_access_token)
+api = tweepy.API(auth)
+
+me = api.verify_credentials()
+
+assert me.screen_name == 'shuuji3'
+assert me.display_name == 'TAKAHASHI Shuuji 🌈✨'
+assert me.url == 'https://shuuji3.xyz'
+assert me.profile_background_image_url == 'https://files.mastodon.social/accounts/headers/000/936/436/original/4d6989a698953e80.jpg'
+assert me.created_at == datetime.datetime(2019, 10, 8, 0, 0, tzinfo=datetime.timezone.utc)
+assert me.avatar == 'https://files.mastodon.social/accounts/avatars/000/936/436/original/4854d6cf9e12cb8f.png'
+
+assert me.favorited == False
+assert me.retweeted == False
+assert me.status.source == '<a href="https://elk.zone" rel="nofollow">Elk</a>'
+
+user = api.get_user(user_id=1)
+assert user.id_str == '1'
+assert user.screen_name == 'Gargron'
+assert user.name == 'Eugen Rochko'
+
+user = api.get_user(screen_name='npr@mstdn.social')
+assert user.id == 1201325
+assert user.screen_name == 'NPR@mstdn.social'
+assert user.name == 'NPR :verified:'
+
+user_statuses = api.user_timeline(user_id=1, since_id=0, count=10)
+assert len(user_statuses) == 10
+
+status_id = 109813536848077879 # ref. https://mastodon.social/@shuuji3/109813536848077879
+status = api.get_status(id=status_id)
+assert status.user.screen_name == 'shuuji3'
+assert 'Hello from tweepy-mastodon!' in status.text
+
+status = api.create_favorite(id=status_id)
+assert status.favorited
+```
+
+## Installation
+
+The easiest way to install the latest version from PyPI is by using
+[pip](https://pip.pypa.io/):
+
+    pip install tweepy-mastodon
+
+<!--
+To use the `tweepy.asynchronous` subpackage, be sure to install with the
+`async` extra:
+
+    pip install tweepy-mastodon[async]
+-->
+
+You can also use Git to clone the repository from GitHub to install the latest
+development version:
+
+    git clone https://github.com/shuuji3/tweepy-mastodon.git
+    cd tweepy-mastodon
+    pip install .
+
+Alternatively, install directly from the GitHub repository:
+
+    pip install git+https://github.com/shuuji3/tweepy-mastodon.git
+
+Python 3.7 - 3.11 are supported.
+
+Links
+-----
+
+- [tweepy-mastodon Documentation](https://tweepy-mastodon.readthedocs.io/en/latest/) (TODO: update)
+- [Tweepy Documentation](https://tweepy.readthedocs.io/en/latest/)
+- [halcy/Mastodon.py: Python wrapper for the Mastodon API](https://github.com/halcy/Mastodon.py/)
+- [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api)
