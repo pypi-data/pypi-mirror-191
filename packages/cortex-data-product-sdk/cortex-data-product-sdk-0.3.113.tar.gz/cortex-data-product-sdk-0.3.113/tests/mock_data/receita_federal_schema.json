@@ -1,0 +1,60 @@
+{
+    "fields": [
+        {
+            "metadata": {
+                "comment": "Raiz do Cadastro Nacional de Pessoas Jurídicas, ou seja, os 8 primeiros números de identificação."
+            },
+            "name": "receita_federal_simples_cnpj_basico",
+            "nullable": false,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Indicador de que a empresa optou pelo Simples Nacional, regime tributário exclusivo para micro e pequenas empresas"
+            },
+            "name": "receita_federal_simples_opcao",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Data de opção pelo simples"
+            },
+            "name": "receita_federal_simples_opcao_data",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Data de exclusão do simples"
+            },
+            "name": "receita_federal_simples_opcao_exclusao_data",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Indicador de que a empresa optou por ser um Micro Empresário individual"
+            },
+            "name": "receita_federal_simples_opcao_mei",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Data de opção pelo MEI"
+            },
+            "name": "receita_federal_simples_opcao_mei_data",
+            "nullable": true,
+            "type": "string"
+        },
+        {
+            "metadata": {
+                "comment": "Data de exclusão do MEI"
+            },
+            "name": "receita_federal_simples_opcao_mei_exclusao_data",
+            "nullable": true,
+            "type": "string"
+        }
+    ]
+}
