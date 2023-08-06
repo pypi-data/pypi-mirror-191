@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Flask-Cat
+Version: 1.0.0
+Summary: Flask-Cat returns a cat for each status code above 399.
+Home-page: https://github.com/ZSendokame/Flask-Cat
+Author: ZSendokame
+License: MIT license
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Flask-Cats
+*Flask-cats* is a small blueprint which takes all status codes above 399 and returns cat images from httpcats.com<br>
+(*Made as a Joke, to learn how to make Flask blueprints*)
+
+# Install
+```sh
+pip install Flask-Cats
+```
+
+# Use
+```py
+from flask import Flask
+import flaskcat
+
+app = Flask(__name__)
+
+app.register_blueprint(flaskcat.cat_blueprint)
+
+
+@app.get('/')
+def root():
+    return 'Hello, World.'
+
+
+app.run()
+```
+

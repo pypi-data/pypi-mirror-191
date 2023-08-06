@@ -1,0 +1,1 @@
+from .blueprint import cat_blueprint
