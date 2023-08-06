@@ -1,0 +1,3 @@
+[console_scripts]
+keep-screen-alive = homespeaker.main:keep_screen_alive_entrypoint
+play-audio = homespeaker.main:play_audio_entrypoint
