@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "playfilm_shared"
+version = "2.0.1"
+authors = [
+  { name="Vic Escribano", email="victor@playfilm.tv" },
+  { name="Pau Juanes", email="pau@playfilm.tv" },
+  { name="Richard Sudario", email="richard@playfilm.tv" },
+  { name="Jaume Serra", email="jaume@playfilm.tv" },
+]
+description = "Shared components package"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://bitbucket.org/playfilm/playfilm-shared/src/main/"
