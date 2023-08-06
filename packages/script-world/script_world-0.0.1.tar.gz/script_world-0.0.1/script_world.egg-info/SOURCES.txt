@@ -1,0 +1,7 @@
+README.md
+setup.py
+script_world.egg-info/PKG-INFO
+script_world.egg-info/SOURCES.txt
+script_world.egg-info/dependency_links.txt
+script_world.egg-info/requires.txt
+script_world.egg-info/top_level.txt
