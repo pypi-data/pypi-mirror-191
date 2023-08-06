@@ -1,0 +1,28 @@
+name: publish
+
+on:
+  # Trigger this workflow when a release is created.
+  release:
+    types:
+      - created
+
+permissions:
+  # Allow checkout of the project.
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install build
+        run: pip install build
+      - name: Build distribution
+        run: python -m build .
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}

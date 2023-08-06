@@ -1,0 +1,62 @@
+name: docs
+
+on:
+  # Trigger this workflow on push events to the main branch.
+  push:
+    branches:
+      - main
+  # Trigger this workflow on pull request events to the main branch.
+  pull_request:
+    branches:
+      - main
+  # Run this workflow manually from the Actions tab.
+  workflow_dispatch:
+
+# Set permissions of the GITHUB_TOKEN to enable deployment to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  # Build the documentation.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install Hatch
+        run: pipx install hatch
+      - name: Build documentation
+        run: hatch run docs:build
+      - name: Upload documentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: ./docs/_build/html
+          retention-days: 1
+
+  # Deploy the documentation if on main branch.
+  deploy:
+    needs: build
+    if: contains('refs/heads/main', github.ref)
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download documentation
+        uses: actions/download-artifact@v3
+        with:
+          name: docs
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
