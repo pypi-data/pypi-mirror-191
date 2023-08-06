@@ -1,0 +1,3 @@
+indexed_class
+setup
+tests

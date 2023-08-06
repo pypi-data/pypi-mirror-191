@@ -1,0 +1,9 @@
+LICENSE.md
+MANIFEST.in
+README.md
+indexed_class.py
+setup.py
+indexed_class.egg-info/PKG-INFO
+indexed_class.egg-info/SOURCES.txt
+indexed_class.egg-info/dependency_links.txt
+indexed_class.egg-info/top_level.txt
