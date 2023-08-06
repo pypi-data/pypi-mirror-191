@@ -1,0 +1,14 @@
+spgci/__init__.py,sha256=D2ZNcJelKicqtY5x2zZGomsfAxDxpsRmXVpt4GAUdvQ,760
+spgci/api_client.py,sha256=HCHM0wCzftW3EBThVdcqm8XMGR-kYgC8JtLXs3uiXRc,2983
+spgci/auth.py,sha256=jYATJCJy7F0Xf1lMdzuVG8LXRf0Zau9F1SgzfCtWvLY,1779
+spgci/config.py,sha256=OGdny3XUEkBNEvp0H9ArR_ssBz2YRklPE3EUBrm0a4Q,1208
+spgci/ewindow_md.py,sha256=kv_50GQnPARCpsN0sh-EZGdg9SqgOz8_GFILxhpOvCo,9476
+spgci/exceptions.py,sha256=31ggBUSLtp7-YtuzGcAdaRNwl-zcM5qBJqFZdLzYW3g,101
+spgci/forward_curves.py,sha256=jK17JrsH-n5WHzcHn7M0Tdxq5nuaSD7u-sRSPFjt0ro,11722
+spgci/market_data.py,sha256=nAwiYFbilC7ORdKL60RBoq6vDpZNgHT73NsqxDqC2yw,21500
+spgci/types.py,sha256=9x3r7RyKy0dbSnif-KZeyYtAxjXrTuWQxqb4aZmJx9g,1572
+spgci/utilities.py,sha256=rLswSw_QO3gMBZqEmMg0QtrUxaf3YvRIMBXyGUV9Ugc,987
+spgci-0.0.1.dist-info/LICENSE,sha256=11eRaJny3CllmE2cbZ3VPBQbjrByvN2-yf5IrEdTOpk,1088
+spgci-0.0.1.dist-info/METADATA,sha256=cfeWLxPN76XoazCdoXDhcUjFIXDUAcrSR72rLdgzrGU,4218
+spgci-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+spgci-0.0.1.dist-info/RECORD,,
