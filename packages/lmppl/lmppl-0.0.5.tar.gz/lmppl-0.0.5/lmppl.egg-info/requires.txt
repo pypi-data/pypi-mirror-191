@@ -1,0 +1,6 @@
+torch
+tqdm
+requests
+transformers
+sentencepiece
+protobuf<3.20
