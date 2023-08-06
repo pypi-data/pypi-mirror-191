@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/PythonAvroSchemas.egg-info/PKG-INFO
+src/PythonAvroSchemas.egg-info/SOURCES.txt
+src/PythonAvroSchemas.egg-info/dependency_links.txt
+src/PythonAvroSchemas.egg-info/top_level.txt
+src/Schemas/HelpEventCreated.py
+src/Schemas/NotificationCreated.py
+src/Schemas/UserCreatedEvent.py
+src/Schemas/__init__.py
