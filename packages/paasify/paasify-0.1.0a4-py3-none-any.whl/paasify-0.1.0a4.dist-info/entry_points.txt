@@ -1,0 +1,3 @@
+[console_scripts]
+paasify=paasify.cli:app
+
