@@ -1,0 +1,6 @@
+README.md
+setup.py
+tfpnp.egg-info/PKG-INFO
+tfpnp.egg-info/SOURCES.txt
+tfpnp.egg-info/dependency_links.txt
+tfpnp.egg-info/top_level.txt
