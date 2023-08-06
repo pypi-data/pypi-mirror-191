@@ -1,0 +1,9 @@
+datasette
+duckdb
+sqlglot
+watchdog
+
+[test]
+pytest
+pytest-asyncio
+pytest-watch
