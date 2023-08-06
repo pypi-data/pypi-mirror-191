@@ -1,0 +1,8 @@
+setup.py
+pyfuncts/__init__.py
+pyfuncts/thecolours.py
+pyfuncts.egg-info/PKG-INFO
+pyfuncts.egg-info/SOURCES.txt
+pyfuncts.egg-info/dependency_links.txt
+pyfuncts.egg-info/requires.txt
+pyfuncts.egg-info/top_level.txt
