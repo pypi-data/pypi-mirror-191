@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.cfg
+codethemes/__init__.py
+codethemes/main.py
+codethemes.egg-info/PKG-INFO
+codethemes.egg-info/SOURCES.txt
+codethemes.egg-info/dependency_links.txt
+codethemes.egg-info/entry_points.txt
+codethemes.egg-info/requires.txt
+codethemes.egg-info/top_level.txt
+codethemes.egg-info/zip-safe
