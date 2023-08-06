@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+snippets = src.plugin:Snippets
