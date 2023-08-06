@@ -1,0 +1,161 @@
+[build-system]
+requires = ["hatchling >= 1.11.1"]
+build-backend = "hatchling.build"
+
+[project]
+name = "model-diagnostics"
+authors = [
+  { name="Christian Lorentzen", email="lorentzen.ch@gmail.com" },
+]
+description = "Tools for diagnostics and assessment of (machine learning) models"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 1 - Planning",
+    "Framework :: Hatch",
+    "Topic :: Scientific/Engineering",
+]
+keywords = ["machine learning", "model diagnostics", "calibration"]
+dependencies = [
+  "polars >= 0.16.2",
+  "matplotlib >= 3.6.1",
+  "scikit-learn >= 1.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://lorentzenchr.github.io/model-diagnostics/"
+"Source" = "https://github.com/lorentzenchr/model-diagnostics"
+"Tracker" = "https://github.com/lorentzenchr/model-diagnostics/issues"
+
+[tool]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+extend-exclude = ".hatch/*"
+
+[tool.isort]
+known_first_party = ["model_diagnostics"]
+profile = "black"
+skip = ".hatch"
+
+[tool.mypy]
+# disallow_untyped_defs = false
+# follow_imports = "normal"
+ignore_missing_imports = true
+plugins = "numpy.typing.mypy_plugin"
+pretty = true
+# show_column_numbers = true
+# warn_no_return = false
+# warn_unused_ignores = true
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "src/model_diagnostics/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/.github",
+  "/.hatch",
+  "/.vscode",
+]
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pandas>=1.5",
+  "pyarrow>=11.0.0",
+  "pytest",
+  "pytest-cov",
+  "pytest-xdist",
+]
+
+[tool.hatch.envs.default.scripts]
+# Adding "-n auto" (pytest-xdist) allows parallel execution but swallows output.
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/model_diagnostics {args}"
+no-cov = "cov --no-cov"
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "mkdocs-material~=8.5.11",
+  "mkdocstrings[python]>=0.19",
+  "mkdocs-gen-files>=0.4.0",
+  "mkdocs-literate-nav>=0.5.0",
+  "mkdocs-section-index>=0.3.4",
+  "mkdocs-jupyter>=0.22",
+]
+
+[tool.hatch.envs.docs.scripts]
+build = "mkdocs build --clean --strict {args}"
+serve = "mkdocs serve --dev-addr localhost:8000 {args}"
+ci-build = "mkdocs gh-deploy --force {args}"
+
+[tool.hatch.envs.jupyter]
+extra-dependencies = [
+  "jupyterlab>=3.4",
+  "scikit-learn>=1.2.0",
+]
+
+[tool.hatch.envs.jupyter.scripts]
+lab = "jupyter lab"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["39", "310", "311"]
+
+[tool.hatch.envs.lint]
+detached = true
+dependencies = [
+  "bandit>=1.7.4",
+  "black>=22.8.0",
+  "flake8>=5.0.0",
+  "flake8-bugbear>=22.7.1",
+  "flake8-tidy-imports>=4.8.0",
+  "isort>=5.10.1",
+  "mypy>=0.971",
+  "numpy>=1.22",
+]
+
+[tool.hatch.envs.lint.scripts]
+# typing = "mypy --install-types --non-interactive {args:backend/src/hatchling src/hatch tests}"
+typing = "mypy --install-types --non-interactive {args:src/model_diagnostics}"
+# Note: bandit does not respect the --exclude flag, see
+# https://github.com/PyCQA/bandit/issues/657
+#   --exclude .svn,CVS,.bzr,.hg,.git,*__pycache__,.tox,.eggs,*.egg,.github,.hatch \
+# We instead use the path argument instead of {args:.}.
+security = """\
+  bandit --quiet --recursive \
+  --skip B101,B102,B105,B110,B112,B301,B307,B324,B403,B404,B603,B604,B606,B607 \
+  {args:src}
+"""
+style = [
+  "flake8 --exclude .hatch {args:.}",
+  "black --check --diff {args:.}",
+  "isort --check-only --diff {args:.}",
+]
+fmt = [
+  "isort {args:.}",
+  "black {args:.}",
+  "style",
+]
+all = [
+  "style",
+  "typing",
+  "security",
+]
+
+[tool.hatch.version]
+path = "src/model_diagnostics/__about__.py"
