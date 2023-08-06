@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "CI-tartanair"
+dynamic = ['version']
+authors = [
+  { name="Yorai Shaoul", email="yorai@cmu.edu" },
+  { name="Wenshan Wang", email="wenshanw@cs.cmu.edu " } 
+]
+description = "TartanAir"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "http://theairlab.org/tartanair-dataset/"
