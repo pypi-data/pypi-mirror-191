@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: wyzerctl
+Version: 0.0.1.dev20220914082427
+Summary: Wyzerctl
+Home-page: https://github.com/johndoe/myapp/
+Author: John Doe
+Author-email: john.doe@example.com
+License: unlicensed
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Wyzerctl
+
+## Installation
+
+```
+$ pip install -r requirements.txt
+
+$ pip install setup.py
+```
+
+## Development
+
+This project includes a number of helpers in the `Makefile` to streamline common development tasks.
+
+### Environment Setup
+
+The following demonstrates setting up and working with a development environment:
+
+```
+### create a virtualenv for development
+
+$ make virtualenv
+
+$ source env/bin/activate
+
+
+### run wyzerctl cli application
+
+$ wyzerctl --help
+
+
+### run pytest / coverage
+
+$ make test
+```
+
+
+### Releasing to PyPi
+
+Before releasing to PyPi, you must configure your login credentials:
+
+**~/.pypirc**:
+
+```
+[pypi]
+username = YOUR_USERNAME
+password = YOUR_PASSWORD
+```
+
+Then use the included helper function via the `Makefile`:
+
+```
+$ make dist
+
+$ make dist-upload
+```
+
+## Deployments
+
+### Docker
+
+Included is a basic `Dockerfile` for building and distributing `Wyzerctl`,
+and can be built with the included `make` helper:
+
+```
+$ make docker
+
+$ docker run -it wyzerctl --help
+```
