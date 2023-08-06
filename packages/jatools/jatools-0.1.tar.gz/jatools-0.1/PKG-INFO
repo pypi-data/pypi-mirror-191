@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: jatools
+Version: 0.1
+Summary: Python packages that are useful during the work at the university of Rostock
+Home-page: https://github.com/JacobTh98/jatools
+Author: Jacob Peter Thönes
+Author-email: jacob.thoenes@uni-rostock.de
+License: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+JaTools
+=======
+
+Toolbox for me.
+
+Source code and issue tracker:
+    https://github.com/JacobTh98/jatools
+    
+Documentation:
+    TBD
+
+License:
+    MIT -- see the file ``LICENSE`` for details.
+
+Quick start:
+    * ``pip install jatools``
+
+

@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+jatools/__init__.py
+jatools/mathtex.py
+jatools.egg-info/PKG-INFO
+jatools.egg-info/SOURCES.txt
+jatools.egg-info/dependency_links.txt
+jatools.egg-info/top_level.txt
