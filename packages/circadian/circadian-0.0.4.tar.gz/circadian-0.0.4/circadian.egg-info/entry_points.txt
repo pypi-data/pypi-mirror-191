@@ -1,0 +1,7 @@
+[console_scripts]
+acto = circadian.cli:main_acto
+esri = circadian.cli:main_esri
+
+[nbdev]
+circadian = circadian._modidx:d
+

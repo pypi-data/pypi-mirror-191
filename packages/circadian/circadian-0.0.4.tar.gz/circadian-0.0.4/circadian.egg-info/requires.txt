@@ -1,0 +1,11 @@
+fastcore
+pandas
+numpy
+scipy
+matplotlib
+torch
+numba
+pytz
+jsonschema
+
+[dev]
