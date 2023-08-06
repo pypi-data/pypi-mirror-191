@@ -1,0 +1,4 @@
+[console_scripts]
+pymlpipeserver=pymlpipe.queue:start_server
+pymlpipeui=pymlpipe.pymlpipeUI:start_ui
+
