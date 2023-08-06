@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+algomojo/__init__.py
+algomojo/pyapi.py
+algomojo.egg-info/PKG-INFO
+algomojo.egg-info/SOURCES.txt
+algomojo.egg-info/dependency_links.txt
+algomojo.egg-info/requires.txt
+algomojo.egg-info/top_level.txt
