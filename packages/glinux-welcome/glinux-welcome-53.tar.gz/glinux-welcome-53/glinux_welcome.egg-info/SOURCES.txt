@@ -1,0 +1,6 @@
+reporter.py
+setup.py
+glinux_welcome.egg-info/PKG-INFO
+glinux_welcome.egg-info/SOURCES.txt
+glinux_welcome.egg-info/dependency_links.txt
+glinux_welcome.egg-info/top_level.txt
