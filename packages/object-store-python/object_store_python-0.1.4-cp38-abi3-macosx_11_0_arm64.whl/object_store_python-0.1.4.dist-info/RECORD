@@ -1,0 +1,8 @@
+object_store_python-0.1.4.dist-info/METADATA,sha256=F2tyBMA4EVbvpdqPr3u6a-9J7B1rPAvCTfIFFQ7ZC40,8205
+object_store_python-0.1.4.dist-info/WHEEL,sha256=kodCGeqAruV8GMEB1rXo-HsIUbQoJOSHl2NpBCm0njI,104
+object_store/arrow.py,sha256=DOgc5tQ3iURWurRpIl2TUWFFzA68hK-WwpdU2VlgI8I,1176
+object_store/__init__.py,sha256=cToWy0jbVkN7RwN-KBsB0kKpsAe-x93f2B09Ev4o3Jo,6176
+object_store/_internal.pyi,sha256=fPB3Frpgt56m54Gn1JgQFkBXcLFV7AzsbT2GUqs1XPA,6820
+object_store/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+object_store/_internal.abi3.so,sha256=KgDFFeuPY-PMSO1kixXxDmPbT2u2p0EgbBES3PX1jSs,9913378
+object_store_python-0.1.4.dist-info/RECORD,,
