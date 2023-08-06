@@ -1,0 +1,28 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "teamscalerobotplugin"
+version = "0.0.3-beta"
+description = "A plugin that allows integration into the RobotFramework in order to allow testwise coverage recording for TIA."
+readme = "PyPI_README.md"
+requires-python = ">=3.7"
+keywords = ["teamscale", "robot", "robotframework", "robot framework", "tia", "testwise coverage", "coverage"]
+# https://pypi.org/classifiers/
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Robot Framework",
+    "Framework :: Robot Framework :: Library",
+    "Framework :: Robot Framework :: Tool"
+]
+license = {text = "Apache-2.0"}
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+# TODO: Add link to How-To
+Documentation = "https://docs.teamscale.com/"

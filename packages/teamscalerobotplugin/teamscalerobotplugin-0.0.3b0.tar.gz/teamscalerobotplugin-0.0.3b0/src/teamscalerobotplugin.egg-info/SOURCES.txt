@@ -1,0 +1,14 @@
+LICENSE
+PyPI_README.md
+README.md
+pyproject.toml
+src/teamscalerobotplugin/AgentConnector.py
+src/teamscalerobotplugin/RobotTestFinder.py
+src/teamscalerobotplugin/TiaRobotListener.py
+src/teamscalerobotplugin/UniformPathUtil.py
+src/teamscalerobotplugin/__init__.py
+src/teamscalerobotplugin.egg-info/PKG-INFO
+src/teamscalerobotplugin.egg-info/SOURCES.txt
+src/teamscalerobotplugin.egg-info/dependency_links.txt
+src/teamscalerobotplugin.egg-info/requires.txt
+src/teamscalerobotplugin.egg-info/top_level.txt
