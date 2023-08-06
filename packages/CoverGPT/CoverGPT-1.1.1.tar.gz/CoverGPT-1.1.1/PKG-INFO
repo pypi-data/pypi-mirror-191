@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CoverGPT
+Version: 1.1.1
+Summary: Generate a personalized and formatted cover letter for a given job position, using your resume to add personalized details. Utilizes ChatGPT.
+Home-page: https://github.com/mahfoozm/CoverGPT
+Download-URL: https://github.com/mahfoozm/CoverGPT/archive/refs/tags/v1.1.1.tar.gz
+Author: Mohammad Mahfooz
+Author-email: mohammadmahfoozpersonal@gmail.com
+License: gpl-3.0
+Keywords: ChatGPT,AI,Cover Letter
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
