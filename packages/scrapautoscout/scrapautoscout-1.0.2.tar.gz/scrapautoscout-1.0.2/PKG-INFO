@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: scrapautoscout
+Version: 1.0.2
+Summary: autoscout24 web scrapper
+Home-page: https://github.com/viggleUnik/scrapautoscout
+Author: viggleUnik
+Author-email: vicol.cristianken@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Scrapeautoscout 
+
+This is a webscrapper from the largest pan-European online car market.
+
+## Usage
+
+The script runs and creates two new directories where json files with 
+the information extracted from the website will be saved. These can later be used to extract
+more specific information about the cars
+
