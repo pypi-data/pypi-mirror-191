@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gerent"
+version = "0.0.2"
+authors = [
+  { name="Tomasz Jarko", email="tomasz.jarko@gmail.com" },
+]
+maintainers = [
+  { name="Tomasz Jarko", email="tomasz.jarko@gmail.com" },
+]
+description = "A simple and lightweight MicroPython web-framework"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Tomson601/gerent"
+"Bug Tracker" = "https://github.com/Tomson601/gerent/issues"
