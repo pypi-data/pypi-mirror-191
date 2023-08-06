@@ -1,0 +1,10 @@
+numpy
+matplotlib
+scipy
+torch
+torchdiffeq
+hyc-utils>=0.5.3
+
+[test]
+pytest
+pytest-benchmark
