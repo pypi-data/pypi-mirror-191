@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ansiblelint-custom-rules-zjleblanc
+Version: 0.0.13
+Summary: Ansible-lint custom rules for sharing and integrating with your enterprise
+Home-page: https://github.com/zjleblanc/ansible-lint-rules
+Author: Zach LeBlanc
+Author-email: zleblanc@redhat.com
+Maintainer: Zach LeBlanc
+Maintainer-email: zleblanc@redhat.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/zjleblanc/ansible-lint-rules/issues
+Project-URL: Source, https://github.com/zjleblanc/ansible-lint-rules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Provides-Extra: devel
+License-File: LICENSE
+
+
+Useful rules to extend ansible-lint built-in functionality
+based on a style guide developed by Red Hat energy pod.

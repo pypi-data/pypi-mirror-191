@@ -1,0 +1,18 @@
+---
+- name: Test When Follows Name (Success)
+  hosts: all
+  tasks:
+    - name: Example task with when condition
+      when: true
+      ansible.builtin.dnf:
+
+    - name: Example block without condition
+      block:
+        - name: Example task
+          ansible.builtin.dnf:
+
+    - name: Example block with when condition
+      when: true
+      block:
+        - name: Example task
+          ansible.builtin.dnf:

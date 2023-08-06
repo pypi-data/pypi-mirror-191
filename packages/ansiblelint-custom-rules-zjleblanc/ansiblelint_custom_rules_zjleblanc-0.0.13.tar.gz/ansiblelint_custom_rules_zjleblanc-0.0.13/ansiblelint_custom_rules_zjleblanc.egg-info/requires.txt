@@ -1,0 +1,5 @@
+setuptools
+ansible-lint
+
+[devel]
+pytest

@@ -1,0 +1,4 @@
+use_default_rules: true
+# Load custom rules from this specific folder
+rulesdir:
+  - ./rules
