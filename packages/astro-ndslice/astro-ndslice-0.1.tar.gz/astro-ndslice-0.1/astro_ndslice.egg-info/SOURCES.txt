@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+astro_ndslice/__init__.py
+astro_ndslice/list.py
+astro_ndslice/offset.py
+astro_ndslice/slices.py
+astro_ndslice.egg-info/PKG-INFO
+astro_ndslice.egg-info/SOURCES.txt
+astro_ndslice.egg-info/dependency_links.txt
+astro_ndslice.egg-info/not-zip-safe
+astro_ndslice.egg-info/requires.txt
+astro_ndslice.egg-info/top_level.txt
