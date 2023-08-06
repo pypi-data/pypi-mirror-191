@@ -1,0 +1,97 @@
+[build-system]
+requires = [
+    "setuptools>=63",
+    "setuptools_scm[toml]>7.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kiara_plugin.onboarding"
+description = "kiara modules for data onboarding."
+authors = [
+    {name = "Markus Binsteiner", email = "markus@frkl.io"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["kiara"]
+license = {text = "MPL-2.0"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "kiara_plugin.core_types>=0.4.16",
+    "httpx>=0.23.0",
+    "patool",
+    "pyzenodo3>=1.0.2"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+dev_documentation = [
+    "kiara[dev_documentation]"
+]
+dev_testing = [
+    "kiara[dev_testing]",
+    "types-setuptools",
+    "sqlalchemy-stubs",
+    "types-orjson",
+    "types-pytz"
+]
+dev_utils = [
+    "kiara[dev_utils]"
+]
+dev_all = [
+    "kiara[dev_all]"
+]
+
+[project.entry-points."kiara.plugin"]
+onboarding = "kiara_plugin.onboarding"
+
+[project.entry-points."kiara.data_types"]
+onboarding = "kiara_plugin.onboarding:find_data_types"
+
+[project.entry-points."kiara.model_classes"]
+onboarding = "kiara_plugin.onboarding:find_model_classes"
+
+[project.entry-points."kiara.modules"]
+onboarding = "kiara_plugin.onboarding:find_modules"
+
+[project.entry-points."kiara.pipelines"]
+onboarding = "kiara_plugin.onboarding:find_pipelines"
+
+
+[project.urls]
+homepage = "https://github.com/DHARPA-Project/kiara_plugin.onboarding"
+documentation = "https://DHARPA-Project.github.io/kiara_plugin.onboarding"
+repository = "https://github.com/DHARPA-Project/kiara_plugin.onboarding"
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | external
+)/
+'''
+
+[tool.setuptools_scm]
+write_to = "src/kiara_plugin/onboarding/version.txt"
