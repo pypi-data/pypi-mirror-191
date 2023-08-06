@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ms-graph-client
+Version: 0.1.8
+Summary: Provides a python wrapper around the Microsoft Graph API.  Current SDKs from Microsoft are in Preview mode.
+Home-page: https://github.com/carpnick/ms_graph_client
+License: MIT
+Author: Nick Carpenter
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cachetools (>=5.0.0,<6.0.0)
+Requires-Dist: requests (>=2.28.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+export PATH="$HOME/.local/bin:$PATH"
+
+Docs: https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0
+
+# How to use
+```
+from ms_graph_client import GraphAPI, GraphAPIConfig, GraphCacheAPI
+from ms_graph_client.services.groups import Groups
+
+client_id = "xxxxxxxx"
+tenant_id = "xxxxxxxx"
+client_secret = "xxxxxxxx"
+
+graphapi_config = GraphAPIConfig(
+    client_id=client_id,
+    tenant_id=tenant_id,
+    client_secret=client_secret,
+    api_url="https://graph.microsoft.com/v1.0",
+)
+
+#CRUD wrapper to expose enough to automate Group Management.
+# This includes Create/Delete Azure AD Groups,
+# Add/Remove Members of Groups, 
+# Assign and Unassign the group to/from an Application
+
+graph_api_wrapper = GraphAPI(config=config)
+
+```
