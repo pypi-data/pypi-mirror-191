@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+demos/__init__.py
+easy/__init__.py
+easy/datetime_utils.py
+easy/kafka_utils.py
+fucker_easy.egg-info/PKG-INFO
+fucker_easy.egg-info/SOURCES.txt
+fucker_easy.egg-info/dependency_links.txt
+fucker_easy.egg-info/requires.txt
+fucker_easy.egg-info/top_level.txt
+test/__init__.py
+test/kafka_utils.py
