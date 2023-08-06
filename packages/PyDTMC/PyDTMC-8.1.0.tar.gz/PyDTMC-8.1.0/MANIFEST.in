@@ -1,0 +1,15 @@
+# Include Folders
+graft data
+graft docs
+graft tests
+
+# Include Files
+include README.md
+include LICENSE.md
+include requirements.txt
+include setup.py
+
+# Exclude Git Files
+recursive-exclude * .gitattributes
+recursive-exclude * .gitignore
+recursive-exclude * .gitkeep

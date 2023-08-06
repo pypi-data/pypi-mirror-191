@@ -1,0 +1,3006 @@
+{
+  "validate_boolean_data": [
+    {
+      "value": false,
+      "is_valid": true
+    },
+    {
+      "value": true,
+      "is_valid": true
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": 0.0,
+      "is_valid": false
+    },
+    {
+      "value": 1.0,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "is_valid": false
+    },
+    {
+      "value": 1,
+      "is_valid": false
+    },
+    {
+      "value": "False",
+      "is_valid": false
+    },
+    {
+      "value": "true",
+      "is_valid": false
+    },
+    {
+      "value": "Y",
+      "is_valid": false
+    }
+  ],
+  "validate_boundary_condition_data": [
+    {
+      "value": 0.0,
+      "is_valid": true
+    },
+    {
+      "value": 0.47,
+      "is_valid": true
+    },
+    {
+      "value": 1.0,
+      "is_valid": true
+    },
+    {
+      "value": 0,
+      "is_valid": true
+    },
+    {
+      "value": 1,
+      "is_valid": true
+    },
+    {
+      "value": "absorbing",
+      "is_valid": true
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": 4.73,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "is_valid": false
+    },
+    {
+      "value": "boundary",
+      "is_valid": false
+    }
+  ],
+  "validate_dictionary_data": [
+    {
+      "dictionary_elements": [
+        ["A", "A", 0.50],
+        ["A", "B", 0.50],
+        ["B", "A", 0.25],
+        ["B", "B", 0.75]
+      ],
+      "attributes": null,
+      "is_valid": true
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", 1],
+        ["A", "B", 0],
+        ["B", "A", 0],
+        ["B", "B", 1]
+      ],
+      "attributes": null,
+      "is_valid": true
+    },
+    {
+      "dictionary_elements": [
+        ["A", null, 1],
+        ["A", "B", 0],
+        ["B", "A", 0],
+        ["B", "B", 1]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", 0.8],
+        ["B", 0.2]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", 1.0],
+        ["B", "B", 1.0],
+        ["C", "C", 1.0],
+        ["D", "D", 1.0]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", "1", 1],
+        ["A", "B", "2", 0],
+        ["B", "A", "3", 0],
+        ["B", "B", "4", 1]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", 3.7],
+        ["A", "B", -5.3],
+        ["B", "A", 4.1],
+        ["B", "B", -2.3]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", 1],
+        ["A", "B", "0"],
+        ["B", "A", 0],
+        ["B", "B", 1]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["A", "A", 0.3],
+        ["A", "B", 0.7],
+        ["B", "B", 1.0]
+      ],
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["P", "A", "A", 0.3],
+        ["P", "A", "B", 0.7],
+        ["P", "B", "A", 0.5],
+        ["P", "B", "B", 0.5],
+        ["E", "A", "1", 0.4],
+        ["E", "A", "2", 0.3],
+        ["E", "A", "3", 0.3],
+        ["E", "B", "1", 0.7],
+        ["E", "B", "2", 0.1],
+        ["E", "B", "3", 0.2]
+      ],
+      "attributes": ["P", "E"],
+      "is_valid": true
+    },
+    {
+      "dictionary_elements": [
+        ["P", "A", "A", 0.3],
+        ["P", "B", "A", 0.5],
+        ["P", "B", "B", 0.5],
+        ["E", "A", "1", 0.4],
+        ["E", "A", "2", 0.3],
+        ["E", "A", "3", 0.3],
+        ["E", "B", "1", 0.7],
+        ["E", "B", "2", 0.1],
+        ["E", "B", "3", 0.2]
+      ],
+      "attributes": ["P", "E"],
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["P", "A", "A", 0.3],
+        ["P", "A", "B", 0.7],
+        ["P", "B", "A", 0.5],
+        ["P", "B", "B", 0.5],
+        ["E", "B", "1", 0.7],
+        ["E", "B", "2", 0.1],
+        ["E", "B", "3", 0.2]
+      ],
+      "attributes": ["P", "E"],
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["P", "A", "A", 0.3],
+        ["P", "A", "B", 0.7],
+        ["P", "B", "A", 0.5],
+        ["P", "B", "B", 0.5],
+        ["E", "A", "1", 0.4],
+        ["E", "A", "2", 0.3],
+        ["E", "A", "3", 0.3]
+      ],
+      "attributes": ["P", "E"],
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": [
+        ["P", "A", "A", 0.1],
+        ["P", "A", "B", 0.9],
+        ["P", "B", "A", 0.6],
+        ["P", "B", "B", 0.4],
+        ["E", "A", "1", 0.1],
+        ["E", "A", "2", 0.1],
+        ["E", "A", "3", 0.8],
+        ["E", "B", "1", 0.3],
+        ["E", "B", "2", 0.3],
+        ["E", "B", "3", 0.4]
+      ],
+      "attributes": ["X", "Y"],
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": null,
+      "attributes": null,
+      "is_valid": false
+    },
+    {
+      "dictionary_elements": {},
+      "attributes": null,
+      "is_valid": false
+    }
+  ],
+  "validate_dpi_data": [
+    {
+      "value": 75,
+      "is_valid": true
+    },
+    {
+      "value": 150,
+      "is_valid": true
+    },
+    {
+      "value": 200,
+      "is_valid": true
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "is_valid": false
+    },
+    {
+      "value": 201,
+      "is_valid": false
+    },
+    {
+      "value": 500,
+      "is_valid": false
+    },
+    {
+      "value": 75.0,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "is_valid": false
+    },
+    {
+      "value": "200",
+      "is_valid": false
+    }
+  ],
+  "validate_emission_matrix_data": [
+    {
+      "value": [[0.2, 0.1, 0.1, 0.3, 0.3], [0.1, 0.3, 0.1, 0.3, 0.2]],
+      "size": 2,
+      "is_valid": true
+    },
+    {
+      "value": [[0.7, 0.5, 0.4, 0.4, 0.3], [0.3, 0.4, 0.5, 0.1, 0.4]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[8.4, 0.0, 0.0, 1.3, 4.7], [0.0, 0.0, 0.0, 12.5, 6.2]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[3.1, -5.2, 2.2, 0.0, 0.0], [1.1, 0.7, 0.0, 4.5, 1.2]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[7.7, 0.0, 4.9, "Infinity", 0.0], ["Infinity", 8.7, "NaN", 3.2, 0.0]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[1.0], [1.0]],
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": [7.8, 11.3, 4.5, 5.1],
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": [[0.1, 0.1, 0.3, 0.1], [0.0, 0.0, 0.0, 0.0]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[0.0, 0.0, 0.0, 0.0], [0.1, 0.1, 0.3, 0.1]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[0.0, 0.0, 0.0, 0.0], [0.0, 0.0, 0.0, 0.0]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[0.1, 0.1, 0.8], [0.3, 0.3, 0.4], [0.4, 0.3, 0.3]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[0.1, 0.7, 0.2], [0.1, 0.3, 0.6], [0.3, 0.2, 0.5]],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[0.1, 0.1, 0.8], [0.8, 0.1, 0.1], [0.6, 0.2, 0.2]],
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": 1,
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": [true],
+      "size": 1,
+      "is_valid": false
+    },
+    {
+      "value": [[], []],
+      "size": 2,
+      "is_valid": false
+    }
+  ],
+  "validate_enumerator_data": [
+    {
+      "value": "a",
+      "possible_values": ["a", "b", "c"],
+      "is_valid": true
+    },
+    {
+      "value": "A",
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": "C",
+      "possible_values": ["A", "B", "C"],
+      "is_valid": true
+    },
+    {
+      "value": null,
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": 6.34,
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": 17,
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "possible_values": ["V1", "V2", "V3"],
+      "is_valid": false
+    },
+    {
+      "value": [""],
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    },
+    {
+      "value": ["a"],
+      "possible_values": ["a", "b", "c"],
+      "is_valid": false
+    }
+  ],
+  "validate_file_path_data": [
+    {
+      "value": null,
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": " ",
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_noextension",
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_noextension",
+      "accepted_extensions": [".csv", ".xlsx"],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_noextension",
+      "accepted_extensions": [""],
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_invalid.txt",
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [".csv", ".xml"],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [".txt", ".xml"],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": null,
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [],
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [".csv", ".xml"],
+      "write_permission": true,
+      "is_valid": false
+    },
+    {
+      "value": "file_empty.txt",
+      "accepted_extensions": [".txt", ".xml"],
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": null,
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [".csv", ".xml"],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [".txt", ".xml"],
+      "write_permission": false,
+      "is_valid": false
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": null,
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [],
+      "write_permission": true,
+      "is_valid": true
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [".csv", ".xml"],
+      "write_permission": true,
+      "is_valid": false
+    },
+    {
+      "value": "file_filled.txt",
+      "accepted_extensions": [".txt", ".xml"],
+      "write_permission": true,
+      "is_valid": true
+    }
+  ],
+  "validate_float_data": [
+    {
+      "value": 0.0,
+      "lower_limit": [0.0, false],
+      "upper_limit": [1.0, false],
+      "is_valid": true
+    },
+    {
+      "value": 0.5,
+      "lower_limit": [0.0, false],
+      "upper_limit": [1.0, false],
+      "is_valid": true
+    },
+    {
+      "value": 1.0,
+      "lower_limit": [0.0, false],
+      "upper_limit": [1.0, false],
+      "is_valid": true
+    },
+    {
+      "value": 75.0,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": true
+    },
+    {
+      "value": 0.0,
+      "lower_limit": [0.0, true],
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": 1.0,
+      "lower_limit": null,
+      "upper_limit": [1.0, true],
+      "is_valid": false
+    },
+    {
+      "value": -5.0,
+      "lower_limit": [0.0, false],
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": 5.0,
+      "lower_limit": null,
+      "upper_limit": [1.0, false],
+      "is_valid": false
+    },
+    {
+      "value": 50,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": "Infinity",
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": false
+    }
+  ],
+  "validate_graph_data": [
+    {
+      "multi": false,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": true
+    },
+    {
+      "multi": true,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": true
+    },
+    {
+      "multi": false,
+      "graph_nodes": ["A"],
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": 3,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": true,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": null,
+      "edge_attributes": "[('type', ('E', 'P'))]",
+      "is_valid": true
+    },
+    {
+      "multi": true,
+      "graph_nodes": ["A", "B", "C"],
+      "layers": null,
+      "edge_attributes": "[('type', ('X', 'Y'))]",
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": true
+    },
+    {
+      "multi": true,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": true
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A", "B", "C"], ["1"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A", "B", "C"], ["A", "B", "C"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": null,
+      "is_valid": true
+    },
+    {
+      "multi": false,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 3,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": true,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": "[('type', ('E', 'P'))]",
+      "is_valid": true
+    },
+    {
+      "multi": true,
+      "graph_nodes": [["A", "B", "C"], ["1", "2", "3"]],
+      "layers": 2,
+      "edge_attributes": "[('type', ('X', 'Z'))]",
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": null,
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": true,
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": {},
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": false
+    },
+    {
+      "multi": false,
+      "graph_nodes": "X",
+      "layers": null,
+      "edge_attributes": null,
+      "is_valid": false
+    }
+  ],
+  "validate_hidden_markov_model_data": [
+    {
+      "value": "HiddenMarkovModel([[0.2, 0.8], [0.6, 0.4]], [[0.2, 0.6, 0.2], [0.4, 0.3, 0.3]])",
+      "is_valid": true
+    },
+    {
+      "value": "range(4)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "is_valid": false
+    },
+    {
+      "value": -3.3,
+      "is_valid": false
+    },
+    {
+      "value": 11,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_hidden_markov_models_data": [
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.6, 0.4], [0.6, 0.4]]), HiddenMarkovModel([[0.5, 0.5], [0.5, 0.5]], [[1.0, 0.0], [0.0, 1.0]]), HiddenMarkovModel([[1.0, 0.0], [0.0, 1.0]], [[0.5, 0.5], [0.5, 0.5]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.3, 0.7], [0.3, 0.7]], [[0.2, 0.8], [0.5, 0.5]]), HiddenMarkovModel([[0.2, 0.8], [0.4, 0.6]], [[0.4, 0.6], [0.9, 0.1]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.7, 0.3], [0.7, 0.3]]), None]",
+      "is_valid": false
+    },
+    {
+      "value": "[1, HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.7, 0.3], [0.7, 0.3]])]",
+      "is_valid": false
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.7, 0.3], [0.7, 0.3]]), 6.7]",
+      "is_valid": false
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.7, 0.3], [0.7, 0.3]]), []]",
+      "is_valid": false
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.5, 0.5]], [[0.6, 0.4], [0.4, 0.6]])]",
+      "is_valid": false
+    },
+    {
+      "value": "(HiddenMarkovModel([[0.1, 0.9], [0.5, 0.5]], [[0.6, 0.4], [0.4, 0.6]]),)",
+      "is_valid": false
+    },
+    {
+      "value": "HiddenMarkovModel([[0.2, 0.8], [0.8, 0.2]], [[0.3, 0.7], [0.5, 0.5]])",
+      "is_valid": false
+    },
+    {
+      "value": "range(13)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "is_valid": false
+    },
+    {
+      "value": 5.0,
+      "is_valid": false
+    },
+    {
+      "value": 5,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_hyperparameter_data": [
+    {
+      "value": [[4, 12, 6], [4, 9, 34], [11, 8, 9]],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[4.0, 12.0, 6.0], [4.0, 9.0, 34.0], [11.0, 8.0, 9.0]],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[24, 7, 7], [1, 41, 19], [97, 3, 14]],
+      "size": 5,
+      "is_valid": false
+    },
+    {
+      "value": [[1.2, 2.9, 3.2], [4.7, 5.1, 6.1], [7.5, 8.4, 9.7]],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [[0, 9, -1, 3], [3, -5, 0, 1], [0, 8, 0, 0], [-2, -1, -1, 6]],
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": [4, 3, 7],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [[2, 1, 14], [23, 1, 49], [15, 11, 3], [34, 6, 6]],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [["A", "Z", "J"], ["A", "K", "A"], ["P", "R", "B"]],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": 0,
+      "is_valid": false
+    }
+  ],
+  "validate_integer_data": [
+    {
+      "value": 0,
+      "lower_limit": [0, false],
+      "upper_limit": [1, false],
+      "is_valid": true
+    },
+    {
+      "value": 1,
+      "lower_limit": [0, false],
+      "upper_limit": [1, false],
+      "is_valid": true
+    },
+    {
+      "value": 50,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": true
+    },
+    {
+      "value": 0,
+      "lower_limit": [0, true],
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": 1,
+      "lower_limit": null,
+      "upper_limit": [1, true],
+      "is_valid": false
+    },
+    {
+      "value": -10,
+      "lower_limit": [0, false],
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": 20,
+      "lower_limit": null,
+      "upper_limit": [10, false],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": 25.0,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "lower_limit": null,
+      "upper_limit": null,
+      "is_valid": false
+    }
+  ],
+  "validate_interval_data": [
+    {
+      "value": [0, 10],
+      "is_valid": true
+    },
+    {
+      "value": [5.0, 50.0],
+      "is_valid": true
+    },
+    {
+      "value": [2, 6.5],
+      "is_valid": true
+    },
+    {
+      "value": [8.5, 4.5],
+      "is_valid": false
+    },
+    {
+      "value": [-5, 5],
+      "is_valid": false
+    },
+    {
+      "value": [5.0, "Infinity"],
+      "is_valid": false
+    },
+    {
+      "value": [10, 20, 30],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": [false, true],
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    }
+  ],
+  "validate_label_data": [
+    {
+      "value": 0,
+      "labels": ["1", "2"],
+      "is_valid": true
+    },
+    {
+      "value": 1,
+      "labels": ["1", "2"],
+      "is_valid": true
+    },
+    {
+      "value": "D",
+      "labels": ["A", "B", "C", "D", "E"],
+      "is_valid": true
+    },
+    {
+      "value": -1,
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": false
+    },
+    {
+      "value": 4,
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": false
+    },
+    {
+      "value": "8",
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": false
+    },
+    {
+      "value": "b",
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": "",
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": false
+    }
+  ],
+  "validate_labels_current_data": [
+    {
+      "value": null,
+      "labels": ["A", "B", "C", "D", "E"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": -3,
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": 1,
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": 2,
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": "a",
+      "labels": ["A", "B", "C", "D"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": "B",
+      "labels": ["A", "B", "C", "D", "E"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": "D",
+      "labels": ["A", "B", "C", "D", "E"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": "E",
+      "labels": ["A", "B", "C", "D"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "labels": ["A", "B", "C"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [true, false],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [0],
+      "labels": ["1", "2"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": [0, 2, 6],
+      "labels": ["A", "B", "C"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [0, null, 2, 3],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [0, true, 2, 3],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [0, 0, 3, 1, 0, 2],
+      "labels": null,
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["1", "5"],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["2", "4"],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "C"],
+      "labels": ["1", "2", "3", "4"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B", "D"],
+      "labels": ["A", "B", "C", "D"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "B", "C", "D"],
+      "labels": ["A", "B", "C", "D"],
+      "subset": false,
+      "minimum_length": 4,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "B", "A", "C", "A", "B", "B"],
+      "labels": ["A", "B", "C"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["C", "C", "C", "C"],
+      "labels": ["A", "B", "C"],
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B", "A", "C", "A", "B", "B"],
+      "labels": null,
+      "subset": false,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": 8,
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": "1",
+      "labels": ["1", "2", "3"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": "3",
+      "labels": ["1", "2", "3"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": [],
+      "labels": ["A", "B"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [false, false],
+      "labels": ["A", "B"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": [-1, 3],
+      "labels": ["A", "B"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["3"],
+      "labels": ["1", "2", "3"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": ["2", "3"],
+      "labels": ["1", "2", "3"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": ["2", "5"],
+      "labels": ["1", "2", "3"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["3", "1"],
+      "labels": null,
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "A"],
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B"],
+      "labels": ["A", "B", "C", "D"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "B"],
+      "labels": ["A", "B", "C", "D"],
+      "subset": true,
+      "minimum_length": 2,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "B"],
+      "labels": ["A", "B", "C", "D"],
+      "subset": true,
+      "minimum_length": 3,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B", "C"],
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    },
+    {
+      "value": ["1", "2"],
+      "labels": ["A", "B", "C"],
+      "subset": true,
+      "minimum_length": 1,
+      "is_valid": false
+    }
+  ],
+  "validate_labels_input_data": [
+    {
+      "value": ["1", "2", "3"],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": ["A", "B", "C"],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": ["S4", "S1", "S9", "S6", "S5"],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": ["S4", "S1", "S9", "S6", "S5"],
+      "size": 7,
+      "is_valid": false
+    },
+    {
+      "value": ["1", "2", "2", "3"],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["1", "", "2"],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [false, true, 2],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": "A",
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": 0,
+      "is_valid": false
+    }
+  ],
+  "validate_markov_chain_data": [
+    {
+      "value": "MarkovChain([[0.33, 0.67], [0.61, 0.39]])",
+      "is_valid": true
+    },
+    {
+      "value": "range(14)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": 22.3477,
+      "is_valid": false
+    },
+    {
+      "value": 6,
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_markov_chains_data": [
+    {
+      "value": "[MarkovChain([[0.1, 0.9], [0.4, 0.6]]), MarkovChain([[0.5, 0.5], [0.5, 0.5]]), MarkovChain([[1.0, 0.0], [0.0, 1.0]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[MarkovChain([[0.3, 0.7], [0.3, 0.7]]), MarkovChain([[0.2, 0.8], [0.4, 0.6]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[MarkovChain([[0.1, 0.9], [0.4, 0.6]]), None]",
+      "is_valid": false
+    },
+    {
+      "value": "[0.22, MarkovChain([[0.1, 0.9], [0.4, 0.6]])]",
+      "is_valid": false
+    },
+    {
+      "value": "[MarkovChain([[0.1, 0.9], [0.4, 0.6]]), 1]",
+      "is_valid": false
+    },
+    {
+      "value": "[MarkovChain([[0.1, 0.9], [0.4, 0.6]]), []]",
+      "is_valid": false
+    },
+    {
+      "value": "[MarkovChain([[0.1, 0.9], [0.5, 0.5]])]",
+      "is_valid": false
+    },
+    {
+      "value": "(MarkovChain([[0.1, 0.9], [0.5, 0.5]]),)",
+      "is_valid": false
+    },
+    {
+      "value": "MarkovChain([[0.2, 0.8], [0.8, 0.2]])",
+      "is_valid": false
+    },
+    {
+      "value": "range(13)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "is_valid": false
+    },
+    {
+      "value": 5.0,
+      "is_valid": false
+    },
+    {
+      "value": 5,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_mask_data": [
+    {
+      "value": [["NaN", 0.5, "NaN"], [1.0, 0.0, 0.0], [0.3, "NaN", 0.2]],
+      "rows": 3,
+      "columns": 3,
+      "is_valid": true
+    },
+    {
+      "value": [["NaN", "NaN", "NaN"], ["NaN", "NaN", "NaN"], ["NaN", "NaN", "NaN"]],
+      "rows": 3,
+      "columns": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[0, 1, 0], [0, 0, 1], [1, 0, 0]],
+      "rows": 3,
+      "columns": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[0.2, 0.5, 0.1, "NaN"], [0.1, 0.5, 0.2, 0.2], [0.8, "NaN", "NaN", "NaN"]],
+      "rows": 4,
+      "columns": 4,
+      "is_valid": false
+    },
+    {
+      "value": [[0.0, "NaN", 0.7, 0.3], [0.8, "NaN", 0.2, "NaN"], ["NaN", "NaN", "NaN", "NaN"], ["NaN", "NaN", "NaN", "NaN"]],
+      "rows": 5,
+      "columns": 5,
+      "is_valid": false
+    },
+    {
+      "value": [["Infinity", 0.50, "Infinity"], [0.25, 0.25, "Infinity"], [0.20, 0.10, "Infinity"]],
+      "rows": 3,
+      "columns": 3,
+      "is_valid": false
+    },
+    {
+      "value": [["NaN", "NaN", "NaN"], [0.00, 0.45, 0.55], [1.00, "NaN", 0.20]],
+      "rows": 3,
+      "columns": 3,
+      "is_valid": false
+    },
+    {
+      "value": [["NaN", 0.5, "NaN", "NaN"], [0.0, 0.1, 0.1, "NaN"]],
+      "rows": 2,
+      "columns": 4,
+      "is_valid": true
+    },
+    {
+      "value": [[0.25, "NaN", "NaN"], ["NaN", "NaN", "NaN"]],
+      "rows": 2,
+      "columns": 4,
+      "is_valid": false
+    },
+    {
+      "value": [["NaN", 0.5], [0.0, 1.0], ["NaN", "NaN"], [0.0, 1.0]],
+      "rows": 4,
+      "columns": 2,
+      "is_valid": true
+    },
+    {
+      "value": [["NaN", 0.3], ["NaN", "NaN"], [1.0, 0.0]],
+      "rows": 4,
+      "columns": 2,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "rows": null,
+      "columns": null,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "rows": null,
+      "columns": null,
+      "is_valid": false
+    },
+    {
+      "value": [[], []],
+      "rows": 2,
+      "columns": 2,
+      "is_valid": false
+    }
+  ],
+  "validate_matrix_data": [
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": null,
+      "rows": null,
+      "is_valid": true
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": 2,
+      "rows": 2,
+      "is_valid": true
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": 3,
+      "rows": 5,
+      "is_valid": false
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": 2,
+      "rows": null,
+      "is_valid": true
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": 4,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": null,
+      "rows": 2,
+      "is_valid": true
+    },
+    {
+      "value": [[1.0, 0.0], [0.5, 0.5]],
+      "columns": null,
+      "rows": 6,
+      "is_valid": false
+    },
+    {
+      "value": [[8.4, 2.6, 0.0], [3.5, 7.1, 2.6], [1.3, 3.6, 1.9]],
+      "columns": 3,
+      "rows": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[2, 7, 3], [11, 3, 0], [0, 7, 7]],
+      "columns": null,
+      "rows": null,
+      "is_valid": true
+    },
+    {
+      "value": [[-4.4, 9.2], [6.3, 3.6]],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [[12, 8, 0], [0, 0, 1], [9, 4, 2], [9, 4, 2]],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [5],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [0, 0, 0, 0, 1],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": -0.44,
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": 6,
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": "matrix",
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    },
+    {
+      "value": [[], []],
+      "columns": null,
+      "rows": null,
+      "is_valid": false
+    }
+  ],
+  "validate_model_data": [
+    {
+      "value": "MarkovChain([[0.33, 0.67], [0.61, 0.39]])",
+      "is_valid": true
+    },
+    {
+      "value": "HiddenMarkovModel([[0.2, 0.8], [0.6, 0.4]], [[0.2, 0.6, 0.2], [0.4, 0.3, 0.3]])",
+      "is_valid": true
+    },
+    {
+      "value": "ValidationError('TEST')",
+      "is_valid": false
+    },
+    {
+      "value": "object()",
+      "is_valid": false
+    },
+    {
+      "value": "range(100)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "np.array([[0, 8, 1, 4, 1]])",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "is_valid": false
+    },
+    {
+      "value": 7.2,
+      "is_valid": false
+    },
+    {
+      "value": 4,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_models_data": [
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.4, 0.6]], [[0.5, 0.5], [0.5, 0.5]]), MarkovChain([[1.0, 0.0], [0.8, 0.2]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[MarkovChain([[1.0, 0.0], [0.5, 0.5]]), HiddenMarkovModel([[0.6, 0.4], [0.1, 0.9]], [[0.6, 0.4], [0.0, 1.0]]), MarkovChain([[0.0, 1.0], [0.0, 1.0]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.1, 0.9], [0.9, 0.1]], [[0.6, 0.4], [0.3, 0.7]]), HiddenMarkovModel([[0.5, 0.5], [1.0, 0.0]], [[0.7, 0.3], [0.1, 0.9]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[MarkovChain([[0.4, 0.6], [0.5, 0.5]]), MarkovChain([[0.3, 0.7], [0.6, 0.4]])]",
+      "is_valid": true
+    },
+    {
+      "value": "[None, HiddenMarkovModel([[0.6, 0.4], [0.2, 0.8]], [[0.5, 0.5], [1.0, 0.0]])]",
+      "is_valid": false
+    },
+    {
+      "value": "[1, MarkovChain([[0.6, 0.4], [0.4, 0.6]])]",
+      "is_valid": false
+    },
+    {
+      "value": "[MarkovChain([[0.6, 0.4], [0.4, 0.6]]), 1877.3333]",
+      "is_valid": false
+    },
+    {
+      "value": "[HiddenMarkovModel([[0.3, 0.7], [0.8, 0.2]], [[0.3, 0.7], [0.8, 0.2]]), []]",
+      "is_valid": false
+    },
+    {
+      "value": "[MarkovChain([[0.5, 0.5], [1.0, 0.0]])]",
+      "is_valid": false
+    },
+    {
+      "value": "(MarkovChain([[0.1, 0.9], [0.5, 0.5]]),)",
+      "is_valid": false
+    },
+    {
+      "value": "MarkovChain([[0.2, 0.8], [0.9, 0.1]])",
+      "is_valid": false
+    },
+    {
+      "value": "HiddenMarkovModel([[0.4, 0.6], [0.7, 0.3]], [[0.5, 0.5], [0.5, 0.5]])",
+      "is_valid": false
+    },
+    {
+      "value": "ValidationError('TEST')",
+      "is_valid": false
+    },
+    {
+      "value": "object()",
+      "is_valid": false
+    },
+    {
+      "value": "range(42)",
+      "is_valid": false
+    },
+    {
+      "value": "TypeError()",
+      "is_valid": false
+    },
+    {
+      "value": "np.array([3, 1, 2, 1])",
+      "is_valid": false
+    },
+    {
+      "value": "nx.DiGraph()",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "is_valid": false
+    },
+    {
+      "value": 0.05,
+      "is_valid": false
+    },
+    {
+      "value": 35,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    },
+    {
+      "value": {},
+      "is_valid": false
+    }
+  ],
+  "validate_partitions_data": [
+    {
+      "value": [["A", "B"], ["C"]],
+      "labels": ["A", "B", "C"],
+      "is_valid": true
+    },
+    {
+      "value": [["A", "B"], ["C", "D"]],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": true
+    },
+    {
+      "value": [[0], [1, 2]],
+      "labels": ["A", "B", "C"],
+      "is_valid": true
+    },
+    {
+      "value": [["A", "B", "C", "D"]],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [[1, 2], [3]],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [true, [0, 1, 2]],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [["A"], ["B", "D"]],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [[0], [true, 2], [3]],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [["A"], ["C", "D"], ["E"]],
+      "labels": ["A", "B", "C", "D", "E"],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "labels": [],
+      "is_valid": false
+    }
+  ],
+  "validate_random_distribution_data": [
+    {
+      "value": null,
+      "accepted_values": [],
+      "is_valid": false
+    },
+    {
+      "value": 0.0,
+      "accepted_values": [],
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "accepted_values": [],
+      "is_valid": false
+    },
+    {
+      "value": "beta",
+      "accepted_values": [],
+      "is_valid": true
+    },
+    {
+      "value": "beta",
+      "accepted_values": ["chisquare", "laplace"],
+      "is_valid": false
+    },
+    {
+      "value": "gamma",
+      "accepted_values": ["gamma", "exponential", "f"],
+      "is_valid": true
+    },
+    {
+      "value": "gamma",
+      "accepted_values": ["lognormal", "normal", "weibull"],
+      "is_valid": false
+    },
+    {
+      "value": "undefined",
+      "accepted_values": [],
+      "is_valid": false
+    },
+    {
+      "value": "undefined",
+      "accepted_values": ["noncentral_chisquare", "noncentral_f"],
+      "is_valid": false
+    },
+    {
+      "value": "undefined",
+      "accepted_values": ["beta", "gamma", "undefined"],
+      "is_valid": false
+    }
+  ],
+  "validate_rewards_data": [
+    {
+      "value": [-2, 0, 2],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [0.5, 8.6, -2.5, 0.0, 0.0, 6.3],
+      "size": 6,
+      "is_valid": true
+    },
+    {
+      "value": [0.0, 11.4],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": ["Infinity", 2.3, -0.9, "Infinity"],
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": [[0.3, 0.8, 0.1], [0.2, 0.0, -0.6], [-0.25, 0.40, -0.30]],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [[3.5], [-4.4], [9.4]],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": 3,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": 0,
+      "is_valid": false
+    },
+    {
+      "value": [[], []],
+      "size": 0,
+      "is_valid": false
+    }
+  ],
+  "validate_sequence_data": [
+    {
+      "value": null,
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": false,
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": -3,
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": 1,
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": 1.0,
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": "A",
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": [true],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [-1],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [1],
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": [1.0, 2.0, 1.0, 3.0, 1.0],
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": [0, 1],
+      "labels": ["A", "B", "C"],
+      "is_valid": true
+    },
+    {
+      "value": [0, 1],
+      "labels": ["A", "B"],
+      "is_valid": true
+    },
+    {
+      "value": [0, 0, 0, 0],
+      "labels": null,
+      "is_valid": false
+    },
+    {
+      "value": [0, 1, 1, 2, 1, 0, 0, 1, 2],
+      "labels": ["A", "B", "C"],
+      "is_valid": true
+    },
+    {
+      "value": [3, 2, 0, 0, 0, 1, 1, 3, 2],
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": true
+    },
+    {
+      "value": [3, 2, 0, 0, 0, 1, 1, 3, 2],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [1, 1, 0, 1, [0, 1, 1, 0], 1, 1, 1],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": [0, 1, 0, 1, 2.0, 0, 1],
+      "labels": ["A", "B", "C"],
+      "is_valid": false
+    },
+    {
+      "value": ["2"],
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": ["2", "1"],
+      "labels": ["1", "2", "3"],
+      "is_valid": true
+    },
+    {
+      "value": ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
+      "labels": ["1", "2", "3"],
+      "is_valid": true
+    },
+    {
+      "value": ["2", "1"],
+      "labels": ["1", "1"],
+      "is_valid": false
+    },
+    {
+      "value": ["1", "1", "1", "1", "1"],
+      "labels": null,
+      "is_valid": false
+    },
+    {
+      "value": ["1", ["3", "2", "2"], "1", "1", "2"],
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": ["2", "3", "1", "1", "1", "1", "1", "3", "2", "4"],
+      "labels": ["1", "2", "3", "4"],
+      "is_valid": true
+    },
+    {
+      "value": ["A"],
+      "labels": ["A", "B"],
+      "is_valid": false
+    },
+    {
+      "value": ["B", "A", "A", "A", "A"],
+      "labels": ["A", "B"],
+      "is_valid": true
+    },
+    {
+      "value": [0, "A", 0, "A", 1],
+      "labels": ["A", "B"],
+      "is_valid": false
+    },
+    {
+      "value": [1, 0, "A", "B", "A"],
+      "labels": ["A", "B"],
+      "is_valid": false
+    }
+  ],
+  "validate_sequences_data": [
+    {
+      "value": null,
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": 3.0,
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": 1,
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [0, 1],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [0, 1],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": true
+    },
+    {
+      "value": [1],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": false
+    },
+    {
+      "value": [0, [0, 1, 0, 1, 2, 0, 1, 2, 0, 0, 0, 1]],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [null, [2, 2, 1, 0, 2, 0]],
+      "labels": ["1", "2", "3"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B"],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": ["A", "B"],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": true
+    },
+    {
+      "value": ["A"],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": false
+    },
+    {
+      "value": ["A", ["C", "A", "A", "A", "A", "B"]],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [null, ["B", "C", "C", "A", "C", "B", "A", "A", "A"]],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [0, [1, 1]],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": false
+    },
+    {
+      "value": ["A", ["B", "B"]],
+      "labels": ["A", "B"],
+      "flex": true,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0],
+        [1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+      ],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        [0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0],
+        [1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        [0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0],
+        [1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [0, -1, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0],
+        [1, 0, 1, 1, 1, 0, 1, 0, -1, -1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0]
+      ],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0, 2],
+        [1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 3, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0],
+        [2, 3, 2, 2, 2, 1, 3, 1, 2, 1]
+      ],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [0, 0, 1, 0, 2, 0, 1, 1, 0, 2, 0, 1, 1, 2, 0, 2],
+        [1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 3, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0],
+        [2, 3, 2, 2, 2, 1, 3, 1, 2, 1]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        [1, 1, 1, 0, 0, 0, 2, 0, 0],
+        [3, 3],
+        [1, 3, 0, 0, 0, 2, 3, 1, 3, 2]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        [1],
+        [2, 2, 0, 0, 1, 2, 2, 0, 0],
+        [3, 3, 0, 0, 3, 2, 3, 3, 3, 1, 1, 0, 0, 1, 1]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [1, 0, 1, 1, 2, 0, 1, 1, 3, 0, 1, 0],
+        [1, 1, 2.0, 1, 2, 0, 0, 2],
+        [1, 0, 2, 2, 2, 3, 2, 0, 1, 1, 0, 3, 0]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        [0, 3, 0, [1, [1, 0, 2, 2, 3], 1], [2, 0, 1]],
+        [1, 1, 2],
+        [1, 1, 2]
+      ],
+      "labels": ["A", "B", "C", "D"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", "A", "A", "B", "B", "B", "A", "A", "B", "A", "A", "B"],
+        ["A", "B", "A", "B", "B", "A", "B", "A", "A", "B", "B", "A", "A", "A"]
+      ],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        ["B", "A", "A", "B", "B", "B", "A", "A", "B", "A", "A", "B"],
+        ["A", "B", "A", "B", "B", "A", "B", "A", "A", "B", "B", "A", "A", "A"]
+      ],
+      "labels": null,
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", "A", "A", "B", "B", "B", "A", "A", "B", "A", "A", "B"],
+        ["A", "B", "A", "B", "B", "A", "B", "A", "A", "B", "B", "A", "A", "A"]
+      ],
+      "labels": [],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", "C", "B", "C", "A", "A", "A", "B", "C", "C", "B", "A", "A", "B", "C"],
+        ["C", "C", "B", "C", "C", "A", "A", "A", "A", "C", "B", "C", "C", "B", "B"]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", "B", "B", "A", "A", "B", "A", "B"],
+        ["A", "A", "A", "A", "A", "A", "A"]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        ["A", "B", "B", "B", "C", "A", "A", "B", "C", "C", "B", "A"],
+        ["B", "A", "C", "B", "C", "C", "B", "B", "D", "A", "A", "B", "C", "D", "B"]
+      ],
+      "labels": null,
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", "B", "B", "A", "A", "B", "A", "B"],
+        ["A", "A", "A", "A", "A", "A", "A"]
+      ],
+      "labels": ["A", "B", "C"],
+      "flex": false,
+      "is_valid": true
+    },
+    {
+      "value": [
+        ["A", "A", 1, 0, "B", "A", 0, "A"],
+        ["A", "A", 1, 1, "A", "B", "A"]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    },
+    {
+      "value": [
+        ["B", 1, 1, 0, "B", 1, 0],
+        ["A", 1, 1, 1, "A", 0]
+      ],
+      "labels": ["A", "B"],
+      "flex": false,
+      "is_valid": false
+    }
+  ],
+  "validate_status_data": [
+    {
+      "value": 0,
+      "labels": ["1", "2", "3"],
+      "is_valid": true
+    },
+    {
+      "value": "C",
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": true
+    },
+    {
+      "value": [0.0, 0.5, 0.5],
+      "labels": ["1", "2", "3"],
+      "is_valid": true
+    },
+    {
+      "value": 4,
+      "labels": ["1", "2", "3"],
+      "is_valid": false
+    },
+    {
+      "value": "E",
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [0.4, 0.1, 0.1, 0.5],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [0.4, 1.2],
+      "labels": ["1", "2"],
+      "is_valid": false
+    },
+    {
+      "value": [0.2, 0.2, 0.2, 0.2, 0.2],
+      "labels": ["A", "B", "C", "D"],
+      "is_valid": false
+    },
+    {
+      "value": [[0.35, 0.25], [0.35, 0.25], [0.35, 0.25]],
+      "labels": ["A", "B"],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "labels": [],
+      "is_valid": false
+    }
+  ],
+  "validate_strings_data": [
+    {
+      "value": ["S1", "S2", "S3", "S4"],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": ["S1", "S2", "S3", "S4"],
+      "size": 4,
+      "is_valid": true
+    },
+    {
+      "value": ["S1", "S2", "S3", "S4"],
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", "S2", "S3", "S4"],
+      "size": 5,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", " ", "S3", " "],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", " ", "S3", ""],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [null, "S2", "S3", "S4"],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["", "", "", ""],
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", "S2", false, "S4"],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", 1, "S3", 3],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", "S2", 8.12, "S4"],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["S1", "S2", "S3", []],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": ["S1"],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": ["S1"],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": true,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": -1.33,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": "S1",
+      "size": null,
+      "is_valid": false
+    }
+  ],
+  "validate_time_points_data": [
+    {
+      "value": 5,
+      "is_valid": true
+    },
+    {
+      "value": [100, 1000],
+      "is_valid": true
+    },
+    {
+      "value": [0, 2, 4, 6, 8, 10],
+      "is_valid": true
+    },
+    {
+      "value": -3,
+      "is_valid": false
+    },
+    {
+      "value": [-1, 0, 1],
+      "is_valid": false
+    },
+    {
+      "value": [3, 6, 6, 6, 9],
+      "is_valid": false
+    },
+    {
+      "value": [1.4, 3.3, 4.7],
+      "is_valid": false
+    },
+    {
+      "value": ["10", "20"],
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "is_valid": false
+    }
+  ],
+  "validate_transition_function_data": [
+    {
+      "value": "def f(x_index, x_value, y_index, y_value): return 0",
+      "is_valid": true
+    },
+    {
+      "value": "def f(x_index: int, x_value: float, y_index: int, y_value: float) -> float: return (x_value * 2) + y_index",
+      "is_valid": true
+    },
+    {
+      "value": "lambda x_index, x_value, y_index, y_value: 3.14",
+      "is_valid": true
+    },
+    {
+      "value": "lambda x_index, x_value, y_index, y_value: x_value + y_value",
+      "is_valid": true
+    },
+    {
+      "value": "def f(x, y): return x * y",
+      "is_valid": false
+    },
+    {
+      "value": "def f(a, b, c, d): return a + b + c + d",
+      "is_valid": false
+    },
+    {
+      "value": "lambda x_index, x_value, y_index, y_value: None",
+      "is_valid": false
+    },
+    {
+      "value": "lambda x_index, x_value, y_index, y_value: float('inf')",
+      "is_valid": false
+    },
+    {
+      "value": "lambda x_index, x_value, y_index, y_value: 'RESULT'",
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "is_valid": false
+    }
+  ],
+  "validate_transition_matrix_data": [
+    {
+      "value": [[0.35, 0.65], [0.85, 0.15]],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": [[0.3, 0.4, 0.3], [0.8, 0.1, 0.1], [0.2, 0.6, 0.2]],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": [[0.3, 0.4, 0.3], [0.8, 0.1, 0.1], [0.2, 0.6, 0.2]],
+      "size": 2,
+      "is_valid": false
+    },
+    {
+      "value": [[0.3, 0.4, 0.3], [0.8, 0.1, 0.1], [0.2, 0.6, 0.2]],
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [[0.3, 0.4, 0.3], [0.8, 0.1, 0.1], [0.2, 0.6, 0.2]],
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": [[0.7, 0.3], [0.1, 0.9], [0.8, 0.3]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [[0.2, 0.1, 0.7], [0.3, 0.3, 0.4], [0.4, 0.3, 1.3]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [[0.9, 0.9, 0.1], [0.5, 0.2, 0.3], [0.1, 0.1, 0.8]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [[0.1, 0.1, "Infinity"], [0.8, 0.05, "Infinity"], ["Infinity", "Infinity", "Infinity"]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [["NaN", 0.5, 0.1], ["NaN", 0.3, 0.3], [0.2, 0.2, "NaN"]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [[1.0]],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [false],
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [[], []],
+      "size": null,
+      "is_valid": false
+    }
+  ],
+  "validate_vector_data": [
+    {
+      "value": 0.3,
+      "vector_type": "unconstrained",
+      "flex": true,
+      "size": 4,
+      "is_valid": true
+    },
+    {
+      "value": 1,
+      "vector_type": "unconstrained",
+      "flex": true,
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": 0.275,
+      "vector_type": "unconstrained",
+      "flex": true,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": 0,
+      "vector_type": "stochastic",
+      "flex": true,
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": [0.15, 0.45, 0.90, 0.65],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 4,
+      "is_valid": true
+    },
+    {
+      "value": [0, 1, 1, 0, 1, 1, 1],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 7,
+      "is_valid": true
+    },
+    {
+      "value": [[0, 1, 1, 0, 1, 1, 1]],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 7,
+      "is_valid": true
+    },
+    {
+      "value": [0.4, 0.1, 0.1],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 4,
+      "is_valid": false
+    },
+    {
+      "value": [[0.00], [0.45], [0.75]],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 3,
+      "is_valid": false
+    },
+    {
+      "value": ["NaN", 0.3],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [1.25, 0.60, 0.20, 0.60, 0.20],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [true, false, true, true, false],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 5,
+      "is_valid": false
+    },
+    {
+      "value": null,
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [],
+      "vector_type": "unconstrained",
+      "flex": false,
+      "size": 0,
+      "is_valid": false
+    },
+    {
+      "value": [0.00, 0.25, 0.50, 0.75],
+      "vector_type": "annihilation",
+      "flex": false,
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": [0.25, 0.50, 0.75, 0.00],
+      "vector_type": "annihilation",
+      "flex": false,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [0, 1, 1, 1, 0],
+      "vector_type": "creation",
+      "flex": false,
+      "size": null,
+      "is_valid": true
+    },
+    {
+      "value": [0.0, 0.5, 1.0, 1.0],
+      "vector_type": "creation",
+      "flex": false,
+      "size": null,
+      "is_valid": false
+    },
+    {
+      "value": [0.2, 0.2, 0.6],
+      "vector_type": "stochastic",
+      "flex": false,
+      "size": 3,
+      "is_valid": true
+    },
+    {
+      "value": [0.3, 0.4, 0.9],
+      "vector_type": "stochastic",
+      "flex": false,
+      "size": 3,
+      "is_valid": false
+    }
+  ]
+}

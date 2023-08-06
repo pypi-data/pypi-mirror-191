@@ -1,0 +1,64 @@
+@import url('theme.css');
+
+.rst-content .toctree-wrapper > p.caption, h1, h2, h3, h4, h5, h6, legend {
+    margin-top: 24px !important;
+}
+
+.rst-content dl .py {
+    width: 100% !important;
+}
+
+.rst-content dl.property {
+    padding-right: 0 !important;
+}
+
+.rst-content dl .viewcode-link {
+    padding-left: 0 !important;
+    padding-right: 8px !important;
+    float: right !important;
+}
+
+.rst-content dl.field-list > dt:after {
+    content: '' !important;
+}
+
+.rst-content section ul li > p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.rst-content section ol li > p,
+.rst-content section ol li > p:last-child,
+.rst-content section ul li > p,
+.rst-content section ul li > p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.rst-content section:not([id='pydtmc']):not([id='static-methods']) .line-block {
+    margin-bottom: 4px !important;
+}
+
+.rst-content section[id='pydtmc'] .line-block,
+.rst-content section[id='static-methods'] .line-block {
+    margin-bottom: 24px !important;
+}
+
+li.toctree-l2:has(a.reference.internal[href='#pydtmc.HiddenMarkovModel']),
+li.toctree-l2:has(a.reference.internal[href='#pydtmc.MarkovChain']) {
+    display: none;
+}
+
+.wy-nav-content {
+    max-width: 1200px !important;
+}
+
+#instance-methods dl.method,
+#properties dl.property,
+#static-methods dl.method {
+    margin-bottom: 0 !important;
+}
+
+#instance-methods dl.class > dt.sig,
+#properties dl.class > dt.sig,
+#static-methods dl.class > dt.sig {
+    margin-bottom: 24px !important;
+}
