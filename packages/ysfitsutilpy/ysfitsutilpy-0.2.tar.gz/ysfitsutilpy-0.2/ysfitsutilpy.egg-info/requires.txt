@@ -1,0 +1,7 @@
+numpy>=1.20
+scipy>=1.5
+astropy>=5.0
+photutils>=1.6
+ccdproc>=2.0
+bottleneck
+astroscrappy
