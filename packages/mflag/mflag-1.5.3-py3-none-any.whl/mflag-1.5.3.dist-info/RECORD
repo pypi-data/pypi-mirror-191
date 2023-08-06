@@ -1,0 +1,10 @@
+flagify/__init__.py,sha256=E3VmnvypBtlWzYZDGsPuBPZxCogt0HOitxFqgS0MuYA,43
+flagify/src/flag.py,sha256=pVV9jvJ9bnvrHfyEHb2UZOD1qos3pY-UtVI3IMxRvqs,3366
+flagify/src/util.py,sha256=k5_40tWVni701jEWTO6EF5nEIKsnkFCPCEholw3EG-Y,786
+mflag/__init__.py,sha256=E3VmnvypBtlWzYZDGsPuBPZxCogt0HOitxFqgS0MuYA,43
+mflag/src/flag.py,sha256=mkhKAZ6c26a3WVoezK-NL3cpLRdVFFsvha4YOkvXG94,4598
+mflag-1.5.3.dist-info/LICENSE,sha256=hRv115YwRarr5wPuaEzj3_yO8iojV8DqDQvYFCPuKYY,1071
+mflag-1.5.3.dist-info/METADATA,sha256=FfDTfOw80uPk0daU2uh7PW6Gk1jSaMkPxc4JhvHpedE,2228
+mflag-1.5.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mflag-1.5.3.dist-info/top_level.txt,sha256=Zubj2n6d6FutnG9i08GJcDLCXwJJy5sXm2V-q7_rSp0,6
+mflag-1.5.3.dist-info/RECORD,,
