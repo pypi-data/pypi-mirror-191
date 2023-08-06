@@ -1,0 +1,16 @@
+tudaesasII/__init__.py,sha256=o7QGaVgcoKLJjht1YswXdXPaFia5WixiUOxfkW8JLV4,852
+tudaesasII/beam2d.py,sha256=Z46ZugmsPfbRQuwC5VXf6uRyYmctEst--UxYRwF2p6c,49891
+tudaesasII/quad4r.py,sha256=_xnBsh6stxQB0-sygMgbrB2y49VVcYDOe7v9dIrUh_k,178587
+tudaesasII/tria3planestrain.py,sha256=CNEJBnRLOpgZQTOqpNUpVzpM_hCVHle2ysdB6HSWYMg,5594
+tudaesasII/tria3planestress.py,sha256=KyVZF9EGy9x4t245QCDCFpE0iDScEKYmNtKcOtR0W9Q,5015
+tudaesasII/tria3r.py,sha256=BBNzUxYKTn0EagRDoyEJFmIpadg7QwN52YZOVyBTRyI,19817
+tudaesasII/truss2d.py,sha256=H1PkHIsEh4haj5u0LxwHUB_2Zq8cIZnxdssHQ02hJYw,3031
+tudaesasII/utils.py,sha256=O1JyOjzjQ5sS_Jsw_ouK6MXAIp0VcbnxmepwNCUWaQY,602
+tudaesasII/version.py,sha256=dyO7FzyxlUUVNiSvKX5yvOzhJ2suGRwHqwPqTiOsLqk,24
+tudaesasII-2023.0.data/data/LICENSE,sha256=IeAsM8jQ_h1ActKYTmQfpxHX5kfb0Z7PB17NBEaRups,1533
+tudaesasII-2023.0.data/data/README.md,sha256=RmjoQ4z05lZk7jp49gTu6LbhjTWNbCJNexJMbAoSyc4,1484
+tudaesasII-2023.0.dist-info/LICENSE,sha256=IeAsM8jQ_h1ActKYTmQfpxHX5kfb0Z7PB17NBEaRups,1533
+tudaesasII-2023.0.dist-info/METADATA,sha256=ij9-VEpM1aEgC4vn2_Q14WdplT7VcfZjLAH8ZJY8PAQ,2845
+tudaesasII-2023.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tudaesasII-2023.0.dist-info/top_level.txt,sha256=ESWzJ5jJUrGSc928cymZPESem0ieLeqILALZBHO3bCo,11
+tudaesasII-2023.0.dist-info/RECORD,,
