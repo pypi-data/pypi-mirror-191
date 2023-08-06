@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mefengl-portal-gun"
+version = "0.1.0"
+description = ""
+authors = ["冯不游 <71683364+mefengl@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "mefengl_portal_gun"}]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+typer = {extras = ["all"], version = "^0.7.0"}
+
+[tool.poetry.scripts]
+mefengl-portal-gun = "mefengl_portal_gun.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
