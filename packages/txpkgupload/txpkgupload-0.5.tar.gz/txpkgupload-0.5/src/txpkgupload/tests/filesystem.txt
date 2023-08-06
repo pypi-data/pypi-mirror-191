@@ -1,0 +1,113 @@
+`UploadFileSystem` provides logic for the few limited interactions with the
+part of the file system we expose over FTP/SFTP.
+
+    >>> from txpkgupload.filesystem import UploadFileSystem
+
+First we need to setup our test environment.
+
+    >>> import os
+    >>> import shutil
+    >>> import tempfile
+    >>> rootpath = tempfile.mkdtemp()
+
+    >>> testfile = "testfile"
+    >>> full_testfile = os.path.join(rootpath, testfile)
+    >>> testfile_contents = b"contents of the file"
+    >>> with open(full_testfile, 'wb') as f:
+    ...     _ = f.write(testfile_contents)
+
+    >>> testdir = "testdir"
+    >>> full_testdir = os.path.join(rootpath, testdir)
+    >>> os.mkdir(full_testdir)
+    >>> propaganda = b"""
+    ...    GNU is aimed initially at machines in the 68000/16000 class with
+    ... virtual memory, because they are the easiest machines to make it run
+    ... on.  The extra effort to make it run on smaller machines will be left
+    ... to someone who wants to use it on them.
+    ... """
+
+When you create an UploadFileSystem you pass it a directory location
+to use.
+
+    >>> ufs = UploadFileSystem(rootpath)
+
+mkdir
+=====
+
+"mkdir" should work as expected, directory will be created as
+requested by the clients:
+
+    >>> ufs.mkdir("anything")
+    >>> os.path.exists(os.path.join(rootpath, "anything"))
+    True
+
+    >>> os.rmdir(os.path.join(rootpath, "anything"))
+
+It recursively creates directories:
+
+    >>> ufs.mkdir("anything/something/whatever")
+
+    >>> wanted_path = os.path.join(rootpath, "anything/something/whatever")
+
+    >>> os.path.exists(wanted_path)
+    True
+
+    >>> print('0o%o' % os.stat(wanted_path).st_mode)
+    0o40775
+
+    >>> shutil.rmtree(os.path.join(rootpath, "anything"))
+
+rmdir
+=====
+
+Check if it complains on removal request of an existent dir
+
+    >>> ufs.rmdir("does-not-exist")
+    Traceback (most recent call last):
+    ...
+    OSError: [Errno Not exists:] does-not-exist
+
+Check if it works as expected after the directory creation:
+
+    >>> ufs.mkdir("new-dir")
+    >>> ufs.rmdir("new-dir")
+
+    >>> os.path.exists(os.path.join(rootpath, "new-dir"))
+    False
+
+path checking
+=============
+
+`path` arguments must be normalized.
+
+    >>> ufs._sanitize(os.path.join("non-existent-dir", "..", testfile))
+    'testfile'
+
+
+Cleanup the server root:
+
+    >>> for leaf in os.listdir(rootpath):
+    ...     full_path = os.path.join(rootpath, leaf)
+    ...     if os.path.isdir(full_path):
+    ...          shutil.rmtree(full_path)
+    ...     else:
+    ...          os.remove(full_path)
+
+
+Dealing with paths outside the server root directory:
+
+    >>> ufs.mkdir("..")
+    Traceback (most recent call last):
+    ...
+    OSError: [Errno Path not allowed:] ..
+    >>> ufs.rmdir("..")
+    Traceback (most recent call last):
+    ...
+    OSError: [Errno Path not allowed:] ..
+
+
+------------------------------------------------------------------------
+
+Finally, cleanup after ourselves.
+
+    >>> shutil.rmtree(rootpath)
