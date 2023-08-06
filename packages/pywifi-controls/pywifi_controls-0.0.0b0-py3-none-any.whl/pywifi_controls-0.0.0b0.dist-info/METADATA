@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pywifi-controls
+Version: 0.0.0b0
+Summary: Python module to modify screen brightness on Linux, Windows and macOS
+Author-email: Vignesh Sivanandha Rao <svignesh1793@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2023 Vignesh Rao
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/thevickypedia/pywifi-controls
+Project-URL: Docs, https://thevickypedia.github.io/pywifi-controls/
+Project-URL: Source, https://github.com/thevickypedia/pywifi-controls
+Project-URL: Bug Tracker, https://github.com/thevickypedia/pywifi-controls/issues
+Project-URL: Release Notes, https://github.com/thevickypedia/pywifi-controls/blob/main/release_notes.rst
+Keywords: pywifi,display-settings,brightness-control
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Terminals :: Terminal Emulators/X Terminals
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: pyobjc ; platform_system == "Darwin"
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# PyWiFi-controls
+Python module to control `WiFi` on Linux, Windows and macOS
