@@ -1,0 +1,10 @@
+README.md
+license.txt
+setup.py
+ProVidDev/__init__.py
+ProVidDev/camera.py
+ProVidDev/video.py
+Pro_videos_Ferramentas_teste.egg-info/PKG-INFO
+Pro_videos_Ferramentas_teste.egg-info/SOURCES.txt
+Pro_videos_Ferramentas_teste.egg-info/dependency_links.txt
+Pro_videos_Ferramentas_teste.egg-info/top_level.txt
