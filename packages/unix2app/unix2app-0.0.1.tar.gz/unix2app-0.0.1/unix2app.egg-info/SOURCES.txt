@@ -1,0 +1,9 @@
+README.md
+setup.py
+unix2app.egg-info/PKG-INFO
+unix2app.egg-info/SOURCES.txt
+unix2app.egg-info/dependency_links.txt
+unix2app.egg-info/entry_points.txt
+unix2app.egg-info/not-zip-safe
+unix2app.egg-info/requires.txt
+unix2app.egg-info/top_level.txt

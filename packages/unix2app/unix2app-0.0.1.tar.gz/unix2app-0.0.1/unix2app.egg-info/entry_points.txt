@@ -1,0 +1,3 @@
+[console_scripts]
+unix2app = unix2app.unix2app:main
+

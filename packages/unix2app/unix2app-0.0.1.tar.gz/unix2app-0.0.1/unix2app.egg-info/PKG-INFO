@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: unix2app
+Version: 0.0.1
+Summary: Mac console ui to gui app
+Home-page: https://github.com/buf1024/unix2app
+License: UNKNOWN
+Description: # unx2app
+        package console gui app to app
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
