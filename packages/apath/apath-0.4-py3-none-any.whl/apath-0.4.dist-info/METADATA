@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: apath
+Version: 0.4
+Summary: Advanced path library for python.
+Home-page: https://gitlab.univmind.net/bebestcode/apath
+Author: ahntenna
+Author-email: bebestcode@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
