@@ -1,0 +1,10 @@
+easyapi/__init__.py,sha256=Y_j-c-EDztFNWrivaUwVqZ1-M35Z4dtJ5Kkh572zepU,168
+easyapi/base.py,sha256=K_y8GfGWyrQypdbQ8bHFxd6QDKVsV_Ot9UfIjidDAaA,23951
+easyapi/exception.py,sha256=WUQD6EaS-0nC6ij0b49Ao6jQTRxjhNPqiL2seDV-CWM,231
+easyapi/middleware.py,sha256=C3bPi6kqks8xUlghT_1wzVtj-fbPzy3O0hIc9kvdFjE,383
+easyapi/routes.py,sha256=v_PIk-u59YhdGwQV2HzTSypskHv2WOl9VPiWE0i-T30,982
+easyapi_django-0.0.5.dist-info/LICENSE,sha256=OETFLCpM4kPKtLZH-D-Xc4gdHu1nlPJqWV6v59byuDM,1076
+easyapi_django-0.0.5.dist-info/METADATA,sha256=WVWy70dc0azt1I3juRtqGX1AZnRois_jrk9I7I76ne8,1324
+easyapi_django-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+easyapi_django-0.0.5.dist-info/top_level.txt,sha256=8aEjpeB881REgS1FSXd9HnxO_e-HG9rF4jVbNUmckng,8
+easyapi_django-0.0.5.dist-info/RECORD,,
