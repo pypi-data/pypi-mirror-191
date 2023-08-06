@@ -1,0 +1,4 @@
+pyfftw
+numpy
+geopandas
+matplotlib
