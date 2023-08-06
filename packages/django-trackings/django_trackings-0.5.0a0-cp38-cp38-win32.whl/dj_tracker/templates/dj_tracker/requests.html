@@ -1,0 +1,22 @@
+{% extends "dj_tracker/base.html" %}
+
+{% block title %}Requests{% endblock %}
+
+{% block h1 %}Requests{% endblock %}
+
+{% block body %}
+    <section>
+        <ol>
+            {% for request in page_obj %}
+                <li class="p-3 flex justify-between">
+                    <a href="{{ request.get_absolute_url }}" class="break-all w-11/12">{{ request }}</a>
+                    <span class="rounded-pill">{{ request.num_trackings }}</span>
+                </li>
+            {% empty %}
+                <p>No trackings yet.</p>
+            {% endfor %}
+        </ol>
+
+        {% include "dj_tracker/pagination.html" %}
+    </section>
+{% endblock %}
