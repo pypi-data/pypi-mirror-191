@@ -1,0 +1,8 @@
+flask_gcp_pubsub/__init__.py,sha256=edygNA0S4oqfICXeFElMMEjbIhAv3t1pI26rKHFtVa0,112
+flask_gcp_pubsub/publisher.py,sha256=9zVw0ZHtKhL8igebfFzNEWB_XF7zIqKYsndw0AhqSiE,512
+flask_gcp_pubsub/pubsub.py,sha256=TyjjrH9833epUL8lb_bG0eGQ9H0V6SZIvTvUJRF7H8I,6953
+flask_gcp_pubsub-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+flask_gcp_pubsub-0.0.0.dist-info/METADATA,sha256=s6tT3cyd4V64I8lLwFmardxYqMHyIaIiiAVm2b4oX4s,636
+flask_gcp_pubsub-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+flask_gcp_pubsub-0.0.0.dist-info/top_level.txt,sha256=QkvhM1aBMux1DwvD5pnhDmZ36z6ChBrAA_8PQ6mXJO8,17
+flask_gcp_pubsub-0.0.0.dist-info/RECORD,,
