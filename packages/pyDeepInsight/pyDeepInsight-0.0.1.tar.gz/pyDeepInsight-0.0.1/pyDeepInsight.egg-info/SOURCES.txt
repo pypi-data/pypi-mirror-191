@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pyDeepInsight/__init__.py
+pyDeepInsight/scaler.py
+pyDeepInsight/transformer.py
+pyDeepInsight.egg-info/PKG-INFO
+pyDeepInsight.egg-info/SOURCES.txt
+pyDeepInsight.egg-info/dependency_links.txt
+pyDeepInsight.egg-info/requires.txt
+pyDeepInsight.egg-info/top_level.txt
