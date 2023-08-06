@@ -1,0 +1,69 @@
+[tool.poetry]
+name = "tenkan"
+version = "0.2.5"
+description = "RSS/atom feed converter from html to gemini"
+authors = ["Quentin Ferrand <quentin.ferrand@protonmail.com>"]
+readme = 'README.md'
+repository = "https://git.fqserv.eu/takaoni/tenkan"
+license = "WTFPL"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+DateTime = "^4.3"
+feedparser = "^6.0.8"
+feedgen = "^0.9.0"
+requests = "^2.26.0"
+markdownify = "^0.10.0"
+md2gemini = "^1.8.1"
+readability-lxml = "^0.8.1"
+rich = "^10.16.2"
+prettytable = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^21.11b1", allow-prereleases = true}
+flake8 = "^4.0.1"
+mypy = "^0.910"
+isort = "^5.10.1"
+pytest-cov = "^3.0.0"
+pylint = "^2.12.2"
+pyupgrade = "^2.31.0"
+bandit = "^1.7.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+  | foo.py           # also separately exclude a file named foo.py in
+                     # the root of the project
+)
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 79
+
+[tool.poetry.scripts]
+tenkan = "tenkan.cli:main"
