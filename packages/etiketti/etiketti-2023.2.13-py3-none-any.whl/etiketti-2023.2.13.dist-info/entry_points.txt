@@ -1,0 +1,2 @@
+[console_scripts]
+etiketti = etiketti.cli:app
