@@ -1,0 +1,6 @@
+django>=2.2
+nose>=1.3.7
+
+[selenium]
+PyVirtualDisplay>=0.1.2
+selenium>=2.37.2
