@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Rudraa-ethon
+Version: 0.4
+Summary: A small ethon package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Rudraa <rudraa2213@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Installing By paste the code 
+
+```pip install Rudraa-ethon```
+
+# About Me
+
+Telegram Id : [Rudraa](https://t.me/rudraa332)
