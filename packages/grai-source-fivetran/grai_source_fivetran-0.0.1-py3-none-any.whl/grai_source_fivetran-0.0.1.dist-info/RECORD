@@ -1,0 +1,14 @@
+grai_source_fivetran/__init__.py,sha256=2dP553gb1jZE3ApDefNP4ydBMc1yOktznv2XRz6HJGo,119
+grai_source_fivetran/adapters.py,sha256=fWhW2kTu7jxJNY67lP55DR-b4h7CkRDHXbQHNpS_s-c,6309
+grai_source_fivetran/base.py,sha256=46VX9zECyPSU1hzBIFQi4CM-rqk8JLHJd4efn3P81Vc,1425
+grai_source_fivetran/fivetran_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grai_source_fivetran/fivetran_api/api_models.py,sha256=WQlkN4C76y7MMTEF3jtmuiCFIoonpt038ycNay7cemQ,436632
+grai_source_fivetran/fivetran_api/main.py,sha256=6-JD5ZLLo22Hs07JqQ5Y4qEyEfFWrXImnaCFQKKZRKU,42232
+grai_source_fivetran/loader.py,sha256=Q9pWQNTF9XS1DLQx5b9giTSFwUmufypFs4VTSUqojm8,12057
+grai_source_fivetran/mock_tools.py,sha256=y4PSEM6zoQRLq1QRq2FOqGCf7rhofG5ZEVSgABNBTYQ,1668
+grai_source_fivetran/models.py,sha256=xlCH6siQpAA0wdfdmfM0tVo4xrigrly51jsOaaVfCn8,4751
+grai_source_fivetran/package_definitions.py,sha256=UVuPXZhjPHgelLqzzUNnIDC7IzRxafax-J2uHLp3kyQ,186
+grai_source_fivetran/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grai_source_fivetran-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+grai_source_fivetran-0.0.1.dist-info/METADATA,sha256=XX9tP5GFv1ldJQulxMHXyrI-aX4xU48cEpYrOj5X3bc,673
+grai_source_fivetran-0.0.1.dist-info/RECORD,,
