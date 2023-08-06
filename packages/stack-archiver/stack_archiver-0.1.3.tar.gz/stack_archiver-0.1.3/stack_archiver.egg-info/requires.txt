@@ -1,0 +1,3 @@
+hy==0.26.*
+hyrule==0.3.*
+stackapi

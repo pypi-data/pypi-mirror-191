@@ -1,0 +1,11 @@
+README.rst
+setup.py
+stack_archiver/__init__.py
+stack_archiver/__main__.py
+stack_archiver/_version.py
+stack_archiver/main.hy
+stack_archiver.egg-info/PKG-INFO
+stack_archiver.egg-info/SOURCES.txt
+stack_archiver.egg-info/dependency_links.txt
+stack_archiver.egg-info/requires.txt
+stack_archiver.egg-info/top_level.txt
