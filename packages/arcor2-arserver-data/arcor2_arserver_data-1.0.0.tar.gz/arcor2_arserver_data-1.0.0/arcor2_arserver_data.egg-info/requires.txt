@@ -1,0 +1,4 @@
+arcor2_calibration_data~=1.0.0
+arcor2~=1.0.0
+dataclasses-jsonschema[apispec,fast-dateparsing,fast-uuid,fast-validation]~=2.16.0
+websocket-client~=1.5.0
