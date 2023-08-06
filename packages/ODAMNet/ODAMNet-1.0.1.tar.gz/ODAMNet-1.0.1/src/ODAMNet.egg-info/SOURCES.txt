@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+src/ODAMNet.egg-info/PKG-INFO
+src/ODAMNet.egg-info/SOURCES.txt
+src/ODAMNet.egg-info/dependency_links.txt
+src/ODAMNet.egg-info/entry_points.txt
+src/ODAMNet.egg-info/requires.txt
+src/ODAMNet.egg-info/top_level.txt
+src/odamnet/CTD_functions.py
+src/odamnet/WP_functions.py
+src/odamnet/__init__.py
+src/odamnet/customClick.py
+src/odamnet/methods_functions.py
+src/odamnet/odamnet.py
