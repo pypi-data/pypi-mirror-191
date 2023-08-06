@@ -1,0 +1,15 @@
+arcor2_build/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+arcor2_build/__init__.py,sha256=5qUWRZPLDdHrZybntJ-Hseipd7VGf9Ut6nlyFDSfTvs,96
+arcor2_build/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_build/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_build/scripts/build.py,sha256=f1whsTrbT5Z3ExIx1EFtSnt4Wv88ZPokJmAgPzobfC8,21093
+arcor2_build/source/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_build/source/logic.py,sha256=rwaFzc7gRdt2Y3fr1VTj0gsXRHvdsMX6ZRrmMRB4l8Q,10223
+arcor2_build/source/object_types.py,sha256=b2EsegOBSHCtwFtdViZRThrvrjp47fqILWm5N_eaEhI,919
+arcor2_build/source/utils.py,sha256=lfmRltZIxGaDA7pNsc5DU83Siwybr4d9GTH0KrUwoQc,18022
+arcor2_build-1.0.0.dist-info/METADATA,sha256=yperhbKWCvDx_VaeesYAlAEuGM9BeAMQ4Z9wC3RPHrI,6196
+arcor2_build-1.0.0.dist-info/WHEEL,sha256=KxatxaZA14OswIJTdImHhiM2tdZgU-xLZEzs-sYveVc,94
+arcor2_build-1.0.0.dist-info/entry_points.txt,sha256=mw2dytlUOAk9ygNoBKsdUT-H03vh8LHu3hH61aGdKPM,65
+arcor2_build-1.0.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_build-1.0.0.dist-info/top_level.txt,sha256=ku49rmFeh6-5wkrXYP8KnXOBODw3jvQ546LJcwyNRWs,13
+arcor2_build-1.0.0.dist-info/RECORD,,
