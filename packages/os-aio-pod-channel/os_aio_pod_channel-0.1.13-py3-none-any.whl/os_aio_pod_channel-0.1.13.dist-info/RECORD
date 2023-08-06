@@ -1,0 +1,14 @@
+os_aio_pod_channel/VERSION,sha256=l250kqCrTg50LxyK9cNF_eDUUL-yLAGw5AxM-ApCzRA,7
+os_aio_pod_channel/__init__.py,sha256=aw3zfwJLHTi9x5ofVqZyAkB4dnO8nboYHhLcLmNcb9A,253
+os_aio_pod_channel/channel.py,sha256=lvILSsBLjJwp2LtLizDmc63AgUZ5XhS4q4lD-H2cFN4,15223
+os_aio_pod_channel/config.py,sha256=iJik4yzig-SjhVzsk4PzbhRfcrweGtAHosJbqiBPvpY,1656
+os_aio_pod_channel/endpoint.py,sha256=SLcLBsk5VTyGaCPrAQxH5nt_AaVa_vszJWeEpnA-jRE,1196
+os_aio_pod_channel/engine.py,sha256=YOhjaNhdf9u2sdZrEtBA4bD1V_ZsY2jiA6JIgvhpl80,2238
+os_aio_pod_channel/exceptions.py,sha256=gEZDBWwumEJ9THu-JWNaWzlZJkgxdPJ6TEkt76db4wk,192
+os_aio_pod_channel/extension.py,sha256=DtKk5kxMHVLoECrL0aH_iqEBW5T0-Zxni9PE7BsFk3o,2280
+os_aio_pod_channel/middleware.py,sha256=kPxdVvk3iiinjq_YuHnNAHu8s8otRRCdNQxCMy9puhA,5207
+os_aio_pod_channel-0.1.13.dist-info/LICENSE,sha256=qcHaJsDPyRJgz2DmPF5y9OU_pTxzMaqtiH5_sX_w7eg,1061
+os_aio_pod_channel-0.1.13.dist-info/METADATA,sha256=wJr-r_C2RTtof_r7KLh6VBwlVw5XuK6akRQGbBf7z7A,3653
+os_aio_pod_channel-0.1.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+os_aio_pod_channel-0.1.13.dist-info/top_level.txt,sha256=fb0mMYSoycqYnMx3Wtku21-VYcNvrYZSuirdw31EaxE,19
+os_aio_pod_channel-0.1.13.dist-info/RECORD,,
