@@ -1,0 +1,10 @@
+pandas
+numpy
+certifi
+aiohttp
+certifi
+nest_asyncio
+requests
+tqdm
+typing
+asyncio
