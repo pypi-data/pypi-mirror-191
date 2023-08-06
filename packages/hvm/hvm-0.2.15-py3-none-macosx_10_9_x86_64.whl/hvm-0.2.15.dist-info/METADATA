@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hvm
+Version: 0.2.15
+Summary: Static Python AOT Compiler
+Home-page: https://github.com/gottingen/hercules
+Author: hercules Team
+Author-email: lijippy@163.com
+Requires-Python: >=3.6
+Requires-Dist: numpy (<2.0.0,>=1.6)
+Requires-Dist: typed-ast (<2.0.0,>=1.4.2)
+Requires-Dist: astpretty (<3.0.0,>=1.0)
+Requires-Dist: prettytable (<4.0.0,>=1.0)
+Requires-Dist: msgpack (>=1.0.4)
+

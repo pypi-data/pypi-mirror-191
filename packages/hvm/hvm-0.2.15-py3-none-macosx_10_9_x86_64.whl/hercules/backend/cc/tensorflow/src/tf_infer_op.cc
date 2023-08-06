@@ -1,0 +1,93 @@
+// Copyright 2022 The Hercules Authors.
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+#include "tf_infer_op.h"
+
+#include <cstdarg>
+#include "hercules/runtime/global_type_index.h"
+
+#include <hercules/pipeline/internal_helper_funcs.h>
+#include <hercules/pipeline/tx_session.h>
+#include <hercules/runtime/container/unicode_helper.h>
+#include <hercules/runtime/logging.h>
+
+namespace hercules {
+namespace runtime {
+
+HERCULES_REGISTER_NATIVE_OP(TFInferOp).SetThreadSafety(false);
+
+void TFInferOp::Init() {
+  if (device_ == NONE_DEVICE) {
+    if (HasAttr("device")) {
+      options_.device = GetAttr<int>("device");
+    }
+  } else {
+    HVM_LOG(INFO) << "[TFInferOp] devices not config, use default device: " << options_.device;
+    options_.device = device_;
+  }
+
+  options_.model = GetAttr<Unicode>("model").encode();
+  HVM_LOG(INFO) << "tensorflow model name " << options_.model;
+  auto tf_model = std::dynamic_pointer_cast<TFModel>(belong_to_->FindOp("TFModel", options_.model));
+  sub_ops_.push_back(tf_model);
+  HVM_CHECK(tf_model != nullptr) << "can't find model: " << options_.model;
+  engine_ = tf_model->RegisterOrGetEngine(internal::cuda_device_offset(options_.device));
+  HVM_CHECK(engine_ != nullptr) << "init tf engine failed!";
+}
+
+RTValue TFInferOp::Process(PyArgs inputs) const {
+  std::vector<std::pair<std::string, NDArray>> tf_inputs;
+  tf_inputs.reserve(32);
+  for (auto& input : inputs) {
+    HVM_CHECK_EQ(input.type_code(), TypeIndex::kRuntimeDict)
+        << "[TFInferOp] input type error, \n"
+        << "optional: Dict[bytes, NDArray] or Dict[str, NDArray], \n"
+        << "but receive type : " << input.type_name();
+    Dict input_dict = input.AsNoCheck<Dict>();
+    for (auto items : input_dict.items()) {
+      HVM_CHECK_EQ(items.second.type_code(), TypeIndex::kRuntimeNDArray)
+          << "[TFInferOp] input type error, \n"
+          << "optional: Dict[bytes, NDArray] or Dict[str, NDArray], \n"
+          << "but receive value type : " << items.second.type_name();
+      NDArray tx_tsr = items.second.AsNoCheck<NDArray>();
+      switch (items.first.type_code()) {
+        case TypeIndex::kRuntimeString: {
+          auto s = items.first.AsNoCheck<string_view>();
+          tf_inputs.emplace_back(std::string(s.data(), s.size()), tx_tsr);
+        } break;
+        case TypeIndex::kRuntimeUnicode: {
+          auto uv = items.first.AsNoCheck<unicode_view>();
+          auto s = UnicodeHelper::Encode(uv);
+          tf_inputs.emplace_back(std::string(s.data(), s.size()), tx_tsr);
+        } break;
+        default: {
+          /* not compatible type */
+          HVM_THROW << "[TFInferOp] input type error, \n"
+                  << "optional: Dict[bytes, NDArray] or Dict[str, NDArray], \n"
+                  << "but receive key type : " << items.first.type_name();
+        }
+      }
+    }
+  }
+
+  return engine_->forward(tf_inputs);
+}
+
+}  // namespace runtime
+}  // namespace hercules
