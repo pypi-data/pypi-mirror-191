@@ -1,0 +1,7 @@
+colorama
+fuzzywuzzy
+mako
+multidict
+pwn
+pygments
+requests
