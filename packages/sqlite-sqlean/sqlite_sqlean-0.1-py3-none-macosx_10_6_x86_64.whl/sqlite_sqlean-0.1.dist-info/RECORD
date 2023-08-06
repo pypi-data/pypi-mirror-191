@@ -1,0 +1,17 @@
+sqlite_sqlean/__init__.py,sha256=S2GFfNsXKJXySuaYstbzbEURisjxYWQQoem5VnuRKws,291
+sqlite_sqlean/crypto.dll,sha256=oDsxBPAzg2Kp6Wev1jDdcfCTltdbMrduuoyFazZgVAE,67677
+sqlite_sqlean/define.dll,sha256=-5xI1ySrU7MTb2RJFWB4Gzc6gYs2btgy3N_5VnVU3Ko,85893
+sqlite_sqlean/fileio.dll,sha256=dV07DMuCL-xzVaHV1b7lC8aouCnnCVoqfAgX8tcTJkY,61429
+sqlite_sqlean/fuzzy.dll,sha256=bvEx_ta2_eKysUuwoVRf-mcWT9MEYeLfmxtdpIYxVlU,68532
+sqlite_sqlean/json1.dll,sha256=x-EWanvOZN23rK7oJWgH63AQXLJCn_R9vTP5lHjI00M,103695
+sqlite_sqlean/math.dll,sha256=lk67SXRfPr15CLpS1S3-2QPyPmsorTrLBpEyOhCvK1Q,67524
+sqlite_sqlean/regexp.dll,sha256=x6TRckaLIPX56iKNNo0I_p5g6Y0X6X4nIA5ppTUdGrw,457031
+sqlite_sqlean/stats.dll,sha256=8Jv9DyMqH-B1Y0Xwqn3NcLVBD5tYeeMLi5mNBw4Q3w0,55199
+sqlite_sqlean/text.dll,sha256=fyigVwksheVHmtmgj-xevCbZOxbTL8qNuhKHMo6_Va4,44066
+sqlite_sqlean/unicode.dll,sha256=GegboyiJoAvNlligU574xdrI48-GLMeFYFJpdvN1T78,138441
+sqlite_sqlean/uuid.dll,sha256=X9-ktdjKyPCy5yvwGYrhNEl8SiSFDErzU8J3DnR5JBg,46219
+sqlite_sqlean/vsv.dll,sha256=Pf45avjfdBAQCduf0T38v5pXztV8PFGtCbQYiSHvq0c,99548
+sqlite_sqlean-0.1.dist-info/METADATA,sha256=LLDY8UMeVwWi5RfwYzcFxl7refMZe_PonqzrRCMfSp0,1336
+sqlite_sqlean-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sqlite_sqlean-0.1.dist-info/top_level.txt,sha256=SnfZ8r0n5tYk7Ex7Hgx0xaAguygYiILpppLNaWGhcjE,14
+sqlite_sqlean-0.1.dist-info/RECORD,,
