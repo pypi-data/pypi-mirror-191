@@ -1,0 +1,16 @@
+motor-stubs/__init__.pyi,sha256=ikiOnMmPD0kjK5RAHBl53jPezCDA88oEFfmF9g_Tifk,120
+motor-stubs/aiohttp/__init__.pyi,sha256=jSANfs6kFKP4BUhu2pRsJfyue8BGJgauo-rjx8l6s_M,113
+motor-stubs/core.pyi,sha256=sSUZ_QLGcsMtr2JcCY84jb7sCttmC9Y_CpKG4iavGt8,38673
+motor-stubs/docstrings.pyi,sha256=pnPWRdF64RYWMzzMUYwqzXz4yg5iWP13PrcMRcFhHgA,1050
+motor-stubs/frameworks/asyncio.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motor-stubs/frameworks/tornado.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motor-stubs/metaprogramming.pyi,sha256=8pNvf4cy654dHj1zOMX81AdJlp9ZhXrkC79BSL0vS4c,2584
+motor-stubs/motor_asyncio.pyi,sha256=5fgtPS1wb8upsUD92ACdyhdgyKvyHFq39QV4qe6v8Ho,14489
+motor-stubs/motor_common.pyi,sha256=ICP0Ih6w2ZIGGMkxQkyqw24uwQMti0H4j_ton-YlJEs,75
+motor-stubs/motor_gridfs.pyi,sha256=WJexxaaAV5DmNNq19A8VHE4yDMfKqq5KT9yGgjCd3go,6753
+motor-stubs/motor_tornado.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motor-stubs/web.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motor_types-1.0.0b1.dist-info/LICENSE,sha256=3_LbCc7rWqA6Pg2r7wpRdK_ggwo7kahs2zDslJTot88,1093
+motor_types-1.0.0b1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+motor_types-1.0.0b1.dist-info/METADATA,sha256=NIcfnFwnTmsa1OZXIIVk_XVfD5LnTG1gT5eFjSr4an4,5428
+motor_types-1.0.0b1.dist-info/RECORD,,
