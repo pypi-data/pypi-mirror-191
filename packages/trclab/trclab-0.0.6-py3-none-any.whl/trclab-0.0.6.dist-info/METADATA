@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: trclab
+Version: 0.0.6
+Summary: STUST TRCLab Package
+Author: STUST-TRCLab
+Author-email: mb1g0110@stust.edu.tw
+Keywords: trclab,stust
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+License-File: LICENSE
+Requires-Dist: nibabel
+Requires-Dist: pydicom
+Requires-Dist: opencv-python-headless
+Requires-Dist: opencv-contrib-python-headless
+Requires-Dist: imgaug
+Requires-Dist: albumentations
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: cython
+Requires-Dist: Pillow
+Requires-Dist: IPython[all]
+Requires-Dist: python-dotenv
+Requires-Dist: Keras-Applications
+Requires-Dist: efficientnet
+Requires-Dist: segmentation-models
+
