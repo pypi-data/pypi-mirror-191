@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: pyFlowSOM
+Version: 0.1.14
+Summary: A Python implementation of the SOM training functionality of FlowSOM
+Author-email: Angelo Lab <theangelolab@gmail.com>
+License: Modified Apache License 2.0
+Project-URL: repository, https://github.com/angelolab/pyFlowSOM
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Cython (<1,>=0.29)
+Requires-Dist: numpy (<2,>=1)
+Requires-Dist: scipy (<2,>=1)
+Provides-Extra: tests
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: coveralls (<4.0,>=3.3.1) ; extra == 'tests'
+Requires-Dist: pytest (<8.0.0,>=7.1.2) ; extra == 'tests'
+Requires-Dist: pytest-cases (<4,>=3.6.0) ; extra == 'tests'
+Requires-Dist: pytest-cov (<4,>=3.0.0) ; extra == 'tests'
+Requires-Dist: pytest-mock (<4.0.0) ; extra == 'tests'
+Requires-Dist: pytest-pycodestyle (<3.0,>=2.3.0) ; extra == 'tests'
+Requires-Dist: pytest-randomly (<4,>=3.11.0) ; extra == 'tests'
+Requires-Dist: seaborn (<1.0,>=0.12.1) ; extra == 'tests'
+
+[![Build Status](https://travis-ci.com/angelolab/pyFlowSOM.svg?branch=master)](https://travis-ci.com/angelolab/pyFlowSOM)
+[![Coverage Status](https://coveralls.io/repos/github/angelolab/pyFlowSOM/badge.svg?branch=main)](https://coveralls.io/github/angelolab/pyFlowSOM?branch=main)
+
+# pyFlowSOM
+
+Python runner for the [FlowSOM](https://github.com/SofieVG/FlowSOM) library.
+
+Basic usage:
+
+    import pandas as pd
+    from pyFlowSOM import map_data_to_nodes, som
+
+    df = pd.read_csv('examples/example_som_input.csv')
+    example_som_input_arr = df.to_numpy()
+    node_output = som(example_som_input_arr, xdim=10, ydim=10, rlen=10)
+    clusters, dists = map_data_to_nodes(node_output, example_som_input_arr)
+
+To put the data back into dataframes:
+
+    eno = pd.DataFrame(data=node_output, columns=df.columns)
+    eco = pd.DataFrame(data=clusters, columns=["cluster"])
+
+To export to csv:
+
+    eno.to_csv('examples/example_node_output.csv', index=False)
+    eco.to_csv('examples/example_clusters_output.csv', index=False)
+
+To plot the output as a heatmap:
+
+    import seaborn as sns
+
+    # Append results to the input data
+    example_som_input_df['cluster'] = clusters
+
+    # Find mean of each cluster
+    df_mean = example_som_input_df.groupby(['cluster']).mean()
+
+    # Make heatmap
+    sns_plot = sns.clustermap(df_mean, z_score=1, cmap="vlag", center=0, yticklabels=True)
+    sns_plot.figure.savefig(f"example_cluster_heatmap.png")
+
+
+# Develop
+
+Continually build and test while developing. This will automatically create your virtual env
+
+    ./build.sh && ./test.sh
+
+The C code (`pyFlowSOM/flosom.c`) is wrapped using Cython (`pyFlowSOM/cyFlowSOM.c`).
+
+Tests do an approximate exact comparison to cluster id groundtruth and an approximate comparison to node values only because of floating point differences. All randomness has stubbed out in in the y2kbugger/FlowSOM fork and works in tandem to the `deterministic` flag to the `som` function.
+
+To regenerate test data, which may be required if you changed any sources of randomness:
+
+    python -m pyFlowSOM.generate_test_outputs
+
+To generate heatmaps for manual comparison:
+
+    python -m pyFlowSOM.generate_test_heatmaps
+
+To bump the version and deploy to pypi:
+
+Just add the tag which matches the version you want to deploy:
+
+    git tag v0.1.14
+    git push --tags
