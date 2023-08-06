@@ -1,0 +1,52 @@
+#skip-to-content a{padding:6px;position:absolute;top:-200px;left:0px;color:white;border-right:1px solid white;border-bottom:1px solid white;border-bottom-right-radius:8px;background:#BF1722;-webkit-transition:top 1s ease-out;transition:top 1s ease-out;z-index:100}#skip-to-content a:focus{position:absolute;left:0px;top:0px;outline-color:transparent;-webkit-transition:top .1s ease-in;transition:top .1s ease-in}
+
+
+
+
+.small-box{
+    display: flex;
+}
+body{
+text-align:justify;
+}
+.nav-treeview{
+margin-left: 20px;
+}
+
+legend label{
+    margin-bottom: 0px;
+}
+legend {
+    background-color: white;
+  margin: 0px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f6f6f6;
+    padding-bottom: 0px; 
+
+  }
+
+  fieldset fieldset legend {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.15);
+    color: #555 !important;
+    /* padding-top: 10px; */
+  }
+
+  .modal{
+    z-index: 4999;
+  }
+  .daterangepicker {
+    z-index: 5000;
+  }
+
+  .main-sidebar{
+    font-size: 0.9em;
+  }
+  .modal.modal-display-on-load{
+    display: block;
+  }
