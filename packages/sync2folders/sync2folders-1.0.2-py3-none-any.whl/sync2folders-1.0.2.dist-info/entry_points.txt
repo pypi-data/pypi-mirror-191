@@ -1,0 +1,3 @@
+[console_scripts]
+sync2folders=sync2folders.__main__:main
+
