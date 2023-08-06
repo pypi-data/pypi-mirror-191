@@ -1,0 +1,7 @@
+opencv-python>=4.6
+numpy>=1.24
+scipy>=1.10
+torch>=1.13
+pyvista>=0.38
+
+[dev]

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dreifus
+Version: 0.0.1
+Summary: dreifus lifts your 3D camera experience and facilitates computer vision applications
+Author-email: Tobias Kirschstein <tobias.kirschstein@gmail.com>
+License: Apache 2.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+
+# dreifus
