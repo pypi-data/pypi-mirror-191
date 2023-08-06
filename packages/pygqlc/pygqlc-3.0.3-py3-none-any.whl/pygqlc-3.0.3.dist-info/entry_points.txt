@@ -1,0 +1,2 @@
+[console_scripts]
+pygqlc = pygqlc.__main__:main

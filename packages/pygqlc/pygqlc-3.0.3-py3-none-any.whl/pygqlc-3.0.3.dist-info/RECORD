@@ -1,0 +1,17 @@
+pygqlc/GraphQLClient.py,sha256=zfZjpNeQOODxtffIo7iCUcmqj4J-fvzambM3_UaaiUU,25416
+pygqlc/MutationBatch.py,sha256=if1A7cNvoWhjcPiT5-usAz6samy0CbEWMff9BQE0ie0,4941
+pygqlc/MutationParser.py,sha256=AsaHBbizXCZ4yK3XPlru5YjTa8eAqJgzdI7McFgteuY,2795
+pygqlc/QueryBatch.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygqlc/QueryParser.py,sha256=vQEAS1q13TIWxVFQxTZqqK10l7veUOLComzUPKtS_oI,761
+pygqlc/SubscriptionParser.py,sha256=2ntfO1ySVtVaRrm8R3yus0Wta6jmrICGRslBMWT3Gvw,124
+pygqlc/__init__.py,sha256=L9rQWjjYdI9R7a6JMKBq9ENORY3WNhDD6vGYHj63MQA,338
+pygqlc/__main__.py,sha256=7sXKJ-br-qYOpzZXPORle0oDN9WlnzCra3AbVeXXf6s,338
+pygqlc/__version__.py,sha256=3PslnGRHLeT8kAWbhtBM110cQkzH_QzfQO5_B6lHOuU,22
+pygqlc/helper_modules/Singleton.py,sha256=NzUceaTq-qyK6VIer20TEPYk-ukphaHxENsS-21mHiE,362
+pygqlc/helper_modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygqlc-3.0.3.dist-info/LICENCE,sha256=47pMjd5mYuoE3r19jWOOfKeLxHLfJ7P8a0UoXMwJhgQ,1074
+pygqlc-3.0.3.dist-info/METADATA,sha256=f9FFSKSV4JLSSxw0vO2SoiXn63Bw8Qz3xkDDZk6TmhU,4875
+pygqlc-3.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pygqlc-3.0.3.dist-info/entry_points.txt,sha256=XiQ9ilmUS3KTsOhCsgvKtiwWPsqth6nD0Z-PNY2P2PA,48
+pygqlc-3.0.3.dist-info/top_level.txt,sha256=vUl4jKTMQtg6sjruC4Vu4HVqy6HtsZJTeVFW24FsWMY,7
+pygqlc-3.0.3.dist-info/RECORD,,
