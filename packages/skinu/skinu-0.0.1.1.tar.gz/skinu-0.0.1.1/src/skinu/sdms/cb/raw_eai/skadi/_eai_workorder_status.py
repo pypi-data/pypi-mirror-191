@@ -1,0 +1,53 @@
+from couchbase.collection import Collection
+
+from skinu.core import str_utils
+import skinu.sdms as sdms
+from skinu.sdms.cb._base_single_document import sdmsBaseSingleDocument
+
+
+#
+# class sdms_meta_info
+#
+class sdms_meta_info:
+    _meta_bucket_name = "RAW_EAI"
+    _meta_scope_name = "skadi"
+    _meta_collection_name = "eai_workorder_status"
+
+    _meta_filed_dict: dict = {
+        "site_id": "",
+        "check_in_datetime": 19000101000000,
+        "check_out_datetime": 19000101000000,
+        "last_job_exec_dth": 1900010100,
+        "last_eai_readed_dth": 1900010100,
+        "next_eai_readed_dth": 1900010100,
+    }
+
+    _meta_version: int = 1
+
+    _meta_document_info_dict: dict = {
+        "keyset": [
+        ],
+    }
+
+    def _request_upgrade_collection_meta_data(p_cb_collection: Collection, p_data_dict: dict, p_meta_verion: int, p_document_version: int) -> None:
+        pass
+
+
+#
+# class sdmsEaiWorkorderStatus
+#
+class sdmsEaiWorkorderStatus(sdmsBaseSingleDocument):
+    def __init__(self, p_site_id: str = "", p_user_document_name: str = ""):
+        tmp_sdms_config = sdms.sdms_get_config()
+        tmp_bucket_name = sdms_meta_info._meta_bucket_name if tmp_sdms_config == None else tmp_sdms_config.bucket_name_raw_eai
+        tmp_scope_name = sdms_meta_info._meta_scope_name
+        tmp_collection_name = sdms_meta_info._meta_collection_name
+        tmp_document_name = tmp_collection_name if str_utils.is_empty_str(p_user_document_name) == True else p_user_document_name
+        super().__init__(tmp_bucket_name, tmp_scope_name, tmp_collection_name, tmp_document_name, p_site_id, sdms_meta_info._meta_filed_dict, sdms_meta_info._meta_version, sdms_meta_info._meta_document_info_dict, True)
+
+    #
+    # abstract method 관련
+    #
+
+    def _request_upgrade_meta_data(self, p_cb_collection: Collection, p_data_dict: dict, p_meta_verion: int, p_document_version: int) -> None:
+        sdms_meta_info._request_upgrade_collection_meta_data(p_cb_collection, p_data_dict, p_meta_verion, p_document_version)
