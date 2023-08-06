@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: simulant
+Version: 0.9.0
+Summary: A package emulating human
+Home-page: https://bitbucket.org/zavx0z/simulant
+Author: zavx0z
+Author-email: zavx0z@yahoo.com
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
+
+# Simulant
