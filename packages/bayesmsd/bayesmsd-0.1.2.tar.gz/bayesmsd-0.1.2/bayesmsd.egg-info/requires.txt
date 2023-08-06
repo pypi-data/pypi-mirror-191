@@ -1,0 +1,5 @@
+noctiluca>=0
+rouse>=0
+numpy>=1.20
+scipy>=1.7
+tqdm>=4
