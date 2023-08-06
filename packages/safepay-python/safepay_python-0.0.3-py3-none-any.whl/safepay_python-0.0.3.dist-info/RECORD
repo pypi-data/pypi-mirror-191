@@ -1,0 +1,13 @@
+safepay_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safepay_python/safepay.py,sha256=s8cQpjdIu2u_ptJUopn_qLESTNAzUtIkdKBxaJb-jeo,1198
+safepay_python/resources/checkout.py,sha256=pDEAbfJA-PgvaepLH18RoqVqSO7LfS4fBOXLVjoKTig,990
+safepay_python/resources/payments.py,sha256=ce5RrzT4-ztSJ-Lu-kvNxKwL18wq7oV8pF5ceEkmuCg,825
+safepay_python/resources/verify.py,sha256=8K_wtSUUbQCb0aVI_q-_GweoOfyLJ3s5ewIoWAmfLJc,1100
+safepay_python/utils/builder.py,sha256=Uw6cUl2k0jj6GvWnvKM7-CO1ouuK_iIzzs8pFIfg-8U,501
+safepay_python/utils/constants.py,sha256=JflzrdIup6SxdvBTOKhRvyr-GLCkZzoJRQRrxHHDUCc,495
+safepay_python/utils/secure_compare.py,sha256=LLg5qKEgXysqHxOtS_Pt2yihckipVX0xMprkbg-kwJQ,508
+safepay_python/utils/validation.py,sha256=OnbsZty26BV-qRwIoiVt7seGjUkk1gEyRHiEWOvy0fE,1811
+safepay_python-0.0.3.dist-info/METADATA,sha256=suUFQP-eY3pY32wPI6QFDTLyYKyYP7CMHzcawnufe-Y,3427
+safepay_python-0.0.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+safepay_python-0.0.3.dist-info/licenses/LICENSE,sha256=cm_Kk62rJJf-r749LYMUtcNQDgLy-VdRs_77x4yYTfU,1064
+safepay_python-0.0.3.dist-info/RECORD,,
