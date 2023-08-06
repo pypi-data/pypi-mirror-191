@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "custom_maya"
+version = "0.0.21"
+description = "Maya的便利工具"
+authors = ["Yuanzhen Qiao <narutozbjp@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+custom_maya = '*'
+openpyxl='*'
+pandas='*'
+Jinja2='*'
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.urls]
+"Homepage"="https://github.com/narutozb/custom_maya"
+
+
+[build-system]
+requires = ["poetry>=1.0","setuptools >= 40.8.0", "wheel", "custom_maya"]
+build-backend = "poetry.masonry.api"
