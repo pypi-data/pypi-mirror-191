@@ -1,0 +1,5 @@
+setup.py
+SuperTelBot.egg-info/PKG-INFO
+SuperTelBot.egg-info/SOURCES.txt
+SuperTelBot.egg-info/dependency_links.txt
+SuperTelBot.egg-info/top_level.txt
