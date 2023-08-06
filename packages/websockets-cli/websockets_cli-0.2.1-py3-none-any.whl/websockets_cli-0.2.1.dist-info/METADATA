@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: websockets-cli
+Version: 0.2.1
+Summary: A simple yet powerful websocket cli
+Home-page: https://pyws.readthedocs.io
+License: Apache-2.0
+Keywords: websocket,cli,trio,anyio
+Author: le_woudar
+Author-email: lewoudar@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Trio
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Terminals
+Requires-Dist: certifi (>=2022.12.7,<2023.0.0)
+Requires-Dist: click (>=8.0.4,<9.0.0)
+Requires-Dist: click-didyoumean (>=0.3.0,<0.4.0)
+Requires-Dist: prompt-toolkit (>=3.0.29,<4.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: rich (>=13.0.0,<14.0.0)
+Requires-Dist: shellingham (>=1.4.0,<2.0.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: trio-websocket (>=0.9.2,<0.10.0)
+Project-URL: Bug Tracker, https://github.com/lewoudar/ws/issues
+Project-URL: Changelog, https://github.com/lewoudar/ws/blob/main/CHANGELOG.md
+Project-URL: Documentation, https://pyws.readthedocs.io
+Project-URL: Repository, https://github.com/lewoudar/ws
+Description-Content-Type: text/markdown
+
+# websockets-cli
+
+[![Pypi version](https://img.shields.io/pypi/v/websockets-cli.svg)](https://pypi.org/project/websockets-cli/)
+![](https://github.com/lewoudar/ws/workflows/CI/badge.svg)
+[![Coverage Status](https://codecov.io/gh/lewoudar/ws/branch/main/graphs/badge.svg?branch=main)](https://codecov.io/gh/lewoudar/ws)
+[![Documentation Status](https://readthedocs.org/projects/pyws/badge/?version=latest)](https://pyws.readthedocs.io/en/latest/?badge=latest)
+[![Code Style](https://img.shields.io/badge/code%20style-black-black)](https://github.com/lewoudar/ws)
+[![License Apache 2](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+
+A simple yet powerful websocket cli.
+
+## Why?
+
+Each time I work on a web project involving websockets, I found myself wanting a simple (cli) tool to test what I have
+coded. What I often do is to write a python script using [websockets](https://websockets.readthedocs.io/en/stable/).
+There are graphical tools like [Postman](https://www.postman.com/), but I'm not confortable with.
+So I decided to write a cli tool for this purpose.
+
+## Installation
+
+You can install the cli with `pip`:
+
+```shell
+$ pip install websockets-cli
+```
+
+or use a better package manager like [poetry](https://python-poetry.org/docs/):
+
+```shell
+# you probably want to add this dependency as a dev one, this is why I put -D into square brackets
+$ poetry add [-D] websockets-cli
+```
+
+ws starts working from **python3.7** and also supports **pypy3**. It has the following dependencies:
+
+- [trio](https://trio.readthedocs.io/en/stable/) for structured (async) concurrency support.
+- [trio-websocket](https://trio-websocket.readthedocs.io/en/stable/) the library implementing the websocket protocol.
+- [pydantic](https://pydantic-docs.helpmanual.io/) / [python-dotenv](https://pypi.org/project/python-dotenv/) for
+  input validation and settings management.
+- [certifi](https://pypi.org/project/certifi/) to manage TLS and certificates.
+- [click](https://click.palletsprojects.com/en/8.1.x/) to write the cli.
+- [click-didyoumean](https://pypi.org/project/click-didyoumean/) for command suggestions in case of typos.
+- [rich](https://rich.readthedocs.io/en/latest/) for beautiful output display.
+- [shellingham](https://pypi.org/project/shellingham/) to detect the shell used.
+
+## Usage
+
+The usage is straightforward and the cli is well documented.
+
+```shell
+$ ws
+Usage: ws [OPTIONS] COMMAND [ARGS]...
+
+  A convenient websocket cli.
+
+  Example usage:
+
+  # listens incoming messages from endpoint ws://localhost:8000/path
+  $ ws listen ws://localhost:8000/path
+
+  # sends text "hello world" in a text frame
+  $ ws text wss://ws.postman-echo.com/raw "hello world"
+
+  # sends the content from json file "hello.json" in a binary frame
+  $ ws byte wss://ws.postman-echo.com/raw file@hello.json
+
+Options:
+  --version   Show the version and exit.
+  -h, --help  Show this message and exit.
+
+Commands:
+  byte                Sends binary message to URL endpoint.
+  echo-server         Runs an echo websocket server.
+  install-completion  Install completion script for bash, zsh and fish...
+  listen              Listens messages on a given URL.
+  ping                Pings a websocket server located at URL.
+  pong                Sends a pong to websocket server located at URL.
+  session             Opens an interactive session to communicate with...
+  tail                An emulator of the tail unix command that output...
+  text                Sends text message on URL endpoint.
+```
+
+The first command to use is `install-completion` to have auto-completion for commands and options using the `TAB` key.
+Auto-completion is available on `bash`, `fish` and `zsh`. For Windows users, I don't forget you (I'm also a Windows
+user), support is planned for `Powershell` ;)
+
+```shell
+$ ws install-completion
+# when the command succeeded, you should see the following message
+Successfully installed completion script!
+```
+
+To play with the api you can use the websocket server kindly provided by the
+[Postman](https://blog.postman.com/introducing-postman-websocket-echo-service/) team at wss://ws.postman-echo.com/raw or
+spawn a new one with the following command:
+
+```shell
+# it will listen incoming messages on port 8000, to stop it, just type Ctrl+C
+$ ws echo-server -p 8000
+Running server on localhost:8000 💫
+```
+
+To *ping* the server, you can do this:
+
+```shell
+# :8000 is a
+$ ws ping :8000
+PING ws://localhost:8000 with 32 bytes of data
+sequence=1, time=0.00s
+```
+
+To send a message, you can type this:
+
+```shell
+# Sends a text frame
+$ ws text :8000 "hello world"  # on Windows it is probably better to use single quotes 'hello world'
+Sent 11.0 B of data over the wire.
+
+# Sends a binary frame
+$ ws byte :8000 "hello world"
+Sent 11.0 B of data over the wire.
+```
+
+If you know that you will have a long interaction with the server, it is probably better to use the `session` subcommand.
+
+```shell
+$ ws session wss://ws.postman-echo.com/raw
+Welcome to the interactive websocket session! 🌟
+For more information about commands, type the help command.
+When you see <> around a word, it means this argument is optional.
+To know more about a particular command type help <command>.
+To close the session, you can type Ctrl+D or the quit command.
+
+> ping "with payload"
+PING wss://ws.postman-echo.com/raw with 12 bytes of data
+Took 0.16s to receive a PONG.
+
+> quit
+Bye! 👋
+```
+## Documentation
+
+The full documentation can be found at https://pyws.readthedocs.io
+
+## Limitations
+
+The cli does not support [RFC 7692](https://datatracker.ietf.org/doc/html/rfc7692) and
+[RFC 8441](https://datatracker.ietf.org/doc/html/rfc8441) because `trio_websocket` the underlying library used for
+websockets does not support it.
+
