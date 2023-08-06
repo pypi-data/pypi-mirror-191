@@ -1,0 +1,9 @@
+README.md
+setup.py
+EasyTexto/__init__.py
+EasyTexto/easyTexto.py
+EasyTexto/linea.py
+EasyTexto.egg-info/PKG-INFO
+EasyTexto.egg-info/SOURCES.txt
+EasyTexto.egg-info/dependency_links.txt
+EasyTexto.egg-info/top_level.txt
