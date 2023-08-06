@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+regexfilesearch/README.MD
+regexfilesearch/__init__.py
+regexfilesearch/requirements.txt
+regexfilesearch/thirdparty.json
+regexfilesearch.egg-info/PKG-INFO
+regexfilesearch.egg-info/SOURCES.txt
+regexfilesearch.egg-info/dependency_links.txt
+regexfilesearch.egg-info/requires.txt
+regexfilesearch.egg-info/top_level.txt
