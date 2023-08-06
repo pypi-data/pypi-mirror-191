@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-07 20:11-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/choices/customer_type.py:22
+msgid "Not bound"
+msgstr "No relacionado"
+
+#: lib/choices/customer_type.py:23
+msgid "Customer"
+msgstr "Vinculado"
+
+#: lib/choices/customer_type.py:24
+msgid "Partner"
+msgstr "Asociado"
+
+#: lib/managers/oasis_client.py:38
+msgid "OASIS Error. The customer does not exists."
+msgstr "Error OASIS. El cliente no existe."
+
+#: lib/managers/oasis_client.py:68
+msgid "The customer does not belong to the company."
+msgstr "El cliente no tiene relación con la compañía."
+
+#: lib/managers/oasis_cycle.py:28
+msgid "A record for year, cycle and cycle type does not found."
+msgstr "El registro para año, ciclo y tipo de ciclo no se encuentra."
+
+#: lib/managers/oasis_cycle.py:30
+msgid "Not controlled exception at 'get_period' on Cycle manager class."
+msgstr "Exceptión no controlada en el método 'get_period' de la clase manager Cycle."
+
+#: lib/managers/oasis_geographic_location.py:31
+msgid "The location does not exists."
+msgstr "La ubicación no existe."
+
+#: models/local_models.py:20
+msgid "Company Id"
+msgstr "Id de la Compañía"
+
+#: models/local_models.py:21
+msgid "Company Name"
+msgstr "Nombre de la Compañía"
+
+#: models/local_models.py:22
+msgid "Tax Id"
+msgstr "NIT"
+
+#: models/local_models.py:23
+msgid "Address"
+msgstr "Dirección"
+
+#: models/local_models.py:24
+msgid "Phone Number"
+msgstr "Número Teléfono"
+
+#: models/local_models.py:25
+msgid "City"
+msgstr "Ciudad"
+
+#: models/local_models.py:27
+msgid "Legal Representative"
+msgstr "Representante Legal"
+
+#: models/local_models.py:28
+#, fuzzy
+#| msgid "Is enabled"
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: models/local_models.py:39
+msgid "Product id"
+msgstr "ID del Producto"
+
+#: models/local_models.py:40
+msgid "Product name"
+msgstr "Nombre del Producto"
+
+#: models/local_models.py:41
+msgid "Is enabled"
+msgstr "Habilitado"
+
+#: models/local_models.py:52
+msgid "Document type oasis id"
+msgstr "Identificador del tipo de documento OASIS"
+
+#: models/local_models.py:53
+msgid "Document type description"
+msgstr "Descripción del tipo de documento"
