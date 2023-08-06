@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: rypython
+Version: 2.0.0a4
+Summary: Miscellaneous python tools
+Author: Ryan O'Rourke
+Author-email: ryan@rypy.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: O365 (>=2.0.18,<3.0.0)
+Requires-Dist: PySimpleGUI (>=4.60.3,<5.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: XlsxWriter (>=3.0.2,<4.0.0)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: lxml (>=4.9.1,<5.0.0)
+Requires-Dist: openpyxl (>=3.0.9,<4.0.0)
+Requires-Dist: pandas (>=1.2.1,<2.0.0)
+Requires-Dist: pendulum (>=2.1.2,<3.0.0)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)
+Requires-Dist: pymsteams (>=0.2.1,<0.3.0)
+Requires-Dist: pyodbc (>=4.0.35,<5.0.0)
+Requires-Dist: rich (>=13.3.1,<14.0.0)
+Requires-Dist: typer (>=0.7.0,<0.8.0)
