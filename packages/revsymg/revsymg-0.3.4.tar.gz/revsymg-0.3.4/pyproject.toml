@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "revsymg"
+version = "0.3.4"
+authors = [{ name = "vepain", email = "victor.epain@laposte.net" }]
+description = "A python package to efficiently store oriented DNA fragments succession relationships in a directed graph. For example, succession relationships can be overlaps between two reads."
+keywords = ["Directed graph", "Overlaps graph", "Assembly graph"]
+readme = "README.md"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+license = { file = "LICENCE" }
+requires-python = ">=3.9"
+dependencies = ["bitarray >=2.4.0, <2.5.0", "networkx >=2.7.1, <2.8"]
+
+[project.urls]
+
+homepage = "https://gitlab.com/vepain/pyrevsymg"
+documentation = "https://pyrevsymg.readthedocs.io"
+repository = "https://gitlab.com/vepain/pyrevsymg"
+changelog = "https://gitlab.com/vepain/pyrevsymg/-/blob/master/docs/CHANGELOG.md"
+
+[tool.setuptools.package-data]
+
+revsymg = ["py.typed"]
