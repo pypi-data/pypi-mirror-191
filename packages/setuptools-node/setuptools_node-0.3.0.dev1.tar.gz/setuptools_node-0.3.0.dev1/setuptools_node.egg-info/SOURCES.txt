@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.py
+setuptools_node/__init__.py
+setuptools_node/gulp.py
+setuptools_node/node.py
+setuptools_node/util.py
+setuptools_node.egg-info/PKG-INFO
+setuptools_node.egg-info/SOURCES.txt
+setuptools_node.egg-info/dependency_links.txt
+setuptools_node.egg-info/requires.txt
+setuptools_node.egg-info/top_level.txt
