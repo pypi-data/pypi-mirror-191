@@ -1,0 +1,9 @@
+flask_mercadopago/__init__.py,sha256=hEBteTshKc7z2d-ZOTsmZDMIcQIgPgln6MZO0Xbh-bI,959
+flask_mercadopago/core.py,sha256=H6GhvP_gS3go7x51CxFX8k-U2EsN31DE1q0DTNgQ6iY,35889
+flask_mercadopago/utils.py,sha256=DuWU3TuKoAXBCekMVMWcF4TpFTsoC5DREOi9vu5fWUk,1749
+flask_mercadopago/static/js/mercadopago/v2.js,sha256=OD3KboDEBTOgr2XVmE5d2WnhVK7B2rrkovxDf0plJN0,476979
+Flask_Mercadopago-1.0.0.dist-info/LICENSE,sha256=9hvZZLQZx5D6yiaStWB9xlc1EkU01tFh3IGUBNhXqQc,1075
+Flask_Mercadopago-1.0.0.dist-info/METADATA,sha256=58f6yBI6hV9EVwo2SIRQ4lRmFAG8ACys1gl4_01BgP8,6954
+Flask_Mercadopago-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Flask_Mercadopago-1.0.0.dist-info/top_level.txt,sha256=JXf9IunF9Sa4VlR6t9C-m-pZSO_gXxJUPis-RATweJY,18
+Flask_Mercadopago-1.0.0.dist-info/RECORD,,
