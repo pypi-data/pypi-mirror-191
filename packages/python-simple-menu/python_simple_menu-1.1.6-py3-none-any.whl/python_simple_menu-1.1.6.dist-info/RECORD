@@ -1,0 +1,10 @@
+python_simple_menu/__init__.py,sha256=z8JTRh23rS9hiKrhqkTOEZ57blh0CKUUk03jUiC71W0,23
+python_simple_menu/examples/01_basic_usage.py,sha256=1EBXuMgAdi-TrsWqTod38vQNqiqKsmcJ7RwrStqVK1g,503
+python_simple_menu/examples/02_custom_prompts.py,sha256=PUO0g1-Eq8aeCmDJhGcpqs-83fLoaAXhFOK8Ma8CHrE,2200
+python_simple_menu/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_simple_menu/items.py,sha256=7-y1nWJyj3gRGdtMBqW81iDSUSOR8IObPeidLhsIPME,1487
+python_simple_menu/menu.py,sha256=hw7bMm-FXms8y_zAiIg5Q1wuViAIUqqS6dvGDv-Qbws,4227
+python_simple_menu-1.1.6.dist-info/LICENSE,sha256=l5gS9y5ChTnTqSmf787PRO_Bhz3iHkS9A8INfvh8r9I,1101
+python_simple_menu-1.1.6.dist-info/METADATA,sha256=VOb3hjmzo20O6QrGRay0p880NZV02LXzDV1j8Ap3FK4,1597
+python_simple_menu-1.1.6.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+python_simple_menu-1.1.6.dist-info/RECORD,,
