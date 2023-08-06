@@ -1,0 +1,16 @@
+confget/__init__.py,sha256=ciSVoquwR-M95PWF6a4qdn_ZQBHplK6Pfdaa3oMcU7s,5539
+confget/__main__.py,sha256=_7xOxuO9t3Q7045zIC-rTEDHwwCb40GmtYDBrjer7vA,10212
+confget/defs.py,sha256=lp4arYKJXMxCNNdVzKgV71Gq072Kc7RRi6WlYcZkOWU,2379
+confget/format.py,sha256=VydcXIGCdjeOqvyzdXdL3s6Q_nulVcEOqTKrvqdaAlI,5711
+confget/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+confget/backend/__init__.py,sha256=lzRk0uWzBDFo2LfUF6IYZy17qnhdh5wvwYvgCkMu3GA,1751
+confget/backend/abstract.py,sha256=OTQ8V-T8OLU4H2i7pg1YgzwQVIc-2BFVV5YAvTzHVys,2265
+confget/backend/ini_base.py,sha256=AuSPHCr3rZZV1uHSzeJnL79tLoXLKPmGSgQQc2NWt8E,2540
+confget/backend/ini_pyp.py,sha256=POgDuqFQ71JshWa6jUNunon7txuMsGAqQBH0ypxmqy4,7511
+confget/backend/ini_re.py,sha256=xVrnQCFzSDONYoQz1UbCQAXlLYlSKYGeDSHLRTYyGgU,4918
+confget-5.1.0.dist-info/METADATA,sha256=oYtLU-btu1Z_HT6YVq8MFb68zv3d0zQP85pOi4A_TvM,4622
+confget-5.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+confget-5.1.0.dist-info/entry_points.txt,sha256=gnRDeTILIxo1jfqjdNtVUM_zh1q593q2R-PM7vj31us,50
+confget-5.1.0.dist-info/top_level.txt,sha256=qhRztpUIc51peVJDR7oqhqChPaa1PSxeMxQtWwz2nSQ,8
+confget-5.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+confget-5.1.0.dist-info/RECORD,,
