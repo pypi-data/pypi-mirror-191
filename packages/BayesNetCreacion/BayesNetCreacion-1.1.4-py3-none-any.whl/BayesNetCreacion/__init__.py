@@ -1,0 +1,1 @@
+from BayesNetCreacion.bayesnetc import BayesNetCreacion
