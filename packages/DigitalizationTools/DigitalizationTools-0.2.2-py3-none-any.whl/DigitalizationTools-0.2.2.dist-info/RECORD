@@ -1,0 +1,11 @@
+DigitalizationTools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DigitalizationTools/api.py,sha256=wYw6N746vFrrg-ynk1XwOcDYFfm5HouqK721Co62s74,5625
+DigitalizationTools/components.py,sha256=L56PKv9guNROWu3Z6OUlu5aQ6G-qPia3Byxtl1v8YRI,14929
+DigitalizationTools/mongodb_api.py,sha256=z977E4JymcfMM-Yzcardjeowgw6T-clr4Bc-fEtIqRI,6519
+DigitalizationTools/postgresql_api.py,sha256=E01AdSmtNCHLM1tVAUd9AK5eqmKVxiQ0yts2cqDLG2k,5987
+DigitalizationTools/sqlite3_api.py,sha256=wYw6N746vFrrg-ynk1XwOcDYFfm5HouqK721Co62s74,5625
+DigitalizationTools-0.2.2.dist-info/LICENSE,sha256=EzKPtTA1PXGnB4Z2_rttmZA2PM5PkkuOorQGOKp7dTU,1085
+DigitalizationTools-0.2.2.dist-info/METADATA,sha256=ogpjrH6juBGZ_rkh3h8yqo3HTLzzZD7zRR7HRvVe1wk,669
+DigitalizationTools-0.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DigitalizationTools-0.2.2.dist-info/top_level.txt,sha256=nt_DgURUqjbbryHwnNACqtaj0FXgrrrVVAR52pJbQ58,20
+DigitalizationTools-0.2.2.dist-info/RECORD,,
