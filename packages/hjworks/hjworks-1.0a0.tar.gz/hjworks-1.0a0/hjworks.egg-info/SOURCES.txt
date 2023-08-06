@@ -1,0 +1,12 @@
+setup.py
+hjworks/EntradaPrograma.py
+hjworks/PiedraPapelTijeras.py
+hjworks/Programa.py
+hjworks/TresEnRaya.py
+hjworks/Wordle.py
+hjworks/__init__.py
+hjworks.egg-info/PKG-INFO
+hjworks.egg-info/SOURCES.txt
+hjworks.egg-info/dependency_links.txt
+hjworks.egg-info/requires.txt
+hjworks.egg-info/top_level.txt
