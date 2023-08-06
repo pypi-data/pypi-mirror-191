@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link href="{{static_url('assets/bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{static_url('assets/bootstrap/css/bootstrap-icons.css')}}" rel="stylesheet">
+    <script src="{{static_url('assets/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{static_url('assets/bootstrap/js/jquery-3.5.1.min.js')}}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script> -->
+
+    <!-- Medium-editor -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{static_url('assets/medium-editor/dist/css/medium-editor.css')}}">
+    <link rel="stylesheet" href="{{static_url('assets/medium-editor/dist/css/themes/default.css')}}" id="medium-editor-theme">
+    <script src="{{static_url('assets/medium-editor/dist/js/medium-editor.js')}}"></script>
+    <script src="{{static_url('assets/moment/moment-with-locales.js')}}"></script>
+
+    <!-- MDUI CSS https://www.mdui.org/docs/color -->
+    <link rel="stylesheet" href="{{static_url('assets/mdui-v1.0.1/css/mdui.css')}}" />
+    <script src="{{static_url('assets/mdui-v1.0.1/js/mdui.js')}}"></script>
+
+    <!-- Dropzone https://www.dropzone.dev/ -->
+    <script src="{{static_url('assets/dropzone/dropzone.js')}}"></script>
+    <link rel="stylesheet" href="{{static_url('assets/dropzone/dropzone.css')}}" type="text/css" />
+
+    <!-- medium-editor-insert-plugin https://github.com/linkesch/medium-editor-insert-plugin -->
+    <!-- <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+    <!-- <script src="assets/handlebars/handlebars-v4.7.7.js"></script> -->
+    <!-- <script src="assets/jquery-sortable/jquery-sortable.js"></script> -->
+
+    <!-- Unfortunately, jQuery File Upload Plugin has a few more dependencies itself -->
+    <!-- <script src="assets/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script> -->
+    <!-- <script src="assets/blueimp-file-upload/js/jquery.iframe-transport.js"></script> -->
+    <!-- <script src="assets/blueimp-file-upload/js/jquery.fileupload.js"></script> -->
+
+    <!-- <link rel="stylesheet" href="assets/medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.min.css"> -->
+    <!-- <script src="assets/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js"></script> -->
+
+    <!-- our style -->
+    <link href="{{static_url('style.css')}}" rel="stylesheet">
+
+    <title>lender</title>
+</head>
+
+<!-- <body class="mdui-theme-primary-indigo"> -->
+
+<body class="mdui-theme-layout-auto1 mdui-theme-primary-blue-grey">
+    <div class="my-dropzone"></div>
+
+    <script>
+        // Dropzone has been added as a global variable.
+        const dropzone = new Dropzone("div.my-dropzone", {
+            url: "/file/post"
+        });
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-lg mdui-color-theme mdui-text-color-theme">
+            <div class="container mdui-text-color-theme-50">
+                <a class="mdui-typo-title mdui-text-color-theme-50" href="#">Lender</a>
+                <!-- <div class="mdui-text-color-theme-icon mdui-btn-group">
+                    <button type="button" class="mdui-btn ">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_left</i>
+                    </button>
+                    <button type="button" class="mdui-btn mdui-text-color-red mdui-btn-active">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_center</i>
+                    </button>
+                    <button type="button" class="mdui-btn">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_right</i>
+                    </button>
+                    <button type="button" class="mdui-btn">
+                      <i class="mdui-icon material-icons mdui-text-color-theme-50">format_align_justify</i>
+                    </button>
+                </div> -->
+                <select onchange="changetheme(this.options[this.options.selectedIndex].value)" class="mdui-text-color-theme-50 mdui-select">
+                    <option value="blue-grey">blue-grey</option>
+                    <option value="cyan">cyan</option>
+                    <option value="indigo">indigo</option>
+                    <option value="purple">purple </option>
+                    <option value="5" disabled>State 5</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main class="mdui-color-theme-50">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-8 mx-auto">
+                    <h1 class="fw-light mdui-text-color-theme-text">Lender Memo</h1>
+                    <p class="lead text-muted mdui-text-color-theme-secondary">记录成长，随时随地👋</p>
+                </div>
+                <!-- <div class="mdui-typo" style="text-align: left;margin: 15px auto;">
+                    <blockquote>
+                      <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+                      <footer>马尔克斯 ——《百年孤独》</footer>
+                    </blockquote>
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="mdui-textfield mdui-textfield-expandable">
+                        <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+                          <i class="mdui-icon material-icons">search</i>
+                        </button>
+                        <input oninput="search_input(this)" class="mdui-textfield-input" type="text" placeholder="Search"/>
+                        <button onclick="search_close(this)" class="mdui-textfield-close mdui-btn mdui-btn-icon">
+                          <i class="mdui-icon material-icons">close</i>
+                        </button>
+                    </div>
+                    <div id="search-result"></div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="10px-blank"></div>
+            <div class="row">
+                <div class="col-md-9 ms-auto">
+                    <div class="__main-container mdui-color-white">
+                        <div class="mdui-color-theme-900" style="height: 4px;"></div>
+                        <div class="row ld-header-toolbar">
+                            <div class="col-md-4" style="margin: auto;">
+                                <div class="input-group btn-group-sm">
+                                    <button type="button" class="btn btn-outline-danger" onclick="InitWeek(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+                                      </svg></button>
+                                    <!-- <button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                                      </svg></button> -->
+                                    <button type="button" class="btn btn-outline-warning" onclick="InitWeek(0)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                      </svg></button>
+                                    <button type="button" class="btn btn-outline-success" onclick="InitWeek(1)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                                      </svg></button>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="fc-toolbar-title">May 1 – 7, 2022</h2>
+                            </div>
+                            <div class="col-md-4" style="text-align: left;">
+                                <div class="input-group">
+                                    <input id="query" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="button-addon2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ld-harness"></div>
+                        <div style="margin: 20px 16px 0;">
+                            <div class="list-group">
+                                <li class="ld-harness-list-header list-group-item list-group-item-secondary">
+                                    <div class="row">
+                                        <div class="col-md-2">今天</div>
+                                        <div class="col-md-8"></div>
+                                        <div class="col-md-2">May 1, 2022</div>
+                                    </div>
+                                </li>
+                                <div href="#" class="ld-harness-list-item list-group-item" aria-current="true">
+                                    <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                        <div class="text-muted" style="margin: auto 0;">
+                                            <small>2:30pm</small>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-sm mdui-btn mdui-btn-icon mdui-ripple" onclick="detail(this)"><svg t="1676203568587" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2703" width="16" height="16"><path d="M818.7 120.7H207.3c-15.5 0-28-12.5-28-28s12.5-28 28-28h611.5c15.5 0 28 12.5 28 28-0.1 15.4-12.6 28-28.1 28zM552.6 617.4L768 402c10.9-10.9 10.9-28.7 0-39.6-10.9-10.9-28.7-10.9-39.6 0L513 577.8 297.6 362.4c-10.9-10.9-28.7-10.9-39.6 0-10.9 10.9-10.9 28.7 0 39.6l215.4 215.4L258 832.9c-10.9 10.9-10.9 28.7 0 39.6 10.9 10.9 28.7 10.9 39.6 0L513 657l215.4 215.4c10.9 10.9 28.7 10.9 39.6 0 10.9-10.9 10.9-28.7 0-39.6L552.6 617.4z" fill="" p-id="2704"></path></svg></button>
+
+                                            <button type="button" class="btn btn-sm mdui-btn mdui-btn-icon mdui-ripple" onclick="detail(this)"><svg t="1676203526740" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2430" width="16" height="16"><path d="M896.739769 522.987463L543.250653 169.10453A39.381586 39.381586 0 0 0 514.974674 157.605107c-1.338974-0.157526-2.520422-0.787632-3.938158-0.787631a39.145297 39.145297 0 0 0-15.988924 3.544342 38.830244 38.830244 0 0 0-13.704792 8.663949l-318.990847 316.706715a39.22406 39.22406 0 1 0 55.685563 55.449273l253.617414-251.884624v689.571571c0 21.659872 17.642951 39.145297 39.381586 39.145297s39.381586-17.485424 39.381586-39.145297v-691.54065L840.817917 578.200446a39.381586 39.381586 0 0 0 55.685563 0.157526 38.909007 38.909007 0 0 0 0.157526-55.370509z m47.257904-444.46058H78.075359a39.302823 39.302823 0 0 1-39.381586-39.145297c0-21.581109 17.642951-39.145297 39.381586-39.145296H943.997673a39.22406 39.22406 0 1 1 0 78.290593z" fill="#5F6269" p-id="2431"></path></svg></button>
+                                            <button type="button" class="btn btn-sm mdui-btn mdui-btn-icon mdui-ripple" onclick="detail(this)"><svg t="1676201028796" class="bi bi-clipboard-check" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2684" width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M927.171186 66.020646 94.780155 66.020646c-16.415878 0-29.728068 13.311167-29.728068 29.728068l0 416.196027 59.45716 0L124.509247 125.477806l772.933871 0 0 772.938987L510.976182 898.416793l0 59.45716 416.195004 0c16.416901 0 29.729092-13.310144 29.729092-29.729092L956.900278 95.748714C956.899254 79.331813 943.588087 66.020646 927.171186 66.020646L927.171186 66.020646zM65.051063 957.873953l356.73682 0L421.787884 601.13611 65.051063 601.13611 65.051063 957.873953 65.051063 957.873953zM124.508223 660.59327l237.8225 0 0 237.823524L124.508223 898.416793 124.508223 660.59327 124.508223 660.59327zM778.532891 452.487581l59.453067 0L837.985958 184.934966 570.432319 184.934966l0 59.45716 166.05292 0L460.224288 520.651031l42.043558 42.048675 276.265044-276.264021L778.532891 452.487581 778.532891 452.487581zM778.532891 452.487581" fill="#272636" p-id="2685">
+                                                </path></svg></button>
+                                            <button type="button" class="btn btn-sm" onclick="clipCard(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                                              </svg></button>
+                                            <button type="button" class="btn btn-sm" id="liveToastBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                                              </svg></button>
+                                            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                    <div class="toast-header">
+                                                        <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                                                        <strong class="me-auto">Lender</strong>
+                                                        <small>11 mins ago</small>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                        Hello, world! This is a toast message.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- <button type="button" class="btn btn-outline-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                          </svg></button> -->
+                                    </div>
+                                    <div class="editortest ld-harness-list-item-text">
+                                        <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit
+                                            than Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                    </div>
+                                    <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                        <small class="text-muted">Writing
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                              </svg></small>
+                                        <small>
+                                            <span class="badge bg-primary">历史</span>
+                                            <span class="badge bg-secondary">军事</span>
+                                            <span class="badge bg-success">读书</span>
+                                            <span class="badge bg-danger">教育</span>
+                                            <span class="badge bg-warning text-dark">IT</span>
+                                            <span class="badge bg-info text-dark">娱乐</span>
+                                            <span class="badge bg-light text-dark">社会</span>
+                                            <span class="badge bg-dark">Dark</span>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div href="#" class="ld-harness-list-item list-group-item" aria-current="true">
+                                    <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                        <small class="text-muted">2:30pm</small>
+                                        <small>
+                                            <span class="badge bg-primary">历史</span>
+                                            <span class="badge bg-secondary">军事</span>
+                                            <span class="badge bg-success">读书</span>
+                                            <span class="badge bg-danger">教育</span>
+                                            <span class="badge bg-warning text-dark">IT</span>
+                                            <span class="badge bg-info text-dark">娱乐</span>
+                                            <span class="badge bg-light text-dark">社会</span>
+                                            <span class="badge bg-dark">Dark</span>
+                                        </small>
+                                    </div>
+                                    <div class="ld-harness-list-item-text">
+                                        <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit
+                                            than Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                    </div>
+                                    <div class="" style="text-align: right">
+                                        <small class="text-muted">Uploading
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                                                <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                                              </svg></small>
+                                    </div>
+                                </div>
+                                <div class="ld-harness-list-item list-group-item" aria-current="true">
+                                    <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                        <small class="text-muted">2:30pm</small>
+                                        <small>
+                                            <span class="badge bg-primary">历史</span>
+                                            <span class="badge bg-secondary">军事</span>
+                                            <span class="badge bg-success">读书</span>
+                                            <span class="badge bg-danger">教育</span>
+                                            <span class="badge bg-warning text-dark">IT</span>
+                                            <span class="badge bg-info text-dark">娱乐</span>
+                                            <span class="badge bg-light text-dark">社会</span>
+                                            <span class="badge bg-dark">Dark</span>
+                                        </small>
+                                    </div>
+                                    <div class="ld-harness-list-item-text">
+                                        <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit
+                                            than Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                    </div>
+                                </div>
+                                <div class="ld-harness-list-add list-group-item" aria-current="true">
+                                    <div class=" d-grid gap-2 col-6 mx-auto" onclick="addrecord(this)">
+                                        <button type="button" class="btn btn-outline-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                          </svg></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="list-group ld-harness">
+                            <li class="ld-harness-list-header list-group-item list-group-item-secondary">
+                                <div class="row">
+                                    <div class="col-md-2">今天</div>
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-2">May 1, 2022</div>
+                                </div>
+                            </li>
+                            <div href="#" class="ld-harness-list-item list-group-item" aria-current="true">
+                                <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                    <small class="text-muted">2:30pm</small>
+                                    <small>
+                                        <span class="badge bg-primary">历史</span>
+                                        <span class="badge bg-secondary">军事</span>
+                                        <span class="badge bg-success">读书</span>
+                                        <span class="badge bg-danger">教育</span>
+                                        <span class="badge bg-warning text-dark">IT</span>
+                                        <span class="badge bg-info text-dark">娱乐</span>
+                                        <span class="badge bg-light text-dark">社会</span>
+                                        <span class="badge bg-dark">Dark</span>
+                                    </small>
+                                </div>
+                                <div class="ld-harness-list-item-text">
+                                    <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than
+                                        Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                </div>
+                                <div class="" style="text-align: right">
+                                    <small class="text-muted">Writing
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                                          </svg></small>
+                                </div>
+                            </div>
+                            <div href="#" class="ld-harness-list-item list-group-item" aria-current="true">
+                                <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                    <small class="text-muted">2:30pm</small>
+                                    <small>
+                                        <span class="badge bg-primary">历史</span>
+                                        <span class="badge bg-secondary">军事</span>
+                                        <span class="badge bg-success">读书</span>
+                                        <span class="badge bg-danger">教育</span>
+                                        <span class="badge bg-warning text-dark">IT</span>
+                                        <span class="badge bg-info text-dark">娱乐</span>
+                                        <span class="badge bg-light text-dark">社会</span>
+                                        <span class="badge bg-dark">Dark</span>
+                                    </small>
+                                </div>
+                                <div class="ld-harness-list-item-text">
+                                    <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than
+                                        Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                </div>
+                                <div class="" style="text-align: right">
+                                    <small class="text-muted">Uploading
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-upload" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"/>
+                                            <path fill-rule="evenodd" d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                                          </svg></small>
+                                </div>
+                            </div>
+                            <div class="ld-harness-list-item list-group-item" aria-current="true">
+                                <div class="ld-harness-list-item-info d-flex w-100 justify-content-between">
+                                    <small class="text-muted">2:30pm</small>
+                                    <small>
+                                        <span class="badge bg-primary">历史</span>
+                                        <span class="badge bg-secondary">军事</span>
+                                        <span class="badge bg-success">读书</span>
+                                        <span class="badge bg-danger">教育</span>
+                                        <span class="badge bg-warning text-dark">IT</span>
+                                        <span class="badge bg-info text-dark">娱乐</span>
+                                        <span class="badge bg-light text-dark">社会</span>
+                                        <span class="badge bg-dark">Dark</span>
+                                    </small>
+                                </div>
+                                <div class="ld-harness-list-item-text">
+                                    <p>My father’s family name being <a href="https://en.wikipedia.org/wiki/Pip_(Great_Expectations)">Pirrip</a>, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than
+                                        Pip. So, I called myself Pip, and came to be called Pip.</p>
+                                </div>
+                            </div>
+                            <div class="ld-harness-list-add list-group-item" aria-current="true">
+                                <div class=" d-grid gap-2 col-6 mx-auto" onclick="addrecord(this)">
+                                    <button type="button" class="btn btn-outline-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                      </svg></button>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="">
+                        <form action="/file-upload" class="dropzone mdui-text-color-theme">
+                            <div class="fallback">
+                                <input name="file" type="file" multiple />
+                            </div>
+                        </form>
+                        <div class="ld-images">
+
+                        </div>
+                        <!-- <div class="dz-preview dz-file-preview">
+                            <div class="dz-details">
+                                <div class="dz-filename"><span data-dz-name></span></div>
+                                <div class="dz-size" data-dz-size></div>
+                                <img data-dz-thumbnail />
+                            </div>
+                            <div class="dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+                            <div class="dz-success-mark"><span>✔</span></div>
+                            <div class="dz-error-mark"><span>✘</span></div>
+                            <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                        </div> -->
+                    </div>
+                    <!-- <figure class="figure">
+                        <img src="./img/格蕾修.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end mdui-text-color-theme-secondary">逐火十三英桀第十一位，背负「繁星」之铭。</figcaption>
+                    </figure>
+                    <figure class="figure">
+                        <img src="./img/科斯魔.png" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-end mdui-text-color-theme-secondary">逐火十三英桀第九位，背负「旭光」之铭。</figcaption>
+                    </figure> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script> -->
+    <script src="{{static_url('notifications.js')}}"></script>
+    <script src="{{static_url('commonexp.js')}}"></script>
+    <script src="{{static_url('app.js')}}"></script>
+</body>
+
+</html>
