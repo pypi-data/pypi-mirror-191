@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: zpp_config
+Version: 1.2.0
+Summary: Module pour le chargement et la modification de fichier de configuration
+Home-page: https://github.com/ZephyrOff/py-zpp_config
+Author: ZephyrOff
+Author-email: contact@apajak.fr
+License: MIT
+Keywords: config file terminal zephyroff
+Platform: ALL
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# zpp-config
+## Informations
+Librairie pour l'utilisation et la modification de fichier de configuration:<br>
+- Charger un ou plusieurs paramÃ¨tres
+- Modifier un paramÃ¨tre existant
+- Ajout un paramÃ¨tre ou une section
+- Supprimer un paramÃ¨tre ou une section
+- Lister les sections disponibles
+- Lister les paramÃ¨tres et/ou sections dÃ©sactivÃ©s
+
+Prends en compte les paramÃ¨tres commentÃ©s.<br>
+Compatible avec les fichiers de configuration indentÃ©s.<br><br>
+Traduit les paramÃ¨tres pour les types str, int, float, bool, list, dict
+
+### PrÃ©requis
+- Python 3
+<br>
+
+# Installation
+```console
+pip install zpp_config
+```
+
+# Utilisation
+### Conseil d'importation du module
+```python
+from zpp_config import Config
+```
+
+<br>
+
+### Exemple de fichier de config
+```xml
+[section]
+	value1 = key1
+	value2 = key2
+	value3 = key3
+
+[section2]
+	value1 = key1
+	value2 = key2
+	value3 = key3
+```
+
+<br>
+
+### Initialisaton d'un fichier de configuration
+```python
+c = Config("conf.ini")
+```
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- separator: DÃ©finir le sÃ©parateur entre la clÃ© et la valeur dans le fichier. (Par dÃ©faut: " = ") 
+>- escape_line: DÃ©finir le caractÃ¨re utilisÃ© pour commenter une valeur ou une section. (Par dÃ©faut: "#")
+>- auto_create: CrÃ©er le fichier de configuration s'il n'existe pas. (Par dÃ©faut: "False")
+>- read_only: Ouvrir le fichier de configuration en lecture seule. (Par dÃ©faut: "False")
+
+<br>
+
+### Chargement de paramÃ¨tre
+
+La fonction renvoie la valeur si un unique paramÃ¨tre a Ã©tÃ© trouvÃ©, sinon renvoie un dictionnaire avec les diffÃ©rentes valeurs trouvÃ©es (classÃ© par section)
+Renvoie un tableau vide si aucun paramÃ¨tre n'a Ã©tÃ© trouvÃ©
+
+#### Chargement de tous les paramÃ¨tres
+```python
+data = c.load()
+```
+#### Chargement d'une section du fichier
+```python
+data = c.load(section='section_name')
+```
+#### Chargement d'une valeur dans tout le fichier
+```python
+data = c.load(val='value_name')
+```
+#### Chargement d'une valeur dans une section spÃ©cifique
+```python
+data = c.load(val='value_name', section='section_name')
+```
+
+>En paramÃ¨tre supplÃ©mentaire, nous pouvons mettre:<br/>
+>- default: Pour initialiser une valeur par dÃ©faut si aucun rÃ©sultat est trouvÃ© 
+
+
+<br>
+
+### Changement de paramÃ¨tre
+#### Changement d'une valeur dans tout le fichier
+```python
+c.change(val='value_name', key='key_value')
+```
+
+#### Changement d'une valeur dans une section spÃ©cifique
+```python
+c.change(val='value_name', key='key_value', section='section_name')
+```
+
+<br>
+
+### Ajout de paramÃ¨tre ou de section
+
+Ajoute une section ou un paramÃ¨tre dans le fichier de configuration.
+Dans le cas de l'ajout d'un paramÃ¨tre, rajoute la section si elle n'existe pas.
+
+#### Ajout d'une section
+```python
+c.add(section='section_name')
+```
+
+#### Ajout d'un paramÃ¨tre dans une section
+```python
+c.add(val='value_name', key='key_value', section='section_name')
+```
+> Si aucune section est dÃ©fini, rajoute le paramÃ¨tre en dehors des sections.
+
+<br>
+
+### Suppression de paramÃ¨tre ou de section
+
+#### Suppression d'une section
+```python
+c.delete(section='section_name')
+```
+
+#### Suppression d'un paramÃ¨tre dans une section
+```python
+c.delete(val='value_name', section='section_name')
+```
+> Si aucune section est dÃ©fini, recherche le paramÃ¨tre en dehors des sections.
+
+<br>
+
+### Liste des paramÃ¨tres non pris en compte
+
+Retourne la liste des paramÃ¨tres qui sont non pris en compte dans le fichier de configuration.
+
+```python
+data = c.disabled_line()
+```
+> PossibilitÃ© de prÃ©ciser la section en utilisant le paramÃ¨tre section
+
+<br>
+
+### Liste les sections disponibles
+```python
+data = c.list_section()
+```
+
