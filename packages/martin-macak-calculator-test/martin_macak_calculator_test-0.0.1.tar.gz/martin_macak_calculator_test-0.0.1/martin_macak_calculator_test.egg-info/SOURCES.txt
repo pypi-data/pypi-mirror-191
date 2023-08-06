@@ -1,0 +1,7 @@
+setup.py
+martin_macak_calculator_test.egg-info/PKG-INFO
+martin_macak_calculator_test.egg-info/SOURCES.txt
+martin_macak_calculator_test.egg-info/dependency_links.txt
+martin_macak_calculator_test.egg-info/top_level.txt
+my_turing_calc/__init__.py
+my_turing_calc/calc.py
