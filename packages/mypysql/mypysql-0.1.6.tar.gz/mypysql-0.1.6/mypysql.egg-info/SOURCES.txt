@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+setup.py
+mypysql/__init__.py
+mypysql/alchemy.py
+mypysql/get_login.py
+mypysql/get_tables.py
+mypysql/sql.py
+mypysql/table_config.py
+mypysql.egg-info/PKG-INFO
+mypysql.egg-info/SOURCES.txt
+mypysql.egg-info/dependency_links.txt
+mypysql.egg-info/requires.txt
+mypysql.egg-info/top_level.txt
