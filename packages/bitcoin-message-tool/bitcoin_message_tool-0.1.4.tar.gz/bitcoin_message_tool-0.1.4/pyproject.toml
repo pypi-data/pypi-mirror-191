@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "bitcoin_message_tool"
+version = "0.1.4"
+description = "Bitcoin message signing/verification tool"
+authors = ["shadowy-pycoder <shadowy-pycoder@example.com>"]
+readme = "README.md"
+packages = [{include = "bitcoin_message_tool"}]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ripemd-hash = "^1.0.0"
+base58 = "^2.1.1"
+bech32 = "^1.2.0"
+pytest = "^7.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[tool.poetry.scripts]
+bmt = "bitcoin_message_tool.bmt:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+"Homepage" = "https://github.com/shadowy-pycoder/bitcoin_message_tool"
+"Bug Tracker" = "https://github.com/shadowy-pycoder/bitcoin_message_tool/issues"
