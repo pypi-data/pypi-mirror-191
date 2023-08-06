@@ -1,0 +1,9 @@
+closest_index = -1
+closest_distance = float("inf")
+for i, w in enumerate(wordslist1):
+    distance = abs(len(word) - len(w))
+    if distance < closest_distance:
+       closest_index = i
+       closest_distance = distance
+
+return wordslist2[closest_index]
