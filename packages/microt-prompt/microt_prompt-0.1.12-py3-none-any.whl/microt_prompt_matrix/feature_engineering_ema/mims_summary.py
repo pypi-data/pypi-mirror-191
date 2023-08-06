@@ -1,0 +1,260 @@
+import os
+from os import sep
+from glob import glob
+import pandas as pd
+import numpy as np
+import bisect
+from datetime import datetime, timedelta
+from microt_prompt_matrix import utils
+from microt_prompt_matrix.utils.get_time_diff import *
+
+target_file_pattern = 'watch_accelerometer_mims*.csv'
+
+
+def validate_dates_before_after(intermediate_participant_path, date_in_study):
+    validated_date_list = []
+
+    # target date
+    date_folder_path = intermediate_participant_path + sep + date_in_study
+    target_date_log_paths = sorted(glob(os.path.join(date_folder_path, target_file_pattern)))  # file name
+    if len(target_date_log_paths) == 0:
+        print("No battery daily file on {}".format(date_in_study))
+    else:
+
+        # 1 day before target date
+        date_format = "%Y-%m-%d"
+        one_date_before_datetime = datetime.strptime(date_in_study, date_format).date() - timedelta(days=1)
+        one_date_before = one_date_before_datetime.strftime(date_format)
+        date_folder_path = intermediate_participant_path + sep + one_date_before
+        one_day_before_log_paths = sorted(glob(os.path.join(date_folder_path, target_file_pattern)))  # file name
+        if len(one_day_before_log_paths) != 0:
+            validated_date_list.append(one_date_before)
+
+        # target date
+        validated_date_list.append(date_in_study)
+
+        # 1 day after target date
+        date_format = "%Y-%m-%d"
+        one_date_after_datetime = datetime.strptime(date_in_study, date_format).date() + timedelta(days=1)
+        one_date_after = one_date_after_datetime.strftime(date_format)
+        date_folder_path = intermediate_participant_path + sep + one_date_after
+        one_day_after_log_paths = sorted(glob(os.path.join(date_folder_path, target_file_pattern)))  # file name
+        if len(one_day_after_log_paths) != 0:
+            validated_date_list.append(one_date_after)
+
+    return validated_date_list
+
+
+def combine_intermediate_file(intermediate_participant_path, date_in_study):
+    df_logs_combined = pd.DataFrame()
+    participant_id = utils.extract_participant_id.extract_participant_id(intermediate_participant_path)
+
+    # generate date range where date folder exists (sharable code in utils)
+    validated_date_list = validate_dates_before_after(intermediate_participant_path, date_in_study)
+    if len(validated_date_list) == 0:
+        print("Cannot find logs file around {}".format(date_in_study))
+        return df_logs_combined
+
+    for date in validated_date_list:
+        date_folder_path = intermediate_participant_path + sep + date
+        csv_path_list = sorted(glob(os.path.join(date_folder_path, target_file_pattern)))  # file name
+        if len(csv_path_list) == 0:
+            print("Cannot find logs file around {}".format(date))
+            # return df_logs_combined
+            continue
+
+        csv_path = csv_path_list[0]
+
+        try:
+            df_day = pd.read_csv(csv_path)
+            if df_day.shape[0] > 0:
+                df_day['Participant_ID'] = [participant_id] * df_day.shape[0]
+                df_logs_combined = pd.concat([df_logs_combined, df_day])
+        except pd.errors.EmptyDataError:
+            print("pandas.errors.EmptyDataError (phone mims) : " + csv_path)
+            continue
+
+    if len(df_logs_combined) > 0:
+        converter = lambda x: datetime.strptime(x, "%Y-%m-%d %H:%M:%S.%f") if ("." in x) else datetime.strptime(x,
+                                                                                                                "%Y-%m-%d %H:%M:%S")
+
+        df_logs_combined = df_logs_combined.dropna(subset=['HEADER_TIME_STAMP'])
+        df_logs_combined.reset_index(inplace=True, drop=True)
+        df_logs_combined["HEADER_TIME_STAMP"] = [x.split(" ")[0] + " " + x.split(" ")[1] for x in
+                                                 list(df_logs_combined["HEADER_TIME_STAMP"])]
+
+        df_logs_combined['TIME_DATETIME'] = pd.Series(map(converter, df_logs_combined["HEADER_TIME_STAMP"]))
+    # df_logs_combined['Date'] = df_logs_combined['TIME_DATETIME'].dt.date
+
+    return df_logs_combined
+
+
+def find_closest_time(prompt_time, subset_time_list):
+    pos = bisect.bisect_left(subset_time_list, prompt_time)
+    # closet_time = min(subset_time_list[max(0, i - 1): i + 2], key=lambda t: -(prompt_time - t))
+
+    return pos
+
+
+def get_mims_summary_before_prompt(sec_before, prompt_time, closest_times, df_logs_combined):
+    mims_summary = 0
+    num_readings = 0
+    start_time = None
+    for matched_idx in closest_times:
+        closest_time = df_logs_combined.loc[matched_idx, "TIME_DATETIME"]
+        if get_min_diff(prompt_time, closest_time) <= (sec_before // 60 + 1):
+            # the matched start time should be within the minute range. This may not be true when the mims logs have gaps and return "OB".
+            # Ex. time of a mims log that is 10 minutes before the prompt should be within 10 minutes range of prompt time.
+            mims_min = df_logs_combined.loc[matched_idx, "MIMS_UNIT"]
+            if mims_min != -0.01:  # mims value -0.01 means cannot be computed
+                mims_summary += mims_min
+                num_readings += 1
+            start_time = closest_time
+        else:
+            if start_time is None:
+                mims_summary = "OB"
+            break
+    return mims_summary, num_readings, start_time
+
+
+def get_mims_summary_after_prompt(sec_after, prompt_time, closest_times, df_logs_combined):
+    mims_summary = 0
+    num_readings = 0
+    start_time = None
+    for matched_idx in closest_times:
+        closest_time = df_logs_combined.loc[matched_idx, "TIME_DATETIME"]
+        if get_min_diff(prompt_time, closest_time) <= (sec_after // 60 + 1):
+            # the matched start time should be within the minute range. This may not be true when the mims logs have gaps and return "OB".
+            # Ex. time of a mims log that is 10 minutes before the prompt should be within 10 minutes range of prompt time.
+            mims_min = df_logs_combined.loc[matched_idx, "MIMS_UNIT"]
+            if mims_min != -0.01:  # mims value -0.01 means cannot be computed
+                mims_summary += mims_min
+                num_readings += 1
+            start_time = closest_time
+        else:
+            if start_time is None:
+                mims_summary = "OB"
+            break
+    return mims_summary, num_readings, start_time
+
+
+def match_feature(prompt_local_datetime_series, df_logs_combined):
+    print("     --- start matching")
+    # Aggregating minutes before prompt time
+    sec_before_list = [60 * x for x in list(range(1, 11))]  # 1-10 minute before prompt time
+    sec_after_list = [30 * 60 * x for x in list(range(1, 7))]  # 30, 60, 90, 120, 150, 180 minute after prompt time
+
+    mims_summary_before_list = []
+    window_start_time_before_list = []
+    window_readings_before_list = []
+
+    mims_summary_after_list = []
+    window_start_time_after_list = []
+    window_readings_after_list = []
+
+    for idx in prompt_local_datetime_series.index:
+        matched_mims_summary_before_list = []
+        matched_window_start_time_before_list = []
+        matched_window_readings_before_list = []
+
+        matched_mims_summary_after_list = []
+        matched_window_start_time_after_list = []
+        matched_window_readings_after_list = []
+
+        prompt_time = prompt_local_datetime_series[idx]
+        # prompt_date = prompt_time.date()
+
+        if df_logs_combined.shape[0] == 0:
+            matched_mims_summary_before_list = [np.nan] * len(sec_before_list)
+            matched_window_readings_before_list = [np.nan] * len(sec_before_list)
+            matched_window_start_time_before_list = [np.nan] * len(sec_before_list)
+            matched_mims_summary_after_list = [np.nan] * len(sec_before_list)
+            matched_window_readings_after_list = [np.nan] * len(sec_before_list)
+            matched_window_start_time_after_list = [np.nan] * len(sec_before_list)
+        else:
+            subset_time_list = list(df_logs_combined["TIME_DATETIME"])
+            pos = find_closest_time(prompt_time, subset_time_list)
+            max_pos = len(subset_time_list) - 1
+
+            # window before prompt
+            for sec_before in sec_before_list:
+                closest_times = []
+                for i in range(sec_before):
+                    closest_times.append(pos - 1 - i)
+                closest_times = [x for x in closest_times if x >= 0]
+                mims_summary, readings, start_time = get_mims_summary_before_prompt(sec_before, prompt_time,
+                                                                                    closest_times,
+                                                                                    df_logs_combined)
+                matched_mims_summary_before_list.append(mims_summary)
+                matched_window_readings_before_list.append(readings)
+                matched_window_start_time_before_list.append(start_time)
+
+            # window after prompt
+            for sec_after in sec_after_list:
+                closest_times = []
+                for i in range(sec_after):
+                    closest_times.append(pos + 1 + i)
+                closest_times = [x for x in closest_times if x <= max_pos]
+                mims_summary, readings, start_time = get_mims_summary_after_prompt(sec_after, prompt_time,
+                                                                                   closest_times,
+                                                                                   df_logs_combined)
+                matched_mims_summary_after_list.append(mims_summary)
+                matched_window_readings_after_list.append(readings)
+                matched_window_start_time_after_list.append(start_time)
+
+        mims_summary_before_list.append(matched_mims_summary_before_list)
+        window_readings_before_list.append(matched_window_readings_before_list)
+        window_start_time_before_list.append(matched_window_start_time_before_list)
+
+        mims_summary_after_list.append(matched_mims_summary_after_list)
+        window_readings_after_list.append(matched_window_readings_after_list)
+        window_start_time_after_list.append(matched_window_start_time_after_list)
+
+    mims_summary_before_df = pd.DataFrame(list(map(np.ravel, mims_summary_before_list)))
+    window_readings_before_df = pd.DataFrame(list(map(np.ravel, window_readings_before_list)))
+    window_start_time_before_df = pd.DataFrame(list(map(np.ravel, window_start_time_before_list)))
+
+    mims_summary_after_df = pd.DataFrame(list(map(np.ravel, mims_summary_after_list)))
+    window_readings_after_df = pd.DataFrame(list(map(np.ravel, window_readings_after_list)))
+    window_start_time_after_df = pd.DataFrame(list(map(np.ravel, window_start_time_after_list)))
+
+    df = pd.DataFrame()
+    for sec_before in sec_before_list:
+        col = int(sec_before // 60 - 1)
+        df = pd.concat([df, mims_summary_before_df[col].rename("mims_summary_" + str(sec_before // 60) + "min_before")],
+                       axis=1)
+        df = pd.concat(
+            [df, window_readings_before_df[col].rename("window_num_readings_" + str(sec_before // 60) + "min_before")],
+            axis=1)
+        df = pd.concat(
+            [df, window_start_time_before_df[col].rename("window_start_time_" + str(sec_before // 60) + "min_before")],
+            axis=1)
+
+    for sec_after in sec_after_list:
+        col = int(sec_after // (30*60) - 1)
+        df = pd.concat([df, mims_summary_after_df[col].rename("mims_summary_" + str(sec_after // 60) + "min_after")],
+                       axis=1)
+        df = pd.concat(
+            [df, window_readings_after_df[col].rename("window_num_readings_" + str(sec_after // 60) + "min_after")],
+            axis=1)
+        df = pd.concat(
+            [df, window_start_time_after_df[col].rename("window_start_time_" + str(sec_after // 60) + "min_after")],
+            axis=1)
+
+    return df
+
+
+def create_column(prompt_local_datetime_series, intermediate_participant_path, date_in_study):
+    print("\n> start generating the feature: Location ")
+
+    # Read, parse and combine related intermediate file
+    df_logs_combined = combine_intermediate_file(intermediate_participant_path, date_in_study)
+
+    # Match the combined parsed intermediate file with prompt feature data frame
+    df = match_feature(prompt_local_datetime_series, df_logs_combined)
+
+    return df
+
+
+if __name__ == "__main__":
+    pass
