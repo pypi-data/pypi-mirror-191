@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: seehowpy
+Version: 0.0.1
+Summary: See How Pub and Sub Python Package
+Home-page: UNKNOWN
+Author: Natanael Vitorino
+Author-email: nvitorino.benergy@outlook.com
+License: UNKNOWN
+Keywords: python,ros,see how,hands detector
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: ros-numpy
+Requires-Dist: rospy
+Requires-Dist: opencv-python
+
+Python package created for implementing pubs and subs from the ROS SEE-HOW package
+
+
