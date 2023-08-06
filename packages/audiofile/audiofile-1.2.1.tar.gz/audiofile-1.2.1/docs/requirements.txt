@@ -1,0 +1,8 @@
+audplot
+audresample
+jupyter-sphinx
+pytest
+sphinx
+sphinx-audeering-theme >=1.2.1
+sphinx_autodoc_typehints
+sphinx-copybutton
