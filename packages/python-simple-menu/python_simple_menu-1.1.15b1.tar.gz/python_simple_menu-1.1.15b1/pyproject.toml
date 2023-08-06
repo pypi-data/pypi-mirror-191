@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-simple-menu"
+version = "1.1.15-beta.1"
+description = "Yet another simple console menu"
+authors = ["Chris Vann <chrisvann01@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [{ include = "python_simple_menu" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^7.33.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+branch = "main"
+major_on_zero = false
+upload_to_release = false
+upload_to_repository = true
+patch_without_tag = true
+commit_subject = "chore(release): v{version}"
+build_command = "pip install poetry && poetry build"
+version_toml = ["pyproject.toml:tool.poetry.version"]
