@@ -1,0 +1,8 @@
+daggerml>=0.0.15
+boto3
+
+[all]
+s3fs
+pyarrow
+pandas
+fsspec
