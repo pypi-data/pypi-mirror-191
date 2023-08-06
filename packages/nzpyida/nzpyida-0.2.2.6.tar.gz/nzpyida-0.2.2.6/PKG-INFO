@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nzpyida
+Version: 0.2.2.6
+Summary: Supports Custom ML/Analytics Execution Inside Netezza
+Author: IBM Corp.
+Author-email: vinay.kasireddy@ibm.com,toni.bollinger@de.ibm.com
+License: BSD
+Keywords: data analytics database development ibm netezza pandas scikitlearn scalability machine-learning knowledge discovery
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
+Provides-Extra: jdbc
+Provides-Extra: test
+Provides-Extra: doc
+License-File: LICENSE.txt
+
+
+nzpyida - Custom Python ML/Analytics Inside Netezza
+
+Please check the full documentation here
+  https://www.ibm.com/docs/en/netezza?topic=analytics-python-in-database

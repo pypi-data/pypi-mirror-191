@@ -1,0 +1,106 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/Makefile
+docs/make.bat
+docs/source/association_rules.rst
+docs/source/base.rst
+docs/source/conf.py
+docs/source/feature_selection.rst
+docs/source/frame.rst
+docs/source/geoFrame.rst
+docs/source/geoSeries.rst
+docs/source/geospatial.rst
+docs/source/ibm.png
+docs/source/index.rst
+docs/source/install.rst
+docs/source/kc.ico
+docs/source/kmeans.rst
+docs/source/legal.rst
+docs/source/ml.rst
+docs/source/naive_bayes.rst
+docs/source/start.rst
+docs/source/utils.rst
+nzpyida/__init__.py
+nzpyida/aggregation.py
+nzpyida/base.py
+nzpyida/exceptions.py
+nzpyida/filtering.py
+nzpyida/frame.py
+nzpyida/geoFrame.py
+nzpyida/geoSeries.py
+nzpyida/indexing.py
+nzpyida/internals.py
+nzpyida/series.py
+nzpyida/sql.py
+nzpyida/statistics.py
+nzpyida/utils.py
+nzpyida.egg-info/PKG-INFO
+nzpyida.egg-info/SOURCES.txt
+nzpyida.egg-info/dependency_links.txt
+nzpyida.egg-info/requires.txt
+nzpyida.egg-info/top_level.txt
+nzpyida/ae/__init__.py
+nzpyida/ae/apply.py
+nzpyida/ae/groupedapply.py
+nzpyida/ae/install.py
+nzpyida/ae/result_builder.py
+nzpyida/ae/shaper.py
+nzpyida/ae/tapply.py
+nzpyida/ae/tapply_class.py
+nzpyida/ae/client code examples/customer_churn_prediction_nps.py
+nzpyida/ae/client code examples/host_spus_compare_inza_kdd_measure_accuracy.py
+nzpyida/ae/client code examples/host_spus_compare_inza_weather_train_pred.py
+nzpyida/ae/client code examples/house_pricing.py
+nzpyida/ae/client code examples/install_package_test.py
+nzpyida/ae/client code examples/stock_prediction_nps side.py
+nzpyida/ae/client code examples/stock_prediction_nps_wlm.py
+nzpyida/ae/client code examples/test_example_do_not_upload.py
+nzpyida/ae/client code examples/test_example_do_not_upload1.py
+nzpyida/ae/tests/test_pyida.py
+nzpyida/feature_selection/__init__.py
+nzpyida/feature_selection/chisquared.py
+nzpyida/feature_selection/correlation.py
+nzpyida/feature_selection/discretize.py
+nzpyida/feature_selection/entropy.py
+nzpyida/feature_selection/gain_ratio.py
+nzpyida/feature_selection/gini.py
+nzpyida/feature_selection/info_gain.py
+nzpyida/feature_selection/private.py
+nzpyida/feature_selection/symmetric_uncertainty.py
+nzpyida/feature_selection/tstats.py
+nzpyida/learn/__init__.py
+nzpyida/learn/association_rules.py
+nzpyida/learn/kmeans.py
+nzpyida/learn/naive_bayes.py
+nzpyida/sampledata/__init__.py
+nzpyida/sampledata/iris.py
+nzpyida/sampledata/iris.txt
+nzpyida/sampledata/swiss.py
+nzpyida/sampledata/swiss.txt
+nzpyida/sampledata/titanic.py
+nzpyida/sampledata/titanic.txt
+nzpyida/tests/conftest.py
+nzpyida/tests/test_aggregation.py
+nzpyida/tests/test_association_rules.py
+nzpyida/tests/test_base.py
+nzpyida/tests/test_base_connexion.py
+nzpyida/tests/test_base_private.py
+nzpyida/tests/test_base_table_manipulation.py
+nzpyida/tests/test_feature_selection.py
+nzpyida/tests/test_filtering.py
+nzpyida/tests/test_frame.py
+nzpyida/tests/test_frame_connexion.py
+nzpyida/tests/test_frame_private.py
+nzpyida/tests/test_geoFrame.py
+nzpyida/tests/test_geoSeries.py
+nzpyida/tests/test_indexing.py
+nzpyida/tests/test_internals.py
+nzpyida/tests/test_kmeans.py
+nzpyida/tests/test_naive_bayes.py
+nzpyida/tests/test_series.py
+nzpyida/tests/test_sorting.py
+nzpyida/tests/test_statistics.py
+nzpyida/tests/test_utils.py
