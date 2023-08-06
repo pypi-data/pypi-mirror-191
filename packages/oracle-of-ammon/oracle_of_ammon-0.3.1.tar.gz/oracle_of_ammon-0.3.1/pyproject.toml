@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "oracle-of-ammon"
+version = "0.3.1"
+description = "CLI tool for creating Search APIs."
+authors = ["Kyle McLester <kyle.mclester@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://kmcleste.github.io/oracle-of-ammon/"
+repository = "https://github.com/kmcleste/oracle-of-ammon"
+keywords = ["fastapi", "haystack", "search", "faq", "typer"]
+include = ["LICENSE"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed"
+]
+packages = [{include = "oracle_of_ammon"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<3.11"
+requests = "^2.28.1"
+uvicorn = "^0.20.0"
+pandas = "^1.5.2"
+fastapi = "^0.88.0"
+pynvml = "^11.4.1"
+typer = {extras = ["all"], version = "^0.7.0"}
+aiofiles = "^22.1.0"
+python-multipart = "^0.0.5"
+psutil = "^5.9.4"
+openpyxl = "^3.0.10"
+types-psutil = "^5.9.5.6"
+pdf2image = "^1.16.2"
+farm-haystack = "^1.13.0"
+python-frontmatter = "^1.0.0"
+python-magic = "^0.4.27"
+pytesseract = "^0.3.10"
+bs4 = "^0.0.1"
+markdown = ">=3.2.1,<3.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "22.6.0"
+flake8 = "^6.0.0"
+pre-commit = "^2.21.0"
+pytest = "^7.2.0"
+coverage = "^7.0.1"
+ipykernel = "^6.19.4"
+ipywidgets = "^8.0.4"
+httpx = "^0.23.1"
+bandit = {extras = ["toml"], version = "^1.7.4"}
+locust = "^2.14.0"
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.6"
+mkdocstrings = "^0.20.0"
+commitizen = "^2.40.0"
+autoflake = "^2.0.1"
+isort = "^5.12.0"
+mkdocstrings-python = "^0.8.3"
+pyupgrade = "^3.3.1"
+
+[tool.poetry.scripts]
+oracle-of-ammon = "oracle_of_ammon.cli.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.3.1"
+tag_format = "v$version"
+version_files = ["pyproject.toml:version", "oracle_of_ammon/__version__.py"]
+update_changelog_on_bump = true
+
+[tool.black]
+line-length = 88
+target-version = ["py38", "py39", "py310"]
+include = '\.pyi?'
+
+[tool.bandit]
+skips = ["B101", "B104", "B501", "B603", "B607"]
+
+[tool.isort]
+profile = "black"
+src_paths = ["oracle_of_ammon"]
