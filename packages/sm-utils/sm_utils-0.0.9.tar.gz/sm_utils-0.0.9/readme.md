@@ -1,0 +1,59 @@
+# Scott McLean's Utility Scripts
+
+This project includes functions to perform execution timing and use relative paths in VS Code
+
+# Setup
+
+By default, the relative paths will point to the directory of the running script.  
+To specify a subfolder, you have two options:
+
+## JSON Configuration File
+Create a file called "sm_utils.json" in the directory containing your script and include the following:
+```json
+{
+    "default_path" : "YOUR_SUBFOLDER"
+}
+```
+
+or...
+
+## Call the set_path() function
+In your code, add the following:
+```python
+from sm_utils import set_path
+set_path("YOUR_SUBFOLDER)
+```
+
+# Usage
+
+## Timer
+To use the timer function, simply import it and decorate the function you want to time with "@time"
+```python
+from sm_utils import timer
+@timer
+def timed_function():
+    # Your code
+```
+
+## Relative Paths
+There are three relative path functions:
+
+- root_path()  
+returns the path to the directory in which your script is running
+
+- dir_path(folder_path)  
+returns the path to the specified subdirectory  
+if the subdirectory is omitted, returns the root_path() directory
+
+- file_path(filename, folder_path)  
+returns the full path to the specified file in the specified subdirectory  
+if the subdirectory is omitted, returns the full path to the specified file in the root_path() directory
+
+## Internal Notes for Packaging Training
+
+To install, use the following command:  
+py -m pip install --index-url https://test.pypi.org/simple/ --no-deps sm_utils==0.0.9  
+
+Build commands:  
+py -m build  
+py -m twine upload --repository testpypi dist/*
