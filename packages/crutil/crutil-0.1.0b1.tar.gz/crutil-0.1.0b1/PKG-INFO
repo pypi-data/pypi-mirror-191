@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: crutil
+Version: 0.1.0b1
+Summary: Cuboid Raptor's Utilities, A Garbage Collection Of Garbage For Your Garbage Needs™
+Home-page: https://github.com/CuboidRaptor/crutil
+Author: Cuboid Raptor
+Author-email: fanjas112358@gmail.com
+License: GNU GPLv3
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
