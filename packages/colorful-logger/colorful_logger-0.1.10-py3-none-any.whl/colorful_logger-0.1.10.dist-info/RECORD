@@ -1,0 +1,13 @@
+colorful_logger/__init__.py,sha256=2wDgh-CQG8H5YM6YXs_T_qVw3Ry8JOtTGMnp7JmvzPM,545
+colorful_logger/consts.py,sha256=YHhWCon2IlnBHlnOcLxKgDmssH49wtnZD-S2NvgHtcQ,638
+colorful_logger/formatter.py,sha256=9SNXoEA4g2py1YPCfJJ4OF-wu_r0lkYohYrcHOmtJM4,5076
+colorful_logger/handlers.py,sha256=KPAbgPMd7DEi3_71u1A1sTJfj3cMDBmzF5KhW5u2apk,1624
+colorful_logger/logger.py,sha256=jvOhLcZL-Zjq42Ou6x5bmU8RFNHRiLiCvs3oRvNFa8g,4205
+colorful_logger/py.typed,sha256=oFm6QicfwgHwE0dyTDH0KKftkgieDZcREGOaINltwJA,74
+colorful_logger/types.py,sha256=9mFp0Q12xG6fH2zg8cJU2Jr3zIohB95yBxWdgI5DSs4,243
+colorful_logger/version.py,sha256=0ee-K1H9_DoI0Bcnx70z-9fWSV9qM7Dn2vX9d1SJUmQ,162
+colorful_logger-0.1.10.dist-info/LICENSE,sha256=3usKVCj7OeDvmReJ968jQsXHGtRNcZy0fHRkQ9w4RIo,1063
+colorful_logger-0.1.10.dist-info/METADATA,sha256=iTxX9eWXhX23VXf5wIkEsvMWlz-SSg7RvBQyZ2Vxhlk,6223
+colorful_logger-0.1.10.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+colorful_logger-0.1.10.dist-info/top_level.txt,sha256=-1m5rhg-JjFBhsO9TD_bbU2prA4Q_t8bpAqUAWATmqw,16
+colorful_logger-0.1.10.dist-info/RECORD,,
