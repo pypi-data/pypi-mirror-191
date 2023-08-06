@@ -1,0 +1,34 @@
+numpy>=1.17.0
+stdiomask>=0.0.6
+scikit-learn>=0.23.1
+segno
+packaging
+canvasapi>=2.0.0
+tqdm
+Pillow>=7.0.0
+requests
+pandas>=1.0.0
+lapsolver
+toml>=0.10.0
+aiohttp>=3.7.2
+peewee>=3.13.3
+passlib
+PyQt5
+arrow>=1.1.1
+weasyprint>=52.5
+tomlkit>=0.11.4
+fonttools>=4.37.1
+PyMySQL>=1.0.2
+imutils
+exif>=1.2.2
+requests-toolbelt
+zxing-cpp>=1.4.0
+appdirs>=1.4.3
+pymupdf>=1.21.0
+opencv-python-headless>=4.4.0.40
+
+[:python_version < "3.11"]
+tomli>=2.0.1
+
+[:python_version < "3.9"]
+importlib_resources>=5.0.0
