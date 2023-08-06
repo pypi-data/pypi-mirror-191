@@ -1,0 +1,16 @@
+torch>=1.11.0
+torchvision>=0.12
+numpy
+Pillow
+scipy
+ffmpeg-python
+opencv-python
+pooch
+
+[build]
+build
+twine
+
+[dev]
+bumpver
+pytest
