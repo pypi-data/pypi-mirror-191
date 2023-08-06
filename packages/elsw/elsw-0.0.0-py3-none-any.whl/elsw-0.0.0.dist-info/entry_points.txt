@@ -1,0 +1,3 @@
+[console_scripts]
+elsw=elsw.__init__:main
+
