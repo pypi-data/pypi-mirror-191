@@ -1,0 +1,7 @@
+setuptools<66,>=8
+
+[buildout]
+zc.buildout
+
+[test]
+zope.testing
