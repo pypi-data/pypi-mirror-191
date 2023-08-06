@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/twofer/__init__.py
+src/twofer/client.py
+src/twofer/functools.py
+src/twofer/server.py
+src/twofer.egg-info/PKG-INFO
+src/twofer.egg-info/SOURCES.txt
+src/twofer.egg-info/dependency_links.txt
+src/twofer.egg-info/entry_points.txt
+src/twofer.egg-info/requires.txt
+src/twofer.egg-info/top_level.txt
+src/twofer/templates/callback.html
+src/twofer/templates/index.html

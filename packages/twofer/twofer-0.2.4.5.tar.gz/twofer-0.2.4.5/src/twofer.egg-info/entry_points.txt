@@ -1,0 +1,3 @@
+[console_scripts]
+tf = twofer.client:main
+twofer = twofer.server:main
