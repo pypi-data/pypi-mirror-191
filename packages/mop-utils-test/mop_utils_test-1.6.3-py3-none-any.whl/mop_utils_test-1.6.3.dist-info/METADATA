@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mop-utils-test
+Version: 1.6.3
+Summary: Utilities for MOP
+Requires-Python: >=3.8.0
+Requires-Dist: azureml-contrib-services (==1.48)
+Requires-Dist: pyraisdk (==0.1.0)
+
