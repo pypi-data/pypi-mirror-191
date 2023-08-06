@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kelp-o-matic
+Version: 0.5.1
+Summary: Segmentation Tools for Remotely Sensed RPAS Imagery
+Home-page: https://github.com/HakaiInstitute/kelp-o-matic
+Author: Taylor Denouden
+Author-email: taylordenouden@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7,<3.11
+License-File: LICENSE.txt
+
+UNKNOWN
+
