@@ -1,0 +1,3 @@
+[console_scripts]
+summ = summ.tools.cli:summ
+summ-example = summ.tools.example:main
