@@ -1,0 +1,9 @@
+LICENSE.text
+README.md
+pyproject.toml
+src/Jaipur.egg-info/PKG-INFO
+src/Jaipur.egg-info/SOURCES.txt
+src/Jaipur.egg-info/dependency_links.txt
+src/Jaipur.egg-info/top_level.txt
+src/neurone/Debug.py
+src/neurone/__init__.py
