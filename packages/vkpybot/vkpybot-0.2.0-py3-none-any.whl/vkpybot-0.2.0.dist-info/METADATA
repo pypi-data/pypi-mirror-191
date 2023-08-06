@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: vkpybot
+Version: 0.2.0
+Summary: Asyncronus library to build VK bot
+Home-page: https://github.com/Vlatterran/vkpybot/
+License: GPL-3.0-or-later
+Keywords: VK,vk,bot,async
+Author: Vlatterran
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: docstring-parser (>=0.15,<0.16)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/Vlatterran/vkpybot/issues
+Project-URL: Documentation, https://vlatterran.github.io/vkpybot/
+Project-URL: Repository, https://github.com/Vlatterran/vkpybot/
+Description-Content-Type: text/markdown
+
+VK is library that allows to create chatbots for vk easy and fast
+
+![PyPI](https://github.com/Vlatterran/vkpybot/actions/workflows/publish.yaml/badge.svg)
+![docs](https://github.com/Vlatterran/vkpybot/actions/workflows/docs-publish.yaml/badge.svg)
+![docs](https://github.com/Vlatterran/vkpybot/actions/workflows/test.yaml/badge.svg)
+![version](https://img.shields.io/pypi/v/vkpybot.svg)
+![py_version](https://img.shields.io/pypi/pyversions/vkpybot.svg)
+
+# Quickstart
+
+Easiest hi-bot
+
+    from VK import Bot
+
+
+    bot = Bot(api_token)
+
+    @bot.command('hi')
+    def greet(message):
+        return 'Hi'
+    
+    bot.start()
+
