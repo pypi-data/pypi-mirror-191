@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+mssql.turbodbc = sqlalchemy_turbodbc.dialect:MSDialect_turbodbc
