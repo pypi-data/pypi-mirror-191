@@ -1,0 +1,9 @@
+pandas~=1.2.5
+torch~=1.11
+numpy~=1.23.3
+
+[examples]
+ipython
+jupyter
+os
+matplotlib
