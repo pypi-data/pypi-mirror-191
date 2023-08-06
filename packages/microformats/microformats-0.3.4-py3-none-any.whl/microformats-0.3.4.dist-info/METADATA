@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: microformats
+Version: 0.3.4
+Summary: tools for microformats production, consumption and analysis
+Home-page: https://ragt.ag/code/python-microformats
+License: BSD-3-Clause
+Keywords: IndieWeb,microformats
+Author: Angelo Gladding
+Author-email: angelo@ragt.ag
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: beautifulsoup4 (>=4.11.2,<5.0.0)
+Requires-Dist: easyuri (>=0.1.2)
+Requires-Dist: html5lib (>=1.1,<2.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: txtint (>=0.1.2)
+Description-Content-Type: text/markdown
+
+[microformats][0] are the simplest way to openly publish contacts, events,
+reviews, recipes, and other structured information on the web.
+
+    >>> import mf
+    >>> url = "https://alice.example"
+    >>> doc = mf.parse(doc=f'''
+    ... <p class=h-card><a href={url}>Alice</a></p>
+    ... <ul class=h-feed>
+    ... <li class=h-entry>foo
+    ... <li class=h-entry>bar
+    ... </ul>
+    ... ''', url=url)
+
+    # TODO >>> dict(doc)
+    # TODO >>> doc.json
+
+    >>> card = doc["items"][0]
+    >>> card["type"]
+    ['h-card']
+    >>> card["properties"]
+    {'name': ['Alice'], 'url': ['https://alice.example']}
+    >>> feed = doc["items"][1]
+    >>> feed["children"][0]["properties"]["name"]
+    ['foo']
+
+    >>> mf.util.representative_card(doc, url)
+    {'name': ['Alice'], 'url': ['https://alice.example']}
+    >>> mf.util.representative_feed(doc, url)["items"][0]["name"]
+    ['foo']
+
+    # TODO >>> doc.representative_card
+    # TODO {'name': ['Alice'], 'url': ['https://alice.example']}
+    # TODO >>> doc.representative_feed["items"][0]["name"]
+    # TODO ['foo']
+
+Based upon [`mf2py`][1] and [`mf2util`][2].
+
+[0]: https://microformats.org/wiki/microformats
+[1]: https://github.com/microformats/mf2py
+[2]: https://github.com/kylewm/mf2util
+
