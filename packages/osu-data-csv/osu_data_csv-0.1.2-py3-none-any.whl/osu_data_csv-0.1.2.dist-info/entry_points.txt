@@ -1,0 +1,3 @@
+[console_scripts]
+osu-data-csv=osu_data_csv.main:main
+
