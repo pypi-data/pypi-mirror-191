@@ -1,0 +1,3 @@
+7.3.0-7.3.0-11.1.105
+            VER0.0.1GIT_REPOSITORYhttps://gitee.com/dnguyen/lru_cache.gitGIT_TAG48f9cd9f1713ee63172f2a28af6824bbf8161e5cMD5xxxxONLY_COPY_DIRSlru_cachePATCHES<source-dir>/third_party/lru_cache/patch/fix-memory-leak-node-deletion-callback.patch001<source-dir>/third_party/lru_cache/patch/optional-abseil-dependency.patch002FORCE_LOCAL_PKGTARGET_ALIASmindquantum::lru_cachelru_cache::lru_cache - - ,491165a2a4cfbb161911e8aa155fee49,76dc7c760b801d9b65970967f0cd7f29
+            ----
