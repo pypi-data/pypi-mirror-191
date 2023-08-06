@@ -1,0 +1,17 @@
+ckantoolkit
+six
+
+[all]
+pdftotext
+
+[dev]
+pdftotext
+pytest-ckan
+pytest-factoryboy
+
+[pdf]
+pdftotext
+
+[test]
+pytest-ckan
+pytest-factoryboy
