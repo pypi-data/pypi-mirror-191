@@ -1,0 +1,3 @@
+[pysigrok.output_format]
+vcd=pysigrok_wavedrom:WavedromOutput
+
