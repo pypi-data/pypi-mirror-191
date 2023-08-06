@@ -1,0 +1,16 @@
+poimage/__init__.py,sha256=pb0R5A-oFcevs7jq_Kon8aP1oRqLZ0tTyFnAXHRhPDQ,33
+poimage/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/api/image.py,sha256=BF_9UXEUQugi2f9Eu2F8QweJalFydP3TEILYRsw0I3E,3064
+poimage/core/ImageType.py,sha256=jtOfc54UCGqEp6zA-v0c_ZC8Kvi6j_IU_R6t3mwmvBE,7297
+poimage/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/image/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poimage/lib/image/add_watermark_service.py,sha256=5v2qQL6fg0Qn5N2US_k5RJflvW2LE3mE7z8sEb8gEb8,2790
+poimage/lib/image/eliminate_background.py,sha256=qPPtta6V7WLOHQ1slL4dTcPvIPbL8povZqF1C5Ug0G4,2237
+tests/__init__.py,sha256=P5p_okMtaW0QFYhe0Oieh2y3Ig54icHuiMnBCssM0h4,183
+tests/test.py,sha256=XBUq9ZcUBAQHwOE2raEHAsLxSbfnzEsPrXK51JwUE8k,765
+poimage-0.0.8.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+poimage-0.0.8.dist-info/METADATA,sha256=aq2wcE8qs4YVeKu_bQxVjIiVJqCSvIodNIOU-x98nMc,5303
+poimage-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+poimage-0.0.8.dist-info/top_level.txt,sha256=osuaVBLZ3uMZgWl4iaI_9xHhAh-ZnjdG_89iKSLqFg4,14
+poimage-0.0.8.dist-info/RECORD,,
