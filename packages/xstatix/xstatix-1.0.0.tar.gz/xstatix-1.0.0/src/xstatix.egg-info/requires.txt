@@ -1,0 +1,10 @@
+astropy
+joblib
+numpy
+mocpy
+msvst
+photutils
+PyWavelets
+regions
+rich
+scipy
