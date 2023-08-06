@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bdwp
+Version: 0.0.15
+Summary: 百度网盘高速下载，SVIP在线解析连接
+Home-page: http://code.foxe6.kozow.com/bdwp/
+Author: f̣ộx̣ệ6
+Author-email: foxe6@pm.me
+License: AGPL-3.0
+Project-URL: Sourcecode, http://code.foxe6.kozow.com/bdwp.zip
+Project-URL: Documentation, http://code.foxe6.kozow.com/bdwp/docs/
+Project-URL: Example, http://code.foxe6.kozow.com/bdwp/test/
+Project-URL: Funding, https://paypal.me/foxe6
+Project-URL: Say Thanks!, https://saythanks.io/to/foxe6
+Keywords: baidu baidupan baiduwangpan panbaidu download parse svip
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: cloudscraper (>=0.0.1)
+Requires-Dist: requests (>=0.0.1)
+Requires-Dist: pyarmor (==6.8.1)
+
+# BaiDu WangPan 
+
+<badges>[![pkg](https://img.shields.io/badge/pkg-bdwp-808080.svg)](http://code.foxe6.kozow.com/bdwp/)
+[![version](https://img.shields.io/pypi/v/bdwp.svg)](https://pypi.org/project/bdwp/)
+[![license](https://img.shields.io/pypi/l/bdwp.svg)](https://pypi.org/project/bdwp/)
+[![pyversions](https://img.shields.io/pypi/pyversions/bdwp.svg)](https://pypi.org/project/bdwp/)  
+[![powered](https://img.shields.io/badge/Say-Thanks-ddddff.svg)](https://saythanks.io/to/foxe6)
+[![donate](https://img.shields.io/badge/Donate-afdian-0070ba.svg)](https://afdian.net/a/foxe6)
+[![made](https://img.shields.io/badge/Made%20with-PyCharm-red.svg)](https://www.jetbrains.com/pycharm/)
+</badges>
+
+<i>百度网盘高速下载，SVIP在线解析连接</i>
+
+# Hierarchy
+
+![bdwp](http://code.foxe6.kozow.com/bdwp/bdwp.svg)
+
+# Demo
+
+[http\://百度网盘.cf/](http://xn\-\-wxtr44c0ha721a.cf/)
+
