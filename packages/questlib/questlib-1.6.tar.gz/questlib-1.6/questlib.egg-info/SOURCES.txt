@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+questlib.egg-info/PKG-INFO
+questlib.egg-info/SOURCES.txt
+questlib.egg-info/dependency_links.txt
+questlib.egg-info/requires.txt
+questlib.egg-info/top_level.txt
