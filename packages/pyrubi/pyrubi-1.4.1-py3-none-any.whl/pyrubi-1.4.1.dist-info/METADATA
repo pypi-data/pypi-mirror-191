@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pyrubi
+Version: 1.4.1
+Summary: This is a powerful library for building self robots in Rubika
+Home-page: https://github.com/AliGanji1/pyrubi
+Author: Ali Ganji zadeh
+Author-email: ali.ganji.za@gmail.com
+Keywords: rubika,rubino,pyrubi,pyrubika,rubika bot,rubika library,rubx,rubika-bot,rubika-lib,bot,self bot,rubika.ir,asyncio
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+Requires-Dist: websocket-client
+Requires-Dist: requests
+Requires-Dist: aiohttp
+Requires-Dist: urllib3
+Requires-Dist: pillow
+Requires-Dist: mutagen
+Requires-Dist: tinytag
+
+<h1>Pyrubi 1.4.1<h1/>
+
+> Pyrubi is a powerful library for building self robots in Rubika
+
+<p align='center'>
+    <img src='https://iili.io/HIjPRS9.jpg' alt='Pyrubi Library 1.4.1' width='356'>
+    <a href='https://github.com/AliGanji1/pyrubi'>GitHub</a>
+</p>
+
+<hr>
+
+**Example:**
+``` python
+from pyrubi import Bot, Message
+
+bot = Bot('TOKEN')
+
+for msg in bot.on_message():
+    m = Message(msg)
+    if m.text() == 'Hello':
+        bot.reply(msg, 'Hello from Pyrubi Library')
+```
+
+<hr>
+
+### Features
+
+**Fast**, **Easy**, **Async**, **Powerful**
+
+<hr>
+
+### Installing
+
+``` bash
+python -m pip install -U pyrubi
+```
