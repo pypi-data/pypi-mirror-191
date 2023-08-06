@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pic_rucio_transfer"
+version = "0.0.1"
+authors = [
+  { name="Agustin Bruzzese", email="bruzzese@pic.es" },
+]
+description = "PIC rucio client transfer package"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+"Homepage" = "https://gitlab.pic.es/rucio/rucio-client"
+"Guide" = "https://docs.google.com/document/d/1jm3LKKI0sTP6Gx0p5PQXRti2NzK_JqG1ITFs761W0KU/edit#heading=h.mkngky6253k8"

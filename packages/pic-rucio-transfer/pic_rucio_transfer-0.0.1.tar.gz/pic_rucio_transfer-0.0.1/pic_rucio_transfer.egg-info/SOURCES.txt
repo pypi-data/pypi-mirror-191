@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+requirements.txt
+pic_rucio_transfer.egg-info/PKG-INFO
+pic_rucio_transfer.egg-info/SOURCES.txt
+pic_rucio_transfer.egg-info/dependency_links.txt
+pic_rucio_transfer.egg-info/requires.txt
+pic_rucio_transfer.egg-info/top_level.txt
