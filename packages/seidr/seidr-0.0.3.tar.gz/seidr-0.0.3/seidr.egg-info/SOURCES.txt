@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+seidr/__init__.py
+seidr/scene.py
+seidr.egg-info/PKG-INFO
+seidr.egg-info/SOURCES.txt
+seidr.egg-info/dependency_links.txt
+seidr.egg-info/requires.txt
+seidr.egg-info/top_level.txt
+test/test_scene.py
