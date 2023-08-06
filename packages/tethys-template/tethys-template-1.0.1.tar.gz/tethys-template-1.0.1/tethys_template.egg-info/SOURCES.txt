@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+tests/test_foo.py
+tethys_template.egg-info/PKG-INFO
+tethys_template.egg-info/SOURCES.txt
+tethys_template.egg-info/dependency_links.txt
+tethys_template.egg-info/entry_points.txt
+tethys_template.egg-info/requires.txt
+tethys_template.egg-info/top_level.txt
