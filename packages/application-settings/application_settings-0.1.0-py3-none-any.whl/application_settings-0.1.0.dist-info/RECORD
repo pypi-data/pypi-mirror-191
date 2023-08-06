@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=YWpvhkxIjZJvJpIRTGuKvmF_wwQa3Ncz4quIRFs7ey8,689
+LICENSE,sha256=UHN9S-Bd3jTFEUz9bSchEK2S0E73qYsb-Ccox4fZvt4,1141
+README.md,sha256=6fWBwQeuB0rQNMJRHb_2RwA_E7VCh9EUL94-0mXo3Kk,6822
+application_settings/__init__.py,sha256=p2NtJ75cd0l8OADVjD4qnzq_9QKWXrydBgxCZuf-njg,337
+application_settings/configuring_base.py,sha256=p1QR_UDPcPg6bK_mA4Est-W3Wl2RxbUJP1gBcrR-x2U,4794
+application_settings/py.typed,sha256=bGD5UrdyV_saa5ISOCeHtHPzB1GvB2xON3LbrE2lxcQ,49
+application_settings-0.1.0.dist-info/LICENSE,sha256=UHN9S-Bd3jTFEUz9bSchEK2S0E73qYsb-Ccox4fZvt4,1141
+application_settings-0.1.0.dist-info/METADATA,sha256=YrGIrhjEbK_2veKrOPdJ68JrncpWH1GoBlj7aUJKyQE,7877
+application_settings-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+application_settings-0.1.0.dist-info/RECORD,,
