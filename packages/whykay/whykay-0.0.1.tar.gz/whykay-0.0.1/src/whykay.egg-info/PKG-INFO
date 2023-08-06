@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: whykay
+Version: 0.0.1
+Summary: Python toolstack for helper functions and efficient connectivity
+Home-page: https://github.com/yasir-khalid/snorlax
+Download-URL: https://github.com/yasir-khalid/snorlax
+Author: Yasir Khalid
+Author-email: yasir_khalid@outlook.com
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+License-File: LICENSE
+
+![Snorlax package](https://i.imgur.com/nTeJX9E.jpg)
+
+# Snorlax
+
+The concept is to have a personal toolbar that contains all the handy functions that support efficient python software engineering workflows, connectivity to cloud, navigating file systems, parsing date/time formats and pushing notifications to different platforms.
+
+`Step-by-step we'll build this, welcome any contributions`
+
+---
+
+## Installation
+#### ❗ Currently unavailable
+To run the code successfully, all the dependencies can either be installed using **pip**:
+
+```bash
+pip install snorlax
+```
+## Cloning repository for contributions
+
+To run the code successfully, all the dependencies can either be installed using **pip**:
+
+```bash
+pip install -r requirements.txt
+```
+**or** use the pre-define Makefile targets
+ 
+```bash
+make setup
+``` 
+## Authors
+
+- [Yasir Khalid](www.linkedin.com/in/yasir-khalid)
