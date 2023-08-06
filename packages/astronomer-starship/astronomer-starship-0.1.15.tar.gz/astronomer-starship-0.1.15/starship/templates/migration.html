@@ -1,0 +1,15 @@
+<div id="astro-token-entry"
+     hx-get="{{ url_for('AstroMigration.modal_token_entry') }}"
+     hx-trigger="load delay:100ms"
+     hx-target="#astro-token-entry" hx-swap="outerHTML">
+</div>
+<div id="astro-deployment-selector"
+     hx-get="{{ url_for('AstroMigration.deployment_selector') }}"
+     hx-trigger="load delay:100ms"
+     hx-target="#astro-deployment-selector" hx-swap="innerHTML">
+</div>
+<div id="tabs"
+     hx-get="{{ url_for('AstroMigration.tabs_conns') }}"
+     hx-trigger="load delay:100ms"
+     hx-target="#tabs" hx-swap="innerHTML">
+</div>
