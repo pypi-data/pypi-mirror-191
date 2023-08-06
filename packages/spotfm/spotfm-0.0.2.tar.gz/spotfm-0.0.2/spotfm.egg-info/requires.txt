@@ -1,0 +1,5 @@
+pylast
+
+[dev]
+pre-commit
+twine
