@@ -1,0 +1,3 @@
+[console_scripts]
+xsstrike=xsstrike_reborn
+
