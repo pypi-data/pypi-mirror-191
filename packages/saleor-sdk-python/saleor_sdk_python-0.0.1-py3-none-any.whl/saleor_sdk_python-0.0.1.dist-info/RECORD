@@ -1,0 +1,17 @@
+saleor_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saleor_sdk/__main__.py,sha256=qXpOaipysVFhLvXQTsrMHypn2xEOeQmPmSxT83Muejs,77
+saleor_sdk/console/app.py,sha256=WjLrBu6ZoqDliW1rsJREflmHt-TvqgF1SrODyQNgn0o,189
+saleor_sdk/console/develop.py,sha256=Tbyv6JOpBKUidvlmlAatWNxajm--bDvX5uHwyYd-YME,724
+saleor_sdk/console/tools.py,sha256=xaRaTwIeG3tuKsljY_jMNqupntEv1E67RGRlXaTwWkQ,603
+saleor_sdk/crypto/exceptions.py,sha256=W8CDIVgahTa0Vxk6LCU0qB1SgxPtqAaO2JalLLhGGn4,327
+saleor_sdk/crypto/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saleor_sdk/crypto/tests/conftest.py,sha256=u_FrfXx5YqAWkZ2LaT7nWi_-oQsbvXw7oWZQ6rcizQY,1903
+saleor_sdk/crypto/tests/test_utils.py,sha256=-p6-ANpQ2OyvkF73wCXGnfnZ8WEuedc8WRt52UyXCIo,1974
+saleor_sdk/crypto/utils.py,sha256=uHI16vVLxwzJKmg4UR20mNfmvWCW06uSQltlLvfWs7M,1756
+saleor_sdk/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saleor_sdk/schemas/enums.py,sha256=q5aIEcJi8ZRtDLz_WJRajpK1UM8IcFt1W12tg1ha7AM,6029
+saleor_sdk/schemas/manifest.py,sha256=2mWgjqvpRggumrQOEIIF4bjTAIgoWhFtJlwBLKB3H5M,1832
+saleor_sdk_python-0.0.1.dist-info/METADATA,sha256=u53-_wxu8-X21ylgmcpCoxQ2fV84GCVeMn-ePqZcoqk,1971
+saleor_sdk_python-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+saleor_sdk_python-0.0.1.dist-info/entry_points.txt,sha256=NgviUeLZnaWfu8OmmGP4oB8U1S0yUNFHxZQEvpo--3Q,57
+saleor_sdk_python-0.0.1.dist-info/RECORD,,
