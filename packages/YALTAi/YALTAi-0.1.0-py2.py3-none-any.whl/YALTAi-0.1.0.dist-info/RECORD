@@ -1,0 +1,14 @@
+yaltai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yaltai/converter.py,sha256=fSqhgWLP-05unRVR-FDXcsnQFo-zOkaEYHFpY55bA0A,2758
+yaltai/kraken_adapter.py,sha256=Kee9pb3nOZFXULLEIYOZW7XURKfO275Y_7p3t86mpNc,5334
+yaltai/kraken_yaltai.py,sha256=KaqmA531n7zvsf6TKU_UMseLkoTSXxsJeBqYUYa-yAI,11786
+yaltai/preprocessing.py,sha256=um4T7kM-B6iH_Z7PPQaQa1nPdb19fKjhGwAbvuqHYZo,1242
+yaltai/template.xml,sha256=PF2pbVxjxOLSt9IC-he5uNA-f5dBjJd5MqaylHQZ-O4,784
+yaltai/yaltai.py,sha256=1Cu_YQR8xUaoLA7OKHq7YKDnscoEGDzj_Vkn4TaU1_s,11809
+yaltai/yolo_adapter.py,sha256=u4n66NDAa1GS5nZ6JrcZCBEjDxJGBK4WIHWHEp_oArs,1987
+YALTAi-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+YALTAi-0.1.0.dist-info/METADATA,sha256=dvI90JLxqqK8dkmdeXfQrzDy6yBxIrLCgHaJxzyYlJk,3222
+YALTAi-0.1.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+YALTAi-0.1.0.dist-info/entry_points.txt,sha256=OpeFTiZGFEKFSkXhZImLkTATTZYQtj1zWHueSQ-qYwc,87
+YALTAi-0.1.0.dist-info/top_level.txt,sha256=OTSosij3Hyxb1htfBpeN5jNY02hI7a60fHFf6zBdbws,7
+YALTAi-0.1.0.dist-info/RECORD,,
