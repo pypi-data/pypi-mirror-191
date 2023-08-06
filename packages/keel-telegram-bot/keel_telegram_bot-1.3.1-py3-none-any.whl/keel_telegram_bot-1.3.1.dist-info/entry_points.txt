@@ -1,0 +1,2 @@
+[console_scripts]
+keel-telegram-bot = keel_telegram_bot.main:main
