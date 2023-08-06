@@ -1,0 +1,3 @@
+[console_scripts]
+qt3scan = applications.piezoscan:main
+qt3scope = applications.oscilloscope:main
