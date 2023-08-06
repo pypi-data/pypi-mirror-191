@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dep-search
+Version: 0.2.7
+Summary: Search dep
+Author: everhide
+Author-email: i.tolkachnikov@gmail.com
+Requires-Python: >=3.9,<=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: poetry (==1.1.15)
+Requires-Dist: pydantic (>=1.10.4,<2.0.0)

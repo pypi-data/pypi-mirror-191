@@ -1,0 +1,21 @@
+[tool.poetry]
+
+name = "dep-search"
+version = "0.2.7"
+description = "Search dep"
+authors = ["everhide <i.tolkachnikov@gmail.com>"]
+
+packages = [
+    { include = "search" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9 <=3.11"
+poetry = "1.1.15"
+pydantic = "^1.10.4"
+httpx = "^0.23.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
