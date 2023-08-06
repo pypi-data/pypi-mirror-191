@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: ka-air-dfs
+Version: 2023.1
+Summary: Airflow Dag Source Factory
+Author-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Maintainer-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+License: #
+        # Copyright (c) 2022 Kosakya, GmbH. All rights reserved.
+        #
+        # This program is free software: you can redistribute it and/or modify
+        # it under the terms of the GNU General Public License as published by
+        # the Free Software Foundation, either version 3 of the License, or
+        # (at your option) any later version.
+        #
+        # This program is distributed in the hope that it will be useful,
+        # but WITHOUT ANY WARRANTY; without even the implied warranty of
+        # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        # GNU General Public License for more detail.
+        #
+        # You should have received a copy of the GNU General Public License
+        # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+        #
+        # Person:           		Role:           Email:
+        # Bernd Stroehle            Author          bernd.stroehle@kosakya.de
+        #                           Maintainer
+        
+Project-URL: Source Code, https://github.com/bs29/ka_air_dfs/tree/master
+Project-URL: Homepage, https://kosakya.de/
+Project-URL: Documentation, https://ka-apc.readthedocs.io/en/latest
+Project-URL: Apache-2.0 License, https://apache.org/licenses/LICENSE-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Airflow Source Dags Factory
