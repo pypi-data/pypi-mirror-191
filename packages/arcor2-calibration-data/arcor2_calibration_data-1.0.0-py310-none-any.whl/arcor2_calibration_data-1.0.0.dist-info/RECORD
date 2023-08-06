@@ -1,0 +1,10 @@
+arcor2_calibration_data/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+arcor2_calibration_data/__init__.py,sha256=MZywNJGQZIAQmnODVnZCM479g3i6Nlkx5C8pXitj9u8,607
+arcor2_calibration_data/client.py,sha256=ZyO0wSkFlt5IPtMKnLwxJ16cBez7xe0ZF3DqkyLiKA8,2532
+arcor2_calibration_data/exceptions.py,sha256=DaQsfze6sj_jGLyiTM2tBiZD_E-eOiUeiiTVkFHPT1s,466
+arcor2_calibration_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcor2_calibration_data-1.0.0.dist-info/METADATA,sha256=QhujBOb-W8ZNn3z9gemszlU62-xv-A-3Dxxu0cbpkKs,1598
+arcor2_calibration_data-1.0.0.dist-info/WHEEL,sha256=KxatxaZA14OswIJTdImHhiM2tdZgU-xLZEzs-sYveVc,94
+arcor2_calibration_data-1.0.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+arcor2_calibration_data-1.0.0.dist-info/top_level.txt,sha256=QnsIS9mMog4cbL7Xm97emEk6u6FyLwpt5GVQVcqYigY,24
+arcor2_calibration_data-1.0.0.dist-info/RECORD,,
