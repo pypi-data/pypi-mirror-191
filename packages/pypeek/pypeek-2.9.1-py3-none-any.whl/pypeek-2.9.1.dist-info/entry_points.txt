@@ -1,0 +1,5 @@
+[console_scripts]
+pypeek = pypeek:show
+
+[gui_scripts]
+pypeek-gui = pypeek:show
