@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "SAFEpython"
+version = "0.1.1rc5"
+description = "A Python implementation of the SAFE toolbox for sensitivity analysis"
+license="GPL-3.0"
+authors = ["Francesca Pianosi, Fanny Sarrazin, Thorsten Wagener <fanny.sarrazin@ufz.de>"]
+readme = "README.md"
+repository="https://github.com/SAFEtoolbox/SAFE-python"
+documentation="https://safetoolbox.github.io"
+include = ["safepython"]
+
+[tool.poetry.dependencies]
+python = ">= 3.7, < 4"
+numpy = ">= 1.19.2" 
+scipy = ">= 1.3.0" 
+numba = ">= 0.49.0" 
+matplotlib = ">= 2.2.3" 
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
