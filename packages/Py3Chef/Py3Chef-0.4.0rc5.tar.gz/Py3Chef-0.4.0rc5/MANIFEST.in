@@ -1,0 +1,2 @@
+include chef/bin/*
+include LICENSE
