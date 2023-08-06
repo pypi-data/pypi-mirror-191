@@ -1,0 +1,6 @@
+[magnus.catalog.BaseCatalog]
+s3=magnus_extension_catalog_s3.s3:S3Catalog
+
+[magnus.integration.BaseIntegration]
+local-container-catalog-s3=magnus_extension_catalog_s3.integration:LocalContainerComputeS3Catalog
+
