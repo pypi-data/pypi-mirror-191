@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/bayesian_networks_rey20074/BayesianNetwork.py
+src/bayesian_networks_rey20074/__init__.py
+src/bayesian_networks_rey20074.egg-info/PKG-INFO
+src/bayesian_networks_rey20074.egg-info/SOURCES.txt
+src/bayesian_networks_rey20074.egg-info/dependency_links.txt
+src/bayesian_networks_rey20074.egg-info/top_level.txt
