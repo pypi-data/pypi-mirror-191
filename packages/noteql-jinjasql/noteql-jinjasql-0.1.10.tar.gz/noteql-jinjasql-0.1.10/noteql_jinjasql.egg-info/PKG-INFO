@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: noteql-jinjasql
+Version: 0.1.10
+Summary: Generate SQL Queries and Corresponding Bind Parameters using a Jinja2 Template
+Home-page: https://github.com/kindly/noteql-jinjasql
+Author: Sripathi Krishnan
+Author-email: Sripathi.Krishnan@gmail.com
+Maintainer: David Raznick
+Maintainer-email: kindly@gmail.com
+License: MIT
+Keywords: Jinja2,SQL,Python,Template
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+License-File: LICENSE
+
+
+Generate SQL Queries using a Jinja Template, without worrying about SQL Injection
+
+JinjaSQL automatically binds parameters that are inserted into the template.
+After JinjaSQL evaluates the template, you get 1) Query with placeholders
+for parameters, and 2) List of values that need to be bound to the query. 
+
+JinjaSQL doesn't actually execute the query - it only prepares the 
+query and the bind parameters. You can execute the query using any 
+database engine / driver you are working with.
+

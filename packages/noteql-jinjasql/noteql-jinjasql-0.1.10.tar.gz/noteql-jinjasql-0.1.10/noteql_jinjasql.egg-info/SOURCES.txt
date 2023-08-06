@@ -1,0 +1,13 @@
+CHANGES
+INSTALL
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+jinjasql/__init__.py
+jinjasql/core.py
+noteql_jinjasql.egg-info/PKG-INFO
+noteql_jinjasql.egg-info/SOURCES.txt
+noteql_jinjasql.egg-info/dependency_links.txt
+noteql_jinjasql.egg-info/requires.txt
+noteql_jinjasql.egg-info/top_level.txt
