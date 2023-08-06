@@ -1,0 +1,7 @@
+tjawn/__init__.py,sha256=4jM86HIld40fwizB6WrhKyNKtfquvSRhHQU5criGeEg,97
+tjawn/lark_parser.py,sha256=5MGUM51U5la9p3yDvprlIqpdFT6KZLgUAHJC4Pgx_dA,134126
+tjawn/parser.py,sha256=Yoc15nkDdkGebIY3xwTxvnKLnltRWNKFnpZrabTWvv0,2137
+tjawn/serializer.py,sha256=M0E7JJO4FDaYKjRMxDsJJ2jq5cvuWMpwuSI01mp22-g,1325
+tjawn-1.0.0.dist-info/METADATA,sha256=5zJ51enQS-iGRiiX94gVrJLufcPnU1DGGecRBFRCG4U,7279
+tjawn-1.0.0.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+tjawn-1.0.0.dist-info/RECORD,,
