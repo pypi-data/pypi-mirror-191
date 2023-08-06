@@ -1,0 +1,11 @@
+machathon_judge/__init__.py,sha256=XCVNmNgtqpjiWDoZs38rJD8m_r9eTGTwVobemO1_C1E,60
+machathon_judge/collision_manager.py,sha256=KLvTP1wz-4K12Tjskue_0B_VDpBp_qn3nniGKahYtC0,5328
+machathon_judge/data.py,sha256=X-kb3pEBuCXaDQ4s9pBJCM1MEYEzZFmXj0vi_NlVE-M,705
+machathon_judge/judge.py,sha256=tpNIt6J0SBQBcUEp8GWTd9imcIsUOPE42_T09KBwMRs,9575
+machathon_judge/simulator.py,sha256=ARSE4XRvr7t646Nitj7C225WO0EgJqee1iyPKmTnFb0,5329
+machathon_judge/zmqRemoteApi/__init__.py,sha256=KFP1RGXkGRtWUHfQt3L2Z7FgJHODKRAJeDTuWuBRmN0,17524
+machathon_judge-1.0.0.dist-info/LICENSE,sha256=28ICOPCAfcPDfS12V4HRRuI0IPbYFmaEqs1j3GD9WZ8,1079
+machathon_judge-1.0.0.dist-info/METADATA,sha256=weVNrGftPTGR89175EvZRMbjsuWV8pB13PZx1UTw2nc,6576
+machathon_judge-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+machathon_judge-1.0.0.dist-info/top_level.txt,sha256=xpGv6lBeR3SXktfM_hZWDFD5BKZMJUxcaTp3ZfRaVvY,16
+machathon_judge-1.0.0.dist-info/RECORD,,
