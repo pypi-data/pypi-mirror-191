@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: perfov
+Version: 0.0.3
+Summary: A simple Python class for measuring performance of processes
+Home-page: https://github.com/cobanov/perfov/
+Author: Mert Cobanov
+Author-email: mertcobanov@gmail.com
+License: MIT
+Keywords: timer
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.md
+
+A simple Python class for measuring performance of processes.
