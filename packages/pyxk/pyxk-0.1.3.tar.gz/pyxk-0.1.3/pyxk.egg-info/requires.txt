@@ -1,0 +1,4 @@
+yarl
+requests
+pycryptodome
+rich
