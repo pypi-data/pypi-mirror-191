@@ -1,0 +1,8 @@
+teleauth/__init__.py,sha256=cMGjKIDaXNUGxNdUfVrSOjajbW9gE7tBBDbh390dgDA,2018
+teleauth/auth.py,sha256=okNrNcVoQcct6m7dQCpEyvAdH9OkMlFgr9yRDrGgI9g,6251
+teleauth/store.py,sha256=Cz2Y5Nk5FQeP2ek4zHI-v3Rx6HUgtyQA9ZpoIiNxrr4,8228
+teleauth-1.1.0.dist-info/LICENSE,sha256=_30JgmDlrOWbJo55jyCi9PwRYLexXtU_naLXXGMU40g,1085
+teleauth-1.1.0.dist-info/METADATA,sha256=JcGHYK5fbsPpHg06zSYNvZg64MObBUqBRaxqBX2P3jI,581
+teleauth-1.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+teleauth-1.1.0.dist-info/top_level.txt,sha256=HbIziMtSxvXJypgzd0fVGvs_OgwmWO_0tz7u7ebzC4o,9
+teleauth-1.1.0.dist-info/RECORD,,

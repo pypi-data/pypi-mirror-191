@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: teleauth
+Version: 1.1.0
+Summary: A library for user authentication in Telegram bots
+Home-page: https://github.com/nilopro/teleauth
+Download-URL: https://github.com/nilopro/teleauth/archive/v1.1.0.tar.gz
+Author: nilopro
+Author-email: menezesdev@pm.me
+Keywords: telegram,authentication,bot
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: prettytable
+
