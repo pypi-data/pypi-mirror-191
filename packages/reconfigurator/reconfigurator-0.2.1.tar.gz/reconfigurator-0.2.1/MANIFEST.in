@@ -1,0 +1,2 @@
+include reconfigurator/config/*.json
+include reconfigurator/scripts/*.bash
