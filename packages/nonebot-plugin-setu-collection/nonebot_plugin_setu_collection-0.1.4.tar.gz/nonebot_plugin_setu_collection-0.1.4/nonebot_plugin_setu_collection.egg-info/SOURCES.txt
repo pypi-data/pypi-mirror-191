@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+nonebot_plugin_setu_collection/__init__.py
+nonebot_plugin_setu_collection/utils.py
+nonebot_plugin_setu_collection.egg-info/PKG-INFO
+nonebot_plugin_setu_collection.egg-info/SOURCES.txt
+nonebot_plugin_setu_collection.egg-info/dependency_links.txt
+nonebot_plugin_setu_collection.egg-info/requires.txt
+nonebot_plugin_setu_collection.egg-info/top_level.txt
+nonebot_plugin_setu_collection/api/Anosu.py
+nonebot_plugin_setu_collection/api/Lolicon.py
+nonebot_plugin_setu_collection/api/MirlKoi.py
