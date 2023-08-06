@@ -1,0 +1,12 @@
+LICENSE,sha256=KxI0B5Lt99yyHGeRWJRbCeZbAOm7qMcr-tleJ8F6a6M,1078
+README.md,sha256=HGrCbfNktC7trjL_cP7zc42ubD8Fb2UAl0-vXxaH1bU,7699
+tap_mongodb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_mongodb/collection.py,sha256=ke3uYjRt0SJkelFp9x6vTmNefO058rWC-3rN2M-NQWE,8266
+tap_mongodb/tap.py,sha256=h_Ag42_QA6DKcLGwIbvFdD4kBevexHTo7_eyrx88h_c,11544
+tap_mongodb/tests/__init__.py,sha256=-2B3oqGHYiOxibTz462MXl3aNcRYbUdGche2oCsMRwI,34
+tap_mongodb/tests/test_core.py,sha256=-RmEztjT6gcRJ_kf965RDg20J9G6d7HA2I6kKBySxEc,565
+z3_tap_mongodb-0.4.1.dist-info/LICENSE,sha256=KxI0B5Lt99yyHGeRWJRbCeZbAOm7qMcr-tleJ8F6a6M,1078
+z3_tap_mongodb-0.4.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+z3_tap_mongodb-0.4.1.dist-info/entry_points.txt,sha256=Krq9XPh2fow1c_PxcP_95CxK_Iw24C02gvxXWB-bFDA,62
+z3_tap_mongodb-0.4.1.dist-info/METADATA,sha256=z6xgRRl8ex3s_J59SrGrM2TtgOLFxSCN62sw2ytvHO0,9042
+z3_tap_mongodb-0.4.1.dist-info/RECORD,,
