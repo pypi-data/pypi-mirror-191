@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Mensajes-pgrillo
+Version: 5.0
+Summary: Este es un paquete de ejemplo
+Home-page: http://PGRi.info
+Author: Pietro Grillo
+Author-email: yo@gmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensaje
+
+El paquete de mensajeria para pruebas de Pietro Grillo Barril
