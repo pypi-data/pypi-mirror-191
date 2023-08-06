@@ -1,0 +1,11 @@
+
+[tests]
+pytest>=6
+pytest-flakes>2
+pytest-cov
+PyHamcrest
+pycodestyle
+mock
+coveralls
+mypy
+types-mock
