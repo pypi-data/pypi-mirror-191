@@ -1,0 +1,2 @@
+[nbdev]
+ndl_ocr_tools = ndl_ocr_tools._modidx:d
