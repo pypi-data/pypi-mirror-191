@@ -1,0 +1,131 @@
+[tool.poetry]
+name = "protoletariat"
+version = "2.1.0"
+packages = [{ include = "protoletariat" }]
+homepage = "https://github.com/cpcloud/protoletariat"
+repository = "https://github.com/cpcloud/protoletariat"
+description = "Python protocol buffers for the rest of us"
+authors = ["Phillip Cloud <417981+cpcloud@users.noreply.github.com>"]
+maintainers = ["Phillip Cloud <417981+cpcloud@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+classifiers = [
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+astunparse = { version = ">=1.6.3,<2", python = "<3.9" }
+click = ">=8,<9"
+protobuf = ">=3.19.1,<5"
+
+[tool.poetry.dev-dependencies]
+black = ">=22,<24"
+grpc-stubs = ">=1.24.7,<2"
+mypy = ">=1,<2"
+mypy-protobuf = ">=3,<4"
+types-protobuf = ">=4.21,<5"
+grpcio = ">=1.42,<2"
+pytest = ">=7,<8"
+pytest-randomly = ">=3.10.1,<4"
+ruff = ">=0.0.198,<1"
+tomli = ">=1,<3"
+
+[tool.poetry.scripts]
+protol = "protoletariat.__main__:main"
+
+[tool.pytest.ini_options]
+xfail_strict = true
+addopts = [
+  "--ignore=site-packages",
+  "--ignore=dist-packages",
+  "--ignore=.direnv",
+  "--strict-markers",
+  "--doctest-modules",
+]
+norecursedirs = ["site-packages", "dist-packages", ".direnv"]
+
+[tool.poetry2conda]
+name = "protoletariat"
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+select = [
+  "D", # pydocstyle
+  "E", # pycodestyle
+  "W", # pycodestyle
+  "F", # pyflakes
+  "I", # isort
+  "UP", # pyupgrade
+  "RUF", # ruff-specific rules
+  "TID", # flake8-tidy-imports
+  "T10", # flake8-debugger
+  "PGH", # pygrep-hooks
+  "PLC", # pylint
+  "T20", # flake8-print
+  "ICN", # flake8-import-conventions
+  "RET", # flake8-return
+  "BLE", # flake8-blind-except
+
+]
+respect-gitignore = true
+ignore = [
+  "E501",
+  "PGH003",
+  "RET504",
+  "RET505",
+  "RET506",
+  "RET507",
+  "RET508",
+  "D100", # public module
+  "D101", # public class
+  "D102", # public method
+  "D103", # public function
+  "D105", # magic methods
+  "D107", # init
+  "D202", # blank lines after function docstring
+  "D203", # blank line before class docstring
+  "D205", # blank line between summary line and description
+  "D213", # Multi-line docstring summary should start at the second line
+  "D402", # First line should not be the function's signature
+  "D417", # Missing argument descriptions
+
+]
+exclude = ["*_py310.py", "ibis/tests/*/snapshots/*"]
+target-version = "py38"
+
+[tool.ruff.per-file-ignores]
+"*test*.py" = ["D"] # ignore all docstring lints in tests
+
+[tool.mypy]
+ignore_missing_imports = true
+# untyped things
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+# Any handling
+disallow_any_unimported = true
+disallow_any_expr = false
+disallow_any_decorated = true
+disallow_any_explicit = true
+disallow_any_generics = true
+disallow_subclassing_any = true
+# None/Optional handling
+no_implicit_optional = true
+# show more context on failure
+show_error_context = true
+# show codes in case we end up needing to ignore
+show_error_codes = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
