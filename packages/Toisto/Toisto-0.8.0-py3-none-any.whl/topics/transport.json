@@ -1,0 +1,21 @@
+{
+    "car": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Car",
+            "fi": "Auto",
+            "nl": "De auto"
+        },
+        "plural": {
+            "en": "Cars",
+            "fi": "Autot",
+            "nl": "De auto's"
+        }
+    }
+}

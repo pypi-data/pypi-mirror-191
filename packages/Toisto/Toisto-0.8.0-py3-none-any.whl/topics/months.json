@@ -1,0 +1,244 @@
+{
+    "month": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon",
+            "nl": "moon"
+        },
+        "singular": {
+            "en": "Month",
+            "fi": "Kuukausi",
+            "nl": "De maand"
+        },
+        "plural": {
+            "en": "Months",
+            "fi": "Kuukaudet",
+            "nl": "De maanden"
+        }
+    },
+    "moon": {
+        "level": {
+            "A2": [
+                "EP",
+                "OD"
+            ]
+        },
+        "singular": {
+            "en": "Moon",
+            "fi": "Kuu",
+            "nl": "De maan"
+        },
+        "plural": {
+            "en": "Moons",
+            "fi": "Kuut",
+            "nl": "De manen"
+        }
+    },
+    "january": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "January",
+        "fi": "Tammikuu",
+        "nl": "Januari"
+    },
+    "in january": {
+        "roots": "january",
+        "en": "In January",
+        "fi": "Tammikuussa",
+        "nl": "In januari"
+    },
+    "february": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "February",
+        "fi": "Helmikuu",
+        "nl": "Februari"
+    },
+    "march": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "March",
+        "fi": "Maaliskuu",
+        "nl": "Maart"
+    },
+    "april": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "April",
+        "fi": "Huhtikuu",
+        "nl": "April"
+    },
+    "in april": {
+        "roots": "april",
+        "en": "In April",
+        "fi": "Huhtikuussa",
+        "nl": "In april"
+    },
+    "may": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "May",
+        "fi": "Toukokuu",
+        "nl": "Mei"
+    },
+    "june": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": [
+                "summer",
+                "moon"
+            ]
+        },
+        "en": "June",
+        "fi": "Kesäkuu",
+        "nl": "Juni"
+    },
+    "july": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "July",
+        "fi": "Heinäkuu",
+        "nl": "Juli"
+    },
+    "august": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "August",
+        "fi": "Elokuu",
+        "nl": "Augustus"
+    },
+    "september": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": [
+                "autumn",
+                "moon"
+            ]
+        },
+        "en": "September",
+        "fi": "Syyskuu",
+        "nl": "September"
+    },
+    "october": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "October",
+        "fi": "Lokakuu",
+        "nl": "Oktober"
+    },
+    "november": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": "moon"
+        },
+        "en": "November",
+        "fi": "Marraskuu",
+        "nl": "November"
+    },
+    "december": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": {
+            "fi": [
+                "christmas",
+                "moon"
+            ]
+        },
+        "en": "December",
+        "fi": "Joulukuu",
+        "nl": "December"
+    },
+    "it is july": {
+        "roots": [
+            "july",
+            "to be",
+            "now"
+        ],
+        "en": "It is July|It's July",
+        "fi": [
+            "Nyt on heinäkuu",
+            "On heinäkuu"
+        ],
+        "nl": "Het is juli"
+    }
+}

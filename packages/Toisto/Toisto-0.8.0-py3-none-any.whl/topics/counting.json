@@ -1,0 +1,484 @@
+{
+    "to count": {
+        "level": {
+            "A1": "KK",
+            "A2": "OD",
+            "B1": "EP"
+        },
+        "en": "To count",
+        "fi": "Laskea",
+        "nl": "Tellen"
+    },
+    "1": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "One",
+        "fi": "Yksi",
+        "nl": "Eén|één|Een"
+    },
+    "2": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Two",
+        "fi": "Kaksi",
+        "nl": "Twee"
+    },
+    "3": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Three",
+        "fi": "Kolme",
+        "nl": "Drie"
+    },
+    "4": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Four",
+        "fi": "Neljä",
+        "nl": "Vier"
+    },
+    "5": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Five",
+        "fi": "Viisi",
+        "nl": "Vijf"
+    },
+    "6": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Six",
+        "fi": "Kuusi",
+        "nl": "Zes"
+    },
+    "7": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "en": "Seven",
+        "fi": "Seitsemän",
+        "nl": "Zeven"
+    },
+    "8": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "en": "Eight",
+        "fi": "Kahdeksan",
+        "nl": "Acht"
+    },
+    "9": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "en": "Nine",
+        "nl": "Negen",
+        "fi": "Yhdeksän"
+    },
+    "10": {
+        "level": {
+            "A1": [
+                "EP",
+                "KK",
+                "OD"
+            ]
+        },
+        "en": "Ten",
+        "fi": "Kymmenen",
+        "nl": "Tien"
+    },
+    "11": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "1",
+            "10"
+        ],
+        "en": "Eleven",
+        "fi": "Yksitoista",
+        "nl": "Elf"
+    },
+    "12": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "2",
+            "10"
+        ],
+        "en": "Twelve",
+        "fi": "Kaksitoista",
+        "nl": "Twaalf"
+    },
+    "13": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "3",
+            "10"
+        ],
+        "en": "Thirteen",
+        "fi": "Kolmetoista",
+        "nl": "Dertien"
+    },
+    "14": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "4",
+            "10"
+        ],
+        "en": "Fourteen",
+        "fi": "Neljätoista",
+        "nl": "Veertien"
+    },
+    "15": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "5",
+            "10"
+        ],
+        "en": "Fifteen",
+        "fi": "Viisitoista",
+        "nl": "Vijftien"
+    },
+    "16": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "6",
+            "10"
+        ],
+        "en": "Sixteen",
+        "fi": "Kuusitoista",
+        "nl": "Zestien"
+    },
+    "17": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "7",
+            "10"
+        ],
+        "en": "Seventeen",
+        "fi": "Seitsemäntoista",
+        "nl": "Zeventien"
+    },
+    "18": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "8",
+            "10"
+        ],
+        "en": "Eightteen",
+        "fi": "Kahdeksantoista",
+        "nl": "Achttien"
+    },
+    "19": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "9",
+            "10"
+        ],
+        "en": "Nineteen",
+        "fi": "Yhdeksäntoista",
+        "nl": "Negentien"
+    },
+    "20": {
+        "level": {
+            "A1": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "2",
+            "10"
+        ],
+        "en": "Twenty",
+        "fi": "Kaksikymmentä",
+        "nl": "Twintig"
+    },
+    "21": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "1",
+            "20"
+        ],
+        "en": "Twenty-one",
+        "fi": "Kaksikymmentäyksi",
+        "nl": "Eenentwintig"
+    },
+    "22": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "2",
+            "20"
+        ],
+        "en": "Twenty-two",
+        "fi": "Kaksikymmentäkaksi",
+        "nl": "Tweeëntwintig"
+    },
+    "23": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "3",
+            "20"
+        ],
+        "en": "Twenty-three",
+        "fi": "Kaksikymmentäkolme",
+        "nl": "Drieëntwintig"
+    },
+    "24": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "4",
+            "20"
+        ],
+        "en": "Twenty-four",
+        "fi": "Kaksikymmentäneljä",
+        "nl": "Vierentwintig"
+    },
+    "30": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "3",
+            "10"
+        ],
+        "en": "Thirty",
+        "fi": "Kolmekymmentä",
+        "nl": "Dertig"
+    },
+    "40": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "4",
+            "10"
+        ],
+        "en": "Forty",
+        "fi": "Neljäkymmentä",
+        "nl": "Veertig"
+    },
+    "50": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "5",
+            "10"
+        ],
+        "en": "Fifty",
+        "fi": "Viisikymmentä",
+        "nl": "Vijftig"
+    },
+    "60": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "6",
+            "10"
+        ],
+        "en": "Sixty",
+        "fi": "Kuusikymmentä",
+        "nl": "Zestig"
+    },
+    "70": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "7",
+            "10"
+        ],
+        "en": "Seventy",
+        "fi": "Seitsemänkymmentä",
+        "nl": "Zeventig"
+    },
+    "80": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "8",
+            "10"
+        ],
+        "en": "Eighty",
+        "fi": "Kahdeksankymmentä",
+        "nl": "Tachtig"
+    },
+    "90": {
+        "level": {
+            "A1": "OD",
+            "A2": "EP"
+        },
+        "roots": [
+            "9",
+            "10"
+        ],
+        "en": "Ninety",
+        "fi": "Yhdeksänkymmentä",
+        "nl": "Negentig"
+    },
+    "100": {
+        "level": {
+            "A1": [
+                "KK",
+                "OD"
+            ],
+            "A2": "EP"
+        },
+        "en": "Hundred",
+        "fi": "Sata",
+        "nl": "Honderd"
+    },
+    "200": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "2",
+            "100"
+        ],
+        "en": "Two hundred",
+        "fi": "Kaksisataa",
+        "nl": "Tweehonderd"
+    },
+    "1000": {
+        "level": {
+            "A1": [
+                "KK",
+                "OD"
+            ],
+            "A2": "EP"
+        },
+        "en": "Thousand",
+        "fi": "Tuhat",
+        "nl": "Duizend"
+    },
+    "2000": {
+        "level": {
+            "none": [
+                "EP",
+                "OD"
+            ]
+        },
+        "roots": [
+            "2",
+            "1000"
+        ],
+        "en": "Two thousand",
+        "fi": "Kaksituhatta",
+        "nl": "Tweeduizend"
+    }
+}
