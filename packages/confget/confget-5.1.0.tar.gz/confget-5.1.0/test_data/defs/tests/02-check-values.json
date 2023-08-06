@@ -1,0 +1,182 @@
+{
+  "format": {
+    "version": {
+      "major": 2,
+      "minor": 0
+    }
+  },
+  "tests": [
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key1"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key2"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key3"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key4"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": false
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "b sect"
+      },
+      "keys": [
+        "key5"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": false
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "b sect"
+      },
+      "keys": [
+        "key4"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t1.ini",
+        "section": "c"
+      },
+      "keys": [
+        "key5"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t6.ini"
+      },
+      "keys": [
+        "any"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": false
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t7.ini"
+      },
+      "keys": [
+        "any"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t8.ini"
+      },
+      "keys": [
+        "any"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": true
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "check_only": "",
+        "filename": "t9.ini"
+      },
+      "keys": [
+        "any"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exit": false
+      },
+      "stdin": null
+    }
+  ]
+}

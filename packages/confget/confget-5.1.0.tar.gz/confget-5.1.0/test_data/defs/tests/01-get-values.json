@@ -1,0 +1,252 @@
+{
+  "format": {
+    "version": {
+      "major": 2,
+      "minor": 0
+    }
+  },
+  "tests": [
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key1"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "value1"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a",
+        "show_var_name": ""
+      },
+      "keys": [
+        "key2"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "key2=value2"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key3"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "\t\t val'ue3"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "b sect"
+      },
+      "keys": [
+        "key4"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "v'alu'e4"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "c"
+      },
+      "keys": [
+        "key5"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "\t\t# value5"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a"
+      },
+      "keys": [
+        "key1",
+        "key2"
+      ],
+      "xform": "newline-to-space",
+      "backend": "ini",
+      "output": {
+        "exact": "key1=value1 key2=value2 "
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a",
+        "hide_var_name": ""
+      },
+      "keys": [
+        "key6",
+        "key2"
+      ],
+      "xform": "newline-to-space",
+      "backend": "ini",
+      "output": {
+        "exact": "value2 value6 "
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "b sect"
+      },
+      "keys": [
+        "key7"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "value7"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "longcont"
+      },
+      "keys": [
+        "long"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "stuff \tand more stuff\tand even more stuff \tand wheee"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "section": "b sect"
+      },
+      "keys": [
+        "key7"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "value7"
+      },
+      "stdin": "t1.ini"
+    },
+    {
+      "args": {
+        "section": "b sect"
+      },
+      "keys": [
+        "key77"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": ""
+      },
+      "stdin": "t1.ini"
+    },
+    {
+      "args": {
+        "filename": "t4.ini",
+        "section": "x"
+      },
+      "keys": [
+        "key8"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "key9=key10=key11"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t6.ini"
+      },
+      "keys": [
+        "any",
+        "none"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": ""
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t7.ini"
+      },
+      "keys": [
+        "any",
+        "none"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "any=key"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t8.ini"
+      },
+      "keys": [
+        "any",
+        "none"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "any=key"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t9.ini"
+      },
+      "keys": [
+        "any",
+        "none"
+      ],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": ""
+      },
+      "stdin": null
+    }
+  ]
+}

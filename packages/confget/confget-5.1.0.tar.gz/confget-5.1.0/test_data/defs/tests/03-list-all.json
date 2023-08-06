@@ -1,0 +1,82 @@
+{
+  "format": {
+    "version": {
+      "major": 2,
+      "minor": 0
+    }
+  },
+  "tests": [
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "a",
+        "list_all": ""
+      },
+      "keys": [],
+      "xform": "count-lines",
+      "backend": "ini",
+      "output": {
+        "exact": "4"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "b sect",
+        "list_all": "",
+        "show_var_name": ""
+      },
+      "keys": [],
+      "xform": "count-lines-eq",
+      "backend": "ini",
+      "output": {
+        "exact": "2"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "c",
+        "list_all": "",
+        "hide_var_name": ""
+      },
+      "keys": [],
+      "xform": "count-lines-non-eq",
+      "backend": "ini",
+      "output": {
+        "exact": "1"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t1.ini",
+        "section": "d",
+        "list_all": ""
+      },
+      "keys": [],
+      "xform": "count-lines",
+      "backend": "ini",
+      "output": {
+        "exact": "0"
+      },
+      "stdin": null
+    },
+    {
+      "args": {
+        "filename": "t4.ini",
+        "section": "x",
+        "list_all": ""
+      },
+      "keys": [],
+      "xform": "",
+      "backend": "ini",
+      "output": {
+        "exact": "key8=key9=key10=key11"
+      },
+      "stdin": null
+    }
+  ]
+}
