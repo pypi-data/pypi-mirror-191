@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: icpyedu
+Version: 0.0.1
+Summary: Package para assinaturas digitais
+Author: Kemuel dos Santos Rocha
+Author-email: kemuel.rocha@discente.univasf.edu.br
+License: MIT License
+Keywords: signer icpedu icpyedu
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# ICPyEdu
+O **ICPyEdu** Ã© uma ferramenta para Assinaturas Digitais utilizando Certificado ICPEdu. Esse _package_ foi desenvolvido como um artefato complementar ao trabalho de conclusÃ£o de curso do aluno **Kemuel dos Santos Rocha** para obtenÃ§Ã£o do grau de Bacharelado em Engenharia da ComputaÃ§Ã£o.
+
+O **ICPyEdu** Ã© uma biblioteca para fins educativos e possibilita a assinatura de documentos em formato _.pdf_, assim como tambÃ©m a verificaÃ§Ã£o da assinatura digital.
+
+## Como instalar a biblioteca
+
+Para fazer a instalaÃ§Ã£o da biblioteca, basta executar o comando abaixo:
+```python
+pip install icpyedu
+```
+## Como importar as classes e mÃ©todos da biblioteca
+
+Para utilizar as funcionalidades da o _package_, importe com o seguinte cÃ³digo:
+```python
+from icpyedu import signer 
+```
+
+Para instanciar a classe responsÃ¡vel pelos mÃ©todos de assinatura digital, basta declarar uma variÃ¡vel recebendo _Sign_ da seguinte forma:
+```python
+var = signer.Sign()
+```
+
+Para instanciar a classe responsÃ¡vel pelos mÃ©todos de verificaÃ§Ã£o de assinaturas digitais, basta declarar uma variÃ¡vel recebendo _Verifier_ da seguinte forma:
+```python
+var = signer.Verify()
+```
+
+Finalmente para utilizar para assinar um pdf, basta chamar a funÃ§Ã£o _signFile_ passando os parametros solicitados como por exemplo:
+```python
+var.signFile("email", "password", "filePath", "certificatePath")
+```
+
+De modo semelhante, para verificar um pdf, basta chamar a funÃ§Ã£o _verifySignature_ passando os parametros solicitados como por exemplo:
+```python
+var.verifySignature("pdf","certifying authority_1", "certifying authority_2")
+```
+Os certificados de autoridades certificadoras sÃ£o arquivos que vem juntos ao certificado pessoal exportado pelo ICPEdu
