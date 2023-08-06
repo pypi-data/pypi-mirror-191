@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: brownian-motion-generator
+Version: 1.0.7
+Summary: Generating brownian motion random walks with custom skew, kurtosis, mean reversion, correlation, and non-normality.
+Home-page: https://github.com/mattyTokenomics/brownian_motion_generator
+Author: MattyTokenomics
+Author-email: mattytokenomics@protonmail.com
+License: GNU General Public License v3.0
+License-File: LICENSE
