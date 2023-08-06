@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyfindimage
+Version: 0.3.3
+Summary: Image finder based on text
+Home-page: 
+Author: lewis
+Author-email: lewis.morris@gmail.com
+License: MIT
+Requires-Dist: opencv-python (~=4.7.0.68)
+Requires-Dist: ImageHash (~=4.3.1)
+Requires-Dist: numpy (~=1.24.2)
+Requires-Dist: pandas (~=1.5.3)
+Requires-Dist: Levenshtein (~=0.20.9)
+Requires-Dist: Pillow (~=9.4.0)
+Requires-Dist: PySimpleGUI (~=4.60.4)
+Requires-Dist: pyexiv2 (~=2.8.1)
+Requires-Dist: screeninfo (~=0.8.1)
+Requires-Dist: setuptools (~=65.6.3)
+
