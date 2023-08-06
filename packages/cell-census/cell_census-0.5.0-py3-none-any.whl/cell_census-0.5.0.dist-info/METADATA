@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cell-census
+Version: 0.5.0
+Summary: API to simplify use of the CZI Science CELLxGENE Cell Census
+Author-email: Chan Zuckerberg Initiative <cellxgene@chanzuckerberg.com>
+License: MIT
+Project-URL: homepage, https://github.com/chanzuckerberg/cell-census
+Project-URL: repository, https://github.com/chanzuckerberg/cell-census
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numba (>=0.55)
+Requires-Dist: numpy (>=1.21)
+Requires-Dist: requests
+Requires-Dist: tiledbsoma (==0.5.0a11)
+Requires-Dist: typing-extensions
+Requires-Dist: s3fs
+Requires-Dist: scikit-misc
+
+# CELLxGENE Cell Census
+
+The `cell_census` package provides an API to facilitate use of the CZI Science Cell Census. The Cell Census is a versioned container for the single-cell data hosted at [CELLxGENE Discover](https://cellxgene.cziscience.com/).
+
+**Status**: Pre-release, under rapid development. Expect API changes.
+
+For more information, see the [cell_census repo](https://github.com/chanzuckerberg/cell-census/).
+
+### For More Help
+
+For more help, please file a issue on the repo, or contact us at <cellxgene@chanzuckerberg.com>
+
+If you believe you have found a security issue, we would appreciate notification. Please send email to <security@chanzuckerberg.com>.
