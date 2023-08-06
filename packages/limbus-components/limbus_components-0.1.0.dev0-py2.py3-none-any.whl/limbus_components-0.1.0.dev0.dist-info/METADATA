@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: limbus-components
+Version: 0.1.0.dev0
+Summary: Components to be used with limbus.
+Home-page: https://github.com/kornia/limbus-components
+Author: Luis Ferraz
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: kornia
+Requires-Dist: opencv-python (<4.7)
+Provides-Extra: dev
+Requires-Dist: limbus ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-pydocstyle ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: flake8 (<5.0.0) ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+
+# Limbus-Components: Set of basic components for Limbus
+
+[![CI](https://github.com/kornia/limbus-components/actions/workflows/ci.yml/badge.svg)](https://github.com/kornia/limbus-components/actions/workflows/ci.yml)
+
+This package is part of [Limbus](https://github.com/kornia/limbus) and contains a bunch of useful components.
+
+## Installation
+
+This package can be automatically installed by Limbus. If you want to install it manually, you can do it with:
+
+```bash
+git clone https://github.com/kornia/limbus-components
+cd limbus-components
+pip install -e .
+```
+
+For development purposes, you can install it with:
+
+```bash
+pip install -e .[dev]  # also installs limbus
+```
