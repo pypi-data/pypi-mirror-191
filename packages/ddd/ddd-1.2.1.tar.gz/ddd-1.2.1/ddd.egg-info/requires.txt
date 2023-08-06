@@ -1,0 +1,4 @@
+canonical>=0.23.0
+
+[all]
+google-cloud-datastore>=2.11.0
