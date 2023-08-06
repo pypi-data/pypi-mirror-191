@@ -1,0 +1,4 @@
+scipy
+dune-common<=0.1.dev20230214
+mpi4py
+dune-grid<=0.1.dev20230214

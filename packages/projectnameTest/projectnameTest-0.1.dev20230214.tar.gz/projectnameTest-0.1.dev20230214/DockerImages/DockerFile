@@ -1,0 +1,45 @@
+FROM debian:bullseye-slim
+
+MAINTAINER mueller@ibb.uni-stuttgart.de
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update -q -y  && \
+     apt-get update && \
+   apt-get -y --no-install-recommends install build-essential \
+  git \
+  wget \
+  apt-utils \
+  software-properties-common \
+  gfortran \
+  gcc \
+  g++ \
+  cmake \
+  libmetis-dev \
+  pkg-config \
+  liblapack-dev \
+  libopenblas-dev \
+  libsuitesparse-dev \
+  libsuperlu-dev \
+  libquadmath0 \
+  libopenmpi-dev \
+  python3 \
+  python3-dev \
+  pip \
+  curl \
+  python3-pybind11
+
+RUN apt-get -y --no-install-recommends install python3-venv
+RUN mkdir -p dune && \
+  cd dune && \
+  git clone https://gitlab.dune-project.org/core/dune-common.git && \
+  dune-common/bin/dunecontrol git checkout releases/2.9
+
+  RUN cd dune && \
+    ./dune-common/bin/dunecontrol   --cmake-opts="-DCMAKE_BUILD_TYPE=Release -DDUNE_PYTHON_ALLOW_GET_PIP=1 -DDUNE_PYTHON_VIRTUALENV_SETUP=TRUE -DDUNE_ENABLE_PYTHONBINDINGS=TRUE -DBUILD_SHARED_LIBS=TRUE" cmake && \
+    ./dune-common/bin/dunecontrol make && \
+  ./dune-common/bin/dunecontrol make install
+
+RUN rm -rf dune/
+
+CMD [ "/bin/sh" ]
