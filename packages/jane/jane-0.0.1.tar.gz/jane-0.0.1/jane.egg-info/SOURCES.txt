@@ -1,0 +1,5 @@
+setup.py
+jane.egg-info/PKG-INFO
+jane.egg-info/SOURCES.txt
+jane.egg-info/dependency_links.txt
+jane.egg-info/top_level.txt
