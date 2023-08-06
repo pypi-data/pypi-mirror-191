@@ -1,0 +1,6 @@
+Click>=7.0
+websockets
+cffi>=1.15.0
+cryptography>=37.0.4
+pycparser>=2.21
+secp256k1>=0.14.0
