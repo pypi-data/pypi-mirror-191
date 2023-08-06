@@ -1,0 +1,13 @@
+ZinckLib/__init__.py,sha256=lU5FFgqelS9b79d9b9qBmyYOCOTA9vXszwhhz-Ghi0o,352
+ZinckLib/isAlphabetical.py,sha256=D414HW29gRg-cqn07mcaHWg9ZbO4ShK3FHeo_dB6ohI,590
+ZinckLib/numberToText.py,sha256=T1427J3nFz6BGyh7-rJAO6suxY6L0rhXHaEGcKugjsA,1578
+ZinckLib/primeList.py,sha256=lD7jGjI5_M_hE6Ox4dh0-Kc-t0fkPjjzXuzVrhOWPCI,824
+ZinckLib/splitString.py,sha256=flJt5JsrcwUO3nMjn9hY19wnZD_dnVYKohFxRqZSrz0,365
+ZinckLib/stringToPhonetic.py,sha256=J5M2zs1O5--6mMTZGs8R4xzFksIIozvUm3LEF-FPsvI,1386
+ZinckLib/toLetter.py,sha256=QPsY5-Ynbd1ItyBwOPlWESItkoDdDzDYWmWSgP8glCM,715
+ZinckLib/toNumber.py,sha256=HtlP1JXLx9JXzJU5GhsrY_7GTxKt5z7BilCQv_c4kh0,857
+ZinckLib-0.1.0.dist-info/LICENSE,sha256=WHDqK-FTPFU6Pg_HjSq0_9NGljmfWDb32yCXgKtejkA,1075
+ZinckLib-0.1.0.dist-info/METADATA,sha256=6ha2t_abx9X3RTR9Xq09bRuI1hvSPZNas_A2PVaSGXg,1135
+ZinckLib-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ZinckLib-0.1.0.dist-info/top_level.txt,sha256=_-qMH-YYDNilRtB6LLC8Cp7rnfCDuCnhTWtZbj_oKx4,9
+ZinckLib-0.1.0.dist-info/RECORD,,

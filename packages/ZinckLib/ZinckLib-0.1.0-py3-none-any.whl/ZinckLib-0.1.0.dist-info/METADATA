@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ZinckLib
+Version: 0.1.0
+Summary: A small package of a bunch of functions I made, I hope you like it
+Home-page: https://github.com/Zinckle/ZinckLib
+Author: Mitchell Zinck
+Author-email: mzinck9@gmail.com
+Project-URL: Bug Tracker, https://github.com/Zinckle/ZinckLib/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1>Hello, Welcome to ZinckLib</h1>
+
+The main focus of this library is around the manipulation of strings between various forms like strings to numbers or 
+converting a number to its written form. There are also some other tools like creating a list of prime numbers less than
+a given value or determining if a string is in alphabetical order.
+
+The repository can be found at: https://github.com/Zinckle/ZinckLib
+
+You can check out my portfolio here: https://zinck.xyz
+
+If there is anything you think I should add or anything you think I should change, feel free to reach out!
