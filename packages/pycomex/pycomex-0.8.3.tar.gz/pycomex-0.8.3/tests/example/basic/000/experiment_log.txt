@@ -1,0 +1,24 @@
+2023-02-13 22:33:35,595 - ================================================================================
+2023-02-13 22:33:35,595 - EXPERIMENT STARTED
+2023-02-13 22:33:35,595 -     namespace:          example/basic
+2023-02-13 22:33:35,595 -     start time:         Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:35,595 -     archive path:       /media/data/Programming/PyCharm/pycomex/tests/example/basic/000
+2023-02-13 22:33:35,596 -     debug mode?         False
+2023-02-13 22:33:35,596 - ================================================================================
+2023-02-13 22:33:35,776 - saved text file with 7648 characters
+2023-02-13 22:33:35,779 - saved text file with 7565 characters
+2023-02-13 22:33:35,781 - saved text file with 7589 characters
+2023-02-13 22:33:35,784 - saved text file with 7640 characters
+2023-02-13 22:33:35,786 - saved text file with 7565 characters
+2023-02-13 22:33:35,789 - saved text file with 7765 characters
+2023-02-13 22:33:35,792 - saved text file with 7592 characters
+2023-02-13 22:33:35,795 - saved text file with 7559 characters
+2023-02-13 22:33:35,798 - saved text file with 7607 characters
+2023-02-13 22:33:35,800 - saved text file with 7603 characters
+2023-02-13 22:33:35,803 - ================================================================================
+2023-02-13 22:33:35,803 - EXPERIMENT ENDED
+2023-02-13 22:33:35,803 -     start time:         Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:35,803 -     end time:           Monday, 13 Feb 2023  at 22:33
+2023-02-13 22:33:35,803 -     duration:           0.000 hrs
+2023-02-13 22:33:35,803 -     error?              None
+2023-02-13 22:33:35,803 - ================================================================================
