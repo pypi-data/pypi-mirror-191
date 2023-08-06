@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pypy_algo.egg-info/PKG-INFO
+pypy_algo.egg-info/SOURCES.txt
+pypy_algo.egg-info/dependency_links.txt
+pypy_algo.egg-info/top_level.txt
