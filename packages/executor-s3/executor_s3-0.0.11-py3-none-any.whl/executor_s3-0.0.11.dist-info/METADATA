@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: executor-s3
+Version: 0.0.11
+Summary: DaggerML's front end for the s3 executor
+Author-email: DaggerML <engineering@daggerml.com>
+Project-URL: Homepage, https://daggerml.com
+Project-URL: Documentation, https://daggerml.com/docs
+Project-URL: Issues, https://github.com/daggerml/python-lib/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: daggerml (>=0.0.15)
+Requires-Dist: boto3
+Provides-Extra: all
+Requires-Dist: s3fs ; extra == 'all'
+Requires-Dist: pyarrow ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+Requires-Dist: fsspec ; extra == 'all'
+
+# executor-s3
+executor for creating and handling s3 objects and prefixes
