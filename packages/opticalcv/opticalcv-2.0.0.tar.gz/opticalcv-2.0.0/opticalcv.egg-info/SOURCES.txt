@@ -1,0 +1,7 @@
+README.md
+setup.py
+opticalcv/train.py
+opticalcv.egg-info/PKG-INFO
+opticalcv.egg-info/SOURCES.txt
+opticalcv.egg-info/dependency_links.txt
+opticalcv.egg-info/top_level.txt
