@@ -1,0 +1,5 @@
+
+DEFAULT = 0
+MILLISECOND = 1000
+
+__all__ = ["DEFAULT", "MILLISECOND"]
