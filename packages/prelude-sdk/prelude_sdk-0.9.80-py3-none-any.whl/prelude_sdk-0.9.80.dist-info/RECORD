@@ -1,0 +1,13 @@
+prelude_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_sdk/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_sdk/controllers/build_controller.py,sha256=yYfLNwGysx_YGneiFi-1hSrvgjIOrvmQyLU-5LsJBtk,2305
+prelude_sdk/controllers/detect_controller.py,sha256=ZXv2N3Xb-PwcHb-qQDLFDx5iDeAJRYuFZLNW0Og0Rcs,4371
+prelude_sdk/controllers/iam_controller.py,sha256=pWrwS4AVCR0xfp5LoV6kqcexV6IgB3IjqLM-aLaKcAc,2615
+prelude_sdk/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_sdk/models/account.py,sha256=NXFoJyrN5v3-wMivnNAG2XnG9I4ZyETGlrNMqeImq70,2785
+prelude_sdk/models/codes.py,sha256=3TyzleB0F4OPGq_Y6cJfTIIGh7pr8WODfu83i8K7HCQ,1923
+prelude_sdk-0.9.80.dist-info/LICENSE,sha256=ttdT5omfN6LNmtQoIjUhkkFhz6i44SDMRNwKrbfyTf8,1069
+prelude_sdk-0.9.80.dist-info/METADATA,sha256=IdlB035qiCU9oLvtZen_Bnj_b1GXbw3XqjFfrGORvgI,939
+prelude_sdk-0.9.80.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+prelude_sdk-0.9.80.dist-info/top_level.txt,sha256=6O7C8nl-yK7FsVpsPaka_GV8PYy2uvAJtus8Tlzw4dE,12
+prelude_sdk-0.9.80.dist-info/RECORD,,
