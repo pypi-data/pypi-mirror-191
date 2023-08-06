@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hc-pyconsul
+Version: 0.3.1
+Summary: API client for HashiCorp Consul
+License: Apache 2.0
+Author: Arden Shackelford
+Author-email: arden@ardens.tech
+Requires-Python: >=3.8.1,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: httpx (>=0.23.0,<0.24.0)
+Requires-Dist: opentelemetry-api (>=1.13.0,<2.0.0)
+Requires-Dist: pydantic (>=1.9.0,<2.0.0)
