@@ -1,0 +1,27 @@
+[package]
+name = "quickner-core"
+version = "0.0.1-alpha.4"
+edition = "2021"
+authors = ["Omar MHAIMDAT"]
+license-file = "LICENSE"
+homepage = "https://github.com/omarmhaimdat/quickner"
+keywords = ["ner", "named-entity", "nlp", "cli"]
+description = "A fast and simple NER tool"
+readme = "README.md"
+documentation = "https://docs.rs/quickner-cli"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "quickner"
+
+[dependencies]
+clap = { version = "4.0.32", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4.0"
+indicatif = "0.17.0"
+toml = "0.7.0"
+env_logger = "0.10.0"
+rayon = "1.6"
+csv = "1.1"
