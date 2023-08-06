@@ -1,0 +1,8 @@
+predict_eth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predict_eth/helpers.py,sha256=CbIagTmelQfYVyei_julCTRC5TX1f_G2jPHnB7NN4V8,4726
+predict_eth/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+predict_eth/test/test_helpers.py,sha256=M932PurFkBedxahUHJt_NbRD_8nSYmZ6O2VE_vpRHAE,56
+predict_eth-0.1.0.dist-info/METADATA,sha256=nSOI2DhRICuI8xgynL-z2Kw_vFp7LZe5xeDgv-1fIEA,3368
+predict_eth-0.1.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+predict_eth-0.1.0.dist-info/licenses/LICENSE,sha256=spHSmXF7DO9mxcKFLWKJQkvIgNDiICk8af_hYigzkAY,1071
+predict_eth-0.1.0.dist-info/RECORD,,
