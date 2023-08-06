@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+paikalta/__init__.py
+paikalta/__main__.py
+paikalta/api.py
+paikalta/cli.py
+paikalta.egg-info/PKG-INFO
+paikalta.egg-info/SOURCES.txt
+paikalta.egg-info/dependency_links.txt
+paikalta.egg-info/entry_points.txt
+paikalta.egg-info/requires.txt
+paikalta.egg-info/top_level.txt
+test/test_api.py
+test/test_cli.py
