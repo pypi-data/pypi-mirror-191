@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/pybeta/__init__.py
+src/pybeta/beta.py
+src/pybeta/utils.py
+src/pybeta.egg-info/PKG-INFO
+src/pybeta.egg-info/SOURCES.txt
+src/pybeta.egg-info/dependency_links.txt
+src/pybeta.egg-info/top_level.txt
