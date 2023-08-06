@@ -1,0 +1,3 @@
+[console_scripts]
+reindexer=opensearch_reindexer:app
+
