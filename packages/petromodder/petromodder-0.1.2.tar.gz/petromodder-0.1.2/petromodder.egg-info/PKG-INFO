@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: petromodder
+Version: 0.1.2
+Summary: Tools for manupulating PetroMod model
+Home-page: https://github.com/equinor/petromodder
+Author: Adam Cheng
+Author-email: tkc@equinor.com
+Project-URL: Documentation, https://equinor.github.io/petromodder/
+Project-URL: Issue Tracker, https://github.com/equinor/petromodder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,>=3.8,>=3.9,>=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+Tools for manupulating PetroMod model. PetroMod is a registered trademark of Schlumberger
