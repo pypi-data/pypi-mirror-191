@@ -1,0 +1,8 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "jupyterlab_daisy",
+  "description": "jupyterlab_daisy settings.",
+  "type": "object",
+  "properties": {},
+  "additionalProperties": false
+}
