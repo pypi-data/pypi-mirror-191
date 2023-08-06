@@ -1,0 +1,16 @@
+youdotcom/__init__.py,sha256=fRLU-9qIRsBuEikomhV3GxCy3iarUWUsa-euqMqn9C4,559
+youdotcom/__main__.py,sha256=sMTXCjsLsY95Tw6epitkncWm715Vm4MVeJ2hL7VJCUA,3087
+youdotcom/apps.py,sha256=3LG3Stv6vFHqECnRAISnzwsBeHlhgDmV_q-O_DclqVg,3090
+youdotcom/code.py,sha256=_3UVchQKpobpE6XZKTjrXhkK7Ak2us9CroR5_G7SIG4,3880
+youdotcom/config.json,sha256=ILtV2tCO0ZGSYnRnnI4lMEkemo4jqHjDSBXTfZm6OXo,544
+youdotcom/imagine.py,sha256=QL3mtQnj6iIkQB3FzfKaqh8211yFZpZhpBkU4SoLKNI,1727
+youdotcom/init.py,sha256=WG1bNmqysANfnSGRYRTHLiwgYcJGEgeabu0hCXOqRyg,5342
+youdotcom/search.py,sha256=CLLirkdc8GRFhEjPV-Ey0QX14LJqjTea7rAYMxHJtuk,1498
+youdotcom/test.py,sha256=A10d6Wac3LLkH4TfPn5EtTR10ItrXDUMlolB6GZJCps,131
+youdotcom/write.py,sha256=hzOst5LlAdXXFhKqE9izx6AATBaeIEomFiDLpEyZsMk,1645
+youdotcom/youchat.py,sha256=oBStBd3Bfcek3VH4DUOQW9gjggcCYtiDCK6QTnFNCOA,1939
+youdotcom-1.2.1.dist-info/METADATA,sha256=bMplrIOpAfAXs51h4hte598QuFeAUvB4wEvBwWHPAw8,16515
+youdotcom-1.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+youdotcom-1.2.1.dist-info/LICENSE,sha256=PXnXyUH6v5vS_C8DkAU8CDkjpKyVZw8m_U1AF0Nt14E,1074
+youdotcom-1.2.1.dist-info/entry_points.txt,sha256=hovM1AI8QzTlM-lOfiI2xGdIhjoIWhch_gFCPLHOUTs,52
+youdotcom-1.2.1.dist-info/RECORD,,
