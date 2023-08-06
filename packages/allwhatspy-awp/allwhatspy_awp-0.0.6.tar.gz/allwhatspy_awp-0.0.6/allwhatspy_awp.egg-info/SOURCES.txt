@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+AllWhatsPy/__init__.py
+allwhatspy_awp.egg-info/PKG-INFO
+allwhatspy_awp.egg-info/SOURCES.txt
+allwhatspy_awp.egg-info/dependency_links.txt
+allwhatspy_awp.egg-info/requires.txt
+allwhatspy_awp.egg-info/top_level.txt
