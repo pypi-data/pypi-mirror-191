@@ -1,0 +1,7 @@
+requests
+aiohttp
+setuptools
+
+[fastapi]
+fastapi
+starlette
