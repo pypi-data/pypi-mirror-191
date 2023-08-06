@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rpi-thingamajigs
+Version: 0.4.dev202302121822
+Summary: Raspberry Pi Thingamajigs is a collection of Raspberry Pi related utilities like LCDD or character display interfaces.
+Home-page: https://gitlab.com/mirkoboehm/rpi-thingamajigs
+Author: Mirko Boehm
+Author-email: mirko@kde.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Raspberry Pi Thingamajigs
+
+This repository contains a number of Python 3 modules that provide reusable
+functionality for embedded systems, especially Raspberry Pis.
+
+
