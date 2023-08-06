@@ -1,0 +1,2 @@
+[console_scripts]
+your_command = end_task.your_module:main
