@@ -1,0 +1,16 @@
+LICENSE,sha256=KxI0B5Lt99yyHGeRWJRbCeZbAOm7qMcr-tleJ8F6a6M,1078
+README.md,sha256=wk9WaEAe83h0ToLGW9aEo66Ytw6ERGLX8kiUvPgeAZo,21364
+target_bigquery/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+target_bigquery/batch_job.py,sha256=D6g7W5QD7GoNSb8cdQuAicnuOIh52wlGP1JWFjFyqeU,4312
+target_bigquery/constants.py,sha256=roY4MPja66QxIsTbgoG2CNPTk61q6ArctjnmbLujfPA,2575
+target_bigquery/core.py,sha256=mp9glXrSerbzM2beGxKswayC6pctKyvnLgX01wWf8H8,36335
+target_bigquery/gcs_stage.py,sha256=_dmwaeRAlpfR1n5L5XmURq3-FUaTJUewRzSNnDt2Roo,8816
+target_bigquery/proto_gen.py,sha256=6KIUCuYs0UEzWHYhyTz99nu140W8KbckgveK3YTXljg,4986
+target_bigquery/storage_write.py,sha256=cGUV2x4OZA2uq7kh2I-0r7S0Y-hr4Nu2H-no1pWxdIg,11121
+target_bigquery/streaming_insert.py,sha256=bCoddZXTQBNfOGFkqbbT1XZwrFPRAQXyqDUxVmnpM4w,3819
+target_bigquery/target.py,sha256=8W3p2AwpcJ0SH7qbZLfYb-ET9NCm1m0krhn3G3Cw03Q,20217
+z3_target_bigquery-0.6.1.dist-info/LICENSE,sha256=KxI0B5Lt99yyHGeRWJRbCeZbAOm7qMcr-tleJ8F6a6M,1078
+z3_target_bigquery-0.6.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+z3_target_bigquery-0.6.1.dist-info/entry_points.txt,sha256=kumkd5XBrMuLWpeLDRm5THz27N7UyOy7QBStjc-Qor4,77
+z3_target_bigquery-0.6.1.dist-info/METADATA,sha256=l6j8eFLxplBf677XEtV-NPcwU2f2ggigKKhgsNlykfo,22879
+z3_target_bigquery-0.6.1.dist-info/RECORD,,
