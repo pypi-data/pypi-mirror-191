@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+homespeaker/__init__.py
+homespeaker/main.py
+homespeaker.egg-info/PKG-INFO
+homespeaker.egg-info/SOURCES.txt
+homespeaker.egg-info/dependency_links.txt
+homespeaker.egg-info/entry_points.txt
+homespeaker.egg-info/requires.txt
+homespeaker.egg-info/top_level.txt
+tests/test_main.py
