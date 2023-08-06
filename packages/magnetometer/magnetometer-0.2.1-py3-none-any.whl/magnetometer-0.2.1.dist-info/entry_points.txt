@@ -1,0 +1,3 @@
+[console_scripts]
+magnetometer=magnetometer.main:app
+
