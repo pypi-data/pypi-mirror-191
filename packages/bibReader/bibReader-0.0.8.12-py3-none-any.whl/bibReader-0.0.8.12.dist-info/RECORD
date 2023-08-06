@@ -1,0 +1,10 @@
+bibReader/__init__.py,sha256=2U5iBOeQmOJOFVAUcWGrj9Uxgyf_-kTVd561qGc5oyY,24
+bibReader/_util.py,sha256=fT_zcN_GFk161-b7yQabw7sP7zfYGFU_tPajTTJWnYU,3826
+bibReader/frame.py,sha256=wBRNpXyYouaqlkt5GI8czEM3UoHz5LQvwmnR70ELmpk,1656
+bibReader/loader.py,sha256=Aa33WoqH-FGX__MzNVSKMJP9c40FGOW7sPockXf3WUc,1975
+bibReader/parser.py,sha256=Vb3MQ7hP3xWj7xn16b6_T7-vsngFg1dcP_lt4tTCGOg,6232
+bibReader-0.0.8.12.dist-info/LICENSE,sha256=Lo2RYrht5rAiCMEUzFR-fixNSZnS7YVIXfmeh2y6MzY,1066
+bibReader-0.0.8.12.dist-info/METADATA,sha256=n7PHGS8Rvc_KxiRziflksiramBUpjCY-ouJ6dzfIdvo,1305
+bibReader-0.0.8.12.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+bibReader-0.0.8.12.dist-info/top_level.txt,sha256=c8AzfKKwBXn95yZC73vkguqnb7LS0vzBzWbvbYfM5Xg,10
+bibReader-0.0.8.12.dist-info/RECORD,,
