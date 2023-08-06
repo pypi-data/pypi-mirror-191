@@ -1,0 +1,4 @@
+oarepo-model-builder>=3.2.1
+
+[tests]
+pytest
