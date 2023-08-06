@@ -1,0 +1,6 @@
+name: kiara-jupyter
+channels:
+  - conda-forge
+  - dharpa
+dependencies:
+  - python ==3.10

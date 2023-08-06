@@ -1,0 +1,17 @@
+[kiara.data_types]
+jupyter = kiara_plugin.jupyter.entrypoints:find_data_types
+
+[kiara.model_classes]
+jupyter = kiara_plugin.jupyter.entrypoints:find_model_classes
+
+[kiara.modules]
+jupyter = kiara_plugin.jupyter.entrypoints:find_modules
+
+[kiara.pipelines]
+jupyter = kiara_plugin.jupyter.entrypoints:find_pipelines
+
+[kiara.plugin]
+jupyter = kiara_plugin.jupyter
+
+[kiara.renderers]
+jupyter = kiara_plugin.jupyter.entrypoints:find_renderer_classes

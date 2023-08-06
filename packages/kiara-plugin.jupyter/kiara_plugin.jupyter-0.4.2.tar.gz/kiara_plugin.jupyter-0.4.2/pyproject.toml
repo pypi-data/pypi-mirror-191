@@ -1,0 +1,109 @@
+[build-system]
+requires = [
+    "setuptools>=63",
+    "setuptools_scm[toml]>7.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kiara_plugin.jupyter"
+description = "Jupyter integration for kiara"
+authors = [
+    {name = "Markus Binsteiner", email = "markus@frkl.io"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["kiara"]
+license = {text = "MPL-2.0"}
+classifiers = [
+    "Framework :: Django",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11"
+]
+dependencies = [
+    "importlib-metadata>=3.0.0.0,<7.0.0",
+    "ipywidgets>=8.0.0",
+    "ipydagred3>=0.3.7",
+    "jupytext>=1.14.0",
+    "black>=21.0.0",
+    "rich>=0.13.0.0",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+kiara = [
+    "kiara_plugin.tabular>=0.4.22",
+    "kiara_plugin.onboarding>=0.4.3",
+    "kiara_plugin.html>=0.4.0"
+]
+all_plugins = [
+    "kiara_plugin.network_analysis>=0.4.9",
+    "kiara_plugin.language_processing>=0.4.10"
+]
+dev_documentation = [
+    "kiara[dev_documentation]"
+]
+dev_testing = [
+    "kiara[dev_testing]",
+    "types-setuptools",
+    "sqlalchemy-stubs"
+]
+dev_utils = [
+    "kiara[dev_utils]"
+]
+dev_all = [
+    "kiara[dev_all]"
+]
+
+[project.entry-points."kiara.plugin"]
+jupyter = "kiara_plugin.jupyter"
+
+[project.entry-points."kiara.data_types"]
+jupyter = "kiara_plugin.jupyter.entrypoints:find_data_types"
+
+[project.entry-points."kiara.model_classes"]
+jupyter = "kiara_plugin.jupyter.entrypoints:find_model_classes"
+
+[project.entry-points."kiara.modules"]
+jupyter = "kiara_plugin.jupyter.entrypoints:find_modules"
+
+[project.entry-points."kiara.pipelines"]
+jupyter = "kiara_plugin.jupyter.entrypoints:find_pipelines"
+
+[project.entry-points."kiara.renderers"]
+jupyter = "kiara_plugin.jupyter.entrypoints:find_renderer_classes"
+
+
+[project.urls]
+homepage = "https://github.com/DHARPA-Project/kiara_plugin.jupyter"
+documentation = "https://DHARPA-Project.github.io/kiara_plugin.jupyter"
+repository = "https://github.com/DHARPA-Project/kiara_plugin.jupyter"
+
+[tool.black]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | external
+)/
+'''
+
+[tool.setuptools_scm]
+write_to = "src/kiara_plugin/jupyter/version.txt"
