@@ -1,0 +1,10 @@
+pillow
+cython
+pycocotools
+aiofiles
+fastapi
+uvicorn[standard]
+scipy
+ftfy
+regex
+tqdm
