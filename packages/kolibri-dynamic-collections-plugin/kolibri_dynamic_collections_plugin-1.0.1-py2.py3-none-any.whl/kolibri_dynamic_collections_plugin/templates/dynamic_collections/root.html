@@ -1,0 +1,6 @@
+{% extends "kolibri/base.html" %}
+{% load webpack_tags %}
+
+{% block content %}
+  {% webpack_asset 'kolibri_dynamic_collections_plugin.app' %}
+{% endblock %}
