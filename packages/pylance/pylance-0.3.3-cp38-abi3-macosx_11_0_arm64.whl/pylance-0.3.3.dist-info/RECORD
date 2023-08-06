@@ -1,0 +1,7 @@
+pylance-0.3.3.dist-info/METADATA,sha256=FA2aZF2JWqnB8geP1mFM_p5FRhsTbZbR-gOV9cMJc7U,5891
+pylance-0.3.3.dist-info/WHEEL,sha256=WvkXyJpQGIb2FzVlzR1Zqp37jfatkaJOyXZAcqJGvD4,104
+pylance-0.3.3.dist-info/license_files/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+lance/__init__.py,sha256=XUZfdyswVOp2HMVModEq5etbVBYoULJPbmQulj6ysu0,784
+lance/dataset.py,sha256=rP4uoqwWJDiqk7FiT8hfMJwEo2eGWRpa-GN4o74a2FY,15678
+lance/lance.abi3.so,sha256=XTp5BV1mUJOhSUs0Y93GxGowMvX-hTMnzHVsvQnuLCk,19762474
+pylance-0.3.3.dist-info/RECORD,,
