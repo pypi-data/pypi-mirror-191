@@ -1,0 +1,9 @@
+xia_agent/__init__.py,sha256=1XvZ-GNTNPbd7XG9Mnf6qV3USnfovaSGGHX460el-3k,197
+xia_agent/puller.cpython-310-x86_64-linux-gnu.so,sha256=McVsQdOyC7mfhbtPyinEMWnMEOCuGYt10KhTG7PhJnM,760296
+xia_agent/pusher.cpython-310-x86_64-linux-gnu.so,sha256=7P7gSxfF9hcu08LXymmqH9YRg5yP3ztXK-eiqoVS09Y,756200
+xia_agent/synchronizer.cpython-310-x86_64-linux-gnu.so,sha256=0BuF5BeStVQsWmK-jC3IYk-Rnc42t_LEwHd38nmdcB4,756200
+xia_agent-0.0.3.dist-info/LICENSE.txt,sha256=ya9ullmRKUoJ8dO9_fHVUFPeoVKHdFZYvmLkh7VFEgg,155
+xia_agent-0.0.3.dist-info/METADATA,sha256=ZEMVicFqcGYR9FnKP-5Sj7EySOXObFrqkKDUf3IGRhI,623
+xia_agent-0.0.3.dist-info/WHEEL,sha256=Kn0XEVEprF3m5Ls7p1vDRSgmlko_ccaWbbQdh4VEEUE,108
+xia_agent-0.0.3.dist-info/top_level.txt,sha256=uiK8HE2yj2wekdrxVgGRL0zCqajqbV6xrgTp7HlCXYU,10
+xia_agent-0.0.3.dist-info/RECORD,,
