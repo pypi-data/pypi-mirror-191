@@ -1,0 +1,4 @@
+PyGithub
+datasets
+huggingface_hub
+python-gitlab
