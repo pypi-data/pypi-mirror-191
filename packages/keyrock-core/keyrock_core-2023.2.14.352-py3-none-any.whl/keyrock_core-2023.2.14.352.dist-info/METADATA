@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: keyrock-core
+Version: 2023.2.14.352
+Requires-Dist: marshmallow
+Requires-Dist: pyyaml
+
