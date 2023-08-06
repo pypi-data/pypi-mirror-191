@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fbchat-wrapper
+Version: 0.2.1
+Summary: Wrapper for fbchat
+Home-page: UNKNOWN
+Author: SneznyKocur
+Author-email: kocursnezny@gmail.com
+License: UNKNOWN
+Description: Simple Wrapper Package to make Programming with fbchat easier and simpler to read.
+Keywords: python,messaging,wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
