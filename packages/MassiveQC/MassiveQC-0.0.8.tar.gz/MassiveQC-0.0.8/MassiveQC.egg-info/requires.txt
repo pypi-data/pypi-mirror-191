@@ -1,0 +1,8 @@
+scikit-learn
+shap
+xopen
+NumPy
+Pandas>=1.3.2
+fastparquet
+more-itertools
+tqdm
