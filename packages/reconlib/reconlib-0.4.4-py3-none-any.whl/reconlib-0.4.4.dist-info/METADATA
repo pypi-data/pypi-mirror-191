@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: reconlib
+Version: 0.4.4
+Summary: A collection of modules and helpers for active and passive reconnaissance of remote hosts
+Author: eonraider
+Author-email: livewire_voodoo@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: python-dotenv (>=0.21.1,<0.22.0)
