@@ -1,0 +1,33 @@
+<div class="container">
+    <p class="h2">Evaluate</p>
+    {% for eva,eva_value in content.Evaluate.items() %}
+        <p class="h5">{{ eva }}</p>
+        {% for pram_name,values in eva_value.items() %}
+            <div>
+                <span class="bg-light">{{ pram_name }}</span>
+            </div>
+            <div class="container">
+                <table class="table table-striped table-hover col-md m-md-2">
+                    <header>
+                        <tr>
+                            {% for value in values %}
+                                <th>{{ value }}</th>
+                            {% endfor %}
+                        </tr>
+
+                    </header>
+                    <tbody>
+                    <tr>
+                        {% for value in values %}
+                            <td>{{ values[value] }}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        {% endfor %}
+
+    {% endfor %}
+</div>

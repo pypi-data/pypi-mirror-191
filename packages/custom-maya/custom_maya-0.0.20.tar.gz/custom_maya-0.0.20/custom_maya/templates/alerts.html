@@ -1,0 +1,9 @@
+{% for alert_obj in content.Alerts.AlertList %}
+    <div>
+        <div class="alert alert-{{ alert_obj.Class }} alert-dismissible fade show" role="alert">
+            {{ alert_obj.Message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+{% endfor %}
+

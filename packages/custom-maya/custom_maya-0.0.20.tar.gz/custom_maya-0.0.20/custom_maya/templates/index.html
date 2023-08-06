@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %}
+
+{% block header %}
+    {% include 'base/base_header.html' %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div>
+            {% if FailedFileList|length > 0 %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    Scenarios where the check fails. <br>
+                    {% for failed_file in FailedFileList %}
+                        {{ failed_file }}<br>
+                    {% endfor %}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+    <table class="table table-striped table-hover">
+        <head>
+            <tr>
+                {% for th in IndexThList %}
+                    {% if th != 'Path' %}
+                        <th>{{ th }}</th>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        </head>
+        <tbody>
+        {% for ind_eva in IndexEvaluate %}
+            <tr>
+                {% for k,value in ind_eva.items() %}
+                    {% if k == 'Path' %}
+
+                    {% elif k == 'FileName' %}
+                        <td><a href="{{ ind_eva.Path }}">{{ value }}</a></td>
+                    {% else %}
+                        <td>{{ value }}</td>
+                    {% endif %}
+
+                {% endfor %}
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+
+{% endblock %}
