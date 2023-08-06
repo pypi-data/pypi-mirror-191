@@ -1,0 +1,3 @@
+[console_scripts]
+pocket_newsletter=pocket_newsletter.main:app
+
