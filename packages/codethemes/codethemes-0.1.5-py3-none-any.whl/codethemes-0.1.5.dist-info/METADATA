@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: codethemes
+Version: 0.1.5
+Summary: Import visual studio themes as linux terminal theme profiles
+Home-page: https://github.com/saberd/codethemes
+Author: saberd
+Author-email: mail@saberd.com
+License: BSD 3-Clause License
+Keywords: vscode,theme,terminal,gnome,config
+Classifier: Topic :: Desktop Environment :: Gnome
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: json5
+Requires-Dist: dconfjson
+
+# Code Theme
+
+Import your visual studio code themes to gnome terminal profiles.
+
+usage:
+```bash
+pip install codethemes
+```
+then run codethemes command in terminal:
+```bash
+codethemes
+```
+
+Installed themes are now available under "profiles" in terminal setting
+or by right clicking in the terminal and selecting profile.
+
+Currently only works on gnome terminal
