@@ -1,0 +1,16 @@
+admin_sso/__init__.py,sha256=Rjds34NaHUG3QkVYlY0_w99RjdibxXYI7XLqa0Dox4Q,656
+admin_sso/admin.py,sha256=WM9blDxUyIy_zR0A68kLu-QP_IoNRFGjCEBGWrSJCbI,757
+admin_sso/apps.py,sha256=B96x2kpm4bRbnohfedWPftWye9tt74muujTVU1hxHCw,192
+admin_sso/auth.py,sha256=3BCEts_imnlKnZD-DjuVkfvsici0PZjDiizVf5hQ1y0,546
+admin_sso/default_settings.py,sha256=rDbvGdHiAbykGa8UnBNhIwXyR04WWvIBaBmZlHKGbzg,1071
+admin_sso/models.py,sha256=ISDA0od1C7Hx2ZephNqLxiz395fW_ncB77httMiVStw,1936
+admin_sso/views.py,sha256=FyEODiqx6SdQtwfcaOIZ1slhNu1fpu2eYkezhrwaSkw,2753
+admin_sso/migrations/0001_initial.py,sha256=oDaRPADw_Txq37OVnrXqzKTT36xpiYk7ysFlzdLxNRY,1606
+admin_sso/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+admin_sso/templates/admin_sso/login.html,sha256=hhll7mnQHtz6SEhX23x2PalSosVfvlnrI1NVlgaOyJU,218
+django_admin_sso-5.2.0.dist-info/AUTHORS,sha256=UUYbom7aUioEl9bqsLerGXJrqounE55936TlW1SAVkQ,150
+django_admin_sso-5.2.0.dist-info/LICENSE,sha256=Fau3Ww3TltAOwSiSwgerfjTY-0T_DSw5DbzJNptXdNU,1548
+django_admin_sso-5.2.0.dist-info/METADATA,sha256=Y21Dg8zPGd8xyC0rbn10_mdGqSJVGzYeTwe583cut8g,3984
+django_admin_sso-5.2.0.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+django_admin_sso-5.2.0.dist-info/top_level.txt,sha256=OXondcQuNek3J5oZ2rr8a5GcOERBc93pU45RcF49e1U,10
+django_admin_sso-5.2.0.dist-info/RECORD,,
