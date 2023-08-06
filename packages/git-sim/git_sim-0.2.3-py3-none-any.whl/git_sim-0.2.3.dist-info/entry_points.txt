@@ -1,0 +1,2 @@
+[console_scripts]
+git-sim = git_sim.__main__:app
