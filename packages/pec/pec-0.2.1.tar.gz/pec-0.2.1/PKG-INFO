@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pec
+Version: 0.2.1
+Summary: Progressive Ensemble Clustering
+Home-page: https://aware-diag-sapienza.github.io/pec
+Download-URL: https://github.com/aware-diag-sapienza/pec/archive/refs/tags/v0.2.1.tar.gz
+Author: AWARE Research Group - Sapienza Università di Roma
+Author-email: blasilli@diag.uniroma1.it
+License: GNU General Public License v3.0
+Platform: Linux
+Platform: Mac OS-X
+Platform: Solaris
+Platform: Unix
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE
