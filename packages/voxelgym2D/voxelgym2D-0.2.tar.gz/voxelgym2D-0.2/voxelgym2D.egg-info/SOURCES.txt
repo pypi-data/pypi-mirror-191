@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+voxelgym2D/__init__.py
+voxelgym2D.egg-info/PKG-INFO
+voxelgym2D.egg-info/SOURCES.txt
+voxelgym2D.egg-info/dependency_links.txt
+voxelgym2D.egg-info/requires.txt
+voxelgym2D.egg-info/top_level.txt
+voxelgym2D/envs/__init__.py
+voxelgym2D/envs/base_env.py
+voxelgym2D/envs/env_one_step.py
+voxelgym2D/envs/maps/100x100x100_dense.npy
+voxelgym2D/envs/maps/200x200x200_dense.npy
+voxelgym2D/envs/maps/50x50x50_dense.npy
