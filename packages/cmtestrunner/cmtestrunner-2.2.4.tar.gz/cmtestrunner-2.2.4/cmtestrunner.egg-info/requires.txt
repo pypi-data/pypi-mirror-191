@@ -1,0 +1,5 @@
+PyYAML==3.12
+django==2.0.6
+djangorestframework==3.8.2
+numpy>=1.14.1
+requests==2.20.1

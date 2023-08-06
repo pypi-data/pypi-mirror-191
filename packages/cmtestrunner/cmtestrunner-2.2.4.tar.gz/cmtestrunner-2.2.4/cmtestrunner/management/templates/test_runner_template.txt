@@ -1,0 +1,9 @@
+from cmtestrunner import TestRunner
+
+
+class CMTestRunner(TestRunner):
+
+    @classmethod
+    def setUpClass(self):
+        TestRunner.reset_db = None
+        TestRunner.query_executor = None
