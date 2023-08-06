@@ -1,0 +1,15 @@
+click
+pydantic>=1.8
+asyncio_dispatch
+
+[aiohttp]
+aiohttp
+
+[aiomonitor]
+aiomonitor
+
+[uvicorn]
+uvicorn
+
+[uvloop]
+uvloop
