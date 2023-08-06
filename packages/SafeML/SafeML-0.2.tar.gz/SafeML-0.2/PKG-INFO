@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: SafeML
+Version: 0.2
+Summary: Model-agnostic safety monitoring of machine learning algorithms
+Home-page: https://github.com/ISorokos/SafeML
+Author: Koorosh Aslansefat
+Author-email: k.aslansefat@hull.ac.uk
+License: MIT
+Download-URL: https://github.com/ISorokos/SafeML/archive/v1.2.tar.gz
+Description: UNKNOWN
+Keywords: aisafety,safety,trustworthyai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.10
