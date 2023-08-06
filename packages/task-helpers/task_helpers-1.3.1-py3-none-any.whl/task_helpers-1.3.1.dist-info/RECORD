@@ -1,0 +1,17 @@
+task_helpers/__init__.py,sha256=9MqaIVJSl1ki7XInZQqfPa_LzWp9h-iwr7xrJZ2I6Zw,114
+task_helpers/exceptions.py,sha256=sE5LXu2o6TfKZR4d-CL0chMB0F4pL0T0WY8ukDn8rJo,361
+task_helpers/couriers/__init__.py,sha256=VPuYLtRMY6R-0DocwZZAKiH_vh29xHHAk2CnDkwDBLg,113
+task_helpers/couriers/abstract.py,sha256=WtxxVf-3uqdUvVhxH5QNuqIc2Cf2fMo4xut3Nr3c_Oc,7610
+task_helpers/couriers/redis.py,sha256=8BS-RxYG6Y2dd61K4lN2fjzSc1c9m6U1cJH2mTwwqaM,11851
+task_helpers/workers/__init__.py,sha256=2Mk0gAmEsbur4yT3kLGerkyv_okBDDh7h6XCRMXyjbA,150
+task_helpers/workers/abstract.py,sha256=WNX9TueozWxJBIWU7ST3qjBYl2As8ecqiMEfani2dc8,1575
+task_helpers/workers/abstract_async.py,sha256=i7T26iPiV0kin8Yx9HqGX97lgphLxWB26GA5BP4XkkY,1930
+task_helpers/workers/base.py,sha256=ss9685tTqjr82o_oaMpByYnfjfY2u6tgZ9cQT_t7EOg,4652
+task_helpers/workers/base_async.py,sha256=ZIG5vd05VWF57y-Di-2HXhdbh-zLzb3iV9KUrXSMfhA,5765
+task_helpers/workers/classic.py,sha256=zGX2CdlH_lemZybEmOyynV05_QDRGoWauwp3qmGB06k,1575
+task_helpers/workers/classic_async.py,sha256=Ode3CTy83Pll28PU67cCNR3CPal5xYvUXvTd2xzWtzM,1960
+task_helpers-1.3.1.dist-info/LICENSE,sha256=aTCfcWRQHQAfsein4dpIjZ1Qon96UPT1WTr-BPaaXL0,1512
+task_helpers-1.3.1.dist-info/METADATA,sha256=zF5JOinluO4VHdrXHw4w89CxYMHE3SAXUhoyjbrxrMY,11593
+task_helpers-1.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+task_helpers-1.3.1.dist-info/top_level.txt,sha256=oPJV6kYSCopAzNZlkXu7QuHqyBTaAvh_UkkjQUg0qLw,13
+task_helpers-1.3.1.dist-info/RECORD,,
