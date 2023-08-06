@@ -1,0 +1,17 @@
+mcp2221/__init__.py,sha256=AThppYHwjbC6g2oT6ZS2DPzAxBMIvadDSrD89L7hpw8,62914
+mcp2221/enums.py,sha256=ALrIAS3I4Tmr7LMKCQuaKex8WaFizBAy0MYe8e5YU3s,5145
+mcp2221/exceptions.py,sha256=jfGhgWXq6JWivupBFvNTCKnBEQSAPbuuLcXUDDBr5MA,814
+tests/__init__.py,sha256=GZccw6w0rUw3IsY3CUlNzKttAoPxbDdoNDOn1X7eq2A,262
+tests/comm.py,sha256=Qo55zzHBQuaqGonkEg9RgKZb21ac9zyfcL3ODOuyzsQ,2109
+tests/common.py,sha256=VWbTaz3Bxv-HdE3ZfsfYzWFEtzm-q3433-yBlYgz9jI,5394
+tests/gpio.py,sha256=ApMUl3DiDAXg8aChT_63k5dc3arHiHCX-o3ZwzOyHOM,2306
+tests/i2c.py,sha256=scI_6PDyj6vcDycG7GT5TK_iL3CIesst1YiiBIBhD64,3771
+tests/memory.py,sha256=ed6c91U7_ETPLV1H33sV3S6ozUhiPjC9k26MAxPiM04,2317
+tests/misc.py,sha256=X2xhWqLKOL-aKeTQSpgFUfhL-YgR4I3tAb70r3lVg2o,1051
+tests/settings_flash.py,sha256=HMqbNDzE6PBvIRuZd__N-ycqJSKoblo1zAPPKByITVg,17603
+tests/settings_sram.py,sha256=3jwha8m56xTA8sck1Pfr6pCR2CmVOPdkLrldKEoHQYE,7067
+tests/status.py,sha256=6BPUt06NGNYSZMvJG892uBndTAn51OwoBHpXLCxf0rc,1960
+pymcp2221-1.0.4.dist-info/METADATA,sha256=PAgmLoy7bSTdURA65_rdIME2EThYAxDtiT7oc-f_qSE,2982
+pymcp2221-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pymcp2221-1.0.4.dist-info/top_level.txt,sha256=X9ErvPbKVLYrmayUASmQIqr_j4ph56VBmavxsgvC6Rc,14
+pymcp2221-1.0.4.dist-info/RECORD,,
