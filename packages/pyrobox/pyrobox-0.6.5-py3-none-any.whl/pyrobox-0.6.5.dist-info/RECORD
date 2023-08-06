@@ -1,0 +1,10 @@
+pyrobox/__init__.py,sha256=srtWEFlfnMZMmZL8lFjYK-A4KSdX1pnzvZXR5fbSu9w,71
+pyrobox/__main__.py,sha256=JBniekvhzgPVM7CLH70EYU1BskysnVuMM_q5c0euyso,40
+pyrobox/clone.py,sha256=osS-riflc5lqEiRIHBTZOmVX10zn355Azcf6g6lZ8Es,4868
+pyrobox/server.py,sha256=LiZvRQnro8ZcQFs9hS4bHlGY-vqKhkb6SEyJuvmsK5Q,127350
+pyrobox-0.6.5.dist-info/LICENSE,sha256=F2UXCrapgX8h7tUJ_KZQGd4lhiVptEsQuE_hB4JiZik,1062
+pyrobox-0.6.5.dist-info/METADATA,sha256=dgjWLe-uuzPoB5FhLfK5mUGxzo1YZ57WgLbnNhqY8sk,8466
+pyrobox-0.6.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyrobox-0.6.5.dist-info/entry_points.txt,sha256=PqO45KnWAdCdAli_c9Hpn0T244XiEJrqPjbchgKpoXg,47
+pyrobox-0.6.5.dist-info/top_level.txt,sha256=ZdJtdxAOegO7q2EE9BXnLqu3L7iTYS7m8N1PQceFl9Q,8
+pyrobox-0.6.5.dist-info/RECORD,,
