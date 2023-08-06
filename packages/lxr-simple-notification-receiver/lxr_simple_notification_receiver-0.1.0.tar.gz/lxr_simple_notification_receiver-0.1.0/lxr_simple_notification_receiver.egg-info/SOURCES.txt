@@ -1,0 +1,6 @@
+README.md
+setup.py
+lxr_simple_notification_receiver.egg-info/PKG-INFO
+lxr_simple_notification_receiver.egg-info/SOURCES.txt
+lxr_simple_notification_receiver.egg-info/dependency_links.txt
+lxr_simple_notification_receiver.egg-info/top_level.txt
