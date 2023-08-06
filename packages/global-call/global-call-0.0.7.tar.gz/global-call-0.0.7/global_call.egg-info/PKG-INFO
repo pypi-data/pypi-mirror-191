@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: global-call
+Version: 0.0.7
+Summary: A simple serverless function transformer,     and a simple way to call function in other language.
+Author: bi1lqv
+Author-email: bi1lqy.y@gmail.com
+License: MIT
+License-File: LICENSE
