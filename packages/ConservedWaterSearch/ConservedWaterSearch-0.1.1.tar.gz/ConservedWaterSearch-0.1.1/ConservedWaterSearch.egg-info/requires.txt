@@ -1,0 +1,5 @@
+hdbscan>=0.8.27
+numpy>=1.21
+scikit-learn>=1.0
+matplotlib>=3.4
+nglview>3.0.0
