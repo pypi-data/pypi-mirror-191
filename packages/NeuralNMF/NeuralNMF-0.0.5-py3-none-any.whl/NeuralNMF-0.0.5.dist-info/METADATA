@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: NeuralNMF
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: https://github.com/jvendrow/NeuralNMF
+Author: Joshua Vendrow
+Author-email: jvendrow@ucla.edu
+License: MIT
+Keywords: neural nmf
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: fnnls
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
