@@ -1,0 +1,6 @@
+setup.py
+Varnam.egg-info/PKG-INFO
+Varnam.egg-info/SOURCES.txt
+Varnam.egg-info/dependency_links.txt
+Varnam.egg-info/requires.txt
+Varnam.egg-info/top_level.txt
