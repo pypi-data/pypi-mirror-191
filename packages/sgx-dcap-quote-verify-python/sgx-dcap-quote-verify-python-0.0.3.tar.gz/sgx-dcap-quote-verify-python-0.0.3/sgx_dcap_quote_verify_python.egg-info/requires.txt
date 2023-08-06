@@ -1,0 +1,4 @@
+cbor2~=5.0
+
+[test]
+pytest>=6.0

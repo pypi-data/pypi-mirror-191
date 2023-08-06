@@ -1,0 +1,7 @@
+include README.md LICENSE pybind11/LICENSE
+include build_qvl.sh
+graft SGXDataCenterAttestationPrimitives/QuoteVerification/QVL/Src/
+graft pybind11/include
+graft pybind11/tools
+graft src
+global-include CMakeLists.txt *.cmake
