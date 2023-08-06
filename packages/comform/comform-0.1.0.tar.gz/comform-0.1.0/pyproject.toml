@@ -1,0 +1,152 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "comform"
+description = "Python Comment Conformity Formatter"
+readme = "README.md"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+authors = [
+    { name = "j-hil", email = "92876062+j-hil@users.noreply.github.com" },
+]
+keywords = ["automation", "formatter", "comments"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["version"]
+dependencies = [
+    "mdformat>=0.7.16, <1",
+    "tomli>=2, <3; python_version<'3.11'",
+    "pathspec>=0.11, <1",
+]
+
+[project.optional-dependencies]
+# maximum requirements for development
+dev = [
+    # testing
+    "pytest>=7.2, <8",
+    "coverage[toml]>=7, <8",
+    # typing
+    "mypy>=1, <2",
+    # autoformatting
+    "pre-commit>=3, <4",
+    "black>=23, <24",
+    "isort>=5.12, <6",
+    "autoflake>=2, <3",
+    "pydocstringformatter>=0.7.2, <1",
+    # linting
+    "pylint>=2.16, <3",
+    "pydocstyle[toml]>=6.3, <7",
+    "Flake8-pyproject>=1.2, <2",
+    # build and release
+    "build>=0.9.0, <1",
+    "twine>=4.0.1, <5",
+    # ipython
+    "ipykernel>=6.21, <7",
+    "ipython>=8.10, <9",
+]
+
+
+[project.urls]
+Homepage = "https://j-hil@github.com/j-hil/comform"
+
+[project.scripts]
+comform = "comform.__main__:main"
+
+[tool.hatch.version]
+path = "src/comform/version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/comform"]
+
+
+[tool.coverage.run]
+branch = true
+source = ["./src/comform"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "__debug__",
+]
+
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+exclude = "./examples/."
+
+
+[tool.pylint.basic]
+# allows short names (which are to be used with due consideration):
+argument-rgx = "(?#snake_case)^[a-z0-9]*(_[a-z0-9]+)*_?$"
+variable-rgx = "(?#snake_case)^[a-z0-9]*(_[a-z0-9]+)*_?$"
+attr-rgx = "(?#snake_case)^[a-z0-9]*(_[a-z0-9]+)*_?$"
+const-rgx = "(?#CAPITAL_CASE)^[A-Z0-9]*(_[A-Z0-9]+)*_?|__[a-z]*__$"
+class-rgx = "(?#PascalCase)^_?([A-Z][a-z]+)*[A-Z]?_?$"
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint.design]
+max-attributes = 10    # (default = 7)
+min-public-methods = 0 # (default = 2)
+max-branches = 15      # (default = 12)
+max-locals = 20        # (default = 15)
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-function-docstring", # I'll add doc strings if & when I feel it's useful
+    "missing-class-docstring",    #
+    "missing-module-docstring",   #
+    "fixme",                      # These are useful in development
+    "line-too-long",              # Let `black` handle it
+]
+
+[tool.pylint.reports]
+output-format = "colorized"
+
+
+[tool.flake8]
+# pyproject.toml support from package `Flake8-pyproject`
+extend-ignore = [
+    # code  # what; why
+    "E203", # whitespace before ':'; compatability with black
+    "E741", # ambiguous variable name 'l'; my font is unambigious
+    "E402", # module level import not at top of file; handled (better) by pylint
+    "E501", # line too long; handled by pylint
+]
+max-line-length = 88
+
+[tool.pydocstyle]
+ignore = [
+    "D1",   # Missing docstrings
+    "D213", # Multi-line docstring summary should start at the second line
+    "D203", # 1 blank line required before class docstring
+    "D202", # No blank lines allowed after function docstring
+]
+
+[tool.black]
+skip-magic-trailing-comma = true
+preview = true
+extend-exclude = 'example_.*\.py'
+
+[tool.autoflake]
+recursive = true
+remove-all-unused-imports = true
+remove-duplicate-keys = true
+remove-unused-variables = true
+in-place = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pydocstringformatter]
+write = true

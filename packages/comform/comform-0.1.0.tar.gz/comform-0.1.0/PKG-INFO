@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: comform
+Version: 0.1.0
+Summary: Python Comment Conformity Formatter
+Project-URL: Homepage, https://j-hil@github.com/j-hil/comform
+Author-email: j-hil <92876062+j-hil@users.noreply.github.com>
+License: GNU General Public License v3 (GPLv3)
+License-File: LICENSE
+Keywords: automation,comments,formatter
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: mdformat<1,>=0.7.16
+Requires-Dist: pathspec<1,>=0.11
+Requires-Dist: tomli<3,>=2; python_version < '3.11'
+Provides-Extra: dev
+Requires-Dist: autoflake<3,>=2; extra == 'dev'
+Requires-Dist: black<24,>=23; extra == 'dev'
+Requires-Dist: build<1,>=0.9.0; extra == 'dev'
+Requires-Dist: coverage[toml]<8,>=7; extra == 'dev'
+Requires-Dist: flake8-pyproject<2,>=1.2; extra == 'dev'
+Requires-Dist: ipykernel<7,>=6.21; extra == 'dev'
+Requires-Dist: ipython<9,>=8.10; extra == 'dev'
+Requires-Dist: isort<6,>=5.12; extra == 'dev'
+Requires-Dist: mypy<2,>=1; extra == 'dev'
+Requires-Dist: pre-commit<4,>=3; extra == 'dev'
+Requires-Dist: pydocstringformatter<1,>=0.7.2; extra == 'dev'
+Requires-Dist: pydocstyle[toml]<7,>=6.3; extra == 'dev'
+Requires-Dist: pylint<3,>=2.16; extra == 'dev'
+Requires-Dist: pytest<8,>=7.2; extra == 'dev'
+Requires-Dist: twine<5,>=4.0.1; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# ComForm: Python Comment Conformity Formatter
+
+[![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+
+An auto-formatter for pretty and readable comment formatting in python.
+
+WARNING: `comform` is made for my own usage so it's not been tested in a variety of
+environments. Use it on your own code at peril `;)`.
+
+Comments are formatted as markdown text using the fantastic
+[`mdformat`](https://github.com/executablebooks/mdformat) package. Treating comments as
+markdown has drawbacks, but I've found these to be outweighed.
+
+## Usage
+
+This package can be installed from PyPI as usual via `pip install comform` and is meant
+to be used as a command line tool. It can also be used as a `pre-commit` hook, but only
+with a local copy installed (known issue, see
+[here](https://github.com/j-hil/comform/issues/2)). Whichever way `comform` is used I
+recommend running `black` first; it was developed for this use-case.
+
+The command line interface is:
+
+```ps1
+comform [-h] [--version] [--check] [--align] [--dividers] [--wrap N] paths [paths ...]
+```
+
+and inputs can also be configured in `pyproject.toml`:
+
+```toml
+[tool.comform]
+# these are the default values:
+check = false
+align = false
+dividers = false
+wrap = 88
+```
+
+`check`, `align` and `dividers` work if they are set in the CLI **or** the config. If
+`wrap` is set in both then the CLI takes priority.
+
+## Development
+
+Too see my development process see [development.md](./docs/development.md).

@@ -1,0 +1,15 @@
+# tooling
+.venv/
+.mypy_cache/
+htmlcov/
+.coverage
+
+# ide generated
+.vscode/
+
+# build related files
+dist/
+*.egg-info/
+
+# python generated
+__pycache__

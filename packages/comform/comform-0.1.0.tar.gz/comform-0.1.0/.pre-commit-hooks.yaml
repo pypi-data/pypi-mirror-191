@@ -1,0 +1,6 @@
+- id: comform
+  name: comform
+  description: "Python Comment Conformity Formatter"
+  entry: comform
+  language: python
+  types_or: [python, pyi]
