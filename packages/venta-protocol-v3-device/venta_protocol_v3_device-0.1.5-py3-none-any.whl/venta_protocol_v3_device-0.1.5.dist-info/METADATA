@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: venta-protocol-v3-device
+Version: 0.1.5
+Summary: Control Venta Air Humidifiers that use Protocol Version 3
+Home-page: https://github.com/bobiboy/venta_protocol_v3_device
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: func-timeout
+
+Library to control Venta Air Humidifiers that use Protol Version 3 (via REST API on Port 80) 
+
+
+
+Example usage:
+
+``` { .py }
+
+from venta_protocol_v3_device import Venta_Protocol_v3_Device
+
+
+
+d = Venta_Protocol_v3_Device("192.168.178.87")
+
+d.getStatus()
+
+
+
+print(d.toJSON())
+
+```
