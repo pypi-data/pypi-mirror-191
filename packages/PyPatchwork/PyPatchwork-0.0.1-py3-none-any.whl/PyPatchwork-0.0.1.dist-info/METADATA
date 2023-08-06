@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: PyPatchwork
+Version: 0.0.1
+Summary: A Python library to access the Patchwork REST API.
+Home-page: https://github.com/tedd-an/PyPatchwork
+Author: Tedd Ho-Jeong An
+Author-email: hj.tedd.an@gmail.com
+License: GPL version 3
+Project-URL: Documentation, https://pypatchwork.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/tedd-an/PyPatchwork
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development
+Classifier: Topic :: Communications :: Email :: Mailing List Servers
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.14.0)
+
+README.md
