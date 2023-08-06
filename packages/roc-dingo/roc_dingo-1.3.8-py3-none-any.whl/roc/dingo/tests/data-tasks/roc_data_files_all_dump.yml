@@ -1,0 +1,1815 @@
+SOLO_CAL_RPW-TDS-LFM-CWF-B_V20200512000000.cdf:
+  author: ''
+  basename: SOLO_CAL_RPW-TDS-LFM-CWF-B_V20200512000000.cdf
+  product: SOLO_CAL_RPW-TDS-LFM-CWF-B
+  creation_time: '2020-06-30T13:18:45'
+  dataset_id: null
+  descr: ''
+  dirname: CAL
+  end_time: null
+  error_log: 'Start time seems to be erroneous : -4713-11-24 12:00:00.000000000;
+    End time seems to be erroneous : -4713-11-24 12:00:00.000000000;
+    Dataset_ID: NO_SUCH_ATTR: Named attribute not found in this CDF.;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: CAL
+  parents: []
+  sha: ''
+  size: 33942
+  start_time: null
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//CAL/SOLO_CAL_RPW-TDS-LFM-CWF-B_V20200512000000.cdf
+  validity_end: null
+  validity_start: null
+  version: '20200512000000'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L0_rpw-cdag_20200819_V07.h5:
+  author: ''
+  basename: solo_L0_rpw-cdag_20200819_V07.h5
+  product: solo_L0_rpw-cdag_20200819
+  creation_time: '2020-10-09T22:11:06'
+  dataset_id: SOLO_L0_RPW
+  descr: ''
+  dirname: L0/2020/08/19
+  end_time: '2020-08-20T00:00:27.541021'
+  error_log: 'Missing parents : solo_TM_rpw-hk_20200819_V04.xml, solo_TM_rpw-ll_20200819_V03.xml,
+    solo_TM_rpw-oth_20200819_V03.xml, solo_TM_rpw-ev_20200819_V04.xml, solo_TM_rpw-sci_20200819_V03.xml,
+    solo_TC_rpw_20200819_V08.xml, solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L0
+  parents: []
+  sha: ''
+  size: 171479112
+  start_time: '2020-08-19T09:00:21.671640'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L0/2020/08/19/solo_L0_rpw-cdag_20200819_V07.h5
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-bia_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-bia_20200819_V06.cdf
+  product: solo_HK_rpw-bia_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-BIA
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:34.701156'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 393890
+  start_time: '2020-08-19T09:04:35.899811'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-bia_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-das-statistics_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-das-statistics_20200819_V06.cdf
+  product: solo_HK_rpw-das-statistics_20200819
+  creation_time: '2020-10-10T09:13:33'
+  dataset_id: SOLO_HK_RPW-DAS-STATISTICS
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:29.702551'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 4477425
+  start_time: '2020-08-19T09:02:30.901093'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-das-statistics_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-das_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-das_20200819_V06.cdf
+  product: solo_HK_rpw-das_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-DAS
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:00:39.702420'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 2037222
+  start_time: '2020-08-19T09:02:21.151558'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-das_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-lfr_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-lfr_20200819_V06.cdf
+  product: solo_HK_rpw-lfr_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-LFR
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:30.736382'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 1135352
+  start_time: '2020-08-19T09:03:32.714115'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-lfr_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-pdu_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-pdu_20200819_V06.cdf
+  product: solo_HK_rpw-pdu_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-PDU
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:36.701185'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 6107558
+  start_time: '2020-08-19T09:02:31.902938'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-pdu_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-tds_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-tds_20200819_V06.cdf
+  product: solo_HK_rpw-tds_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-TDS
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:32.433415'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 1077631
+  start_time: '2020-08-19T09:03:33.024554'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-tds_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_HK_rpw-thr_20200819_V06.cdf:
+  author: ''
+  basename: solo_HK_rpw-thr_20200819_V06.cdf
+  product: solo_HK_rpw-thr_20200819
+  creation_time: '2020-10-10T09:13:32'
+  dataset_id: SOLO_HK_RPW-THR
+  descr: ''
+  dirname: HK/2020/08/19
+  end_time: '2020-08-20T00:01:32.983121'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: HK
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 959176
+  start_time: '2020-08-19T09:04:34.116075'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//HK/2020/08/19/solo_HK_rpw-thr_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V07.cdf
+  product: solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819
+  creation_time: '2020-10-12T06:53:48'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-CWF-B
+  descr: ''
+  dirname: L1R/2020/08/19/former_versions
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 53000085
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/former_versions/solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V08.cdf
+  product: solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819
+  creation_time: '2020-10-13T09:18:49'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-CWF-B
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 53000100
+  start_time: '2020-08-19T09:45:27.466317'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-lfr-surv-cwf-b-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V07.cdf
+  product: solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819
+  creation_time: '2020-10-12T06:53:47'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-CWF-E
+  descr: ''
+  dirname: L1R/2020/08/19/former_versions
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 53001622
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/former_versions/solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V08.cdf
+  product: solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819
+  creation_time: '2020-10-13T09:18:48'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-CWF-E
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 53001611
+  start_time: '2020-08-19T09:45:27.466317'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V07.cdf
+  product: solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819
+  creation_time: '2020-10-12T06:53:51'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-SWF-B
+  descr: ''
+  dirname: L1R/2020/08/19/former_versions
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 6335910
+  start_time: '2020-08-19T09:50:23.486196'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/former_versions/solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V08.cdf
+  product: solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819
+  creation_time: '2020-10-13T09:18:52'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-SWF-B
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: 'Versions in filename and attributes do not match;
+   SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 6335925
+  start_time: '2020-08-19T09:50:23.486196'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-lfr-surv-swf-b-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V07.cdf
+  product: solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819
+  creation_time: '2020-10-12T06:53:50'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-SWF-E
+  descr: ''
+  dirname: L1R/2020/08/19/former_versions
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 6337545
+  start_time: '2020-08-19T09:50:23.486196'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/former_versions/solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V08.cdf
+  product: solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819
+  creation_time: '2020-10-13T09:18:52'
+  dataset_id: SOLO_L1R_RPW-LFR-SURV-SWF-E
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 6337470
+  start_time: '2020-08-19T09:50:23.486196'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-tds-surv-rswf-b-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L1R_rpw-tds-surv-rswf-b-cdag_20200819_V10.cdf
+  product: solo_L1R_rpw-tds-surv-rswf-b-cdag_20200819
+  creation_time: '2020-10-12T06:54:08'
+  dataset_id: SOLO_L1R_RPW-TDS-SURV-RSWF-B
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:50:27.561061'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-tds-surv-rswf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 11091561
+  start_time: '2020-08-19T09:55:27.481569'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-tds-surv-rswf-b-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1R_rpw-tds-surv-tswf-b-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L1R_rpw-tds-surv-tswf-b-cdag_20200819_V10.cdf
+  product: solo_L1R_rpw-tds-surv-tswf-b-cdag_20200819
+  creation_time: '2020-10-12T06:54:18'
+  dataset_id: SOLO_L1R_RPW-TDS-SURV-TSWF-B
+  descr: ''
+  dirname: L1R/2020/08/19
+  end_time: '2020-08-19T23:12:16.533979'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1R
+  parents:
+  - solo_L1_rpw-tds-surv-tswf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 5868006
+  start_time: '2020-08-19T09:46:21.457253'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1R/2020/08/19/solo_L1R_rpw-tds-surv-tswf-b-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V01.cdf:
+  author: ''
+  basename: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V01.cdf
+  product: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327
+  creation_time: '2020-08-20T12:48:34'
+  dataset_id: SOLO_L1_RPW-BIA-SWEEP
+  descr: ''
+  dirname: BIA/2020/08/former_versions
+  end_time: '2020-08-19T12:03:27'
+  error_log: 'Formatting date error for time_min in solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V01.cdf
+    : could not convert string to float: 2020-08-19T12:00:15.514877Z (2020-08-19T12:00:15.514877Z);
+    Formatting date error for time_max in solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V01.cdf
+    : could not convert string to float: 2020-08-19T12:03:27.510467Z (2020-08-19T12:03:27.510467Z);
+    Start time seems to be erroneous : 1900-01-01 00:00:00.000; End time seems to
+    be erroneous : 1900-01-01 00:00:00.000; Missing parents : solo_L0_rpw-cdag_20200819_V02.h5,
+    solo_ANC_rpw-bia-sweep-table_20200211-20200820_V02.csv, solo_ANC_soc-sclk_20200817_V01.tsc'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: BIA
+  parents: []
+  sha: ''
+  size: 369760
+  start_time: '2020-08-19T12:00:15'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//BIA/2020/08/former_versions/solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V02.cdf:
+  author: ''
+  basename: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V02.cdf
+  product: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327
+  creation_time: '2020-09-05T10:31:46'
+  dataset_id: SOLO_L1_RPW-BIA-SWEEP
+  descr: ''
+  dirname: BIA/2020/08/former_versions
+  end_time: '2020-08-19T12:03:27'
+  error_log: 'Formatting date error for time_min in solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V02.cdf
+    : could not convert string to float: 2020-08-19T12:00:15.514877Z (2020-08-19T12:00:15.514877Z);
+    Formatting date error for time_max in solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V02.cdf
+    : could not convert string to float: 2020-08-19T12:03:27.510467Z (2020-08-19T12:03:27.510467Z);
+    Start time seems to be erroneous : 1900-01-01 00:00:00.000;
+    End time seems to be erroneous : 1900-01-01 00:00:00.000;
+    Missing parents : solo_L0_rpw-cdag_20200819_V05.h5,
+    solo_ANC_rpw-bia-sweep-table_20200211-20200904_V01.csv, solo_ANC_soc-sclk_20200904_V01.tsc'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: BIA
+  parents: []
+  sha: ''
+  size: 369878
+  start_time: '2020-08-19T12:00:15'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//BIA/2020/08/former_versions/solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V02.cdf
+  validity_end: null
+  validity_start: null
+  version: '02'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V03.cdf:
+  author: ''
+  basename: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V03.cdf
+  product: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327
+  creation_time: '2020-09-15T13:34:32'
+  dataset_id: SOLO_L1_RPW-BIA-SWEEP
+  descr: ''
+  dirname: BIA/2020/08/former_versions
+  end_time: '2020-08-19T12:04:11.600285'
+  error_log: 'Missing parents : solo_L0_rpw-cdag_20200819_V05.h5, solo_ANC_rpw-bia-sweep-table_20200211-20200915_V03.csv,
+    solo_ANC_soc-sclk_20200904_V01.tsc'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: BIA
+  parents: []
+  sha: ''
+  size: 369309
+  start_time: '2020-08-19T12:01:24.725028'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//BIA/2020/08/former_versions/solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V03.cdf
+  validity_end: null
+  validity_start: null
+  version: '03'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V04.cdf:
+  author: ''
+  basename: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V04.cdf
+  product: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327
+  creation_time: '2020-09-18T13:46:32'
+  dataset_id: SOLO_L1_RPW-BIA-SWEEP
+  descr: ''
+  dirname: BIA/2020/08/former_versions
+  end_time: '2020-08-19T12:04:11.600285'
+  error_log: 'Missing parents : solo_L0_rpw-cdag_20200819_V05.h5, solo_ANC_rpw-bia-sweep-table_20200211-20200915_V03.csv,
+    solo_ANC_soc-sclk_20200910_V03.tsc'
+  is_archived: false
+  is_latest: false
+  is_removed: false
+  level: BIA
+  parents: []
+  sha: ''
+  size: 369309
+  start_time: '2020-08-19T12:01:24.725028'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//BIA/2020/08/former_versions/solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V04.cdf
+  validity_end: null
+  validity_start: null
+  version: '04'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V05.cdf:
+  author: ''
+  basename: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V05.cdf
+  product: solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327
+  creation_time: '2020-10-10T18:08:39'
+  dataset_id: SOLO_L1_RPW-BIA-SWEEP
+  descr: ''
+  dirname: BIA/2020/08
+  end_time: '2020-08-19T12:04:11.600285'
+  error_log: 'Missing parents : solo_ANC_rpw-bia-sweep-table_20200211-20201008_V04.csv,
+    solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: BIA
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 369265
+  start_time: '2020-08-19T12:01:24.725028'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//BIA/2020/08/solo_L1_rpw-bia-sweep-cdag_20200819T120015-20200819T120327_V05.cdf
+  validity_end: null
+  validity_start: null
+  version: '05'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-hfr-surv-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-hfr-surv-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-hfr-surv-cdag_20200819
+  creation_time: '2020-10-10T14:59:53'
+  dataset_id: SOLO_L1_RPW-HFR-SURV
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:59:33.155849'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 17253178
+  start_time: '2020-08-19T09:47:12.726417'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-hfr-surv-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-lfr-surv-asm-cdag_20200819_V06.cdf:
+  author: ''
+  basename: solo_L1_rpw-lfr-surv-asm-cdag_20200819_V06.cdf
+  product: solo_L1_rpw-lfr-surv-asm-cdag_20200819
+  creation_time: '2020-10-10T14:59:51'
+  dataset_id: SOLO_L1_RPW-LFR-SURV-ASM
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:41:32.535156'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 741213
+  start_time: '2020-08-19T10:46:32.610227'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-lfr-surv-asm-cdag_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-lfr-surv-bp1-cdag_20200819
+  creation_time: '2020-10-10T14:59:50'
+  dataset_id: SOLO_L1_RPW-LFR-SURV-BP1
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-20T00:01:32.517141'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 53712274
+  start_time: '2020-08-19T09:46:36.672419'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-lfr-surv-bp2-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-lfr-surv-bp2-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-lfr-surv-bp2-cdag_20200819
+  creation_time: '2020-10-10T14:59:53'
+  dataset_id: SOLO_L1_RPW-LFR-SURV-BP2
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-20T00:01:32.517141'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 24841447
+  start_time: '2020-08-19T09:46:52.672171'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-lfr-surv-bp2-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-lfr-surv-cwf-cdag_20200819
+  creation_time: '2020-10-10T14:59:55'
+  dataset_id: SOLO_L1_RPW-LFR-SURV-CWF
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:59:12.400258'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 56849414
+  start_time: '2020-08-19T09:46:36.650331'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-lfr-surv-cwf-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-lfr-surv-swf-cdag_20200819
+  creation_time: '2020-10-10T14:59:52'
+  dataset_id: SOLO_L1_RPW-LFR-SURV-SWF
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:56:36.704583'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 12410397
+  start_time: '2020-08-19T09:51:32.670210'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-lfr-surv-swf-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-hist1d-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-hist1d-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-tds-surv-hist1d-cdag_20200819
+  creation_time: '2020-10-10T14:59:46'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-HIST1D
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:41:36.720690'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 387824
+  start_time: '2020-08-19T09:46:36.678132'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-hist1d-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-hist2d-cdag_20200819_V06.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-hist2d-cdag_20200819_V06.cdf
+  product: solo_L1_rpw-tds-surv-hist2d-cdag_20200819
+  creation_time: '2020-10-10T14:59:51'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-HIST2D
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:11:36.717820'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 1933841
+  start_time: '2020-08-19T09:46:37.641192'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-hist2d-cdag_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-mamp-cdag_20200819_V06.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-mamp-cdag_20200819_V06.cdf
+  product: solo_L1_rpw-tds-surv-mamp-cdag_20200819
+  creation_time: '2020-10-10T14:59:51'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-MAMP
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T19:41:27.695767'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 1439280
+  start_time: '2020-08-19T19:31:11.728116'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-mamp-cdag_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-rswf-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-rswf-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-tds-surv-rswf-cdag_20200819
+  creation_time: '2020-10-10T14:59:48'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-RSWF
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:51:36.745075'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 43708495
+  start_time: '2020-08-19T09:56:36.665584'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-rswf-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-stat-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-stat-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-tds-surv-stat-cdag_20200819
+  creation_time: '2020-10-10T14:59:51'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-STAT
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-20T00:01:12.722559'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 366952
+  start_time: '2020-08-19T09:46:44.641195'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-stat-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tds-surv-tswf-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-tds-surv-tswf-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-tds-surv-tswf-cdag_20200819
+  creation_time: '2020-10-10T14:59:51'
+  dataset_id: SOLO_L1_RPW-TDS-SURV-TSWF
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-19T23:13:25.717993'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 45300736
+  start_time: '2020-08-19T09:47:30.641267'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tds-surv-tswf-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L1_rpw-tnr-surv-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L1_rpw-tnr-surv-cdag_20200819_V07.cdf
+  product: solo_L1_rpw-tnr-surv-cdag_20200819
+  creation_time: '2020-10-10T14:59:55'
+  dataset_id: SOLO_L1_RPW-TNR-SURV
+  descr: ''
+  dirname: L1/2020/08/19
+  end_time: '2020-08-20T13:53:36.342670'
+  error_log: 'Missing parents : solo_ANC_soc-sclk_20200922_V01.tsc'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L1
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 5740972
+  start_time: '2020-08-19T09:46:37.690277'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L1/2020/08/19/solo_L1_rpw-tnr-surv-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-hfr-surv-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L2_rpw-hfr-surv-cdag_20200819_V08.cdf
+  product: solo_L2_rpw-hfr-surv-cdag_20200819
+  creation_time: '2020-10-13T07:11:17'
+  dataset_id: SOLO_L2_RPW-HFR-SURV
+  descr: ''
+  dirname: L2/thr/2020/08
+  end_time: '2020-08-19T09:46:03.542403'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 19330862
+  start_time: '2020-08-19T23:58:23.971834'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/thr/2020/08/solo_L2_rpw-hfr-surv-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-asm-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-asm-cdag_20200819_V08.cdf
+  product: solo_L2_rpw-lfr-surv-asm-cdag_20200819
+  creation_time: '2020-10-13T09:08:53'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-ASM
+  descr: ''
+  dirname: L2/lfr_asm/2020/08
+  end_time: '2020-08-19T23:40:23.351142'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.;
+    Missing parents : SOLO_CAL_RCT-LFR-SCM_V20190123171020.cdf, SOLO_CAL_RCT-LFR-BIAS_V20190123171020.cdf,
+    SOLO_CAL_RCT-LFR-VHF_V20200720165743.cdf, SOLO_CAL_RCT-SCM_RPW_SCM-FM-MEB-PFM_V20190519120000.cdf,
+    SOLO_CAL_RPW_BIAS_V202003101607.cdf, SOLO_CAL_RPW-HF-PREAMP_V20200624000000.cdf'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_HK_rpw-bia_20200819_V06.cdf
+  - solo_HK_rpw-lfr_20200819_V06.cdf
+  - solo_L1_rpw-lfr-surv-asm-cdag_20200819_V06.cdf
+  sha: ''
+  size: 1026395
+  start_time: '2020-08-19T10:45:23.426253'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_asm/2020/08/solo_L2_rpw-lfr-surv-asm-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf
+  product: solo_L2_rpw-lfr-surv-bp1-cdag_20200819
+  creation_time: '2020-10-13T09:17:18'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-BP1
+  descr: ''
+  dirname: L2/lfr_bp/2020/08
+  end_time: '2020-08-20T00:00:23.333167'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.; Missing
+    parents : SOLO_CAL_RCT-LFR-SCM_V20190123171020.cdf, SOLO_CAL_RCT-LFR-BIAS_V20190123171020.cdf,
+    SOLO_CAL_RCT-LFR-VHF_V20200720165743.cdf, SOLO_CAL_RCT-SCM_RPW_SCM-FM-MEB-PFM_V20190519120000.cdf,
+    SOLO_CAL_RPW_BIAS_V202003101607.cdf, SOLO_CAL_RPW-HF-PREAMP_V20200624000000.cdf'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_HK_rpw-bia_20200819_V06.cdf
+  - solo_HK_rpw-lfr_20200819_V06.cdf
+  - solo_L1_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf
+  sha: ''
+  size: 28033964
+  start_time: '2020-08-19T09:45:27.488445'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_bp/2020/08/solo_L2_rpw-lfr-surv-bp1-cdag_20200819_V07.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-bp2-cdag_20200819_V06.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-bp2-cdag_20200819_V06.cdf
+  product: solo_L2_rpw-lfr-surv-bp2-cdag_20200819
+  creation_time: '2020-10-15T13:25:39'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-BP2
+  descr: ''
+  dirname: L2/lfr_bp/2020/08
+  end_time: '2020-08-20T00:00:23.333167'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.;
+    Missing parents : SOLO_CAL_RCT-LFR-SCM_V20190123171020.cdf, SOLO_CAL_RCT-LFR-BIAS_V20190123171020.cdf,
+    SOLO_CAL_RCT-LFR-VHF_V20200720165743.cdf, SOLO_CAL_RCT-SCM_RPW_SCM-FM-MEB-PFM_V20190519120000.cdf,
+    SOLO_CAL_RPW_BIAS_V202003101607.cdf, SOLO_CAL_RPW-HF-PREAMP_V20200624000000.cdf'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_HK_rpw-bia_20200819_V06.cdf
+  - solo_HK_rpw-lfr_20200819_V06.cdf
+  - solo_L1_rpw-lfr-surv-bp2-cdag_20200819_V07.cdf
+  sha: ''
+  size: 39228950
+  start_time: '2020-08-19T09:45:43.488157'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_bp/2020/08/solo_L2_rpw-lfr-surv-bp2-cdag_20200819_V06.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-cwf-b-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-cwf-b-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-lfr-surv-cwf-b-cdag_20200819
+  creation_time: '2020-10-13T09:19:08'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-CWF-B
+  descr: ''
+  dirname: L2/lfr_wf_b/2020/08
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: ''
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V08.cdf
+  sha: ''
+  size: 44418889
+  start_time: '2020-08-19T09:45:27.466317'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_wf_b/2020/08/solo_L2_rpw-lfr-surv-cwf-b-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '10'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  product: solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819
+  creation_time: '2020-10-13T09:21:30'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-CWF-E
+  descr: ''
+  dirname: L2/lfr_wf_e/2020/08
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'No version in attributes;
+    Missing parents : solo_L1_rpw-bia-current-cdag_20200801-20200831_V24.cdf,
+    solo_L1_rpw-bia-current-cdag_20200801-20200831_V24.h5'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_HK_rpw-bia_20200819_V06.cdf
+  - solo_L1R_rpw-lfr-surv-cwf-e-cdag_20200819_V08.cdf
+  sha: ''
+  size: 71270422
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_wf_e/2020/08/solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  validity_end: null
+  validity_start: null
+  version: '09'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-swf-b-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-swf-b-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-lfr-surv-swf-b-cdag_20200819
+  creation_time: '2020-10-13T09:21:42'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-SWF-B
+  descr: ''
+  dirname: L2/lfr_wf_b/2020/08
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: ''
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V08.cdf
+  sha: ''
+  size: 24475275
+  start_time: '2020-08-19T09:50:23.486196'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_wf_b/2020/08/solo_L2_rpw-lfr-surv-swf-b-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '10'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-lfr-surv-swf-e-cdag_20200819_V09.cdf:
+  author: ''
+  basename: solo_L2_rpw-lfr-surv-swf-e-cdag_20200819_V09.cdf
+  product: solo_L2_rpw-lfr-surv-swf-e-cdag_20200819
+  creation_time: '2020-10-13T09:23:28'
+  dataset_id: SOLO_L2_RPW-LFR-SURV-SWF-E
+  descr: ''
+  dirname: L2/lfr_wf_e/2020/08
+  end_time: '2020-08-19T23:55:27.520609'
+  error_log: 'No version in attributes;
+    Missing parents : solo_L1_rpw-bia-current-cdag_20200801-20200831_V24.cdf,
+    solo_L1_rpw-bia-current-cdag_20200801-20200831_V24.h5'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_HK_rpw-bia_20200819_V06.cdf
+  - solo_L1R_rpw-lfr-surv-swf-e-cdag_20200819_V08.cdf
+  sha: ''
+  size: 44747281
+  start_time: '2020-08-19T09:50:23.486196'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/lfr_wf_e/2020/08/solo_L2_rpw-lfr-surv-swf-e-cdag_20200819_V09.cdf
+  validity_end: null
+  validity_start: null
+  version: '09'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-hist1d-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-hist1d-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-tds-surv-hist1d-cdag_20200819
+  creation_time: '2020-10-12T06:53:53'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-HIST1D
+  descr: ''
+  dirname: L2/tds_hist1d/2020/08
+  end_time: '2020-08-19T23:40:27.536675'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-hist1d-cdag_20200819_V07.cdf
+  sha: ''
+  size: 727638
+  start_time: '2020-08-19T09:45:27.494158'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_hist1d/2020/08/solo_L2_rpw-tds-surv-hist1d-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-hist2d-cdag_20200819_V09.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-hist2d-cdag_20200819_V09.cdf
+  product: solo_L2_rpw-tds-surv-hist2d-cdag_20200819
+  creation_time: '2020-10-12T06:53:54'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-HIST2D
+  descr: ''
+  dirname: L2/tds_hist2d/2020/08
+  end_time: '2020-08-19T23:10:27.533805'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-hist2d-cdag_20200819_V06.cdf
+  sha: ''
+  size: 1979170
+  start_time: '2020-08-19T09:45:28.457178'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_hist2d/2020/08/solo_L2_rpw-tds-surv-hist2d-cdag_20200819_V09.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-mamp-cdag_20200819_V09.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-mamp-cdag_20200819_V09.cdf
+  product: solo_L2_rpw-tds-surv-mamp-cdag_20200819
+  creation_time: '2020-10-12T06:53:55'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-MAMP
+  descr: ''
+  dirname: L2/tds_mamp/2020/08
+  end_time: '2020-08-19T19:40:18.511753'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-mamp-cdag_20200819_V06.cdf
+  sha: ''
+  size: 2180429
+  start_time: '2020-08-19T19:30:02.544102'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_mamp/2020/08/solo_L2_rpw-tds-surv-mamp-cdag_20200819_V09.cdf
+  validity_end: null
+  validity_start: null
+  version: '06'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-rswf-b-cdag_20200819_V12.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-rswf-b-cdag_20200819_V12.cdf
+  product: solo_L2_rpw-tds-surv-rswf-b-cdag_20200819
+  creation_time: '2020-10-12T06:59:50'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-RSWF-B
+  descr: ''
+  dirname: L2/tds_wf_b/2020/08
+  end_time: '2020-08-19T23:50:27.561061'
+  error_log: ''
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1R_rpw-tds-surv-rswf-b-cdag_20200819_V10.cdf
+  sha: ''
+  size: 21872911
+  start_time: '2020-08-19T09:55:27.481569'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_wf_b/2020/08/solo_L2_rpw-tds-surv-rswf-b-cdag_20200819_V12.cdf
+  validity_end: null
+  validity_start: null
+  version: '12'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-rswf-e-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-rswf-e-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-tds-surv-rswf-e-cdag_20200819
+  creation_time: '2020-10-12T06:54:08'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-RSWF-E
+  descr: ''
+  dirname: L2/tds_wf_e/2020/08
+  end_time: '2020-08-19T23:50:27.561061'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-rswf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 174277074
+  start_time: '2020-08-19T09:55:27.481569'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_wf_e/2020/08/solo_L2_rpw-tds-surv-rswf-e-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-stat-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-stat-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-tds-surv-stat-cdag_20200819
+  creation_time: '2020-10-13T07:11:20'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-STAT
+  descr: ''
+  dirname: L2/tds_stat/2020/08
+  end_time: '2020-08-20T00:00:03.538544'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-stat-cdag_20200819_V07.cdf
+  sha: ''
+  size: 409303
+  start_time: '2020-08-19T09:45:35.457180'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_stat/2020/08/solo_L2_rpw-tds-surv-stat-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-tswf-b-cdag_20200819_V12.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-tswf-b-cdag_20200819_V12.cdf
+  product: solo_L2_rpw-tds-surv-tswf-b-cdag_20200819
+  creation_time: '2020-10-12T06:59:54'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-TSWF-B
+  descr: ''
+  dirname: L2/tds_wf_b/2020/08
+  end_time: '2020-08-19T23:12:16.533979'
+  error_log: ''
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1R_rpw-tds-surv-tswf-b-cdag_20200819_V10.cdf
+  sha: ''
+  size: 11387163
+  start_time: '2020-08-19T09:46:21.457253'
+  state: OK
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_wf_b/2020/08/solo_L2_rpw-tds-surv-tswf-b-cdag_20200819_V12.cdf
+  validity_end: null
+  validity_start: null
+  version: '12'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tds-surv-tswf-e-cdag_20200819_V10.cdf:
+  author: ''
+  basename: solo_L2_rpw-tds-surv-tswf-e-cdag_20200819_V10.cdf
+  product: solo_L2_rpw-tds-surv-tswf-e-cdag_20200819
+  creation_time: '2020-10-12T06:54:18'
+  dataset_id: SOLO_L2_RPW-TDS-SURV-TSWF-E
+  descr: ''
+  dirname: L2/tds_wf_e/2020/08
+  end_time: '2020-08-19T23:12:16.533979'
+  error_log: 'Versions in filename and attributes do not match'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L1_rpw-tds-surv-tswf-cdag_20200819_V07.cdf
+  sha: ''
+  size: 90410155
+  start_time: '2020-08-19T09:46:21.457253'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/tds_wf_e/2020/08/solo_L2_rpw-tds-surv-tswf-e-cdag_20200819_V10.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-tnr-surv-cdag_20200819_V08.cdf:
+  author: ''
+  basename: solo_L2_rpw-tnr-surv-cdag_20200819_V08.cdf
+  product: solo_L2_rpw-tnr-surv-cdag_20200819
+  creation_time: '2020-10-13T07:11:59'
+  dataset_id: SOLO_L2_RPW-TNR-SURV
+  descr: ''
+  dirname: L2/thr/2020/08
+  end_time: '2020-08-19T09:45:28.506303'
+  error_log: 'Versions in filename and attributes do not match;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents:
+  - solo_L0_rpw-cdag_20200819_V07.h5
+  sha: ''
+  size: 38898965
+  start_time: '2020-08-19T23:59:41.516616'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/thr/2020/08/solo_L2_rpw-tnr-surv-cdag_20200819_V08.cdf
+  validity_end: null
+  validity_start: null
+  version: '07'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-density-10-seconds-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-density-10-seconds-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-density-10-seconds-cdag_20200819
+  creation_time: '2021-02-01T14:48:46'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-DENSITY-10-SECONDS
+  descr: ''
+  dirname: L3/lfr_density/2020/08
+  end_time: '2020-08-19T23:58:00.000007'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 197946
+  start_time: '2020-08-19T09:45:29.999998'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_density/2020/08/solo_L3_rpw-bia-density-10-seconds-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-density-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-density-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-density-cdag_20200819
+  creation_time: '2021-02-01T15:16:37'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-DENSITY
+  descr: ''
+  dirname: L3/lfr_density/2020/08
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 24102037
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_density/2020/08/solo_L3_rpw-bia-density-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-efield-10-seconds-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-efield-10-seconds-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-efield-10-seconds-cdag_20200819
+  creation_time: '2021-02-01T14:48:47'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-EFIELD-10-SECONDS
+  descr: ''
+  dirname: L3/lfr_efield/2020/08
+  end_time: '2020-08-19T23:58:00.000007'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 281406
+  start_time: '2020-08-19T09:45:29.999998'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_efield/2020/08/solo_L3_rpw-bia-efield-10-seconds-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-efield-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-efield-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-efield-cdag_20200819
+  creation_time: '2021-02-01T15:17:40'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-EFIELD
+  descr: ''
+  dirname: L3/lfr_efield/2020/08
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 31801198
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_efield/2020/08/solo_L3_rpw-bia-efield-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-scpot-10-seconds-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-scpot-10-seconds-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-scpot-10-seconds-cdag_20200819
+  creation_time: '2021-02-01T15:04:45'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-SCPOT-10-SECONDS
+  descr: ''
+  dirname: L3/lfr_scpot/2020/08
+  end_time: '2020-08-19T23:58:00.000007'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 242177
+  start_time: '2020-08-19T09:45:29.999998'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_scpot/2020/08/solo_L3_rpw-bia-scpot-10-seconds-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L3_rpw-bia-scpot-cdag_20200819_V01.cdf:
+  author: ''
+  basename: solo_L3_rpw-bia-scpot-cdag_20200819_V01.cdf
+  product: solo_L3_rpw-bia-scpot-cdag_20200819
+  creation_time: '2021-02-01T14:49:57'
+  dataset_id: SOLO_L3_RPW-LFR-BIA-SCPOT
+  descr: ''
+  dirname: L3/lfr_scpot/2020/08
+  end_time: '2020-08-19T23:58:03.216284'
+  error_log: 'SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L3
+  parents:
+  - solo_L2_rpw-lfr-surv-cwf-e-cdag_20200819_V09.cdf
+  sha: ''
+  size: 27952799
+  start_time: '2020-08-19T09:45:27.466317'
+  state: WARNING
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L3/lfr_scpot/2020/08/solo_L3_rpw-bia-scpot-cdag_20200819_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
+solo_L2_rpw-hfr-surv-cdag_20211110_V01.cdf:
+  author: ''
+  basename: solo_L2_rpw-hfr-surv-cdag_20211110_V01.cdf
+  product: solo_L2_rpw-hfr-surv-cdag_20211110
+  creation_time: '2021-12-01T13:27:00'
+  dataset_id: SOLO_L2_RPW-HFR-SURV
+  descr: ''
+  dirname: L2/thr/2021/11
+  end_time: '2021-11-11T00:00:00'
+  error_log: 'Start time seems to be erroneous : 10000-01-01 00:00:00.000000000;
+    End time seems to be erroneous : 10000-01-01 00:00:00.000000000;
+    SPICE_KERNELS: NO_SUCH_ATTR: Named attribute not found in this CDF.;
+    Missing parents : solo_L0_rpw_20211110_V01.cdf, solo_L0_rpw_20211110_V01.h5'
+  is_archived: false
+  is_latest: true
+  is_removed: false
+  level: L2
+  parents: []
+  sha: ''
+  size: 265763
+  start_time: '2021-11-10T00:00:00'
+  state: ERROR
+  status: Terminated
+  url: https://rpw.lesia.obspm.fr/roc/data/private/solo/rpw/data//L2/thr/2021/11/solo_L2_rpw-hfr-surv-cdag_20211110_V01.cdf
+  validity_end: null
+  validity_start: null
+  version: '01'
+  is_delivered: False
+  public_dirname: null
+  public_filename: null
+  to_update: false
