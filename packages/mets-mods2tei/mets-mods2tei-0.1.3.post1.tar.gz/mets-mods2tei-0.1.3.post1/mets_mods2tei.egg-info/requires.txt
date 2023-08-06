@@ -1,0 +1,8 @@
+click
+lxml
+babel
+generateDS
+python-Levenshtein
+more-itertools
+ocrd
+ocrd_utils
