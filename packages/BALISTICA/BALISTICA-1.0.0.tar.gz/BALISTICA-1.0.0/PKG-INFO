@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: BALISTICA
+Version: 1.0.0
+Summary: A package providing multiple simulation models for ballistic motion
+Author-email: Santiago Nunez-Corrales <nunezco2@illinois.edu>, Jose Brenes-Andre <jbrenes54@gmail.com>
+Maintainer-email: Santiago Nunez-Corrales <nunezco2@illinois.edu>
+Project-URL: Homepage, https://github.com/RECIEM/Balistica
+Project-URL: Bug Tracker, https://github.com/RECIEM/Balistica/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BALISTICA
+
+
+**Authors:** Santiago Nunez-Corrales* (snunezcr@gmail.com) and Jose Brenes-Andre (jbrenes54@gmail.com)
+
+* Corresponding author
+
+## Purpose
+
+This package allows users to benefit from various types of ballistic models, with an emphasis on vulcanology and geology applications. This repository is intended as reference for an accompanying publication.
+
+## Current version notes
+
+* Presently, the model implementing the Stokes equations (numerical proportional to velocity with gravity) is in beta testing, and a complete version will be released by mid-July.
