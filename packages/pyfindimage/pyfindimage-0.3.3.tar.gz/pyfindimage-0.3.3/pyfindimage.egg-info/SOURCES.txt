@@ -1,0 +1,9 @@
+setup.py
+locater/__init__.py
+locater/functions.py
+locater/locator.py
+pyfindimage.egg-info/PKG-INFO
+pyfindimage.egg-info/SOURCES.txt
+pyfindimage.egg-info/dependency_links.txt
+pyfindimage.egg-info/requires.txt
+pyfindimage.egg-info/top_level.txt
