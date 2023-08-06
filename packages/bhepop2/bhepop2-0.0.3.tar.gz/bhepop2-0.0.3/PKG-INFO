@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bhepop2
+Version: 0.0.3
+Summary: Synthetic population enrichment from aggregated data
+Home-page: https://github.com/tellae/bhepop2
+Author: UGE & Tellae
+Author-email: contact@tellae.fr
+License: CECILL-B
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: CeCILL-B Free Software License Agreement (CECILL-B)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+A common problem in **generating a representative synthetic population** is that not all attributes of interest are present in the sample.  The purpose is to enrich the synthetic population with additional attributes, after the synthetic population is generated from the original sample.
+In many cases, practitioners only have access to aggregated data for important socio-demographic attributes, such as income, education level. 
+This package treats the problem to **enrich an initial synthetic population from an aggregated data** provided in the form of a distribution like deciles or quartiles.
+
+Read the [docs](https://bhepop2.readthedocs.io/en/latest/) or see the code and examples on [GitHub](https://github.com/tellae/bhepop2).
