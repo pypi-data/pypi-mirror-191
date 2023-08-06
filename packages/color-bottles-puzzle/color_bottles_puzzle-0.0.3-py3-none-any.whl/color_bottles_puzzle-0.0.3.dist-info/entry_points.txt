@@ -1,0 +1,5 @@
+[console_scripts]
+color-bottles=color_bottles.play_game:run
+color-bottles-console=color_bottles.frontend.console_front:run_game
+color-bottles-pygame=color_bottles.frontend.pygame_front:run_game
+
