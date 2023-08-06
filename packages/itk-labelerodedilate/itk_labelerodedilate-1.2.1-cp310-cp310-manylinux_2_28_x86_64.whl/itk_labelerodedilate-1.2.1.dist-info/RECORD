@@ -1,0 +1,13 @@
+itk/itkLabelSetDilateImageFilterPython.py,sha256=yU1m1JK36MscFdzaYpemrodi6Th5TLz3eFpSSb1QtTM,41756
+itk/_LabelErodeDilatePython.so,sha256=_jRv1ziJvPDtKZ82TwHg-cnwYTAicQxYkTPJjtckSd0,6815200
+itk/itkLabelSetErodeImageFilterPython.py,sha256=zgS-ndBQ5_Q3aTP_8Y896FgDwB5_XZkla86ZL7BEEig,41340
+itk/itkLabelSetMorphBaseImageFilterPython.py,sha256=5SjhvbTSlcdioV8YzTg-qEyYGVOvdPo9QI6DB5KKoNY,113969
+itk/LabelErodeDilatePython.py,sha256=NBcml_Oo9XLJWBFG-cQdDyKLCcV24FZRyflT5GZfizQ,2492
+itk/Configuration/LabelErodeDilateConfig.py,sha256=5pY9vDmuh3uorPpsRVx9clhkd9QXNIDQzMkuky2dn1M,10781
+itk/Configuration/LabelErodeDilate_snake_case.py,sha256=2HUaz4bmSPl8qw2RnEvZpiRaacDFRcFr7kzv5RrsFsA,128
+itk_labelerodedilate.libs/libtbb-e251c622.so.12.3,sha256=QW3Q2BukMwPKIl4Dlj9P2mOaQxfan6FTZFjeA8ICdhY,378360
+itk_labelerodedilate-1.2.1.dist-info/METADATA,sha256=EP_0hQLXZuSeczJbmHOgRg7xqATpSeFVmpqImJlN1C0,1696
+itk_labelerodedilate-1.2.1.dist-info/WHEEL,sha256=-i3kTntOlaINDfOukAK1eZEgzfDVGKj84idMvps1LJE,107
+itk_labelerodedilate-1.2.1.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_labelerodedilate-1.2.1.dist-info/RECORD,,
+itk_labelerodedilate-1.2.1.dist-info/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
