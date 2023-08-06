@@ -1,0 +1,10 @@
+README.md
+setup.py
+gtfs2series/__init__.py
+gtfs2series/gtfs.py
+gtfs2series/series.py
+gtfs2series.egg-info/PKG-INFO
+gtfs2series.egg-info/SOURCES.txt
+gtfs2series.egg-info/dependency_links.txt
+gtfs2series.egg-info/requires.txt
+gtfs2series.egg-info/top_level.txt
