@@ -1,0 +1,8 @@
+setup.py
+SC/__init__.py
+SC/engine.py
+SC_Engine.egg-info/PKG-INFO
+SC_Engine.egg-info/SOURCES.txt
+SC_Engine.egg-info/dependency_links.txt
+SC_Engine.egg-info/top_level.txt
+SC_Engine.egg-info/zip-safe
