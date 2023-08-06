@@ -1,0 +1,9 @@
+[console_scripts]
+raphtory-classpath = pyraphtory._cli:classpath
+raphtory-clustermanager = pyraphtory._cli:clustermanager
+raphtory-include = pyraphtory._cli:include
+raphtory-ingestion = pyraphtory._cli:ingestion
+raphtory-partition = pyraphtory._cli:partition
+raphtory-query = pyraphtory._cli:query
+raphtory-standalone = pyraphtory._cli:standalone
+raphtory-version = pyraphtory._cli:version
