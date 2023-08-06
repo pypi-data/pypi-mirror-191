@@ -1,0 +1,16 @@
+sparse_dot_topn/array_wrappers.cpython-39-x86_64-linux-gnu.so,sha256=vz4EeUXxs_IZewD2W78NN-zvv49FedOKU_d5JQXbW00,474600
+sparse_dot_topn/awesome_cossim_topn.py,sha256=xDO07DJfnOSxfSVr4xMHy3aVLdVnBvYvQl0LZN49NW4,4870
+sparse_dot_topn/sparse_dot_topn_threaded.pyx,sha256=kTtIpOPt1td5gJFWQma1b0zAWQ4QJgKCp-3-5YPrB0o,4962
+sparse_dot_topn/sparse_dot_topn.cpython-39-x86_64-linux-gnu.so,sha256=8eBBey51B40NYYsU7tgbewg67-yyrTAd5i4Lx9kBH4k,3162144
+sparse_dot_topn/__init__.py,sha256=NrYnwL3BWrW9NQMvkQit7hPiEkFfMbc9ETglbrGiwTA,189
+sparse_dot_topn/array_wrappers.pyx,sha256=Tujh0i07r6TJdMNnVo8JUXLjgCSyWzmXYonXpfArDFQ,4360
+sparse_dot_topn/array_wrappers.pxd,sha256=IuOXyYP7AiyRLPwk5flxEZy4zFePh6DlN5_vio8F1LI,782
+sparse_dot_topn/sparse_dot_topn_threaded.cpython-39-x86_64-linux-gnu.so,sha256=WbOUDIyAe_YK72f0cMNbco9bm-nQoZwed_OOA3lGgJ8,4899368
+sparse_dot_topn/sparse_dot_topn_source.h,sha256=PFT6xpTMw9XPEV7yVl2AcAJ87nYLWz2LprnbZjnhhlI,1944
+sparse_dot_topn/sparse_dot_topn.pyx,sha256=MM2TuEjW2Iyhz_3PM9oTzo-rofJ1ayEpFS0cBDLY-4o,7405
+sparse_dot_topn/sparse_dot_topn_parallel.h,sha256=0Zy6_wZkaGc-s1bxhylKNv3JjtnZfQZO4rGswZSwyfM,1728
+sparse_dot_topn-0.3.4.dist-info/METADATA,sha256=P9ZyRnuDGMppnR1L_GALbxRos5ZgtHSROBIStH72Uk4,4614
+sparse_dot_topn-0.3.4.dist-info/WHEEL,sha256=D79CBkaJekx7HMK1NaBe_KU1GVla4HlolbFXT3at6fg,148
+sparse_dot_topn-0.3.4.dist-info/RECORD,,
+sparse_dot_topn-0.3.4.dist-info/top_level.txt,sha256=1Qjv4Rbm7ZEr6nv2x3sUpVNnWAjAPW_U7PNsQLaibWE,16
+sparse_dot_topn-0.3.4.dist-info/LICENSE,sha256=YjUMpko6gSoWuX5Q1VvRej9abh7IPmjoIjUa1cQcf-4,11375
