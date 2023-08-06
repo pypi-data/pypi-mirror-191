@@ -1,0 +1,5 @@
+include newscollector/rendered/*
+include newscollector/static/assets/*
+include newscollector/static/css/*
+include newscollector/templates/*
+include newscollector/sources.json

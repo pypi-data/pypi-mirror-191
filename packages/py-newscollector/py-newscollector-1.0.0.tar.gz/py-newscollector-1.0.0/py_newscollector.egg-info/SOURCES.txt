@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+newscollector/__init__.py
+newscollector/newscollector.py
+newscollector/sources.json
+newscollector/rendered/newsletter_2023-02-08.html
+newscollector/static/assets/logo.png
+newscollector/static/css/newsletter.css
+newscollector/templates/newsletter.html
+py_newscollector.egg-info/PKG-INFO
+py_newscollector.egg-info/SOURCES.txt
+py_newscollector.egg-info/dependency_links.txt
+py_newscollector.egg-info/requires.txt
+py_newscollector.egg-info/top_level.txt
