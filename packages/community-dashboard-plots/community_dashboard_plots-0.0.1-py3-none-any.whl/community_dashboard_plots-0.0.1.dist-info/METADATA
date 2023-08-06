@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: community-dashboard-plots
+Version: 0.0.1
+Requires-Python: >=3.9
+Requires-Dist: flask (>=2.2.2)
+Requires-Dist: azure-functions
+Requires-Dist: azure-cosmos (>=4.2.0)
+Requires-Dist: google-api-python-client (>=2.31.0)
+Requires-Dist: google-search-results (==2.4.1)
+Requires-Dist: oauth2client (>=4.1.3)
+Requires-Dist: pandas (>=1.3.4)
+Requires-Dist: biopython (>=1.22.3)
+Requires-Dist: xmltodict (>=0.12.0)
+Requires-Dist: levenshtein (>=0.18.1)
+Requires-Dist: fuzzywuzzy (>=0.18.0)
+Requires-Dist: dash (>=2.7.1)
+Requires-Dist: Flask-Session (>=0.4.0)
+Requires-Dist: dash-bootstrap-components (>=1.1.0)
+Requires-Dist: pytest (>=7.1.2)
+Requires-Dist: ratelimit (>=2.2.1)
+Requires-Dist: youtube-transcript-api (>=0.4.4)
+Requires-Dist: Flask-Cors (==3.0.10)
+Requires-Dist: python-dotenv (==0.21.1)
+Requires-Dist: spacy (==3.2.5)
+Requires-Dist: scispacy (==0.5.0)
+Provides-Extra: development
+Requires-Dist: pytest-flask ; extra == 'development'
+Requires-Dist: twine (==4.0.2) ; extra == 'development'
+Requires-Dist: pyqt5 (<5.16) ; extra == 'development'
+Requires-Dist: pyqtwebengine (<5.16) ; extra == 'development'
+
