@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: AminoXZ
+Version: 1.1.8.6
+Summary: Library for creating amino bots and scripts.
+Home-page: https://github.com/xXxCLOTIxXx/AminoXZ
+Author: Xsarz
+Author-email: xsarzy@gmail.com
+License: MIT
+Download-URL: https://github.com/xXxCLOTIxXx/AminoXZ/archive/refs/heads/main.zip
+Description: Create user bots for amino, as well as scripts for various purposes.
+Keywords: aminoapps,aminoxz,amino,amino-bot,narvii,api,python,python3,python3.x,xsarz,official
+Platform: UNKNOWN

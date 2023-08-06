@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+AminoXZ/__init__.py
+AminoXZ/client.py
+AminoXZ/localClient.py
+AminoXZ/socket.py
+AminoXZ.egg-info/PKG-INFO
+AminoXZ.egg-info/SOURCES.txt
+AminoXZ.egg-info/dependency_links.txt
+AminoXZ.egg-info/requires.txt
+AminoXZ.egg-info/top_level.txt
+AminoXZ/lib/__init__.py
+AminoXZ/lib/util/__init__.py
+AminoXZ/lib/util/exceptions.py
+AminoXZ/lib/util/generator.py
+AminoXZ/lib/util/headers.py
+AminoXZ/lib/util/objects.py
