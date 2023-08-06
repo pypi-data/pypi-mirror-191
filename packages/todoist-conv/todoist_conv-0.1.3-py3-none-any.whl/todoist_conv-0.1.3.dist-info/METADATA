@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: todoist-conv
+Version: 0.1.3
+Summary: Convert Todoist generated CSVs to/from other formats
+License: MIT
+Author: Ygor Mutti
+Author-email: ygormutti@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: chardet (>=5.1.0,<6.0.0)
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: pydantic (>=1.9.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# todoist-conv
+
+Converts Todoist CSVs to/from other formats to integrate with other tools, like mind mappers.
+
+## Usage
+
+```shell
+$ todoist-conv --help
+Usage: todoist-conv [OPTIONS] FILE
+
+  Converts Todoist FILE from input_format to output_format
+
+Options:
+  -i, --input-format [csv|opml|json]
+                                  [required]
+  -f, --output-format [csv|opml|json]
+                                  [required]
+  -o, --output-file FILE          [default: -]
+  --help                          Show this message and exit.
+```
