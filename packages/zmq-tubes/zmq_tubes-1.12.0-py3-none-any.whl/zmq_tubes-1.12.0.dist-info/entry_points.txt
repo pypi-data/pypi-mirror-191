@@ -1,0 +1,3 @@
+[console_scripts]
+zmqtube-monitor=zmq_tubes.monitoring:main
+
