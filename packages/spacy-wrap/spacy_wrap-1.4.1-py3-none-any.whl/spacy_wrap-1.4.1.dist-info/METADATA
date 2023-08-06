@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: spacy-wrap
+Version: 1.4.1
+Summary: Wrappers for including pre-trained transformers in spaCy pipelines
+Author-email: Kenneth Enevoldsen <kennethcenevoldsen@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 Kenneth Enevoldsen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/KennethEnevoldsen/spacy-wrap
+Project-URL: repository, https://github.com/KennethEnevoldsen/spacy-wrap
+Project-URL: documentation, https://kennethenevoldsen.github.io/spacy-wrap/
+Keywords: NLP,spaCy,text analysis,natural language processing,text mining,text analytics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spacy-transformers (<1.3.0,>=1.2.1)
+Requires-Dist: spacy (<3.6.0,>=3.2.1)
+Requires-Dist: thinc (<8.2.0,>=8.0.13)
+Provides-Extra: cuda
+Requires-Dist: cupy (>=5.0.0b4) ; extra == 'cuda'
+Provides-Extra: cuda100
+Requires-Dist: cupy-cuda100 (>=5.0.0b4) ; extra == 'cuda100'
+Provides-Extra: cuda101
+Requires-Dist: cupy-cuda101 (>=5.0.0b4) ; extra == 'cuda101'
+Provides-Extra: cuda102
+Requires-Dist: cupy-cuda102 (>=5.0.0b4) ; extra == 'cuda102'
+Provides-Extra: cuda110
+Requires-Dist: cupy-cuda110 (>=5.0.0b4) ; extra == 'cuda110'
+Provides-Extra: cuda111
+Requires-Dist: cupy-cuda111 (>=5.0.0b4) ; extra == 'cuda111'
+Provides-Extra: cuda112
+Requires-Dist: cupy-cuda112 (>=5.0.0b4) ; extra == 'cuda112'
+Provides-Extra: cuda80
+Requires-Dist: cupy-cuda80 (>=5.0.0b4) ; extra == 'cuda80'
+Provides-Extra: cuda90
+Requires-Dist: cupy-cuda90 (>=5.0.0b4) ; extra == 'cuda90'
+Provides-Extra: cuda91
+Requires-Dist: cupy-cuda91 (>=5.0.0b4) ; extra == 'cuda91'
+Provides-Extra: cuda92
+Requires-Dist: cupy-cuda92 (>=5.0.0b4) ; extra == 'cuda92'
+Provides-Extra: docs
+Requires-Dist: sphinx (<5.4.0,>=5.3.0) ; extra == 'docs'
+Requires-Dist: furo (==2022.12.7) ; extra == 'docs'
+Requires-Dist: sphinx-copybutton (<0.5.2,>=0.5.1) ; extra == 'docs'
+Requires-Dist: sphinxext-opengraph (<0.7.4,>=0.7.3) ; extra == 'docs'
+Requires-Dist: sphinx-design (<0.3.1,>=0.3.0) ; extra == 'docs'
+Provides-Extra: style
+Requires-Dist: black (==22.12.0) ; extra == 'style'
+Requires-Dist: pre-commit (<2.21.0,>=2.20.0) ; extra == 'style'
+Requires-Dist: ruff (==0.0.191) ; extra == 'style'
+Requires-Dist: mypy (==0.991) ; extra == 'style'
+Provides-Extra: tests
+Requires-Dist: pytest (<7.3.0,>=7.1.3) ; extra == 'tests'
+Requires-Dist: pytest-cov (<3.0.1,>=3.0.0) ; extra == 'tests'
+
