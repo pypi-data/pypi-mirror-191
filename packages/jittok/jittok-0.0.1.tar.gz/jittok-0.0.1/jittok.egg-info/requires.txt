@@ -1,0 +1,11 @@
+regex
+
+[dev]
+flake8
+pytest
+black
+mypy
+tox
+isort
+types-regex
+pytest-mock
