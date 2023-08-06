@@ -1,0 +1,9 @@
+cython
+h5py
+matplotlib
+numpy
+pandas
+psutil
+pysam
+scikit-allel
+scipy
