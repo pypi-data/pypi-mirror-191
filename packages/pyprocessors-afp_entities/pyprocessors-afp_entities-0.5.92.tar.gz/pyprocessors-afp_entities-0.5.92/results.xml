@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="7" time="1.464" timestamp="2023-01-20T15:33:45.196046" hostname="OLI-OMEN"><testcase classname="bumpversion" name="FLAKE8" time="0.053" /><testcase classname="src.pyprocessors_afp_sports.__init__" name="FLAKE8" time="0.025" /><testcase classname="src.pyprocessors_afp_sports.afp_sports" name="FLAKE8" time="0.050"><failure message="/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:34:21: F841 local variable 'categories' is assigned to but never used&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:34:41: E231 missing whitespace after ':'&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:89:41: E128 continuation line under-indented for visual indent&#10;">/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:34:21: F841 local variable 'categories' is assigned to but never used
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:34:41: E231 missing whitespace after ':'
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/src/pyprocessors_afp_sports/afp_sports.py:89:41: E128 continuation line under-indented for visual indent
+</failure></testcase><testcase classname="tests.__init__" name="FLAKE8" time="0.025" /><testcase classname="tests.test_afp_sports" name="FLAKE8" time="0.034"><failure message="/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:2:1: F401 're' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.HasLen' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsPartialDict' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsStr' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsList' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:7:1: F401 'pymultirole_plugins.v1.schema.Annotation' imported but unused&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:32:1: E302 expected 2 blank lines, found 1&#10;/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:46:1: W391 blank line at end of file&#10;">/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:2:1: F401 're' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.HasLen' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsPartialDict' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsStr' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:6:1: F401 'dirty_equals.IsList' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:7:1: F401 'pymultirole_plugins.v1.schema.Annotation' imported but unused
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:32:1: E302 expected 2 blank lines, found 1
+/home/olivier/dev/kairntech/pyprocessors_afp_sports/tests/test_afp_sports.py:46:1: W391 blank line at end of file
+</failure></testcase><testcase classname="tests.test_afp_sports" name="test_model" time="0.000" /><testcase classname="tests.test_afp_sports" name="test_afp_sports" time="0.750"><failure message="AttributeError: 'Category' object has no attribute 'name'">original_docs = [Document(text='Convirtiéndose en campeón olímpico de florete el lunes en Tokio, el hongkonés Cheung Ka Long dio una g...ort', createdDate='2022-11-21T08:58:02.545Z', modifiedDate='2022-11-21T08:58:02.545Z', modifiedBy=None, status='OK')])]
+
+    def test_afp_sports(original_docs):
+        # linker
+        docs = []
+        for doc in original_docs:
+            docbis = doc.copy(deep=True)
+            # docbis.categories = None
+            docs.append(docbis)
+        processor = AFPSportsProcessor()
+        parameters = AFPSportsParameters()
+&gt;       docs = processor.process(docs, parameters)
+
+tests/test_afp_sports.py:41:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.tox/report/lib/python3.8/site-packages/pyprocessors_afp_sports/afp_sports.py:34: in process
+    categories = {c.name:c for c in document.categories}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+.0 = &lt;list_iterator object at 0x7fd3b2ba7eb0&gt;
+
+&gt;   categories = {c.name:c for c in document.categories}
+E   AttributeError: 'Category' object has no attribute 'name'
+
+.tox/report/lib/python3.8/site-packages/pyprocessors_afp_sports/afp_sports.py:34: AttributeError</failure></testcase></testsuite></testsuites>
