@@ -1,0 +1,28 @@
+{% if not embedded -%}
+{% include "bash.sh.j2" %}
+{% endif %}
+
+{% macro all(cache_only) -%}
+{% import 'yq.sh.j2' as yq -%}
+{{ yq.yq(cache_only) }}
+
+{% import 'yj.sh.j2' as yj -%}
+{{ yj.yj(cache_only) }}
+
+{% import 'containerd.sh.j2' as containerd -%}
+{{ containerd.containerd(cache_only) }}
+
+{% import 'runc.sh.j2' as runc -%}
+{{ runc.runc(cache_only) }}
+
+{% import "kubectl.sh.j2" as kubectl %}
+{{ kubectl.kubectl(cache_only) }}
+
+{% import "nerdctl.sh.j2" as nerdctl %}
+{{ nerdctl.nerdctl(cache_only) }}
+
+{% import "kubeadm-init.sh.j2" as kubeadm %}
+{{ kubeadm.kubeadm(cache_only) }}
+{% endmacro %}
+
+{% block content %}{{ all(cache_only) }}{% endblock %}
