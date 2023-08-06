@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+mqclient_redirect/__init__.py
+wipac_mqclient.egg-info/PKG-INFO
+wipac_mqclient.egg-info/SOURCES.txt
+wipac_mqclient.egg-info/dependency_links.txt
+wipac_mqclient.egg-info/requires.txt
+wipac_mqclient.egg-info/top_level.txt

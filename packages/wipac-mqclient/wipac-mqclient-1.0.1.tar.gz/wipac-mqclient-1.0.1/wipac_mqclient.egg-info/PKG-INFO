@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wipac-mqclient
+Version: 1.0.1
+Summary: Serves as a redirect for PyPI to the newer https://github.com/Observation-Management-Service/MQClient
+Home-page: https://github.com/WIPACrepo/mqclient-deprecated
+Download-URL: https://pypi.org/project/wipac-mqclient/
+Author: WIPAC Developers
+Author-email: developers@icecube.wisc.edu
+License: MIT
+Project-URL: Tracker, https://github.com/Observation-Management-Service/MQClient/issues
+Project-URL: Source, https://github.com/Observation-Management-Service/MQClient
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: pulsar
+Provides-Extra: rabbitmq
+Provides-Extra: gcp
+Provides-Extra: nats
+Provides-Extra: telemetry
+License-File: LICENSE
+
+[![PyPI](https://img.shields.io/pypi/v/wipac-mqclient)](https://pypi.org/project/wipac-mqclient/) [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Observation-Management-Service/MQClient?include_prereleases)](https://github.com/Observation-Management-Service/MQClient/) [![PyPI - License](https://img.shields.io/pypi/l/wipac-mqclient)](https://github.com/Observation-Management-Service/MQClient/blob/main/LICENSE) [![Lines of code](https://img.shields.io/tokei/lines/github/Observation-Management-Service/MQClient)](https://github.com/Observation-Management-Service/MQClient/) [![GitHub issues](https://img.shields.io/github/issues/Observation-Management-Service/MQClient)](https://github.com/Observation-Management-Service/MQClient/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aopen) [![GitHub pull requests](https://img.shields.io/github/issues-pr/Observation-Management-Service/MQClient)](https://github.com/Observation-Management-Service/MQClient/pulls?q=is%3Apr+sort%3Aupdated-desc+is%3Aopen)
+
+# mqclient-deprecated
+Serves as a redirect for PyPI to the newer https://github.com/Observation-Management-Service/MQClient
