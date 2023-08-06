@@ -1,0 +1,17 @@
+q2report/__init__.py,sha256=cteqAG10f6OvyeAHF1D-Ra54zvvGjnHQz39sRBNdpzw,42
+q2report/q2engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+q2report/q2engine/q2engine_core.py,sha256=ZI32dj5Xfm4k5_LJsi5IKRNASD0chj6KksxiLv6mCwM,115
+q2report/q2engine/q2engine_pyqt.py,sha256=PL-Kl6edqtyOtzbYHcoN5LcfW3dSTPTq1UflUbudBMc,90
+q2report/q2printer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+q2report/q2printer/docx_parts.py,sha256=BSGf2qJvZOD1ZVrogNrvb_Ey_ZC6Q29ZGpx8Sx7_D94,4354
+q2report/q2printer/q2printer.py,sha256=9a4-lGhgHngiYoSu6odOPKj47atx0Fk_DZaQydY7KsM,4869
+q2report/q2printer/q2printer_docx.py,sha256=m9vJ0FgrLJ98mNmcZDjxiS0EZO0xktJLKxt_v4e0PiE,12950
+q2report/q2printer/q2printer_html.py,sha256=AubUWz5PzLok5Qgq84J0gzJPyjDzlR-nXGBqOCTrYZ8,5341
+q2report/q2printer/q2printer_xlsx.py,sha256=slQr6IqkqvTUf89iI73EL7A0B8fLxi7QXub2Gg0VXO8,18890
+q2report/q2printer/xlsx_parts.py,sha256=sLfJg_F1WrSiO7wR_9Nj14PaMIrSLKzPL7SBin9XdqI,7651
+q2report/q2report.py,sha256=IyGpKgtmCpQdBSsxVqMalwdTTUkx3uh9G0WXiLdPKrM,12021
+q2report/q2utils.py,sha256=VMq9WLQp7WsN46bfGPwmB1Eq9KA6SdVGvndgWWMKhxg,1708
+q2report/version.py,sha256=m9YLYOXoRoaDkZk2oH7DD4Dbq3FMZMmuir7MUK6UADc,22
+q2report-0.1.19.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+q2report-0.1.19.dist-info/METADATA,sha256=CWi_J3NsQ5fqXWdqBwd8-tC1TPegfx9P6Mmkf6BfI_s,1923
+q2report-0.1.19.dist-info/RECORD,,
