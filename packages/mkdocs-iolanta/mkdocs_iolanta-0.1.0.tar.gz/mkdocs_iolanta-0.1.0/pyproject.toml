@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mkdocs-iolanta"
+version = "0.1.0"
+description = "MkDocs plugin to integrate with Iolanta semantic web framework."
+authors = ["Anatoly Scherbakov <altaisoft@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mkdocs_iolanta"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+iolanta-jinja2 = "^0.1.1"
+mkdocs = "^1.4.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+mkdocs-awesome-pages-plugin = "^2.8.0"
+mkdocs-material = "^9.0.12"
+mkdocs-macros-plugin = "^0.7.0"
+mkdocstrings-python = "^0.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."mkdocs.plugins"]
+iolanta = "mkdocs_iolanta.plugin:IolantaPlugin"
