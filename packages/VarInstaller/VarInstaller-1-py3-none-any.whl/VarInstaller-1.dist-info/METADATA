@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: VarInstaller
+Version: 1
+Summary: Very small Python autocode library to make your program crossplatform installer.
+Home-page: https://github.com/VarInstaller/VarInstaller/
+Author: Vlad VarnoVo
+Author-email: mrvv958@gmail.com
+Keywords: python installer varinstaller VarInstaller
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Dist: requests (>=1)
+

@@ -1,0 +1,10 @@
+VarInstaller/__init__.py,sha256=tCXN3k_uyZn_2LWyJw89x1SRYD43tLHAizl93zBws6Q,5016
+VarInstaller/bytes.py,sha256=KVinfPt6UIKHQtcpgWmAIZQqGVeBAg7d2XNoE8p3qQQ,957421
+VarInstaller/gui.py,sha256=SKmxFBoD9ojBJYhnSTdMkEQLLA0lNUfdeopxfzyjDv0,34714
+lib/__init__.py,sha256=tCXN3k_uyZn_2LWyJw89x1SRYD43tLHAizl93zBws6Q,5016
+lib/bytes.py,sha256=KVinfPt6UIKHQtcpgWmAIZQqGVeBAg7d2XNoE8p3qQQ,957421
+lib/gui.py,sha256=SKmxFBoD9ojBJYhnSTdMkEQLLA0lNUfdeopxfzyjDv0,34714
+VarInstaller-1.dist-info/METADATA,sha256=Enf8MaPgUsE41VvPE8pQIqD8PVSzuiVqZNloG6lm37w,476
+VarInstaller-1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+VarInstaller-1.dist-info/top_level.txt,sha256=qAvECXZTa9bPGCMNux4djdQK5sh00YGMWi3h5FIBepc,13
+VarInstaller-1.dist-info/RECORD,,
