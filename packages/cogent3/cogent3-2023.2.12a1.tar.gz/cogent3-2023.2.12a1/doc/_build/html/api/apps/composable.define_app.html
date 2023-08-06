@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>define_app &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script src="../../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../../_static/require.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="PhyloNode" href="../tree/classes/cogent3.core.tree.PhyloNode.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../install.html">Install</a></li>
+                <li><a href="../../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">define_app</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../tree/classes/cogent3.core.tree.PhyloNode.html" title="Previous Chapter: PhyloNode"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; PhyloNode</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="define-app">
+<h1>define_app<a class="headerlink" href="#define-app" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="cogent3.app.composable.define_app">
+<span class="sig-name descname"><span class="pre">define_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">klass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cogent3.app.composable.AppType</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">AppType.GENERIC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_not_completed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.app.composable.define_app" title="Permalink to this definition">¶</a></dt>
+<dd><p>decorator for building callable apps</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>klass</strong></dt><dd><p>either a class or a function. If a function, it is converted to a
+class with the function bound as a static method.</p>
+</dd>
+<dt><strong>app_type</strong></dt><dd><p>what type of app, typically you just want GENERIC.</p>
+</dd>
+<dt><strong>skip_not_completed</strong></dt><dd><p>if True (default), NotCompleted instances are returned without being
+passed to the app.main() method.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Instances of <code class="docutils literal notranslate"><span class="pre">cogent3</span></code> apps are callable. If an exception occurs,
+the app returns a <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> instance with logging information.
+Apps defined with app_type <code class="docutils literal notranslate"><span class="pre">LOADER</span></code>, <code class="docutils literal notranslate"><span class="pre">GENERIC</span></code> or <code class="docutils literal notranslate"><span class="pre">WRITER</span></code> can be
+“composed” (summed together) to produce a single callable that
+sequentially invokes the composed apps. For example, the independent
+usage of app instances <code class="docutils literal notranslate"><span class="pre">app1</span></code> and <code class="docutils literal notranslate"><span class="pre">app2</span></code> as</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">app2</span><span class="p">(</span><span class="n">app1</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>is equivalent to</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">combined</span> <span class="o">=</span> <span class="n">app1</span> <span class="o">+</span> <span class="n">app2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">combined</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">app_type</span></code> attribute is used to constrain how apps can be composed.
+<code class="docutils literal notranslate"><span class="pre">LOADER</span></code> and <code class="docutils literal notranslate"><span class="pre">WRITER</span></code> are special cases. If included, a <code class="docutils literal notranslate"><span class="pre">LOADER</span></code>
+must always be first, e.g.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">app</span> <span class="o">=</span> <span class="n">a_loader</span> <span class="o">+</span> <span class="n">a_generic</span>
+</pre></div>
+</div>
+<p>If included, a <code class="docutils literal notranslate"><span class="pre">WRITER</span></code> must always be last, e.g.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">app</span> <span class="o">=</span> <span class="n">a_generic</span> <span class="o">+</span> <span class="n">a_writer</span>
+</pre></div>
+</div>
+<p>Changing the order for either of the above will result in a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>.</p>
+<p>There are no constraints on ordering of <code class="docutils literal notranslate"><span class="pre">GENERIC</span></code> aside from compatability of
+their input and return types (see below).</p>
+<p>In order to be decorated with <code class="docutils literal notranslate"><span class="pre">&#64;define_app</span></code> a class <strong>must</strong></p>
+<ul class="simple">
+<li><p>implement a method called <code class="docutils literal notranslate"><span class="pre">main</span></code></p></li>
+<li><p>type hint the first argument of <code class="docutils literal notranslate"><span class="pre">main</span></code></p></li>
+<li><p>type hint the return type for <code class="docutils literal notranslate"><span class="pre">main</span></code></p></li>
+</ul>
+<p>Overlap between the return type hint and first argument hint is required
+for two apps to be composed together.</p>
+<p><code class="docutils literal notranslate"><span class="pre">define_app</span></code> adds a <code class="docutils literal notranslate"><span class="pre">__call__</span></code> method which checks an input value prior
+to passing it to <code class="docutils literal notranslate"><span class="pre">app.main()</span></code> as a positional argument. The data checking
+results in <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> being returned immediately, unless
+<code class="docutils literal notranslate"><span class="pre">skip_not_completed==False</span></code>. If the input value type is consistent with
+the type hint on the first argument of main it is passed to <code class="docutils literal notranslate"><span class="pre">app.main()</span></code>.
+If it does not match, a new <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> instance is returned.</p>
+<p>An example app definition.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cogent3.app.composable</span> <span class="kn">import</span> <span class="n">define_app</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cogent3.app.typing</span> <span class="kn">import</span> <span class="n">AlignedSeqsType</span><span class="p">,</span> <span class="n">SerialisableType</span>
+<span class="gp">...</span>
+<span class="gp">... </span><span class="nd">@define_app</span>
+<span class="gp">... </span><span class="k">class</span> <span class="nc">drop_bad</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">quantile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gap_fraction</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">quantile</span> <span class="o">=</span> <span class="n">quantile</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">gap_fraction</span> <span class="o">=</span> <span class="n">gap_fraction</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">moltype</span> <span class="o">=</span> <span class="n">moltype</span>
+<span class="gp">...</span>
+<span class="gp">... </span>    <span class="n">T</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">AlignedSeqsType</span><span class="p">,</span> <span class="n">SerialisableType</span><span class="p">]</span>
+<span class="gp">...</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">aln</span><span class="p">:</span> <span class="n">AlignedSeqsType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="n">aln</span><span class="o">.</span><span class="n">omit_bad_seqs</span><span class="p">(</span>
+<span class="gp">... </span>                                <span class="n">quantile</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">quantile</span><span class="p">,</span>
+<span class="gp">... </span>                                <span class="n">gap_fraction</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">gap_fraction</span><span class="p">,</span>
+<span class="gp">... </span>                                <span class="n">moltype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">moltype</span>
+<span class="gp">... </span>                                <span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">drop_bad</span></code> is a composable app with <code class="docutils literal notranslate"><span class="pre">app_type=GENERIC</span></code>. The input
+data must be a sequence alignment instance. It returns the same type,
+which is also serialisable.  (If invalid input data is provided a
+<code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> instance is returned.)</p>
+<p>You can also decorate functions. In that case, they will be converted into
+a class with the same name as the original function. The function itself is
+bound to this new class as a <code class="docutils literal notranslate"><span class="pre">staticmethod</span></code>, e.g.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cogent3.app.composable</span> <span class="kn">import</span> <span class="n">define_app</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cogent3.app.typing</span> <span class="kn">import</span> <span class="n">AlignedSeqsType</span><span class="p">,</span> <span class="n">SerialisableType</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">AlignedSeqsType</span><span class="p">,</span> <span class="n">SerialisableType</span><span class="p">]</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nd">@define_app</span>
+<span class="gp">... </span><span class="k">def</span> <span class="nf">omit_seqs</span><span class="p">(</span><span class="n">aln</span><span class="p">:</span> <span class="n">AlignedSeqsType</span><span class="p">,</span> <span class="n">quantile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gap_fraction</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">T</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="n">aln</span><span class="o">.</span><span class="n">omit_bad_seqs</span><span class="p">(</span>
+<span class="gp">... </span>                                <span class="n">quantile</span><span class="o">=</span><span class="n">quantile</span><span class="p">,</span>
+<span class="gp">... </span>                                <span class="n">gap_fraction</span><span class="o">=</span><span class="n">gap_fraction</span><span class="p">,</span>
+<span class="gp">... </span>                                <span class="n">moltype</span><span class="o">=</span><span class="n">moltype</span>
+<span class="gp">... </span>                                <span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">omit_seqs</span></code> is now an app, allowing creating different variants which
+can be composed as per ones defined via a class.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">omit_bad</span> <span class="o">=</span> <span class="n">omit_seqs</span><span class="p">(</span><span class="n">quantile</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and <code class="docutils literal notranslate"><span class="pre">omit_bad</span></code> is an instance of that app.</p>
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

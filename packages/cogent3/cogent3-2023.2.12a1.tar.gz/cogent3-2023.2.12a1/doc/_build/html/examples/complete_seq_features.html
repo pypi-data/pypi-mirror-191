@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Annotating alignments and sequences &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Map protein alignment gaps to DNA alignment gaps" href="align_codons_to_protein.html" />
+    <link rel="prev" title="Advanced sequence handling" href="seq_features.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Annotating alignments and sequences</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="seq_features.html" title="Previous Chapter: Advanced sequence handling"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Advanced sequ...</span>
+    </a>
+  </li>
+  <li>
+    <a href="align_codons_to_protein.html" title="Next Chapter: Map protein alignment gaps to DNA alignment gaps"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Map protein a... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="annotating-alignments-and-sequences">
+<h1>Annotating alignments and sequences<a class="headerlink" href="#annotating-alignments-and-sequences" title="Permalink to this headline">¶</a></h1>
+<p><em>Section author: Peter Maxwell, Gavin Huttley</em></p>
+<p>A Sequence with a couple of exons on it.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">DNA</span>
+<span class="kn">from</span> <span class="nn">cogent3.core.annotation</span> <span class="kn">import</span> <span class="n">Feature</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;AAGAAGAAGACCCCCAAAAAAAAAATTTTTTTTTTAAAAAAAAAAAAA&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Orig&quot;</span><span class="p">)</span>
+<span class="n">exon1</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">Feature</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;fred&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">)])</span>
+<span class="n">exon2</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">Feature</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;trev&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>The corresponding sequence can be extracted either with slice notation or by asking the feature to do it, since the feature knows what sequence it belongs to.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="n">exon1</span><span class="p">]</span>
+<span class="n">exon1</span><span class="o">.</span><span class="n">get_slice</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">Orig</td><td><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span></td></tr>
+</table>
+<p><i>5 DnaSequence</i></p>
+</div></div></div>
+</div>
+<p>Usually the only way to get a <code class="docutils literal notranslate"><span class="pre">Feature</span></code> object like <code class="docutils literal notranslate"><span class="pre">exon1</span></code> is to ask the sequence for it. There is one method for querying annotations by type and optionally by name:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exons</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get_annotations_matching</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exons</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;fred&quot; at [10:15]/48, exon &quot;trev&quot; at [30:40]/48]
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the sequence does not have a matching feature you get back an empty list, and slicing the sequence with that returns a sequence of length 0.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dont_exist</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get_annotations_matching</span><span class="p">(</span><span class="s2">&quot;dont_exist&quot;</span><span class="p">)</span>
+<span class="n">dont_exist</span>
+<span class="n">s</span><span class="p">[</span><span class="n">dont_exist</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+</table>
+<p><i>0 DnaSequence</i></p>
+</div></div></div>
+</div>
+<p>To construct a pseudo-feature covering (or excluding) multiple features, use <code class="docutils literal notranslate"><span class="pre">get_region_covering_all</span></code>:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span><span class="p">)</span><span class="o">.</span><span class="n">get_shadow</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>region &quot;exon&quot; at [10:15, 30:40]/48
+region &quot;not exon&quot; at [0:10, 15:30, 40:48]/48
+</pre></div>
+</div>
+</div>
+</div>
+<p>eg: all the exon sequence:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span><span class="p">)</span><span class="o">.</span><span class="n">get_slice</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">Orig</td><td><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span></td></tr>
+</table>
+<p><i>15 DnaSequence</i></p>
+</div></div></div>
+</div>
+<p>or with slice notation:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="n">exon1</span><span class="p">,</span> <span class="n">exon2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">Orig</td><td><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="T_dna">T</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span><span class="A_dna">A</span></td></tr>
+</table>
+<p><i>15 DnaSequence</i></p>
+</div></div></div>
+</div>
+<p>Though <code class="docutils literal notranslate"><span class="pre">.get_region_covering_all</span></code> also guarantees no overlaps within the result, slicing does not:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span> <span class="o">+</span> <span class="n">exons</span><span class="p">))</span>
+<span class="n">s</span><span class="p">[</span><span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>region &quot;exon&quot; at [10:15, 30:40]/48
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span> <span class="o">+</span> <span class="n">exons</span><span class="p">))</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">s</span><span class="p">[</span><span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">,</span> <span class="n">exon1</span><span class="p">]</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:90,</span> in <span class="ni">_Annotatable.__getitem__</span><span class="nt">(self, index)</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span> <span class="nb">map</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_as_map</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span> <span class="n">new</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">90</span> <span class="n">sliced_annots</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sliced_annotations</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="nb">map</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span> <span class="n">new</span><span class="o">.</span><span class="n">attach_annotations</span><span class="p">(</span><span class="n">sliced_annots</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_repr_policy&quot;</span><span class="p">):</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:36,</span> in <span class="ni">_Annotatable._sliced_annotations</span><span class="nt">(self, new, slice)</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="n">slicemap</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_as_map</span><span class="p">(</span><span class="nb">slice</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="c1"># try:</span>
+<span class="ne">---&gt; </span><span class="mi">36</span> <span class="n">newmap</span> <span class="o">=</span> <span class="n">slicemap</span><span class="o">.</span><span class="n">inverse</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="c1"># except ValueError, detail:</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="c1">#    print &quot;Annotations dropped because %s&quot; % detail</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span> <span class="c1">#    return []</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span> <span class="k">if</span> <span class="n">slicemap</span><span class="o">.</span><span class="n">useful</span><span class="p">:</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/location.py:754,</span> in <span class="ni">Map.inverse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">752</span> <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">753</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">754</span>         <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inverse</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">755</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/location.py:779,</span> in <span class="ni">Map._inverse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">777</span>     <span class="n">new_spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LostSpan</span><span class="p">(</span><span class="n">lo</span> <span class="o">-</span> <span class="n">last_hi</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">778</span> <span class="k">elif</span> <span class="n">lo</span> <span class="o">&lt;</span> <span class="n">last_hi</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">779</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Uninvertable. Overlap: </span><span class="si">{</span><span class="n">lo</span><span class="si">}</span><span class="s2"> &lt; </span><span class="si">{</span><span class="n">last_hi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">780</span> <span class="n">new_spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Span</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="n">start</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">781</span> <span class="n">last_hi</span> <span class="o">=</span> <span class="n">hi</span>
+
+<span class="ne">ValueError</span>: Uninvertable. Overlap: 10 &lt; 15
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can use features, maps, slices or integers, but non-monotonic slices are not allowed:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="p">[</span><span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">s</span><span class="p">[</span><span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span><span class="mi">16</span><span class="p">]</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:90,</span> in <span class="ni">_Annotatable.__getitem__</span><span class="nt">(self, index)</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span> <span class="nb">map</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_as_map</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span> <span class="n">new</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">90</span> <span class="n">sliced_annots</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sliced_annotations</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="nb">map</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span> <span class="n">new</span><span class="o">.</span><span class="n">attach_annotations</span><span class="p">(</span><span class="n">sliced_annots</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">92</span> <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_repr_policy&quot;</span><span class="p">):</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:36,</span> in <span class="ni">_Annotatable._sliced_annotations</span><span class="nt">(self, new, slice)</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="n">slicemap</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_as_map</span><span class="p">(</span><span class="nb">slice</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="c1"># try:</span>
+<span class="ne">---&gt; </span><span class="mi">36</span> <span class="n">newmap</span> <span class="o">=</span> <span class="n">slicemap</span><span class="o">.</span><span class="n">inverse</span><span class="p">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="c1"># except ValueError, detail:</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="c1">#    print &quot;Annotations dropped because %s&quot; % detail</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span> <span class="c1">#    return []</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span> <span class="k">if</span> <span class="n">slicemap</span><span class="o">.</span><span class="n">useful</span><span class="p">:</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/location.py:754,</span> in <span class="ni">Map.inverse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">752</span> <span class="k">def</span> <span class="nf">inverse</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">753</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">754</span>         <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_inverse</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">755</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__inverse</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/location.py:779,</span> in <span class="ni">Map._inverse</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">777</span>     <span class="n">new_spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LostSpan</span><span class="p">(</span><span class="n">lo</span> <span class="o">-</span> <span class="n">last_hi</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">778</span> <span class="k">elif</span> <span class="n">lo</span> <span class="o">&lt;</span> <span class="n">last_hi</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">779</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Uninvertable. Overlap: </span><span class="si">{</span><span class="n">lo</span><span class="si">}</span><span class="s2"> &lt; </span><span class="si">{</span><span class="n">last_hi</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">780</span> <span class="n">new_spans</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Span</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="n">start</span> <span class="o">&gt;</span> <span class="n">end</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">781</span> <span class="n">last_hi</span> <span class="o">=</span> <span class="n">hi</span>
+
+<span class="ne">ValueError</span>: Uninvertable. Overlap: 15 &lt; 16
+</pre></div>
+</div>
+</div>
+</div>
+<p>Features are themselves sliceable:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exon1</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">Orig</td><td><span class="C_dna">C</span><span class="C_dna">C</span><span class="C_dna">C</span></td></tr>
+</table>
+<p><i>3 DnaSequence</i></p>
+</div></div></div>
+</div>
+<p>When sequences are concatenated they keep their (non-overlapping) annotations:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">exon1</span><span class="p">[</span><span class="mi">4</span><span class="p">:]]</span> <span class="o">+</span> <span class="n">s</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">feat</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">annotations</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">feat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>49
+exon &quot;fred&quot; at [-4-, 0:1]/49
+exon &quot;fred&quot; at [11:16]/49
+exon &quot;trev&quot; at [31:41]/49
+</pre></div>
+</div>
+</div>
+</div>
+<p>Since features know their parents you can’t use a feature from one sequence to slice another:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">exon1</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Input</span> <span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">exon1</span><span class="p">])</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:88,</span> in <span class="ni">_Annotatable.__getitem__</span><span class="nt">(self, index)</span>
+<span class="g g-Whitespace">     </span><span class="mi">87</span> <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">88</span>     <span class="nb">map</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_as_map</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">89</span>     <span class="n">new</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mapped</span><span class="p">(</span><span class="nb">map</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span>     <span class="n">sliced_annots</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sliced_annotations</span><span class="p">(</span><span class="n">new</span><span class="p">,</span> <span class="nb">map</span><span class="p">)</span>
+
+<span class="nn">File ~/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/core/annotation.py:78,</span> in <span class="ni">_Annotatable._as_map</span><span class="nt">(self, index)</span>
+<span class="g g-Whitespace">     </span><span class="mi">76</span>     <span class="n">base</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">parent</span>
+<span class="g g-Whitespace">     </span><span class="mi">77</span> <span class="k">if</span> <span class="n">base</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">self</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">78</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">79</span>         <span class="sa">f</span><span class="s2">&quot;Can&#39;t map </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2"> onto </span><span class="si">{</span><span class="nb">repr</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="si">}</span><span class="s2"> via </span><span class="si">{</span><span class="n">containers</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">80</span>     <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">81</span> <span class="k">for</span> <span class="n">base</span> <span class="ow">in</span> <span class="n">containers</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">82</span>     <span class="n">feature</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">remapped_to</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">base</span><span class="o">.</span><span class="n">map</span><span class="p">)</span>
+
+<span class="ne">ValueError</span>: Can&#39;t map exon &quot;fred&quot; at [10:15]/48 onto DnaSequence(CAAGAAG... 49) via []
+</pre></div>
+</div>
+</div>
+</div>
+<p>Features are generally attached to the thing they annotate, but in those cases where a free-floating feature is created it can later be attached:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">annotations</span><span class="p">)</span>
+<span class="n">region</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">exons</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">annotations</span><span class="p">)</span>
+<span class="n">region</span><span class="o">.</span><span class="n">attach</span><span class="p">()</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">annotations</span><span class="p">)</span>
+<span class="n">region</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">annotations</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+<p>When dealing with sequences that can be reverse complemented (e.g. <code class="docutils literal notranslate"><span class="pre">DnaSequence</span></code>) features are <strong>not</strong> reversed. Features are considered to have strand specific meaning (.e.g CDS, exons) and so stay on their original strands. We create a sequence with a CDS that spans multiple exons, and show that after getting the reverse complement we have exactly the same result from getting the CDS annotation.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plus</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;AAGGGGAAAACCCCCAAAAAAAAAATTTTTTTTTTAAA&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;plus&quot;</span><span class="p">)</span>
+<span class="n">plus_cds</span> <span class="o">=</span> <span class="n">plus</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">Feature</span><span class="p">,</span> <span class="s2">&quot;CDS&quot;</span><span class="p">,</span> <span class="s2">&quot;gene&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">35</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">plus_cds</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">minus</span> <span class="o">=</span> <span class="n">plus</span><span class="o">.</span><span class="n">rc</span><span class="p">()</span>
+<span class="n">minus_cds</span> <span class="o">=</span> <span class="n">minus</span><span class="o">.</span><span class="n">get_annotations_matching</span><span class="p">(</span><span class="s2">&quot;CDS&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minus_cds</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>GGGGCCCCCTTTTTTTTTT
+GGGGCCCCCTTTTTTTTTT
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sequence features can be accessed via a containing <code class="docutils literal notranslate"><span class="pre">Alignment</span></code>:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">make_aligned_seqs</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTT--TTTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">Feature</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;fred&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">)</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_any_seq</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+-AAAAAAAAA
+&gt;y
+TTTT--TTTT
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>But these will be returned as <strong>alignment</strong> features with locations in alignment coordinates.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">exon</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">attach</span><span class="p">()</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">annotations</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>exon &quot;fred&quot; at [3:8]/9
+exon &quot;fred&quot; at [4:9]/10
+&gt;x
+AAAAA
+&gt;y
+--TTT
+
+</pre></div>
+</div>
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>1
+</pre></div>
+</div>
+</div>
+</div>
+<p>Similarly alignment features can be projected onto the aligned sequences, where they may end up falling across gaps:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exons</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_projected_annotations</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exons</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)[</span><span class="n">exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="o">.</span><span class="n">without_gaps</span><span class="p">()])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;fred&quot; at [-2-, 4:7]/8]
+TTT
+</pre></div>
+</div>
+</div>
+</div>
+<p>We copy the annotations from another sequence,</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTT--CCCC&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;AAAAAAAAA&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">add_annotation</span><span class="p">(</span><span class="n">Feature</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;fred&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_annotations</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;fred&quot; at [4:9]/10]
+</pre></div>
+</div>
+</div>
+</div>
+<p>even if the name is different.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_annotations</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="p">[</span><span class="n">aln_exons</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;fred&quot; at [3:4, 6:10]/10]
+&gt;x
+AAAAA
+&gt;y
+TCCCC
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the feature lies outside the sequence being copied to, you get a lost span</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">([[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">seq</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;CCCCCCCCCCCCCCCCCCCC&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">seq</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_annotations</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
+<span class="n">copied</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="n">copied</span>
+<span class="n">copied</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3align td { border: none !important; text-align: left !important; }
+.c3align tr:not(.num_row) td span {margin: 0 2px;}
+.c3align tr:nth-child(even) {background: #f7f7f7;}
+.c3align .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3align .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; display: table-cell !important; font-weight: normal !important; }
+.c3align .a_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .b_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .c_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .d_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .e_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .f_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .g_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .h_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .i_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .j_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .k_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .l_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .m_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .n_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .o_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .p_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .q_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .r_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .s_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .t_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .u_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .v_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .w_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .x_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .y_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .z_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .A_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .B_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .C_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .D_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .E_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .F_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .G_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .H_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .I_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .J_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .K_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .L_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .M_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .N_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .O_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .P_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .Q_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .R_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .S_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .T_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .U_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .V_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .W_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .X_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .Y_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .Z_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .terminal_ambig_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3align .ambig_text{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+</style>
+<div class="c3align">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">x</td><td><span class="terminal_ambig_text">-</span><span class="terminal_ambig_text">-</span><span class="terminal_ambig_text">-</span><span class="terminal_ambig_text">-</span></td></tr>
+<tr><td class="label">y</td><td><span class="terminal_ambig_text">.</span><span class="terminal_ambig_text">.</span><span class="terminal_ambig_text">.</span><span class="terminal_ambig_text">.</span></td></tr>
+</table>
+<p><i>2 x 4 text alignment</i></p>
+</div></div></div>
+</div>
+<p>You can copy to a sequence with a different name, in a different alignment if the feature lies within the length</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTT--TTTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">seq</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;CCCCCCCCCCCCCCCCCCCC&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">match_exon</span> <span class="o">=</span> <span class="n">seq</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_annotations</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
+<span class="n">copied</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="n">copied</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;A&quot; at [7:10]/10]
+</pre></div>
+</div>
+</div>
+</div>
+<p>If the sequence is shorter, again you get a lost span.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTT--TTTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">diff_len_seq</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;CCCCCCCCCCCCCCCCCCCCCCCCCCCC&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">nonmatch</span> <span class="o">=</span> <span class="n">diff_len_seq</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">)])</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">copy_annotations</span><span class="p">(</span><span class="n">diff_len_seq</span><span class="p">)</span>
+<span class="n">copied</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;repeat&quot;</span><span class="p">))</span>
+<span class="n">copied</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[repeat &quot;A&quot; at [10:10, -6-]/10]
+</pre></div>
+</div>
+</div>
+</div>
+<p>We consider cases where there are terminal gaps.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;------TTTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;fred&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;-AAAAAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;TTTT--T---&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;fred&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)])</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[exon &quot;fred&quot; at [4:9]/10]
+&gt;x
+AAAAA
+&gt;y
+--TTT
+
+&gt;x
+AAAAA
+&gt;y
+--T--
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>In this case, only those residues included within the feature are covered - note the omission of the T in <code class="docutils literal notranslate"><span class="pre">y</span></code> opposite the gap in <code class="docutils literal notranslate"><span class="pre">x</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;C-CCCAAAAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;-T----TTTT&quot;</span><span class="p">]],</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">,</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;ex1&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exon</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exon</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">aln_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_annotations_from_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+C-CCCAAAAA
+&gt;y
+-T----TTTT
+
+exon &quot;ex1&quot; at [0:4]/9
+CCCC
+[exon &quot;ex1&quot; at [0:1, 2:5]/10]
+&gt;x
+CCCC
+&gt;y
+----
+
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Feature.as_one_span()</span></code>, is applied to the exon that straddles the gap in <code class="docutils literal notranslate"><span class="pre">x</span></code>. The result is we preserve that feature.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">as_one_span</span><span class="p">()</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+C-CCC
+&gt;y
+-T---
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>These properties also are consistently replicated with reverse complemented sequences.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln_rc</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">rc</span><span class="p">()</span>
+<span class="n">rc_exons</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">aln_rc</span><span class="o">.</span><span class="n">get_annotations_from_any_seq</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_rc</span><span class="p">[</span><span class="n">rc_exons</span><span class="p">])</span>  <span class="c1"># not using as_one_span, so gap removed from x</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln_rc</span><span class="p">[</span><span class="n">rc_exons</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">as_one_span</span><span class="p">()])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+CCCC
+&gt;y
+----
+
+&gt;x
+C-CCC
+&gt;y
+-T---
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>Features can provide their coordinates, useful for custom analyses.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">all_exons</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_region_covering_all</span><span class="p">(</span><span class="n">aln_exons</span><span class="p">)</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">all_exons</span><span class="o">.</span><span class="n">get_coordinates</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">coords</span> <span class="o">==</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Annotated regions can be masked (observed sequence characters replaced by another), either through the sequence on which they reside or by projection from the alignment. Note that <code class="docutils literal notranslate"><span class="pre">mask_char</span></code> must be a valid character for the sequence <code class="docutils literal notranslate"><span class="pre">MolType</span></code>. Either the features (multiple can be named), or their shadow, can be masked.</p>
+<p>We create an alignment with a sequence that has two different annotation types.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">aln</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span>
+    <span class="p">[[</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;C-CCCAAAAAGGGAA&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="s2">&quot;-T----TTTTG-GTT&quot;</span><span class="p">]],</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">exon</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;norwegian&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">exon</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">repeat</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">repeat</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+<span class="n">repeat</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="s2">&quot;frog&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">repeat</span><span class="o">.</span><span class="n">get_slice</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+C-CCCAAAAAGGGAA
+&gt;y
+-T----TTTTG-GTT
+
+CCCC
+GGG
+GG
+</pre></div>
+</div>
+</div>
+</div>
+<p>Each sequence should correctly mask either the single feature, it’s shadow, or the multiple features, or shadow.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">([</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;repeat&quot;</span><span class="p">],</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span>
+        <span class="p">[</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="s2">&quot;repeat&quot;</span><span class="p">],</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span>
+    <span class="n">aln</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>????AAAAAGGGAA
+CCCC??????????
+????AAAAA???AA
+CCCC?????GGG??
+TTTTTGGTT
+TTTTT??TT
+?????GG??
+</pre></div>
+</div>
+</div>
+</div>
+<p>The same methods can be applied to annotated Alignment’s.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;exon&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">,</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">([</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">],</span> <span class="n">mask_char</span><span class="o">=</span><span class="s2">&quot;?&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">aln</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">([</span><span class="s2">&quot;repeat&quot;</span><span class="p">,</span> <span class="s2">&quot;exon&quot;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;x
+?-???AAAAAGGGAA
+&gt;y
+-T----TTTTG-GTT
+
+&gt;x
+C-CCC??????????
+&gt;y
+-?----?????-???
+
+&gt;x
+C-CCCAAAAA???AA
+&gt;y
+-T----TTTT?-?TT
+
+&gt;x
+?-????????GGG??
+&gt;y
+-?----????G-G??
+
+&gt;x
+?-???AAAAA???AA
+&gt;y
+-T----TTTT?-?TT
+
+&gt;x
+C-CCC?????GGG??
+&gt;y
+-?----????G-G??
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>It shouldn’t matter whether annotated coordinates are entered separately, or as a series.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;human&quot;</span><span class="p">,</span> <span class="s2">&quot;CGAAACGTTT&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;mouse&quot;</span><span class="p">,</span> <span class="s2">&quot;CTAAACGTCG&quot;</span><span class="p">]]</span>
+<span class="n">as_series</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">as_items</span> <span class="o">=</span> <span class="n">make_aligned_seqs</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">array_align</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>We add annotations to the sequences as a series.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">as_series</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;human&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)])</span>
+<span class="n">as_series</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;mouse&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>cpgsite &quot;cpg&quot; at [5:7, 8:10]/10
+</pre></div>
+</div>
+</div>
+</div>
+<p>We add the annotations to the sequences one segment at a time.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">as_items</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;human&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)])</span>
+<span class="n">as_items</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;human&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)])</span>
+<span class="n">as_items</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;mouse&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">)])</span>
+<span class="n">as_items</span><span class="o">.</span><span class="n">get_seq</span><span class="p">(</span><span class="s2">&quot;mouse&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_feature</span><span class="p">(</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">,</span> <span class="s2">&quot;cpg&quot;</span><span class="p">,</span> <span class="p">[(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>cpgsite &quot;cpg&quot; at [8:10]/10
+</pre></div>
+</div>
+</div>
+</div>
+<p>These different constructions should generate the same output.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">serial</span> <span class="o">=</span> <span class="n">as_series</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">([</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">serial</span><span class="p">)</span>
+<span class="n">itemwise</span> <span class="o">=</span> <span class="n">as_items</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">([</span><span class="s2">&quot;cpgsite&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">itemwise</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;human
+??AAA??TTT
+&gt;mouse
+CTAAA??T??
+
+&gt;human
+??AAA??TTT
+&gt;mouse
+CTAAA??T??
+
+</pre></div>
+</div>
+</div>
+</div>
+<p>Annotations should be correctly masked, whether the sequence has been reverse complemented or not. We use the plus/minus strand CDS containing sequences created above.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">plus</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;CDS&quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minus</span><span class="o">.</span><span class="n">with_masked_annotations</span><span class="p">(</span><span class="s2">&quot;CDS&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>AA????AAAA?????AAAAAAAAAA??????????AAA
+TTT??????????TTTTTTTTTT?????TTTT????TT
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

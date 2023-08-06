@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Table &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/thebelab-helper.js"></script>
+    <script src="../../../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../../../_static/require.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Columns" href="cogent3.util.table.Columns.html" />
+    <link rel="prev" title="table" href="../table.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../install.html">Install</a></li>
+                <li><a href="../../../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Table</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../table.html" title="Previous Chapter: table"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; table</span>
+    </a>
+  </li>
+  <li>
+    <a href="cogent3.util.table.Columns.html" title="Next Chapter: Columns"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Columns &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="table">
+<h1>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="cogent3.util.table.Table">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">digits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e+100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_templates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'simple'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">missing_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tabular data. iter operates over rows. Columns are available as an attribute.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>array</strong></dt><dd></dd>
+<dt><a class="reference internal" href="#cogent3.util.table.Table.format" title="cogent3.util.table.Table.format"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format</span></code></a></dt><dd><p>the str display format</p>
+</dd>
+<dt><strong>header</strong></dt><dd></dd>
+<dt><a class="reference internal" href="#cogent3.util.table.Table.index_name" title="cogent3.util.table.Table.index_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">index_name</span></code></a></dt><dd><p>column name whose values can be used to index table rows</p>
+</dd>
+<dt><strong>legend</strong></dt><dd></dd>
+<dt><strong>shape</strong></dt><dd></dd>
+<dt><strong>space</strong></dt><dd></dd>
+<dt><strong>title</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.appended" title="cogent3.util.table.Table.appended"><code class="xref py py-obj docutils literal notranslate"><span class="pre">appended</span></code></a>(new_column, *tables, **kwargs)</p></td>
+<td><p>Concatenates an arbitrary number of tables together</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.count" title="cogent3.util.table.Table.count"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code></a>(callback[, columns])</p></td>
+<td><p>Returns number of rows for which the provided callback function returns True when passed row data from columns.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.count_unique" title="cogent3.util.table.Table.count_unique"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count_unique</span></code></a>([columns])</p></td>
+<td><p>count occurrences of unique combinations of columns</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.cross_join" title="cogent3.util.table.Table.cross_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cross_join</span></code></a>(other, **kwargs)</p></td>
+<td><p>cross join, or full outer join, of self with other</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.distinct_values" title="cogent3.util.table.Table.distinct_values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distinct_values</span></code></a>(columns)</p></td>
+<td><p>returns the set of distinct values for the named column(s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.filtered" title="cogent3.util.table.Table.filtered"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filtered</span></code></a>(callback[, columns])</p></td>
+<td><p>Returns a table with rows satisfying the provided callback function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.filtered_by_column" title="cogent3.util.table.Table.filtered_by_column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filtered_by_column</span></code></a>(callback, **kwargs)</p></td>
+<td><p>Returns a table with columns identified by callback</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.format_column" title="cogent3.util.table.Table.format_column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_column</span></code></a>(column_head, format_template)</p></td>
+<td><p>Provide a formatting template for a named column.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.get_columns" title="cogent3.util.table.Table.get_columns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_columns</span></code></a>(columns[, with_index])</p></td>
+<td><p>select columns from self with index_name unless excluded</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.get_row_indices" title="cogent3.util.table.Table.get_row_indices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_row_indices</span></code></a>(callback, columns[, negate])</p></td>
+<td><p>returns boolean array of callback values given columns</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.head" title="cogent3.util.table.Table.head"><code class="xref py py-obj docutils literal notranslate"><span class="pre">head</span></code></a>([nrows])</p></td>
+<td><p>displays top nrows</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.inner_join" title="cogent3.util.table.Table.inner_join"><code class="xref py py-obj docutils literal notranslate"><span class="pre">inner_join</span></code></a>(other[, columns_self, ...])</p></td>
+<td><p>inner join of self with other</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.joined" title="cogent3.util.table.Table.joined"><code class="xref py py-obj docutils literal notranslate"><span class="pre">joined</span></code></a>(other[, columns_self, columns_other, ...])</p></td>
+<td><p>returns a new table containing the join of this table and other.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.normalized" title="cogent3.util.table.Table.normalized"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normalized</span></code></a>([by_row, denominator_func])</p></td>
+<td><p>returns a table with elements expressed as a fraction according to the results from func</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.set_repr_policy" title="cogent3.util.table.Table.set_repr_policy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_repr_policy</span></code></a>([head, tail, random, show_shape])</p></td>
+<td><p>specify policy for repr(self)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.sorted" title="cogent3.util.table.Table.sorted"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sorted</span></code></a>([columns, reverse])</p></td>
+<td><p>Returns a new table sorted according to columns order.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.sum_columns" title="cogent3.util.table.Table.sum_columns"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sum_columns</span></code></a>([columns, strict])</p></td>
+<td><p>return sum of indicated columns</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.sum_rows" title="cogent3.util.table.Table.sum_rows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sum_rows</span></code></a>([indices, strict])</p></td>
+<td><p>return sum of indicated rows</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.summed" title="cogent3.util.table.Table.summed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">summed</span></code></a>([indices, col_sum, strict])</p></td>
+<td><p>returns the sum of numerical values for column(s)/row(s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.tail" title="cogent3.util.table.Table.tail"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tail</span></code></a>([nrows])</p></td>
+<td><p>displays bottom nrows</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_categorical" title="cogent3.util.table.Table.to_categorical"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_categorical</span></code></a>([columns, index_name])</p></td>
+<td><p>construct object that can be used for statistical tests</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_csv" title="cogent3.util.table.Table.to_csv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_csv</span></code></a>([with_title, with_legend])</p></td>
+<td><p>return table formatted as comma separated values</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_dataframe" title="cogent3.util.table.Table.to_dataframe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dataframe</span></code></a>([categories])</p></td>
+<td><p>returns pandas DataFrame instance</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_dict" title="cogent3.util.table.Table.to_dict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_dict</span></code></a>([flatten])</p></td>
+<td><p>returns data as a dict</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_html" title="cogent3.util.table.Table.to_html"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_html</span></code></a>([column_alignment])</p></td>
+<td><p>construct html table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_latex" title="cogent3.util.table.Table.to_latex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_latex</span></code></a>([concat_title_legend, justify, ...])</p></td>
+<td><p>Returns the text a LaTeX table.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_markdown" title="cogent3.util.table.Table.to_markdown"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_markdown</span></code></a>([space, justify])</p></td>
+<td><p>returns markdown formatted table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_plotly" title="cogent3.util.table.Table.to_plotly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_plotly</span></code></a>([width, font_size, layout])</p></td>
+<td><p>returns a Plotly Table</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_rst" title="cogent3.util.table.Table.to_rst"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_rst</span></code></a>([csv_table])</p></td>
+<td><p>returns rst formatted table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_string" title="cogent3.util.table.Table.to_string"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_string</span></code></a>([format, borders, sep, center, ...])</p></td>
+<td><p>Return the table as a formatted string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.to_tsv" title="cogent3.util.table.Table.to_tsv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_tsv</span></code></a>([with_title, with_legend])</p></td>
+<td><p>return table formatted as tab separated values</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.tolist" title="cogent3.util.table.Table.tolist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tolist</span></code></a>([columns])</p></td>
+<td><p>Returns raw data as a list</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.transposed" title="cogent3.util.table.Table.transposed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">transposed</span></code></a>(new_column_name[, select_as_header])</p></td>
+<td><p>returns the transposed table.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.with_new_column" title="cogent3.util.table.Table.with_new_column"><code class="xref py py-obj docutils literal notranslate"><span class="pre">with_new_column</span></code></a>(new_column, callback[, ...])</p></td>
+<td><p>Returns new table with an additional column, computed using callback.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.util.table.Table.with_new_header" title="cogent3.util.table.Table.with_new_header"><code class="xref py py-obj docutils literal notranslate"><span class="pre">with_new_header</span></code></a>(old, new, **kwargs)</p></td>
+<td><p>returns a new Table with old header labels replaced by new</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.util.table.Table.write" title="cogent3.util.table.Table.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(filename[, mode, writer, format, sep, ...])</p></td>
+<td><p>Write table to filename in the specified format.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 62%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>to_json</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>to_rich_dict</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.appended">
+<span class="sig-name descname"><span class="pre">appended</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_column</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">tables</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.appended" title="Permalink to this definition">¶</a></dt>
+<dd><p>Concatenates an arbitrary number of tables together</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>new_column</strong></dt><dd><p>provide a heading for the new column, each tables
+title will be placed in it. If value is false, the result is no
+additional column.</p>
+</dd>
+<dt><strong>tables</strong></dt><dd><p>series of Table instances</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>All tables must have the same columns. If a column dtype differs between tables,
+dtype for that column in result is determined by numpy.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.array">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">array</span></span><a class="headerlink" href="#cogent3.util.table.Table.array" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.count">
+<span class="sig-name descname"><span class="pre">count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns number of rows for which the provided callback
+function returns True when passed row data from columns. Row data
+is a 1D list if more than one column, raw row[col] value otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>the columns whose values determine whether a row is to
+be included.</p>
+</dd>
+<dt><strong>callback</strong></dt><dd><p>Can be a function, which takes the sub
+by columns and returns True/False, or a string representing valid
+python code to be evaluated.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.count_unique">
+<span class="sig-name descname"><span class="pre">count_unique</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.count_unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>count occurrences of unique combinations of columns</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>name of one or more columns. If None, all columns are used</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>CategoryCounter instance</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.cross_join">
+<span class="sig-name descname"><span class="pre">cross_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.cross_join" title="Permalink to this definition">¶</a></dt>
+<dd><p>cross join, or full outer join, of self with other</p>
+<p class="rubric">Notes</p>
+<p>The column headers of the output are made unique by prepending
+other column headers with _, e.g. ‘Name’ becomes _Name’.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.distinct_values">
+<span class="sig-name descname"><span class="pre">distinct_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.distinct_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the set of distinct values for the named column(s)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.filtered">
+<span class="sig-name descname"><span class="pre">filtered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.filtered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a table with rows satisfying the provided callback function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>the columns whose values determine whether a row is to be included.</p>
+</dd>
+<dt><strong>callback</strong></dt><dd><p>Can be a function, which takes rows and returns True/False, or a
+string representing valid python code to be evaluated.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Row data provided to callback is a 1D list if more than one column,
+single value (row[col]) otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.filtered_by_column">
+<span class="sig-name descname"><span class="pre">filtered_by_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.filtered_by_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a table with columns identified by callback</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>callback</strong></dt><dd><p>A function which takes the columns delimited by columns and returns
+True/False, or a string representing valid python code to be evaluated.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">format</span></span><a class="headerlink" href="#cogent3.util.table.Table.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>the str display format</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.format_column">
+<span class="sig-name descname"><span class="pre">format_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_head</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format_template</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.format_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide a formatting template for a named column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>column_head</strong></dt><dd><p>the column label.</p>
+</dd>
+<dt><strong>format_template</strong></dt><dd><p>string formatting template or a function that will handle the formatting.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.get_columns">
+<span class="sig-name descname"><span class="pre">get_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.get_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>select columns from self with index_name unless excluded</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong><span class="classifier">string or sequence of strings</span></dt><dd><p>names of columns</p>
+</dd>
+<dt><strong>with_index</strong><span class="classifier">bool</span></dt><dd><p>If index_name is set, includes with columns.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>Table</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.get_row_indices">
+<span class="sig-name descname"><span class="pre">get_row_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">negate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.get_row_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns boolean array of callback values given columns</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.head">
+<span class="sig-name descname"><span class="pre">head</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.head" title="Permalink to this definition">¶</a></dt>
+<dd><p>displays top nrows</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.header">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">header</span></span><a class="headerlink" href="#cogent3.util.table.Table.header" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.index_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">index_name</span></span><a class="headerlink" href="#cogent3.util.table.Table.index_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>column name whose values can be used to index table rows</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.inner_join">
+<span class="sig-name descname"><span class="pre">inner_join</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns_self</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns_other</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.inner_join" title="Permalink to this definition">¶</a></dt>
+<dd><p>inner join of self with other</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>other</strong></dt><dd><p>A table object which will be joined with this
+table. other must have a title.</p>
+</dd>
+<dt><strong>columns_self, columns_other</strong></dt><dd><p>indices of key columns that will be compared in the join operation.
+Can be either column index, or a string matching the column header.
+The order matters, and the dimensions of columns_self and
+columns_other have to match. A row will be included in the output iff
+self[row, columns_self]==other[row, columns_other] for all i</p>
+</dd>
+<dt><strong>use_index</strong></dt><dd><p>if no columns specified and both self and other have a nominated
+index_name, this will be used.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The column headers of the output are made unique by prepending
+other column headers with _, e.g. ‘Name’ becomes _Name’.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.joined">
+<span class="sig-name descname"><span class="pre">joined</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns_self</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns_other</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner_join</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.joined" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a new table containing the join of this table and
+other. See docstring for inner_join, or cross_join</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.legend">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">legend</span></span><a class="headerlink" href="#cogent3.util.table.Table.legend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.normalized">
+<span class="sig-name descname"><span class="pre">normalized</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">by_row</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">denominator_func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.normalized" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a table with elements expressed as a fraction according
+to the results from func</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>by_row</strong></dt><dd><p>normalisation done by row</p>
+</dd>
+<dt><strong>denominator_func</strong></dt><dd><p>a callback function that takes an array and
+returns a value to be used as the denominator. Default is sum.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.set_repr_policy">
+<span class="sig-name descname"><span class="pre">set_repr_policy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">head</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tail</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.set_repr_policy" title="Permalink to this definition">¶</a></dt>
+<dd><p>specify policy for repr(self)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>head</strong><span class="classifier">int</span></dt><dd><p>number of top rows to included in represented display</p>
+</dd>
+<dt><strong>tail</strong><span class="classifier">int</span></dt><dd><p>number of bottom rows to included in represented display</p>
+</dd>
+<dt><strong>random</strong><span class="classifier">int</span></dt><dd><p>number of rows to sample randomly (supercedes head/tail)</p>
+</dd>
+<dt><strong>show_shape</strong><span class="classifier">bool</span></dt><dd><p>boolean to determine if table shape info is displayed</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.shape">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shape</span></span><a class="headerlink" href="#cogent3.util.table.Table.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.sorted">
+<span class="sig-name descname"><span class="pre">sorted</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.sorted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a new table sorted according to columns order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>column headings, their order determines the sort order.</p>
+</dd>
+<dt><strong>reverse</strong></dt><dd><p>column headings, these columns will be reverse sorted.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Either can be provided as just a single string, or a series of
+strings. If only reverse is provided, that order is used.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.space">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">space</span></span><a class="headerlink" href="#cogent3.util.table.Table.space" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.sum_columns">
+<span class="sig-name descname"><span class="pre">sum_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.sum_columns" title="Permalink to this definition">¶</a></dt>
+<dd><p>return sum of indicated columns</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>column name(s) or indices</p>
+</dd>
+<dt><strong>strict</strong></dt><dd><p>if False, ignores cells with non column/row.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.sum_rows">
+<span class="sig-name descname"><span class="pre">sum_rows</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.sum_rows" title="Permalink to this definition">¶</a></dt>
+<dd><p>return sum of indicated rows</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>indices</strong></dt><dd><p>row indices</p>
+</dd>
+<dt><strong>strict</strong></dt><dd><p>if False, ignores cells with non numeric values.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.summed">
+<span class="sig-name descname"><span class="pre">summed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_sum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.summed" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the sum of numerical values for column(s)/row(s)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>indices</strong></dt><dd><p>column name(s) or indices or row indices</p>
+</dd>
+<dt><strong>col_sum</strong></dt><dd><p>sums values in the indicated column, the default. If
+False, returns the row sum.</p>
+</dd>
+<dt><strong>strict</strong></dt><dd><p>if False, ignores cells with non column/row.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.tail">
+<span class="sig-name descname"><span class="pre">tail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.tail" title="Permalink to this definition">¶</a></dt>
+<dd><p>displays bottom nrows</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.title">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#cogent3.util.table.Table.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_categorical">
+<span class="sig-name descname"><span class="pre">to_categorical</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_categorical" title="Permalink to this definition">¶</a></dt>
+<dd><p>construct object that can be used for statistical tests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>columns to include. These correspond to contingency column
+labels. The row labels come from values under the index_name
+column. Defaults to all columns.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>CategoryCounts, an object for performing statistical tests on</dt><dd></dd>
+<dt>contingency tables.</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Only applies to cases where an index_name is defined. The selected columns
+must be int types and represent the counts of corresponding categories.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_csv">
+<span class="sig-name descname"><span class="pre">to_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">with_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>return table formatted as comma separated values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>with_title</strong><span class="classifier">bool</span></dt><dd><p>include the table title</p>
+</dd>
+<dt><strong>with_legend</strong><span class="classifier">bool</span></dt><dd><p>include table legend</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_dataframe">
+<span class="sig-name descname"><span class="pre">to_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">categories</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns pandas DataFrame instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>categories</strong></dt><dd><p>converts these columns to category dtype in the data
+frame. Note, categories are not ordered.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_dict">
+<span class="sig-name descname"><span class="pre">to_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flatten</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns data as a dict</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>flatten</strong><span class="classifier">bool</span></dt><dd><p>returns a 1D dictionary</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_html">
+<span class="sig-name descname"><span class="pre">to_html</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">column_alignment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_html" title="Permalink to this definition">¶</a></dt>
+<dd><p>construct html table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>column_alignment</strong><span class="classifier">dict</span></dt><dd><p>{col_name: alignment character, …} where alignment character
+can be one of ‘l’, ‘c’, ‘r’. Defaults to ‘r’ for numeric columns,
+‘l’ for text columns.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>string</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Placed within c3table div element, embeds CSS style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_latex">
+<span class="sig-name descname"><span class="pre">to_latex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">concat_title_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_latex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the text a LaTeX table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>concat_title_legend</strong><span class="classifier">bool</span></dt><dd><p>the table caption is formed by concatenating the table title and legend</p>
+</dd>
+<dt><strong>justify</strong></dt><dd><p>column justification, default is right aligned.</p>
+</dd>
+<dt><strong>label</strong></dt><dd><p>for cross referencing</p>
+</dd>
+<dt><strong>position</strong></dt><dd><p>table page position, default is here, top separate page</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The caption*{} command is provided with the caption package. See
+<a class="reference external" href="https://ctan.org/pkg/caption">https://ctan.org/pkg/caption</a> for more details.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_markdown">
+<span class="sig-name descname"><span class="pre">to_markdown</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">justify</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_markdown" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns markdown formatted table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>space</strong></dt><dd><p>number of spaces surrounding the cell contents, must be &gt;= 1</p>
+</dd>
+<dt><strong>justify</strong></dt><dd><p>characters indicating alignment of columns</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_plotly">
+<span class="sig-name descname"><span class="pre">to_plotly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_plotly" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a Plotly Table</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_rich_dict">
+<span class="sig-name descname"><span class="pre">to_rich_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_rich_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_rst">
+<span class="sig-name descname"><span class="pre">to_rst</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv_table</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_rst" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns rst formatted table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>csv_table</strong><span class="classifier">bool</span></dt><dd><p>use csv-directive, grid table otherwise</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_string">
+<span class="sig-name descname"><span class="pre">to_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borders</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concat_title_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the table as a formatted string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>format</strong></dt><dd><p>possible formats are ‘rest’/’rst’, ‘markdown’/’md’,
+‘latex’, ‘html’, ‘phylip’, ‘bedgraph’, ‘csv’, ‘tsv’, or ‘simple’
+(default).</p>
+</dd>
+<dt><strong>sep</strong></dt><dd><p>A string separator for delineating columns, e.g. ‘,’ or
+‘   ‘. Overrides format.</p>
+</dd>
+<dt><strong>center</strong><span class="classifier">bool</span></dt><dd><p>content is centered in the column, default is right
+justified</p>
+</dd>
+<dt><strong>concat_title_legend</strong><span class="classifier">bool</span></dt><dd><p>Concat the title and legend.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>If format is bedgraph, assumes that column headers are chrom, start,
+end, value. In that order!</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.to_tsv">
+<span class="sig-name descname"><span class="pre">to_tsv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">with_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_legend</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.to_tsv" title="Permalink to this definition">¶</a></dt>
+<dd><p>return table formatted as tab separated values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>with_title</strong><span class="classifier">bool</span></dt><dd><p>include the table title</p>
+</dd>
+<dt><strong>with_legend</strong><span class="classifier">bool</span></dt><dd><p>include table legend</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.tolist">
+<span class="sig-name descname"><span class="pre">tolist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.tolist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns raw data as a list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>columns</strong></dt><dd><p>if None, all data are returned</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>If one column, a 1D list is returned.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.transposed">
+<span class="sig-name descname"><span class="pre">transposed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_column_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select_as_header</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.transposed" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the transposed table.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>new_column_name</strong></dt><dd><p>the existing header will become a column with
+this name</p>
+</dd>
+<dt><strong>select_as_header</strong></dt><dd><p>current column name containing data to be used
+as the header. Defaults to the first column.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.with_new_column">
+<span class="sig-name descname"><span class="pre">with_new_column</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.with_new_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns new table with an additional column, computed using callback.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>new_column</strong></dt><dd><p>new column heading</p>
+</dd>
+<dt><strong>columns</strong></dt><dd><p>the columns whose values determine whether a row is to be included.</p>
+</dd>
+<dt><strong>callback</strong></dt><dd><p>Can be a function, which takes the subtable by columns and returns
+True/False, or a string representing valid python code to be evaluated.</p>
+</dd>
+<dt><strong>dtype</strong></dt><dd><p>numpy type of result</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.with_new_header">
+<span class="sig-name descname"><span class="pre">with_new_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">old</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.with_new_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a new Table with old header labels replaced by new</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>old</strong></dt><dd><p>the old column header(s). Can be a string or series of them.</p>
+</dd>
+<dt><strong>new</strong></dt><dd><p>the new column header(s). Can be a string or series of them.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.util.table.Table.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">writer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.util.table.Table.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write table to filename in the specified format.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>mode</strong></dt><dd><p>file opening mode</p>
+</dd>
+<dt><strong>format</strong></dt><dd><p>Valid formats are those of the to_string method plus pickle. Will
+try and guess from filename if not specified.</p>
+</dd>
+<dt><strong>writer</strong></dt><dd><p>a function for formatting the data for output.</p>
+</dd>
+<dt><strong>sep</strong></dt><dd><p>a character delimiter for fields.</p>
+</dd>
+<dt><strong>compress</strong></dt><dd><p>if True, gzips the file and appends .gz to the filename (if not
+already added).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>If a format is not specified, it attempts to use a filename suffix.
+Unformatted numerical values are written to file in order to preserve
+numerical accuracy.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

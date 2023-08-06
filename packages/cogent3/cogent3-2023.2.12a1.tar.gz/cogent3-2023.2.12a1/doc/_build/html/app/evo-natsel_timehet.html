@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>natsel_timehet – a test of branch heterogeneity &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="natsel_sitehet – a test of site heterogeneity" href="evo-natsel_sitehet.html" />
+    <link rel="prev" title="natsel_neutral – a test for selective neutrality" href="evo-natsel_neutral.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">natsel_timehet</span></code> – a test of branch heterogeneity</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="evo-natsel_neutral.html" title="Previous Chapter: natsel_neutral – a test for selective neutrality"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; natsel_neutra...</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo-natsel_sitehet.html" title="Next Chapter: natsel_sitehet – a test of site heterogeneity"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">natsel_sitehe... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="natsel-timehet-a-test-of-branch-heterogeneity">
+<h1><code class="docutils literal notranslate"><span class="pre">natsel_timehet</span></code> – a test of branch heterogeneity<a class="headerlink" href="#natsel-timehet-a-test-of-branch-heterogeneity" title="Permalink to this headline">¶</a></h1>
+<p>We employ codon models to test whether the mode of natural selection affecting human and chimpanzee lineages is distinctive. This is done by specifying the edges of interest (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/9580986">Yang 1998</a>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>I’m setting <code class="docutils literal notranslate"><span class="pre">optimise_motif_probs=False</span></code> to speed up execution of the examples, not because it’s a good idea!</p>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_app</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;load_aligned&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">loader</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+
+<span class="n">hc_differ</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;natsel_timehet&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GNC&quot;</span><span class="p">,</span>
+    <span class="n">tree</span><span class="o">=</span><span class="s2">&quot;data/primate_brca1.tree&quot;</span><span class="p">,</span>
+    <span class="n">optimise_motif_probs</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">tip1</span><span class="o">=</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span>
+    <span class="n">tip2</span><span class="o">=</span><span class="s2">&quot;Chimpanzee&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">hc_differ</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Statistics</span>
+</caption>
+<thead class="head_cell">
+<th>LR</th><th>df</th><th>pvalue</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">4.9248</span></td><td><span class="c3col_right">1</span></td><td><span class="c3col_right">0.0265</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<thead class="head_cell">
+<th>hypothesis</th><th>key</th><th>lnL</th><th>nfp</th><th>DLC</th><th>unique_Q</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">null</span></td><td><span class="c3col_left">'GNC-null'</span></td><td><span class="c3col_right">-6713.2733</span></td><td><span class="c3col_right">23</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+<tr><td><span class="c3col_left">alt</span></td><td><span class="c3col_left">'GNC-alt'</span></td><td><span class="c3col_right">-6710.8109</span></td><td><span class="c3col_right">24</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">alt</span><span class="o">.</span><span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>GNC-alt</h4>
+<p>log-likelihood = -6710.8109</p>
+<p>number of free parameters = 24</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>A>C</th><th>A>G</th><th>A>T</th><th>C>A</th><th>C>G</th><th>C>T</th><th>G>A</th><th>G>C</th><th>G>T</th><th>T>A</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.8620</span></td><td><span class="c3col_right">3.5361</span></td><td><span class="c3col_right">0.9790</span></td><td><span class="c3col_right">1.6698</span></td><td><span class="c3col_right">2.2059</span></td><td><span class="c3col_right">6.2630</span></td><td><span class="c3col_right">7.9209</span></td><td><span class="c3col_right">1.2265</span></td><td><span class="c3col_right">0.8024</span></td><td><span class="c3col_right">1.2882</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>T>C</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.0675</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.5237</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.1339</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">Rhesus</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0640</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">Orangutan</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0233</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">Gorilla</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0075</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0182</span></td><td><span class="c3col_right">2.6351</span></td></tr>
+<tr><td><span class="c3col_left">Chimpanzee</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0085</span></td><td><span class="c3col_right">2.6351</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0100</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0366</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0238</span></td><td><span class="c3col_right">0.7906</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>AAA</th><th>AAC</th><th>AAG</th><th>AAT</th><th>ACA</th><th>ACC</th><th>ACG</th><th>ACT</th><th>AGA</th><th>AGC</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0556</span></td><td><span class="c3col_right">0.0235</span></td><td><span class="c3col_right">0.0344</span></td><td><span class="c3col_right">0.0556</span></td><td><span class="c3col_right">0.0228</span></td><td><span class="c3col_right">0.0046</span></td><td><span class="c3col_right">0.0008</span></td><td><span class="c3col_right">0.0289</span></td><td><span class="c3col_right">0.0231</span></td><td><span class="c3col_right">0.0286</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>AGG</th><th>AGT</th><th>ATA</th><th>ATC</th><th>ATG</th><th>ATT</th><th>CAA</th><th>CAC</th><th>CAG</th><th>CAT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0140</span></td><td><span class="c3col_right">0.0381</span></td><td><span class="c3col_right">0.0186</span></td><td><span class="c3col_right">0.0070</span></td><td><span class="c3col_right">0.0128</span></td><td><span class="c3col_right">0.0192</span></td><td><span class="c3col_right">0.0196</span></td><td><span class="c3col_right">0.0052</span></td><td><span class="c3col_right">0.0238</span></td><td><span class="c3col_right">0.0221</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>CCA</th><th>CCC</th><th>CCG</th><th>CCT</th><th>CGA</th><th>CGC</th><th>CGG</th><th>CGT</th><th>CTA</th><th>CTC</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0195</span></td><td><span class="c3col_right">0.0062</span></td><td><span class="c3col_right">0.0006</span></td><td><span class="c3col_right">0.0263</span></td><td><span class="c3col_right">0.0011</span></td><td><span class="c3col_right">0.0009</span></td><td><span class="c3col_right">0.0023</span></td><td><span class="c3col_right">0.0032</span></td><td><span class="c3col_right">0.0137</span></td><td><span class="c3col_right">0.0078</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>CTG</th><th>CTT</th><th>GAA</th><th>GAC</th><th>GAG</th><th>GAT</th><th>GCA</th><th>GCC</th><th>GCG</th><th>GCT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0125</span></td><td><span class="c3col_right">0.0105</span></td><td><span class="c3col_right">0.0755</span></td><td><span class="c3col_right">0.0105</span></td><td><span class="c3col_right">0.0303</span></td><td><span class="c3col_right">0.0315</span></td><td><span class="c3col_right">0.0158</span></td><td><span class="c3col_right">0.0096</span></td><td><span class="c3col_right">0.0014</span></td><td><span class="c3col_right">0.0137</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>GGA</th><th>GGC</th><th>GGG</th><th>GGT</th><th>GTA</th><th>GTC</th><th>GTG</th><th>GTT</th><th>TAC</th><th>TAT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0161</span></td><td><span class="c3col_right">0.0090</span></td><td><span class="c3col_right">0.0067</span></td><td><span class="c3col_right">0.0133</span></td><td><span class="c3col_right">0.0148</span></td><td><span class="c3col_right">0.0070</span></td><td><span class="c3col_right">0.0069</span></td><td><span class="c3col_right">0.0213</span></td><td><span class="c3col_right">0.0023</span></td><td><span class="c3col_right">0.0101</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>TCA</th><th>TCC</th><th>TCG</th><th>TCT</th><th>TGC</th><th>TGG</th><th>TGT</th><th>TTA</th><th>TTC</th><th>TTG</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0221</span></td><td><span class="c3col_right">0.0082</span></td><td><span class="c3col_right">0.0015</span></td><td><span class="c3col_right">0.0251</span></td><td><span class="c3col_right">0.0018</span></td><td><span class="c3col_right">0.0040</span></td><td><span class="c3col_right">0.0201</span></td><td><span class="c3col_right">0.0212</span></td><td><span class="c3col_right">0.0078</span></td><td><span class="c3col_right">0.0108</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>TTT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0187</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

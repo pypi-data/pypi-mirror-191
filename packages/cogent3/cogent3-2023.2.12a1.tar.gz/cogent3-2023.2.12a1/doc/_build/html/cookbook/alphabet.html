@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Alphabets &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Available genetic codes" href="what_codes.html" />
+    <link rel="prev" title="Molecular types" href="moltypes.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Alphabets</a><ul>
+<li><a class="reference internal" href="#alphabet-and-moltype"><code class="docutils literal notranslate"><span class="pre">Alphabet</span></code> and <code class="docutils literal notranslate"><span class="pre">MolType</span></code></a></li>
+<li><a class="reference internal" href="#creating-tuple-alphabets">Creating tuple alphabets</a></li>
+<li><a class="reference internal" href="#convert-a-sequence-into-integers">Convert a sequence into integers</a></li>
+<li><a class="reference internal" href="#convert-integers-to-a-sequence">Convert integers to a sequence</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="moltypes.html" title="Previous Chapter: Molecular types"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Molecular types</span>
+    </a>
+  </li>
+  <li>
+    <a href="what_codes.html" title="Next Chapter: Available genetic codes"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Available gen... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="alphabets">
+<h1>Alphabets<a class="headerlink" href="#alphabets" title="Permalink to this headline">¶</a></h1>
+<section id="alphabet-and-moltype">
+<h2><code class="docutils literal notranslate"><span class="pre">Alphabet</span></code> and <code class="docutils literal notranslate"><span class="pre">MolType</span></code><a class="headerlink" href="#alphabet-and-moltype" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">MolType</span></code> instances have an <code class="docutils literal notranslate"><span class="pre">Alphabet</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">DNA</span><span class="p">,</span> <span class="n">PROTEIN</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">PROTEIN</span><span class="o">.</span><span class="n">alphabet</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>(&#39;T&#39;, &#39;C&#39;, &#39;A&#39;, &#39;G&#39;)
+(&#39;A&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;, &#39;I&#39;, &#39;K&#39;, &#39;L&#39;, &#39;M&#39;, &#39;N&#39;, &#39;P&#39;, &#39;Q&#39;, &#39;R&#39;, &#39;S&#39;, &#39;T&#39;, &#39;U&#39;, &#39;V&#39;, &#39;W&#39;, &#39;Y&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Alphabet</span></code> instances have a <code class="docutils literal notranslate"><span class="pre">MolType</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PROTEIN</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">moltype</span> <span class="o">==</span> <span class="n">PROTEIN</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="creating-tuple-alphabets">
+<h2>Creating tuple alphabets<a class="headerlink" href="#creating-tuple-alphabets" title="Permalink to this headline">¶</a></h2>
+<p>You can create a tuple alphabet of, for example, dinucleotides or trinucleotides.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dinuc_alphabet</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">get_word_alphabet</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dinuc_alphabet</span><span class="p">)</span>
+<span class="n">trinuc_alphabet</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">get_word_alphabet</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">trinuc_alphabet</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>(&#39;TT&#39;, &#39;TC&#39;, &#39;TA&#39;, &#39;TG&#39;, &#39;CT&#39;, &#39;CC&#39;, &#39;CA&#39;, &#39;CG&#39;, &#39;AT&#39;, &#39;AC&#39;, &#39;AA&#39;, &#39;AG&#39;, &#39;GT&#39;, &#39;GC&#39;, &#39;GA&#39;, &#39;GG&#39;)
+(&#39;TTT&#39;, &#39;TTC&#39;, &#39;TTA&#39;, &#39;TTG&#39;, &#39;TCT&#39;, &#39;TCC&#39;, &#39;TCA&#39;, &#39;TCG&#39;, &#39;TAT&#39;, &#39;TAC&#39;, &#39;TAA&#39;, &#39;TAG&#39;, &#39;TGT&#39;, &#39;TGC&#39;, &#39;TGA&#39;, &#39;TGG&#39;, &#39;CTT&#39;, &#39;CTC&#39;, &#39;CTA&#39;, &#39;CTG&#39;, &#39;CCT&#39;, &#39;CCC&#39;, &#39;CCA&#39;, &#39;CCG&#39;, &#39;CAT&#39;, &#39;CAC&#39;, &#39;CAA&#39;, &#39;CAG&#39;, &#39;CGT&#39;, &#39;CGC&#39;, &#39;CGA&#39;, &#39;CGG&#39;, &#39;ATT&#39;, &#39;ATC&#39;, &#39;ATA&#39;, &#39;ATG&#39;, &#39;ACT&#39;, &#39;ACC&#39;, &#39;ACA&#39;, &#39;ACG&#39;, &#39;AAT&#39;, &#39;AAC&#39;, &#39;AAA&#39;, &#39;AAG&#39;, &#39;AGT&#39;, &#39;AGC&#39;, &#39;AGA&#39;, &#39;AGG&#39;, &#39;GTT&#39;, &#39;GTC&#39;, &#39;GTA&#39;, &#39;GTG&#39;, &#39;GCT&#39;, &#39;GCC&#39;, &#39;GCA&#39;, &#39;GCG&#39;, &#39;GAT&#39;, &#39;GAC&#39;, &#39;GAA&#39;, &#39;GAG&#39;, &#39;GGT&#39;, &#39;GGC&#39;, &#39;GGA&#39;, &#39;GGG&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="convert-a-sequence-into-integers">
+<h2>Convert a sequence into integers<a class="headerlink" href="#convert-a-sequence-into-integers" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq</span> <span class="o">=</span> <span class="s2">&quot;TAGT&quot;</span>
+<span class="n">indices</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">to_indices</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
+<span class="n">indices</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[0, 2, 3, 0]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="convert-integers-to-a-sequence">
+<h2>Convert integers to a sequence<a class="headerlink" href="#convert-integers-to-a-sequence" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">from_indices</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">seq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;T&#39;, &#39;A&#39;, &#39;G&#39;, &#39;T&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>or</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq</span> <span class="o">=</span> <span class="n">DNA</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">from_ordinals_to_seq</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">seq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">None</td><td><span class="T_dna">T</span><span class="A_dna">A</span><span class="G_dna">G</span><span class="T_dna">T</span></td></tr>
+</table>
+<p><i>4 DnaSequence</i></p>
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

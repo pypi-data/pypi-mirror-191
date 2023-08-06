@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Apply a non-stationary nucleotide model to an alignment with 3 sequences &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Apply a non-stationary nucleotide model to an alignment with a tree" href="evo-model-with-tree.html" />
+    <link rel="prev" title="Using a protein model" href="align-protein.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Apply a non-stationary nucleotide model to an alignment with 3 sequences</a><ul>
+<li><a class="reference internal" href="#model-result"><code class="docutils literal notranslate"><span class="pre">model_result</span></code></a></li>
+<li><a class="reference internal" href="#fitting-a-separate-nucleotide-model-to-each-codon-position">Fitting a separate nucleotide model to each codon position</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="align-protein.html" title="Previous Chapter: Using a protein model"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Using a protein model</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo-model-with-tree.html" title="Next Chapter: Apply a non-stationary nucleotide model to an alignment with a tree"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Apply a non-s... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="apply-a-non-stationary-nucleotide-model-to-an-alignment-with-3-sequences">
+<h1>Apply a non-stationary nucleotide model to an alignment with 3 sequences<a class="headerlink" href="#apply-a-non-stationary-nucleotide-model-to-an-alignment-with-3-sequences" title="Permalink to this headline">¶</a></h1>
+<p>We load some sample data first and select just 3 sequences.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_app</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;load_aligned&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">select_seqs</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;take_named_seqs&quot;</span><span class="p">,</span> <span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;Rhesus&quot;</span><span class="p">,</span> <span class="s2">&quot;Galago&quot;</span><span class="p">)</span>
+<span class="n">process</span> <span class="o">=</span> <span class="n">loader</span> <span class="o">+</span> <span class="n">select_seqs</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">aln</span><span class="o">.</span><span class="n">names</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;Human&#39;, &#39;Rhesus&#39;, &#39;Galago&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>We analyses these using the general Markov nucleotide, GN, model.
+Because we analyse just 3 sequences, there is only one possible unrooted
+tree, hence it is not required to specify the tree in this instance.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gn</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span> <span class="s2">&quot;GN&quot;</span><span class="p">)</span>
+<span class="n">gn</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>model(sm=&#39;GN&#39;, tree=None, unique_trees=False, name=None,
+optimise_motif_probs=False, sm_args=None, lf_args=None, time_het=None,
+param_rules=None, opt_args=None, upper=50, split_codons=False,
+show_progress=False, verbose=False)
+</pre></div>
+</div>
+</div>
+</div>
+<p>We apply this to <code class="docutils literal notranslate"><span class="pre">aln</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span> <span class="o">=</span> <span class="n">gn</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">(</span><span class="n">fitted</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>cogent3.app.result.model_result
+</pre></div>
+</div>
+</div>
+</div>
+<section id="model-result">
+<h2><code class="docutils literal notranslate"><span class="pre">model_result</span></code><a class="headerlink" href="#model-result" title="Permalink to this headline">¶</a></h2>
+<p>As the output above indicates, <code class="docutils literal notranslate"><span class="pre">fitted</span></code> is a <code class="docutils literal notranslate"><span class="pre">model_result</span></code> object.</p>
+<p>This object provides an interface for accessing attributes of a fitted model. The representation display (below), a styled table in a jupyter notebook, presents a summary view with the log-likelihood (<code class="docutils literal notranslate"><span class="pre">lnL</span></code>), number of free parameters (<code class="docutils literal notranslate"><span class="pre">nfp</span></code>) and whether all matrices satisfied the identifiability conditions diagonal largest in column (DLC) and a unique mapping of Q to P. (For description of these quantities and why they matter see <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/?term=8854662">Chang 1996</a> and <a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/25503772">Kaehler et al</a>.)</p>
+<p><code class="docutils literal notranslate"><span class="pre">model_result</span></code> has dictionary behaviour, hence the <code class="docutils literal notranslate"><span class="pre">key</span></code> column. This will be demonstrated below.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">GN</span>
+</caption>
+<thead class="head_cell">
+<th>key</th><th>lnL</th><th>nfp</th><th>DLC</th><th>unique_Q</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">'GN'</span></td><td><span class="c3col_right">-5964.2583</span></td><td><span class="c3col_right">14</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>More detail on the fitted model are available via attributes. For instance, display the maximum likelihood estimates via the likelihood function attribute</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="o">.</span><span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>GN</h4>
+<p>log-likelihood = -5964.2583</p>
+<p>number of free parameters = 14</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>A>C</th><th>A>G</th><th>A>T</th><th>C>A</th><th>C>G</th><th>C>T</th><th>G>A</th><th>G>C</th><th>G>T</th><th>T>A</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.0635</span></td><td><span class="c3col_right">3.1945</span></td><td><span class="c3col_right">1.0209</span></td><td><span class="c3col_right">1.7944</span></td><td><span class="c3col_right">2.3266</span></td><td><span class="c3col_right">5.6766</span></td><td><span class="c3col_right">9.0612</span></td><td><span class="c3col_right">1.1126</span></td><td><span class="c3col_right">0.8312</span></td><td><span class="c3col_right">1.5001</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>T>C</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.5616</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0213</span></td></tr>
+<tr><td><span class="c3col_left">Rhesus</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0207</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.1773</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.3793</span></td><td><span class="c3col_right">0.1734</span></td><td><span class="c3col_right">0.2058</span></td><td><span class="c3col_right">0.2415</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="o">.</span><span class="n">lnL</span><span class="p">,</span> <span class="n">fitted</span><span class="o">.</span><span class="n">nfp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(-5964.258307147718, 14)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="o">.</span><span class="n">source</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;primate_brca1.fasta&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">model_result.tree</span></code> attribute is an “annotated tree”. Maximum likelihood estimates from the model have been assigned to the tree. Of particular significance, the “length” attribute corresponds to the expected number of substitutions (or ENS). For a non-stationary model, like GN, this can be different to the conventional length (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/25503772">Kaehler et al</a>).</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="o">.</span><span class="n">tree</span><span class="p">,</span> <span class="n">fitted</span><span class="o">.</span><span class="n">alignment</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>(Tree(&quot;(Human,Rhesus,Galago)root;&quot;),
+ 3 x 2814 alignment: Human[TGTGGCACAAA...], Rhesus[TGTGGCACAAA...], Galago[TGTGGCAAAAA...])
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can access the sum of all branch lengths. Either as “ENS” or “paralinear” using the <code class="docutils literal notranslate"><span class="pre">total_length()</span></code> method.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="o">.</span><span class="n">total_length</span><span class="p">(</span><span class="n">length_as</span><span class="o">=</span><span class="s2">&quot;paralinear&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>0.9292255003217949
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="fitting-a-separate-nucleotide-model-to-each-codon-position">
+<h2>Fitting a separate nucleotide model to each codon position<a class="headerlink" href="#fitting-a-separate-nucleotide-model-to-each-codon-position" title="Permalink to this headline">¶</a></h2>
+<p>Controlled by setting <code class="docutils literal notranslate"><span class="pre">split_codons=True</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">gn</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span> <span class="s2">&quot;GN&quot;</span><span class="p">,</span> <span class="n">split_codons</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">fitted</span> <span class="o">=</span> <span class="n">gn</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">fitted</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">GN</span>
+</caption>
+<thead class="head_cell">
+<th>key</th><th>lnL</th><th>nfp</th><th>DLC</th><th>unique_Q</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">''</span></td><td><span class="c3col_right">-5867.4461</span></td><td><span class="c3col_right">42</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+<tr><td><span class="c3col_left">1</span></td><td><span class="c3col_right">-1955.7571</span></td><td><span class="c3col_right">14</span></td><td><span class="c3col_left"></span></td><td><span class="c3col_left"></span></td></tr>
+<tr><td><span class="c3col_left">2</span></td><td><span class="c3col_right">-1934.2690</span></td><td><span class="c3col_right">14</span></td><td><span class="c3col_left"></span></td><td><span class="c3col_left"></span></td></tr>
+<tr><td><span class="c3col_left">3</span></td><td><span class="c3col_right">-1977.4200</span></td><td><span class="c3col_right">14</span></td><td><span class="c3col_left"></span></td><td><span class="c3col_left"></span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>The model fit statistics, <code class="docutils literal notranslate"><span class="pre">lnL</span></code> and <code class="docutils literal notranslate"><span class="pre">nfp</span></code> are now sums of the corresponding values from the fits to the individual positions. The <code class="docutils literal notranslate"><span class="pre">DLC</span></code> and <code class="docutils literal notranslate"><span class="pre">unique_Q</span></code> are also a summary across all models. These only achieve the value <code class="docutils literal notranslate"><span class="pre">True</span></code> when all matrices, from all models, satisfy the condition.</p>
+<p>We get access to the likelihood functions of the individual positions via the indicated dict keys.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fitted</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>LF id: 3</h4>
+<p>log-likelihood = -1977.4200</p>
+<p>number of free parameters = 14</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>A>C</th><th>A>G</th><th>A>T</th><th>C>A</th><th>C>G</th><th>C>T</th><th>G>A</th><th>G>C</th><th>G>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.7529</span></td><td><span class="c3col_right">3.4660</span></td><td><span class="c3col_right">2.4151</span></td><td><span class="c3col_right">2.3739</span></td><td><span class="c3col_right">3.4118</span></td><td><span class="c3col_right">16.1258</span></td><td><span class="c3col_right">16.8499</span></td><td><span class="c3col_right">2.0220</span></td><td><span class="c3col_right">1.7348</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>T>A</th><th>T>C</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.9255</span></td><td><span class="c3col_right">5.2915</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0239</span></td></tr>
+<tr><td><span class="c3col_left">Rhesus</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0316</span></td></tr>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.1777</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.3443</span></td><td><span class="c3col_right">0.1382</span></td><td><span class="c3col_right">0.1567</span></td><td><span class="c3col_right">0.3607</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

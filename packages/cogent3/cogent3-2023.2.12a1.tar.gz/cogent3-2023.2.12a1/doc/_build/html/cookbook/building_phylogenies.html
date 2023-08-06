@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Building phylogenies &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Evolutionary Analysis Using Likelihood" href="evo_modelling.html" />
+    <link rel="prev" title="Genetic distance calculation" href="calc_genetic_distance.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Building phylogenies</a><ul>
+<li><a class="reference internal" href="#building-a-phylogenetic-tree-from-pairwise-distances">Building A Phylogenetic Tree From Pairwise Distances</a></li>
+<li><a class="reference internal" href="#directly-via-alignment-quick-tree">Directly via <code class="docutils literal notranslate"><span class="pre">alignment.quick_tree()</span></code></a><ul>
+<li><a class="reference internal" href="#using-the-distancematrix-object">Using the <code class="docutils literal notranslate"><span class="pre">DistanceMatrix</span></code> object</a></li>
+<li><a class="reference internal" href="#explicitly-via-distancematrix-and-cogent3-phylo-nj-nj">Explicitly via <code class="docutils literal notranslate"><span class="pre">DistanceMatrix</span></code> and <code class="docutils literal notranslate"><span class="pre">cogent3.phylo.nj.nj()`</span></code></a></li>
+<li><a class="reference internal" href="#directly-from-a-pairwise-distance-dict">Directly from a pairwise distance <code class="docutils literal notranslate"><span class="pre">dict</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#by-least-squares">By Least-squares</a></li>
+<li><a class="reference internal" href="#by-ml">By ML</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="calc_genetic_distance.html" title="Previous Chapter: Genetic distance calculation"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Genetic dista...</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo_modelling.html" title="Next Chapter: Evolutionary Analysis Using Likelihood"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Evolutionary ... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="building-phylogenies">
+<h1>Building phylogenies<a class="headerlink" href="#building-phylogenies" title="Permalink to this headline">¶</a></h1>
+<section id="building-a-phylogenetic-tree-from-pairwise-distances">
+<h2>Building A Phylogenetic Tree From Pairwise Distances<a class="headerlink" href="#building-a-phylogenetic-tree-from-pairwise-distances" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="directly-via-alignment-quick-tree">
+<h2>Directly via <code class="docutils literal notranslate"><span class="pre">alignment.quick_tree()</span></code><a class="headerlink" href="#directly-via-alignment-quick-tree" title="Permalink to this headline">¶</a></h2>
+<p>Both the <code class="docutils literal notranslate"><span class="pre">ArrayAlignment</span></code> and <code class="docutils literal notranslate"><span class="pre">Alignment</span></code> classes support this.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">quick_tree</span><span class="p">(</span><span class="n">calc</span><span class="o">=</span><span class="s2">&quot;TN93&quot;</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">balanced</span><span class="p">()</span>  <span class="c1"># purely for display</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">ascii_art</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>                              /-HowlerMon
+                    /edge.0--|
+          /edge.1--|          \-Galago
+         |         |
+         |          \-Rhesus
+-root----|
+         |--Orangutan
+         |
+         |          /-Chimpanzee
+          \edge.2--|
+                   |          /-Human
+                    \edge.3--|
+                              \-Gorilla
+</pre></div>
+</div>
+</div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">quick_tree()</span></code> method also supports non-parametric bootstrapping. The number of resampled alignments is specified using the <code class="docutils literal notranslate"><span class="pre">bootstrap</span></code> argument. In the following, trees are estimated from 100 resampled alignments and merged into a single consensus topology using a weighted consensus tree algorithm.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tree</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">quick_tree</span><span class="p">(</span><span class="n">calc</span><span class="o">=</span><span class="s2">&quot;TN93&quot;</span><span class="p">,</span> <span class="n">bootstrap</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="using-the-distancematrix-object">
+<h3>Using the <code class="docutils literal notranslate"><span class="pre">DistanceMatrix</span></code> object<a class="headerlink" href="#using-the-distancematrix-object" title="Permalink to this headline">¶</a></h3>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">dists</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">distance_matrix</span><span class="p">(</span><span class="n">calc</span><span class="o">=</span><span class="s2">&quot;TN93&quot;</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">dists</span><span class="o">.</span><span class="n">quick_tree</span><span class="p">(</span><span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">balanced</span><span class="p">()</span>  <span class="c1"># purely for display</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">ascii_art</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>                              /-HowlerMon
+                    /edge.0--|
+          /edge.1--|          \-Galago
+         |         |
+         |          \-Rhesus
+-root----|
+         |--Orangutan
+         |
+         |          /-Chimpanzee
+          \edge.2--|
+                   |          /-Human
+                    \edge.3--|
+                              \-Gorilla
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="explicitly-via-distancematrix-and-cogent3-phylo-nj-nj">
+<h3>Explicitly via <code class="docutils literal notranslate"><span class="pre">DistanceMatrix</span></code> and <code class="docutils literal notranslate"><span class="pre">cogent3.phylo.nj.nj()`</span></code><a class="headerlink" href="#explicitly-via-distancematrix-and-cogent3-phylo-nj-nj" title="Permalink to this headline">¶</a></h3>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span>
+<span class="kn">from</span> <span class="nn">cogent3.phylo</span> <span class="kn">import</span> <span class="n">nj</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">dists</span> <span class="o">=</span> <span class="n">aln</span><span class="o">.</span><span class="n">distance_matrix</span><span class="p">(</span><span class="n">calc</span><span class="o">=</span><span class="s2">&quot;TN93&quot;</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">nj</span><span class="o">.</span><span class="n">nj</span><span class="p">(</span><span class="n">dists</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">balanced</span><span class="p">()</span>  <span class="c1"># purely for display</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">ascii_art</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>                              /-HowlerMon
+                    /edge.0--|
+          /edge.1--|          \-Galago
+         |         |
+         |          \-Rhesus
+-root----|
+         |--Orangutan
+         |
+         |          /-Chimpanzee
+          \edge.2--|
+                   |          /-Human
+                    \edge.3--|
+                              \-Gorilla
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="directly-from-a-pairwise-distance-dict">
+<h3>Directly from a pairwise distance <code class="docutils literal notranslate"><span class="pre">dict</span></code><a class="headerlink" href="#directly-from-a-pairwise-distance-dict" title="Permalink to this headline">¶</a></h3>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3.phylo</span> <span class="kn">import</span> <span class="n">nj</span>
+
+<span class="n">dists</span> <span class="o">=</span> <span class="p">{(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">):</span> <span class="mf">2.7</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">):</span> <span class="mf">2.33</span><span class="p">,</span> <span class="p">(</span><span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">):</span> <span class="mf">0.73</span><span class="p">}</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">nj</span><span class="o">.</span><span class="n">nj</span><span class="p">(</span><span class="n">dists</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">ascii_art</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>          /-a
+         |
+-root----|--b
+         |
+          \-c
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="by-least-squares">
+<h2>By Least-squares<a class="headerlink" href="#by-least-squares" title="Permalink to this headline">¶</a></h2>
+<p>We illustrate the phylogeny reconstruction by least-squares using the F81 substitution model. We use the advanced-stepwise addition algorithm to search tree space. Here <code class="docutils literal notranslate"><span class="pre">a</span></code> is the number of taxa to exhaustively evaluate all possible phylogenies for. Successive taxa are added to the top <code class="docutils literal notranslate"><span class="pre">k</span></code> trees (measured by the least-squares metric) and <code class="docutils literal notranslate"><span class="pre">k</span></code> trees are kept at each iteration.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3.phylo.least_squares</span> <span class="kn">import</span> <span class="n">WLS</span>
+<span class="kn">from</span> <span class="nn">cogent3.util.deserialise</span> <span class="kn">import</span> <span class="n">deserialise_object</span>
+
+<span class="n">dists</span> <span class="o">=</span> <span class="n">deserialise_object</span><span class="p">(</span><span class="s2">&quot;data/dists_for_phylo.json&quot;</span><span class="p">)</span>
+<span class="n">ls</span> <span class="o">=</span> <span class="n">WLS</span><span class="p">(</span><span class="n">dists</span><span class="p">)</span>
+<span class="n">stat</span><span class="p">,</span> <span class="n">tree</span> <span class="o">=</span> <span class="n">ls</span><span class="o">.</span><span class="n">trex</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Other optional arguments that can be passed to the <code class="docutils literal notranslate"><span class="pre">trex</span></code> method are: <code class="docutils literal notranslate"><span class="pre">return_all</span></code>, whether the <code class="docutils literal notranslate"><span class="pre">k</span></code> best trees at the final step are returned as a <code class="docutils literal notranslate"><span class="pre">ScoredTreeCollection</span></code> object; <code class="docutils literal notranslate"><span class="pre">order</span></code>, a series of tip names whose order defines the sequence in which tips will be added during tree building (this allows the user to randomise the input order).</p>
+</section>
+<section id="by-ml">
+<h2>By ML<a class="headerlink" href="#by-ml" title="Permalink to this headline">¶</a></h2>
+<p>We illustrate the phylogeny reconstruction using maximum-likelihood using the F81 substitution model. We use the advanced-stepwise addition algorithm to search tree space.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span>
+<span class="kn">from</span> <span class="nn">cogent3.evolve.models</span> <span class="kn">import</span> <span class="n">F81</span>
+<span class="kn">from</span> <span class="nn">cogent3.phylo.maximum_likelihood</span> <span class="kn">import</span> <span class="n">ML</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">ml</span> <span class="o">=</span> <span class="n">ML</span><span class="p">(</span><span class="n">F81</span><span class="p">(),</span> <span class="n">aln</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

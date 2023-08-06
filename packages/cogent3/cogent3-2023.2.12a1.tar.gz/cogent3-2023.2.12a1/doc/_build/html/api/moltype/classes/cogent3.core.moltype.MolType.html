@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>MolType &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/thebelab-helper.js"></script>
+    <script src="../../../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../../../_static/require.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="alphabet" href="../../alphabet/alphabet.html" />
+    <link rel="prev" title="moltype" href="../moltype.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../../../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../../../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../../../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../../../install.html">Install</a></li>
+                <li><a href="../../../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../../../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">MolType</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="../moltype.html" title="Previous Chapter: moltype"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; moltype</span>
+    </a>
+  </li>
+  <li>
+    <a href="../../alphabet/alphabet.html" title="Next Chapter: alphabet"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">alphabet &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../../../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <section id="moltype">
+<h1>MolType<a class="headerlink" href="#moltype" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MolType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">motifset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">missing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'?'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gaps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq_constructor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ambiguities</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complements</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pairs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mw_calculator</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_lower</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preserve_existing_moltypes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">make_alphabet_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">array_seq_constructor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType" title="Permalink to this definition">¶</a></dt>
+<dd><p>MolType: Handles operations that depend on the sequence type (e.g. DNA).</p>
+<p>The MolType knows how to connect alphabets, sequences, alignments, and so
+forth, and how to disambiguate ambiguous symbols and perform base
+pairing (where appropriate).</p>
+<p>WARNING: Objects passed to a MolType become associated with that MolType,
+i.e. if you pass ProteinSequence to a new MolType you make up, all
+ProteinSequences will now be associated with the new MolType. This may
+not be what you expect. Use preserve_existing_moltypes=True if you
+don’t want to reset the moltype.</p>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.can_match" title="cogent3.core.moltype.MolType.can_match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">can_match</span></code></a>(first, second)</p></td>
+<td><p>Returns True if every pos in 1st could match same pos in 2nd.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.can_mismatch" title="cogent3.core.moltype.MolType.can_mismatch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">can_mismatch</span></code></a>(first, second)</p></td>
+<td><p>Returns True if any position in 1st could cause a mismatch with 2nd.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.can_mispair" title="cogent3.core.moltype.MolType.can_mispair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">can_mispair</span></code></a>(first, second)</p></td>
+<td><p>Returns True if any position in 1st could mispair with 2nd.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.can_pair" title="cogent3.core.moltype.MolType.can_pair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">can_pair</span></code></a>(first, second)</p></td>
+<td><p>Returns True if first and second could pair.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.complement" title="cogent3.core.moltype.MolType.complement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">complement</span></code></a>(item)</p></td>
+<td><p>Returns complement of item, using data from self.complements.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.count_degenerate" title="cogent3.core.moltype.MolType.count_degenerate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count_degenerate</span></code></a>(sequence)</p></td>
+<td><p>Counts the degenerate bases in the specified sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.count_gaps" title="cogent3.core.moltype.MolType.count_gaps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">count_gaps</span></code></a>(sequence)</p></td>
+<td><p>Counts the gaps in the specified sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.degap" title="cogent3.core.moltype.MolType.degap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">degap</span></code></a>(sequence)</p></td>
+<td><p>Deletes all gap characters from sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.degenerate_from_seq" title="cogent3.core.moltype.MolType.degenerate_from_seq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">degenerate_from_seq</span></code></a>(sequence)</p></td>
+<td><p>Returns least degenerate symbol corresponding to chars in sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.disambiguate" title="cogent3.core.moltype.MolType.disambiguate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disambiguate</span></code></a>(sequence[, method])</p></td>
+<td><p>Returns a non-degenerate sequence from a degenerate one.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.first_degenerate" title="cogent3.core.moltype.MolType.first_degenerate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_degenerate</span></code></a>(sequence)</p></td>
+<td><p>Returns the index of first degenerate symbol in sequence, or None.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.first_gap" title="cogent3.core.moltype.MolType.first_gap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_gap</span></code></a>(sequence)</p></td>
+<td><p>Returns the index of the first gap in the sequence, or None.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.first_invalid" title="cogent3.core.moltype.MolType.first_invalid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_invalid</span></code></a>(sequence)</p></td>
+<td><p>Returns the index of first invalid symbol in sequence, or None.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.first_non_strict" title="cogent3.core.moltype.MolType.first_non_strict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_non_strict</span></code></a>(sequence)</p></td>
+<td><p>Returns the index of first non-strict symbol in sequence, or None.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.first_not_in_alphabet" title="cogent3.core.moltype.MolType.first_not_in_alphabet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_not_in_alphabet</span></code></a>(sequence[, alphabet])</p></td>
+<td><p>Returns index of first item not in alphabet, or None.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.gap_indices" title="cogent3.core.moltype.MolType.gap_indices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gap_indices</span></code></a>(sequence)</p></td>
+<td><p>Returns list of indices of all gaps in the sequence, or [].</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.gap_maps" title="cogent3.core.moltype.MolType.gap_maps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gap_maps</span></code></a>(sequence)</p></td>
+<td><p>Returns tuple containing dicts mapping between gapped and ungapped.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.gap_vector" title="cogent3.core.moltype.MolType.gap_vector"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gap_vector</span></code></a>(sequence)</p></td>
+<td><p>Returns list of bool indicating gap or non-gap in sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.get_css_style" title="cogent3.core.moltype.MolType.get_css_style"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_css_style</span></code></a>([colors, font_size, font_family])</p></td>
+<td><p>returns string of CSS classes and {character: &lt;CSS class name&gt;, ...}</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.get_degenerate_positions" title="cogent3.core.moltype.MolType.get_degenerate_positions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_degenerate_positions</span></code></a>(sequence[, include_gap])</p></td>
+<td><p>returns indices matching degenerate characters</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.get_type" title="cogent3.core.moltype.MolType.get_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_type</span></code></a>()</p></td>
+<td><p>Return the moltype label</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.gettype" title="cogent3.core.moltype.MolType.gettype"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gettype</span></code></a>()</p></td>
+<td><p>Return the moltype label.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_ambiguity" title="cogent3.core.moltype.MolType.is_ambiguity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_ambiguity</span></code></a>(querymotif)</p></td>
+<td><p>Return True if querymotif is an amibiguity character in alphabet.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_degenerate" title="cogent3.core.moltype.MolType.is_degenerate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_degenerate</span></code></a>(sequence)</p></td>
+<td><p>Returns True if sequence contains degenerate characters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_gap" title="cogent3.core.moltype.MolType.is_gap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_gap</span></code></a>(char)</p></td>
+<td><p>Returns True if char is a gap.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_gapped" title="cogent3.core.moltype.MolType.is_gapped"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_gapped</span></code></a>(sequence)</p></td>
+<td><p>Returns True if sequence contains gaps.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_strict" title="cogent3.core.moltype.MolType.is_strict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_strict</span></code></a>(sequence)</p></td>
+<td><p>Returns True if sequence contains only items in self.alphabet.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.is_valid" title="cogent3.core.moltype.MolType.is_valid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_valid</span></code></a>(sequence)</p></td>
+<td><p>Returns True if sequence contains no items that are not in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.make_array_seq" title="cogent3.core.moltype.MolType.make_array_seq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_array_seq</span></code></a>(seq[, name])</p></td>
+<td><p>creates an array sequence</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.make_seq" title="cogent3.core.moltype.MolType.make_seq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">make_seq</span></code></a>(seq[, name])</p></td>
+<td><p>Returns sequence of correct type.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.must_match" title="cogent3.core.moltype.MolType.must_match"><code class="xref py py-obj docutils literal notranslate"><span class="pre">must_match</span></code></a>(first, second)</p></td>
+<td><p>Returns True if all positions in 1st must match positions in second.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.must_pair" title="cogent3.core.moltype.MolType.must_pair"><code class="xref py py-obj docutils literal notranslate"><span class="pre">must_pair</span></code></a>(first, second)</p></td>
+<td><p>Returns True if all positions in 1st must pair with second.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.mw" title="cogent3.core.moltype.MolType.mw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mw</span></code></a>(sequence[, method, delta])</p></td>
+<td><p>Returns the molecular weight of the sequence.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.possibilities" title="cogent3.core.moltype.MolType.possibilities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">possibilities</span></code></a>(sequence)</p></td>
+<td><p>Counts number of possible sequences matching the sequence.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.rc" title="cogent3.core.moltype.MolType.rc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rc</span></code></a>(item)</p></td>
+<td><p>Returns reverse complement of item w/ data from self.complements.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.strand_symmetric_motifs" title="cogent3.core.moltype.MolType.strand_symmetric_motifs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strand_symmetric_motifs</span></code></a>([motif_length])</p></td>
+<td><p>returns ordered pairs of strand complementary motifs</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.to_json" title="cogent3.core.moltype.MolType.to_json"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_json</span></code></a>()</p></td>
+<td><p>returns result of json formatted string</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.to_regex" title="cogent3.core.moltype.MolType.to_regex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">to_regex</span></code></a>(seq)</p></td>
+<td><p>returns a regex pattern with ambiguities expanded to a character set</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.valid_on_alphabet" title="cogent3.core.moltype.MolType.valid_on_alphabet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">valid_on_alphabet</span></code></a>(sequence[, alphabet])</p></td>
+<td><p>Returns True if sequence contains only items in alphabet.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.verify_sequence" title="cogent3.core.moltype.MolType.verify_sequence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_sequence</span></code></a>(seq[, gaps_allowed, ...])</p></td>
+<td><p>Checks whether sequence is valid on the default alphabet.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#cogent3.core.moltype.MolType.what_ambiguity" title="cogent3.core.moltype.MolType.what_ambiguity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">what_ambiguity</span></code></a>(motifs)</p></td>
+<td><p>The code that represents all of 'motifs', and minimal others.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 62%" />
+<col style="width: 38%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>to_rich_dict</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.can_match">
+<span class="sig-name descname"><span class="pre">can_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.can_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if every pos in 1st could match same pos in 2nd.</p>
+<p>Truncates at length of shorter sequence.
+gaps are only allowed to match other gaps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.can_mismatch">
+<span class="sig-name descname"><span class="pre">can_mismatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.can_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if any position in 1st could cause a mismatch with 2nd.</p>
+<p>Truncates at length of shorter sequence.
+gaps are always counted as matches.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.can_mispair">
+<span class="sig-name descname"><span class="pre">can_mispair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.can_mispair" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if any position in 1st could mispair with 2nd.</p>
+<p>Pairing occurs in reverse order, i.e. last position of second with
+first position of first, etc.</p>
+<p>Truncates at length of shorter sequence.
+gaps are always counted as possible mispairs, as are weak pairs like GU.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.can_pair">
+<span class="sig-name descname"><span class="pre">can_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.can_pair" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if first and second could pair.</p>
+<p>Pairing occurs in reverse order, i.e. last position of second with
+first position of first, etc.</p>
+<p>Truncates at length of shorter sequence.
+gaps are only allowed to pair with other gaps, and are counted as ‘weak’
+(same category as GU and degenerate pairs).</p>
+<p>NOTE: second must be able to be reverse</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.complement">
+<span class="sig-name descname"><span class="pre">complement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.complement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns complement of item, using data from self.complements.</p>
+<p>Always tries to return same type as item: if item looks like a dict,
+will return list of keys.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.count_degenerate">
+<span class="sig-name descname"><span class="pre">count_degenerate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.count_degenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts the degenerate bases in the specified sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.count_gaps">
+<span class="sig-name descname"><span class="pre">count_gaps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.count_gaps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts the gaps in the specified sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.degap">
+<span class="sig-name descname"><span class="pre">degap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.degap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes all gap characters from sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.degenerate_from_seq">
+<span class="sig-name descname"><span class="pre">degenerate_from_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.degenerate_from_seq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns least degenerate symbol corresponding to chars in sequence.</p>
+<p>First tries to look up in self.inverse_degenerates. Then disambiguates
+and tries to look up in self.inverse_degenerates. Then tries converting
+the case (tries uppercase before lowercase). Raises TypeError if
+conversion fails.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.disambiguate">
+<span class="sig-name descname"><span class="pre">disambiguate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'strip'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.disambiguate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a non-degenerate sequence from a degenerate one.</p>
+<p>method can be ‘strip’ (deletes any characters not in monomers or gaps)
+or ‘random’(assigns the possibilities at random, using equal
+frequencies).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.first_degenerate">
+<span class="sig-name descname"><span class="pre">first_degenerate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.first_degenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of first degenerate symbol in sequence, or None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.first_gap">
+<span class="sig-name descname"><span class="pre">first_gap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.first_gap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of the first gap in the sequence, or None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.first_invalid">
+<span class="sig-name descname"><span class="pre">first_invalid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.first_invalid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of first invalid symbol in sequence, or None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.first_non_strict">
+<span class="sig-name descname"><span class="pre">first_non_strict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.first_non_strict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of first non-strict symbol in sequence, or None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.first_not_in_alphabet">
+<span class="sig-name descname"><span class="pre">first_not_in_alphabet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphabet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.first_not_in_alphabet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns index of first item not in alphabet, or None.</p>
+<p>Defaults to self.alphabet if alphabet not supplied.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.gap_indices">
+<span class="sig-name descname"><span class="pre">gap_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.gap_indices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of indices of all gaps in the sequence, or [].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.gap_maps">
+<span class="sig-name descname"><span class="pre">gap_maps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.gap_maps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns tuple containing dicts mapping between gapped and ungapped.</p>
+<p>First element is a dict such that d[ungapped_coord] = gapped_coord.
+Second element is a dict such that d[gapped_coord] = ungapped_coord.</p>
+<p>Note that the dicts will be invalid if the sequence changes after the
+dicts are made.</p>
+<p>The gaps themselves are not in the dictionary, so use d.get() or test
+‘if pos in d’ to avoid KeyErrors if looking up all elements in a gapped
+sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.gap_vector">
+<span class="sig-name descname"><span class="pre">gap_vector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.gap_vector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of bool indicating gap or non-gap in sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.get_css_style">
+<span class="sig-name descname"><span class="pre">get_css_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_family</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Lucida</span> <span class="pre">Console'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.get_css_style" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns string of CSS classes and {character: &lt;CSS class name&gt;, …}</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>colors</strong></dt><dd><p>{char</p>
+</dd>
+<dt><strong>font_size</strong></dt><dd><p>in points</p>
+</dd>
+<dt><strong>font_family</strong></dt><dd><p>name of a monospace font</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.get_degenerate_positions">
+<span class="sig-name descname"><span class="pre">get_degenerate_positions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_gap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.get_degenerate_positions" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns indices matching degenerate characters</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.get_type">
+<span class="sig-name descname"><span class="pre">get_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.get_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the moltype label</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.gettype">
+<span class="sig-name descname"><span class="pre">gettype</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.gettype" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the moltype label.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_ambiguity">
+<span class="sig-name descname"><span class="pre">is_ambiguity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">querymotif</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_ambiguity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if querymotif is an amibiguity character in alphabet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>querymotif</strong></dt><dd><p>the motif being queried.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_degenerate">
+<span class="sig-name descname"><span class="pre">is_degenerate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_degenerate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if sequence contains degenerate characters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_gap">
+<span class="sig-name descname"><span class="pre">is_gap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_gap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if char is a gap.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_gapped">
+<span class="sig-name descname"><span class="pre">is_gapped</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_gapped" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if sequence contains gaps.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_strict">
+<span class="sig-name descname"><span class="pre">is_strict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_strict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if sequence contains only items in self.alphabet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if sequence contains no items that are not in self.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.make_array_seq">
+<span class="sig-name descname"><span class="pre">make_array_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.make_array_seq" title="Permalink to this definition">¶</a></dt>
+<dd><p>creates an array sequence</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>seq</strong></dt><dd><p>characters or array</p>
+</dd>
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd></dd>
+<dt><strong>kwargs</strong></dt><dd><p>keyword arguments for the ArraySequence constructor.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ArraySequence</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.make_seq">
+<span class="sig-name descname"><span class="pre">make_seq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.make_seq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns sequence of correct type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.must_match">
+<span class="sig-name descname"><span class="pre">must_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.must_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all positions in 1st must match positions in second.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.must_pair">
+<span class="sig-name descname"><span class="pre">must_pair</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.must_pair" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all positions in 1st must pair with second.</p>
+<p>Pairing occurs in reverse order, i.e. last position of second with
+first position of first, etc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.mw">
+<span class="sig-name descname"><span class="pre">mw</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'random'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">delta</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.mw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the molecular weight of the sequence.</p>
+<p>If the sequence is ambiguous, uses method (random or strip) to
+disambiguate the sequence.</p>
+<p>if delta is present, uses it instead of the standard weight adjustment.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.possibilities">
+<span class="sig-name descname"><span class="pre">possibilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.possibilities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Counts number of possible sequences matching the sequence.</p>
+<p>Uses self.degenerates to decide how many possibilites there are at
+each position in the sequence.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.rc">
+<span class="sig-name descname"><span class="pre">rc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.rc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns reverse complement of item w/ data from self.complements.</p>
+<p>Always returns same type as input.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.strand_symmetric_motifs">
+<span class="sig-name descname"><span class="pre">strand_symmetric_motifs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">motif_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.strand_symmetric_motifs" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns ordered pairs of strand complementary motifs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns result of json formatted string</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.to_regex">
+<span class="sig-name descname"><span class="pre">to_regex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.to_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a regex pattern with ambiguities expanded to a character set</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.to_rich_dict">
+<span class="sig-name descname"><span class="pre">to_rich_dict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">for_pickle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.to_rich_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.valid_on_alphabet">
+<span class="sig-name descname"><span class="pre">valid_on_alphabet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphabet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.valid_on_alphabet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if sequence contains only items in alphabet.</p>
+<p>alphabet can actually be anything that implements __contains__.
+Defaults to self.alphabet if not supplied.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.verify_sequence">
+<span class="sig-name descname"><span class="pre">verify_sequence</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gaps_allowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wildcards_allowed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.verify_sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether sequence is valid on the default alphabet.</p>
+<p>Has special-case handling for gaps and wild-cards. This mechanism is
+probably useful to have in parallel with the validation routines that
+check specifically whether the sequence has gaps, degenerate symbols,
+etc., or that explicitly take an alphabet as input.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="cogent3.core.moltype.MolType.what_ambiguity">
+<span class="sig-name descname"><span class="pre">what_ambiguity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">motifs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cogent3.core.moltype.MolType.what_ambiguity" title="Permalink to this definition">¶</a></dt>
+<dd><p>The code that represents all of ‘motifs’, and minimal others.</p>
+<p>Does this duplicate DegenerateFromSequence directly?</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

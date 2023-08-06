@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Molecular types &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Alphabets" href="alphabet.html" />
+    <link rel="prev" title="Annotations" href="annotations.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Molecular types</a><ul>
+<li><a class="reference internal" href="#available-molecular-types">Available molecular types</a></li>
+<li><a class="reference internal" href="#getting-a-moltype">Getting a <code class="docutils literal notranslate"><span class="pre">MolType</span></code></a></li>
+<li><a class="reference internal" href="#using-a-moltype-to-get-ambiguity-codes">Using a <code class="docutils literal notranslate"><span class="pre">MolType</span></code> to get ambiguity codes</a></li>
+<li><a class="reference internal" href="#moltype-definition-of-degenerate-codes"><code class="docutils literal notranslate"><span class="pre">MolType</span></code> definition of degenerate codes</a></li>
+<li><a class="reference internal" href="#nucleic-acid-moltype-and-complementing">Nucleic acid <code class="docutils literal notranslate"><span class="pre">MolType</span></code> and complementing</a></li>
+<li><a class="reference internal" href="#making-sequences">Making sequences</a></li>
+<li><a class="reference internal" href="#verify-sequences">Verify sequences</a></li>
+<li><a class="reference internal" href="#making-a-custom-moltype">Making a custom <code class="docutils literal notranslate"><span class="pre">MolType</span></code></a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="annotations.html" title="Previous Chapter: Annotations"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Annotations</span>
+    </a>
+  </li>
+  <li>
+    <a href="alphabet.html" title="Next Chapter: Alphabets"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Alphabets &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="molecular-types">
+<h1>Molecular types<a class="headerlink" href="#molecular-types" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">MolType</span></code> object provides services for resolving ambiguities, or providing the correct ambiguity for recoding. It also maintains the mappings between different kinds of alphabets, sequences and alignments.</p>
+<p>If your analysis involves handling ambiguous states, or translation via a genetic code, it’s critical to specify the appropriate moltype.</p>
+<section id="available-molecular-types">
+<h2>Available molecular types<a class="headerlink" href="#available-molecular-types" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">available_moltypes</span>
+
+<span class="n">available_moltypes</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.25); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Specify a moltype by the Abbreviation (case insensitive).</span>
+</caption>
+<thead class="head_cell">
+<th>Abbreviation</th><th>Number of states</th><th>Moltype</th>
+</thead>
+<tbody>
+<tr><td class="index"><span class="c3col_left">'ab'</span></td><td><span class="c3col_right">2</span></td><td><span class="c3col_left">MolType(('a', 'b'))</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'dna'</span></td><td><span class="c3col_right">4</span></td><td><span class="c3col_left">MolType(('T', 'C', 'A', 'G'))</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'rna'</span></td><td><span class="c3col_right">4</span></td><td><span class="c3col_left">MolType(('U', 'C', 'A', 'G'))</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'protein'</span></td><td><span class="c3col_right">21</span></td><td><span class="c3col_left">MolType(('A', 'C', 'D', 'E', 'F', 'G', ...</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'protein_with_stop'</span></td><td><span class="c3col_right">22</span></td><td><span class="c3col_left">MolType(('A', 'C', 'D', 'E', 'F', 'G', ...</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'text'</span></td><td><span class="c3col_right">52</span></td><td><span class="c3col_left">MolType(('a', 'b', 'c', 'd', 'e', 'f', ...</span></td></tr>
+<tr><td class="index"><span class="c3col_left">'bytes'</span></td><td><span class="c3col_right">256</span></td><td><span class="c3col_left">MolType(('\x00', '\x01', '\x02', '\x03'...</span></td></tr>
+</tbody>
+</table>
+<p>
+7 rows x 3 columns</p>
+</div></div></div>
+</div>
+<p>For statements that have a <code class="docutils literal notranslate"><span class="pre">moltype</span></code> argument, use the entry under the “Abbreviation” column. For example:</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span>
+
+<span class="n">seqs</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/brca1-bats.fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+<section id="getting-a-moltype">
+<h2>Getting a <code class="docutils literal notranslate"><span class="pre">MolType</span></code><a class="headerlink" href="#getting-a-moltype" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_moltype</span>
+
+<span class="n">dna</span> <span class="o">=</span> <span class="n">get_moltype</span><span class="p">(</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">dna</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>MolType((&#39;T&#39;, &#39;C&#39;, &#39;A&#39;, &#39;G&#39;))
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="using-a-moltype-to-get-ambiguity-codes">
+<h2>Using a <code class="docutils literal notranslate"><span class="pre">MolType</span></code> to get ambiguity codes<a class="headerlink" href="#using-a-moltype-to-get-ambiguity-codes" title="Permalink to this headline">¶</a></h2>
+<p>Just using <code class="docutils literal notranslate"><span class="pre">dna</span></code> from above.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dna</span><span class="o">.</span><span class="n">ambiguities</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;?&#39;: (&#39;T&#39;, &#39;C&#39;, &#39;A&#39;, &#39;G&#39;, &#39;-&#39;),
+ &#39;-&#39;: (&#39;-&#39;,),
+ &#39;N&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;R&#39;: (&#39;A&#39;, &#39;G&#39;),
+ &#39;Y&#39;: (&#39;C&#39;, &#39;T&#39;),
+ &#39;W&#39;: (&#39;A&#39;, &#39;T&#39;),
+ &#39;S&#39;: (&#39;C&#39;, &#39;G&#39;),
+ &#39;K&#39;: (&#39;T&#39;, &#39;G&#39;),
+ &#39;M&#39;: (&#39;C&#39;, &#39;A&#39;),
+ &#39;B&#39;: (&#39;C&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;D&#39;: (&#39;A&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;H&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;T&#39;),
+ &#39;V&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;G&#39;),
+ &#39;T&#39;: (&#39;T&#39;,),
+ &#39;C&#39;: (&#39;C&#39;,),
+ &#39;A&#39;: (&#39;A&#39;,),
+ &#39;G&#39;: (&#39;G&#39;,)}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="moltype-definition-of-degenerate-codes">
+<h2><code class="docutils literal notranslate"><span class="pre">MolType</span></code> definition of degenerate codes<a class="headerlink" href="#moltype-definition-of-degenerate-codes" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dna</span><span class="o">.</span><span class="n">degenerates</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>{&#39;N&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;R&#39;: (&#39;A&#39;, &#39;G&#39;),
+ &#39;Y&#39;: (&#39;C&#39;, &#39;T&#39;),
+ &#39;W&#39;: (&#39;A&#39;, &#39;T&#39;),
+ &#39;S&#39;: (&#39;C&#39;, &#39;G&#39;),
+ &#39;K&#39;: (&#39;T&#39;, &#39;G&#39;),
+ &#39;M&#39;: (&#39;C&#39;, &#39;A&#39;),
+ &#39;B&#39;: (&#39;C&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;D&#39;: (&#39;A&#39;, &#39;T&#39;, &#39;G&#39;),
+ &#39;H&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;T&#39;),
+ &#39;V&#39;: (&#39;A&#39;, &#39;C&#39;, &#39;G&#39;),
+ &#39;?&#39;: &#39;TCAG-&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="nucleic-acid-moltype-and-complementing">
+<h2>Nucleic acid <code class="docutils literal notranslate"><span class="pre">MolType</span></code> and complementing<a class="headerlink" href="#nucleic-acid-moltype-and-complementing" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dna</span><span class="o">.</span><span class="n">complement</span><span class="p">(</span><span class="s2">&quot;AGG&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&#39;TCC&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="making-sequences">
+<h2>Making sequences<a class="headerlink" href="#making-sequences" title="Permalink to this headline">¶</a></h2>
+<p>Use the either the top level <code class="docutils literal notranslate"><span class="pre">cogent3.make_seq</span></code> function, or the method on the <code class="docutils literal notranslate"><span class="pre">MolType</span></code> instance.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seq</span> <span class="o">=</span> <span class="n">dna</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;AGGCTT&quot;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;seq1&quot;</span><span class="p">)</span>
+<span class="n">seq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: blue; }
+.c3seq .C_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: #FF0102; }
+.c3seq .G_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: green; }
+.c3seq .terminal_ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+.c3seq .ambig_dna{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: gray; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">seq1</td><td><span class="A_dna">A</span><span class="G_dna">G</span><span class="G_dna">G</span><span class="C_dna">C</span><span class="T_dna">T</span><span class="T_dna">T</span></td></tr>
+</table>
+<p><i>6 DnaSequence</i></p>
+</div></div></div>
+</div>
+</section>
+<section id="verify-sequences">
+<h2>Verify sequences<a class="headerlink" href="#verify-sequences" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rna</span> <span class="o">=</span> <span class="n">get_moltype</span><span class="p">(</span><span class="s2">&quot;rna&quot;</span><span class="p">)</span>
+<span class="n">rna</span><span class="o">.</span><span class="n">is_valid</span><span class="p">(</span><span class="s2">&quot;ACGUACGUACGUACGU&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="making-a-custom-moltype">
+<h2>Making a custom <code class="docutils literal notranslate"><span class="pre">MolType</span></code><a class="headerlink" href="#making-a-custom-moltype" title="Permalink to this headline">¶</a></h2>
+<p>We demonstrate this by customising DNA so it allows <code class="docutils literal notranslate"><span class="pre">.</span></code> as gaps</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3.core</span> <span class="kn">import</span> <span class="n">moltype</span> <span class="k">as</span> <span class="n">mt</span>
+
+<span class="n">DNAgapped</span> <span class="o">=</span> <span class="n">mt</span><span class="o">.</span><span class="n">MolType</span><span class="p">(</span>
+    <span class="n">seq_constructor</span><span class="o">=</span><span class="n">mt</span><span class="o">.</span><span class="n">DnaSequence</span><span class="p">,</span>
+    <span class="n">motifset</span><span class="o">=</span><span class="n">mt</span><span class="o">.</span><span class="n">IUPAC_DNA_chars</span><span class="p">,</span>
+    <span class="n">ambiguities</span><span class="o">=</span><span class="n">mt</span><span class="o">.</span><span class="n">IUPAC_DNA_ambiguities</span><span class="p">,</span>
+    <span class="n">complements</span><span class="o">=</span><span class="n">mt</span><span class="o">.</span><span class="n">IUPAC_DNA_ambiguities_complements</span><span class="p">,</span>
+    <span class="n">pairs</span><span class="o">=</span><span class="n">mt</span><span class="o">.</span><span class="n">DnaStandardPairs</span><span class="p">,</span>
+    <span class="n">gaps</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">seq</span> <span class="o">=</span> <span class="n">DNAgapped</span><span class="o">.</span><span class="n">make_seq</span><span class="p">(</span><span class="s2">&quot;ACG.&quot;</span><span class="p">)</span>
+<span class="n">seq</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><style>
+.c3seq td { border: none !important; text-align: left !important; }
+.c3seq tr:not(.num_row) td span {margin: 0 2px;}
+.c3seq tr:nth-child(even) {background: #f7f7f7;}
+.c3seq .num_row {background-color:rgba(161, 195, 209, 0.5) !important; border-top: solid 1px black; }
+.c3seq .label { font-size: 12pt ; text-align: right !important; color: black !important; padding: 0 4px; }
+.c3seq .T_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .C_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .A_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .G_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .terminal_ambig_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+.c3seq .ambig_{font-family: "Lucida Console",monospace !important; font-size: 12pt !important; color: black; }
+</style>
+<div class="c3seq">
+<table>
+<tr class="num_row"><td></td><td><b>0</b></td></tr>
+<tr><td class="label">None</td><td><span class="A_">A</span><span class="C_">C</span><span class="G_">G</span><span class="terminal_ambig_None">.</span></td></tr>
+</table>
+<p><i>4 DnaSequence</i></p>
+</div></div></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>At present, constructing a custom <code class="docutils literal notranslate"><span class="pre">MolType</span></code> that overrides a builtin one affects the original (in this instance, the <code class="docutils literal notranslate"><span class="pre">DnaSequence</span></code> class). All subsequent calls to the original class in the running process that made the change are affected. The below code is resetting this attribute now to allow the rest of the documentation to be executed.</p>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">DNA</span>
+<span class="kn">from</span> <span class="nn">cogent3.core.sequence</span> <span class="kn">import</span> <span class="n">DnaSequence</span>
+
+<span class="n">DnaSequence</span><span class="o">.</span><span class="n">moltype</span> <span class="o">=</span> <span class="n">DNA</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

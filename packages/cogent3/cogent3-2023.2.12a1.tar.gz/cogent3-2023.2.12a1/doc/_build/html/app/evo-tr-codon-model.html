@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Applying a time-reversible codon model &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Testing a hypothesis – non-stationary or time-reversible" href="evo-hypothesis.html" />
+    <link rel="prev" title="Applying GNC, a non-stationary codon model" href="evo-nstat-codon-model.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Applying a time-reversible codon model</a><ul>
+<li><a class="reference internal" href="#using-the-conditional-nucleotide-form-codon-model">Using the conditional nucleotide form codon model</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="evo-nstat-codon-model.html" title="Previous Chapter: Applying GNC, a non-stationary codon model"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Applying GNC,...</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo-hypothesis.html" title="Next Chapter: Testing a hypothesis – non-stationary or time-reversible"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Testing a hyp... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="applying-a-time-reversible-codon-model">
+<h1>Applying a time-reversible codon model<a class="headerlink" href="#applying-a-time-reversible-codon-model" title="Permalink to this headline">¶</a></h1>
+<p>We display the full set of codon models available.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">available_models</span>
+
+<span class="n">available_models</span><span class="p">(</span><span class="s2">&quot;codon&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Specify a model using 'Abbreviation' (case sensitive).</span>
+</caption>
+<thead class="head_cell">
+<th>Model Type</th><th>Abbreviation</th><th>Description</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">CNFGTR</span></td><td><span class="c3col_left">Conditional nucleotide frequency codon substitution model, GTR variant (with params analagous to the nucleotide GTR model). Yap, Lindsay, Easteal and Huttley, 2010, Mol Biol Evol 27: 726-734</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">CNFHKY</span></td><td><span class="c3col_left">Conditional nucleotide frequency codon substitution model, HKY variant (with kappa, the ratio of transitions to transversions) Yap, Lindsay, Easteal and Huttley, 2010, Mol Biol Evol 27: 726-734</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">MG94HKY</span></td><td><span class="c3col_left">Muse and Gaut 1994 codon substitution model, HKY variant (with kappa, the ratio of transitions to transversions) Muse and Gaut, 1994, Mol Biol Evol, 11, 715-24</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">MG94GTR</span></td><td><span class="c3col_left">Muse and Gaut 1994 codon substitution model, GTR variant (with params analagous to the nucleotide GTR model) Muse and Gaut, 1994, Mol Biol Evol, 11, 715-24</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">GY94</span></td><td><span class="c3col_left">Goldman and Yang 1994 codon substitution model. N Goldman and Z Yang, 1994, Mol Biol Evol, 11(5):725-36.</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">Y98</span></td><td><span class="c3col_left">Yang's 1998 substitution model, a derivative of the GY94. Z Yang, 1998, Mol Biol Evol, 15(5):568-73</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">H04G</span></td><td><span class="c3col_left">Huttley 2004 CpG substitution model. Includes a term for substitutions to or from CpG's. GA Huttley, 2004, Mol Biol Evol, 21(9):1760-8</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">H04GK</span></td><td><span class="c3col_left">Huttley 2004 CpG substitution model. Includes a term for transition substitutions to or from CpG's. GA Huttley, 2004, Mol Biol Evol, 21(9):1760-8</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">H04GGK</span></td><td><span class="c3col_left">Huttley 2004 CpG substitution model. Includes a general term for substitutions to or from CpG's and an adjustment for CpG transitions. GA Huttley, 2004, Mol Biol Evol, 21(9):1760-8</span></td></tr>
+<tr><td><span class="c3col_left">codon</span></td><td><span class="c3col_left">GNC</span></td><td><span class="c3col_left">General Nucleotide Codon, a non-reversible codon model. Kaehler, Yap, Huttley, 2017, Gen Biol Evol 9(1): 134–49</span></td></tr>
+</tbody>
+</table>
+<p>
+10 rows x 3 columns</p>
+</div></div></div>
+</div>
+<section id="using-the-conditional-nucleotide-form-codon-model">
+<h2>Using the conditional nucleotide form codon model<a class="headerlink" href="#using-the-conditional-nucleotide-form-codon-model" title="Permalink to this headline">¶</a></h2>
+<p>The CNFGTR model (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/19815689">Yap et al</a>) is the most robust of the time-reversible codon models available (<a class="reference external" href="https://www.ncbi.nlm.nih.gov/pubmed/28175284">Kaehler et al</a>). By default, this model does not optimise the codon frequencies but uses the average estimated from the alignment. We configure the model to optimise the root motif probabilities.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_app</span>
+
+<span class="n">loader</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;load_aligned&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">,</span> <span class="n">moltype</span><span class="o">=</span><span class="s2">&quot;dna&quot;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">loader</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;CNFGTR&quot;</span><span class="p">,</span>
+    <span class="n">tree</span><span class="o">=</span><span class="s2">&quot;data/primate_brca1.tree&quot;</span><span class="p">,</span>
+    <span class="n">optimise_motif_probs</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">CNFGTR</span>
+</caption>
+<thead class="head_cell">
+<th>key</th><th>lnL</th><th>nfp</th><th>DLC</th><th>unique_Q</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">'CNFGTR'</span></td><td><span class="c3col_right">-6739.3067</span></td><td><span class="c3col_right">77</span></td><td><span class="c3col_left">True</span></td><td><span class="c3col_left">True</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>CNFGTR</h4>
+<p>log-likelihood = -6739.3067</p>
+<p>number of free parameters = 77</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>A/C</th><th>A/G</th><th>A/T</th><th>C/G</th><th>C/T</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.0656</span></td><td><span class="c3col_right">3.9391</span></td><td><span class="c3col_right">0.7851</span></td><td><span class="c3col_right">1.9475</span></td><td><span class="c3col_right">4.2265</span></td><td><span class="c3col_right">0.7569</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.5330</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.1365</span></td></tr>
+<tr><td><span class="c3col_left">Rhesus</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0659</span></td></tr>
+<tr><td><span class="c3col_left">Orangutan</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0233</span></td></tr>
+<tr><td><span class="c3col_left">Gorilla</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0075</span></td></tr>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0182</span></td></tr>
+<tr><td><span class="c3col_left">Chimpanzee</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0085</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0000</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0101</span></td></tr>
+<tr><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0352</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0228</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>AAA</th><th>AAC</th><th>AAG</th><th>AAT</th><th>ACA</th><th>ACC</th><th>ACG</th><th>ACT</th><th>AGA</th><th>AGC</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0540</span></td><td><span class="c3col_right">0.0242</span></td><td><span class="c3col_right">0.0307</span></td><td><span class="c3col_right">0.0543</span></td><td><span class="c3col_right">0.0237</span></td><td><span class="c3col_right">0.0063</span></td><td><span class="c3col_right">0.0021</span></td><td><span class="c3col_right">0.0297</span></td><td><span class="c3col_right">0.0238</span></td><td><span class="c3col_right">0.0280</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>AGG</th><th>AGT</th><th>ATA</th><th>ATC</th><th>ATG</th><th>ATT</th><th>CAA</th><th>CAC</th><th>CAG</th><th>CAT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0122</span></td><td><span class="c3col_right">0.0405</span></td><td><span class="c3col_right">0.0226</span></td><td><span class="c3col_right">0.0071</span></td><td><span class="c3col_right">0.0141</span></td><td><span class="c3col_right">0.0203</span></td><td><span class="c3col_right">0.0228</span></td><td><span class="c3col_right">0.0063</span></td><td><span class="c3col_right">0.0220</span></td><td><span class="c3col_right">0.0237</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>CCA</th><th>CCC</th><th>CCG</th><th>CCT</th><th>CGA</th><th>CGC</th><th>CGG</th><th>CGT</th><th>CTA</th><th>CTC</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0165</span></td><td><span class="c3col_right">0.0043</span></td><td><span class="c3col_right">0.0021</span></td><td><span class="c3col_right">0.0239</span></td><td><span class="c3col_right">0.0022</span></td><td><span class="c3col_right">0.0012</span></td><td><span class="c3col_right">0.0035</span></td><td><span class="c3col_right">0.0058</span></td><td><span class="c3col_right">0.0123</span></td><td><span class="c3col_right">0.0065</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>CTG</th><th>CTT</th><th>GAA</th><th>GAC</th><th>GAG</th><th>GAT</th><th>GCA</th><th>GCC</th><th>GCG</th><th>GCT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0098</span></td><td><span class="c3col_right">0.0105</span></td><td><span class="c3col_right">0.0703</span></td><td><span class="c3col_right">0.0112</span></td><td><span class="c3col_right">0.0263</span></td><td><span class="c3col_right">0.0310</span></td><td><span class="c3col_right">0.0154</span></td><td><span class="c3col_right">0.0083</span></td><td><span class="c3col_right">0.0036</span></td><td><span class="c3col_right">0.0145</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>GGA</th><th>GGC</th><th>GGG</th><th>GGT</th><th>GTA</th><th>GTC</th><th>GTG</th><th>GTT</th><th>TAC</th><th>TAT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0151</span></td><td><span class="c3col_right">0.0072</span></td><td><span class="c3col_right">0.0051</span></td><td><span class="c3col_right">0.0139</span></td><td><span class="c3col_right">0.0170</span></td><td><span class="c3col_right">0.0077</span></td><td><span class="c3col_right">0.0094</span></td><td><span class="c3col_right">0.0210</span></td><td><span class="c3col_right">0.0036</span></td><td><span class="c3col_right">0.0171</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>TCA</th><th>TCC</th><th>TCG</th><th>TCT</th><th>TGC</th><th>TGG</th><th>TGT</th><th>TTA</th><th>TTC</th><th>TTG</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0220</span></td><td><span class="c3col_right">0.0083</span></td><td><span class="c3col_right">0.0039</span></td><td><span class="c3col_right">0.0214</span></td><td><span class="c3col_right">0.0038</span></td><td><span class="c3col_right">0.0033</span></td><td><span class="c3col_right">0.0201</span></td><td><span class="c3col_right">0.0222</span></td><td><span class="c3col_right">0.0051</span></td><td><span class="c3col_right">0.0107</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>TTT</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.0146</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

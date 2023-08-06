@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Specifying a non-stationary model with time-heterogeneous parameters &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extracting maximum likelihood estimates from a model_result" href="evo-extract-model-stats.html" />
+    <link rel="prev" title="Apply a non-stationary nucleotide model to an alignment with a tree" href="evo-model-with-tree.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Specifying a non-stationary model with time-heterogeneous parameters</a><ul>
+<li><a class="reference internal" href="#specify-a-distinct-rate-matrix-for-the-great-apes">Specify a distinct rate matrix for the great apes</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="evo-model-with-tree.html" title="Previous Chapter: Apply a non-stationary nucleotide model to an alignment with a tree"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Apply a non-s...</span>
+    </a>
+  </li>
+  <li>
+    <a href="evo-extract-model-stats.html" title="Next Chapter: Extracting maximum likelihood estimates from a model_result"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Extracting ma... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="specifying-a-non-stationary-model-with-time-heterogeneous-parameters">
+<h1>Specifying a non-stationary model with time-heterogeneous parameters<a class="headerlink" href="#specifying-a-non-stationary-model-with-time-heterogeneous-parameters" title="Permalink to this headline">¶</a></h1>
+<p>A model is considered time-heterogeneous if rate matrix terms differ between edges on a tree.</p>
+<p>In this example, we load and display our sample primate tree, highlighting the edges that will be assigned different rate matrices.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_tree</span>
+<span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_app</span>
+
+<span class="n">tree</span> <span class="o">=</span> <span class="n">load_tree</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.tree&quot;</span><span class="p">)</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">get_figure</span><span class="p">(</span><span class="n">contemporaneous</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">style_edges</span><span class="p">(</span>
+    <span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="n">tip2</span><span class="o">=</span><span class="s2">&quot;Orangutan&quot;</span><span class="p">,</span> <span class="n">outgroup</span><span class="o">=</span><span class="s2">&quot;Galago&quot;</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><script type="text/javascript">
+window.PlotlyConfig = {MathJaxConfig: 'local'};
+if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+if (typeof require !== 'undefined') {
+require.undef("plotly");
+requirejs.config({
+    paths: {
+        'plotly': ['https://cdn.plot.ly/plotly-2.16.1.min']
+    }
+});
+require(['plotly'], function(Plotly) {
+    window._Plotly = Plotly;
+});
+}
+</script>
+</div><div class="output text_html"><div>                            <div id="8fd66ca2-8c13-44fb-8ef0-4d1e9e86bae8" class="plotly-graph-div" style="height:500px; width:500px;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("8fd66ca2-8c13-44fb-8ef0-4d1e9e86bae8")) {                    Plotly.newPlot(                        "8fd66ca2-8c13-44fb-8ef0-4d1e9e86bae8",                        [{"line":{"color":"black","shape":"spline","smoothing":1.3,"width":1.25},"mode":"lines","showlegend":false,"x":[null,null,0,0,null,0,1,null,0,0,null,0,1,null,0,0,null,0,0.2,null,0.2,0.2,null,0.2,1.0,null,0.2,0.2,null,0.2,0.4,null],"y":[null,null,2.6,3.9000000000000004,null,3.9000000000000004,3.9000000000000004,null,2.6,2.6,null,2.6,2.6,null,2.6,0.08125000000000004,null,0.08125000000000004,0.08125000000000004,null,0.08125000000000004,1.3,null,1.3,1.3,null,0.08125000000000004,-1.1375,null,-1.1375,-1.1375,null],"type":"scatter"},{"line":{"color":"red","width":1.25},"mode":"lines","x":[0.4,0.4,null,0.4,1.0,null,0.4,0.4,null,0.4,0.6000000000000001,null,0.6000000000000001,0.6000000000000001,null,0.6000000000000001,1.0,null,0.6000000000000001,0.6000000000000001,null,0.6000000000000001,0.8,null,0.8,0.8,null,0.8,1.0,null,0.8,0.8,null,0.8,1.0,null],"y":[-1.1375,0.0,null,0.0,0.0,null,-1.1375,-2.275,null,-2.275,-2.275,null,-2.275,-1.3,null,-1.3,-1.3,null,-2.275,-3.25,null,-3.25,-3.25,null,-3.25,-2.6,null,-2.6,-2.6,null,-3.25,-3.9000000000000004,null,-3.9000000000000004,-3.9000000000000004,null],"type":"scatter"},{"hoverinfo":"text","marker":{"color":"black","size":3,"symbol":"circle"},"mode":"markers","showlegend":false,"text":["root","Galago","HowlerMon","edge.3","Rhesus","edge.2","Orangutan","edge.1","Gorilla","edge.0","Chimpanzee","Human"],"x":[0,1,1,0.2,1.0,0.4,1.0,0.6000000000000001,1.0,0.8,1.0,1.0],"y":[2.6,3.9000000000000004,2.6,0.08125000000000004,1.3,-1.1375,0.0,-2.275,-1.3,-3.25,-2.6,-3.9000000000000004],"type":"scatter"}],                        {"annotations":[{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Galago","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":3.9000000000000004,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"HowlerMon","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":2.6,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Rhesus","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":1.3,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Orangutan","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":0.0,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Gorilla","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":-1.3,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Chimpanzee","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":-2.6,"yref":"y"},{"font":{"family":"Inconsolata, monospace","size":12},"showarrow":false,"text":"Human","textangle":0,"x":1.025,"xanchor":"left","xref":"x","y":-3.9000000000000004,"yref":"y"}],"autosize":true,"font":{"family":"Balto","size":14},"height":500,"hovermode":"closest","margin":{"b":50,"l":50,"pad":4,"r":50,"t":50},"showlegend":false,"width":500,"xaxis":{"visible":false},"yaxis":{"visible":false},"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmapgl":[{"type":"heatmapgl","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}}},                        {"responsive": true}                    ).then(function(){
+
+var gd = document.getElementById('8fd66ca2-8c13-44fb-8ef0-4d1e9e86bae8');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div></div></div>
+</div>
+<section id="specify-a-distinct-rate-matrix-for-the-great-apes">
+<h2>Specify a distinct rate matrix for the great apes<a class="headerlink" href="#specify-a-distinct-rate-matrix-for-the-great-apes" title="Permalink to this headline">¶</a></h2>
+<p>As illustrated above, this is done by specifying the names of two “ingroup” tips (their last common ancestor is the ancestor of all edges of interest) and an “outgroup” tip. We can define the clade by Orangutan and one of Human, Chimpanzee or Gorilla. Any tip not a member of the clade outside suffices as an outgroup.</p>
+<p>To construct a <code class="docutils literal notranslate"><span class="pre">model</span></code> with this information, we create a dictionary that we assign to the <code class="docutils literal notranslate"><span class="pre">time_het</span></code> argument as follows.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time_het</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GN&quot;</span><span class="p">,</span>
+    <span class="n">tree</span><span class="o">=</span><span class="n">tree</span><span class="p">,</span>
+    <span class="n">time_het</span><span class="o">=</span><span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;Orangutan&quot;</span><span class="p">],</span> <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Galago&quot;</span><span class="p">)],</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>The outcome of this setting to <code class="docutils literal notranslate"><span class="pre">model</span></code> is that the black edges will share one rate matrix, the red edges another. We fit the model to the data.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">loader</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;load_aligned&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">loader</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">time_het</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>Examining the fitted likelihood function, the rate parameters differ between the edge sets.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span><span class="o">.</span><span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>GN</h4>
+<p>log-likelihood = -6982.2973</p>
+<p>number of free parameters = 33</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>A>C</th><th>A>G</th><th>A>T</th><th>C>A</th><th>C>G</th><th>C>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Galago</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.1729</span></td><td><span class="c3col_right">1.0063</span></td><td><span class="c3col_right">3.7831</span></td><td><span class="c3col_right">1.0384</span></td><td><span class="c3col_right">1.7246</span></td><td><span class="c3col_right">2.3246</span></td><td><span class="c3col_right">6.3348</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0450</span></td><td><span class="c3col_right">1.0063</span></td><td><span class="c3col_right">3.7831</span></td><td><span class="c3col_right">1.0384</span></td><td><span class="c3col_right">1.7246</span></td><td><span class="c3col_right">2.3246</span></td><td><span class="c3col_right">6.3348</span></td></tr>
+<tr><td><span class="c3col_left">Rhesus</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0214</span></td><td><span class="c3col_right">1.0063</span></td><td><span class="c3col_right">3.7831</span></td><td><span class="c3col_right">1.0384</span></td><td><span class="c3col_right">1.7246</span></td><td><span class="c3col_right">2.3246</span></td><td><span class="c3col_right">6.3348</span></td></tr>
+<tr><td><span class="c3col_left">Orangutan</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0077</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">Gorilla</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0025</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0061</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">Chimpanzee</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.0028</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_right">0.0034</span></td><td><span class="c3col_right">0.2103</span></td><td><span class="c3col_right">3.5005</span></td><td><span class="c3col_right">0.2093</span></td><td><span class="c3col_right">0.9012</span></td><td><span class="c3col_right">1.3532</span></td><td><span class="c3col_right">4.9560</span></td></tr>
+<tr><td><span class="c3col_left">edge.2</span></td><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_right">0.0121</span></td><td><span class="c3col_right">1.0063</span></td><td><span class="c3col_right">3.7831</span></td><td><span class="c3col_right">1.0384</span></td><td><span class="c3col_right">1.7246</span></td><td><span class="c3col_right">2.3246</span></td><td><span class="c3col_right">6.3348</span></td></tr>
+<tr><td><span class="c3col_left">edge.3</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.0076</span></td><td><span class="c3col_right">1.0063</span></td><td><span class="c3col_right">3.7831</span></td><td><span class="c3col_right">1.0384</span></td><td><span class="c3col_right">1.7246</span></td><td><span class="c3col_right">2.3246</span></td><td><span class="c3col_right">6.3348</span></td></tr>
+</tbody>
+</table>
+
+<table>
+
+<caption>
+<span class="cell_title">continuation</span>
+</caption>
+<thead class="head_cell">
+<th>G>A</th><th>G>C</th><th>G>T</th><th>T>A</th><th>T>C</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">9.0178</span></td><td><span class="c3col_right">1.2471</span></td><td><span class="c3col_right">0.7649</span></td><td><span class="c3col_right">1.4582</span></td><td><span class="c3col_right">3.5750</span></td></tr>
+<tr><td><span class="c3col_right">9.0178</span></td><td><span class="c3col_right">1.2471</span></td><td><span class="c3col_right">0.7649</span></td><td><span class="c3col_right">1.4582</span></td><td><span class="c3col_right">3.5750</span></td></tr>
+<tr><td><span class="c3col_right">9.0178</span></td><td><span class="c3col_right">1.2471</span></td><td><span class="c3col_right">0.7649</span></td><td><span class="c3col_right">1.4582</span></td><td><span class="c3col_right">3.5750</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">4.6222</span></td><td><span class="c3col_right">1.1148</span></td><td><span class="c3col_right">0.0000</span></td><td><span class="c3col_right">0.3394</span></td><td><span class="c3col_right">2.9909</span></td></tr>
+<tr><td><span class="c3col_right">9.0178</span></td><td><span class="c3col_right">1.2471</span></td><td><span class="c3col_right">0.7649</span></td><td><span class="c3col_right">1.4582</span></td><td><span class="c3col_right">3.5750</span></td></tr>
+<tr><td><span class="c3col_right">9.0178</span></td><td><span class="c3col_right">1.2471</span></td><td><span class="c3col_right">0.7649</span></td><td><span class="c3col_right">1.4582</span></td><td><span class="c3col_right">3.5750</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.3757</span></td><td><span class="c3col_right">0.1742</span></td><td><span class="c3col_right">0.2095</span></td><td><span class="c3col_right">0.2406</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

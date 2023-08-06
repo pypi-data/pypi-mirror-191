@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Allowing substitution model parameters to differ between branches &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using codon models" href="codon_models.html" />
+    <link rel="prev" title="A test of the neutral theory" href="neutral_test.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Allowing substitution model parameters to differ between branches</a><ul>
+<li><a class="reference internal" href="#specifying-a-clade">Specifying a clade</a></li>
+<li><a class="reference internal" href="#specifying-a-stem">Specifying a stem</a></li>
+<li><a class="reference internal" href="#specifying-clade-and-stem">Specifying clade and stem</a></li>
+<li><a class="reference internal" href="#alternate-arguments-for-specifying-edges">Alternate arguments for specifying edges</a></li>
+<li><a class="reference internal" href="#applications-of-scoped-parameters">Applications of scoped parameters</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="neutral_test.html" title="Previous Chapter: A test of the neutral theory"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; A test of the...</span>
+    </a>
+  </li>
+  <li>
+    <a href="codon_models.html" title="Next Chapter: Using codon models"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Using codon models &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="allowing-substitution-model-parameters-to-differ-between-branches">
+<span id="scope-params-on-trees"></span><h1>Allowing substitution model parameters to differ between branches<a class="headerlink" href="#allowing-substitution-model-parameters-to-differ-between-branches" title="Permalink to this headline">¶</a></h1>
+<p><em>Section author: Gavin Huttley</em></p>
+<p>A common task concerns assessing how substitution model exchangeability parameters differ between evolutionary lineages. This is most commonly of interest for the case of testing for natural selection. Here I’ll demonstrate the different ways of scoping parameters across trees for the codon model case and how these can be used for evolutionary modelling.</p>
+<p>We start with the standard imports, plus using a canned codon substitution model and then load the sample data set.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">load_aligned_seqs</span><span class="p">,</span> <span class="n">load_tree</span>
+<span class="kn">from</span> <span class="nn">cogent3.evolve.models</span> <span class="kn">import</span> <span class="n">MG94HKY</span>
+
+<span class="n">aln</span> <span class="o">=</span> <span class="n">load_aligned_seqs</span><span class="p">(</span><span class="s2">&quot;data/long_testseqs.fasta&quot;</span><span class="p">)</span>
+<span class="n">tree</span> <span class="o">=</span> <span class="n">load_tree</span><span class="p">(</span><span class="s2">&quot;data/test.tree&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>We construct the substitution model and likelihood function and set the alignment.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sm</span> <span class="o">=</span> <span class="n">MG94HKY</span><span class="p">()</span>
+<span class="n">lf</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">make_likelihood_function</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">space</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">set_alignment</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+</div>
+</div>
+<p>At this point we have a likelihood function with two exchangeability parameters from the substitution model (<code class="docutils literal notranslate"><span class="pre">kappa</span></code> the transition/transversion ratio; <code class="docutils literal notranslate"><span class="pre">omega</span></code> the nonsynonymous/synonymous ratio) plus branch lengths for all tree edges. To facilitate subsequent discussion I now display the tree</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">ascii_art</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>                              /-Human
+                    /edge.0--|
+          /edge.1--|          \-HowlerMon
+         |         |
+         |          \-Mouse
+-root----|
+         |--NineBande
+         |
+          \-DogFaced
+</pre></div>
+</div>
+</div>
+</div>
+<p>In order to scope a parameter on a tree (meaning specifying a subset of edges for which the parameter is to be treated differently to the remainder of the tree) requires uniquely identifying the edges. We do this using the following arguments to the likelihood function <code class="docutils literal notranslate"><span class="pre">set_param_rule</span></code> method:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tip_names</span></code>: the name of two tips</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outgroup_name</span></code>: the name of a tip that is not part of the clade of interest</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clade</span></code>: if <code class="docutils literal notranslate"><span class="pre">True</span></code>, all lineages descended from the tree node identified by the <code class="docutils literal notranslate"><span class="pre">tip_names</span></code> and <code class="docutils literal notranslate"><span class="pre">outgroup_name</span></code> argument are affected by the other arguments. If <code class="docutils literal notranslate"><span class="pre">False</span></code>, then the <code class="docutils literal notranslate"><span class="pre">stem</span></code> argument must apply.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stem</span></code>: Whether the edge leading to the node is included.</p></li>
+</ul>
+<p>The next concepts include exactly what can be scoped and how. In the case of testing for distinctive periods of natural selection it is common to specify distinct values for <code class="docutils literal notranslate"><span class="pre">omega</span></code> for an edge. I’ll first illustrate some possible uses for the arguments above by setting <code class="docutils literal notranslate"><span class="pre">omega</span></code> to be distinctive for specific edges. I will set a value for omega so that printing the likelihood function illustrates what edges have been effected, but I won’t actually do any model fitting.</p>
+<section id="specifying-a-clade">
+<h2>Specifying a clade<a class="headerlink" href="#specifying-a-clade" title="Permalink to this headline">¶</a></h2>
+<p>I’m going to cause <code class="docutils literal notranslate"><span class="pre">omega</span></code> to attain a different value for all branches aside from the primate clade and stem (<code class="docutils literal notranslate"><span class="pre">HowlerMon</span></code>, <code class="docutils literal notranslate"><span class="pre">Human</span></code>, <code class="docutils literal notranslate"><span class="pre">edge.0</span></code>).</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;DogFaced&quot;</span><span class="p">,</span> <span class="s2">&quot;Mouse&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span>
+    <span class="n">init</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -9489.9506</p>
+<p>number of free parameters = 10</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.03</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.02</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.11</span></td><td><span class="c3col_right">2.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>As you can see <code class="docutils literal notranslate"><span class="pre">omega</span></code> for the primate edges I listed above have the default parameter value (1.0), while the others have what I’ve assigned. In fact, you could omit the <code class="docutils literal notranslate"><span class="pre">clade</span></code> argument as this is the default, but I think for readability of scripts it’s best to be explicit.</p>
+</section>
+<section id="specifying-a-stem">
+<h2>Specifying a stem<a class="headerlink" href="#specifying-a-stem" title="Permalink to this headline">¶</a></h2>
+<p>This time I’ll specify the stem leading to the primates as the edge of interest.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I need to reset the <code class="docutils literal notranslate"><span class="pre">lf</span></code> so all edges have the default value again. I’ll show this only for this example, but rest assured I’m doing it for all others too.</p>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span><span class="s2">&quot;omega&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">init</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+    <span class="n">stem</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -9424.8896</p>
+<p>number of free parameters = 10</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.03</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.02</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.11</span></td><td><span class="c3col_right">1.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+<section id="specifying-clade-and-stem">
+<h2>Specifying clade and stem<a class="headerlink" href="#specifying-clade-and-stem" title="Permalink to this headline">¶</a></h2>
+<p>I’ll specify that both the primates and their stem are to be considered.</p>
+<div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">init</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+    <span class="n">stem</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -9442.4271</p>
+<p>number of free parameters = 10</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">1.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.03</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.04</span></td><td><span class="c3col_right">2.00</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.02</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">1.00</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.11</span></td><td><span class="c3col_right">1.00</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+<section id="alternate-arguments-for-specifying-edges">
+<h2>Alternate arguments for specifying edges<a class="headerlink" href="#alternate-arguments-for-specifying-edges" title="Permalink to this headline">¶</a></h2>
+<p>The likelihood function <code class="docutils literal notranslate"><span class="pre">set_param_rule</span></code> method also has the arguments of <code class="docutils literal notranslate"><span class="pre">edge</span></code> and <code class="docutils literal notranslate"><span class="pre">edges</span></code>. These allow specific naming of the tree edge(s) to be affected by a rule. In general, however, the <code class="docutils literal notranslate"><span class="pre">tip_names</span></code> + <code class="docutils literal notranslate"><span class="pre">outgroup_name</span></code> combo is more robust.</p>
+</section>
+<section id="applications-of-scoped-parameters">
+<h2>Applications of scoped parameters<a class="headerlink" href="#applications-of-scoped-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The general use-cases for which a tree scope can be applied are:</p>
+<ol class="arabic simple">
+<li><p>constraining all edges identified by a rule to have a specific value which is constant and not modifiable</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">is_constant</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>all edges identified by a rule have the same but different value to the rest of the tree</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span> <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span> <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span> <span class="n">clade</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>allowing all edges identified by a rule to have different values of the parameter with the remaining tree edges having the same value</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">is_independent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>allowing all edges to have a different value</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span><span class="s2">&quot;omega&quot;</span><span class="p">,</span> <span class="n">is_independent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I’ll demonstrate these cases sequentially as they involve gradually increasing the degrees of freedom in the model. First we’ll constrain <code class="docutils literal notranslate"><span class="pre">omega</span></code> to equal 1 on the primate edges. I’ll then optimise the model.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>here I’m specifying a constant value for the parameter and so I <strong>must</strong> use the argument <code class="docutils literal notranslate"><span class="pre">value</span></code> to set it. This not to be confused with the argument <code class="docutils literal notranslate"><span class="pre">init</span></code> that is used for providing initial (starting) values for fitting.</p>
+</div>
+<div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">value</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
+    <span class="n">is_constant</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">optimise</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -8640.9290</p>
+<p>number of free parameters = 9</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.87</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_left">1.0</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_left">1.0</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_left">0.9218152524262627</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.84</span></td><td><span class="c3col_left">0.9218152524262627</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.06</span></td><td><span class="c3col_left">0.9218152524262627</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_left">0.9218152524262627</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.34</span></td><td><span class="c3col_left">0.9218152524262627</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>I’ll now free up <code class="docutils literal notranslate"><span class="pre">omega</span></code> on the primate clade, but making it a single value shared by all primate lineages.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">is_constant</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">optimise</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -8639.7171</p>
+<p>number of free parameters = 10</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.85</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">0.77</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">0.77</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.84</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.06</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.34</span></td><td><span class="c3col_right">0.92</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>Finally I’ll allow all primate edges to have different values of <code class="docutils literal notranslate"><span class="pre">omega</span></code>.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span>
+    <span class="s2">&quot;omega&quot;</span><span class="p">,</span>
+    <span class="n">tip_names</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Human&quot;</span><span class="p">,</span> <span class="s2">&quot;HowlerMon&quot;</span><span class="p">],</span>
+    <span class="n">outgroup_name</span><span class="o">=</span><span class="s2">&quot;Mouse&quot;</span><span class="p">,</span>
+    <span class="n">clade</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">is_independent</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">optimise</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -8638.9572</p>
+<p>number of free parameters = 11</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.85</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">0.59</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">0.95</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.84</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.06</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.34</span></td><td><span class="c3col_right">0.92</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+<p>We now allow <code class="docutils literal notranslate"><span class="pre">omega</span></code> to be different on all edges.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">lf</span><span class="o">.</span><span class="n">set_param_rule</span><span class="p">(</span><span class="s2">&quot;omega&quot;</span><span class="p">,</span> <span class="n">is_independent</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">lf</span><span class="o">.</span><span class="n">optimise</span><span class="p">(</span><span class="n">local</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">show_progress</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">lf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><h4>MG94HKY</h4>
+<p>log-likelihood = -8636.1383</p>
+<p>number of free parameters = 15</p>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Global params</span>
+</caption>
+<thead class="head_cell">
+<th>kappa</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">3.85</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Edge params</span>
+</caption>
+<thead class="head_cell">
+<th>edge</th><th>parent</th><th>length</th><th>omega</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_left">Human</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.09</span></td><td><span class="c3col_right">0.59</span></td></tr>
+<tr><td><span class="c3col_left">HowlerMon</span></td><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">0.95</span></td></tr>
+<tr><td><span class="c3col_left">edge.0</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.12</span></td><td><span class="c3col_right">1.13</span></td></tr>
+<tr><td><span class="c3col_left">Mouse</span></td><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_right">0.84</span></td><td><span class="c3col_right">0.92</span></td></tr>
+<tr><td><span class="c3col_left">edge.1</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.06</span></td><td><span class="c3col_right">0.38</span></td></tr>
+<tr><td><span class="c3col_left">NineBande</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.28</span></td><td><span class="c3col_right">1.27</span></td></tr>
+<tr><td><span class="c3col_left">DogFaced</span></td><td><span class="c3col_left">root</span></td><td><span class="c3col_right">0.34</span></td><td><span class="c3col_right">0.84</span></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="c3table">
+
+<style>
+.c3table table {margin: 10px 0;}
+.c3table tr:last-child {border-bottom: 1px solid #000;} 
+.c3table tr > th {text-align: left; padding: 0 5px;}
+.c3table tr > td {text-align: left; padding: 5px;}
+.c3table tr:nth-child(even) {background: #f7f7f7 !important;}
+.c3table .ellipsis {background: rgba(0, 0, 0, .01);}
+.c3table .index {background: rgba(161, 195, 209, 0.0); margin: 10px; font-weight: 600;}
+.c3table .head_cell {background: rgba(161, 195, 209, 0.75); font-weight: bold; text-align: center;}
+.c3table caption {color: rgb(250, 250, 250); background: rgba(30, 140, 200, 1); padding: 3px; white-space: nowrap; caption-side: top;}
+.c3table .cell_title {font-weight: bold;}
+.c3col_left { text-align: left !important; display: block;}
+.c3col_right { text-align: right !important; display: block;}
+.c3col_center { text-align: center !important; display: block;}
+</style>
+
+<table>
+
+<caption>
+<span class="cell_title">Motif params</span>
+</caption>
+<thead class="head_cell">
+<th>A</th><th>C</th><th>G</th><th>T</th>
+</thead>
+<tbody>
+<tr><td><span class="c3col_right">0.37</span></td><td><span class="c3col_right">0.19</span></td><td><span class="c3col_right">0.21</span></td><td><span class="c3col_right">0.23</span></td></tr>
+</tbody>
+</table>
+
+</div></div></div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

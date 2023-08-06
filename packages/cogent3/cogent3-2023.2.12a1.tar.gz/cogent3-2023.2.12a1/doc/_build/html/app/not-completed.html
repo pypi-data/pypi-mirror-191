@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tracking records that could not be processed &#8212; cogent3 2022.10.31a1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="../_static/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="../_static/require.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Using a nucleotide model" href="align-nucleotide.html" />
+    <link rel="prev" title="Specifying data for analysis" href="dstore.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          Docs</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../install.html">Install</a></li>
+                <li><a href="../draw/index.html">Gallery</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Sections <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">The <code class="docutils literal notranslate"><span class="pre">apps</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Tracking records that could not be processed</a><ul>
+<li><a class="reference internal" href="#the-notcompleted-object">The <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> object</a></li>
+<li><a class="reference internal" href="#notcompleted-false-type"><code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> FALSE type</a></li>
+<li><a class="reference internal" href="#notcompleted-error-type"><code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> ERROR type</a></li>
+<li><a class="reference internal" href="#composed-functions-propagate-notcompleted-results">Composed functions propagate <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> results</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="dstore.html" title="Previous Chapter: Specifying data for analysis"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Specifying da...</span>
+    </a>
+  </li>
+  <li>
+    <a href="align-nucleotide.html" title="Next Chapter: Using a nucleotide model"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Using a nucle... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="jupyter_cell docutils container">
+<div class="cell_output docutils container">
+</div>
+</div>
+<section id="tracking-records-that-could-not-be-processed">
+<h1>Tracking records that could not be processed<a class="headerlink" href="#tracking-records-that-could-not-be-processed" title="Permalink to this headline">¶</a></h1>
+<section id="the-notcompleted-object">
+<span id="not-completed"></span><h2>The <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> object<a class="headerlink" href="#the-notcompleted-object" title="Permalink to this headline">¶</a></h2>
+<p>This is an object returned when a composable function did not complete a task. <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> is a special result type that can be produced by a composable app. These objects evaluate to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+<p>An app can return a <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> result for one of 2 reasons. The object contains information regarding the input data, where the issue arose and whatever message was provided by the code (like an exception traceback).</p>
+</section>
+<section id="notcompleted-false-type">
+<h2><code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> FALSE type<a class="headerlink" href="#notcompleted-false-type" title="Permalink to this headline">¶</a></h2>
+<p>The results when a condition was not met. For example, below I create an app that will return alignments that with 2 specific sequences but I’m including one that does not exist (“Mouse”). So this will fail.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cogent3</span> <span class="kn">import</span> <span class="n">get_app</span>
+
+<span class="n">reader</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;load_aligned&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;fasta&quot;</span><span class="p">)</span>
+<span class="n">select_seqs</span> <span class="o">=</span> <span class="n">get_app</span><span class="p">(</span><span class="s2">&quot;take_named_seqs&quot;</span><span class="p">,</span> <span class="s2">&quot;Mouse&quot;</span><span class="p">,</span> <span class="s2">&quot;Human&quot;</span><span class="p">)</span>
+<span class="n">aln</span> <span class="o">=</span> <span class="n">reader</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">select_seqs</span><span class="p">(</span><span class="n">aln</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NotCompleted(type=FALSE, origin=take_named_seqs, source=&quot;primate_brca1.fasta&quot;, message=&quot;named seq(s) {&#39;Mouse&#39;} not in [&#39;Chimpanzee&#39;, &#39;Galago&#39;, &#39;Gorilla&#39;, &#39;HowlerMon&#39;, &#39;Human&#39;, &#39;Orangutan&#39;, &#39;Rhesus&#39;]&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">==</span> <span class="kc">False</span>
+<span class="n">result</span><span class="o">.</span><span class="n">type</span>
+<span class="n">result</span><span class="o">.</span><span class="n">message</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;named seq(s) {&#39;Mouse&#39;} not in [&#39;Chimpanzee&#39;, &#39;Galago&#39;, &#39;Gorilla&#39;, &#39;HowlerMon&#39;, &#39;Human&#39;, &#39;Orangutan&#39;, &#39;Rhesus&#39;]&quot;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="notcompleted-error-type">
+<h2><code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> ERROR type<a class="headerlink" href="#notcompleted-error-type" title="Permalink to this headline">¶</a></h2>
+<p>An <code class="docutils literal notranslate"><span class="pre">ERROR</span></code> type is returned if an exception is raised during the calculation. We trigger it in this case by trying to open a non-existent file.</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">reader</span><span class="p">(</span><span class="s2">&quot;primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NotCompleted(type=ERROR, origin=load_aligned, source=&quot;primate_brca1.fasta&quot;, message=&quot;Traceback (most recent call last):
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 255, in _read_it
+    data = path.read()
+AttributeError: &#39;PosixPath&#39; object has no attribute &#39;read&#39;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/composable.py&quot;, line 1020, in _call
+    result = self.main(val, *args, **kwargs)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 293, in main
+    return _load_seqs(path, ArrayAlignment, self._parser, self.moltype)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 265, in _load_seqs
+    data = _read_it(path)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 258, in _read_it
+    data = path.read_text()
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/pathlib.py&quot;, line 1132, in read_text
+    with self.open(mode=&#39;r&#39;, encoding=encoding, errors=errors) as f:
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/pathlib.py&quot;, line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: &#39;primate_brca1.fasta&#39;
+&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="composed-functions-propagate-notcompleted-results">
+<h2>Composed functions propagate <code class="docutils literal notranslate"><span class="pre">NotCompleted</span></code> results<a class="headerlink" href="#composed-functions-propagate-notcompleted-results" title="Permalink to this headline">¶</a></h2>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">process</span> <span class="o">=</span> <span class="n">reader</span> <span class="o">+</span> <span class="n">select_seqs</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">&quot;data/primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NotCompleted(type=FALSE, origin=take_named_seqs, source=&quot;primate_brca1.fasta&quot;, message=&quot;named seq(s) {&#39;Mouse&#39;} not in [&#39;Chimpanzee&#39;, &#39;Galago&#39;, &#39;Gorilla&#39;, &#39;HowlerMon&#39;, &#39;Human&#39;, &#39;Orangutan&#39;, &#39;Rhesus&#39;]&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<p>and</p>
+<div class="jupyter_cell jupyter_container docutils container">
+<div class="cell_input code_cell docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">process</span><span class="p">(</span><span class="s2">&quot;primate_brca1.fasta&quot;</span><span class="p">)</span>
+<span class="n">result</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>NotCompleted(type=ERROR, origin=load_aligned, source=&quot;primate_brca1.fasta&quot;, message=&quot;Traceback (most recent call last):
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 255, in _read_it
+    data = path.read()
+AttributeError: &#39;PosixPath&#39; object has no attribute &#39;read&#39;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/composable.py&quot;, line 1020, in _call
+    result = self.main(val, *args, **kwargs)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 293, in main
+    return _load_seqs(path, ArrayAlignment, self._parser, self.moltype)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 265, in _load_seqs
+    data = _read_it(path)
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/site-packages/cogent3/app/io_new.py&quot;, line 258, in _read_it
+    data = path.read_text()
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/pathlib.py&quot;, line 1132, in read_text
+    with self.open(mode=&#39;r&#39;, encoding=encoding, errors=errors) as f:
+  File &quot;/Users/gavin/opt/miniconda3/envs/c310dev/lib/python3.10/pathlib.py&quot;, line 1117, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: &#39;primate_brca1.fasta&#39;
+&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020-2023, cogent3 Team.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.4.0.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
