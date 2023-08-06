@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+it_eng_python_logger_utils_dev_pypi1.egg-info/PKG-INFO
+it_eng_python_logger_utils_dev_pypi1.egg-info/SOURCES.txt
+it_eng_python_logger_utils_dev_pypi1.egg-info/dependency_links.txt
+it_eng_python_logger_utils_dev_pypi1.egg-info/requires.txt
+it_eng_python_logger_utils_dev_pypi1.egg-info/top_level.txt
+test/test.py

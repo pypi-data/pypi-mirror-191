@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: it-eng-python-logger-utils-dev-pypi1
+Version: 0.28.1
+Summary: A logger util helper for Azure app insights and structured logging
+Home-page: https://github.com/it-eng-packages/packages/it_eng_python_logger_utils
+Author: Dinnermonster
+Author-email: it-engineering@github.com
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Logger Utility
+
+Included with the IT-Offboarding suite is a custom logger library located in `./lib/logger_utils.py` that standardizes our logs and sends them to azure app insights. The library utilizes the native python `logging` library and functions similarly to the native library.
+When the class is initialized in our scripts, the logger library also logs all API call information automatically and sends them to Azure app insights.
+
+## To use
+
+### Requirements
+
+`opencensus-ext-azure`
+
+`opencensus-ext-requests`
+
+Import the logger_utils.py library
+
+`from it_eng_python_logger_utils.logger_utils import Logger_Helper`
+`logger = Logger_Helper("Logger_Test", "INFO")`
+Set `APPI_TOKEN` to your app insights instrumentation key in your .env
+
+### Class initialization
+
+When initializing our logger class, we have two parameters:
+
+1. logger_name `string` - this should be your app/job name
+2. basicConfig `string` - this should be the level of logs you wish to be displayed to console. Ex: If set to `INFO or DEBUG` (with debug being incredibly granular) all log messages no matter the level will be logged. If set to `CRITICAL`, only critical messages will be logged.
+3. send_to_azure `boolean` - defaulted to `True`. Sends your logs to Azure app insights.
+
+### Method Parameters
+
+example: `logger.info('your message')`
+
+1. message `dict` or `string`- the message you want to send to Azure app insights/logged in your app.
+2. structured `boolean` - defaulted to `True`. When set to `True` your `messages` will structure your log with a default JSON structure which includes information to signify what job the logs came from, the severity and message. The JSON structure allows us to parse Splunk and Azure app insights logs with more clarity and granularity by formatting everything by a JSON key/value. To enable the JSON log structure in splunk, update your jobs `deployments/{job}.yaml` to use JSON via `fluentbit.io/parser: json`
