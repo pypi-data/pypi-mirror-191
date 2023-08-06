@@ -1,0 +1,9 @@
+extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extensions/operaciones.py,sha256=a1BSsv90KE7z7-3iyCbYHVcB6RlD29cv4oSimh_O4Yw,460
+extensions/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extensions/errors/error_handler.py,sha256=HrtjNz-WrK-_Q-OPLjKYtAF2R_mgk6ufJ6FSYoYgMy0,4703
+calculator_terminal-1.0.1.dist-info/LICENSE,sha256=KVirNWJtBLrI8oWQr0MkhX1yqgico-k4d5f4URxGhVE,11552
+calculator_terminal-1.0.1.dist-info/METADATA,sha256=aLKvEJYMvPu-yUlyYg3VUr3F_KezbcZ-NquTp4-WAfw,1571
+calculator_terminal-1.0.1.dist-info/WHEEL,sha256=ZL1lC_LiPDNRgDnOl2taCMc83aPEUZgHHv2h-LDgdiM,92
+calculator_terminal-1.0.1.dist-info/top_level.txt,sha256=4Py5Ff6_7VXJFhUCvEjIh4Ed6038XVx9AV82fHO5dW4,11
+calculator_terminal-1.0.1.dist-info/RECORD,,
