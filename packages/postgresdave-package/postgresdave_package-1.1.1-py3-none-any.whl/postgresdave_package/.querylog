@@ -1,0 +1,175 @@
+2023-02-14 12:00:19
+duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=no-password-supplied
+ ------------ 
+2023-02-14 12:00:15
+duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=no-password-supplied
+ ------------ 
+2023-02-14 12:00:07
+duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 12:00:07
+duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 12:00:06
+duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:59:32
+duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:59:32
+duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:59:32
+duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:58:54
+duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:58:54
+duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:58:54
+duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:57:18
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:57:18
+ duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:57:18
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:57:06
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:57:06
+ duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:57:06
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:57:02
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:57:01
+ duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:57:01
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:56:56
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:56:56
+ duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:56:56
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+2023-02-14 11:55:37
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:55:37
+ duration=0.0
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:55:37
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+this
+2023-02-14 11:55:21
+ duration=0.0
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+ ------------ 
+2023-02-14 11:55:21
+ duration=15.621826171875
+SELECT VERSION()
+ ------------ 
+2023-02-14 11:55:21
+ duration=0.0
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+ ------------ 
+this
+this
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:32:54.130848	usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:35:4	usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:36:12	usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:37:35	usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:37:35	SELECT VERSION()
+2023-02-14 11:42:10
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:42:10
+SELECT VERSION()
+2023-02-14 11:42:10
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+2023-02-14 11:43:02
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:43:33
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:43:45
+usr=postgres; svr=localhost; port=1532; Database=postgres; Schema=public; pwd=4165605869
+2023-02-14 11:43:45
+SELECT VERSION()
+2023-02-14 11:43:45
+
+	SELECT DISTINCT table_catalog as database_name, table_schema as schema 
+	FROM INFORMATION_SCHEMA.TABLES
+	
+2023-02-14 11:45:53
