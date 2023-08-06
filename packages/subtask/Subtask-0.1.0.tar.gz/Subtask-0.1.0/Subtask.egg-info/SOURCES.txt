@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+Subtask.egg-info/PKG-INFO
+Subtask.egg-info/SOURCES.txt
+Subtask.egg-info/dependency_links.txt
+Subtask.egg-info/top_level.txt
+subtask/__init__.py
+subtask/__subtask.py
+subtask/py.typed
+tests/test_subtask.py

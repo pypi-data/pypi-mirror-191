@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Subtask
+Version: 0.1.0
+Summary: "A simple wrapper around `subprocess.Popen` to reduce the painfulness of running multiple processes concurrently."
+Home-page: https://github.com/MiguelGuthridge/Subtask
+Author: Miguel Guthridge
+Author-email: hdsq@outlook.com.au
+Project-URL: Online Documentation, https://github.com/MiguelGuthridge/Subtask
+Project-URL: Bug Tracker, https://github.com/MiguelGuthridge/Subtask/issues
+Keywords: subprocess
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Framework :: Pytest
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Subtask
+
+A simple wrapper around `subprocess.Popen` to reduce the painfulness of running multiple processes concurrently.
+
+```py
+task = Subtask(['python', 'hello.py'])
+task.wait()
+assert task.read_stdout().strip() == "Hello, world!"
+```
