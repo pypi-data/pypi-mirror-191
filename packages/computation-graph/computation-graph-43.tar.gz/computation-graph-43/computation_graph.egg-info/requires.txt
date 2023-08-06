@@ -1,0 +1,9 @@
+gamla
+typeguard
+toposort
+immutables
+termcolor
+
+[test]
+pygraphviz
+pytest>=5.4.0
