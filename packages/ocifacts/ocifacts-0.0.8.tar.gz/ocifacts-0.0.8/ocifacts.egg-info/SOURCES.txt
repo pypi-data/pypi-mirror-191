@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ocifacts/__init__.py
+ocifacts.egg-info/PKG-INFO
+ocifacts.egg-info/SOURCES.txt
+ocifacts.egg-info/dependency_links.txt
+ocifacts.egg-info/requires.txt
+ocifacts.egg-info/top_level.txt
+ocifacts/bin/imgpkg
+tests/test_api.py
