@@ -1,0 +1,9 @@
+setup.py
+melaxtool/Test.py
+melaxtool/__init__.py
+melaxtool/melaxapi.py
+melaxtool.egg-info/PKG-INFO
+melaxtool.egg-info/SOURCES.txt
+melaxtool.egg-info/dependency_links.txt
+melaxtool.egg-info/requires.txt
+melaxtool.egg-info/top_level.txt
