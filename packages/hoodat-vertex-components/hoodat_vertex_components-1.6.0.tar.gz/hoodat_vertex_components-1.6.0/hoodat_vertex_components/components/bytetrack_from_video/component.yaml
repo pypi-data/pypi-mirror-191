@@ -1,0 +1,77 @@
+name: Bytetrack from video
+inputs:
+- {name: input_video, type: Artifact}
+- {name: input_weights, type: Artifact}
+- {name: output_video_path, type: String}
+- {name: output_text_file_dataset_path, type: String}
+- {name: device, type: String, default: gpu, optional: true}
+outputs:
+- {name: output_video, type: Artifact}
+- {name: output_text_file_dataset, type: Dataset}
+implementation:
+  container:
+    image: europe-west1-docker.pkg.dev/hoodat-sandbox/hoodat-sandbox-kfp-components/bytetrack_from_video
+    command:
+    - sh
+    - -c
+    - |2
+
+      if ! [ -x "$(command -v pip)" ]; then
+          python3 -m ensurepip || python3 -m ensurepip --user || apt-get install python3-pip
+      fi
+
+      PIP_DISABLE_PIP_VERSION_CHECK=1 python3 -m pip install --quiet     --no-warn-script-location 'kfp==1.8.13' && "$0" "$@"
+    - sh
+    - -ec
+    - |
+      program_path=$(mktemp -d)
+      printf "%s" "$0" > "$program_path/ephemeral_component.py"
+      python3 -m kfp.v2.components.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+    - "\nimport kfp\nfrom kfp.v2 import dsl\nfrom kfp.v2.dsl import *\nfrom typing\
+      \ import *\n\ndef bytetrack_from_video(\n    input_video: Input[Artifact],\n\
+      \    input_weights: Input[Artifact],\n    output_video: Output[Artifact],\n\
+      \    output_text_file_dataset: Output[Dataset],\n    output_video_path: str,\n\
+      \    output_text_file_dataset_path: str,\n    device: str = \"gpu\",  # Must\
+      \ be gpu or cpu\n):\n    import os\n    import shutil\n    from loguru import\
+      \ logger\n    from tools.demo_track import make_parser, main, get_exp\n\n  \
+      \  if device == \"gpu\":\n        arg_list = [\n            \"video\",\n   \
+      \         \"-f\",\n            \"/ByteTrack/exps/example/mot/yolox_x_mix_det.py\"\
+      ,\n            \"-c\",\n            input_weights.path,\n            \"--path\"\
+      ,\n            input_video.path,\n            \"--fp16\",\n            \"--fuse\"\
+      ,\n            \"--save_result\",\n        ]\n    elif device == \"cpu\":\n\
+      \        arg_list = [\n            \"video\",\n            \"-f\",\n       \
+      \     \"/ByteTrack/exps/example/mot/yolox_x_mix_det.py\",\n            \"-c\"\
+      ,\n            input_weights.path,\n            \"--device\",\n            \"\
+      cpu\",\n            \"--path\",\n            input_video.path,\n           \
+      \ \"--fuse\",\n            \"--save_result\",\n        ]\n\n    # Set up video\
+      \ output paths\n    if output_video_path.startswith(\"gs://\"):\n        output_video_path_gs\
+      \ = output_video_path\n        output_video_path_local = output_video_path.replace(\"\
+      gs://\", \"/gcs/\")\n    elif output_video_path.startswith(\"/gcs/\"):\n   \
+      \     output_video_path_gs = output_video_path.replace(\"/gcs/\", \"gs://\"\
+      )\n        output_video_path_local = output_video_path\n    else:\n        raise\
+      \ ValueError(\n            \"output_video_path should start with either gs://\
+      \ or /gcs/\"\n        )\n    output_video_dir_local = os.path.dirname(output_video_path_local)\n\
+      \    logger.info(f\"save results to {output_video_dir_local}\")\n    os.makedirs(output_video_dir_local,\
+      \ exist_ok=True)\n    output_video.uri = output_video_path_gs\n\n    #\_Set\
+      \ up dataset output paths\n    if output_text_file_dataset_path.startswith(\"\
+      gs://\"):\n        output_text_file_dataset_path_gs = output_text_file_dataset_path\n\
+      \        output_text_file_dataset_path_local = output_text_file_dataset_path.replace(\n\
+      \            \"gs://\", \"/gcs/\"\n        )\n    elif output_text_file_dataset_path.startswith(\"\
+      /gcs/\"):\n        output_text_file_dataset_path_gs = output_text_file_dataset_path.replace(\n\
+      \            \"/gcs/\", \"gs://\"\n        )\n        output_text_file_dataset_path_local\
+      \ = output_text_file_dataset_path\n    else:\n        raise ValueError(\n  \
+      \          \"output_text_file_dataset_path should start with either gs:// or\
+      \ /gcs/\"\n        )\n    output_text_file_dataset_dir_local = os.path.dirname(output_text_file_dataset_path_local)\n\
+      \    logger.info(f\"save results to {output_text_file_dataset_path_local}\"\
+      )\n    os.makedirs(output_text_file_dataset_dir_local, exist_ok=True)\n    output_text_file_dataset.uri\
+      \ = output_text_file_dataset_path_gs\n\n    args = make_parser().parse_args(arg_list)\n\
+      \    exp = get_exp(args.exp_file, args.name)\n    main(exp=exp, args=args)\n\
+      \n    source_dir = \"/ByteTrack/YOLOX_outputs/yolox_x_mix_det/track_vis\"\n\
+      \    source_video = f\"{source_dir}/output.mp4\"\n    source_results = f\"{source_dir}/results.txt\"\
+      \n    shutil.copyfile(source_video, output_video_path_local)\n    shutil.copyfile(source_results,\
+      \ output_text_file_dataset_path_local)\n\n"
+    args:
+    - --executor_input
+    - {executorInput: null}
+    - --function_to_execute
+    - bytetrack_from_video

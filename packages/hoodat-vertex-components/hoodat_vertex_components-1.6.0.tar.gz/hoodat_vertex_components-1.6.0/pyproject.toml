@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "hoodat-vertex-components"
+version = "1.6.0"
+description = "Re-usable kfp components for hoodat"
+authors = ["Eugene Brown <efbbrown@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+include = [
+    "LICENSE.txt",
+]
+
+[tool.commitizen]
+version = "1.6.0"
+version_files = [
+    "pyproject.toml:version",
+    "hoodat_vertex_components/__init__.py:__version__",
+]
+tag_format = "v$major.$minor.$patch$prerelease"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+kfp = "^1.8.12"
+google-cloud-aiplatform = "^1.12.1"
+pytz = "^2022.5"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+pytest = "^7.1.1"
+pandas = "^1.4.2"
+setuptools = "^65.6.3"
+loguru = "^0.6.0"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",
+  "hoodat_vertex_components/components/make_cascade_file"
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

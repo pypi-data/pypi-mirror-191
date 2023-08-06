@@ -1,0 +1,14 @@
+opencv_python
+scikit-image
+tqdm
+Pillow
+ninja
+tensorboard
+motmetrics
+filterpy
+h5py
+
+# verified versions
+onnx==1.13.0
+onnxruntime==1.13.1
+onnx-simplifier==0.4.10
