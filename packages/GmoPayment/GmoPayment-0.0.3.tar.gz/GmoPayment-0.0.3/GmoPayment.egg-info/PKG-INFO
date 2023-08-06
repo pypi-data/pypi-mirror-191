@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: GmoPayment
+Version: 0.0.3
+Summary: Python API Client for GMO Payment Gateway
+Home-page: https://github.com/blueromans/GmoPayment.git
+Author: Yaşar Özyurt
+Author-email: blueromans@gmail.com
+Project-URL: Bug Tracker, https://github.com/blueromans/GmoPayment/issues
+Keywords: GmoPayment
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![PyPI version](https://img.shields.io/pypi/v/GmoPayment.svg)](https://pypi.python.org/pypi/GmoPayment)
+
+# GmoPayment Python PyPackage
+
+Python API Client for GMO Payment Gateway
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install GmoPayment
+```
+# Usage
+
+Sample calling ExecTran.idPass
+
+```python
+from GmoPayment import Gateway, ResponseError
+
+gmopg = Gateway(timeout=10, production=True)
+try:
+    response = gmopg.tran.execute({'ShopID': 'shop_id', 'ShopPass': 'password', 'OrderID': 'ORDER0000001', 'JobCd': '1234', 'Amount': 1000})
+except ResponseError as e:
+    print(e)
+else:
+    print(response.data)
+```
+
+Parameter names conform to payment gateway specifications.
+
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
