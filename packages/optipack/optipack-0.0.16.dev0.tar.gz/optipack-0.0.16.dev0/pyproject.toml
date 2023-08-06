@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "optipack"
+version = "0.0.16-dev"
+description = "The optimal ML package"
+authors = ["indigoYoshimaru"]
+readme = "README.md"
+include = ["optipack/.config/project_structure.yaml"]
+
+[tool.poetry.dependencies]
+python = "^3"
+typer = "^0.7.0"
+rich = "13.3.1"
+pyyaml = "6.0"
+Pillow = "9.4.0"
+
+[[tool.poetry.source]]
+name = "ompypi"
+url = "https://artifactory.int.vinid.dev/artifactory/"
+default = true
+secondary = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+optipack = "optipack.__main__:start"
+
