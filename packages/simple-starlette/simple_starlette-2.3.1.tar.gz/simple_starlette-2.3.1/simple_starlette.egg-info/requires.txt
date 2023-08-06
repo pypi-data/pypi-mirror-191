@@ -1,0 +1,14 @@
+SQLAlchemy==1.4.27
+aiomysql==0.0.21
+black==22.3.0
+jsonrpcclient==4.0.1
+jsonrpcserver==5.0.4
+pydantic==1.8.2
+pyjwt==2.4.0
+pytest==7.1.1
+redis==4.4.0
+requests==2.25.1
+sentry-sdk==0.10.2
+starlette==0.16.0
+uvicorn[standard]==0.15.0
+werkzeug==2.0.2
