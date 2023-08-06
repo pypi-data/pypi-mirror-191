@@ -1,0 +1,15 @@
+build/
+dist/
+__pycache__/
+.hatch/
+report.html
+.coverage
+.pytest_cache/
+htmlcov/
+*.egg-info/
+venv*/
+*.whl
+*.tgz
+docs/_build/
+.vscode
+/temp/
