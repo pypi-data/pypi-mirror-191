@@ -1,0 +1,19 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+musicpy/__init__.py
+musicpy/algorithms.py
+musicpy/control.py
+musicpy/database.py
+musicpy/daw.py
+musicpy/musicpy.py
+musicpy/requirements for musicpy daw.txt
+musicpy/requirements.txt
+musicpy/structures.py
+musicpy.egg-info/PKG-INFO
+musicpy.egg-info/SOURCES.txt
+musicpy.egg-info/dependency_links.txt
+musicpy.egg-info/requires.txt
+musicpy.egg-info/top_level.txt
