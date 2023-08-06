@@ -1,0 +1,3 @@
+[console_scripts]
+gitflux=gitflux.__main__:cli
+

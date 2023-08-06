@@ -1,0 +1,8 @@
+gitflux/__init__.py,sha256=1wY1UEJppMvmUjEaZZGdS9f8mvTQB_zAdzCVhPUSXfU,79
+gitflux/__main__.py,sha256=sfWQKZrhQCgoUEtjNMNqcaIPAWOuKf0K63eIHc2kj_s,1112
+gitflux/commands.py,sha256=uW23qHdwZ5uC1Q1Sk34dOKYry83nNsknRsKb35eroT0,1635
+gitflux-0.2.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gitflux-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+gitflux-0.2.0.dist-info/entry_points.txt,sha256=_r-v7llSIlBe07J9y5OqWLnNbeiMWE99Y59B_KHh82c,48
+gitflux-0.2.0.dist-info/METADATA,sha256=GzMYfPflMv94n58t32mgZfCzdjwUPGvIzr_ZTujDmdc,842
+gitflux-0.2.0.dist-info/RECORD,,
