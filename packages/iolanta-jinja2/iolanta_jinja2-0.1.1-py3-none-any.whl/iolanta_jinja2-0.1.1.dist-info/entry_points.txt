@@ -1,0 +1,3 @@
+[iolanta.plugins]
+jinja2=iolanta_jinja2:IolantaJinja2
+
