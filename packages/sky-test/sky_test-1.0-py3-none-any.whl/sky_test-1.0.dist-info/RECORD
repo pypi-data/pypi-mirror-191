@@ -1,0 +1,10 @@
+sky_test1/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+sky_test1/dest_test/join.py,sha256=cODhc2hGOYpkvfUYtWy_5f81za9_1DdIbwyhq0Y6emo,245
+sky_test1/dest_test/try_run.py,sha256=o1xpSQZIrojM14s7zmhFcC4DkYGFi2ojkfl9tiXu37Q,293
+sky_test1/dest_test/try_run/__init__.py,sha256=xE94x11y-d3KlS1HyOLPbtzRXQykMazlN9DTzo55VH4,16
+sky_test1/dest_test/try_run/run.py,sha256=hWYD18IpN88WFSqjLQSUwIrTunriFp273q-erI6ayag,142
+sky_test-1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sky_test-1.0.dist-info/METADATA,sha256=eBxWm45f4CwHJ2Yoirnn-hfC_HLcpIZqiZrLcf5JlCo,527
+sky_test-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sky_test-1.0.dist-info/top_level.txt,sha256=PGVRJzwZCpGi5BPkG4y-lQLakppHyWnn_l4Us9U3FUc,10
+sky_test-1.0.dist-info/RECORD,,
