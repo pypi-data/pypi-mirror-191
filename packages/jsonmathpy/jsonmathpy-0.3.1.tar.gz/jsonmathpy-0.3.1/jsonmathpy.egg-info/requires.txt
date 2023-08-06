@@ -1,0 +1,4 @@
+regex
+more_itertools
+numpy
+sympy
