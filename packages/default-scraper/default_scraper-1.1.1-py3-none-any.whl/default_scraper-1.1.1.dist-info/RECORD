@@ -1,0 +1,15 @@
+default_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+default_scraper/drivers/chromedriver,sha256=CYDswX2BbMviCa21cUdvVzBtc9HlgcXt89vADDV8DSk,14852192
+default_scraper/googleplay/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+default_scraper/googleplay/review/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+default_scraper/googleplay/review/parser.py,sha256=6TgdyWWRV5S-i2XJe0uMoAazKkSAOFdY200yf3ZiaN0,5340
+default_scraper/instagram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+default_scraper/instagram/dto.py,sha256=07wGFj0yGniXRXJJwC6B1sItpHlqELmrW9K4TEluXp8,2791
+default_scraper/instagram/parser.py,sha256=Eo3d7a1pfq_e9LKXIrIOqCXn2SqNj40-XM2yBi4bK4c,5094
+default_scraper/instagram/signin.py,sha256=_14nSzUL6k_132qp3bFp7_HBofIL-9jo-AXnlV3V-Us,2629
+default_scraper/instagram/webdriver.py,sha256=E7GGWmbAIQ5Du7GTXcNKl8P5bmuT4doifd5f_P6Tt7w,1002
+default_scraper-1.1.1.dist-info/METADATA,sha256=5ICBxv2MnzD_gd5rvL7DTh43Bv26HIlEjAb9byCK-JE,3602
+default_scraper-1.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+default_scraper-1.1.1.dist-info/top_level.txt,sha256=3RUpn5EDGKy3ZKYBnl5dil1Uv2X8TTwTRyhFGMAuE_k,16
+default_scraper-1.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+default_scraper-1.1.1.dist-info/RECORD,,

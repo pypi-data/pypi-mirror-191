@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: default-scraper
+Version: 1.1.1
+Summary: Web Scraper
+Home-page: https://github.com/bigpicture-kr/default-scraper
+Author: Seongbum Seo
+Author-email: sbumseo@bigpicture.team
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: appnope (==0.1.3)
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: beautifulsoup4 (==4.11.2)
+Requires-Dist: bleach (==6.0.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: debugpy (==1.6.6)
+Requires-Dist: decorator (==5.1.1)
+Requires-Dist: docutils (==0.19)
+Requires-Dist: entrypoints (==0.4)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==6.0.0)
+Requires-Dist: importlib-resources (==5.10.2)
+Requires-Dist: ipykernel (==6.16.2)
+Requires-Dist: ipython (==7.34.0)
+Requires-Dist: jaraco.classes (==3.2.3)
+Requires-Dist: jedi (==0.18.2)
+Requires-Dist: jupyter-client (==7.4.9)
+Requires-Dist: jupyter-core (==4.12.0)
+Requires-Dist: keyring (==23.13.1)
+Requires-Dist: markdown-it-py (==2.1.0)
+Requires-Dist: matplotlib-inline (==0.1.6)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: more-itertools (==9.0.0)
+Requires-Dist: nest-asyncio (==1.5.6)
+Requires-Dist: numpy (==1.21.6)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: pandas (==1.3.5)
+Requires-Dist: parso (==0.8.3)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: pkginfo (==1.9.6)
+Requires-Dist: prompt-toolkit (==3.0.36)
+Requires-Dist: psutil (==5.9.4)
+Requires-Dist: ptyprocess (==0.7.0)
+Requires-Dist: Pygments (==2.14.0)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: pyzmq (==25.0.0)
+Requires-Dist: readme-renderer (==37.3)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: requests-toolbelt (==0.10.1)
+Requires-Dist: rfc3986 (==2.0.0)
+Requires-Dist: rich (==13.2.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: soupsieve (==2.3.2.post1)
+Requires-Dist: tornado (==6.2)
+Requires-Dist: traitlets (==5.9.0)
+Requires-Dist: twine (==4.0.2)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: wcwidth (==0.2.6)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.11.0)
+
+# default-scraper
+
+Python Web Scraper
+
+## Features
+
+- Scrap all search results for a keyword entered as an argument.
+- Can be saved as `.csv` and `.json`.
+- Also collect user data who uploaded contents included in search results.
+
+## Usage
+
+### Install
+
+```bash
+pip install default-scraper
+```
+
+or
+
+```bash
+pip install git+https://github.com/Seongbuming/crawler.git
+```
+
+### Scrap Instagram contents in python script
+
+```python
+from default_scraper.instagram.parser import InstagramParser
+USERNAME = ""
+PASSWORD = ""
+KEYWORD = ""
+parser = InstagramParser(USERNAME, PASSWORD, KEYWORD, False)
+parser.run()
+```
+
+### Scrap Instagram contents using bash command
+
+Run following command to scrap contents from Instagram:
+
+```bash
+python main.py --platform instagram --keyword {KEYWORD} [--output_file OUTPUT_FILE] [--all]
+```
+
+Use `--all` or `-a` option to also scrap unstructured fields.
+
+## Data description
+
+### Instagram
+
+- Structured fields
+  - `pk`
+  - `id`
+  - `taken_at`
+  - `media_type`
+  - `code`
+  - `comment_count`
+  - `user`
+  - `like_count`
+  - `caption`
+  - `accessibility_caption`
+  - `original_width`
+  - `original_height`
+  - `images`
+- Some fields may be missing depending on Instagram's response data.
+
+## Future works
+
+- Will support scraping from more platform services.
+
+
