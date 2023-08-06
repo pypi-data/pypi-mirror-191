@@ -1,0 +1,2 @@
+[console_scripts]
+comform = comform.__main__:main

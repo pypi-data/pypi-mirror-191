@@ -1,0 +1,13 @@
+comform/__init__.py,sha256=jnqPmXNA1fzsKH6xnW6b7h-hJqxpzvVVdr1gl9wh1Ag,2464
+comform/__main__.py,sha256=cWzbJaidLQRnkvbGx0W6ymPr4wozsPO2fx-SC4aa9Dw,152
+comform/cli.py,sha256=owbZ5BtT0wBW4WHuMxAqCxPTRX_UNv7_8CCgmTWinEc,2139
+comform/comments.py,sha256=SySIyxWPvGp5SfpO99QtPpTojAq6oAFBxzzdSzvQTHU,1913
+comform/fixes.py,sha256=zujgeElW56QC1E-FufCuvj_sGbaEJSOE1BQ9mVBLFOU,3278
+comform/py.typed,sha256=Y1N_eX0oO8JTTOli9bL-6Nq4nOx2x1TaB6IQ0QR-Yys,24
+comform/utils.py,sha256=zGlf_WKg1wmkgpp82Mp2ypEo5KMMi5D-mlC2UhX5p1Y,1875
+comform/version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+comform-0.1.0.dist-info/METADATA,sha256=YGYGgKgmAL81bk_I1v4SAO01j7aByZ4dbwfp2O51Psw,3112
+comform-0.1.0.dist-info/WHEEL,sha256=nYNlZuHZ28ui1K118WE5qpb9yEZSMQ3u8pC2H4PftME,105
+comform-0.1.0.dist-info/entry_points.txt,sha256=d2HGxnFdtL3ors3FnxQlDqUzKGbhLe2jh7wKcRFw4r0,50
+comform-0.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+comform-0.1.0.dist-info/RECORD,,
