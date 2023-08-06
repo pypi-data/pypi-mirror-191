@@ -1,0 +1,4 @@
+networkx>=2
+pyparsing
+numpy
+cached_property
