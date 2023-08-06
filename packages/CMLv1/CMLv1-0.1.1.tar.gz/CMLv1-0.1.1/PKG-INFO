@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: CMLv1
+Version: 0.1.1
+Summary: A support library for CheckoutMachineApplication.
+Author: fyc
+Author-email: fycsfls_winter@126.com
+Project-URL: Documentation, https://you.wont.expect.me.to.give.you.a.documentation.right/
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+## Description
+The supporting lib for a planning application for checkout machines.
+
+
+## Changelog
+### 0.1.1
+* Fixed some bugs.
+* Completed base product.
+### 0.1.0
+* Initial commit.
