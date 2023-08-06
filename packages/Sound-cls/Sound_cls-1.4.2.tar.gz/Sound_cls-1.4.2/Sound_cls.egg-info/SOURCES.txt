@@ -1,0 +1,8 @@
+README.md
+setup.py
+Sound_cls/__init__.py
+Sound_cls.egg-info/PKG-INFO
+Sound_cls.egg-info/SOURCES.txt
+Sound_cls.egg-info/dependency_links.txt
+Sound_cls.egg-info/requires.txt
+Sound_cls.egg-info/top_level.txt

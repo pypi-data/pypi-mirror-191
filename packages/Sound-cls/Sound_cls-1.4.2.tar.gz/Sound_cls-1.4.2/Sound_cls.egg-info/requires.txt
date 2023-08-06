@@ -1,0 +1,8 @@
+torch
+torchaudio
+ffmpeg
+resampy
+soundfile
+librosa
+termcolor
+pyaudio
