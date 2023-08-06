@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+tira/__init__.py
+tira/io_utils.py
+tira/rest_api_client.py
+tira/third_party_integrations.py
+tira.egg-info/PKG-INFO
+tira.egg-info/SOURCES.txt
+tira.egg-info/dependency_links.txt
+tira.egg-info/requires.txt
+tira.egg-info/top_level.txt

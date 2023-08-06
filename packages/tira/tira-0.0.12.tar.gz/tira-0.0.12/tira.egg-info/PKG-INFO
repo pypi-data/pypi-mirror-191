@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tira
+Version: 0.0.12
+Summary: Simple access to the TIRA API.
+Home-page: https://github.com/tira-io/tira
+Author: Maik Fröbe
+Author-email: maik.froebe@uni-weimar.de
+Maintainer: Maik Fröbe
+Project-URL: Bug Tracker, https://github.com/tira-io/tira/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
