@@ -1,0 +1,13 @@
+igl/__init__.py,sha256=5_CclkN-7vBtlzbr-uQTG9N0FLx0J8enGYyQ9MX_Jfo,111
+igl/_version.py,sha256=ITtsq0bNd9tSzE43_PhMkdXtXF2e9LH-pzuqPXrCl4Y,26
+igl/helpers.py,sha256=bO4T9yhY0fE7Y_O_08kAzkkEpvCXxKPWhCjnzE3C1zs,2086
+igl/pyigl.cp310-win_amd64.pyd,sha256=JqMnYpa59yjZxNSD8qDAzqznaT8B0mw0_wsHR5_AK54,32291840
+igl/pyigl_classes.cp310-win_amd64.pyd,sha256=ZcLnciIp9aXWWoUw1nvn_dTs-PdJRtvl4pDEpPezOj0,688128
+igl/copyleft/cgal/__init__.py,sha256=NJ2qNq7xwEOa5a4Ra09v8ADkIgrNvBjz6whcz3C0QPk,34
+igl/copyleft/cgal/libgmp-10.dll,sha256=_sQ8sYzg7Ipd1q0dt0V0cWcxDMuStaz_DURaizAT8Ak,543027
+igl/copyleft/cgal/libmpfr-4.dll,sha256=CbO4aLlkM5kfwVycWub5pExi0uIRlBEEQmB5Fzke2Sc,436011
+igl/copyleft/cgal/pyigl_copyleft_cgal.cp310-win_amd64.pyd,sha256=xoInTy2O3x4zO1a1aWOv7HSj2TXUQG6g1A1kbmnY42Q,2075136
+libigl-2.5.1.dev0.dist-info/METADATA,sha256=72LuT1DAsb0YV_aYTkR0-EnJgKAmBF7-I7Uv8RqpYEE,2196
+libigl-2.5.1.dev0.dist-info/WHEEL,sha256=rneS2j8QNmAwdNKHN86s6-qP7AMcWZgqiEoH3bdbh_Y,102
+libigl-2.5.1.dev0.dist-info/top_level.txt,sha256=TF1tYDKDOv891WW8VMKHYFbUMW0bi_1a2OKWpZzoVUQ,10
+libigl-2.5.1.dev0.dist-info/RECORD,,
