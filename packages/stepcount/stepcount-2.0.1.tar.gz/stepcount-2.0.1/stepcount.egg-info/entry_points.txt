@@ -1,0 +1,2 @@
+[console_scripts]
+stepcount = stepcount.stepcount:main
