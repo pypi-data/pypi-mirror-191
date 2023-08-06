@@ -1,0 +1,3 @@
+[console_scripts]
+aws-oidc=device.cli:app
+
