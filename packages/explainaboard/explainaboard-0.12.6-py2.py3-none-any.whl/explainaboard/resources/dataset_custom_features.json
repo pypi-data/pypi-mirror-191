@@ -1,0 +1,110 @@
+{
+  "sst2": {
+    "custom_features": {
+      "example": {
+        "label": {
+          "cls_name": "Value",
+          "dtype": "string",
+          "description": "the true label"
+        }
+      }
+    },
+    "custom_analyses": [
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "label",
+        "level": "example",
+        "num_buckets": 2,
+        "method": "discrete"
+      }
+    ]
+  },
+  "tat_qa": {
+    "custom_features": {
+      "example": {
+        "answer_from": {
+          "cls_name": "Value",
+          "dtype": "string",
+          "description": "where does the answer from"
+        },
+        "q_order": {
+          "cls_name": "Value",
+          "dtype": "float",
+          "description": "the order of question"
+        }
+      }
+    },
+    "custom_analyses": [
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "answer_from",
+        "level": "example",
+        "num_buckets": 4,
+        "method": "discrete"
+      },
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "q_order",
+        "level": "example",
+        "num_buckets": 10,
+        "method": "continuous"
+      }
+    ]
+  },
+  "sumeval2022": {
+    "custom_features": {
+      "example": {
+        "overall_setting": {
+          "cls_name": "Value",
+          "dtype": "string",
+          "description": "overall setting"
+        },
+        "dataset_name": {
+          "cls_name": "Value",
+          "dtype": "string",
+          "description": "dataset"
+        },
+        "model_name": {
+          "cls_name": "Value",
+          "dtype": "string",
+          "description": "model name"
+        },
+        "target_lang_data_size": {
+          "cls_name": "Value",
+          "dtype": "float",
+          "description": "dataset size for target language"
+        }
+      }
+    },
+    "custom_analyses": [
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "overall_setting",
+        "level": "example",
+        "num_buckets": 10,
+        "method": "discrete"
+      },
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "dataset_name",
+        "level": "example",
+        "num_buckets": 10,
+        "method": "discrete"
+      },
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "model_name",
+        "level": "example",
+        "num_buckets": 10,
+        "method": "discrete"
+      },
+      {
+        "cls_name": "BucketAnalysis",
+        "feature": "target_lang_data_size",
+        "level": "example",
+        "num_buckets": 6,
+        "method": "continuous"
+      }
+    ]
+  }
+}
