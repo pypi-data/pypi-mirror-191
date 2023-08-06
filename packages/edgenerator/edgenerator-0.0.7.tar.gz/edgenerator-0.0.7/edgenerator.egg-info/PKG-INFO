@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: edgenerator
+Version: 0.0.7
+Summary: Package for generating energy diagrams from excel files
+Author: SiebeLeDe 
+Author-email: <siebe.lekannegezegddeprez@student.uva.nl>
+License: UNKNOWN
+Keywords: python,energy diagram,energy diagram generator
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This package is used to generate energy diagrams from excel files. The main function to be used is [MAIN FUNCTION NAME] and the arguments are the directory for the energy diagram file and the path to the excel file
