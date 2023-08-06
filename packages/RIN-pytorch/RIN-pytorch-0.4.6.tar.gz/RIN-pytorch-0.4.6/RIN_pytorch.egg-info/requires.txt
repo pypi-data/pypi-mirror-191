@@ -1,0 +1,8 @@
+accelerate
+beartype
+ema-pytorch
+einops>=0.6
+pillow
+torch>=1.12.0
+torchvision
+tqdm
