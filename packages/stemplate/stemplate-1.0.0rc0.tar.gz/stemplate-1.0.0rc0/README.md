@@ -1,0 +1,134 @@
+# Python package GitLab repository template
+
+## Background
+
+Designing a distribution for a Python package is a process that can take a long time.
+The information can seem scattered as different entities come into play.
+The goal here is to produce a working example of a distribution and to gather information that is deemed important.
+
+## Some useful links
+
+Here is some recommended reading for the creation of a distribution:
+
+* [Tool recommendations](https://packaging.python.org/en/latest/guides/tool-recommendations)
+* [Packaging Python Projects](https://packaging.python.org/en/latest/tutorials/packaging-projects)
+* [`.gitlab-ci.yml` keyword reference](https://docs.gitlab.com/ee/ci/yaml)
+* [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+* [PyPi classifiers](https://pypi.org/classifiers)
+
+## Usage
+
+To use this template follow these steps:
+
+* Download or copy the [template repository](https://gitlab.com/stemplate/python-package).
+* Replace all occurrences of `stemplate` with your package name.
+* Adapt the files as you wish.
+* Remove the `.git` directory and initialize a new one:
+
+```bash
+git init --initial-branch=main
+git add <your-files>
+git commit -m "initial commit"
+git tag -a v1.0.0rc -m "version 1.0.0rc"
+```
+
+* Build and upload the package:
+
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade twine
+python3 -m pip install --upgrade build
+python3 -m build
+python3 -m twine upload dist/*
+```
+
+* Create an API token called "gitlab" for the project on [Pypi](https://pypi.org).
+* Create an empty repository on [GitLab](https://gitlab.com) (deployment target: Registry).
+* Add the PyPi Token variables (Project > Settigns > CI/CD > Variables):
+    1. `TWINE_USERNAME`: `__token__` (Add "Protect", "Mask", "Expand" options)
+    2. `TWINE_PASSWORD`: token value (Add "Protect", "Mask", "Expand" options)
+* Protect `v*` tags (Project > Settigns > Repository > Protected tags).
+* Make sure `main` branch is protected (Project > Settigns > Repository > Protected branch).
+* Push:
+
+```bash
+git remote add origin git@gitlab.com:<user/project>.git
+git push origin main --tags
+```
+
+* Do not work on the main branch.
+* After merging a branch to the main branch, if the pipelines passed, add a tag `v1.0.0` "version 1.0.0" directly on gitlab.
+
+## README template
+
+The following is a template for the README.md file.
+
+```markdown
+# Package name
+
+> What does it mean?
+
+The name "Stemplate" comes from the contraction of "Stem" and "Template".
+
+> What is it for?
+
+Stemplate is a useless Python package.
+
+> Is it hard to use?
+
+Just type one of the available commands in a terminal.
+
+## Background
+
+Explain the context and the problems addressed.
+
+## Features
+
+With this package it is possible to...
+
+## Installation
+
+Installation instructions.
+
+## Usage
+
+### Accepted arguments
+
+How to print help.
+
+### Command 1
+
+Feature 1 example.
+
+### Command 2
+
+Feature 1 example.
+
+### Configuration
+
+Configuration file example.
+
+## Credits
+
+* Author Name
+
+## License
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
+```
+
+## Credits
+
+* Dunstan Becht
+
+## License
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see <https://www.gnu.org/licenses/>.
