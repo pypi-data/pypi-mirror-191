@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: pysortfolder
+Version: 0.0.4
+Summary: Sort folders and files by size and display it in folder tree format.
+Author-email: Muhammad Yasirroni <48709672+yasirroni@users.noreply.github.com>
+Maintainer-email: Muhammad Yasirroni <48709672+yasirroni@users.noreply.github.com>
+License: MIT-License
+Project-URL: Documentation, https://github.com/yasirroni/pysortfolder#readme
+Project-URL: Issues, https://github.com/yasirroni/pysortfolder/issues
+Project-URL: Source, https://github.com/yasirroni/pysortfolder
+Keywords: sort,folder,size
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pysortfolder
+
+Sort folders and files by size and display it in folder tree format.
+
+## Usage
+
+```python
+from pysortfolder import PySortFolder
+
+PySortFolder(path='PATH/TO/ROOT/FOLDER')
+sf.make_tree(reverse=False)  # support reverse=True
+sf.print_tree()
+
+# data, size: 82
+# ├── subfolder3, size: 0
+# │   └── subsubfolder2, size: 0
+# │       └── subsubsubfolder1, size: 0
+# │           ├── subsubsubsubfolder1, size: 0
+# │           └── subsubsubfolder1_text1.txt, size: 0
+# ├── subfolder2, size: 17
+# │   └── subfolder2_text1.txt, size: 17
+# ├── subfolder1, size: 54
+# │   ├── subsubfolder1, size: 20
+# │   │   └── subsubfolder1_text1.txt, size: 20
+# │   ├── subfolder1_text1.txt, size: 17
+# │   └── subfolder1_text2.txt, size: 17
+# └── root_text1.txt, size: 11
+```
+
+```python
+from pysortfolder import dir_size
+
+print(dir_size(path='PATH/TO/ROOT/FOLDER')) # print the size of the root
+
+# 82
+```
