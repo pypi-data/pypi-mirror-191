@@ -1,0 +1,15 @@
+argparse>=1.4.0
+bdata>=6.11.1
+cython>=0.28
+iminuit>=2.6.1
+jax>=0.2.17
+jaxlib>=0.1.69
+matplotlib>=2.2.4
+numpy>=1.19
+pandas>=1.4.2
+pytest>=4.5.0
+pyyaml>=5.1
+requests>=2.25.0
+scipy>=1.2.0
+tqdm>=4.25.0
+wheel>=0.34
