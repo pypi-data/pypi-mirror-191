@@ -1,0 +1,94 @@
+[tool.poetry]
+name = "keyhint"
+version = "0.3.0"
+description = "Cheat-sheets for shortcuts & commands at your fingertips."
+keywords = ["shortcuts", "keybindings", "hints", "helper", "cheatsheet"]
+license = "MIT"
+authors = ["dynobo <dynobo@mailbox.org>"]
+readme = "README.md"
+repository = "https://github.com/dynobo/keyhint"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Topic :: Utilities",
+  "Intended Audience :: End Users/Desktop",
+  "Operating System :: POSIX :: Linux",
+]
+
+[tool.poetry.scripts]
+keyhint = "keyhint.app:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyGObject = "^3.42.2"
+PyYAML = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+rope = "^1.7.0"
+black = "^23.1.0"
+pytest-cov = "^4.0.0"
+pre-commit = "^3.0.4"
+coveralls = "^3.3.1"
+types-PyYAML = "^6.0.12.4"
+Nuitka = "^1.4.5"
+tbump = "^6.9.0"
+ruff = "^0.0.243"
+pip-audit = "^2.4.14"
+mdformat = "^0.7.16"
+mypy = "^1.0.0"
+ordered-set = "^4.1.0"
+zstandard = "^0.19.0"
+viztracer = "^0.15.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.mypy]
+
+files = ["keyhint/**/*.py", "tests/**/*.py"]
+ignore_missing_imports = true
+follow_imports_for_stubs = true
+
+[tool.tbump]
+
+[tool.tbump.version]
+current = "0.3.0"
+regex = '''
+  (?P<major>\d+)
+  \.
+  (?P<minor>\d+)
+  \.
+  (?P<patch>\d+)
+  ((?P<extra>.+))?
+  '''
+
+[tool.tbump.git]
+message_template = "Bump to {new_version}"
+tag_template = "v{new_version}"
+
+[[tool.tbump.file]]
+src = "pyproject.toml"
+search = 'version = "{current_version}"'
+
+[[tool.tbump.file]]
+src = "Makefile"
+search = "KeyHint-{current_version}"
+
+[[tool.tbump.file]]
+src = "keyhint/__init__.py"
+
+[[tool.tbump.file]]
+src = "keyhint/resources/window.ui"
+
+[[tool.tbump.before_commit]]
+name = "check changelog"
+cmd = "grep -q {new_version} CHANGELOG.md"
