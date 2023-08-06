@@ -1,0 +1,6 @@
+
+[dev]
+bumpver
+pytest
+build
+twine
