@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: apidevtools
+Version: 1.0.4
+Summary: All in one tools for API development.
+Author-email: cxllmerichie <cxllmerichie@gmail.com>
+Project-URL: Homepage, https://github.com/cxllmerichie/apidevtools
+Project-URL: Bug Tracker, https://github.com/cxllmerichie/apidevtools/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: FastAPI
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+## Overview
+## Documentation
+## Installation
+```
+pip install apidevtools
+```
+### Package dependencies
+```
+pip install asyncpg pydantic loguru telegraph pillow numpy argon2-cffi pycryptodome telegraph httpx aiohttp python-dateutil
+```
+speedups
+```
+pip install aiodns ujson cchardet uvloop
+```
+### Per module dependencies
+- simpleorm
+    ```
+    pip install asyncpg pydantic loguru
+    ```
+- avatar
+    ```
+    pip install telegraph pillow numpy
+    ```
+- security
+    - hasher
+        ```
+        pip install argon2-cffi
+        ```
+    - encryptor
+        ```
+        pip install pycryptodome
+        ```
+- telegraph
+    ```
+    pip install telegraph httpx aiohttp
+    ```
+    speedups:
+    ```
+    pip install aiodns cchardet  
+    ```
+- datetime
+    ```
+    pip install python-dateutil
+    ```
+# Further updates:
+- import encapsulation (from outer_package import something as _something)
+
