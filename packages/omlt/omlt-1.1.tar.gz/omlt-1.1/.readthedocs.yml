@@ -1,0 +1,9 @@
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+conda:
+    file: docs/environment.yml
+
+python:
+    version: 3.8
+    setup_py_install: true
