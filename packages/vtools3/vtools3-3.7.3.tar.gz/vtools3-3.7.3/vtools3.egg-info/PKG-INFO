@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vtools3
+Version: 3.7.3
+Summary: Timeseries analysis and processing tools using pandas/xarray
+Home-page: https://github.com/CADWRDeltaModeling/vtools3
+Author: Eli Ateljevich
+Author-email: eli@water.ca.gov
+License: Apache
+Keywords: vtools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: tests
+Provides-Extra: docs
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# vtools3
+Pandas/xarray implementation of the most important functionality of vtools, emphasizing csv and netcdf as data sources
+
+## Documentation site
+https://cadwrdeltamodeling.github.io/vtools3/
