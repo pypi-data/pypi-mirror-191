@@ -1,0 +1,3 @@
+[console_scripts]
+bulk=bulk_cli.main:cli
+
