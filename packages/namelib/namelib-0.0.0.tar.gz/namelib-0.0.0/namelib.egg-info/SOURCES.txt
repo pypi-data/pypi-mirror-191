@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+namelib/__init__.py
+namelib/core.py
+namelib.egg-info/PKG-INFO
+namelib.egg-info/SOURCES.txt
+namelib.egg-info/dependency_links.txt
+namelib.egg-info/requires.txt
+namelib.egg-info/top_level.txt
