@@ -1,0 +1,11 @@
+README.md
+setup.py
+multi_wechat_webhook/__init__.py
+multi_wechat_webhook/plugin.py
+sentry_multi_wechat_webhook.egg-info/PKG-INFO
+sentry_multi_wechat_webhook.egg-info/SOURCES.txt
+sentry_multi_wechat_webhook.egg-info/dependency_links.txt
+sentry_multi_wechat_webhook.egg-info/entry_points.txt
+sentry_multi_wechat_webhook.egg-info/not-zip-safe
+sentry_multi_wechat_webhook.egg-info/requires.txt
+sentry_multi_wechat_webhook.egg-info/top_level.txt
