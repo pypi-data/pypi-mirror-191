@@ -1,0 +1,48 @@
+From a4d022e535b47989d0ac0710966644e49046267a Mon Sep 17 00:00:00 2001
+From: David Vo <auscompgeek@users.noreply.github.com>
+Date: Sat, 11 Feb 2023 17:50:54 +1100
+Subject: [PATCH] Yeet PhotonCamera from PhotonPoseEstimator
+
+---
+ photonlib/PhotonPoseEstimator.cpp | 9 +--------
+ 1 file changed, 1 insertion(+), 8 deletions(-)
+
+diff --git a/photonlib/PhotonPoseEstimator.cpp b/photonlib/PhotonPoseEstimator.cpp
+index 16ef7661112c..cf052f5847a4 100644
+--- a/photonlib/PhotonPoseEstimator.cpp
++++ b/photonlib/PhotonPoseEstimator.cpp
+@@ -36,30 +36,23 @@
+ #include <frc/geometry/Pose3d.h>
+ #include <frc/geometry/Rotation3d.h>
+ #include <frc/geometry/Transform3d.h>
+ #include <units/time.h>
+ 
+-#include "photonlib/PhotonCamera.h"
+ #include "photonlib/PhotonPipelineResult.h"
+ #include "photonlib/PhotonTrackedTarget.h"
+ 
+ namespace photonlib {
+ PhotonPoseEstimator::PhotonPoseEstimator(frc::AprilTagFieldLayout tags,
+-                                         PoseStrategy strat, PhotonCamera&& cam,
++                                         PoseStrategy strat,
+                                          frc::Transform3d robotToCamera)
+     : aprilTags(tags),
+       strategy(strat),
+-      camera(std::move(cam)),
+       m_robotToCamera(robotToCamera),
+       lastPose(frc::Pose3d()),
+       referencePose(frc::Pose3d()) {}
+ 
+-std::optional<EstimatedRobotPose> PhotonPoseEstimator::Update() {
+-  auto result = camera.GetLatestResult();
+-  return Update(result);
+-}
+-
+ std::optional<EstimatedRobotPose> PhotonPoseEstimator::Update(
+     const PhotonPipelineResult& result) {
+   if (!result.HasTargets()) {
+     return std::nullopt;
+   }
+-- 
+2.39.1
+
