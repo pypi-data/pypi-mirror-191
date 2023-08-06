@@ -1,0 +1,2 @@
+[console_scripts]
+sql-scheduler = sql_scheduler.sql_scheduler:main
