@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: meld-sandbox
+Version: 1.0.6
+Summary: Open-source ecosystem for data privacy as code.
+Home-page: https://github.com/NEOM-KSA/meld-sandbox
+Author: Vincent
+Author-email: vincent@purplepatchservices.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alembic (==1.8.1)
+Requires-Dist: APScheduler (==3.9.1.post1)
+Requires-Dist: asyncpg (==0.25.0)
+Requires-Dist: boto3 (==1.26.1)
+Requires-Dist: celery[pytest] (==5.2.7)
+Requires-Dist: click (==8.1.3)
+Requires-Dist: colorama (>=0.4.3)
+Requires-Dist: cryptography (==38.0.3)
+Requires-Dist: dask (==2022.9.2)
+Requires-Dist: deepdiff (==5.8.1)
+Requires-Dist: fastapi[all] (==0.82.0)
+Requires-Dist: fastapi-caching[redis] (==0.3.0)
+Requires-Dist: fastapi-pagination[sqlalchemy] (~=0.10.0)
+Requires-Dist: fideslang (==1.3.3)
+Requires-Dist: fideslog (==1.2.10)
+Requires-Dist: firebase-admin (==5.3.0)
+Requires-Dist: GitPython (==3.1.27)
+Requires-Dist: httpx (==0.23.1)
+Requires-Dist: hvac (==0.11.2)
+Requires-Dist: Jinja2 (==3.1.2)
+Requires-Dist: loguru (<0.6,>=0.5)
+Requires-Dist: multidimensional-urlencode (==0.0.4)
+Requires-Dist: okta (==2.7.0)
+Requires-Dist: openpyxl (==3.0.9)
+Requires-Dist: packaging (==21.3)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: passlib[bcrypt] (==1.7.4)
+Requires-Dist: plotly (==5.4)
+Requires-Dist: psycopg2-binary (==2.9.5)
+Requires-Dist: pydantic (<1.10.2)
+Requires-Dist: pydash (==5.1.1)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: pymongo (==3.13.0)
+Requires-Dist: PyMySQL (==1.0.2)
+Requires-Dist: python-jose[cryptography] (==3.3.0)
+Requires-Dist: pyyaml (<6,>=5)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: sendgrid (==6.9.7)
+Requires-Dist: slowapi (==0.1.5)
+Requires-Dist: snowflake-sqlalchemy (==1.4.3)
+Requires-Dist: sqlalchemy[asyncio] (==1.4.27)
+Requires-Dist: sqlalchemy-bigquery (==1.4.4)
+Requires-Dist: sqlalchemy-redshift (==0.8.11)
+Requires-Dist: sqlalchemy-stubs (==0.4)
+Requires-Dist: SQLAlchemy-Utils (==0.38.3)
+Requires-Dist: toml (>=0.10.1)
+Requires-Dist: twilio (==7.15.0)
+Requires-Dist: Unidecode (==1.3.4)
+Requires-Dist: validators (==0.20.0)
+Requires-Dist: versioneer (==0.19)
+Provides-Extra: all
+Provides-Extra: mssql
+Requires-Dist: pyodbc (==4.0.34) ; extra == 'mssql'
+
+# M3LD Sandbox
+
+### Getting Started
+
+In order to get started quickly with M3LD Sandbox, a sample project is bundled within the M3LD Sandbox CLI that will set up a server, privacy center, and a sample application for you to experiment with.
+
+#### Minimum requirements
+
+- [Docker](https://www.docker.com/products/docker-desktop) (version 20.10.11 or later)
+- [Python](https://www.python.org/downloads/) (version 3.8 through 3.10)
+
+#### Download and install M3LD Sandbox
+
+You can easily download and install M3LD Sandbox using `pip`. Run the following command to get started:
+
+```sh
+pip install meld-sandbox
+```
+
+
