@@ -1,0 +1,2 @@
+[console_scripts]
+mypaas = mypaas.__main__:main
