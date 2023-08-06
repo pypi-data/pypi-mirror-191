@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "npgcs"
+version = "0.1.0"
+description = ""
+authors = ["npwslpc <nopporn@central.tech>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+google-cloud-logging = "^3.2.5"
+google-cloud-storage = "^2.6.0"
+pandas = "^1.5.2"
+openpyxl = "^3.0.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

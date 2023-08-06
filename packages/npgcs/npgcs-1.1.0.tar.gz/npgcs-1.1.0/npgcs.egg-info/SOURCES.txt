@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+npgcs/__init__.py
+npgcs.egg-info/PKG-INFO
+npgcs.egg-info/SOURCES.txt
+npgcs.egg-info/dependency_links.txt
+npgcs.egg-info/requires.txt
+npgcs.egg-info/top_level.txt
+npgcs/connectors/__init__.py
+npgcs/connectors/mssql.py
+npgcs/connectors/mysql.py
+npgcs/connectors/postgres.py
+npgcs/core/__init__.py
+npgcs/core/tools.py

@@ -1,0 +1,10 @@
+google-cloud-logging
+google-cloud-storage
+pandas
+openpyxl
+
+[dev]
+check-manifest
+
+[test]
+coverage
