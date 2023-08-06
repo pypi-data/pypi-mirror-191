@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Authenticated</title>
+<script>
+function copyText(e_id) {
+var e = document.getElementById(e_id);
+navigator.clipboard.writeText(e.textContent)
+}
+</script>
+<header>
+  <div>
+    <h1>Successfully Authenticated</h1>
+  </div>
+</header>
+<main>
+  <div>
+    <dl>
+      <dt>Here's your user token:</dt>
+      <dd>
+        <samp id="token">{{ user_token }}</samp>
+        <button type="button" onclick="copyText('token')">Copy</button>
+      </dd>
+    </dl>
+    <p>You can close this window after you got the code for the client.</p>
+  </div>
+</main>
+<footer>
+  <div>
+    <a href="https://bitbucket.org/emptypage/twofer/">Twofer is developed on Bitbucket.</a>
+  </div>
+</footer>
+</html>
