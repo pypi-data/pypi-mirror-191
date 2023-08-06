@@ -1,0 +1,14 @@
+
+[all]
+pygments>=2.7.3
+
+[all:python_version >= "3.7"]
+wavedrom
+
+[code_syntax_highlighting]
+pygments>=2.7.3
+
+[wavedrom]
+
+[wavedrom:python_version >= "3.7"]
+wavedrom
