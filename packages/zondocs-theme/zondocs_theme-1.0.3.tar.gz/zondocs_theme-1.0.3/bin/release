@@ -1,0 +1,23 @@
+#!/bin/bash
+
+set -e
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $DIR
+if [[ Pipfile.lock -nt .pipenv.success ]]; then
+    pipenv sync
+    touch .pipenv.success
+fi
+cd ..
+
+if [[ -e "$VAULT_TOKEN" ]]; then
+   VAULT_TOKEN=$(<"$HOME/.vault-token")
+fi
+
+password=$(curl -s -H "X-Vault-Token: $(vault print token)" https://vault.ops.zeit.de/v1/zon/v1/pypi/zon-backend | sed -e 's+^.*"password":"\([^"]*\).*$+\1+')
+
+env PIPENV_PIPFILE="$DIR/Pipfile" \
+    TWINE_USERNAME="zon-backend" \
+    TWINE_PASSWORD="$password" \
+    pipenv run fullrelease "$@"

@@ -1,0 +1,26 @@
+# @see: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Global styles
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# frontend code
+[{*.css,*.js, *.js_t,*.html}]
+indent_size = 2
+
+# Markdown
+[*.md]
+max_line_length = 80
+trim_trailing_whitespace = false
+
+# Sphinx stuff
+[{*.rst,*.rst.txt, *.txt}]
+max_line_length = 80
