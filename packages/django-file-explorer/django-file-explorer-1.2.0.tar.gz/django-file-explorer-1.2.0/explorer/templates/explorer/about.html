@@ -1,0 +1,30 @@
+{% extends 'explorer/base.html' %}
+
+{% block title %}
+    About
+{% endblock title %}
+
+{% block content %}
+    <!-- BODY -->
+    <div class="container mt-3">
+        <h1>About</h1>
+        
+        <h5 style="text-align: center;">
+            Explorer is simple web application for exploring the directory.
+            Main objective of explorer is to help the developer to explor the static files
+            during the development phase. It allow developer to view, delete and dowload files
+            from the application.
+        </h5>
+        <h5 style="text-align: center;">
+            If you deploy your application using docker, then explorer will help you to 
+            explore files that are not easily accessible. It is always preferable to use explorer 
+            in the development environment not in production environment.
+        </h5>
+        <h3>Author:</h3>
+        <ul>
+            <li>Muhammad Tahir Rafique</li>
+        </ul>
+        <p class="text-right"><strong>v{{version}}</strong></p>
+    </div>
+
+{% endblock content %}

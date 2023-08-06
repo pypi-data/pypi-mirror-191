@@ -1,0 +1,145 @@
+{% extends 'explorer/base.html' %}
+
+{% block title %}
+    Explorer
+{% endblock title %}
+
+{% block content %}
+    <!-- BODY -->
+    <div class="container-fluid mt-3">
+        <!-- MAIN AREA -->
+        <div class="row">
+            <!-- LEFT AREA -->
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                <!-- VOLUMES -->
+                <div class="volume">
+                    <h2 class="text-center">Volumes</h2>
+                    <div class="list-group">
+                        {% for vol in volume_data %}
+                            <a id="{{vol.name}}" name="volume-list" href="{{ vol.url }}" class="list-group-item list-group-item-action">{{ vol.name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- SUMMARY -->
+                <div class="summary mt-3 mb-3">
+                    <h2 class="text-center">Summary</h2>
+                    <div class="summary-data">
+                        <table class="summary-table">
+                            <tr>
+                                <td class="summary-table-left-pad">Directories</td>
+                                <td>{{ summary_data.directory }}</td>
+                            </tr>
+                            <tr>
+                                <td class="summary-table-left-pad">Files</td>
+                                <td>{{ summary_data.file }}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT AREA -->
+            <div class="col-xl-10 col-lg-9 col-md-8 col-sm-7">
+                <!-- ACTIONS -->
+                {% if action_data %}
+                    <div class="action">
+                        <form id="actionform" method="post" action="">
+                            {% csrf_token %}
+                        </form>
+                        {% for action in action_data %}
+                            {% if forloop.counter0 == 0 %}
+                                <button id="{{action}}" name="action-btn" onclick="formValueUpdate(this.id)" class="btn" disabled>{{action}}</button>
+                            {% else %}
+                                <button id="{{action}}" name="action-btn" onclick="formValueUpdate(this.id)" class="btn action-margin-left" disabled>{{action}}</button>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <!-- DIRECTORY NAVIGATION -->
+                <div class="navigation">
+                    <ul class="breadcrumb ">
+                        {% for nev_location in navigation_bar_data %}
+                            <li class="breadcrumb-item"><a href="?{{nev_location.url}}">{{ nev_location.name }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- TABLE HEADER -->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width: 2%;"><input type="checkbox" id="select_all_check" onclick="selectAllCheckbox()"></th>
+                            <th style="width: 48%;">Name</th>
+                            <th style="width: 20%;">Size</th>
+                            <th style="width: 30%;">Creation Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for data in page_data %}
+                            <tr>
+                                {% if data.valid %}
+                                    <!-- CHECKBOX SECTION -->
+                                    <td style="width: 2%;"><input type="checkbox" id="file_check_{{forloop.counter0}}" name="file_checkbox" onclick="registerCheckbox(this.id)"></td>
+
+                                    <!-- DATA NAME SECTION -->
+                                    <td style="width: 48%;">
+                                        {% if data.type == "file" %}
+                                            <a style="color: green;" href="?{{ data.url }}"><span class="material-icons ">insert_drive_file</span> 
+                                                <span style="vertical-align: text-bottom;">
+                                                    {{ data.name }}
+                                                </span>
+                                            </a>
+                                        {% elif data.type == "directory" %}
+                                            <a href="?{{ data.url }}"><span class="material-icons ">folder</span> 
+                                                <span style="vertical-align: text-bottom;">
+                                                    {{ data.name }}
+                                                </span>
+                                            </a>
+                                        {% endif %}
+                                    </td>
+
+                                    <!-- DATA SIZE -->
+                                    <td style="width: 20%;">{{ data.size|filesizeformat }}</td>
+                                    <!-- CREATION DATE -->
+                                    <td style="width: 30%;">{{ data.creation_time }}</td>
+                                {% else %}
+                                    <!-- CHECKBOX SECTION -->
+                                    <td style="width: 2%;"><input type="checkbox" id="file_check_{{forloop.counter0}}" name="file_checkbox"></td>
+
+                                    <!-- DATA SECTION -->
+                                    <td style="width: 48%;" class="text-danger">{{ data.name }}</td>
+                                    <td style="width: 20%;">&nbsp;</td>
+                                    <td style="width: 30%;">{{ data.creation_time }}</td>
+                                {% endif %}
+                                
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+                <!-- PAGINATOR SECTION -->
+                {% if pagination_data %}
+                    <ul class="pagination justify-content-center">
+                        <!-- PREVIOUS PAGE -->
+                        {% if pagination_data.previous_page %}
+                            <li class="page-item"><a class="page-link" href="{{pagination_data.previous_page.url}}">Previous</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                        {% endif %}
+
+                        <!-- MIDDLE PAGES -->
+                        {% for page in pagination_data.middle_pages %}
+                            <li class="page-item {{ page.selected }}"><a class="page-link" href="{{page.url}}">{{page.number}}</a></li>
+                        {% endfor %}
+                        
+                        <!-- NEXT PAGE -->
+                        {% if pagination_data.next_page %}
+                            <li class="page-item"><a class="page-link" href="{{pagination_data.next_page.url}}">Next</a></li>
+                        {% else %}
+                            <li class="page-item disabled"><a class="page-link" href="#">Next</a></li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+{% endblock content %}

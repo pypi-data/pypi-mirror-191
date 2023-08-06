@@ -1,0 +1,9 @@
+.action {
+    background-color: lightgray;
+    padding: 10px;
+    width: 100%;
+}
+
+.action-margin-left {
+    margin-left: 15px;
+}

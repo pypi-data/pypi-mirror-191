@@ -1,0 +1,19 @@
+{% extends 'explorer/base.html' %}
+
+
+{% block title %}
+    Bad Request
+{% endblock title %}
+
+{% block navbar %}
+
+{% endblock navbar %}
+
+{% block content %}
+    <!-- MESSAGE AREA -->
+    <div class="jumbotron text-center bg-danger text-white">
+        <h1>400</h1>
+        <h1>Bad Request</h1>
+        <p class="text-white">{{ message }}</p>
+    </div>
+{% endblock content %}
