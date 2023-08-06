@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=47.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alembic-stubs"
+version = "1.0.0"
+authors = [
+  { name="Pokoev Aleksei", email="powerleks@yandex.ru" },
+]
+description = "Typing Stubs for Alembic"
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = [
+    "alembic < 1.7.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/powerleks/alembic-stubs"
+"Bug Tracker" = "https://github.com/powerleks/alembic-stubs/issues"
+
+[tool.setuptools.package-data]
+alembic = ["*.pyi"]
