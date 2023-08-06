@@ -1,0 +1,12 @@
+prefsniff/__about__.py,sha256=fKCNa0oVI80M__lpHOICGBp_ol2MffbcgJbc_mZfE8g,98
+prefsniff/__init__.py,sha256=qksgxXzbBY8dPOGBw-upCPFtNKFWmMeH6Uf3KukxE88,128
+prefsniff/changetypes.py,sha256=Eg4jCfo9ObWSMj2cK1MAkKAksZbG0WUJEv0uZjd95pk,9827
+prefsniff/exceptions.py,sha256=AFj7rjbtVrVCtAwDt7FN98l3-z7uET615Lyxsgilp4k,177
+prefsniff/prefsniff.py,sha256=GuIwLhpLoAYbF2qC7isIMh5IyETIXCbsNzp7_mLRnLg,17281
+prefsniff/version.py,sha256=EUqQUvaA09P-aax9y7pL9ZbH3Pa92xnvXhfVugc4VuU,258
+prefsniff-0.2.2.dist-info/LICENSE,sha256=GX4WMa2l8EiBI4xMemXE7kfeyHqBGcdPXcxuXSdXAL0,1071
+prefsniff-0.2.2.dist-info/METADATA,sha256=bEBxeXVz6jfHpx6dBu90WLLj84W94sc9Fl6twJyl0PM,3035
+prefsniff-0.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+prefsniff-0.2.2.dist-info/entry_points.txt,sha256=fcYB5TliFIAkvwhPz02qf1_IojvIJ3bLRYd6u3AFPfo,55
+prefsniff-0.2.2.dist-info/top_level.txt,sha256=7Qp6dIuRMcjOGSM7LzdCVsLqLDyLJmp3RKI022RmfSI,10
+prefsniff-0.2.2.dist-info/RECORD,,

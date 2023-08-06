@@ -1,0 +1,2 @@
+[console_scripts]
+prefsniff = prefsniff.prefsniff:main
