@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: alembic-stubs
+Version: 1.0.0
+Summary: Typing Stubs for Alembic
+Author-email: Pokoev Aleksei <powerleks@yandex.ru>
+Project-URL: Homepage, https://github.com/powerleks/alembic-stubs
+Project-URL: Bug Tracker, https://github.com/powerleks/alembic-stubs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alembic (<1.7.0)
+
+# Alembic Stubs
+
+![Python](https://img.shields.io/badge/python-3.5+-blue)
+
+This package contains stub files from official repository of [Alembic](https://github.com/sqlalchemy/alembic). 
+It allows type checkers to be used with Alembic versions that do not have stubs (< 1.7.0).
+
+## Installing
+alembic-stubs can be installed using [pip](https://pypi.org/project/pip/):
+```sh
+pip install alembic-stubs
+```
+
+## Requirements
+* Alembic (< 1.7.0)
+
+## License
+Alembic is distributed under the [MIT license](https://opensource.org/licenses/MIT).
