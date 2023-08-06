@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hladownload/__init__.py
+hladownload/__main__.py
+hladownload/eplet.py
+hladownload/frequency.py
+hladownload/hla.py
+hladownload.egg-info/PKG-INFO
+hladownload.egg-info/SOURCES.txt
+hladownload.egg-info/dependency_links.txt
+hladownload.egg-info/entry_points.txt
+hladownload.egg-info/requires.txt
+hladownload.egg-info/top_level.txt
