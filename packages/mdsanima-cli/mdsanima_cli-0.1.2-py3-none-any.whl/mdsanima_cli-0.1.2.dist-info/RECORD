@@ -1,0 +1,11 @@
+mdsanima_cli/__init__.py,sha256=5c3ECyaGclnMiQ9M5YTLX5Zp0hcl7ut9thkaaSfgneM,645
+mdsanima_cli/__main__.py,sha256=qbtlJ3Osa25djTT7czXazFPwn-EIVGvH1NmhWRZ91Oc,232
+mdsanima_cli/_version.py,sha256=SiUqd8Cj_hPyzaVK09GtWaRYBHz7s-4Hx7Tg3ANhD4k,160
+mdsanima_cli/parser.py,sha256=Vt3VrBqPCy7ZbkC3j8kkpNQKUsfw53X7LVwy6iNr11Q,1538
+mdsanima_cli/pixelart.py,sha256=GLVEfG4xLqgr3lYMytGPuEnPo6GEDdk7rdL-Ll5zW4Y,1165
+mdsanima_cli-0.1.2.dist-info/LICENSE,sha256=cs40joqnHG1dkCIBjOd7B8SYKYIcd2Xce1iGh827ktQ,11356
+mdsanima_cli-0.1.2.dist-info/METADATA,sha256=36qso8KAqsn2o7OLWs1Wj-ykdW6u0kerdHoe7WNAa6w,18472
+mdsanima_cli-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+mdsanima_cli-0.1.2.dist-info/entry_points.txt,sha256=bbve7xKq5o5AG-wxErB9NMoIKli33DJafgNiMHNdhnI,51
+mdsanima_cli-0.1.2.dist-info/top_level.txt,sha256=emNU8kY-uWxwD74RvDORWzsgoqEr93dihu0fXJ9SzDk,13
+mdsanima_cli-0.1.2.dist-info/RECORD,,
