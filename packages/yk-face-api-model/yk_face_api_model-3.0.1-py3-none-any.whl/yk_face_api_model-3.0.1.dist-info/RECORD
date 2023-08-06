@@ -1,0 +1,17 @@
+yk_face_api_models/__init__.py,sha256=7X7XVjmhgp1OP7-uRL24XsZO-C0fiCwao1EAdlFShfk,542
+yk_face_api_models/gallery_response.py,sha256=SNDK5oDpomvQ4uoebQ1IcyQ04OGHswgLu_fEO0qPaNI,183
+yk_face_api_models/identify_request.py,sha256=TbmBF2H8jpdzITZgVOyyFCNlBV6xteaov0pjljOvOb8,343
+yk_face_api_models/process_multiple_request.py,sha256=pzAZkUZAGG28f6mdVcRuk9KsDxKmgdM9p258x6IFkLQ,895
+yk_face_api_models/process_request.py,sha256=Nnwd71_ITR2wKEahtKDQa5SmVPGZHatFNahUKcEVhH0,707
+yk_face_api_models/process_request_config.py,sha256=DiWx87_XOWW1PRJDFTlduZThMsP2ZHCH--FQ2AaMnP0,270
+yk_face_api_models/processing_enum.py,sha256=9TO8WUi5w8g9O-29gz2ZcOdGL0qu8A0lYeypGMMsU9Y,237
+yk_face_api_models/rename_gallery_request.py,sha256=ajV_BnMN7ktlZp3GSQeIfhHSmhe1yI7yGE7tQ69qGcc,232
+yk_face_api_models/template.py,sha256=vUPuQ84OjEKm8ElUtXNfeE_4MBimMADosWUj4LBKZ4o,116
+yk_face_api_models/verify_id_request.py,sha256=ImO3ZR_SMLl3BjFQTPcqJD_0fYPss4qs4F5deuW-r5g,257
+yk_face_api_models/verify_images.py,sha256=cslf7lN7-BhNQNWj3lqwxu7UNpGkWzevOgKfGXCMcUk,203
+yk_face_api_models/verify_request.py,sha256=dZzkVrwCXWVxgkTjw6kxfuuzCOOwYK270n52-963Ikw,263
+yk_face_api_model-3.0.1.dist-info/LICENSE,sha256=7-VoXpiDU7gIN4qojOx7AY92hz6aWG0S-KCQRjehbXM,1102
+yk_face_api_model-3.0.1.dist-info/METADATA,sha256=0bLwqd4bK_DZ6rn_oGy1jLm6bZx6k2SRECy3dxoQk00,1025
+yk_face_api_model-3.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+yk_face_api_model-3.0.1.dist-info/top_level.txt,sha256=XSZN-NX1C7HMFoDiiWyMgMbREpluS0UMBpf6zI8xcYk,19
+yk_face_api_model-3.0.1.dist-info/RECORD,,
