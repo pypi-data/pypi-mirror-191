@@ -1,0 +1,17 @@
+coverage
+control
+docstring-expander
+jupyterlab
+lmfit
+matplotlib
+numpy
+pandas
+pip
+pylint
+python-libsbml
+seaborn
+symmathSBML
+sympy
+tellurium
+twine
+urllib3
