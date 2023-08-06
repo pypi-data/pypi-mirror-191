@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: gpu_tracking
+Version: 1.1.2
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
