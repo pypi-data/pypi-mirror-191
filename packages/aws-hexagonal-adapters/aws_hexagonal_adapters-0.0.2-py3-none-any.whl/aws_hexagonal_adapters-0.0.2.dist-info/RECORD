@@ -1,0 +1,7 @@
+aws_hexagonal_adapters/event_bridge.py,sha256=cc18T-04VwIMn9Kq3ppIcpxDqffTLVFU0bGbyuvf2Mg,1157
+aws_hexagonal_adapters/s3_service.py,sha256=PHY5Mcn3VB17V7le7qUTQnSXq7Nrkx2WOGye7l82q3k,8843
+aws_hexagonal_adapters/ses_service.py,sha256=HoKt51CZqyDfeMq7WcWR3aariehQunDO4dvvId1gVeE,4834
+aws_hexagonal_adapters-0.0.2.dist-info/METADATA,sha256=at43dweS66PGsYGbCORwYOtE2TwR58po5eOz1Zs7NzA,2169
+aws_hexagonal_adapters-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+aws_hexagonal_adapters-0.0.2.dist-info/licenses/LICENSE,sha256=-8s2txIIVOOaJ4ww3G72gE-JhzImwnASK8YBIbYSGNY,1071
+aws_hexagonal_adapters-0.0.2.dist-info/RECORD,,
