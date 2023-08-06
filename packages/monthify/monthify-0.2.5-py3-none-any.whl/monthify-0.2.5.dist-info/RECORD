@@ -1,0 +1,10 @@
+monthify/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+monthify/auth.py,sha256=mqOjXW8iXc9V7jnq9fJE8fN-1JovQsOr0yxY-Ly7hA0,1019
+monthify/main.py,sha256=MeUc1BShRoLREo8hPgmsZLKMBFc-SxQ3LZ12deixooI,4223
+monthify/monthify.py,sha256=d255IungYy8xk0QDQBNmgNfmP3Z4xi0guAifYiOgZi0,17917
+monthify/track.py,sha256=dAuRY5F-IQ1710CS7apQ0rXTUeb3Z65cBaJY_kPkFh4,755
+monthify/utils.py,sha256=-cuhE2p6XtghUY0d673BGseSZTgCooXLeMu4w0cic5A,933
+monthify-0.2.5.dist-info/METADATA,sha256=weeF8jnuJANojy-88Hu3u2IMWvd731Rphn0x7LcV174,1788
+monthify-0.2.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+monthify-0.2.5.dist-info/entry_points.txt,sha256=UPs2ivu17pKHVstYs_zdxF22z-TP8H8u_E7LrjLkJPE,46
+monthify-0.2.5.dist-info/RECORD,,
