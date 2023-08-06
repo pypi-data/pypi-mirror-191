@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: simple-git-versioning
+Version: 0.0.11
+Summary: Thinly scoped and opinionated project that computes a version number from git tags and trailers
+Author-email: Quentin Bouget <ypsah@devyard.org>
+License: MIT
+Keywords: versioning,git,git-trailers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+License-File: LICENSE
