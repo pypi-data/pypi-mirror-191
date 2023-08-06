@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: xm-gnpu-v100
+Version: 0.0.5
+Summary: 雄迈工具链
+Author-email: liuxinwei <liuxinwei@xmsilicon.cn>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: tvm,vta,xm-gnpu-v100
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: scipy
+Description-Content-Type: text/markdown
+
+# xm-tool
+
+[![PyPI - Version](https://img.shields.io/pypi/v/xm-tool.svg)](https://pypi.org/project/xm-tool)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/xm-tool.svg)](https://pypi.org/project/xm-tool)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install xm-tool
+```
+
+## License
+
+`xm-tool` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.

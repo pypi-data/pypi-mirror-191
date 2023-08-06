@@ -1,0 +1,54 @@
+[tool.pdm]
+allow_prereleases = true
+
+[tool.pdm.build]
+package-dir = "src"
+
+[tool.pdm.dev-dependencies]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+include = [
+  "std/*.rly",
+  "src/bin",
+]
+artifacts = [
+  "*.so",
+  "*.dll",
+]
+
+[tool.hatch.build.force-include]
+"src/tvm" = "tvm"
+"src/vta.cpython-310-x86_64-linux-gnu.so" = "vta.cpython-310-x86_64-linux-gnu.so"
+"src/vta_hw" = "vta_hw"
+"src/bin/libtvm.so" = "tvm/libtvm.so"
+"src/bin/libtvm_runtime.so" = "tvm/libtvm_runtime.so"
+"src/bin/libvta_fsim.so" = "tvm/libvta_fsim.so"
+# "bin/vta.cpython-38-x86_64-linux-gnu.so" = "src/tvm/vta.cpython-38-x86_64-linux-gnu.so"
+
+[project]
+name = "xm-gnpu-v100"
+description = '雄迈工具链'
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = ["xm-gnpu-v100", "tvm", "vta"]
+authors = [
+  { name = "liuxinwei", email = "liuxinwei@xmsilicon.cn" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["scipy"]
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "src/__about__.py"
