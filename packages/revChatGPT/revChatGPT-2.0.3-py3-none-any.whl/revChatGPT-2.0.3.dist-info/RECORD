@@ -1,0 +1,12 @@
+revChatGPT/GPTserver.py,sha256=VoJ6l2Qr_XwpKvdKS9YVxMigc0eQw_7mfvDhD8fxwXk,2086
+revChatGPT/Official.py,sha256=lmn45fnEdhdzMn2O4qwdj66S6n-J4EW_N8r7F3fR2qk,14716
+revChatGPT/Proxied.py,sha256=uiugRn6_YLItXHUjeHlp4y8V2dWLWd7v5CRbgGh1XfY,12285
+revChatGPT/Unofficial.py,sha256=VcDSSOS4Sm0Jbsiz2W4b71YTArzvyyY2BLzkGIONoxE,30016
+revChatGPT/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+revChatGPT/__main__.py,sha256=mCEws4tJQQkNGOleWJRZESPXsumTnbXbl_wWmm8iwEo,3628
+revChatGPT-2.0.3.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+revChatGPT-2.0.3.dist-info/METADATA,sha256=9f4cI-CkkwHhZojf51SNX04SJCnqR5MbPiPyrkDs_Co,4532
+revChatGPT-2.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+revChatGPT-2.0.3.dist-info/entry_points.txt,sha256=XWRsRhbycEK0s0FlJsWUcWPSuZ5Gr0InFuJdEiKeUiE,56
+revChatGPT-2.0.3.dist-info/top_level.txt,sha256=AJj5hsO4Uac2QXEC_ESGl4b6tV9gyfqVWFf5j61Ev5U,49
+revChatGPT-2.0.3.dist-info/RECORD,,
