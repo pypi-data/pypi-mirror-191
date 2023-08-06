@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+square_matrix_converter/__init__.py
+square_matrix_converter/convert_matrix.py
+square_matrix_converter/convert_square_matrix.py
+square_matrix_converter/parse_matrix.py
+square_matrix_converter.egg-info/PKG-INFO
+square_matrix_converter.egg-info/SOURCES.txt
+square_matrix_converter.egg-info/dependency_links.txt
+square_matrix_converter.egg-info/requires.txt
+square_matrix_converter.egg-info/top_level.txt
+tests/__init__.py
+tests/test_convert_matrix.py
+tests/test_convert_square_matrix.py
+tests/test_parse_matrix.py
