@@ -1,0 +1,8 @@
+opensearch_reindexer/__init__.py,sha256=UXpoZmtsUV1gOR0mBgVf34eS58x74WcxHVSv8pt1FBg,5346
+opensearch_reindexer/base.py,sha256=QcJMqY9z7G6jJB_T1RLy_lWPBt-xMTe23PgSz4Kd2QU,10662
+opensearch_reindexer/db.py,sha256=49_gMYoPHdYvRvnlkiE9M5IXLvj9xCkMTLtxsH4dgus,1175
+opensearch_reindexer/helper.py,sha256=rbP-raiRktod5mnrKClS6WhDVrmNbP6X31pSwhlecrM,1416
+opensearch_reindexer-2.0.0.dev5.dist-info/entry_points.txt,sha256=xgXZ5U755h3Ril3eiaJ9RejOY0UkFlPRq5Al52Zy1xU,54
+opensearch_reindexer-2.0.0.dev5.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+opensearch_reindexer-2.0.0.dev5.dist-info/METADATA,sha256=-jmzMQNOPWQGAkcXx3tx9VFM7mWLji7ejnS-drjtSes,7429
+opensearch_reindexer-2.0.0.dev5.dist-info/RECORD,,
