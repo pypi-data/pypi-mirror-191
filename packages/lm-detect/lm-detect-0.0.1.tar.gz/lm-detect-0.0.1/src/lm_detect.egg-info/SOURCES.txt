@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/lm_detect/__init__.py
+src/lm_detect/perplexity.py
+src/lm_detect/utils.py
+src/lm_detect.egg-info/PKG-INFO
+src/lm_detect.egg-info/SOURCES.txt
+src/lm_detect.egg-info/dependency_links.txt
+src/lm_detect.egg-info/requires.txt
+src/lm_detect.egg-info/top_level.txt

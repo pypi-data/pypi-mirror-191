@@ -1,0 +1,9 @@
+torch
+tqdm
+
+[dev]
+transformers
+tokenizers
+
+[test]
+pytest
