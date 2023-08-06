@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: py-ssdb-client
+Version: 0.0.8
+Summary: A SSDB client for Python
+Home-page: https://github.com/andy1xx8/py-ssdb-client
+Author: Andy Le
+Author-email: tauit.dnmd@gmail.com
+Project-URL: Bug Tracker, https://github.com/andy1xx8/py-ssdb-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyssdb (==0.4.2)
+Requires-Dist: py-profiler (==0.2.4)
+
+# py-ssdb-client
+
+A SSDB client for Python
+
+## Install
+
+- Run `pip install py-ssdb-client` or `pip3 install py-ssdb-client` to install this library
+
+## Usage
+
+
+E.g:
+
+```python
+
+```
