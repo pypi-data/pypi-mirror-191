@@ -1,0 +1,5 @@
+setuptools>=40.6.2
+regex>=2020.11.13
+
+[repl]
+prompt-toolkit==3.0.36
