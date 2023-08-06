@@ -1,0 +1,2 @@
+[console_scripts]
+dnr-api = dnr_api.__main__:main
