@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: wfudptools
+Version: 5.0.1b2
+Summary: WeatherFlow UDP API compliant python tools
+Home-page: https://github.com/vinceskahan/wfudptools
+License: GPL3
+Author: Vince Skahan
+Author-email: vinceskahan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: idna (==3.4)
+Requires-Dist: influxdb (==5.3.1)
+Requires-Dist: msgpack (==1.0.4)
+Requires-Dist: paho-mqtt (==1.6.1)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: urllib3 (==1.26.14)
+Project-URL: Repository, https://github.com/vinceskahan/wfudptools
+Description-Content-Type: text/markdown
+
+## Description
+
+These python3 utilities let you test (and simulate) a WeatherFlow station installation
+
+They permit you to listen to UDP broadcasts from your Hub and:
+ * print the received UDP broadcasts to stdout
+ * print the decoded broadcasts in a more human-friendly form
+ * publish derived topics to MQTT
+ * publish derived topics to influxdb
+ * support any combination of Air/Sky/Tempest
+ * support multiple instances of Air/Sky/Tempest at your site
+
+They also provide a utility to permit you to simulate a WeatherFlow Hub with minimal test data.
+
+NOTE - These utilities are tested using v119 of the WeatherFlow hub firmware.
+
+
+## Disclaimer
+
+These utilities are provided as-is.  Please consult the Project Home Page for more details.
+

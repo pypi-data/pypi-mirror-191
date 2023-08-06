@@ -1,0 +1,4 @@
+[console_scripts]
+wfudplistener=wfudptools.listener:main
+wfudpsimulator=wfudptools.simulator:main
+
