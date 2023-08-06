@@ -1,0 +1,10 @@
+dftopo/__init__.py,sha256=kGLuWRErYXMAUE5dhYKklv7GyR-mDp9JVGgPzxgvNpc,57
+dftopo/dfps.py,sha256=hAzXaRA-PvyC-DhOrVJhICmAESvhjJCR2kC0CPLem9w,642
+justogres/__init__.py,sha256=ifx8SZisjFZow-WrDprNv0yBZpwSC4W5yZVm9biThPs,27
+justogres/db.py,sha256=h50kgHg8olJrLFqygx6j3qO1gbfb_Ya2POUxJU9FzYE,4171
+justogres/utils.py,sha256=oxIcGVzyPkgQoBhc7gQji2NAb_pIvX3x55doexHQJ7Q,716
+justogres-3.0.4.dist-info/LICENSE,sha256=SFAyW0UDMm7Wsv1AxxBSFwDdNnF_6amzIfMKMo_LNIs,1067
+justogres-3.0.4.dist-info/METADATA,sha256=XrY1DREAzqruceXh8p169-0PePfzMwDb7klzoNcmq0o,2776
+justogres-3.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+justogres-3.0.4.dist-info/top_level.txt,sha256=XW268F9kTqmYBVoo6rPPyT4DAuWqF3EW4fW_TJq69S8,17
+justogres-3.0.4.dist-info/RECORD,,
