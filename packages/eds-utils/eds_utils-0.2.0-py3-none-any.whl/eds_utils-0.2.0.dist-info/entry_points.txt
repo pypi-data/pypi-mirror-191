@@ -1,0 +1,7 @@
+[console_scripts]
+eds-editor = eds_utils.eds_editor.main:eds_editor
+eds-validate = eds_utils.eds_validate:eds_validate
+eds2c = eds_utils.eds2c:eds2c
+eds2dcf = eds_utils.eds2dcf:eds2dcf
+eds2md = eds_utils.eds2md:eds2md
+eds2rst = eds_utils.eds2rstf:eds2rst
