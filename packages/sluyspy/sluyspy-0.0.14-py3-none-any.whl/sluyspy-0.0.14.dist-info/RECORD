@@ -1,0 +1,14 @@
+sluyspy/__init__.py,sha256=8sb9pI3GezH3ysmuXJArWFrWHAJGPNgucyNLY0CyA3A,1480
+sluyspy/air_visual.py,sha256=XbFcap6a-BF16jgk6JWpMCU8NXLgSxeq0IwFL32urng,860
+sluyspy/cli.py,sha256=T42QhIZdWOb4MlpBspaKjCaExR3XxXlEhGOtnjhKa_k,2418
+sluyspy/env.py,sha256=DVDbicyP768fW1mE2a8j-unPzvEKbTXnQOeTtLRwIOc,2429
+sluyspy/plot.py,sha256=meV4tT1NHPBxO-dD7RwUaAI0tsQr1UvAxUd40ssZSrQ,1570
+sluyspy/solar_panels.py,sha256=YegD2HvkbEsSWp85c1N26BlWFZ_UCRvK6XzvRpOPlNM,7571
+sluyspy/system.py,sha256=ro-bKcFnctbsfWs8bbraQmoIklGvkEV9sweVEk_F9gM,2836
+sluyspy/text.py,sha256=6wgvUrsZpiNSSJEQfPdmZDtaS7Vt1ZC9tIwDqD69ykE,2232
+sluyspy/weather.py,sha256=sV-KXnY2_g7KLG-BAm_oMwdiYSAnJxeKggtUQkuRJsg,2011
+sluyspy-0.0.14.dist-info/LICENCE,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+sluyspy-0.0.14.dist-info/METADATA,sha256=Znx-76I74CMEEYXHD1TvgLKjRliLgp05oY7TGLlPEmA,2698
+sluyspy-0.0.14.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sluyspy-0.0.14.dist-info/top_level.txt,sha256=uDLyI_vJ5IQbBXamT5JgHWNiTGDVFj7-M5AzHDTpA24,8
+sluyspy-0.0.14.dist-info/RECORD,,
