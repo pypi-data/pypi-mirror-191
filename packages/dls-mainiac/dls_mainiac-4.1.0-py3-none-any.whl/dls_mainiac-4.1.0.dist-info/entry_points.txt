@@ -1,0 +1,2 @@
+[console_scripts]
+dls-mainiac = dls_mainiac_lib.__main__:main

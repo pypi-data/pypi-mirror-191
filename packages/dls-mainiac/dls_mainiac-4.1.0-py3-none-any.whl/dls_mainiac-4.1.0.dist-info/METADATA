@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: dls-mainiac
+Version: 4.1.0
+Summary: Convenient Python helper classes for cli Main programs.
+Author-email: David Erb <david.erb@diamond.ac.uk>
+Project-URL: GitLab, https://gitlab.diamond.ac.uk/kbp43231/dls-mainiac
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+Requires-Dist: dls-utilpack
+Requires-Dist: dls-logformatter
+Requires-Dist: prettytable
+Requires-Dist: psutil
+Requires-Dist: setproctitle
+Provides-Extra: dev
+Requires-Dist: black (==22.12.0) ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: Flake8-pyproject ; extra == 'dev'
+Requires-Dist: pipdeptree ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pydocstyle[toml] ; extra == 'dev'
+Requires-Dist: tox-direct ; extra == 'dev'
+Requires-Dist: types-mock ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: pydata-sphinx-theme (>=0.12) ; extra == 'docs'
+Requires-Dist: sphinx-argparse ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ; extra == 'docs'
+Requires-Dist: sphinx-design ; extra == 'docs'
+Requires-Dist: tox-direct ; extra == 'docs'
+Requires-Dist: nbsphinx ; extra == 'docs'
+Requires-Dist: pandoc ; extra == 'docs'
+Requires-Dist: ipykernel ; extra == 'docs'
+Requires-Dist: h5py ; extra == 'docs'
+Requires-Dist: matplotlib ; extra == 'docs'
+
+dls-mainiac
+=======================================================================
+
+Convenient Python helper classes for cli Main programs.
+
+Intended advantages:
+
+- consistent command line
+- consistent logging
+
+Installation
+-----------------------------------------------------------------------
+::
+
+    pip install git+https://gitlab.diamond.ac.uk/kbp43231/dls-mainiac.git 
+
+    dls-mainiac --version
+
+Summary
+-------------------------------------------------
+
+TBD
+    
+
+Documentation
+-----------------------------------------------------------------------
+
+See https://www.cs.diamond.ac.uk/dls-mainiac for more detailed documentation.
+
+Building and viewing the documents locally::
+
+    git clone git+https://gitlab.diamond.ac.uk/kbp43231/dls-mainiac.git 
+    cd dls-mainiac
+    virtualenv /scratch/$USER/venv/dls-mainiac
+    source /scratch/$USER/venv/dls-mainiac/bin/activate 
+    pip install -e .[dev]
+    make -f .dls-mainiac/Makefile validate_docs
+    browse to file:///scratch/$USER/venvs/dls-mainiac/build/html/index.html
+
+Topics for further documentation:
+
+- TODO list of improvements
+- change log
+
+
+..
+    Anything below this line is used when viewing README.rst and will be replaced
+    when included in index.rst
+
