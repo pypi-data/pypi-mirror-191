@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: datafet
+Version: 0.9.4
+Summary: Few libriaries that we need to use in more than one of our project
+Keywords: cloud,data
+Author-email: Istvan Szukacs <istvan@datadeft.eu>, Krisztina Balogh <kriszti@datadeft.eu>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2==3.1.2
+Requires-Dist: PyJWT==2.4.0
+Requires-Dist: blake3==0.3.3
+Requires-Dist: boto3==1.26.69
+Requires-Dist: boto3-stubs==1.26.69
+Requires-Dist: botocore==1.29.69
+Requires-Dist: cryptography==39.0.1
+Requires-Dist: ecdsa==0.18.0
+Requires-Dist: email-validator==1.2.1
+Requires-Dist: fastapi==0.79.0
+Requires-Dist: mangum==0.17.0
+Requires-Dist: mypy-boto3-athena==1.26.33
+Requires-Dist: mypy-boto3-glue==1.26.67
+Requires-Dist: mypy-boto3-s3==1.26.62
+Requires-Dist: mypy-boto3-secretsmanager==1.26.49
+Requires-Dist: mypy-boto3-ses==1.26.0.post1
+Requires-Dist: mypy-boto3-sqs==1.26.0.post1
+Requires-Dist: mypy-boto3-ssm==1.26.43
+Requires-Dist: pydantic==1.10.4
+Requires-Dist: python-dateutil==2.8.2
+Requires-Dist: pytz==2022.1
+Requires-Dist: siphash24==1.2
+Requires-Dist: tomli==2.0.1
+Requires-Dist: types-python-dateutil==2.8.19.6
+Requires-Dist: types-pytz==2022.7.1.0
+Requires-Dist: pytest>=2.7.3 ; extra == "test"
+Requires-Dist: pre-commit==3.0.4 ; extra == "test"
+Requires-Dist: ruff==0.0.245 ; extra == "test"
+Requires-Dist: black==23.1.0 ; extra == "test"
+Requires-Dist: flit==3.8.0 ; extra == "test"
+Requires-Dist: build==0.10.0 ; extra == "test"
+Requires-Dist: twine==4.0.2 ; extra == "test"
+Project-URL: Documentation, https://www.datadeft.eu/
+Project-URL: Source, https://github.com/DataDeft/libraries
+Provides-Extra: test
+
+# Datafet
+
+A fet library to work with data and cloud.
+
+Modules:
+
+- aws_operations
+- custom_types
+- eid
+- etl_helpers
+- http_endpoints
+- http_return
+- jwt_auth
+- utility
+
