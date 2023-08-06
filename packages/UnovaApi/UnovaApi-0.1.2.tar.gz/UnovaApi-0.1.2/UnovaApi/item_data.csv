@@ -1,0 +1,195 @@
+,name,id,price
+0,Fire Stone,1,IC$1650
+1,Leaf Stone,2,IC$1650
+2,Moon Stone,3,IC$1650
+3,Sun Stone,4,IC$1650
+4,Thunder Stone,5,IC$1650
+5,Water Stone,6,IC$1650
+6,Shiny Stone,7,IC$1650
+7,Dawn Stone,8,IC$1650
+8,Dusk Stone,9,IC$1650
+9,King's Rock,10,IC$4000
+10,Metal Coat,11,IC$4000
+11,Deep Sea Tooth,12,IC$4000
+12,Deep Sea Scale,13,IC$4000
+13,Potion,14,IC$125
+14,Super Potion,15,IC$175
+15,Ultra Potion,16,IC$500
+16,Full Heal,17,IC$2500
+17,Awakening,18,IC$400
+18,Paralyze Heal,19,IC$400
+19,Antidote,20,IC$400
+20,Burn Heal,21,IC$400
+21,Ice Heal,22,IC$400
+22,Poke Ball,23,IC$700
+23,Great Ball,24,IC$1200
+24,Ultra Ball,25,IC$1500
+25,Master Ball,26,IC$50000
+26,Dragon Scale,27,IC$4000
+27,TM01 - Focus Punch,28,IC$4000
+28,TM02 - Dragon Claw,29,IC$4000
+29,TM03 - Water Pulse,30,IC$4000
+30,TM04 - Calm Mind,31,IC$4000
+31,TM05 - Roar,32,IC$4000
+32,TM06 - Toxic,33,IC$4000
+33,TM07 - Hail,34,IC$4000
+34,TM08 - Bulk Up,35,IC$4000
+35,TM09 - Bullet Seed,36,IC$4000
+36,TM10 - Hidden Power,37,IC$4000
+37,TM11 - Sunny Day,38,IC$4000
+38,TM12 - Taunt,39,IC$4000
+39,TM13 - Ice Beam,40,IC$4000
+40,TM14 - Blizzard,41,IC$4000
+41,TM15 - Hyper Beam,42,IC$4000
+42,TM16 - Light Screen,43,IC$4000
+43,TM17 - Protect,44,IC$4000
+44,TM18 - Rain Dance,45,IC$4000
+45,TM19 - Giga Drain,46,IC$4000
+46,TM20 - Safeguard,47,IC$4000
+47,TM21 - Frustration,48,IC$4000
+48,TM22 - Solarbeam,49,IC$4000
+49,TM23 - Iron Tail,50,IC$4000
+50,TM24 - Thunderbolt,51,IC$4000
+51,TM25 - Thunder,52,IC$4000
+52,TM26 - Earthquake,53,IC$4000
+53,TM27 - Return,54,IC$4000
+54,TM28 - Dig,55,IC$4000
+55,TM29 - Psychic,56,IC$4000
+56,TM30 - Shadow Ball,57,IC$4000
+57,TM31 - Brick Break,58,IC$4000
+58,TM32 - Double Team,59,IC$4000
+59,TM33 - Reflect,60,IC$4000
+60,TM34 - Shock Wave,61,IC$4000
+61,TM35 - Flamethrower,62,IC$4000
+62,TM36 - Sludge Bomb,63,IC$4000
+63,TM37 - Sandstorm,64,IC$4000
+64,TM38 - Fire Blast,65,IC$4000
+65,TM39 - Rock Tomb,66,IC$4000
+66,TM40 - Aerial Ace,67,IC$4000
+67,TM41 - Torment,68,IC$4000
+68,TM42 - Facade,69,IC$4000
+69,TM43 - Secret Power,70,IC$4000
+70,TM44 - Rest,71,IC$4000
+71,TM45 - Attract,72,IC$4000
+72,TM46 - Thief,73,IC$4000
+73,TM47 - Steel Wing,74,IC$4000
+74,TM48 - Skill Swap,75,IC$4000
+75,TM49 - Snatch,76,IC$4000
+76,TM50 - Overheat,77,IC$4000
+77,TM51 - Roost,78,IC$4000
+78,TM52 - Focus Blast,79,IC$4000
+79,TM53 - Energy Ball,80,IC$4000
+80,TM54 - False Swipe,81,IC$4000
+81,TM55 - Brine,82,IC$4000
+82,TM56 - Fling,83,IC$4000
+83,TM57 - Charge Beam,84,IC$4000
+84,TM58 - Endure,85,IC$4000
+85,TM59 - Dragon Pulse,86,IC$4000
+86,TM60 - Drain Punch,87,IC$4000
+87,TM61 - Will-o-wisp,88,IC$4000
+88,TM62 - Silver Wind,89,IC$4000
+89,TM63 - Embargo,90,IC$4000
+90,TM64 - Explosion,91,IC$4000
+91,TM65 - Shadow Claw,92,IC$4000
+92,TM66 - Payback,93,IC$4000
+93,TM67 - Recycle,94,IC$4000
+94,TM68 - Giga Impact,95,IC$4000
+95,TM69 - Rock Polish,96,IC$4000
+96,TM70 - Flash,97,IC$4000
+97,TM71 - Stone Edge,98,IC$4000
+98,TM72 - Avalanche,99,IC$4000
+99,TM73 - Thunder Wave,100,IC$4000
+100,TM74 - Gyro Ball,101,IC$4000
+101,TM75 - Swords Dance,102,IC$4000
+102,TM76 - Stealth Rock,103,IC$4000
+103,TM77 - Psych Up,104,IC$4000
+104,TM78 - Captivate,105,IC$4000
+105,TM79 - Dark Pulse,106,IC$4000
+106,TM80 - Rock Slide,107,IC$4000
+107,TM81 - X-scissor,108,IC$4000
+108,TM82 - Sleep Talk,109,IC$4000
+109,TM83 - Natural Gift,110,IC$4000
+110,TM84 - Poison Jab,111,IC$4000
+111,TM85 - Dream Eater,112,IC$4000
+112,TM86 - Grass Knot,113,IC$4000
+113,TM87 - Swagger,114,IC$4000
+114,TM88 - Pluck,115,IC$4000
+115,TM89 - U-turn,116,IC$4000
+116,TM90 - Substitute,117,IC$4000
+117,TM91 - Flash Cannon,118,IC$4000
+118,TM92 - Trick Room,119,IC$4000
+119,Metal Powder,120,IC$4000
+120,Soul Dew,121,IC$4000
+121,Black Belt,122,IC$4000
+122,Black Glasses,123,IC$4000
+123,Charcoal,124,IC$4000
+124,Dragon Fang,125,IC$4000
+125,Hard Stone,126,IC$4000
+126,Magnet,127,IC$4000
+127,Miracle Seed,128,IC$4000
+128,Mystic Water,129,IC$4000
+129,Sea Incense,130,IC$4000
+130,Nevermeltice,131,IC$4000
+131,Poison Barb,132,IC$4000
+132,Sharp Beak,133,IC$4000
+133,Silk Scarf,134,IC$4000
+134,Silverpowder,135,IC$4000
+135,Spell Tag,136,IC$4000
+136,Soft Sand,137,IC$4000
+137,Twisted Spoon,138,IC$4000
+138,Choice Band,139,IC$10000
+139,Light Ball,140,IC$4000
+140,Thick Club,141,IC$4000
+141,Scope Lens,142,IC$7500
+142,Direct Hit,143,IC$7500
+143,Lucky Punch,144,IC$10000
+144,Stick,145,IC$10000
+145,Rare Candy,146,IC$10500
+146,Razor Claw,147,IC$4000
+147,Abomasite,148,IC$80000
+148,Absolite,149,IC$80000
+149,Aerodactylite,150,IC$80000
+150,Aggronite,151,IC$80000
+151,Alakazite,152,IC$80000
+152,Ampharosite,153,IC$80000
+153,Banettite,154,IC$80000
+154,Blastoisinite,155,IC$80000
+155,Blazikenite,156,IC$80000
+156,Charizardite X,157,IC$80000
+157,Charizardite Y,158,IC$80000
+158,Garchompite,159,IC$80000
+159,Gardevoirite,160,IC$80000
+160,Gengarite,161,IC$80000
+161,Gyaradosite,162,IC$80000
+162,Heracronite,163,IC$80000
+163,Houndoominite,164,IC$80000
+164,Kangaskhanite,165,IC$80000
+165,Lucarionite,166,IC$80000
+166,Manectite,167,IC$80000
+167,Medichamite,168,IC$80000
+168,Mewtwonite X,169,IC$80000
+169,Mewtwonite Y,170,IC$80000
+170,Pinsirite,171,IC$80000
+171,Scizorite,172,IC$80000
+172,Tyranitarite,173,IC$80000
+173,Venusaurite,174,IC$80000
+174,Mawilite,175,IC$80000
+175,Beedrillite,176,IC$80000
+176,Pidgeotite,177,IC$80000
+177,Slowbronite,178,IC$80000
+178,Steelixite,179,IC$80000
+179,Sceptilite,180,IC$80000
+180,swampertite,181,IC$80000
+181,Sablenite,182,IC$80000
+182,Sharpedonite,183,IC$80000
+183,Cameruptite,184,IC$80000
+184,Altarianite,185,IC$80000
+185,Glalitite,186,IC$80000
+186,Salamencite,187,IC$80000
+187,Metagrossite,188,IC$80000
+188,Lopunnite,192,IC$80000
+189,Galladite,193,IC$80000
+190,Audinite,194,IC$80000
+191,Diancite,195,IC$100000
+192,Red Orb,196,IC$100000
+193,Blue Orb,197,IC$100000

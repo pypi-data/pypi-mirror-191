@@ -1,0 +1,3 @@
+include UnovaApi/*.jpg
+include UnovaApi/browser/*.exe
+include UnovaApi/*.csv
