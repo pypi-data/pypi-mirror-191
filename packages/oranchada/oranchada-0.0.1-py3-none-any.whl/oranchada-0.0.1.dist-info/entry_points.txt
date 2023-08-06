@@ -1,0 +1,11 @@
+[orange.canvas.help]
+html-index = orangecontrib.charisma.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+charisma = orangecontrib.charisma.widgets
+
+[orange.widgets.tutorials]
+infraredtutorials = orangecontrib.charisma.tutorials
+
+[orange3.addon]
+charisma = orangecontrib.charisma
