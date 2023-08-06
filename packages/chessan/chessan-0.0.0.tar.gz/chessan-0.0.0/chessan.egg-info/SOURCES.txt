@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+chessan/__init__.py
+chessan/client.py
+chessan.egg-info/PKG-INFO
+chessan.egg-info/SOURCES.txt
+chessan.egg-info/dependency_links.txt
+chessan.egg-info/requires.txt
+chessan.egg-info/top_level.txt
