@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="product.recaptcha_invisible"
+      interface="product.recaptcha_invisible.interfaces.IProductRecaptchaInvisibleLayer"
+      />
+</layers>

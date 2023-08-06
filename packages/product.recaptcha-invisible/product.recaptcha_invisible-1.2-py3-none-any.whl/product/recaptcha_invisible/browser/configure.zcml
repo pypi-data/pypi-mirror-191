@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="product.recaptcha_invisible">
+
+    <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+    <include package="z3c.jbot" file="meta.zcml" />
+    <browser:jbot
+        directory="overrides"
+        layer="product.recaptcha_invisible.interfaces.IProductRecaptchaInvisibleLayer"
+        />
+
+    <!-- Publish static files -->
+    <plone:static
+        name="product.recaptcha_invisible"
+        type="plone"
+        directory="static"
+        />
+
+    <adapter factory=".verify.RecaptchaInvisibleInfo" />
+
+    <browser:view
+        for="*"
+        name="recaptcha_invisible_verify"
+        class=".verify.RecaptchaInvisibleVerifyView"
+        permission="zope2.Public"
+        layer="product.recaptcha_invisible.interfaces.IProductRecaptchaInvisibleLayer"
+        />
+
+</configure>

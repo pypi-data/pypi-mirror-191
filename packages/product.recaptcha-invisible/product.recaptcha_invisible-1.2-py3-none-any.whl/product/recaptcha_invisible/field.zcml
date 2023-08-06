@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+    <utility
+        name="product.recaptcha_invisible.field.RecaptchaInvisibleField"
+        component=".field.RecaptchaInvisibleFactory"
+        />
+    <utility
+        name="product.recaptcha_invisible.field.RecaptchaInvisibleField"
+        component=".field.RecaptchaInvisibleHandler"
+        />
+    <adapter
+        provides="z3c.form.interfaces.IValidator"
+        for="*
+             *
+             *
+             product.recaptcha_invisible.interfaces.IRecaptchaInvisibleField
+             *"
+        factory="product.recaptcha_invisible.validator.RecaptchaInvisibleValidator"
+        />
+
+</configure>

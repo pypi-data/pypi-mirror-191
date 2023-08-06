@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<registry>
+
+    <records interface="product.recaptcha_invisible.controlpanel.IRecatpchaInvisibleControlPanel" prefix="recaptcha_invisible" />
+
+</registry>

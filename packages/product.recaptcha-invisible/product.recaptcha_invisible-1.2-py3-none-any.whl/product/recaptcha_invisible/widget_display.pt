@@ -1,0 +1,7 @@
+<div class="recaptcha-invisible-display"></div>
+<script>
+    $(function () {
+        let label = $('.recaptcha-invisible-display').siblings('label')
+        label.hide()
+    })
+</script>

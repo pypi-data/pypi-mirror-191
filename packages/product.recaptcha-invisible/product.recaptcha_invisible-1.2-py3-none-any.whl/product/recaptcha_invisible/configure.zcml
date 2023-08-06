@@ -1,0 +1,39 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="product.recaptcha_invisible">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <include package=".browser" />
+  <include file="controlpanel.zcml" />
+  <include file="permissions.zcml" />
+  <include file="field.zcml" />
+  <include file="widget.zcml" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="product.recaptcha_invisible"
+      directory="profiles/default"
+      description="Installs the product.recaptcha_invisible add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="product.recaptcha_invisible (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the product.recaptcha_invisible add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="product.recaptcha_invisible-hiddenprofiles"
+      />
+
+</configure>

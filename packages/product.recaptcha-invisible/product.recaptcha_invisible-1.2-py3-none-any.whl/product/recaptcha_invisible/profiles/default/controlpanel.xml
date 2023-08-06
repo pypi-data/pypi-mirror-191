@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel"
+        i18n:domain="product.recaptcha_invisible"
+        xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <configlet
+        title="Recaptcha Invisible"
+        action_id="recaptcha-invisible-controlpanel"
+        appId="recaptcha-invisible-controlpanel"
+        category="Products"
+        condition_expr=""
+        icon_expr=""
+        url_expr="string:${portal_url}/@@recaptcha-invisible-controlpanel"
+        i18n:attributes="title"
+        visible="True">
+        <permission>Plone Site Setup: Site</permission>
+    </configlet>
+
+</object>
