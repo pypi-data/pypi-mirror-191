@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pyrestsdk
+Version: 0.3.6
+Summary: Py REST SDK
+Author: michaeldcanady
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: certifi==2022.12.7
+Requires-Dist: charset-normalizer==3.0.1
+Requires-Dist: idna==3.4
+Requires-Dist: requests==2.28.2
+Requires-Dist: StrEnum==0.4.9
+Requires-Dist: urllib3==1.26.14
+Project-URL: homepage, https://github.com/michaeldcanady/pyrestsdk#readme
+Project-URL: repository, https://github.com/michaeldcanady/pyrestsdk
+
+# pyrestsdk
+
+PyREST SDK is a fully python toolkit for wrapping REST APIs or creating SDKs for REST APIs.
+
+It includes:
+## Credentials
+
+BasicCredential
+```python
+from pyrestsdk.credential import BasicCredential
+
+BasicCredential(username, password)
+
+```
+
+- Client handling
+- Building API paths
+- Formulating complex requests
+- dynamic structure to object-ify any API return
+
+## Installing
+Install and update using [pip](https://pip.pypa.io/en/stable/getting-started/):
+``` bash
+$ pip install -U pyrestsdk
+```
+
+## Projects using PyREST SDK:
+- [pyService-Now](https://github.com/michaeldcanady/pyservicenow)
