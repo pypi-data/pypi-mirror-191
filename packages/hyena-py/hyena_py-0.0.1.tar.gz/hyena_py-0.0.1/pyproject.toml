@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hyena-py"
+version = "0.0.1"
+description = "data purifier with schema"
+authors = ["jrog612 <jrog612@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = 'https://github.com/jrog612/hyena'
+homepage = 'https://github.com/jrog612/hyena'
+packages = [
+    { include = "hyena.py" }
+]
+include = [
+    { path = "test*", format = "sdist" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
