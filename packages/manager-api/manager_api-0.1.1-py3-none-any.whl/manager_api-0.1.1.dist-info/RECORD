@@ -1,0 +1,9 @@
+manager_api/__init__.py,sha256=pwviHhd9CEYbo_AhtlQ4lfW1OM7tbjVdbBkeRCkLDW8,2188
+manager_api/enums.py,sha256=-PkByvj7Y8gRr37fk8JswcskKjAhydXwEYy1ergwStc,5336
+manager_api/model.py,sha256=JV38GmRBxdYITEVWV79HrJ9SZhNQweqYuuL5BI_3jJU,135695
+manager_api/object.py,sha256=9eoKH2xUTSQNWMoIpfOSgl3TJ5FbBXan6Vkgt0mKKjY,3795
+manager_api-0.1.1.dist-info/LICENSE,sha256=QTpt_vio7kHuIPYvie5Iy1c-Flk8_sbtOSNx8ra48rA,1072
+manager_api-0.1.1.dist-info/METADATA,sha256=OP4IZJlPzjGPNLQSg7mrmlJgRpa66kdom4aJ3vsOtsA,752
+manager_api-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+manager_api-0.1.1.dist-info/top_level.txt,sha256=dmXlp8x1RveynEIUY5GF9ZMi9HDYUFZQDc_uOqOiG1M,12
+manager_api-0.1.1.dist-info/RECORD,,
