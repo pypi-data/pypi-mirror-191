@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: SWTK
+Version: 1.5.1
+Summary: Sort txt file from weirdest line to last from cli. Meant to be used for Logs. An experimental Unsupervised Learning Log Anomaly Detection toolkit. YOU ARE BEAUTIFUL! This will sort the input based on weirdness. Now with a malware detection feature!
+Home-page: https://github.com/nileshkhetrapal/SWTK
+Author: Nilesh Khetrapal
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+
