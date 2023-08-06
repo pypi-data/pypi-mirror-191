@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "ps_eor"
+version = "0.24"
+description = "Foreground modeling/removal and Power Spectra generation"
+authors = ["Florent Mertens <flomertens@gmail.com>"]
+license = "GPL-3.0+"
+readme = 'README.md'
+repository = "https://gitlab.com/flomertens/ps_eor"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+tables = "^3.2"
+pyfftw = ">=0.12"
+healpy = "^1.12"
+scikit-learn = ">=0.20"
+astropy = [{version = "^4.0", python = ">=3.7,<3.8"}, {version = "^5.0", python = ">=3.8"}]
+scipy = [{version = "^1.6", python = ">=3.7,<3.8"}, {version = "^1.8", python = ">=3.8"}]
+matplotlib = "^3"
+reproject = ">=0.7"
+GPy = "^1.9"
+configparser = "^4.0 | ^5.0"
+click = "^7.0 | ^8.0"
+h5py = "^3.0"
+emcee = "^3.0.2"
+corner = "^2.0"
+libpipe = ">=0.1.5"
+importlib-metadata = {version = "^1.0", python = "<3.8"}
+joblib = "^1.0"
+torch = "^1.9.0"
+fast-histogram = "^0.9"
+dynesty = "^1.2.2"
+ultranest = "^3.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^2.8"
+
+[tool.poetry.scripts]
+pstool = "ps_eor.tools.pstool:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.8"]
+build-backend = "poetry.core.masonry.api"
