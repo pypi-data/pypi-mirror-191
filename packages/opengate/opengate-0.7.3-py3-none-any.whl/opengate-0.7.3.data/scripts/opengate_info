@@ -1,0 +1,6 @@
+#!python
+
+import opengate as gate
+
+if __name__ == "__main__":
+    gate.print_opengate_info()
