@@ -1,0 +1,9 @@
+bulk_update_or_create/__init__.py,sha256=ORZRHZRiBTV24V9h6Wq0DoH_44b2dXKGboMnJg7Ouyo,255
+bulk_update_or_create/__version__.py,sha256=2vxqXmmsnVZ4IeeXXe3rnHLqo9TZlGJNooNKVtjVIVE,28
+bulk_update_or_create/apps.py,sha256=ghA0TpBFI7QK7dN4jMCeZYnuJh47rE7ExgiN1pDizLc,114
+bulk_update_or_create/query.py,sha256=ln3crpxNn8KId20IMqrEDNV61ucco9tv36uoNCpTR9E,7929
+django_bulk_update_or_create-1.0.0.dev9.dist-info/LICENSE,sha256=PyUkJhADY2m6ixMabj9hrdhSCm49l8MMV8ctGNYIQTg,1068
+django_bulk_update_or_create-1.0.0.dev9.dist-info/METADATA,sha256=BZzNpDwVQNG31ljHVM73d53fnah8iRG750KfwIp9Se0,6823
+django_bulk_update_or_create-1.0.0.dev9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_bulk_update_or_create-1.0.0.dev9.dist-info/top_level.txt,sha256=IPjsxNRTLB1GikCFigNtMDSdpq0CVlmHjcR6Ke6B7aw,22
+django_bulk_update_or_create-1.0.0.dev9.dist-info/RECORD,,
