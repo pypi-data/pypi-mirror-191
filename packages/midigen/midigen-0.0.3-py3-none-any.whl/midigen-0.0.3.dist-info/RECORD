@@ -1,0 +1,14 @@
+midigen/__init__.py,sha256=RRD0ADRcVyDY2lO9M6qp2acyRCweTNRWI9gN-ZwdERY,18
+midigen/generate.py,sha256=LRS7bHzKUK6Ifyf5C0cAKkk5OscrpAa8qfRdu_FMTD8,2128
+midigen/keys.py,sha256=-RbOHqIk1Q-jvv5PFEmbM9Wjvbnqa-jB78akw89NonA,4905
+midigen/notes.py,sha256=xC4AJe1H5RbCCdiLRGGdJnEMsy-qhDK7g-ffi2_PTeI,583
+midigen/percussion_map.csv,sha256=1UpMBi4GNE0oJjcY7TelZZloKTBOVrx4ZzmQbBdia6s,936
+midigen/rhythm.py,sha256=3Q3onRKgKTjRSJ4EL1_ct5YU8IaMobDNj5LEuEH1TWA,1862
+midigen/sequencer.py,sha256=nNIAOetgw1GLWT3ecd_ReFGkJ8Wle8dWkrFOB5DjwVs,6355
+midigen/time.py,sha256=tM_D1czZJmyvTFzoE0gwxGTyZiB5laJHwbPCUhrOfH0,2424
+midigen-0.0.3.dist-info/LICENSE,sha256=rz2tOom_Xbmg3aykTeJO-pP6lYEQlM_C4nBZudlg6qE,1070
+midigen-0.0.3.dist-info/METADATA,sha256=OoTbfSOv5_jFfBTMxTXZJl5DtLluUW1TQIs46obBoOU,3969
+midigen-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+midigen-0.0.3.dist-info/entry_points.txt,sha256=TthPhEGd31uJm-_Ta6JwwBmMmxBF1OfGFIQG-FAE8Zs,50
+midigen-0.0.3.dist-info/top_level.txt,sha256=3ARo9GaROqIyLqgxHKmIG6C0tE21QLOsMR3OkGCmr7Q,8
+midigen-0.0.3.dist-info/RECORD,,
