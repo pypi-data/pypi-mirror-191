@@ -1,0 +1,2 @@
+confini~=0.6.0
+chainlib-eth~=0.4.7

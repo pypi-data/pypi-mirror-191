@@ -1,0 +1,4 @@
+[console_scripts]
+eth-contract-registry-list = eth_contract_registry.runnable.list:main
+eth-contract-registry-publish = eth_contract_registry.runnable.publish:main
+eth-contract-registry-set = eth_contract_registry.runnable.set:main
