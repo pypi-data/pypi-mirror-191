@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Hecuba
+Version: 1.2.4
+Summary: Hecuba
+Home-page: https://www.bsc.es
+Author: Guillem Alomar, Yolanda Becerra, Juanjo Costa, Cesare Cugnasco, Adrián Espejo, Pol Santamaria
+Author-email: yolanda.becerra@bsc.es,jcosta@ac.upc.edu
+License: Apache License Version 2.0
+Keywords: key-value,scientific computing
+License-File: LICENSE.txt
+Requires-Dist: cassandra-driver (>=3.7.1)
+Requires-Dist: numpy (>=1.16)
+
+Hecuba.
