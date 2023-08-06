@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: nriapp
+Version: 1.0.3
+Summary: This is an internal tool for crawling MS 365 Defender web
+Author: Llallum Victoria
+Author-email: llallumvictoria@gmail.com
+License-File: LICENSE.txt
