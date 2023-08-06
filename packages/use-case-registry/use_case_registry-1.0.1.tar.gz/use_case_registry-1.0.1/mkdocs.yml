@@ -1,0 +1,31 @@
+site_name: Use case registry
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - "What is this?":
+    - "index.md"
+  - Clean Architecture:
+    - "clean_architecture/index.md"
+  - One Use Case, One Workflow:
+    - "one_use_case_one_workflow/index.md"
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+
+
+repo_url: https://github.com/Tomperez98/use-case-registry
