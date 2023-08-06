@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: acunetix
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/hikariatama/acunetix
+Author: Daniil Gazizullin
+Author-email: me@hikariatama.ru
+License: UNKNOWN
+Download-URL: https://github.com/hikariatama/acunetix/releases
+Keywords: acunetix vulnerability scanner pentest security infosec
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+
+Acunetix Web Vulnerability Scanner API wrapper
+
